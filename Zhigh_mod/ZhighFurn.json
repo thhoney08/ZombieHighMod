@@ -1,0 +1,109 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_indoor_plant",
+    "name": "indoor plant",
+    "symbol": "^",
+    "color": "green",
+    "move_cost_mod": 2,
+    "description": "A variety of plant, used for decoration.",
+    "required_str": 5,
+    "max_volume": "10 L",
+    "flags": [ "CONTAINER", "FLAMMABLE_ASH", "PLACE_ITEM", "ORGANIC", "TINY", "TRANSPARENT", "EASY_DECONSTRUCT" ],
+    "deconstruct": {
+      "items": [
+        { "item": "withered" },
+        { "item": "wrapper", "prob": 5 },
+        { "item": "can_drink_unsealed", "prob": 5 },
+        { "item": "bag_plastic", "prob": 5 },
+        { "item": "reHerbGrn", "prob": 15 },
+        { "item": "reHerbBlu", "prob": 15 },
+        { "item": "reHerbRed", "prob": 15 },
+        { "item": "cig_butt", "prob": 10, "count": [ 1, 10 ] },
+        { "group": "flower_pots" }
+      ]
+    },
+    "bash": {
+      "str_min": 2,
+      "str_max": 18,
+      "sound": "smash!",
+      "sound_fail": "whump.",
+      "items": [
+        { "item": "withered", "prob": 50 },
+        { "item": "wrapper", "prob": 5 },
+        { "item": "can_drink_unsealed", "prob": 5 },
+        { "item": "bag_plastic", "prob": 5 },
+        { "item": "reHerbGrn", "prob": 15 },
+        { "item": "reHerbBlu", "prob": 15 },
+        { "item": "reHerbRed", "prob": 15 },
+        { "item": "cig_butt", "prob": 10, "count": [ 1, 10 ] },
+        { "group": "flower_pots_broken" }
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_indoor_plant_y",
+    "name": "yellow indoor plant",
+    "description": "A variety of plant for decoration.  It's yellow.",
+    "symbol": "^",
+    "color": "yellow",
+    "move_cost_mod": 2,
+    "required_str": 5,
+    "max_volume": "10 L",
+    "flags": [ "CONTAINER", "FLAMMABLE_ASH", "PLACE_ITEM", "ORGANIC", "TINY", "TRANSPARENT", "EASY_DECONSTRUCT" ],
+    "deconstruct": {
+      "items": [
+        { "item": "withered" },
+        { "item": "wrapper", "prob": 5 },
+        { "item": "can_drink_unsealed", "prob": 5 },
+        { "item": "bag_plastic", "prob": 5 },
+        { "item": "cig_butt", "prob": 10, "count": [ 1, 10 ] },
+        { "group": "flower_pots" }
+      ]
+    },
+    "bash": {
+      "str_min": 2,
+      "str_max": 18,
+      "sound": "smash!",
+      "sound_fail": "whump.",
+      "items": [
+        { "item": "withered", "prob": 50 },
+        { "item": "wrapper", "prob": 5 },
+        { "item": "can_drink_unsealed", "prob": 5 },
+        { "item": "bag_plastic", "prob": 5 },
+        { "item": "reHerbGrn", "prob": 15 },
+        { "item": "reHerbBlu", "prob": 15 },
+        { "item": "reHerbRed", "prob": 15 },
+        { "item": "cig_butt", "prob": 10, "count": [ 1, 10 ] },
+        { "group": "flower_pots_broken" }
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_ladder_ropeNplank",
+    "name": "stepladder",
+    "looks_like": "f_ladder",
+    "description": "A short, foldable ladder.  Can help you climb to a rooftop, or maybe slow something down.",
+    "symbol": "H",
+    "color": "brown",
+    "move_cost_mod": 3,
+    "required_str": 6,
+    "flags": [ "LADDER", "TRANSPARENT", "SEEN_FROM_ABOVE" ],
+    "examine_action": "deployed_furniture",
+    "deployed_item": "stepladder_ropeNplank",
+    "bash": {
+      "str_min": 4,
+      "str_max": 40,
+      "sound": "smash!",
+      "sound_fail": "whump.",
+      "items": [
+        { "item": "rope_6", "count": [ 2, 4 ] },
+        { "item": "2x4", "count": [ 2, 5 ] },
+        { "item": "nail", "charges": [ 5, 15 ] },
+        { "item": "splinter", "count": [ 3, 5 ] }
+      ]
+    }
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "id": "fd_supplydrop_rift",
+    "type": "field_type",
+    "intensity_levels": [
+      { "name": "weak signal smoke", "color": "magenta", "sym": "*" },
+      { "name": "medium signal smoke",
+        "color": "magenta",
+        "transparent": true,
+        "monster_spawn_chance": 5,
+        "monster_spawn_count": 1,
+        "monster_spawn_radius": 2,
+        "monster_spawn_group": "GROUP_supplydrop" 
+      },
+      {
+        "name": "high signal smoke",
+        "color": "magenta",
+        "transparent": true,
+        "monster_spawn_chance": 100,
+        "monster_spawn_count": 1,
+        "monster_spawn_radius": 1,
+        "monster_spawn_group": "GROUP_supplydrop"
+      }
+    ],
+    "priority": 9,
+    "half_life": "5 minutes",
+    "accelerated_decay": false,
+    "wandering_field": "fd_supplydrop_gas",
+    "gas_absorption_factor": 15,
+    "dirty_transparency_cache": false,
+    "phase": "gas",
+    "display_items": true,
+    "display_field": false,
+    "looks_like": "fd_tear_gas"
+  },
+  {
+    "id": "fd_supplydrop_gas",
+    "type": "field_type",
+    "intensity_levels": [
+      { "name": "signal smoke", "translucency": 5 },
+      { "name": "signal smoke", "color": "pink" },
+      { "name": "signal smoke", "color": "pink" }
+    ],
+    "decay_amount_factor": 5,
+    "percent_spread": 40,
+    "outdoor_age_speedup": "6 minutes",
+    "dirty_transparency_cache": false,
+    "priority": 8,
+    "half_life": "10 minutes",
+    "phase": "gas",
+    "display_field": false,
+    "looks_like": "fd_tear_gas"
+  },
+  {
+    "id": "emit_supplydrop_gas_leak",
+    "type": "emit",
+    "field": "fd_supplydrop_rift",
+    "intensity": 3,
+    "qty": 10,
+    "chance": 15
+  },
+  {
+    "id": "emit_nuke_burst",
+    "type": "emit",
+    "//": "small cloud of nuke",
+    "field": "fd_nuke_gas",
+    "intensity": 3,
+    "chance": 1,
+    "qty": 10
+  },
+  {
+    "id": "emit_nuke_cloud",
+    "type": "emit",
+    "//": "medium cloud of nuke",
+    "field": "fd_nuke_gas",
+    "intensity": 3,
+    "qty": 20
+  },
+  {
+    "id": "emit_nuke_cloud_big",
+    "type": "emit",
+    "//": "big cloud of nuke",
+    "field": "fd_nuke_gas",
+    "intensity": 3,
+    "qty": 40
+  },
+  {
+    "id": "fd_freeze",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "thin cold gas",
+        "sym": "5",
+        "color": "light_gray",
+        "dangerous": true,
+        "effects": [
+          {
+            "effect_id": "cold_zhigh",
+            "body_part": "num_bp",
+            "intensity": 1,
+            "min_duration": "2 seconds",
+            "max_duration": "2 seconds",
+            "immune_in_vehicle": true,
+            "is_environmental": false,
+            "message": "You feel cold. Real cold, almost subzero like.",
+            "message_npc": "<npcname> starts freezing!",
+            "message_type": "bad"
+          }
+        ]
+      },
+      {
+        "name": "cold gas",
+        "color": "light_gray",
+        "effects": [
+          {
+            "effect_id": "cold_zhigh",
+            "body_part": "num_bp",
+            "intensity": 2,
+            "min_duration": "4 seconds",
+            "max_duration": "4 seconds",
+            "immune_in_vehicle": true,
+            "is_environmental": true,
+            "message": "You feel cold. Real cold, almost subzero like.",
+            "message_npc": "<npcname> starts freezing!",
+            "message_type": "bad"
+          }
+        ]
+      },
+      {
+        "name": "thick cold gas",
+        "color": "light_gray",
+        "effects": [
+          {
+            "effect_id": "cold_zhigh",
+            "body_part": "num_bp",
+            "intensity": 3,
+            "min_duration": "6 seconds",
+            "max_duration": "6 seconds",
+            "immune_in_vehicle": true,
+            "is_environmental": true,
+            "message": "You feel cold. Real cold, almost subzero like.",
+            "message_npc": "<npcname> starts freezing!",
+            "message_type": "bad"
+          }
+        ]
+      },
+      { "color": "cyan", "convection_temperature_mod": -160 }
+    ],
+    "decay_amount_factor": 20,
+    "percent_spread": 40,
+    "priority": 2,
+    "half_life": "8 minutes",
+    "phase": "gas",
+    "display_field": true,
+    "looks_like": "fd_fog"
+  },
+  {
+    "id": "emit_freeze_burst",
+    "type": "emit",
+    "//": "thin freeze gas",
+    "field": "fd_freeze",
+    "intensity": 3,
+    "chance": 1,
+    "qty": 10
+  },
+  {
+    "id": "emit_freeze_cloud",
+    "type": "emit",
+    "//": "freeze gas",
+    "field": "fd_freeze",
+    "intensity": 3,
+    "qty": 20
+  },
+  {
+    "id": "emit_freeze_cloud_big",
+    "type": "emit",
+    "//": "thicc freeze gas",
+    "field": "fd_freeze",
+    "intensity": 3,
+    "qty": 40
+  },
+  {
+    "id": "fd_zombie_rift",
+    "type": "field_type",
+    "intensity_levels": [
+      { "name": "undead ripple", "color": "light_gray", "sym": "*", "light_emitted": 160 },
+      { "name": "undead rift", "color": "dark_gray" },
+      {
+        "name": "fractal fissure",
+        "color": "magenta",
+        "transparent": false,
+        "monster_spawn_chance": 1,
+        "monster_spawn_count": 1,
+        "monster_spawn_radius": 1,
+        "monster_spawn_group": "GROUP_COFFEE_SHOP_ZOMBIE",
+        "light_emitted": 500
+      }
+    ],
+    "priority": 9,
+    "half_life": "10 seconds",
+    "accelerated_decay": true,
+    "wandering_field": "fd_zombie_gas",
+    "gas_absorption_factor": 15,
+    "dirty_transparency_cache": true,
+    "phase": "gas",
+    "display_items": true,
+    "display_field": true,
+    "looks_like": "fd_tindalos_gas"
+  },
+  {
+    "id": "fd_zombie_gas",
+    "type": "field_type",
+    "intensity_levels": [
+      { "name": "swirl of fog", "translucency": 5, "light_emitted": 20 },
+      { "name": "foul fog", "color": "cyan" },
+      { "name": "thick foul fog", "color": "pink" }
+    ],
+    "decay_amount_factor": 5,
+    "percent_spread": 150,
+    "outdoor_age_speedup": "1 minutes",
+    "dirty_transparency_cache": false,
+    "priority": 8,
+    "half_life": "2 minutes",
+    "phase": "gas",
+    "display_field": true,
+    "looks_like": "fd_relax_gas"
+  },
+  {
+    "id": "emit_zombie_burst",
+    "type": "emit",
+    "//": "thin zombie gas",
+    "field": "fd_zombie_gas",
+    "intensity": 3,
+    "chance": 1,
+    "qty": 10
+  },
+  {
+    "id": "emit_zombie_cloud",
+    "type": "emit",
+    "//": "zombie gas",
+    "field": "fd_zombie_gas",
+    "intensity": 3,
+    "qty": 20
+  },
+  {
+    "id": "emit_zombie_cloud_big",
+    "type": "emit",
+    "//": "thicc zombie gas",
+    "field": "fd_zombie_rift",
+    "intensity": 3,
+    "qty": 40
+  },
+  {
+    "id": "fd_zombie2_rift",
+    "type": "field_type",
+    "intensity_levels": [
+      { "name": "unknown presence", "color": "light_gray", "sym": "*" },
+      { "name": "undead presence", "color": "dark_gray" },
+      {
+        "name": "undead fissure",
+        "color": "magenta",
+        "transparent": true,
+        "monster_spawn_chance": 1,
+        "monster_spawn_count": 1,
+        "monster_spawn_radius": 1,
+        "monster_spawn_group": "GROUP_COFFEE_SHOP_ZOMBIE"
+      }
+    ],
+    "priority": 6,
+    "half_life": "20 seconds",
+    "accelerated_decay": true,
+    "wandering_field": "fd_zombie2_gas",
+    "gas_absorption_factor": 15,
+    "dirty_transparency_cache": true,
+    "phase": "gas",
+    "display_items": true,
+    "display_field": false
+  },
+  {
+    "id": "fd_zombie2_gas",
+    "type": "field_type",
+    "intensity_levels": [
+      { "name": "swirl of fog", "translucency": 5 },
+      { "name": "foul fog", "color": "cyan" },
+      { "name": "thick foul fog", "color": "pink" }
+    ],
+    "decay_amount_factor": 7,
+    "percent_spread": 150,
+    "outdoor_age_speedup": "10 seconds",
+    "dirty_transparency_cache": true,
+    "priority": 8,
+    "half_life": "20 seconds",
+    "phase": "gas",
+    "display_field": false
+  },
+  {
+    "id": "emit_zombie2_burst",
+    "type": "emit",
+    "//": "thin zombie gas",
+    "field": "fd_zombie2_gas",
+    "intensity": 3,
+    "chance": 1,
+    "qty": 3
+  },
+  {
+    "id": "emit_zombie2_cloud",
+    "type": "emit",
+    "//": "zombie gas",
+    "field": "fd_zombie2_gas",
+    "intensity": 3,
+    "qty": 6
+  },
+  {
+    "id": "emit_zombie2_cloud_big",
+    "type": "emit",
+    "//": "thicc zombie gas",
+    "field": "fd_zombie2_rift",
+    "intensity": 3,
+    "qty": 9
+  },
+  {
+    "id": "fd_survivor_rift",
+    "type": "field_type",
+    "intensity_levels": [
+      { "name": "calling survivors", "color": "light_gray", "sym": "*" },
+      { "name": "calling survivors", "color": "dark_gray" },
+      {
+        "name": "calling survivors",
+        "color": "magenta",
+        "transparent": true,
+        "monster_spawn_chance": 100,
+        "monster_spawn_count": 8,
+        "monster_spawn_radius": 3,
+        "monster_spawn_group": "GROUP_ZHIGHSURVIVORS"
+      }
+    ],
+    "priority": 8,
+    "half_life": "5 minutes",
+    "percent_spread": 25,
+    "accelerated_decay": false,
+    "wandering_field": "fd_survivor_gas",
+    "gas_absorption_factor": 15,
+    "dirty_transparency_cache": true,
+    "phase": "gas",
+    "display_items": true,
+    "display_field": false
+  },
+  {
+    "id": "fd_survivor_gas",
+    "type": "field_type",
+    "intensity_levels": [
+      { "name": "swirl of fog", "translucency": 5 },
+      { "name": "foul fog", "color": "cyan" },
+      { "name": "thick foul fog", "color": "pink" }
+    ],
+    "decay_amount_factor": 7,
+    "percent_spread": 150,
+    "outdoor_age_speedup": "10 seconds",
+    "dirty_transparency_cache": true,
+    "priority": 8,
+    "half_life": "20 seconds",
+    "phase": "gas",
+    "display_field": false
+  },
+  {
+    "id": "emit_survivor_burst",
+    "type": "emit",
+    "//": "thin survivor gas",
+    "field": "fd_survivor_rift",
+    "intensity": 3,
+    "chance": 1,
+    "qty": 3
+  },
+  {
+    "id": "emit_survivor_cloud",
+    "type": "emit",
+    "//": "survivor gas",
+    "field": "fd_survivor_rift",
+    "intensity": 3,
+    "qty": 6
+  },
+  {
+    "id": "emit_survivor_cloud_big",
+    "type": "emit",
+    "//": "thicc survivor gas",
+    "field": "fd_survivor_rift",
+    "intensity": 3,
+    "qty": 9
+  },
+  {
+    "id": "fd_heal",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "thin healing gas",
+        "sym": "5",
+        "color": "light_gray",
+        "dangerous": true,
+        "effects": [
+          {
+            "effect_id": "healing_medkit",
+            "body_part": "num_bp",
+            "intensity": 1,
+            "min_duration": "10 seconds",
+            "max_duration": "10 seconds",
+            "immune_in_vehicle": true,
+            "is_environmental": false,
+            "message": "You feel healed.",
+            "message_npc": "<npcname>'s wounds are closing like magic!",
+            "message_type": "good"
+          }
+        ]
+      },
+      {
+        "name": "healing gas",
+        "color": "light_gray",
+        "effects": [
+          {
+            "effect_id": "healing_medkit",
+            "body_part": "num_bp",
+            "intensity": 1,
+            "min_duration": "20 seconds",
+            "max_duration": "20 seconds",
+            "immune_in_vehicle": true,
+            "is_environmental": true,
+            "message": "You feel healed.",
+            "message_npc": "<npcname>'s wounds are closing like magic!",
+            "message_type": "good"
+          }
+        ]
+      },
+      {
+        "name": "thick healing gas",
+        "color": "light_gray",
+        "effects": [
+          {
+            "effect_id": "healing_medkit",
+            "body_part": "num_bp",
+            "intensity": 1,
+            "min_duration": "30 seconds",
+            "max_duration": "30 seconds",
+            "immune_in_vehicle": true,
+            "is_environmental": true,
+            "message": "You feel healed.",
+            "message_npc": "<npcname>'s wounds are closing like magic!",
+            "message_type": "good"
+          }
+        ]
+      }
+    ],
+    "priority": 5,
+    "half_life": "2 minutes",
+    "phase": "gas",
+    "display_field": true,
+    "looks_like": "fd_fog"
+  },
+  {
+    "id": "emit_heal_burst",
+    "type": "emit",
+    "//": "thin heal gas",
+    "field": "fd_heal",
+    "intensity": 3,
+    "chance": 1,
+    "qty": 10
+  },
+  {
+    "id": "emit_heal_cloud",
+    "type": "emit",
+    "//": "heal gas",
+    "field": "fd_heal",
+    "intensity": 3,
+    "qty": 20
+  },
+  {
+    "id": "emit_heal_cloud_big",
+    "type": "emit",
+    "//": "thicc heal gas",
+    "field": "fd_heal",
+    "intensity": 3,
+    "qty": 40
+  }
+]

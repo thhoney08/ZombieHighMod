@@ -1,0 +1,136 @@
+[
+  {
+    "id": "charm_base",
+    "repairs_like": "mold_plastic",
+    "type": "GUNMOD",
+    "name": { "str": "generic charm" },
+    "description": "generic item template",
+    "weight": "25 g",
+    "volume": "20 ml",
+    "price": "50 cent",
+    "integral_volume": "0 ml",
+    "price_postapoc": "5 cent",
+    "to_hit": -3,
+    "material": [ "steel", "plastic" ],
+    "symbol": "[",
+    "color": "white",
+    "location": "accessories"
+  },
+  {
+    "id": "charm_cross",
+    "name": { "str": "cross charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a cross.",
+    "copy-from": "charm_base",
+    "loudness_modifier": 1,
+    "dispersion_modifier": -1,
+    "aim_speed": 1,
+    "sight_dispersion": 1
+  },
+  {
+    "id": "charm_feather",
+    "name": { "str": "feather charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a feather.",
+    "copy-from": "charm_base",
+    "weight_multiplier": 0.99
+  },
+  {
+    "id": "charm_skull",
+    "name": { "str": "skull charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a skull.",
+    "copy-from": "charm_base",
+    "loudness_modifier": 4,
+    "range_modifier": 2,
+    "dispersion_modifier": -1
+  },
+  {
+    "id": "charm_scope",
+    "name": { "str": "scope charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a scope.",
+    "copy-from": "charm_base",
+    "integral_volume": "50 ml",
+    "aim_speed": 2,
+    "sight_dispersion": 4
+  },
+  {
+    "id": "charm_grenade",
+    "name": { "str": "grenade charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a grenade.",
+    "copy-from": "charm_base",
+    "damage_modifier": { "damage_type": "bullet", "amount": 2 }
+  },
+  {
+    "id": "charm_suppressor",
+    "name": { "str": "suppressor charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a suppressor.",
+    "copy-from": "charm_base",
+    "loudness_modifier": -2
+  },
+  {
+    "id": "charm_lens",
+    "name": { "str": "lens charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a lens.",
+    "copy-from": "charm_base",
+    "sight_dispersion": 1,
+    "aim_speed": 1
+  },
+  {
+    "id": "charm_shiv",
+    "name": { "str": "shiv charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a shiv.",
+    "copy-from": "charm_base",
+    "handling_modifier": 2
+  },
+  {
+    "id": "charm_arrowhead",
+    "name": { "str": "arrowhead charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a arrowhead.",
+    "copy-from": "charm_base",
+    "dispersion_modifier": -2
+  },
+  {
+    "id": "charm_spike",
+    "name": { "str": "spike charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a spike.",
+    "copy-from": "charm_base",
+    "handling_modifier": -1,
+    "dispersion_modifier": 2,
+    "damage_modifier": { "damage_type": "bullet", "amount": 3, "armor_penetration": 2 }
+  },
+  {
+    "id": "charm_eyeball",
+    "name": { "str": "eyeball charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a eyeball.",
+    "copy-from": "charm_base",
+    "sight_dispersion": 2,
+    "aim_speed": 3
+  },
+  {
+    "id": "charm_fang",
+    "name": { "str": "fang charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a fang.",
+    "copy-from": "charm_base",
+    "dispersion_modifier": -3,
+    "damage_modifier": { "damage_type": "bullet", "amount": 1, "armor_penetration": 2 }
+  },
+  {
+    "id": "charm_bullet",
+    "name": { "str": "bullet charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a bullet.",
+    "copy-from": "charm_base",
+    "dispersion_modifier": -3,
+    "damage_modifier": { "damage_type": "bullet", "amount": -1 }
+  }
+]
