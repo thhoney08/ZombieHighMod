@@ -1,0 +1,64 @@
+[
+  {
+    "type": "overmap_terrain",
+    "id": [ "zhighMainGate" ],
+    "name": "high school main gate",
+    "sym": "s",
+    "color": "light_blue",
+    "looks_like": "school_1_3",
+    "see_cost": 5,
+    "mondensity": 8,
+    "flags": [ "NO_ROTATE", "RISK_HIGH" ]
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "zhighMainGate",
+    "weight": 250,
+    "object": {
+      "fill_ter": "t_wall_bulkhead",
+      "rows": [
+        "***,_______,,_______,***",
+        "***,_______,,_______,***",
+        "**1,_______,,_______,1**",
+        "***222222222222222222***",
+        "***222222222222222222***",
+        "***,_______,,_______,***",
+        "***,_______,,_______,***",
+        "***,_______,,_______,***",
+        "***,_______,,_______,***",
+        "***,_______,,_______,***",
+        "***,_______,,_______,***",
+        "***,_______,,_______,***",
+        "***,_______,,_______,***",
+        "***,_______,,_______,***",
+        "***,_______,,_______,***",
+        "***,_______,,_______,***",
+        "***,_______,,_______,***",
+        "***,_______,,_______,***",
+        "***,_______,,_______,***",
+        "***222222222222222222***",
+        "***222222222222222222***",
+        "**1,_______,,_______,1**",
+        "***,_______,,_______,***",
+        "***,_______,,_______,***"
+      ],
+      "palettes": [ "zhighMainGate_palette" ],
+      "place_monster": [ { "monster": "mon_turret_medium", "x": 6, "y": 6 },
+						 { "monster": "mon_turret_medium", "x": 6, "y": 17 },
+						 { "monster": "mon_turret_medium", "x": 17, "y": 6 },
+						 { "monster": "mon_turret_medium", "x": 17, "y": 17 } ]
+    }
+  },
+  {
+    "type": "palette",
+    "id": "zhighMainGate_palette",
+    "terrain": {
+      "*": "t_wall_bulkhead",
+      ",": "t_pavement_y",
+      "1": "t_card_reader_broken",
+      "2": "t_door_metal_locked",
+      "_": "t_pavement"
+    }
+  }
+]

@@ -1,0 +1,64 @@
+[
+  {
+    "type": "faction",
+    "id": "Zhigh_Survivors",
+    "name": "High School Survivors",
+    "likes_u": 10,
+    "respects_u": 10,
+    "known_by_u": false,
+    "size": 50,
+    "power": 50,
+    "food_supply": 30000,
+    "wealth": 30000,
+    "relations": {
+      "your_followers": {
+        "kill on sight": false,
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "wasteland_scavengers": {
+        "kill on sight": false,
+        "watch your back": true,
+        "share my stuff": false,
+        "guard your stuff": true,
+        "lets you in": false,
+        "defends your space": false,
+        "knows your voice": true
+      },
+      "no_faction": {
+        "kill on sight": false,
+        "watch your back": false,
+        "share my stuff": false,
+        "guard your stuff": false,
+        "lets you in": false,
+        "defends your space": false,
+        "knows your voice": true
+      },
+      "hells_raiders": { "kill on sight": true },
+      "marloss": { "kill on sight": true }
+    },
+    "epilogues": [
+      { "power_min": 0, "power_max": 149, "id": "epilogue_faction_zhighSurvivors_0" },
+      { "power_min": 150, "id": "epilogue_faction_zhighSurvivors_150" }
+        ],
+    "description": "The survivors who have fled to a nearby bunker-like school."
+  },
+  {
+    "type": "snippet",
+    "category": "epilogue_factions",
+    "text": [
+      {
+        "id": "epilogue_faction_zhighSurvivors_0",
+        "text": "    Despite the efforts that the students had made, they started to die one by one. And that was the end of story, as they were long lost in the maelstrom of the apocalypse."
+      },
+      {
+        "id": "epilogue_faction_zhighSurvivors_150",
+        "text": "    While they were struggling to survive in this chaos, some helping hands rose them up. It was not easy for all of them to survive - and some of the helping hands did not made it. Day by day, they slowly but steadliy constructed a society, a place that they could call home."
+      }
+    ]
+  }
+]

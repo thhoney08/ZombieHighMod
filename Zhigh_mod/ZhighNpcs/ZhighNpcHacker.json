@@ -1,0 +1,473 @@
+[
+  {
+    "type": "trait_group",
+    "id": "Appearance_Hacker",
+    "subtype": "collection",
+    "traits": [ { "trait": "hair_hacker", "prob": 100 }, 
+                { "trait": "eye_black", "prob": 100 }, 
+                { "trait": "PALE", "prob": 100 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_Hacker_worn",
+    "subtype": "collection",
+    "entries": [
+      { "group": "npc_underwear_bottom_male" },
+      { "group": "npc_underwear_top_male" },
+      { "group": "ZhighNpc_underwear_feet_male" },
+      { "item": "pants_zhigh" },
+      { "item": "linuxtshirt" },
+      { "group": "npc_gloves" },
+      { "item": "jacket_leather_kevlar_mod" },
+      { "group": "ZhighNpc_shoes_male" },
+      { "item": "backpack_tactical_large" },
+      { "item": "wristwatch", "prob": 80 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_Hacker_carry",
+    "subtype": "collection",
+    "entries": [
+      { "item": "bot_attack_drone" },
+      { "item": "bot_attack_drone" },
+      { "item": "signalMarker" },
+      { "item": "signalMarker" },
+      { "item": "signalMarker" },
+      { "item": "signalMarker" },
+      { "item": "signalMarker" },
+      { "item": "laptop" },
+      { "item": "ID_1st" },
+      { "item": "zhigh_smart_phone" }
+    ]
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_Hacker",
+    "name": { "str": "Hacker" },
+    "job_description": "I hack stuff.",
+    "traits": [
+      { "group": "BG_survival_story_RURAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "Appearance_Hacker" },
+      [ "REGEN_zhigh", 100 ]
+    ],
+    "common": false,
+    "worn_override": "NC_Hacker_worn",
+    "carry_override": "NC_Hacker_carry",
+    "weapon_override": "NC_ZhighGUARD_wield",
+    "bonus_str": { "rng": [ -2, 1 ] },
+    "bonus_int": { "rng": [ 2, 6 ] },
+    "bonus_per": { "rng": [ -2, 1 ] },
+    "bonus_dex": { "rng": [ 1, 2 ] },
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "computer", "bonus": { "rng": [ 5, 7 ] } },
+      { "skill": "electronics", "bonus": { "rng": [ 3, 4 ] } }
+    ]
+  },
+  {
+    "type": "npc",
+    "id": "HACKER",
+    "name_unique": "Tae Hyeon Jeong",
+    "name_suffix": "student",
+    "gender": "male",
+    "class": "NC_Hacker",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_HACKER",
+    "mission_offered": "MISSION_SCHOOL_MEET_HACKER",
+    "faction": "Zhigh_Survivors"
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HACKER",
+    "dynamic_line": {
+      "u_is_wearing": "linuxtshirt",
+      "no": "You are not wearing a linux t-shirt?",
+      "yes": { "u_male": true, "yes": "Hello, what brings you here?", "no": "Hi, what brings you here?" }
+    },
+    "responses": [
+      {
+        "text": "Yes, I'm not wearing one.",
+        "topic": "TALK_BUY_SHIRT",
+        "condition": { "not": { "u_is_wearing": "linuxtshirt" } }
+      },
+      {
+        "text": "Nevermind.",
+        "topic": "TALK_DONE",
+        "condition": { "not": { "u_is_wearing": "linuxtshirt" } }
+      },
+      {
+        "text": "Hi, good to see you.",
+        "topic": "TALK_HACKER_A",
+        "condition": { "u_is_wearing": "linuxtshirt" }
+      },
+      {
+        "text": "Can I do anything for you?",
+        "topic": "TALK_MISSION_LIST",
+        "condition": { "u_is_wearing": "linuxtshirt" }
+      },
+      {
+        "text": "I'd better get going.",
+        "topic": "TALK_DONE",
+        "condition": { "u_is_wearing": "linuxtshirt" }
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HACKER_A",
+    "dynamic_line": { "u_is_wearing": "armband_zhigh_halmon", "yes": "Hello monitor.", "no": "Hello there." },
+    "responses": [
+      { "text": "What is this place?", "topic": "TALK_HACKER_PLACE" },
+      { "text": "I'd like to exchange some signal markers.", "topic": "TALK_HACKER_DEAL" },
+      { "text": "Anything I can do for you?", "topic": "TALK_MISSION_LIST" },
+      { "text": "See you later.", "topic": "TALK_HACKER_BYE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HACKER_PLACE",
+    "dynamic_line": "This is a school that we've made into a sort of a safehouse from this whole... disaster.",
+    "responses": [
+      { "text": "So are you with the school or something?", "topic": "TALK_HACKER_GOVERNMENT" },
+      { "text": "What do you trade?", "topic": "TALK_HACKER_TRADE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HACKER_GOVERNMENT",
+    "dynamic_line": "Yeah. There is School hall monitor somewhere around here if you have any questions relating to what the school, or at least the ones who is left, is up to.",
+    "responses": [
+      { "text": "Oh, okay.", "topic": "TALK_HACKER" },
+      { "text": "Oh, okay.  I'll go look for him then!", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HACKER_TRADE",
+    "dynamic_line": "Anything valuable really.  If you really want to know, go ask one of the actual traders.  I'm just protecting other survivors.",
+    "responses": [
+      { "text": "I'll go talk to them later.", "topic": "TALK_HACKER" },
+      { "text": "Will do, thanks!", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HACKER_BYE",
+    "dynamic_line": "Stay safe out there.  Hate to have to kill you after you've already died.",
+    "responses": [ { "text": "Yeah, I won't.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_BUY_SHIRT",
+    "dynamic_line": "You should buy one linux shirt, wear it, and then talk to me. It's a bit expensive, sorry about that.",
+    "responses": [
+      { "text": "Nevermind.", "topic": "TALK_DONE" },
+      {
+        "text": "[50$]  I'll buy one.",
+        "effect": [ { "u_buy_item": "linuxtshirt", "cost": 5000, "count": 1 } ],
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_HACKER_DEAL",
+    "type": "talk_topic",
+    "dynamic_line": [ "What do you need?" ],
+    "responses": [
+      { "text": "Nevermind.", "topic": "TALK_HACKER_A" },
+      {
+        "text": "[1 signal marker]  I'll buy a high signal marker.",
+        "effect": [ 
+            { "u_sell_item": "signalMarker", "count": 1 },
+            { "u_buy_item": "signalMarker3", "count": 1 } ],
+        "topic": "TALK_HACKER_DEAL_END"
+      },
+      {
+        "text": "[2 signal marker]  I'll buy a medium signal marker.",
+        "effect": [ 
+            { "u_sell_item": "signalMarker", "count": 2 },
+            { "u_buy_item": "signalMarker2", "count": 1 } ],
+        "topic": "TALK_HACKER_DEAL_END"
+      },
+      {
+        "text": "[3 signal marker]  I'll buy a low signal marker.",
+        "effect": [ 
+            { "u_sell_item": "signalMarker", "count": 3 },
+            { "u_buy_item": "signalMarker1", "count": 1 } ],
+        "topic": "TALK_HACKER_DEAL_END"
+      }
+    ]
+  },
+  {
+    "id": "TALK_HACKER_DEAL_END",
+    "type": "talk_topic",
+    "dynamic_line": [ "Is there anything else you need?" ],
+    "responses": [
+      { "text": "Nevermind.", "topic": "TALK_DONE" },
+      {
+        "text": "[1 signal marker]  I'll buy a high signal marker.",
+        "effect": [ 
+            { "u_sell_item": "signalMarker", "count": 1 },
+            { "u_buy_item": "signalMarker3", "count": 1 } ],
+        "topic": "TALK_HACKER_DEAL_END"
+      },
+      {
+        "text": "[2 signal marker]  I'll buy a medium signal marker.",
+        "effect": [ 
+            { "u_sell_item": "signalMarker", "count": 2 },
+            { "u_buy_item": "signalMarker2", "count": 1 } ],
+        "topic": "TALK_HACKER_DEAL_END"
+      },
+      {
+        "text": "[3 signal marker]  I'll buy a low signal marker.",
+        "effect": [ 
+            { "u_sell_item": "signalMarker", "count": 3 },
+            { "u_buy_item": "signalMarker1", "count": 1 } ],
+        "topic": "TALK_HACKER_DEAL_END"
+      }
+    ]
+  },
+  {
+    "id": "MISSION_SCHOOL_MEET_HACKER",
+    "type": "mission_definition",
+    "name": { "str": "Meet the Hacker" },
+    "description": "Make a friend at the school by handing over around two SD cards.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 1,
+    "value": 1000,
+    "item": "mobile_memory_card",
+    "count": 2,
+    "end": { "opinion": { "trust": 1, "value": 1 } },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_XTREME_MEMORY",
+    "dialogue": {
+      "describe": "To start, bring me two SD cards.",
+      "offer": "With all that's been going on, it's been more and more difficult to find some kind of data storage.  My stash has been running low for a while now.  Think you could help me out here?  Two SD cards are all I need.",
+      "accepted": "Thanks, it's great to see someone willing to help a guy out.",
+      "rejected": "Well, I'll find someone else to do it for me.",
+      "advice": "Lot could be found in the school, try to find them on tables, especially in the teacher's office.",
+      "inquire": "Got the items?",
+      "success": "Thanks!  I'll be sure to put in a good word for you around the school.",
+      "success_lie": "OK, then hand it over.",
+      "failure": "Shit happens."
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_XTREME_MEMORY",
+    "type": "mission_definition",
+    "name": { "str": "Xtreme Memory" },
+    "description": "Make a friend at the school by handing over around <color_green>three</color> <color_magenta>USB</color>s.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 1,
+    "value": 1000,
+    "item": "usb_drive",
+    "count": 3,
+    "end": { "opinion": { "trust": 1, "value": 1 } },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_FACTORY_RESET",
+    "dialogue": {
+      "describe": "For giving others my program, bring me three USBs.",
+      "offer": "Now with enough data space to go on, I need three USBs in order to get other data or give others my data. Would send them using e-mails, but since there is no internet now...",
+      "accepted": "Thanks, it's great to see someone willing to help a guy out.",
+      "rejected": "Well, I'll find someone else to do it for me.",
+      "advice": "Lot could be found in the school, try to find them on tables, especially in the foot lockers and teacher's office.",
+      "inquire": "Got the items?",
+      "success": "Thanks!  I'll be sure to put in a good word for you around the school.",
+      "success_lie": "OK, then hand it over.",
+      "failure": "Shit happens."
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_FACTORY_RESET",
+    "type": "mission_definition",
+    "name": { "str": "Factory Reset" },
+    "description": "Clean the data from the SD cards and give extra two.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 1,
+    "value": 1000,
+    "item": "mobile_memory_card_used",
+    "count": 4,
+    "start": { "effect": [ { "u_buy_item": "mobile_memory_card", "count": 2 } ] },
+    "end": { "opinion": { "trust": 3, "value": 3 },
+             "effect": [
+                { "u_buy_item": "grenade_emp", "count": 1 },
+                { "u_buy_item": "noise_emitter", "count": 2 } ]
+           },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_MAKE_MARKER",
+    "dialogue": {
+      "describe": "I need more memory, and need to reset these two. Add extra two and make it a deal.",
+      "offer": "Now with enough data space to go on, I need four clean SD cards in order to get extra data space.",
+      "accepted": "Thanks, it's great to see someone willing to help a guy out.",
+      "rejected": "Well, I'll find someone else to do it for me.",
+      "advice": "Lot could be found in the school, try to find them on tables, especially in the foot lockers and teacher's office. If needed, you could clean them by using electronics.",
+      "inquire": "Got the items?",
+      "success": "Thanks!  I'll be sure to put in a good word for you around the school. Plus here is something, although it won't be quite useful against the undead...",
+      "success_lie": "OK, then hand it over.",
+      "failure": "Shit happens."
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_MAKE_MARKER",
+    "type": "mission_definition",
+    "name": { "str": "Marks & Messages" },
+    "description": "Make five signal markers and hand them over.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 1,
+    "value": 1000,
+    "item": "signalMarker",
+    "count": 5,
+    "start": { "effect": [ { "u_learn_recipe": "signalMarker" } ] },
+    "end": { "opinion": { "trust": 1, "value": 1 },
+             "effect": [
+                { "u_buy_item": "signalMarker1", "count": 1 },
+                { "u_buy_item": "signalMarker2", "count": 1 },
+                { "u_buy_item": "signalMarker3", "count": 1 } ] },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_KILL_ROOFTOP_ZED",
+    "dialogue": {
+      "describe": "To start, bring me five signal markers.",
+      "offer": "Make and bring five signal markers, and I will give you something useful. These markers are some kind of radio, but the output is some dim light signals instead of actual sounds.",
+      "accepted": "Thanks, it's great to see someone willing to help a guy out.",
+      "rejected": "Well, I'll find someone else to do it for me.",
+      "advice": "You have to make them, try to fidget them won't be that hard.",
+      "inquire": "Got the items?",
+      "success": "Thanks!  I'll be sure to put in a good word for you around the school.",
+      "success_lie": "OK, then hand it over.",
+      "failure": "Shit happens."
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_KILL_ROOFTOP_ZED",
+    "type": "mission_definition",
+    "name": { "str": "Bad Signal" },
+    "description": "Clear out the rooftop, to get some signal markers.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 2,
+    "value": 50000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "ZhighSchool_4_6", "reveal_radius": 1 },
+      "update_mapgen": {
+        "om_terrain": "ZhighSchool_4_6",
+        "place_monster": [
+            { "monster": "mon_zombie_runner", "name": "Student", "x": [ 6, 22 ], "y": [ 6, 22 ] },
+            { "monster": "mon_zombie_acidic", "name": "Student", "x": [ 6, 22 ], "y": [ 6, 22 ] },
+            { "monster": "mon_zombie_brute", "name": "Student", "x": [ 6, 22 ], "y": [ 6, 22 ], "target": true } 
+          ]
+      }
+    },
+    "end": {
+      "effect": [
+        { "u_buy_item": "signalMarker1", "count": 1 },
+        { "u_buy_item": "signalMarker2", "count": 2 },
+        { "u_buy_item": "signalMarker3", "count": 3 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_GIMME_DRONES",
+    "dialogue": {
+      "describe": "We need help…",
+      "offer": "If you want to lend a hand we could use your help the problem on the top of the school. I sent a guy... a group to fix something but instead of fixing the damn thing, he turned into something different.  Guess he is dead, or in this case, worse.  Kill all of them and make sure they won't bother us again.  We can't pay much, but I can give you something useful.",
+      "accepted": "Please be careful, we don't need any more deaths.",
+      "rejected": "Come back when you get a chance, we really need to start reclaiming the region.",
+      "advice": "If you can, get a friend or two to help you.",
+      "inquire": "Will they be bothering us any longer?",
+      "success": "Thank you, having that big of a threat close to home was nerve wracking.  Here's some of our local certified notes, we've been paying these to our workers in exchange for supplies.  They're getting some value in the school as a trade item, I'm afraid they're all we have to spare at the moment.",
+      "success_lie": "What good does this do us?",
+      "failure": "It was a lost cause anyways…"
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_GIMME_DRONES",
+    "type": "mission_definition",
+    "name": { "str": "Rage against the undead" },
+    "description": "Get a drone at the school by handing over around two smg bb guns.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 1,
+    "value": 1000,
+    "item": "bbsmg",
+    "count": 2,
+    "end": {
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_learn_recipe": "bot_attack_drone" },
+        { "u_buy_item": "bot_attack_drone", "count": 1 } ]
+      },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_BETTER_DRONES",
+    "dialogue": {
+      "describe": "For adding some firepowers to my drone, bring me two BB SMGs.",
+      "offer": "Now with enough data space to go on, I need two BB SMGs in order to add them on my drones. Not the best option but still better than nothing.",
+      "accepted": "Thanks, it's great to see someone willing to help a guy out.",
+      "rejected": "Well, I'll find someone else to do it for me.",
+      "advice": "Some could be found in the school, try to find them on lockers. A dude called gunsmith will also works.",
+      "inquire": "Got the items?",
+      "success": "Thanks!  I'll be sure to put in a good word for you around the school.",
+      "success_lie": "OK, then hand it over.",
+      "failure": "Shit happens."
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_BETTER_DRONES",
+    "type": "mission_definition",
+    "name": { "str": "Better Drones" },
+    "description": "Get a better drone at the school by handing over around four tiny motors.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 1,
+    "value": 1000,
+    "item": "motor_tiny",
+    "count": 4,
+    "end": {
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_learn_recipe": "bot_enz_hack" },
+        { "u_buy_item": "bot_enz_hack", "count": 1 } ]
+      },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_BETTER_DRONES_2",
+    "dialogue": {
+      "describe": "For adding some better systems to my drone, bring me four tiny motors.",
+      "offer": "Now with enough data space to go on, I need four tiny motors in order to add them on my drones. Not the best option but still better than nothing.",
+      "accepted": "Thanks, it's great to see someone willing to help a guy out.",
+      "rejected": "Well, I'll find someone else to do it for me.",
+      "advice": "You could find them in some places, but guess you should make some. Won't be quite easy.",
+      "inquire": "Got the items?",
+      "success": "Thanks!  I'll be sure to put in a good word for you around the school.",
+      "success_lie": "OK, then hand it over.",
+      "failure": "Shit happens."
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_BETTER_DRONES_2",
+    "type": "mission_definition",
+    "name": { "str": "Rage against the undead" },
+    "description": "Get a drone at the school by handing over around two smg bb guns.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 1,
+    "value": 1000,
+    "item": "bbsmg",
+    "count": 2,
+    "end": {
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "bot_attack_drone", "count": 1 } ]
+      },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_BETTER_DRONES_2",
+    "dialogue": {
+      "describe": "For adding some firepowers to my drone, bring me two BB SMGs.",
+      "offer": "Now with enough data space to go on, I need two BB SMGs in order to add them on my drones. Not the best option but still better than nothing.",
+      "accepted": "Thanks, it's great to see someone willing to help a guy out.",
+      "rejected": "Well, I'll find someone else to do it for me.",
+      "advice": "Some could be found in the school, try to find them on lockers. A dude called gunsmith will also works.",
+      "inquire": "Got the items?",
+      "success": "Thanks!  I'll be sure to put in a good word for you around the school.",
+      "success_lie": "OK, then hand it over.",
+      "failure": "Shit happens."
+    }
+  }
+]
