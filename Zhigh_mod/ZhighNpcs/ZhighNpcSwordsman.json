@@ -1,0 +1,222 @@
+[
+  {
+    "type": "trait_group",
+    "id": "Appearance_SWORDSMAN",
+    "subtype": "collection",
+    "traits": [ { "trait": "hair_sword_pony", "prob": 100 }, 
+                { "trait": "eye_gray", "prob": 100 }, 
+                { "trait": "SKIN_LIGHT", "prob": 100 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_SWORDSMAN_weapon",
+    "subtype": "distribution",
+    "entries": [ { "item": "swordsmanSword" } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_SWORDSMAN_worn",
+    "subtype": "collection",
+    "entries": [
+      { "group": "npc_underwear_bottom_male" },
+      { "group": "npc_underwear_top_male" },
+      { "group": "ZhighNpc_underwear_feet_male" },
+      { "item": "boots_larmor" },
+      { "item": "pants_zhigh" },
+      { "item": "dress_shirt_zhigh" },
+      { "item": "gauntlets_larmor" },
+      { "item": "cuirass_lightplate" },
+      { "item": "wristwatch", "prob": 80 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_SWORDSMAN_carry",
+    "subtype": "collection",
+    "entries": [
+      { "item": "ZhighCoin", "count": [ 10, 20 ] },
+      { "item": "ID_1st" },
+      { "item": "zhigh_smart_phone" }
+    ]
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_SWORDSMAN",
+    "name": { "str": "SWORDSMAN" },
+    "job_description": "I smash others with a chair.",
+    "traits": [
+      { "group": "BG_survival_story_RURAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "Appearance_SWORDSMAN" },
+      { "trait": "QUICK" },
+      [ "REGEN_zhigh", 100 ]
+    ],
+    "common": false,
+    "worn_override": "NC_SWORDSMAN_worn",
+    "carry_override": "NC_SWORDSMAN_carry",
+    "weapon_override": "NC_SWORDSMAN_weapon",
+    "bonus_str": { "rng": [ 2, 4 ] },
+    "bonus_int": { "rng": [ -1, 2 ] },
+    "bonus_per": { "rng": [ 0, 2 ] },
+    "bonus_dex": { "rng": [ 2, 3 ] },
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 4, 6 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 1, 3 ] } }
+    ]
+  },
+  {
+    "type": "npc",
+    "id": "SWORDSMAN",
+    "name_unique": "Chan Yeong Park",
+    "name_suffix": "student",
+    "gender": "male",
+    "class": "NC_SWORDSMAN",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_SWORDSMAN",
+    "mission_offered": "MISSION_SCHOOL_KILL_INVADED_ZED",
+    "faction": "Zhigh_Survivors"
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SWORDSMAN",
+    "dynamic_line": { "u_is_wearing": "armband_zhigh_halmon", "yes": "Greetings protector.", "no": "Greetings." },
+    "responses": [
+      { "text": "What is this place?", "topic": "TALK_SWORDSMAN_PLACE" },
+      { "text": "Anything I can do for you?", "topic": "TALK_MISSION_LIST" },
+      { "text": "See you later.", "topic": "TALK_SWORDSMAN_BYE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SWORDSMAN_PLACE",
+    "dynamic_line": "A school this is, turned to a fortress from this whole damnation.",
+    "responses": [
+      { "text": "So the world is screwed, and this is some kinda bunker, yeah?", "topic": "TALK_SWORDSMAN_GOVERNMENT" },
+      { "text": "What do you trade?", "topic": "TALK_SWORDSMAN_TRADE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SWORDSMAN_GOVERNMENT",
+    "dynamic_line": "It is. Although for some reason the front gate is also blocked with stone, and it is too thick for us to remove or dig a tunnel through it.  So, I sent our team, there is some kinda underground tunnel(subway) nearby.",
+    "responses": [
+      { "text": "Oh, okay.", "topic": "TALK_SWORDSMAN" },
+      { "text": "Oh, okay.  Talk to you later!", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SWORDSMAN_TRADE",
+    "dynamic_line": "I do not, unfortunately.  If you want to, then go ask one of the actual traders.  Me and my men are just protecting other survivors.",
+    "responses": [
+      { "text": "I'll go talk to them later.", "topic": "TALK_SWORDSMAN" },
+      { "text": "Will do, thanks!", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SWORDSMAN_SCHOOLMONIT",
+    "dynamic_line": "They are the actual guardsman type of guys for school. Well, they were, before the whole world doomed.  Unlike them, we are the 'special forces' type - better gear, better weapons - but still in a bad condition, just like them.",
+    "responses": [
+      { "text": "Whatever, I had another question.", "topic": "TALK_SWORDSMAN" },
+      { "text": "Okay, I'll go look for him then. Thanks!", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SWORDSMAN_BYE",
+    "dynamic_line": "Stay safe out there.  Hate to have to kill you after you've already died.",
+    "responses": [ { "text": "Yeah, I won't.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "MISSION_SCHOOL_KILL_INVADED_ZED",
+    "type": "mission_definition",
+    "name": { "str": "Slaying evil" },
+    "description": "Clear out the front of subway, and try not do die while doing so.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 10,
+    "value": 500000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "zhighSub_station", "reveal_radius": 1 },
+      "update_mapgen": {
+        "om_terrain": "zhighSub_station",
+        "place_monster": [
+            { "monster": "mon_zombie_soldier_acid_2", "name": "Leader", "x": [ 6, 22 ], "y": [ 6, 22 ], "target": true },
+            { "monster": "mon_zombie_soldier_acid_2", "name": "Student", "x": [ 6, 22 ], "y": [ 6, 22 ] },
+            { "monster": "mon_zombie_soldier_acid_2", "name": "Student", "x": [ 6, 22 ], "y": [ 6, 22 ] },
+            { "monster": "mon_zombie_soldier_acid_2", "name": "Student", "x": [ 6, 22 ], "y": [ 6, 22 ] } 
+          ]
+      }
+    },
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "MUSKETEER_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "MUSCLE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "ZhighCoin", "count": 30 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_KILL_INVADED_ZED2",
+    "dialogue": {
+      "describe": "We need help…",
+      "offer": "If you want to lend a hand we could use your help the problem on the 'subway' of the school. A group of survivors turned crazy and well, started blasting.  They got their hands on a gun somehow, so please put them down ASAP.",
+      "accepted": "Please be careful, we don't need any more deaths.",
+      "rejected": "Come back when you get a chance, we really need to start reclaiming the region.",
+      "advice": "If you can, get a friend or two to help you.",
+      "inquire": "Will they be bothering us any longer?",
+      "success": "Thank you, having that big of a threat close to home was nerve wracking.  Here's some of our local certified notes, we've been paying these to our workers in exchange for supplies.  They're getting some value in the school as a trade item, I'm afraid they're all we have to spare at the moment.",
+      "success_lie": "What good does this do us?",
+      "failure": "It was a lost cause anyways…"
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_KILL_INVADED_ZED2",
+    "type": "mission_definition",
+    "name": { "str": "Slaying evil" },
+    "description": "Clear out the front of subway, and try not do die while doing so.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 10,
+    "value": 500000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "ZhighSchool_1_2", "reveal_radius": 1 },
+      "update_mapgen": {
+        "om_terrain": "ZhighSchool_1_2",
+        "place_monster": [
+            { "monster": "mon_zombie_soldier_acid_2", "name": "Leader", "x": [ 6, 22 ], "y": [ 6, 22 ], "target": true },
+            { "monster": "mon_zombie_soldier_acid_2", "name": "Student", "x": [ 6, 22 ], "y": [ 6, 22 ] },
+            { "monster": "mon_zombie_soldier_acid_2", "name": "Student", "x": [ 6, 22 ], "y": [ 6, 22 ] },
+            { "monster": "mon_zombie_soldier_acid_2", "name": "Student", "x": [ 6, 22 ], "y": [ 6, 22 ] } 
+          ]
+      }
+    },
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "MUSKETEER_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "MUSCLE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "ZhighCoin", "count": 30 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_KILL_INVADED_ZED2",
+    "dialogue": {
+      "describe": "We need help…",
+      "offer": "If you want to lend a hand we could use your help the problem on the 'subway' of the school. A group of survivors turned crazy and well, started blasting.  They got their hands on a gun somehow, so please put them down ASAP.",
+      "accepted": "Please be careful, we don't need any more deaths.",
+      "rejected": "Come back when you get a chance, we really need to start reclaiming the region.",
+      "advice": "If you can, get a friend or two to help you.",
+      "inquire": "Will they be bothering us any longer?",
+      "success": "Thank you, having that big of a threat close to home was nerve wracking.  Here's some of our local certified notes, we've been paying these to our workers in exchange for supplies.  They're getting some value in the school as a trade item, I'm afraid they're all we have to spare at the moment.",
+      "success_lie": "What good does this do us?",
+      "failure": "It was a lost cause anyways…"
+    }
+  }
+]
