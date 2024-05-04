@@ -4089,6 +4089,70 @@
   },
   {
     "type": "recipe",
+    "result": "flail_handmade",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "autolearn": true,
+    "reversible": true,
+    "time": "1 m",
+    "components": [ [
+			[ "stick", 1 ],
+			[ "cudgel", 1 ],
+			[ "2x4", 1 ],
+			[ "pool_cue", 1 ] ],
+			[ [ "rock_sock", 1 ]
+	] ]
+  },
+  {
+    "result": "straw_hat_Asia",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 1,
+    "time": "30 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "straw_pile", 3 ], [ "birchbark", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "water_paint",
+    "charges": 8,
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "cooking",
+    "time": "9 s",
+    "autolearn": true,
+    "components": [
+		[ [ "water", 8 ] ],
+		[ [ "r_paint", 2 ],
+		  [ "b_paint", 2 ],
+		  [ "w_paint", 2 ],
+		  [ "g_paint", 2 ],
+		  [ "p_paint", 2 ],
+		  [ "y_paint", 2 ]
+    ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "type": "recipe",
+    "result": "tonfa_rebar",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "skills_required": [ "melee", 1 ],
+    "difficulty": 2,
+    "time": "30 m",
+    "reversible": true,
+    "autolearn": true,
+    "using": [ [ "welding_standard", 10 ] ],
+    "qualities": [ { "id": "SAW_M", "level": 1 } ],
+    "components": [ [ [ "rebar", 3 ] ] ]
+  },
+  {
+    "type": "recipe",
     "result": "thunderstick",
     "category": "CC_AMMO",
     "subcategory": "CSC_AMMO_OTHER",

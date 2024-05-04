@@ -718,6 +718,10 @@
           { "id": "overlay_wielded_kingsman_umbrella_shotgun_s", "fg": 26 },
           { "id": "overlay_wielded_kingsman_umbrella_open", "fg": 27 },
           { "id": "overlay_wielded_kingsman_umbrella_close", "fg": 28 },
+          { "id": "overlay_worn_powered_earmuffs_heli", "fg": 29 },
+          { "id": "overlay_wielded_powered_earmuffs_heli", "fg": 30 },
+          { "id": "powered_earmuffs_heli", "fg": 30 },
+          { "id": "straw_hat_Asia", "fg": 31 },
           { "id": "overlay_worn_mask_panther", "fg": 32 },
           { "id": "overlay_wielded_mask_panther", "fg": 33 },
           { "id": "mask_panther", "fg": 33 },
@@ -762,7 +766,31 @@
           { "id": "stick_swag_wand_red", "fg": 60 },
           { "id": "overlay_wielded_stick_swag_wand_red", "fg": 61 },
           { "id": "bo_zhigh", "fg": 62 },
-          { "id": "overlay_wielded_bo_zhigh", "fg": 63 }
+          { "id": "overlay_wielded_bo_zhigh", "fg": 63 },
+          { "id": "overlay_worn_EmtGearZhigh", "fg": 64 },
+          { "id": "overlay_wielded_EmtGearZhigh", "fg": 65 },
+          { "id": "EmtGearZhigh", "fg": 65 },
+          { "id": "flail_handmade", "fg": 66 },
+          { "id": "overlay_wielded_flail_handmade", "fg": 67 },
+          { "id": "nunchunkZhigh", "fg": 68 },
+          { "id": "overlay_wielded_nunchunkZhigh", "fg": 69 },
+          { "id": "nunchunkZhigh_makeshift", "fg": 70 },
+          { "id": "overlay_wielded_nunchunkZhigh_makeshift", "fg": 71 },
+          { "id": "bbSnip", "fg": 72 },
+          { "id": "overlay_wielded_bbSnip", "fg": 73 },
+          { "id": "throwing_knife_trickster", "fg": 76 },
+          { "id": "overlay_wielded_throwing_knife_trickster", "fg": 77 },
+          { "id": "grenadeHiEx", "fg": 78 },
+          { "id": "overlay_wielded_grenadeHiEx", "fg": 79 },
+          { "id": "grenadeHiEx_act", "fg": 80 },
+          { "id": "overlay_wielded_grenadeHiEx_act", "fg": 81 },
+          { "id": "zhighMainGate", "fg": 82 },
+          { "id": "bwireTool", "fg": 83 },
+          { "id": "overlay_wielded_bwireTool", "fg": 83 },
+          { "id": "overlay_worn_shield_targe", "fg": 84 },
+          { "id": "overlay_wielded_shield_targe", "fg": 84 },
+          { "id": "shield_targe", "fg": 85 },
+          { "id": "overlay_wielded_tonfa_rebar", "fg": 88 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,
@@ -858,22 +886,62 @@
             "rotates": false,
             "animated": true
           },
-          { "id": "mon_survivor_human_m4bb_boss", "fg": 40 },
-          {
-            "id": "mon_zombie_machine",
-            "fg": [
-              { "weight": 10, "sprite": 41 },
-              { "weight": 10, "sprite": 42 }
-            ],
-            "rotates": false,
-            "animated": true
-          }
+          { "id": "mon_survivor_human_m4bb_boss", "fg": 40 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,
         "sprite_height": 32,
         "sprite_offset_x": 0,
         "sprite_offset_y": 0
+      }
+    ]
+  },
+  {
+    "type": "mod_tileset",
+    "compatibility": [
+      "Chibi_Ultica",
+      "UltimateCataclysm",
+      "MshockXottoplus",
+      "UNDEAD_PEOPLE",
+      "UNDEAD_PEOPLE_BASE",
+      "UNDEAD_PEOPLE_LEGACY",
+      "UlticaShell",
+      "MshockXottoplus12",
+      "MSX++DEAD_PEOPLE",
+      "MXplus12_for_cosmetics",
+      "MSXotto+"
+    ],
+    "tiles-new": [
+      {
+        "file": "Zhigh_monster.png",
+        "tiles": [
+          { "id": "mon_Zhigh_finalboss1", "fg": 1 },
+          { "id": "mon_Zhigh_finalboss2", "fg": 2 },
+          { "id": "mon_Zhigh_finalboss3", "fg": 3 },
+          {
+            "id": "mon_Zhigh_finalboss4",
+            "fg": [
+              { "weight": 10, "sprite": 3 },
+              { "weight": 10, "sprite": 4 }
+            ],
+            "rotates": false,
+            "animated": true
+          },
+          {
+            "id": "mon_zombie_machine",
+            "fg": [
+              { "weight": 10, "sprite": 7 },
+              { "weight": 10, "sprite": 8 }
+            ],
+            "rotates": false,
+            "animated": true
+          }
+        ],
+        "//": "range 1 to 128",
+        "sprite_width": 64,
+        "sprite_height": 80,
+        "sprite_offset_x": -16,
+        "sprite_offset_y": -48
       }
     ]
   },
@@ -1087,7 +1155,12 @@
           { "id": "overlay_worn_demon_horns", "fg": 9 },
           { "id": "overlay_worn_bunny_earsB", "fg": 10 },
           { "id": "overlay_worn_bunny_earsW", "fg": 11 },
-          { "id": "overlay_worn_mask_Psychopath", "fg": 12 }
+          { "id": "overlay_worn_mask_Psychopath", "fg": 12 },
+          { "id": "overlay_worn_straw_hat_Asia", "fg": 13 },
+          { "id": "overlay_female_mutation_hair_black_long_ranger", "fg": 14 },
+          { "id": "overlay_male_mutation_hair_black_long_ranger", "fg": 14 },
+          { "id": "overlay_female_mutation_hair_green_crewcut_mint", "fg": 15 },
+          { "id": "overlay_male_mutation_hair_green_crewcut_mint", "fg": 15 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,
@@ -1270,6 +1343,7 @@
           { "id": "stim3BTG", "fg": 1 },
           { "id": "adrenaline_injector", "fg": 2 },
           { "id": "stimquikclot", "fg": 3 },
+          { "id": "stimETGChange", "fg": 4 },
           { "id": "stimL1", "fg": 5 },
           { "id": "stimMeldonin", "fg": 7 },
           { "id": "stimP22", "fg": 11 },
@@ -1288,6 +1362,7 @@
           { "id": "stimrx11", "fg": 24 },
           { "id": "stimrx12", "fg": 25 },
           { "id": "stimUdR513", "fg": 26 },
+          { "id": "stimHealingSerum", "fg": 27 },
           { "id": "stimantiflash", "fg": 28 },
           { "id": "reHerbGrn2", "fg": 32 },
           { "id": "reHerbGrnBlu", "fg": 33 },

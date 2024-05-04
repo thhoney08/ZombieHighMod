@@ -152,7 +152,7 @@
     "type": "talk_topic",
     "dynamic_line": {
       "npc_service": true,
-      "yes": "I can take a look at you or your companions if you are injured.  Supplies are in shortage, so unfortunately I'll have to ask you for 200 Merch, or 80 if it's just you.",
+      "yes": "I can take a look at you or your companions if you are injured.  Supplies are in shortage, so unfortunately I'll have to ask you for 6 first aid kits, or two if it's just you.",
       "no": "Come back later, I need to take care of a few things first."
     },
     "responses": [
@@ -203,22 +203,60 @@
   {
     "id": "MISSION_ZHIGH_MEDIC_2",
     "type": "mission_definition",
-    "name": { "str": "Collect 3 Hotplates" },
-    "goal": "MGOAL_FIND_ITEM",
-    "difficulty": 5,
+    "name": { "str": "Supply Run" },
+    "description": "Find and bring back 7 bandages and 20 charges of antiseptic from various locations.",
+    "goal": "MGOAL_CONDITION",
+    "goal_condition": {
+      "and": [
+        { "u_has_item": "bandages" },
+        { "u_has_item": "bandages" },
+        { "u_has_item": "bandages" },
+        { "u_has_item": "bandages" },
+        { "u_has_item": "bandages" },
+        { "u_has_item": "bandages" },
+        { "u_has_item": "bandages" },
+        { "u_has_item": "disinfectant" },
+        { "u_has_item": "disinfectant" },
+        { "u_has_item": "disinfectant" },
+        { "u_has_item": "disinfectant" },
+        { "u_has_item": "disinfectant" },
+        { "u_has_item": "disinfectant" },
+        { "u_has_item": "disinfectant" },
+        { "u_has_item": "disinfectant" },
+        { "u_has_item": "disinfectant" },
+        { "u_has_item": "disinfectant" },
+        { "u_has_item": "disinfectant" },
+        { "u_has_item": "disinfectant" },
+        { "u_has_item": "disinfectant" },
+        { "u_has_item": "disinfectant" },
+        { "u_has_item": "disinfectant" },
+        { "u_has_item": "disinfectant" },
+        { "u_has_item": "disinfectant" },
+        { "u_has_item": "disinfectant" },
+        { "u_has_item": "disinfectant" },
+        { "u_has_item": "disinfectant" }
+      ]
+    },
+    "end": {
+      "effect": 
+	  [
+        { "u_sell_item": "bandages", "count": 7 },
+        { "u_sell_item": "disinfectant", "count": 20 },
+        { "u_buy_item": "reHerbGrn2Red", "count": 3 }
+      ]
+    },
+    "difficulty": 1,
     "value": 50000,
-    "item": "hotplate",
-    "count": 3,
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_ZHIGH_MEDIC_3",
     "dialogue": {
       "describe": "We need help…",
-      "offer": "I was given a few bottles of bleach when I arrived but I need a number of hotplates to actually sterilize equipment.  I'm sure you can find them in any old house or appliance store.  Three should be enough for now.",
+      "offer": "I was given a few bottles of bleach when I arrived but I need a number of medical supplies to actually use.  I'm sure you can find them in any old house or a hospital.  I will give you the numbers of items in need.",
       "accepted": "I'm counting on you.",
       "rejected": "Come back when you get a chance.  We need skilled survivors.",
       "advice": "It should be a fairly common item, don't know what else to say.",
-      "inquire": "Do you have the hotplates?",
-      "success": "Thank you for your assistance.",
+      "inquire": "Do you have the medical supplies?",
+      "success": "It's awesome to meet someone who's responsible and willing to take risks for the greater good.  Thank you for your help.  Here is your reward.",
       "success_lie": "What good does this do us?",
       "failure": "It was a lost cause anyways…"
     }
@@ -236,7 +274,7 @@
     "followup": "MISSION_ZHIGH_MEDIC_4",
     "dialogue": {
       "describe": "We need help…",
-      "offer": "Disease is spreading rapidly due to poor nutrition and there is little that I can do about it.  With food being scarce, people are willing to survive on whatever they can.  I need to start supplementing the outpost's diet with vitamins to prevent potential deaths indirectly attributable to nutrition.  I know it is a lot but if you could bring me 200 multivitamin pills I'd be able to treat the most vulnerable before they spread anything to the rest of us.",
+      "offer": "Disease is spreading rapidly due to malnutrition and there is little that I can do about it.  With food being scarce, people are willing to survive on whatever they can.  I need to start supplementing the outpost's diet with vitamins to prevent potential deaths indirectly attributable to nutrition.  I know it is a lot but if you could bring me 200 multivitamin pills I'd be able to treat the most vulnerable before they spread anything to the rest of us.",
       "accepted": "I'm counting on you.",
       "rejected": "Come back when you get a chance.  We need skilled survivors.",
       "advice": "It should be a fairly common item, don't know what else to say.",
@@ -249,21 +287,20 @@
   {
     "id": "MISSION_ZHIGH_MEDIC_4",
     "type": "mission_definition",
-    "name": { "str": "Make 4 Charcoal Purifiers" },
+    "name": { "str": "Find or make a mechanical pump" },
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 5,
     "value": 50000,
-    "item": "char_purifier",
-    "count": 4,
+    "item": "well_pump",
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_ZHIGH_MEDIC_5",
     "dialogue": {
       "describe": "We need help…",
-      "offer": "Despite my recommendations, we continue to have travelers come in with illnesses I've been able to trace back to contaminated drinking water.  When boiling water isn't an option they need some form of charcoal water filter that they can use.  If you could build me four charcoal water filters I'll distribute them to groups as they pass through.",
+      "offer": "Despite my recommendations, we continue to have travelers come in with illnesses I've been able to trace back to dehydration.  We do need a pump that we can use if needed.  If you could build me a mechanical pump I'll let others to make the water system.",
       "accepted": "I'm counting on you.",
       "rejected": "Come back when you get a chance.  We need skilled survivors.",
       "advice": "With some basic survival and crafting skills you should be able to make them with little effort.",
-      "inquire": "Do you have the charcoal water filters?",
+      "inquire": "Do you have the pump?",
       "success": "Thank you for your assistance.",
       "success_lie": "What good does this do us?",
       "failure": "It was a lost cause anyways…"
@@ -272,20 +309,20 @@
   {
     "id": "MISSION_ZHIGH_MEDIC_5",
     "type": "mission_definition",
-    "name": { "str": "Find a Chemistry Set" },
+    "name": { "str": "The Cure Within" },
     "goal": "MGOAL_FIND_ITEM",
-    "difficulty": 5,
+    "difficulty": 10,
     "value": 50000,
-    "item": "chemistry_set",
+    "item": "reHerbGrn",
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_ZHIGH_MEDIC_6",
     "dialogue": {
       "describe": "We need help…",
-      "offer": "I've been working on producing some of our own medical supplies but I'm going to need a chemistry set to get everything that I need in order.  Is there any way you could go through one of the school chemistry labs and steal me a chemistry set?",
+      "offer": "I've been working on producing some of our own medical supplies but we do not have enough.  I read in a medical book that one can heal oneself with some herbs that you can find, so could you please bring ten green herbs for me?",
       "accepted": "I'm counting on you.",
       "rejected": "Come back when you get a chance.  We need skilled survivors.",
-      "advice": "You might be able to find one in a pharmacy if you can't find a school.",
-      "inquire": "Do you have the chemistry set?",
+      "advice": "You might be able to find one in a flower pot if you can't find them in a bush.",
+      "inquire": "Do you have the herbs?",
       "success": "Thank you for your assistance.",
       "success_lie": "What good does this do us?",
       "failure": "It was a lost cause anyways…"
@@ -294,17 +331,27 @@
   {
     "id": "MISSION_ZHIGH_MEDIC_6",
     "type": "mission_definition",
-    "name": { "str": "Find 10 Filter Masks" },
+    "name": { "str": "Find 5 Filter Masks" },
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 5,
     "value": 50000,
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_1_4", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_4", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 2, "value": 2 },
+      "effect": [
+        { "u_buy_item": "stimHealingSerum", "count": 1 }
+      ]
+    },
     "item": "mask_filter",
-    "count": 10,
+    "count": 5,
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_ZHIGH_MEDIC_7",
     "dialogue": {
       "describe": "We need help…",
-      "offer": "The number of airway infections that I've encountered in the past week has depleted my supply of masks.  Could you find me 10 filter masks?  I tend to only distribute them in severe cases so I'll be sure to make them last.",
+      "offer": "The number of airway infections that I've encountered in the past week has depleted my supply of masks.  Could you find me 5 filter masks?  I tend to only distribute them in severe cases so I'll be sure to make them last.",
       "accepted": "I'm counting on you.",
       "rejected": "Come back when you get a chance.  We need skilled survivors.",
       "advice": "You may be able to make one if you had the right guide.",
@@ -317,12 +364,22 @@
   {
     "id": "MISSION_ZHIGH_MEDIC_7",
     "type": "mission_definition",
-    "name": { "str": "Find 4 Pairs of Rubber Gloves" },
+    "name": { "str": "Find 2 Pairs of Rubber Gloves" },
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 5,
     "value": 50000,
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_1_3", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_3", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 2, "value": 2 },
+      "effect": [
+        { "u_buy_item": "stimHealingSerum", "count": 1 }
+      ]
+    },
     "item": "gloves_rubber",
-    "count": 4,
+    "count": 2,
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_ZHIGH_MEDIC_8",
     "dialogue": {
@@ -344,13 +401,23 @@
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 5,
     "value": 50000,
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_1_2", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_2", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 2, "value": 2 },
+      "effect": [
+        { "u_buy_item": "medkit1", "count": 1 }
+      ]
+    },
     "item": "scalpel",
     "count": 2,
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_ZHIGH_MEDIC_9",
     "dialogue": {
       "describe": "We need help…",
-      "offer": "I heard that we may have a physician on his way here.  The workers have already begun expanding the clinic but I need you to locate a pair of scalpels to use in surgery when he arrives.  I'm sure you should be able to find them in a hospital or craft shop.",
+      "offer": "Dr. Lee and I am the only ones you can call 'medical help' here.  The workers have already begun expanding the clinic but I need you to locate a pair of scalpels to use in surgery when he arrives.  I'm sure you should be able to find them in a hospital or craft shop.",
       "accepted": "I'm counting on you.",
       "rejected": "Come back when you get a chance.  We need skilled survivors.",
       "advice": "Hospitals and crafting stores should have a few.",
@@ -367,12 +434,22 @@
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 5,
     "value": 50000,
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 2, "value": 2 },
+      "effect": [
+        { "u_buy_item": "medkit1", "count": 1 }
+      ]
+    },
     "item": "emergency_book",
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_ZHIGH_MEDIC_10",
     "dialogue": {
       "describe": "We need help…",
-      "offer": "Have you heard of a book called the 'Guide to Advanced Emergency Care?'  I really need a copy.  The doctor is requesting a lot of supplies that I'm not familiar with but I believe I could make if I could get a copy of the book.",
+      "offer": "Have you heard of a book called the 'Guide to Advanced Emergency Care?'  I really need a copy.  We need a lot of supplies that I'm not familiar with but I believe I could make if I could get a copy of the book.",
       "accepted": "I'm counting on you.",
       "rejected": "Come back when you get a chance.  We need skilled survivors.",
       "advice": "Libraries are the only place I'd think to look.",
@@ -389,16 +466,26 @@
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 5,
     "value": 50000,
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_2_5", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_2_5", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 2, "value": 2 },
+      "effect": [
+        { "u_buy_item": "medkit1", "count": 1 }
+      ]
+    },
     "item": "1st_aid",
     "count": 2,
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_ZHIGH_MEDIC_11",
     "dialogue": {
       "describe": "We need help…",
-      "offer": "I need a first aid kit to help a person. It's not urgent, but I used the last one and need another.",
+      "offer": "I need two first aid kits to help a person. It's not urgent, but I used the last one and need another.",
       "accepted": "I'm counting on you.",
       "rejected": "Come back when you get a chance.  We need skilled survivors.",
-      "advice": "Hospitals or clinics might have a few sitting around.",
+      "advice": "Hospitals, clinics or the glass cabinets might have a few sitting around.",
       "inquire": "Do you have the first aid kit?",
       "success": "Thank you for your assistance.",
       "success_lie": "What good does this do us?",
@@ -411,7 +498,7 @@
     "name": { "str": "... is to take one." },
     "goal": "MGOAL_KILL_MONSTER_SPEC",
     "monster_species": "ZOMBIE",
-    "monster_kill_goal": 10,
+    "monster_kill_goal": 20,
     "difficulty": 5,
     "value": 25000,
     "end": {
@@ -420,20 +507,20 @@
       ],
       "opinion": { "trust": 2, "value": 2 },
       "effect": [
-        { "u_buy_item": "medkit2", "count": 2 }
+        { "u_buy_item": "medkit2", "count": 3 }
       ]
     },
     "origins": [ "ORIGIN_SECONDARY" ],
-    "followup": "MISSION_SCHOOL_KILL_ROOFTOP_ZED",
+    "followup": "MISSION_ZHIGH_MEDIC_12",
     "dialogue": {
       "describe": "You seem to know this new world better than most…",
-      "offer": "You're kitted out better than most… would you be interested in making this world a little better for the rest of us?  The towns have enough supplies for us survivors to start securing a foothold but we don't have anyone with the skills and equipment to thin the masses of undead.  You and 10 zombies laid to rest, what do you say?",
-      "accepted": "Hell ya, we may get ourselves killed but we'll be among the first legends of the apocalypse.",
-      "rejected": "Hey, I know I wouldn't volunteer for it either… but then I remember that most of us survivors won't make it unless someone decides to take the initiative.",
-      "advice": "I'd secure an ammo cache and try to sweep a town in multiple passes.",
+      "offer": "You're kitted out better than most… would you be interested in making this world a little better for the rest of us?  The school have enough supplies for us survivors to start securing a foothold but we don't have anyone with the skills and equipment to thin the masses of undead.  Twenty zombie sweep, what do you say?",
+      "accepted": "Thank you for taking on the quest to eliminate 20 zombies—your bravery keeps us safe!",
+      "rejected": "I understand your hesitation, but if you reconsider, your bravery could make a big difference — please think about it again.",
+      "advice": "I'd secure an ammo cache and try to sweep a town in multiple passes.  Also grab some explosives if needed.",
       "inquire": "Got this knocked out?",
       "success": "Man… you're a goddamn machine.  It was a pleasure working with you.  You know, you may just change our little neck of the world if you keep this up.",
-      "success_lie": "I don't think that was quite a hundred dead zeds.",
+      "success_lie": "I don't think that was quite a twenty dead zeds.",
       "failure": "Quitting already?"
     }
   },

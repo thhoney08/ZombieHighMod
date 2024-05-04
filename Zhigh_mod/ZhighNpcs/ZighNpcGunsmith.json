@@ -31,7 +31,7 @@
     "type": "trait_group",
     "id": "Appearance_GunSmith",
     "subtype": "collection",
-    "traits": [ { "trait": "eye_brown" }, { "trait": "SKIN_MEDIUM" } ]
+    "traits": [ { "trait": "eye_red" }, { "trait": "SKIN_MEDIUM" } ]
   },
   {
     "type": "npc_class",
@@ -175,16 +175,6 @@
         "topic": "TALK_GUNSMITH_GUNDEAL_END"
       },
       {
-        "text": "[5$]  I'll buy a bag of BBs.",
-        "effect": [ { "u_buy_item": "bb", "cost": 500, "count": 500 } ],
-        "topic": "TALK_GUNSMITH_GUNDEAL_END"
-      },
-      {
-        "text": "[2$]  I'll buy a bag of plastic BBs.",
-        "effect": [ { "u_buy_item": "bbPlastic", "cost": 200, "count": 500 } ],
-        "topic": "TALK_GUNSMITH_GUNDEAL_END"
-      },
-      {
         "text": "[100$]  I'll buy a paintball gun.",
         "effect": [ { "u_buy_item": "paintballgun", "cost": 10000, "count": 1 } ],
         "topic": "TALK_GUNSMITH_GUNDEAL_END"
@@ -225,41 +215,6 @@
         "topic": "TALK_GUNSMITH_GUNDEAL_END"
       },
       {
-        "text": "[20$]  I'll buy a bag of paintballs.",
-        "effect": [ { "u_buy_item": "paintball", "cost": 2000, "count": 100 } ],
-        "topic": "TALK_GUNSMITH_GUNDEAL_END"
-      },
-      {
-        "text": "[25$]  I'll buy a bag of acid paintballs.",
-        "effect": [ { "u_buy_item": "paintball_acid", "cost": 2500, "count": 50 } ],
-        "topic": "TALK_GUNSMITH_GUNDEAL_END"
-      },
-      {
-        "text": "[25$]  I'll buy a bag of shot paintballs.",
-        "effect": [ { "u_buy_item": "paintball_shot", "cost": 2500, "count": 50 } ],
-        "topic": "TALK_GUNSMITH_GUNDEAL_END"
-      },
-      {
-        "text": "[35$]  I'll buy a bag of pepperballs.",
-        "effect": [ { "u_buy_item": "paintball_tg", "cost": 3500, "count": 50 } ],
-        "topic": "TALK_GUNSMITH_GUNDEAL_END"
-      },
-      {
-        "text": "[50$]  I'll buy a bag of explosive paintballs.",
-        "effect": [ { "u_buy_item": "paintball_exp", "cost": 5000, "count": 50 } ],
-        "topic": "TALK_GUNSMITH_GUNDEAL_END"
-      },
-      {
-        "text": "[25$]  I'll buy a bag of beanbag paintballs.",
-        "effect": [ { "u_buy_item": "paintball_beanb", "cost": 2500, "count": 50 } ],
-        "topic": "TALK_GUNSMITH_GUNDEAL_END"
-      },
-      {
-        "text": "[25$]  I'll buy a bag of glow in the dark paintballs.",
-        "effect": [ { "u_buy_item": "paintball_glow", "cost": 2500, "count": 50 } ],
-        "topic": "TALK_GUNSMITH_GUNDEAL_END"
-      },
-      {
         "text": "[20$]  I'll buy a cash blaster.",
         "effect": [ { "u_buy_item": "cash_blaster", "cost": 2000, "count": 1 } ],
         "topic": "TALK_GUNSMITH_GUNDEAL_END"
@@ -283,23 +238,23 @@
     "responses": [
       { "text": "Nevermind.", "topic": "TALK_DONE" },
       {
-        "text": "[80$]  I'll buy some marble gun.",
-        "effect": [ { "u_buy_item": "marble_gun", "cost": 8000, "count": 1 } ],
+        "text": "[180$]  I'll buy a marble gun.",
+        "effect": [ { "u_buy_item": "marble_gun", "cost": 18000, "count": 1 } ],
         "topic": "TALK_GUNSMITH_GUNDEAL_END"
       },
       {
-        "text": "[80$]  I'll buy a pump slingshot.",
-        "effect": [ { "u_buy_item": "marble_pump_gun", "cost": 8000, "count": 1 } ],
-        "topic": "TALK_GUNSMITH_GUNDEAL_END"
-      },
-      {
-        "text": "[80$]  I'll buy a BB pistol.",
-        "effect": [ { "u_buy_item": "bbpistol", "cost": 8000, "count": 1 } ],
+        "text": "[180$]  I'll buy a pump slingshot.",
+        "effect": [ { "u_buy_item": "marble_pump_gun", "cost": 18000, "count": 1 } ],
         "topic": "TALK_GUNSMITH_GUNDEAL_END"
       },
       {
         "text": "[80$]  I'll buy a BB gun.",
         "effect": [ { "u_buy_item": "bbgun", "cost": 8000, "count": 1 } ],
+        "topic": "TALK_GUNSMITH_GUNDEAL_END"
+      },
+      {
+        "text": "[80$]  I'll buy a BB pistol.",
+        "effect": [ { "u_buy_item": "bbpistol", "cost": 8000, "count": 1 } ],
         "topic": "TALK_GUNSMITH_GUNDEAL_END"
       },
       {
@@ -333,16 +288,6 @@
         "topic": "TALK_GUNSMITH_GUNDEAL_END"
       },
       {
-        "text": "[5$]  I'll buy a bag of BBs.",
-        "effect": [ { "u_buy_item": "bb", "cost": 500, "count": 500 } ],
-        "topic": "TALK_GUNSMITH_GUNDEAL_END"
-      },
-      {
-        "text": "[2$]  I'll buy a bag of plastic BBs.",
-        "effect": [ { "u_buy_item": "bbPlastic", "cost": 200, "count": 500 } ],
-        "topic": "TALK_GUNSMITH_GUNDEAL_END"
-      },
-      {
         "text": "[100$]  I'll buy a paintball gun.",
         "effect": [ { "u_buy_item": "paintballgun", "cost": 10000, "count": 1 } ],
         "topic": "TALK_GUNSMITH_GUNDEAL_END"
@@ -380,41 +325,6 @@
       {
         "text": "[20$]  I'll buy a roman candle.",
         "effect": [ { "u_buy_item": "Rc_Packed", "cost": 2000, "count": 1 } ],
-        "topic": "TALK_GUNSMITH_GUNDEAL_END"
-      },
-      {
-        "text": "[20$]  I'll buy a bag of paintballs.",
-        "effect": [ { "u_buy_item": "paintball", "cost": 2000, "count": 100 } ],
-        "topic": "TALK_GUNSMITH_GUNDEAL_END"
-      },
-      {
-        "text": "[25$]  I'll buy a bag of acid paintballs.",
-        "effect": [ { "u_buy_item": "paintball_acid", "cost": 2500, "count": 50 } ],
-        "topic": "TALK_GUNSMITH_GUNDEAL_END"
-      },
-      {
-        "text": "[25$]  I'll buy a bag of shot paintballs.",
-        "effect": [ { "u_buy_item": "paintball_shot", "cost": 2500, "count": 50 } ],
-        "topic": "TALK_GUNSMITH_GUNDEAL_END"
-      },
-      {
-        "text": "[35$]  I'll buy a bag of pepperballs.",
-        "effect": [ { "u_buy_item": "paintball_tg", "cost": 3500, "count": 50 } ],
-        "topic": "TALK_GUNSMITH_GUNDEAL_END"
-      },
-      {
-        "text": "[50$]  I'll buy a bag of explosive paintballs.",
-        "effect": [ { "u_buy_item": "paintball_exp", "cost": 5000, "count": 50 } ],
-        "topic": "TALK_GUNSMITH_GUNDEAL_END"
-      },
-      {
-        "text": "[25$]  I'll buy a bag of beanbag paintballs.",
-        "effect": [ { "u_buy_item": "paintball_beanb", "cost": 2500, "count": 50 } ],
-        "topic": "TALK_GUNSMITH_GUNDEAL_END"
-      },
-      {
-        "text": "[25$]  I'll buy a bag of glow in the dark paintballs.",
-        "effect": [ { "u_buy_item": "paintball_glow", "cost": 2500, "count": 50 } ],
         "topic": "TALK_GUNSMITH_GUNDEAL_END"
       },
       {

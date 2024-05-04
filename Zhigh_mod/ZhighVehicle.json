@@ -5,6 +5,95 @@
     "vehicles": [ [ "schoolbusZhigh", 1000 ] ]
   },
   {
+    "type": "vehicle_group",
+    "id": "buses",
+    "vehicles": [
+	  [ "schoolbusZhigh", 5 ],
+	  [ "bus", 1000 ],
+	  [ "schoolbus", 100 ],
+	  [ "bus_tour", 50 ]
+    ]
+  },
+  {
+    "type": "vehicle_group",
+    "id": "speedway_bike",
+    "vehicles": [
+      [ "goKartZhigh", 5 ],
+	  [ "motorcycle", 690 ],
+	  [ "superbike", 200 ],
+	  [ "motorcycle_sidecart", 100 ],
+	  [ "scooter", 10 ]
+    ]
+  },
+  {
+    "type": "vehicle_group",
+    "id": "dirtlot",
+    "vehicles": [
+      [ "goKartZhigh", 100 ],
+      [ "quad_bike", 100 ],
+      [ "pickup", 240 ],
+      [ "pickup_diesel", 60 ],
+      [ "bicycle_dirt", 100 ],
+      [ "motorcycle_cross", 75 ],
+      [ "motorcycle_enduro", 150 ]
+    ]
+  },
+  {
+    "type": "vehicle_group",
+    "id": "back_alley",
+    "//": "for city block back alleys, must be 3 tiles wide or less",
+    "vehicles": [
+      [ "bicycle", 800 ],
+      [ "autosweeper", 100 ],
+      [ "bicycle_electric", 600 ],
+      [ "bicycle_dirt", 750 ],
+      [ "unicycle", 50 ],
+      [ "scooter", 100 ],
+      [ "scooter_electric", 50 ],
+      [ "tandem", 300 ],
+      [ "tricycle", 20 ],
+      [ "motorcycle", 200 ],
+      [ "motorcycle_cross", 150 ],
+      [ "motorcycle_enduro", 100 ],
+      [ "superbike", 100 ],
+      [ "motorcycle_sidecart", 100 ],
+      [ "goKartZhigh", 50 ],
+      [ "golf_cart", 10 ],
+      [ "golf_cart_4seat", 10 ]
+    ]
+  },
+  {
+    "id": "garage",
+    "type": "vehicle_group",
+    "vehicles": [
+      [ "car", 5 ],
+      [ "car_hatch", 2 ],
+      [ "car_chassis", 20 ],
+      [ "engine_crane", 40 ],
+      [ "goKartZhigh", 30 ],
+      [ "motorcycle", 10 ],
+      [ "motorcycle_chassis", 20 ],
+      [ "portable_generator", 20 ],
+      [ "quad_bike", 10 ],
+      [ "quad_bike_chassis", 20 ],
+      [ "car_racing_electric", 5 ],
+      [ "superbike", 5 ],
+      [ "welding_cart", 20 ],
+      [ "whillys_mb", 50 ]
+    ]
+  },
+  {
+    "id": "goKartZhigh",
+    "type": "vehicle",
+    "name": "handmade go kart",
+    "blueprint": [ "oo" ],
+    "parts": [
+      { "x": 1, "y": 0, "parts": [ "frame_vertical_2", "engine_vtwin", "alternator_motorbike", "battery_motorbike", "wheel_mount_light", "wheel_wheelchair" ] },
+      { "x": 0, "y": 0, "parts": [ "frame_vertical_2", "seat", "wheel_mount_light", "wheel_wheelchair", "controls", "controls_electronic" ] },
+      { "x": 0, "y": 0, "parts": [ { "part": "tank_small", "fuel": "gasoline" } ] }
+    ]
+  },
+  {
     "id": "schoolbusZhigh",
     "type": "vehicle",
     "name": "Schoolbus",

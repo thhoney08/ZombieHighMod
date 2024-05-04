@@ -1,91 +1,5 @@
 [
   {
-    "id": "mlbrick",
-    "type": "GENERIC",
-    "copy-from": "blackjack",
-    "name": { "str": "millwall brick" },
-    "description": "Nothing but rolls of newspaper, used as an improvised club. Although it is easy to create, it is pretty fragile.",
-    "weight": "30 g",
-    "price_postapoc": "10 USD",
-    "material": [ "paper" ],
-    "techniques": [ "WBLOCK_1" ],
-    "bashing": 10,
-    "flags": [ "FRAGILE_MELEE", "NONCONDUCTIVE" ],
-    "price": "2 USD"
-  },
-  {
-    "id": "stick_swag",
-    "type": "GENERIC",
-    "category": "weapons",
-    "weapon_category": [ "BATONS" ],
-    "symbol": "/",
-    "color": "brown",
-    "name": { "str": "swagger stick" },
-    "description": "A smooth and sturdy staff with a leather-wrapped grip. Normally this is used to control a band, it could be as a mace-like weapon if needed.",
-    "price": "400 USD",
-    "price_postapoc": "100 USD",
-    "material": [ "wood", "steel", "gold" ],
-    "techniques": [ "PRECISE", "RAPID", "SWEEP" ],
-    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NONCONDUCTIVE", "SHEATH_SPEAR" ],
-    "weight": "1200 g",
-    "volume": "1 L",
-    "bashing": 12,
-    "to_hit": 3
-  },
-  {
-    "id": "stick_swag_red",
-    "copy-from": "stick_swag",
-    "type": "GENERIC",
-    "category": "weapons",
-    "name": { "str": "ruby staff" }
-  },
-  {
-    "id": "stick_swag_blue",
-    "copy-from": "stick_swag",
-    "type": "GENERIC",
-    "category": "weapons",
-    "name": { "str": "sapphire staff" }
-  },
-  {
-    "id": "stick_swag_wand_red",
-    "copy-from": "stick_swag",
-    "type": "GENERIC",
-    "category": "weapons",
-    "name": { "str": "magical ruby staff" }
-  },
-  {
-    "id": "stick_swag_wand_blue",
-    "copy-from": "stick_swag",
-    "type": "GENERIC",
-    "category": "weapons",
-    "name": { "str": "magical sapphire staff" }
-  },
-  {
-    "id": "staff_fancy_zhigh",
-    "copy-from": "i_staff",
-    "type": "GENERIC",
-    "category": "weapons",
-    "name": { "str": "fancy staff" }
-  },
-  {
-    "id": "staff_spring_zhigh",
-    "copy-from": "i_staff",
-    "type": "GENERIC",
-    "category": "weapons",
-    "material": [ "steel" ],
-    "name": { "str": "metal staff" }
-  },
-  {
-    "id": "bo_zhigh",
-    "copy-from": "q_staff",
-    "type": "GENERIC",
-    "category": "weapons",
-    "material": [ "steel" ],
-    "name": { "str": "bo staff" },
-    "description": "A smooth and sturdy staff with a leather-wrapped grip.  Light and well-balanced, it is surprisingly easy to handle.  Enhanced with extra grip, it makes the weapon deadlier.",
-    "bashing": 24
-  },
-  {
     "id": "frog_umbrella_close",
     "type": "GENERIC",
     "copy-from": "cane",
@@ -124,23 +38,6 @@
         "msg": "You closed your umbrella, ready to use it as an improvised weapon."
       },
      "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "STAB", "RAIN_PROTECT" ]
-  },
-  {
-    "type": "GENERIC",
-    "copy-from": "throwing_knife",
-    "id": "throwing_knife_scrap",
-    "category": "weapons",
-    "price": "520 USD",
-    "price_postapoc": "50 USD",
-    "name": { "str": "scrap throwing knife", "str_pl": "scrap throwing knives" },
-    "symbol": ";",
-    "color": "light_gray",
-    "description": "A thin and flat knife made for throwing.  Its ineffective cutting edge and odd shape makes it unsuitable for use as a tool. Plus, it is made from scrap, so it is quite unreliable.",
-    "material": "steel",
-    "volume": "100 ml",
-    "weight": "110 g",
-    "cutting": 8,
-    "thrown_damage": [ { "damage_type": "stab", "amount": 11 } ]
   },
   {
     "id": "selfie_stick",
@@ -189,62 +86,6 @@
     "bashing": 5
   },
   {
-    "id": "katana_hm",
-    "type": "GENERIC",
-    "category": "weapons",
-    "weapon_category": [ "SHORT_SWORDS", "1H_SWORDS", "JAPANESE_SWORDS" ],
-    "name": { "str": "el verdugo" },
-    "description": "A katana-shaped machete, which has a crimson red grip.",
-    "weight": "800 g",
-    "volume": "1 L",
-    "price": "6000 USD",
-    "price_postapoc": "1500 USD",
-    "to_hit": 2,
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WIELD",
-          "condition": "ALWAYS",
-          "values": [ { "value": "ARMOR_ELEC", "multiply": -1.0 }, { "value": "SPEED", "add": 30 } ],
-          "hit_you_effect": [
-            {
-              "id": "zhigh_regen",
-              "message": "Your wounds regenerate as you chop %2$s down.",
-              "npc_message": "%1$s's wounds disappear as they chop %2$s down."
-            }
-          ]
-        }
-      ]
-    },
-    "bashing": 6,
-    "cutting": 25,
-    "material": "steel",
-    "symbol": "/",
-    "color": "light_gray",
-    "techniques": [ "RAPID", "WBLOCK_2" ],
-    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 9 ] ],
-    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NONCONDUCTIVE" ]
-  },
-  {
-    "id": "gunstock_club",
-    "type": "GENERIC",
-    "category": "weapons",
-    "weapon_category": [ "BATONS" ],
-    "name": { "str": "gunstock war club" },
-    "description": "An oddly shpaed wood looking like a rifle, is called a gunstock due to its shape and useage of it. Was used by Native Americans. Also have a sharp point to pick some brains out.",
-    "weight": "450 g",
-    "to_hit": 1,
-    "price_postapoc": "250 USD",
-    "color": "brown",
-    "symbol": "/",
-    "material": [ "wood", "stone" ],
-    "techniques": [ "WBLOCK_2", "WIDE", "SWEEP" ],
-    "volume": "600 ml",
-    "bashing": 20,
-    "flags": [ "BELT_CLIP", "DURABLE_MELEE", "NONCONDUCTIVE", "SHEATH_AXE" ],
-    "price": "1000 USD"
-  },
-  {
     "id": "zhigh_smart_phone",
     "type": "TOOL",
     "category": "tools",
@@ -286,57 +127,6 @@
     "flags": [ "WATCH", "BELT_CLIP", "LIGHT_500", "TRADER_AVOID", "ALARMCLOCK", "TWO_WAY_RADIO", "NO_UNLOAD", "NO_RELOAD" ]
   },
   {
-    "id": "thunderball",
-    "type": "GENERIC",
-    "category": "weapons",
-    "weapon_category": [ "SAPS" ],
-    "symbol": ";",
-    "color": "white",
-    "name": { "str": "thunderball" },
-    "description": "A rock tied to some kind of rope, you can use this in an emergency.",
-    "price": "1000 USD",
-    "price_postapoc": "100 USD",
-    "material": [ "cotton", "stone" ],
-    "weight": "800 g",
-    "volume": "300 ml",
-    "bashing": 6,
-    "to_hit": 1,
-    "flags": [ "BELT_CLIP", "WHIP" ],
-    "qualities": [ [ "HAMMER", 1 ] ]
-  },
-  {
-    "id": "knuckle_elec",
-    "type": "TOOL",
-    "category": "weapons",
-    "copy-from": "tazer",
-    "weapon_category": [ "FIST_WEAPONS" ],
-    "symbol": "3",
-    "color": "dark_gray",
-    "name": { "str": "pair of shock knuckles", "str_pl": "pairs of shock knuckles" },
-    "description": "A mass of scrap metal crudely beat into shape, with folded rags underneath to protect the wearers knuckles.  A good, quick weapon - but you have to get within punching range to use it. An integrated tazer will make the job easier, by shocking the enemies. Activate to skock them.",
-    "material": "steel",
-    "volume": "300 ml",
-    "weight": "530 g",
-    "bashing": 8,
-    "price_postapoc": "50 USD",
-    "qualities": [ [ "HAMMER", 1 ] ],
-    "flags": [ "UNARMED_WEAPON", "NONCONDUCTIVE", "BELT_CLIP" ]
-  },
-  {
-    "id": "camp_chair_zhigh",
-    "type": "GENERIC",
-    "copy-from": "camp_chair",
-    "category": "tools",
-    "material": [ "plastic", "steel" ],
-    "name": { "str": "camp chair (weapon)" },
-    "description": "Folded camp chair, now bound with duct tape to use it as a weapon.  Somehow it is much lighter than the original.",
-    "to_hit": 3,
-    "weight": "950 g",
-    "bashing": 35,
-    "flags": [ "DURABLE_MELEE", "ALWAYS_TWOHAND", "NONCONDUCTIVE" ],
-    "techniques": [ "WBLOCK_2", "WIDE", "SWEEP" ]
-  },
-  {
     "id": "KorGong",
     "type": "TOOL",
     "category": "tools",
@@ -365,219 +155,6 @@
         "You play a piece on your korean gong that would sound harmonious with drums."
       ]
     }
-  },
-  {
-    "id": "karambit",
-    "type": "GENERIC",
-    "category": "weapons",
-    "weapon_category": [ "KNIVES" ],
-    "name": { "str": "karambit" },
-    "description": "The karambit is a small Indonesian curved knife resembling a claw. It is one of the weapons commonly used in pencak silat and Indonesian martial arts.",
-    "looks_like": "kukri",
-    "weight": "350 g",
-    "volume": "450 ml",
-    "price": "1800 USD",
-    "to_hit": 1,
-    "price_postapoc": "250 USD",
-    "bashing": 1,
-    "cutting": 16,
-    "material": [ "plastic", "steel" ],
-    "symbol": "/",
-    "color": "dark_gray",
-    "techniques": [ "RAPID", "PRECISE" ],
-    "qualities": [ [ "CUT", 3 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 8 ] ],
-    "flags": [ "STAB", "SHEATH_KNIFE", "NONCONDUCTIVE", "DURABLE_MELEE" ]
-  },
-  {
-    "id": "baton_light",
-    "type": "TOOL",
-    "copy-from": "cudgel",
-    "weapon_category": [ "BATONS" ],
-    "name": { "str": "light baton" },
-    "description": "A slender long rod of plastic cudgel, while traditionally intended as a tool for controlling traffic and people, it still makes a good melee weapon in a pinch.",
-    "weight": "500 g",
-    "color": "red",
-    "material": [ "plastic" ],
-    "bashing": 10,
-    "flags": [ "BELT_CLIP" ],
-    "charges_per_use": 1,
-    "ammo": "battery",
-    "use_action": {
-      "type": "transform",
-      "msg": "You turn the light baton on.",
-      "target": "baton_light_on",
-      "active": true,
-      "menu_text": "Turn on",
-      "need_charges": 1,
-      "need_charges_msg": "The flashlight's batteries are dead."
-    },
-    "magazines": [
-      [
-        "battery",
-        [
-          "light_disposable_cell",
-          "light_minus_disposable_cell",
-          "light_battery_cell",
-          "light_plus_battery_cell",
-          "light_minus_battery_cell",
-          "light_atomic_battery_cell",
-          "light_minus_atomic_battery_cell"
-        ]
-      ]
-    ],
-   "magazine_well": "100 ml"
-  },
-  {
-    "id": "baton_light_on",
-    "copy-from": "baton_light",
-    "type": "TOOL",
-    "name": { "str": "light baton (on)" },
-    "power_draw": 100000,
-    "use_action": { "menu_text": "Turn off", "type": "transform", "msg": "You turn the light baton off.", "target": "baton_light" },
-    "flags": [ "LIGHT_20", "TRADER_AVOID", "BELT_CLIP" ]
-  },
-  {
-    "type": "AMMO",
-    "id": "throwing_card_spade",
-    "category": "weapons",
-    "price": "5 USD",
-    "price_postapoc": "1 USD",
-    "name": { "str": "spade throwing card", "str_pl": "spade throwing cards" },
-    "symbol": ";",
-    "color": "light_gray",
-    "description": "A thin and flat spade card made for throwing.",
-    "material": "paper",
-    "volume": "2 ml",
-    "weight": "2 g",
-    "cutting": 6,
-    "count": 12,
-    "stack_size": 12,
-    "ammo_type": "thrown",
-    "flags": [ "NPC_THROWN" ],
-    "thrown_damage": [ { "damage_type": "stab", "amount": 6 } ]
-  },
-  {
-    "type": "AMMO",
-    "id": "throwing_card_club",
-    "looks_like": "throwing_card_spade",
-    "category": "weapons",
-    "price": "5 USD",
-    "price_postapoc": "1 USD",
-    "name": { "str": "club throwing card", "str_pl": "club throwing cards" },
-    "symbol": ";",
-    "color": "light_gray",
-    "description": "A thin and flat club card made for throwing.",
-    "material": "paper",
-    "volume": "2 ml",
-    "weight": "2 g",
-    "cutting": 1,
-    "count": 12,
-    "stack_size": 12,
-    "ammo_type": "thrown",
-    "flags": [ "NOGIB", "TANGLE", "NPC_THROWN" ],
-    "thrown_damage": [ { "damage_type": "bullet", "amount": 6 } ]
-  },
-  {
-    "type": "AMMO",
-    "id": "throwing_card_diam",
-    "looks_like": "throwing_card_spade",
-    "category": "weapons",
-    "price": "5 USD",
-    "price_postapoc": "1 USD",
-    "name": { "str": "diamond throwing card", "str_pl": "diamond throwing cards" },
-    "symbol": ";",
-    "color": "light_gray",
-    "description": "A thin and flat diamond card made for throwing.",
-    "material": "paper",
-    "volume": "2 ml",
-    "weight": "2 g",
-    "bashing": 1,
-    "count": 12,
-    "stack_size": 12,
-    "ammo_type": "thrown",
-    "flags": [ "NPC_THROWN" ],
-    "thrown_damage": [ { "damage_type": "heat", "amount": 7 } ]
-  },
-  {
-    "type": "AMMO",
-    "id": "throwing_card_hear",
-    "looks_like": "throwing_card_spade",
-    "category": "weapons",
-    "price": "5 USD",
-    "price_postapoc": "1 USD",
-    "name": { "str": "heart throwing card", "str_pl": "heart throwing cards" },
-    "symbol": ";",
-    "color": "light_gray",
-    "description": "A thin and flat heart card made for throwing.",
-    "material": "paper",
-    "volume": "2 ml",
-    "weight": "2 g",
-    "bashing": 1,
-    "count": 12,
-    "stack_size": 12,
-    "ammo_type": "thrown",
-    "flags": [ "NPC_THROWN" ],
-    "thrown_damage": [ { "damage_type": "bash", "amount": 7 } ]
-  },
-  {
-	"id": "zap_grenade",
-	"type": "TOOL",
-	"copy-from": "grenade_canister",
-	"looks_like": "grenade_emp",
-	"name": "zapper grenade",
-	"description": "Zapper grenade is an improvised grenade which, when pin is pulled, emits a cloud of electricity which can shock your enemies; but be careful, it will also shock you if you are nearby.",
-	"countdown_action": { "menu_text": "Pull pin", "type": "transform", "target": "zap_grenade_act" }
-  },
-  {
-	"id": "zap_grenade_act",
-	"type": "TOOL",
-	"copy-from": "zap_grenade",
-	"name": "armed zapper grenade",
-	"description": "This zapper grenade currently lost its pin, thus creating a dangerous electric field.",
-	"emits": [ "emit_shock_cloud" ],
-	"countdown_interval": 30,
-	"countdown_action": { "type": "transform", "target": "canister_empty" },
-	"flags": [ "TRADER_AVOID" ]
-  },
-  {
-	"id": "rad_grenade",
-	"type": "TOOL",
-	"copy-from": "grenade_canister",
-	"looks_like": "grenade_emp",
-	"name": "radioactive grenade",
-	"description": "Radioactive grenade is an improvised grenade which, when pin is pulled, emits a cloud of radiation which can damage your enemies; but be careful, it will also affect you if you are nearby.",
-	"countdown_action": { "menu_text": "Pull pin", "type": "transform", "target": "rad_grenade_act" }
-  },
-  {
-	"id": "rad_grenade_act",
-	"type": "TOOL",
-	"copy-from": "rad_grenade",
-	"name": "armed radioactive grenade",
-	"description": "This radioactive grenade currently lost its pin, thus creating a dangerous radioactive field.",
-	"emits": [ "emit_nuke_cloud" ],
-	"countdown_interval": 30,
-	"countdown_action": { "type": "transform", "target": "canister_empty" },
-	"flags": [ "TRADER_AVOID" ]
-   },
-   {
-	"id": "cryo_grenade",
-	"type": "TOOL",
-	"copy-from": "grenade_canister",
-	"looks_like": "grenade_emp",
-	"name": "cryo grenade",
-	"description": "Cryo grenade is an improvised grenade which, when pin is pulled, emits a cloud of liquid nitrogen which can damage your enemies; but be careful, it will also affect you if you are nearby.",
-	"countdown_action": { "menu_text": "Pull pin", "type": "transform", "target": "cryo_grenade_act" }
-  },
-  {
-	"id": "cryo_grenade_act",
-	"type": "TOOL",
-	"copy-from": "cryo_grenade",
-	"name": "armed cryo grenade",
-	"description": "This cryo grenade currently lost its pin, thus creating a dangerous cryo field.",
-	"emits": [ "emit_freeze_cloud_big" ],
-	"countdown_interval": 30,
-	"countdown_action": { "type": "transform", "target": "canister_empty" },
-	"flags": [ "TRADER_AVOID" ]
   },
   {
     "id": "flashlight_hk",
@@ -633,24 +210,6 @@
     "flags": [ "LIGHT_300", "TRADER_AVOID", "BELT_CLIP" ]
   },
   {
-    "id": "woodenKnife",
-    "type": "GENERIC",
-    "category": "weapons",
-    "weapon_category": [ "KNIVES" ],
-    "name": { "str": "wooden knife" },
-    "description": "A model knife, made out of wood. Still a good weapon if needed, but will not last for long.",
-    "weight": "558 g",
-    "volume": "500 ml",
-    "to_hit": 2,
-    "bashing": 14,
-    "material": "wood",
-    "symbol": "/",
-    "color": "dark_gray",
-    "techniques": "RAPID",
-    "flags": [ "DURABLE_MELEE", "SHEATH_KNIFE", "NONCONDUCTIVE" ],
-    "thrown_damage": [ { "damage_type": "bash", "amount": 14 } ]
-  },
-  {
     "id": "crovel",
     "type": "GENERIC",
     "category": "tools",
@@ -693,16 +252,6 @@
     "techniques": [ "WBLOCK_1" ],
     "use_action": "PICKAXE",
     "flags": [ "NONCONDUCTIVE", "BELT_CLIP" ]
-  },
-  {
-    "id": "staff_skull",
-    "copy-from": "stick_swag",
-    "type": "GENERIC",
-    "category": "weapons",
-    "weapon_category": [ "BATONS" ],
-    "name": { "str": "skull staff" },
-    "description": "A smooth and sturdy staff with a leather-wrapped grip. This could be as a mace-like weapon if needed.",
-    "bashing": 19
   },
   {
     "id": "pencil",
@@ -803,71 +352,6 @@
     "flags": [ "STAB", "FIRESTARTER", "BELT_CLIP" ]
   },
   {
-    "id": "improvised_colabomb",
-    "type": "TOOL",
-    "category": "weapons",
-    "name": { "str": "cola bomb" },
-    "looks_like": "pipebomb",
-    "description": "This is a plastic bottle filled with cola and a candy.  Use this item to activate, which gives you six seconds to get away from it before it detonates.",
-    "weight": "710 g",
-    "volume": "250 ml",
-    "price": "150 USD",
-    "to_hit": 1,
-    "bashing": 5,
-    "material": "plastic",
-    "symbol": "*",
-    "color": "light_gray",
-    "explode_in_fire": true,
-    "explosion": {
-      "damage": 12,
-      "radius": 1
-    },
-    "use_action": {
-      "target": "improvised_colabomb_act",
-      "msg": "You activate the cola bomb.",
-      "target_charges": 6,
-      "active": true,
-      "menu_text": "Activate",
-      "type": "transform"
-    },
-    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
-  },
-  {
-    "id": "improvised_colabomb_act",
-    "type": "TOOL",
-    "category": "weapons",
-    "name": { "str": "active cola bomb" },
-    "looks_like": "pipebomb_act",
-    "description": "This cola bomb's fuse is lit, and it will explode any second now.  Throw it immediately!",
-    "weight": "710 g",
-    "volume": "250 ml",
-    "price": "0 USD",
-    "to_hit": 1,
-    "bashing": 5,
-    "material": "steel",
-    "symbol": "*",
-    "color": "light_gray",
-    "initial_charges": 6,
-    "max_charges": 6,
-    "turns_per_charge": 1,
-    "explode_in_fire": true,
-    "explosion": {
-      "damage": 12,
-      "radius": 1
-    },
-    "use_action": {
-      "type": "explosion",
-      "sound_volume": 0,
-      "sound_msg": "ssss...",
-      "no_deactivate_msg": "You've already lit the %s, try throwing it instead.",
-      "explosion": {
-        "damage": 60,
-        "radius": 2
-      }
-    },
-    "flags": [ "TRADER_AVOID" ]
-  },
-  {
     "id": "ultimatemap",
     "copy-from": "abstractmap",
     "type": "GENERIC",
@@ -894,37 +378,6 @@
         "police", "mil_base_road_entrance"
       ],
       "message": "You add trails and trailheads to your map."
-    }
-  },
-  {
-    "id": "knife_trenchScrap",
-    "copy-from": "knife_trench",
-    "type": "GENERIC",
-    "category": "weapons",
-    "weapon_category": [ "KNIVES" ],
-    "name": { "str": "scrap trench knife (knife)", "str_pl": "scrap trench knives (knife)" },
-    "bashing": 1,
-    "cutting": 12,
-    "use_action": {
-      "type": "transform",
-      "msg": "You re-grab your crap trench knife, to use it as a knuckleduster.",
-      "target": "knife_trench_bashScrap"
-    }
-  },
-  {
-    "id": "knife_trench_bashScrap",
-    "copy-from": "knife_trench",
-    "type": "GENERIC",
-    "category": "weapons",
-    "weapon_category": [ "FIST_WEAPONS" ],
-    "name": { "str": "scrap trench knife (knuckleduster)", "str_pl": "scrap trench knives (knuckleduster)" },
-    "bashing": 12,
-    "cutting": 1,
-    "flags": [ "DURABLE_MELEE", "UNARMED_WEAPON", "SHEATH_KNIFE" ],
-    "use_action": {
-      "type": "transform",
-      "msg": "You re-grab your scrap trench knife, to use it as a knife.",
-      "target": "knife_trenchScrap"
     }
   },
   {
@@ -1018,78 +471,6 @@
     "flags": [ "TRADER_AVOID", "NO_REPAIR" ]
   },
   {
-	"id": "heal_grenade",
-	"type": "TOOL",
-	"copy-from": "grenade_canister",
-	"looks_like": "grenade_emp",
-	"name": "heal gas grenade",
-	"description": "Heal gas grenade is an improvised grenade which, when pin is pulled, emits a cloud of healing gas which can heal your allies; but be careful, it will also heal your enemies if they are nearby.",
-	"countdown_action": { "menu_text": "Pull pin", "type": "transform", "target": "heal_grenade_act" }
-  },
-  {
-	"id": "heal_grenade_act",
-	"type": "TOOL",
-	"copy-from": "heal_grenade",
-	"name": "armed heal gas grenade",
-	"description": "This heal gas grenade currently lost its pin, thus creating a soothing healing field.",
-	"emits": [ "emit_heal_cloud" ],
-	"countdown_interval": 30,
-	"countdown_action": { "type": "transform", "target": "canister_empty" },
-	"flags": [ "TRADER_AVOID" ]
-  },
-  {
-    "id": "axe_combat",
-    "looks_like": "hatchet",
-    "type": "GENERIC",
-    "category": "weapons",
-    "weapon_category": [ "HAND_AXES", "HOOKED_POLES" ],
-    "name": { "str": "tactical tomahawk", "str_pl": "tactical tomahawks" },
-    "description": "This is a military combat axe.  It is light and extremely sharp, and could be deadly in either the right hands.",
-    "techniques": [ "WBLOCK_1", "RAPID" ],
-    "weight": "907 g",
-    "volume": "1200 ml",
-    "price": "100 USD",
-    "price_postapoc": "15 USD",
-    "to_hit": -2,
-    "bashing": 10,
-    "cutting": 24,
-    "use_action": "PICKAXE",
-    "material": [ "steel", "plastic" ],
-    "symbol": ";",
-    "color": "dark_gray",
-    "min_skills": [ [ "weapon", 2 ], [ "melee", 1 ] ],
-    "qualities": [ [ "AXE", 2 ], [ "CUT", 1 ], [ "PRY", 1 ], [ "HAMMER", 2 ], [ "HAMMER_FINE", 1 ], [ "BUTCHER", 16 ] ],
-    "thrown_damage": [ { "damage_type": "stab", "amount": 24 } ],
-    "flags": [ "DIG_TOOL", "DURABLE_MELEE", "BELT_CLIP", "NONCONDUCTIVE", "SHEATH_AXE", "NPC_THROWN" ]
-  },
-  {
-    "id": "kanabo",
-    "type": "GENERIC",
-    "copy-from": "nailbat",
-    "name": { "str": "kanabo" },
-    "description": "A baseball bat with several spikes driven through it, an excellent melee weapon.",
-    "weight": "1500 g",
-    "bashing": 30,
-    "cutting": 8,
-    "flags": [ "STAB" ],
-    "price_postapoc": "150 USD"
-  },
-  {
-    "id": "cudgel_nail",
-    "copy-from": "cudgel",
-    "type": "GENERIC",
-    "category": "weapons",
-    "weapon_category": [ "BATONS" ],
-    "name": { "str": "nailed cudgel" },
-    "description": "A slender long rod of wood, while traditionally intended as a training tool for many dueling moves, it still makes a good melee weapon in a pinch. Upgraded with nails.",
-    "weight": "480 g",
-    "volume": "650 ml",
-    "cutting": 4,
-    "flags": [ "STAB" ],
-    "bashing": 8,
-    "price": "12 USD"
-  },
-  {
     "type": "COMESTIBLE",
     "id": "coffee_iced_tea",
     "copy-from": "coffee",
@@ -1099,148 +480,6 @@
     "price_postapoc": 60,
     "calories": 80,
     "fun": 15
-  },
-  {
-    "id": "knuckle_gem",
-    "type": "GENERIC",
-    "copy-from": "knuckle_brass",
-    "category": "weapons",
-    "weapon_category": [ "FIST_WEAPONS" ],
-    "color": "dark_gray",
-    "name": { "str": "eternal glove" },
-    "description": "A metal weapon made of gold and jewels, designed to be gripped in the palm and cause punches to do extra damage.  A good, quick weapon - but you have to get within punching range to use it.",
-    "material": [ "gold", "gemstone" ],
-    "bashing": 9
-  },
-  {
-    "id": "grenadeHiEx",
-    "looks_like": "grenade",
-    "type": "TOOL",
-    "category": "weapons",
-    "name": { "str": "high explosive grenade" },
-    "description": "This is a military-grade high explosive hand grenade.  Use this item to pull the pin and light the fuse.  You will then have five turns before it explodes; throwing it would be a good idea.",
-    "weight": "397 g",
-    "volume": "250 ml",
-    "price": "15 USD",
-    "price_postapoc": "10 USD",
-    "to_hit": -1,
-    "bashing": 6,
-    "material": [ "steel" ],
-    "symbol": "*",
-    "color": "green",
-    "use_action": {
-      "target": "grenadeHiEx_act",
-      "msg": "You pull the pin on the grenade.",
-      "target_charges": 5,
-      "active": true,
-      "menu_text": "Pull pin",
-      "type": "transform"
-    },
-    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
-  },
-  {
-    "id": "grenadeHiEx_act",
-    "looks_like": "grenade_act",
-    "type": "TOOL",
-    "category": "weapons",
-    "name": { "str": "active high explosive grenade" },
-    "description": "This is an active high explosive grenade, and will explode any second now.  Better throw it!",
-    "weight": "397 g",
-    "volume": "250 ml",
-    "price": "0 cent",
-    "price_postapoc": "0 cent",
-    "to_hit": -1,
-    "bashing": 6,
-    "material": [ "steel" ],
-    "symbol": "*",
-    "color": "green",
-    "initial_charges": 5,
-    "max_charges": 5,
-    "turns_per_charge": 1,
-    "use_action": {
-      "type": "explosion",
-      "sound_volume": 0,
-      "sound_msg": "Tick.",
-      "no_deactivate_msg": "You've already pulled the %s's pin; try throwing it instead.",
-      "explosion": { "damage": 80, "radius": 4 }
-    },
-    "flags": [ "BOMB", "TRADER_AVOID" ]
-  },
-  {
-    "id": "grenadeKrak",
-    "looks_like": "grenade",
-    "type": "TOOL",
-    "category": "weapons",
-    "name": { "str": "anti-tank grenade" },
-    "description": "This is a military-grade anti-tank hand grenade.  Short explosive range but high damage. Use this item to pull the pin and light the fuse.  You will then have five turns before it explodes; throwing it would be a good idea.",
-    "weight": "397 g",
-    "volume": "250 ml",
-    "price": "15 USD",
-    "price_postapoc": "10 USD",
-    "to_hit": -1,
-    "bashing": 6,
-    "material": [ "steel" ],
-    "symbol": "*",
-    "color": "green",
-    "use_action": {
-      "target": "grenadeKrak_act",
-      "msg": "You pull the pin on the grenade.",
-      "target_charges": 5,
-      "active": true,
-      "menu_text": "Pull pin",
-      "type": "transform"
-    },
-    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
-  },
-  {
-    "id": "grenadeKrak_act",
-    "looks_like": "grenade_act",
-    "type": "TOOL",
-    "category": "weapons",
-    "name": { "str": "active anti-tank grenade" },
-    "description": "This is an active anti-tank grenade, and will explode any second now.  Better throw it!",
-    "weight": "397 g",
-    "volume": "250 ml",
-    "price": "0 cent",
-    "price_postapoc": "0 cent",
-    "to_hit": -1,
-    "bashing": 6,
-    "material": [ "steel" ],
-    "symbol": "*",
-    "color": "green",
-    "initial_charges": 5,
-    "max_charges": 5,
-    "turns_per_charge": 1,
-    "use_action": {
-      "type": "explosion",
-      "sound_volume": 8,
-      "sound_msg": "Tick.",
-      "no_deactivate_msg": "You've already pulled the %s's pin; try throwing it instead.",
-      "explosion": { "damage": 180, "radius": 1,
-      "fragment": { "impact": { "damage_type": "bullet", "amount": 180, "armor_multiplier": 8 }, "range": 2 } }
-    },
-    "flags": [ "BOMB", "TRADER_AVOID" ]
-  },
-  {
-    "id": "smokebomb_makeshift",
-    "copy-from": "smokebomb",
-    "type": "GENERIC",
-    "name": { "str": "makeshift smoke bomb" },
-    "description": "This is a canister grenade filled with a crude variety of pyrotechnic chemicals.  Use this item to pull the pin and light the fuse, turning it into an active makeshift smoke bomb.  Five turns after you do that, it will begin to expel a thick black smoke.  This smoke will slow those who enter it, as well as obscuring vision and scent.",
-    "price": "16 USD",
-    "weight": "599 g",
-    "countdown_action": { "type": "transform", "target": "smokebomb_makeshift_act" }
-  },
-  {
-    "id": "smokebomb_makeshift_act",
-    "copy-from": "smokebomb_makeshift",
-    "type": "GENERIC",
-    "name": { "str": "armed makeshift smoke bomb" },
-    "description": "This makeshift smoke bomb has had its pin removed and is expelling thick smoke.",
-    "emits": [ "emit_smoke_stream" ],
-    "countdown_interval": 50,
-    "countdown_action": { "type": "transform", "target": "canister_empty" },
-    "flags": [ "TRADER_AVOID" ]
   },
   {
     "id": "atk_car",
@@ -1313,17 +552,6 @@
     "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 14 ] ],
     "techniques": [ "RAPID" ],
     "flags": [ "STAB", "UNBREAKABLE_MELEE", "BELT_CLIP" ]
-  },
-  {
-    "id": "indiTomahawk",
-    "copy-from": "hatchet",
-    "type": "GENERIC",
-    "category": "weapons",
-    "weapon_category": [ "HAND_AXES" ],
-    "name": { "str": "steel tomahawk" },
-    "description": "A one-handed hatchet based on an acient tool.  Makes a great melee weapon, and is useful both for chopping things and smoking things. Since it is also used as a smoking pipe, this is weaker than an average hatchet.",
-    "flags": [ "BELT_CLIP", "NONCONDUCTIVE", "SHEATH_AXE" ],
-    "qualities": [ [ "AXE", 2 ], [ "CUT", 1 ], [ "SMOKE_PIPE", 1 ], [ "BUTCHER", 16 ] ]
   },
   {
     "id": "penPick",
@@ -1451,27 +679,6 @@
     "drop": "supply_flare_act"
   },
   {
-    "id": "hatchet_bamboo",
-    "type": "GENERIC",
-    "category": "weapons",
-    "weapon_category": [ "KNIVES" ],
-    "symbol": ";",
-    "color": "light_gray",
-    "name": { "str": "bamboo hatchet" },
-    "description": "A one-handed bamboo hatchet.  Makes a great melee weapon, and is useful for chopping things.",
-    "price": "25 USD",
-    "price_postapoc": "5 USD",
-    "material": [ "steel", "wood" ],
-    "techniques": [ "WBLOCK_1" ],
-    "weight": "907 g",
-    "volume": "500 ml",
-    "bashing": 13,
-    "cutting": 18,
-    "to_hit": -2,
-    "flags": [ "DURABLE_MELEE", "BELT_CLIP", "NONCONDUCTIVE", "SHEATH_KNIFE" ],
-    "qualities": [ [ "AXE", 2 ], [ "CUT", 1 ], [ "BUTCHER", 20 ] ]
-  },
-  {
     "id": "stepladder_ropeNplank",
 	"looks_like": "stepladder",
     "type": "TOOL",
@@ -1488,25 +695,6 @@
     "symbol": "H",
     "color": "brown",
     "use_action": { "type": "deploy_furn", "furn_type": "f_ladder_ropeNplank" }
-  },
-  {
-    "id": "stake_wood",
-    "type": "GENERIC",
-    "category": "weapons",
-    "weapon_category": [ "KNIVES" ],
-    "symbol": ",",
-    "color": "light_blue",
-    "name": { "str": "wooden stake" },
-    "description": "A wood stake with the far end cut down into a stabbing point.",
-    "price": "4 USD",
-    "price_postapoc": "0 cent",
-    "material": [ "wood" ],
-    "weight": "89 g",
-    "volume": "250 ml",
-    "bashing": 1,
-    "cutting": 6,
-    "to_hit": 3,
-    "flags": [ "STAB", "SHEATH_KNIFE" ]
   },
   {
     "id": "signalMarker",
@@ -1536,17 +724,13 @@
     "price_postapoc": "5 USD",
     "to_hit": -1,
     "bashing": 4,
-	"use_action": [ {
-      "type": "place_monster",
-      "monster_id": "mon_survivor_human_m4bb",
-      "friendly_msg": "A survivor got your signal and surveys the area!",
-      "hostile_msg": "You send the wrong signal; the survivor is hostile!",
-      "difficulty": 3,
-      "moves": 60,
-      "place_randomly": true,
-      "skills": [ "speech" ]
-    } ],
-    "flags": [ "ACT_ON_RANGED_HIT" ],
+    "use_action": {
+      "type": "place_npc",
+      "npc_class_id": "GRUNT_MERC",
+      "summon_msg": "A survivor got your signal and surveys the area!",
+      "place_randomly": false,
+      "moves": 60
+    },
     "material": [ "plastic", "aluminum" ],
     "symbol": ";",
     "color": "light_gray"
@@ -1623,234 +807,6 @@
     "use_action": "PLAY_GAME"
   },
   {
-    "id": "stim_pack1",
-    "type": "GENERIC",
-    "category": "tools",
-    "name": { "str": "unknown stimutant" },
-    "description": "An unknown syringe pack, with no label on it. Unpack and enjoy.",
-    "weight": "40 g",
-    "volume": "20 ml",
-    "price": "10000 USD",
-    "material": "aluminum",
-    "symbol": "!",
-    "color": "green",
-    "use_action": { "type": "unpack", "group": "ZhighStimUnkown1", "items_fit": true, "filthy_volume_threshold": "10 L" },
-    "flags": [ "NO_REPAIR", "NO_SALVAGE" ]
-  },
-  {
-    "id": "stim_pack3",
-    "type": "GENERIC",
-    "category": "tools",
-    "name": { "str": "unknown stimutant pack" },
-    "description": "An unknown 3-syringe pack, with no label on it. Unpack and enjoy.",
-    "weight": "120 g",
-    "volume": "60 ml",
-    "price": "10000 USD",
-    "material": "aluminum",
-    "symbol": "!",
-    "color": "green",
-    "use_action": { "type": "unpack", "group": "ZhighStimUnkown3", "items_fit": true, "filthy_volume_threshold": "10 L" },
-    "flags": [ "NO_REPAIR", "NO_SALVAGE" ]
-  },
-  {
-    "id": "sword_Magik",
-    "type": "TOOL",
-    "category": "weapons",
-    "weapon_category": [ "2H_SWORDS", "MEDIEVAL_SWORDS" ],
-    "name": { "str": "Onyx Blade" },
-    "description": "A sword, with a dark outline.",
-    "weight": "3176 g",
-    "volume": "3250 ml",
-    "price": 20000,
-    "price_postapoc": 200,
-    "material": [ "steel", "leather", "aluminum" ],
-    "symbol": ";",
-    "to_hit": 2,
-    "bashing": 18,
-    "cutting": 42,
-    "color": "light_gray",
-    "max_charges": 20,
-    "initial_charges": 20,
-    "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP" ],
-    "qualities": [ [ "CUT", 2 ], [ "BUTCHER", 4 ] ],
-    "artifact_data": { "charge_type": "ARTC_TIME" },
-    "use_action": [
-      {
-        "target": "sword_Magik_active",
-        "msg": "The sword glows dimmly.",
-      "menu_text": "Activate blade",
-        "active": true,
-        "need_charges": 1,
-        "need_charges_msg": "The sword does nothing.",
-        "type": "transform"
-      }
-    ],
-    "flags": [ "REACH_ATTACK", "DURABLE_MELEE", "SHEATH_SWORD", "ALWAYS_TWOHAND", "NONCONDUCTIVE", "NO_UNLOAD", "NO_RELOAD" ]
-  },
-  {
-    "id": "sword_Magik_active",
-    "copy-from": "sword_Magik",
-    "weapon_category": [ "2H_SWORDS", "MEDIEVAL_SWORDS" ],
-    "type": "TOOL",
-    "category": "weapons",
-    "name": { "str": "Holy Blade" },
-    "description": "A sword, with a dark outline. \n\n <color_light_blue>My true mentor... \n My guiding moonlight...</color>",
-    "power_draw": 1000,
-    "to_hit": 2,
-    "bashing": 22,
-    "cutting": 60,
-    "revert_to": "sword_Magik",
-    "charges_per_use": 1,
-    "use_action": {
-      "target": "sword_Magik",
-      "msg": "The glow of the blade darkens.",
-      "menu_text": "Deactivate blade",
-      "type": "transform"
-    },
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WIELD",
-          "condition": "ALWAYS",
-          "values": [ { "value": "ARMOR_ELEC", "multiply": 1.0 }, { "value": "SPEED", "add": 40 } ],
-          "hit_you_effect": [
-            {
-              "id": "zhigh_regen",
-              "message": "Your wounds regenerate as you chop %2$s down.",
-              "npc_message": "%1$s's wounds disappear as they chop %2$s down."
-            }
-          ]
-        }
-      ]
-    },
-    "techniques": [ "WBLOCK_2", "WIDE", "PRECISE", "PRECISE", "BRUTAL", "SWEEP" ],
-    "qualities": [ [ "CUT", 6 ], [ "BUTCHER", 4 ] ],
-    "flags": [ "REACH_ATTACK", "REACH3", "NO_DROP", "NO_UNWIELD", "TRADER_AVOID", "UNBREAKABLE_MELEE", "ALWAYS_TWOHAND", "NONCONDUCTIVE", "NO_UNLOAD", "NO_RELOAD" ]
-  },
-  {
-    "id": "cestus_razor",
-    "looks_like": "cestus",
-    "type": "GENERIC",
-    "category": "weapons",
-    "weapon_category": [ "FIST_WEAPONS" ],
-    "symbol": "3",
-    "color": "light_gray",
-    "name": { "str": "razor glove", "str_pl": "razor gloves" },
-    "description": "A leather hand and arm wrap incorporating metal blades over the knuckles to improve punching power and defence.",
-    "material": [ "leather", "steel" ],
-    "volume": "100 ml",
-    "weight": "300 g",
-    "cutting": 2,
-    "price_postapoc": "250 cent",
-    "flags": [ "UNARMED_WEAPON", "DURABLE_MELEE", "NONCONDUCTIVE" ]
-  },
-  {
-    "id": "knuckle_rebar",
-    "looks_like": "knuckle_steel",
-    "type": "GENERIC",
-    "category": "weapons",
-    "weapon_category": [ "FIST_WEAPONS" ],
-    "symbol": "3",
-    "color": "dark_gray",
-    "name": { "str": "pair of rebar knuckles", "str_pl": "pairs of rebar knuckles" },
-    "description": "A rebar crudely beat into shape, with folded rebar underneath to protect the wearers knuckles.  A good, quick weapon - but you have to get within punching range to use it.",
-    "material": "steel",
-    "volume": "250 ml",
-    "weight": "830 g",
-    "bashing": 4,
-    "price_postapoc": "50 cent",
-    "qualities": [ [ "HAMMER", 1 ] ],
-    "flags": [ "UNARMED_WEAPON" ]
-  },
-  {
-    "id": "bat_handmade",
-    "type": "GENERIC",
-    "copy-from": "bat",
-    "name": { "str": "handmade bat" },
-    "description": "A handmade baseball bat made out of a log.  Well-balanced, but bit hard to wield.",
-    "weight": "1825 g",
-    "bashing": 24,
-    "to_hit": 2,
-    "price_postapoc": "50 cent",
-    "volume": "2250 ml",
-    "price": "25 USD"
-  },
-  {
-    "id": "pike_steel",
-    "looks_like": "pike",
-    "type": "GENERIC",
-    "category": "weapons",
-    "weapon_category": [ "PIKES" ],
-    "name": { "ctxt": "weapon", "str": "steel pike" },
-    "description": "This is a medieval weapon consisting of a steel shaft tipped with a steel spearhead. Heavy but useful.",
-    "weight": "4800 g",
-    "volume": "3500 ml",
-    "price": "400 USD",
-    "price_postapoc": "50 USD",
-    "bashing": 14,
-    "cutting": 48,
-    "material": [ "steel" ],
-    "symbol": "/",
-    "color": "brown",
-    "techniques": [ "IMPALE", "WBLOCK_1" ],
-    "qualities": [ [ "COOK", 1 ] ],
-    "flags": [
-      "DURABLE_MELEE",
-      "POLEARM",
-      "SPEAR",
-      "REACH_ATTACK",
-      "REACH3",
-      "NONCONDUCTIVE",
-      "SHEATH_SPEAR",
-      "ALWAYS_TWOHAND",
-      "STAB"
-    ]
-  },
-  {
-    "type": "GENERIC",
-    "id": "shuriken",
-    "category": "weapons",
-    "price": "52 USD",
-    "price_postapoc": "5 USD",
-    "name": { "str": "shuriken", "str_pl": "shurikens" },
-    "symbol": ";",
-    "color": "light_gray",
-    "description": "A thin and flat knife made for throwing.  Its ineffective cutting edge and odd shape makes it unsuitable for use as a tool.",
-    "material": "steel",
-    "volume": "150 ml",
-    "weight": "168 g",
-    "bashing": 1,
-    "cutting": 10,
-    "thrown_damage": [ { "damage_type": "cut", "amount": 14 } ]
-  },
-  {
-    "id": "stungun",
-    "type": "TOOL",
-    "category": "weapons",
-    "name": { "str": "stungun" },
-    "description": "Also called \"lawyer Mr. Stun,\" this is a high-powered stungun.  Use this item to attempt to electrocute an adjacent enemy, damaging and temporarily paralyzing them.  Because the shock needs to be in direct contact, it is difficult to miss.",
-    "weight": "300 g",
-    "volume": "500 ml",
-    "price": "140 USD",
-    "price_postapoc": "15 USD",
-    "to_hit": -1,
-    "bashing": 6,
-    "material": [ "plastic", "aluminum" ],
-    "symbol": ";",
-    "color": "dark_gray",
-    "ammo": "battery",
-    "charges_per_use": 25,
-    "use_action": "TAZER",
-    "magazines": [
-      [
-        "battery",
-        [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ]
-      ]
-    ],
-    "magazine_well": "500 ml",
-    "flags": [ "BELT_CLIP" ]
-  },
-  {
     "id": "uno",
     "type": "GENERIC",
     "category": "other",
@@ -1865,34 +821,6 @@
     "color": "red",
     "flags": [ "NO_REPAIR" ],
     "use_action": "PLAY_GAME"
-  },
-  {
-    "id": "stunrod",
-    "looks_like": "cudgel",
-    "type": "TOOL",
-    "category": "weapons",
-    "name": { "str": "cattle prod" },
-    "description": "This is a rod mixed with high-powered stungun.  Use this item to attempt to electrocute an adjacent enemy, damaging and temporarily paralyzing them, then beating them up.  Because the shock needs to be in direct contact, it is difficult to miss.",
-    "weight": "465 g",
-    "volume": "600 ml",
-    "price": "140 USD",
-    "price_postapoc": "15 USD",
-    "to_hit": 2,
-    "bashing": 8,
-    "material": [ "steel", "wood", "aluminum" ],
-    "symbol": ";",
-    "color": "dark_gray",
-    "ammo": "battery",
-    "charges_per_use": 25,
-    "use_action": "TAZER",
-    "magazines": [
-      [
-        "battery",
-        [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ]
-      ]
-    ],
-    "magazine_well": "500 ml",
-    "flags": [ "BELT_CLIP" ]
   },
   {
     "id": "jacket_tape",
@@ -2104,53 +1032,5 @@
     "use_action": [ "HAMMER", "CROWBAR" ],
     "price": "240 USD",
     "price_postapoc": "750 cent"
-  },
-  {
-    "id": "swordsmanSword",
-    "looks_like": "longsword",
-    "type": "GENERIC",
-    "category": "weapons",
-    "weapon_category": [ "MEDIEVAL_SWORDS", "2H_SWORDS" ],
-    "symbol": "/",
-    "color": "light_gray",
-    "name": { "str": "larp longsword" },
-    "description": "This is a classic looking medieval sword, in between the lighter arming sword and later two-handed swords in size.  It requires a larger baldric or scabbard, compared to smaller swords.",
-    "price": "110 USD",
-    "price_postapoc": "20 USD",
-    "material": "steel",
-    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NONCONDUCTIVE" ],
-    "techniques": [ "WBLOCK_2" ],
-    "weight": "1814 g",
-    "volume": "2050 ml",
-    "bashing": 40,
-    "to_hit": 3
-  },
-  {
-    "id": "poison_mix",
-    "looks_like": "acid",
-    "type": "COMESTIBLE",
-    "name": "poison mix",
-    "weight": "250 g",
-    "category": "chems",
-    "color": "yellow",
-    "stim": -90,
-    "container": "bottle_glass",
-    "comestible_type": "DRINK",
-    "symbol": "~",
-    "quench": -90,
-    "healthy": -90,
-    "calories": -26,
-    "description": "Improvised, unknown mix of poison.  It tastes horrible and dangerous too!",
-    "price": "0 cent",
-    "price_postapoc": "0 cent",
-    "material": [ "alcohol", "junk" ],
-    "volume": "100 ml",
-    "phase": "liquid",
-    "use_action": "POISON",
-    "charges": 10,
-    "ammo_data": { "ammo_type": "water", "damage": { "damage_type": "acid", "amount": 1, "armor_penetration": 3 }, "effects": [ "PARALYZEPOISON", "RECOVER_10" ] },
-    "flags": [ "UNSAFE_CONSUME", "BAD_TASTE", "NUTRIENT_OVERRIDE" ],
-    "fun": -95,
-    "vitamins": [ [ "mutant_toxin", 2000 ] ]
   }
 ]

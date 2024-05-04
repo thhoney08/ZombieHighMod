@@ -464,7 +464,13 @@
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_SCHOOL_KILL_ROOFTOP_ZED_2",
     "end": {
-      "effect": [
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_2_9", "place_npcs": [ { "class": "SWORDSMAN", "x": 11, "y": 2 } ] },
+        { "om_terrain": "ZhighSchool_2_4", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_2_2", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "effect": 
+	  [
         { "u_sell_item": "premium_survival_kit" },
         { "u_sell_item": "family_photo" },
         { "u_sell_item": "hatchet" },

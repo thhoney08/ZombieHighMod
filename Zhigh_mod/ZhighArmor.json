@@ -19,6 +19,19 @@
     "flags": [ "VARSIZE", "OUTER", "POCKETS" ]
   },
   {
+    "id": "blazer_zhighXL",
+    "repairs_like": "tshirt",
+    "type": "ARMOR",
+    "copy-from": "blazer_zhigh",
+    "name": { "str": "XL high school blazer" },
+    "description": "A professional-looking wool blazer.  Unlike the original, this one is easy to wear.  It is specifically designed to fit Huge survivors.",
+    "weight": "1350 g",
+    "volume": "5600 ml",
+    "price": "160 USD",
+    "price_postapoc": "120 USD",
+    "flags": [ "OVERSIZE", "OUTER", "POCKETS" ]
+  },
+  {
     "id": "dress_shirt_zhigh",
     "copy-from": "dress_shirt",
     "type": "ARMOR",
@@ -35,6 +48,19 @@
     "flags": [ "VARSIZE" ]
   },
   {
+    "id": "dress_shirt_zhighXL",
+    "copy-from": "dress_shirt_zhigh",
+    "type": "ARMOR",
+    "name": { "str": "XL high school dress shirt" },
+    "description": "A white button-down shirt with long sleeves.  It is specifically designed to fit Huge survivors.",
+    "weight": "300 g",
+    "volume": "800 ml",
+    "price": "110 USD",
+    "price_postapoc": "35 USD",
+    "encumbrance": 8,
+    "flags": [ "OVERSIZE" ]
+  },
+  {
     "id": "skirt_zhigh",
     "type": "ARMOR",
     "copy-from": "skirt",
@@ -49,6 +75,19 @@
     "warmth": 10,
     "material_thickness": 2,
     "flags": [ "POCKETS", "VARSIZE" ]
+  },
+  {
+    "id": "skirt_zhighXL",
+    "type": "ARMOR",
+    "copy-from": "skirt_zhigh",
+    "name": { "str": "XL high school skirt" },
+    "description": "A short, breezy cotton skirt.  Unlike an ordinary skirt, this one has two pockets to store stuff.  It is specifically designed to fit Huge survivors.",
+    "weight": "110 g",
+    "volume": "245 ml",
+    "price": "110 USD",
+    "price_postapoc": "35 USD",
+    "encumbrance": 8,
+    "flags": [ "POCKETS", "OVERSIZE" ]
   },
   {
     "id": "tie_bow_zhigh",
@@ -87,6 +126,19 @@
     "encumbrance": 8,
     "storage": "2 L",
     "warmth": 11
+  },
+  {
+    "id": "pants_zhighXL",
+    "copy-from": "pants_zhigh",
+    "type": "ARMOR",
+    "name": { "str_sp": "XL high school pants" },
+    "description": "A pair of uniform pants.  Slightly warmer than jeans.  It is specifically designed to fit Huge survivors.",
+    "weight": "800 g",
+    "volume": "2 L",
+    "price": "110 USD",
+    "price_postapoc": "35 USD",
+    "encumbrance": 10,
+    "flags": [ "POCKETS", "OVERSIZE" ]
   },
   {
     "id": "coat_rain_froggo",
@@ -168,6 +220,20 @@
     "copy-from": "jacket_baseball",
     "type": "ARMOR",
     "name": { "str": "varsity jacket" }
+  },
+  {
+    "id": "jacket_baseballXL",
+    "copy-from": "jacket_baseball",
+    "type": "ARMOR",
+    "name": { "str": "XL varsity jacket" },
+    "flags": [ "OVERSIZE", "POCKETS", "OUTER", "COLLAR" ]
+  },
+  {
+    "id": "jacket_baseball_2XL",
+    "copy-from": "jacket_baseball_2",
+    "type": "ARMOR",
+    "name": { "str": "XL varsity jacket" },
+    "flags": [ "OVERSIZE", "POCKETS", "OUTER", "COLLAR" ]
   },
   {
     "id": "hoodie_ora",
@@ -1915,6 +1981,111 @@
     "material": [ "paper" ],
     "description": "An old-fashioned paper glasses tinted with red and blue films on each eye.",
     "flags": [ "SUN_GLASSES" ]
+  },
+  {
+    "id": "straw_hat_Asia",
+    "type": "ARMOR",
+    "name": { "str": "Asian straw hat" },
+    "description": "Hat that is woven out of straw and used widely in Asia.  Its brim helps keep the sun out of your eyes, and stops the rain too.  Could wear it in order to consult with the elder gods or something.",
+    "weight": "50 g",
+    "volume": "750 ml",
+    "price": "3 USD",
+    "price_postapoc": "1 USD",
+    "material": [ "dry_plant" ],
+    "symbol": "[",
+    "looks_like": "cowboy_hat",
+    "color": "dark_gray",
+    "covers": [ "head" ],
+    "coverage": 40,
+    "warmth": 2,
+    "material_thickness": 1,
+    "environmental_protection": 2,
+    "flags": [ "WATERPROOF", "FANCY", "SUN_GLASSES" ]
+  },
+  {
+    "id": "shield_targe",
+    "copy-from": "shield_wooden",
+    "type": "ARMOR",
+    "name": { "str": "targe shield" },
+    "description": "A crude wooden shield, lacking any metal or leather reinforcement.  Light weight but not very tough.",
+    "weight": "2000 g",
+    "volume": "2 L",
+    "price": "30 USD",
+    "price_postapoc": "3 USD",
+    "encumbrance": 12
+  },
+  {
+    "id": "powered_earmuffs_heli",
+    "type": "TOOL_ARMOR",
+    "category": "clothing",
+    "symbol": "[",
+    "color": "blue",
+    "name": { "str_sp": "helicopter pilot's earmuffs" },
+    "description": "A pair of earmuffs favored by helicopter pilots.  Without batteries or when turned off they function like normal earmuffs and block all sound.  They will block sounds over a certain decibel amount when turned on.  The earmuffs are currently off.",
+    "flags": [ "DEAF", "OVERSIZE", "BELTED", "ALLOWS_NATURAL_ATTACKS" ],
+    "price": "125 USD",
+    "price_postapoc": "750 cent",
+    "material": [ "plastic" ],
+    "weight": "179 g",
+    "volume": "1 L",
+    "charges_per_use": 1,
+    "ammo": "battery",
+    "use_action": {
+      "type": "transform",
+      "msg": "You turn the earmuffs on.",
+      "target": "powered_earmuffs_heli_on",
+      "active": true,
+      "need_charges": 1,
+      "need_charges_msg": "The earmuff's batteries are dead."
+    },
+    "covers": [ "head" ],
+    "warmth": 5,
+    "encumbrance": 5,
+    "coverage": 10,
+    "material_thickness": 2,
+    "magazines": [
+      [
+        "battery",
+        [
+          "light_plus_battery_cell",
+          "light_battery_cell",
+          "light_minus_battery_cell",
+          "light_atomic_battery_cell",
+          "light_minus_atomic_battery_cell",
+          "light_minus_disposable_cell",
+          "light_disposable_cell"
+        ]
+      ]
+    ],
+    "magazine_well": "250 ml"
+  },
+  {
+    "id": "powered_earmuffs_heli_on",
+    "type": "TOOL_ARMOR",
+    "category": "clothing",
+    "repairs_like": "powered_earmuffs",
+    "symbol": "[",
+    "color": "blue",
+    "name": { "str_sp": "helicopter pilot's earmuffs" },
+    "description": "A pair of earmuffs favored by helicopter pilots.  The earmuffs are turned on.  They will block sounds over a certain decibel amount and also can handle radio signals, assuming it is charged with batteries.",
+    "flags": [ "OVERSIZE", "BELTED", "ALLOWS_NATURAL_ATTACKS", "PARTIAL_DEAF", "TWO_WAY_RADIO" ],
+    "price": "125 USD",
+    "price_postapoc": "750 cent",
+    "material": [ "plastic" ],
+    "weight": "179 g",
+    "volume": "1 L",
+    "//": "3M Peltors claim to go 100 hours on 2 AAs",
+    "power_draw": 60,
+    "ammo": "battery",
+    "revert_to": "powered_earmuffs_heli",
+    "charges_per_use": 1,
+    "use_action": { "type": "transform", "menu_text": "Turn off", "msg": "The %s flicks off.", "target": "powered_earmuffs_heli" },
+    "covers": [ "head" ],
+    "warmth": 5,
+    "encumbrance": 5,
+    "coverage": 10,
+    "material_thickness": 2,
+    "magazine_well": "250 ml"
   },
   {
     "id": "tshirt_mint",

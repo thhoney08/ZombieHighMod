@@ -92,6 +92,7 @@
         "name": "thin cold gas",
         "sym": "5",
         "color": "light_gray",
+		"convection_temperature_mod": -40,
         "dangerous": true,
         "effects": [
           {
@@ -111,6 +112,8 @@
       {
         "name": "cold gas",
         "color": "light_gray",
+		"convection_temperature_mod": -100,
+        "dangerous": true,
         "effects": [
           {
             "effect_id": "cold_zhigh",
@@ -129,6 +132,8 @@
       {
         "name": "thick cold gas",
         "color": "light_gray",
+		"convection_temperature_mod": -160,
+        "dangerous": true,
         "effects": [
           {
             "effect_id": "cold_zhigh",
@@ -143,8 +148,7 @@
             "message_type": "bad"
           }
         ]
-      },
-      { "color": "cyan", "convection_temperature_mod": -160 }
+      }
     ],
     "decay_amount_factor": 20,
     "percent_spread": 40,
@@ -275,7 +279,7 @@
     "phase": "gas",
     "display_items": true,
     "display_field": true,
-    "looks_like": "fd_tindalos_gas"
+    "looks_like": "fd_relax_gas"
   },
   {
     "id": "fd_zombie2_gas",
@@ -294,7 +298,7 @@
     "phase": "gas",
     "display_items": true,
     "display_field": true,
-    "looks_like": "fd_tindalos_gas"
+    "looks_like": "fd_relax_gas"
   },
   {
     "id": "emit_zombie2_burst",
