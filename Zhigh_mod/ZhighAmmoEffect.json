@@ -46,12 +46,17 @@
   {
     "id": "TEARGAS",
     "type": "ammo_effect",
-    "aoe": { "field_type": "fd_tear_gas", "intensity_min": 1, "intensity_max": 3 }
+    "aoe": { "field_type": "fd_smoke", "intensity_min": 3, "intensity_max": 3 }
   },
   {
     "id": "TEARGASBIG",
     "type": "ammo_effect",
-    "aoe": { "field_type": "fd_tear_gas", "intensity_min": 3, "intensity_max": 3 }
+    "aoe": { "field_type": "fd_smoke", "intensity_min": 3, "intensity_max": 3, "radius": 6 }
+  },
+  {
+    "id": "ACIDBIG",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_acid", "intensity_min": 3, "intensity_max": 3, "radius": 6 }
   },
   {
     "id": "NUKEGAS",

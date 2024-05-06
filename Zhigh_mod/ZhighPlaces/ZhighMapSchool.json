@@ -403,7 +403,8 @@
       { "point": [ 13, 0, 0 ], "overmap": "empty_rock" },
       { "point": [ 13, 1, 0 ], "overmap": "cabin_strange_north" },
       { "point": [ 13, 1, 1 ], "overmap": "cabin_strange_roof_north" },
-      { "point": [ 13, 1, -1 ], "overmap": "cabin_strange_b_north" },
+      { "point": [ 13, 1, -1 ], "overmap": "cabinZhigh_strange_b_north" },
+      { "point": [ 13, 1, -2 ], "overmap": "lab_surface_brick_basementD1_hidden_lab_stairs_north" },
       { "point": [ 13, 4, -1 ], "overmap": "pump_station_3_north" },
       { "point": [ 13, 5, 0 ], "overmap": "pump_station_1_north" },
       { "point": [ 13, 5, 1 ], "overmap": "pump_station_1_roof_north" },
@@ -417,6 +418,7 @@
       { "point": [ 13, 14, 0 ], "overmap": "empty_rock" },
       { "point": [ 13, 16, 0 ], "overmap": "empty_rock" },
       { "point": [ 14, -2, 0 ], "overmap": "empty_rock" },
+      { "point": [ 14, 1, -2 ], "overmap": "lab_surface_brick_basementE1_north" },
       { "point": [ 14, 0, 0 ], "overmap": "empty_rock" },
       { "point": [ 14, 1, 0 ], "overmap": "empty_rock" },
       { "point": [ 14, 2, 0 ], "overmap": "empty_rock" },
@@ -455,7 +457,10 @@
       { "point": [ 16, 15, 0 ], "overmap": "empty_rock" },
       { "point": [ 16, 16, 0 ], "overmap": "empty_rock" }
     ],
-    "place_nested": [ { "point": [ 7, 6, -2 ], "special": "lab_basement" } ],
+    "place_nested": [
+	  { "point": [ 7, 6, -2 ], "special": "lab_basement" },
+	  { "point": [ 13, 1, -3 ], "special": "lab_basement" }
+    ],
     "connections": [ 
       { "point": [ -8, 9, 0 ], "connection": "local_road", "from": [ -8, 10, 0 ] },
       { "point": [ -8, 9, -2 ], "connection": "subway_tunnel", "from": [ -8, 10, -2 ] },
@@ -469,7 +474,8 @@
       { "point": [ 9, 1, -4 ], "connection": "subway_tunnel", "from": [ 8, 1, -4 ] },
       { "point": [ 13, 7, -1 ], "connection": "sewer_tunnel", "from": [ 13, 6, -1 ] },
       { "point": [ 14, 4, -1 ], "connection": "sewer_tunnel", "from": [ 13, 4, -1 ] },
-      { "point": [ 14, 6, -1 ], "connection": "sewer_tunnel", "from": [ 13, 6, -1 ] } ],
+      { "point": [ 14, 6, -1 ], "connection": "sewer_tunnel", "from": [ 13, 6, -1 ] }
+	],
     "occurrences": [ 33, 100 ],
     "locations": [ "forest" ],
     "rotate": false,

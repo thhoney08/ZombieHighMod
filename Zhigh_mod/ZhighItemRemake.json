@@ -2124,37 +2124,6 @@
     "durability": 8
   },
   {
-    "id": "UPS_off",
-    "copy-from": "UPS_off",
-    "type": "TOOL",
-    "category": "tools",
-    "name": { "str": "UPS", "str_pl": "UPS's" },
-    "weight": "600 g",
-    "volume": "500 ml",
-    "magazines": [
-      [
-        "battery",
-        [
-          "heavy_battery_cell",
-          "heavy_plus_battery_cell",
-          "heavy_atomic_battery_cell",
-          "heavy_disposable_cell",
-          "medium_battery_cell",
-          "medium_plus_battery_cell",
-          "medium_atomic_battery_cell",
-          "medium_disposable_cell",
-          "light_disposable_cell",
-          "light_minus_disposable_cell",
-          "light_battery_cell",
-          "light_plus_battery_cell",
-          "light_minus_battery_cell",
-          "light_atomic_battery_cell",
-          "light_minus_atomic_battery_cell"
-        ]
-      ]
-    ]
-  },
-  {
     "id": "bolas",
     "copy-from": "bolas",
     "type": "AMMO",
@@ -2341,6 +2310,48 @@
     "to_hit": -1,
     "bashing": 36,
     "cutting": 3
+  },
+  {
+    "id": "UPS_off",
+    "copy-from": "UPS_off",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "UPS", "str_pl": "UPS's" },
+    "weight": "200 g",
+    "volume": "200 ml",
+    "magazines": [
+      [
+        "battery",
+        [
+          "light_minus_disposable_cell",
+          "light_disposable_cell",
+          "light_minus_battery_cell",
+          "light_battery_cell",
+          "light_plus_battery_cell",
+          "light_atomic_battery_cell",
+          "light_minus_atomic_battery_cell",
+          "medium_battery_cell", 
+          "medium_plus_battery_cell", 
+          "medium_atomic_battery_cell",
+          "medium_disposable_cell",
+          "heavy_plus_battery_cell",
+          "heavy_battery_cell",
+          "heavy_atomic_battery_cell",
+          "heavy_disposable_cell"
+        ]
+      ]
+    ],
+    "magazine_well": "2000 ml"
+  },
+  {
+    "id": "adv_UPS_off",
+    "copy-from": "adv_UPS_off",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "advanced UPS", "str_pl": "advanced UPS's" },
+    "weight": "150 g",
+    "volume": "150 ml",
+    "max_charges": 5000
   },
   {
     "type": "AMMO",

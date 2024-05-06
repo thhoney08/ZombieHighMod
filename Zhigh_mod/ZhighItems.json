@@ -1014,6 +1014,38 @@
     "color": "light_gray"
   },
   {
+    "id": "hand_crank_UPS",
+    "looks_like": "UPS_off",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "hand-crank charger UPS" },
+    "description": "This is UPS mixed with a hand-powered battery charger.  It has an adjustable receptacle designed to accept a wide variety of rechargeable battery cells.",
+    "weight": "400 g",
+    "volume": "300 ml",
+    "price": "10 USD",
+    "price_postapoc": "250 cent",
+    "material": "plastic",
+    "symbol": ":",
+    "color": "light_gray",
+    "ammo": "battery",
+    "use_action": "HAND_CRANK",
+    "magazines": [
+      [
+        "battery",
+        [
+          "light_battery_cell",
+          "light_plus_battery_cell",
+          "light_minus_battery_cell",
+          "medium_battery_cell",
+          "medium_plus_battery_cell",
+          "heavy_battery_cell",
+          "heavy_plus_battery_cell"
+        ]
+      ]
+    ],
+    "flags": [ "IS_UPS" ]
+  },
+  {
     "id": "dingDongBreach",
     "type": "GENERIC",
     "category": "tools",

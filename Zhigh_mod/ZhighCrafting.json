@@ -2556,6 +2556,20 @@
     "components": [ [ [ "gunpowder", 3 ], [ "chem_black_powder", 3 ] ], [ [ "water", 5 ], [ "water_clean", 5 ] ] ]
   },
   {
+    "type": "recipe",
+    "result": "gas_teargas",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "cooking",
+    "skills_required": [ "survival", 2 ],
+    "difficulty": 2,
+    "time": "8 m",
+    "book_learn": [ [ "textbook_gaswarfare", 4 ], [ "textbook_chemistry", 4 ], [ "adv_chemistry", 4 ], [ "recipe_labchem", 4 ] ],
+    "qualities": [ { "id": "CHEM", "level": 1 } ],
+    "tools": [ [ [ "mortar_pestle", -1 ] ], [ [ "surface_heat", 1, "LIST" ] ] ],
+    "components": [ [ [ "garlic", 1 ], [ "garlic_clove", 6 ] ], [ [ "water", 5 ], [ "water_clean", 5 ] ] ]
+  },
+  {
     "result": "utility_belt",
     "type": "recipe",
     "category": "CC_ARMOR",
@@ -3145,6 +3159,34 @@
     "autolearn": true,
     "book_learn": [ [ "recipe_arrows", 1 ], [ "book_archery", 1 ] ],
     "components": [ [ [ "duct_tape", 30 ] ], [ [ "paper", 200 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "bolt_poison",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "5 s",
+    "autolearn": true,
+    "reversible": false,
+    "components": [
+      [ [ "poison_mix", 1 ] ],
+      [
+        [ "bolt_simple_wood", 1 ],
+        [ "bolt_simple_small_game", 1 ],
+        [ "bolt_makeshift", 1 ],
+        [ "bolt_wood", 1 ],
+        [ "bolt_wood_bodkin", 1 ],
+        [ "bolt_wood_small_game", 1 ],
+        [ "bolt_metal", 1 ],
+        [ "bolt_steel", 1 ],
+        [ "bolt_steel_bodkin", 1 ],
+        [ "bolt_steel_target", 1 ],
+        [ "bolt_cf", 1 ]
+      ]
+    ],
+    "flags": [ "BLIND_EASY" ]
   },
   {
     "type": "recipe",
@@ -3753,34 +3795,6 @@
   },
   {
     "type": "recipe",
-    "result": "bolt_poison",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_ARROWS",
-    "skill_used": "fabrication",
-    "difficulty": 1,
-    "time": "5 s",
-    "autolearn": true,
-    "reversible": false,
-    "components": [
-      [ [ "poison_mix", 1 ] ],
-      [
-        [ "bolt_simple_wood", 1 ],
-        [ "bolt_simple_small_game", 1 ],
-        [ "bolt_makeshift", 1 ],
-        [ "bolt_wood", 1 ],
-        [ "bolt_wood_bodkin", 1 ],
-        [ "bolt_wood_small_game", 1 ],
-        [ "bolt_metal", 1 ],
-        [ "bolt_steel", 1 ],
-        [ "bolt_steel_bodkin", 1 ],
-        [ "bolt_steel_target", 1 ],
-        [ "bolt_cf", 1 ]
-      ]
-    ],
-    "flags": [ "BLIND_EASY" ]
-  },
-  {
-    "type": "recipe",
     "result": "arrow_poison",
     "category": "CC_AMMO",
     "subcategory": "CSC_AMMO_ARROWS",
@@ -4150,6 +4164,243 @@
     "using": [ [ "welding_standard", 10 ] ],
     "qualities": [ { "id": "SAW_M", "level": 1 } ],
     "components": [ [ [ "rebar", 3 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "arrow_glassAcid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "archery", 2 ] ],
+    "difficulty": 2,
+    "time": "90 s",
+    "charges": 1,
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+      [ [ "duct_tape", 5 ] ],
+      [ [ "jar_glass", 1 ], [ "bottle_glass", 1 ], [ "clay_canister", 2 ], [ "flask_glass", 2 ] ],
+      [ [ "acid", 1 ] ],
+      [
+        [ "arrow_field_point_fletched", 1 ],
+        [ "arrow_fire_hardened_fletched", 1 ],
+        [ "arrow_wood", 1 ],
+        [ "arrow_heavy_fire_hardened_fletched", 1 ],
+        [ "arrow_heavy_field_point_fletched", 1 ],
+        [ "arrow_wood_heavy", 1 ],
+        [ "arrow_metal", 1 ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "arrow_glassToxic",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "archery", 2 ] ],
+    "difficulty": 2,
+    "time": "90 s",
+    "charges": 1,
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+      [ [ "duct_tape", 5 ] ],
+      [ [ "jar_glass", 1 ], [ "bottle_glass", 1 ], [ "clay_canister", 2 ], [ "flask_glass", 2 ] ],
+      [ [ "gas_chloramine", 5 ], [ "gasbomb_makeshift", 1 ] ],
+      [
+        [ "arrow_field_point_fletched", 1 ],
+        [ "arrow_fire_hardened_fletched", 1 ],
+        [ "arrow_wood", 1 ],
+        [ "arrow_heavy_fire_hardened_fletched", 1 ],
+        [ "arrow_heavy_field_point_fletched", 1 ],
+        [ "arrow_wood_heavy", 1 ],
+        [ "arrow_metal", 1 ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "arrow_glassFungi",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "archery", 2 ] ],
+    "difficulty": 2,
+    "time": "90 s",
+    "charges": 1,
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+      [ [ "duct_tape", 5 ] ],
+      [ [ "jar_glass", 1 ], [ "bottle_glass", 1 ], [ "clay_canister", 2 ], [ "flask_glass", 2 ] ],
+      [ [ "fungicide", 1 ], [ "gas_fungicidal", 2 ] ],
+      [
+        [ "arrow_field_point_fletched", 1 ],
+        [ "arrow_fire_hardened_fletched", 1 ],
+        [ "arrow_wood", 1 ],
+        [ "arrow_heavy_fire_hardened_fletched", 1 ],
+        [ "arrow_heavy_field_point_fletched", 1 ],
+        [ "arrow_wood_heavy", 1 ],
+        [ "arrow_metal", 1 ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "arrow_glassInsect",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "archery", 2 ] ],
+    "difficulty": 2,
+    "time": "90 s",
+    "charges": 1,
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+      [ [ "duct_tape", 5 ] ],
+      [ [ "jar_glass", 1 ], [ "bottle_glass", 1 ], [ "clay_canister", 2 ], [ "flask_glass", 2 ] ],
+      [ [ "insecticide", 1 ], [ "gas_insecticidal", 2 ] ],
+      [
+        [ "arrow_field_point_fletched", 1 ],
+        [ "arrow_fire_hardened_fletched", 1 ],
+        [ "arrow_wood", 1 ],
+        [ "arrow_heavy_fire_hardened_fletched", 1 ],
+        [ "arrow_heavy_field_point_fletched", 1 ],
+        [ "arrow_wood_heavy", 1 ],
+        [ "arrow_metal", 1 ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "arrow_glassSmoke",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "archery", 2 ] ],
+    "difficulty": 2,
+    "time": "90 s",
+    "charges": 1,
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+      [ [ "duct_tape", 5 ] ],
+      [ [ "jar_glass", 1 ], [ "bottle_glass", 1 ], [ "clay_canister", 2 ], [ "flask_glass", 2 ] ],
+      [ [ "gas_smoke", 5 ], [ "smokebomb_makeshift", 1 ], [ "smokebomb", 1 ] ],
+      [
+        [ "arrow_field_point_fletched", 1 ],
+        [ "arrow_fire_hardened_fletched", 1 ],
+        [ "arrow_wood", 1 ],
+        [ "arrow_heavy_fire_hardened_fletched", 1 ],
+        [ "arrow_heavy_field_point_fletched", 1 ],
+        [ "arrow_wood_heavy", 1 ],
+        [ "arrow_metal", 1 ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "arrow_glassTear",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "archery", 2 ] ],
+    "difficulty": 2,
+    "time": "90 s",
+    "charges": 1,
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+      [ [ "duct_tape", 5 ] ],
+      [ [ "jar_glass", 1 ], [ "bottle_glass", 1 ], [ "clay_canister", 2 ], [ "flask_glass", 2 ] ],
+      [ [ "gas_chloramine", 5 ], [ "gasbomb", 1 ] ],
+      [
+        [ "arrow_field_point_fletched", 1 ],
+        [ "arrow_fire_hardened_fletched", 1 ],
+        [ "arrow_wood", 1 ],
+        [ "arrow_heavy_fire_hardened_fletched", 1 ],
+        [ "arrow_heavy_field_point_fletched", 1 ],
+        [ "arrow_wood_heavy", 1 ],
+        [ "arrow_metal", 1 ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "arrow_sigFlare",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "archery", 2 ] ],
+    "difficulty": 2,
+    "time": "15 m",
+    "charges": 3,
+    "reversible": false,
+    "autolearn": true,
+    "components": [
+      [ [ "duct_tape", 5 ] ],
+      [ [ "handflare", 1 ] ],
+      [
+        [ "arrow_field_point_fletched", 1 ],
+        [ "arrow_fire_hardened_fletched", 1 ],
+        [ "arrow_wood", 1 ],
+        [ "arrow_heavy_fire_hardened_fletched", 1 ],
+        [ "arrow_heavy_field_point_fletched", 1 ],
+        [ "arrow_wood_heavy", 1 ],
+        [ "arrow_metal", 1 ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "arrow_boxing",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "archery", 2 ] ],
+    "difficulty": 2,
+    "time": "15 m",
+    "charges": 3,
+    "reversible": false,
+    "autolearn": true,
+    "components": [
+      [ [ "duct_tape", 5 ] ],
+      [ [ "boxing_gloves", 1 ] ],
+      [
+        [ "arrow_field_point_fletched", 1 ],
+        [ "arrow_fire_hardened_fletched", 1 ],
+        [ "arrow_wood", 1 ],
+        [ "arrow_heavy_fire_hardened_fletched", 1 ],
+        [ "arrow_heavy_field_point_fletched", 1 ],
+        [ "arrow_wood_heavy", 1 ],
+        [ "arrow_metal", 1 ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "arrow_splay",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "archery", 4 ], [ "survival", 1 ] ],
+    "using": [ [ "forging_standard", 1 ] ],
+    "difficulty": 5,
+    "time": "30 m",
+    "autolearn": true,
+    "book_learn": [ [ "recipe_arrows", 3 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "CUT", "level": 1 }, { "id": "ANVIL", "level": 1 } ],
+    "tools": [ [ [ "tongs", -1 ] ] ],
+    "components": [
+      [ [ "adhesive", 1, "LIST" ], [ "filament", 20, "LIST" ] ],
+      [ [ "steel_tiny", 1, "LIST" ], [ "scrap_bronze", 1 ] ],
+      [ [ "stick", 1 ], [ "broom", 1 ], [ "2x4", 1 ], [ "bee_sting", 1 ] ],
+      [ [ "fletching", 1, "LIST" ] ]
+    ],
+    "delete_flags": [ "FILTHY" ],
+    "flags": [ "ALLOW_FILTHY" ]
   },
   {
     "type": "recipe",

@@ -1823,7 +1823,34 @@
     "valid_mod_locations": [ ],
     "dispersion": 250,
     "durability": 8,
-    "clip_size": 3
+    "clip_size": 1
+  },
+  {
+    "id": "caneGunZhigh",
+    "looks_like": "cane",
+    "copy-from": "shotgun_1shot",
+    "weapon_category": [ "SHOTGUNS", "1SHOT", "BATONS" ],
+    "type": "GUN",
+    "name": { "str": "cane shotgun" },
+    "description": "This cane is an ingenious combination of elegance and stealthy firepower.  Designed to appear as a classic, but fancy, walking cane, this versatile piece of equipment conceals a powerful shotgun within its finely crafted wooden shaft.",
+    "weight": "653 g",
+    "volume": "1 L",
+    "price": "1000 USD",
+    "price_postapoc": "250 USD",
+    "material": [ "gold", "diamond", "silver", "steel", "wood" ],
+    "ranged_damage": { "damage_type": "bullet", "amount": 8, "armor_penetration": 8 },
+    "valid_mod_locations": [ ],
+    "techniques": [ "PRECISE", "RAPID", "WBLOCK_2" ],
+    "dispersion": 350,
+	"bashing": 10,
+	"flags": [
+		"RELOAD_ONE",
+		"DURABLE_MELEE",
+		"RELOAD_EJECT",
+		"NONCONDUCTIVE",
+		"NEVER_JAMS"
+	],
+    "durability": 7
   },
   {
     "id": "airbow",

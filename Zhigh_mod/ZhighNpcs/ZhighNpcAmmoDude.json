@@ -18,13 +18,13 @@
       { "group": "npc_underwear_bottom_male" },
       { "group": "npc_underwear_top_male" },
       { "group": "ZhighNpc_underwear_feet_male" },
-      { "group": "ZhighNpc_shoes_male" },
+      { "item": "roller_shoes_off" },
       { "item": "pants_zhigh" },
       { "item": "dress_shirt_zhigh" },
-      { "group": "npc_gloves" },
+      { "item": "gloves_fingerless" },
       { "item": "jacket_baseball" },
       { "item": "mask_CombatFake" },
-      { "item": "molle_pack" },
+      { "item": "rucksack" },
       { "item": "wristwatch", "prob": 80 }
     ]
   },
@@ -101,7 +101,7 @@
     },
     "responses": [
       { "text": "What are you doing here?", "topic": "TALK_AMMODUDE_DOING" },
-      { "text": "I'd like to buy some guns and ammo.", "topic": "TALK_AMMODUDE_AMMODEAL" },
+      { "text": "I'd like to buy some ammo.", "topic": "TALK_AMMODUDE_AMMODEAL" },
       { "text": "Well, bye.", "topic": "TALK_DONE" }
     ]
   },
@@ -120,8 +120,8 @@
     "type": "talk_topic",
     "dynamic_line": {
       "npc_has_effect": "currently_busy",
-      "yes": "I'm out of some things, <name_g>.  It takes a while to craft the guns - but I'm working hard to replace it.  What can I get you in the meantime?",
-      "no": "I'll see what I've got around here for you.  I've gotta warn you: it ain't cheap.  Hard to stay supplied in the apocalypse, you know.  What do you need?"
+      "yes": "I'm out of some things, <name_g>.  It takes a while to get some ammo - but I'm working hard to replace it.  What can I get you in the meantime?",
+      "no": "I'll see what I've got around here for you.  I've gotta warn you: it ain't cheap.  Hard to stay supplied when crap hits the fan, you know.  What do you need?"
     },
     "responses": [
       { "text": "Nevermind.", "topic": "TALK_AMMODUDE" },
