@@ -69,9 +69,8 @@
     "subtype": "collection",
     "id": "NC_ZHIGHDEADEYE_misc",
     "items": [
-      { "item": "arrow_wood", "count-min": 10, "count-max": 20, "prob": 100 },
-      { "item": "arrow_exploding", "count-min": 5, "count-max": 8, "prob": 100 },
-      { "item": "arrow_cf", "count-min": 20, "count-max": 50, "prob": 100 }
+      { "item": "arrow_exploding", "count-min": 1, "count-max": 2, "prob": 100 },
+      { "item": "arrow_wood", "count-min": 3, "count-max": 5, "prob": 100 }
     ]
   },
   {
@@ -123,7 +122,7 @@
       "no": "I'll see what I've got around here for you.  I've gotta warn you: it's expensive.  Hard to stay supplied when crap hits the fan, you know.  What do you need?"
     },
     "responses": [
-      { "text": "Nevermind.", "topic": "TALK_ZHIGHDEADEYE" },
+      { "text": "Nevermind.", "topic": "TALK_NONE" },
       {
         "text": "[5$]  I'll buy a short bow.",
         "effect": [ { "u_buy_item": "shortbow", "cost": 500, "count": 1 } ],

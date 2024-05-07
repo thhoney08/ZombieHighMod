@@ -71,9 +71,8 @@
     "subtype": "collection",
     "id": "NC_ZHIGHRANGER_misc",
     "items": [
-      { "item": "arrow_wood", "count-min": 30, "count-max": 50, "prob": 100 },
-      { "item": "arrow_exploding", "count-min": 1, "count-max": 3, "prob": 100 },
-      { "item": "arrow_cf", "count-min": 20, "count-max": 50, "prob": 100 }
+      { "item": "arrow_wood", "count-min": 3, "count-max": 4, "prob": 100 },
+      { "item": "arrow_cf", "count-min": 2, "count-max": 3, "prob": 100 }
     ]
   },
   {
@@ -125,7 +124,7 @@
       "no": "I'll see what I've got around here for you.  I've gotta warn you: it ain't cheap.  Hard to stay supplied when the whole world is doomed.  What do you need?"
     },
     "responses": [
-      { "text": "Nevermind.", "topic": "TALK_ZHIGHRANGER" },
+      { "text": "Nevermind.", "topic": "TALK_NONE" },
       {
         "text": "[1$]  I'll buy crude wooden arrows.",
         "effect": [ { "u_buy_item": "arrow_fire_hardened_fletched", "cost": 100, "count": 10 } ],
