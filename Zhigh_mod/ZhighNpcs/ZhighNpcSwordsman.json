@@ -1,5 +1,18 @@
 [
   {
+    "type": "npc",
+    "id": "SWORDSMAN",
+    "name_unique": "Chan Yeong Park",
+    "name_suffix": "student",
+    "gender": "male",
+    "class": "NC_SWORDSMAN",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_SWORDSMAN",
+    "mission_offered": "MISSION_SCHOOL_KILL_INVADED_ZED",
+    "faction": "Zhigh_Survivors"
+  },
+  {
     "type": "trait_group",
     "id": "Appearance_SWORDSMAN",
     "subtype": "collection",
@@ -67,22 +80,29 @@
     ]
   },
   {
-    "type": "npc",
-    "id": "SWORDSMAN",
-    "name_unique": "Chan Yeong Park",
-    "name_suffix": "student",
-    "gender": "male",
-    "class": "NC_SWORDSMAN",
-    "attitude": 0,
-    "mission": 8,
-    "chat": "TALK_SWORDSMAN",
-    "mission_offered": "MISSION_SCHOOL_KILL_INVADED_ZED",
-    "faction": "Zhigh_Survivors"
-  },
-  {
     "type": "talk_topic",
     "id": "TALK_SWORDSMAN",
-    "dynamic_line": { "u_is_wearing": "armband_zhigh_halmon", "yes": "Greetings protector.", "no": "Greetings." },
+    "dynamic_line": {
+      "u_is_wearing": "armband_zhigh_halmon",
+      "yes": [
+        "Greetings, School hall monitor.",
+        "Death to the undead, School hall monitor.",
+        "Well met, School hall monitor.",
+        "Salutations, School hall monitor?",
+        "For mankind, School hall monitor.",
+        "Fortune smile upon you, School hall monitor.",
+        "Good tidings, School hall monitor."
+      ],
+      "no": [ 
+        "May your day be blessed!",
+        "Peace be upon you!",
+        "To your honor!",
+        "Fair morning!",
+        "Well encountered!",
+        "A fine day to you!",
+        "Health and honor!"
+	  ]
+    },
     "responses": [
       { "text": "What is this place?", "topic": "TALK_SWORDSMAN_PLACE" },
       { "text": "Anything I can do for you?", "topic": "TALK_MISSION_LIST" },

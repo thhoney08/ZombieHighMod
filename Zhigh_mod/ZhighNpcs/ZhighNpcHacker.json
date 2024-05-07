@@ -1,5 +1,44 @@
 [
   {
+    "type": "npc",
+    "id": "HACKER",
+    "name_unique": "Tae Hyeon Jeong",
+    "name_suffix": "student",
+    "gender": "male",
+    "class": "NC_Hacker",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_HACKER",
+    "mission_offered": "MISSION_SCHOOL_MEET_HACKER",
+    "faction": "Zhigh_Survivors"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_Hacker",
+    "name": { "str": "Hacker" },
+    "job_description": "I hack stuff.",
+    "traits": [
+      { "group": "BG_survival_story_RURAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "Appearance_Hacker" },
+      [ "REGEN_zhigh", 100 ]
+    ],
+    "common": false,
+    "worn_override": "NC_Hacker_worn",
+    "carry_override": "NC_Hacker_carry",
+    "weapon_override": "NC_ZhighGUARD_wield",
+    "bonus_str": { "rng": [ -2, 1 ] },
+    "bonus_int": { "rng": [ 2, 6 ] },
+    "bonus_per": { "rng": [ -2, 1 ] },
+    "bonus_dex": { "rng": [ 1, 2 ] },
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "computer", "bonus": { "rng": [ 5, 7 ] } },
+      { "skill": "electronics", "bonus": { "rng": [ 3, 4 ] } }
+    ]
+  },
+  {
     "type": "trait_group",
     "id": "Appearance_Hacker",
     "subtype": "collection",
@@ -40,45 +79,6 @@
       { "item": "ID_1st" },
       { "item": "zhigh_smart_phone" }
     ]
-  },
-  {
-    "type": "npc_class",
-    "id": "NC_Hacker",
-    "name": { "str": "Hacker" },
-    "job_description": "I hack stuff.",
-    "traits": [
-      { "group": "BG_survival_story_RURAL" },
-      { "group": "NPC_starting_traits" },
-      { "group": "Appearance_Hacker" },
-      [ "REGEN_zhigh", 100 ]
-    ],
-    "common": false,
-    "worn_override": "NC_Hacker_worn",
-    "carry_override": "NC_Hacker_carry",
-    "weapon_override": "NC_ZhighGUARD_wield",
-    "bonus_str": { "rng": [ -2, 1 ] },
-    "bonus_int": { "rng": [ 2, 6 ] },
-    "bonus_per": { "rng": [ -2, 1 ] },
-    "bonus_dex": { "rng": [ 1, 2 ] },
-    "skills": [
-      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
-      { "skill": "mechanics", "bonus": { "rng": [ 3, 4 ] } },
-      { "skill": "computer", "bonus": { "rng": [ 5, 7 ] } },
-      { "skill": "electronics", "bonus": { "rng": [ 3, 4 ] } }
-    ]
-  },
-  {
-    "type": "npc",
-    "id": "HACKER",
-    "name_unique": "Tae Hyeon Jeong",
-    "name_suffix": "student",
-    "gender": "male",
-    "class": "NC_Hacker",
-    "attitude": 0,
-    "mission": 8,
-    "chat": "TALK_HACKER",
-    "mission_offered": "MISSION_SCHOOL_MEET_HACKER",
-    "faction": "Zhigh_Survivors"
   },
   {
     "type": "talk_topic",
@@ -328,7 +328,7 @@
                 { "u_buy_item": "signalMarker2", "count": 1 },
                 { "u_buy_item": "signalMarker3", "count": 1 } ] },
     "origins": [ "ORIGIN_SECONDARY" ],
-    "followup": "MISSION_SCHOOL_KILL_ROOFTOP_ZED",
+    "followup": "MISSION_SCHOOL_KILL_ROOFTOP_ZED_CLEAN",
     "dialogue": {
       "describe": "To start, bring me five signal markers.",
       "offer": "Make and bring five signal markers, and I will give you something useful. These markers are some kind of radio, but the output is some dim light signals instead of actual sounds.",
@@ -342,7 +342,7 @@
     }
   },
   {
-    "id": "MISSION_SCHOOL_KILL_ROOFTOP_ZED",
+    "id": "MISSION_SCHOOL_KILL_ROOFTOP_ZED_CLEAN",
     "type": "mission_definition",
     "name": { "str": "Bad Signal" },
     "description": "Clear out the rooftop, to get some signal markers.",
@@ -444,7 +444,7 @@
   {
     "id": "MISSION_SCHOOL_BETTER_DRONES_2",
     "type": "mission_definition",
-    "name": { "str": "Rage against the undead" },
+    "name": { "str": "Cruel with you, side B" },
     "description": "Get a drone at the school by handing over around two smg bb guns.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 1,

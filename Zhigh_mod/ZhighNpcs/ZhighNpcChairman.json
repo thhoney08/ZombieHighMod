@@ -1,0 +1,542 @@
+[
+  {
+    "type": "npc",
+    "id": "CHAIRMAN",
+    "name_unique": "Dong Jin Nam",
+    "name_suffix": "student",
+    "gender": "male",
+    "class": "NC_Chairman",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_CHAIRMAN",
+    "mission_offered": "MISSION_SCHOOL_GET_COLA",
+    "faction": "Zhigh_Survivors"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_Chairman",
+    "name": { "str": "Chairman" },
+    "job_description": "I smash others with a chair.",
+    "traits": [
+      { "group": "BG_survival_story_RURAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "Appearance_Chairman" },
+      { "trait": "QUICK" },
+      [ "REGEN_zhigh", 100 ]
+    ],
+    "common": false,
+    "worn_override": "NC_Chairman_worn",
+    "carry_override": "NC_Chairman_carry",
+    "weapon_override": "NC_Chairman_weapon",
+    "bonus_str": { "rng": [ 2, 4 ] },
+    "bonus_int": { "rng": [ -1, 2 ] },
+    "bonus_per": { "rng": [ 0, 2 ] },
+    "bonus_dex": { "rng": [ 2, 3 ] },
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 4, 6 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 1, 3 ] } }
+    ]
+  },
+  {
+    "type": "trait_group",
+    "id": "Appearance_Chairman",
+    "subtype": "collection",
+    "traits": [ { "trait": "hair_chair", "prob": 100 }, 
+                { "trait": "eye_black", "prob": 100 }, 
+                { "trait": "SKIN_LIGHT", "prob": 100 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_Chairman_weapon",
+    "subtype": "distribution",
+    "entries": [ { "item": "camp_chair_zhigh" } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_Chairman_worn",
+    "subtype": "collection",
+    "entries": [
+      { "group": "npc_underwear_bottom_male" },
+      { "group": "npc_underwear_top_male" },
+      { "group": "ZhighNpc_underwear_feet_male" },
+      { "group": "ZhighNpc_shoes_male" },
+      { "item": "pants_zhigh" },
+      { "item": "dress_shirt_zhigh" },
+      { "group": "npc_gloves" },
+      { "item": "tie_necktie_zhigh" },
+      { "item": "trenchcoat" },
+      { "item": "wristwatch", "prob": 80 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_Chairman_carry",
+    "subtype": "collection",
+    "entries": [
+      { "item": "chocolate", "count": [ 10, 20 ] },
+      { "item": "pencil", "count": [ 1, 2 ] },
+      { "item": "ID_1st" },
+      { "item": "zhigh_smart_phone" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CHAIRMAN",
+    "dynamic_line": { "u_is_wearing": "armband_zhigh_halmon", "yes": "Hello monitor.", "no": "Hello there." },
+    "responses": [
+      { "text": "What is this place?", "topic": "TALK_CHAIRMAN_PLACE" },
+      { "text": "Anything I can do for you?", "topic": "TALK_MISSION_LIST" },
+      { "text": "See you later.", "topic": "TALK_CHAIRMAN_BYE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CHAIRMAN_PLACE",
+    "dynamic_line": "This is a school that we've made into a sort of a safehouse from this whole... disaster.",
+    "responses": [
+      { "text": "So the world is doomed, and this is some kinda bunker, yeah?", "topic": "TALK_CHAIRMAN_GOVERNMENT" },
+      { "text": "What do you trade?", "topic": "TALK_CHAIRMAN_TRADE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CHAIRMAN_GOVERNMENT",
+    "dynamic_line": "Yeah. Although for some reason this place is blocked with stone walls, and it is too thick for us to remove or dig a tunnel through it.  And removing one wall isn't enough - according to our observation team we sent before, there are two walls so we cannot escape through roads.",
+    "responses": [
+      { "text": "Oh, okay.", "topic": "TALK_CHAIRMAN" },
+      { "text": "Oh, okay.  Talk to you later!", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CHAIRMAN_TRADE",
+    "dynamic_line": "Anything valuable really.  If you really want to know, go ask one of the actual traders.  I'm just protecting other survivors.",
+    "responses": [
+      { "text": "I'll go talk to them later.", "topic": "TALK_CHAIRMAN" },
+      { "text": "Will do, thanks!", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CHAIRMAN_SCHOOLMONIT",
+    "dynamic_line": "They are the police type of guys for school. Well, they were, before the whole world ended.",
+    "responses": [
+      { "text": "Whatever, I had another question.", "topic": "TALK_CHAIRMAN" },
+      { "text": "Okay, I'll go look for him then. Thanks!", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CHAIRMAN_BYE",
+    "dynamic_line": "Stay safe out there.  Hate to have to kill you after you've already died.",
+    "responses": [ { "text": "Yeah, I won't.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "MISSION_SCHOOL_GET_COLA",
+    "type": "mission_definition",
+    "name": { "str": "Colaaaaa!" },
+    "description": "Make a friend at the school by handing over around five cans of cola.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 1,
+    "value": 1000,
+    "item": "cola",
+    "count": 5,
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_1_6", "place_npcs": [ { "class": "STUDENT_47", "x": 18, "y": 16 } ] }
+      ],
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "caff_gum", "count": 3 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_INCREASE_FIRSTAID",
+    "dialogue": {
+      "describe": "Come on man, I just need a can of cola.",
+      "offer": "With all that's been going on, it's been more and more difficult to find some cola.  My stash has been running low for a while now.  Think you could help me out here?  A few cans are all I need.",
+      "accepted": "Thanks, it's great to see someone willing to help a guy out.",
+      "rejected": "Well, I'll find someone else to do it for me.",
+      "advice": "Plenty of fridges in towns.  Gotta be some left overs in some of them houses.",
+      "inquire": "Got the drinks?",
+      "success": "Thanks!  I'll be sure to put in a good word for you around the center.",
+      "success_lie": "OK, then hand it over.",
+      "failure": "Shit happens."
+    }
+  },
+  {
+    "id": "MISSION_INCREASE_FIRSTAID",
+    "type": "mission_definition",
+    "name": { "str": "Quick Fix" },
+    "description": "Raise your <color_light_blue>first aid skill to at least 2</color>.",
+    "goal": "MGOAL_CONDITION",
+    "goal_condition": { "u_has_skill": { "skill": "firstaid", "level": 2 } },
+    "difficulty": 1,
+    "value": 0,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_GET_FILES",
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_2_2", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_2", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "1st_aid", "count": 1 } ]
+      },
+    "dialogue": {
+      "describe": "After this whole <the_cataclysm>, one do need to learn about first aid.  Without it, you have nothing - no docs, ambulances, or nurses.",
+      "offer": "The higher your survival skills are, the higher your chances of survival you have. Increase your skill level of first aid to 2, then come back to me.",
+      "accepted": "Great!  Now go, raise your first aid skills, and come back.",
+      "rejected": "Your loss.",
+      "advice": "Do anything related to first aid - healing yourself and others.",
+      "inquire": "Leveled up yet?",
+      "success": "Attaboy!  Now I'm sure that you will have a way to survive when some shit hits the fan.  Here's something, as a gift.",
+      "success_lie": "OK, show me.",
+      "failure": "Well, that's a shame."
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_GET_FILES",
+    "type": "mission_definition",
+    "name": { "str": "Data collection" },
+    "description": "Bring the chairman seven files, and some students will arrive.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 1,
+    "value": 1000,
+    "item": "file",
+    "count": 7,
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_2_5", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_2", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "caff_gum", "count": 3 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_KILL_30_Z",
+    "dialogue": {
+      "describe": "To look for some secrets, I need to retrieve some files - seven, for now.",
+      "offer": "While tracking this whole chaos, I need to get data from school, and there will be some data which is not discarded yet.  Guess they are lazy, or they had little time to erase them away.",
+      "accepted": "Thanks, it's great to see someone willing to help a guy out.",
+      "rejected": "Well, I'll find someone else to do it for me.",
+      "advice": "Search them throughly, especially in those cabinets or something.",
+      "inquire": "Got the files?",
+      "success": "Thanks!  I'll be sure to put in a good word for you around the center.",
+      "success_lie": "OK, then hand it over.",
+      "failure": "Shit happens."
+    }
+  },
+  {
+    "id": "MISSION_KILL_30_Z",
+    "type": "mission_definition",
+    "name": { "str": "Kill 30 Zombies" },
+    "goal": "MGOAL_KILL_MONSTER_SPEC",
+    "monster_species": "ZOMBIE",
+    "monster_kill_goal": 30,
+    "difficulty": 5,
+    "value": 250000,
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_2_6", "place_npcs": [ { "class": "GUNSMITH", "x": [ 2, 6 ], "y": [ 2, 6 ] } ] }
+      ],
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "chocolate", "count": 10 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_KILL_ROOFTOP_ZED",
+    "dialogue": {
+      "describe": "You seem to know this new world better than most…",
+      "offer": "You're kitted out better than most… would you be interested in making this world a little better for the rest of us?  The towns have enough supplies for us survivors to start securing a foothold but we don't have anyone with the skills and equipment to thin the masses of undead.  You and a 30 zombies laid to rest, what do you say?",
+      "accepted": "Hell ya, we may get ourselves killed but we'll be among the first legends of the apocalypse.  I will bring someone who could help you when you come back.",
+      "rejected": "Hey, I know I wouldn't volunteer for it either… but then I remember that most of us survivors won't make it unless someone decides to take the initiative.",
+      "advice": "I'd secure an ammo cache and try to sweep a town in multiple passes.",
+      "inquire": "Got this knocked out?",
+      "success": "Man… you're a goddamn machine.  It was a pleasure working with you.  You know, you may just change our little neck of the world if you keep this up.",
+      "success_lie": "I don't think that was quite thirty dead zeds.",
+      "failure": "Quitting already?"
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_KILL_ROOFTOP_ZED",
+    "type": "mission_definition",
+    "name": { "str": "Guns, grenades, and good cleanup" },
+    "description": "Clear out the rooftop, and try not do die while doing so.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 5,
+    "value": 500000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "ZhighSchool_4_5", "reveal_radius": 1 },
+      "update_mapgen": {
+        "om_terrain": "ZhighSchool_4_6",
+        "place_monster": [
+            { "monster": "mon_survivor_human_m4bb_boss", "name": "Charred Arsenal", "x": 1, "y": 1, "target": true } 
+          ]
+      }
+    },
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_2_4", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_2_2", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "chocolate", "count": 10 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_MOAR_DAKKA",
+    "dialogue": {
+      "describe": "We need help…",
+      "offer": "If you want to lend a hand we could use your help the problem on the top of the school.  A guy, who is called... 'charred arsenal' turned crazy and well, started blasting. He got his hand on a gun sonehow, so please put him down ASAP.",
+      "accepted": "Please be careful, we don't need any more deaths.",
+      "rejected": "Come back when you get a chance, we really need to start reclaiming the region.",
+      "advice": "If you can, get a friend or two to help you.",
+      "inquire": "Will they be bothering us any longer?",
+      "success": "Thank you, having that big of a threat close to home was nerve wracking.  Here's some of our local certified notes, we've been paying these to our workers in exchange for supplies.  They're getting some value in the school as a trade item, I'm afraid they're all we have to spare at the moment.",
+      "success_lie": "What good does this do us?",
+      "failure": "It was a lost cause anyways…"
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_MOAR_DAKKA",
+    "type": "mission_definition",
+    "name": { "str": "Guns, lots of guns" },
+    "description": "Get something cool at the school by handing over five BB M4s.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 1,
+    "value": 1000,
+    "item": "bbM4",
+    "count": 5,
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "container_alpha", "count": 1 } ]
+      },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_MOAR_AMMO",
+    "dialogue": {
+      "describe": "For giving others my program, bring me five BB M4s.",
+      "offer": "In order to arm ourselves, I need five BB M4s in order to add them on my drones. Not the best option but still better than nothing.",
+      "accepted": "Thanks, it's great to see someone willing to help a guy out.",
+      "rejected": "Well, I'll find someone else to do it for me.",
+      "advice": "Some could be found in the school, try to find them on lockers.  A dude called gunsmith will also works.",
+      "inquire": "Got the items?",
+      "success": "Thanks!  I'll be sure to put in a good word for you around the school.",
+      "success_lie": "OK, then hand it over.",
+      "failure": "Shit happens."
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_MOAR_AMMO",
+    "type": "mission_definition",
+    "name": { "str": "Spray n' Pray" },
+    "description": "Handle over ten bb magazines.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 1,
+    "value": 1000,
+    "item": "BBclip300",
+    "count": 10,
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "chocolate", "count": 10 } ]
+      },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_INCREASE_SURVIVAL",
+    "dialogue": {
+      "describe": "For giving others my program, bring me ten bb magazines.",
+      "offer": "In order to arm ourselves, I need ten bb magazines in order to add them on my drones. Not the best option but still better than nothing.",
+      "accepted": "Thanks, it's great to see someone willing to help a guy out.",
+      "rejected": "Well, I'll find someone else to do it for me.",
+      "advice": "A dude called gunsmith will also works, since he will sell some good stuff.  Or you could make one, if needed.",
+      "inquire": "Got the items?",
+      "success": "Thanks!  I'll be sure to put in a good word for you around the school.",
+      "success_lie": "OK, then hand it over.",
+      "failure": "Shit happens."
+    }
+  },
+  {
+    "id": "MISSION_INCREASE_SURVIVAL",
+    "type": "mission_definition",
+    "name": { "str": "Rules of Nature" },
+    "description": "Raise your <color_light_blue>survival skill to at least 3</color>.",
+    "goal": "MGOAL_CONDITION",
+    "goal_condition": { "u_has_skill": { "skill": "survival", "level": 3 } },
+    "difficulty": 1,
+    "value": 0,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_INCREASE_THROW",
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "survival_kit", "count": 1 },
+        { "u_buy_item": "caff_gum", "count": 3 },
+        { "u_buy_item": "chocolate", "count": 10 } ]
+      },
+    "dialogue": {
+      "describe": "After this whole <the_cataclysm>, one do need to learn about survival to stay alive.  You could easliy die if you don't.",
+      "offer": "The higher your survival skills are, the higher your chances of survival you have. Increase your skill level of survival to 3, then come back to me.",
+      "accepted": "Great!  Now go, raise your survival skills, and come back.",
+      "rejected": "Your loss.",
+      "advice": "Do anything related to survival - foraging, butchering, and making survival related items.  Go innawoods, if needed.",
+      "inquire": "Leveled up yet?",
+      "success": "There you go!  Now I'm sure that you will have a way to survive when some shit hits the fan.  Here's something, as a gift.",
+      "success_lie": "OK, show me.",
+      "failure": "Well, that's a shame."
+    }
+  },
+  {
+    "id": "MISSION_INCREASE_THROW",
+    "type": "mission_definition",
+    "name": { "str": "Playing ball" },
+    "description": "Raise your <color_light_blue>throwing skill to at least 3</color>.",
+    "goal": "MGOAL_CONDITION",
+    "goal_condition": { "u_has_skill": { "skill": "throw", "level": 3 } },
+    "difficulty": 1,
+    "value": 0,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_COLLECTOR",
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_2_5", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_2_5", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "caff_gum", "count": 3 },
+        { "u_buy_item": "chocolate", "count": 10 } ]
+      },
+    "dialogue": {
+      "describe": "You like to play catch? No? Still, one need to learn how to throw in <the_cataclysm>, since throwing could do a lot of things - distracting, tossimg a 'nade, or others.",
+      "offer": "The higher your throwing skills are, the higher your chances of survival you have. Increase your skill level of throwing to 3, then come back to me.",
+      "accepted": "Great!  Now go, raise your throwing skills, and come back.",
+      "rejected": "Your loss.",
+      "advice": "Throw a lot. Like, a LOT.",
+      "inquire": "Leveled up yet?",
+      "success": "There you go!  Now I'm sure that you will have a way to survive when some shit hits the fan.  Here's something, as a gift.",
+      "success_lie": "OK, show me.",
+      "failure": "Well, that's a shame."
+    }
+  },
+  {
+    "id": "MISSION_COLLECTOR",
+    "type": "mission_definition",
+    "name": { "str": "Collector" },
+    "description": "Gather <color_light_blue>an ultimate survival kit, a family photo, a hatchet, a can of energy drink, a coin, a RPG die, a hockey mask, a Linux t-shirt, and a Secure container Alpha</color> and bring them back to <color_light_red>get something cool</color>.",
+    "goal": "MGOAL_CONDITION",
+    "goal_condition": {
+      "and": [
+        { "u_has_item": "premium_survival_kit" },
+        { "u_has_item": "family_photo" },
+        { "u_has_item": "hatchet" },
+        { "u_has_item": "energy_drink" },
+        { "u_has_item": "coin_quarter" },
+        { "u_has_item": "RPG_die" },
+        { "u_has_item": "mask_hockey" },
+        { "u_has_item": "linuxtshirt" },
+        { "u_has_item": "container_alpha" }
+      ]
+    },
+    "difficulty": 1,
+    "value": 750000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_KILL_ROOFTOP_ZED_2",
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_2_9", "place_npcs": [ { "class": "SWORDSMAN", "x": 11, "y": 2 } ] },
+        { "om_terrain": "ZhighSchool_2_4", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_2_2", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "effect": 
+	  [
+        { "u_sell_item": "premium_survival_kit" },
+        { "u_sell_item": "family_photo" },
+        { "u_sell_item": "hatchet" },
+        { "u_sell_item": "coin_quarter" },
+        { "u_sell_item": "energy_drink" },
+        { "u_sell_item": "RPG_die" },
+        { "u_sell_item": "mask_hockey" },
+        { "u_sell_item": "linuxtshirt" },
+        { "u_sell_item": "container_alpha" },
+        { "u_buy_item": "caff_gum", "count": 3 },
+        { "u_buy_item": "chocolate", "count": 10 },
+        { "u_buy_item": "container_kappa" }
+      ]
+    },
+    "dialogue": {
+      "describe": "Students who lived in here often leave souvenirs after themselves. The mission is to obtain and deliver those items to me. No questions asked. The things are pretty rare. And also the Alpha container that I gave you.",
+      "offer": "I will give you the list of items, and you bring all of them to me at once.",
+      "accepted": "Great! Bring them ASAP.",
+      "rejected": "Your loss.",
+      "advice": "Search every place carefully.",
+      "inquire": "Got those items yet?",
+      "success": "Have you got it all? Good, <name_g>. Your hard-earned reward awaits you in the specified drop-spot, just as promised. Congratulations, and welcome.",
+      "success_lie": "OK, then hand them over.",
+      "failure": "Well, that's a shame."
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_KILL_ROOFTOP_ZED_2",
+    "type": "mission_definition",
+    "name": { "str": "Guns, grenades, and good cleanup, part 2" },
+    "description": "Clear out the parking lot, and try not do die while doing so.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 10,
+    "value": 500000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "ZhighSchool_4_5", "reveal_radius": 1 },
+      "update_mapgen": {
+        "om_terrain": "ZhighSchool_1_3",
+        "place_monster": [
+            { "monster": "mon_zombie_soldier_acid_2", "name": "Student", "x": 1, "y": 1, "target": true } 
+          ]
+      }
+    },
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_2_4", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_2_2", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "caff_gum", "count": 3 },
+        { "u_buy_item": "chocolate", "count": 10 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_KILL_ROOFTOP_ZED_2",
+    "dialogue": {
+      "describe": "We need help…",
+      "offer": "If you want to lend a hand we could use your help the problem on the parking lot of the school. A guy turned crazy and well, started blasting. He got his hand on a gun somehow, so please put him down ASAP.",
+      "accepted": "Please be careful, we don't need any more deaths.",
+      "rejected": "Come back when you get a chance, we really need to start reclaiming the region.",
+      "advice": "If you can, get a friend or two to help you.",
+      "inquire": "Will they be bothering us any longer?",
+      "success": "Thank you, having that big of a threat close to home was nerve wracking.  Here's some of our local certified notes, we've been paying these to our workers in exchange for supplies.  They're getting some value in the school as a trade item, I'm afraid they're all we have to spare at the moment.",
+      "success_lie": "What good does this do us?",
+      "failure": "It was a lost cause anyways…"
+    }
+  }
+]

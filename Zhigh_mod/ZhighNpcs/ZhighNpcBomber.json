@@ -1,5 +1,42 @@
 [
   {
+    "type": "npc",
+    "id": "BOMBER",
+    "name_unique": "Hyun Ji Lim",
+    "name_suffix": "student",
+    "gender": "female",
+    "class": "NC_Bomber",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_BOMBER",
+    "mission_offered": "MISSION_SCHOOL_GET_COLABOMB",
+    "faction": "Zhigh_Survivors"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_Bomber",
+    "name": { "str": "Bomber" },
+    "job_description": "I blow stuff up.",
+    "traits": [
+      { "group": "BG_survival_story_RURAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "Appearance_Bomber" },
+      [ "REGEN_zhigh", 100 ]
+    ],
+    "common": false,
+    "worn_override": "NC_Bomber_worn",
+    "carry_override": "NC_Bomber_carry",
+    "weapon_override": "ZhighGuardWeaponGroups",
+    "bonus_str": { "rng": [ 2, 4 ] },
+    "bonus_int": { "rng": [ -3, 0 ] },
+    "bonus_per": { "rng": [ -1, 1 ] },
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "throw", "bonus": { "rng": [ 4, 7 ] } }
+    ]
+  },
+  {
     "type": "trait_group",
     "id": "Appearance_Bomber",
     "subtype": "collection",
@@ -36,43 +73,6 @@
       { "group": "snacks_fancy", "prob": 50, "charges": 2 },
       { "item": "zhigh_smart_phone" }
     ]
-  },
-  {
-    "type": "npc_class",
-    "id": "NC_Bomber",
-    "name": { "str": "Bomber" },
-    "job_description": "I blow stuff up.",
-    "traits": [
-      { "group": "BG_survival_story_RURAL" },
-      { "group": "NPC_starting_traits" },
-      { "group": "Appearance_Bomber" },
-      [ "REGEN_zhigh", 100 ]
-    ],
-    "common": false,
-    "worn_override": "NC_Bomber_worn",
-    "carry_override": "NC_Bomber_carry",
-    "weapon_override": "ZhighGuardWeaponGroups",
-    "bonus_str": { "rng": [ 2, 4 ] },
-    "bonus_int": { "rng": [ -3, 0 ] },
-    "bonus_per": { "rng": [ -1, 1 ] },
-    "skills": [
-      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
-      { "skill": "dodge", "bonus": { "rng": [ 1, 2 ] } },
-      { "skill": "throw", "bonus": { "rng": [ 4, 7 ] } }
-    ]
-  },
-  {
-    "type": "npc",
-    "id": "BOMBER",
-    "name_unique": "Hyun Ji Lim",
-    "name_suffix": "student",
-    "gender": "female",
-    "class": "NC_Bomber",
-    "attitude": 0,
-    "mission": 8,
-    "chat": "TALK_BOMBER",
-    "mission_offered": "MISSION_SCHOOL_GET_COLABOMB",
-    "faction": "Zhigh_Survivors"
   },
   {
     "type": "talk_topic",

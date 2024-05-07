@@ -1,0 +1,247 @@
+[
+  {
+    "type": "npc",
+    "id": "ZHIGHDEADEYE",
+    "name_unique": "Yang Gung Yang",
+    "name_suffix": "Student",
+    "class": "NC_ZHIGHDEADEYE",
+    "gender": "female",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_ZHIGHDEADEYE",
+    "faction": "Zhigh_Survivors"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_ZHIGHDEADEYE",
+    "name": { "str": "Deadeye" },
+    "job_description": "I sell bows and bow accessories.",
+    "traits": [
+      { "trait": "BGSS_Scavenger_Merc_1" },
+      { "trait": "PSYCHOPATH" },
+      { "trait": "REGEN_zhigh" }, 
+      { "group": "Appearance_ZhighDeadeye" }
+    ],
+    "common": false,
+    "bonus_str": { "rng": [ 6, 7 ] },
+    "bonus_int": { "rng": [ -1, 0 ] },
+    "bonus_per": { "rng": [ -2, 1 ] },
+    "bonus_dex": { "rng": [ 2, 3 ] },
+    "weapon_override": "NC_ZHIGHDEADEYE_weapon",
+    "carry_override": "NC_ZHIGHDEADEYE_misc",
+    "worn_override": "NC_ZHIGHDEADEYE_worn",
+    "skills": [
+      { "skill": "gun", "bonus": { "rng": [ 9, 10 ] } },
+      { "skill": "archery", "bonus": { "rng": [ 6, 8 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ZHIGHDEADEYE_worn",
+    "subtype": "collection",
+    "entries": [
+      { "group": "npc_underwear_bottom_female" },
+      { "group": "npc_underwear_top_female" },
+      { "group": "ZhighNpc_underwear_feet_female" },
+      { "item": "shorts_tracksuit_zhigh" },
+      { "item": "dress_shirt_zhigh" },
+      { "item": "jacket_windbreaker" },
+      { "item": "vambrace_larmor" },
+      { "item": "rucksack" },
+      { "group": "ZhighNpc_shoes_female" }
+    ]
+  },
+  {
+    "type": "trait_group",
+    "id": "Appearance_ZhighDeadeye",
+    "subtype": "collection",
+    "traits": [ { "trait": "hair_dead_eye" }, { "trait": "eye_green" }, { "trait": "SKIN_LIGHT" } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ZHIGHDEADEYE_weapon",
+    "items": [
+      { "item": "compositebow" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "NC_ZHIGHDEADEYE_misc",
+    "items": [
+      { "item": "arrow_wood", "count-min": 10, "count-max": 20, "prob": 100 },
+      { "item": "arrow_exploding", "count-min": 5, "count-max": 8, "prob": 100 },
+      { "item": "arrow_cf", "count-min": 20, "count-max": 50, "prob": 100 }
+    ]
+  },
+  {
+    "id": "TALK_ZHIGHDEADEYE",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_is_wearing": "armband_zhigh_halmon",
+      "yes": [
+        "School hall monitor.",
+        "Talk, School hall monitor.",
+        "Speak.",
+        "What?",
+        "Why?",
+        "What do you want?",
+        "What now?"
+      ],
+      "no": [ 
+        "Make it fast.",
+        "Yes?",
+        "Huh?",
+        "Well?",
+        "Make it fast.",
+        "Hurry up.",
+        "Spit it out."
+	  ]
+    },
+    "responses": [
+      { "text": "What are you doing here?", "topic": "TALK_ZHIGHDEADEYE_DOING" },
+      { "text": "Let's make a deal.", "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL" },
+      { "text": "Well, bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_ZHIGHDEADEYE_DOING",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_is_wearing": "armband_zhigh_halmon",
+      "yes": "Mind own business, monitor.  You pay me, I give you stuff.",
+      "no": "I supply this school with bows.  Thank god I have some stock in my hand."
+    },
+    "responses": [ { "text": "Okay then.", "topic": "TALK_ZHIGHDEADEYE" } ]
+  },
+  {
+    "id": "TALK_ZHIGHDEADEYE_DEADEYEDEAL",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "npc_has_effect": "currently_busy",
+      "yes": "I'm out of some things, <name_g>.  It takes a while to get some ammo - but I'm working hard to replace it.  What can I get you in the meantime?",
+      "no": "I'll see what I've got around here for you.  I've gotta warn you: it's expensive.  Hard to stay supplied when crap hits the fan, you know.  What do you need?"
+    },
+    "responses": [
+      { "text": "Nevermind.", "topic": "TALK_ZHIGHDEADEYE" },
+      {
+        "text": "[5$]  I'll buy a short bow.",
+        "effect": [ { "u_buy_item": "shortbow", "cost": 500, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      },
+      {
+        "text": "[550$]  I'll buy a compound bow.",
+        "effect": [ { "u_buy_item": "compbow", "cost": 55000, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      },
+      {
+        "text": "[1000$]  I'll buy a composite longbow.",
+        "effect": [ { "u_buy_item": "compositebow", "cost": 100000, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      },
+      {
+        "text": "[320$]  I'll buy a composite short bow.",
+        "effect": [ { "u_buy_item": "compositebow_short", "cost": 32000, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      },
+      {
+        "text": "[500$]  I'll buy a longbow.",
+        "effect": [ { "u_buy_item": "longbow", "cost": 50000, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      },
+      {
+        "text": "[1500$]  I'll buy a wooden greatbow.",
+        "effect": [ { "u_buy_item": "woodgreatbow", "cost": 150000, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      },
+      {
+        "text": "[1600$]  I'll buy a composite greatbow.",
+        "effect": [ { "u_buy_item": "compgreatbow", "cost": 160000, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      },
+      {
+        "text": "[40$]  I'll buy an arrow rest.",
+        "effect": [ { "u_buy_item": "arrowrest", "cost": 4000, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      },
+      {
+        "text": "[40$]  I'll buy a bow stabilizer.",
+        "effect": [ { "u_buy_item": "bow_stabilizer", "cost": 4000, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      },
+      {
+        "text": "[150$]  I'll buy a bow stabilizer system.",
+        "effect": [ { "u_buy_item": "bow_stabilizer_set", "cost": 15000, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      },
+      {
+        "text": "[5$]  I'll buy a bow dampening kit.",
+        "effect": [ { "u_buy_item": "bow_silencer", "cost": 500, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      }
+    ]
+  },
+  {
+    "id": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END",
+    "type": "talk_topic",
+    "dynamic_line": [ "Is there anything else you need?" ],
+    "responses": [
+      { "text": "Nevermind.", "topic": "TALK_DONE" },
+      {
+        "text": "[5$]  I'll buy a short bow.",
+        "effect": [ { "u_buy_item": "shortbow", "cost": 500, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      },
+      {
+        "text": "[550$]  I'll buy a compound bow.",
+        "effect": [ { "u_buy_item": "compbow", "cost": 55000, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      },
+      {
+        "text": "[1000$]  I'll buy a composite longbow.",
+        "effect": [ { "u_buy_item": "compositebow", "cost": 100000, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      },
+      {
+        "text": "[320$]  I'll buy a composite short bow.",
+        "effect": [ { "u_buy_item": "compositebow_short", "cost": 32000, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      },
+      {
+        "text": "[500$]  I'll buy a longbow.",
+        "effect": [ { "u_buy_item": "longbow", "cost": 50000, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      },
+      {
+        "text": "[1500$]  I'll buy a wooden greatbow.",
+        "effect": [ { "u_buy_item": "woodgreatbow", "cost": 150000, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      },
+      {
+        "text": "[1600$]  I'll buy a composite greatbow.",
+        "effect": [ { "u_buy_item": "compgreatbow", "cost": 160000, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      },
+      {
+        "text": "[40$]  I'll buy an arrow rest.",
+        "effect": [ { "u_buy_item": "arrowrest", "cost": 4000, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      },
+      {
+        "text": "[40$]  I'll buy a bow stabilizer.",
+        "effect": [ { "u_buy_item": "bow_stabilizer", "cost": 4000, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      },
+      {
+        "text": "[150$]  I'll buy a bow stabilizer system.",
+        "effect": [ { "u_buy_item": "bow_stabilizer_set", "cost": 15000, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      },
+      {
+        "text": "[5$]  I'll buy a bow dampening kit.",
+        "effect": [ { "u_buy_item": "bow_silencer", "cost": 500, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      }
+    ]
+  }
+]

@@ -1,5 +1,44 @@
 [
   {
+    "type": "npc",
+    "id": "FIREMAN",
+    "name_unique": "Jun Ho Kim",
+    "name_suffix": "student",
+    "gender": "male",
+    "class": "NC_Fireman",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_FIREMAN",
+    "mission_offered": "MISSION_SCHOOL_GET_LIGHTER",
+    "faction": "Zhigh_Survivors"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_Fireman",
+    "name": { "str": "Fireman" },
+    "job_description": "I shoot others with a fire extinguisher.",
+    "traits": [
+      { "group": "BG_survival_story_RURAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "Appearance_Fireman" },
+      [ "REGEN_zhigh", 100 ]
+    ],
+    "common": false,
+    "worn_override": "NC_Fireman_worn",
+    "carry_override": "NC_Fireman_carry",
+    "weapon_override": "NC_Fireman_weapon",
+    "bonus_str": { "rng": [ -1, 3 ] },
+    "bonus_int": { "rng": [ 1, 3 ] },
+    "bonus_per": { "rng": [ 1, 2 ] },
+    "bonus_dex": { "rng": [ 0, 2 ] },
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 1, 3 ] } }
+    ]
+  },
+  {
     "type": "trait_group",
     "id": "Appearance_Fireman",
     "subtype": "collection",
@@ -39,45 +78,6 @@
       { "item": "ID_1st" },
       { "item": "zhigh_smart_phone" }
     ]
-  },
-  {
-    "type": "npc_class",
-    "id": "NC_Fireman",
-    "name": { "str": "Fireman" },
-    "job_description": "I shoot others with a fire extinguisher.",
-    "traits": [
-      { "group": "BG_survival_story_RURAL" },
-      { "group": "NPC_starting_traits" },
-      { "group": "Appearance_Fireman" },
-      [ "REGEN_zhigh", 100 ]
-    ],
-    "common": false,
-    "worn_override": "NC_Fireman_worn",
-    "carry_override": "NC_Fireman_carry",
-    "weapon_override": "NC_Fireman_weapon",
-    "bonus_str": { "rng": [ -1, 0 ] },
-    "bonus_int": { "rng": [ 1, 3 ] },
-    "bonus_per": { "rng": [ 1, 4 ] },
-    "bonus_dex": { "rng": [ 0, 2 ] },
-    "skills": [
-      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
-      { "skill": "dodge", "bonus": { "rng": [ 1, 3 ] } },
-      { "skill": "melee", "bonus": { "rng": [ 2, 4 ] } },
-      { "skill": "unarmed", "bonus": { "rng": [ 1, 3 ] } }
-    ]
-  },
-  {
-    "type": "npc",
-    "id": "FIREMAN",
-    "name_unique": "Jun Ho Kim",
-    "name_suffix": "student",
-    "gender": "male",
-    "class": "NC_Fireman",
-    "attitude": 0,
-    "mission": 8,
-    "chat": "TALK_FIREMAN",
-    "mission_offered": "MISSION_SCHOOL_GET_LIGHTER",
-    "faction": "Zhigh_Survivors"
   },
   {
     "type": "talk_topic",

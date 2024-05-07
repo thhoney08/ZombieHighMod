@@ -1,8 +1,18 @@
 [
   {
+    "type": "npc",
+    "id": "Zhigh_guard",
+    "name_suffix": "student",
+    "class": "NC_ZHIGHGUARD",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_ZHIGH_GUARD",
+    "faction": "Zhigh_Survivors"
+  },
+  {
     "type": "npc_class",
     "id": "NC_ZHIGHGUARD",
-    "name": { "str": "Guard" },
+    "name": { "str": "School Guard" },
     "job_description": "I'm protecting my school.",
     "traits": [ 
       { "group": "BG_survival_story_RURAL" }, 
@@ -67,16 +77,6 @@
     "entries": [
       { "group": "ZhighGuardWeaponGroups" }
     ]
-  },
-  {
-    "type": "npc",
-    "id": "Zhigh_guard",
-    "name_suffix": "student",
-    "class": "NC_ZHIGHGUARD",
-    "attitude": 0,
-    "mission": 8,
-    "chat": "TALK_ZHIGH_GUARD",
-    "faction": "Zhigh_Survivors"
   },
   {
     "id": "TALK_ZHIGH_GUARD",

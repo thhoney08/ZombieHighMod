@@ -1,8 +1,20 @@
 [
   {
+    "type": "npc",
+    "id": "STUDENT_47",
+    "name_unique": "Tobias Rieper",
+    "name_suffix": "Student",
+    "gender": "male",
+    "class": "NC_ZHIGHGUARD47",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_ZHIGHGUARD47",
+    "faction": "Zhigh_Survivors"
+  },
+  {
     "type": "npc_class",
     "id": "NC_ZHIGHGUARD47",
-    "name": { "str": "Guard" },
+    "name": { "str": "Agent 47" },
     "job_description": "I'm protecting my school.",
     "traits": [
       { "group": "BG_survival_story_RURAL" },
@@ -72,18 +84,6 @@
     "id": "NC_Agent47_weapon",
     "subtype": "distribution",
     "entries": [ { "item": "knife_rm42" } ]
-  },
-  {
-    "type": "npc",
-    "id": "STUDENT_47",
-    "name_unique": "Tobias Rieper",
-    "name_suffix": "Student",
-    "gender": "male",
-    "class": "NC_ZHIGHGUARD47",
-    "attitude": 0,
-    "mission": 7,
-    "chat": "TALK_ZHIGHGUARD47",
-    "faction": "Zhigh_Survivors"
   },
   {
     "type": "talk_topic",

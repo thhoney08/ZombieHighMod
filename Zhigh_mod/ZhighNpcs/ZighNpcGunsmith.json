@@ -10,33 +10,9 @@
     "faction": "Zhigh_Survivors"
   },
   {
-    "type": "item_group",
-    "id": "NC_GunSmith_worn",
-    "subtype": "collection",
-    "entries": [
-      { "group": "npc_underwear_bottom_male" },
-      { "group": "npc_underwear_top_male" },
-      { "group": "ZhighNpc_underwear_feet_male" },
-      { "group": "ZhighNpc_shoes_male" },
-      { "item": "pants_zhigh" },
-      { "item": "dress_shirt_zhigh" },
-      { "group": "npc_gloves" },
-      { "item": "bandana" },
-      { "item": "cloak_fur" },
-      { "item": "molle_pack" },
-      { "item": "wristwatch", "prob": 80 }
-    ]
-  },
-  {
-    "type": "trait_group",
-    "id": "Appearance_GunSmith",
-    "subtype": "collection",
-    "traits": [ { "trait": "eye_red" }, { "trait": "SKIN_MEDIUM" } ]
-  },
-  {
     "type": "npc_class",
     "id": "NC_GUNSMITH",
-    "name": { "str": "Student" },
+    "name": { "str": "Gunsmith" },
     "job_description": "Guns and ammo I deal.",
     "traits": [
       { "trait": "BGSS_Scavenger_Merc_1" },
@@ -59,6 +35,30 @@
       { "skill": "gun", "bonus": { "rng": [ 2, 5 ] } },
       { "skill": "smg", "bonus": { "rng": [ 1, 3 ] } }
     ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_GunSmith_worn",
+    "subtype": "collection",
+    "entries": [
+      { "group": "npc_underwear_bottom_male" },
+      { "group": "npc_underwear_top_male" },
+      { "group": "ZhighNpc_underwear_feet_male" },
+      { "group": "ZhighNpc_shoes_male" },
+      { "item": "pants_zhigh" },
+      { "item": "dress_shirt_zhigh" },
+      { "group": "npc_gloves" },
+      { "item": "bandana" },
+      { "item": "cloak_fur" },
+      { "item": "molle_pack" },
+      { "item": "wristwatch", "prob": 80 }
+    ]
+  },
+  {
+    "type": "trait_group",
+    "id": "Appearance_GunSmith",
+    "subtype": "collection",
+    "traits": [ { "trait": "eye_red" }, { "trait": "SKIN_MEDIUM" } ]
   },
   {
     "type": "item_group",
