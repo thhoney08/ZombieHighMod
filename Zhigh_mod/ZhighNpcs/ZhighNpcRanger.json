@@ -57,7 +57,11 @@
     "type": "trait_group",
     "id": "Appearance_ZhighRanger",
     "subtype": "collection",
-    "traits": [ { "trait": "hair_black_long_ranger" }, { "trait": "eye_black" }, { "trait": "SKIN_TAN" } ]
+    "traits": [
+		{ "trait": "hair_black_long_ranger" },
+		{ "trait": "eye_black" },
+		{ "trait": "SKIN_TAN" }
+	  ]
   },
   {
     "type": "item_group",
@@ -71,6 +75,8 @@
     "subtype": "collection",
     "id": "NC_ZHIGHRANGER_misc",
     "items": [
+      { "group": "NC_GUARD_misc" },
+      { "item": "ID_2nd" },
       { "item": "arrow_wood", "count-min": 3, "count-max": 4, "prob": 100 },
       { "item": "arrow_cf", "count-min": 2, "count-max": 3, "prob": 100 }
     ]
@@ -148,6 +154,56 @@
       {
         "text": "[25$]  I'll buy wooden broadhead arrows.",
         "effect": [ { "u_buy_item": "arrow_wood", "cost": 2500, "count": 10 } ],
+        "topic": "TALK_ZHIGHRANGER_RANGERDEAL_END"
+      },
+      {
+        "text": "[25$]  I'll buy acid arrows.",
+        "effect": [ { "u_buy_item": "arrow_glassAcid", "cost": 2500, "count": 10 } ],
+        "topic": "TALK_ZHIGHRANGER_RANGERDEAL_END"
+      },
+      {
+        "text": "[25$]  I'll buy toxic arrows.",
+        "effect": [ { "u_buy_item": "arrow_glassToxic", "cost": 2500, "count": 10 } ],
+        "topic": "TALK_ZHIGHRANGER_RANGERDEAL_END"
+      },
+      {
+        "text": "[25$]  I'll buy insecticidal arrows.",
+        "effect": [ { "u_buy_item": "arrow_glassFungi", "cost": 2500, "count": 10 } ],
+        "topic": "TALK_ZHIGHRANGER_RANGERDEAL_END"
+      },
+      {
+        "text": "[25$]  I'll buy fungicldal arrows.",
+        "effect": [ { "u_buy_item": "arrow_glassInsect", "cost": 2500, "count": 10 } ],
+        "topic": "TALK_ZHIGHRANGER_RANGERDEAL_END"
+      },
+      {
+        "text": "[25$]  I'll buy smoke arrows.",
+        "effect": [ { "u_buy_item": "arrow_glassSmoke", "cost": 2500, "count": 10 } ],
+        "topic": "TALK_ZHIGHRANGER_RANGERDEAL_END"
+      },
+      {
+        "text": "[25$]  I'll buy tear gas arrows.",
+        "effect": [ { "u_buy_item": "arrow_glassTear", "cost": 2500, "count": 10 } ],
+        "topic": "TALK_ZHIGHRANGER_RANGERDEAL_END"
+      },
+      {
+        "text": "[25$]  I'll buy flare arrows.",
+        "effect": [ { "u_buy_item": "arrow_sigFlare", "cost": 2500, "count": 10 } ],
+        "topic": "TALK_ZHIGHRANGER_RANGERDEAL_END"
+      },
+      {
+        "text": "[25$]  I'll buy boxing glove arrows.",
+        "effect": [ { "u_buy_item": "arrow_boxing", "cost": 2500, "count": 10 } ],
+        "topic": "TALK_ZHIGHRANGER_RANGERDEAL_END"
+      },
+      {
+        "text": "[25$]  I'll buy wooden cresent arrows.",
+        "effect": [ { "u_buy_item": "arrow_splay", "cost": 2500, "count": 10 } ],
+        "topic": "TALK_ZHIGHRANGER_RANGERDEAL_END"
+      },
+      {
+        "text": "[25$]  I'll buy poison arrows.",
+        "effect": [ { "u_buy_item": "arrow_poison", "cost": 2500, "count": 10 } ],
         "topic": "TALK_ZHIGHRANGER_RANGERDEAL_END"
       },
       {
@@ -231,6 +287,56 @@
       {
         "text": "[25$]  I'll buy wooden broadhead arrows.",
         "effect": [ { "u_buy_item": "arrow_wood", "cost": 2500, "count": 10 } ],
+        "topic": "TALK_ZHIGHRANGER_RANGERDEAL_END"
+      },
+      {
+        "text": "[25$]  I'll buy acid arrows.",
+        "effect": [ { "u_buy_item": "arrow_glassAcid", "cost": 2500, "count": 10 } ],
+        "topic": "TALK_ZHIGHRANGER_RANGERDEAL_END"
+      },
+      {
+        "text": "[25$]  I'll buy toxic arrows.",
+        "effect": [ { "u_buy_item": "arrow_glassToxic", "cost": 2500, "count": 10 } ],
+        "topic": "TALK_ZHIGHRANGER_RANGERDEAL_END"
+      },
+      {
+        "text": "[25$]  I'll buy insecticidal arrows.",
+        "effect": [ { "u_buy_item": "arrow_glassFungi", "cost": 2500, "count": 10 } ],
+        "topic": "TALK_ZHIGHRANGER_RANGERDEAL_END"
+      },
+      {
+        "text": "[25$]  I'll buy fungicldal arrows.",
+        "effect": [ { "u_buy_item": "arrow_glassInsect", "cost": 2500, "count": 10 } ],
+        "topic": "TALK_ZHIGHRANGER_RANGERDEAL_END"
+      },
+      {
+        "text": "[25$]  I'll buy smoke arrows.",
+        "effect": [ { "u_buy_item": "arrow_glassSmoke", "cost": 2500, "count": 10 } ],
+        "topic": "TALK_ZHIGHRANGER_RANGERDEAL_END"
+      },
+      {
+        "text": "[25$]  I'll buy tear gas arrows.",
+        "effect": [ { "u_buy_item": "arrow_glassTear", "cost": 2500, "count": 10 } ],
+        "topic": "TALK_ZHIGHRANGER_RANGERDEAL_END"
+      },
+      {
+        "text": "[25$]  I'll buy flare arrows.",
+        "effect": [ { "u_buy_item": "arrow_sigFlare", "cost": 2500, "count": 10 } ],
+        "topic": "TALK_ZHIGHRANGER_RANGERDEAL_END"
+      },
+      {
+        "text": "[25$]  I'll buy boxing glove arrows.",
+        "effect": [ { "u_buy_item": "arrow_boxing", "cost": 2500, "count": 10 } ],
+        "topic": "TALK_ZHIGHRANGER_RANGERDEAL_END"
+      },
+      {
+        "text": "[25$]  I'll buy wooden cresent arrows.",
+        "effect": [ { "u_buy_item": "arrow_splay", "cost": 2500, "count": 10 } ],
+        "topic": "TALK_ZHIGHRANGER_RANGERDEAL_END"
+      },
+      {
+        "text": "[25$]  I'll buy poison arrows.",
+        "effect": [ { "u_buy_item": "arrow_poison", "cost": 2500, "count": 10 } ],
         "topic": "TALK_ZHIGHRANGER_RANGERDEAL_END"
       },
       {

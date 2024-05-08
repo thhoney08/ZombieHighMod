@@ -66,6 +66,32 @@
     "requirements": { "pressure_max": 996, "required_weathers": [ "rain" ] }
   },
   {
+    "id": "heavy_rain",
+    "type": "weather_type",
+    "name": "Heavy Rain",
+    "color": "c_magenta",
+    "map_color": "c_magenta_red",
+    "glyph": "%",
+    "ranged_penalty": 8,
+    "sight_penalty": 8.0,
+    "light_modifier": -90,
+    "sound_attn": 9,
+    "dangerous": true,
+    "precip": "heavy",
+    "rains": true,
+    "acidic": true,
+    "effects": [ { "name": "thunder", "intensity": 999 }, { "name": "lightning", "intensity": 999 }, { "name": "acid", "intensity": 999 } ],
+    "animation": { "factor": 0.4, "color": "c_white", "glyph": "*", "tile": "weather_acid_drop" },
+    "sound_category": "thunder",
+    "sun_intensity": "none",
+    "requirements": {
+      "pressure_max": 994,
+      "humidity_min": 97,
+      "humidity_and_pressure": false,
+      "required_weathers": [ "cloudy", "light_drizzle", "drizzle", "rain" ]
+    }
+  },
+  {
     "id": "lightning",
     "type": "weather_type",
     "name": "UNKNOWN",

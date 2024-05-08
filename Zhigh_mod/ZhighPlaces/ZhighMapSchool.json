@@ -4,7 +4,7 @@
     "id": "sloc_ZhighSchool",
     "name": "high school",
     "terrain": [
-      "ZhighSchool_2_2", "ZhighSchool_2_3", "ZhighSchool_2_7",
+      "ZhighSchool_2_2", "ZhighSchool_2_3", "ZhighSchool_2_9", "ZhighSchool_2_7",
       "ZhighSchool_2_4", "ZhighSchool_2_5", "ZhighSchool_2_6" ]
   },
   {
@@ -570,10 +570,10 @@
         { "class": "JUVENILE_MERC", "x": 12, "y": 65 },
         { "class": "JUVENILE_MERC", "x": 10, "y": 55 },
         { "class": "GRUNT_MERC", "x": 52, "y": 42 },
+        { "class": "JUVENILE_MERC", "x": 10, "y": 50 },
+        { "class": "GRUNT_MERC", "x": 50, "y": 42 },
         { "class": "Zhigh_guard", "x": 55, "y": 65 },
         { "class": "zhighNurse", "x": 28, "y": 21 },
-        { "class": "ZHIGHDEADEYE", "x": 64, "y": 64 },
-        { "class": "ZHIGHRANGER", "x": 50, "y": 43 },
         { "class": "JUVENILE_MERC", "x": 40, "y": 40 },
         { "class": "Zhigh_guard", "x": 29, "y": 23 },
         { "class": "Zhigh_guard", "x": 33, "y": 59 },
@@ -605,13 +605,13 @@
         { "type": "NPC_NO_INVESTIGATE", "faction": "Zhigh_Survivors", "x": [ 48, 71 ], "y": [ 48, 71 ] }
       ],
       "place_monsters": [
-        { "monster": "GROUP_ZHIGH", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+        { "monster": "GROUP_ZHIGH", "x": [ 0, 23 ], "y": [ 0, 23 ], "repeat": [ 1, 2 ] },
         { "monster": "GROUP_ZHIGH", "x": [ 0, 23 ], "y": [ 24, 47 ] },
         { "monster": "GROUP_ZHIGH", "x": [ 0, 23 ], "y": [ 48, 71 ] },
         { "monster": "GROUP_ZHIGH", "x": [ 24, 47 ], "y": [ 0, 23 ] },
-        { "monster": "GROUP_ZHIGH", "x": [ 24, 47 ], "y": [ 24, 47 ], "repeat": [ 3, 4 ] },
+        { "monster": "GROUP_ZHIGH", "x": [ 24, 47 ], "y": [ 24, 47 ], "repeat": [ 1, 2 ] },
         { "monster": "GROUP_ZHIGH", "x": [ 24, 47 ], "y": [ 48, 71 ] },
-        { "monster": "GROUP_ZHIGH", "x": [ 48, 71 ], "y": [ 0, 23 ] },
+        { "monster": "GROUP_ZHIGH", "x": [ 48, 71 ], "y": [ 0, 23 ], "repeat": [ 1, 2 ] },
         { "monster": "GROUP_ZHIGH", "x": [ 48, 71 ], "y": [ 24, 47 ] },
         { "monster": "GROUP_ZHIGH", "x": [ 48, 71 ], "y": [ 48, 71 ] }
       ]
@@ -713,8 +713,10 @@
         { "class": "ARCHER", "x": 15, "y": 52 },
         { "class": "FIREMAN", "x": 15, "y": 51 },
         { "class": "HACKER", "x": 11, "y": 51 },
+        { "class": "ZHIGHDEADEYE", "x": 8, "y": 64 },
         { "class": "STUDENT_SNOWMAN", "x": 7, "y": 53 },
-        { "class": "AMMODUDE", "x": 12, "y": 60 },
+        { "class": "MUSKETEER_MERC", "x": 12, "y": 60 },
+        { "class": "ZHIGHSCHOOLHALLMONITOR", "x": 10, "y": 68 },
         { "class": "Zhigh_guard", "x": 45, "y": 15 },
         { "class": "Zhigh_guard", "x": 28, "y": 26 }
       ],

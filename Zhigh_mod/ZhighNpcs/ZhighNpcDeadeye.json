@@ -18,7 +18,6 @@
     "job_description": "I sell bows and bow accessories.",
     "traits": [
       { "trait": "BGSS_Scavenger_Merc_1" },
-      { "trait": "PSYCHOPATH" },
       { "trait": "REGEN_zhigh" }, 
       { "group": "Appearance_ZhighDeadeye" }
     ],
@@ -55,7 +54,11 @@
     "type": "trait_group",
     "id": "Appearance_ZhighDeadeye",
     "subtype": "collection",
-    "traits": [ { "trait": "hair_dead_eye" }, { "trait": "eye_green" }, { "trait": "SKIN_LIGHT" } ]
+    "traits": [
+		{ "trait": "hair_dead_eye" },
+		{ "trait": "eye_green" },
+		{ "trait": "SKIN_LIGHT" }
+	  ]
   },
   {
     "type": "item_group",
@@ -69,6 +72,8 @@
     "subtype": "collection",
     "id": "NC_ZHIGHDEADEYE_misc",
     "items": [
+      { "group": "NC_GUARD_misc" },
+      { "item": "ID_2nd" },
       { "item": "arrow_exploding", "count-min": 1, "count-max": 2, "prob": 100 },
       { "item": "arrow_wood", "count-min": 3, "count-max": 5, "prob": 100 }
     ]
@@ -154,6 +159,11 @@
         "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
       },
       {
+        "text": "[1500$]  I'll buy an airbow.",
+        "effect": [ { "u_buy_item": "airbow", "cost": 150000, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      },
+      {
         "text": "[1600$]  I'll buy a composite greatbow.",
         "effect": [ { "u_buy_item": "compgreatbow", "cost": 160000, "count": 1 } ],
         "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
@@ -214,6 +224,11 @@
       {
         "text": "[1500$]  I'll buy a wooden greatbow.",
         "effect": [ { "u_buy_item": "woodgreatbow", "cost": 150000, "count": 1 } ],
+        "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
+      },
+      {
+        "text": "[1500$]  I'll buy an airbow.",
+        "effect": [ { "u_buy_item": "airbow", "cost": 150000, "count": 1 } ],
         "topic": "TALK_ZHIGHDEADEYE_DEADEYEDEAL_END"
       },
       {

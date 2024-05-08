@@ -1,0 +1,552 @@
+[
+  {
+    "type": "npc",
+    "id": "ZHIGHSCHOOLHALLMONITOR",
+    "name_unique": "Woo Bin Kang",
+    "name_suffix": "School hall monitor",
+    "gender": "male",
+    "class": "NC_ZHIGHSCHOOLHALLMONITOR",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_ZHIGHSCHOOLHALLMONITOR",
+    "mission_offered": "MISSION_SCHOOL_SCHHALMON01",
+    "faction": "Zhigh_Survivors"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_ZHIGHSCHOOLHALLMONITOR",
+    "name": { "str": "School hall monitor" },
+    "job_description": "I'm protecting my school and keeping orders.",
+    "traits": [
+      { "group": "BG_survival_story_RURAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "Appearance_SchHalMon" },
+      { "trait": "REGEN_zhigh" }
+    ],
+    "bonus_str": { "rng": [ 0, 3 ] },
+    "bonus_dex": { "rng": [ -2, 1 ] },
+    "bonus_per": { "rng": [ 1, 2 ] },
+    "bonus_int": { "rng": [ 0, 1 ] },
+    "worn_override": "NC_SchHalMon_worn",
+    "carry_override": "NC_GUARD_misc",
+    "weapon_override": "NC_ZhighGUARD_wield",
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 3 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "speech", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 1, 2 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_SchHalMon_carry",
+    "subtype": "collection",
+    "entries": [
+      { "item": "ZhighCoin", "count": [ 10, 20 ] },
+      { "item": "ID_1st" },
+      { "group": "NC_GUARD_misc" },
+      { "item": "zhigh_smart_phone" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_SchHalMon_worn",
+    "subtype": "collection",
+    "entries": [
+      { "group": "npc_underwear_bottom_male" },
+      { "group": "npc_underwear_top_male" },
+      { "group": "ZhighNpc_underwear_feet_male" },
+      { "group": "ZhighNpc_shoes_male" },
+      { "item": "pants_zhigh" },
+      { "item": "dress_shirt_zhigh" },
+      { "item": "gloves_tactical" },
+      { "item": "armband_zhigh_halmon" },
+      { "item": "tie_necktie_zhigh" },
+      { "item": "blazer_zhigh" },
+      { "item": "wristwatch", "prob": 80 }
+    ]
+  },
+  {
+    "type": "trait_group",
+    "id": "Appearance_SchHalMon",
+    "subtype": "collection",
+    "traits": [ { "trait": "hair_brown_medium", "prob": 100 }, 
+                { "trait": "eye_black", "prob": 100 }, 
+                { "trait": "SKIN_PINK", "prob": 100 }
+			  ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ZHIGHSCHOOLHALLMONITOR",
+    "dynamic_line": {
+      "u_has_any_trait": [ "PROF_SW" ],
+      "yes": [
+        "Let me know if you need help, school hall monitor.",
+        "Good morning, school hall monitor.",
+        "Stay safe, monitor.",
+        "Hi there, monitor.",
+        "Nice to see you, monitor.",
+        "Have a good one, school hall monitor."
+      ],
+      "no": [ 
+        "Stay sharp.",
+        "Keep your focus.",
+        "Be mindful.",
+        "Make it a good day.",
+        "Stay out of trouble.",
+        "You know the drill.",
+        "Eyes forward."
+	  ]
+    },
+    "responses": [
+      { "text": "What is this place?", "topic": "TALK_ZHIGHSCHOOLHALLMONITOR_PLACE" },
+      { "text": "Who are you?", "topic": "TALK_ZHIGHSCHOOLHALLMONITOR_WHO" },
+      { "text": "Anything I can do for you?", "topic": "TALK_MISSION_LIST" },
+      { "text": "Well, bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ZHIGHSCHOOLHALLMONITOR_PLACE",
+    "dynamic_line": "This is a school that the owner of the school made into a sort of a bunker from the whole world, and even this bunker has zombies in here.",
+    "responses": [
+      { "text": "I heard this placed was locked up, anyway to escape from here?", "topic": "TALK_ZHIGHSCHOOLHALLMONITOR_GOVERNMENT" },
+      { "text": "What do you trade?", "topic": "TALK_ZHIGHSCHOOLHALLMONITOR_TRADE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SCHOOLHALLMONITOR_WHO",
+    "dynamic_line": "I'm one of the hall monitors. I'm here to help keep the people inside this school safe and make sure everyone is safe. Let me know if you need any help.",
+    "responses": [
+      { "text": "Oh, okay.", "topic": "TALK_ZHIGHSCHOOLHALLMONITOR" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ZHIGHSCHOOLHALLMONITOR_GOVERNMENT",
+    "dynamic_line": "Two walls.  Two walls are blocking the whole school, and the main gate - there is some kinda mechanical sounds outside the blocked gate, that we never heard about.  We could tear the doors down if we have some welding related items, but no one wants to take risks whatever is outside of the gates.  At least we do have a subway to escape from here.",
+    "responses": [
+      { "text": "So there is a way to get out, huh.", "topic": "TALK_ZHIGHSCHOOLHALLMONITOR_METRO" },
+      { "text": "Oh, okay.  Talk to you later!", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ZHIGHSCHOOLHALLMONITOR_METRO",
+    "dynamic_line": "At least escaping here is easy.  But the real problem is after that - I did sent some guys with that cosplayer's people, they think they saw some kinda mushroom/plant tower or something.  They could have been lying, but what is the point in this kind of situation?",
+    "responses": [
+      { "text": "Guess you are right.", "topic": "TALK_ZHIGHSCHOOLHALLMONITOR" },
+      { "text": "Hmm, okay.  Talk to you later!", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "MISSION_SCHOOL_SCHHALMON01",
+    "type": "mission_definition",
+    "name": { "str": "Gearing up" },
+    "description": "Gather a flashlight, a two way radio, and a first aid kit for supporting school hall monitor students.",
+    "goal": "MGOAL_CONDITION",
+    "goal_condition": {
+      "and": [
+        { "u_has_item": "flashlight" },
+        { "u_has_item": "two_way_radio" },
+        { "u_has_item": "1st_aid" }
+      ]
+    },
+    "difficulty": 1,
+    "value": 750000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_SCHHALMON02",
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "AMMODUDE", "x": 13, "y": 5 } ] },
+        { "om_terrain": "ZhighSchool_2_2", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_2_6", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 3, "value": 2 },
+      "effect": 
+	  [
+        { "u_sell_item": "flashlight" },
+        { "u_sell_item": "two_way_radio" },
+        { "u_sell_item": "1st_aid" }
+      ]
+    },
+    "dialogue": {
+      "describe": "We need help...",
+      "offer": "We need some items - the world is in chaos and we have a hard time sending our men outside.  Please, we need a first aid kit, a flashlight, and a two way radio for our people.",
+      "accepted": "Great! Bring them ASAP.",
+      "rejected": "Your loss, but please rethink again.  It will be a great help if you give us a hand.",
+      "advice": "Search every place carefully.  You can find those item easier than you night think, and it is almost nothing - plus we are bit busy right now, so we are grateful if you could help us.",
+      "inquire": "Got those items yet?",
+      "success": "Well, I guess that's one way to wrap things up.  Thanks a lot.",
+      "success_lie": "OK, then hand them over.",
+      "failure": "Well, that's a shame."
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_SCHHALMON02",
+    "type": "mission_definition",
+    "name": { "str": "Break 'em like this" },
+    "description": "Gather ten trench maces for supporting school hall monitor students.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 1,
+    "value": 1000,
+    "item": "homewrecker",
+    "count": 10,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_SCHHALMON03",
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_2_9", "place_npcs": [ { "class": "ZHIGHHITMAN", "x": 7, "y": 16 } ] },
+        { "om_terrain": "ZhighSchool_1_2", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_5", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 3, "value": 2 }
+    },
+    "dialogue": {
+      "describe": "We need help...",
+      "offer": "Would you be so kind as to provide me with ten trench maces? It would greatly aid me in our quest.",
+      "accepted": "Great! Bring them ASAP.",
+      "rejected": "Your loss, but please rethink again.  It will be a great help if you give us a hand.",
+      "advice": "Search every place carefully.  You can find those item easier than you night think, and it is almost nothing - plus we are bit busy right now, so we are grateful if you could help us.",
+      "inquire": "Got those items yet?",
+      "success": "Your efforts are not going unnoticed. People are taking note.  Thank you.",
+      "success_lie": "OK, then hand them over.",
+      "failure": "Well, that's a shame."
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_SCHHALMON03",
+    "type": "mission_definition",
+    "name": { "str": "Through the Lens of Truth" },
+    "description": "Gather five pairs of binoculars for supporting school hall monitor students.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 1,
+    "value": 1000,
+    "item": "binoculars",
+    "count": 5,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_SCHHALMON04",
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_2_9", "place_npcs": [ { "class": "ZHIGHRANGER", "x": 8, "y": 16 } ] },
+        { "om_terrain": "ZhighSchool_1_2", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_5", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 3, "value": 2 }
+    },
+    "dialogue": {
+      "describe": "We need help...",
+      "offer": "Would you be so kind as to provide me with five pairs of binoculars? It would greatly aid me in our quest.",
+      "accepted": "Great! Bring them ASAP.",
+      "rejected": "Your loss, but please rethink again.  It will be a great help if you give us a hand.",
+      "advice": "Search every place carefully.  You can find those item easier than you night think, and it is almost nothing - plus we are bit busy right now, so we are grateful if you could help us.",
+      "inquire": "Got those items yet?",
+      "success": "Your efforts are not going unnoticed. People are taking note.  Thank you.",
+      "success_lie": "OK, then hand them over.",
+      "failure": "Well, that's a shame."
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_SCHHALMON04",
+    "type": "mission_definition",
+    "name": { "str": "Kill 50 Zombies" },
+    "goal": "MGOAL_KILL_MONSTER_SPEC",
+    "monster_species": "ZOMBIE",
+    "monster_kill_goal": 50,
+    "difficulty": 5,
+    "value": 250000,
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "ZhighCoin", "count": 150 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_SCHHALMON05",
+    "dialogue": {
+      "describe": "You seem to know this new world better than most…",
+      "offer": "You're kitted out better than most… would you be interested in making this world a little better for the rest of us?  The towns have enough supplies for us survivors to start securing a foothold but we don't have anyone with the skills and equipment to thin the masses of undead.  You and a 50 zombies laid to rest, what do you say?",
+      "accepted": "For a kill, three coins you get.",
+      "rejected": "Hey, I know I wouldn't volunteer for it either… but then I remember that most of us survivors won't make it unless someone decides to take the initiative.",
+      "advice": "I'd secure an ammo cache and try to sweep a town in multiple passes.",
+      "inquire": "Got this knocked out?",
+      "success": "Man… you're a goddamn machine.  It was a pleasure working with you.  You know, you may just change our little neck of the world if you keep this up.",
+      "success_lie": "I don't think that was quite fifty dead zeds.",
+      "failure": "Quitting already?"
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_SCHHALMON05",
+    "type": "mission_definition",
+    "name": { "str": "Kill 50 Zombies" },
+    "goal": "MGOAL_KILL_MONSTER_SPEC",
+    "monster_species": "ZOMBIE",
+    "monster_kill_goal": 50,
+    "difficulty": 5,
+    "value": 250000,
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "MUSKETEER_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "MUSCLE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "ZhighCoin", "count": 150 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_SCHHALMON06",
+    "dialogue": {
+      "describe": "You seem to know this new world better than most…",
+      "offer": "You're kitted out better than most… would you be interested in making this world a little better for the rest of us?  The towns have enough supplies for us survivors to start securing a foothold but we don't have anyone with the skills and equipment to thin the masses of undead.  You and a 50 zombies laid to rest, what do you say?",
+      "accepted": "For a kill, three coins you get.",
+      "rejected": "Hey, I know I wouldn't volunteer for it either… but then I remember that most of us survivors won't make it unless someone decides to take the initiative.",
+      "advice": "I'd secure an ammo cache and try to sweep a town in multiple passes.",
+      "inquire": "Got this knocked out?",
+      "success": "Man… you're a goddamn machine.  It was a pleasure working with you.  You know, you may just change our little neck of the world if you keep this up.",
+      "success_lie": "I don't think that was quite fifty dead zeds.",
+      "failure": "Quitting already?"
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_SCHHALMON06",
+    "type": "mission_definition",
+    "name": { "str": "Guardians of Sanctuary" },
+    "description": "As the school hall monitor, you must lead a team(or yourself) to secure the school against the bandit threat.  Your mission is to eliminate the bandits before they can attack the school.",
+    "goal": "MGOAL_ASSASSINATE",
+    "difficulty": 10,
+    "value": 300000,
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "cabin_strange",
+        "om_special": "cabin_strange",
+        "reveal_radius": 1,
+        "min_distance": 1,
+        "search_range": 10
+      },
+      "update_mapgen": {
+		  "place_npcs": [
+  		    { "class": "bandit", "x": [ 6, 22 ], "y": [ 6, 22 ] },
+  		    { "class": "bandit", "x": [ 6, 22 ], "y": [ 6, 22 ] },
+  		    { "class": "bandit", "x": [ 6, 22 ], "y": [ 6, 22 ] },
+  		    { "class": "bandit", "x": [ 6, 22 ], "y": [ 6, 22 ], "target": true } ]
+	    },
+      "effect": [
+        { "u_buy_item": "pistol_flintlock_revolver" },
+        { "u_buy_item": "flintlock_ammo", "count": 30 },
+        { "u_buy_item": "holster" },
+        { "u_buy_item": "armband_zhigh_halmon" },
+        { "u_add_trait": "PROF_SW" }
+      ]
+    },
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "MUSKETEER_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "MUSCLE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "ZhighCoin", "count": 150 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_SCHHALMON07",
+    "dialogue": {
+      "describe": "We need help…",
+      "offer": "The survival of our small community rests in our hands.  Bandits lurk inside our walls somehow, ready to strike at any moment. We cannot let them threaten our sanctuary.  It's time to rise and defend where we live in.  Are you ready to stand strong, protect our home, and ensure the safety of all within?",
+      "accepted": "Now repeat after me...  With a sense of duty and respect for my school community, I solemnly vow to fulfill my responsibilities as a hall monitor with diligence, fairness, and integrity.  I promise to ensure a safe and orderly environment for all students and staff, to treat everyone with respect, and to uphold the school's values.  I will strive to lead by example, act with patience and understanding, and carry out my tasks to the best of my ability. This I pledge in service to my school.  I know that this is a bit red-tape, but this is the best I can do for you.  And please take the gun, ammo, and the armband too.",
+      "rejected": "Come back when you get a chance, we really need to start reclaiming the region.",
+      "advice": "If you can, get a friend or two to help you.  You could use some help from the subway, since there are some students with some firepower and weapons.  We sent some people there so it won't be a hard time recruiting them.  And good luck doing this... stuff.",
+      "inquire": "Will they be bothering us any longer?",
+      "success": "As the dust settles, a new dawn breaks over our sanctuary.  United, we have vanquished the threat and reclaimed our peace.  Let this victory be our foundation for the future, a future built on strength, unity, and resilience.  Dang, that sounded like those cringe one-liners.  Anyway you truly go above and beyond. We all are thankful for your guidance.",
+      "success_lie": "What good does this do us?",
+      "failure": "It was a lost cause anyways…"
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_SCHHALMON07",
+    "type": "mission_definition",
+    "name": { "str": "Kill 50 Zombies" },
+    "goal": "MGOAL_KILL_MONSTER_SPEC",
+    "monster_species": "ZOMBIE",
+    "monster_kill_goal": 50,
+    "difficulty": 5,
+    "value": 250000,
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "ZhighCoin", "count": 150 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_SCHHALMON08",
+    "dialogue": {
+      "describe": "You seem to know this new world better than most…",
+      "offer": "You're kitted out better than most… would you be interested in making this world a little better for the rest of us?  The towns have enough supplies for us survivors to start securing a foothold but we don't have anyone with the skills and equipment to thin the masses of undead.  You and a 50 zombies laid to rest, what do you say?",
+      "accepted": "For a kill, three coins you get.",
+      "rejected": "Hey, I know I wouldn't volunteer for it either… but then I remember that most of us survivors won't make it unless someone decides to take the initiative.",
+      "advice": "I'd secure an ammo cache and try to sweep a town in multiple passes.",
+      "inquire": "Got this knocked out?",
+      "success": "Man… you're a goddamn machine.  It was a pleasure working with you.  You know, you may just change our little neck of the world if you keep this up.",
+      "success_lie": "I don't think that was quite fifty dead zeds.",
+      "failure": "Quitting already?"
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_SCHHALMON08",
+    "type": "mission_definition",
+    "name": { "str": "Kill 50 Zombies" },
+    "goal": "MGOAL_KILL_MONSTER_SPEC",
+    "monster_species": "ZOMBIE",
+    "monster_kill_goal": 50,
+    "difficulty": 5,
+    "value": 250000,
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "MUSKETEER_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "MUSCLE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "ZhighCoin", "count": 150 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_SCHHALMON09",
+    "dialogue": {
+      "describe": "You seem to know this new world better than most…",
+      "offer": "You're kitted out better than most… would you be interested in making this world a little better for the rest of us?  The towns have enough supplies for us survivors to start securing a foothold but we don't have anyone with the skills and equipment to thin the masses of undead.  You and a 50 zombies laid to rest, what do you say?",
+      "accepted": "For a kill, three coins you get.",
+      "rejected": "Hey, I know I wouldn't volunteer for it either… but then I remember that most of us survivors won't make it unless someone decides to take the initiative.",
+      "advice": "I'd secure an ammo cache and try to sweep a town in multiple passes.",
+      "inquire": "Got this knocked out?",
+      "success": "Man… you're a goddamn machine.  It was a pleasure working with you.  You know, you may just change our little neck of the world if you keep this up.",
+      "success_lie": "I don't think that was quite fifty dead zeds.",
+      "failure": "Quitting already?"
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_SCHHALMON09",
+    "type": "mission_definition",
+    "name": { "str": "Operation Shutdown" },
+    "description": "Clear out the basement of the bandit's cabin, and try not do die while doing so.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 5,
+    "value": 500000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "cabinZhigh_strange_b", "reveal_radius": 1 },
+      "update_mapgen": {
+        "om_terrain": "cabinZhigh_strange_b",
+        "place_monster": [
+            { "monster": "mon_zombie_machine", "x": 4, "y": 20, "target": true },
+            { "monster": "mon_zombie_soldier_acid_2", "name": "Spitter", "x": [ 6, 22 ], "y": [ 6, 22 ] },
+            { "monster": "mon_zombie_brute", "name": "Tank", "x": [ 6, 22 ], "y": [ 6, 22 ] },
+            { "monster": "mon_zombie_predator", "name": "Hunter", "x": [ 6, 22 ], "y": [ 6, 22 ] },
+            { "monster": "mon_boomer_huge", "name": "Boomer", "x": [ 6, 22 ], "y": [ 6, 22 ] },
+            { "monster": "mon_zombie_pig", "name": "Hell Hog", "x": [ 6, 22 ], "y": [ 6, 22 ] },
+            { "monster": "mon_zombie_nurse", "name": "Witch", "x": [ 6, 22 ], "y": [ 6, 22 ] } 
+          ]
+      },
+      "effect": [ { "u_buy_item": "c4" } ]
+    },
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_2_4", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_2_2", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "chocolate", "count": 10 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_SCHHALMON10",
+    "dialogue": {
+      "describe": "We need help…",
+      "offer": "Hey, I've got a serious situation and I think you're the only one who can handle it.  I sent some of my men the place that you went and they found a machine under the cabin, and a lot of zombies.  That might be your chance to disable it.  It's overloading circuits and spewing out weird gas.  It could hurt someone if we don't shut it down quickly.  Can you help us out?",
+      "accepted": "Thanks for stepping up.  Here's a C-4 bomb that we got somehow.  Make sure to keep your distance—the machine is ejecting weird gas.  Good luck, and be careful!",
+      "rejected": "Come back when you get a chance, we really need to start reclaiming the region.",
+      "advice": "If you can, get a friend or two to help you.  I'd recommend you to just set the bomb and blow the whole machine up.",
+      "inquire": "Will they be bothering us any longer?",
+      "success": "Thanks so much for handling that, you've saved us a lot of trouble! The school's safer now because of you. If you ever need anything, just let me know!",
+      "success_lie": "What good does this do us?",
+      "failure": "It was a lost cause anyways…"
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_SCHHALMON10",
+    "type": "mission_definition",
+    "name": { "str": "Kill 25 Zombies" },
+    "goal": "MGOAL_KILL_MONSTER_SPEC",
+    "monster_species": "ZOMBIE",
+    "monster_kill_goal": 25,
+    "difficulty": 5,
+    "value": 250000,
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "ZhighCoin", "count": 50 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_SCHHALMON11",
+    "dialogue": {
+      "describe": "You seem to know this new world better than most…",
+      "offer": "You're kitted out better than most… would you be interested in making this world a little better for the rest of us?  The towns have enough supplies for us survivors to start securing a foothold but we don't have anyone with the skills and equipment to thin the masses of undead.  You and a 25 zombies laid to rest, what do you say?",
+      "accepted": "For a kill, two coins you get.  25 kills and there is your ",
+      "rejected": "Hey, I know I wouldn't volunteer for it either… but then I remember that most of us survivors won't make it unless someone decides to take the initiative.",
+      "advice": "I'd secure an ammo cache and try to sweep a town in multiple passes.",
+      "inquire": "Got this knocked out?",
+      "success": "Man… you're a goddamn machine.  It was a pleasure working with you.  You know, you may just change our little neck of the world if you keep this up.",
+      "success_lie": "I don't think that was quite twenty five dead zeds.",
+      "failure": "Quitting already?"
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_SCHHALMON11",
+    "type": "mission_definition",
+    "name": { "str": "Kill 25 Zombies" },
+    "goal": "MGOAL_KILL_MONSTER_SPEC",
+    "monster_species": "ZOMBIE",
+    "monster_kill_goal": 25,
+    "difficulty": 5,
+    "value": 250000,
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "MUSKETEER_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "MUSCLE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "ZhighCoin", "count": 50 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_SCHHALMON10",
+    "dialogue": {
+      "describe": "You seem to know this new world better than most…",
+      "offer": "You're kitted out better than most… would you be interested in making this world a little better for the rest of us?  The towns have enough supplies for us survivors to start securing a foothold but we don't have anyone with the skills and equipment to thin the masses of undead.  You and a 25 zombies laid to rest, what do you say?",
+      "accepted": "For a kill, two coins you get.",
+      "rejected": "Hey, I know I wouldn't volunteer for it either… but then I remember that most of us survivors won't make it unless someone decides to take the initiative.",
+      "advice": "I'd secure an ammo cache and try to sweep a town in multiple passes.",
+      "inquire": "Got this knocked out?",
+      "success": "Man… you're a goddamn machine.  It was a pleasure working with you.  You know, you may just change our little neck of the world if you keep this up.",
+      "success_lie": "I don't think that was quite twenty five dead zeds.",
+      "failure": "Quitting already?"
+    }
+  }
+]

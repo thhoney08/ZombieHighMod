@@ -1,0 +1,76 @@
+[
+  {
+    "type": "npc",
+    "id": "ZHIGHHITMAN",
+    "name_unique": "Yong Kuy Mah",
+    "name_suffix": "Student",
+    "gender": "male",
+    "class": "NC_ZHIGHHITMAN",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_ZHIGHHITMAN",
+    "faction": "Zhigh_Survivors"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_ZHIGHHITMAN",
+    "name": { "str": "Hitman" },
+    "job_description": "I'm my school's baseball hitter.",
+    "traits": [
+      { "group": "BG_survival_story_RURAL" },
+      { "group": "Appearance_Hitman" },
+      { "trait": "REGEN_zhigh" }
+    ],
+    "bonus_str": { "rng": [ 1, 2 ] },
+    "bonus_int": { "rng": [ 2, 3 ] },
+    "bonus_per": { "rng": [ 2, 3 ] },
+    "bonus_dex": { "rng": [ -1, 1 ] },
+    "worn_override": "NC_Hitman_worn",
+    "carry_override": "NC_GUARD_misc",
+    "weapon_override": "NC_Hitman_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "melee", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 3, 4 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_Hitman_worn",
+    "subtype": "collection",
+    "entries": [
+      { "group": "npc_underwear_bottom_male" },
+      { "group": "npc_underwear_top_male" },
+      { "group": "ZhighNpc_underwear_feet_male" },
+      { "group": "ZhighNpc_shoes_male" },
+      { "item": "pants_zhigh" },
+      { "item": "tshirt_tour" },
+      { "item": "jacket_baseball" },
+      { "item": "gloves_fingerless" },
+      { "item": "helmet_ball" }
+    ]
+  },
+  {
+    "type": "trait_group",
+    "id": "Appearance_Hitman",
+    "subtype": "collection",
+    "traits": [ { "trait": "hair_black_medium", "prob": 100 }, 
+                { "trait": "eye_black", "prob": 100 }, 
+                { "trait": "SKIN_PINK", "prob": 100 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_Hitman_weapon",
+    "subtype": "distribution",
+    "entries": [ { "item": "bat_metal_zhigh" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ZHIGHHITMAN",
+    "dynamic_line": "Don't talk to me, not in the mood.",
+    "responses": [
+      { "text": "Okay then…", "topic": "TALK_DONE" }
+    ]
+  }
+]

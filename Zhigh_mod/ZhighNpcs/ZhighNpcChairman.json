@@ -84,7 +84,26 @@
   {
     "type": "talk_topic",
     "id": "TALK_CHAIRMAN",
-    "dynamic_line": { "u_is_wearing": "armband_zhigh_halmon", "yes": "Hello monitor.", "no": "Hello there." },
+    "dynamic_line": {
+      "u_is_wearing": "armband_zhigh_halmon",
+      "yes": [
+        "What’s new?",
+        "Hey, what's good?",
+        "How's your day?",
+        "Hey, how's it hanging?",
+        "What's going on?",
+        "How's everything?"
+      ],
+      "no": [ 
+        "Yo!",
+        "Good to see you!",
+        "Hey there!",
+        "Hey!",
+        "Hi!",
+        "Hi, what’s up?",
+        "What's up?"
+	  ]
+    },
     "responses": [
       { "text": "What is this place?", "topic": "TALK_CHAIRMAN_PLACE" },
       { "text": "Anything I can do for you?", "topic": "TALK_MISSION_LIST" },

@@ -1014,7 +1014,7 @@
     "dispersion": 60,
     "durability": 4,
     "loudness": 5,
-    "clip_size": 2,
+    "clip_size": 1,
     "flags": [ "RELOAD_ONE" ],
     "ammo_effects": [ "LARGE_BEANBAG", "NOGIB" ],
     "ammo": "rock"
@@ -1535,7 +1535,8 @@
     "dispersion": 100,
     "magazines": [ [ "BB", [ "BBclip300", "BBclip300release" ] ] ],
     "reload": 120,
-    "modes": [ [ "DEFAULT", "single", 1 ], [ "BURST", "quick burst", 3 ] ],
+    "ammo_effects": [ "BEANBAG", "NOGIB" ],
+    "modes": [ [ "DEFAULT", "single", 1 ] ],
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 1 ],
