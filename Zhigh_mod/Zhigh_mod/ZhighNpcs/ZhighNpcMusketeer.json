@@ -1,0 +1,136 @@
+[
+  {
+    "type": "npc",
+    "id": "MUSKETEER_MERC",
+    "//": "Appears in the school as a partner for hire.",
+    "name_suffix": "student",
+    "class": "NC_MUSKETEER_MERC",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_MUSKETEER_MERC",
+    "faction": "Zhigh_Survivors"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_MUSKETEER_MERC",
+    "name": { "str": "Student - Musketeer" },
+    "job_description": "Fighting for the all-mighty dollar.",
+    "common": true,
+    "traits": [
+      { "trait": "BGSS_Scavenger_Merc_1" },
+      { "trait": "PSYCHOPATH" },
+      { "trait": "QUICK" },
+      { "trait": "TOUGH" },
+      { "trait": "PARKOUR" },
+      { "trait": "INSOMNIA" },
+      { "trait": "GOODCARDIO2" },
+      { "trait": "REGEN_zhigh" },
+      { "group": "Appearance_Mixed" }
+    ],
+    "bonus_str": { "rng": [ 2, 4 ] },
+    "bonus_dex": { "rng": [ 1, 2 ] },
+    "bonus_int": { "rng": [ -1, 0 ] },
+    "bonus_per": { "rng": [ 1, 2 ] },
+    "worn_override": "NC_MUSKETEER_MERC_worn",
+    "carry_override": "NC_MUSKETEER_MERC_carry",
+    "weapon_override": "NC_MUSKETEER_MERC_wield",
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "gun", "bonus": { "rng": [ 4, 5 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 2, 3 ] } } 
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MUSKETEER_MERC_worn",
+    "subtype": "collection",
+    "items": [
+      { "item": "boxer_briefs" },
+      { "item": "dress_shirt_zhigh" },
+      { "item": "pants_zhigh" },
+      { "group": "ZhighNpc_Tie" },
+      { "group": "Zhigh2NpcRange_coat" },
+      { "group": "Zhigh2NpcRange_hat" },
+      { "group": "ZhighNpc_underwear_feet_male" },
+      { "group": "survivorzed_boots" },
+      { "group": "ZhighNpc_storage" },
+      { "group": "flintlock_pouch_reenactor" },
+      { "group": "flintlock_pouch_reenactor" },
+      { "group": "ZhighNpc_extra" },
+      { "group": "ZhighNpc_stabbing", "container-item": "sheath" },
+      { "group": "survivorzed_gloves" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MUSKETEER_MERC_carry",
+    "subtype": "collection",
+    "items": [
+      { "group": "NC_GUARD_misc" },
+      { "item": "bearing" },
+      { "item": "bearing" },
+      { "item": "bearing" },
+      { "item": "protein_bar_evac", "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "TALK_MUSKETEER_MERC",
+    "type": "talk_topic",
+    "dynamic_line": { "u_is_wearing": "armband_zhigh_halmon", "yes": "I haven't done anything wrong… yet.", "no": "Hm…" },
+    "responses": [
+      { "text": "Who are you?", "topic": "TALK_MUSKETEER_MERC_NEW" },
+      { "text": "Any tips for surviving?", "topic": "TALK_MUSKETEER_MERC_TIPS" },
+      { "text": "What would it cost to hire you?", "topic": "TALK_MUSKETEER_MERC_HIRE" },
+      { "text": "Well, bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_MUSKETEER_MERC_NEW",
+    "type": "talk_topic",
+    "dynamic_line": "I'm just a hired hand.  Someone pays me in cash or in items, and I do what needs to be done.",
+    "responses": [ { "text": "…", "topic": "TALK_MUSKETEER_MERC" } ]
+  },
+  {
+    "id": "TALK_MUSKETEER_MERC_TIPS",
+    "type": "talk_topic",
+    "dynamic_line": "If you have to fight your way out of an ambush, the only thing that is going to save you is having a party that can return fire.  People who work alone are easy pickings for monsters and bandits.",
+    "responses": [ { "text": "I suppose I should hire a party then?", "topic": "TALK_MUSKETEER_MERC" } ]
+  },
+  {
+    "id": "TALK_MUSKETEER_MERC_HIRE",
+    "type": "talk_topic",
+    "dynamic_line": "I'm currently waiting for a customer to return… I'll make you a deal though, a hundred school coins will cover my expenses if I get a small cut of the loot.",
+    "responses": [
+      { "text": "Where could I get some?", "topic": "TALK_MUSKETEER_MERC_CIGS" },
+      { "text": "I might be back.", "topic": "TALK_MUSKETEER_MERC" },
+      {
+        "text": "[100 High School Coin] You have a deal.",
+        "topic": "TALK_MUSKETEER_MERC_HIRE_SUCCESS",
+        "condition": { "u_has_items": { "item": "ZhighCoin", "count": 100 } },
+        "effect": { "u_consume_item": "ZhighCoin", "count": 100 }
+      }
+    ]
+  },
+  {
+    "id": "TALK_MUSKETEER_MERC_CIGS",
+    "type": "talk_topic",
+    "dynamic_line": "Duh, in school.  Find them in lockers.",
+    "responses": [
+      { "text": "Makes sence.  Let's try this again from the start.", "topic": "TALK_MUSKETEER_MERC" },
+      { "text": "Okay, how many High School Coins do I need again?", "topic": "TALK_MUSKETEER_MERC_HIRE" },
+      { "text": "Well, thanks for the info.  Bye!", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_MUSKETEER_MERC_HIRE_SUCCESS",
+    "type": "talk_topic",
+    "dynamic_line": "I guess you're the boss.",
+    "responses": [
+      {
+        "text": "Glad to have you aboard.",
+        "success": { "effect": "follow", "opinion": { "trust": 1, "value": 1 }, "topic": "TALK_DONE" }
+      }
+    ]
+  }
+]

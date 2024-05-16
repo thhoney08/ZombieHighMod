@@ -1,0 +1,96 @@
+[
+  {
+    "type": "npc",
+    "id": "STUDENT_47",
+    "name_unique": "Tobias Rieper",
+    "name_suffix": "Student",
+    "gender": "male",
+    "class": "NC_ZHIGHGUARD47",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_ZHIGHGUARD47",
+    "faction": "Zhigh_Survivors"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_ZHIGHGUARD47",
+    "name": { "str": "Agent 47" },
+    "job_description": "I'm protecting my school.",
+    "traits": [
+      { "group": "BG_survival_story_RURAL" },
+      { "trait": "PER_UP_4" },
+      { "trait": "DEX_UP_4" },
+      { "trait": "INT_UP_4" },
+      { "trait": "STR_UP_4" },
+      { "trait": "FAST_REFLEXES" },
+      { "trait": "PSYCHOPATH" },
+      { "trait": "GOODCARDIO2" },
+      { "trait": "QUICK" },
+      { "trait": "NIGHTVISION" },
+      { "trait": "STRONGBACK" },
+      { "trait": "DEFT" },
+      { "trait": "TOUGH3" },
+      { "trait": "PARKOUR" },
+      { "trait": "INSOMNIA" },
+      { "group": "Appearance_Agent47" },
+      { "trait": "REGEN_zhigh" }
+    ],
+    "bonus_str": { "rng": [ 12, 13 ] },
+    "bonus_dex": { "rng": [ 12, 13 ] },
+    "bonus_per": { "rng": [ 12, 13 ] },
+    "bonus_int": { "rng": [ 12, 13 ] },
+    "worn_override": "NC_Agent47_worn",
+    "carry_override": "NC_GUARD_misc",
+    "weapon_override": "NC_Agent47_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "melee", "bonus": { "rng": [ 12, 13 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 12, 13 ] } },
+      { "skill": "stabbing", "bonus": { "rng": [ 12, 13 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 12, 13 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 12, 13 ] } },
+      { "skill": "throw", "bonus": { "rng": [ 12, 13 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 12, 13 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 12, 13 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_Agent47_worn",
+    "subtype": "collection",
+    "entries": [
+      { "group": "npc_underwear_bottom_male" },
+      { "group": "npc_underwear_top_male" },
+      { "group": "ZhighNpc_underwear_feet_male" },
+      { "group": "ZhighNpc_shoes_male" },
+      { "item": "pants_zhigh" },
+      { "item": "dress_shirt_zhigh" },
+      { "item": "gloves_tactical" },
+      { "item": "tie_necktie_zhigh" },
+      { "item": "blazer_zhigh" },
+      { "item": "wristwatch", "prob": 80 }
+    ]
+  },
+  {
+    "type": "trait_group",
+    "id": "Appearance_Agent47",
+    "subtype": "collection",
+    "traits": [ { "trait": "HAIR_BALD", "prob": 100 }, 
+                { "trait": "eye_black", "prob": 100 }, 
+                { "trait": "SKIN_PINK", "prob": 100 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_Agent47_weapon",
+    "subtype": "distribution",
+    "entries": [ { "item": "knife_rm42" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ZHIGHGUARD47",
+    "dynamic_line": "I need to use Bathroom.",
+    "responses": [
+      { "text": "I've got to go…", "topic": "TALK_DONE" }
+    ]
+  }
+]

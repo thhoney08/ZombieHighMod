@@ -1,0 +1,2352 @@
+[
+  {
+    "id": "multitool",
+    "copy-from": "multitool",
+    "name": { "str": "multi-tool" },
+    "type": "GENERIC",
+    "category": "tools",
+    "price": 3500,
+    "price_postapoc": 1000,
+    "to_hit": -2,
+    "qualities": [ 
+            [ "CUT", 3 ], 
+            [ "SAW_W", 2 ], 
+            [ "SAW_M", 2 ], 
+            [ "DRILL", 3 ], 
+            [ "WRENCH", 2 ], 
+            [ "PRY", 2 ], 
+            [ "WRENCH_FINE", 2 ], 
+            [ "SCREW", 2 ], 
+            [ "SCREW_FINE", 2 ], 
+            [ "BUTCHER", 8 ] 
+          ],
+    "use_action": { "type": "firestarter", "moves": 1000, "moves_slow": 25000, "need_sunlight": true },
+    "flags": [ "STAB", "FIRESTARTER", "SHEATH_KNIFE", "BELT_CLIP" ]
+  },
+  {
+    "id": "switchblade",
+    "copy-from": "switchblade",
+    "name": { "str": "switchblade" },
+    "type": "TOOL",
+    "category": "tools",
+    "flags": [ "STAB", "SHEATH_KNIFE", "BELT_CLIP" ]
+  },
+  {
+    "id": "knife_swissarmy",
+    "copy-from": "knife_swissarmy",
+    "name": { "str": "Swiss Army knife", "str_pl": "Swiss Army knives" },
+    "type": "TOOL",
+    "category": "tools",
+    "qualities": [ 
+            [ "CUT", 2 ], 
+            [ "SAW_W", 2 ], 
+            [ "SAW_M", 2 ], 
+            [ "PRY", 2 ], 
+            [ "SCREW", 2 ], 
+            [ "BUTCHER", 8 ] 
+         ],
+    "use_action": { "type": "firestarter", "moves": 1000, "moves_slow": 25000, "need_sunlight": true },
+    "flags": [ "STAB", "FIRESTARTER", "BELT_CLIP" ]
+  },
+  {
+    "id": "flask_hip",
+    "copy-from": "flask_hip",
+    "to_hit": -1,
+    "bashing": 2,
+    "type": "CONTAINER",
+    "category": "container",
+    "name": { "str": "hip flask" },
+    "flags": [ "WAIST", "OVERSIZE", "WATER_FRIENDLY", "COMPACT", "BELT_CLIP" ]
+  },
+  {
+    "id": "holster",
+    "copy-from": "holster",
+    "type": "ARMOR",
+    "name": { "str": "holster" },
+    "to_hit": -1,
+    "bashing": 2,
+    "coverage": 2,
+    "encumbrance": 0,
+    "use_action": { "type": "holster", "max_volume": "1 L", "min_volume": "150 ml", "skills": [ "pistol", "smg", "shotgun", "rifle", "launcher" ] }
+  },
+  {
+    "id": "webbing_belt",
+    "copy-from": "webbing_belt",
+    "type": "ARMOR",
+    "to_hit": 3,
+    "bashing": 2,
+    "material": [ "nylon", "steel", "leather" ],
+    "name": { "str": "webbing belt" },
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stick what into your belt?",
+      "holster_msg": "You tuck your %s into your %s",
+      "multi": 4,
+      "max_volume": "1550 ml",
+      "max_weight": "5500 g",
+      "min_volume": "5 ml",
+      "draw_cost": 45,
+      "flags": [ "BELT_CLIP" ]
+    },
+    "flags": [ "WAIST", "WATER_FRIENDLY" ]
+  },
+  {
+    "id": "back_holster",
+    "copy-from": "back_holster",
+    "type": "ARMOR",
+    "name": { "str": "back holster" },
+    "encumbrance": 2,
+    "use_action": {
+      "type": "holster",
+      "max_volume": "9 L",
+      "min_volume": "500 ml",
+      "draw_cost": 150,
+      "skills": [ "smg", "shotgun", "rifle", "archery", "launcher" ]
+    },
+    "flags": [ "BELTED", "OVERSIZE", "COMPACT", "NO_QUICKDRAW" ]
+  },
+  {
+    "id": "sheath",
+    "copy-from": "sheath",
+    "type": "ARMOR",
+    "name": { "str": "sheath", "str_pl": "sheathes" },
+    "encumbrance": 0,
+    "coverage": 5,
+    "material_thickness": 1,
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Sheath knife",
+      "holster_msg": "You sheath your %s",
+      "max_volume": "900 ml",
+      "draw_cost": 3,
+      "flags": [ "SHEATH_KNIFE" ]
+    }
+  },
+  {
+    "id": "legrig",
+    "copy-from": "legrig",
+    "type": "ARMOR",
+    "name": { "str": "pair of drop leg pouches", "str_pl": "pairs of drop leg pouches" },
+    "rigid": false,
+    "encumbrance": 3,
+    "storage": "3 L",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stick what into your drop leg pouch?",
+      "holster_msg": "You tuck your %s into your %s",
+      "multi": 4,
+      "max_volume": "1000 ml",
+      "max_weight": "4500 g",
+      "min_volume": "5 ml",
+      "draw_cost": 60,
+      "flags": [ "BELT_CLIP" ]
+    },
+    "flags": [ "WATER_FRIENDLY", "BELTED" ]
+  },
+  {
+    "id": "survival_kit",
+    "copy-from": "survival_kit",
+    "type": "GENERIC",
+    "volume": "750 ml",
+    "category": "tools",
+    "name": { "str": "survival kit" },
+    "flags": [ "NO_REPAIR", "NO_SALVAGE", "BELT_CLIP" ]
+  },
+  {
+    "id": "premium_survival_kit",
+    "copy-from": "premium_survival_kit",
+    "type": "GENERIC",
+    "volume": "750 ml",
+    "category": "tools",
+    "name": { "str": "ultimate survival kit" },
+    "flags": [ "NO_REPAIR", "NO_SALVAGE", "BELT_CLIP" ]
+  },
+  {
+    "id": "survival_kit_box",
+    "copy-from": "survival_kit_box",
+    "type": "CONTAINER",
+    "category": "container",
+    "name": { "str": "survival kit box", "str_pl": "survival kit boxes" },
+    "volume": "750 ml",
+    "flags": [ "BELT_CLIP" ]
+  },
+  {
+    "id": "glowstick",
+    "copy-from": "glowstick",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "glowstick" },
+    "weight": "40 g",
+    "volume": "20 ml",
+    "flags": [ "BELT_CLIP" ]
+  },
+  {
+    "id": "glowstick_dead",
+    "copy-from": "glowstick_dead",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "dead glowstick" },
+    "weight": "40 g",
+    "volume": "20 ml",
+    "flags": [ "BELT_CLIP", "TRADER_AVOID" ]
+  },
+  {
+    "id": "glowstick_lit",
+    "copy-from": "glowstick_lit",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "active glowstick" },
+    "weight": "40 g",
+    "volume": "20 ml",
+    "flags": [ "LIGHT_8", "BELT_CLIP", "TRADER_AVOID", "SLEEP_IGNORE" ]
+  },
+  {
+    "id": "pen",
+    "copy-from": "pen",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "pen" },
+    "weight": "40 g",
+    "volume": "20 ml",
+    "initial_charges": 50,
+    "max_charges": 50,
+    "charges_per_use": 1,
+    "use_action": { "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": true, "material_restricted": false },
+    "flags": [ "WRITE_MESSAGE", "BELT_CLIP" ]
+  },
+  {
+    "id": "adrenaline_injector",
+    "copy-from": "adrenaline_injector",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "injectable adrenaline" },
+    "weight": "40 g",
+    "volume": "20 ml",
+    "use_action": "ADRENALINE_INJECTOR",
+    "flags": [ "NO_INGEST", "NPC_SAFE", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ]
+  },
+  {
+    "id": "vaccine_shot",
+    "copy-from": "vaccine_shot",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": "gamma globulin shot",
+    "weight": "40 g",
+    "volume": "20 ml",
+    "flags": [ "NO_INGEST", "NPC_SAFE", "TRADER_AVOID", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ]
+  },
+  {
+    "id": "glass_macuahuitl",
+    "copy-from": "glass_macuahuitl",
+    "type": "GENERIC",
+    "category": "weapons",
+    "name": { "str": "makeshift macuahuitl" },
+    "techniques": [ "WBLOCK_1" ],
+    "bashing": 8,
+    "cutting": 15,
+    "flags": [ "MESSY", "DURABLE_MELEE", "SHEATH_SWORD" ]
+  },
+  {
+    "id": "panacea",
+    "copy-from": "panacea",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "Panaceus", "str_pl": "Panaceii" },
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You feel AMAZING!",
+      "effects": [ { "id": "panacea", "duration": "50 m" }, { "id": "cureall" } ]
+    }
+  },
+  {
+    "type": "GENERIC",
+    "id": "w_table",
+    "copy-from": "w_table",
+    "name": { "str": "wooden table" },
+    "description": "A crude wooden table.",
+    "to_hit": 1,
+    "bashing": 20,
+    "weight": "10071 g"
+  },
+  {
+    "id": "tazer",
+    "copy-from": "tazer",
+    "type": "GUN",
+    "handling": 15,
+    "weapon_category": [
+       "PISTOLS",
+       "ENERGY_WEAPONS"
+    ],
+    "category": "weapons",
+    "skill": "pistol",
+    "durability": 9,
+    "ammo": "battery",
+    "name": { "str": "tazer" },
+    "range": 7,
+    "ranged_damage": { "damage_type": "heat", "amount": 8, "armor_penetration": 5 },
+    "dispersion": 20,
+    "loudness": 7,
+    "ammo_effects": [ "LIGHTNING", "HEAVY_HIT" ],
+    "magazines": [
+      [
+        "battery",
+        [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ]
+      ]
+    ],
+    "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "magazine_well": "500 ml"
+  },
+  {
+    "id": "camera",
+    "copy-from": "camera",
+    "type": "GUN",
+    "handling": 15,
+    "weapon_category": [ "PISTOLS", "ENERGY_WEAPONS" ],
+    "category": "weapons",
+    "skill": "pistol",
+    "durability": 9,
+    "ammo": "battery",
+    "name": { "str": "camera" },
+    "range": 6,
+    "ranged_damage": { "damage_type": "heat", "amount": 8, "armor_penetration": 8 },
+    "dispersion": 20,
+    "loudness": 7,
+    "modes": [ [ "DEFAULT", "burst", 5 ] ],
+    "ammo_effects": [ "BLINDS_EYES", "HEAVY_HIT" ],
+    "flags": [ "NEVER_JAMS", "NEEDS_NO_LUBE", "NON_FOULING" ],
+    "magazines": [
+      [
+        "battery",
+        [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ]
+      ]
+    ],
+    "magazine_well": "500 ml"
+  },
+  {
+    "id": "tec9",
+    "copy-from": "tec9",
+    "type": "GUN",
+    "name": { "str_sp": "TEC-9" },
+    "weight": "1300 g",
+    "volume": "350 ml",
+    "barrel_length": "50 ml",
+    "dispersion": 130,
+    "durability": 9,
+    "min_cycle_recoil": 450,
+    "handling": 40,
+    "blackpowder_tolerance": 25,
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 3 ], [ "AUTO", "auto", 4 ] ],
+    "valid_mod_locations": [
+      [ "accessories", 3 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "brass catcher", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "underbarrel", 2 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ]
+    ]
+  },
+  {
+    "id": "can_drink",
+    "copy-from": "can_drink",
+    "type": "CONTAINER",
+    "category": "container",
+    "name": { "str": "aluminum can" },
+    "flags": [ "MAG_COMPACT" ]
+  },
+  {
+    "id": "can_drink_unsealed",
+    "copy-from": "can_drink_unsealed",
+    "type": "CONTAINER",
+    "name": { "str": "opened aluminum can" },
+    "flags": [ "MAG_COMPACT" ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "throwing_axe",
+    "copy-from": "throwing_axe",
+    "category": "weapons",
+    "name": { "str": "throwing axe" },
+    "thrown_damage": [ { "damage_type": "bash", "amount": 12 }, { "damage_type": "cut", "amount": 32 } ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "throwing_knife",
+    "copy-from": "throwing_knife",
+    "category": "weapons",
+    "name": { "str": "throwing knife", "str_pl": "throwing knives" },
+    "thrown_damage": [ { "damage_type": "stab", "amount": 28 } ]
+  },
+  {
+    "id": "throwing_stick",
+    "copy-from": "throwing_stick",
+    "type": "AMMO",
+    "category": "weapons",
+    "name": { "str": "throwing stick" },
+    "bashing": 10
+  },
+  {
+    "id": "golf_bag",
+    "copy-from": "golf_bag",
+    "type": "ARMOR",
+    "name": { "str": "golf bag" },
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Sheath golf club/javelins/spears",
+      "holster_msg": "You awkwardly sheath your %s",
+      "min_volume": "10 ml",
+      "max_volume": "1550 ml",
+      "draw_cost": 100,
+      "multi": 6,
+      "flags": [ "SHEATH_GOLF", "SHEATH_SPEAR", "JAVELIN" ]
+    }
+  },
+  {
+    "id": "javelin_bag",
+    "copy-from": "javelin_bag",
+    "type": "ARMOR",
+    "name": { "str": "javelin bag" },
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Sheath golf club/javelins/spears",
+      "holster_msg": "You stash your %s.",
+      "multi": 8,
+      "max_volume": "1250 ml",
+      "draw_cost": 30,
+      "flags": [ "SHEATH_GOLF", "SHEATH_SPEAR", "JAVELIN" ]
+    },
+    "flags": [ "WATER_FRIENDLY", "OVERSIZE", "BELTED", "COMPACT" ]
+  },
+  {
+    "id": "spearsling",
+    "copy-from": "spearsling",
+    "type": "ARMOR",
+    "name": { "str": "spear strap" },
+    "encumbrance": 1,
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Sheath golf club/javelins/spears",
+      "holster_msg": "You holster your %s.",
+      "max_volume": "3500 ml",
+      "draw_cost": 100,
+      "flags": [ "SHEATH_GOLF", "SHEATH_SPEAR", "JAVELIN" ]
+    },
+    "flags": [ "BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS", "WATER_FRIENDLY" ]
+  },
+  {
+    "//": "Got this line of code from dogmeat's mod.",
+    "id": "flamethrower",
+    "type": "GUN",
+    "name": { "str": "flamethrower" },
+    "copy-from": "flamethrower",
+    "ammo": [ "jp8", "motor_oil", "lamp_oil", "flammable", "diesel", "gasoline" ],
+    "flags": [ "FIRESTARTER", "NEVER_JAMS", "PYROMANIAC_WEAPON" ],
+    "magazines": [ [ "flammable", [ "aux_pressurized_tank", "pressurized_tank" ] ],
+                   [ "jp8", [ "aux_pressurized_tank", "pressurized_tank" ] ],
+                   [ "motor_oil", [ "aux_pressurized_tank", "pressurized_tank" ] ],
+                   [ "lamp_oil", [ "aux_pressurized_tank", "pressurized_tank" ] ],
+                   [ "diesel", [ "aux_pressurized_tank", "pressurized_tank" ] ],
+                   [ "gasoline", [ "aux_pressurized_tank", "pressurized_tank" ] ]
+                 ]
+  },
+  {
+    "id": "rm451_flamethrower",
+    "type": "GUN",
+    "name": { "str": "RM451 flamethrower" },
+    "copy-from": "rm451_flamethrower",
+    "ammo": [ "jp8", "motor_oil", "lamp_oil", "flammable", "diesel", "gasoline" ],
+    "flags": [ "FIRESTARTER", "NEVER_JAMS", "PYROMANIAC_WEAPON" ],
+    "magazines": [ [ "jp8", [ "rm4502", "rm4504" ] ],
+                   [ "motor_oil", [ "rm4502", "rm4504" ] ],
+                   [ "lamp_oil", [ "rm4502", "rm4504" ] ],
+                   [ "flammable", [ "rm4502", "rm4504" ] ],
+                   [ "diesel", [ "rm4502", "rm4504" ] ],
+                   [ "gasoline", [ "rm4502", "rm4504" ] ]
+                 ]
+  },
+  {
+    "id": "flamethrower_simple",
+    "type": "GUN",
+    "name": { "str": "simple flamethrower" },
+    "copy-from": "flamethrower_simple",
+    "ammo": [ "jp8", "motor_oil", "lamp_oil", "flammable", "diesel", "gasoline" ],
+    "flags": [ "FIRESTARTER", "NEVER_JAMS", "PYROMANIAC_WEAPON" ],
+    "magazines": [ [ "flammable", [ "aux_pressurized_tank", "pressurized_tank" ] ],
+                   [ "jp8", [ "aux_pressurized_tank", "pressurized_tank" ] ],
+                   [ "motor_oil", [ "aux_pressurized_tank", "pressurized_tank" ] ],
+                   [ "lamp_oil", [ "aux_pressurized_tank", "pressurized_tank" ] ],
+                   [ "diesel", [ "aux_pressurized_tank", "pressurized_tank" ] ],
+                   [ "gasoline", [ "aux_pressurized_tank", "pressurized_tank" ] ]
+                 ],
+    "valid_mod_locations": [ [ "sling", 1 ] ]
+  },
+  {
+    "id": "pressurized_tank",
+    "type": "MAGAZINE",
+    "name": { "str": "pressurized fuel tank" },
+    "copy-from": "pressurized_tank",
+    "ammo_type": [ "jp8", "motor_oil", "lamp_oil", "flammable", "diesel", "gasoline" ]
+  },
+  {
+    "id": "aux_pressurized_tank",
+    "type": "MAGAZINE",
+    "name": { "str": "small pressurized fuel tank" },
+    "copy-from": "aux_pressurized_tank",
+    "ammo_type": [ "jp8", "motor_oil", "lamp_oil", "flammable", "diesel", "gasoline" ]
+  },
+  {
+    "id": "rm4502",
+    "type": "MAGAZINE",
+    "name": { "str": "RM450-2 fuel canister" },
+    "copy-from": "rm4502",
+    "ammo_type": [ "jp8", "motor_oil", "lamp_oil", "flammable", "diesel", "gasoline" ]
+  },
+  {
+    "id": "rm4504",
+    "type": "MAGAZINE",
+    "name": { "str": "RM450-4 fuel canister" },
+    "copy-from": "rm4504",
+    "ammo_type": [ "jp8", "motor_oil", "lamp_oil", "flammable", "diesel", "gasoline" ]
+  },
+  {
+    "id": "bp_shot_bird",
+    "type": "AMMO",
+    "name": { "str": "birdshot, black powder" },
+    "copy-from": "bp_shot_bird",
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 15, "length": 14 } ]
+  },
+  {
+    "id": "bp_shot_dragon",
+    "type": "AMMO",
+    "name": { "str": "dragon's breath shell, black powder" },
+    "copy-from": "bp_shot_dragon",
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 15, "length": 8 } ]
+  },
+  {
+    "id": "bp_shot_00",
+    "type": "AMMO",
+    "name": { "str": "00 shot, black powder" },
+    "copy-from": "bp_shot_00",
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 10, "length": 10 } ]
+  },
+  {
+    "id": "bp_shot_flechette",
+    "type": "AMMO",
+    "name": { "str": "flechette shell, black powder" },
+    "copy-from": "bp_shot_flechette",
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 10, "length": 12 } ]
+  },
+  {
+    "id": "shot_00",
+    "type": "AMMO",
+    "name": { "str": "00 shot" },
+    "copy-from": "shot_00",
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 10, "length": 10 } ]
+  },
+  {
+    "id": "shot_beanbag",
+    "type": "AMMO",
+    "name": { "str": "shotgun beanbag" },
+    "copy-from": "shot_beanbag",
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 10, "length": 12 } ]
+  },
+  {
+    "id": "shot_bird",
+    "type": "AMMO",
+    "name": { "str": "birdshot" },
+    "copy-from": "shot_bird",
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 15, "length": 14 } ]
+  },
+  {
+    "id": "shot_dragon",
+    "type": "AMMO",
+    "name": { "str": "dragon's breath shell" },
+    "copy-from": "shot_dragon",
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 15, "length": 8 } ]
+  },
+  {
+    "id": "shot_flechette",
+    "type": "AMMO",
+    "name": { "str": "flechette shell" },
+    "copy-from": "shot_flechette",
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 10, "length": 12 } ]
+  },
+  {
+    "id": "shot_scrap",
+    "type": "AMMO",
+    "name": { "str": "00 shot, scrap loaded" },
+    "copy-from": "shot_scrap",
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 10, "length": 12 } ]
+  },
+  {
+    "id": "bp_shot_scrap",
+    "type": "AMMO",
+    "name": { "str": "00 shot, black powder, scrap loaded" },
+    "copy-from": "bp_shot_scrap",
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 10, "length": 12 } ]
+  },
+  {
+    "id": "shot_paper_bird",
+    "type": "AMMO",
+    "name": { "str": "birdshot paper cartridge" },
+    "copy-from": "shot_paper_bird",
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 15, "length": 8 } ]
+  },
+  {
+    "id": "shot_paper_00",
+    "type": "AMMO",
+    "name": { "str": "buckshot paper cartridge" },
+    "copy-from": "shot_paper_00",
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 10, "length": 12 } ]
+  },
+  {
+    "id": "20x66_beanbag",
+    "type": "AMMO",
+    "name": { "str": "20x66mm beanbag" },
+    "copy-from": "20x66_beanbag",
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 15, "length": 12 } ]
+  },
+  {
+    "id": "20x66_flechette",
+    "type": "AMMO",
+    "name": { "str": "20x66mm flechette" },
+    "copy-from": "20x66_flechette",
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 15, "length": 12 } ]
+  },
+  {
+    "id": "20x66_inc",
+    "type": "AMMO",
+    "name": { "str": "20x66mm incendiary", "str_pl": "20x66mm incendiaries" },
+    "copy-from": "20x66_inc",
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 15, "length": 12 } ]
+  },
+  {
+    "id": "20x66_shot",
+    "type": "AMMO",
+    "name": { "str": "20x66mm buckshot" },
+    "copy-from": "20x66_shot",
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 15, "length": 12 } ]
+  },
+  {
+    "id": "40x46mm_m576",
+    "type": "AMMO",
+    "name": { "str": "40x46mm M576 buckshot" },
+    "copy-from": "40x46mm_m576",
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 15, "length": 12 } ]
+  },
+  {
+    "id": "40x46mm_buckshot_m118",
+    "type": "AMMO",
+    "name": { "str": "improvised 40x46mm buckshot" },
+    "copy-from": "40x46mm_buckshot_m118",
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 15, "length": 12 } ]
+  },
+  {
+    "id": "40x46mm_flechette_m118",
+    "type": "AMMO",
+    "name": { "str": "improvised 40x46mm flechette" },
+    "copy-from": "40x46mm_flechette_m118",
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 15, "length": 12 } ]
+  },
+  {
+    "id": "40x46mm_flechette_m199",
+    "type": "AMMO",
+    "name": { "str": "improvised 40x46mm flechette" },
+    "copy-from": "40x46mm_flechette_m199",
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 15, "length": 12 } ]
+  },
+  {
+    "id": "40x53mm_m1001",
+    "type": "AMMO",
+    "name": { "str": "40x53mm M1001 flechette" },
+    "copy-from": "40x53mm_m1001",
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 15, "length": 10 } ]
+  },
+  {
+    "id": "40x53mm_buckshot_m169",
+    "type": "AMMO",
+    "name": { "str": "improvised 40x53mm buckshot" },
+    "copy-from": "40x53mm_buckshot_m169",
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 15, "length": 10 } ]
+  },
+  {
+    "id": "crude_firestarter",
+    "copy-from": "crude_firestarter",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "electric firestarter" },
+    "flags": [ "BELT_CLIP", "FIRESTARTER" ]
+  },
+  {
+    "id": "lighter",
+    "copy-from": "lighter",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "lighter" },
+    "rand_charges": [ 22, 44, 50, 67, 75, 82, 100 ],
+    "flags": [ "BELT_CLIP", "FIRESTARTER" ]
+  },
+  {
+    "id": "ref_lighter",
+    "copy-from": "ref_lighter",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "refillable lighter" },
+    "flags": [ "BELT_CLIP", "FIRESTARTER" ]
+  },
+  {
+    "id": "smart_phone",
+    "copy-from": "smart_phone",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "smartphone" },
+    "flags": [ "BELT_CLIP", "WATCH", "ALARMCLOCK", "USE_UPS", "NO_UNLOAD", "NO_RELOAD" ]
+  },
+  {
+    "id": "smartphone_music",
+    "copy-from": "smartphone_music",
+    "type": "TOOL",
+    "name": { "str": "smartphone - music", "str_pl": "smartphones - music" },
+    "flags": [ "BELT_CLIP", "WATCH", "TRADER_AVOID", "ALARMCLOCK", "USE_UPS", "NO_UNLOAD", "NO_RELOAD" ]
+  },
+  {
+    "id": "electrohack",
+    "copy-from": "electrohack",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "electrohack" },
+    "flags": [ "BELT_CLIP" ]
+  },
+  {
+    "id": "scalpel",
+    "copy-from": "scalpel",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "scalpel" },
+    "flags": [ "BELT_CLIP", "SPEAR", "SHEATH_KNIFE" ]
+  },
+  {
+    "id": "inhaler",
+    "copy-from": "inhaler",
+    "type": "TOOL",
+    "category": "drugs",
+    "name": { "str": "inhaler" },
+    "flags": [ "BELT_CLIP", "IRREPLACEABLE_CONSUMABLE" ]
+  },
+  {
+    "id": "stethoscope",
+    "copy-from": "stethoscope",
+    "type": "TOOL_ARMOR",
+    "category": "tools",
+    "name": { "str": "stethoscope" },
+    "flags": [ "BELT_CLIP", "BELTED", "SAFECRACK" ],
+    "//": "The code from dogmeat's mod ends here."
+  },
+  {
+    "id": "shocktonfa_on",
+    "copy-from": "shocktonfa_on",
+    "type": "TOOL",
+    "name": { "str": "tactical tonfa (on)", "str_pl": "tactical tonfas (on)" },
+    "flags": [ "DURABLE_MELEE", "TRADER_AVOID", "NONCONDUCTIVE", "BELT_CLIP", "LIGHT_300" ]
+  },
+  {
+    "id": "1st_aid",
+    "copy-from": "1st_aid",
+    "type": "GENERIC",
+    "category": "drugs",
+    "name": { "str": "first aid kit" },
+    "weight": "1000 g",
+    "volume": "750 ml",
+    "flags": [ "NO_REPAIR", "NO_SALVAGE", "BELT_CLIP" ]
+  },
+ {
+    "id": "landmine",
+    "copy-from": "landmine",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "land mine" },
+    "flags": [ "BOMB", "ACT_IN_FIRE" ]
+  },
+  {
+    "id": "c4",
+    "copy-from": "c4",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "C-4 explosive" },
+    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB" ]
+  },
+  {
+    "id": "knife_trench",
+    "copy-from": "knife_trench",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "KNIVES" ],
+    "name": { "str": "trench knife (knife)", "str_pl": "trench knives (knife)" },
+    "cutting": 16,
+    "use_action": {
+      "type": "transform",
+      "msg": "You re-grab your trench knife, to use it as a knuckleduster.",
+      "target": "knife_trench_bash"
+    }
+  },
+  {
+    "id": "knife_trench_bash",
+    "copy-from": "knife_trench",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "FIST_WEAPONS" ],
+    "name": { "str": "trench knife (knuckleduster)", "str_pl": "trench knives (knuckleduster)" },
+    "bashing": 16,
+    "cutting": 6,
+    "flags": [ "DURABLE_MELEE", "UNARMED_WEAPON", "SHEATH_KNIFE" ],
+    "use_action": {
+      "type": "transform",
+      "msg": "You re-grab your trench knife, to use it as a knife.",
+      "target": "knife_trench"
+    }
+  },
+  {
+    "id": "syringe",
+    "copy-from": "syringe",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "syringe" },
+    "cutting": 8,
+    "thrown_damage": [ { "damage_type": "stab", "amount": 12 } ],
+    "flags": [ "NPC_THROWN" ]
+  },
+  {
+    "id": "broom",
+    "copy-from": "broom",
+    "type": "GENERIC",
+    "name": { "str": "broom and dustpan" },
+    "description": "A plastic broom and a dustpan.  Makes a terrible weapon unless you're chasing cats.",
+    "weight": "1229 g",
+    "weapon_category": [ "BATONS" ],
+    "material": [ "plastic" ],
+    "techniques": [ "WBLOCK_2", "RAPID" ],
+    "volume": "1750 ml",
+    "bashing": 12
+  },
+  {
+    "id": "surv_rocket_launcher",
+    "copy-from": "surv_rocket_launcher",
+    "type": "GUN",
+    "name": { "str": "crude rocket launcher" },
+    "ammo": [ "homebrew_rocket", "m235", "40x46mm", "RPG-7", "atgm", "84x246mm" ]
+  },
+  {
+    "id": "case_violin",
+    "copy-from": "case_violin",
+    "type": "ARMOR",
+    "name": { "str": "violin case" },
+    "use_action": {
+      "type": "holster",
+      "max_volume": "2500 ml",
+      "min_volume": "1500 ml",
+      "draw_cost": 200,
+      "skills": [ "smg", "shotgun", "rifle", "launcher" ]
+    }
+  },
+  {
+    "id": "lobotomizer",
+    "copy-from": "lobotomizer",
+    "type": "TOOL",
+    "weapon_category": [ "HOOKED_POLES" ],
+    "name": { "str": "lobotomizer" },
+    "qualities": [ [ "DIG", 2 ], [ "AXE", 2 ], [ "HAMMER_FINE", 1 ], [ "SAW_M", 2 ], [ "SAW_W", 2 ], [ "CUT", 2 ], [ "HAMMER", 2 ], [ "PRY", 2 ], [ "BUTCHER", -11 ], [ "COOK", 1 ] ],
+    "techniques": [ "WBLOCK_1", "BRUTAL", "SWEEP" ],
+    "use_action": [ "HAMMER", "CROWBAR" ],
+    "flags": [ "NEEDS_UNFOLD", "BELT_CLIP", "SHEATH_AXE" ]
+  },
+  {
+    "id": "toolset_extended",
+    "copy-from": "toolset_extended",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "extended toolset" },
+    "use_action": [
+      "HAMMER",
+      "CROWBAR",
+	  "BOLTCUTTERS",
+  	"CROWBAR",
+  	"FISH_ROD",
+  	"OXYTORCH",
+  	"WATER_PURIFIER",
+  	"WEATHER_TOOL",
+  	"GUN_REPAIR",
+  	"SIPHON",
+  	"PICKAXE",
+  	"PORTABLE_GAME",
+  	{
+		"type": "repair_item",
+		"item_action_type": "repair_metal",
+		"materials": [ "kevlar", "plastic", "iron", "steel", "hardsteel", "aluminum", "copper", "silver", "gold" ],
+		"skill": "mechanics",
+		"cost_scaling": 0.1,
+		"move_cost": 1000
+  	},
+  	{
+		"type": "repair_item",
+		"item_action_type": "repair_fabric",
+		"materials": [ "cotton", "acidchitin", "bone", "chitin", "paper", "cardboard", "wood", "kevlar_rigid", "lycra", "nylon", "ceramic", "neoprene", "leather", "wool", "fur", "faux_fur", "nomex", "gutskin" ],
+		"skill": "tailor",
+		"tool_quality": 5,
+		"cost_scaling": 0.1,
+		"move_cost": 600
+  	},
+  	{
+		"type": "sew_advanced",
+		"materials": [ "cotton", "ceramic",	"leather", "lycra", "nylon", "wool", "fur",	"faux_fur",	"nomex", "kevlar", "neoprene", "gutskin", "plastic", "kevlar_rigid"	],
+		"skill": "tailor",
+		"clothing_mods": [ "leather_padded", "steel_padded", "kevlar_padded", "furred", "wooled" ]
+  	},
+      { "flame": false, "type": "cauterize" }
+    ],
+    "qualities": [
+  	[ "HAMMER", 5 ],
+  	[ "HAMMER_FINE", 5 ],
+  	[ "ANVIL", 5 ],
+  	[ "SAW_W", 5 ],
+  	[ "SAW_M", 5 ],
+  	[ "JACK", 16 ],
+  	[ "SAW_M_FINE", 5 ],
+  	[ "SEW_CURVED", 5 ],
+  	[ "SEW", 5 ],
+  	[ "KNIT", 5 ],
+  	[ "LEATHER_AWL", 5 ],
+  	[ "WRENCH", 5 ],
+  	[ "WRENCH_FINE", 5 ],
+  	[ "SCREW", 5 ],
+  	[ "SMOOTH", 5 ],
+  	[ "SCREW_FINE", 5 ],
+  	[ "CUT_FINE", 5 ],
+  	[ "FISHING", 5 ],
+  	[ "LOCKPICK", 5 ],
+  	[ "CUT", 5 ],
+  	[ "PRY", 5 ],
+  	[ "DIG", 5 ],
+  	[ "PRESSURIZATION", 5 ],
+  	[ "DRILL", 5 ],
+  	[ "DISTILL", 5 ],
+  	[ "BUTCHER", 50 ],
+  	[ "CONTAIN", 5 ],
+  	[ "FILE", 5 ],
+  	[ "REAM", 5 ],
+  	[ "CHISEL", 5 ],
+  	[ "WELD", 2 ],
+  	[ "CHEM", 5 ],
+  	[ "BOIL", 5 ],
+  	[ "COOK", 5 ],
+  	[ "GRIND", 5 ],
+  	[ "VISE", 5 ]
+    ],
+	"flags": [ "STAB", "BAROMETER", "HYGROMETER", "THERMOMETER", "USES_BIONIC_POWER", "TRADER_AVOID",
+			   "NO_UNWIELD", "SAFECRACK", "HEATS_FOOD", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "boxing_gloves",
+    "copy-from": "boxing_gloves",
+    "type": "ARMOR",
+    "name": { "str": "pair of boxing gloves", "str_pl": "pairs of boxing gloves" },
+    "bashing": 3,
+    "encumbrance": 20,
+    "flags": [ "VARSIZE", "DURABLE_MELEE", "UNARMED_WEAPON", "OVERSIZE", "STURDY" ]
+  },
+  {
+    "id": "blazer",
+    "copy-from": "blazer",
+    "type": "ARMOR",
+    "name": { "str": "blazer" },
+    "flags": [ "VARSIZE", "FANCY", "OUTER" ]
+  },
+  {
+    "id": "jacket_army",
+    "copy-from": "jacket_army",
+    "type": "ARMOR",
+    "name": { "str_sp": "army jacket" },
+    "flags": [ "VARSIZE", "POCKETS" ]
+  },
+  {
+    "id": "survival_marker",
+    "copy-from": "survival_marker",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "survival marker" },
+    "weight": "40 g",
+    "volume": "20 ml",
+    "flags": [ "WRITE_MESSAGE", "BELT_CLIP" ]
+  },
+  {
+    "id": "permanent_marker",
+    "copy-from": "permanent_marker",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "permanent marker" },
+    "weight": "40 g",
+    "volume": "20 ml",
+    "flags": [ "WRITE_MESSAGE", "BELT_CLIP" ]
+  },
+  {
+    "id": "zweihander",
+    "copy-from": "zweihander",
+    "type": "GENERIC",
+    "category": "weapons",
+    "name": { "str": "zweihaender" },
+    "cutting": 42,
+    "techniques": [ "WBLOCK_2", "WIDE", "BRUTAL", "SWEEP" ],
+    "qualities": [ [ "CUT", 2 ], [ "BUTCHER", 4 ] ],
+    "flags": [ "DURABLE_MELEE", "REACH_ATTACK", "SHEATH_SWORD", "ALWAYS_TWOHAND", "NONCONDUCTIVE" ]
+  },
+  {
+    "id": "zweihander_inferior",
+    "type": "GENERIC",
+    "copy-from": "zweihander_inferior",
+    "name": { "str": "zweihaender replica" },
+    "flags": [ "SHEATH_SWORD", "REACH_ATTACK", "ALWAYS_TWOHAND" ],
+    "bashing": 40,
+    "cutting": 8
+  },
+  {
+    "id": "zweihander_fake",
+    "type": "GENERIC",
+    "copy-from": "zweihander_fake",
+    "name": { "str": "zweihaender fake" },
+    "flags": [ "SHEATH_SWORD", "REACH_ATTACK", "ALWAYS_TWOHAND", "FRAGILE_MELEE" ]
+  },
+  {
+    "id": "grapnel",
+    "copy-from": "grapnel",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "grappling hook" },
+    "flags": [ "DURABLE_MELEE", "REACH_ATTACK", "NONCONDUCTIVE" ]
+  },
+  {
+    "id": "q_staff",
+    "copy-from": "q_staff",
+    "type": "GENERIC",
+    "category": "weapons",
+    "name": { "str": "quarterstaff", "str_pl": "quarterstaves" },
+    "flags": [ "DURABLE_MELEE", "REACH_ATTACK", "SHEATH_SPEAR", "ALWAYS_TWOHAND" ],
+    "bashing": 22
+  },
+  {
+    "id": "i_staff",
+    "type": "GENERIC",
+    "copy-from": "i_staff",
+    "name": { "str": "ironshod quarterstaff", "str_pl": "ironshod quarterstaves" },
+    "flags": [ "DURABLE_MELEE", "REACH_ATTACK", "NONCONDUCTIVE", "SHEATH_SPEAR", "ALWAYS_TWOHAND" ],
+    "bashing": 32
+  },
+  {
+    "id": "shock_staff",
+    "type": "TOOL",
+    "copy-from": "shock_staff",
+    "name": { "str": "powered quarterstaff", "str_pl": "powered quarterstaves" },
+    "bashing": 32,
+    "charges_per_use": 50
+  },
+  {
+    "id": "nailgun",
+    "copy-from": "nailgun",
+    "type": "GUN",
+    "name": { "str": "nail gun" },
+    "dispersion": 80,
+    "range": 8,
+    "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
+    "clip_size": 25
+  },
+  {
+    "type": "TOOL",
+    "category": "tools",
+    "id": "fan",
+    "copy-from": "fan",
+    "name": { "str": "desk fan" },
+    "weight": "6000 g",
+    "volume": "3050 ml",
+    "ammo": "battery",
+    "flags": [ "ALLOWS_REMOTE_USE" ],
+    "use_action": {
+      "target": "fan_on",
+      "msg": "You turn on the fan.",
+      "active": true,
+      "need_charges": 1,
+      "need_charges_msg": "The fan needs more charge.",
+      "menu_text": "Turn on",
+      "type": "transform"
+    },
+    "magazines": [
+      [
+        "battery",
+        [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ]
+      ]
+    ],
+    "magazine_well": "500 ml"
+  },
+  {
+    "id": "fan_on",
+    "copy-from": "fan",
+    "type": "TOOL",
+    "name": { "str": "fan (on)", "str_pl": "fans (on)" },
+    "description": "A portable electric fan that steadily emits cool air.  Lowers temperature about 10 degrees C.",
+    "power_draw": 500000,
+    "emits": [ "emit_cold_air2_stream" ],
+    "flags": [ "ALLOWS_REMOTE_USE", "LIGHT_2" ],
+    "revert_to": "fan",
+    "use_action": { "target": "fan", "msg": "You turn off the fan.", "menu_text": "Turn off", "type": "transform" },
+    "magazine_well": "500 ml"
+  },
+  {
+    "id": "tourist_table",
+    "copy-from": "tourist_table",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "tourist table" },
+    "flags": [ "DURABLE_MELEE", "ALWAYS_TWOHAND", "NONCONDUCTIVE", "FLAT_SURFACE" ],
+    "to_hit": 1,
+    "bashing": 30
+  },
+  {
+    "type": "AMMO",
+    "id": "duct_tape",
+    "copy-from": "duct_tape",
+    "category": "spare_parts",
+    "name": { "str": "duct tape" },
+    "count": 500,
+    "flags": [ "UNRECOVERABLE" ]
+  },
+  {
+    "id": "knife_meat_cleaver",
+    "copy-from": "knife_meat_cleaver",
+    "name": { "str": "meat cleaver" },
+    "type": "TOOL",
+    "cutting": 16,
+    "thrown_damage": [ { "damage_type": "cut", "amount": 18 } ]
+  },
+  {
+    "id": "adjustable_stock",
+    "copy-from": "adjustable_stock",
+    "type": "GUNMOD",
+    "name": { "str": "adjustable stock" },
+    "dispersion_modifier": -20,
+    "handling_modifier": 45
+  },
+  {
+    "id": "folding_stock",
+    "copy-from": "folding_stock",
+    "type": "GUNMOD",
+    "name": { "str": "folding stock" },
+    "handling_modifier": 15
+  },
+  {
+    "id": "wire_stock",
+    "copy-from": "wire_stock",
+    "type": "GUNMOD",
+    "name": { "str": "folding wire stock" },
+    "handling_modifier": 20
+  },
+  {
+    "id": "pistol_stock",
+    "copy-from": "pistol_stock",
+    "type": "GUNMOD",
+    "name": { "str": "pistol stock" },
+    "handling_modifier": 25
+  },
+  {
+    "id": "recoil_stock",
+    "copy-from": "recoil_stock",
+    "type": "GUNMOD",
+    "name": { "str": "recoil stock" },
+    "dispersion_modifier": -10,
+    "handling_modifier": 25
+  },
+  {
+    "id": "cheek_pad",
+    "copy-from": "cheek_pad",
+    "type": "GUNMOD",
+    "name": { "str": "cheek pad" },
+    "dispersion_modifier": -10,
+    "handling_modifier": 35
+  },
+  {
+    "id": "stock_small",
+    "copy-from": "stock_small",
+    "type": "GUNMOD",
+    "name": { "str": "shortened stock" },
+    "dispersion_modifier": 120,
+    "weight_multiplier": 0.65,
+    "damage_modifier": { "damage_type": "bullet", "amount": 5 },
+    "flags": [ "COLLAPSIBLE_STOCK", "IRREMOVABLE" ]
+  },
+  {
+    "id": "stabilizer",
+    "copy-from": "stabilizer",
+    "type": "GUNMOD",
+    "name": { "str": "gyroscopic stabilizer" },
+    "integral_volume": "25 ml",
+    "dispersion_modifier": -10,
+    "handling_modifier": 25
+  },
+  {
+    "id": "belt_clip",
+    "copy-from": "belt_clip",
+    "type": "GUNMOD",
+    "name": { "str": "belt clip" },
+    "mod_target_category": [ [ "PISTOLS" ], [ "REVOLVERS" ] ],
+    "flags": [ "BELT_CLIP", "IS_ARMOR", "SKINTIGHT", "WATER_FRIENDLY" ]
+  },
+  {
+    "id": "tripwire",
+    "copy-from": "tripwire",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "tripwire trap" },
+    "use_action": {
+      "type": "place_trap",
+      "needs_solid_neighbor": false,
+      "trap": "tr_tripwire",
+      "moves": 205,
+      "practice": 3,
+      "done_message": "You string up the tripwire."
+    }
+  },
+  {
+    "type": "AMMO",
+    "id": "fishspear",
+    "copy-from": "fishspear",
+    "name": { "str": "wooden fishing spear" },
+    "damage": { "damage_type": "stab", "amount": 16, "armor_penetration": 8 },
+    "range": 8
+  },
+  {
+    "type": "AMMO",
+    "id": "c_fishspear",
+    "copy-from": "c_fishspear",
+    "name": { "str": "carbon fiber fishing spear" },
+    "damage": { "damage_type": "stab", "amount": 18, "armor_penetration": 16 },
+    "range": 14
+  },
+  {
+    "type": "AMMO",
+    "id": "m_fishspear",
+    "copy-from": "m_fishspear",
+    "name": { "str": "metal fishing spear" },
+    "damage": { "damage_type": "stab", "amount": 20, "armor_penetration": 16 },
+    "range": 8
+  },
+  {
+    "id": "airspeargun",
+    "copy-from": "airspeargun",
+    "type": "GUN",
+    "name": { "str": "pneumatic speargun" },
+    "ranged_damage": { "damage_type": "stab", "amount": 14 },
+    "range": 6
+  },
+  {
+    "id": "minispeargun",
+    "copy-from": "minispeargun",
+    "type": "GUN",
+    "name": { "str": "mini speargun" },
+    "range": 4
+  },
+  {
+    "id": "speargun",
+    "copy-from": "speargun",
+    "type": "GUN",
+    "name": { "str": "speargun" },
+    "ranged_damage": { "damage_type": "stab", "amount": 9 },
+    "range": 6
+  },
+  {
+    "id": "doublespeargun",
+    "copy-from": "doublespeargun",
+    "type": "GUN",
+    "name": { "str": "double speargun" },
+    "ranged_damage": { "damage_type": "stab", "amount": 8 },
+    "range": 6,
+    "clip_size": 2
+  },
+  {
+    "id": "noise_emitter",
+    "copy-from": "noise_emitter",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "noise grenade (off)", "str_pl": "noise grenades (off)" },
+    "weight": "236 g",
+    "volume": "250 ml",
+    "flags": [ "ACT_ON_RANGED_HIT", "GRENADE", "RADIO_MODABLE", "RADIO_INVOKE_PROC" ]
+  },
+  {
+    "id": "noise_emitter_on",
+    "copy-from": "noise_emitter_on",
+    "type": "TOOL",
+    "name": { "str": "noise grenade (on)", "str_pl": "noise grenades (on)" },
+    "weight": "236 g",
+    "volume": "250 ml",
+    "flags": [ "GRENADE", "RADIO_MODABLE", "RADIO_INVOKE_PROC", "TRADER_AVOID" ]
+  },
+  {
+    "id": "huge_crossbow",
+    "copy-from": "huge_crossbow",
+    "type": "GUN",
+    "name": { "str": "heavy crossbow" },
+    "ammo": [ "arrow", "bolt", "fishspear" ]
+  },
+  {
+    "id": "surv_hand_cannon",
+    "copy-from": "surv_hand_cannon",
+    "type": "GUN",
+    "name": { "str": "\"revolver\"" },
+    "description": "A large and heavy revolver evidently welded from scrap.  It's not pretty, but the .45 and .44 it's chambered with packs a serious punch.  Just watch out for the kick.  This one is especially made so that the suppressor is avilable to use.",
+    "weight": "800 g",
+    "volume": "610 ml",
+    "ammo": [ "45", "44" ],
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "sights", 1 ],
+      [ "muzzle", 1 ],
+      [ "stock mount", 1 ],
+      [ "rail mount", 1 ],
+      [ "underbarrel mount", 1 ]
+    ],
+    "ranged_damage": { "damage_type": "bullet", "amount": 3 },
+    "clip_size": 6
+  },
+  {
+    "id": "barrel_ported",
+    "copy-from": "barrel_ported",
+    "type": "GUNMOD",
+    "name": { "str": "ported barrel" },
+    "dispersion_modifier": 30,
+    "handling_modifier": 20,
+    "loudness_modifier": 18
+  },
+  {
+    "id": "muzzle_brake",
+    "copy-from": "muzzle_brake",
+    "type": "GUNMOD",
+    "name": { "str": "muzzle brake" },
+    "dispersion_modifier": 25,
+    "handling_modifier": 22
+  },
+  {
+    "id": "muzzle_brake_mod",
+    "copy-from": "muzzle_brake_mod",
+    "type": "GUNMOD",
+    "name": { "str": "modified muzzle brake" }
+  },
+  {
+    "id": "crafted_suppressor",
+    "copy-from": "crafted_suppressor",
+    "type": "GUNMOD",
+    "name": { "str": "homemade suppressor" },
+    "handling_modifier": 6,
+    "loudness_modifier": -40
+  },
+  {
+    "id": "filter_suppressor",
+    "copy-from": "filter_suppressor",
+    "type": "GUNMOD",
+    "name": { "str": "'solvent trap' suppressor" },
+    "dispersion_modifier": 20,
+    "handling_modifier": 6,
+    "loudness_modifier": -30
+  },
+  {
+    "id": "bottle_suppressor",
+    "copy-from": "bottle_suppressor",
+    "type": "GUNMOD",
+    "name": { "str": "soda bottle silencer" },
+    "dispersion_modifier": 105,
+    "loudness_modifier": -20
+  },
+  {
+    "id": "riv_suppressor",
+    "copy-from": "riv_suppressor",
+    "type": "GUNMOD",
+    "name": { "str": "RK6S34 suppressor" },
+    "handling_modifier": 3,
+    "proportional": { "loudness_modifier": 6 }
+  },
+  {
+    "id": "shot_suppressor",
+    "copy-from": "shot_suppressor",
+    "type": "GUNMOD",
+    "name": { "str": "shotgun suppressor" },
+    "weight": "900 g",
+    "volume": "1086 ml",
+    "damage_modifier": { "damage_type": "bullet", "amount": -3 },
+    "handling_modifier": 12,
+    "loudness_modifier": -40
+  },
+  {
+    "id": "suppressor",
+    "copy-from": "suppressor",
+    "type": "GUNMOD",
+    "name": { "str": "suppressor" },
+    "weight": "400 g",
+    "volume": "200 ml",
+    "handling_modifier": 8,
+    "loudness_modifier": -60
+  },
+  {
+    "id": "mp5sd_suppressor",
+    "copy-from": "mp5sd_suppressor",
+    "type": "GUNMOD",
+    "name": { "str": "MP5SD integral suppressor" },
+    "loudness_modifier": -42
+  },
+  {
+    "id": "suppressor_compact",
+    "copy-from": "suppressor_compact",
+    "type": "GUNMOD",
+    "name": { "str": "compact suppressor" },
+    "weight": "200 g",
+    "volume": "150 ml",
+    "loudness_modifier": -40
+  },
+  {
+    "id": "sten",
+    "copy-from": "sten",
+    "type": "GUN",
+    "name": { "str": "bastard gun" },
+    "description": "Submachinegun, 9mm.  It's got poor accuracy, almost like a shotgun from hell.  That's why they call it a \"Bastard gun.\"  Accepts all 9mm magazines.",
+    "weight": "2500 g",
+    "volume": "1570 ml",
+    "durability": 4,
+    "blackpowder_tolerance": 20,
+    "magazines": [ 
+        [ "9mm", [ 
+            "stenmag", "survivor9mm_mag", "survivor9mm_mag_beeg",
+            "calicomag",
+            "glockbigmag", "glockmag", "glock17_17", "glock17_22",
+            "glock_drum_50rd", "glock_drum_100rd",
+            "ccpmag", "m9bigmag", "m9mag", "mp5bigmag", "mp5mag",
+            "px4mag", "tec9mag", "usp9mag", "uzimag", "kpf9mag",
+            "p320mag_17rd_9x19mm", "bhp9mag_15rd", "p38mag",
+            "ppq9mag_10rd", "ppq9mag_15rd", "ppq9mag_17rd",
+            "hptc9mag_8rd", "hptc9mag_10rd", "hptc9mag_15rd",
+            "cz75mag_12rd", "cz75mag_20rd", "cz75mag_26rd"
+        ] ] ]
+  },
+  {
+    "id": "stenmag",
+    "copy-from": "stenmag",
+    "type": "MAGAZINE",
+    "name": { "str": "bastard gun portative strips" },
+    "description": "A double-column, single-feed 9x19mm magazine used by the bastard submachine gun, based off the magazines from the infamous STEN gun.",
+    "capacity": 40,
+    "reliability": 4,
+    "flags": [ "MAG_COMPACT", "MAG_EJECT" ]
+  },
+  {
+    "id": "survivor9mm_mag",
+    "copy-from": "survivor9mm_mag",
+    "looks_like": "mp5mag",
+    "type": "MAGAZINE",
+    "name": { "str": "makeshift bastard gun portative strips" },
+    "description": "An improvised magazine that is mostly compatible with the bastard submachine gun, with a simplified feed system.",
+    "weight": "300 g",
+    "volume": "500 ml",
+    "price": "40 USD",
+    "price_postapoc": "1 USD",
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "9mm",
+    "capacity": 25,
+    "reliability": 3,
+    "reload_time": 160,
+    "flags": [ "MAG_COMPACT", "MAG_EJECT" ]
+  },
+  {
+    "id": "survivor9mm_mag_beeg",
+    "looks_like": "thompson_drum",
+    "type": "MAGAZINE",
+    "name": { "str": "makeshift bastard gun drum strips" },
+    "description": "An improvised magazine that is mostly compatible with the bastard submachine gun, with a complex feed system.  Unreliable.",
+    "weight": "900 g",
+    "volume": "1500 ml",
+    "price": "80 USD",
+    "price_postapoc": "8 USD",
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "9mm",
+    "capacity": 150,
+    "reliability": 1,
+    "reload_time": 260,
+    "flags": [ "MAG_BULKY" ]
+  },
+  {
+    "id": "pipe_double_shotgun",
+    "copy-from": "pipe_double_shotgun",
+    "type": "GUN",
+    "name": { "str": "duplet" },
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "underbarrel", 1 ]
+    ]
+  },
+  {
+    "id": "revolver_shotgun",
+    "copy-from": "revolver_shotgun",
+    "type": "GUN",
+    "name": { "str": "uboinik" },
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "underbarrel", 1 ]
+    ]
+  },
+  {
+    "id": "ashot",
+    "copy-from": "ashot",
+    "type": "GUN",
+    "name": { "str": "ashot" },
+    "weight": "600 g",
+    "volume": "500 ml",
+    "ranged_damage": { "damage_type": "bullet", "amount": 1, "armor_penetration": 2 },
+    "dispersion": 700,
+    "durability": 9,
+    "valid_mod_locations": [
+      [ "accessories", 1 ],
+      [ "grip", 1 ],
+      [ "stock", 1 ],
+      [ "mechanism", 4 ],
+      [ "sights", 1 ],
+      [ "rail", 1 ],
+      [ "underbarrel", 1 ]
+    ]
+  },
+  {
+    "id": "pipe_shotgun",
+    "copy-from": "pipe_shotgun",
+    "type": "GUN",
+    "name": { "str": "pipe shotgun" },
+    "ranged_damage": { "damage_type": "bullet", "amount": 4, "armor_penetration": 4 }
+  },
+  {
+    "id": "pipe_double_shotgun",
+    "copy-from": "pipe_double_shotgun",
+    "type": "GUN",
+    "name": { "str": "double-barrel pipe shotgun" },
+    "ranged_damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 3 }
+  },
+  {
+    "id": "shotgun_s",
+    "copy-from": "shotgun_s",
+    "type": "GUN",
+    "name": { "str": "single barrel shotgun" },
+    "ranged_damage": { "damage_type": "bullet", "amount": 6, "armor_penetration": 6 }
+  },
+  {
+    "id": "shotgun_d",
+    "copy-from": "shotgun_d",
+    "type": "GUN",
+    "name": { "str": "double barrel shotgun" },
+    "ranged_damage": { "damage_type": "bullet", "amount": 5, "armor_penetration": 5 }
+  },
+  {
+    "id": "bandolier_pistol",
+    "copy-from": "bandolier_pistol",
+    "type": "ARMOR",
+    "name": { "str": "pistol bandolier" },
+    "use_action": {
+      "type": "bandolier",
+      "capacity": 80,
+      "ammo": [
+        "paintball",
+        "nail",
+        "pebble",
+        "32",
+        "762x25",
+        "38",
+        "357mag",
+        "357sig",
+        "380",
+        "38super",
+        "40",
+        "10mm",
+        "44",
+        "45",
+        "45colt",
+        "46",
+        "57",
+        "9x18",
+        "9mm",
+        "454",
+        "460",
+        "500"
+      ],
+      "draw_cost": 20
+    }
+  },
+  {
+    "id": "bandolier_rifle",
+    "copy-from": "bandolier_rifle",
+    "type": "ARMOR",
+    "name": { "str": "rifle bandolier" },
+    "use_action": {
+      "type": "bandolier",
+      "capacity": 50,
+      "ammo": [
+        "paintball",
+        "nail",
+        "pebble",
+        "22",
+        "223",
+        "270win",
+        "300blk",
+        "5x50",
+        "545x39",
+        "3006",
+        "308",
+        "300",
+        "762",
+        "762R",
+        "8x40mm",
+        "4570",
+        "50",
+        "700nx"
+      ],
+      "draw_cost": 20
+    }
+  },
+  {
+    "id": "bandolier_shotgun",
+    "copy-from": "bandolier_shotgun",
+    "type": "ARMOR",
+    "name": { "str": "waist shotgun bandolier" },
+    "use_action": { "type": "bandolier", "capacity": 50, "ammo": [ "410shot", "shot", "20x66mm", "signal_flare" ], "draw_cost": 15 }
+  },
+  {
+    "id": "torso_bandolier_shotgun",
+    "copy-from": "torso_bandolier_shotgun",
+    "type": "ARMOR",
+    "name": { "str": "torso shotgun bandolier" },
+    "use_action": { "type": "bandolier", "capacity": 100, "ammo": [ "410shot", "shot", "20x66mm", "signal_flare" ], "draw_cost": 15 }
+  },
+  {
+    "id": "flintlock_pouch",
+    "copy-from": "flintlock_pouch",
+    "type": "ARMOR",
+    "name": { "str": "paper cartridge pouch", "str_pl": "paper cartridge pouches" },
+    "use_action": {
+      "type": "bandolier",
+      "capacity": 40,
+      "ammo": [ "flintlock", "flintlockshot", "36paper", "44paper", "blunderbuss", "shotcanister", "shotpaper" ],
+      "draw_cost": 20
+    }
+  },
+  {
+    "id": "bandolier_wrist",
+    "copy-from": "bandolier_wrist",
+    "type": "ARMOR",
+    "name": { "str": "wrist bandolier" },
+    "use_action": {
+      "type": "bandolier",
+      "capacity": 12,
+      "ammo": [
+        "paintball",
+        "nail",
+        "pebble",
+        "22",
+        "223",
+        "270win",
+        "300blk",
+        "5x50",
+        "545x39",
+        "3006",
+        "308",
+        "300",
+        "762",
+        "762R",
+        "8x40mm",
+        "4570",
+        "50",
+        "700nx"
+      ],
+      "draw_cost": 20
+    }
+  },
+  {
+    "id": "grenade_pouch",
+    "copy-from": "grenade_pouch",
+    "type": "ARMOR",
+    "name": { "str": "grenade pouch", "str_pl": "grenade pouches" },
+    "use_action": { "type": "bandolier", "capacity": 8, "ammo": [ "40x46mm", "40x53mm" ], "draw_cost": 20 }
+  },
+  {
+    "id": "stone_pouch",
+    "copy-from": "stone_pouch",
+    "type": "ARMOR",
+    "name": { "str": "stone pouch", "str_pl": "stone pouches" },
+    "use_action": { "type": "bandolier", "capacity": 20, "ammo": [ "pebble", "rock" ], "draw_cost": 20 }
+  },
+  {
+    "id": "grenadebandolier",
+    "copy-from": "grenadebandolier",
+    "type": "ARMOR",
+    "name": { "str": "large grenade pouch", "str_pl": "large grenade pouches" },
+    "description": "A pouch for holding up to eight full-sized grenades of various types.",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stash grenades",
+      "holster_msg": "You stash your %s.",
+      "multi": 8,
+      "max_volume": "750 ml",
+      "draw_cost": 30,
+      "flags": [ "GRENADE" ]
+    }
+  },
+  {
+    "id": "quiver",
+    "copy-from": "quiver",
+    "type": "ARMOR",
+    "name": { "str": "quiver" },
+    "use_action": { "type": "bandolier", "capacity": 40, "ammo": [ "arrow", "bolt" ], "draw_cost": 20 }
+  },
+  {
+    "id": "quiver_birchbark",
+    "copy-from": "quiver_birchbark",
+    "type": "ARMOR",
+    "name": { "str": "birchbark quiver" },
+    "use_action": { "type": "bandolier", "capacity": 30, "ammo": [ "arrow", "bolt" ], "draw_cost": 20 }
+  },
+  {
+    "id": "quiver_large",
+    "copy-from": "quiver_large",
+    "type": "ARMOR",
+    "name": { "str": "large quiver" },
+    "use_action": { "type": "bandolier", "capacity": 100, "ammo": [ "arrow", "bolt" ], "draw_cost": 20 }
+  },
+  {
+    "id": "quiver_large_birchbark",
+    "copy-from": "quiver_large_birchbark",
+    "type": "ARMOR",
+    "name": { "str": "large birchbark quiver" },
+    "use_action": { "type": "bandolier", "capacity": 90, "ammo": [ "arrow", "bolt" ], "draw_cost": 20 }
+  },
+  {
+    "id": "helsing",
+    "copy-from": "helsing",
+    "type": "GUN",
+    "name": { "str": "helsing" },
+    "ranged_damage": { "damage_type": "stab", "amount": 35, "armor_penetration": 8 },
+    "range": 18,
+    "dispersion": 100,
+    "recoil": 50,
+    "durability": 9,
+    "reload": 1440,
+    "loudness": 16,
+    "ammo": [ "arrow", "bolt" ]
+  },
+  {
+    "id": "tihar",
+    "copy-from": "tihar",
+    "type": "GUN",
+    "name": { "str": "tihar" },
+    "ranged_damage": { "damage_type": "bash", "amount": 18, "armor_penetration": 4 },
+    "range": 16,
+    "durability": 9,
+    "recoil": 100,
+    "clip_size": 21,
+    "ammo": [ "pebble", "paintball" ]
+  },
+  {
+    "id": "triple_launcher_simple",
+    "copy-from": "triple_launcher_simple",
+    "type": "GUN",
+    "name": { "str": "medved" },
+    "barrel_length": "600 ml"
+  },
+  {
+    "id": "bigun",
+    "copy-from": "bigun",
+    "type": "GUN",
+    "name": { "str": "bigun" }
+  },
+  {
+    "id": "slingshot",
+    "copy-from": "slingshot_base",
+    "//": "Tileset whitelist for sling & slingshots.",
+    "type": "GUN",
+    "color": "brown",
+    "name": { "str": "slingshot" },
+    "description": "A wooden slingshot, easy to use and accurate.  It uses pebbles as ammunition.",
+    "price": "5 USD",
+    "material": "wood",
+    "flags": [ "WATERPROOF_GUN", "NEVER_JAMS", "RELOAD_AND_SHOOT", "BELT_CLIP" ],
+    "weight": "254 g",
+    "volume": "250 ml",
+    "price_postapoc": "50 cent",
+    "to_hit": -2,
+    "ranged_damage": { "damage_type": "bash", "amount": 14, "armor_penetration": 4 },
+    "dispersion": 75,
+    "durability": 6
+  },
+  {
+    "id": "wristrocket",
+    "copy-from": "slingshot_base",
+    "looks_like": "sling",
+    "type": "GUN",
+    "color": "dark_gray",
+    "name": { "str": "brace slingshot" },
+    "description": "A modern slingshot with a wrist brace, it is easy to use, accurate, and quite powerful.",
+    "price": "30 USD",
+    "material": [ "steel", "plastic" ],
+    "weight": "322 g",
+    "volume": "500 ml",
+    "flags": [ "WATERPROOF_GUN", "NEVER_JAMS", "RELOAD_AND_SHOOT", "BELT_CLIP" ],
+    "price_postapoc": "250 cent",
+    "to_hit": -2,
+    "ranged_damage": { "damage_type": "bash", "amount": 20, "armor_penetration": 8 },
+    "dispersion": 45,
+    "durability": 7
+  },
+  {
+    "id": "bullet_crossbow",
+    "copy-from": "bullet_crossbow",
+    "type": "GUN",
+    "name": { "str": "bullet crossbow" },
+    "ammo": [ "pebble", "paintball" ],
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ],
+      [ "dampening", 1 ]
+    ]
+  },
+  {
+    "id": "belt40mm",
+    "copy-from": "belt40mm",
+    "type": "MAGAZINE",
+    "name": { "str": "grenade belt" },
+    "capacity": 250,
+    "count": 100,
+    "armor_data": {
+      "covers": [ "torso" ],
+      "coverage": 5
+      },
+    "flags": [
+      "MAG_BELT",
+      "MAG_DESTROY",
+      "BELTED",
+      "OVERSIZE",
+      "WATER_FRIENDLY"
+     ],
+    "description": "An ammo belt consisting of metal linkages which disintegrate upon firing.  This one holds 40mm grenades."
+  },
+  {
+    "id": "belt50",
+    "copy-from": "belt50",
+    "type": "MAGAZINE",
+    "name": { "str": ".50 BMG ammo belt" },
+    "capacity": 500
+  },
+  {
+    "id": "belt223",
+    "copy-from": "belt223",
+    "type": "MAGAZINE",
+    "name": { "str": "5.56x45mm ammo belt" },
+    "capacity": 1000
+  },
+  {
+    "id": "belt308",
+    "copy-from": "belt308",
+    "type": "MAGAZINE",
+    "name": { "str": "7.62x51mm ammo belt" },
+    "capacity": 1000
+  },
+  {
+    "type": "GENERIC",
+    "category": "tools",
+    "id": "razor_blade",
+    "copy-from": "razor_blade",
+    "name": { "str": "razor blade" },
+    "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ] ],
+    "cutting": 2
+  },
+  {
+    "id": "glass_shiv",
+    "copy-from": "glass_shiv",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "KNIVES" ],
+    "name": { "str": "glass shiv" },
+    "cutting": 9,
+    "flags": [ "SHEATH_KNIFE", "SPEAR", "FRAGILE_MELEE" ],
+    "qualities": [ [ "BUTCHER", -1 ] ]
+  },
+  {
+    "id": "vambrace_larmor",
+    "copy-from": "vambrace_larmor",
+    "type": "ARMOR",
+    "name": { "str": "pair of leather vambraces", "str_pl": "pairs of leather vambraces" },
+    "use_action": { "type": "bandolier", "capacity": 8, "ammo": [ "arrow", "bolt" ], "draw_cost": 20 }
+  },
+  {
+    "id": "bbgun",
+    "copy-from": "bbgun",
+    "type": "GUN",
+    "name": { "str": "BB gun" },
+    "ranged_damage": { "damage_type": "bullet", "amount": 3 },
+    "dispersion": 50,
+    "clip_size": 250,
+    "reload": 500,
+    "modes": [ [ "DEFAULT", "single", 1 ], [ "AUTO", "full auto", 8 ] ]
+  },
+  {
+    "id": "paintballgun",
+    "copy-from": "paintballgun",
+    "type": "GUN",
+    "reload_noise_volume": 6,
+    "name": { "str": "Paintball gun" },
+    "flags": [ "NEVER_JAMS", "NON_FOULING" ],
+    "range": 9,
+    "ranged_damage": { "damage_type": "bullet", "amount": 2 },
+    "dispersion": 50,
+    "durability": 8,
+    "clip_size": 75,
+    "modes": [ [ "DEFAULT", "single", 1 ], [ "AUTO", "burst", 3 ] ]
+  },
+  {
+    "id": "m134",
+    "copy-from": "m134",
+    "type": "GUN",
+    "name": { "str": "M134D-H Minigun" },
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "underbarrel", 1 ]
+    ]
+  },
+  {
+    "id": "atgm_launcher",
+    "copy-from": "atgm_launcher",
+    "type": "GUN",
+    "name": { "str_sp": "BGM-71F TOW" },
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "underbarrel", 1 ]
+    ]
+  },
+  {
+    "id": "cannon_3in_ordnance",
+    "copy-from": "cannon_3in_ordnance",
+    "type": "GUN",
+    "name": { "str": "3-inch ordnance rifle" },
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "underbarrel", 1 ]
+    ]
+  },
+  {
+    "id": "m1874_gatling",
+    "copy-from": "m1874_gatling",
+    "looks_like": "m134",
+    "type": "GUN",
+    "name": { "str": "M1874 Gatling gun" },
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "underbarrel", 1 ]
+    ]
+  },
+  {
+    "id": "gatling_mech_laser_rebuilt",
+    "copy-from": "gatling_mech_laser_rebuilt",
+    "type": "GUN",
+    "name": { "str": "rebuilt CMES gatling laser" },
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "underbarrel", 1 ]
+    ]
+  },
+  {
+    "id": "recon_mech_laser_rebuilt",
+    "copy-from": "recon_mech_laser_rebuilt",
+    "type": "GUN",
+    "name": { "str": "rebuilt RMES marksman laser" },
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "underbarrel", 1 ]
+    ]
+  },
+  {
+    "id": "watercannon",
+    "copy-from": "watercannon",
+    "type": "GUN",
+    "name": { "str": "water cannon" },
+    "flags": [ "NEVER_JAMS", "MOUNTED_GUN", "NON_FOULING" ],
+    "ammo": [ "water", "chemical_spray", "acid" ],
+    "ranged_damage": { "damage_type": "bullet", "amount": 40, "armor_penetration": 10 },
+    "modes": [ [ "DEFAULT", "burst", 4 ], [ "SINGLE", "single", 1 ] ],
+    "clip_size": 500,
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "underbarrel", 1 ]
+    ]
+  },
+  {
+    "type": "AMMO",
+    "id": "bb",
+    "copy-from": "bb",
+    "name": { "str": "BB" },
+    "damage": { "damage_type": "bullet", "amount": 4 }
+  },
+  {
+    "id": "draco",
+    "copy-from": "draco",
+    "type": "GUN",
+    "name": { "str": "Mini Draco" },
+    "weight": "1763 g",
+    "volume": "1567 ml",
+    "skill": "pistol",
+    "ranged_damage": { "damage_type": "bullet", "amount": -3 }
+  },
+  {
+    "id": "oa93",
+    "copy-from": "oa93",
+    "type": "GUN",
+    "name": { "str": "OA-93" },
+    "weight": "1623 g",
+    "volume": "1735 ml",
+    "skill": "pistol",
+    "range": -3,
+    "ranged_damage": { "damage_type": "bullet", "amount": -6 },
+    "durability": 8
+  },
+  {
+    "id": "bolas",
+    "copy-from": "bolas",
+    "type": "AMMO",
+    "category": "weapons",
+    "name": { "str": "bolas", "str_pl": "bolases" },
+    "count": 10,
+    "stack_size": 10
+  },
+  {
+    "id": "net",
+    "copy-from": "net",
+    "type": "AMMO",
+    "category": "weapons",
+    "name": { "str": "net" },
+    "count": 10,
+    "stack_size": 10
+  },
+  {
+    "id": "barrel_small",
+    "copy-from": "barrel_small",
+    "type": "GUNMOD",
+    "name": { "str": "shortened barrel" },
+    "description": "A shortened barrel results in markedly reduced accuracy, and a minor increase in noise, but also greatly improves the damage and ease with which the weapon can be carried and wielded.",
+    "dispersion_modifier": 80,
+    "loudness_modifier": 10,
+    "damage_modifier": { "damage_type": "bullet", "amount": 5 }
+  },
+  {
+    "type": "AMMO",
+    "id": "glass_shard",
+    "symbol": ",",
+    "color": "light_cyan",
+    "name": { "str": "glass shard" },
+    "category": "other",
+    "description": "A broken shard of glass covered in sharp edges.  With a piece of rag you could use it to make it a primitive weapon.",
+    "material": "glass",
+    "weight": "50 g",
+    "volume": "225 ml",
+    "cutting": 6,
+    "ammo_type": "glass_shard",
+    "flags": [ "HURT_WHEN_WIELDED", "TRADER_AVOID" ],
+    "to_hit": -1,
+    "stack_size": 15,
+    "thrown_damage": [ { "damage_type": "stab", "amount": 8 } ]
+  },
+  {
+    "id": "2_shot_special",
+    "copy-from": "2_shot_special",
+    "type": "GUN",
+    "name": { "str": "zip gun" },
+    "weight": "700 g",
+    "volume": "650 ml",
+    "ammo": [
+        "32",
+        "36paper",
+        "762x25",
+        "38",
+        "357mag",
+        "357sig",
+        "380",
+        "38super",
+        "40",
+        "10mm",
+        "44",
+        "44paper",
+        "45",
+        "45colt",
+        "46",
+        "57",
+        "9x18",
+        "9mm",
+        "454",
+        "460",
+        "500"
+    ],
+    "dispersion": 620,
+    "durability": 2,
+    "blackpowder_tolerance": 40,
+    "clip_size": 2,
+    "reload": 80
+  },
+  {
+    "id": "lifestraw",
+    "copy-from": "lifestraw",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "lifestraw" },
+    "flags": [ "BELT_CLIP" ]
+  },
+  {
+    "id": "bh_m89",
+    "copy-from": "bh_m89",
+    "type": "GUN",
+    "name": { "str_sp": "Big Horn Model 89" },
+    "range": 4,
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "brass catcher", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "rail", 1 ],
+      [ "underbarrel", 1 ]
+    ]
+  },
+  {
+    "id": "henry_big_boy",
+    "copy-from": "henry_big_boy",
+    "type": "GUN",
+    "name": { "str_sp": "Henry Big Boy .44" },
+    "range": 4,
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "brass catcher", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "rail", 1 ],
+      [ "underbarrel", 1 ]
+    ]
+  },
+  {
+    "id": "chemical_thrower",
+    "copy-from": "chemical_thrower",
+    "type": "GUN",
+    "name": { "str": "makeshift chemical thrower" },
+    "flags": [ "NEVER_JAMS", "NON_FOULING" ]
+  },
+  {
+    "id": "pressurized_tank_chem",
+    "copy-from": "pressurized_tank_chem",
+    "type": "MAGAZINE",
+    "name": { "str": "pressurized chemical tank" },
+    "ammo_type": [ "water", "chemical_spray", "acid" ]
+  },
+  {
+    "type": "AMMO",
+    "id": "blun_slug",
+    "copy-from": "blun_slug",
+    "name": { "str": "blunderbuss slug" },
+    "count": 30,
+    "stack_size": 30
+  },
+  {
+    "type": "AMMO",
+    "id": "blun_shot",
+    "copy-from": "blun_shot",
+    "name": { "str": "blunderbuss shot" },
+    "count": 30,
+    "stack_size": 30
+  },
+  {
+    "type": "AMMO",
+    "id": "blun_flechette",
+    "copy-from": "blun_flechette",
+    "name": { "str": "blunderbuss flechette" },
+    "count": 30,
+    "stack_size": 30
+  },
+  {
+    "id": "signal_flare",
+    "copy-from": "signal_flare",
+    "type": "AMMO",
+    "name": { "str": "signal flare" },
+    "effects": [ "IGNITE", "NEVER_MISFIRES", "NO_EMBED" ]
+  },
+  {
+    "id": "homewrecker",
+    "copy-from": "homewrecker",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "FLAILS" ],
+    "name": { "str": "trench mace" },
+    "to_hit": -1,
+    "bashing": 36,
+    "cutting": 3
+  },
+  {
+    "id": "UPS_off",
+    "copy-from": "UPS_off",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "UPS", "str_pl": "UPS's" },
+    "weight": "200 g",
+    "volume": "200 ml",
+    "magazines": [
+      [
+        "battery",
+        [
+          "light_minus_disposable_cell",
+          "light_disposable_cell",
+          "light_minus_battery_cell",
+          "light_battery_cell",
+          "light_plus_battery_cell",
+          "light_atomic_battery_cell",
+          "light_minus_atomic_battery_cell",
+          "medium_battery_cell", 
+          "medium_plus_battery_cell", 
+          "medium_atomic_battery_cell",
+          "medium_disposable_cell",
+          "heavy_plus_battery_cell",
+          "heavy_battery_cell",
+          "heavy_atomic_battery_cell",
+          "heavy_disposable_cell"
+        ]
+      ]
+    ],
+    "magazine_well": "2000 ml"
+  },
+  {
+    "id": "adv_UPS_off",
+    "copy-from": "adv_UPS_off",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "advanced UPS", "str_pl": "advanced UPS's" },
+    "weight": "150 g",
+    "volume": "150 ml",
+    "max_charges": 5000
+  },
+  {
+    "type": "AMMO",
+    "id": "paintball",
+    "copy-from": "paintball",
+    "name": { "str": "paintball" },
+    "damage": { "damage_type": "bullet", "amount": 3 },
+    "dispersion": 40,
+    "count": 200,
+    "stack_size": 200,
+    "effects": [ "NOGIB", "BLINDS_EYES", "NEVER_MISFIRES" ]
+  }
+]

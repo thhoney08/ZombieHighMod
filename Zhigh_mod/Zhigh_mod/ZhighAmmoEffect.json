@@ -1,0 +1,66 @@
+[
+  {
+    "id": "FRAG_BIG",
+    "type": "ammo_effect",
+    "explosion": { 
+      "damage": 50,
+      "radius": 3,
+      "fragment": { "impact": { "damage_type": "cut", "amount": 100, "armor_multiplier": 3 }, "range": 7 } }
+  },
+  {
+    "id": "FRAG",
+    "type": "ammo_effect",
+    "explosion": { 
+      "damage": 40,
+      "radius": 2,
+      "fragment": { "impact": { "damage_type": "cut", "amount": 50, "armor_multiplier": 3 }, "range": 5 } }
+  },
+  {
+    "id": "FRAG_SMALL",
+    "type": "ammo_effect",
+    "explosion": { 
+      "damage": 20,
+      "radius": 2,
+      "fragment": { "impact": { "damage_type": "cut", "amount": 30, "armor_multiplier": 3 }, "range": 3 } }
+  },
+  {
+    "id": "FREEZEAMMO1",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_freeze", "intensity_min": 1, "intensity_max": 1, "size": 3 }
+  },
+  {
+    "id": "FREEZEAMMO2",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_freeze", "intensity_min": 2, "intensity_max": 5, "size": 5 }
+  },
+  {
+    "id": "FREEZEAMMO3",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_freeze", "intensity_min": 3, "intensity_max": 7, "radius": 5, "size": 5 }
+  },
+  {
+    "id": "WEBAMMO",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_web", "intensity_min": 3, "intensity_max": 3 }
+  },
+  {
+    "id": "TEARGAS",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_smoke", "intensity_min": 3, "intensity_max": 3 }
+  },
+  {
+    "id": "TEARGASBIG",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_smoke", "intensity_min": 3, "intensity_max": 3, "radius": 6 }
+  },
+  {
+    "id": "ACIDBIG",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_acid", "intensity_min": 3, "intensity_max": 3, "radius": 6 }
+  },
+  {
+    "id": "NUKEGAS",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_nuke_gas", "intensity_min": 3, "intensity_max": 3 }
+  }
+]

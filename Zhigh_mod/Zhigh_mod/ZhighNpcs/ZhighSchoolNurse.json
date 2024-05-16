@@ -1,0 +1,560 @@
+[
+  {
+    "type": "npc",
+    "id": "zhighNurse",
+    "name_unique": "Ha Na Lee",
+    "gender": "female",
+    "name_suffix": "School Nurse",
+    "class": "NC_ZHIGHNURSE",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_PCZHIGHNURSE",
+    "faction": "Zhigh_Survivors"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_ZHIGHNURSE",
+    "name": { "str": "School Nurse" },
+    "job_description": "I'm the school nurse.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Appearance_ZhighNurse" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 1 ] },
+    "bonus_int": { "rng": [ 2, 4 ] },
+    "bonus_per": { "rng": [ 0, 1 ] },
+    "bonus_dex": { "rng": [ 2, 3 ] },
+    "weapon_override": "NC_MedicZhigh_weapon",
+    "carry_override": "NC_PCZHIGHNURSE_misc",
+    "worn_override": "NC_ZhighNurse_worn",
+    "skills": [
+      { "skill": "computer", "bonus": { "rng": [ 1, 5 ] } },
+      { "skill": "firstaid", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "speech", "bonus": { "rng": [ 3, 6 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 3, 5 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ZhighNurse_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "bra" },
+      { "item": "panties" },
+      { "item": "tshirt_mint" },
+      { "item": "gloves_medical" },
+      { "item": "skirt" },
+      { "item": "stockings" },
+      { "group": "NC_ZHIGHNURSE_coat" },
+      { "group": "NC_ZHIGHNURSE_storage" },
+      { "item": "heels" }
+    ]
+  },
+  {
+    "type": "trait_group",
+    "id": "Appearance_ZhighNurse",
+    "subtype": "collection",
+    "traits": [ { "trait": "hair_nurse" }, { "trait": "eye_mint" }, { "trait": "SKIN_LIGHT" } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ZHIGHNURSE_storage",
+    "subtype": "distribution",
+    "entries": [ { "item": "coat_lab", "prob": 100 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ZHIGHNURSE_coat",
+    "subtype": "distribution",
+    "entries": [ { "item": "bigback", "prob": 100 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "NC_PCZHIGHNURSE_misc",
+    "items": [
+      { "item": "cudgel_nail" },
+      { "item": "combatnail", "count": [ 1, 2 ] },
+      { "item": "medkitRecharge", "count": [ 1, 2 ], "prob": 10 },
+      { "item": "medkit1", "count": [ 5, 6 ], "prob": 100 },
+      { "item": "medkit2", "count": [ 3, 4 ], "prob": 75 },
+      { "item": "medkit3", "count": [ 2, 3 ], "prob": 50 },
+      { "item": "medkit4", "count": [ 1, 2 ], "prob": 10 },
+      { "item": "stim_pack3", "count": [ 1, 3 ], "prob": 100 },
+      { "item": "bfipowder", "count": [ 2, 3 ], "prob": 50 },
+      { "item": "quikclot", "count": [ 2, 3 ], "prob": 50 }
+    ]
+  },
+  {
+    "id": "TALK_PCZHIGHNURSE",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_is_wearing": "armband_zhigh_halmon",
+      "yes": [
+        "Still plenty of bandits in the roads, perhaps you should tend to your job, school hall monitor... But you need to be prepared first.",
+        "You see anything you want, school hall monitor <name_g>?",
+        "Oh, a school hall monitor, how cute.",
+        "Hey <name_g>!"
+      ],
+      "no": [
+	    "Welcome...", 
+		"Hey <name_g>!", 
+		"Welcome!",
+		"Good to see you again, <name_g>.",
+		"Hey <name_g>!",
+		"Here to trade stuff, I hope?",
+		"Safe travels, <name_g>."
+	  ]
+    },
+    "responses": [
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_PCZHIGHNURSE" },
+      { "text": "What are you doing here?", "topic": "TALK_PCZHIGHNURSE_DOING" },
+      { "text": "For the right price could I borrow your services?", "topic": "TALK_PCZHIGHNURSE_BIONICS" },
+      { "text": "I'd like to buy some meds.", "topic": "TALK_PCZHIGHNURSE_STIMDEAL" },
+      { "text": "Well, bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_PCZHIGHNURSE_DOING",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_is_wearing": "armband_zhigh_halmon",
+      "yes": "I keep to my own business, and you keep to yours, school hall monitor.  Seems like a fair deal?  And do not ask about where did these chems from, I've got my own ways.  Do some bionic jobs if you need.",
+      "no": "We have been supplying this nurse's office here with meds and stims.  The roads are though and dangerous, but there is no other way.  And do not ask about where did these chems from, I've got my own ways.  I also do some bionic jobs if you need."
+    },
+    "responses": [ { "text": "Okay then.  Keep safe, teach.", "topic": "TALK_PCZHIGHNURSE" } ]
+  },
+  {
+    "id": "TALK_PCZHIGHNURSE_BIONICS",
+    "type": "talk_topic",
+    "dynamic_line": "I imagine we might be able to work something out.",
+    "responses": [
+      { "text": "Nevermind.", "topic": "TALK_PCZHIGHNURSE" },
+      {
+        "text": "[300$, 30m] I need you to patch me up.  Here's the right price.",
+        "topic": "NC_ZHIGHNURSE_AID_DONE",
+        "effect": [ { "u_buy_item": "aspirin", "cost": 30000, "count": 5 }, "give_aid" ]
+      },
+      {
+        "text": "[800$, 1h] I need you to patch up me and my companions.  Here's the right price.",
+        "topic": "NC_ZHIGHNURSE_AID_DONE",
+        "effect": [ { "u_buy_item": "aspirin", "cost": 80000, "count": 10 }, "give_all_aid" ]
+      },
+      {
+        "text": "I was wondering if you could install a cybernetic implant…",
+        "topic": "TALK_DONE",
+        "effect": "bionic_install"
+      },
+      { "text": "I need help removing an implant…", "topic": "TALK_DONE", "effect": "bionic_remove" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "NC_ZHIGHNURSE_AID_DONE",
+    "dynamic_line": "Hold still then.  It's the best I can do on short notice.  Here is some aspirin, if you need some.",
+    "responses": [ { "text": "Alright…", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "TALK_PCZHIGHNURSE_STIMDEAL",
+    "//": "This is all the dialogue related to buying bulk chemicals.  It should remain somewhat prohibitively expensive and time-consuming so the chemist doesn't become a one-stop shop for survival needs. TO-DO - Use variables to refine shop system. See SCRIPT_EFFECTS.md and isolated road fabriation system.",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "npc_has_effect": "currently_busy",
+      "yes": "I'm out of some things, <name_g>.  It takes a while to get the stimultants - but I'm working hard to replace it.  What can I get you in the meantime?",
+      "no": "I'll see what I've got around here for you.  I've gotta warn you: it ain't cheap.  Hard to stay supplied in the apocalypse, you know.  What do you need?"
+    },
+    "responses": [
+      { "text": "Nevermind.", "topic": "TALK_PCZHIGHNURSE" },
+      {
+        "text": "[10$]  I'll buy some bandagess.",
+        "effect": [ { "u_buy_item": "bandages", "cost": 1000, "container": "bag_plastic", "count": 20 } ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[40$]  I'll buy some aspirin.",
+        "effect": [ { "u_buy_item": "aspirin", "container": "bottle_plastic_pill_prescription", "cost": 4000, "count": 20 } ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[750$]  I'll buy three basic medkits.",
+        "effect": [ { "u_buy_item": "medkit2", "cost": 75000, "count": 3 } ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[750$]  I'll buy two medium medkits.",
+        "effect": [ { "u_buy_item": "medkit2", "cost": 75000, "count": 2 } ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[800$]  I'll buy an advanced medkit.",
+        "effect": [
+          { "u_buy_item": "medkit3", "cost": 80000, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "2 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a stimpak.",
+        "effect": [
+          { "u_buy_item": "stimrx11", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "1 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll need some regeneration.",
+        "effect": [
+          { "u_buy_item": "stimrx12", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "30 m" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a morphine injector.",
+        "effect": [
+          { "u_buy_item": "stimmorphine", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "6 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy an anti-bleeding stimutant.",
+        "effect": [
+          { "u_buy_item": "stimquikclot", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "1 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a propital.",
+        "effect": [
+          { "u_buy_item": "stimpropital", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "2 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a zagustin.",
+        "effect": [
+          { "u_buy_item": "stimzagustin", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "2 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I need to go invisible.",
+        "effect": [
+          { "u_buy_item": "stimInv", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "1 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll need some power for a short time.",
+        "effect": [
+          { "u_buy_item": "stimL1", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "3 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll need some speed.",
+        "effect": [
+          { "u_buy_item": "stimTrimadol", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "3 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I need speed, antivenom, and anti-radiation.",
+        "effect": [
+          { "u_buy_item": "stimperfotoran", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "2 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I need speed and power for a short time.",
+        "effect": [
+          { "u_buy_item": "stimPNB", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "2 m" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll need some quick regeneration.",
+        "effect": [
+          { "u_buy_item": "stimP22", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "2 m" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll need both speed and strength.",
+        "effect": [
+          { "u_buy_item": "stimMeldonin", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "20 m" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll need both speed and painkilling.",
+        "effect": [
+          { "u_buy_item": "stimSJ1", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "20 m" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll need both speed and stamina.",
+        "effect": [
+          { "u_buy_item": "stimSJ6", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "10 m" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll need better dexterity and perception in combat.",
+        "effect": [
+          { "u_buy_item": "stim3BTG", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "10 m" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll need both speed and stamina.",
+        "effect": [
+          { "u_buy_item": "stimSJ6", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "10 m" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a hiding stim from zombies.",
+        "effect": [
+          { "u_buy_item": "stimUdR513", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "3 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[45$]  I'll need quick medium healing serum.",
+        "effect": [
+          { "u_buy_item": "stimHealingSerum", "cost": 4500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "1 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[85$]  I'll need quick great healing stimultant.",
+        "effect": [
+          { "u_buy_item": "stimETGChange", "cost": 8500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "2 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      }
+    ]
+  },
+  {
+    "id": "TALK_PCZHIGHNURSE_STIMDEAL_END",
+    "type": "talk_topic",
+    "dynamic_line": [ "Is there anything else you need?" ],
+    "responses": [
+      { "text": "Nevermind.", "topic": "TALK_DONE" },
+      {
+        "text": "[10$]  I'll buy some bandagess.",
+        "effect": [ { "u_buy_item": "bandages", "cost": 1000, "container": "bag_plastic", "count": 20 } ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[40$]  I'll buy some aspirin.",
+        "effect": [ { "u_buy_item": "aspirin", "container": "bottle_plastic_pill_prescription", "cost": 4000, "count": 20 } ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[750$]  I'll buy three basic medkits.",
+        "effect": [ { "u_buy_item": "medkit2", "cost": 75000, "count": 3 } ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[750$]  I'll buy two medium medkits.",
+        "effect": [ { "u_buy_item": "medkit2", "cost": 75000, "count": 2 } ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[800$]  I'll buy an advanced medkit.",
+        "effect": [
+          { "u_buy_item": "medkit3", "cost": 80000, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "2 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a stimpak.",
+        "effect": [
+          { "u_buy_item": "stimrx11", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "1 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll need some regeneration.",
+        "effect": [
+          { "u_buy_item": "stimrx12", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "30 m" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a morphine injector.",
+        "effect": [
+          { "u_buy_item": "stimmorphine", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "6 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy an anti-bleeding stimutant.",
+        "effect": [
+          { "u_buy_item": "stimquikclot", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "1 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a propital.",
+        "effect": [
+          { "u_buy_item": "stimpropital", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "2 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a zagustin.",
+        "effect": [
+          { "u_buy_item": "stimzagustin", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "2 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I need to go invisible.",
+        "effect": [
+          { "u_buy_item": "stimInv", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "1 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll need some power for a short time.",
+        "effect": [
+          { "u_buy_item": "stimL1", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "3 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll need some speed.",
+        "effect": [
+          { "u_buy_item": "stimTrimadol", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "3 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I need speed, antivenom, and anti-radiation.",
+        "effect": [
+          { "u_buy_item": "stimperfotoran", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "2 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I need speed and power for a short time.",
+        "effect": [
+          { "u_buy_item": "stimPNB", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "2 m" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll need some quick regeneration.",
+        "effect": [
+          { "u_buy_item": "stimP22", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "2 m" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll need both speed and strength.",
+        "effect": [
+          { "u_buy_item": "stimMeldonin", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "20 m" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll need both speed and painkilling.",
+        "effect": [
+          { "u_buy_item": "stimSJ1", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "20 m" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll need both speed and stamina.",
+        "effect": [
+          { "u_buy_item": "stimSJ6", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "10 m" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll need better dexterity and perception in combat.",
+        "effect": [
+          { "u_buy_item": "stim3BTG", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "10 m" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll need both speed and stamina.",
+        "effect": [
+          { "u_buy_item": "stimSJ6", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "10 m" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll need quick gaining in calories and quench.",
+        "effect": [
+          { "u_buy_item": "stimSJ12", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "5 m" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a hiding stim from zombies.",
+        "effect": [
+          { "u_buy_item": "stimUdR513", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "3 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[45$]  I'll need quick medium healing serum.",
+        "effect": [
+          { "u_buy_item": "stimHealingSerum", "cost": 4500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "1 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[85$]  I'll need quick great healing stimultant.",
+        "effect": [
+          { "u_buy_item": "stimETGChange", "cost": 8500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "2 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      }
+    ]
+  }
+]

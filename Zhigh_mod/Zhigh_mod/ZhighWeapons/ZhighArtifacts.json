@@ -1,0 +1,127 @@
+[
+  {
+    "id": "katana_hm",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "SHORT_SWORDS", "1H_SWORDS", "JAPANESE_SWORDS" ],
+    "name": { "str": "el verdugo" },
+    "description": "A katana-shaped machete, which has a crimson red grip.",
+    "weight": "800 g",
+    "volume": "1 L",
+    "price": "6000 USD",
+    "price_postapoc": "1500 USD",
+    "to_hit": 2,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "values": [ { "value": "ARMOR_ELEC", "multiply": -1.0 }, { "value": "SPEED", "add": 30 } ],
+          "hit_you_effect": [
+            {
+              "id": "zhigh_regen",
+              "message": "Your wounds regenerate as you chop %2$s down.",
+              "npc_message": "%1$s's wounds disappear as they chop %2$s down."
+            }
+          ]
+        }
+      ]
+    },
+    "bashing": 6,
+    "cutting": 25,
+    "material": "steel",
+    "symbol": "/",
+    "color": "light_gray",
+    "techniques": [ "RAPID", "WBLOCK_2" ],
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 9 ] ],
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NONCONDUCTIVE" ]
+  },
+  {
+    "id": "sword_Magik",
+    "type": "TOOL",
+    "category": "weapons",
+    "weapon_category": [ "2H_SWORDS", "MEDIEVAL_SWORDS" ],
+    "name": { "str": "Onyx Blade" },
+    "description": "A sword, with a dark outline.",
+    "weight": "3176 g",
+    "volume": "3250 ml",
+    "price": 20000,
+    "price_postapoc": 200,
+    "material": [ "steel", "leather", "aluminum" ],
+    "symbol": ";",
+    "to_hit": 2,
+    "bashing": 18,
+    "cutting": 42,
+    "color": "light_gray",
+    "max_charges": 20,
+    "initial_charges": 20,
+    "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP" ],
+    "qualities": [ [ "CUT", 2 ], [ "BUTCHER", 4 ] ],
+    "artifact_data": { "charge_type": "ARTC_TIME" },
+    "use_action": [
+      {
+        "target": "sword_Magik_active",
+        "msg": "The sword glows dimmly.",
+      "menu_text": "Activate blade",
+        "active": true,
+        "need_charges": 1,
+        "need_charges_msg": "The sword does nothing.",
+        "type": "transform"
+      }
+    ],
+    "flags": [ "REACH_ATTACK", "DURABLE_MELEE", "SHEATH_SWORD", "ALWAYS_TWOHAND", "NONCONDUCTIVE", "NO_UNLOAD", "NO_RELOAD" ]
+  },
+  {
+    "id": "sword_Magik_active",
+    "copy-from": "sword_Magik",
+    "weapon_category": [ "2H_SWORDS", "MEDIEVAL_SWORDS" ],
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Holy Blade" },
+    "description": "A sword, with a dark outline, now glows dimly with faint cyan light. \n\n <color_light_blue>My true mentor... \n My guiding moonlight...</color>",
+    "power_draw": 1000000,
+    "to_hit": 2,
+    "bashing": 22,
+    "cutting": 60,
+    "revert_to": "sword_Magik",
+    "charges_per_use": 1,
+    "use_action": {
+      "target": "sword_Magik",
+      "msg": "The glow of the blade darkens.",
+      "menu_text": "Deactivate blade",
+      "type": "transform"
+    },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "values": [ { "value": "ARMOR_ELEC", "multiply": 1.0 }, { "value": "SPEED", "add": 40 } ],
+          "hit_you_effect": [
+            {
+              "id": "zhigh_regen",
+              "message": "Your wounds regenerate as you chop %2$s down.",
+              "npc_message": "%1$s's wounds disappear as they chop %2$s down."
+            }
+          ]
+        }
+      ]
+    },
+    "techniques": [ "WBLOCK_2", "WIDE", "PRECISE", "PRECISE", "BRUTAL", "SWEEP" ],
+    "qualities": [ [ "CUT", 6 ], [ "BUTCHER", 4 ] ],
+    "flags": [
+		"REACH_ATTACK",
+		"REACH3", 
+		"NO_DROP", 
+		"NO_UNWIELD", 
+		"TRADER_AVOID", 
+		"FLAMING",
+		"SHOCKING",
+		"UNBREAKABLE_MELEE", 
+		"ALWAYS_TWOHAND", 
+		"NONCONDUCTIVE", 
+		"NO_UNLOAD", 
+		"NO_RELOAD"
+	]
+  }
+]

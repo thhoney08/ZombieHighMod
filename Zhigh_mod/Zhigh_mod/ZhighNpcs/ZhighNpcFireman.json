@@ -1,0 +1,155 @@
+[
+  {
+    "type": "npc",
+    "id": "FIREMAN",
+    "name_unique": "Jun Ho Kim",
+    "name_suffix": "student",
+    "gender": "male",
+    "class": "NC_Fireman",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_FIREMAN",
+    "mission_offered": "MISSION_SCHOOL_GET_LIGHTER",
+    "faction": "Zhigh_Survivors"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_Fireman",
+    "name": { "str": "Fireman" },
+    "job_description": "I shoot others with a fire extinguisher.",
+    "traits": [
+      { "group": "BG_survival_story_RURAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "Appearance_Fireman" },
+      [ "REGEN_zhigh", 100 ]
+    ],
+    "common": false,
+    "worn_override": "NC_Fireman_worn",
+    "carry_override": "NC_Fireman_carry",
+    "weapon_override": "NC_Fireman_weapon",
+    "bonus_str": { "rng": [ -1, 3 ] },
+    "bonus_int": { "rng": [ 1, 3 ] },
+    "bonus_per": { "rng": [ 1, 2 ] },
+    "bonus_dex": { "rng": [ 0, 2 ] },
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 1, 3 ] } }
+    ]
+  },
+  {
+    "type": "trait_group",
+    "id": "Appearance_Fireman",
+    "subtype": "collection",
+    "traits": [ { "trait": "hair_fireman", "prob": 100 }, 
+                { "trait": "eye_indigo", "prob": 100 }, 
+                { "trait": "SKIN_PINK", "prob": 100 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_Fireman_weapon",
+    "items": [ 
+      { "item": "fireEx_zhigh", "ammo-item": "powderFire", "charges": 99, "prob": 100 }
+     ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_Fireman_worn",
+    "subtype": "collection",
+    "entries": [
+      { "group": "npc_underwear_bottom_male" },
+      { "group": "npc_underwear_top_male" },
+      { "group": "ZhighNpc_underwear_feet_male" },
+      { "group": "ZhighNpc_shoes_male" },
+      { "item": "pants_zhigh" },
+      { "item": "dress_shirt_zhigh" },
+      { "group": "npc_gloves" },
+      { "item": "tie_necktie_zhigh" },
+      { "group": "ZhighNpc_stabbing", "container-item": "bootsheath" },
+      { "item": "ski_jacket" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_Fireman_carry",
+    "subtype": "collection",
+    "entries": [
+      { "item": "ID_1st" },
+      { "item": "zhigh_smart_phone" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_FIREMAN",
+    "dynamic_line": { "u_is_wearing": "armband_zhigh_halmon", "yes": "School monitor.", "no": "Hey, <name_b>." },
+    "responses": [
+      { "text": "What is this place?", "topic": "TALK_FIREMAN_PLACE" },
+      { "text": "Anything I can do for you?", "topic": "TALK_MISSION_LIST" },
+      { "text": "See you later.", "topic": "TALK_FIREMAN_BYE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_FIREMAN_PLACE",
+    "dynamic_line": "Our school, duh. Shit happened, and we hid in here since the dormitory - the bigass apartment nearby - is also filled with <zombies>.",
+    "responses": [
+      { "text": "So are you with the school or something?", "topic": "TALK_FIREMAN_GOVERNMENT" },
+      { "text": "What do you trade?", "topic": "TALK_FIREMAN_TRADE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_FIREMAN_GOVERNMENT",
+    "dynamic_line": "Yeah.  School hall monitor -<name_b>- somewhere around here.  If not, guess he is dead.",
+    "responses": [
+      { "text": "Oh, okay.", "topic": "TALK_FIREMAN" },
+      { "text": "Oh, okay.  I'll go look for him.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_FIREMAN_TRADE",
+    "dynamic_line": "Anything valuable really.  If you really want to know, go ask one of the actual traders.  I'm just protecting other survivors.",
+    "responses": [
+      { "text": "I'll go talk to them later.", "topic": "TALK_FIREMAN" },
+      { "text": "Will do, thanks!", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_FIREMAN_BYE",
+    "dynamic_line": "See you later... Alive.",
+    "responses": [ { "text": "Yeah, seeya.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "MISSION_SCHOOL_GET_LIGHTER",
+    "type": "mission_definition",
+    "name": { "str": "Flame on" },
+    "description": "Get some rocket candies at the school by handing over five lighters.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 1,
+    "value": 1000,
+    "item": "lighter",
+    "count": 5,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_GET_LIGHTER",
+    "end": {
+      "opinion": { "trust": 2, "value": 2 },
+      "effect": [
+        { "u_buy_item": "tool_rocket_candy", "count": 3 }
+      ]
+    },
+    "dialogue": {
+      "describe": "Get me some lighter.",
+      "offer": "Need some lighters for various stuff and you get some rocket candy.",
+      "accepted": "Thanks.",
+      "rejected": "Well, don't bother me then.",
+      "advice": "Easy to find them, so find them.",
+      "inquire": "Got them?",
+      "success": "Thanks.",
+      "success_lie": "OK, then gimme.",
+      "failure": "Shit."
+    }
+  }
+]

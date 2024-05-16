@@ -1,0 +1,71 @@
+[
+  {
+    "type": "SPELL",
+    "id": "zhigh_healing_dart",
+    "name": "Healing dart discharge",
+    "description": "Heal dart go pew pew.",
+    "valid_targets": [ "ally", "self" ],
+    "effect": "line_attack",
+    "sprite": "fd_null",
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_FAIL", "NO_HANDS", "NO_LEGS" ],
+    "min_damage": -18,
+    "max_damage": -10,
+    "min_range": 19,
+    "max_range": 19,
+    "damage_increment": 3.0,
+    "min_aoe": 6,
+    "max_aoe": 6,
+    "max_level": 40,
+    "message": "",
+    "extra_effects": [
+      { "id": "zhigh_regen_eff", "hit_self": false },
+      { "id": "zhigh_regen_eff", "hit_self": true }
+    ]
+  },
+  {
+    "id": "zhigh_regen_eff",
+    "type": "SPELL",
+    "name": { "str": "Regeneration effect" },
+    "description": "This creates the effect that heals the user and the ones nearby.",
+    "sprite": "fd_null",
+    "message": "",
+    "flags": [ "RANDOM_DAMAGE", "SILENT", "NO_FAIL", "NO_HANDS", "NO_LEGS" ],
+    "valid_targets": [ "ally", "self" ],
+    "effect": "target_attack",
+    "min_damage": -15,
+    "max_damage": -10,
+    "min_range": 19,
+    "max_range": 19,
+    "max_level": 40,
+    "min_aoe": 4,
+    "max_aoe": 4
+  },
+  {
+    "type": "SPELL",
+    "//": "Copied from crit mod.",
+    "id": "zhigh_regen",
+    "name": { "str": "Life Drain Spell" },
+    "description": "This exists only to trigger on-self effects from an on-hit action.",
+    "valid_targets": [ "hostile" ],
+    "sprite": "fd_null",
+    "message": "",
+    "effect": "target_attack",
+    "min_range": 2,
+    "max_range": 2,
+    "flags": [ "SILENT", "NO_EXPLOSION_VFX" ],
+    "extra_effects": [ { "id": "zhigh_regen_2", "hit_self": true } ]
+  },
+  {
+    "id": "zhigh_regen_2",
+    "type": "SPELL",
+    "name": { "str": "Life Drain Effect" },
+    "description": "This creates the effect that heals the caster.",
+    "sprite": "fd_null",
+    "message": "",
+    "valid_targets": [ "self" ],
+    "effect": "target_attack",
+    "min_damage": -8,
+    "max_damage": -15,
+    "flags": [ "RANDOM_DAMAGE", "SILENT", "NO_EXPLOSION_VFX" ]
+  }
+]
