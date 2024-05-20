@@ -94,7 +94,15 @@
         "Oh, a school hall monitor, how cute.",
         "Hey <name_g>!"
       ],
-      "no": [ "Welcome...", "Hey <name_g>!", "Welcome!", "Good to see you again, <name_g>.", "Hey <name_g>!", "Here to trade stuff, I hope?", "Safe travels, <name_g>." ]
+      "no": [
+	    "Welcome...", 
+		"Hey <name_g>!", 
+		"Welcome!",
+		"Good to see you again, <name_g>.",
+		"Hey <name_g>!",
+		"Here to trade stuff, I hope?",
+		"Safe travels, <name_g>."
+	  ]
     },
     "responses": [
       { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_PCZHIGHNURSE" },
@@ -109,10 +117,10 @@
     "type": "talk_topic",
     "dynamic_line": {
       "u_is_wearing": "armband_zhigh_halmon",
-      "yes": "I keep to my own business, and you keep to yours, school hall monitor.  Seems like a fair deal? And do not ask about where did these chems from, I've got my own ways. Do some bionic jobs if you need.",
-      "no": "We have been supplying this nurse's office here with food from cities and homes nearby. The roads are though and dangerous, but there is no other way. And do not ask about where did these chems from, I've got my own ways. I also do some bionic jobs if you need."
+      "yes": "I keep to my own business, and you keep to yours, school hall monitor.  Seems like a fair deal?  And do not ask about where did these chems from, I've got my own ways.  Do some bionic jobs if you need.",
+      "no": "We have been supplying this nurse's office here with meds and stims.  The roads are though and dangerous, but there is no other way.  And do not ask about where did these chems from, I've got my own ways.  I also do some bionic jobs if you need."
     },
-    "responses": [ { "text": "Okay then. Keep safe, teach.", "topic": "TALK_PCZHIGHNURSE" } ]
+    "responses": [ { "text": "Okay then.  Keep safe, teach.", "topic": "TALK_PCZHIGHNURSE" } ]
   },
   {
     "id": "TALK_PCZHIGHNURSE_BIONICS",
@@ -121,14 +129,14 @@
     "responses": [
       { "text": "Nevermind.", "topic": "TALK_PCZHIGHNURSE" },
       {
-        "text": "[30$, 30m] I need you to patch me up. Here's the right price.",
+        "text": "[300$, 30m] I need you to patch me up.  Here's the right price.",
         "topic": "NC_ZHIGHNURSE_AID_DONE",
-        "effect": [ { "u_buy_item": "aspirin", "cost": 3000, "count": 5 }, "give_aid" ]
+        "effect": [ { "u_buy_item": "aspirin", "cost": 30000, "count": 5 }, "give_aid" ]
       },
       {
-        "text": "[80$, 1h] I need you to patch up me and my companions.",
+        "text": "[800$, 1h] I need you to patch up me and my companions.  Here's the right price.",
         "topic": "NC_ZHIGHNURSE_AID_DONE",
-        "effect": [ { "u_buy_item": "aspirin", "cost": 8000, "count": 10 }, "give_all_aid" ]
+        "effect": [ { "u_buy_item": "aspirin", "cost": 80000, "count": 10 }, "give_all_aid" ]
       },
       {
         "text": "I was wondering if you could install a cybernetic implant…",
@@ -141,7 +149,7 @@
   {
     "type": "talk_topic",
     "id": "NC_ZHIGHNURSE_AID_DONE",
-    "dynamic_line": "Hold still then.  It's the best I can do on short notice. Here is some aspirin, if you need some.",
+    "dynamic_line": "Hold still then.  It's the best I can do on short notice.  Here is some aspirin, if you need some.",
     "responses": [ { "text": "Alright…", "topic": "TALK_DONE" } ]
   },
   {
@@ -166,19 +174,19 @@
         "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
       },
       {
-        "text": "[75$]  I'll buy three basic medkits.",
-        "effect": [ { "u_buy_item": "medkit2", "cost": 7500, "count": 3 } ],
+        "text": "[750$]  I'll buy three basic medkits.",
+        "effect": [ { "u_buy_item": "medkit2", "cost": 75000, "count": 3 } ],
         "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
       },
       {
-        "text": "[75$]  I'll buy two medium medkits.",
-        "effect": [ { "u_buy_item": "medkit2", "cost": 7500, "count": 2 } ],
+        "text": "[750$]  I'll buy two medium medkits.",
+        "effect": [ { "u_buy_item": "medkit2", "cost": 75000, "count": 2 } ],
         "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
       },
       {
-        "text": "[80$]  I'll buy an advanced medkit.",
+        "text": "[800$]  I'll buy an advanced medkit.",
         "effect": [
-          { "u_buy_item": "medkit3", "cost": 8000, "count": 1 },
+          { "u_buy_item": "medkit3", "cost": 80000, "count": 1 },
           { "npc_add_effect": "currently_busy", "duration": "2 h" }
         ],
         "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
@@ -328,7 +336,7 @@
         "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
       },
       {
-        "text": "[45$]  I'll need quick medium healing stimultant.",
+        "text": "[45$]  I'll need quick medium healing serum.",
         "effect": [
           { "u_buy_item": "stimHealingSerum", "cost": 4500, "count": 1 },
           { "npc_add_effect": "currently_busy", "duration": "1 h" }
@@ -532,7 +540,7 @@
         "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
       },
       {
-        "text": "[45$]  I'll need quick medium healing stimultant.",
+        "text": "[45$]  I'll need quick medium healing serum.",
         "effect": [
           { "u_buy_item": "stimHealingSerum", "cost": 4500, "count": 1 },
           { "npc_add_effect": "currently_busy", "duration": "1 h" }

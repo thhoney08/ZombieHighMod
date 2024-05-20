@@ -95,8 +95,7 @@
         "Be mindful.",
         "Make it a good day.",
         "Stay out of trouble.",
-        "You know the drill.",
-        "Eyes forward."
+        "You know what to do."
 	  ]
     },
     "responses": [
@@ -118,7 +117,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SCHOOLHALLMONITOR_WHO",
-    "dynamic_line": "I'm one of the hall monitors. I'm here to help keep the people inside this school safe and make sure everyone is safe. Let me know if you need any help.",
+    "dynamic_line": "I'm one of the hall monitors.  Well, the only one who is left.  I'm here to help keep the people inside this school safe and make sure everyone is safe.  Let me know if you need any help.",
     "responses": [
       { "text": "Oh, okay.", "topic": "TALK_ZHIGHSCHOOLHALLMONITOR" }
     ]
@@ -175,9 +174,9 @@
     "dialogue": {
       "describe": "We need help...",
       "offer": "We need some items - the world is in chaos and we have a hard time sending our men outside.  Please, we need a first aid kit, a flashlight, and a two way radio for our people.",
-      "accepted": "Great! Bring them ASAP.",
+      "accepted": "Great!  Bring them ASAP.",
       "rejected": "Your loss, but please rethink again.  It will be a great help if you give us a hand.",
-      "advice": "Search every place carefully.  You can find those item easier than you night think, and it is almost nothing - plus we are bit busy right now, so we are grateful if you could help us.",
+      "advice": "Search every place carefully.  You can find those item easier than you might think, and it is almost nothing - plus we are bit busy right now, so we are grateful if you could help us.",
       "inquire": "Got those items yet?",
       "success": "Well, I guess that's one way to wrap things up.  Thanks a lot.",
       "success_lie": "OK, then hand them over.",
@@ -206,12 +205,12 @@
     },
     "dialogue": {
       "describe": "We need help...",
-      "offer": "Would you be so kind as to provide me with ten trench maces? It would greatly aid me in our quest.",
-      "accepted": "Great! Bring them ASAP.",
+      "offer": "Would you be so kind as to provide me with ten trench maces?  It would greatly aid me in our quest.",
+      "accepted": "Great!  Bring them ASAP.",
       "rejected": "Your loss, but please rethink again.  It will be a great help if you give us a hand.",
-      "advice": "Search every place carefully.  You can find those item easier than you night think, and it is almost nothing - plus we are bit busy right now, so we are grateful if you could help us.",
+      "advice": "Search every place carefully.  You can find those item easier than you might think, and it is almost nothing - plus we are bit busy right now, so we are grateful if you could help us.",
       "inquire": "Got those items yet?",
-      "success": "Your efforts are not going unnoticed. People are taking note.  Thank you.",
+      "success": "Your efforts are not going unnoticed.  People are taking note.  Thank you.",
       "success_lie": "OK, then hand them over.",
       "failure": "Well, that's a shame."
     }
@@ -238,12 +237,12 @@
     },
     "dialogue": {
       "describe": "We need help...",
-      "offer": "Would you be so kind as to provide me with five pairs of binoculars? It would greatly aid me in our quest.",
-      "accepted": "Great! Bring them ASAP.",
+      "offer": "Would you be so kind as to provide me with five pairs of binoculars?  It would greatly aid me in our quest.",
+      "accepted": "Great!  Bring them ASAP.",
       "rejected": "Your loss, but please rethink again.  It will be a great help if you give us a hand.",
-      "advice": "Search every place carefully.  You can find those item easier than you night think, and it is almost nothing - plus we are bit busy right now, so we are grateful if you could help us.",
+      "advice": "Search every place carefully.  You can find those item easier than you might think, and it is almost nothing - plus we are bit busy right now, so we are grateful if you could help us.",
       "inquire": "Got those items yet?",
-      "success": "Your efforts are not going unnoticed. People are taking note.  Thank you.",
+      "success": "Your efforts are not going unnoticed.  People are taking note.  Thank you.",
       "success_lie": "OK, then hand them over.",
       "failure": "Well, that's a shame."
     }
@@ -341,6 +340,7 @@
         { "u_buy_item": "pistol_flintlock_revolver" },
         { "u_buy_item": "flintlock_ammo", "count": 30 },
         { "u_buy_item": "holster" },
+        { "u_buy_item": "charm_grenade" },
         { "u_buy_item": "armband_zhigh_halmon" },
         { "u_add_trait": "PROF_SW" }
       ]
@@ -359,12 +359,12 @@
     "followup": "MISSION_SCHOOL_SCHHALMON07",
     "dialogue": {
       "describe": "We need help…",
-      "offer": "The survival of our small community rests in our hands.  Bandits lurk inside our walls somehow, ready to strike at any moment. We cannot let them threaten our sanctuary.  It's time to rise and defend where we live in.  Are you ready to stand strong, protect our home, and ensure the safety of all within?",
-      "accepted": "Now repeat after me...  With a sense of duty and respect for my school community, I solemnly vow to fulfill my responsibilities as a hall monitor with diligence, fairness, and integrity.  I promise to ensure a safe and orderly environment for all students and staff, to treat everyone with respect, and to uphold the school's values.  I will strive to lead by example, act with patience and understanding, and carry out my tasks to the best of my ability. This I pledge in service to my school.  I know that this is a bit red-tape, but this is the best I can do for you.  And please take the gun, ammo, and the armband too.",
+      "offer": "The survival of our small community rests in our hands.  Bandits lurk inside our walls somehow, ready to strike at any moment.  We cannot let them threaten our sanctuary.  It's time to rise and defend where we live in.  Are you ready to stand strong, protect our home, and ensure the safety of all within?",
+      "accepted": "Now repeat after me...  With a sense of duty and respect for my school community, I solemnly vow to fulfill my responsibilities as a hall monitor with diligence, fairness, and integrity.  I promise to ensure a safe and orderly environment for all students and staff, to treat everyone with respect, and to uphold the school's values.  I will strive to lead by example, act with patience and understanding, and carry out my tasks to the best of my ability.  This I pledge in service to my school.  I know that this is a bit red-tape, but this is the best I can do for you.  And please take the gun, ammo, and the armband too.",
       "rejected": "Come back when you get a chance, we really need to start reclaiming the region.",
-      "advice": "If you can, get a friend or two to help you.  You could use some help from the subway, since there are some students with some firepower and weapons.  We sent some people there so it won't be a hard time recruiting them.  And good luck doing this... stuff.",
+      "advice": "If you can, get a friend or two to help you.  You could use some help from the subway, since there are some students with some firepower and weapons.  We sent some people there so it won't be a hard time recruiting them.  And good luck doing this... stuff.  Heard there is a ghost or something, heard from some teachers.",
       "inquire": "Will they be bothering us any longer?",
-      "success": "As the dust settles, a new dawn breaks over our sanctuary.  United, we have vanquished the threat and reclaimed our peace.  Let this victory be our foundation for the future, a future built on strength, unity, and resilience.  Dang, that sounded like those cringe one-liners.  Anyway you truly go above and beyond. We all are thankful for your guidance.",
+      "success": "As the dust settles, a new dawn breaks over our sanctuary.  United, we have vanquished the threat and reclaimed our peace.  Let this victory be our foundation for the future, a future built on strength, unity, and resilience.  Dang, that sounded like those cringe one-liners.  Anyway you truly go above and beyond.  We all are thankful for your guidance.",
       "success_lie": "What good does this do us?",
       "failure": "It was a lost cause anyways…"
     }
@@ -466,7 +466,7 @@
       ],
       "opinion": { "trust": 1, "value": 1 },
       "effect": [
-        { "u_buy_item": "chocolate", "count": 10 }
+        { "u_buy_item": "container_alpha" }
       ]
     },
     "origins": [ "ORIGIN_SECONDARY" ],
@@ -478,7 +478,7 @@
       "rejected": "Come back when you get a chance, we really need to start reclaiming the region.",
       "advice": "If you can, get a friend or two to help you.  I'd recommend you to just set the bomb and blow the whole machine up.",
       "inquire": "Will they be bothering us any longer?",
-      "success": "Thanks so much for handling that, you've saved us a lot of trouble! The school's safer now because of you. If you ever need anything, just let me know!",
+      "success": "Thanks so much for handling that, you've saved us a lot of trouble!  The school's safer now because of you.  If you ever need anything, just let me know!",
       "success_lie": "What good does this do us?",
       "failure": "It was a lost cause anyways…"
     }

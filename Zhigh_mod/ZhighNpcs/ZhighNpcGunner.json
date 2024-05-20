@@ -1,0 +1,99 @@
+[
+  {
+    "type": "npc",
+    "id": "NAILGUNNER_GUARD",
+    "//": "Appears in the school as a partner for hire.",
+    "name_suffix": "student",
+    "class": "NC_NAILGUNNER_GUARD",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_NAILGUNNER_GUARD",
+    "faction": "Zhigh_Survivors"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_NAILGUNNER_GUARD",
+    "name": { "str": "Student - NAILGUNNER" },
+    "job_description": "Fighting for the all-mighty dollar.",
+    "common": true,
+    "traits": [
+      { "trait": "BGSS_Scavenger_Merc_1" },
+      { "trait": "PSYCHOPATH" },
+      { "trait": "QUICK" },
+      { "trait": "TOUGH" },
+      { "trait": "PARKOUR" },
+      { "trait": "INSOMNIA" },
+      { "trait": "GOODCARDIO2" },
+      { "trait": "REGEN_zhigh" },
+      { "group": "Appearance_Mixed" }
+    ],
+    "bonus_str": { "rng": [ 2, 4 ] },
+    "bonus_dex": { "rng": [ 1, 2 ] },
+    "bonus_int": { "rng": [ -1, 0 ] },
+    "bonus_per": { "rng": [ 1, 2 ] },
+    "worn_override": "NC_NAILGUNNER_GUARD_worn",
+    "carry_override": "NC_NAILGUNNER_GUARD_carry",
+    "weapon_override": "NC_NAILGUNNER_GUARD_wield",
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "gun", "bonus": { "rng": [ 2, 5 ] } },
+      { "skill": "smg", "bonus": { "rng": [ 1, 3 ] } } 
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_NAILGUNNER_GUARD_worn",
+    "subtype": "collection",
+    "items": [
+      { "item": "boxer_briefs" },
+      { "item": "dress_shirt_zhigh" },
+      { "item": "pants_zhigh" },
+      { "group": "ZhighNpc_Tie" },
+      { "group": "ZhighNpc_coat" },
+      { "group": "ZhighNpc_masks" },
+      { "group": "ZhighNpc_underwear_feet_male" },
+      { "group": "ZhighNpc_shoes_male" },
+      { "group": "ZhighNpc_storage" },
+      { "group": "ZhighNpc_extra" },
+      { "group": "ZhighNpc_stabbing", "container-item": "sheath" },
+      { "group": "ZhighNpc_gloves" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_NAILGUNNER_GUARD_carry",
+    "subtype": "collection",
+    "items": [
+      { "group": "NC_GUARD_misc" },
+      { "item": "UPS_off", "charges": 1500 },
+      { "item": "nail" },
+      { "item": "nailmag", "ammo-item": "nail", "charges": 150 },
+      { "item": "nailmag", "ammo-item": "nail", "charges": 150 },
+      { "item": "protein_bar_evac" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_NAILGUNNER_GUARD_wield",
+    "items": [
+      { "item": "marble_gun", "ammo-item": "nail", "charges": 5, "prob": 20 },
+      { "item": "nailrifle", "ammo-item": "nail", "charges": 150, "prob": 35 },
+      { "item": "nailsmg", "ammo-item": "nail", "charges": 100, "prob": 35 },
+      { "item": "nailgun", "ammo-item": "nail", "charges": 25, "prob": 10 }
+    ]
+  },
+  {
+    "id": "TALK_NAILGUNNER_GUARD",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "I'm not in charge here, you're looking for someone else...",
+      "Keep civil or I'll bring the pain.",
+      "Just on watch, move along.",
+      {
+        "u_male": [ "Hey.", "Rough out there, isn't it?" ],
+        "no": [ "Hey.", "Hey, you really shouldn't be traveling out there." ]
+      }
+    ],
+    "responses": [ { "text": "Don't mind me…", "topic": "TALK_DONE" } ]
+  }
+]

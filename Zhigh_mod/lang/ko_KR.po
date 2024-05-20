@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zhigh_Mod\n"
-"POT-Creation-Date: 2024-05-16 23:53+0900\n"
+"POT-Creation-Date: 2024-05-20 00:00+0900\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -1838,6 +1838,33 @@ msgid "The healing effect is fading with it's smell."
 msgstr "냄새와 함께 치료 효과 또한 사라졌다."
 
 #: .\ZhighEmit.json
+msgid "Goo-coated"
+msgstr "끈끈이에 덮인"
+
+#. ~ Description of effect 'Goo-coated'.
+#. ~ Apply message for effect(s) 'Goo-coated'.
+#: .\ZhighEmit.json
+msgid "You're coated in goo!"
+msgstr "당신은 끈끈이로 뒤덮였다!"
+
+#. ~ Miss message for effect(s) 'Goo-coated'.
+#: .\ZhighEmit.json
+msgid "The goo's too sticky for you to fight effectively."
+msgstr "당신이 효율적으로 싸우기엔 끈끈이는 매우 끈적거린다."
+
+#: .\ZhighEmit.json
+msgid "goo splatter"
+msgstr "끈끈이 방울"
+
+#: .\ZhighEmit.json
+msgid "glob of goo"
+msgstr "작은 끈끈이 웅덩이"
+
+#: .\ZhighEmit.json
+msgid "pool of goo"
+msgstr "끈끈이 웅덩이"
+
+#: .\ZhighEmit.json
 msgid "weak signal smoke"
 msgstr "옅은 신호 연기"
 
@@ -2663,11 +2690,6 @@ msgid_plural "powered quarterstaves"
 msgstr[0] "전기 육척봉"
 
 #: .\ZhighItemRemake.json
-msgid "nail gun"
-msgid_plural "nail guns"
-msgstr[0] "네일건"
-
-#: .\ZhighItemRemake.json
 msgid "desk fan"
 msgid_plural "desk fans"
 msgstr[0] "소형 선풍기"
@@ -3270,7 +3292,7 @@ msgstr[0] "조명탄"
 #: .\ZhighItemRemake.json
 msgid "trench mace"
 msgid_plural "trench maces"
-msgstr[0] "참호 철퇴"
+msgstr[0] "트렌치 메이스"
 
 #: .\ZhighItemRemake.json
 msgid "UPS"
@@ -3281,6 +3303,35 @@ msgstr[0] "UPS"
 msgid "advanced UPS"
 msgid_plural "advanced UPS's"
 msgstr[0] "개량형 UPS"
+
+#: .\ZhighItemRemake.json
+msgid "nail gun"
+msgid_plural "nail guns"
+msgstr[0] "네일건"
+
+#: .\ZhighItemRemake.json
+msgid "nail rifle"
+msgid_plural "nail rifles"
+msgstr[0] "네일라이플"
+
+#: .\ZhighItemRemake.json .\ZhighMonsters.json .\ZhighWeapons\ZhighRanged.json
+msgctxt "gun_type_type"
+msgid "rifle"
+msgstr "소총"
+
+#: .\ZhighItemRemake.json
+msgid "coilgun"
+msgid_plural "coilguns"
+msgstr[0] "코일건"
+
+#: .\ZhighItemRemake.json
+msgid "semi-auto"
+msgstr "반자동"
+
+#: .\ZhighItemRemake.json
+msgid "nail rifle magazine"
+msgid_plural "nail rifle magazines"
+msgstr[0] "네일라이플 탄창"
 
 #: .\ZhighItemRemake.json
 msgid "paintball"
@@ -3872,6 +3923,8 @@ msgstr[0] "펜 수류탄"
 #. ~ Use action menu_text for {'str': 'penade'}.
 #. ~ Use action menu_text for {'str': 'high explosive grenade'}.
 #. ~ Use action menu_text for {'str': 'anti-tank grenade'}.
+#. ~ Use action menu_text for {'str': 'napalm grenade'}.
+#. ~ Use action menu_text for {'str': 'goo grenade'}.
 #: .\ZhighItems.json .\ZhighWeapons\ZhighThrowing.json
 msgid "Pull pin"
 msgstr "핀 당기기"
@@ -3895,6 +3948,8 @@ msgstr[0] "펜 수류탄 (켜짐)"
 #. ~ Use action no_deactivate_msg for {'str': 'active high explosive
 #. grenade'}.
 #. ~ Use action no_deactivate_msg for {'str': 'active anti-tank grenade'}.
+#. ~ Use action no_deactivate_msg for {'str': 'active napalm grenade'}.
+#. ~ Use action no_deactivate_msg for {'str': 'active goo grenade'}.
 #: .\ZhighItems.json .\ZhighWeapons\ZhighThrowing.json
 msgid "You've already pulled the %s's pin; try throwing it instead."
 msgstr "%s의 핀이 이미 뽑혀, 곧 터질것이니 얼른 던지는 것이 좋다."
@@ -5424,11 +5479,6 @@ msgid "mounted BB cannon"
 msgid_plural "mounted BB cannon"
 msgstr[0] "견착된 비비탄 대포"
 
-#: .\ZhighMonsters.json .\ZhighWeapons\ZhighRanged.json
-msgctxt "gun_type_type"
-msgid "rifle"
-msgstr "소총"
-
 #: .\ZhighMonsters.json
 msgid "moose"
 msgid_plural "moose"
@@ -5517,6 +5567,28 @@ msgstr[0] "블랙메인"
 #: .\ZhighMonsters.json
 msgid "Wether due to blobs, or the rules of survival, wolves also mutated into these hideous creatures - black fur which hides them in the dark, ability to jump farther, and deadlier."
 msgstr "블롭이 이유든, 생존의 법칙이 이유든, 늑대들도 이와 같이 소름끼치는 존재들로 변이했습니다 - 그들을 숨길 수 있는 흑색 털과, 더 멀리 뛸 수 있는 능력, 그리고 더 치명적인 공격을 지니며 말입니다."
+
+#: .\ZhighMonsters.json
+msgid "zombie leaker"
+msgid_plural "zombie leakers"
+msgstr[0] "좀비 유출자"
+
+#. ~ Description for {'str': 'zombie leaker'}
+#: .\ZhighMonsters.json
+msgid ""
+"A grotesque and twisted zombie, capable of spreading a virulent plague that reanimates the dead into its servile horde.  With a body covered in festering sores and emitting a noxious, greenish fog, it commands swarms of "
+"infectious undead that follow its every command."
+msgstr "기괴하고 뒤틀린 좀비로, 죽은 자를 되살리는 치명적인 전염병을 퍼뜨려 자신의 하수인으로 삼을 수 있습니다.  곪은 상처로 뒤덮인 몸에서 유독한 녹색 안개를 내뿜으며, 자신의 모든 명령을 따르는 감염성 언데드 무리를 지휘합니다."
+
+#: .\ZhighMonsters.json
+msgid "zombie bomber"
+msgid_plural "zombie bombers"
+msgstr[0] "좀비 자폭병"
+
+#. ~ Description for {'str': 'zombie bomber'}
+#: .\ZhighMonsters.json
+msgid "A decaying zombie that detonates violently when it nears its target.  Its explosion causes severe damage and attracts other zombies."
+msgstr "목표물에 가까워지면 격렬하게 폭발하는 썩어가는 좀비입니다.  폭발하면 심각한 피해를 입히고 다른 좀비를 끌어들입니다."
 
 #: .\ZhighMutations.json
 msgid "Hair: MJ"
@@ -10107,7 +10179,8 @@ msgstr ""
 "만 확실하게 사회를 세웠고, 집이라고 할 수 있는 것을 만들었습니다."
 
 #: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcBomber.json .\ZhighNpcs\ZhighNpcChairman.json .\ZhighNpcs\ZhighNpcFireman.json .\ZhighNpcs\ZhighNpcGrunt.json
-#: .\ZhighNpcs\ZhighNpcHacker.json .\ZhighNpcs\ZhighNpcJuvenile.json .\ZhighNpcs\ZhighNpcMedic.json .\ZhighNpcs\ZhighNpcMuscle.json .\ZhighNpcs\ZhighNpcMusketeer.json .\ZhighNpcs\ZhighNpcSwordsman.json
+#: .\ZhighNpcs\ZhighNpcGunner.json .\ZhighNpcs\ZhighNpcHacker.json .\ZhighNpcs\ZhighNpcJuvenile.json .\ZhighNpcs\ZhighNpcMedic.json .\ZhighNpcs\ZhighNpcMuscle.json .\ZhighNpcs\ZhighNpcMusketeer.json
+#: .\ZhighNpcs\ZhighNpcSwordsman.json
 msgid "student"
 msgstr "학생"
 
@@ -10119,31 +10192,31 @@ msgstr "학교 지킴이"
 msgid "I'm protecting my school."
 msgstr "학교를 지키고 있습니다."
 
-#: .\ZhighNpcs\ZhighGuardNpcs.json
+#: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcGunner.json
 msgid "I'm not in charge here, you're looking for someone else..."
 msgstr "난 여기서 책임자가 아니야, 다른 사람 찾아 봐..."
 
-#: .\ZhighNpcs\ZhighGuardNpcs.json
+#: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcGunner.json
 msgid "Keep civil or I'll bring the pain."
 msgstr "얌전히 있지 않으면 좀 많이 아프게 할 거야."
 
-#: .\ZhighNpcs\ZhighGuardNpcs.json
+#: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcGunner.json
 msgid "Just on watch, move along."
 msgstr "경계중이야, 그냥 지나가라고."
 
-#: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcRanger.json
+#: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcGunner.json .\ZhighNpcs\ZhighNpcRanger.json
 msgid "Hey."
 msgstr "어이."
 
-#: .\ZhighNpcs\ZhighGuardNpcs.json
+#: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcGunner.json
 msgid "Rough out there, isn't it?"
 msgstr "바깥에는 힘들지, 그렇지 않아?"
 
-#: .\ZhighNpcs\ZhighGuardNpcs.json
+#: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcGunner.json
 msgid "Hey, you really shouldn't be traveling out there."
 msgstr "저 바깥에 다니는 게 좋아보이진 않는데."
 
-#: .\ZhighNpcs\ZhighGuardNpcs.json
+#: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcGunner.json
 msgid "Don't mind me…"
 msgstr "신경쓰지 마…"
 
@@ -11193,7 +11266,7 @@ msgstr "젠장."
 msgid "Student - Grunt"
 msgstr "학생 - 근접 1"
 
-#: .\ZhighNpcs\ZhighNpcGrunt.json .\ZhighNpcs\ZhighNpcJuvenile.json .\ZhighNpcs\ZhighNpcMuscle.json .\ZhighNpcs\ZhighNpcMusketeer.json
+#: .\ZhighNpcs\ZhighNpcGrunt.json .\ZhighNpcs\ZhighNpcGunner.json .\ZhighNpcs\ZhighNpcJuvenile.json .\ZhighNpcs\ZhighNpcMuscle.json .\ZhighNpcs\ZhighNpcMusketeer.json
 msgid "Fighting for the all-mighty dollar."
 msgstr "돈주면 일합니다."
 
@@ -11272,6 +11345,10 @@ msgstr "이제 너가 내 고용주구만."
 #: .\ZhighNpcs\ZhighNpcGrunt.json .\ZhighNpcs\ZhighNpcJuvenile.json .\ZhighNpcs\ZhighNpcMuscle.json .\ZhighNpcs\ZhighNpcMusketeer.json
 msgid "Glad to have you aboard."
 msgstr "함께하게 되어 반가워."
+
+#: .\ZhighNpcs\ZhighNpcGunner.json
+msgid "Student - NAILGUNNER"
+msgstr "학생 - 네일거너"
 
 #: .\ZhighNpcs\ZhighNpcHacker.json
 msgid "Tae Hyeon Jeong"
@@ -13333,6 +13410,26 @@ msgid "An improvised high explosive grenade modified with some steel scraps, whi
 msgstr "금속 조각들로 개조된 고폭 수류탄으로, 스태프 슬링 등을 사용해서 더 멀리까지 던질 수 있습니다."
 
 #: .\ZhighWeapons\ZhighAmmo.json
+msgid "shootable napalm grenade"
+msgid_plural "shootable napalm grenades"
+msgstr[0] "슬링 투척형 네이파 수류탄"
+
+#. ~ Description for {'str': 'shootable napalm grenade'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "An improvised napalm grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range."
+msgstr "금속 조각들로 개조된 네이파 수류탄으로, 스태프 슬링 등을 사용해서 더 멀리까지 던질 수 있습니다."
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "shootable goo grenade"
+msgid_plural "shootable goo grenades"
+msgstr[0] "슬링 투척형 끈끈이 수류탄"
+
+#. ~ Description for {'str': 'shootable goo grenade'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "An improvised goo grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range."
+msgstr "금속 조각들로 개조된 끈끈이 수류탄으로, 스태프 슬링 등을 사용해서 더 멀리까지 던질 수 있습니다."
+
+#: .\ZhighWeapons\ZhighAmmo.json
 msgid "shootable rubber ball"
 msgid_plural "shootable rubber balls"
 msgstr[0] "슬링 투척형 고무공"
@@ -13756,6 +13853,16 @@ msgstr[0] "썬더스틱 낚시용 작살"
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "An underwater fishing spear made from wood tipped with explosives.  It's very light, but doesn't have much range.  Stands almost no chance of remaining intact once fired."
 msgstr "나무 끝에 폭발성 촉을 붙여 날카롭게 만든 작살.  매우 가볍지만, 그다지 멀리 날아가지 못합니다.  재사용 확률 거의 없음."
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "shootable rocket candy"
+msgid_plural "shootable rocket candys"
+msgstr[0] "발사형 로켓캔디"
+
+#. ~ Description for {'str': 'shootable rocket candy'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "A modified rocket candy, useful as ammunition for slings or slingshots.  When shot, it drops an active rocket candy."
+msgstr "슬링이나 새총의 탄약으로 사용할 수 있는 한 움큼의 개조된 로캣캔디.  발사되면, 그 자리에 작동된 로캣캔디를 떨어뜨린다."
 
 #: .\ZhighWeapons\ZhighArrows.json
 msgid "acid arrow"
@@ -14659,6 +14766,15 @@ msgid "An expensive copy of a rifle.  Although it is used to shoot pepperballs, 
 msgstr "소총의 값비싼 복제품.  최루가스 페인트볼을 쏘는데 사용되지만, 페인트볼을 쏠 때도 쓸 수 있습니다."
 
 #: .\ZhighWeapons\ZhighRanged.json
+msgid "paintball smg"
+msgid_plural "paintball smgs"
+msgstr[0] "페인트볼 기관단총"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "An paintball smg.  Although it is used to shoot pepperballs, it could be also used for shooting paintballs."
+msgstr "기관단총형 페인트볼.  최루가스 페인트볼을 쏘는데 사용되지만, 페인트볼을 쏠 때도 쓸 수 있습니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
 msgid "triple crossbow"
 msgid_plural "triple crossbows"
 msgstr[0] "삼중석궁"
@@ -15096,9 +15212,9 @@ msgid "This magazine can hold 300 BBs.  Also modded so that it could self-eject 
 msgstr "이 탄창은 300발의 BB탄을 넣을 수 있습니다.  또한 개조되어 탄창이 비워지면 자동으로 분리되어 빠른 재장전이 가능하게 합니다."
 
 #: .\ZhighWeapons\ZhighRanged.json
-msgid "sniper BB rifle"
-msgid_plural "sniper BB rifles"
-msgstr[0] "BB탄 저격총"
+msgid "BB sniper rifle"
+msgid_plural "BB sniper rifles"
+msgstr[0] "BB탄 저격 소총"
 
 #: .\ZhighWeapons\ZhighRanged.json
 msgid "Popular among children.  More accurate than the original one, and easliy modifiable, but BBs deal nearly no damage."
@@ -15179,8 +15295,8 @@ msgid_plural "BB AR-10s"
 msgstr[0] "BB탄 AR-10"
 
 #: .\ZhighWeapons\ZhighRanged.json
-msgid "Popular among children.  More accurate than the original one, and easliy modifiable, but BBs deal nearly no damage.  This one looks like a AR-15."
-msgstr "아이들에게 인기 있는 물건입니다.  기존의 것보다 상당히 정확하고, 개조하기도 편하지만, BB탄은 피해를 거의 주지 못합니다.  이건 AR-15를 닮았습니다."
+msgid "Popular among children.  More accurate than the original one, and easliy modifiable, but BBs deal nearly no damage.  This one looks like a AR-10."
+msgstr "아이들에게 인기 있는 물건입니다.  기존의 것보다 상당히 정확하고, 개조하기도 편하지만, BB탄은 피해를 거의 주지 못합니다.  이건 AR-10을 닮았습니다."
 
 #: .\ZhighWeapons\ZhighRanged.json
 msgid "BB AK-47"
@@ -15475,6 +15591,8 @@ msgstr[0] "고폭 수류탄"
 
 #. ~ Use action msg for {'str': 'high explosive grenade'}.
 #. ~ Use action msg for {'str': 'anti-tank grenade'}.
+#. ~ Use action msg for {'str': 'napalm grenade'}.
+#. ~ Use action msg for {'str': 'goo grenade'}.
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "You pull the pin on the grenade."
 msgstr "수류탄의 핀을 당겼다."
@@ -15491,6 +15609,8 @@ msgstr[0] "고폭 수류탄 (켜짐)"
 
 #. ~ Use action sound_msg for {'str': 'active high explosive grenade'}.
 #. ~ Use action sound_msg for {'str': 'active anti-tank grenade'}.
+#. ~ Use action sound_msg for {'str': 'active napalm grenade'}.
+#. ~ Use action sound_msg for {'str': 'active goo grenade'}.
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "Tick."
 msgstr "째깍."
@@ -15524,7 +15644,7 @@ msgstr "핀이 까진 대전차 수류탄, 곧 터질것이니 얼른 던지세�
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "makeshift smoke bomb"
 msgid_plural "makeshift smoke bombs"
-msgstr[0] "수제작 연막탄"
+msgstr[0] "수제 연막탄"
 
 #. ~ Description for {'str': 'makeshift smoke bomb'}
 #: .\ZhighWeapons\ZhighThrowing.json
@@ -15538,12 +15658,312 @@ msgstr ""
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "armed makeshift smoke bomb"
 msgid_plural "armed makeshift smoke bombs"
-msgstr[0] "수제작 연막탄 (켜짐)"
+msgstr[0] "수제 연막탄 (켜짐)"
 
 #. ~ Description for {'str': 'armed makeshift smoke bomb'}
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "This makeshift smoke bomb has had its pin removed and is expelling thick smoke."
 msgstr "핀이 뽑힌 수제작 연막탄으로, 짙은 연기를 내뿜고 있습니다."
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "napalm grenade"
+msgid_plural "napalm grenades"
+msgstr[0] "네이팜 수류탄"
+
+#. ~ Description for {'str': 'napalm grenade'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "This is a military-grade napalm hand grenade.  Use this item to pull the pin and light the fuse.  You will then have five turns before it explodes into a raging inferno; throwing it would be a good idea."
+msgstr "군용 네이팜 수류탄입니다.  사용하여 안전핀을 뽑고 도화선에 불을 당깁니다.  이후 폭발까지 5초가 걸리니, 던져버리는게 좋을겁니다."
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "active napalm grenade"
+msgid_plural "active napalm grenades"
+msgstr[0] "네이팜 수류탄 (켜짐)"
+
+#. ~ Description for {'str': 'active napalm grenade'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "This is an active napalm grenade, likely to burst into an inferno any second now.  Better throw it!"
+msgstr "핀이 까진 네이팜 수류탄, 곧 터질것이니 얼른 던지세요!"
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "goo grenade"
+msgid_plural "goo grenades"
+msgstr[0] "끈끈이 수류탄"
+
+#. ~ Description for {'str': 'goo grenade'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "This is a military-grade goo hand grenade.  Use this item to pull the pin and light the fuse.  You will then have five turns before it explodes into a pool of goo; throwing it would be a good idea."
+msgstr "군용 끈끈이 수류탄입니다.  사용하여 안전핀을 뽑고 도화선에 불을 당깁니다.  이후 폭발까지 5초가 걸리니, 던져버리는게 좋을겁니다."
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "active goo grenade"
+msgid_plural "active goo grenades"
+msgstr[0] "끈끈이 수류탄 (켜짐)"
+
+#. ~ Description for {'str': 'active goo grenade'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "This is an active goo grenade, likely to burst into a pool of goo any second now.  Better throw it!"
+msgstr "핀이 까진 끈끈이 수류탄, 곧 터질것이니 얼른 던지세요!"
+
+#: .\ZhighZeds\zed-animal.json
+msgid "jawed terror"
+msgid_plural "jawed terrors"
+msgstr[0] "공포의 턱주가리"
+
+#. ~ Description for {'str': 'jawed terror'}
+#: .\ZhighZeds\zed-animal.json
+msgid "A once aggressive and hungry bull shark, this jawed terror is now even more aggressive, possibly thanks to its lack of a functioning brain."
+msgstr "한 때 사납고 굶주린 황소상어였으며, 이젠 더 공격적인 괴물이 되었습니다.  이 괴물의 공격성은 아마 뇌의 결여로부터 나오는 것 같습니다."
+
+#: .\ZhighZeds\zed-animal.json
+msgid "zombie dog"
+msgid_plural "zombie dogs"
+msgstr[0] "좀비 개"
+
+#. ~ Description for {'str': 'zombie dog'}
+#: .\ZhighZeds\zed-animal.json
+msgid "The deformed, animated corpse of a canine, a sinewy beast which can easily outpace its two-legged friends."
+msgstr "변형된 채로 움직이는 개의 시체로, 그들의 두 발 달린 친구들을 손쉽게 따라잡을 수 있을 정도로 빠릅니다."
+
+#: .\ZhighZeds\zed-animal.json
+msgid "skeletal dog"
+msgid_plural "skeletal dogs"
+msgstr[0] "스켈레톤 개"
+
+#. ~ Description for {'str': 'skeletal dog'}
+#: .\ZhighZeds\zed-animal.json
+msgid ""
+"This once-canine has shed all of its skin, revealing a carapace of fused bones and ribs.  Devoid entirely of flesh, this walking suit of bone seems to be controlled by a net of veins and sinews which pulse with glistening "
+"black goo."
+msgstr "이 개는 피부를 모두 벗겨내면서 융해된 뼈와 갈비뼈의 경사가 드러났다.  완전히 걸어다니는 뼈는 반짝이는 검은 점액이 펄스를 내는 정맥과 힘줄에 의해 통제되는 것 같다."
+
+#: .\ZhighZeds\zed-animal.json
+msgid "Z-9"
+msgid_plural "Z-9s"
+msgstr[0] "Z-9"
+
+#. ~ Description for {'str': 'Z-9'}
+#: .\ZhighZeds\zed-animal.json
+msgid "A zombified version of one of the German shepherd dogs used in law enforcement.  Its deformed body is encased in a protective Kevlar harness."
+msgstr "법 집행기관에서 기르던 저먼 셰퍼드가 좀비화된 형태.  방호용 케블라 마구를 입고 있습니다."
+
+#: .\ZhighZeds\zed-animal.json
+msgid "rot-weiler"
+msgid_plural "rot-weilers"
+msgstr[0] "로트와일러"
+
+#. ~ Description for {'str': 'rot-weiler'}
+#: .\ZhighZeds\zed-animal.json
+msgid "Acrid smell accompanies this corpse of canine.  Its whole body is covered in chains of pulsing cysts and slime-dribbling ulcers."
+msgstr "야생동물로 만나기에는 두려운 로트와일러는 로마 군단 마스티프들의 후손입니다.  강건하고, 잔혹하며, 사람을 죽일 수 있습니다."
+
+#: .\ZhighZeds\zed-animal.json
+msgid "grim howler"
+msgid_plural "grim howlers"
+msgstr[0] "죽음을 짖는 자"
+
+#. ~ Description for {'str': 'grim howler'}
+#: .\ZhighZeds\zed-animal.json
+msgid "A zombified wolf.  Its mouth oozes with a black substance, coating the vicious-looking white fangs."
+msgstr "좀비화된 늑대.  입에서 흘러내리는 검은 물질이 날카로운 흰 이빨을 뒤덮고 있다."
+
+#: .\ZhighZeds\zed-animal.json
+msgid "zombear"
+msgid_plural "zombears"
+msgstr[0] "좀베어"
+
+#. ~ Description for {'str': 'zombear'}
+#: .\ZhighZeds\zed-animal.json
+msgid "This black bear's eyes ooze with dark, oily fluid, and its flesh is torn and scarred.  It shuffles as it walks."
+msgstr "검은 곰의 눈에는 어둡고 기름진 액체가 스며들고, 살은 찢어지고 흉터가 납니다.  걸을 때마다 흔들립니다."
+
+#: .\ZhighZeds\zed-animal.json
+msgid "festering boar"
+msgid_plural "festering boars"
+msgstr[0] "곪아터진 멧돼지"
+
+#. ~ Description for {'str': 'festering boar'}
+#: .\ZhighZeds\zed-animal.json
+msgid "A zombified omnivore descended from the wild boar.  Now it's got black goo all over it, instead of mud."
+msgstr "한때 멧돼지였던 좀비화된 잡식 동물.  이제 온몸에 진흙 대신 찐득찐득하고 시커먼 점액을 묻히고 다닙니다."
+
+#: .\ZhighZeds\zed-animal.json
+msgid "zombeaver"
+msgid_plural "zombeavers"
+msgstr[0] "좀비버"
+
+#. ~ Description for {'str': 'zombeaver'}
+#: .\ZhighZeds\zed-animal.json
+msgid ""
+"This wall-eyed beast has a large wound on its side, and ribs with some flesh on them are seen through it.  The most prominent feature of this abomination is large incisors in its ominously open mouth, strange black goo is "
+"oozing out of it.  Seems like it isn't interested in trees anymore and is looking for some warm flesh to feed."
+msgstr ""
+"이 사팔뜨기 눈을 가진 짐승은 옆구리에 큰 상처가 있고 그 사이로 살점이 있는 갈비뼈가 보입니다.  이 가증스러운 놈의 가장 두드러진 특징은 불길하게 벌린 입에 붙은 커다란 앞니와 이상한 검은 점액이 새어 나오는 것입니다.  더 이상 나"
+"무에 관심이 없는 것 같고, 뜯어먹을 따끈한 고기를 찾고 있는 것 같습니다."
+
+#: .\ZhighZeds\zed-animal.json
+msgid "antlered horror"
+msgid_plural "antlered horrors"
+msgstr[0] "뿔달린 공포"
+
+#. ~ Description for {'str': 'antlered horror'}
+#: .\ZhighZeds\zed-animal.json
+msgid ""
+"This formerly-majestic moose has succumbed to the infection which is killing the world.  Shiny green blowflies swarm the vast suppurated patches of purulent flesh where its skin has sloughed away, and its remaining fur is "
+"black and matted with necrotic discharge."
+msgstr "한때 위엄있는 무스였지만 세상을 휩쓸고 있는 전염병에 희생되었습니다.  가죽이 떨어져 나가고 드러난 살갗은 곪은 종기와 초록색 파리떼에 뒤덮여 있고, 남은 털은 시커멓고 썩은 분비물 범벅이 되어있다."
+
+#: .\ZhighZeds\zed-animal.json
+msgid "decayed pouncer"
+msgid_plural "decayed pouncers"
+msgstr[0] "부패한 습격자"
+
+#. ~ Description for {'str': 'decayed pouncer'}
+#: .\ZhighZeds\zed-animal.json
+msgid "An otherwise normal-looking cougar, except that its hind legs are swollen, and its eyes bulge with black goo."
+msgstr "뒷다리가 부풀어 오르고 눈이 검은 오물로 가득찬 것만 빼면 멀쩡해 보이는 쿠거입니다."
+
+#: .\ZhighZeds\zed-classic.json
+msgid "scarred zombie"
+msgid_plural "scarred zombies"
+msgstr[0] "흉터 좀비"
+
+#. ~ Description for {'str': 'scarred zombie'}
+#: .\ZhighZeds\zed-classic.json
+msgid "A deformed human body, its skin transformed into one thick, calloused envelope of scar tissue."
+msgstr "변형된 인간의 몸.  피부는 흉터 조직의 두껍고 굳은 껍질같이 변형되었습니다."
+
+#: .\ZhighZeds\zed-classic.json
+msgid "zombie"
+msgid_plural "zombies"
+msgstr[0] "좀비"
+
+#. ~ Description for {'str': 'zombie'}
+#: .\ZhighZeds\zed-classic.json
+msgid "A human body, swaying as it moves, an unstoppable rage visible in its oily black eyes."
+msgstr "흐느적거리며 움직이는 사람의 형체로, 검고 기름진 눈에는 끝없는 분노가 비치고 있습니다."
+
+#: .\ZhighZeds\zed-classic.json
+msgid "zombie cop"
+msgid_plural "zombie cops"
+msgstr[0] "경찰 좀비"
+
+#. ~ Description for {'str': 'zombie cop'}
+#: .\ZhighZeds\zed-classic.json
+msgid "A human body covered by a weather-beaten and badly damaged set of riot gear."
+msgstr "노후되어 거의 부서진 시위 진압용 방어구로 무장한 인간 시체입니다."
+
+#: .\ZhighZeds\zed-classic.json
+msgid "crawling zombie"
+msgid_plural "crawling zombies"
+msgstr[0] "기어다니는 좀비"
+
+#. ~ Description for {'str': 'crawling zombie'}
+#: .\ZhighZeds\zed-classic.json
+msgid "This human corpse drags itself along slowly with its arms.  Its legs are damaged beyond repair."
+msgstr "팔을 이용해 기어다니는 인간 시체 덩어리.  다리는 쓸 수 없을 정도로 망가진 것으로 보입니다."
+
+#: .\ZhighZeds\zed-classic.json
+msgid "zombie dancer"
+msgid_plural "zombie dancers"
+msgstr[0] "좀비 춤꾼"
+
+#. ~ Description for {'str': 'zombie dancer'}
+#: .\ZhighZeds\zed-classic.json
+msgid ""
+"The foulest stench is in the air,\n"
+"The funk of forty thousand years,\n"
+"And grisly ghouls from every tomb,\n"
+"Are closing in to seal your doom!\n"
+"\n"
+"The dancer doesn't even notice you, it seems like something nearby is controlling it."
+msgstr ""
+"불쾌한 악취가 허공을 맴도네\n"
+"4만년이나 쌓이고 쌓인 악취가 말야\n"
+"온갖 무덤에서 기어나온 두려운 구울들\n"
+"다가오며 네 숨통 꾸욱 조르네!\n"
+"\n"
+"춤꾼은 당신이 있다는 것을 눈치채지도 못한 것 같습니다.  아마 근처의 무언가가 이걸 조종하고 있는 것 같습니다."
+
+#: .\ZhighZeds\zed-classic.json
+msgid "fat zombie"
+msgid_plural "fat zombies"
+msgstr[0] "뚱뚱한 좀비"
+
+#. ~ Description for {'str': 'fat zombie'}
+#: .\ZhighZeds\zed-classic.json
+msgid "Stumbling as it moves, this corpse of an overweight human regards its surroundings with an empty black gaze."
+msgstr "움직일 때마다 비틀거리는 이 비만 환자의 시체는 초점없는 검은 시선으로 주위를 둘러봅니다."
+
+#: .\ZhighZeds\zed-classic.json
+msgid "firefighter zombie"
+msgid_plural "firefighter zombies"
+msgstr[0] "소방관 좀비"
+
+#. ~ Description for {'str': 'firefighter zombie'}
+#: .\ZhighZeds\zed-classic.json
+msgid "A decaying human body clad in tattered firefighting gear.  It staggers aimlessly, reeking of smoke and decay."
+msgstr "누더기가 된 소방 장비를 입고 있는 인간 시체로 썩어가고 있습니다.  이 좀비는 목적 없이 비틀거리며 걷고 있으며, 썩는 냄새를 풍깁니다."
+
+#: .\ZhighZeds\zed-classic.json
+msgid "hazmat zombie"
+msgid_plural "hazmat zombies"
+msgstr[0] "화생방 좀비"
+
+#. ~ Description for {'str': 'hazmat zombie'}
+#: .\ZhighZeds\zed-classic.json
+msgid "This zombie's face and body is completely covered by a protective suit.  It wanders around, unsteadily."
+msgstr "몸 전체가 보호복으로 둘러싸인 좀비.  비틀거리며 주위를 방황하고 있습니다."
+
+#: .\ZhighZeds\zed-classic.json
+msgid "decayed zombie"
+msgid_plural "decayed zombies"
+msgstr[0] "부패한 좀비"
+
+#. ~ Description for {'str': 'decayed zombie'}
+#: .\ZhighZeds\zed-classic.json
+msgid "A once-dead human corpse.  Its discolored swollen flesh is riddled with festering wounds and open sores."
+msgstr "오래전에 죽었던 인간의 시체.  부풀어오르고 변색된 피부에 곪은 상처와 아물지 않은 상처가 가득합니다."
+
+#: .\ZhighZeds\zed-classic.json
+msgid "SWAT zombie"
+msgid_plural "SWAT zombies"
+msgstr[0] "SWAT 좀비"
+
+#. ~ Description for SWAT zombie
+#: .\ZhighZeds\zed-classic.json
+msgid "This zombie was part of a specialized unit of law enforcement.  It still wears a battered armor with the SWAT logo emblazoned on the front."
+msgstr "이 좀비는 법 집행 전문 부서의 일원이었습니다.  전면에 SWAT 로고가 새겨진 낡은 보호구를 입고 있습니다."
+
+#: .\ZhighZeds\zed-classic.json
+msgid "tough zombie"
+msgid_plural "tough zombies"
+msgstr[0] "강한 좀비"
+
+#. ~ Description for {'str': 'tough zombie'}
+#: .\ZhighZeds\zed-classic.json
+msgid "Once an athletic human, now a brutal monster.  Its facial features are twisted into an expression of pure rage."
+msgstr "한때는 운동선수였지만 이제는 흉포한 괴물이다.  순수한 분노를 나타내는 것처럼 얼굴이 뒤틀려 있다."
+
+#: .\ZhighZeds\zed-classic.json
+msgid "sleek zombie"
+msgid_plural "sleek zombies"
+msgstr[0] "매끈한 좀비"
+
+#. ~ Description for {'str': 'sleek zombie'}
+#: .\ZhighZeds\zed-classic.json
+msgid "This zombie is rather sleek and barely clothed."
+msgstr "피부가 야들야들하고 매끄러운 좀비.  옷을 거의 입지 않았습니다."
+
+#: .\ZhighZeds\zed-classic.json
+msgid "bouncer zombie"
+msgid_plural "bouncer zombies"
+msgstr[0] "경비원 좀비"
+
+#. ~ Description for {'str': 'bouncer zombie'}
+#: .\ZhighZeds\zed-classic.json
+msgid "This zombie looks beefed and is dressed in the tattered remnants of a security uniform."
+msgstr "찢어진 보안 유니폼을 입고 있는 근육질의 좀비입니다."
 
 #: .\ZhighZeds\zed_acid.json
 msgid "acidic zombie"
@@ -15618,6 +16038,76 @@ msgstr[0] "반쯤 탄 좀비"
 #: .\ZhighZeds\zed_burned.json
 msgid "Heavily burned zombie that still reeks of charred flesh.  Its flesh has mended into a leathery shell."
 msgstr "아직도 고기가 타는 냄새를 풍기고 있는 심하게 탄 좀비.  가죽으로 된 껍질 같은 걸 기워 붙여 너덜거리는 살점을 때워 놓았습니다."
+
+#: .\ZhighZeds\zed_children.json
+msgid "anklebiter"
+msgid_plural "anklebiters"
+msgstr[0] "발목 무는 아이"
+
+#. ~ Description for {'str': 'anklebiter'}
+#: .\ZhighZeds\zed_children.json
+msgid "This horrifying little mutated wretch looks to have once been a child, but its massive gaping jaws are now far more suggestive of a predatory beast."
+msgstr "이 끔찍하며 작고 불쌍한 돌연변이는 한때는 어린 아이였던 것 같습니다.  하지만 이제 거대한 턱을 벌리고 있는 모습이 육식 짐승을 연상시킵니다."
+
+#: .\ZhighZeds\zed_children.json
+msgid "zombie child"
+msgid_plural "zombie children"
+msgstr[0] "어린이 좀비"
+
+#. ~ Description for {'str': 'zombie child', 'str_pl': 'zombie children'}
+#: .\ZhighZeds\zed_children.json
+msgid "It was only a child, and little is different about it now aside from the hungry look in its eyes.  You'd be hard pressed to not feel like you were killing an actual child by putting it down."
+msgstr "눈에 섬뜩한 허기가 서린 걸 빼면 그냥 어린아이와 하나도 다르지 않습니다.  해치웠을 때 실제 어린애를 죽인 것 같은 기분을 피하기가 쉽지 않을 것입니다."
+
+#: .\ZhighZeds\zed_children.json
+msgid "creepy crawler"
+msgid_plural "creepy crawlers"
+msgstr[0] "소름끼치는 크롤러"
+
+#. ~ Description for {'str': 'creepy crawler'}
+#: .\ZhighZeds\zed_children.json
+msgid "What was once a child is now a mutant beast with blackened skin and massive eyes.  This abomination's vile form makes mockery of its human origin."
+msgstr "한때는 아이였지만 이제는 흑화된 피부와 거대한 눈이 달린 변이 괴수입니다.  이 보기 흉측한 것의 추잡한 형태는 본래 인간 모습을 조롱하는 듯합니다."
+
+#: .\ZhighZeds\zed_children.json
+msgid "shriekling"
+msgid_plural "shrieklings"
+msgstr[0] "새끼 비명 좀비"
+
+#. ~ Description for {'str': 'shriekling'}
+#: .\ZhighZeds\zed_children.json
+msgid "This heavily mutated child zombie twitches and flails its limbs in painful looking spasms as it runs about."
+msgstr "이 심하게 변이된 아이 좀비는 꿈틀거리다 고통스럽게 경련하듯 사지를 몸부림치며 내달립니다."
+
+#: .\ZhighZeds\zed_children.json
+msgid "snotgobbler"
+msgid_plural "snotgobblers"
+msgstr[0] "코흘리개 좀비"
+
+#. ~ Description for {'str': 'snotgobbler'}
+#: .\ZhighZeds\zed_children.json
+msgid "This swollen, gooey looking mutant child looks bad, even for a zombie.  Maybe that's why it seems to want a hug so badly."
+msgstr "이 부풀고 끈적거려 보이는 변이된 아이는 좀비치고도 못생겼습니다.  그게 아마 이녀석이 그렇게 누군가를 끌어안고 싶어하는 이유인가 봅니다."
+
+#: .\ZhighZeds\zed_children.json
+msgid "sproglodyte"
+msgid_plural "sproglodytes"
+msgstr[0] "어둠의 자식"
+
+#. ~ Description for {'str': 'sproglodyte'}
+#: .\ZhighZeds\zed_children.json
+msgid "This crouching child-mutant's face is dominated by a pair of huge black eyes and its fingertips end in sharp claws."
+msgstr "이 수그리고 있는 변이된 아이의 얼굴은 두 쌍의 크고 검은 눈과 날카로운 손톱이 달린 손가락들로 억눌려 있습니다."
+
+#: .\ZhighZeds\zed_children.json
+msgid "howling waif"
+msgid_plural "howling waifs"
+msgstr[0] "울부짖는 부랑아"
+
+#. ~ Description for {'str': 'howling waif'}
+#: .\ZhighZeds\zed_children.json
+msgid "Undeath has not been kind to the children of the apocalypse.  This one is little more than a reanimated membrane of skin stretched across tiny brittle bones."
+msgstr "언데드는 세계 멸망을 살아가는 어린이들에게 친절하지 않았습니다.  이 아이는 그저 뼈에 피부만 씌운 수준의 시체입니다."
 
 #: .\ZhighZeds\zed_electric.json
 msgid "shocker brute"
@@ -16170,16 +16660,6 @@ msgid ""
 "own, tendrils tipped with a paralytic sting."
 msgstr "이세계의 초목이 얽힌 덩어리로 뒤덮인 비틀거리는 언데드 인간형체.  구부러진 신체에 발을 끌면서 움직이며, 상반신을 완전히 감싸고 있는 가시덤불은 자신의 의지를 가지고 꿈틀거립니다.  촉수에는 마비침이 있습니다."
 
-#: .\ZhighZeds\zed_prisoner.json
-msgid "prisoner zombie"
-msgid_plural "prisoner zombies"
-msgstr[0] "죄수 좀비"
-
-#. ~ Description for {'str': 'prisoner zombie'}
-#: .\ZhighZeds\zed_prisoner.json
-msgid "Apparently this zombie was doing time when the Cataclysm struck.  It wears black and white striped prisoner clothes, and tattoos can be seen on his decaying skin."
-msgstr "분명히 이 좀비는 대격변이 닥쳤을 때 시간을 보내고 있었습니다.  검은색과 흰색 줄무늬가 있는 죄수 옷을 입고 있으며 썩어가는 피부에 새겨진 문신을 볼 수 있습니다."
-
 #: .\ZhighZeds\zed_radiation.json
 msgid "charred nightmare"
 msgid_plural "charred nightmares"
@@ -16400,6 +16880,13 @@ msgstr[0] "베테랑 생존자 좀비"
 #: .\ZhighZeds\zed_survivor.json
 msgid "This zombie once was a survivor like you, and a pretty good one at that.  Unfortunately they didn't make it, despite the custom-made, heavy armor pieces they wear and the gear that they are still lugging around."
 msgstr "한때 당신과 같은 생존자였으며 꽤 잘 살아온 것 같습니다.  불행히도, 수제작한 무거운 갑옷 쪼가리와 여전히 짊어지고 다니는 풍족한 장비에도 불구하고 안일사 당한 것 같습니다."
+
+#~ msgid "prisoner zombie"
+#~ msgid_plural "prisoner zombies"
+#~ msgstr[0] "죄수 좀비"
+
+#~ msgid "Apparently this zombie was doing time when the Cataclysm struck.  It wears black and white striped prisoner clothes, and tattoos can be seen on his decaying skin."
+#~ msgstr "분명히 이 좀비는 대격변이 닥쳤을 때 시간을 보내고 있었습니다.  검은색과 흰색 줄무늬가 있는 죄수 옷을 입고 있으며 썩어가는 피부에 새겨진 문신을 볼 수 있습니다."
 
 #~ msgid "flintlock LeMat"
 #~ msgid_plural "flintlock LeMats"

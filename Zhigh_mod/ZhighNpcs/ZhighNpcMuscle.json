@@ -13,9 +13,9 @@
   {
     "type": "npc_class",
     "id": "NC_MUSCLE_MERC",
-    "name": { "str": "Student - Better Grunt" },
+    "name": { "str": "Student - Warrior" },
     "job_description": "Fighting for the all-mighty dollar.",
-    "common": false,
+    "common": true,
     "traits": [
       { "trait": "BGSS_Scavenger_Merc_1" },
       { "trait": "PSYCHOPATH" },
@@ -112,7 +112,7 @@
   {
     "id": "TALK_MUSCLE_MERC_CAFFGUM",
     "type": "talk_topic",
-    "dynamic_line": "Duh, in school. Find them in lockers.",
+    "dynamic_line": "Duh, in school.  Find them in lockers.",
     "responses": [
       { "text": "Makes sence.  Let's try this again from the start.", "topic": "TALK_MUSCLE_MERC" },
       { "text": "Okay, how many High School Coins do I need again?", "topic": "TALK_MUSCLE_MERC_HIRE" },

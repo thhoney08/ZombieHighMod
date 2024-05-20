@@ -49,8 +49,11 @@
   {
     "type": "item_group",
     "id": "NC_Archer_weapon",
-    "items": [ 
-      { "item": "hand_crossbow", "ammo-item": "bolt_cf", "charges": 1, "contents-item": [ "rail_laser_sight" ], "prob": 80 },
+    "items": [
+      { "item": "huge_crossbow", "ammo-item": "bolt_cf", "charges": 1, "contents-item": [ "rail_laser_sight" ], "prob": 1 },
+      { "item": "rep_crossbow", "ammo-item": "bolt_cf", "charges": 10, "contents-item": [ "rail_laser_sight" ], "prob": 5 },
+      { "item": "crossbow_triple", "ammo-item": "bolt_cf", "charges": 3, "contents-item": [ "rail_laser_sight" ], "prob": 10 },
+      { "item": "hand_crossbow", "ammo-item": "bolt_cf", "charges": 1, "contents-item": [ "rail_laser_sight" ], "prob": 70 },
       { "item": "crossbow", "ammo-item": "bolt_cf", "charges": 1, "contents-item": [ "rail_laser_sight", "shoulder_strap" ], "prob": 20 }
      ]
   },
@@ -134,7 +137,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_ARCHER_JOIN2",
-    "dynamic_line": "Sorry, pal. Some things cannot be done.",
+    "dynamic_line": "Sorry, pal.  Some things cannot be done.",
     "responses": [
       { "text": "So no negotiating?  No, 'If you do this quest then we'll let you in?'", "topic": "TALK_ARCHER_JOIN3" }
     ]
@@ -142,7 +145,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_ARCHER_JOIN3",
-    "dynamic_line": "Hmm... There should be a way for that. Although I'm not so sure.",
+    "dynamic_line": "Hmm... There should be a way for that.  Although I'm not so sure.",
     "responses": [
       { "text": "Well, what is it?", "topic": "TALK_ARCHER_JOB" },
       { "text": "Nah, I ain't gonna do that.", "topic": "TALK_ARCHER" }
@@ -187,7 +190,7 @@
       "offer": "With all that's been going on, it's been more and more difficult to find some glue.  My crossbow has been working bad for a while now.  Think you could help me out here?  A few glues are all I need.",
       "accepted": "Thanks, it's great to see someone willing to help a gal out.",
       "rejected": "Well, I'll find someone else to do it for me.",
-      "advice": "Bit rare in towns.  Gotta be some left overs in some of them houses.  Or you could make some. You do have some tools here, so just get some ingredients.",
+      "advice": "Bit rare in towns.  Gotta be some left overs in some of them houses.  Or you could make some.  You do have some tools here, so just get some ingredients.",
       "inquire": "Got the glue?",
       "success": "Thanks!  I'll be sure to put in a good word for you around the center.",
       "success_lie": "OK, then hand it over.",

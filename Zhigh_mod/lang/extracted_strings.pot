@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zhigh_Mod\n"
-"POT-Creation-Date: 2024-05-16 23:53+0900\n"
+"POT-Creation-Date: 2024-05-20 00:00+0900\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2167,6 +2167,33 @@ msgid "The healing effect is fading with it's smell."
 msgstr ""
 
 #: .\ZhighEmit.json
+msgid "Goo-coated"
+msgstr ""
+
+#. ~ Description of effect 'Goo-coated'.
+#. ~ Apply message for effect(s) 'Goo-coated'.
+#: .\ZhighEmit.json
+msgid "You're coated in goo!"
+msgstr ""
+
+#. ~ Miss message for effect(s) 'Goo-coated'.
+#: .\ZhighEmit.json
+msgid "The goo's too sticky for you to fight effectively."
+msgstr ""
+
+#: .\ZhighEmit.json
+msgid "goo splatter"
+msgstr ""
+
+#: .\ZhighEmit.json
+msgid "glob of goo"
+msgstr ""
+
+#: .\ZhighEmit.json
+msgid "pool of goo"
+msgstr ""
+
+#: .\ZhighEmit.json
 msgid "weak signal smoke"
 msgstr ""
 
@@ -3115,12 +3142,6 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: .\ZhighItemRemake.json
-msgid "nail gun"
-msgid_plural "nail guns"
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\ZhighItemRemake.json
 msgid "desk fan"
 msgid_plural "desk fans"
 msgstr[0] ""
@@ -3863,6 +3884,39 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: .\ZhighItemRemake.json
+msgid "nail gun"
+msgid_plural "nail guns"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItemRemake.json
+msgid "nail rifle"
+msgid_plural "nail rifles"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItemRemake.json .\ZhighMonsters.json .\ZhighWeapons\ZhighRanged.json
+msgctxt "gun_type_type"
+msgid "rifle"
+msgstr ""
+
+#: .\ZhighItemRemake.json
+msgid "coilgun"
+msgid_plural "coilguns"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItemRemake.json
+msgid "semi-auto"
+msgstr ""
+
+#: .\ZhighItemRemake.json
+msgid "nail rifle magazine"
+msgid_plural "nail rifle magazines"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItemRemake.json
 msgid "paintball"
 msgid_plural "paintballs"
 msgstr[0] ""
@@ -4556,6 +4610,8 @@ msgstr[1] ""
 #. ~ Use action menu_text for {'str': 'penade'}.
 #. ~ Use action menu_text for {'str': 'high explosive grenade'}.
 #. ~ Use action menu_text for {'str': 'anti-tank grenade'}.
+#. ~ Use action menu_text for {'str': 'napalm grenade'}.
+#. ~ Use action menu_text for {'str': 'goo grenade'}.
 #: .\ZhighItems.json .\ZhighWeapons\ZhighThrowing.json
 msgid "Pull pin"
 msgstr ""
@@ -4583,6 +4639,8 @@ msgstr[1] ""
 #. ~ Use action no_deactivate_msg for {'str': 'active high explosive
 #. grenade'}.
 #. ~ Use action no_deactivate_msg for {'str': 'active anti-tank grenade'}.
+#. ~ Use action no_deactivate_msg for {'str': 'active napalm grenade'}.
+#. ~ Use action no_deactivate_msg for {'str': 'active goo grenade'}.
 #: .\ZhighItems.json .\ZhighWeapons\ZhighThrowing.json
 msgid "You've already pulled the %s's pin; try throwing it instead."
 msgstr ""
@@ -6194,11 +6252,6 @@ msgid_plural "mounted BB cannon"
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\ZhighMonsters.json .\ZhighWeapons\ZhighRanged.json
-msgctxt "gun_type_type"
-msgid "rifle"
-msgstr ""
-
 #: .\ZhighMonsters.json
 msgid "moose"
 msgid_plural "moose"
@@ -6317,6 +6370,34 @@ msgid ""
 "Wether due to blobs, or the rules of survival, wolves also mutated into "
 "these hideous creatures - black fur which hides them in the dark, ability to"
 " jump farther, and deadlier."
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "zombie leaker"
+msgid_plural "zombie leakers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'zombie leaker'}
+#: .\ZhighMonsters.json
+msgid ""
+"A grotesque and twisted zombie, capable of spreading a virulent plague that "
+"reanimates the dead into its servile horde.  With a body covered in "
+"festering sores and emitting a noxious, greenish fog, it commands swarms of "
+"infectious undead that follow its every command."
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "zombie bomber"
+msgid_plural "zombie bombers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'zombie bomber'}
+#: .\ZhighMonsters.json
+msgid ""
+"A decaying zombie that detonates violently when it nears its target.  Its "
+"explosion causes severe damage and attracts other zombies."
 msgstr ""
 
 #: .\ZhighMutations.json
@@ -11516,9 +11597,10 @@ msgstr ""
 #: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcArcher.json
 #: .\ZhighNpcs\ZhighNpcBomber.json .\ZhighNpcs\ZhighNpcChairman.json
 #: .\ZhighNpcs\ZhighNpcFireman.json .\ZhighNpcs\ZhighNpcGrunt.json
-#: .\ZhighNpcs\ZhighNpcHacker.json .\ZhighNpcs\ZhighNpcJuvenile.json
-#: .\ZhighNpcs\ZhighNpcMedic.json .\ZhighNpcs\ZhighNpcMuscle.json
-#: .\ZhighNpcs\ZhighNpcMusketeer.json .\ZhighNpcs\ZhighNpcSwordsman.json
+#: .\ZhighNpcs\ZhighNpcGunner.json .\ZhighNpcs\ZhighNpcHacker.json
+#: .\ZhighNpcs\ZhighNpcJuvenile.json .\ZhighNpcs\ZhighNpcMedic.json
+#: .\ZhighNpcs\ZhighNpcMuscle.json .\ZhighNpcs\ZhighNpcMusketeer.json
+#: .\ZhighNpcs\ZhighNpcSwordsman.json
 msgid "student"
 msgstr ""
 
@@ -11530,31 +11612,32 @@ msgstr ""
 msgid "I'm protecting my school."
 msgstr ""
 
-#: .\ZhighNpcs\ZhighGuardNpcs.json
+#: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcGunner.json
 msgid "I'm not in charge here, you're looking for someone else..."
 msgstr ""
 
-#: .\ZhighNpcs\ZhighGuardNpcs.json
+#: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcGunner.json
 msgid "Keep civil or I'll bring the pain."
 msgstr ""
 
-#: .\ZhighNpcs\ZhighGuardNpcs.json
+#: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcGunner.json
 msgid "Just on watch, move along."
 msgstr ""
 
-#: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcRanger.json
+#: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcGunner.json
+#: .\ZhighNpcs\ZhighNpcRanger.json
 msgid "Hey."
 msgstr ""
 
-#: .\ZhighNpcs\ZhighGuardNpcs.json
+#: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcGunner.json
 msgid "Rough out there, isn't it?"
 msgstr ""
 
-#: .\ZhighNpcs\ZhighGuardNpcs.json
+#: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcGunner.json
 msgid "Hey, you really shouldn't be traveling out there."
 msgstr ""
 
-#: .\ZhighNpcs\ZhighGuardNpcs.json
+#: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcGunner.json
 msgid "Don't mind me…"
 msgstr ""
 
@@ -12764,8 +12847,9 @@ msgstr ""
 msgid "Student - Grunt"
 msgstr ""
 
-#: .\ZhighNpcs\ZhighNpcGrunt.json .\ZhighNpcs\ZhighNpcJuvenile.json
-#: .\ZhighNpcs\ZhighNpcMuscle.json .\ZhighNpcs\ZhighNpcMusketeer.json
+#: .\ZhighNpcs\ZhighNpcGrunt.json .\ZhighNpcs\ZhighNpcGunner.json
+#: .\ZhighNpcs\ZhighNpcJuvenile.json .\ZhighNpcs\ZhighNpcMuscle.json
+#: .\ZhighNpcs\ZhighNpcMusketeer.json
 msgid "Fighting for the all-mighty dollar."
 msgstr ""
 
@@ -12868,6 +12952,10 @@ msgstr ""
 #: .\ZhighNpcs\ZhighNpcGrunt.json .\ZhighNpcs\ZhighNpcJuvenile.json
 #: .\ZhighNpcs\ZhighNpcMuscle.json .\ZhighNpcs\ZhighNpcMusketeer.json
 msgid "Glad to have you aboard."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcGunner.json
+msgid "Student - NAILGUNNER"
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcHacker.json
@@ -15204,6 +15292,32 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAmmo.json
+msgid "shootable napalm grenade"
+msgid_plural "shootable napalm grenades"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'shootable napalm grenade'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ""
+"An improvised napalm grenade modified with some steel scraps, which makes "
+"you to throw this (using a staff sling) at a longer range."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "shootable goo grenade"
+msgid_plural "shootable goo grenades"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'shootable goo grenade'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ""
+"An improvised goo grenade modified with some steel scraps, which makes you "
+"to throw this (using a staff sling) at a longer range."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAmmo.json
 msgid "shootable rubber ball"
 msgid_plural "shootable rubber balls"
 msgstr[0] ""
@@ -15726,6 +15840,19 @@ msgid ""
 "An underwater fishing spear made from wood tipped with explosives.  It's "
 "very light, but doesn't have much range.  Stands almost no chance of "
 "remaining intact once fired."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "shootable rocket candy"
+msgid_plural "shootable rocket candys"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'shootable rocket candy'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ""
+"A modified rocket candy, useful as ammunition for slings or slingshots.  "
+"When shot, it drops an active rocket candy."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighArrows.json
@@ -16833,6 +16960,18 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighRanged.json
+msgid "paintball smg"
+msgid_plural "paintball smgs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"An paintball smg.  Although it is used to shoot pepperballs, it could be "
+"also used for shooting paintballs."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
 msgid "triple crossbow"
 msgid_plural "triple crossbows"
 msgstr[0] ""
@@ -17382,8 +17521,8 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighRanged.json
-msgid "sniper BB rifle"
-msgid_plural "sniper BB rifles"
+msgid "BB sniper rifle"
+msgid_plural "BB sniper rifles"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -17491,7 +17630,7 @@ msgstr[1] ""
 #: .\ZhighWeapons\ZhighRanged.json
 msgid ""
 "Popular among children.  More accurate than the original one, and easliy "
-"modifiable, but BBs deal nearly no damage.  This one looks like a AR-15."
+"modifiable, but BBs deal nearly no damage.  This one looks like a AR-10."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighRanged.json
@@ -17857,6 +17996,8 @@ msgstr[1] ""
 
 #. ~ Use action msg for {'str': 'high explosive grenade'}.
 #. ~ Use action msg for {'str': 'anti-tank grenade'}.
+#. ~ Use action msg for {'str': 'napalm grenade'}.
+#. ~ Use action msg for {'str': 'goo grenade'}.
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "You pull the pin on the grenade."
 msgstr ""
@@ -17877,6 +18018,8 @@ msgstr[1] ""
 
 #. ~ Use action sound_msg for {'str': 'active high explosive grenade'}.
 #. ~ Use action sound_msg for {'str': 'active anti-tank grenade'}.
+#. ~ Use action sound_msg for {'str': 'active napalm grenade'}.
+#. ~ Use action sound_msg for {'str': 'active goo grenade'}.
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "Tick."
 msgstr ""
@@ -17942,6 +18085,380 @@ msgstr[1] ""
 msgid ""
 "This makeshift smoke bomb has had its pin removed and is expelling thick "
 "smoke."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "napalm grenade"
+msgid_plural "napalm grenades"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'napalm grenade'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid ""
+"This is a military-grade napalm hand grenade.  Use this item to pull the pin"
+" and light the fuse.  You will then have five turns before it explodes into "
+"a raging inferno; throwing it would be a good idea."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "active napalm grenade"
+msgid_plural "active napalm grenades"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'active napalm grenade'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid ""
+"This is an active napalm grenade, likely to burst into an inferno any second"
+" now.  Better throw it!"
+msgstr ""
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "goo grenade"
+msgid_plural "goo grenades"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'goo grenade'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid ""
+"This is a military-grade goo hand grenade.  Use this item to pull the pin "
+"and light the fuse.  You will then have five turns before it explodes into a"
+" pool of goo; throwing it would be a good idea."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "active goo grenade"
+msgid_plural "active goo grenades"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'active goo grenade'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid ""
+"This is an active goo grenade, likely to burst into a pool of goo any second"
+" now.  Better throw it!"
+msgstr ""
+
+#: .\ZhighZeds\zed-animal.json
+msgid "jawed terror"
+msgid_plural "jawed terrors"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'jawed terror'}
+#: .\ZhighZeds\zed-animal.json
+msgid ""
+"A once aggressive and hungry bull shark, this jawed terror is now even more "
+"aggressive, possibly thanks to its lack of a functioning brain."
+msgstr ""
+
+#: .\ZhighZeds\zed-animal.json
+msgid "zombie dog"
+msgid_plural "zombie dogs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'zombie dog'}
+#: .\ZhighZeds\zed-animal.json
+msgid ""
+"The deformed, animated corpse of a canine, a sinewy beast which can easily "
+"outpace its two-legged friends."
+msgstr ""
+
+#: .\ZhighZeds\zed-animal.json
+msgid "skeletal dog"
+msgid_plural "skeletal dogs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'skeletal dog'}
+#: .\ZhighZeds\zed-animal.json
+msgid ""
+"This once-canine has shed all of its skin, revealing a carapace of fused "
+"bones and ribs.  Devoid entirely of flesh, this walking suit of bone seems "
+"to be controlled by a net of veins and sinews which pulse with glistening "
+"black goo."
+msgstr ""
+
+#: .\ZhighZeds\zed-animal.json
+msgid "Z-9"
+msgid_plural "Z-9s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Z-9'}
+#: .\ZhighZeds\zed-animal.json
+msgid ""
+"A zombified version of one of the German shepherd dogs used in law "
+"enforcement.  Its deformed body is encased in a protective Kevlar harness."
+msgstr ""
+
+#: .\ZhighZeds\zed-animal.json
+msgid "rot-weiler"
+msgid_plural "rot-weilers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'rot-weiler'}
+#: .\ZhighZeds\zed-animal.json
+msgid ""
+"Acrid smell accompanies this corpse of canine.  Its whole body is covered in"
+" chains of pulsing cysts and slime-dribbling ulcers."
+msgstr ""
+
+#: .\ZhighZeds\zed-animal.json
+msgid "grim howler"
+msgid_plural "grim howlers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'grim howler'}
+#: .\ZhighZeds\zed-animal.json
+msgid ""
+"A zombified wolf.  Its mouth oozes with a black substance, coating the "
+"vicious-looking white fangs."
+msgstr ""
+
+#: .\ZhighZeds\zed-animal.json
+msgid "zombear"
+msgid_plural "zombears"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'zombear'}
+#: .\ZhighZeds\zed-animal.json
+msgid ""
+"This black bear's eyes ooze with dark, oily fluid, and its flesh is torn and"
+" scarred.  It shuffles as it walks."
+msgstr ""
+
+#: .\ZhighZeds\zed-animal.json
+msgid "festering boar"
+msgid_plural "festering boars"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'festering boar'}
+#: .\ZhighZeds\zed-animal.json
+msgid ""
+"A zombified omnivore descended from the wild boar.  Now it's got black goo "
+"all over it, instead of mud."
+msgstr ""
+
+#: .\ZhighZeds\zed-animal.json
+msgid "zombeaver"
+msgid_plural "zombeavers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'zombeaver'}
+#: .\ZhighZeds\zed-animal.json
+msgid ""
+"This wall-eyed beast has a large wound on its side, and ribs with some flesh"
+" on them are seen through it.  The most prominent feature of this "
+"abomination is large incisors in its ominously open mouth, strange black goo"
+" is oozing out of it.  Seems like it isn't interested in trees anymore and "
+"is looking for some warm flesh to feed."
+msgstr ""
+
+#: .\ZhighZeds\zed-animal.json
+msgid "antlered horror"
+msgid_plural "antlered horrors"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'antlered horror'}
+#: .\ZhighZeds\zed-animal.json
+msgid ""
+"This formerly-majestic moose has succumbed to the infection which is killing"
+" the world.  Shiny green blowflies swarm the vast suppurated patches of "
+"purulent flesh where its skin has sloughed away, and its remaining fur is "
+"black and matted with necrotic discharge."
+msgstr ""
+
+#: .\ZhighZeds\zed-animal.json
+msgid "decayed pouncer"
+msgid_plural "decayed pouncers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'decayed pouncer'}
+#: .\ZhighZeds\zed-animal.json
+msgid ""
+"An otherwise normal-looking cougar, except that its hind legs are swollen, "
+"and its eyes bulge with black goo."
+msgstr ""
+
+#: .\ZhighZeds\zed-classic.json
+msgid "scarred zombie"
+msgid_plural "scarred zombies"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'scarred zombie'}
+#: .\ZhighZeds\zed-classic.json
+msgid ""
+"A deformed human body, its skin transformed into one thick, calloused "
+"envelope of scar tissue."
+msgstr ""
+
+#: .\ZhighZeds\zed-classic.json
+msgid "zombie"
+msgid_plural "zombies"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'zombie'}
+#: .\ZhighZeds\zed-classic.json
+msgid ""
+"A human body, swaying as it moves, an unstoppable rage visible in its oily "
+"black eyes."
+msgstr ""
+
+#: .\ZhighZeds\zed-classic.json
+msgid "zombie cop"
+msgid_plural "zombie cops"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'zombie cop'}
+#: .\ZhighZeds\zed-classic.json
+msgid ""
+"A human body covered by a weather-beaten and badly damaged set of riot gear."
+msgstr ""
+
+#: .\ZhighZeds\zed-classic.json
+msgid "crawling zombie"
+msgid_plural "crawling zombies"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'crawling zombie'}
+#: .\ZhighZeds\zed-classic.json
+msgid ""
+"This human corpse drags itself along slowly with its arms.  Its legs are "
+"damaged beyond repair."
+msgstr ""
+
+#: .\ZhighZeds\zed-classic.json
+msgid "zombie dancer"
+msgid_plural "zombie dancers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'zombie dancer'}
+#: .\ZhighZeds\zed-classic.json
+msgid ""
+"The foulest stench is in the air,\n"
+"The funk of forty thousand years,\n"
+"And grisly ghouls from every tomb,\n"
+"Are closing in to seal your doom!\n"
+"\n"
+"The dancer doesn't even notice you, it seems like something nearby is controlling it."
+msgstr ""
+
+#: .\ZhighZeds\zed-classic.json
+msgid "fat zombie"
+msgid_plural "fat zombies"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'fat zombie'}
+#: .\ZhighZeds\zed-classic.json
+msgid ""
+"Stumbling as it moves, this corpse of an overweight human regards its "
+"surroundings with an empty black gaze."
+msgstr ""
+
+#: .\ZhighZeds\zed-classic.json
+msgid "firefighter zombie"
+msgid_plural "firefighter zombies"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'firefighter zombie'}
+#: .\ZhighZeds\zed-classic.json
+msgid ""
+"A decaying human body clad in tattered firefighting gear.  It staggers "
+"aimlessly, reeking of smoke and decay."
+msgstr ""
+
+#: .\ZhighZeds\zed-classic.json
+msgid "hazmat zombie"
+msgid_plural "hazmat zombies"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'hazmat zombie'}
+#: .\ZhighZeds\zed-classic.json
+msgid ""
+"This zombie's face and body is completely covered by a protective suit.  It "
+"wanders around, unsteadily."
+msgstr ""
+
+#: .\ZhighZeds\zed-classic.json
+msgid "decayed zombie"
+msgid_plural "decayed zombies"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'decayed zombie'}
+#: .\ZhighZeds\zed-classic.json
+msgid ""
+"A once-dead human corpse.  Its discolored swollen flesh is riddled with "
+"festering wounds and open sores."
+msgstr ""
+
+#: .\ZhighZeds\zed-classic.json
+msgid "SWAT zombie"
+msgid_plural "SWAT zombies"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for SWAT zombie
+#: .\ZhighZeds\zed-classic.json
+msgid ""
+"This zombie was part of a specialized unit of law enforcement.  It still "
+"wears a battered armor with the SWAT logo emblazoned on the front."
+msgstr ""
+
+#: .\ZhighZeds\zed-classic.json
+msgid "tough zombie"
+msgid_plural "tough zombies"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'tough zombie'}
+#: .\ZhighZeds\zed-classic.json
+msgid ""
+"Once an athletic human, now a brutal monster.  Its facial features are "
+"twisted into an expression of pure rage."
+msgstr ""
+
+#: .\ZhighZeds\zed-classic.json
+msgid "sleek zombie"
+msgid_plural "sleek zombies"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'sleek zombie'}
+#: .\ZhighZeds\zed-classic.json
+msgid "This zombie is rather sleek and barely clothed."
+msgstr ""
+
+#: .\ZhighZeds\zed-classic.json
+msgid "bouncer zombie"
+msgid_plural "bouncer zombies"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'bouncer zombie'}
+#: .\ZhighZeds\zed-classic.json
+msgid ""
+"This zombie looks beefed and is dressed in the tattered remnants of a "
+"security uniform."
 msgstr ""
 
 #: .\ZhighZeds\zed_acid.json
@@ -18041,6 +18558,99 @@ msgstr[1] ""
 msgid ""
 "Heavily burned zombie that still reeks of charred flesh.  Its flesh has "
 "mended into a leathery shell."
+msgstr ""
+
+#: .\ZhighZeds\zed_children.json
+msgid "anklebiter"
+msgid_plural "anklebiters"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'anklebiter'}
+#: .\ZhighZeds\zed_children.json
+msgid ""
+"This horrifying little mutated wretch looks to have once been a child, but "
+"its massive gaping jaws are now far more suggestive of a predatory beast."
+msgstr ""
+
+#: .\ZhighZeds\zed_children.json
+msgid "zombie child"
+msgid_plural "zombie children"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'zombie child', 'str_pl': 'zombie children'}
+#: .\ZhighZeds\zed_children.json
+msgid ""
+"It was only a child, and little is different about it now aside from the "
+"hungry look in its eyes.  You'd be hard pressed to not feel like you were "
+"killing an actual child by putting it down."
+msgstr ""
+
+#: .\ZhighZeds\zed_children.json
+msgid "creepy crawler"
+msgid_plural "creepy crawlers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'creepy crawler'}
+#: .\ZhighZeds\zed_children.json
+msgid ""
+"What was once a child is now a mutant beast with blackened skin and massive "
+"eyes.  This abomination's vile form makes mockery of its human origin."
+msgstr ""
+
+#: .\ZhighZeds\zed_children.json
+msgid "shriekling"
+msgid_plural "shrieklings"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'shriekling'}
+#: .\ZhighZeds\zed_children.json
+msgid ""
+"This heavily mutated child zombie twitches and flails its limbs in painful "
+"looking spasms as it runs about."
+msgstr ""
+
+#: .\ZhighZeds\zed_children.json
+msgid "snotgobbler"
+msgid_plural "snotgobblers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'snotgobbler'}
+#: .\ZhighZeds\zed_children.json
+msgid ""
+"This swollen, gooey looking mutant child looks bad, even for a zombie.  "
+"Maybe that's why it seems to want a hug so badly."
+msgstr ""
+
+#: .\ZhighZeds\zed_children.json
+msgid "sproglodyte"
+msgid_plural "sproglodytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'sproglodyte'}
+#: .\ZhighZeds\zed_children.json
+msgid ""
+"This crouching child-mutant's face is dominated by a pair of huge black eyes"
+" and its fingertips end in sharp claws."
+msgstr ""
+
+#: .\ZhighZeds\zed_children.json
+msgid "howling waif"
+msgid_plural "howling waifs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'howling waif'}
+#: .\ZhighZeds\zed_children.json
+msgid ""
+"Undeath has not been kind to the children of the apocalypse.  This one is "
+"little more than a reanimated membrane of skin stretched across tiny brittle"
+" bones."
 msgstr ""
 
 #: .\ZhighZeds\zed_electric.json
@@ -18722,20 +19332,6 @@ msgid ""
 "otherworldly vegetation.  Hunched over and dragging its feet as it moves, "
 "the bramble utterly enveloping its upper half twitches and moves with a life"
 " of its own, tendrils tipped with a paralytic sting."
-msgstr ""
-
-#: .\ZhighZeds\zed_prisoner.json
-msgid "prisoner zombie"
-msgid_plural "prisoner zombies"
-msgstr[0] ""
-msgstr[1] ""
-
-#. ~ Description for {'str': 'prisoner zombie'}
-#: .\ZhighZeds\zed_prisoner.json
-msgid ""
-"Apparently this zombie was doing time when the Cataclysm struck.  It wears "
-"black and white striped prisoner clothes, and tattoos can be seen on his "
-"decaying skin."
 msgstr ""
 
 #: .\ZhighZeds\zed_radiation.json

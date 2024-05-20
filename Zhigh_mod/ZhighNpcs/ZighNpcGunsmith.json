@@ -13,7 +13,7 @@
     "type": "npc_class",
     "id": "NC_GUNSMITH",
     "name": { "str": "Gunsmith" },
-    "job_description": "Guns and ammo I deal.",
+    "job_description": "Guns I deal.",
     "traits": [
       { "trait": "BGSS_Scavenger_Merc_1" },
       { "trait": "PSYCHOPATH" },
@@ -109,10 +109,10 @@
     "type": "talk_topic",
     "dynamic_line": {
       "u_is_wearing": "armband_zhigh_halmon",
-      "yes": "I do my own business, school hall monitor.  Give me something and I will give you something. Seems like a fair deal?",
-      "no": "I supply this school with fake firearms. The roads are though and dangerous, but there is no other way. And I could provide you some help, for a right price of course."
+      "yes": "I do my own business, school hall monitor.  Give me something and I will give you something.  Seems like a fair deal?",
+      "no": "I supply this school with fake firearms.  The roads are though and dangerous, but there is no other way.  And I could provide you some help, for a right price of course."
     },
-    "responses": [ { "text": "Okay then. Keep safe, <name_g>.", "topic": "TALK_GUNSMITH" } ]
+    "responses": [ { "text": "Okay then.  Keep safe, <name_g>.", "topic": "TALK_GUNSMITH" } ]
   },
   {
     "id": "TALK_GUNSMITH_GUNDEAL",
@@ -165,13 +165,28 @@
         "topic": "TALK_GUNSMITH_GUNDEAL_END"
       },
       {
-        "text": "[200$]  I'll buy a tacical BB rifle.",
+        "text": "[200$]  I'll buy a BB M4.",
         "effect": [ { "u_buy_item": "bbM4", "cost": 20000, "count": 1 } ],
         "topic": "TALK_GUNSMITH_GUNDEAL_END"
       },
       {
-        "text": "[200$]  I'll buy a BB machine gun.",
-        "effect": [ { "u_buy_item": "bbM60", "cost": 20000, "count": 1 } ],
+        "text": "[200$]  I'll buy a BB AR-10.",
+        "effect": [ { "u_buy_item": "bbAr15", "cost": 20000, "count": 1 } ],
+        "topic": "TALK_GUNSMITH_GUNDEAL_END"
+      },
+      {
+        "text": "[200$]  I'll buy a BB AK-47.",
+        "effect": [ { "u_buy_item": "bbAkm", "cost": 20000, "count": 1 } ],
+        "topic": "TALK_GUNSMITH_GUNDEAL_END"
+      },
+      {
+        "text": "[200$]  I'll buy a BB SCAR-H.",
+        "effect": [ { "u_buy_item": "bbScar", "cost": 20000, "count": 1 } ],
+        "topic": "TALK_GUNSMITH_GUNDEAL_END"
+      },
+      {
+        "text": "[400$]  I'll buy a BB machine gun.",
+        "effect": [ { "u_buy_item": "bbM60", "cost": 40000, "count": 1 } ],
         "topic": "TALK_GUNSMITH_GUNDEAL_END"
       },
       {
@@ -210,8 +225,8 @@
         "topic": "TALK_GUNSMITH_GUNDEAL_END"
       },
       {
-        "text": "[20$]  I'll buy a roman candle.",
-        "effect": [ { "u_buy_item": "Rc_Packed", "cost": 2000, "count": 1 } ],
+        "text": "[200$]  I'll buy a roman candle.",
+        "effect": [ { "u_buy_item": "Rc_Packed", "cost": 20000, "count": 1 } ],
         "topic": "TALK_GUNSMITH_GUNDEAL_END"
       },
       {
@@ -278,13 +293,28 @@
         "topic": "TALK_GUNSMITH_GUNDEAL_END"
       },
       {
-        "text": "[200$]  I'll buy a tacical BB rifle.",
+        "text": "[200$]  I'll buy a BB M4.",
         "effect": [ { "u_buy_item": "bbM4", "cost": 20000, "count": 1 } ],
         "topic": "TALK_GUNSMITH_GUNDEAL_END"
       },
       {
-        "text": "[200$]  I'll buy a BB machine gun.",
-        "effect": [ { "u_buy_item": "bbM60", "cost": 20000, "count": 1 } ],
+        "text": "[200$]  I'll buy a BB AR-10.",
+        "effect": [ { "u_buy_item": "bbAr15", "cost": 20000, "count": 1 } ],
+        "topic": "TALK_GUNSMITH_GUNDEAL_END"
+      },
+      {
+        "text": "[200$]  I'll buy a BB AK-47.",
+        "effect": [ { "u_buy_item": "bbAkm", "cost": 20000, "count": 1 } ],
+        "topic": "TALK_GUNSMITH_GUNDEAL_END"
+      },
+      {
+        "text": "[200$]  I'll buy a BB SCAR-H.",
+        "effect": [ { "u_buy_item": "bbScar", "cost": 20000, "count": 1 } ],
+        "topic": "TALK_GUNSMITH_GUNDEAL_END"
+      },
+      {
+        "text": "[400$]  I'll buy a BB machine gun.",
+        "effect": [ { "u_buy_item": "bbM60", "cost": 40000, "count": 1 } ],
         "topic": "TALK_GUNSMITH_GUNDEAL_END"
       },
       {
@@ -323,8 +353,8 @@
         "topic": "TALK_GUNSMITH_GUNDEAL_END"
       },
       {
-        "text": "[20$]  I'll buy a roman candle.",
-        "effect": [ { "u_buy_item": "Rc_Packed", "cost": 2000, "count": 1 } ],
+        "text": "[200$]  I'll buy a roman candle.",
+        "effect": [ { "u_buy_item": "Rc_Packed", "cost": 20000, "count": 1 } ],
         "topic": "TALK_GUNSMITH_GUNDEAL_END"
       },
       {

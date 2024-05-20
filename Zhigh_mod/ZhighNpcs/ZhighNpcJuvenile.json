@@ -15,7 +15,7 @@
     "id": "NC_JUVENILE_MERC",
     "name": { "str": "Student - Juvenile" },
     "job_description": "Fighting for the all-mighty dollar.",
-    "common": false,
+    "common": true,
     "traits": [
       { "trait": "BGSS_Scavenger_Merc_1" },
       { "trait": "PSYCHOPATH" },
@@ -72,6 +72,24 @@
     ]
   },
   {
+    "type": "item_group",
+    "id": "NC_JUVENILE_MERC_wield",
+    "items": [
+      { "item": "bbM134", "ammo-item": "bb", "charges": 1100, "contents-item": [ "shoulder_strap" ], "prob": 5 },
+      { "item": "bbM60", "ammo-item": "bb", "charges": 1100, "contents-item": [ "shoulder_strap" ], "prob": 10 },
+      { "item": "bbsmg", "ammo-item": "bb", "charges": 300, "contents-item": [ "shoulder_strap" ], "prob": 40 },
+      { "item": "bbDMR", "ammo-item": "bb", "charges": 60, "contents-item": [ "grip", "acog_scope", "shoulder_strap" ], "prob": 30 },
+      { "item": "bbM4", "ammo-item": "bb", "charges": 300, "contents-item": [ "grip", "acog_scope", "shoulder_strap" ], "prob": 35 },
+      { "item": "bbAr15", "ammo-item": "bb", "charges": 300, "contents-item": [ "grip", "acog_scope", "shoulder_strap" ], "prob": 35 },
+      { "item": "bbAkm", "ammo-item": "bb", "charges": 300, "contents-item": [ "grip", "acog_scope", "shoulder_strap" ], "prob": 35 },
+      { "item": "bbScar", "ammo-item": "bb", "charges": 300, "contents-item": [ "grip", "acog_scope", "shoulder_strap" ], "prob": 35 },
+      { "item": "bbgun", "ammo-item": "bb", "charges": 300, "contents-item": [ "shoulder_strap" ], "prob": 40 },
+      { "item": "bbSnip", "ammo-item": "bb", "charges": 5, "contents-item": [ "acog_scope", "shoulder_strap" ], "prob": 20 },
+      { "item": "bbmachinepistol", "ammo-item": "bb", "charges": 75, "prob": 20 },
+      { "item": "bbpistol", "ammo-item": "bb", "charges": 45, "prob": 10 }
+    ]
+  },
+  {
     "id": "TALK_JUVENILE_MERC",
     "type": "talk_topic",
     "dynamic_line": { "u_is_wearing": "armband_zhigh_halmon", "yes": "I haven't done anything wrong… yet.", "no": "Hm…" },
@@ -112,7 +130,7 @@
   {
     "id": "TALK_JUVENILE_MERC_CIGS",
     "type": "talk_topic",
-    "dynamic_line": "Duh, anywhere. Who cares anyway, since almost everyone is dead, right?",
+    "dynamic_line": "Duh, anywhere.  Who cares anyway, since almost everyone is dead, right?",
     "responses": [
       { "text": "Makes sence.  Let's try this again from the start.", "topic": "TALK_JUVENILE_MERC" },
       { "text": "Okay, how many chocolate bars do I need again?", "topic": "TALK_JUVENILE_MERC_HIRE" },

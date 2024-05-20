@@ -16,7 +16,7 @@
     "looks_like": "school_1_3",
     "see_cost": 5,
     "mondensity": 3,
-    "flags": [ "SIDEWALK", "SOURCE_PEOPLE", "SOURCE_BOOKS", "SOURCE_SAFETY", "RISK_HIGH" ]
+    "flags": [ "SOURCE_PEOPLE", "SOURCE_BOOKS", "SOURCE_SAFETY", "RISK_HIGH" ]
   },
   {
     "type": "overmap_terrain",
@@ -27,7 +27,7 @@
     "looks_like": "school_1_7",
     "see_cost": 5,
     "mondensity": 0,
-    "flags": [ "SIDEWALK", "SOURCE_PEOPLE", "SOURCE_BOOKS", "SOURCE_SAFETY", "RISK_HIGH" ]
+    "flags": [ "SOURCE_PEOPLE", "SOURCE_BOOKS", "SOURCE_SAFETY", "RISK_HIGH" ]
   },
   {
     "type": "overmap_terrain",
@@ -476,8 +476,8 @@
     "occurrences": [ 33, 100 ],
     "locations": [ "forest" ],
     "rotate": false,
-    "flags": [ "CLASSIC", "MAN_MADE", "UNIQUE", "LAB", "ELECTRIC_GRID" ],
-    "spawns": { "group": "GROUP_ZHIGH", "population": [ 30, 40 ], "radius": [ 4, 5 ] }
+    "flags": [ "CLASSIC", "WILDERNESS", "MAN_MADE", "UNIQUE", "LAB", "ELECTRIC_GRID" ],
+    "spawns": { "group": "GROUP_ZHIGH", "population": [ 20, 30 ], "radius": [ 4, 5 ] }
   },
   {
     "type": "mapgen",
@@ -566,18 +566,22 @@
       ],
       "palettes": [ "ZhighSchool_palette" ],
       "place_npcs": [
-        { "class": "GRUNT_MERC", "x": 67, "y": 22 },
-        { "class": "JUVENILE_MERC", "x": 12, "y": 65 },
+        { "class": "GRUNT_MERC", "x": 67, "y": 18 },
+        { "class": "GRUNT_MERC", "x": 67, "y": 10 },
+        { "class": "NAILGUNNER_GUARD", "x": 30, "y": 30 },
+        { "class": "GRUNT_MERC", "x": 12, "y": 65 },
+        { "class": "NAILGUNNER_GUARD", "x": 60, "y": 60 },
+        { "class": "NAILGUNNER_GUARD", "x": 55, "y": 65 },
         { "class": "JUVENILE_MERC", "x": 10, "y": 55 },
         { "class": "GRUNT_MERC", "x": 52, "y": 42 },
         { "class": "JUVENILE_MERC", "x": 10, "y": 50 },
         { "class": "GRUNT_MERC", "x": 50, "y": 42 },
         { "class": "Zhigh_guard", "x": 55, "y": 65 },
         { "class": "zhighNurse", "x": 28, "y": 21 },
-        { "class": "JUVENILE_MERC", "x": 40, "y": 40 },
+        { "class": "NAILGUNNER_GUARD", "x": 40, "y": 40 },
         { "class": "Zhigh_guard", "x": 29, "y": 23 },
         { "class": "Zhigh_guard", "x": 33, "y": 59 },
-        { "class": "Zhigh_guard", "x": 45, "y": 11 },
+        { "class": "NAILGUNNER_GUARD", "x": 45, "y": 11 },
         { "class": "Zhigh_guard", "x": 39, "y": 59 }
       ],
       "place_item": [ { "item": "television", "x": 44, "y": 12, "amount": 1 },
@@ -591,6 +595,9 @@
                       { "item": "american_flag", "x": 36, "y": 57, "amount": 1 } ],
       "place_vehicles": [ 
             { "vehicle": "schoolbus", "x": 10, "y": 3, "chance": 100, "rotation": 0 },
+            { "vehicle": "goKartZhigh", "x": 10, "y": 15, "chance": 100, "rotation": 0 },
+            { "vehicle": "goKartZhigh", "x": 7, "y": 15, "chance": 100, "rotation": 0 },
+            { "vehicle": "goKartZhigh", "x": 4, "y": 15, "chance": 100, "rotation": 0 },
             { "vehicle": "busGroupZhigh", "x": 10, "y": 9, "chance": 100, "rotation": 0 } ],
       "place_items": [  ],
       "place_zones": [
@@ -710,6 +717,7 @@
         { "class": "GRUNT_MERC", "x": 59, "y": 6 },
         { "class": "CHAIRMAN", "x": 13, "y": 50 },
         { "class": "MEDICZhigh", "x": 13, "y": 51 },
+        { "class": "NAILGUNNER_GUARD", "x": 36, "y": 36 },
         { "class": "ARCHER", "x": 15, "y": 52 },
         { "class": "FIREMAN", "x": 15, "y": 51 },
         { "class": "HACKER", "x": 11, "y": 51 },
@@ -718,7 +726,7 @@
         { "class": "MUSKETEER_MERC", "x": 12, "y": 60 },
         { "class": "ZHIGHSCHOOLHALLMONITOR", "x": 10, "y": 68 },
         { "class": "Zhigh_guard", "x": 45, "y": 15 },
-        { "class": "Zhigh_guard", "x": 28, "y": 26 }
+        { "class": "NAILGUNNER_GUARD", "x": 28, "y": 26 }
       ],
       "place_item": [ { "item": "premium_survival_kit", "x": 2, "y": 39, "amount": 1 }, 
                       { "item": "hatchet", "x": 10, "y": 40, "amount": 1 }, 
@@ -838,8 +846,9 @@
         { "class": "GRUNT_MERC", "x": 67, "y": 22 },
         { "class": "Zhigh_guard", "x": 60, "y": 15 },
         { "class": "Zhigh_guard", "x": 34, "y": 34 },
+        { "class": "NAILGUNNER_GUARD", "x": 40, "y": 10 },
         { "class": "JUVENILE_MERC", "x": 40, "y": 40 },
-        { "class": "Zhigh_guard", "x": 45, "y": 50 },
+        { "class": "NAILGUNNER_GUARD", "x": 45, "y": 50 },
         { "class": "Zhigh_guard", "x": 65, "y": 8 }
       ],
       "place_item": [ { "item": "crowbar", "x": 2, "y": 39, "amount": 1 }, 

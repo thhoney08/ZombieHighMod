@@ -55,7 +55,7 @@
   {
     "type": "npc_class",
     "id": "NC_SWORDSMAN",
-    "name": { "str": "SWORDSMAN" },
+    "name": { "str": "swordsman" },
     "job_description": "I smash others with a chair.",
     "traits": [
       { "group": "BG_survival_story_RURAL" },
@@ -99,7 +99,7 @@
         "Peace be upon you!",
         "To your honor!",
         "Courage and Honour!",
-        "Bless the curse!",
+        "Bless the cursed!",
         "Cold and fast!",
         "Fair morning!",
         "Well encountered!",
@@ -125,9 +125,10 @@
   {
     "type": "talk_topic",
     "id": "TALK_SWORDSMAN_GOVERNMENT",
-    "dynamic_line": "It is. Although for some reason the front gate is also blocked with stone, and it is too thick for us to remove or dig a tunnel through it.  So, I sent our team, there is some kinda underground tunnel(subway) nearby.",
+    "dynamic_line": "It is.  Although for some reason the front gate is also blocked with stone, and it is too thick for us to remove or dig a tunnel through it.  So, I sent our team, there is some kinda underground tunnel(subway) nearby.",
     "responses": [
       { "text": "Oh, okay.", "topic": "TALK_SWORDSMAN" },
+      { "text": "Then who are the school hall monitors?", "topic": "TALK_SWORDSMAN_SCHOOLMONIT" },
       { "text": "Oh, okay.  Talk to you later!", "topic": "TALK_DONE" }
     ]
   },
@@ -143,7 +144,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SWORDSMAN_SCHOOLMONIT",
-    "dynamic_line": "They are the actual guardsman type of guys for school. Well, they were, before the whole world doomed.  Unlike them, we are the 'special forces' type - better gear, better weapons - but still in a bad condition, just like them.",
+    "dynamic_line": "They are the actual guardsman type of guys for school.  Well, they were, before the whole world doomed.  Unlike them, we are the 'special forces' type - better gear, better weapons - but goes out and meet more danger.  They care about the inside of the school while we go outside and try to get help.",
     "responses": [
       { "text": "Whatever, I had another question.", "topic": "TALK_SWORDSMAN" },
       { "text": "Okay, I'll go look for him then. Thanks!", "topic": "TALK_DONE" }
@@ -235,11 +236,11 @@
     "dialogue": {
       "describe": "I need three firefighter/police belts.",
       "offer": "Some of our people's armor received damage after <the_cataclysm> and we were waiting on replacement parts.  Now the school is on full lockdown and we need some materials.  Three police duty or firefighter belts will do.",
-      "advice": "If you can't find actual firefighter/police duty belts, jest bring six webbing belts or six normal leather belts.  Nothing difficult.",
+      "advice": "If you can't find actual firefighter/police duty belts, just bring six webbing belts or six normal leather belts.  Nothing difficult.",
       "accepted": "I'll be here when you get back.  Good luck!",
       "rejected": "Someone's got to do it.",
       "inquire": "Do you have the belts?",
-      "success": "Oh, cool, give 'em here. Thank you, <name_g>, we'll be fine for a long while from now.  Although we do need other materials.",
+      "success": "Oh, cool, give 'em here.  Thank you, <name_g>, we'll be fine for a long while from now.  Although we do need other materials.",
       "success_lie": "Where are they?  I don't believe you.",
       "failure": "That's unfortunate.  I guess we'll have to find someone else to do it."
     }
@@ -425,11 +426,11 @@
     "item_group": "drugs_antibiotics",
     "followup": "MISSION_GIMME_MONEY",
     "origins": [ "ORIGIN_SECONDARY" ],
-    "deadline_low": 6,
-    "deadline_high": 8,
+    "deadline_low": 66,
+    "deadline_high": 88,
     "dialogue": {
       "describe": "This infection is bad, <very> bad…",
-      "offer": "From the last battle, I'm infected due to a scratch.  Badly.  I need you to get some antibiotics for me. I cannot move right now - the wound is quite deep.",
+      "offer": "From the last battle, I'm infected due to a scratch.  Badly.  I need you to get some antibiotics for me.  I cannot move right now - the wound is quite deep.",
       "accepted": "Oh, thank god, thank you so much!  I won't last more than a couple of hours, so hurry…",
       "rejected": "What?!  Please, <ill_die> without your help!",
       "advice": "Check school's glass shelves; you could find them.",
