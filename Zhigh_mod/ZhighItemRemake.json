@@ -439,13 +439,6 @@
     "flags": [ "BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS", "WATER_FRIENDLY" ]
   },
   {
-    "id": "ashot",
-    "copy-from": "ashot",
-    "type": "GUN",
-    "name": { "str": "12 gauge pistol" },
-    "ammo": [ "signal_flare", "shot" ]
-  },
-  {
     "//": "Got this line of code from dogmeat's mod.",
     "id": "flamethrower",
     "type": "GUN",
@@ -1083,17 +1076,6 @@
     "charges_per_use": 50
   },
   {
-    "id": "nailgun",
-    "copy-from": "nailgun",
-    "type": "GUN",
-    "name": { "str": "nail gun" },
-    "dispersion": 80,
-    "range": 8,
-    "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
-    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-    "clip_size": 25
-  },
-  {
     "type": "TOOL",
     "category": "tools",
     "id": "fan",
@@ -1334,7 +1316,7 @@
     "copy-from": "surv_hand_cannon",
     "type": "GUN",
     "name": { "str": "\"revolver\"" },
-    "description": "A large and heavy revolver evidently welded from scrap.  It's not pretty, but the .45 and .44 it's chambered with packs a serious punch. Just watch out for the kick. This one is especially made so that the suppressor is avilable to use.",
+    "description": "A large and heavy revolver evidently welded from scrap.  It's not pretty, but the .45 and .44 it's chambered with packs a serious punch.  Just watch out for the kick.  This one is especially made so that the suppressor is avilable to use.",
     "weight": "800 g",
     "volume": "610 ml",
     "ammo": [ "45", "44" ],
@@ -1451,7 +1433,7 @@
     "copy-from": "sten",
     "type": "GUN",
     "name": { "str": "bastard gun" },
-    "description": "Submachinegun, 9mm. It's got poor accuracy, almost like a shotgun from hell. That's why they call it a \"Bastard gun.\" Accepts all 9mm magazines.",
+    "description": "Submachinegun, 9mm.  It's got poor accuracy, almost like a shotgun from hell.  That's why they call it a \"Bastard gun.\"  Accepts all 9mm magazines.",
     "weight": "2500 g",
     "volume": "1570 ml",
     "durability": 4,
@@ -1482,6 +1464,7 @@
   },
   {
     "id": "survivor9mm_mag",
+    "copy-from": "survivor9mm_mag",
     "looks_like": "mp5mag",
     "type": "MAGAZINE",
     "name": { "str": "makeshift bastard gun portative strips" },
@@ -1497,14 +1480,14 @@
     "capacity": 25,
     "reliability": 3,
     "reload_time": 160,
-    "flags": [ "MAG_COMPACT" ]
+    "flags": [ "MAG_COMPACT", "MAG_EJECT" ]
   },
   {
     "id": "survivor9mm_mag_beeg",
     "looks_like": "thompson_drum",
     "type": "MAGAZINE",
     "name": { "str": "makeshift bastard gun drum strips" },
-    "description": "An improvised magazine that is mostly compatible with the bastard submachine gun, with a complex feed system. Unreliable.",
+    "description": "An improvised magazine that is mostly compatible with the bastard submachine gun, with a complex feed system.  Unreliable.",
     "weight": "900 g",
     "volume": "1500 ml",
     "price": "80 USD",
@@ -1517,15 +1500,6 @@
     "reliability": 1,
     "reload_time": 260,
     "flags": [ "MAG_BULKY" ]
-  },
-  {
-    "id": "survivor9mm_mag",
-    "copy-from": "survivor9mm_mag",
-    "type": "MAGAZINE",
-    "name": { "str": "makeshift bastard gun portative strips" },
-    "description": "An improvised magazine that is mostly compatible with the bastard gun submachine gun, with a simplified feed system.",
-    "reload_time": 140,
-    "flags": [ "MAG_COMPACT", "MAG_EJECT" ]
   },
   {
     "id": "pipe_double_shotgun",
@@ -2352,6 +2326,50 @@
     "weight": "150 g",
     "volume": "150 ml",
     "max_charges": 5000
+  },
+  {
+    "id": "nailgun",
+    "copy-from": "nailgun",
+    "type": "GUN",
+    "name": { "str": "nail gun" },
+    "dispersion": 80,
+    "range": 8,
+    "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "ranged_damage": { "damage_type": "stab", "amount": 10, "armor_penetration": 10 },
+    "clip_size": 20
+  },
+  {
+    "id": "nailrifle",
+    "copy-from": "nailrifle",
+    "type": "GUN",
+    "name": { "str": "nail rifle" },
+    "skill": "rifle",
+    "magazines": [ [ "nail", [ "nailmag" ] ] ],
+    "relative": { "weight": "1 kg", "volume": "1500 ml", "range": 14, "ranged_damage": { "damage_type": "stab", "amount": 6, "armor_penetration": 6 } },
+    "proportional": { "price": 3, "dispersion": 0.5 }
+  },
+  {
+    "id": "coilgun",
+    "copy-from": "coilgun",
+    "type": "GUN",
+    "name": { "str": "coilgun" },
+    "weight": "3041 g",
+    "volume": "2250 ml",
+    "range": 16,
+    "ranged_damage": { "damage_type": "stab", "amount": 10, "armor_penetration": 20 },
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 4 ] ],
+    "dispersion": 120,
+    "durability": 8,
+    "ups_charges": 5,
+    "magazines": [ [ "nail", [ "nailmag" ] ] ]
+  },
+  {
+    "id": "nailmag",
+    "copy-from": "nailmag",
+    "type": "MAGAZINE",
+    "name": { "str": "nail rifle magazine" },
+    "volume": "150 ml",
+    "capacity": 150
   },
   {
     "type": "AMMO",

@@ -89,8 +89,8 @@
       [ "flashlight", 20 ],
       [ "goggles_nv", 5 ],
       [ "hand_crank_charger", 15 ],
-      [ "hand_crank_UPS", 2 ],
-      [ "UPS_off", 5 ],
+      [ "hand_crank_UPS", 20 ],
+      [ "UPS_off", 50 ],
       [ "handflare", 20 ],
       [ "cardmultitool", 10 ],
       [ "axe_combat", 10 ],
@@ -399,9 +399,9 @@
       [ "EMPbomb", 2 ],
       [ "pheromone", 1 ],
       [ "portal", 2 ],
-      [ "hand_crank_UPS", 2 ],
+      [ "hand_crank_UPS", 40 ],
       [ "bot_manhack", 1 ],
-      [ "UPS_off", 5 ],
+      [ "UPS_off", 50 ],
       [ "adv_UPS_off", 3 ],
       [ "tazer", 3 ],
       [ "plasma", 8 ],
@@ -555,7 +555,7 @@
       [ "knee_pads", 5 ],
       [ "elbow_pads", 5 ],
       [ "legrig", 5 ],
-      { "group": "charged_UPS", "prob": 10 },
+      { "group": "charged_UPS", "prob": 80 },
       [ "emer_blanket", 5 ],
       { "group": "ammo_pocket_batteries_full", "prob": 50 },
       [ "tool_belt", 5 ],
@@ -1015,9 +1015,11 @@
     "items": [
       { "group": "ZhighMaskGroups", "prob": 30, "count": [ 1, 4 ] },
       [ "paintballgun_pistol", 20 ],
+      [ "paintballgun_revolver", 20 ],
       [ "mask_paintball", 5 ],
       [ "paintballgun", 30 ],
       [ "paintballG_AR15", 10 ],
+      [ "paintballG_MP7", 10 ],
       [ "shotgun_d_paint", 20 ],
       [ "shotgun_pump_paint", 20 ],
       [ "paintball", 40 ],
@@ -1067,6 +1069,8 @@
     "subtype": "distribution",
     "items": [
       { "group": "cop_gear", "prob": 100 },
+      { "group": "everyday_paintballG_MP7", "prob": 10 },
+      { "group": "everyday_paintballAr15", "prob": 10 },
       [ "40x46mm_m433", 10 ],
       [ "40x46mm_m651", 20 ],
       [ "ammo_satchel", 10 ],
@@ -1096,12 +1100,11 @@
       [ "tac_fullhelmet", 10 ],
       [ "tac_helmet", 20 ],
       [ "shield_riot", 40 ],
-      [ "shield_ballistic", 10 ],
+      [ "shield_ballistic", 30 ],
       [ "signal_supply_flare", 3 ],
       [ "helmet_maska", 5 ],
       [ "helmet_maska_raised", 5 ],
-      [ "swat_shield", 5 ],
-      [ "swat_shield_act", 5 ]
+      [ "swat_shield", 15 ]
     ]
   },
   {
@@ -1180,7 +1183,8 @@
     "items": [ 
       { "group": "charms_guns", "prob": 15 },
       [ "paintballgun", 55 ],
-      [ "paintballG_AR15", 25 ], 
+      [ "paintballG_AR15", 25 ],
+      [ "paintballG_MP7", 25 ],
       [ "shotgun_pump_paint", 25 ], 
       [ "shotgun_d_paint", 25 ], 
       [ "paintballgun_pistol", 25 ], 
@@ -1295,8 +1299,8 @@
       [ "water_purifier", 5 ],
       [ "radio", 20 ],
       [ "beartrap", 5 ],
-      [ "hand_crank_UPS", 5 ],
-      [ "UPS_off", 10 ],
+      [ "hand_crank_UPS", 50 ],
+      [ "UPS_off", 90 ],
       [ "string_36", 40 ],
       [ "longbow", 5 ],
       [ "compbow", 1 ],
@@ -1675,6 +1679,8 @@
       [ "zap_grenade", 15 ],
       [ "rad_grenade", 15 ],
       [ "cryo_grenade", 15 ],
+      [ "grenade_nap", 15 ],
+      [ "grenade_goo", 15 ],
       [ "canister_goo", 15 ],
       [ "smokebomb", 50 ],
       [ "dynamite", 50 ],
@@ -1884,10 +1890,34 @@
         ]
   },
   {
+    "id": "everyday_paintballG_MP7",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+            { "item": "paintballG_MP7", "charges-min": 0, "charges-max": 15 }, 
+            { "item": "paintball_tg", "prob": 100, "charges": [ 10, 20 ] } 
+        ]
+  },
+  {
+    "id": "everyday_paintballgun_pistol",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+            { "item": "paintballgun_pistol", "charges-min": 0, "charges-max": 15 }, 
+            { "item": "paintball_tg", "prob": 100, "charges": [ 10, 20 ] } 
+        ]
+  },
+  {
     "type": "item_group",
     "id": "carried_guns_cop",
     "//": "Police issue weapons of all types. Carried, so they have mags or loose ammo.",
     "items": [
+      { "group": "everyday_paintballG_MP7", "prob": 15 },
+      { "group": "everyday_paintballgun_pistol", "prob": 15 },
       { "group": "everyday_paintballAr15", "prob": 15 },
       { "group": "everyday_ar15", "prob": 15 },
       { "group": "everyday_cx4", "prob": 20 },
@@ -1965,6 +1995,7 @@
       { "group": "mil_food", "prob": 1251 },
       { "group": "mil_armor", "prob": 575 },
       { "item": "plut_cell", "prob": 5 },
+      { "item": "manual_mcmap", "prob": 1 },
       { "item": "m107a1", "prob": 1 },
       { "item": "bipod", "prob": 1 },
       { "item": "50bmg", "prob": 3 },
@@ -1975,7 +2006,7 @@
       { "item": "50_incendiary", "prob": 2 },
       { "item": "water_clean", "prob": 90 },
       { "item": "knuckle_brass", "prob": 15 },
-      { "item": "battery_ups", "prob": 10 },
+      { "item": "battery_ups", "prob": 90 },
       { "item": "bandages", "prob": 50 },
       { "item": "cotton_ball", "prob": 20 },
       { "item": "iodine", "prob": 5 },
@@ -2067,6 +2098,7 @@
       { "item": "masterkey", "prob": 2 },
       { "item": "rm121aux", "prob": 1 },
       { "item": "shot_flechette", "prob": 5 },
+      { "item": "axe_combat", "prob": 15 },
       { "item": "canteen", "prob": 15 },
       { "item": "2lcanteen", "prob": 10 },
       { "item": "camelbak", "prob": 5 },

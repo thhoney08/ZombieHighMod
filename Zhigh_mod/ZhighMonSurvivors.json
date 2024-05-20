@@ -7,21 +7,10 @@
     "by_mood": [ "zombie", "insect", "cult", "blob", "nether", "military", "science", "dermatik", "spider", "plant", "mutant", "jabberwock", "zombie_aquatic" ]
   },
   {
-    "type": "monstergroup",
-    "name": "GROUP_ZHIGHSURVIVORS",
-    "default": "mon_null",
-    "//": "Survivor monster spawns from green flare.",
-    "monsters": [
-      { "monster": "mon_survivor_human_pipe", "freq": 80, "cost_multiplier": 3, "pack_size": [ 9, 15 ] },
-      { "monster": "mon_survivor_human_crowbar", "freq": 50, "cost_multiplier": 2, "pack_size": [ 4, 11 ] },
-      { "monster": "mon_survivor_human_m4bb", "freq": 70, "cost_multiplier": 8, "pack_size": [ 5, 9 ] }
-    ]
-  },
-  {
     "id": "mon_survivor_human_pipe",
     "type": "MONSTER",
     "name": { "str": "survivor" },
-    "description": "This mysterious human arrived here somehow. If this person becomes hostile, shout to them so that they know you are not the enemy.",
+    "description": "This mysterious human arrived here somehow.  If this person becomes hostile, shout to them so that they know you are not the enemy.",
     "default_faction": "zhighSurvivors",
     "copy-from": "mon_feral_human_pipe",
     "bodytype": "human",
@@ -91,7 +80,7 @@
     "type": "MONSTER",
     "copy-from": "mon_survivor_human_pipe",
     "looks_like": "mon_feral_human_crowbar",
-    "description": "This mysterious human arrived here somehow. If this person becomes hostile, shout to them so that they know you are not the enemy.",
+    "description": "This mysterious human arrived here somehow.  If this person becomes hostile, shout to them so that they know you are not the enemy.",
     "starting_ammo": { "sling_rubberball": 30 },
     "special_attacks": [
       {
@@ -138,7 +127,7 @@
     "type": "MONSTER",
     "copy-from": "mon_survivor_human_pipe",
     "looks_like": "mon_feral_militia",
-    "description": "This mysterious human arrived here somehow. If this person becomes hostile, shout to them so that they know you are not the enemy.",
+    "description": "This mysterious human arrived here somehow.  If this person becomes hostile, shout to them so that they know you are not the enemy.",
     "starting_ammo": { "beanbag": 8 },
     "special_when_hit": [ "RETURN_FIRE", 1 ],
     "vision_day": 50,
@@ -201,7 +190,7 @@
     "type": "MONSTER",
     "name": { "str": "feral student" },
     "copy-from": "mon_survivor_human_m4bb",
-    "description": "This mysterious human arrived here somehow. If you see him, run or fight back.",
+    "description": "This mysterious human arrived here somehow.  If you see him, run or fight back.",
     "starting_ammo": { "sling_improvised_colabomb": 250 },
     "aggression": 100,
     "morale": 100,

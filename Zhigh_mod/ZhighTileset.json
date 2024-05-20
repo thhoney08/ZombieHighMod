@@ -837,7 +837,11 @@
           { "id": "overlay_wielded_grenadeKrak_act", "fg": 116 },
           { "id": "overlay_wielded_caneGunZhigh", "fg": 117 },
           { "id": "bat_metal_zhigh", "fg": 118 },
-          { "id": "overlay_wielded_bat_metal_zhigh", "fg": 119 }
+          { "id": "overlay_wielded_bat_metal_zhigh", "fg": 119 },
+          { "id": "overlay_wielded_shotgun_pump_paint", "fg": 120 },
+          { "id": "overlay_wielded_paintballgun_revolver", "fg": 121 },
+          { "id": "overlay_wielded_paintballG_MP7", "fg": 124 },
+          { "id": "paintballG_MP7", "fg": 125 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,
@@ -933,7 +937,35 @@
             "rotates": false,
             "animated": true
           },
-          { "id": "mon_survivor_human_m4bb_boss", "fg": 40 }
+          { "id": "mon_survivor_human_m4bb_boss", "fg": 40 },
+          {
+            "id": "mon_iceturret",
+            "fg": [
+              { "weight": 10, "sprite": 41 },
+              { "weight": 10, "sprite": 42 }
+            ],
+            "rotates": false,
+            "animated": true
+          },
+          {
+            "id": "mon_waterturret",
+            "fg": [
+              { "weight": 10, "sprite": 43 },
+              { "weight": 10, "sprite": 44 }
+            ],
+            "rotates": false,
+            "animated": true
+          },
+          {
+            "id": "mon_zombie_bomber",
+            "fg": [
+              { "weight": 10, "sprite": 45 },
+              { "weight": 10, "sprite": 46 },
+              { "weight": 10, "sprite": 47 }
+            ],
+            "rotates": false,
+            "animated": true
+          }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,
@@ -1360,7 +1392,10 @@
           { "id": "overlay_wielded_knife_trench_bash", "fg": 95 },
           { "id": "overlay_wielded_lawn_dart", "fg": 96 },
           { "id": "khopesh", "fg": 97 },
-          { "id": "overlay_wielded_khopesh", "fg": 98 }
+          { "id": "overlay_wielded_khopesh", "fg": 98 },
+          { "id": "tanto", "fg": 99 },
+          { "id": "overlay_wielded_tanto", "fg": 100 },
+          { "id": "overlay_wielded_nailrifle", "fg": 101 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,

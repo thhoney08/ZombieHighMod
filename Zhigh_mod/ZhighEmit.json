@@ -1,5 +1,85 @@
 [
   {
+    "type": "effect_type",
+    "id": "goo",
+    "name": [ "Goo-coated" ],
+    "desc": [ "You're coated in goo!" ],
+    "apply_message": "You're coated in goo!",
+    "rating": "bad",
+    "max_duration": "30 m",
+    "miss_messages": [ [ "The goo's too sticky for you to fight effectively.", 3 ] ],
+    "base_mods": { "speed_mod": [ -30 ], "dex_mod": [ -2 ] }
+  },
+  {
+    "id": "fd_goo",
+    "type": "field_type",
+    "legacy_enum_id": 8,
+    "intensity_levels": [
+      {
+        "name": "goo splatter",
+        "sym": "5",
+        "color": "yellow",
+        "dangerous": true,
+        "effects": [
+          {
+            "effect_id": "goo",
+            "body_part": "torso",
+            "intensity": 1,
+            "min_duration": "6 seconds",
+            "max_duration": "6 seconds",
+            "immune_in_vehicle": true,
+            "is_environmental": false,
+            "message": "The goo sticks to you!",
+            "message_npc": "The goo sticks to <npcname>!",
+            "message_type": "bad"
+          }
+        ]
+      },
+      {
+        "name": "glob of goo",
+        "effects": [
+          {
+            "effect_id": "goo",
+            "body_part": "torso",
+            "intensity": 1,
+            "min_duration": "12 seconds",
+            "max_duration": "12 seconds",
+            "immune_in_vehicle": true,
+            "is_environmental": false,
+            "message": "The goo sticks to you!",
+            "message_npc": "The goo sticks to <npcname>!",
+            "message_type": "bad"
+          }
+        ]
+      },
+      {
+        "name": "pool of goo",
+        "color": "brown",
+        "effects": [
+          {
+            "effect_id": "goo",
+            "body_part": "torso",
+            "intensity": 1,
+            "min_duration": "18 seconds",
+            "max_duration": "18 seconds",
+            "immune_in_vehicle": true,
+            "is_environmental": false,
+            "message": "The goo sticks to you!",
+            "message_npc": "The goo sticks to <npcname>!",
+            "message_type": "bad"
+          }
+        ]
+      }
+    ],
+    "description_affix": "covered_in",
+    "is_splattering": true,
+    "priority": 2,
+    "half_life": "10 minutes",
+    "phase": "liquid",
+    "display_field": true,
+    "looks_like": "fd_sludge"
+  },
+  {
     "id": "fd_supplydrop_rift",
     "type": "field_type",
     "intensity_levels": [
