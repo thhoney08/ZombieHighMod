@@ -48,7 +48,7 @@
     "type": "overmap_special",
     "id": "zhighSub_station",
     "locations": [ "land" ],
-    "occurrences": [ 0, 1 ],
+    "occurrences": [ 9, 15 ],
     "overmaps": [
       { "point": [ 0, 0, 0 ], "overmap": "zhighSub_station_north" },
       { "point": [ 0, 0, 1 ], "overmap": "sub_station_roof_north" },
@@ -347,8 +347,12 @@
     },
     "signs": { "M": { "signage": "Survivor base: <city>" } },
     "items": {
-      "W": [ { "item": "ZhighLockerGroupsNumbers", "chance": 100 },
+      "W": [ { "item": "ZhighLockerGroupsNumbers", "chance": 10 },
+			 { "item": "ZhighLockerGroupsNumbers", "chance": 10 },
+			 { "item": "ZhighLockerGroupsNumbers", "chance": 10 },
+			 { "item": "ZhighLockerGroupsNumbers", "chance": 10 },
              { "item": "ZhighFoodGroupsNumbers", "chance": 30 },
+			 { "item": "mil_food_nodrugs", "chance": 30, "magazine": 100, "ammo": 100, "repeat": [ 1, 2 ] },
              { "item": "tools_lighting", "chance": 100, "repeat": 3 },
              { "item": "SUS_evac_shelter_locker", "chance": 30 } ],
       "N": { "item": "tools_construction", "chance": 99, "repeat": 9 },

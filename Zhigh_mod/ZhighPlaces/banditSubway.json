@@ -48,7 +48,7 @@
     "type": "overmap_special",
     "id": "BanditSub_station",
     "locations": [ "land" ],
-    "occurrences": [ 0, 1 ],
+    "occurrences": [ 40, 50 ],
     "overmaps": [
       { "point": [ 0, 0, 0 ], "overmap": "BanditSub_station_north" },
       { "point": [ 0, 0, 1 ], "overmap": "sub_station_roof_north" },
@@ -329,10 +329,16 @@
     },
     "signs": { "M": { "signage": "Hells Raiders Rule!" } },
     "items": {
-      "W": [ { "item": "guns_survival", "chance": 100, "magazine": 100, "ammo": 100, "repeat": [ 3, 6 ] },
-             { "item": "ZhighFoodGroupsNumbers", "chance": 50 },
-             { "item": "magazines", "chance": 50 },
-             { "item": "SUS_evac_shelter_locker", "chance": 30 } ],
+      "W": [ { "item": "guns_survival", "chance": 30, "magazine": 100, "ammo": 100, "repeat": [ 1, 2 ] },
+             { "item": "guns_survival", "chance": 30, "magazine": 100, "ammo": 100, "repeat": [ 1, 2 ] },
+             { "item": "grenades", "chance": 30, "magazine": 100, "ammo": 100, "repeat": [ 1, 2 ] },
+             { "item": "ZhighFoodGroupsNumbers", "chance": 5 },
+			 { "item": "drugs_soldier", "chance": 90, "magazine": 100, "ammo": 100, "repeat": [ 1, 2 ] },
+			 { "item": "mil_food_nodrugs", "chance": 10, "magazine": 100, "ammo": 100 },
+			 { "item": "nested_sten", "chance": 60, "magazine": 100, "ammo": 100 },
+             { "item": "magazines", "chance": 5 },
+             { "item": "ear_protection", "chance": 20 },
+             { "item": "SUS_evac_shelter_locker", "chance": 20 } ],
       "N": { "item": "tools_construction", "chance": 90, "repeat": 3 },
       "Q": { "item": "office_paper", "chance": 90, "repeat": 5 }
     }
