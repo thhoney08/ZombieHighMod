@@ -65,7 +65,7 @@
     "subtype": "collection",
     "items": [
       { "group": "NC_GUARD_misc" },
-      { "item": "UPS_off", "charges": 1500 },
+      { "group": "charged_UPS" },
       { "item": "nail" },
       { "item": "nailmag", "ammo-item": "nail", "charges": 150 },
       { "item": "nailmag", "ammo-item": "nail", "charges": 150 },
@@ -76,10 +76,11 @@
     "type": "item_group",
     "id": "NC_NAILGUNNER_GUARD_wield",
     "items": [
-      { "item": "marble_gun", "ammo-item": "nail", "charges": 5, "prob": 20 },
-      { "item": "nailrifle", "ammo-item": "nail", "charges": 150, "prob": 35 },
-      { "item": "nailsmg", "ammo-item": "nail", "charges": 100, "prob": 35 },
-      { "item": "nailgun", "ammo-item": "nail", "charges": 25, "prob": 10 }
+      { "item": "marble_sniper_gun", "ammo-item": "nail", "charges": 1, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 20 },
+      { "item": "marble_gun", "ammo-item": "nail", "charges": 5, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 20 },
+      { "item": "nailrifle", "ammo-item": "nail", "charges": 150, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 35 },
+      { "item": "nailsmg", "ammo-item": "nail", "charges": 100, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 35 },
+      { "item": "nailgun", "ammo-item": "nail", "charges": 25, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 10 }
     ]
   },
   {

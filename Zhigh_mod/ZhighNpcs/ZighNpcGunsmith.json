@@ -125,6 +125,11 @@
     "responses": [
       { "text": "Nevermind.", "topic": "TALK_NONE" },
       {
+        "text": "[180$]  I'll buy a marble sniper.",
+        "effect": [ { "u_buy_item": "marble_sniper_gun", "cost": 18000, "count": 1 } ],
+        "topic": "TALK_GUNSMITH_GUNDEAL_END"
+      },
+      {
         "text": "[180$]  I'll buy a marble gun.",
         "effect": [ { "u_buy_item": "marble_gun", "cost": 18000, "count": 1 } ],
         "topic": "TALK_GUNSMITH_GUNDEAL_END"
@@ -252,6 +257,11 @@
     "dynamic_line": [ "Is there anything else you need?" ],
     "responses": [
       { "text": "Nevermind.", "topic": "TALK_DONE" },
+      {
+        "text": "[180$]  I'll buy a marble sniper.",
+        "effect": [ { "u_buy_item": "marble_sniper_gun", "cost": 18000, "count": 1 } ],
+        "topic": "TALK_GUNSMITH_GUNDEAL_END"
+      },
       {
         "text": "[180$]  I'll buy a marble gun.",
         "effect": [ { "u_buy_item": "marble_gun", "cost": 18000, "count": 1 } ],
