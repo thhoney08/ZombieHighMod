@@ -21,6 +21,18 @@
     "loudness": 10
   },
   {
+    "id": "marble_sniper_gun",
+    "copy-from": "marble_gun",
+    "type": "GUN",
+    "name": { "str": "marble sniper" },
+    "ranged_damage": { "damage_type": "bullet", "amount": 22, "armor_penetration": 22 },
+    "range": 20,
+    "ammo_effects": [ "NEVER_MISFIRES" ],
+    "clip_size": 1,
+    "reload": 90,
+    "loudness": 10
+  },
+  {
     "id": "marble_pump_gun",
     "copy-from": "tihar",
     "type": "GUN",
