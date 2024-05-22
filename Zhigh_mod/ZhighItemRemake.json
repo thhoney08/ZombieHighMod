@@ -1431,6 +1431,7 @@
   {
     "id": "sten",
     "copy-from": "sten",
+	"weapon_category": [ "SUBMACHINE_GUNS", "AUTOLOADING" ],
     "type": "GUN",
     "name": { "str": "bastard gun" },
     "description": "Submachinegun, 9mm.  It's got poor accuracy, almost like a shotgun from hell.  That's why they call it a \"Bastard gun.\"  Accepts all 9mm magazines.",
@@ -2288,7 +2289,7 @@
   {
     "id": "UPS_off",
     "copy-from": "UPS_off",
-    "type": "TOOL",
+    "type": "TOOL_ARMOR",
     "category": "tools",
     "name": { "str": "UPS", "str_pl": "UPS's" },
     "weight": "200 g",
@@ -2315,16 +2316,18 @@
         ]
       ]
     ],
+    "covers": [  ],
     "magazine_well": "2000 ml"
   },
   {
     "id": "adv_UPS_off",
     "copy-from": "adv_UPS_off",
-    "type": "TOOL",
+    "type": "TOOL_ARMOR",
     "category": "tools",
     "name": { "str": "advanced UPS", "str_pl": "advanced UPS's" },
     "weight": "150 g",
     "volume": "150 ml",
+    "covers": [  ],
     "max_charges": 5000
   },
   {

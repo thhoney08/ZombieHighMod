@@ -1,5 +1,20 @@
 [
   {
+    "id": "nested_sten",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "sten", "charges-min": 0, "charges-max": 32 },
+      { "item": "stenmag" },
+      { "item": "stenmag", "prob": 30 },
+      { "item": "survivor9mm_mag_beeg", "prob": 20 },
+      { "item": "survivor9mm_mag", "prob": 30 },
+      { "group": "on_hand_9mm" }
+    ]
+  },
+  {
     "type": "item_group",
     "id": "ear_protection",
     "//": "used in shooting_range.",

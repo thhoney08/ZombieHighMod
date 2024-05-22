@@ -72,6 +72,24 @@
     ]
   },
   {
+    "result": "marble_sniper_gun",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "mechanics",
+    "skills_required": [ [ "fabrication", 4 ] ],
+    "difficulty": 5,
+    "time": "60 m",
+    "autolearn": true,
+    "components": [
+      [ [ "hand_pump", 1 ] ],
+      [ [ "pipe", 2 ] ],
+      [ [ "duct_tape", 300 ], [ "superglue", 3 ] ],
+      [ [ "2x4", 2 ], [ "stick", 2 ] ],
+      [ [ "metal_tank_little", 1 ] ] 
+    ]
+  },
+  {
     "result": "marble_pump_gun",
     "type": "recipe",
     "category": "CC_WEAPON",
@@ -4560,6 +4578,30 @@
       [ [ "broken_iceturret", 1 ] ],
       [ [ "frame", 1 ] ],
       [ [ "medium_storage_battery", 1 ] ]
+    ]
+  },
+  {
+    "result": "dynamite_long",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "cooking",
+    "difficulty": 7,
+    "time": "10 m",
+    "book_learn": [ [ "textbook_anarch", 5 ], [ "adv_chemistry", 6 ], [ "textbook_chemistry", 6 ] ],
+    "qualities": [ { "id": "CHEM", "level": 2 } ],
+    "tools": [ [ [ "surface_heat", 25, "LIST" ] ] ],
+    "components": [
+      [ [ "paper", 6 ], [ "rolling_paper", 36 ] ],
+      [ [ "acid", 2 ], [ "chem_sulphuric_acid", 2 ], [ "chem_nitric_acid", 2 ] ],
+      [ [ "ammonia", 1 ], [ "chem_ethanol", 250 ], [ "denat_alcohol", 250 ] ],
+      [
+        [ "soap", 3 ],
+        [ "edible_tallow_lard", 2, "LIST" ],
+        [ "tallow_tainted", 2 ],
+        [ "cooking_oil", 16 ],
+        [ "cooking_oil2", 16 ]
+      ]
     ]
   }
 ]

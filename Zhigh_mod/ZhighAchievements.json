@@ -1,0 +1,62 @@
+[
+  {
+    "id": "num_avatar_bots_kills",
+    "type": "event_statistic",
+    "stat_type": "count",
+    "event_transformation": "avatar_bots_kills",
+    "description": { "str": "robot killed", "str_pl": "robots killed" }
+  },
+  {
+    "id": "avatar_bots_kills",
+    "type": "event_transformation",
+    "event_transformation": "avatar_species_kills",
+    "value_constraints": { "species": { "equals": "ROBOT" } }
+  },
+  {
+    "id": "num_avatar_bugs_kills",
+    "type": "event_statistic",
+    "stat_type": "count",
+    "event_transformation": "avatar_bugs_kills",
+    "description": { "str": "bug killed", "str_pl": "bugs killed" }
+  },
+  {
+    "id": "avatar_bugs_kills",
+    "type": "event_transformation",
+    "event_transformation": "avatar_species_kills",
+    "value_constraints": { "species": { "equals": "INSECT" } }
+  },
+  {
+    "id": "achievement_kill_bots",
+    "type": "achievement",
+    "name": { "str": "[Combat] Rise of the Machines" },
+    "kill_requirements": [ { "species": "ROBOT", "is": ">=", "count": 1 } ],
+    "description": "Kill a robot",
+    "requirements": [ { "event_statistic": "num_avatar_bots_kills", "is": "anything" } ]
+  },
+  {
+    "id": "achievement_kill_bots_50",
+    "type": "achievement",
+    "name": { "str": "[Combat] The Salvation" },
+    "hidden_by": [ "achievement_kill_bots" ],
+    "kill_requirements": [ { "species": "ROBOT", "is": ">=", "count": 50 } ],
+    "description": "Kill 50 robots",
+    "requirements": [ { "event_statistic": "num_avatar_bots_kills", "is": "anything" } ]
+  },
+  {
+    "id": "achievement_kill_bugs",
+    "type": "achievement",
+    "name": { "str": "[Combat] NEXT LEVEL" },
+    "kill_requirements": [ { "species": "INSECT", "is": ">=", "count": 1 } ],
+    "description": "Kill a bug",
+    "requirements": [ { "event_statistic": "num_avatar_bugs_kills", "is": "anything" } ]
+  },
+  {
+    "id": "achievement_kill_bugs_50",
+    "type": "achievement",
+    "name": { "str": "[Combat] FULL FORCE" },
+    "hidden_by": [ "achievement_kill_bugs" ],
+    "kill_requirements": [ { "species": "INSECT", "is": ">=", "count": 50 } ],
+    "description": "Kill 50 bugs",
+    "requirements": [ { "event_statistic": "num_avatar_bugs_kills", "is": "anything" } ]
+  }
+]
