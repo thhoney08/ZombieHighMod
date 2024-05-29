@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zhigh_Mod\n"
-"POT-Creation-Date: 2024-05-22 19:58+0900\n"
+"POT-Creation-Date: 2024-05-29 10:00+0900\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -3301,6 +3301,10 @@ msgid_plural "makeshift chemical throwers"
 msgstr[0] "급조 화학약품 살포기"
 
 #: .\ZhighItemRemake.json
+msgid "spray"
+msgstr "분사"
+
+#: .\ZhighItemRemake.json
 msgid "pressurized chemical tank"
 msgid_plural "pressurized chemical tanks"
 msgstr[0] "가압된 화학탱크"
@@ -5659,6 +5663,18 @@ msgstr[0] "좀비 자폭병"
 #: .\ZhighMonsters.json
 msgid "A decaying zombie that detonates violently when it nears its target.  Its explosion causes severe damage and attracts other zombies."
 msgstr "목표물에 가까워지면 격렬하게 폭발하는 썩어가는 좀비입니다.  폭발하면 심각한 피해를 입히고 다른 좀비를 끌어들입니다."
+
+#: .\ZhighMonsters.json
+msgid "spotter zombie"
+msgid_plural "spotter zombies"
+msgstr[0] "관측자 좀비"
+
+#. ~ Description for {'str': 'spotter zombie'}
+#: .\ZhighMonsters.json
+msgid ""
+"This specialized undead has enhanced vision and agility, often found perched on high vantage points.  Spotter Zombies alert hordes to survivors' locations by emitting piercing screams, making them a top priority for "
+"elimination."
+msgstr "이 특수 언데드는 시야와 민첩성이 강화되어 있으며, 높은 지점에서 자주 발견됩니다.  관측자 좀비는 날카로운 비명을 지르며 생존자의 위치를 다른 좀비들에게 알려주기 때문에 제거해야 할 최우선 순위 좀비입니다."
 
 #: .\ZhighMonsters.json
 msgid "water turret"
@@ -10270,6 +10286,14 @@ msgstr "<color_light_green>좀비 고등학교 모드</color>"
 msgid "Add a weird school which includes quests, killing zombies, and moar, still WIP."
 msgstr "퀘스트와 좀비 죽이는 것을 포함한 기묘한 학교를 추가하며 현재진행형으로 만드는 중입니다."
 
+#: .\ZhighNpcs\ZhighBandit2.json
+msgid "Raider"
+msgstr "레이더"
+
+#: .\ZhighNpcs\ZhighBandit2.json
+msgid "National Guard"
+msgstr "주방위군"
+
 #: .\ZhighNpcs\ZhighFactionsNpcs.json
 msgid "High School Survivors"
 msgstr "고등학교의 생존자"
@@ -13234,6 +13258,14 @@ msgstr "고등학교 정문"
 msgid "high school"
 msgstr "고등학교"
 
+#: .\ZhighPlaces\ZhighOfficeTower.json
+msgid "office tower"
+msgstr "오피스 타워"
+
+#: .\ZhighPlaces\ZhighOfficeTower.json
+msgid "open air"
+msgstr "야외"
+
 #: .\ZhighPlaces\ZhighPaintballV2.json
 msgid "Paintball field roof"
 msgstr "페인트볼장 옥상"
@@ -13529,7 +13561,7 @@ msgstr "금속 조각들로 개조된 고폭 수류탄으로, 스태프 슬링 �
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "shootable napalm grenade"
 msgid_plural "shootable napalm grenades"
-msgstr[0] "슬링 투척형 네이파 수류탄"
+msgstr[0] "슬링 투척형 네이팜 수류탄"
 
 #. ~ Description for {'str': 'shootable napalm grenade'}
 #: .\ZhighWeapons\ZhighAmmo.json
@@ -14662,6 +14694,16 @@ msgstr[0] "알루미늄 방망이"
 #: .\ZhighWeapons\ZhighMelee.json
 msgid "A black aluminum baseball bat, lighter than a wooden bat and a little easier to swing as a result."
 msgstr "검은색 알루미늄 재질 야구방망이.  나무 야구방망이보다 가볍기 때문에 조금 더 휘두르기 쉽습니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "breaching ram"
+msgid_plural "breaching rams"
+msgstr[0] "브리칭 램"
+
+#. ~ Description for {'str': 'breaching ram'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "A heavy beam, used in breaching fortifications.  This unwieldy tool is meant to break concrete, rock, brick, anything really.  The only drawback is that it is unwieldy and very, very heavy!"
+msgstr "요새와 같은 것들을 뚫는 데 사용되는 무거운 빔입니다.  이 다루기 힘든 도구는 콘크리트, 바위, 벽돌 등 무엇이든 깨뜨릴 수 있습니다.  유일한 단점은 다루기 힘들고 매우 무겁다는 것입니다!"
 
 #: .\ZhighWeapons\ZhighMelee.json
 msgid "rebar tonfa"
