@@ -1119,7 +1119,54 @@
       [ "signal_supply_flare", 3 ],
       [ "helmet_maska", 5 ],
       [ "helmet_maska_raised", 5 ],
+      [ "breachingRam", 25 ],
       [ "swat_shield", 15 ]
+    ]
+  },
+  {
+    "id": "cop_armory",
+    "type": "item_group",
+    "magazine": 100,
+    "subtype": "distribution",
+    "entries": [
+      { "group": "ammo_cop", "prob": 80 },
+      { "group": "guns_cop", "prob": 100 },
+      { "group": "mags_cop", "prob": 40 },
+      { "group": "ammo_swat", "prob": 20 },
+      { "group": "guns_swat", "prob": 20 },
+      { "group": "mags_swat", "prob": 20 },
+      { "item": "shield_riot", "prob": 20 },
+      { "item": "breachingRam", "prob": 20 },
+      { "item": "shield_ballistic", "prob": 40 },
+      { "item": "swat_shield", "prob": 15 },
+      { "item": "survnote", "prob": 1 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "cop_gear",
+    "items": [
+      [ "1st_aid", 30 ],
+      [ "armor_riot", 20 ],
+      [ "airhorn", 5 ],
+      [ "bandages", 20 ],
+      [ "tacvest", 5 ],
+      [ "heavy_flashlight", 35 ],
+      [ "holster", 25 ],
+      [ "shoulder_holster", 10 ],
+      [ "kevlar", 35 ],
+      [ "bholster", 3 ],
+      [ "legpouch_large", 5 ],
+      [ "pocket_firstaid", 10 ],
+      [ "police_belt", 20 ],
+      [ "rope_30", 5 ],
+      [ "shield_riot", 4 ],
+      [ "shield_ballistic", 3 ],
+      [ "breachingRam", 2 ],
+      [ "swat_shield", 1 ],
+      [ "sm_extinguisher", 5 ],
+      [ "two_way_radio", 30 ],
+      [ "whistle", 5 ]
     ]
   },
   {

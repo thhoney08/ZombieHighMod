@@ -2235,6 +2235,9 @@
     "copy-from": "chemical_thrower",
     "type": "GUN",
     "name": { "str": "makeshift chemical thrower" },
+    "range": 18,
+    "modes": [ [ "DEFAULT", "spray", 5 ] ],
+    "ranged_damage": { "damage_type": "bash", "amount": 1, "armor_penetration": 50 },
     "flags": [ "NEVER_JAMS", "NON_FOULING" ]
   },
   {
