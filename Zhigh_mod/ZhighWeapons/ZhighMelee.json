@@ -662,6 +662,21 @@
     "qualities": [ [ "HAMMER", 1 ] ]
   },
   {
+    "id": "breachingRam",
+    "type": "GENERIC",
+    "copy-from": "hammer_sledge",
+    "name": { "str": "breaching ram" },
+    "description": "A heavy beam, used in breaching fortifications.  This unwieldy tool is meant to break concrete, rock, brick, anything really.  The only drawback is that it is unwieldy and very, very heavy!",
+    "weight": "16500 g",
+    "looks_like": "LAW_Packed",
+    "techniques": [ "WBLOCK_1", "BRUTAL", "WIDE" ],
+    "volume": "2300 ml",
+    "bashing": 180,
+    "to_hit": -8,
+    "price": "240 USD",
+    "price_postapoc": "750 cent"
+  },
+  {
     "id": "tonfa_rebar",
     "weapon_category": [ "TONFAS", "HAND_AXES" ],
     "type": "GENERIC",
