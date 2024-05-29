@@ -522,7 +522,7 @@
     "type": "TOOL",
     "name": { "str": "attack RC (on)", "str_pl": "attack RCs (on)" },
     "description": "This remote-controlled car is on, and draining its batteries just like a real electric car!  Use a remote control to drive it around.",
-    "turns_per_charge": 1,
+    "turns_per_charge": 5,
 	"emits": [ "emit_shock_cloud" ],
     "use_action": {
       "type": "transform",
@@ -533,6 +533,110 @@
       "need_charges_msg": "The attack RC's batteries are dead."
     },
     "flags": [ "RADIO_CONTROLLED", "RADIOSIGNAL_2", "TRADER_AVOID" ]
+  },
+  {
+    "id": "smk_car",
+    "looks_like": "atk_car",
+    "copy-from": "radio_car_base",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "smoke RC" },
+    "description": "A remote-controlled car.  Fun for young and old alike.  This one has been modified and can be used as a weapon.",
+    "symbol": "#",
+    "ammo": "battery",
+    "charges_per_use": 1,
+    "proportional": { "weight": 0.73, "volume": 0.75, "price": 0.8 },
+    "use_action": {
+      "type": "transform",
+      "msg": "You turn the smoke RC on.",
+      "target": "smk_car_on",
+      "active": true,
+      "need_charges": 1,
+      "need_charges_msg": "The smoke RC's batteries are dead."
+    },
+    "magazines": [ 
+     [ "battery", 
+      [ "light_minus_disposable_cell", 
+        "light_minus_battery_cell", 
+        "light_minus_atomic_battery_cell",
+        "medium_battery_cell",
+        "medium_plus_battery_cell",
+        "medium_atomic_battery_cell",
+        "medium_disposable_cell" 
+      ] 
+     ] 
+    ],
+    "flags": [ "RADIOSIGNAL_3" ]
+  },
+  {
+    "id": "smk_car_on",
+    "copy-from": "smk_car",
+    "type": "TOOL",
+    "name": { "str": "smoke RC (on)", "str_pl": "smoke RCs (on)" },
+    "description": "This remote-controlled car is on, and draining its batteries just like a real electric car!  Use a remote control to drive it around.",
+    "turns_per_charge": 5,
+	"emits": [ "emit_smoke_stream" ],
+    "use_action": {
+      "type": "transform",
+      "msg": "You turn the smoke RC off.",
+      "target": "smk_car",
+      "active": true,
+      "need_charges": 1,
+      "need_charges_msg": "The smoke RC's batteries are dead."
+    },
+    "flags": [ "RADIO_CONTROLLED", "RADIOSIGNAL_3", "TRADER_AVOID" ]
+  },
+  {
+    "id": "tox_car",
+    "looks_like": "atk_car",
+    "copy-from": "radio_car_base",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "toxin RC" },
+    "description": "A remote-controlled car.  Fun for young and old alike.  This one has been modified and can be used as a weapon.",
+    "symbol": "#",
+    "ammo": "battery",
+    "charges_per_use": 1,
+    "proportional": { "weight": 0.73, "volume": 0.75, "price": 0.8 },
+    "use_action": {
+      "type": "transform",
+      "msg": "You turn the toxin RC on.",
+      "target": "tox_car_on",
+      "active": true,
+      "need_charges": 1,
+      "need_charges_msg": "The toxin RC's batteries are dead."
+    },
+    "magazines": [ 
+     [ "battery", 
+      [ "light_minus_disposable_cell", 
+        "light_minus_battery_cell", 
+        "light_minus_atomic_battery_cell",
+        "medium_battery_cell",
+        "medium_plus_battery_cell",
+        "medium_atomic_battery_cell",
+        "medium_disposable_cell" 
+      ] 
+     ] 
+    ],
+    "flags": [ "RADIOSIGNAL_1" ]
+  },
+  {
+    "id": "tox_car_on",
+    "copy-from": "tox_car",
+    "type": "TOOL",
+    "name": { "str": "toxin RC (on)", "str_pl": "toxin RCs (on)" },
+    "description": "This remote-controlled car is on, and draining its batteries just like a real electric car!  Use a remote control to drive it around.",
+    "turns_per_charge": 5,
+	"emits": [ "emit_toxic_blast" ],
+    "use_action": {
+      "type": "transform",
+      "msg": "You turn the toxin RC off.",
+      "target": "tox_car",
+      "active": true,
+      "need_charges": 1,
+      "need_charges_msg": "The toxin RC's batteries are dead."
+    },
+    "flags": [ "RADIO_CONTROLLED", "RADIOSIGNAL_1", "TRADER_AVOID" ]
   },
   {
     "id": "penBlade",
