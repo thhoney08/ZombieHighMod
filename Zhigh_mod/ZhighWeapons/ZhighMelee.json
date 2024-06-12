@@ -496,23 +496,6 @@
     ]
   },
   {
-    "type": "GENERIC",
-    "id": "shuriken",
-    "category": "weapons",
-    "price": "52 USD",
-    "price_postapoc": "5 USD",
-    "name": { "str": "shuriken", "str_pl": "shurikens" },
-    "symbol": ";",
-    "color": "light_gray",
-    "description": "A thin and flat knife made for throwing.  Its ineffective cutting edge and odd shape makes it unsuitable for use as a tool.",
-    "material": "steel",
-    "volume": "150 ml",
-    "weight": "168 g",
-    "bashing": 1,
-    "cutting": 10,
-    "thrown_damage": [ { "damage_type": "cut", "amount": 14 } ]
-  },
-  {
     "id": "stungun",
     "type": "TOOL",
     "category": "weapons",
@@ -688,5 +671,23 @@
     "cutting": 18,
     "flags": [ "STAB", "DURABLE_MELEE", "BELT_CLIP" ],
     "material": [ "steel" ]
+  },
+  {
+    "id": "jitte_weapon",
+    "type": "GENERIC",
+    "name": "jitte",
+    "description": "A pointed metal stick with a curved prong projecting from the handle.  It's primarily used for disarming opponents, and was used for enforcement in Japan.",
+    "weight": "975 g",
+    "volume": "850 ml",
+    "price": "320 USD",
+    "price_postapoc": "8 USD",
+    "weapon_category": [ "TONFAS" ],
+    "bashing": 16,
+    "material": [ "steel" ],
+    "looks_like": "sai_weapon",
+    "symbol": "/",
+    "color": "light_gray",
+    "techniques": [ "WBLOCK_2", "DEF_DISARM" ],
+    "flags": [ "STAB", "DURABLE_MELEE", "BELT_CLIP" ]
   }
 ]
