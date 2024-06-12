@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zhigh_Mod\n"
-"POT-Creation-Date: 2024-05-29 10:00+0900\n"
+"POT-Creation-Date: 2024-06-12 09:52+0900\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -2163,6 +2163,25 @@ msgstr "석궁에 장착하는 용도의 수제작 힘줄 활대 보강물입니
 msgid "mechanism"
 msgstr "내부구조"
 
+#: .\ZhighGunmods.json
+msgid "pebble conversion kit"
+msgid_plural "pebble conversion kits"
+msgstr[0] "조약돌 컨버전 키트"
+
+#: .\ZhighGunmods.json
+msgid "Replacing several key parts of a paintball firearm converts it to a pebble firearm.  The conversion results in a slight reduction to accuracy and damage."
+msgstr "페인트볼 화기의 일부 부분을 개조해서 조약돌을 발사할 수 있게 만듭니다.  컨버전을 하게 되면 명중률과 피해가 조금 깎입니다."
+
+#: .\ZhighGunmods.json
+msgid "axe bayonet"
+msgid_plural "axe bayonets"
+msgstr[0] "도끼 총검"
+
+#. ~ Description for {'str': 'axe bayonet'}
+#: .\ZhighGunmods.json
+msgid "A axe bayonet is a large slashing weapon that can be attached to the front of a firearm or crossbow converting it into an axe."
+msgstr "도끼 총검은 쇠뇌 또는 화기 앞에 긴 도끼 형태로 장착하여 넓게 휘두를 수 있는 무기입니다."
+
 #: .\ZhighItemRemake.json
 msgid "multi-tool"
 msgid_plural "multi-tools"
@@ -2627,7 +2646,7 @@ msgstr "트렌치 나이프를 다시 쥐어, 너클처럼 쓰기 시작했습�
 #: .\ZhighItemRemake.json
 msgid "trench knife (knuckleduster)"
 msgid_plural "trench knives (knuckleduster)"
-msgstr[0] "트렌치 나이프 (너크)"
+msgstr[0] "트렌치 나이프 (너클)"
 
 #. ~ Use action msg for {'str': 'trench knife (knuckleduster)', 'str_pl':
 #. 'trench knives (knuckleduster)'}.
@@ -3732,6 +3751,8 @@ msgid "The attack RC's batteries are dead."
 msgstr "공격용 RC의 배터리가 다 닳았다."
 
 #. ~ Description for {'str': 'attack RC'}
+#. ~ Description for {'str': 'smoke RC'}
+#. ~ Description for {'str': 'toxin RC'}
 #: .\ZhighItems.json
 msgid "A remote-controlled car.  Fun for young and old alike.  This one has been modified and can be used as a weapon."
 msgstr "원격 조종식 장난감 자동차. 어린이든 어른이든 재밌게 가지고 논다.  이건 개조가 되어 무기로도 사용할 수 있다."
@@ -3748,9 +3769,65 @@ msgid "You turn the attack RC off."
 msgstr "공격용 RC의 전원을 껐다."
 
 #. ~ Description for {'str': 'attack RC (on)', 'str_pl': 'attack RCs (on)'}
+#. ~ Description for {'str': 'smoke RC (on)', 'str_pl': 'smoke RCs (on)'}
+#. ~ Description for {'str': 'toxin RC (on)', 'str_pl': 'toxin RCs (on)'}
 #: .\ZhighItems.json
 msgid "This remote-controlled car is on, and draining its batteries just like a real electric car!  Use a remote control to drive it around."
 msgstr "원격 조종식 장난감 자동차.  현재 작동 중이며 진짜 전기 자동차처럼 배터리를 소모하고 있다!  원격 조종으로 움직일 수 있다."
+
+#: .\ZhighItems.json
+msgid "smoke RC"
+msgid_plural "smoke RCs"
+msgstr[0] "연막용 RC"
+
+#. ~ Use action msg for {'str': 'smoke RC'}.
+#: .\ZhighItems.json
+msgid "You turn the smoke RC on."
+msgstr "연막용 RC의 전원을 켰다."
+
+#. ~ Use action need_charges_msg for {'str': 'smoke RC'}.
+#. ~ Use action need_charges_msg for {'str': 'smoke RC (on)', 'str_pl': 'smoke
+#. RCs (on)'}.
+#: .\ZhighItems.json
+msgid "The smoke RC's batteries are dead."
+msgstr "연막용 RC의 배터리가 다 닳았다."
+
+#: .\ZhighItems.json
+msgid "smoke RC (on)"
+msgid_plural "smoke RCs (on)"
+msgstr[0] "연막용 RC (켜짐)"
+
+#. ~ Use action msg for {'str': 'smoke RC (on)', 'str_pl': 'smoke RCs (on)'}.
+#: .\ZhighItems.json
+msgid "You turn the smoke RC off."
+msgstr "연막용 RC의 전원을 껐다."
+
+#: .\ZhighItems.json
+msgid "toxin RC"
+msgid_plural "toxin RCs"
+msgstr[0] "독가스 RC"
+
+#. ~ Use action msg for {'str': 'toxin RC'}.
+#: .\ZhighItems.json
+msgid "You turn the toxin RC on."
+msgstr "독가스 RC의 전원을 켰다."
+
+#. ~ Use action need_charges_msg for {'str': 'toxin RC'}.
+#. ~ Use action need_charges_msg for {'str': 'toxin RC (on)', 'str_pl': 'toxin
+#. RCs (on)'}.
+#: .\ZhighItems.json
+msgid "The toxin RC's batteries are dead."
+msgstr "독가스 RC의 배터리가 다 닳았다."
+
+#: .\ZhighItems.json
+msgid "toxin RC (on)"
+msgid_plural "toxin RCs (on)"
+msgstr[0] "독가스 RC (켜짐)"
+
+#. ~ Use action msg for {'str': 'toxin RC (on)', 'str_pl': 'toxin RCs (on)'}.
+#: .\ZhighItems.json
+msgid "You turn the toxin RC off."
+msgstr "독가스 RC의 전원을 껐다."
 
 #: .\ZhighItems.json
 msgid "pen blade"
@@ -3965,6 +4042,7 @@ msgstr[0] "펜 수류탄"
 #. ~ Use action menu_text for {'str': 'anti-tank grenade'}.
 #. ~ Use action menu_text for {'str': 'napalm grenade'}.
 #. ~ Use action menu_text for {'str': 'goo grenade'}.
+#. ~ Use action menu_text for {'str': 'improvised nail bomb'}.
 #: .\ZhighItems.json .\ZhighWeapons\ZhighThrowing.json
 msgid "Pull pin"
 msgstr "핀 당기기"
@@ -3990,6 +4068,7 @@ msgstr[0] "펜 수류탄 (켜짐)"
 #. ~ Use action no_deactivate_msg for {'str': 'active anti-tank grenade'}.
 #. ~ Use action no_deactivate_msg for {'str': 'active napalm grenade'}.
 #. ~ Use action no_deactivate_msg for {'str': 'active goo grenade'}.
+#. ~ Use action no_deactivate_msg for {'str': 'active improvised nail bomb'}.
 #: .\ZhighItems.json .\ZhighWeapons\ZhighThrowing.json
 msgid "You've already pulled the %s's pin; try throwing it instead."
 msgstr "%s의 핀이 이미 뽑혀, 곧 터질것이니 얼른 던지는 것이 좋다."
@@ -9387,6 +9466,244 @@ msgstr "사냥의 전율... 그리고 약속된 대가.  물론 그 캐릭터로
 
 #: .\ZhighProfession.json
 msgctxt "profession_male"
+msgid "Student - Sapper"
+msgstr "학생 - 새퍼"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Sapper"
+msgstr "학생 - 새퍼"
+
+#. ~ Profession (male Student - Sapper) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid "You literally grabbed anything and now you are the one who builds things and destroys things."
+msgstr "문자 그대로 손에 잡히는 것들을 아무거나 들었더니 이제 당신이 오만가지를 만들고 파괴하는 사람이 되었습니다."
+
+#. ~ Profession (female Student - Sapper) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid "You literally grabbed anything and now you are the one who builds things and destroys things."
+msgstr "문자 그대로 손에 잡히는 것들을 아무거나 들었더니 이제 당신이 오만가지를 만들고 파괴하는 사람이 되었습니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Guerilla"
+msgstr "학생 - 게릴라"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Guerilla"
+msgstr "학생 - 게릴라"
+
+#. ~ Profession (male Student - Guerilla) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid "Crap hits the fan, you hit the zeds.  Damn, hit and run sounds real good this time."
+msgstr "개판인 상황은 터졌고, 당신은 좀비의 머리를 터뜨리죠.  젠장, 치고 빠지기라는 게 정말 좋은 아이디어인 것 같네요."
+
+#. ~ Profession (female Student - Guerilla) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid "Crap hits the fan, you hit the zeds.  Damn, hit and run sounds real good this time."
+msgstr "개판인 상황은 터졌고, 당신은 좀비의 머리를 터뜨리죠.  젠장, 치고 빠지기라는 게 정말 좋은 아이디어인 것 같네요."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Ninja"
+msgstr "학생 - 닌자"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Kunoichi"
+msgstr "학생 - 쿠노이치"
+
+#. ~ Profession (male Student - Ninja) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid "After you read a couple of ninja-related books, you became obsessed with them and practiced some tools of them.  Guess now is the right time to use those tips, gears, and tricks.  Death to the ninja."
+msgstr "닌자 관련 도서들 몇 권을 읽은 후, 닌자에 푹 빠져서는 그들과 관련된 도구들을 연습해봤습니다.  지금이야 말로 거기에서 배운 조언들과 장비들, 그리고 기술들을 사용하기에 알맞은 상황일 겁니다.  닌자에게 죽음을."
+
+#. ~ Profession (female Student - Kunoichi) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid "After you read a couple of ninja-related books, you became obsessed with them and practiced some tools of them.  Guess now is the right time to use those tips, gears, and tricks.  Death to the ninja."
+msgstr "닌자 관련 도서들 몇 권을 읽은 후, 닌자에 푹 빠져서는 그들과 관련된 도구들을 연습해봤습니다.  지금이야 말로 거기에서 배운 조언들과 장비들, 그리고 기술들을 사용하기에 알맞은 상황일 겁니다.  닌자에게 죽음을."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Pistol Hunter"
+msgstr "권총 사냥꾼"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Pistol Hunter"
+msgstr "권총 사냥꾼"
+
+#. ~ Profession (male Pistol Hunter) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"Ever since you were a child you loved hunting, and you soon took a liking to the challenge of hunting with a pistol.  Why, if the world ended there's nothing you'd want at your side more than your trusty pistol.  So when it "
+"did, you made sure to bring it along."
+msgstr ""
+"어린 시절부터 당신은 사격을 좋아했으며, 이내 권총 사격을 좋아하게 되었습니다.  만일 세상에 종말이 닥쳐온다고 해도 당신의 믿음직한 권총을 대신할 수 있는 것은 없을 것으로 생각합니다.  그래서 실제로 종말이 닥쳐오자 권총을 가져왔"
+"습니다."
+
+#. ~ Profession (female Pistol Hunter) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"Ever since you were a child you loved hunting, and you soon took a liking to the challenge of hunting with a pistol.  Why, if the world ended there's nothing you'd want at your side more than your trusty pistol.  So when it "
+"did, you made sure to bring it along."
+msgstr ""
+"어린 시절부터 당신은 사격을 좋아했으며, 이내 권총 사격을 좋아하게 되었습니다.  만일 세상에 종말이 닥쳐온다고 해도 당신의 믿음직한 권총을 대신할 수 있는 것은 없을 것으로 생각합니다.  그래서 실제로 종말이 닥쳐오자 권총을 가져왔"
+"습니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Revolver Hunter"
+msgstr "리볼버 사냥꾼"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Revolver Hunter"
+msgstr "리볼버 사냥꾼"
+
+#. ~ Profession (male Revolver Hunter) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"Ever since you were a child you loved hunting, and you soon took a liking to the challenge of hunting with a revolver.  Why, if the world ended there's nothing you'd want at your side more than your trusty pistol.  So when "
+"it did, you made sure to bring it along."
+msgstr ""
+"어린 시절부터 당신은 사격을 좋아했으며, 이내 리볼버 사격을 좋아하게 되었습니다.  만일 세상에 종말이 닥쳐온다고 해도 당신의 믿음직한 리볼버를 대신할 수 있는 것은 없을 것으로 생각합니다.  그래서 실제로 종말이 닥쳐오자 리볼버를 "
+"가져왔습니다."
+
+#. ~ Profession (female Revolver Hunter) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"Ever since you were a child you loved hunting, and you soon took a liking to the challenge of hunting with a revolver.  Why, if the world ended there's nothing you'd want at your side more than your trusty pistol.  So when "
+"it did, you made sure to bring it along."
+msgstr ""
+"어린 시절부터 당신은 사격을 좋아했으며, 이내 리볼버 사격을 좋아하게 되었습니다.  만일 세상에 종말이 닥쳐온다고 해도 당신의 믿음직한 리볼버를 대신할 수 있는 것은 없을 것으로 생각합니다.  그래서 실제로 종말이 닥쳐오자 리볼버를 "
+"가져왔습니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Double Barrel Shotgun Hunter"
+msgstr "쌍총열 산탄총 사냥꾼"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Double Barrel Shotgun Hunter"
+msgstr "쌍총열 산탄총 사냥꾼"
+
+#. ~ Profession (male Double Barrel Shotgun Hunter) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"Ever since you were a child you loved hunting, and you soon took a liking to the challenge of hunting with a shotgun.  Why, if the world ended there's nothing you'd want at your side more than your trusty shotgun.  So when "
+"it did, you made sure to bring it along."
+msgstr ""
+"어린 시절부터 당신은 사격을 좋아했으며, 이내 산탄총 사격을 좋아하게 되었습니다.  만일 세상에 종말이 닥쳐온다고 해도 당신의 믿음직한 산탄총을 대신할 수 있는 것은 없을 것으로 생각합니다.  그래서 실제로 종말이 닥쳐오자 산탄총을 "
+"가져왔습니다."
+
+#. ~ Profession (female Double Barrel Shotgun Hunter) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"Ever since you were a child you loved hunting, and you soon took a liking to the challenge of hunting with a shotgun.  Why, if the world ended there's nothing you'd want at your side more than your trusty shotgun.  So when "
+"it did, you made sure to bring it along."
+msgstr ""
+"어린 시절부터 당신은 사격을 좋아했으며, 이내 산탄총 사격을 좋아하게 되었습니다.  만일 세상에 종말이 닥쳐온다고 해도 당신의 믿음직한 산탄총을 대신할 수 있는 것은 없을 것으로 생각합니다.  그래서 실제로 종말이 닥쳐오자 산탄총을 "
+"가져왔습니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Small Game Rifle Hunter"
+msgstr "소구경 소총 사냥꾼"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Small Game Rifle Hunter"
+msgstr "소구경 소총 사냥꾼"
+
+#. ~ Profession (male Small Game Rifle Hunter) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"Ever since you were a child you loved hunting, and you soon took a liking to the challenge of hunting with a rifle.  Why, if the world ended there's nothing you'd want at your side more than your trusty rifle.  So when it "
+"did, you made sure to bring it along."
+msgstr ""
+"어린 시절부터 당신은 사격을 좋아했으며, 이내 소총 사격을 좋아하게 되었습니다.  만일 세상에 종말이 닥쳐온다고 해도 당신의 믿음직한 소총을 대신할 수 있는 것은 없을 것으로 생각합니다.  그래서 실제로 종말이 닥쳐오자 소총을 가져왔"
+"습니다."
+
+#. ~ Profession (female Small Game Rifle Hunter) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"Ever since you were a child you loved hunting, and you soon took a liking to the challenge of hunting with a rifle.  Why, if the world ended there's nothing you'd want at your side more than your trusty rifle.  So when it "
+"did, you made sure to bring it along."
+msgstr ""
+"어린 시절부터 당신은 사격을 좋아했으며, 이내 소총 사격을 좋아하게 되었습니다.  만일 세상에 종말이 닥쳐온다고 해도 당신의 믿음직한 소총을 대신할 수 있는 것은 없을 것으로 생각합니다.  그래서 실제로 종말이 닥쳐오자 소총을 가져왔"
+"습니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Elephant Gun Hunter"
+msgstr "엘리펀트 건 사냥꾼"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Elephant Gun Hunter"
+msgstr "엘리펀트 건 사냥꾼"
+
+#. ~ Profession (male Elephant Gun Hunter) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"Ever since you were a child you loved hunting, and you soon took a liking to the challenge of hunting with a rifle.  Why, if the world ended there's nothing you'd want at your side more than your trusty rifle.  So when it "
+"did, you made sure to bring the most expensive one along."
+msgstr ""
+"어린 시절부터 당신은 사격을 좋아했으며, 이내 소총 사격을 좋아하게 되었습니다.  만일 세상에 종말이 닥쳐온다고 해도 당신의 믿음직한 소총을 대신할 수 있는 것은 없을 것으로 생각합니다.  그래서 실제로 종말이 닥쳐오자 제일 값비싼 "
+"소총을 가져왔습니다."
+
+#. ~ Profession (female Elephant Gun Hunter) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"Ever since you were a child you loved hunting, and you soon took a liking to the challenge of hunting with a rifle.  Why, if the world ended there's nothing you'd want at your side more than your trusty rifle.  So when it "
+"did, you made sure to bring the most expensive one along."
+msgstr ""
+"어린 시절부터 당신은 사격을 좋아했으며, 이내 소총 사격을 좋아하게 되었습니다.  만일 세상에 종말이 닥쳐온다고 해도 당신의 믿음직한 소총을 대신할 수 있는 것은 없을 것으로 생각합니다.  그래서 실제로 종말이 닥쳐오자 제일 값비싼 "
+"소총을 가져왔습니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Old Veteran"
+msgstr "늙은 베테랑"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Old Veteran"
+msgstr "늙은 베테랑"
+
+#. ~ Profession (male Old Veteran) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid "You've been through hell once before.  Hopefully those weekend range trips have kept your skills sharp."
+msgstr "지옥을 한번 경험한 적이 있었습니다.  주말마다 다니던 장거리 여행이 당신의 실력을 유지시켰기를 바랍시다."
+
+#. ~ Profession (female Old Veteran) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid "You've been through hell once before.  Hopefully those weekend range trips have kept your skills sharp."
+msgstr "지옥을 한번 경험한 적이 있었습니다.  주말마다 다니던 장거리 여행이 당신의 실력을 유지시켰기를 바랍시다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
 msgid "Feral Slasher"
 msgstr "이성을 잃은 슬래셔"
 
@@ -9726,6 +10043,44 @@ msgstr "세상의 끝이 도래했을 때, 이 혼란스러운 시위 속에서 
 msgctxt "prof_desc_female"
 msgid "The day when the world ends came, and you grabbed whatever you could get your hands on during a crazy riot - some nets and a forked spear.  Ave Imperator, Morituri te salutant."
 msgstr "세상의 끝이 도래했을 때, 이 혼란스러운 시위 속에서 손에 잡히는 것은 무엇이든 쥐었습니다 - 그물과 삼지창이죠.  황제 폐하 만세, 곧 죽을 자들이 인사 올립니다."
+
+#. ~ Name for scenario 'Gone hunting' for a male character
+#: .\ZhighSenarios.json
+msgctxt "scenario_male"
+msgid "Gone hunting"
+msgstr "사냥 가기"
+
+#. ~ Name for scenario 'Gone hunting' for a female character
+#: .\ZhighSenarios.json
+msgctxt "scenario_female"
+msgid "Gone hunting"
+msgstr "사냥 가기"
+
+#. ~ Description for scenario 'Gone hunting' for a male character.
+#: .\ZhighSenarios.json
+msgctxt "scen_desc_male"
+msgid "You went out of town to do what you love to do, hunting!"
+msgstr "동네를 떠나서 당신이 제일 좋아하는 일을 하려고 합니다, 사냥이죠!"
+
+#. ~ Description for scenario 'Gone hunting' for a female character.
+#: .\ZhighSenarios.json
+msgctxt "scen_desc_female"
+msgid "You went out of town to do what you love to do, hunting!"
+msgstr "동네를 떠나서 당신이 제일 좋아하는 일을 하려고 합니다, 사냥이죠!"
+
+#. ~ Starting location for scenario 'Gone hunting'.
+#: .\ZhighSenarios.json
+msgctxt "start_name"
+msgid "Hunter's shack"
+msgstr "사냥꾼의 오두막"
+
+#: .\ZhighSenarios.json
+msgid "Hunting blind"
+msgstr "사냥 은신처"
+
+#: .\ZhighSenarios.json
+msgid "Swamp Shack"
+msgstr "늪지 오두막"
 
 #. ~ Name for scenario 'Challenge - Assault on Precinct Z' for a male
 #. character
@@ -13258,6 +13613,18 @@ msgstr "고등학교 정문"
 msgid "high school"
 msgstr "고등학교"
 
+#: .\ZhighPlaces\ZhighMetroBase.json .\ZhighPlaces\ZhighSubway.json .\ZhighPlaces\banditSubway.json
+msgid "subway station"
+msgstr "지하철"
+
+#: .\ZhighPlaces\ZhighMetroBase.json .\ZhighPlaces\ZhighSubway.json .\ZhighPlaces\banditSubway.json
+msgid "subway station (sewer level)"
+msgstr "지하철 (하수구 층)"
+
+#: .\ZhighPlaces\ZhighMetroBase.json .\ZhighPlaces\ZhighSubway.json .\ZhighPlaces\banditSubway.json
+msgid "subway station (underground level)"
+msgstr "지하철 (지하철도 층)"
+
 #: .\ZhighPlaces\ZhighOfficeTower.json
 msgid "office tower"
 msgstr "오피스 타워"
@@ -13277,18 +13644,6 @@ msgstr "페인트볼장"
 #: .\ZhighPlaces\ZhighStCabBase.json
 msgid "cabin basement"
 msgstr "지하"
-
-#: .\ZhighPlaces\ZhighSubway.json .\ZhighPlaces\banditSubway.json
-msgid "subway station"
-msgstr "지하철"
-
-#: .\ZhighPlaces\ZhighSubway.json .\ZhighPlaces\banditSubway.json
-msgid "subway station (sewer level)"
-msgstr "지하철 (하수구 층)"
-
-#: .\ZhighPlaces\ZhighSubway.json .\ZhighPlaces\banditSubway.json
-msgid "subway station (underground level)"
-msgstr "지하철 (지하철도 층)"
 
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "mininuke cannon shell"
@@ -13597,6 +13952,16 @@ msgstr[0] "슬링 투척형 다이너마이트, 긴 심지"
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "A long fuse dynamite modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range."
 msgstr "금속 조각들로 개조된 긴 심지의 다이너마이트로, 스태프 슬링 등을 사용해서 더 멀리까지 던질 수 있습니다."
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "shootable nail bomb"
+msgid_plural "shootable nail bombs"
+msgstr[0] "슬링 투척형 못 폭탄"
+
+#. ~ Description for {'str': 'shootable nail bomb'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "A nail bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range."
+msgstr "금속 조각들로 개조된 못 폭탄으로, 스태프 슬링 등을 사용해서 더 멀리까지 던질 수 있습니다."
 
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "acid paintball"
@@ -14599,16 +14964,6 @@ msgid "This is a medieval weapon consisting of a steel shaft tipped with a steel
 msgstr "철제 봉에 철제 창날을 단 중세 무기입니다.  무겁지만 쓸만합니다."
 
 #: .\ZhighWeapons\ZhighMelee.json
-msgid "shuriken"
-msgid_plural "shurikens"
-msgstr[0] "수리검"
-
-#. ~ Description for {'str': 'shuriken', 'str_pl': 'shurikens'}
-#: .\ZhighWeapons\ZhighMelee.json
-msgid "A thin and flat knife made for throwing.  Its ineffective cutting edge and odd shape makes it unsuitable for use as a tool."
-msgstr "투척용으로 만들어진 얇고 납작한 나이프.  칼날로 베기도 힘든 데다가 이상한 형태를 하고 있기 때문에 도구로서는 적합하지 않습니다."
-
-#: .\ZhighWeapons\ZhighMelee.json
 msgid "stungun"
 msgid_plural "stunguns"
 msgstr[0] "전기충격기"
@@ -14716,6 +15071,16 @@ msgid ""
 "A stout rebar tonfa handmade by a survivor.  Originally an Okinawan weapon, it consists of a stick with a perpendicular handle with a spike attached a third of the way down its length.  Could use as an improvised axe if "
 "needed, like that tough guy from a korean webtoon."
 msgstr "생존자가 수제작한 철골 경찰봉.  일본의 오키나와에서 유래한 무기, 삼분의 일 지점에 수직 손잡이가 달려있다.  한국 웹툰에 나온 그 캐릭터처럼 도끼같이 휘두를 수 있습니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "jitte"
+msgid_plural "jittes"
+msgstr[0] "짓테"
+
+#. ~ Description for jitte
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "A pointed metal stick with a curved prong projecting from the handle.  It's primarily used for disarming opponents, and was used for enforcement in Japan."
+msgstr "구부러진 갈래가 손잡이에서 뻗어나온 긴 쇠막대입니다.  주 용도는 상대방의 무장을 해제하는 것으로써, 일본에서 집행에 사용되었습니다."
 
 #: .\ZhighWeapons\ZhighRanged.json
 msgid "marble gun"
@@ -15598,6 +15963,28 @@ msgstr "단발 공압식 에어보우입니다.  탱크에 공기를 주입하�
 msgid "clink."
 msgstr "찰칵."
 
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "PKD Detective Special"
+msgid_plural "PKD Detective Specials"
+msgstr[0] "PKD 탐정 스페셜"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "This is a type of blaster that was a standard-issue handgun for the New England Police Department Blob Ruinner Unit.  Looks like it was constructed from parts of a revolver and a rifle."
+msgstr "뉴 잉글랜드 경찰 블롭 파괴 부의 제식 블라스터입니다.  리볼버와 라이플을 조합한 것과 같이 생겼습니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "railway rifle"
+msgid_plural "railway rifles"
+msgstr[0] "레일웨이 라이플"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"This is a rare, custom-made weapon that shoots steel rails at such a high velocity, they can sever body parts and pin them to walls.  The hypervelocity metal stake that it fires is accelerated to the point of spontaneous "
+"combustion by a Lorentz force generated by electromagnetic induction, powered by a standard UPS."
+msgstr ""
+"이 무기는 초고속으로 강철 레일을 발사하여 신체 부위를 절단하고 벽에 고정할 수 있는 희귀한 맞춤형 무기입니다.  이 무기가 발사하는 초고속 금속 말뚝은 전자기 유도에 의해 생성된 로렌츠 힘에 의해 자연 연소 지점까지 가속되며, 표준 "
+"UPS에 의해 전원이 공급됩니다."
+
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "spade throwing card"
 msgid_plural "spade throwing cards"
@@ -15730,6 +16117,8 @@ msgstr[0] "콜라 폭탄 (켜짐)"
 #. ~ Use action no_deactivate_msg for {'str': 'active cola bomb'}.
 #. ~ Use action no_deactivate_msg for {'str': 'long fuse dynamite (lit)',
 #. 'str_pl': 'long fuse dynamites (lit)'}.
+#. ~ Use action no_deactivate_msg for {'str': 'dynamite bundle (lit)',
+#. 'str_pl': 'dynamite bundles (lit)'}.
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "You've already lit the %s, try throwing it instead."
 msgstr "당신은 이미 %s를 작동시켰으니, 그 대신 던지세요."
@@ -15737,6 +16126,8 @@ msgstr "당신은 이미 %s를 작동시켰으니, 그 대신 던지세요."
 #. ~ Use action sound_msg for {'str': 'active cola bomb'}.
 #. ~ Use action sound_msg for {'str': 'long fuse dynamite (lit)', 'str_pl':
 #. 'long fuse dynamites (lit)'}.
+#. ~ Use action sound_msg for {'str': 'dynamite bundle (lit)', 'str_pl':
+#. 'dynamite bundles (lit)'}.
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "ssss..."
 msgstr "스스스스..."
@@ -15789,6 +16180,7 @@ msgstr[0] "고폭 수류탄 (켜짐)"
 #. ~ Use action sound_msg for {'str': 'active anti-tank grenade'}.
 #. ~ Use action sound_msg for {'str': 'active napalm grenade'}.
 #. ~ Use action sound_msg for {'str': 'active goo grenade'}.
+#. ~ Use action sound_msg for {'str': 'active improvised nail bomb'}.
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "Tick."
 msgstr "째깍."
@@ -15889,6 +16281,7 @@ msgid_plural "long fuse dynamites"
 msgstr[0] "다이너마이트, 긴 심지"
 
 #. ~ Use action menu_text for {'str': 'long fuse dynamite'}.
+#. ~ Use action menu_text for {'str': 'dynamite bundle'}.
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "Light fuse"
 msgstr "퓨즈에 불 붙이기"
@@ -15915,6 +16308,99 @@ msgstr[0] "다이너마이트, 긴 심지 (켜짐)"
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "The fuse on this dynamite is lit and hissing.  It'll explode any moment now."
 msgstr "이 다이너마이트의 도화선이 치직거리며 타고 있습니다.  금방이라도 폭발할 것 같습니다."
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "improvised nail bomb"
+msgid_plural "improvised nail bombs"
+msgstr[0] "급조 못 폭탄"
+
+#. ~ Use action msg for {'str': 'improvised nail bomb'}.
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "You pull the pin on the nail bomb."
+msgstr "못 폭탄의 핀을 당겼다."
+
+#. ~ Description for {'str': 'improvised nail bomb'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "This is an improvised nail bomb.  Use this item to pull the pin and light the fuse.  You will then have five turns before it explodes; throwing it would be a good idea."
+msgstr "급조 못 폭탄입니다.  사용하여 안전핀을 뽑고 도화선에 불을 당깁니다.  이후 폭발까지 5초가 걸리니, 던져버리는게 좋을겁니다."
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "active improvised nail bomb"
+msgid_plural "active improvised nail bombs"
+msgstr[0] "급조 못 폭탄 (켜짐)"
+
+#. ~ Description for {'str': 'active improvised nail bomb'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "This is an active nail bomb, and will explode any second now.  Better throw it!"
+msgstr "핀이 까진 못 폭탄, 곧 터질것이니 얼른 던지세요!"
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "shuriken"
+msgid_plural "shurikens"
+msgstr[0] "수리검"
+
+#. ~ Description for {'str': 'shuriken', 'str_pl': 'shurikens'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "A thin and flat knife made for throwing.  Its ineffective cutting edge and odd shape makes it unsuitable for use as a tool."
+msgstr "투척용으로 만들어진 얇고 납작한 나이프.  칼날로 베기도 힘든 데다가 이상한 형태를 하고 있기 때문에 도구로서는 적합하지 않습니다."
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "chakram"
+msgid_plural "chakrams"
+msgstr[0] "차크라"
+
+#. ~ Description for {'str': 'chakram', 'str_pl': 'chakrams'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "Meaning round or a circle in Sanskrit, this is round hoop with an outline of blade made for throwing.  Its ineffective cutting circular edge and odd shape makes it unsuitable for use as a tool."
+msgstr "둥글다나 원이라는 뜻의 산크리스트 어로, 투척용으로 만들어진 외부가 칼날인 둥근 고리입니다.  칼날로 베기도 힘든 데다가 이상한 형태를 하고 있기 때문에 도구로서는 적합하지 않습니다."
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "mambele"
+msgid_plural "mambeles"
+msgstr[0] "맘벨레"
+
+#. ~ Description for {'str': 'mambele', 'str_pl': 'mambeles'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "Looking like a deer's stag made in iron, this African weapon is made for throwing.  Its ineffective cutting edge and odd shape makes it unsuitable for use as a tool."
+msgstr "사슴의 뿔과 비슷한 모양의 투척용으로 만들어진 아프리카제의 금속 무기.  칼날로 베기도 힘든 데다가 이상한 형태를 하고 있기 때문에 도구로서는 적합하지 않습니다."
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "dynamite bundle"
+msgid_plural "dynamite bundles"
+msgstr[0] "다이너마이트 묶음"
+
+#. ~ Use action msg for {'str': 'dynamite bundle'}.
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "You light the dynamite bundle."
+msgstr "다이너마이트 묶음에 불을 붙였다."
+
+#. ~ Description for {'str': 'dynamite bundle'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid ""
+"These are several sticks of dynamites wrapped and attached with a fuse attached.  Use this item to light the fuse.  You will, of course, need a lighter or matches in your inventory to do this.  Shortly after lighting the "
+"fuse, this item will explode, so get away!"
+msgstr "긴 도화선이 달려있는 다이너마이트 몇 개를 묶은 것입니다.  이 물품을 사용하면 도화선에 불을 붙입니다.  불을 붙일 라이터나 성냥이 필요합니다.  도화선에 불을 붙이면 잠시 후 폭발하니, 도망치세요!"
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "dynamite bundle (lit)"
+msgid_plural "dynamite bundles (lit)"
+msgstr[0] "다이너마이트 묶음 (켜짐)"
+
+#. ~ Description for {'str': 'dynamite bundle (lit)', 'str_pl': 'dynamite
+#. bundles (lit)'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "The fuse on this dynamite bundle is lit and hissing.  It'll explode any moment now."
+msgstr "이 다이너마이트 묶음의 도화선이 치직거리며 타고 있습니다.  금방이라도 폭발할 것 같습니다."
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "throwing club"
+msgid_plural "throwing clubs"
+msgstr[0] "투척용 곤봉"
+
+#. ~ Description for {'str': 'throwing club'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "A stick carved into a shape suitable for throwing at a target, then added a rock as a weight.  Not a boomerang, so don't expect it to return to your hand."
+msgstr "목표를 향해 던지기 좋은 모양으로 깎아낸 뒤 돌을 무게추 삼아 단 막대기. 부메랑이 아니므로 다시 돌아오지는 않습니다."
 
 #: .\ZhighZeds\zed-animal.json
 msgid "jawed terror"
@@ -17091,6 +17577,9 @@ msgstr[0] "베테랑 생존자 좀비"
 #: .\ZhighZeds\zed_survivor.json
 msgid "This zombie once was a survivor like you, and a pretty good one at that.  Unfortunately they didn't make it, despite the custom-made, heavy armor pieces they wear and the gear that they are still lugging around."
 msgstr "한때 당신과 같은 생존자였으며 꽤 잘 살아온 것 같습니다.  불행히도, 수제작한 무거운 갑옷 쪼가리와 여전히 짊어지고 다니는 풍족한 장비에도 불구하고 안일사 당한 것 같습니다."
+
+#~ msgid "A long fuse nail bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range."
+#~ msgstr "금속 조각들로 개조된 못 폭탄으로, 스태프 슬링 등을 사용해서 더 멀리까지 던질 수 있습니다."
 
 #~ msgid "prisoner zombie"
 #~ msgid_plural "prisoner zombies"
