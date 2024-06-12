@@ -1,5 +1,21 @@
 [
   {
+    "id": "nested_pkdBlaster",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [ { "item": "pkdBlaster", "charges-min": 0, "charges-max": 5 }, { "group": "on_hand_223" }, { "group": "on_hand_223" } ]
+  },
+  {
+    "id": "everyday_pkdBlaster",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [ { "item": "pkdBlaster", "charges-min": 0, "charges-max": 5 }, { "group": "on_hand_223" } ]
+  },
+  {
     "id": "EmtGear_contents",
     "type": "item_group",
     "subtype": "collection",
@@ -685,9 +701,9 @@
       [ "flamable_arrow", 5 ],
       [ "bolt_explosive", 5 ],
       [ "arrow_exploding", 1 ],
-      [ "bb", 90 ],
-      [ "bbPlastic", 250 ],
-      [ "bbincen", 50 ],
+      [ "bb", 30 ],
+      [ "bbPlastic", 50 ],
+      [ "bbincen", 5 ],
       [ "bearingBig", 50 ],
       [ "sling_rubberball", 80 ],
       [ "bearing", 200 ],

@@ -201,5 +201,60 @@
     "mod_target_category": [ [ "S_XBOWS" ], [ "M_XBOWS" ] ],
     "damage_modifier": [ { "damage_type": "stab", "amount": 7 }, { "damage_type": "bash", "amount": 7 } ],
     "range_modifier": 3
+  },
+  {
+    "id": "retool_pebble",
+    "type": "GUNMOD",
+    "name": { "str": "pebble conversion kit" },
+    "description": "Replacing several key parts of a paintball firearm converts it to a pebble firearm.  The conversion results in a slight reduction to accuracy and damage.",
+    "weight": "114 g",
+    "volume": "250 ml",
+    "integral_volume": "0 ml",
+    "price": "320 USD",
+    "material": "steel",
+    "symbol": ":",
+    "color": "green",
+    "location": "accessories",
+    "mod_target_category": [ [ "PISTOLS" ], [ "SUBMACHINE_GUNS" ], [ "RIFLES" ], [ "MACHINE_GUNS" ], [ "GATLING_GUNS" ] ],
+    "acceptable_ammo": [ "paintball" ],
+    "dispersion_modifier": 15,
+    "ammo_modifier": [ "paintball", "pebble" ],
+    "min_skills": [ [ "weapon", 1 ], [ "mechanics", 2 ] ],
+    "flags": [ "INSTALL_DIFFICULT", "IRREMOVABLE" ]
+  },
+  {
+    "id": "axe_bayonet",
+    "looks_like": "throwing_axe",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "HAND_AXES" ],
+    "name": { "str": "axe bayonet" },
+    "description": "A axe bayonet is a large slashing weapon that can be attached to the front of a firearm or crossbow converting it into an axe.",
+    "weight": "723 g",
+    "volume": "1150 ml",
+    "price": "250 USD",
+    "price_postapoc": "40 USD",
+    "to_hit": 2,
+    "bashing": 10,
+    "cutting": 19,
+    "material": [ "steel" ],
+    "symbol": "/",
+    "color": "light_gray",
+    "gunmod_data": {
+      "location": "underbarrel",
+      "mod_target_category": [
+        [ "RIFLES" ],
+        [ "MACHINE_GUNS" ],
+        [ "GATLING_GUNS" ],
+        [ "SHOTGUNS" ],
+        [ "M_XBOWS" ],
+        [ "GRENADE_LAUNCHERS" ],
+        [ "ROCKET_LAUNCHERS" ],
+        [ "FLAMETHROWERS" ]
+      ]
+    },
+    "techniques": [ "WBLOCK_1", "RAPID" ],
+    "qualities": [ [ "CUT", 1 ], [ "COOK", 1 ], [ "BUTCHER", 7 ] ],
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD" ]
   }
 ]

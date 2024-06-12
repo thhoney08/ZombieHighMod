@@ -174,6 +174,26 @@
     "requirements": { "acidic": true, "required_weathers": [ "rain" ] }
   },
   {
+    "id": "light_flurries",
+    "type": "weather_type",
+    "name": "UNKNOWN",
+    "color": "c_magenta",
+    "map_color": "c_magenta_red",
+    "glyph": ".",
+    "ranged_penalty": 3,
+    "sight_penalty": 1.1,
+    "light_modifier": -20,
+    "sound_attn": 4,
+    "dangerous": false,
+    "precip": "heavy",
+    "rains": true,
+    "acidic": false,
+    "animation": { "factor": 0.02, "color": "c_light_blue", "glyph": ",", "tile": "weather_rain_drop" },
+    "sound_category": "flurries",
+    "sun_intensity": "light",
+    "requirements": { "temperature_max": 33, "required_weathers": [ "light_drizzle" ] }
+  },
+  {
     "id": "flurries",
     "type": "weather_type",
     "name": "UNKNOWN",
@@ -189,7 +209,7 @@
     "rains": true,
     "acidic": false,
     "animation": { "factor": 0.02, "color": "c_light_blue", "glyph": ",", "tile": "weather_rain_drop" },
-    "sound_category": "rainy",
+    "sound_category": "flurries",
     "sun_intensity": "light",
     "requirements": { "temperature_max": 33, "required_weathers": [ "drizzle" ] }
   },

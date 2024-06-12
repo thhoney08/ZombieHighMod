@@ -1205,6 +1205,17 @@
   },
   {
     "type": "recipe",
+    "result": "sling_zhighNailBomb",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "time": "5 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "zhighNailBomb", 1 ] ], [ [ "scrap", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
     "result": "sling_rubberball",
     "category": "CC_AMMO",
     "subcategory": "CSC_AMMO_OTHER",
@@ -3258,6 +3269,31 @@
   },
   {
     "type": "recipe",
+    "result": "chakram",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "result_mult": 5,
+    "difficulty": 4,
+    "time": "3 h",
+    "autolearn": true,
+    "using": [ [ "blacksmithing_advanced", 8 ], [ "steel_tiny", 3 ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "mambele",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "time": "3 h",
+    "autolearn": true,
+    "using": [ [ "blacksmithing_intermediate", 3 ], [ "steel_tiny", 4 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "2x4", 1 ], [ "stick", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
     "result": "throwing_knife",
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_RANGED",
@@ -4635,6 +4671,39 @@
     ]
   },
   {
+    "result": "zhighNailBomb",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "15 m",
+    "reversible": true,
+    "autolearn": true,
+    "qualities": [ { "id": "SAW_M", "level": 1 } ],
+    "components": [
+      [ [ "volatile_explosive", 3, "LIST" ], [ "stable_explosive", 3, "LIST" ], [ "military_explosive", 3, "LIST" ] ],
+      [ [ "oil_lamp", 1 ], [ "oxylamp", 1 ], [ "gasoline_lantern", 1 ] ],
+      [ [ "scrap", 20 ], [ "nail", 250 ] ],
+      [ [ "delay_fuze", 1 ], [ "fuse", 1 ] ]
+    ]
+  },
+  {
+    "result": "dynamiteBig",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "fabrication",
+    "skills_required": [ "mechanics", 2 ],
+    "difficulty": 1,
+    "time": "12 m",
+    "reversible": true,
+    "autolearn": true,
+    "qualities": [ { "id": "SAW_M", "level": 1 } ],
+    "using": [ [ "welding_standard", 2 ] ],
+    "components": [ [ [ "duct_tape", 50 ] ], [ [ "fuse", 1 ] ], [ [ "dynamite", 3 ] ] ]
+  },
+  {
     "result": "dynamite_long",
     "type": "recipe",
     "category": "CC_WEAPON",
@@ -4657,5 +4726,70 @@
         [ "cooking_oil2", 16 ]
       ]
     ]
+  },
+  {
+    "result": "jitte_weapon",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "difficulty": 6,
+    "time": "1 h 28 m",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_weapeast", 5 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 3 } ],
+    "using": [ [ "blacksmithing_standard", 18 ], [ "steel_standard", 3 ] ],
+    "components": [ [ [ "fur", 2 ], [ "leather", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "retool_pebble",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MODS",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "6 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "duct_tape", 25 ] ], [ [ "bottle_twoliter", 1 ] ], [ [ "bottle_plastic", 2 ], [ "bottle_plastic_small", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "railray_rifle",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "electronics",
+    "skills_required": [ "mechanics", 4 ],
+    "difficulty": 2,
+    "time": "1 h 30 m",
+    "autolearn": true,
+    "qualities": [ { "id": "SAW_M_FINE", "level": 1 }, { "id": "SCREW_FINE", "level": 1 }, { "id": "WRENCH_FINE", "level": 1 } ],
+    "using": [ [ "welding_standard", 30 ] ],
+    "components": [
+      [ [ "cable", 80 ] ],
+      [ [ "hand_pump", 1 ] ],
+      [ [ "2x4", 1 ], [ "stick", 1 ] ],
+      [ [ "metal_tank_little", 2 ] ],
+      [ [ "steel_chunk", 3 ], [ "scrap", 18 ] ],
+      [ [ "rebar", 1 ], [ "pipe", 1 ] ],
+      [ [ "e_scrap", 20 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "throwing_club",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "survival",
+    "skills_required": [ "fabrication", 1 ],
+    "difficulty": 1,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+		[ [ "stick", 1 ], [ "2x4", 1 ], [ "throwing_stick", 1 ] ],
+		[ [ "rope_natural_short", 1, "LIST" ] ],
+		[ [ "rock", 1 ] ]
+	]
   }
 ]

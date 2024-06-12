@@ -1,9 +1,46 @@
 [
   {
     "type": "scenario",
+    "id": "Hunting",
+    "name": "Gone hunting",
+    "points": 1,
+    "description": "You went out of town to do what you love to do, hunting!",
+    "allowed_locs": [ "sloc_hunter_shack", "sloc_hunting_blind" ],
+    "start_name": "Hunter's shack",
+    "professions": [
+      "rifle_hunter",
+      "shotgun_hunter",
+      "crossbow_hunter",
+      "pistol_hunter",
+      "revolver_hunter",
+      "trapper",
+      "shotgunDB_hunter",
+      "rifle_hunter_smolGame",
+      "rifle_hunter_elepGun",
+      "bow_hunter"
+    ],
+    "flags": [ "LONE_START" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_hunting_blind",
+    "name": "Hunting blind",
+    "terrain": [ "hunting_blind" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_hunter_shack",
+    "name": "Swamp Shack",
+    "terrain": [
+		"hunter_shack",
+		"hunter_shack_1"
+	]
+  },
+  {
+    "type": "scenario",
     "id": "Precinct_Z",
     "name": "Challenge - Assault on Precinct Z",
-    "points": -4,
+    "points": -6,
     "description": "You knew the day was going to be bad when it started with your partner getting eaten by a perp before even you have had your coffee.  The scene back at the situation house looks bad, real bad.  This is going to be more than just a all-nighter and a couple of report papers.",
     "allowed_locs": [ "sloc_police" ],
     "start_name": "Police Station",
@@ -149,6 +186,9 @@
       "zhighShocker",
       "groundskeeper",
       "zhighBountyHunter",
+      "zhighSapper",
+	  "zhighGuerilla",
+	  "zhighNinja",
       "zhighFrat"
     ],
     "flags": [ "SUR_START", "CITY_START" ]
@@ -282,6 +322,9 @@
       "zhighShocker",
       "groundskeeper",
       "zhighBountyHunter",
+      "zhighSapper",
+	  "zhighGuerilla",
+	  "zhighNinja",
       "zhighFrat"
     ],
     "start_name": "Zombiefied Highschool",

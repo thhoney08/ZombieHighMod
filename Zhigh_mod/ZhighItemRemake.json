@@ -1048,7 +1048,8 @@
     "type": "GENERIC",
     "category": "tools",
     "name": { "str": "grappling hook" },
-    "flags": [ "DURABLE_MELEE", "REACH_ATTACK", "NONCONDUCTIVE" ]
+    "armor_data": { "covers": [ "torso" ], "coverage": 10, "encumbrance": 16, "material_thickness": 6 },
+    "flags": [ "DURABLE_MELEE", "REACH_ATTACK", "NONCONDUCTIVE", "OVERSIZE" ]
   },
   {
     "id": "q_staff",
@@ -1949,6 +1950,15 @@
     "dispersion": 50,
     "durability": 8,
     "clip_size": 75,
+    "valid_mod_locations": [
+		[ "accessories", 4 ],
+		[ "sling", 1 ],
+		[ "grip", 1 ],
+		[ "rail", 1 ],
+		[ "sights", 1 ],
+		[ "stock", 1 ],
+		[ "underbarrel", 1 ]
+	],
     "modes": [ [ "DEFAULT", "single", 1 ], [ "AUTO", "burst", 3 ] ]
   },
   {
