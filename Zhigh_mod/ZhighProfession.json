@@ -4032,6 +4032,640 @@
   },
   {
     "type": "profession",
+    "id": "rifle_hunter_airGun",
+    "name": "Air Rifle Hunter",
+    "description": "Ever since you were a child you loved hunting, and you soon took a liking to the challenge of hunting with a rifle.  Why, if the world ended there's nothing you'd want at your side more than your trusty rifle.  So when it did, you made sure to bring it along.",
+    "points": 2,
+    "skills": [ { "level": 1, "name": "gun" }, { "level": 1, "name": "rifle" } ],
+    "items": {
+      "both": {
+        "items": [
+          "army_top",
+          "knit_scarf",
+          "smart_phone",
+          "bearing",
+          "bearing",
+          "socks",
+          "boots_steel",
+          "pants_cargo",
+          "jacket_flannel",
+          "hat_hunting",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "marble_gun", "ammo-item": "bearing", "charges": 5, "contents-item": "shoulder_strap" },
+          { "item": "sheath", "contents-item": "knife_hunting" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "sports_bra", "boxer_shorts" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "rifle_hunter_airGun_dog",
+    "name": "Hunter with a Dog",
+    "description": "Ever since you were a child you loved hunting, and you soon took a liking to the challenge of hunting with a rifle.  Why, if the world ended there's nothing you'd want at your side more than your trusty rifle.  So when it did, you made sure to bring it along.  And your not-so-little friend too.",
+    "points": 3,
+    "skills": [ { "level": 1, "name": "gun" }, { "level": 1, "name": "rifle" } ],
+    "pets": [ { "name": "mon_dog_gshepherd", "amount": 1 } ],
+    "items": {
+      "both": {
+        "items": [
+          "army_top",
+          "knit_scarf",
+          "smart_phone",
+          "kevlar_armor_small_quadruped",
+          "bearing",
+          "bearing",
+          "socks",
+          "petpack",
+          "dogfood",
+          "boots_steel",
+          "pants_cargo",
+          "jacket_flannel",
+          "hat_hunting",
+          "dog_whistle",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "marble_sniper_gun", "ammo-item": "bearing", "charges": 1, "contents-item": "shoulder_strap" },
+          { "item": "sheath", "contents-item": "knife_hunting" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "sports_bra", "boxer_shorts" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "dallasPd2",
+    "name": "Bank Robber - Crew Chief",
+    "description": "The Crew Chief, also known as the Caporegime, is the head of a branch of an organized crime syndicate.  The Crew Chief commands a crew of soldiers and reports directly to a boss or an underboss.  When the crime syndicate needs to have someone dealt with, the Crew Chief and his soldiers make sure it's done.",
+    "points": 5,
+    "traits": [ "LIAR" ],
+    "skills": [
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "unarmed" },
+      { "level": 2, "name": "speech" },
+	  { "level": 2, "name": "barter" },
+      { "level": 2, "name": "gun" },
+      { "level": 1, "name": "pistol" },
+      { "level": 2, "name": "rifle" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "mask_CrewChief",
+          "gloves_medical",
+          "cig",
+          "762_51",
+          "762_51",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "glock_19", "ammo-item": "9mm", "container-item": "holster", "charges": 15 },
+          {
+            "item": "m14ebr",
+            "ammo-item": "762_51",
+            "charges": 20,
+            "contents-item": [ "shoulder_strap", "rifle_scope" ],
+			"custom-flags": [ "auto_wield" ]
+          },
+          { "item": "glockmag", "ammo-item": "9mm", "charges": 15 },
+          { "item": "glockmag", "ammo-item": "9mm", "charges": 15 },
+          { "item": "modularvestceramic", "contents-group": "army_mags_m14" },
+          { "item": "lighter", "charges": 100 }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "addictions": [ { "intensity": 10, "type": "nicotine" } ]
+  },
+  {
+    "type": "profession",
+    "id": "wolfPd2",
+    "name": "Bank Robber - Armorer",
+    "description": "The Armorer was formerly a profession within the military.  The armorer's job is to maintain, repair and improve armors.  Any self-respecting crime syndicate needs someone who can make sure the soldiers have the necessary protection to do their jobs.",
+    "points": 5,
+    "skills": [
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "fabrication" },
+      { "level": 2, "name": "computer" },
+	  { "level": 2, "name": "mechanics" },
+      { "level": 2, "name": "gun" },
+      { "level": 1, "name": "pistol" },
+      { "level": 2, "name": "rifle" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "mask_Armorer",
+          "gloves_medical",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "m1911", "ammo-item": "45_acp", "charges": 7, "container-item": "holster" },
+          {
+            "item": "ak47",
+            "ammo-item": "762_m87",
+            "charges": [ 60, 75 ],
+            "contents-item": [ "shoulder_strap", "muzzle_brake" ],
+			"custom-flags": [ "auto_wield" ]
+          },
+          { "item": "m1911mag", "ammo-item": "45_acp", "charges": 7 },
+          { "item": "m1911mag", "ammo-item": "45_acp", "charges": 7 },
+          { "item": "modularvestsuper", "contents-group": "army_mags_akm" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "chainsPd2",
+    "name": "Bank Robber - Muscle",
+    "description": "The Muscle is a tough guy who uses violence to send messages from his Mafia superiors.  They are the backbone of any criminal organization.  The muscle is called in whenever you need to rough someone up, break some legs, crush a skull or remind people who's boss.",
+    "points": 5,
+    "skills": [
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "bashing" },
+      { "level": 2, "name": "shotgun" },
+	  { "level": 2, "name": "mechanics" },
+      { "level": 2, "name": "gun" },
+      { "level": 1, "name": "pistol" },
+      { "level": 2, "name": "rifle" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "mask_Muscle",
+          "gloves_medical",
+          "doorgunnervest",
+          "belt223",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "remington_870_breacher", "ammo-item": "shot_00", "charges": 4, "container-item": "XL_holster" },
+          { "item": "bandolier_shotgun", "contents-group": "bandolier_swat_cqc1" },
+          { "item": "m249", "ammo-item": "556", "charges": 200, "contents-item": [ "shoulder_strap", "acog_scope" ], "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "hoxtonPd2",
+    "name": "Bank Robber - Crook",
+    "description": "The Crook is a versatile criminal.  The term is as old as crime itself.  Truly, the crook is a jack of all trades and a master of none.  He steals, lies, cheats and does any and every dishonest or illegal work necessary to get by.",
+    "points": 5,
+    "traits": [ "LIAR" ],
+    "skills": [
+      { "level": 2, "name": "melee" },
+      { "level": 2, "name": "bashing" },
+      { "level": 2, "name": "stabbing" },
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "pistol" },
+      { "level": 2, "name": "rifle" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "mask_Crook",
+          "gloves_medical",
+          "cig",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "glock_18c", "ammo-item": "9mm", "container-item": "holster", "charges": 22 },
+          {
+            "item": "m4a1",
+            "ammo-item": "556",
+            "charges": [ 25, 30 ],
+            "contents-item": [ "shoulder_strap", "suppressor", "holo_sight" ],
+			"custom-flags": [ "auto_wield" ]
+          },
+          { "item": "knife_combat", "container-item": "sheath" },
+          { "item": "glockmag", "ammo-item": "9mm", "charges": 15 },
+          { "item": "glockmag", "ammo-item": "9mm", "charges": 15 },
+          { "item": "modularvestceramic", "contents-group": "army_mags_m4" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "houstonPd2",
+    "name": "Bank Robber - Rogue",
+    "description": "The Rogue is a stealthy criminal, capable of sneaky tricks and deadly force.  Versatile and deceptive, the Rogue is hired to do anything from pickpocketing, to burglaries and con jobs.  The trademark of a Rogue is his versatility - what he lacks in strength he makes up for in skill.",
+    "points": 5,
+    "skills": [
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "bashing" },
+	  { "level": 2, "name": "mechanics" },
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "pistol" },
+      { "level": 2, "name": "smg" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "mask_Rogue",
+          "gloves_medical",
+          "suppressor",
+          "9mm",
+          "9mm",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "glock_19", "ammo-item": "9mm", "container-item": "holster", "charges": 15 },
+          { "item": "glockmag", "ammo-item": "9mm", "charges": 15 },
+          { "item": "glockmag", "ammo-item": "9mm", "charges": 15 },
+          { "item": "chestrig", "contents-group": "army_mags_mp5" },
+          {
+            "item": "hk_mp5",
+            "ammo-item": "9mm",
+            "charges": 30,
+            "contents-item": [ "shoulder_strap", "suppressor", "holo_sight" ],
+			"custom-flags": [ "auto_wield" ]
+          }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "cloverPd2",
+    "name": "Bank Robber - Burglar",
+    "description": "The natural dexterity of the Burglar has benefits beyond merely breaking and entering.  Being nimble allows the Burglar to pick locks, bag bodies and answer pagers faster.  They are also harder to hit in combat.  They stay alive by staying out of the way.  This physical conditioning also gives the Burglar a high tolerance to pain and the ability to shrug off wounds quickly.",
+    "points": 5,
+    "skills": [
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "bashing" },
+	  { "level": 2, "name": "mechanics" },
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "pistol" },
+      { "level": 2, "name": "rifle" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "mask_Burglar",
+          "gloves_medical",
+          "suppressor",
+          "shillelagh",
+          "picklocks",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "glock_19", "ammo-item": "9mm", "container-item": "holster", "charges": 15 },
+          { "item": "glockmag", "ammo-item": "9mm", "charges": 15 },
+          { "item": "glockmag", "ammo-item": "9mm", "charges": 15 },
+          { "item": "chestrig", "contents-group": "army_mags_aug" },
+          {
+            "item": "steyr_aug",
+            "ammo-item": "556",
+            "charges": 40,
+            "contents-item": [ "shoulder_strap", "charm_skull", "holo_sight" ],
+			"custom-flags": [ "auto_wield" ]
+          }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "draganPd2",
+    "name": "Bank Robber - Infiltrator",
+    "description": "The Infiltrator is an agent hired by a government or large criminal organization to obtain information about its enemies, or by a corporation to obtain industrial secrets from its competitors.  The Infiltrator is a close combat specialist who knows how to use the environment in order to get the upper hand.",
+    "points": 5,
+    "traits": [ "LIAR" ],
+    "skills": [
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "speech" },
+	  { "level": 2, "name": "cutting" },
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "pistol" },
+      { "level": 2, "name": "rifle" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "mask_Infiltrator",
+          "gloves_medical",
+          "knife_meat_cleaver",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "usp_45", "ammo-item": "45_acp", "charges": 12, "container-item": "holster" },
+          { "item": "legpouch_large", "contents-group": "army_mags_usp45" },
+          { "item": "chestrig", "contents-group": "army_mags_aug" },
+          {
+            "item": "steyr_aug",
+            "ammo-item": "556",
+            "charges": 40,
+            "contents-item": [ "shoulder_strap", "charm_grenade", "charm_spike" ],
+			"custom-flags": [ "auto_wield" ]
+          }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "jacketPd2",
+    "name": "Bank Robber - Sociopath",
+    "description": "The Sociopath is known to be one of the most effective type of criminals.  Where he is effective, he is also difficult to deal with, which is why larger organizations avoid him.  Bold, disinhibitted and mean, the Sociopath excels in the most violent of jobs.  Unable to feel guilt for the crimes he commits, the Sociopath is a dangerous enemy.",
+    "points": 6,
+    "traits": [ "PSYCHOPATH" ],
+    "skills": [
+      { "level": 2, "name": "gun" },
+      { "level": 1, "name": "smg" },
+      { "level": 1, "name": "shotgun" },
+      { "level": 1, "name": "pistol" },
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "unarmed" },
+      { "level": 1, "name": "stabbing" },
+      { "level": 2, "name": "dodge" }
+    ],
+    "items": {
+      "both": {
+        "ammo": 100,
+        "items": [
+          "jeans",
+          "tshirt",
+          "jacket_baseball",
+          "mask_Psychopath",
+          "gloves_fingerless",
+          "socks",
+          "sneakers"
+        ],
+        "entries": [
+          { "group": "military_standard_pistols" },
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "knife_combat", "container-item": "sheath" },
+          { "group": "weapons", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "boy_shorts", "sports_bra" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "bonniePd2",
+    "name": "Bank Robber - Gambler",
+    "description": "Heading into the furnace of battle requires skill, hardness and more than a little luck.  Some people just have it.  Luck is an elusive quality.  The ancient Greeks believed it was the design of the Gods.  It isn't.  It certainly exists, but it's something you can earn.  It requires preparation and forethought to get your pieces in place, and maximizes your chances of a return.  It's counting cards, rather than the blessing of Fortuna.",
+    "points": 5,
+    "traits": [ "LIAR" ],
+    "skills": [
+      { "level": 2, "name": "melee" },
+      { "level": 2, "name": "speech" },
+      { "level": 2, "name": "barter" },
+	  { "level": 1, "name": "bashing" },
+      { "level": 2, "name": "gun" },
+      { "level": 1, "name": "pistol" },
+      { "level": 2, "name": "shotgun" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "mask_Gambler",
+          "gloves_medical",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "bandolier_shotgun", "contents-group": "bandolier_swat_cqc2" },
+          { "item": "whiskey", "container-item": "bottle_metal" },
+          { "item": "shotgun_d", "ammo-item": "shot_slug", "charges": 2, "contents-item": [ "charm_grenade", "charm_spike" ] }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "addictions": [ { "intensity": 10, "type": "alcohol" } ]
+  },
+  {
+    "type": "profession",
+    "id": "sokolPd2",
+    "name": "Bank Robber - Grinder",
+    "description": "A typical grinder is a hard working individual, able to take control of difficult situations and turn them around.  The grinder relies heavily on always being in the front and dishing out punishment, being able to survive due to the fact that he does damage to the enemies regardless of how much damage he has sustained.",
+    "points": 5,
+    "traits": [ "LIAR" ],
+    "skills": [
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "speech" },
+	  { "level": 2, "name": "bashing" },
+      { "level": 2, "name": "gun" },
+      { "level": 1, "name": "pistol" },
+      { "level": 2, "name": "rifle" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "mask_Grinder",
+          "gloves_medical",
+          "hockey_stick",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "usp_9mm", "ammo-item": "9mm", "charges": 15, "container-item": "holster" },
+          { "item": "tacvest", "contents-group": [ "army_mags_akm", "army_mags_usp9" ] },
+          {
+            "item": "draco",
+            "ammo-item": "762_m87",
+            "charges": [ 60, 75 ],
+            "contents-item": [ "charm_fang", "barrel_ported" ],
+			"custom-flags": [ "auto_wield" ]
+          }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "jiroPd2",
+    "name": "Bank Robber - Yakuza",
+    "description": "The Yakuza are one of the most feared crime syndicates in the world.  Ruled by the ninkyo and lead by the Oyabun, the Yakuza are known for their strict code of conduct, organized nature and the tattoos that cover their entire bodies.  An outcast and a dropout from society, the Yakuza knows how it is to fend for himself.  While he appears gentle, he is not to be taken lightly.",
+    "points": 5,
+    "skills": [
+      { "level": 4, "name": "melee" },
+	  { "level": 4, "name": "cutting" },
+      { "level": 2, "name": "gun" },
+      { "level": 3, "name": "smg" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "mask_Yakuza",
+          "gloves_medical",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "scabbard", "contents-item": "katana_pd2" },
+          { "item": "chestrig", "contents-group": "army_mags_uzi" },
+          {
+            "item": "uzi",
+            "ammo-item": "9mmP2",
+            "charges": 32,
+            "contents-item": [ "suppressor", "recoil_gel", "charm_fang" ],
+			"custom-flags": [ "auto_wield" ]
+          }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "driver_van",
+    "name": "Bank Robber - Wheelman, Van",
+    "description": "You specialized in high-stakes getaways, expertly navigating urban landscapes and escaping law enforcement with unparalleled skill behind the wheel of an escape van.  With nerves of steel and a deep understanding of your powerful vehicle, you ensures the crew's swift and safe escape from any heist or dangerous situations.  Now that your crewmates are all dead, your vehicle and your skill is all that you could belive in.",
+    "points": 9,
+    "vehicle": "pd2_van",
+    "skills": [
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "pistol" },
+      { "level": 4, "name": "driving" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "switchblade",
+          "sunglasses",
+		  "holster",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "m53Medusa",
+		    "ammo-item": "9mmP2",
+			"charges": 5,
+            "contents-item": [ "fanning", "recoil_gel", "pistol_grip" ],
+			"custom-flags": [ "auto_wield" ]
+		  },
+          { "group": "ammo_pistol_common" },
+          { "group": "ammo_pistol_common" },
+          { "group": "ammo_pistol_rare" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "driver_car",
+    "name": "Bank Robber - Wheelman, Car",
+    "description": "You specialized in high-stakes getaways, expertly navigating urban landscapes and escaping law enforcement with unparalleled skill behind the wheel of a roaring car.  With nerves of steel and a deep understanding of your fast vehicle, you ensures the crew's swift and safe escape from any heist or dangerous situations.  Now that your crewmates are all dead, your vehicle and your skill is all that you could belive in.",
+    "points": 5,
+    "vehicle": "car_escape",
+    "skills": [
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "pistol" },
+      { "level": 4, "name": "driving" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "switchblade",
+          "gloves_fingerless",
+          "jacket_leather_gosling",
+		  "holster",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "m53Medusa",
+		    "ammo-item": "9mmP2",
+			"charges": 5,
+            "contents-item": [ "fanning", "recoil_gel", "pistol_grip" ],
+			"custom-flags": [ "auto_wield" ]
+		  },
+          { "group": "ammo_pistol_common" },
+          { "group": "ammo_pistol_common" },
+          { "group": "ammo_pistol_rare" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
     "id": "old_vet",
     "name": "Old Veteran",
 	"//": "Got this from a cdda profession.",
@@ -4269,7 +4903,6 @@
       { "level": 2, "name": "gun" },
       { "level": 2, "name": "smg" },
       { "level": 2, "name": "rifle" },
-      { "level": 2, "name": "shotgun" },
       { "level": 2, "name": "shotgun" },
       { "level": 2, "name": "pistol" },
       { "level": 2, "name": "melee" },

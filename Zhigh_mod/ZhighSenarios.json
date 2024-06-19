@@ -1,8 +1,51 @@
 [
   {
     "type": "scenario",
+    "id": "Payday",
+    "name": "Challenge - Bank Robbery",
+    "points": -1,
+    "description": "Don't let yourself get attached to anything you are not willing to walk out on in 30 seconds flat if you feel the heat around the corner.  Crap, this will take more than 30 days.  Well, do what you do best, take some scores.",
+    "allowed_locs": [ "sloc_bank" ],
+    "start_name": "During a heist",
+    "professions": [
+	  "assassin",
+      "biker",
+      "bio_gangster",
+	  "bionic_hitman",
+	  "bionic_thief",
+	  "burglar",
+	  "convict",
+	  "convict_drugs",
+	  "convict_embezzler",
+	  "death_row_convict",
+	  "driver_car",
+	  "driver_van",
+      "frat",
+      "gangster",
+      "gunslinger",
+	  "hitman",
+      "player_bandit",
+	  "razorgirl",
+	  "scoundrel",
+      "dallasPd2",
+      "wolfPd2",
+      "chainsPd2",
+      "houstonPd2",
+      "JohnWick",
+      "cloverPd2",
+      "draganPd2",
+      "jacketPd2",
+      "bonniePd2",
+      "sokolPd2",
+      "jiroPd2"
+    ],
+    "surround_groups": [ [ "GROUP_BLACK_ROAD", 70.0 ] ],
+    "flags": [ "LONE_START" ]
+  },
+  {
+    "type": "scenario",
     "id": "Hunting",
-    "name": "Gone hunting",
+    "name": "Hunt: Showdown",
     "points": 1,
     "description": "You went out of town to do what you love to do, hunting!",
     "allowed_locs": [ "sloc_hunter_shack", "sloc_hunting_blind" ],
@@ -17,9 +60,37 @@
       "shotgunDB_hunter",
       "rifle_hunter_smolGame",
       "rifle_hunter_elepGun",
+      "rifle_hunter_airGun",
+      "rifle_hunter_airGun_dog",
       "bow_hunter"
     ],
-    "flags": [ "LONE_START" ]
+    "flags": [ "LONE_START" ],
+    "missions": [ "MISSION_GONEHUNTING" ]
+  },
+  {
+    "id": "MISSION_GONEHUNTING",
+    "type": "mission_definition",
+    "name": { "str": "Hunt: Showdown" },
+    "description": "You tried to track down that infamous monster.  The world is doomed but you do not care; you have to hunt this beast down, since this beast caused and will cause troubles to everyone.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 4,
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "desolatebarn",
+        "reveal_radius": 6,
+        "random": true,
+        "search_range": 90,
+        "min_distance": 45,
+        "z": 0
+      },
+      "update_mapgen": {
+        "place_monster": [
+          { "monster": "mon_flesh_golem", "name": "The Beast", "x": 12, "y": 12, "target": true }
+        ]
+      }
+    },
+    "origins": [ "ORIGIN_GAME_START" ],
+    "value": 0
   },
   {
     "type": "start_location",
@@ -45,17 +116,17 @@
     "allowed_locs": [ "sloc_police" ],
     "start_name": "Police Station",
     "professions": [
-      "k9_cop",
+      "bionic_cop",
       "cop",
       "detective",
+      "k9_cop",
       "swat",
       "swat_heavy",
       "sniper_police",
       "riot_police",
-      "riot_police_ranged",
-      "bionic_cop"
+      "riot_police_ranged"
     ],
-    "flags": [ "SUR_START", "CITY_START" ]
+    "flags": [ "CITY_START" ]
   },
   {
     "type": "scenario",
@@ -191,7 +262,7 @@
 	  "zhighNinja",
       "zhighFrat"
     ],
-    "flags": [ "SUR_START", "CITY_START" ]
+    "flags": [ "CITY_START" ]
   },
   {
     "type": "scenario",
@@ -346,7 +417,7 @@
       "ANTLERS", "WINGS_BIRD", "WINGS_INSECT",
       "WINGS_BAT", "SMALL", "LARGE"
     ],
-    "flags": [ "SUR_START", "CITY_START", "LONE_START" ]
+    "flags": [ "CITY_START", "LONE_START" ]
   },
   {
     "type": "scenario",
@@ -395,7 +466,17 @@
             "hotlineJacket",
             "JohnWick",
             "sniper_normal",
-            "sniper47" 
+            "sniper47",
+			"dallasPd2",
+			"wolfPd2",
+			"chainsPd2",
+			"houstonPd2",
+			"cloverPd2",
+			"draganPd2",
+			"jacketPd2",
+			"bonniePd2",
+			"sokolPd2",
+			"jiroPd2" 
         ]
       }
   }

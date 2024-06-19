@@ -1414,7 +1414,6 @@
     "category": "CC_ARMOR",
     "subcategory": "CSC_ARMOR_SUIT",
     "skill_used": "fabrication",
-    "difficulty": 1,
     "time": "10 m",
     "autolearn": true,
     "qualities": [ { "id": "CUT", "level": 1 } ],
@@ -1604,10 +1603,9 @@
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_EXPLOSIVE",
     "skill_used": "cooking",
-    "difficulty": 1,
     "time": "30 s",
     "autolearn": true,
-    "flags": [ "BLIND_HARD" ],
+    "flags": [ "BLIND_EASY" ],
     "components": [ 
         [ [ "candy", 1 ], [ "candy2", 1 ], [ "candy3", 1 ], [ "powder_candy", 1 ], [ "maple_candy", 1 ] ],
         [ [ "cola", 1 ], [ "colamdew", 1 ], [ "creamsoda", 1], [ "energy_drink", 1 ], [ "energy_drink_atomic", 1 ], [ "orangesoda", 1 ] ] ]
@@ -4774,6 +4772,105 @@
       [ [ "rebar", 1 ], [ "pipe", 1 ] ],
       [ [ "e_scrap", 20 ] ]
     ]
+  },
+  {
+    "type": "recipe",
+    "result": "jezail_flintlock",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "skills_required": [ "rifle", 4 ],
+    "difficulty": 9,
+    "time": "400 m",
+    "autolearn": true,
+    "book_learn": [ [ "manual_rifle", 5 ], [ "mag_rifle", 6 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SCREW_FINE", "level": 1 } ],
+    "using": [ [ "blacksmithing_advanced", 6 ], [ "steel_standard", 3 ] ],
+    "components": [ [ [ "2x4", 2 ] ], [ [ "pipe", 2 ] ], [ [ "sharp_rock", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "rep_crossbow_bulletZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "45 m",
+    "reversible": true,
+    "decomp_learn": 4,
+    "book_learn": [ [ "recipe_bows", 4 ], [ "textbook_weapeast", 6 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SCREW", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
+    "components": [
+      [ [ "2x4", 4 ], [ "stick", 8 ] ],
+      [ [ "spring", 1 ] ],
+      [ [ "cordage_superior", 1, "LIST" ] ],
+      [ [ "nail_glue", 20, "LIST" ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "rep_crossbow_nailZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "45 m",
+    "reversible": true,
+    "decomp_learn": 4,
+    "book_learn": [ [ "recipe_bows", 4 ], [ "textbook_weapeast", 6 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SCREW", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
+    "components": [
+      [ [ "2x4", 4 ], [ "stick", 8 ] ],
+      [ [ "spring", 1 ] ],
+      [ [ "cordage_superior", 1, "LIST" ] ],
+      [ [ "nail_glue", 20, "LIST" ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "hand_crossbow_dartZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "30 m",
+    "reversible": true,
+    "decomp_learn": 3,
+    "book_learn": [ [ "recipe_bows", 3 ], [ "manual_archery", 5 ], [ "book_archery", 4 ] ],
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "HAMMER", "level": 2 },
+      { "id": "SCREW", "level": 1 },
+      { "id": "SAW_W", "level": 1 }
+    ],
+    "components": [
+      [ [ "2x4", 2 ], [ "stick", 3 ] ],
+      [ [ "cordage_superior_short", 1, "LIST" ] ],
+      [ [ "spring", 1 ] ],
+      [ [ "scrap", 4 ] ],
+      [ [ "nail_glue", 10, "LIST" ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "crossbow_dartZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "15 m",
+    "reversible": true,
+    "decomp_learn": 2,
+    "autolearn": [ [ "mechanics", 1 ], [ "fabrication", 2 ] ],
+    "book_learn": [
+      [ "recipe_bows", 2 ],
+      [ "manual_archery", 4 ],
+      [ "book_archery", 3 ],
+      [ "scots_cookbook", 6 ],
+      [ "textbook_armschina", 5 ]
+    ],
+    "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "SAW_W", "level": 1 } ],
+    "components": [ [ [ "2x4", 2 ], [ "stick", 4 ] ], [ [ "scrap", 1 ] ], [ [ "cordage_superior", 3, "LIST" ] ] ]
   },
   {
     "type": "recipe",

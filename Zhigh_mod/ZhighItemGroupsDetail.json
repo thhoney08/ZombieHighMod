@@ -1,5 +1,45 @@
 [
   {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "army_mags_uzi",
+    "entries": [ { "item": "uzimag", "ammo-item": "9mmP2", "charges": 32 }, { "item": "uzimag", "ammo-item": "9mmP2", "charges": 32 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "army_mags_aug",
+    "entries": [ { "item": "augmag_42rd", "ammo-item": "556", "charges": 42 }, { "item": "augmag_42rd", "ammo-item": "556", "charges": 42 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "army_mags_akm",
+    "entries": [ { "item": "akmag30", "ammo-item": "762_m87", "charges": 30 }, { "item": "akmag30", "ammo-item": "762_m87", "charges": 30 } ]
+  },
+  {
+    "id": "nested_contender_zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "contender_zhigh", "charges-min": 0, "charges-max": 1 },
+      { "group": "ammo_pistol_common_full" }
+    ]
+  },
+  {
+    "id": "nested_m53Medusa",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "m53Medusa", "charges-min": 0, "charges-max": 5 },
+      { "group": "ammo_pistol_common_full" }
+    ]
+  },
+  {
     "id": "nested_pkdBlaster",
     "type": "item_group",
     "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
@@ -128,9 +168,9 @@
       { "item": "adv_UPS_off", "prob": 30 },
       { "item": "duct_tape", "prob": 20 },
       { "group": "tools_science", "prob": 20, "count": [ 1, 2 ] },
-      { "item": "signalMarker1", "prob": 4, "count": [ 1, 2 ] },
-      { "item": "signalMarker2", "prob": 8, "count": [ 3, 4 ] },
-      { "item": "signalMarker3", "prob": 12, "count": [ 5, 6 ] },
+      { "item": "signalMarker1", "prob": 8, "count": [ 1, 2 ] },
+      { "item": "signalMarker2", "prob": 12, "count": [ 3, 4 ] },
+      { "item": "signalMarker3", "prob": 16, "count": [ 5, 6 ] },
       { "item": "chocolate", "prob": 60, "count": [ 3, 5 ] },
       { "item": "caff_gum", "prob": 60, "count": [ 1, 3 ] },
       { "item": "hand_crank_charger", "prob": 5 },
@@ -831,6 +871,7 @@
       [ "shotgun_d_paint", 30 ],
       [ "shotgun_pump_paint", 30 ],
       [ "coilgun", 5 ],
+      [ "megaphone_zhigh", 5 ],
       [ "nailrifle", 15 ],
       [ "nailmag", 25 ],
       [ "nailsmg", 25 ],
@@ -851,6 +892,7 @@
       [ "lemat_revolver_flintlock", 20 ],
       [ "blunderlock", 20 ],
       [ "flint_nock", 20 ],
+      [ "jezail_flintlock", 10 ],
       [ "blunderbuss", 20 ],
       [ "carbine_flintlock_double", 20 ],
       [ "longrifle_flintlock", 30 ],
@@ -898,6 +940,7 @@
       [ "tool_rocket_candy", 800 ],
       [ "throwing_axe", 20 ],
       [ "throwing_knife", 30 ],
+      [ "throwing_club", 50 ],
       [ "throwing_stick", 80 ],
       [ "throwing_knife_scrap", 60 ],
       [ "throwing_card_spade", 300 ],

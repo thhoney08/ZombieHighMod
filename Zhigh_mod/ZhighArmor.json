@@ -610,13 +610,14 @@
     "covers": [ "hand_either" ],
     "ammo": "battery",
     "qualities": [
-      [ "ANVIL", 3 ], [ "AXE", 3 ], [ "BUTCHER", 8 ], [ "BOIL", 3 ], [ "CHISEL", 3 ], [ "CUT", 3 ], [ "CUT_FINE", 3 ],
+      [ "ANVIL", 3 ], [ "ANESTHESIA", 3 ], [ "AXE", 3 ], [ "BUTCHER", 8 ], [ "BOIL", 3 ],
+	  [ "CHISEL", 3 ], [ "CHURN", 3 ], [ "CUT", 3 ], [ "CUT_FINE", 3 ],
       [ "DRILL", 3 ], [ "DIG", 3 ], [ "DISTILL", 3 ], [ "FISHING", 3 ], [ "FILE", 3 ],
       [ "GRIND", 3 ], [ "HAMMER", 3 ], [ "HAMMER_FINE", 3 ], [ "HOSE", 3 ],
       [ "KNIT", 5 ], [ "LEATHER_AWL", 5 ], [ "LOCKPICK", 8 ], [ "PRY", 3 ], [ "PULL", 3 ], [ "REAM", 3 ], [ "SAW_M", 3 ],
       [ "SAW_M_FINE", 3 ], [ "SAW_W", 3 ], [ "SEW_CURVED", 3 ], [ "SEW", 3 ],
-      [ "SCREW", 3 ], [ "SCREW_FINE", 3 ],
-      [ "SMOOTH", 3 ], [ "WELD", 3 ], [ "WRENCH", 3 ],
+      [ "SCREW", 3 ], [ "SCREW_FINE", 3 ], [ "SMOKE_PIPE", 3 ],
+      [ "SMOOTH", 3 ], [ "SHEAR", 3 ], [ "WELD", 3 ], [ "WRENCH", 3 ],
       [ "WRENCH_FINE", 3 ], [ "VISE", 3 ]
     ],
     "use_action": [
@@ -2083,6 +2084,7 @@
   },
   {
     "id": "powered_earmuffs_heli_on",
+    "looks_like": "powered_earmuffs_heli",
     "type": "TOOL_ARMOR",
     "category": "clothing",
     "repairs_like": "powered_earmuffs",
@@ -2108,6 +2110,30 @@
     "coverage": 10,
     "material_thickness": 2,
     "magazine_well": "250 ml"
+  },
+  {
+    "id": "jacket_leather_gosling",
+    "type": "ARMOR",
+    "name": { "str": "scorpion ornamented jacket" },
+    "description": "A light leather jacket with a bleached white surface.  It has two pockets on the front, mainly for putting your hands in.  A golden scorpion is embedded on its back.  Fit for a real human being, and a real hero.",
+    "weight": "1450 g",
+    "volume": "4500 ml",
+    "price": "179 USD",
+    "price_postapoc": "5 USD",
+    "to_hit": 1,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "looks_like": "jacket_leather",
+    "color": "red",
+    "covers": [ "torso", "arms" ],
+    "coverage": 90,
+    "encumbrance": 15,
+    "storage": "1 L",
+    "warmth": 30,
+    "material_thickness": 2,
+    "environmental_protection": 1,
+    "valid_mods": [ "steel_padded", "alloy_padded" ],
+    "flags": [ "VARSIZE", "POCKETS", "OUTER", "FANCY" ]
   },
   {
     "id": "blazer_black",
