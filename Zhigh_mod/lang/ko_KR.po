@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zhigh_Mod\n"
-"POT-Creation-Date: 2024-06-12 09:52+0900\n"
+"POT-Creation-Date: 2024-06-19 17:20+0900\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -1398,6 +1398,19 @@ msgid "A pair of earmuffs favored by helicopter pilots.  The earmuffs are turned
 msgstr ""
 "헬리콥터 조종사들이 선호하는 헤드셋입니다.  배터리가 없거나 꺼진 상태하면 일반적인 이어머프와 비슷하게 모든 소리를 차단합니다.  전력이 계속 들어오는 상태에서는 일정 크기 이상의 소리를 차단할 뿐만 아니라, 무전 전파 또한 인식"
 "할 수 있습니다."
+
+#: .\ZhighArmor.json
+msgid "scorpion ornamented jacket"
+msgid_plural "scorpion ornamented jackets"
+msgstr[0] "전갈 장식이 된 자켓"
+
+#. ~ Description for {'str': 'scorpion ornamented jacket'}
+#: .\ZhighArmor.json
+msgid "A light leather jacket with a bleached white surface.  It has two pockets on the front, mainly for putting your hands in.  A golden scorpion is embedded on its back.  Fit for a real human being, and a real hero."
+msgstr ""
+"표백 처리된 흰색의 가죽 자켓입니다.  당신의 손을 넣기 위한 두 개의 주머니가 앞에 달려 있습니다.  등에는 황금색의 전갈이 새겨져 있습니다.\n"
+"(이하는 영화 '드라이브'의 오마주)\n"
+"진짜 인간, 진짜 영웅에게 어울립니다."
 
 #: .\ZhighArmor.json .\ZhighItemRemake.json
 msgid "blazer"
@@ -4891,7 +4904,9 @@ msgid_plural "combat mask, flashlights"
 msgstr[0] "전투 가면 (손전등)"
 
 #. ~ Use action menu_text for {'str': 'combat mask, flashlight'}.
-#: .\ZhighMasks.json
+#. ~ Use action menu_text for {'str': 'Plasma Sword (on)'}.
+#. ~ Use action menu_text for {'str': 'Plasma Piercer (on)'}.
+#: .\ZhighMasks.json .\ZhighWeapons\ZhighMelee.json
 msgid "Deactivate"
 msgstr "비활성화"
 
@@ -9631,6 +9646,7 @@ msgid "Small Game Rifle Hunter"
 msgstr "소구경 소총 사냥꾼"
 
 #. ~ Profession (male Small Game Rifle Hunter) description
+#. ~ Profession (male Air Rifle Hunter) description
 #: .\ZhighProfession.json
 msgctxt "prof_desc_male"
 msgid ""
@@ -9641,6 +9657,7 @@ msgstr ""
 "습니다."
 
 #. ~ Profession (female Small Game Rifle Hunter) description
+#. ~ Profession (female Air Rifle Hunter) description
 #: .\ZhighProfession.json
 msgctxt "prof_desc_female"
 msgid ""
@@ -9679,6 +9696,426 @@ msgid ""
 msgstr ""
 "어린 시절부터 당신은 사격을 좋아했으며, 이내 소총 사격을 좋아하게 되었습니다.  만일 세상에 종말이 닥쳐온다고 해도 당신의 믿음직한 소총을 대신할 수 있는 것은 없을 것으로 생각합니다.  그래서 실제로 종말이 닥쳐오자 제일 값비싼 "
 "소총을 가져왔습니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Air Rifle Hunter"
+msgstr "공기총 사냥꾼"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Air Rifle Hunter"
+msgstr "공기총 사냥꾼"
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Hunter with a Dog"
+msgstr "사냥개와 함께하는 사냥꾼"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Hunter with a Dog"
+msgstr "사냥개와 함께하는 사냥꾼"
+
+#. ~ Profession (male Hunter with a Dog) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"Ever since you were a child you loved hunting, and you soon took a liking to the challenge of hunting with a rifle.  Why, if the world ended there's nothing you'd want at your side more than your trusty rifle.  So when it "
+"did, you made sure to bring it along.  And your not-so-little friend too."
+msgstr ""
+"어린 시절부터 당신은 사격을 좋아했으며, 이내 소총 사격을 좋아하게 되었습니다.  만일 세상에 종말이 닥쳐온다고 해도 당신의 믿음직한 소총을 대신할 수 있는 것은 없을 것으로 생각합니다.  그래서 실제로 종말이 닥쳐오자 소총을 가져왔"
+"습니다.  그리고 당신의 작(지는 않)은 친구도 같이 왔죠."
+
+#. ~ Profession (female Hunter with a Dog) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"Ever since you were a child you loved hunting, and you soon took a liking to the challenge of hunting with a rifle.  Why, if the world ended there's nothing you'd want at your side more than your trusty rifle.  So when it "
+"did, you made sure to bring it along.  And your not-so-little friend too."
+msgstr ""
+"어린 시절부터 당신은 사격을 좋아했으며, 이내 소총 사격을 좋아하게 되었습니다.  만일 세상에 종말이 닥쳐온다고 해도 당신의 믿음직한 소총을 대신할 수 있는 것은 없을 것으로 생각합니다.  그래서 실제로 종말이 닥쳐오자 소총을 가져왔"
+"습니다.  그리고 당신의 작(지는 않)은 친구도 같이 왔죠."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Crew Chief"
+msgstr "은행 강도 - 크루 치프"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Crew Chief"
+msgstr "은행 강도 - 크루 치프"
+
+#. ~ Profession (male Bank Robber - Crew Chief) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"The Crew Chief, also known as the Caporegime, is the head of a branch of an organized crime syndicate.  The Crew Chief commands a crew of soldiers and reports directly to a boss or an underboss.  When the crime syndicate "
+"needs to have someone dealt with, the Crew Chief and his soldiers make sure it's done."
+msgstr ""
+"카포레짐으로도 알려져 있는 크루 치프는 마피아의 일부를 이끌 수 있는 고위 간부를 말합니다.  크루 치프는 그의 하수인과 동료들에게 지시를 하고 곧바로 보스와 그의 오른팔에게 보고합니다.  범죄단이 처리할 일이 필요하다면, 크루 치프"
+"와 그의 동료들이 그 일을 제대로 처리할 것입니다."
+
+#. ~ Profession (female Bank Robber - Crew Chief) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"The Crew Chief, also known as the Caporegime, is the head of a branch of an organized crime syndicate.  The Crew Chief commands a crew of soldiers and reports directly to a boss or an underboss.  When the crime syndicate "
+"needs to have someone dealt with, the Crew Chief and his soldiers make sure it's done."
+msgstr ""
+"카포레짐으로도 알려져 있는 크루 치프는 마피아의 일부를 이끌 수 있는 고위 간부를 말합니다.  크루 치프는 그의 하수인과 동료들에게 지시를 하고 곧바로 보스와 그의 오른팔에게 보고합니다.  범죄단이 처리할 일이 필요하다면, 크루 치프"
+"와 그의 동료들이 그 일을 제대로 처리할 것입니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Armorer"
+msgstr "은행 강도 - 아머러"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Armorer"
+msgstr "은행 강도 - 아머러"
+
+#. ~ Profession (male Bank Robber - Armorer) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"The Armorer was formerly a profession within the military.  The armorer's job is to maintain, repair and improve armors.  Any self-respecting crime syndicate needs someone who can make sure the soldiers have the necessary "
+"protection to do their jobs."
+msgstr "아머러는 군대에 있었던 직책이었습니다. 아머러는 갑옷을 유지, 보수, 개량하는것이 자신의 일입니다.  어느 범죄단이라도 모두가 그들의 일을 제대로 처리하기 위해 충분한 보호구를 제공해 줄 수 있는 사람이 필요할 것입니다."
+
+#. ~ Profession (female Bank Robber - Armorer) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"The Armorer was formerly a profession within the military.  The armorer's job is to maintain, repair and improve armors.  Any self-respecting crime syndicate needs someone who can make sure the soldiers have the necessary "
+"protection to do their jobs."
+msgstr "아머러는 군대에 있었던 직책이었습니다. 아머러는 갑옷을 유지, 보수, 개량하는것이 자신의 일입니다.  어느 범죄단이라도 모두가 그들의 일을 제대로 처리하기 위해 충분한 보호구를 제공해 줄 수 있는 사람이 필요할 것입니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Muscle"
+msgstr "은행 강도 - 머슬"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Muscle"
+msgstr "은행 강도 - 머슬"
+
+#. ~ Profession (male Bank Robber - Muscle) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"The Muscle is a tough guy who uses violence to send messages from his Mafia superiors.  They are the backbone of any criminal organization.  The muscle is called in whenever you need to rough someone up, break some legs, "
+"crush a skull or remind people who's boss."
+msgstr ""
+"머슬은 자신의 마피아 간부들의 말을 폭력으로 전하는 터프가이입니다.  그들은 모든 범죄조직의 중심입니다.  누군가가 다른사람을 때리고, 다리를 부러트리고, 머리를 박살내고, 누가 짱인지를 보여줘야 할 때, 머슬이 제 역할을 할 것입니"
+"다."
+
+#. ~ Profession (female Bank Robber - Muscle) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"The Muscle is a tough guy who uses violence to send messages from his Mafia superiors.  They are the backbone of any criminal organization.  The muscle is called in whenever you need to rough someone up, break some legs, "
+"crush a skull or remind people who's boss."
+msgstr ""
+"머슬은 자신의 마피아 간부들의 말을 폭력으로 전하는 터프가이입니다.  그들은 모든 범죄조직의 중심입니다.  누군가가 다른사람을 때리고, 다리를 부러트리고, 머리를 박살내고, 누가 짱인지를 보여줘야 할 때, 머슬이 제 역할을 할 것입니"
+"다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Crook"
+msgstr "은행 강도 - 크룩"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Crook"
+msgstr "은행 강도 - 크룩"
+
+#. ~ Profession (male Bank Robber - Crook) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"The Crook is a versatile criminal.  The term is as old as crime itself.  Truly, the crook is a jack of all trades and a master of none.  He steals, lies, cheats and does any and every dishonest or illegal work necessary to "
+"get by."
+msgstr "크룩은 다재다능한 범죄자입니다.  크룩이란 단어는 범죄란 단어처럼 역사가 깊은 단어입니다.  크룩은 진정한 팔방미인입니다.  그는 자신이 원하는 것이 있다면 훔치고, 거짓말하고, 속이고, 어떠한 일이더라도 할 것입니다."
+
+#. ~ Profession (female Bank Robber - Crook) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"The Crook is a versatile criminal.  The term is as old as crime itself.  Truly, the crook is a jack of all trades and a master of none.  He steals, lies, cheats and does any and every dishonest or illegal work necessary to "
+"get by."
+msgstr "크룩은 다재다능한 범죄자입니다.  크룩이란 단어는 범죄란 단어처럼 역사가 깊은 단어입니다.  크룩은 진정한 팔방미인입니다.  그는 자신이 원하는 것이 있다면 훔치고, 거짓말하고, 속이고, 어떠한 일이더라도 할 것입니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Rogue"
+msgstr "은행 강도 - 로그"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Rogue"
+msgstr "은행 강도 - 로그"
+
+#. ~ Profession (male Bank Robber - Rogue) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"The Rogue is a stealthy criminal, capable of sneaky tricks and deadly force.  Versatile and deceptive, the Rogue is hired to do anything from pickpocketing, to burglaries and con jobs.  The trademark of a Rogue is his "
+"versatility - what he lacks in strength he makes up for in skill."
+msgstr ""
+"로그는 야비한 수단과 치명적인 힘을 둘 다 가진 은밀한 범죄자입니다.  다재다능하고 모두를 잘 속일 수 있기에, 로그는 좀도둑질뿐만 아니라 사기까지 모든 일을 할 수 있습니다.  로그의 트레이드 마크라면 다재다능함입니다.  그는 화력"
+"이 부족하더라도 그만의 기술로 커버할 수 있습니다."
+
+#. ~ Profession (female Bank Robber - Rogue) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"The Rogue is a stealthy criminal, capable of sneaky tricks and deadly force.  Versatile and deceptive, the Rogue is hired to do anything from pickpocketing, to burglaries and con jobs.  The trademark of a Rogue is his "
+"versatility - what he lacks in strength he makes up for in skill."
+msgstr ""
+"로그는 야비한 수단과 치명적인 힘을 둘 다 가진 은밀한 범죄자입니다.  다재다능하고 모두를 잘 속일 수 있기에, 로그는 좀도둑질뿐만 아니라 사기까지 모든 일을 할 수 있습니다.  로그의 트레이드 마크라면 다재다능함입니다.  그는 화력"
+"이 부족하더라도 그만의 기술로 커버할 수 있습니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Burglar"
+msgstr "은행 강도 - 버글러"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Burglar"
+msgstr "은행 강도 - 버글러"
+
+#. ~ Profession (male Bank Robber - Burglar) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"The natural dexterity of the Burglar has benefits beyond merely breaking and entering.  Being nimble allows the Burglar to pick locks, bag bodies and answer pagers faster.  They are also harder to hit in combat.  They stay "
+"alive by staying out of the way.  This physical conditioning also gives the Burglar a high tolerance to pain and the ability to shrug off wounds quickly."
+msgstr ""
+"버글러의 타고난 민첩함은 단순히 쳐부수고 들어가는 것을 넘어섭니다.  버글러의 재빠름은 자물쇠를 따는 것과 시체를 처리하는 것, 그리고 페이저에 응답하는 것을 빠르게 하게 합니다.  또한 그들은 전투에서 잘 피격되지 않습니다.  그들"
+"은 대개 싸움에서 벗어나는 방법으로 살아남습니다.  버글러의 이러한 신체조건은 고통을 좀 더 견디게 해주고, 빨리 회복할 수 있게 도움을 줍니다."
+
+#. ~ Profession (female Bank Robber - Burglar) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"The natural dexterity of the Burglar has benefits beyond merely breaking and entering.  Being nimble allows the Burglar to pick locks, bag bodies and answer pagers faster.  They are also harder to hit in combat.  They stay "
+"alive by staying out of the way.  This physical conditioning also gives the Burglar a high tolerance to pain and the ability to shrug off wounds quickly."
+msgstr ""
+"버글러의 타고난 민첩함은 단순히 쳐부수고 들어가는 것을 넘어섭니다.  버글러의 재빠름은 자물쇠를 따는 것과 시체를 처리하는 것, 그리고 페이저에 응답하는 것을 빠르게 하게 합니다.  또한 그들은 전투에서 잘 피격되지 않습니다.  그들"
+"은 대개 싸움에서 벗어나는 방법으로 살아남습니다.  버글러의 이러한 신체조건은 고통을 좀 더 견디게 해주고, 빨리 회복할 수 있게 도움을 줍니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Infiltrator"
+msgstr "은행 강도 - 인필트레이터"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Infiltrator"
+msgstr "은행 강도 - 인필트레이터"
+
+#. ~ Profession (male Bank Robber - Infiltrator) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"The Infiltrator is an agent hired by a government or large criminal organization to obtain information about its enemies, or by a corporation to obtain industrial secrets from its competitors.  The Infiltrator is a close "
+"combat specialist who knows how to use the environment in order to get the upper hand."
+msgstr "인필트레이터는 정부나 거대 범죄단에서 적의 정보를 알아내기 위해서나, 기업에서 경쟁사의 기밀을 알아내려고 고용되는 요원입니다.  인필트레이터는 전투에서 주변 환경을 이용하는 근접전의 전문가입니다."
+
+#. ~ Profession (female Bank Robber - Infiltrator) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"The Infiltrator is an agent hired by a government or large criminal organization to obtain information about its enemies, or by a corporation to obtain industrial secrets from its competitors.  The Infiltrator is a close "
+"combat specialist who knows how to use the environment in order to get the upper hand."
+msgstr "인필트레이터는 정부나 거대 범죄단에서 적의 정보를 알아내기 위해서나, 기업에서 경쟁사의 기밀을 알아내려고 고용되는 요원입니다.  인필트레이터는 전투에서 주변 환경을 이용하는 근접전의 전문가입니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Sociopath"
+msgstr "은행 강도 - 소시오패스"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Sociopath"
+msgstr "은행 강도 - 소시오패스"
+
+#. ~ Profession (male Bank Robber - Sociopath) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"The Sociopath is known to be one of the most effective type of criminals.  Where he is effective, he is also difficult to deal with, which is why larger organizations avoid him.  Bold, disinhibitted and mean, the Sociopath "
+"excels in the most violent of jobs.  Unable to feel guilt for the crimes he commits, the Sociopath is a dangerous enemy."
+msgstr ""
+"소시오패스는 범죄자 가운데 가장 유용한 타입 중 하나로 알려져 있습니다.  유용하기도 하지만, 상대하기에는 벅차기 때문에, 큰 조직들은 이들을 기피합니다.  대담하고, 막을 수 없고, 사악하기에, 소시오패스는 대부분의 잔혹한 일에 뛰어"
+"납니다.  자신이 저지르는 범죄에 대한 죄책감 따윈 없기에, 그들은 위험한 적이 됩니다."
+
+#. ~ Profession (female Bank Robber - Sociopath) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"The Sociopath is known to be one of the most effective type of criminals.  Where he is effective, he is also difficult to deal with, which is why larger organizations avoid him.  Bold, disinhibitted and mean, the Sociopath "
+"excels in the most violent of jobs.  Unable to feel guilt for the crimes he commits, the Sociopath is a dangerous enemy."
+msgstr ""
+"소시오패스는 범죄자 가운데 가장 유용한 타입 중 하나로 알려져 있습니다.  유용하기도 하지만, 상대하기에는 벅차기 때문에, 큰 조직들은 이들을 기피합니다.  대담하고, 막을 수 없고, 사악하기에, 소시오패스는 대부분의 잔혹한 일에 뛰어"
+"납니다.  자신이 저지르는 범죄에 대한 죄책감 따윈 없기에, 그들은 위험한 적이 됩니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Gambler"
+msgstr "은행 강도 - 갬블러"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Gambler"
+msgstr "은행 강도 - 갬블러"
+
+#. ~ Profession (male Bank Robber - Gambler) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"Heading into the furnace of battle requires skill, hardness and more than a little luck.  Some people just have it.  Luck is an elusive quality.  The ancient Greeks believed it was the design of the Gods.  It isn't.  It "
+"certainly exists, but it's something you can earn.  It requires preparation and forethought to get your pieces in place, and maximizes your chances of a return.  It's counting cards, rather than the blessing of Fortuna."
+msgstr ""
+"전투로 가득 찬 곳에 들어가기 위해서는 기술과 견고함이 필요합니다.  그리고 상당한 운도 필요합니다.  몇몇 사람들은 상당한 운을 타고납니다.  운은 보기 힘든 재능입니다.  고대 그리스인들은 운을 신만이 만들어 준다고 믿었습니다.  이"
+"는 사실이 아닙니다.  운을 타고난 사람들도 존재하지만, 운은 만들어낼 수도 있습니다.  이를 위해서는 준비와, 모든 것이 계획대로 이루어지게 하여 수익을 최대한으로 끌어들일 수 있는 치밀한 고려가 필요합니다.  운의 여신을 기다리는 "
+"것이 아니라, 카드들을 전부 기억해 두는 것이죠."
+
+#. ~ Profession (female Bank Robber - Gambler) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"Heading into the furnace of battle requires skill, hardness and more than a little luck.  Some people just have it.  Luck is an elusive quality.  The ancient Greeks believed it was the design of the Gods.  It isn't.  It "
+"certainly exists, but it's something you can earn.  It requires preparation and forethought to get your pieces in place, and maximizes your chances of a return.  It's counting cards, rather than the blessing of Fortuna."
+msgstr ""
+"전투로 가득 찬 곳에 들어가기 위해서는 기술과 견고함이 필요합니다.  그리고 상당한 운도 필요합니다.  몇몇 사람들은 상당한 운을 타고납니다.  운은 보기 힘든 재능입니다.  고대 그리스인들은 운을 신만이 만들어 준다고 믿었습니다.  이"
+"는 사실이 아닙니다.  운을 타고난 사람들도 존재하지만, 운은 만들어낼 수도 있습니다.  이를 위해서는 준비와, 모든 것이 계획대로 이루어지게 하여 수익을 최대한으로 끌어들일 수 있는 치밀한 고려가 필요합니다.  운의 여신을 기다리는 "
+"것이 아니라, 카드들을 전부 기억해 두는 것이죠."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Grinder"
+msgstr "은행 강도 - 그라인더"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Grinder"
+msgstr "은행 강도 - 그라인더"
+
+#. ~ Profession (male Bank Robber - Grinder) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"A typical grinder is a hard working individual, able to take control of difficult situations and turn them around.  The grinder relies heavily on always being in the front and dishing out punishment, being able to survive "
+"due to the fact that he does damage to the enemies regardless of how much damage he has sustained."
+msgstr ""
+"전형적인 그라인더는 열심히 일하고, 어려운 상황 속에서도 흔들리지 않고 상황을 해결할 수 있습니다.  그라인더는 항상 전방에 서고, 여러 처벌을 이겨내며, 그가 얼마나 피해를 받든 간에 적에게 피해를 줘 살아날 수 있는 점에 크게 의존"
+"하고 있습니다."
+
+#. ~ Profession (female Bank Robber - Grinder) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"A typical grinder is a hard working individual, able to take control of difficult situations and turn them around.  The grinder relies heavily on always being in the front and dishing out punishment, being able to survive "
+"due to the fact that he does damage to the enemies regardless of how much damage he has sustained."
+msgstr ""
+"전형적인 그라인더는 열심히 일하고, 어려운 상황 속에서도 흔들리지 않고 상황을 해결할 수 있습니다.  그라인더는 항상 전방에 서고, 여러 처벌을 이겨내며, 그가 얼마나 피해를 받든 간에 적에게 피해를 줘 살아날 수 있는 점에 크게 의존"
+"하고 있습니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Yakuza"
+msgstr "은행 강도 - 야쿠자"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Yakuza"
+msgstr "은행 강도 - 야쿠자"
+
+#. ~ Profession (male Bank Robber - Yakuza) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"The Yakuza are one of the most feared crime syndicates in the world.  Ruled by the ninkyo and lead by the Oyabun, the Yakuza are known for their strict code of conduct, organized nature and the tattoos that cover their "
+"entire bodies.  An outcast and a dropout from society, the Yakuza knows how it is to fend for himself.  While he appears gentle, he is not to be taken lightly."
+msgstr ""
+"야쿠자는 세계에서 가장 두려운 폭력 조직 중 하나입니다.  야쿠자는 임협으로 다스려지고 오야붕에게 통솔되며, 엄격한 행동 강령과 조직성, 그리고 전신을 감싸는 문신으로 잘 알려져 있습니다.  사회로부터 추방되고 낙오된 야쿠자들은 자"
+"기 자신을 보호하기 위해 어떻게 행동해야 하는지 알고 있습니다.  그들이 관대해 보이더라도, 결코 가볍게 봐서는 안됩니다."
+
+#. ~ Profession (female Bank Robber - Yakuza) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"The Yakuza are one of the most feared crime syndicates in the world.  Ruled by the ninkyo and lead by the Oyabun, the Yakuza are known for their strict code of conduct, organized nature and the tattoos that cover their "
+"entire bodies.  An outcast and a dropout from society, the Yakuza knows how it is to fend for himself.  While he appears gentle, he is not to be taken lightly."
+msgstr ""
+"야쿠자는 세계에서 가장 두려운 폭력 조직 중 하나입니다.  야쿠자는 임협으로 다스려지고 오야붕에게 통솔되며, 엄격한 행동 강령과 조직성, 그리고 전신을 감싸는 문신으로 잘 알려져 있습니다.  사회로부터 추방되고 낙오된 야쿠자들은 자"
+"기 자신을 보호하기 위해 어떻게 행동해야 하는지 알고 있습니다.  그들이 관대해 보이더라도, 결코 가볍게 봐서는 안됩니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Wheelman, Van"
+msgstr "은행 강도 - 밴 드라이버"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Wheelman, Van"
+msgstr "은행 강도 - 밴 드라이버"
+
+#. ~ Profession (male Bank Robber - Wheelman, Van) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"You specialized in high-stakes getaways, expertly navigating urban landscapes and escaping law enforcement with unparalleled skill behind the wheel of an escape van.  With nerves of steel and a deep understanding of your "
+"powerful vehicle, you ensures the crew's swift and safe escape from any heist or dangerous situations.  Now that your crewmates are all dead, your vehicle and your skill is all that you could belive in."
+msgstr ""
+"당신은 탈출 밴의 운전석에서 비할 데 없는 기술로 도시 지형을 능숙하게 탐색하고 법 집행 기관을 탈출하는 고난도 도주에 특화되어 있습니다.  강철 같은 신경과 강력한 차량에 대한 깊은 이해를 바탕으로 어떤 강도나 위험한 상황에서도 팀"
+"원들이 신속하고 안전하게 탈출할 수 있도록 해야 합니다.  이제 팀원들이 모두 죽었으니 당신의 차량과 기술만 믿고 의지할 수 있습니다."
+
+#. ~ Profession (female Bank Robber - Wheelman, Van) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"You specialized in high-stakes getaways, expertly navigating urban landscapes and escaping law enforcement with unparalleled skill behind the wheel of an escape van.  With nerves of steel and a deep understanding of your "
+"powerful vehicle, you ensures the crew's swift and safe escape from any heist or dangerous situations.  Now that your crewmates are all dead, your vehicle and your skill is all that you could belive in."
+msgstr ""
+"당신은 탈출 밴의 운전석에서 비할 데 없는 기술로 도시 지형을 능숙하게 탐색하고 법 집행 기관을 탈출하는 고난도 도주에 특화되어 있습니다.  강철 같은 신경과 강력한 차량에 대한 깊은 이해를 바탕으로 어떤 강도나 위험한 상황에서도 팀"
+"원들이 신속하고 안전하게 탈출할 수 있도록 해야 합니다.  이제 팀원들이 모두 죽었으니 당신의 차량과 기술만 믿고 의지할 수 있습니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Wheelman, Car"
+msgstr "은행 강도 - 경차 드라이버"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Wheelman, Car"
+msgstr "은행 강도 - 경차 드라이버"
+
+#. ~ Profession (male Bank Robber - Wheelman, Car) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"You specialized in high-stakes getaways, expertly navigating urban landscapes and escaping law enforcement with unparalleled skill behind the wheel of a roaring car.  With nerves of steel and a deep understanding of your "
+"fast vehicle, you ensures the crew's swift and safe escape from any heist or dangerous situations.  Now that your crewmates are all dead, your vehicle and your skill is all that you could belive in."
+msgstr ""
+"당신은 탈출용 경차의 운전석에서 비할 데 없는 기술로 도시 지형을 능숙하게 탐색하고 법 집행 기관을 탈출하는 고난도 도주에 특화되어 있습니다.  강철 같은 신경과 강력한 차량에 대한 깊은 이해를 바탕으로 어떤 강도나 위험한 상황에서"
+"도 팀원들이 신속하고 안전하게 탈출할 수 있도록 해야 합니다.  이제 팀원들이 모두 죽었으니 당신의 차량과 기술만 믿고 의지할 수 있습니다."
+
+#. ~ Profession (female Bank Robber - Wheelman, Car) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"You specialized in high-stakes getaways, expertly navigating urban landscapes and escaping law enforcement with unparalleled skill behind the wheel of a roaring car.  With nerves of steel and a deep understanding of your "
+"fast vehicle, you ensures the crew's swift and safe escape from any heist or dangerous situations.  Now that your crewmates are all dead, your vehicle and your skill is all that you could belive in."
+msgstr ""
+"당신은 탈출용 경차의 운전석에서 비할 데 없는 기술로 도시 지형을 능숙하게 탐색하고 법 집행 기관을 탈출하는 고난도 도주에 특화되어 있습니다.  강철 같은 신경과 강력한 차량에 대한 깊은 이해를 바탕으로 어떤 강도나 위험한 상황에서"
+"도 팀원들이 신속하고 안전하게 탈출할 수 있도록 해야 합니다.  이제 팀원들이 모두 죽었으니 당신의 차량과 기술만 믿고 의지할 수 있습니다."
 
 #: .\ZhighProfession.json
 msgctxt "profession_male"
@@ -10044,35 +10481,77 @@ msgctxt "prof_desc_female"
 msgid "The day when the world ends came, and you grabbed whatever you could get your hands on during a crazy riot - some nets and a forked spear.  Ave Imperator, Morituri te salutant."
 msgstr "세상의 끝이 도래했을 때, 이 혼란스러운 시위 속에서 손에 잡히는 것은 무엇이든 쥐었습니다 - 그물과 삼지창이죠.  황제 폐하 만세, 곧 죽을 자들이 인사 올립니다."
 
-#. ~ Name for scenario 'Gone hunting' for a male character
+#. ~ Name for scenario 'Challenge - Bank Robbery' for a male character
 #: .\ZhighSenarios.json
 msgctxt "scenario_male"
-msgid "Gone hunting"
-msgstr "사냥 가기"
+msgid "Challenge - Bank Robbery"
+msgstr "챌린지 - 은행털이"
 
-#. ~ Name for scenario 'Gone hunting' for a female character
+#. ~ Name for scenario 'Challenge - Bank Robbery' for a female character
 #: .\ZhighSenarios.json
 msgctxt "scenario_female"
-msgid "Gone hunting"
-msgstr "사냥 가기"
+msgid "Challenge - Bank Robbery"
+msgstr "챌린지 - 은행털이"
 
-#. ~ Description for scenario 'Gone hunting' for a male character.
+#. ~ Description for scenario 'Challenge - Bank Robbery' for a male character.
+#: .\ZhighSenarios.json
+msgctxt "scen_desc_male"
+msgid ""
+"Don't let yourself get attached to anything you are not willing to walk out on in 30 seconds flat if you feel the heat around the corner.  Crap, this will take more than 30 days.  Well, do what you do best, take some scores."
+msgstr "낌새가 안 좋을 때 30초 안에 털고 나오지 못할 것에 정붙이지 말라.  젠장, 이건 30일 이상 걸릴 것 같네요.  뭐, 가장 잘 하는 것을 하면 됩니다, 돈을 털고 적들과 싸우세요."
+
+#. ~ Description for scenario 'Challenge - Bank Robbery' for a female
+#. character.
+#: .\ZhighSenarios.json
+msgctxt "scen_desc_female"
+msgid ""
+"Don't let yourself get attached to anything you are not willing to walk out on in 30 seconds flat if you feel the heat around the corner.  Crap, this will take more than 30 days.  Well, do what you do best, take some scores."
+msgstr "낌새가 안 좋을 때 30초 안에 털고 나오지 못할 것에 정붙이지 말라.  젠장, 이건 30일 이상 걸릴 것 같네요.  뭐, 가장 잘 하는 것을 하면 됩니다, 돈을 털고 적들과 싸우세요."
+
+#. ~ Starting location for scenario 'Challenge - Bank Robbery'.
+#: .\ZhighSenarios.json
+msgctxt "start_name"
+msgid "During a heist"
+msgstr "강도질 도중"
+
+#. ~ Name for scenario 'Hunt: Showdown' for a male character
+#: .\ZhighSenarios.json
+msgctxt "scenario_male"
+msgid "Hunt: Showdown"
+msgstr "헌트: 쇼다운"
+
+#. ~ Name for scenario 'Hunt: Showdown' for a female character
+#: .\ZhighSenarios.json
+msgctxt "scenario_female"
+msgid "Hunt: Showdown"
+msgstr "헌트: 쇼다운"
+
+#. ~ Description for scenario 'Hunt: Showdown' for a male character.
 #: .\ZhighSenarios.json
 msgctxt "scen_desc_male"
 msgid "You went out of town to do what you love to do, hunting!"
 msgstr "동네를 떠나서 당신이 제일 좋아하는 일을 하려고 합니다, 사냥이죠!"
 
-#. ~ Description for scenario 'Gone hunting' for a female character.
+#. ~ Description for scenario 'Hunt: Showdown' for a female character.
 #: .\ZhighSenarios.json
 msgctxt "scen_desc_female"
 msgid "You went out of town to do what you love to do, hunting!"
 msgstr "동네를 떠나서 당신이 제일 좋아하는 일을 하려고 합니다, 사냥이죠!"
 
-#. ~ Starting location for scenario 'Gone hunting'.
+#. ~ Starting location for scenario 'Hunt: Showdown'.
 #: .\ZhighSenarios.json
 msgctxt "start_name"
 msgid "Hunter's shack"
 msgstr "사냥꾼의 오두막"
+
+#: .\ZhighSenarios.json
+msgid "Hunt: Showdown"
+msgstr "헌트: 쇼다운"
+
+#. ~ Description for mission '{'str': 'Hunt: Showdown'}'
+#: .\ZhighSenarios.json
+msgid "You tried to track down that infamous monster.  The world is doomed but you do not care; you have to hunt this beast down, since this beast caused and will cause troubles to everyone."
+msgstr "악명 높은 괴물을 추적하고 있었습니다.  세상이 멸망했지만 신경 쓰지 않습니다; 이 괴물이 모두에게 피해를 입혔고 입힐 것이기에, 당신은 이 괴물을 사냥해야 합니다."
 
 #: .\ZhighSenarios.json
 msgid "Hunting blind"
@@ -10621,6 +11100,14 @@ msgid "mounted beam spotlight"
 msgstr "설치식 빔형 스포트라이트"
 
 #: .\ZhighVehicle.json
+msgid "Escape Car"
+msgstr "탈출 차량"
+
+#: .\ZhighVehicle.json
+msgid "Escape Van"
+msgstr "탈출 밴"
+
+#: .\ZhighVehicle.json
 msgid "handmade go kart"
 msgstr "수제작 고카트"
 
@@ -10633,10 +11120,10 @@ msgid "UNKNOWN"
 msgstr "알 수 없음"
 
 #: .\modinfo.json
-msgid "<color_light_green>Zombie Highschool Mod</color>"
-msgstr "<color_light_green>좀비 고등학교 모드</color>"
+msgid "<color_light_blue>Zombie Highschool Mod</color>"
+msgstr "<color_light_blue>좀비 고등학교 모드</color>"
 
-#. ~ Description for <color_light_green>Zombie Highschool Mod</color>
+#. ~ Description for <color_light_blue>Zombie Highschool Mod</color>
 #: .\modinfo.json
 msgid "Add a weird school which includes quests, killing zombies, and moar, still WIP."
 msgstr "퀘스트와 좀비 죽이는 것을 포함한 기묘한 학교를 추가하며 현재진행형으로 만드는 중입니다."
@@ -15073,6 +15560,88 @@ msgid ""
 msgstr "생존자가 수제작한 철골 경찰봉.  일본의 오키나와에서 유래한 무기, 삼분의 일 지점에 수직 손잡이가 달려있다.  한국 웹툰에 나온 그 캐릭터처럼 도끼같이 휘두를 수 있습니다."
 
 #: .\ZhighWeapons\ZhighMelee.json
+msgid "Shinsakuto Katana"
+msgid_plural "Shinsakuto Katanas"
+msgstr[0] "진품 일본도"
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "Plasma Sword (off)"
+msgid_plural "Plasma Sword (off)s"
+msgstr[0] "플라즈마 검 (꺼짐)"
+
+#. ~ Use action menu_text for {'str': 'Plasma Sword (off)'}.
+#. ~ Use action menu_text for {'str': 'Plasma Piercer (off)'}.
+#. ~ Use action menu_text for {'str': 'cola bomb'}.
+#: .\ZhighWeapons\ZhighMelee.json .\ZhighWeapons\ZhighThrowing.json
+msgid "Activate"
+msgstr "사용하기"
+
+#. ~ Use action msg for {'str': 'Plasma Sword (off)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "Your plasma sword activates."
+msgstr "플라즈마 검이 활성화됩니다."
+
+#. ~ Use action need_charges_msg for {'str': 'Plasma Sword (off)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "The plasma sword's batteries are dead."
+msgstr "플라즈마 검의 배터리가 방전되었습니다."
+
+#. ~ Description for {'str': 'Plasma Sword (off)'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "A handle for a plasma sword.  Makes an excellent melee weapon when activated.  Activate to use this as a sword."
+msgstr "플라즈마 검을 위한 손잡이입니다.  활성화하면 훌륭한 근접 무기가 됩니다.  활성화하면 검으로 사용할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "Plasma Sword (on)"
+msgid_plural "Plasma Sword (on)s"
+msgstr[0] "플라즈마 검 (켜짐)"
+
+#. ~ Use action msg for {'str': 'Plasma Sword (on)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "Your plasma sword deactivates."
+msgstr "플라즈마 검이 비활성화됩니다."
+
+#. ~ Description for {'str': 'Plasma Sword (on)'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "A handle that collapses for easy storage, is now emitting a blade of plasma.  Makes an excellent melee weapon.  Activate to collapse."
+msgstr "보관하기 쉽도록 접을 수 있는 손잡이가 이제 플라즈마 칼날을 뿜어냅니다.  훌륭한 근접 무기입니다.  활성화하면 접힙니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "Plasma Piercer (off)"
+msgid_plural "Plasma Piercer (off)s"
+msgstr[0] "플라즈마 관통자 (꺼짐)"
+
+#. ~ Use action msg for {'str': 'Plasma Piercer (off)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "Your plasma piercer activates."
+msgstr "플라즈마 관통자가 활성화됩니다."
+
+#. ~ Use action need_charges_msg for {'str': 'Plasma Piercer (off)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "The plasma piercer's batteries are dead."
+msgstr "플라즈마 관통자의 배터리가 방전되었습니다."
+
+#. ~ Description for {'str': 'Plasma Piercer (off)'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "A knuckle-like weapon, which could emit a blade of energy when activated.  Makes an excellent melee weapon when activated.  Activate to use this as a sword."
+msgstr "활성화하면 칼날 같은 에너지를 방출하는 너클형 무기입니다.  활성화하면 훌륭한 근접 무기니다.  활성화하면 검으로 사용할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "Plasma Piercer (on)"
+msgid_plural "Plasma Piercer (on)s"
+msgstr[0] "플라즈마 관통자 (켜짐)"
+
+#. ~ Use action msg for {'str': 'Plasma Piercer (on)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "Your plasma piercer deactivates."
+msgstr "플라즈마 관통자가 비활성화됩니다."
+
+#. ~ Description for {'str': 'Plasma Piercer (on)'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "A knuckle-like weapon, which emits a blade of energy now.  Makes an excellent melee weapon.  Activate to collapse."
+msgstr "이제 칼날 같은 에너지를 내뿜는 너클형 무기입니다.  훌륭한 근접 무기입니다.  활성화하면 접힙니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
 msgid "jitte"
 msgid_plural "jittes"
 msgstr[0] "짓테"
@@ -15081,6 +15650,193 @@ msgstr[0] "짓테"
 #: .\ZhighWeapons\ZhighMelee.json
 msgid "A pointed metal stick with a curved prong projecting from the handle.  It's primarily used for disarming opponents, and was used for enforcement in Japan."
 msgstr "구부러진 갈래가 손잡이에서 뻗어나온 긴 쇠막대입니다.  주 용도는 상대방의 무장을 해제하는 것으로써, 일본에서 집행에 사용되었습니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "falchion"
+msgid_plural "falchions"
+msgstr[0] "펄션"
+
+#. ~ Description for {'str': 'falchion'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This is a one-handed, single-edged sword of European origin, which are found in different forms."
+msgstr "이것은 다양한 형태로 발견되는 외날을 지닌 유럽제 한손검입니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "falchion replica"
+msgid_plural "falchion replicas"
+msgstr[0] "펄션 레플리카"
+
+#. ~ Description for {'str': 'falchion replica'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This is a huge two-handed sword from Europe.  You're not quite sure it's supposed to be that bendy."
+msgstr "이것은 다양한 형태로 발견되는 외날을 지닌 유럽제 한손검입니다.  이렇게 쉽사리 구부러지는게 당연한 건지 잘 모르겠네요."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "falchion fake"
+msgid_plural "falchion fakes"
+msgstr[0] "가짜 펄션"
+
+#. ~ Description for {'str': 'falchion fake'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This is a dull, cheaply made replica of a huge two-handed sword from Europe.  It still packs a wallop."
+msgstr "이것은 다양한 형태로 발견되는 외날을 지닌 유럽제 한손검을 본떠 만든 무디고 저렴한 모형입니다.  그래도 진정한 강타를 적에게 날릴 수 있습니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "yatagan"
+msgid_plural "yataganes"
+msgstr[0] "야타간"
+
+#. ~ Description for {'str': 'yatagan', 'str_pl': 'yataganes'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This is a type of Ottoman knife or short sabre used from the mid-16th to late 19th century.  The curved shape gives the yatagan the ability to contact and cut objects faster than a straight sword."
+msgstr "야타간은 16세기 중반부터 19세기 후반까지 사용된 오스만 제국의 칼 혹은 단검의 일종입니다.  칼날의 구부러진 모양 덕분에 직선형 칼보다 빠르게 물체와 접촉해서는 절단할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "yatagan replica"
+msgid_plural "yatagan replicas"
+msgstr[0] "야타간 레플리카"
+
+#. ~ Description for {'str': 'yatagan replica'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This is a broad saber known for its unique shape.  This sword appears to be made very poorly, but it should still stand up to a few swings."
+msgstr "특유의 모양을 지닌 넓은 세이버입니다.  초라하게 만들어진 것 같은 검이지만, 몇 번 휘두르는 정도는 버틸 겁니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "yatagan fake"
+msgid_plural "yatagan fakes"
+msgstr[0] "가짜 야타간"
+
+#. ~ Description for {'str': 'yatagan fake'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This is a dull, cheaply made replica of a broad saber known for its unique shape."
+msgstr "특유의 모양을 지녀 유명해진 넓은 세이버의 값싸고 뭉툭한 레플리카입니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "flamberge"
+msgid_plural "flamberges"
+msgstr[0] "플랑베르쥬"
+
+#. ~ Description for {'str': 'flamberge'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This is a huge two-handed sword from medieval era.  It packs a real wallop."
+msgstr "중세 시대의 거대한 양손 검.  진정한 강타를 적에게 날릴 수 있습니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "flamberge replica"
+msgid_plural "flamberge replicas"
+msgstr[0] "플랑베르쥬 레플리카"
+
+#. ~ Description for {'str': 'flamberge replica'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This is a huge two-handed sword from medieval era.  You're not quite sure it's supposed to be that bendy."
+msgstr "중세 시대의 거대한 양손 검.  이게 원래 이렇게 휘어지는건지 의심이 듭니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "flamberge fake"
+msgid_plural "flamberge fakes"
+msgstr[0] "가짜 플랑베르쥬"
+
+#. ~ Description for {'str': 'flamberge fake'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This is a dull, cheaply made replica of a huge two-handed sword from medieval era.  It still packs a wallop."
+msgstr "중세 시대의 거대한 양손 검을 본떠 만든 무디고 저렴한 모형.  그래도 진정한 강타를 적에게 날릴 수 있습니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "dao"
+msgid_plural "dao"
+msgstr[0] "다오"
+
+#. ~ Description for {'str_sp': 'dao'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A remake of an ancient Chinese sword consisting of a curved blade and a guard with a cupped design.  Existing since the Shang dynasty, this one is made of steel.  One of the four major weapons in folklore, alongside the jian "
+"sword, qiang spear, and gun staff."
+msgstr "곡선형 칼날과 종 모양의 가드로 구성된 고대 중국 도검을 리메이크한 제품입니다.  상왕조 시대부터 존재했던 이 검은 강철로 다시 만들어졌습니다.  지안, 치앙, 곤과 함께 4대 전통 무기 중 하나입니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "kunai"
+msgid_plural "kunais"
+msgstr[0] "쿠나이"
+
+#. ~ Description for {'str': 'kunai'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "A japanese tool which is usually used as a trowel, also famously known as one of the \"ninja weapons.\"  Could be used as a throwing weapon in an emergency."
+msgstr "보통 흙손으로 사용되며 \"닌자 무기\"로도 알려진 유명한 일본식 도구입니다.  비상시에는 투척 무기로도 사용할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "anime katana"
+msgid_plural "anime katanas"
+msgstr[0] "애니메이션용 일본도 모형"
+
+#. ~ Description for {'str': 'anime katana'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This is a rare sword from Japan.  While it's got the right edge and weight, the pommel just snaps off, and you could study the blade with it from some anime."
+msgstr "이것은 일본에서 들여온 진귀한 검입니다.  날의 형태와 무게는 그럴싸하지만, 안장은 그냥 툭툭 끊어지고, 아마 어떤 애니메이션에서 나온 검술을 익힐 때 좋을 것 같습니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "An average looking katana with a black blade."
+msgstr "검은색 칼날이 달린 평범한 모양의 일본도입니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "An average looking katana with a unique thunder like yellow stripes."
+msgstr "번개와 같은 노란 줄무늬가 새겨진 평범한 모양의 일본도입니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "A saw shaped katana, as if someone broke the blade with a rock."
+msgstr "누군가가 돌로 날을 때려 깨뜨린 듯한 톱 모양의 일본도입니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "An average looking katana with a black body with a blue blade."
+msgstr "검은 날몸에 푸른 날을 지닌 평범한 모양의 일본도입니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "An average looking katana with a flaming red blade with a flame looking handguard."
+msgstr "불타는 붉은 색의 칼날과 화염과 같은 모양의 코등이를 지닌 평범한 모양의 일본도입니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "A skinny katana with an extremly thin blade with a butterfly looking handguard."
+msgstr "극단적으로 얇은 칼날과 나비 모양의 코등이를 지니며 가느다란 일본도입니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "A big, machete looking katana with a hole in the midddle of the orange blade."
+msgstr "날의 중간쯤에 구멍이 나 있는 마체테처럼 생긴 큰 일본도입니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "A thin katana with a pink wobbly blade and a flower looking handguard."
+msgstr "분홍색의 흐느적거리는 칼날과 꽃 모양 코등이를 지닌 얇은 일본도입니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "A weird shaped katana with a white wavy blade like a snake."
+msgstr "뱀과 같이 구불구불한 모양을 지닌 이상한 일본도입니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "A weird shaped katana with a reversed blade, so the blade part is actually dull and the dull part is a blade."
+msgstr "역날이 달린 이상한 일본도로, 칼날 부분은 날이 서 있지 않고 반대로 칼몸 부분에 날이 서 있습니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "A simple looking katana with a white balde, white grip, and a golden handguard.  You are the storm."
+msgstr "흰색 칼날, 흰색 손잡이, 황금색 손 보호대가 있는 심플한 디자인의 일본도입니다.  당신이야말로 다가오는 폭풍입니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "arkansas toothpick"
+msgid_plural "arkansas toothpicks"
+msgstr[0] "아칸소 주 이쑤시개"
+
+#. ~ Description for {'str': 'arkansas toothpick', 'str_pl': 'arkansas
+#. toothpicks'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "Compared to an ordinary hunting knife, this double-edge sheath knife is more focused on combat rather than cutting and skinning game."
+msgstr "일반 사냥용 칼에 비교하면, 이 양날이 달린 단검은 사냥감을 자르고 가죽을 벗기는 것보다는 전투에 비교적 더 중점을 둡니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "tactical machete"
+msgid_plural "tactical machetes"
+msgstr[0] "전술 마체테"
+
+#. ~ Description for {'str': 'tactical machete'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "A thick tough steel blade with sawteeth on one side and a flat chisel tip for digging.  A tool for special operators or someone who likes tactical stuff."
+msgstr "한쪽에 톱니가 있는 두껍고 튼튼한 강철 칼날과 땅을 파기 위한 평평한 끌 모양의 팁이 있습니다.  특수 부대원이나 전술적인 것을 좋아하는 사람을 위한 도구입니다."
 
 #: .\ZhighWeapons\ZhighRanged.json
 msgid "marble gun"
@@ -15985,6 +16741,92 @@ msgstr ""
 "이 무기는 초고속으로 강철 레일을 발사하여 신체 부위를 절단하고 벽에 고정할 수 있는 희귀한 맞춤형 무기입니다.  이 무기가 발사하는 초고속 금속 말뚝은 전자기 유도에 의해 생성된 로렌츠 힘에 의해 자연 연소 지점까지 가속되며, 표준 "
 "UPS에 의해 전원이 공급됩니다."
 
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "jezail rifle"
+msgid_plural "jezail rifles"
+msgstr[0] "제자일 소총"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "This is a simple, cost-efficient and often handmade long arm commonly used in South Asia and parts of the Middle East in the past.  It was popular amongst the Pashtun tribesmen, who deposed Shah Shuja."
+msgstr "과거 남아시아와 중동 일부 지역에서 흔히 사용했던 간단하고, 효율적인 비용을 지니며, 대부분 수작업으로 만든 긴 화기입니다.  샤 슈자를 축출한 파슈툰 부족들 사이에서 인기를 끌었습니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Thompson/Center Contender"
+msgid_plural "Thompson/Center Contenders"
+msgstr[0] "톰슨/센터 컨텐더"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "A break-action single-shot pistol which was introduced in 1967 by Thompson/Center Arms.  It can be chambered in various cartridges."
+msgstr "1967년 톰슨/센터 암즈에서 출시한 브레이크 액션 단발 권총입니다.  다양한 종류의 총탄을 장전할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "M53 Medusa"
+msgid_plural "M53 Medusa"
+msgstr[0] "M53 메두사"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"As the descendant and the better reproduction of Medusa Model 47, this revolver is specially made for most types of ammunition.  Due to some up-to-date tech, there are no problems in order to load and shoot various types of "
+"ammo."
+msgstr "메두사 모델 47 리볼버의 후손이자 더 나은 개선판인 이 리볼버는 대부분의 탄약을 사격할 수 있게 특별히 제작되었습니다.  모종의 최신 기술 덕분에 다양한 종류의 탄약을 장전하고 발사하는 데 아무런 문제가 없습니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "repeating bullet crossbow"
+msgid_plural "repeating bullet crossbows"
+msgstr[0] "연발 석궁"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A custom-made crossbow with a clever mechanism that loads and fires pebbles in a single motion, it has a wooden magazine that holds 10 pebbles.  Pebbles fired from this weapon have a good chance of remaining intact for re-"
+"use."
+msgstr "3 개의 조약돌을 발사하는 장전이 느린 무기.  힘이 센 사람은 더 빨리 장전 할 수 있습니다.  이 무기에서 발사된 조약돌은 재사용 확률이 높습니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "repeating dart crossbow"
+msgid_plural "repeating dart crossbows"
+msgstr[0] "연발 다트 쇠뇌"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A custom-made crossbow with a clever mechanism that loads and fires nails in a single motion, it has a wooden magazine that holds 10 nails.  Nails fired from this weapon have a good chance of remaining intact for re-use."
+msgstr "한 동작으로만 다트를 발사하는 기발한 작동방식을 가진 주문제작식 쇠뇌이며, 10발을 장전할 수 있는 나무탄창이 있습니다. 이 무기로 발사된 못은 재사용 확률이 높습니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "pistol dart crossbow"
+msgid_plural "pistol dart crossbows"
+msgstr[0] "권총형 다트 쇠뇌"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "A small concealable pistol-like crossbow.  It's weak due to its small size and draw, so it is best suited for hunting small game.  Nails fired from this weapon have a good chance of remaining intact for re-use."
+msgstr "작고 숨기기 쉬운 권총 같은 쇠뇌. 작은 크기와 시위거리 때문에 위력이 약해서 작은 사냥감을 잡는게 좋습니다. 이 무기에서 발사된 못은 재사용 확률이 높습니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "dart crossbow"
+msgid_plural "dart crossbows"
+msgstr[0] "다트 쇠뇌"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "A slow-loading hand weapon that launches nails.  Stronger people can reload it much faster.  Nails fired from this weapon have a good chance of remaining intact for re-use."
+msgstr "다트를 발사하는 장전이 느린 무기. 힘이 센 사람은 더 빨리 장전 할 수 있습니다. 이 무기에서 발사된 못은 재사용 확률이 높습니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "pistol sword"
+msgid_plural "pistol swords"
+msgstr[0] "피스톨 소드"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "A beautifully decorated pistol sword.  Impractical, yet somebody always wanted to have these type of item."
+msgstr "아름답게 장식된 피스톨 소드입니다.  실용적이지 않지만, 그럼에도 불구하고 누군가는 이 물건을 꼭 가지고 싶어했을 겁니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Valois Revolver"
+msgid_plural "Valois Revolver"
+msgstr[0] "발로아 리볼버"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "A combination knife and revolver that acts as both a lethal melee weapon and a pistol."
+msgstr "치명적인 백병전 무기와 리볼버의 역할을 하는 콤비네이션 나이프와 리볼버입니다."
+
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "spade throwing card"
 msgid_plural "spade throwing cards"
@@ -16093,11 +16935,6 @@ msgstr "이 냉각 수류탄은 핀이 사라졌고, 그렇기에 위험한 저�
 msgid "cola bomb"
 msgid_plural "cola bombs"
 msgstr[0] "콜라 폭탄"
-
-#. ~ Use action menu_text for {'str': 'cola bomb'}.
-#: .\ZhighWeapons\ZhighThrowing.json
-msgid "Activate"
-msgstr "사용하기"
 
 #. ~ Use action msg for {'str': 'cola bomb'}.
 #: .\ZhighWeapons\ZhighThrowing.json
@@ -17577,6 +18414,94 @@ msgstr[0] "베테랑 생존자 좀비"
 #: .\ZhighZeds\zed_survivor.json
 msgid "This zombie once was a survivor like you, and a pretty good one at that.  Unfortunately they didn't make it, despite the custom-made, heavy armor pieces they wear and the gear that they are still lugging around."
 msgstr "한때 당신과 같은 생존자였으며 꽤 잘 살아온 것 같습니다.  불행히도, 수제작한 무거운 갑옷 쪼가리와 여전히 짊어지고 다니는 풍족한 장비에도 불구하고 안일사 당한 것 같습니다."
+
+#~ msgctxt "scenario_male"
+#~ msgid "Gone hunting"
+#~ msgstr "사냥 가기"
+
+#~ msgctxt "scenario_female"
+#~ msgid "Gone hunting"
+#~ msgstr "사냥 가기"
+
+#~ msgctxt "profession_male"
+#~ msgid "Crew Chief"
+#~ msgstr "크루 치프"
+
+#~ msgctxt "profession_female"
+#~ msgid "Crew Chief"
+#~ msgstr "크루 치프"
+
+#~ msgctxt "profession_male"
+#~ msgid "Armorer"
+#~ msgstr "아머러"
+
+#~ msgctxt "profession_female"
+#~ msgid "Armorer"
+#~ msgstr "아머러"
+
+#~ msgctxt "profession_male"
+#~ msgid "Muscle"
+#~ msgstr "머슬"
+
+#~ msgctxt "profession_female"
+#~ msgid "Muscle"
+#~ msgstr "머슬"
+
+#~ msgctxt "profession_male"
+#~ msgid "Crook"
+#~ msgstr "크룩"
+
+#~ msgctxt "profession_female"
+#~ msgid "Crook"
+#~ msgstr "크룩"
+
+#~ msgctxt "profession_male"
+#~ msgid "Rogue"
+#~ msgstr "로그"
+
+#~ msgctxt "profession_female"
+#~ msgid "Rogue"
+#~ msgstr "로그"
+
+#~ msgctxt "profession_male"
+#~ msgid "Burglar"
+#~ msgstr "버글러"
+
+#~ msgctxt "profession_female"
+#~ msgid "Burglar"
+#~ msgstr "버글러"
+
+#~ msgctxt "profession_male"
+#~ msgid "Sociopath"
+#~ msgstr "소시오패스"
+
+#~ msgctxt "profession_female"
+#~ msgid "Sociopath"
+#~ msgstr "소시오패스"
+
+#~ msgctxt "profession_male"
+#~ msgid "Gambler"
+#~ msgstr "갬블러"
+
+#~ msgctxt "profession_female"
+#~ msgid "Gambler"
+#~ msgstr "갬블러"
+
+#~ msgctxt "profession_male"
+#~ msgid "Grinder"
+#~ msgstr "그라인더"
+
+#~ msgctxt "profession_female"
+#~ msgid "Grinder"
+#~ msgstr "그라인더"
+
+#~ msgctxt "profession_male"
+#~ msgid "Yakuza"
+#~ msgstr "야쿠자"
+
+#~ msgctxt "profession_female"
+#~ msgid "Yakuza"
+#~ msgstr "야쿠자"
 
 #~ msgid "A long fuse nail bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range."
 #~ msgstr "금속 조각들로 개조된 못 폭탄으로, 스태프 슬링 등을 사용해서 더 멀리까지 던질 수 있습니다."

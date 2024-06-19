@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zhigh_Mod\n"
-"POT-Creation-Date: 2024-06-12 09:52+0900\n"
+"POT-Creation-Date: 2024-06-19 17:20+0900\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1646,6 +1646,20 @@ msgid ""
 "A pair of earmuffs favored by helicopter pilots.  The earmuffs are turned "
 "on.  They will block sounds over a certain decibel amount and also can "
 "handle radio signals, assuming it is charged with batteries."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "scorpion ornamented jacket"
+msgid_plural "scorpion ornamented jackets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'scorpion ornamented jacket'}
+#: .\ZhighArmor.json
+msgid ""
+"A light leather jacket with a bleached white surface.  It has two pockets on"
+" the front, mainly for putting your hands in.  A golden scorpion is embedded"
+" on its back.  Fit for a real human being, and a real hero."
 msgstr ""
 
 #: .\ZhighArmor.json .\ZhighItemRemake.json
@@ -5655,7 +5669,9 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. ~ Use action menu_text for {'str': 'combat mask, flashlight'}.
-#: .\ZhighMasks.json
+#. ~ Use action menu_text for {'str': 'Plasma Sword (on)'}.
+#. ~ Use action menu_text for {'str': 'Plasma Piercer (on)'}.
+#: .\ZhighMasks.json .\ZhighWeapons\ZhighMelee.json
 msgid "Deactivate"
 msgstr ""
 
@@ -11002,6 +11018,7 @@ msgid "Small Game Rifle Hunter"
 msgstr ""
 
 #. ~ Profession (male Small Game Rifle Hunter) description
+#. ~ Profession (male Air Rifle Hunter) description
 #: .\ZhighProfession.json
 msgctxt "prof_desc_male"
 msgid ""
@@ -11012,6 +11029,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Small Game Rifle Hunter) description
+#. ~ Profession (female Air Rifle Hunter) description
 #: .\ZhighProfession.json
 msgctxt "prof_desc_female"
 msgid ""
@@ -11049,6 +11067,464 @@ msgid ""
 " the challenge of hunting with a rifle.  Why, if the world ended there's "
 "nothing you'd want at your side more than your trusty rifle.  So when it "
 "did, you made sure to bring the most expensive one along."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Air Rifle Hunter"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Air Rifle Hunter"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Hunter with a Dog"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Hunter with a Dog"
+msgstr ""
+
+#. ~ Profession (male Hunter with a Dog) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"Ever since you were a child you loved hunting, and you soon took a liking to"
+" the challenge of hunting with a rifle.  Why, if the world ended there's "
+"nothing you'd want at your side more than your trusty rifle.  So when it "
+"did, you made sure to bring it along.  And your not-so-little friend too."
+msgstr ""
+
+#. ~ Profession (female Hunter with a Dog) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"Ever since you were a child you loved hunting, and you soon took a liking to"
+" the challenge of hunting with a rifle.  Why, if the world ended there's "
+"nothing you'd want at your side more than your trusty rifle.  So when it "
+"did, you made sure to bring it along.  And your not-so-little friend too."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Crew Chief"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Crew Chief"
+msgstr ""
+
+#. ~ Profession (male Bank Robber - Crew Chief) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"The Crew Chief, also known as the Caporegime, is the head of a branch of an "
+"organized crime syndicate.  The Crew Chief commands a crew of soldiers and "
+"reports directly to a boss or an underboss.  When the crime syndicate needs "
+"to have someone dealt with, the Crew Chief and his soldiers make sure it's "
+"done."
+msgstr ""
+
+#. ~ Profession (female Bank Robber - Crew Chief) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"The Crew Chief, also known as the Caporegime, is the head of a branch of an "
+"organized crime syndicate.  The Crew Chief commands a crew of soldiers and "
+"reports directly to a boss or an underboss.  When the crime syndicate needs "
+"to have someone dealt with, the Crew Chief and his soldiers make sure it's "
+"done."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Armorer"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Armorer"
+msgstr ""
+
+#. ~ Profession (male Bank Robber - Armorer) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"The Armorer was formerly a profession within the military.  The armorer's "
+"job is to maintain, repair and improve armors.  Any self-respecting crime "
+"syndicate needs someone who can make sure the soldiers have the necessary "
+"protection to do their jobs."
+msgstr ""
+
+#. ~ Profession (female Bank Robber - Armorer) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"The Armorer was formerly a profession within the military.  The armorer's "
+"job is to maintain, repair and improve armors.  Any self-respecting crime "
+"syndicate needs someone who can make sure the soldiers have the necessary "
+"protection to do their jobs."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Muscle"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Muscle"
+msgstr ""
+
+#. ~ Profession (male Bank Robber - Muscle) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"The Muscle is a tough guy who uses violence to send messages from his Mafia "
+"superiors.  They are the backbone of any criminal organization.  The muscle "
+"is called in whenever you need to rough someone up, break some legs, crush a"
+" skull or remind people who's boss."
+msgstr ""
+
+#. ~ Profession (female Bank Robber - Muscle) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"The Muscle is a tough guy who uses violence to send messages from his Mafia "
+"superiors.  They are the backbone of any criminal organization.  The muscle "
+"is called in whenever you need to rough someone up, break some legs, crush a"
+" skull or remind people who's boss."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Crook"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Crook"
+msgstr ""
+
+#. ~ Profession (male Bank Robber - Crook) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"The Crook is a versatile criminal.  The term is as old as crime itself.  "
+"Truly, the crook is a jack of all trades and a master of none.  He steals, "
+"lies, cheats and does any and every dishonest or illegal work necessary to "
+"get by."
+msgstr ""
+
+#. ~ Profession (female Bank Robber - Crook) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"The Crook is a versatile criminal.  The term is as old as crime itself.  "
+"Truly, the crook is a jack of all trades and a master of none.  He steals, "
+"lies, cheats and does any and every dishonest or illegal work necessary to "
+"get by."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Rogue"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Rogue"
+msgstr ""
+
+#. ~ Profession (male Bank Robber - Rogue) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"The Rogue is a stealthy criminal, capable of sneaky tricks and deadly force."
+"  Versatile and deceptive, the Rogue is hired to do anything from "
+"pickpocketing, to burglaries and con jobs.  The trademark of a Rogue is his "
+"versatility - what he lacks in strength he makes up for in skill."
+msgstr ""
+
+#. ~ Profession (female Bank Robber - Rogue) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"The Rogue is a stealthy criminal, capable of sneaky tricks and deadly force."
+"  Versatile and deceptive, the Rogue is hired to do anything from "
+"pickpocketing, to burglaries and con jobs.  The trademark of a Rogue is his "
+"versatility - what he lacks in strength he makes up for in skill."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Burglar"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Burglar"
+msgstr ""
+
+#. ~ Profession (male Bank Robber - Burglar) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"The natural dexterity of the Burglar has benefits beyond merely breaking and"
+" entering.  Being nimble allows the Burglar to pick locks, bag bodies and "
+"answer pagers faster.  They are also harder to hit in combat.  They stay "
+"alive by staying out of the way.  This physical conditioning also gives the "
+"Burglar a high tolerance to pain and the ability to shrug off wounds "
+"quickly."
+msgstr ""
+
+#. ~ Profession (female Bank Robber - Burglar) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"The natural dexterity of the Burglar has benefits beyond merely breaking and"
+" entering.  Being nimble allows the Burglar to pick locks, bag bodies and "
+"answer pagers faster.  They are also harder to hit in combat.  They stay "
+"alive by staying out of the way.  This physical conditioning also gives the "
+"Burglar a high tolerance to pain and the ability to shrug off wounds "
+"quickly."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Infiltrator"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Infiltrator"
+msgstr ""
+
+#. ~ Profession (male Bank Robber - Infiltrator) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"The Infiltrator is an agent hired by a government or large criminal "
+"organization to obtain information about its enemies, or by a corporation to"
+" obtain industrial secrets from its competitors.  The Infiltrator is a close"
+" combat specialist who knows how to use the environment in order to get the "
+"upper hand."
+msgstr ""
+
+#. ~ Profession (female Bank Robber - Infiltrator) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"The Infiltrator is an agent hired by a government or large criminal "
+"organization to obtain information about its enemies, or by a corporation to"
+" obtain industrial secrets from its competitors.  The Infiltrator is a close"
+" combat specialist who knows how to use the environment in order to get the "
+"upper hand."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Sociopath"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Sociopath"
+msgstr ""
+
+#. ~ Profession (male Bank Robber - Sociopath) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"The Sociopath is known to be one of the most effective type of criminals.  "
+"Where he is effective, he is also difficult to deal with, which is why "
+"larger organizations avoid him.  Bold, disinhibitted and mean, the Sociopath"
+" excels in the most violent of jobs.  Unable to feel guilt for the crimes he"
+" commits, the Sociopath is a dangerous enemy."
+msgstr ""
+
+#. ~ Profession (female Bank Robber - Sociopath) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"The Sociopath is known to be one of the most effective type of criminals.  "
+"Where he is effective, he is also difficult to deal with, which is why "
+"larger organizations avoid him.  Bold, disinhibitted and mean, the Sociopath"
+" excels in the most violent of jobs.  Unable to feel guilt for the crimes he"
+" commits, the Sociopath is a dangerous enemy."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Gambler"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Gambler"
+msgstr ""
+
+#. ~ Profession (male Bank Robber - Gambler) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"Heading into the furnace of battle requires skill, hardness and more than a "
+"little luck.  Some people just have it.  Luck is an elusive quality.  The "
+"ancient Greeks believed it was the design of the Gods.  It isn't.  It "
+"certainly exists, but it's something you can earn.  It requires preparation "
+"and forethought to get your pieces in place, and maximizes your chances of a"
+" return.  It's counting cards, rather than the blessing of Fortuna."
+msgstr ""
+
+#. ~ Profession (female Bank Robber - Gambler) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"Heading into the furnace of battle requires skill, hardness and more than a "
+"little luck.  Some people just have it.  Luck is an elusive quality.  The "
+"ancient Greeks believed it was the design of the Gods.  It isn't.  It "
+"certainly exists, but it's something you can earn.  It requires preparation "
+"and forethought to get your pieces in place, and maximizes your chances of a"
+" return.  It's counting cards, rather than the blessing of Fortuna."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Grinder"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Grinder"
+msgstr ""
+
+#. ~ Profession (male Bank Robber - Grinder) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"A typical grinder is a hard working individual, able to take control of "
+"difficult situations and turn them around.  The grinder relies heavily on "
+"always being in the front and dishing out punishment, being able to survive "
+"due to the fact that he does damage to the enemies regardless of how much "
+"damage he has sustained."
+msgstr ""
+
+#. ~ Profession (female Bank Robber - Grinder) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"A typical grinder is a hard working individual, able to take control of "
+"difficult situations and turn them around.  The grinder relies heavily on "
+"always being in the front and dishing out punishment, being able to survive "
+"due to the fact that he does damage to the enemies regardless of how much "
+"damage he has sustained."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Yakuza"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Yakuza"
+msgstr ""
+
+#. ~ Profession (male Bank Robber - Yakuza) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"The Yakuza are one of the most feared crime syndicates in the world.  Ruled "
+"by the ninkyo and lead by the Oyabun, the Yakuza are known for their strict "
+"code of conduct, organized nature and the tattoos that cover their entire "
+"bodies.  An outcast and a dropout from society, the Yakuza knows how it is "
+"to fend for himself.  While he appears gentle, he is not to be taken "
+"lightly."
+msgstr ""
+
+#. ~ Profession (female Bank Robber - Yakuza) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"The Yakuza are one of the most feared crime syndicates in the world.  Ruled "
+"by the ninkyo and lead by the Oyabun, the Yakuza are known for their strict "
+"code of conduct, organized nature and the tattoos that cover their entire "
+"bodies.  An outcast and a dropout from society, the Yakuza knows how it is "
+"to fend for himself.  While he appears gentle, he is not to be taken "
+"lightly."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Wheelman, Van"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Wheelman, Van"
+msgstr ""
+
+#. ~ Profession (male Bank Robber - Wheelman, Van) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"You specialized in high-stakes getaways, expertly navigating urban "
+"landscapes and escaping law enforcement with unparalleled skill behind the "
+"wheel of an escape van.  With nerves of steel and a deep understanding of "
+"your powerful vehicle, you ensures the crew's swift and safe escape from any"
+" heist or dangerous situations.  Now that your crewmates are all dead, your "
+"vehicle and your skill is all that you could belive in."
+msgstr ""
+
+#. ~ Profession (female Bank Robber - Wheelman, Van) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"You specialized in high-stakes getaways, expertly navigating urban "
+"landscapes and escaping law enforcement with unparalleled skill behind the "
+"wheel of an escape van.  With nerves of steel and a deep understanding of "
+"your powerful vehicle, you ensures the crew's swift and safe escape from any"
+" heist or dangerous situations.  Now that your crewmates are all dead, your "
+"vehicle and your skill is all that you could belive in."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Bank Robber - Wheelman, Car"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Bank Robber - Wheelman, Car"
+msgstr ""
+
+#. ~ Profession (male Bank Robber - Wheelman, Car) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"You specialized in high-stakes getaways, expertly navigating urban "
+"landscapes and escaping law enforcement with unparalleled skill behind the "
+"wheel of a roaring car.  With nerves of steel and a deep understanding of "
+"your fast vehicle, you ensures the crew's swift and safe escape from any "
+"heist or dangerous situations.  Now that your crewmates are all dead, your "
+"vehicle and your skill is all that you could belive in."
+msgstr ""
+
+#. ~ Profession (female Bank Robber - Wheelman, Car) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"You specialized in high-stakes getaways, expertly navigating urban "
+"landscapes and escaping law enforcement with unparalleled skill behind the "
+"wheel of a roaring car.  With nerves of steel and a deep understanding of "
+"your fast vehicle, you ensures the crew's swift and safe escape from any "
+"heist or dangerous situations.  Now that your crewmates are all dead, your "
+"vehicle and your skill is all that you could belive in."
 msgstr ""
 
 #: .\ZhighProfession.json
@@ -11469,34 +11945,83 @@ msgid ""
 "Imperator, Morituri te salutant."
 msgstr ""
 
-#. ~ Name for scenario 'Gone hunting' for a male character
+#. ~ Name for scenario 'Challenge - Bank Robbery' for a male character
 #: .\ZhighSenarios.json
 msgctxt "scenario_male"
-msgid "Gone hunting"
+msgid "Challenge - Bank Robbery"
 msgstr ""
 
-#. ~ Name for scenario 'Gone hunting' for a female character
+#. ~ Name for scenario 'Challenge - Bank Robbery' for a female character
 #: .\ZhighSenarios.json
 msgctxt "scenario_female"
-msgid "Gone hunting"
+msgid "Challenge - Bank Robbery"
 msgstr ""
 
-#. ~ Description for scenario 'Gone hunting' for a male character.
+#. ~ Description for scenario 'Challenge - Bank Robbery' for a male character.
+#: .\ZhighSenarios.json
+msgctxt "scen_desc_male"
+msgid ""
+"Don't let yourself get attached to anything you are not willing to walk out "
+"on in 30 seconds flat if you feel the heat around the corner.  Crap, this "
+"will take more than 30 days.  Well, do what you do best, take some scores."
+msgstr ""
+
+#. ~ Description for scenario 'Challenge - Bank Robbery' for a female
+#. character.
+#: .\ZhighSenarios.json
+msgctxt "scen_desc_female"
+msgid ""
+"Don't let yourself get attached to anything you are not willing to walk out "
+"on in 30 seconds flat if you feel the heat around the corner.  Crap, this "
+"will take more than 30 days.  Well, do what you do best, take some scores."
+msgstr ""
+
+#. ~ Starting location for scenario 'Challenge - Bank Robbery'.
+#: .\ZhighSenarios.json
+msgctxt "start_name"
+msgid "During a heist"
+msgstr ""
+
+#. ~ Name for scenario 'Hunt: Showdown' for a male character
+#: .\ZhighSenarios.json
+msgctxt "scenario_male"
+msgid "Hunt: Showdown"
+msgstr ""
+
+#. ~ Name for scenario 'Hunt: Showdown' for a female character
+#: .\ZhighSenarios.json
+msgctxt "scenario_female"
+msgid "Hunt: Showdown"
+msgstr ""
+
+#. ~ Description for scenario 'Hunt: Showdown' for a male character.
 #: .\ZhighSenarios.json
 msgctxt "scen_desc_male"
 msgid "You went out of town to do what you love to do, hunting!"
 msgstr ""
 
-#. ~ Description for scenario 'Gone hunting' for a female character.
+#. ~ Description for scenario 'Hunt: Showdown' for a female character.
 #: .\ZhighSenarios.json
 msgctxt "scen_desc_female"
 msgid "You went out of town to do what you love to do, hunting!"
 msgstr ""
 
-#. ~ Starting location for scenario 'Gone hunting'.
+#. ~ Starting location for scenario 'Hunt: Showdown'.
 #: .\ZhighSenarios.json
 msgctxt "start_name"
 msgid "Hunter's shack"
+msgstr ""
+
+#: .\ZhighSenarios.json
+msgid "Hunt: Showdown"
+msgstr ""
+
+#. ~ Description for mission '{'str': 'Hunt: Showdown'}'
+#: .\ZhighSenarios.json
+msgid ""
+"You tried to track down that infamous monster.  The world is doomed but you "
+"do not care; you have to hunt this beast down, since this beast caused and "
+"will cause troubles to everyone."
 msgstr ""
 
 #: .\ZhighSenarios.json
@@ -12079,6 +12604,14 @@ msgid "mounted beam spotlight"
 msgstr ""
 
 #: .\ZhighVehicle.json
+msgid "Escape Car"
+msgstr ""
+
+#: .\ZhighVehicle.json
+msgid "Escape Van"
+msgstr ""
+
+#: .\ZhighVehicle.json
 msgid "handmade go kart"
 msgstr ""
 
@@ -12091,10 +12624,10 @@ msgid "UNKNOWN"
 msgstr ""
 
 #: .\modinfo.json
-msgid "<color_light_green>Zombie Highschool Mod</color>"
+msgid "<color_light_blue>Zombie Highschool Mod</color>"
 msgstr ""
 
-#. ~ Description for <color_light_green>Zombie Highschool Mod</color>
+#. ~ Description for <color_light_blue>Zombie Highschool Mod</color>
 #: .\modinfo.json
 msgid ""
 "Add a weird school which includes quests, killing zombies, and moar, still "
@@ -17265,6 +17798,102 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighMelee.json
+msgid "Shinsakuto Katana"
+msgid_plural "Shinsakuto Katanas"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "Plasma Sword (off)"
+msgid_plural "Plasma Sword (off)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action menu_text for {'str': 'Plasma Sword (off)'}.
+#. ~ Use action menu_text for {'str': 'Plasma Piercer (off)'}.
+#. ~ Use action menu_text for {'str': 'cola bomb'}.
+#: .\ZhighWeapons\ZhighMelee.json .\ZhighWeapons\ZhighThrowing.json
+msgid "Activate"
+msgstr ""
+
+#. ~ Use action msg for {'str': 'Plasma Sword (off)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "Your plasma sword activates."
+msgstr ""
+
+#. ~ Use action need_charges_msg for {'str': 'Plasma Sword (off)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "The plasma sword's batteries are dead."
+msgstr ""
+
+#. ~ Description for {'str': 'Plasma Sword (off)'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A handle for a plasma sword.  Makes an excellent melee weapon when "
+"activated.  Activate to use this as a sword."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "Plasma Sword (on)"
+msgid_plural "Plasma Sword (on)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action msg for {'str': 'Plasma Sword (on)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "Your plasma sword deactivates."
+msgstr ""
+
+#. ~ Description for {'str': 'Plasma Sword (on)'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A handle that collapses for easy storage, is now emitting a blade of plasma."
+"  Makes an excellent melee weapon.  Activate to collapse."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "Plasma Piercer (off)"
+msgid_plural "Plasma Piercer (off)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action msg for {'str': 'Plasma Piercer (off)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "Your plasma piercer activates."
+msgstr ""
+
+#. ~ Use action need_charges_msg for {'str': 'Plasma Piercer (off)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "The plasma piercer's batteries are dead."
+msgstr ""
+
+#. ~ Description for {'str': 'Plasma Piercer (off)'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A knuckle-like weapon, which could emit a blade of energy when activated.  "
+"Makes an excellent melee weapon when activated.  Activate to use this as a "
+"sword."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "Plasma Piercer (on)"
+msgid_plural "Plasma Piercer (on)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action msg for {'str': 'Plasma Piercer (on)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "Your plasma piercer deactivates."
+msgstr ""
+
+#. ~ Description for {'str': 'Plasma Piercer (on)'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A knuckle-like weapon, which emits a blade of energy now.  Makes an "
+"excellent melee weapon.  Activate to collapse."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
 msgid "jitte"
 msgid_plural "jittes"
 msgstr[0] ""
@@ -17276,6 +17905,248 @@ msgid ""
 "A pointed metal stick with a curved prong projecting from the handle.  It's "
 "primarily used for disarming opponents, and was used for enforcement in "
 "Japan."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "falchion"
+msgid_plural "falchions"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'falchion'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a one-handed, single-edged sword of European origin, which are found"
+" in different forms."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "falchion replica"
+msgid_plural "falchion replicas"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'falchion replica'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a huge two-handed sword from Europe.  You're not quite sure it's "
+"supposed to be that bendy."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "falchion fake"
+msgid_plural "falchion fakes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'falchion fake'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a dull, cheaply made replica of a huge two-handed sword from Europe."
+"  It still packs a wallop."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "yatagan"
+msgid_plural "yataganes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'yatagan', 'str_pl': 'yataganes'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a type of Ottoman knife or short sabre used from the mid-16th to "
+"late 19th century.  The curved shape gives the yatagan the ability to "
+"contact and cut objects faster than a straight sword."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "yatagan replica"
+msgid_plural "yatagan replicas"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'yatagan replica'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a broad saber known for its unique shape.  This sword appears to be "
+"made very poorly, but it should still stand up to a few swings."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "yatagan fake"
+msgid_plural "yatagan fakes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'yatagan fake'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a dull, cheaply made replica of a broad saber known for its unique "
+"shape."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "flamberge"
+msgid_plural "flamberges"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'flamberge'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a huge two-handed sword from medieval era.  It packs a real wallop."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "flamberge replica"
+msgid_plural "flamberge replicas"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'flamberge replica'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a huge two-handed sword from medieval era.  You're not quite sure "
+"it's supposed to be that bendy."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "flamberge fake"
+msgid_plural "flamberge fakes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'flamberge fake'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a dull, cheaply made replica of a huge two-handed sword from "
+"medieval era.  It still packs a wallop."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "dao"
+msgid_plural "dao"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str_sp': 'dao'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A remake of an ancient Chinese sword consisting of a curved blade and a "
+"guard with a cupped design.  Existing since the Shang dynasty, this one is "
+"made of steel.  One of the four major weapons in folklore, alongside the "
+"jian sword, qiang spear, and gun staff."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "kunai"
+msgid_plural "kunais"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'kunai'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A japanese tool which is usually used as a trowel, also famously known as "
+"one of the \"ninja weapons.\"  Could be used as a throwing weapon in an "
+"emergency."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "anime katana"
+msgid_plural "anime katanas"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'anime katana'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a rare sword from Japan.  While it's got the right edge and weight, "
+"the pommel just snaps off, and you could study the blade with it from some "
+"anime."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "An average looking katana with a black blade."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "An average looking katana with a unique thunder like yellow stripes."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "A saw shaped katana, as if someone broke the blade with a rock."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "An average looking katana with a black body with a blue blade."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"An average looking katana with a flaming red blade with a flame looking "
+"handguard."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A skinny katana with an extremly thin blade with a butterfly looking "
+"handguard."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A big, machete looking katana with a hole in the midddle of the orange "
+"blade."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "A thin katana with a pink wobbly blade and a flower looking handguard."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "A weird shaped katana with a white wavy blade like a snake."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A weird shaped katana with a reversed blade, so the blade part is actually "
+"dull and the dull part is a blade."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A simple looking katana with a white balde, white grip, and a golden "
+"handguard.  You are the storm."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "arkansas toothpick"
+msgid_plural "arkansas toothpicks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'arkansas toothpick', 'str_pl': 'arkansas
+#. toothpicks'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"Compared to an ordinary hunting knife, this double-edge sheath knife is more"
+" focused on combat rather than cutting and skinning game."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "tactical machete"
+msgid_plural "tactical machetes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'tactical machete'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A thick tough steel blade with sawteeth on one side and a flat chisel tip "
+"for digging.  A tool for special operators or someone who likes tactical "
+"stuff."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighRanged.json
@@ -18423,6 +19294,121 @@ msgid ""
 "induction, powered by a standard UPS."
 msgstr ""
 
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "jezail rifle"
+msgid_plural "jezail rifles"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"This is a simple, cost-efficient and often handmade long arm commonly used "
+"in South Asia and parts of the Middle East in the past.  It was popular "
+"amongst the Pashtun tribesmen, who deposed Shah Shuja."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Thompson/Center Contender"
+msgid_plural "Thompson/Center Contenders"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A break-action single-shot pistol which was introduced in 1967 by "
+"Thompson/Center Arms.  It can be chambered in various cartridges."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "M53 Medusa"
+msgid_plural "M53 Medusa"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"As the descendant and the better reproduction of Medusa Model 47, this "
+"revolver is specially made for most types of ammunition.  Due to some up-to-"
+"date tech, there are no problems in order to load and shoot various types of"
+" ammo."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "repeating bullet crossbow"
+msgid_plural "repeating bullet crossbows"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A custom-made crossbow with a clever mechanism that loads and fires pebbles "
+"in a single motion, it has a wooden magazine that holds 10 pebbles.  Pebbles"
+" fired from this weapon have a good chance of remaining intact for re-use."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "repeating dart crossbow"
+msgid_plural "repeating dart crossbows"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A custom-made crossbow with a clever mechanism that loads and fires nails in"
+" a single motion, it has a wooden magazine that holds 10 nails.  Nails fired"
+" from this weapon have a good chance of remaining intact for re-use."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "pistol dart crossbow"
+msgid_plural "pistol dart crossbows"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A small concealable pistol-like crossbow.  It's weak due to its small size "
+"and draw, so it is best suited for hunting small game.  Nails fired from "
+"this weapon have a good chance of remaining intact for re-use."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "dart crossbow"
+msgid_plural "dart crossbows"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A slow-loading hand weapon that launches nails.  Stronger people can reload "
+"it much faster.  Nails fired from this weapon have a good chance of "
+"remaining intact for re-use."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "pistol sword"
+msgid_plural "pistol swords"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A beautifully decorated pistol sword.  Impractical, yet somebody always "
+"wanted to have these type of item."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Valois Revolver"
+msgid_plural "Valois Revolver"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A combination knife and revolver that acts as both a lethal melee weapon and"
+" a pistol."
+msgstr ""
+
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "spade throwing card"
 msgid_plural "spade throwing cards"
@@ -18557,11 +19543,6 @@ msgid "cola bomb"
 msgid_plural "cola bombs"
 msgstr[0] ""
 msgstr[1] ""
-
-#. ~ Use action menu_text for {'str': 'cola bomb'}.
-#: .\ZhighWeapons\ZhighThrowing.json
-msgid "Activate"
-msgstr ""
 
 #. ~ Use action msg for {'str': 'cola bomb'}.
 #: .\ZhighWeapons\ZhighThrowing.json
