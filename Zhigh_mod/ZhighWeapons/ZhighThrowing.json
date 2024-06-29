@@ -11,13 +11,13 @@
     "description": "A thin and flat spade card made for throwing.",
     "material": "paper",
     "volume": "2 ml",
-    "weight": "2 g",
+    "weight": "25 g",
     "cutting": 6,
     "count": 12,
     "stack_size": 12,
     "ammo_type": "thrown",
-    "flags": [ "NPC_THROWN" ],
-    "thrown_damage": [ { "damage_type": "stab", "amount": 6 } ]
+    "flags": [ "NPC_THROWN", "SHATTERS" ],
+    "thrown_damage": [ { "damage_type": "stab", "amount": 20 } ]
   },
   {
     "type": "AMMO",
@@ -32,13 +32,13 @@
     "description": "A thin and flat club card made for throwing.",
     "material": "paper",
     "volume": "2 ml",
-    "weight": "2 g",
+    "weight": "25 g",
     "cutting": 1,
     "count": 12,
     "stack_size": 12,
     "ammo_type": "thrown",
-    "flags": [ "NOGIB", "TANGLE", "NPC_THROWN" ],
-    "thrown_damage": [ { "damage_type": "bullet", "amount": 6 } ]
+    "flags": [ "NOGIB", "TANGLE", "NPC_THROWN", "SHATTERS" ],
+    "thrown_damage": [ { "damage_type": "bullet", "amount": 20 } ]
   },
   {
     "type": "AMMO",
@@ -53,13 +53,13 @@
     "description": "A thin and flat diamond card made for throwing.",
     "material": "paper",
     "volume": "2 ml",
-    "weight": "2 g",
+    "weight": "25 g",
     "bashing": 1,
     "count": 12,
     "stack_size": 12,
     "ammo_type": "thrown",
-    "flags": [ "NPC_THROWN" ],
-    "thrown_damage": [ { "damage_type": "heat", "amount": 7 } ]
+    "flags": [ "NPC_THROWN", "SHATTERS" ],
+    "thrown_damage": [ { "damage_type": "heat", "amount": 20 } ]
   },
   {
     "type": "AMMO",
@@ -74,13 +74,13 @@
     "description": "A thin and flat heart card made for throwing.",
     "material": "paper",
     "volume": "2 ml",
-    "weight": "2 g",
+    "weight": "25 g",
     "bashing": 1,
     "count": 12,
     "stack_size": 12,
     "ammo_type": "thrown",
-    "flags": [ "NPC_THROWN" ],
-    "thrown_damage": [ { "damage_type": "bash", "amount": 7 } ]
+    "flags": [ "NPC_THROWN", "SHATTERS" ],
+    "thrown_damage": [ { "damage_type": "bash", "amount": 20 } ]
   },
   {
 	"id": "zap_grenade",
@@ -476,6 +476,62 @@
     "flags": [ "BOMB", "TRADER_AVOID" ]
   },
   {
+    "id": "grenade_goo_imp",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "improvised goo grenade" },
+    "description": "This is a hand made goo hand grenade.  Use this item to pull the pin and light the fuse.  You will then have five turns before it explodes into a pool of goo; throwing it would be a good idea.",
+    "weight": "250 g",
+    "volume": "250 ml",
+    "price": "1 USD",
+    "price_postapoc": "1 USD",
+    "to_hit": -2,
+    "bashing": 1,
+    "material": [ "steel", "plastic" ],
+    "symbol": "*",
+    "color": "green",
+    "use_action": {
+      "target": "grenade_goo_imp_act",
+      "msg": "You pull the pin on the grenade.",
+      "target_charges": 5,
+      "active": true,
+      "menu_text": "Pull pin",
+      "type": "transform"
+    },
+    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "grenade_goo_imp_act",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "active improvised goo grenade" },
+    "description": "This is an active improvised goo grenade, likely to burst into a pool of goo any second now.  Better throw it!",
+    "weight": "250 g",
+    "volume": "250 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "to_hit": -2,
+    "bashing": 1,
+    "material": [ "steel", "plastic" ],
+    "symbol": "*",
+    "color": "green",
+    "initial_charges": 5,
+    "max_charges": 5,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_goo",
+      "fields_radius": 3,
+      "fields_min_intensity": 3,
+      "fields_max_intensity": 3,
+      "sound_volume": 3,
+      "sound_msg": "Tick.",
+      "no_deactivate_msg": "You've already pulled the %s's pin; try throwing it instead.",
+      "explosion": { "damage": 1 }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
     "id": "dynamite_long",
     "looks_like": "dynamite",
     "type": "TOOL",
@@ -699,6 +755,23 @@
     "flags": [ "TRADER_AVOID", "BOMB" ]
   },
   {
+    "type": "GENERIC",
+    "copy-from": "throwing_knife",
+    "id": "throwing_knife_scrap",
+    "category": "weapons",
+    "price": "520 USD",
+    "price_postapoc": "50 USD",
+    "name": { "str": "scrap throwing knife", "str_pl": "scrap throwing knives" },
+    "symbol": ";",
+    "color": "light_gray",
+    "description": "A thin and flat knife made for throwing.  Its ineffective cutting edge and odd shape makes it unsuitable for use as a tool.  Plus, it is made from scrap, so it is quite unreliable.",
+    "material": "steel",
+    "volume": "100 ml",
+    "weight": "110 g",
+    "cutting": 8,
+    "thrown_damage": [ { "damage_type": "stab", "amount": 15 } ]
+  },
+  {
     "id": "throwing_club",
     "looks_like": "shillelagh_weighted",
     "type": "AMMO",
@@ -709,11 +782,32 @@
     "volume": "700 ml",
     "price": "2 USD",
     "price_postapoc": "50 cent",
-    "bashing": 15,
+    "bashing": 17,
     "material": "wood",
     "symbol": ";",
     "color": "brown",
     "ammo_type": "thrown",
-    "flags": [ "NOGIB" ]
+    "flags": [ "NOGIB" ],
+    "thrown_damage": [ { "damage_type": "bash", "amount": 20 } ]
+  },
+  {
+    "id": "boomerangZhigh",
+    "looks_like": "throwing_stick",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "BATONS" ],
+    "name": { "str": "combat booerang" },
+    "description": "A slender long rod of wood with a little curve, while traditionally intended as a weapon used by Aboriginal Australians.  Not the toy variant of the family, so don't expect it to return to your hand.",
+    "weight": "400 g",
+    "to_hit": 3,
+    "price_postapoc": "50 cent",
+    "color": "brown",
+    "symbol": "/",
+    "material": [ "wood" ],
+    "techniques": [ "WBLOCK_2", "RAPID", "PRECISE" ],
+    "volume": "600 ml",
+    "bashing": 9,
+    "price": "10 USD",
+    "thrown_damage": [ { "damage_type": "bash", "amount": 18 } ]
   }
 ]
