@@ -1,5 +1,17 @@
 [
   {
+    "id": "nested_tatZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "tatZhigh", "charges-min": 0, "charges-max": 1 },
+      { "item": "50bmg", "prob": 50 },
+      { "item": "50bmg" }
+    ]
+  },
+  {
     "type": "item_group",
     "subtype": "collection",
     "id": "army_mags_uzi",
@@ -16,6 +28,28 @@
     "subtype": "collection",
     "id": "army_mags_akm",
     "entries": [ { "item": "akmag30", "ammo-item": "762_m87", "charges": 30 }, { "item": "akmag30", "ammo-item": "762_m87", "charges": 30 } ]
+  },
+  {
+    "id": "nested_WA2000Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "WA2000Zhigh", "charges-min": 0, "charges-max": 6 },
+      { "item": "WA2000Zhighmag", "charges": 6, "prob": 100 },
+      { "item": "WA2000Zhighmag", "charges": 6, "prob": 50 },
+      { "item": "WA2000Zhighmag", "charges": 6, "prob": 50 },
+      { "item": "300_winmag", "prob": 50 },
+      { "item": "300_winmag", "prob": 50 },
+      { "item": "300_winmag" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "bandolier_rifle_47",
+    "entries": [ { "item": "300_winmag", "charges": 30 } ]
   },
   {
     "id": "nested_contender_zhigh",
@@ -348,28 +382,28 @@
     "type": "item_group",
     "subtype": "collection",
     "entries": [
-      { "group": "book_gunmags", "prob": 15, "count": [ 2, 4 ] },
-      { "group": "book_gunref", "prob": 15, "count": [ 2, 4 ] },
-      { "group": "fireman_doc", "prob": 24, "count": [ 2, 4 ] },
-      { "group": "tailorbooks", "prob": 15, "count": [ 2, 4 ] },
-      { "group": "doctors_books", "prob": 24, "count": [ 2, 4 ] },
-      { "group": "boxing_books", "prob": 15, "count": [ 2, 4 ] },
-      { "group": "book_martial", "prob": 24, "count": [ 2, 4 ] },
-      { "group": "dojo_manuals", "prob": 30, "count": [ 2, 4 ] },
-      { "group": "exotic_books", "prob": 24, "count": [ 2, 4 ] },
-      { "group": "book_military", "prob": 30, "count": [ 2, 4 ] },
-      { "group": "book_school", "prob": 30, "count": [ 2, 4 ] },
-      { "group": "magazines", "prob": 30, "count": [ 2, 4 ] },
-      { "group": "textbooks", "prob": 30, "count": [ 2, 4 ] },
-      { "group": "hardware_books", "prob": 30, "count": [ 2, 4 ] },
-      { "group": "literature", "prob": 30, "count": [ 2, 4 ] },
-      { "group": "religious_books", "prob": 30, "count": [ 2, 4 ] },
-      { "group": "kids_books", "prob": 30, "count": [ 2, 4 ] },
-      { "group": "homebooks", "prob": 30, "count": [ 2, 4 ] },
-      { "group": "textbooks_school", "prob": 15, "count": [ 2, 4 ] },
-      { "group": "manuals", "prob": 15, "count": [ 2, 4 ] },
-      { "group": "manuals_school", "prob": 30, "count": [ 2, 4 ] },
-      { "group": "book_survival", "prob": 15, "count": [ 2, 4 ] }
+      { "group": "book_gunmags", "prob": 15, "count": [ 1, 2 ] },
+      { "group": "book_gunref", "prob": 15, "count": [ 1, 2 ] },
+      { "group": "fireman_doc", "prob": 24, "count": [ 1, 2 ] },
+      { "group": "tailorbooks", "prob": 15, "count": [ 1, 2 ] },
+      { "group": "doctors_books", "prob": 24, "count": [ 1, 2 ] },
+      { "group": "boxing_books", "prob": 15, "count": [ 1, 2 ] },
+      { "group": "book_martial", "prob": 24, "count": [ 1, 2 ] },
+      { "group": "dojo_manuals", "prob": 30, "count": [ 1, 2 ] },
+      { "group": "exotic_books", "prob": 24, "count": [ 1, 2 ] },
+      { "group": "book_military", "prob": 30, "count": [ 1, 2 ] },
+      { "group": "book_school", "prob": 30, "count": [ 1, 2 ] },
+      { "group": "magazines", "prob": 30, "count": [ 1, 2 ] },
+      { "group": "textbooks", "prob": 30, "count": [ 1, 2 ] },
+      { "group": "hardware_books", "prob": 30, "count": [ 1, 2 ] },
+      { "group": "literature", "prob": 30, "count": [ 1, 2 ] },
+      { "group": "religious_books", "prob": 30, "count": [ 1, 2 ] },
+      { "group": "kids_books", "prob": 30, "count": [ 1, 2 ] },
+      { "group": "homebooks", "prob": 30, "count": [ 1, 2 ] },
+      { "group": "textbooks_school", "prob": 15, "count": [ 1, 2 ] },
+      { "group": "manuals", "prob": 15, "count": [ 1, 2 ] },
+      { "group": "manuals_school", "prob": 30, "count": [ 1, 2 ] },
+      { "group": "book_survival", "prob": 15, "count": [ 1, 2 ] }
     ]
   },
   {
@@ -822,9 +856,19 @@
     "ammo": 100,
     "magazine": 100,
     "items": [
+      {
+        "distribution": [
+          { "item": "bot_LMGturretZhigh", "prob": 30 },
+          { "item": "bot_sniperturretZhigh", "prob": 30 },
+          { "item": "bot_iceturret", "prob": 30 },
+          { "item": "bot_waterturret", "prob": 30 }
+        ],
+        "prob": 20
+      },
       [ "BBclip300", 30 ],
       [ "BBclip300release", 20 ],
       [ "BBbelt_500", 15 ],
+      [ "megaphone_zhigh", 20 ],
       [ "marble_pump_gun_speedloader", 20 ],
       { "group": "archery", "prob": 40 },
       { "group": "archery_mods", "prob": 40 },

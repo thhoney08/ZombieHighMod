@@ -183,22 +183,6 @@
     "flags": [ "NEVER_JAMS" ]
   },
   {
-    "id": "fakeBBgunV2_zhigh",
-    "type": "GUN",
-    "copy-from": "fake_item",
-    "name": { "str_sp": "mounted BB cannon" },
-    "description": "Fake gun for an Attack Drone.",
-    "range": 40,
-    "ranged_damage": { "damage_type": "bullet", "amount": 10, "armor_penetration": 5 },
-    "dispersion": 10,
-    "durability": 10,
-    "skill": "rifle",
-    "loudness": 5,
-    "ammo_effects": [ "FRAG", "LASER", "NEVER_MISFIRES", "NO_DAMAGE_SCALING" ],
-    "modes": [ [ "DEFAULT", "single", 1 ] ],
-    "flags": [ "NEVER_JAMS" ]
-  },
-  {
     "id": "mon_moose",
     "type": "MONSTER",
     "name": { "str_sp": "moose" },
@@ -232,7 +216,8 @@
     "//": "Baby moose don't actually exist (yet), but autumn is their mating season so baby_flags is defined so that they get angry then",
     "harvest": "mammal_large_fur",
     "special_attacks": [ [ "EAT_CROP", 60 ] ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "PET_MOUNTABLE", "ANIMAL", "PATH_AVOID_DANGER_1", "WARM", "BLEED", "CATTLEFODDER", "ATTACKMON" ]
+    "petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." },
+    "flags": [ "SEES", "HEARS", "SMELLS", "PET_MOUNTABLE", "ANIMAL", "PATH_AVOID_DANGER_1", "WARM", "BLEED", "ATTACKMON" ]
   },
   {
     "id": "mon_cougar",
@@ -542,8 +527,8 @@
     "volume": "62500 ml",
     "weight": "81500 g",
     "hp": 880,
-    "regenerates": 5,
-    "emit_fields": [ { "emit_id": "emit_zombie2_cloud_big", "delay": "15 s" } ],
+    "regenerates": 10,
+    "emit_fields": [ { "emit_id": "emit_zombie2_cloud_big", "delay": "5 s" } ],
     "speed": 80,
     "material": [ "flesh" ],
     "symbol": "Z",
@@ -567,7 +552,7 @@
 		[ "SMASH", 1 ],
 		[ "STRETCH_ATTACK", 20 ],
 		[ "LONGSWIPE", 10 ],
-		{ "type": "leap", "cooldown": 50, "max_range": 10 },
+		{ "type": "leap", "cooldown": 20, "max_range": 2 },
 		{ "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 8, "armor_multiplier": 2 } ] }
     ],
     "death_function": [ "DISAPPEAR" ],
@@ -845,7 +830,7 @@
     "durability": 10,
     "range": 100,
     "dispersion": 1000,
-    "ranged_damage": { "damage_type": "bash", "amount": 10 }
+    "ranged_damage": { "damage_type": "cold", "amount": 10 }
   },
   {
     "id": "mon_iceturret",
@@ -908,6 +893,138 @@
     "durability": 10,
     "range": 100,
     "dispersion": 1000,
-    "ranged_damage": { "damage_type": "bash", "amount": 10 }
+    "ranged_damage": { "damage_type": "cold", "amount": 10 }
+  },
+  {
+    "id": "mon_LMGturret",
+    "looks_like": "mon_turret",
+    "type": "MONSTER",
+    "name": { "str": "LMG BB turret" },
+    "description": "The LMG BB turret is an automated defense system offering rapid, yet precise fire support.  With a swiveling base and advanced targeting, it ensures robust perimeter protection.",
+    "default_faction": "military",
+    "species": [ "ROBOT" ],
+    "diff": 20,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 30,
+    "speed": 100,
+    "material": [ "steel" ],
+    "symbol": "2",
+    "color": "white",
+    "aggression": 100,
+    "morale": 100,
+    "armor_bash": 2,
+    "armor_cut": 2,
+    "armor_bullet": 2,
+    "armor_fire": 2,
+    "vision_day": 50,
+    "vision_night": 50,
+    "revert_to_itype": "bot_LMGturretZhigh",
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 1,
+        "target_moving_vehicles": true,
+        "gun_type": "fakeBBgunV2_zhigh",
+        "fake_skills": [ [ "gun", 8 ], [ "rifle", 8 ] ],
+        "ranges": [ [ 0, 25, "DEFAULT" ] ],
+        "require_sunlight": false,
+        "no_crits": false
+      }
+    ],
+    "special_when_hit": [ "RETURN_FIRE", 100 ],
+    "death_drops": {  },
+    "death_function": [ "BROKEN" ],
+    "flags": [
+      "SEES",
+      "NOHEAD",
+      "ELECTRONIC",
+      "COLDPROOF",
+      "IMMOBILE",
+      "NO_BREATHE",
+      "BIOPROOF"
+    ]
+  },
+  {
+    "id": "fakeBBgunV2_zhigh",
+    "type": "GUN",
+    "copy-from": "fake_item",
+    "name": { "str_sp": "mounted BB LMG" },
+    "description": "Fake gun for an Attack Drone.",
+    "range": 25,
+    "ranged_damage": { "damage_type": "bash", "amount": 8, "armor_penetration": 15 },
+    "dispersion": 10,
+    "durability": 10,
+    "skill": "rifle",
+    "loudness": 30,
+    "ammo_effects": [ "HEAVY_HIT", "NOGIB", "WIDE", "NEVER_MISFIRES", "NO_DAMAGE_SCALING" ],
+    "modes": [ [ "DEFAULT", "burst", 6 ] ],
+    "flags": [ "NEVER_JAMS" ]
+  },
+  {
+    "id": "mon_sniperturret",
+    "looks_like": "mon_turret",
+    "type": "MONSTER",
+    "name": { "str": "BB sniper turret" },
+    "description": "The BB sniper turret is an automated defense system offering simple, but precise fire support.  With a swiveling base and advanced targeting, it ensures robust perimeter protection.",
+    "default_faction": "military",
+    "species": [ "ROBOT" ],
+    "diff": 20,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 30,
+    "speed": 100,
+    "material": [ "steel" ],
+    "symbol": "2",
+    "color": "white",
+    "aggression": 100,
+    "morale": 100,
+    "armor_bash": 2,
+    "armor_cut": 2,
+    "armor_bullet": 2,
+    "armor_fire": 2,
+    "vision_day": 50,
+    "vision_night": 50,
+    "revert_to_itype": "bot_sniperturretZhigh",
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 1,
+        "target_moving_vehicles": true,
+        "gun_type": "fakeBBgunV3_zhigh",
+        "fake_skills": [ [ "gun", 8 ], [ "rifle", 8 ] ],
+        "ranges": [ [ 0, 45, "DEFAULT" ] ],
+        "require_sunlight": false,
+        "no_crits": false
+      }
+    ],
+    "special_when_hit": [ "RETURN_FIRE", 100 ],
+    "death_drops": {  },
+    "death_function": [ "BROKEN" ],
+    "flags": [
+      "SEES",
+      "NOHEAD",
+      "ELECTRONIC",
+      "COLDPROOF",
+      "IMMOBILE",
+      "NO_BREATHE",
+      "BIOPROOF"
+    ]
+  },
+  {
+    "id": "fakeBBgunV3_zhigh",
+    "type": "GUN",
+    "copy-from": "fake_item",
+    "name": { "str_sp": "mounted BB sniper" },
+    "description": "Fake gun for an Attack Drone.",
+    "range": 60,
+    "ranged_damage": { "damage_type": "bash", "amount": 15, "armor_penetration": 15 },
+    "dispersion": 10,
+    "durability": 10,
+    "skill": "rifle",
+    "loudness": 40,
+    "ammo_effects": [ "HEAVY_HIT", "NOGIB", "WIDE", "NEVER_MISFIRES", "NO_DAMAGE_SCALING" ],
+    "modes": [ [ "DEFAULT", "single", 1 ] ],
+    "flags": [ "NEVER_JAMS" ]
   }
 ]

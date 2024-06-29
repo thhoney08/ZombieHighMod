@@ -1,5 +1,13 @@
 [
   {
+    "id": "FRAGBOMBLANCE",
+    "type": "ammo_effect",
+    "explosion": { 
+      "damage": 80,
+      "radius": 2,
+      "fragment": { "impact": { "damage_type": "cut", "amount": 80, "armor_multiplier": 8 }, "range": 2 } }
+  },
+  {
     "id": "FRAG_BIG",
     "type": "ammo_effect",
     "explosion": { 
@@ -22,6 +30,21 @@
       "damage": 20,
       "radius": 2,
       "fragment": { "impact": { "damage_type": "cut", "amount": 30, "armor_multiplier": 3 }, "range": 3 } }
+  },
+  {
+    "id": "GOOAMMO1",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_goo", "intensity_min": 2, "intensity_max": 2, "size": 3 }
+  },
+  {
+    "id": "GOOAMMO2",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_goo", "intensity_min": 4, "intensity_max": 5, "size": 5 }
+  },
+  {
+    "id": "GOOAMMO3",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_goo", "intensity_min": 3, "intensity_max": 7, "radius": 5, "size": 5 }
   },
   {
     "id": "FREEZEAMMO1",

@@ -27,6 +27,8 @@
     "id": "switchblade",
     "copy-from": "switchblade",
     "name": { "str": "switchblade" },
+    "weight": "40 g",
+    "volume": "20 ml",
     "type": "TOOL",
     "category": "tools",
     "flags": [ "STAB", "SHEATH_KNIFE", "BELT_CLIP" ]
@@ -84,7 +86,7 @@
       "multi": 4,
       "max_volume": "1550 ml",
       "max_weight": "5500 g",
-      "min_volume": "5 ml",
+      "min_volume": "3 ml",
       "draw_cost": 45,
       "flags": [ "BELT_CLIP" ]
     },
@@ -116,8 +118,10 @@
     "use_action": {
       "type": "holster",
       "holster_prompt": "Sheath knife",
-      "holster_msg": "You sheath your %s",
-      "max_volume": "900 ml",
+      "holster_msg": "You sheath your %s.",
+      "max_volume": "1300 ml",
+      "min_volume": "5 ml",
+      "max_weight": "1200 g",
       "draw_cost": 3,
       "flags": [ "SHEATH_KNIFE" ]
     }
@@ -388,7 +392,8 @@
     "type": "AMMO",
     "category": "weapons",
     "name": { "str": "throwing stick" },
-    "bashing": 10
+    "bashing": 8,
+    "thrown_damage": [ { "damage_type": "bash", "amount": 8 } ]
   },
   {
     "id": "golf_bag",
@@ -2397,5 +2402,24 @@
     "count": 200,
     "stack_size": 200,
     "effects": [ "NOGIB", "BLINDS_EYES", "NEVER_MISFIRES" ]
+  },
+  {
+    "id": "2x4",
+    "copy-from": "2x4",
+    "type": "GENERIC",
+    "name": { "str": "plank" },
+    "weapon_category": [ "BATONS" ],
+    "category": "spare_parts"
+  },
+  {
+    "type": "AMMO",
+    "copy-from": "spiral_stone",
+    "id": "spiral_stone",
+    "name": { "str": "spiral stone" },
+    "category": "artifacts",
+    "ammo_type": "rock",
+    "damage": { "damage_type": "bash", "amount": 30, "armor_penetration": 20 },
+    "dont_recover_one_in": 100,
+    "effects": [ "NEVER_MISFIRES", "NON_FOULING" ]
   }
 ]

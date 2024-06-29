@@ -19,6 +19,7 @@
           "wristwatch"
         ],
         "entries": [ 
+                { "group": "ZhighNpc_masks" },
                 { "group": "ZhighNpc_coat" },
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
                 { "group": "ZhighGuardWeaponGroups", "custom-flags": [ "auto_wield" ] } ]
@@ -3860,7 +3861,7 @@
         "entries": [
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 				{ "item": "tanto", "container-item": "sheath" },
-                { "item": "wakizashi_inferior", "custom-flags": [ "auto_wield" ] }
+                { "item": "ninjatoSwordZhigh", "custom-flags": [ "auto_wield" ] }
 		]
       },
       "male": [ "pants_zhigh" ],
@@ -4785,7 +4786,7 @@
   {
     "type": "profession",
     "id": "sniper47",
-    "//": "OP profession. Agent 47, will add WA2000 later.",
+    "//": "OP profession. Agent 47.",
     "name": "Genetically Modified Rouge",
     "description": "Since you were artificially born and how to use a gun, you get orders, then capped people from some few kilometers away without being seen.  No one's hiring you now that the world's ended, but now you are free... right?",
     "points": 15,
@@ -4814,18 +4815,16 @@
     "items": {
       "both": {
         "items": [
-            "270win_jsp", 
-            "270win_jsp",
             "socks",
             "attached_ear_plugs_off",
             "dress_shoes",
             "tux",
-            "platinum_watch" 
+            "platinum_watch"
           ],
         "entries": [
+          { "group": "nested_WA2000Zhigh" },
           { "item": "knife_combat", "container-item": "bootsheath" },
-          { "item": "remington700_270", "ammo-item": "270win_jsp", "charges": 4, "contents-item": [ "shoulder_strap", "suppressor", "acog_scope" ], "custom-flags": [ "auto_wield" ] },
-          { "item": "bandolier_rifle", "contents-group": "bandolier_rifle_hunter" },
+          { "item": "bandolier_rifle", "contents-group": "bandolier_rifle_47" },
           { "item": "silverballer47", "ammo-item": "45_acp", "charges": 7, "container-item": "holster" },
           { "item": "legpouch_large", "contents-group": "army_mags_1911" }
         ]
@@ -4834,7 +4833,6 @@
         "boxer_briefs",
         "tie_necktie",
         "tieclip",
-        "leather_belt",
         "cufflinks_intricate"
       ],
       "female": [
