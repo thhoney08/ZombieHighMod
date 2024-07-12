@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zhigh_Mod\n"
-"POT-Creation-Date: 2024-06-19 17:20+0900\n"
+"POT-Creation-Date: 2024-07-13 00:41+0900\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,6 +42,10 @@ msgstr ""
 #. ~ Description for {'str': '[Combat] FULL FORCE'}
 #: .\ZhighAchievements.json
 msgid "Kill 50 bugs"
+msgstr ""
+
+#: .\ZhighAmmotypes.json
+msgid "bomb lance ammo"
 msgstr ""
 
 #: .\ZhighAmmotypes.json
@@ -521,7 +525,10 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. ~ Use action holster_msg for {'str': "queen's wig"}.
-#: .\ZhighArmor.json
+#. ~ Use action holster_msg for {'str': 'multi sheath', 'str_pl': 'multi
+#. sheathes'}.
+#. ~ Use action holster_msg for {'str': 'sheath', 'str_pl': 'sheathes'}.
+#: .\ZhighArmor.json .\ZhighItemRemake.json
 msgid "You sheath your %s."
 msgstr ""
 
@@ -589,7 +596,8 @@ msgstr ""
 #. ~ Use action use_message for {'str': 'tool watch', 'str_pl': 'tool
 #. watches'}.
 #. ~ Use action use_message for {'str': 'multi whistle'}.
-#: .\ZhighArmor.json
+#. ~ Use action use_message for {'str': 'Aztec death whistle'}.
+#: .\ZhighArmor.json .\ZhighItems.json
 msgid "You blow the whistle."
 msgstr ""
 
@@ -1160,6 +1168,8 @@ msgstr[1] ""
 #. ~ Use action menu_text for {'str': 'pair of atomic multi-visor goggles
 #. (on)', 'str_pl': 'pairs of atomic multi-visor goggles (on)'}.
 #. ~ Use action menu_text for {'str_sp': "helicopter pilot's earmuffs (on)"}.
+#. ~ Use action menu_text for {'str': 'Holtzman Shield (on)', 'str_pl':
+#. 'Holtzman Shields (on)'}.
 #. ~ Use action menu_text for {'str': 'fan (on)', 'str_pl': 'fans (on)'}.
 #. ~ Use action menu_text for {'str': 'crank flashlight (on)', 'str_pl':
 #. 'crank flashlights (on)'}.
@@ -1674,6 +1684,162 @@ msgid_plural "t-shirts"
 msgstr[0] ""
 msgstr[1] ""
 
+#: .\ZhighArmor.json
+msgid "ghillie suit"
+msgid_plural "ghillie suits"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action msg for {'str': 'ghillie suit'}.
+#: .\ZhighArmor.json
+msgid "You open up your ghillie suit."
+msgstr ""
+
+#. ~ Description for {'str': 'ghillie suit'}
+#: .\ZhighArmor.json
+msgid ""
+"A type of camouflage clothing designed to resemble the background environment – such as foliage, snow or sand. \n"
+"\n"
+"...\n"
+"\n"
+"Don't do anything stupid."
+msgstr ""
+
+#. ~ Use action msg for {'str': 'ghillie suit'}.
+#: .\ZhighArmor.json
+msgid "You tie up your ghillie suit."
+msgstr ""
+
+#. ~ Description for {'str': 'ghillie suit'}
+#: .\ZhighArmor.json
+msgid ""
+"A type of camouflage clothing designed to resemble the background environment – such as foliage, snow or sand. \n"
+"\n"
+"...\n"
+"\n"
+"Oi Suzy!"
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "multi sheath"
+msgid_plural "multi sheathes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action holster_prompt for {'str': 'multi sheath', 'str_pl': 'multi
+#. sheathes'}.
+#. ~ Use action holster_prompt for {'str': 'sheath', 'str_pl': 'sheathes'}.
+#: .\ZhighArmor.json .\ZhighItemRemake.json
+msgid "Sheath knife"
+msgstr ""
+
+#. ~ Description for {'str': 'multi sheath', 'str_pl': 'multi sheathes'}
+#: .\ZhighArmor.json
+msgid ""
+"A leather sheath for holding several knives and other small blades.  It is "
+"harder to use compared to a normal one.  Activate to sheathe/draw a weapon."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "American flag cape"
+msgid_plural "American flag capes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'American flag cape'}
+#: .\ZhighArmor.json
+msgid ""
+"A large American flag cape made to fly in even the worst conditions.  "
+"Wearing this does not give you the ability to fly, shoot lasers from your "
+"eyes, or run really fast.  At least you can have an obsession of drinking "
+"milk."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "ice flower cap"
+msgid_plural "ice flower caps"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'ice flower cap'}
+#: .\ZhighArmor.json
+msgid ""
+"A thin, rounded skullcap.  A ice cube shaped cotton ball is on a flower hat."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "blade rimmed hat"
+msgid_plural "blade rimmed hats"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'blade rimmed hat'}
+#: .\ZhighArmor.json
+msgid ""
+"These may not be the best hat, but you can also use this as an emergency "
+"throwing weapon.  Good for cosplaying the villan fighting against a spy or a"
+" runner-up martial artist."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "fez"
+msgid_plural "fezs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'fez'}
+#: .\ZhighArmor.json
+msgid ""
+"Also called tarboosh, this is a felt headdress in the shape of a short, "
+"cylindrical, with a black tassel attached to the top.  Good to cosplay a "
+"madman with a box.  Geronimo!"
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "Holtzman Shield"
+msgid_plural "Holtzman Shields"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action msg for {'str': 'Holtzman Shield'}.
+#: .\ZhighArmor.json
+msgid "You activate your Holtzman Shield."
+msgstr ""
+
+#. ~ Use action need_charges_msg for {'str': 'Holtzman Shield'}.
+#: .\ZhighArmor.json
+msgid "It seems like this device needs power."
+msgstr ""
+
+#. ~ Description for {'str': 'Holtzman Shield'}
+#: .\ZhighArmor.json
+msgid ""
+"Internally powered by a plutonium fuel cell, this small sized energy shield "
+"represents the pinnacle of Rivtech's energy shield technology.  Use it to "
+"turn it on."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "Holtzman Shield (on)"
+msgid_plural "Holtzman Shields (on)"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action msg for {'str': 'Holtzman Shield (on)', 'str_pl': 'Holtzman
+#. Shields (on)'}.
+#: .\ZhighArmor.json
+msgid "Your Holtzman Shield turns off."
+msgstr ""
+
+#. ~ Description for {'str': 'Holtzman Shield (on)', 'str_pl': 'Holtzman
+#. Shields (on)'}
+#: .\ZhighArmor.json
+msgid ""
+"Internally powered by a plutonium fuel cell, this small sized energy shield "
+"represents the pinnacle of Rivtech's energy shield technology.  It is turned"
+" on, and continually draining power.  Use it to turn it off."
+msgstr ""
+
 #: .\ZhighBionics.json
 msgid "Bionic knuckle"
 msgstr ""
@@ -1904,6 +2070,16 @@ msgid "accessories"
 msgstr ""
 
 #: .\ZhighCharms.json
+msgid "ring charm"
+msgid_plural "ring charms"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighCharms.json
+msgid "This is a steel ring.  Increases extra slots for accessories."
+msgstr ""
+
+#: .\ZhighCharms.json
 msgid "cross charm"
 msgid_plural "cross charms"
 msgstr[0] ""
@@ -1998,6 +2174,18 @@ msgid "This is a charm with a arrowhead.  Lowers dispersion."
 msgstr ""
 
 #: .\ZhighCharms.json
+msgid "first aid kit charm"
+msgid_plural "first aid kit charms"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighCharms.json
+msgid ""
+"This is a charm with a first aid kit.  Increases dispersion but also "
+"increases damage and damage of the gun."
+msgstr ""
+
+#: .\ZhighCharms.json
 msgid "spike charm"
 msgid_plural "spike charms"
 msgstr[0] ""
@@ -2043,6 +2231,54 @@ msgstr[1] ""
 msgid ""
 "This is a charm with a bullet.  Lowers dispersion but also decreases damage "
 "of the gun."
+msgstr ""
+
+#: .\ZhighCharms.json
+msgid "hourglass charm"
+msgid_plural "hourglass charms"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighCharms.json
+msgid ""
+"This is a charm with an hourglass.  Increases dispersion but also increases "
+"penetration and damage of the gun."
+msgstr ""
+
+#: .\ZhighCharms.json
+msgid "thunderbolt charm"
+msgid_plural "thunderbolt charms"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighCharms.json
+msgid ""
+"This is a charm with a thunderbolt.  Increases dispersion but also increases"
+" penetration and damage of the gun."
+msgstr ""
+
+#: .\ZhighCharms.json
+msgid "shield charm"
+msgid_plural "shield charms"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighCharms.json
+msgid ""
+"This is a charm with a shield.  Increases dispersion but also increases "
+"penetration and damage of the gun."
+msgstr ""
+
+#: .\ZhighCharms.json
+msgid "compass charm"
+msgid_plural "compass charms"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighCharms.json
+msgid ""
+"This is a charm with an compass.  Increases dispersion but also increases "
+"range."
 msgstr ""
 
 #: .\ZhighEffects.json
@@ -2360,6 +2596,42 @@ msgid ""
 "something down."
 msgstr ""
 
+#: .\ZhighFurn.json
+msgid "canvas wall"
+msgstr ""
+
+#. ~ Description for canvas wall
+#: .\ZhighFurn.json
+msgid "A wall made of stretched, heavy-duty, waterproof plastic wall."
+msgstr ""
+
+#: .\ZhighFurn.json
+msgid "crash!"
+msgstr ""
+
+#: .\ZhighFurn.json
+msgid "thump!"
+msgstr ""
+
+#: .\ZhighFurn.json .\ZhighItems.json
+msgid "dispenser"
+msgid_plural "dispensers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for dispenser
+#: .\ZhighFurn.json
+msgid "A dispenser which, you could make ammo or medkits out of one."
+msgstr ""
+
+#: .\ZhighFurn.json
+msgid "metal screeching!"
+msgstr ""
+
+#: .\ZhighFurn.json
+msgid "clang!"
+msgstr ""
+
 #: .\ZhighGunmods.json
 msgid "tong-a (bows)"
 msgid_plural "tong-a (bows)s"
@@ -2560,6 +2832,59 @@ msgid ""
 "of a firearm or crossbow converting it into an axe."
 msgstr ""
 
+#: .\ZhighGunmods.json
+msgid "advanced pump"
+msgid_plural "advanced pumps"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighGunmods.json
+msgid ""
+"This is a reinforced hose and pieces, which increases the pneumatic system "
+"better.  Increases damage and range but also increase the noise of the "
+"modified firearm."
+msgstr ""
+
+#: .\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "helsing"
+msgstr ""
+
+#: .\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "tihar"
+msgstr ""
+
+#: .\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "pneumatic_shotgun"
+msgstr ""
+
+#: .\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "marble_gun"
+msgstr ""
+
+#: .\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "marble_sniper_gun"
+msgstr ""
+
+#: .\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "tiharBigZhigh"
+msgstr ""
+
+#: .\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "popGun_zhigh"
+msgstr ""
+
+#: .\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "tishuna"
+msgstr ""
+
 #: .\ZhighItemRemake.json
 msgid "multi-tool"
 msgid_plural "multi-tools"
@@ -2614,16 +2939,6 @@ msgid "sheath"
 msgid_plural "sheathes"
 msgstr[0] ""
 msgstr[1] ""
-
-#. ~ Use action holster_msg for {'str': 'sheath', 'str_pl': 'sheathes'}.
-#: .\ZhighItemRemake.json
-msgid "You sheath your %s"
-msgstr ""
-
-#. ~ Use action holster_prompt for {'str': 'sheath', 'str_pl': 'sheathes'}.
-#: .\ZhighItemRemake.json
-msgid "Sheath knife"
-msgstr ""
 
 #: .\ZhighItemRemake.json
 msgid "pair of drop leg pouches"
@@ -2749,7 +3064,7 @@ msgid_plural "cameras"
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\ZhighItemRemake.json .\ZhighWeapons\ZhighRanged.json
+#: .\ZhighItemRemake.json .\ZhighMonsters.json .\ZhighWeapons\ZhighRanged.json
 msgid "burst"
 msgstr ""
 
@@ -4002,6 +4317,30 @@ msgid_plural "paintballs"
 msgstr[0] ""
 msgstr[1] ""
 
+#: .\ZhighItemRemake.json
+msgid "plank"
+msgid_plural "planks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItemRemake.json
+msgid "candlestick"
+msgid_plural "candlesticks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItemRemake.json
+msgid "brick"
+msgid_plural "bricks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItemRemake.json
+msgid "spiral stone"
+msgid_plural "spiral stones"
+msgstr[0] ""
+msgstr[1] ""
+
 #: .\ZhighItems.json
 msgid "umbrella, closed"
 msgid_plural "umbrella, closeds"
@@ -4382,6 +4721,44 @@ msgid ""
 msgstr ""
 
 #: .\ZhighItems.json
+msgid "inactive heal drone"
+msgid_plural "inactive heal drones"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action friendly_msg for {'str': 'inactive heal drone'}.
+#: .\ZhighItems.json
+msgid "The heal drone flies from your hand and surveys the area!"
+msgstr ""
+
+#. ~ Use action hostile_msg for {'str': 'inactive heal drone'}.
+#: .\ZhighItems.json
+msgid "You misprogram the heal drone; it's hostile!"
+msgstr ""
+
+#. ~ Description for {'str': 'inactive heal drone'}
+#: .\ZhighItems.json
+msgid ""
+"This is an inactive, and modified manhack.  Manhacks are fist-sized robots "
+"that fly through the air. This one has been modified to taze others, and "
+"shoot laser guns. Use this item to activate heal drone.  Electronics and "
+"computer skill determines if the drone is activated successfully."
+msgstr ""
+
+#: .\ZhighItems.json
+msgid "broken heal drone"
+msgid_plural "broken heal drones"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'broken heal drone'}
+#: .\ZhighItems.json
+msgid ""
+"A broken heal drone.  Much less threatening now that it lies limp on solid "
+"ground.  Could be gutted for parts."
+msgstr ""
+
+#: .\ZhighItems.json
 msgid "iced tea with coffee"
 msgid_plural "iced tea with coffees"
 msgstr[0] ""
@@ -4754,6 +5131,7 @@ msgstr[1] ""
 #. ~ Use action menu_text for {'str': 'anti-tank grenade'}.
 #. ~ Use action menu_text for {'str': 'napalm grenade'}.
 #. ~ Use action menu_text for {'str': 'goo grenade'}.
+#. ~ Use action menu_text for {'str': 'improvised goo grenade'}.
 #. ~ Use action menu_text for {'str': 'improvised nail bomb'}.
 #: .\ZhighItems.json .\ZhighWeapons\ZhighThrowing.json
 msgid "Pull pin"
@@ -4784,6 +5162,8 @@ msgstr[1] ""
 #. ~ Use action no_deactivate_msg for {'str': 'active anti-tank grenade'}.
 #. ~ Use action no_deactivate_msg for {'str': 'active napalm grenade'}.
 #. ~ Use action no_deactivate_msg for {'str': 'active goo grenade'}.
+#. ~ Use action no_deactivate_msg for {'str': 'active improvised goo
+#. grenade'}.
 #. ~ Use action no_deactivate_msg for {'str': 'active improvised nail bomb'}.
 #: .\ZhighItems.json .\ZhighWeapons\ZhighThrowing.json
 msgid "You've already pulled the %s's pin; try throwing it instead."
@@ -4882,6 +5262,12 @@ msgid ""
 msgstr ""
 
 #: .\ZhighItems.json
+msgid "broken water turret"
+msgid_plural "broken water turrets"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItems.json
 msgid "inactive ice turret"
 msgid_plural "inactive ice turrets"
 msgstr[0] ""
@@ -4897,16 +5283,88 @@ msgid ""
 msgstr ""
 
 #: .\ZhighItems.json
-msgid "broken water turret"
-msgid_plural "broken water turrets"
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\ZhighItems.json
 msgid "broken ice turret"
 msgid_plural "broken ice turrets"
 msgstr[0] ""
 msgstr[1] ""
+
+#: .\ZhighItems.json
+msgid "inactive LMG BB turret"
+msgid_plural "inactive LMG BB turrets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'inactive LMG BB turret'}
+#: .\ZhighItems.json
+msgid ""
+"This is an inactive LMG BB turret.  Using this item involves turning it on "
+"and placing it on the ground, where it will attach itself.  If reprogrammed "
+"and rewired successfully the turret will identify you as a friendly, and "
+"attack all enemies with its revolving LMG cannons."
+msgstr ""
+
+#: .\ZhighItems.json
+msgid "broken LMG BB turret"
+msgid_plural "broken LMG BB turrets"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItems.json
+msgid "inactive sniper BB turret"
+msgid_plural "inactive sniper BB turrets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'inactive sniper BB turret'}
+#: .\ZhighItems.json
+msgid ""
+"This is an inactive sniper BB turret.  Using this item involves turning it "
+"on and placing it on the ground, where it will attach itself.  If "
+"reprogrammed and rewired successfully the turret will identify you as a "
+"friendly, and attack all enemies with its revolving sniper cannons."
+msgstr ""
+
+#: .\ZhighItems.json
+msgid "broken sniper BB turret"
+msgid_plural "broken sniper BB turrets"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItems.json
+msgid "Aztec death whistle"
+msgid_plural "Aztec death whistles"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action noise_message for {'str': 'Aztec death whistle'}.
+#: .\ZhighItems.json
+msgid "AHHHHHHHH!"
+msgstr ""
+
+#. ~ Description for {'str': 'Aztec death whistle'}
+#: .\ZhighItems.json
+msgid "A simple wooden whistle, with it's unique skull like shape."
+msgstr ""
+
+#: .\ZhighItems.json
+msgid "wall kit"
+msgid_plural "wall kits"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'wall kit'}
+#: .\ZhighItems.json
+msgid ""
+"This is a rolled up wall kit, which you could make a wall or an improvised "
+"barricade out of one.  It could break easliy if something blows up nearby."
+msgstr ""
+
+#. ~ Description for {'str': 'dispenser'}
+#: .\ZhighItems.json
+msgid ""
+"This is a uninstalled dispenser, which you could make a dispenser out of "
+"one."
+msgstr ""
 
 #: .\ZhighMartialArts.json
 msgid "Marine Corps Martial Arts Program Training Manual"
@@ -6346,7 +6804,7 @@ msgstr ""
 msgid "A survivor throws something!"
 msgstr ""
 
-#: .\ZhighMonSurvivors.json
+#: .\ZhighMonSurvivors.json .\ZhighMonsters.json
 msgid "feral student"
 msgid_plural "feral students"
 msgstr[0] ""
@@ -6366,6 +6824,24 @@ msgstr ""
 #: .\ZhighMonSurvivors.json
 msgid "The feral student shoots a cola bomb, run!"
 msgstr ""
+
+#. ~ Description for {'str': 'feral student'}
+#: .\ZhighMonsters.json
+msgid ""
+"Their pupils are dilated and what remains to be seen of the iris and sclera "
+"are bloodshot.  This weapon-wielding maniac still breathes, but the zombies "
+"treat them like one of their own."
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "The feral student throws a rock!"
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "unknown machine"
+msgid_plural "unknown machines"
+msgstr[0] ""
+msgstr[1] ""
 
 #: .\ZhighMonsters.json
 msgid "supply drop"
@@ -6390,6 +6866,46 @@ msgid ""
 "The lives of underwater were no exception from the cataclysm.  Eventually "
 "some swordfish got affected, and rose again.  Now that climbed up the river "
 "like a salmon, and ready to chop down anything in their way.  En garde!"
+msgstr ""
+
+#: .\ZhighMonsters.json .\ZhighSpells.json
+msgid "Healing dart discharge"
+msgstr ""
+
+#. ~ Description for Healing dart discharge
+#: .\ZhighMonsters.json .\ZhighSpells.json
+msgid "Heal dart go pew pew."
+msgstr ""
+
+#: .\ZhighMonsters.json .\ZhighSpells.json
+msgid "Regeneration effect"
+msgstr ""
+
+#. ~ Description for {'str': 'Regeneration effect'}
+#: .\ZhighMonsters.json .\ZhighSpells.json
+msgid "This creates the effect that heals the user and the ones nearby."
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "heal drone"
+msgid_plural "heal drones"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for heal drone
+#. ~ Description for attack drone
+#: .\ZhighMonsters.json
+msgid ""
+"An automated anti-personnel drone, a small quadcopter robot surrounded by "
+"whirring blades and an improvised firearm."
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "Heal drone launches a hail of BBs!"
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "Fake gun for an Attack Drone."
 msgstr ""
 
 #: .\ZhighMonsters.json
@@ -6419,26 +6935,9 @@ msgid_plural "attack drones"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for attack drone
-#: .\ZhighMonsters.json
-msgid ""
-"An automated anti-personnel drone, a small quadcopter robot surrounded by "
-"whirring blades and an improvised firearm."
-msgstr ""
-
 #: .\ZhighMonsters.json
 msgid "Attack drone launches a hail of BBs!"
 msgstr ""
-
-#: .\ZhighMonsters.json
-msgid "Fake gun for an Attack Drone."
-msgstr ""
-
-#: .\ZhighMonsters.json
-msgid "mounted BB cannon"
-msgid_plural "mounted BB cannon"
-msgstr[0] ""
-msgstr[1] ""
 
 #: .\ZhighMonsters.json
 msgid "moose"
@@ -6497,12 +6996,6 @@ msgid ""
 "successfully reintroduced and their numbers reached record highs in the "
 "decade before the Cataclysm.  Lucky you."
 msgstr ""
-
-#: .\ZhighMonsters.json
-msgid "unknown machine"
-msgid_plural "unknown machines"
-msgstr[0] ""
-msgstr[1] ""
 
 #. ~ Description for {'str': 'unknown machine'}
 #: .\ZhighMonsters.json
@@ -6652,6 +7145,46 @@ msgstr[1] ""
 #: .\ZhighMonsters.json
 msgid "Fake gun that fires ice."
 msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "LMG BB turret"
+msgid_plural "LMG BB turrets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'LMG BB turret'}
+#: .\ZhighMonsters.json
+msgid ""
+"The LMG BB turret is an automated defense system offering rapid, yet precise"
+" fire support.  With a swiveling base and advanced targeting, it ensures "
+"robust perimeter protection."
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "mounted BB LMG"
+msgid_plural "mounted BB LMG"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighMonsters.json
+msgid "BB sniper turret"
+msgid_plural "BB sniper turrets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'BB sniper turret'}
+#: .\ZhighMonsters.json
+msgid ""
+"The BB sniper turret is an automated defense system offering simple, but "
+"precise fire support.  With a swiveling base and advanced targeting, it "
+"ensures robust perimeter protection."
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "mounted BB sniper"
+msgid_plural "mounted BB sniper"
+msgstr[0] ""
+msgstr[1] ""
 
 #: .\ZhighMutations.json
 msgid "Hair: MJ"
@@ -7113,6 +7646,15 @@ msgid "Long light pink hair style."
 msgstr ""
 
 #: .\ZhighMutations.json
+msgid "Hair: white, braid"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair: white, braid'}
+#: .\ZhighMutations.json
+msgid "Long white braided hair style."
+msgstr ""
+
+#: .\ZhighMutations.json
 msgid "Eye color: red"
 msgstr ""
 
@@ -7432,6 +7974,16 @@ msgid ""
 msgstr ""
 
 #: .\ZhighMutations.json
+msgid "Pocket items: EMT Gear"
+msgstr ""
+
+#. ~ Description for {'str': 'Pocket items: EMT Gear'}
+#: .\ZhighMutations.json
+msgid ""
+"You happened to have an EMT Gear on you when this whole thing happened."
+msgstr ""
+
+#: .\ZhighMutations.json
 msgid "Complete Combat Training"
 msgstr ""
 
@@ -7441,6 +7993,52 @@ msgid ""
 "You have practiced fighting with weapons and your fist.  You start with "
 "Marine Corps Martial Arts Program."
 msgstr ""
+
+#: .\ZhighMutations.json
+msgid "Arachnid Arms"
+msgstr ""
+
+#. ~ Description for {'str': 'Arachnid Arms'}
+#: .\ZhighMutations.json
+msgid ""
+"You have four handsome limbs that can shoot webs like a superhero from a "
+"movie, and then those mutant 'hand' and 'foot' things.  They probably aren't"
+" worth concealing."
+msgstr ""
+
+#: .\ZhighMutations.json
+msgid "Web slinger"
+msgid_plural "Web slinger"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighMutations.json
+msgid "this a pseudo item"
+msgstr ""
+
+#: .\ZhighMutations.json .\ZhighWeapons\ZhighRanged.json
+msgctxt "gun_type_type"
+msgid "shotgun"
+msgstr ""
+
+#: .\ZhighMutations.json
+msgid "Freshwater Osmosis"
+msgstr ""
+
+#. ~ Description for {'str': 'Freshwater Osmosis'}
+#: .\ZhighMutations.json
+msgid ""
+"Your gills and skin are highly permeable to moisture, and you can hydrate "
+"your body through osmosis.  While submerged in fresh water, any thirst you "
+"might have will be slaked.  Plus, you got some special organs under your "
+"gills which makes you shoot a wave of electricity."
+msgstr ""
+
+#: .\ZhighMutations.json
+msgid "Internal shocker"
+msgid_plural "Internal shocker"
+msgstr[0] ""
+msgstr[1] ""
 
 #: .\ZhighMutations.json
 msgid "Weirdly healthy"
@@ -10919,16 +11517,42 @@ msgstr ""
 
 #: .\ZhighProfession.json
 msgctxt "profession_male"
-msgid "Pistol Hunter"
+msgid "Student - Engineer"
 msgstr ""
 
 #: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Engineer"
+msgstr ""
+
+#. ~ Profession (male Student - Engineer) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"You loved making simple AIs and turrets, like that hard hat wearing Texan "
+"from good old shooter game.  Sentry going up!"
+msgstr ""
+
+#. ~ Profession (female Student - Engineer) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"You loved making simple AIs and turrets, like that hard hat wearing Texan "
+"from good old shooter game.  Sentry going up!"
+msgstr ""
+
+#: .\ZhighProfession2.json
+msgctxt "profession_male"
+msgid "Pistol Hunter"
+msgstr ""
+
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Pistol Hunter"
 msgstr ""
 
 #. ~ Profession (male Pistol Hunter) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "Ever since you were a child you loved hunting, and you soon took a liking to"
@@ -10938,7 +11562,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Pistol Hunter) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "Ever since you were a child you loved hunting, and you soon took a liking to"
@@ -10947,18 +11571,18 @@ msgid ""
 "did, you made sure to bring it along."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Revolver Hunter"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Revolver Hunter"
 msgstr ""
 
 #. ~ Profession (male Revolver Hunter) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "Ever since you were a child you loved hunting, and you soon took a liking to"
@@ -10968,7 +11592,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Revolver Hunter) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "Ever since you were a child you loved hunting, and you soon took a liking to"
@@ -10977,18 +11601,18 @@ msgid ""
 "did, you made sure to bring it along."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Double Barrel Shotgun Hunter"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Double Barrel Shotgun Hunter"
 msgstr ""
 
 #. ~ Profession (male Double Barrel Shotgun Hunter) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "Ever since you were a child you loved hunting, and you soon took a liking to"
@@ -10998,7 +11622,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Double Barrel Shotgun Hunter) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "Ever since you were a child you loved hunting, and you soon took a liking to"
@@ -11007,19 +11631,19 @@ msgid ""
 "did, you made sure to bring it along."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Small Game Rifle Hunter"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Small Game Rifle Hunter"
 msgstr ""
 
 #. ~ Profession (male Small Game Rifle Hunter) description
 #. ~ Profession (male Air Rifle Hunter) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "Ever since you were a child you loved hunting, and you soon took a liking to"
@@ -11030,7 +11654,7 @@ msgstr ""
 
 #. ~ Profession (female Small Game Rifle Hunter) description
 #. ~ Profession (female Air Rifle Hunter) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "Ever since you were a child you loved hunting, and you soon took a liking to"
@@ -11039,18 +11663,18 @@ msgid ""
 "did, you made sure to bring it along."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Elephant Gun Hunter"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Elephant Gun Hunter"
 msgstr ""
 
 #. ~ Profession (male Elephant Gun Hunter) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "Ever since you were a child you loved hunting, and you soon took a liking to"
@@ -11060,7 +11684,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Elephant Gun Hunter) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "Ever since you were a child you loved hunting, and you soon took a liking to"
@@ -11069,28 +11693,28 @@ msgid ""
 "did, you made sure to bring the most expensive one along."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Air Rifle Hunter"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Air Rifle Hunter"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Hunter with a Dog"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Hunter with a Dog"
 msgstr ""
 
 #. ~ Profession (male Hunter with a Dog) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "Ever since you were a child you loved hunting, and you soon took a liking to"
@@ -11100,7 +11724,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Hunter with a Dog) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "Ever since you were a child you loved hunting, and you soon took a liking to"
@@ -11109,18 +11733,18 @@ msgid ""
 "did, you made sure to bring it along.  And your not-so-little friend too."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Bank Robber - Crew Chief"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Bank Robber - Crew Chief"
 msgstr ""
 
 #. ~ Profession (male Bank Robber - Crew Chief) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "The Crew Chief, also known as the Caporegime, is the head of a branch of an "
@@ -11131,7 +11755,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Bank Robber - Crew Chief) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "The Crew Chief, also known as the Caporegime, is the head of a branch of an "
@@ -11141,18 +11765,18 @@ msgid ""
 "done."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Bank Robber - Armorer"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Bank Robber - Armorer"
 msgstr ""
 
 #. ~ Profession (male Bank Robber - Armorer) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "The Armorer was formerly a profession within the military.  The armorer's "
@@ -11162,7 +11786,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Bank Robber - Armorer) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "The Armorer was formerly a profession within the military.  The armorer's "
@@ -11171,18 +11795,18 @@ msgid ""
 "protection to do their jobs."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Bank Robber - Muscle"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Bank Robber - Muscle"
 msgstr ""
 
 #. ~ Profession (male Bank Robber - Muscle) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "The Muscle is a tough guy who uses violence to send messages from his Mafia "
@@ -11192,7 +11816,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Bank Robber - Muscle) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "The Muscle is a tough guy who uses violence to send messages from his Mafia "
@@ -11201,18 +11825,18 @@ msgid ""
 " skull or remind people who's boss."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Bank Robber - Crook"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Bank Robber - Crook"
 msgstr ""
 
 #. ~ Profession (male Bank Robber - Crook) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "The Crook is a versatile criminal.  The term is as old as crime itself.  "
@@ -11222,7 +11846,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Bank Robber - Crook) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "The Crook is a versatile criminal.  The term is as old as crime itself.  "
@@ -11231,18 +11855,18 @@ msgid ""
 "get by."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Bank Robber - Rogue"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Bank Robber - Rogue"
 msgstr ""
 
 #. ~ Profession (male Bank Robber - Rogue) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "The Rogue is a stealthy criminal, capable of sneaky tricks and deadly force."
@@ -11252,7 +11876,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Bank Robber - Rogue) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "The Rogue is a stealthy criminal, capable of sneaky tricks and deadly force."
@@ -11261,18 +11885,18 @@ msgid ""
 "versatility - what he lacks in strength he makes up for in skill."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Bank Robber - Burglar"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Bank Robber - Burglar"
 msgstr ""
 
 #. ~ Profession (male Bank Robber - Burglar) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "The natural dexterity of the Burglar has benefits beyond merely breaking and"
@@ -11284,7 +11908,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Bank Robber - Burglar) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "The natural dexterity of the Burglar has benefits beyond merely breaking and"
@@ -11295,18 +11919,18 @@ msgid ""
 "quickly."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Bank Robber - Infiltrator"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Bank Robber - Infiltrator"
 msgstr ""
 
 #. ~ Profession (male Bank Robber - Infiltrator) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "The Infiltrator is an agent hired by a government or large criminal "
@@ -11317,7 +11941,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Bank Robber - Infiltrator) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "The Infiltrator is an agent hired by a government or large criminal "
@@ -11327,18 +11951,18 @@ msgid ""
 "upper hand."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Bank Robber - Sociopath"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Bank Robber - Sociopath"
 msgstr ""
 
 #. ~ Profession (male Bank Robber - Sociopath) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "The Sociopath is known to be one of the most effective type of criminals.  "
@@ -11349,7 +11973,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Bank Robber - Sociopath) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "The Sociopath is known to be one of the most effective type of criminals.  "
@@ -11359,18 +11983,18 @@ msgid ""
 " commits, the Sociopath is a dangerous enemy."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Bank Robber - Gambler"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Bank Robber - Gambler"
 msgstr ""
 
 #. ~ Profession (male Bank Robber - Gambler) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "Heading into the furnace of battle requires skill, hardness and more than a "
@@ -11382,7 +12006,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Bank Robber - Gambler) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "Heading into the furnace of battle requires skill, hardness and more than a "
@@ -11393,18 +12017,18 @@ msgid ""
 " return.  It's counting cards, rather than the blessing of Fortuna."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Bank Robber - Grinder"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Bank Robber - Grinder"
 msgstr ""
 
 #. ~ Profession (male Bank Robber - Grinder) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "A typical grinder is a hard working individual, able to take control of "
@@ -11415,7 +12039,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Bank Robber - Grinder) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "A typical grinder is a hard working individual, able to take control of "
@@ -11425,18 +12049,18 @@ msgid ""
 "damage he has sustained."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Bank Robber - Yakuza"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Bank Robber - Yakuza"
 msgstr ""
 
 #. ~ Profession (male Bank Robber - Yakuza) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "The Yakuza are one of the most feared crime syndicates in the world.  Ruled "
@@ -11448,7 +12072,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Bank Robber - Yakuza) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "The Yakuza are one of the most feared crime syndicates in the world.  Ruled "
@@ -11459,18 +12083,46 @@ msgid ""
 "lightly."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
+msgctxt "profession_male"
+msgid "Bank Robber - Sniper"
+msgstr ""
+
+#: .\ZhighProfession2.json
+msgctxt "profession_female"
+msgid "Bank Robber - Sniper"
+msgstr ""
+
+#. ~ Profession (male Bank Robber - Sniper) description
+#: .\ZhighProfession2.json
+msgctxt "prof_desc_male"
+msgid ""
+"As a sniper, you covered your team by sniping cops that tried or did, harmed"
+" your team.  Now that all of your teammates are dead, you have to write your"
+" own version of the lone survivor."
+msgstr ""
+
+#. ~ Profession (female Bank Robber - Sniper) description
+#: .\ZhighProfession2.json
+msgctxt "prof_desc_female"
+msgid ""
+"As a sniper, you covered your team by sniping cops that tried or did, harmed"
+" your team.  Now that all of your teammates are dead, you have to write your"
+" own version of the lone survivor."
+msgstr ""
+
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Bank Robber - Wheelman, Van"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Bank Robber - Wheelman, Van"
 msgstr ""
 
 #. ~ Profession (male Bank Robber - Wheelman, Van) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "You specialized in high-stakes getaways, expertly navigating urban "
@@ -11482,7 +12134,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Bank Robber - Wheelman, Van) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "You specialized in high-stakes getaways, expertly navigating urban "
@@ -11493,18 +12145,18 @@ msgid ""
 "vehicle and your skill is all that you could belive in."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Bank Robber - Wheelman, Car"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Bank Robber - Wheelman, Car"
 msgstr ""
 
 #. ~ Profession (male Bank Robber - Wheelman, Car) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "You specialized in high-stakes getaways, expertly navigating urban "
@@ -11516,7 +12168,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Bank Robber - Wheelman, Car) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "You specialized in high-stakes getaways, expertly navigating urban "
@@ -11527,18 +12179,18 @@ msgid ""
 "vehicle and your skill is all that you could belive in."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Old Veteran"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Old Veteran"
 msgstr ""
 
 #. ~ Profession (male Old Veteran) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "You've been through hell once before.  Hopefully those weekend range trips "
@@ -11546,47 +12198,47 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Old Veteran) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "You've been through hell once before.  Hopefully those weekend range trips "
 "have kept your skills sharp."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Feral Slasher"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Feral Slasher"
 msgstr ""
 
 #. ~ Profession (male Feral Slasher) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid "Kill. Maim. Rip. Burn. Tear."
 msgstr ""
 
 #. ~ Profession (female Feral Slasher) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid "Kill. Maim. Rip. Burn. Tear."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Sniper"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Sniper"
 msgstr ""
 
 #. ~ Profession (male Sniper) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "You get paid, then capped people from a kilometer away while hiding.  No "
@@ -11595,7 +12247,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Sniper) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "You get paid, then capped people from a kilometer away while hiding.  No "
@@ -11603,18 +12255,18 @@ msgid ""
 "harm before the harm erase you."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Genetically Modified Rouge"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Genetically Modified Rouge"
 msgstr ""
 
 #. ~ Profession (male Genetically Modified Rouge) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "Since you were artificially born and how to use a gun, you get orders, then "
@@ -11623,7 +12275,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Genetically Modified Rouge) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "Since you were artificially born and how to use a gun, you get orders, then "
@@ -11631,18 +12283,18 @@ msgid ""
 "hiring you now that the world's ended, but now you are free... right?"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Boogeyman"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Boogeyman"
 msgstr ""
 
 #. ~ Profession (male Boogeyman) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "You were a killer for hire, trained and equipped to efficiently eliminate "
@@ -11651,7 +12303,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Boogeyman) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "You were a killer for hire, trained and equipped to efficiently eliminate "
@@ -11659,18 +12311,18 @@ msgid ""
 "that although the world ended.  You'll kill them.  You'll kill them all."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Hired Gun"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Hired Gun"
 msgstr ""
 
 #. ~ Profession (male Hired Gun) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "Someone contacted you to kill, you answer by killing them.  They don't "
@@ -11679,7 +12331,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Hired Gun) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "Someone contacted you to kill, you answer by killing them.  They don't "
@@ -11687,18 +12339,18 @@ msgid ""
 "anyway."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Riot Control Unit"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Riot Control Unit"
 msgstr ""
 
 #. ~ Profession (male Riot Control Unit) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "The riots were brutal, and that's before the dead rose and started to devour"
@@ -11708,7 +12360,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Riot Control Unit) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "The riots were brutal, and that's before the dead rose and started to devour"
@@ -11717,18 +12369,18 @@ msgid ""
 "head-bashing that you got away in one piece, and the worst is yet to come."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Rivtech Security Service"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Rivtech Security Service"
 msgstr ""
 
 #. ~ Profession (male Rivtech Security Service) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "You were the best of the best, the military's finest.  That's why you're "
@@ -11739,7 +12391,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Rivtech Security Service) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "You were the best of the best, the military's finest.  That's why you're "
@@ -11749,18 +12401,18 @@ msgid ""
 "finish the mission, whatever the cost."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Mercenary"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Mercenary"
 msgstr ""
 
 #. ~ Profession (male Mercenary) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "You were a killer for hire, trained and equipped to efficiently eliminate "
@@ -11769,7 +12421,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Mercenary) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "You were a killer for hire, trained and equipped to efficiently eliminate "
@@ -11777,18 +12429,18 @@ msgid ""
 "skills may prove useful for staying alive."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Power Armor Soldier"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Power Armor Soldier"
 msgstr ""
 
 #. ~ Profession (male Power Armor Soldier) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "Those new plutonium power banks they were rolling out never arrived, "
@@ -11798,7 +12450,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Power Armor Soldier) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "Those new plutonium power banks they were rolling out never arrived, "
@@ -11807,18 +12459,18 @@ msgid ""
 "your gear might see you through."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Quick Response Unit"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Quick Response Unit"
 msgstr ""
 
 #. ~ Profession (male Quick Response Unit) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "With a siren, you grabbed your humble gear (literally anything) and went to "
@@ -11827,7 +12479,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Quick Response Unit) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "With a siren, you grabbed your humble gear (literally anything) and went to "
@@ -11835,18 +12487,18 @@ msgid ""
 "day is getting worse than you thought."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Sergeant before the day of discharge"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Sergeant before the day of discharge"
 msgstr ""
 
 #. ~ Profession (male Sergeant before the day of discharge) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "You packed your stuff up, bought a booze from the post exchange, and printed the files that you needed.  And your day of discharge is gone.  Forever.\n"
@@ -11854,25 +12506,25 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Sergeant before the day of discharge) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "You packed your stuff up, bought a booze from the post exchange, and printed the files that you needed.  And your day of discharge is gone.  Forever.\n"
 "<color_green>\"The day before I was discharged from the military, the world is destroyed!  Due to that damned thing, the pain is being transmitted from the back of the brain to the frontal lobe!  Gaaah!!\"</color>"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Military Observer"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Military Observer"
 msgstr ""
 
 #. ~ Profession (male Military Observer) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "You were an observer - others use some kind of a heavy weapon, and you tell "
@@ -11881,7 +12533,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Military Observer) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "You were an observer - others use some kind of a heavy weapon, and you tell "
@@ -11889,18 +12541,18 @@ msgid ""
 " your gear and the will to survive."
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Pro Baduk Player"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Pro Baduk Player"
 msgstr ""
 
 #. ~ Profession (male Pro Baduk Player) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "Once, you were a pro Baduk player until this cataclysm ended everything that"
@@ -11909,7 +12561,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Pro Baduk Player) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "Once, you were a pro Baduk player until this cataclysm ended everything that"
@@ -11917,18 +12569,18 @@ msgid ""
 "hellhole?"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_male"
 msgid "Gladiator"
 msgstr ""
 
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "profession_female"
 msgid "Gladiator"
 msgstr ""
 
 #. ~ Profession (male Gladiator) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "The day when the world ends came, and you grabbed whatever you could get "
@@ -11937,7 +12589,7 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Gladiator) description
-#: .\ZhighProfession.json
+#: .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "The day when the world ends came, and you grabbed whatever you could get "
@@ -12022,6 +12674,10 @@ msgid ""
 "You tried to track down that infamous monster.  The world is doomed but you "
 "do not care; you have to hunt this beast down, since this beast caused and "
 "will cause troubles to everyone."
+msgstr ""
+
+#: .\ZhighSenarios.json .\ZhighPlaces\ZhighSafeWsFireLookout.json
+msgid "fire lookout tower"
 msgstr ""
 
 #: .\ZhighSenarios.json
@@ -12556,24 +13212,6 @@ msgid "Come on, we have to move our asses."
 msgstr ""
 
 #: .\ZhighSpells.json
-msgid "Healing dart discharge"
-msgstr ""
-
-#. ~ Description for Healing dart discharge
-#: .\ZhighSpells.json
-msgid "Heal dart go pew pew."
-msgstr ""
-
-#: .\ZhighSpells.json
-msgid "Regeneration effect"
-msgstr ""
-
-#. ~ Description for {'str': 'Regeneration effect'}
-#: .\ZhighSpells.json
-msgid "This creates the effect that heals the user and the ones nearby."
-msgstr ""
-
-#: .\ZhighSpells.json
 msgid "Life Drain Spell"
 msgstr ""
 
@@ -12624,14 +13262,14 @@ msgid "UNKNOWN"
 msgstr ""
 
 #: .\modinfo.json
-msgid "<color_light_blue>Zombie Highschool Mod</color>"
+msgid "<color_light_green>Zombie Highschool Mod</color>"
 msgstr ""
 
-#. ~ Description for <color_light_blue>Zombie Highschool Mod</color>
+#. ~ Description for <color_light_green>Zombie Highschool Mod</color>
 #: .\modinfo.json
 msgid ""
-"Add a weird school which includes quests, killing zombies, and moar, still "
-"WIP."
+"Add a weird school which includes quests, killing zombies, adding weapons, "
+"and moar, still WIP."
 msgstr ""
 
 #: .\ZhighNpcs\ZhighBandit2.json
@@ -12714,7 +13352,8 @@ msgid "Don't mind me…"
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpc47.json .\ZhighNpcs\ZhighNpcAmmoDude.json
-#: .\ZhighNpcs\ZhighNpcDeadeye.json .\ZhighNpcs\ZhighNpcHitman.json
+#: .\ZhighNpcs\ZhighNpcDeadeye.json .\ZhighNpcs\ZhighNpcFrozenCactus.json
+#: .\ZhighNpcs\ZhighNpcHitman.json .\ZhighNpcs\ZhighNpcOctober.json
 #: .\ZhighNpcs\ZhighNpcRanger.json .\ZhighNpcs\ZhighNpcSnowman.json
 #: .\ZhighNpcs\ZighNpcGunsmith.json
 msgid "Student"
@@ -12732,7 +13371,8 @@ msgstr ""
 msgid "I need to use Bathroom."
 msgstr ""
 
-#: .\ZhighNpcs\ZhighNpc47.json .\ZhighNpcs\ZhighNpcMedic.json
+#: .\ZhighNpcs\ZhighNpc47.json .\ZhighNpcs\ZhighNpcFrozenCactus.json
+#: .\ZhighNpcs\ZhighNpcMedic.json .\ZhighNpcs\ZhighNpcOctober.json
 #: .\ZhighNpcs\ZhighNpcSnowman.json
 msgid "I've got to go…"
 msgstr ""
@@ -13915,6 +14555,20 @@ msgstr ""
 msgid "Shit."
 msgstr ""
 
+#: .\ZhighNpcs\ZhighNpcFrozenCactus.json
+msgid "In Jang 'frozen' Ssun"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFrozenCactus.json .\ZhighNpcs\ZhighNpcOctober.json
+msgid "I'm a streamer."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFrozenCactus.json
+msgid ""
+"I am just a game streamer.  Damn, never thought those zombies would be real."
+"  This is bullshit!"
+msgstr ""
+
 #: .\ZhighNpcs\ZhighNpcGrunt.json
 msgid "Student - Grunt"
 msgstr ""
@@ -14098,6 +14752,18 @@ msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcHacker.json
 msgid "[3 signal marker]  I'll buy a low signal marker."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcHacker.json
+msgid "[50$]  I'll buy a linux shirt."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcHacker.json
+msgid "[800$]  I'll buy an attack drone."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcHacker.json
+msgid "[800$]  I'll buy a heal drone."
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcHacker.json
@@ -14763,6 +15429,15 @@ msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcMusketeer.json
 msgid "Student - Musketeer"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcOctober.json
+msgid "October"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcOctober.json
+msgid ""
+"I am just a game streamer.  Damn, never thought those zombies would be real."
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcRanger.json
@@ -16856,6 +17531,20 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAmmo.json
+msgid "sprayable flash powder"
+msgid_plural "sprayable flash powder"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str_sp': 'sprayable flash powder'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ""
+"Water enhanced with chemicals to create sprayable, flammable flash powder "
+"ammo for the chemical thrower.  Best be used with some kind of mask or mouth"
+" protection."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAmmo.json
 msgid "plastic BB"
 msgid_plural "plastic BBs"
 msgstr[0] ""
@@ -16942,6 +17631,30 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAmmo.json
+msgid "goo mix"
+msgid_plural "goo mixs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for goo mix
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "Improvised, unknown mix of goo.  It tastes horrible and dangerous too!"
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "thicker goo mix"
+msgid_plural "thicker goo mixs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for thicker goo mix
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ""
+"Improvised, unknown, and thicker mix of goo.  It tastes horrible and "
+"dangerous too!"
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAmmo.json
 msgid "thunderstick fishing spear"
 msgid_plural "thunderstick fishing spears"
 msgstr[0] ""
@@ -16966,6 +17679,19 @@ msgstr[1] ""
 msgid ""
 "A modified rocket candy, useful as ammunition for slings or slingshots.  "
 "When shot, it drops an active rocket candy."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "explosive lance spear"
+msgid_plural "explosive lance spears"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'explosive lance spear'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ""
+"An extremely modified fishing spear, when is shot, will explode the target "
+"in a ball of fire."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighArrows.json
@@ -17140,6 +17866,20 @@ msgstr[1] ""
 #. ~ Description for {'str': 'el verdugo'}
 #: .\ZhighWeapons\ZhighArtifacts.json
 msgid "A katana-shaped machete, which has a crimson red grip."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "crysknife"
+msgid_plural "crysknifes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'crysknife'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid ""
+"A bone dagger, with a silver grip.  \n"
+"\n"
+"May thy knife chip and shatter."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighArtifacts.json
@@ -17344,21 +18084,6 @@ msgid ""
 "A smooth and sturdy staff with a leather-wrapped grip.  Light and well-"
 "balanced, it is surprisingly easy to handle.  Enhanced with extra grip, it "
 "makes the weapon deadlier."
-msgstr ""
-
-#: .\ZhighWeapons\ZhighMelee.json
-msgid "scrap throwing knife"
-msgid_plural "scrap throwing knives"
-msgstr[0] ""
-msgstr[1] ""
-
-#. ~ Description for {'str': 'scrap throwing knife', 'str_pl': 'scrap throwing
-#. knives'}
-#: .\ZhighWeapons\ZhighMelee.json
-msgid ""
-"A thin and flat knife made for throwing.  Its ineffective cutting edge and "
-"odd shape makes it unsuitable for use as a tool.  Plus, it is made from "
-"scrap, so it is quite unreliable."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighMelee.json
@@ -18147,6 +18872,652 @@ msgid ""
 "A thick tough steel blade with sawteeth on one side and a flat chisel tip "
 "for digging.  A tool for special operators or someone who likes tactical "
 "stuff."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "coupe coupe"
+msgid_plural "coupe coupes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'coupe coupe'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a French style of machete.  Still, this is also good to use as a "
+"machete."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "wire trench mace"
+msgid_plural "wire trench maces"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'wire trench mace'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A medieval weapon recreated in the first world war consisting of a wood "
+"handle with a wire cable and a heavy iron end.  It is heavy, but its "
+"crushing damage is devastating."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "spiked trench mace"
+msgid_plural "spiked trench maces"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'spiked trench mace'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A medieval weapon recreated in the first world war consisting of a wood "
+"handle with several spikes on it's head.  It is heavy, but its crushing "
+"damage is devastating."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "seven branched sword"
+msgid_plural "seven branched swords"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'seven branched sword'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a reproduction of huge, weirdly shaped, and two-handed sword from "
+"Korea.  It packs a real punch, but is quite unwieldy."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "shotel"
+msgid_plural "shotels"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'shotel'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a curved sword originating in Eritrea and northern Ethiopia.  The "
+"curve on the blade varies from the Persian shamshir, adopting an almost "
+"semicircular shape."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "shotel replica"
+msgid_plural "shotel replicas"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'shotel replica'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a curved sword originating in Eritrea and northern Ethiopia.  The "
+"curve on the blade varies from the Persian shamshir, adopting an almost "
+"semicircular shape.  This sword appears to be made very poorly, but it "
+"should still stand up to a few swings."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "shotel fake"
+msgid_plural "shotel fakes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'shotel fake'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a dull, cheaply made replica of a curved sword originating in "
+"Eritrea and northern Ethiopia.  The curve on the blade varies from the "
+"Persian shamshir, adopting an almost semicircular shape."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "bardiche"
+msgid_plural "bardiches"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'bardiche'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This is a pole axe, which makes you cleave your enemies easliy."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "bardiche replica"
+msgid_plural "bardiche replicas"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'bardiche replica'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a pole axe, which makes you cleave your enemies easliy.  This "
+"polearm appears to be made very poorly, but it should still stand up to a "
+"few swings."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "bardiche fake"
+msgid_plural "bardiche fakes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'bardiche fake'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a dull, cheaply made replica of a pole axe, which makes you cleave "
+"your enemies easliy."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "executioner's sword"
+msgid_plural "executioner's swords"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': "executioner's sword"}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a sword designed specifically for decapitation used in 17th-century "
+"Europe.  Good for slashing, but quite unwieldy due to it's weight."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "executioner's sword replica"
+msgid_plural "executioner's sword replicas"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': "executioner's sword replica"}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a sword designed specifically for decapitation used in 17th-century "
+"Europe.  This one seems oddly dull and worn."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "executioner's sword fake"
+msgid_plural "executioner's sword fakes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': "executioner's sword fake"}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a dull, cheaply made replica of a sword designed specifically for "
+"decapitation used in 17th-century Europe."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "urumi"
+msgid_plural "urumis"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'urumi'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A sword with a flexible, whip-like blade, originating in modern-day Kerala "
+"in the Indian subcontinent.  Used in India, it was for fighting lot of "
+"people alone, by hurting them.  Zombies and heavily armoured opponents "
+"however, do need a different approach."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "ninjato (stick form)"
+msgid_plural "ninjato (stick form)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action menu_text for {'str': 'ninjato (stick form)'}.
+#. ~ Use action menu_text for {'str': 'changpo (stick form)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "Pull out"
+msgstr ""
+
+#. ~ Use action msg for {'str': 'ninjato (stick form)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "You pull the ninjato out from the scabbard."
+msgstr ""
+
+#. ~ Description for {'str': 'ninjato (stick form)'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A fictional weapon that the ninjas would have used, although there is no "
+"evidence in history.  Activate to pull out the sword."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "ninjato (wakizashi form)"
+msgid_plural "ninjato (wakizashi form)"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action menu_text for {'str_sp': 'ninjato (wakizashi form)'}.
+#. ~ Use action menu_text for {'str_sp': 'changpo (sword form)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "Put in"
+msgstr ""
+
+#. ~ Use action msg for {'str_sp': 'ninjato (wakizashi form)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "You put the ninjato in the scabbard."
+msgstr ""
+
+#. ~ Description for {'str_sp': 'ninjato (wakizashi form)'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A fictional weapon that the ninjas would have used, although there is no "
+"evidence in history.  Smaller and lighter than a wakizashi, but still "
+"effective in combat.  Activate to put in the sword."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "gladius"
+msgid_plural "gladiuss"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'gladius'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is sword that was used by ancient Roman foot soldiers.  Still good to "
+"use, just like old times."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "gladius replica"
+msgid_plural "gladius replicas"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'gladius replica'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is sword that was used by ancient Roman foot soldiers.  This one "
+"doesn't seem to have been made right."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "gladius fake"
+msgid_plural "gladius fakes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'gladius fake'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a dull, cheaply made replica of sword that was used by ancient Roman"
+" foot soldiers."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "spatha"
+msgid_plural "spathas"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'spatha'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a replacement of Roman gladius, giving the infantry more reach when "
+"thrusting."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "spatha replica"
+msgid_plural "spatha replicas"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'spatha replica'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a replacement of Roman gladius, giving the infantry more reach when "
+"thrusting.  This one doesn't seem to have been made right."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "spatha fake"
+msgid_plural "spatha fakes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'spatha fake'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a dull, cheaply made replica of a replacement of Roman gladius, "
+"giving the infantry more reach when thrusting."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "changpo (stick form)"
+msgid_plural "changpo (stick form)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action msg for {'str': 'changpo (stick form)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "You pull the changpo out from the scabbard."
+msgstr ""
+
+#. ~ Description for {'str': 'changpo (stick form)'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A korean sword stick that some bandits would have used.  Activate to pull "
+"out the sword."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "changpo (sword form)"
+msgid_plural "changpo (sword form)"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action msg for {'str_sp': 'changpo (sword form)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "You put the changpo in the scabbard."
+msgstr ""
+
+#. ~ Description for {'str_sp': 'changpo (sword form)'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A korean sword stick that some bandits would have used.  Smaller and lighter"
+" than an average sword, but still effective in combat.  Activate to put in "
+"the sword."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "main-gauche"
+msgid_plural "main-gauches"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'main-gauche'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A medieval dagger, normally used for parring, but still usable as the dagger"
+" itself."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "epsilon axe"
+msgid_plural "epsilon axes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'epsilon axe'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a huge axe used in Egypt designed for warfare.  Though intended for "
+"use as a weapon, it can also be pressed into service as a clumsy woodcutting"
+" tool."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "epsilon axe replica"
+msgid_plural "epsilon axe replicas"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'epsilon axe replica'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a huge axe used in Egypt designed for warfare.  You notice that the "
+"axe heads aren't seated properly at all."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "epsilon axe fake"
+msgid_plural "epsilon axe fakes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'epsilon axe fake'}
+#. ~ Description for {'str': 'bearded axe fake'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a dull, cheaply made replica of a massive axe designed for warfare."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "dane axe"
+msgid_plural "dane axes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'dane axe'}
+#. ~ Description for {'str': 'bearded axe'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a huge axe used by the Vikings designed for warfare.  Though "
+"intended for use as a weapon, it can also be pressed into service as a "
+"clumsy woodcutting tool."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "dane axe replica"
+msgid_plural "dane axe replicas"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'dane axe replica'}
+#. ~ Description for {'str': 'bearded axe replica'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a huge axe used by the Vikings designed for warfare.  You notice "
+"that the axe heads aren't seated properly at all."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "dane axe fake"
+msgid_plural "dane axe fakes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'dane axe fake'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a dull, cheaply made replica of a huge axe used by the Vikings "
+"designed for warfare."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "bearded axe"
+msgid_plural "bearded axes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "bearded axe replica"
+msgid_plural "bearded axe replicas"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "bearded axe fake"
+msgid_plural "bearded axe fakes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "war fan (folded)"
+msgid_plural "war fan (folded)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action menu_text for {'str': 'war fan (folded)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "Open up"
+msgstr ""
+
+#. ~ Use action msg for {'str': 'war fan (folded)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "You open your your war fan."
+msgstr ""
+
+#. ~ Description for {'str': 'war fan (folded)'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a Japanese hand fan used as a weapon or for signalling.  Since this "
+"is folded, you could use this as a sap.  Activate this to open it up."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "war fan (opened)"
+msgid_plural "war fan (opened)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action menu_text for {'str': 'war fan (opened)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "Fold up"
+msgstr ""
+
+#. ~ Use action msg for {'str': 'war fan (opened)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "You fold up your war fan."
+msgstr ""
+
+#. ~ Description for {'str': 'war fan (opened)'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a Japanese hand fan used as a weapon or for signalling.  Since this "
+"is opened, you could use this as an unarmed weapon or as an improvised "
+"shield.  Activate this to fold it up."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "saex knife"
+msgid_plural "saex knives"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'saex knife', 'str_pl': 'saex knives'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a fighting knife or dagger typical of the Germanic peoples of the "
+"Migration Period and the Early Middle Ages, especially the Saxons."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "falx"
+msgid_plural "falxes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'falx', 'str_pl': 'falxes'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a weapon with a curved blade that was sharp on the inside edge used "
+"by the Thracians and Dacians."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "falx replica"
+msgid_plural "falx replicas"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'falx replica'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a weapon with a curved blade that was sharp on the inside edge used "
+"by the Thracians and Dacians.  This sword appears to be made very poorly, "
+"but it should still stand up to a few swings."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "falx fake"
+msgid_plural "falx fakes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'falx fake'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a dull, cheaply made replica of a weapon with a curved blade that "
+"was sharp on the inside edge used by the Thracians and Dacians."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "chain whip"
+msgid_plural "chain whips"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'chain whip'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a length of chain with a lock and some steel scraps at the end with "
+"a grip on another, which could be used as an improvised weapon."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "chain flail"
+msgid_plural "chain flails"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'chain flail'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a length of chain with a lock and some steel scraps at the end with "
+"a grip on another, which could be used as an improvised weapon.  This one "
+"have an extra length of chain with more steel which gives more damage to the"
+" user's enemies."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "horseman's pick"
+msgid_plural "horseman's picks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': "horseman's pick"}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a type of war hammer that has a very long spike on the reverse of "
+"the hammer head.  Sadly, you do have the pick but not the horse."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "The Black Almond's Dagger"
+msgid_plural "The Black Almond's Daggers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': "The Black Almond's Dagger"}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a unique melee weapon featuring a sturdy matte black long and slim "
+"single-edged blade with a spear-point and a distinctive slip-resistant grip "
+"which can also be used to affix it to a suitable firearm.  Originally "
+"manufactured for an assassin."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "makeshift pipe mace"
+msgid_plural "makeshift pipe maces"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'makeshift pipe mace'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A pipe with some steel scraps attatched to it.  The resulting weapon is "
+"unwieldy and slow but very heavy hitting."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "makeshift pipe spear"
+msgid_plural "makeshift pipe spears"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'makeshift pipe spear'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "A stout metal pole with a sharp point."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighRanged.json
@@ -19163,11 +20534,6 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighRanged.json
-msgctxt "gun_type_type"
-msgid "shotgun"
-msgstr ""
-
-#: .\ZhighWeapons\ZhighRanged.json
 msgid "OTs-62 shotgun"
 msgid_plural "OTs-62 shotguns"
 msgstr[0] ""
@@ -19409,6 +20775,177 @@ msgid ""
 " a pistol."
 msgstr ""
 
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "spraycan chemical thrower"
+msgid_plural "spraycan chemical throwers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A self-made chemical sprayer, this modified spray can is probably as "
+"dangerous to the user as anyone else.  The nozzle has been crudely modified "
+"to disperse chemicals, and a small pump attached to the side allows for "
+"repressurization, though this process takes a few minutes."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "spraycan flamethrower"
+msgid_plural "spraycan flamethrowers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A favorite of hooligans around the world, this lighter duct-taped to a spray"
+" can is probably as dangerous to the user as anyone else.  The nozzle has "
+"been crudely modified to disperse gasoline, and a small pump attached to the"
+" side allows for repressurization, though this process takes a few minutes."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "bomb lance"
+msgid_plural "bomb lances"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"Adapted for combat on land, this explosive harpoon can be fired short "
+"distances and deals tremendous damage on direct impact.  Could reload "
+"pebble-type ammo for versatility."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Triple Action Thunder"
+msgid_plural "Triple Action Thunders"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A Breech-loading, single shot handgun designed to fire the .50 BMG "
+"cartridge.  Reconstruct the word \"Hand Cannon\"."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Walther WA2000"
+msgid_plural "Walther WA2000s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A semi-automatic bullpup sniper rifle.  Only 176 were built due to its high manufacturing cost, making it one of the rarest and most sought production firearms ever made.  \n"
+"\n"
+"640509-040147"
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Walther 2000 magazine"
+msgid_plural "Walther 2000 magazines"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Walther 2000 magazine'}
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Standard 6-round box magazine for a Walther 2000 sniper rifle."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "beshuma"
+msgid_plural "beshumas"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A tihar's bigger brother, handcrafted from scrap.  Be careful where you "
+"reload it, pumping air into the tank takes a few seconds.  It is pretty "
+"quiet and quite deadly."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Ballistic Fist"
+msgid_plural "Ballistic Fists"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A single shot pistol that loads 12 gauge shotgun shells, handcrafted from "
+"scrap."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgctxt "gun_type_type"
+msgid "unarmed"
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "pop gun"
+msgid_plural "pop gun"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A toy gun, which uses air pressure to fire a small tethered or untethered "
+"projectile out of a barrel, most often via piston action though sometimes "
+"via spring pressure."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "tishuna"
+msgid_plural "tishunas"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A multistroke pneumatic pistol handcrafted from scrap.  Be careful where you"
+" reload it, pumping air into the tank takes a few seconds.  It is pretty "
+"quiet and quite deadly."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "spark shot"
+msgid_plural "spark shots"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"This is a cheap shock rifle made from a tazer and some common components.  "
+"Weak, but can be powered with UPS."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Mauser C96"
+msgid_plural "Mauser C96"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"The Mauser C96, or broomhandle, is a semi-automatic pistol that was "
+"originally produced by Germany.  It was pretty good, but it was the unique "
+"shape that kept the gun famous untill now."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Mauser C96 ammo clip"
+msgid_plural "Mauser C96 ammo clips"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Mauser C96 ammo clip'}
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"This ammo clip can hold 10 rounds of 7.62x25mm and quickly reload a Mauser "
+"C96."
+msgstr ""
+
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "spade throwing card"
 msgid_plural "spade throwing cards"
@@ -19616,6 +21153,7 @@ msgstr[1] ""
 #. ~ Use action msg for {'str': 'anti-tank grenade'}.
 #. ~ Use action msg for {'str': 'napalm grenade'}.
 #. ~ Use action msg for {'str': 'goo grenade'}.
+#. ~ Use action msg for {'str': 'improvised goo grenade'}.
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "You pull the pin on the grenade."
 msgstr ""
@@ -19638,6 +21176,7 @@ msgstr[1] ""
 #. ~ Use action sound_msg for {'str': 'active anti-tank grenade'}.
 #. ~ Use action sound_msg for {'str': 'active napalm grenade'}.
 #. ~ Use action sound_msg for {'str': 'active goo grenade'}.
+#. ~ Use action sound_msg for {'str': 'active improvised goo grenade'}.
 #. ~ Use action sound_msg for {'str': 'active improvised nail bomb'}.
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "Tick."
@@ -19758,6 +21297,33 @@ msgstr[1] ""
 msgid ""
 "This is an active goo grenade, likely to burst into a pool of goo any second"
 " now.  Better throw it!"
+msgstr ""
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "improvised goo grenade"
+msgid_plural "improvised goo grenades"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'improvised goo grenade'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid ""
+"This is a hand made goo hand grenade.  Use this item to pull the pin and "
+"light the fuse.  You will then have five turns before it explodes into a "
+"pool of goo; throwing it would be a good idea."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "active improvised goo grenade"
+msgid_plural "active improvised goo grenades"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'active improvised goo grenade'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid ""
+"This is an active improvised goo grenade, likely to burst into a pool of goo"
+" any second now.  Better throw it!"
 msgstr ""
 
 #: .\ZhighWeapons\ZhighThrowing.json
@@ -19907,6 +21473,21 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighThrowing.json
+msgid "scrap throwing knife"
+msgid_plural "scrap throwing knives"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'scrap throwing knife', 'str_pl': 'scrap throwing
+#. knives'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid ""
+"A thin and flat knife made for throwing.  Its ineffective cutting edge and "
+"odd shape makes it unsuitable for use as a tool.  Plus, it is made from "
+"scrap, so it is quite unreliable."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighThrowing.json
 msgid "throwing club"
 msgid_plural "throwing clubs"
 msgstr[0] ""
@@ -19918,6 +21499,20 @@ msgid ""
 "A stick carved into a shape suitable for throwing at a target, then added a "
 "rock as a weight.  Not a boomerang, so don't expect it to return to your "
 "hand."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "combat booerang"
+msgid_plural "combat booerangs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'combat booerang'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid ""
+"A slender long rod of wood with a little curve, while traditionally intended"
+" as a weapon used by Aboriginal Australians.  Not the toy variant of the "
+"family, so don't expect it to return to your hand."
 msgstr ""
 
 #: .\ZhighZeds\zed-animal.json
