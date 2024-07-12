@@ -37,6 +37,39 @@
     "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NONCONDUCTIVE" ]
   },
   {
+    "id": "crysknifeZhigh",
+    "copy-from": "bone_knife",
+    "type": "GENERIC",
+    "category": "weapons",
+    "name": { "str": "crysknife" },
+    "description": "A bone dagger, with a silver grip.  \n\nMay thy knife chip and shatter.",
+    "price": "6000 USD",
+    "price_postapoc": "1500 USD",
+    "to_hit": 3,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "values": [ { "value": "ARMOR_ELEC", "multiply": -1.0 }, { "value": "SPEED", "add": 30 } ],
+          "hit_you_effect": [
+            {
+              "id": "zhigh_regenV2",
+              "message": "Your wounds regenerate as you chop %2$s down.",
+              "npc_message": "%1$s's wounds disappear as they chop %2$s down."
+            }
+          ]
+        }
+      ]
+    },
+    "bashing": 1,
+    "cutting": 25,
+    "material": [ "bone", "leather", "silver", "gold" ],
+    "techniques": [ "RAPID", "WBLOCK_1" ],
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 9 ] ],
+    "flags": [ "DURABLE_MELEE", "STAB", "SHEATH_KNIFE", "NONCONDUCTIVE" ]
+  },
+  {
     "id": "sword_Magik",
     "type": "TOOL",
     "category": "weapons",

@@ -165,7 +165,7 @@
     "use_action": {
       "target": "improvised_colabomb_act",
       "msg": "You activate the cola bomb.",
-      "target_charges": 6,
+      "target_charges": 3,
       "active": true,
       "menu_text": "Activate",
       "type": "transform"
@@ -187,13 +187,13 @@
     "material": "steel",
     "symbol": "*",
     "color": "light_gray",
-    "initial_charges": 6,
-    "max_charges": 6,
+    "initial_charges": 3,
+    "max_charges": 3,
     "turns_per_charge": 1,
     "explode_in_fire": true,
     "explosion": {
       "damage": 12,
-      "radius": 1
+      "radius": 2
     },
     "use_action": {
       "type": "explosion",
@@ -808,6 +808,7 @@
     "volume": "600 ml",
     "bashing": 9,
     "price": "10 USD",
-    "thrown_damage": [ { "damage_type": "bash", "amount": 18 } ]
+    "flags": [ "NOGIB" ],
+    "thrown_damage": [ { "damage_type": "bash", "amount": 20 } ]
   }
 ]
