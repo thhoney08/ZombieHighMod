@@ -392,6 +392,7 @@
       [ "mask_filter", 30 ],
       [ "glasses_eye", 90 ],
       [ "contacts", 30 ],
+      [ "holtzmanShieldZhigh", 1 ],
       [ "sunglasses", 90 ],
       [ "fitover_sunglasses", 60 ],
       [ "fancy_sunglasses", 5 ],
@@ -890,6 +891,7 @@
       { "group": "nested_raging_judge", "prob": 20 },
       { "group": "nested_ots62", "prob": 30 },
       { "group": "nested_tatZhigh", "prob": 10 },
+      { "group": "nested_mauserC96Zhigh", "prob": 35 },
       { "group": "nested_m53Medusa", "prob": 35 },
       { "group": "nested_contender_zhigh", "prob": 50 },
       { "group": "nested_pkdBlaster", "prob": 5 },
@@ -904,6 +906,7 @@
     "id": "guns_pistol_rare_display",
     "//": "Empty uncommon pistols found exclusively at gun stores.",
     "items": [
+      { "item": "mauserC96Zhigh", "prob": 10, "charges-min": 0, "charges-max": 0 },
       { "item": "ots62", "prob": 10, "charges-min": 0, "charges-max": 0 },
       { "item": "tatZhigh", "prob": 10, "charges-min": 0, "charges-max": 0 },
       { "item": "m53Medusa", "prob": 10, "charges-min": 0, "charges-max": 0 },
@@ -962,10 +965,18 @@
       { "item": "cavalry_sabre", "prob": 10 },
       { "item": "bardicheZhigh", "prob": 10 },
       { "item": "coupeCoupeZhigh", "prob": 10 },
+      { "item": "horsemanPickZhigh", "prob": 10 },
       { "item": "shotelZhigh", "prob": 10 },
       { "item": "yataganZhigh", "prob": 10 },
       { "item": "executionerSwordZhigh", "prob": 10 },
-      { "item": "bardicheZhigh", "prob": 10 },
+      { "item": "urumiZhigh", "prob": 10 },
+      { "item": "gladiusZhigh", "prob": 10 },
+      { "item": "spathaZhigh", "prob": 10 },
+      { "item": "dagger_parringZhigh", "prob": 10 },
+      { "item": "epsilonAxeZhigh", "prob": 10 },
+      { "item": "daneAxeZhigh", "prob": 10 },
+      { "item": "beardedAxeZhigh", "prob": 10 },
+      { "item": "knife_saex", "prob": 10 },
       { "item": "hatchet", "prob": 15 },
       { "item": "cannonball_explosive", "prob": 10 },
       { "item": "shotgun_paper", "prob": 10 },
@@ -1001,7 +1012,8 @@
       { "item": "throwing_knife_scrap", "prob": 25 },
       { "item": "boomerangZhigh", "prob": 15 },
       { "item": "sharps", "prob": 8 },
-      { "item": "colt_saa", "prob": 2 }
+      { "item": "colt_saa", "prob": 2 },
+	  { "group": "medieval", "prob": 60 }
     ]
   },
   {
@@ -1095,6 +1107,7 @@
     "subtype": "distribution",
     "items": [
       { "group": "ZhighMaskGroups", "prob": 30, "count": [ 1, 4 ] },
+      [ "popGun_zhigh", 30 ],
       [ "paintballgun_pistol", 20 ],
       [ "paintballgun_revolver", 20 ],
       [ "mask_paintball", 5 ],
@@ -1404,12 +1417,32 @@
       [ "spathaZhigh", 2 ],
       [ "spathaZhigh_fake", 8 ],
       [ "spathaZhigh_inferior", 10 ],
+      [ "epsilonAxeZhigh", 2 ],
+      [ "epsilonAxeZhigh_fake", 8 ],
+      [ "epsilonAxeZhigh_inferior", 10 ],
+      [ "daneAxeZhigh", 2 ],
+      [ "daneAxeZhigh_fake", 8 ],
+      [ "daneAxeZhigh_inferior", 10 ],
+      [ "beardedAxeZhigh", 2 ],
+      [ "beardedAxeZhigh_fake", 8 ],
+      [ "beardedAxeZhigh_inferior", 10 ],
+      [ "falxZhigh", 2 ],
+      [ "falxZhigh_fake", 8 ],
+      [ "falxZhigh_inferior", 10 ],
+      [ "knife_saex", 10 ],
       [ "changpoSwordZhigh", 8 ],
       [ "dagger_parringZhigh", 8 ],
+      [ "warfanZhighClose", 8 ],
       [ "urumiZhigh", 8 ],
       [ "katana_mallninjaZhigh", 5 ],
       [ "bomblanceZhigh", 1 ],
-      [ "coupeCoupeZhigh", 10 ],
+      [ "coupeCoupeZhigh", 8 ],
+      [ "horsemanPickZhigh", 8 ],
+      [ "boomerangZhigh", 8 ],
+      [ "throwing_club", 8 ],
+      [ "throwing_knife", 8 ],
+      [ "throwing_knife_scrap", 8 ],
+      [ "throwing_axe", 8 ],
       [ "kunaiZhigh", 15 ],
       [ "sevenBladeZhigh", 1 ],
       [ "broadsword", 2 ],
@@ -1469,7 +1502,8 @@
       [ "khopesh", 4 ],
       [ "ax_bronze", 2 ],
       [ "spear_dory", 3 ],
-      [ "dagger_bronze", 5 ]
+      [ "dagger_bronze", 5 ],
+	  { "group": "medieval", "prob": 60 }
     ]
   },
   {
@@ -1511,7 +1545,8 @@
       [ "gatlingdrum240", 10 ],
       [ "4570_low", 30 ],
       [ "cannonball_explosive", 10 ],
-      [ "cannonball_4lb", 40 ]
+      [ "cannonball_4lb", 40 ],
+	  { "group": "medieval", "prob": 60 }
     ]
   },
   {
@@ -2160,6 +2195,7 @@
       [ "knife_hunting", 20 ],
       [ "kunaiZhigh", 10 ],
       [ "ninjatoStikZhigh", 10 ],
+      [ "knife_hitmanZhigh", 1 ],
       [ "macheteSpetzZhigh", 5 ],
       [ "mambele", 5 ],
       [ "chakram", 5 ],

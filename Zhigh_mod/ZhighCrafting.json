@@ -155,13 +155,30 @@
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_RANGED",
     "skill_used": "fabrication",
-    "difficulty": 4,
+    "difficulty": 3,
     "time": "5 m",
     "autolearn": true,
     "qualities": [ { "id": "HAMMER", "level": 1 } ],
     "components": [
       [ [ "steel_chunk", 1 ], [ "scrap", 3 ] ],
-      [ [ "fabric_standard", 10, "LIST" ], [ "fabric_hides_any", 10, "LIST" ], [ "felt_patch", 10 ] ]
+      [ [ "fabric_standard", 1, "LIST" ], [ "fabric_hides_any", 1, "LIST" ], [ "felt_patch", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "throwing_knife_scrap",
+    "id_suffix": "from_scissor",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "result_mult": 2,
+    "time": "15 m",
+    "autolearn": true,
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "scissors", 1 ] ],
+      [ [ "fabric_standard", 2, "LIST" ], [ "fabric_hides_any", 2, "LIST" ], [ "felt_patch", 2 ] ]
     ]
   },
   {
@@ -933,6 +950,7 @@
       [ [ "misc_repairkit", 1 ] ],
       [ [ "fabric_standard", 3, "LIST" ] ],
       [ [ "whistle_multitool", 1 ] ],
+      [ [ "medkitRecharge", 1 ] ],
       [ [ "plut_cell", 6 ] ],
       [ [ "cable", 30 ] ]
     ]
@@ -1777,14 +1795,13 @@
   {
     "result": "fireEx_zhigh_Packed",
     "type": "recipe",
-    "category": "CC_WEAPON",
-    "subcategory": "CSC_WEAPON_RANGED",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
     "skill_used": "fabrication",
-    "difficulty": 1,
-    "time": "3 m",
+    "time": "3 s",
     "reversible": false,
     "autolearn": true,
-    "components": [ [ [ "scrap", 1 ] ], [ [ "extinguisher", 1 ] ], [ [ "duct_tape", 10 ] ] ]
+    "components": [ [ [ "scrap", 1 ] ], [ [ "extinguisher", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -2605,7 +2622,21 @@
     "book_learn": [ [ "textbook_gaswarfare", 4 ], [ "textbook_chemistry", 4 ], [ "adv_chemistry", 4 ], [ "recipe_labchem", 4 ] ],
     "qualities": [ { "id": "CHEM", "level": 1 } ],
     "tools": [ [ [ "mortar_pestle", -1 ] ], [ [ "surface_heat", 1, "LIST" ] ] ],
-    "components": [ [ [ "garlic", 1 ], [ "garlic_clove", 6 ] ], [ [ "water", 5 ], [ "water_clean", 5 ] ] ]
+    "components": [ [ [ "chilly-p", 25 ], [ "pepper", 25 ], [ "garlic", 1 ], [ "garlic_clove", 6 ] ], [ [ "water", 5 ], [ "water_clean", 5 ] ] ]
+  },
+  {
+    "result": "gas_flashpowder",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "cooking",
+    "skills_required": [ "survival", 2 ],
+    "difficulty": 2,
+    "time": "15 m",
+    "book_learn": [ [ "textbook_gaswarfare", 4 ], [ "textbook_chemistry", 4 ], [ "adv_chemistry", 4 ], [ "recipe_labchem", 4 ] ],
+    "qualities": [ { "id": "CHEM", "level": 1 } ],
+    "tools": [ [ [ "mortar_pestle", -1 ] ], [ [ "surface_heat", 1, "LIST" ] ] ],
+    "components": [ [ [ "magnesium", 50 ], [ "chem_aluminium_powder", 50 ] ], [ [ "oxy_powder", 50 ] ] ]
   },
   {
     "result": "utility_belt",
@@ -3486,6 +3517,84 @@
     "components": [ [ [ "scrap", 1 ] ], [ [ "plastic_chunk", 2 ] ] ]
   },
   {
+    "result": "charm_ring",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MODS",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "skills_required": [ [ "gun", 1 ] ],
+    "time": "10 m",
+    "autolearn": true,
+    "tools": [ [ [ "large_repairkit", 25 ], [ "small_repairkit", 45 ] ] ],
+    "components": [ [ [ "scrap", 1 ] ] ]
+  },
+  {
+    "result": "charm_fak",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MODS",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "skills_required": [ [ "gun", 1 ] ],
+    "time": "10 m",
+    "autolearn": true,
+    "tools": [ [ [ "mold_plastic", -1 ] ], [ [ "large_repairkit", 25 ], [ "small_repairkit", 45 ] ] ],
+    "components": [ [ [ "scrap", 1 ] ], [ [ "plastic_chunk", 2 ] ] ]
+  },
+  {
+    "result": "charm_hglass",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MODS",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "skills_required": [ [ "gun", 1 ] ],
+    "time": "10 m",
+    "autolearn": true,
+    "tools": [ [ [ "mold_plastic", -1 ] ], [ [ "large_repairkit", 25 ], [ "small_repairkit", 45 ] ] ],
+    "components": [ [ [ "scrap", 1 ] ], [ [ "plastic_chunk", 2 ] ] ]
+  },
+  {
+    "result": "charm_electric",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MODS",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "skills_required": [ [ "gun", 1 ] ],
+    "time": "10 m",
+    "autolearn": true,
+    "tools": [ [ [ "mold_plastic", -1 ] ], [ [ "large_repairkit", 25 ], [ "small_repairkit", 45 ] ] ],
+    "components": [ [ [ "scrap", 1 ] ], [ [ "plastic_chunk", 2 ] ] ]
+  },
+  {
+    "result": "charm_heat",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MODS",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "skills_required": [ [ "gun", 1 ] ],
+    "time": "10 m",
+    "autolearn": true,
+    "tools": [ [ [ "mold_plastic", -1 ] ], [ [ "large_repairkit", 25 ], [ "small_repairkit", 45 ] ] ],
+    "components": [ [ [ "scrap", 1 ] ], [ [ "plastic_chunk", 2 ] ] ]
+  },
+  {
+    "result": "charm_comp",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MODS",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "skills_required": [ [ "gun", 1 ] ],
+    "time": "10 m",
+    "autolearn": true,
+    "tools": [ [ [ "mold_plastic", -1 ] ], [ [ "large_repairkit", 25 ], [ "small_repairkit", 45 ] ] ],
+    "components": [ [ [ "scrap", 1 ] ], [ [ "plastic_chunk", 2 ] ] ]
+  },
+  {
     "type": "recipe",
     "result": "bat_handmade",
     "category": "CC_WEAPON",
@@ -4101,7 +4210,7 @@
     "time": "20 m",
     "autolearn": true,
     "components": [
-        [ [ "hammer", 1 ], [ "hammer_bronze", 1 ], [ "nailgun", 1 ] ],
+        [ [ "hammer", 1 ], [ "hammer_sledge_short", 1 ], [ "makeshift_hammer", 1 ], [ "primitive_hammer", 1 ], [ "hammer_bronze", 1 ], [ "nailgun", 1 ] ],
         [ [ "nail", 20 ] ],
         [ [ "2x4", 5 ] ] ],
     "flags": [ "BLIND_EASY" ]
@@ -4251,12 +4360,12 @@
     "reversible": true,
     "time": "1 m",
     "components": [ [
-			[ "stick", 1 ],
-			[ "cudgel", 1 ],
-			[ "2x4", 1 ],
-			[ "pool_cue", 1 ] ],
-			[ [ "rock_sock", 1 ]
-	] ]
+		[ "stick", 1 ],
+		[ "cudgel", 1 ],
+		[ "2x4", 1 ],
+		[ "pool_cue", 1 ] ],
+		[ [ "rock_sock", 1 ] ]
+	]
   },
   {
     "result": "straw_hat_Asia",
@@ -5388,7 +5497,7 @@
     "skill_used": "fabrication",
     "difficulty": 8,
     "time": "4 h",
-    "book_learn": [ [ "textbook_weapwest", 7 ], [ "scots_cookbook", 9 ] ],
+    "book_learn": [ [ "textbook_weapwest", 5 ], [ "scots_cookbook", 7 ] ],
     "using": [ [ "blacksmithing_advanced", 6 ], [ "steel_standard", 2 ] ],
     "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "fabric_hides_any", 1, "LIST" ] ] ]
   },
@@ -5440,5 +5549,396 @@
     "autolearn": true,
     "time": "1 m",
     "components": [ [ [ "sword_cane", 1 ] ], [ [ "hollow_cane", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "epsilonAxeZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "fabrication",
+    "difficulty": 8,
+    "time": "8 h",
+    "book_learn": [ [ "textbook_weapwest", 8 ], [ "recipe_melee", 7 ], [ "scots_cookbook", 9 ] ],
+    "using": [ [ "blacksmithing_advanced", 12 ], [ "steel_standard", 3 ] ],
+    "components": [ [ [ "2x4", 2 ], [ "stick", 4 ] ], [ [ "fabric_hides_any", 2, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "daneAxeZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "fabrication",
+    "difficulty": 8,
+    "time": "8 h",
+    "book_learn": [ [ "textbook_weapwest", 8 ], [ "recipe_melee", 7 ], [ "scots_cookbook", 9 ] ],
+    "using": [ [ "blacksmithing_advanced", 12 ], [ "steel_standard", 3 ] ],
+    "components": [ [ [ "2x4", 2 ], [ "stick", 4 ] ], [ [ "fabric_hides_any", 2, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "beardedAxeZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "fabrication",
+    "difficulty": 8,
+    "time": "8 h",
+    "book_learn": [ [ "textbook_weapwest", 8 ], [ "recipe_melee", 7 ], [ "scots_cookbook", 9 ] ],
+    "using": [ [ "blacksmithing_advanced", 12 ], [ "steel_standard", 3 ] ],
+    "components": [ [ [ "2x4", 2 ], [ "stick", 4 ] ], [ [ "fabric_hides_any", 2, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "warfanZhighClose",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "time": "5 h 40 m",
+    "book_learn": [ [ "textbook_weapeast", 5 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 1 } ],
+    "components": [
+      [
+        [ "fabric_standard", 1, "LIST" ],
+        [ "felt_patch", 1 ],
+        [ "duct_tape", 50 ],
+        [ "cordage_short", 2, "LIST" ],
+        [ "filament", 100, "LIST" ]
+      ]
+    ],
+    "using": [ [ "welding_standard", 30 ], [ "steel_standard", 24 ] ]
+  },
+  {
+    "result": "tishuna",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "mechanics",
+    "difficulty": 3,
+    "time": "2 h 40 m",
+    "autolearn": true,
+    "using": [ [ "welding_standard", 15 ] ],
+    "qualities": [ { "id": "SAW_M_FINE", "level": 1 }, { "id": "SCREW_FINE", "level": 1 }, { "id": "WRENCH_FINE", "level": 1 } ],
+    "components": [
+      [ [ "hand_pump", 1 ] ],
+      [ [ "pipe", 2 ] ],
+      [ [ "adhesive", 1, "LIST" ] ],
+      [ [ "2x4", 1 ], [ "stick", 1 ] ],
+      [ [ "metal_tank_little", 1 ] ],
+      [ [ "steel_chunk", 1 ], [ "scrap", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "woodenKnife",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "1 h 30 m",
+    "book_learn": [ [ "manual_knives", 1 ], [ "recipe_melee", 2 ] ],
+    "components": [ [ [ "2x4", 3 ], [ "stick", 3 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "falxZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "fabrication",
+    "difficulty": 7,
+    "time": "6 h 40 m",
+    "book_learn": [ [ "textbook_weapwest", 6 ], [ "scots_cookbook", 8 ] ],
+    "using": [ [ "blacksmithing_advanced", 12 ], [ "steel_standard", 3 ] ],
+    "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "fabric_hides_any", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "knife_saex",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_PIERCING",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "1 h 35 m",
+    "reversible": true,
+    "autolearn": true,
+    "qualities": [ { "id": "HAMMER", "level": 1 } ],
+    "components": [
+      [ [ "2x4", 1 ], [ "stick", 1 ] ],
+      [ [ "blade", 1 ] ]
+    ]
+  },
+  {
+    "result": "american_flagCapeZhigh",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "tailor",
+    "time": "5 m",
+    "autolearn": true,
+    "components": [ [ [ "american_flag", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "popGun_zhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "skills_required": [ "rifle", 1 ],
+    "difficulty": 1,
+    "time": "160 m",
+    "autolearn": true,
+    "book_learn": [ [ "manual_rifle", 2 ], [ "mag_rifle", 2 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SCREW_FINE", "level": 1 } ],
+    "using": [ [ "steel_standard", 1 ] ],
+    "components": [ [ [ "cordage", 3, "LIST" ] ], [ [ "2x4", 2 ] ], [ [ "pipe", 1 ] ], [ [ "chunk_rubber", 3 ], [ "rubber_slug", 1 ] ] ]
+  },
+  {
+    "result": "chainflailZhigh",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "time": "15 m",
+    "autolearn": true,
+    "components": [ [ [ "scrap", 15 ], [ "steel_chunk", 3 ] ], [ [ "chain", 1 ] ], [ [ "lock", 2 ] ] ]
+  },
+  {
+    "result": "chainflailZhigh2",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "skills_required": [ "bashing", 1 ],
+    "difficulty": 2,
+    "time": "35 m",
+    "autolearn": true,
+    "components": [ [ [ "scrap", 20 ], [ "steel_chunk", 4 ] ], [ [ "chain", 2 ] ], [ [ "lock", 2 ] ] ]
+  },
+  {
+    "result": "chainflailZhigh2",
+    "id_suffix": "from_chainflailZhigh",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "skills_required": [ "bashing", 2 ],
+    "difficulty": 2,
+    "time": "15 m",
+    "autolearn": true,
+    "components": [ [ [ "scrap", 5 ], [ "steel_chunk", 1 ] ], [ [ "chain", 1 ] ] ]
+  },
+  {
+    "result": "horsemanPickZhigh",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "time": "3 h",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_weapwest", 6 ], [ "scots_cookbook", 8 ] ],
+    "using": [ [ "blacksmithing_intermediate", 2 ], [ "steel_standard", 2 ] ],
+    "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
+    "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ] ]
+  },
+  {
+    "result": "sparkShotZhigh",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "electronics",
+    "difficulty": 3,
+    "time": "1 h 50 m",
+    "reversible": true,
+    "autolearn": true,
+    "book_learn": [ [ "advanced_electronics", 1 ], [ "textbook_electronics", 1 ] ],
+    "qualities": [ { "id": "SCREW_FINE", "level": 1 } ],
+    "using": [ [ "soldering_standard", 60 ] ],
+    "components": [
+      [ [ "amplifier", 2 ] ],
+      [ [ "power_supply", 1 ] ],
+      [ [ "cable", 20 ] ],
+      [ [ "e_scrap", 10 ] ],
+      [ [ "tazer", 1 ] ],
+      [ [ "plastic_chunk", 6 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "chemical_thrower",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "mechanics",
+    "skills_required": [ "launcher", 2 ],
+    "difficulty": 2,
+    "time": "30 m",
+    "reversible": true,
+    "autolearn": true,
+    "qualities": [ { "id": "SAW_M_FINE", "level": 1 }, { "id": "SCREW_FINE", "level": 1 }, { "id": "HAMMER", "level": 2 } ],
+    "using": [ [ "welding_standard", 20 ] ],
+    "components": [
+      [ [ "pipe", 2 ] ],
+      [ [ "hose", 2 ], [ "makeshift_hose", 2 ] ],
+      [ [ "steel_lump", 1 ], [ "steel_chunk", 4 ], [ "scrap", 12 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "betterPumpZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MODS",
+    "skill_used": "fabrication",
+    "skills_required": [ "gun", 2 ],
+    "difficulty": 4,
+    "time": "30 m",
+    "reversible": true,
+    "autolearn": true,
+    "qualities": [ { "id": "SAW_M_FINE", "level": 1 }, { "id": "SCREW", "level": 1 }, { "id": "HAMMER", "level": 2 } ],
+    "using": [ [ "welding_standard", 10 ] ],
+    "components": [
+      [ [ "hose", 2 ], [ "makeshift_hose", 2 ] ],
+      [ [ "scrap", 10 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "wall_kit",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "40 m",
+    "reversible": true,
+    "autolearn": true,
+    "qualities": [ { "id": "HAMMER", "level": 2 } ],
+    "tools": [ [ [ "mold_plastic", -1 ] ], [ [ "surface_heat", 10, "LIST" ] ] ],
+    "components": [
+	  [ [ "sheet_metal", 2 ] ],
+	  [ [ "wire", 5 ] ],
+	  [ [ "plastic_chunk", 10 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "ammoBag",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "skills_required": [ "gun", 8 ],
+    "difficulty": 8,
+    "time": "10 h 50 m",
+    "reversible": false,
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "using": [ [ "sewing_standard", 300 ] ],
+    "components": [
+      [ [ "stanag30", 30 ] ],
+      [ [ "shot_00", 300 ] ],
+      [ [ "scrap", 300 ], [ "sheet_metal_small", 60 ] ],
+      [
+        [ "fabric_standard", 40, "LIST" ],
+        [ "fabric_hides_any", 40, "LIST" ],
+        [ "duct_tape", 200 ],
+        [ "medical_tape", 400 ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "ammoPurse",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "skills_required": [ "gun", 4 ],
+    "difficulty": 4,
+    "time": "5 h 50 m",
+    "reversible": false,
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "using": [ [ "sewing_standard", 200 ] ],
+    "components": [
+      [ [ "stanag30", 20 ] ],
+      [ [ "shot_00", 200 ] ],
+      [ [ "scrap", 200 ], [ "sheet_metal_small", 40 ] ],
+      [
+        [ "fabric_standard", 20, "LIST" ],
+        [ "fabric_hides_any", 20, "LIST" ],
+        [ "duct_tape", 100 ],
+        [ "medical_tape", 200 ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "dispenserZhighFake_kit",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "difficulty": 10,
+    "time": "12 h 50 m",
+    "reversible": true,
+    "autolearn": true,
+    "qualities": [ 
+        { "id": "SAW_M_FINE", "level": 1 }, 
+        { "id": "SCREW_FINE", "level": 2 }, 
+        { "id": "HAMMER", "level": 2 }, 
+        { "id": "WRENCH_FINE", "level": 1 }
+	],
+    "using": [ [ "sewing_standard", 100 ], [ "soldering_standard", 100 ], [ "welding_standard", 105 ] ],
+    "components": [
+      [ [ "cable", 100 ] ],
+      [ [ "scrap", 200 ], [ "sheet_metal_small", 40 ] ],
+      [ [ "ammoPurse", 2 ], [ "ammoBag", 1 ] ],
+      [ [ "fabric_standard", 30, "LIST" ] ],
+      [ [ "processor", 3 ] ],
+      [ [ "RAM", 3 ] ],
+      [ [ "plut_cell", 6 ] ],
+      [ [ "e_scrap", 30 ] ],
+      [ [ "amplifier", 10 ] ],
+      [ [ "circuit", 10 ] ],
+      [ [ "metal_tank", 1 ] ],
+      [ [ "medkitRecharge", 1 ] ],
+      [ [ "large_lcd_screen", 1 ] ]
+    ]
+  },
+  {
+    "result": "762x25mauserClipZhigh",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MAGAZINES",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "skills_required": [ "gun", 2 ],
+    "time": "20 m",
+    "book_learn": [ [ "recipe_bullets", 2 ], [ "mag_rifle", 3 ] ],
+    "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
+    "tools": [
+		[ [ "762_25", -1 ], [ "762_25_casing", -1 ], [ "bp_762_25", -1 ], [ "762_25hot", -1 ], [ "762_25typeP", -1 ] ],
+		[ [ "small_repairkit", 10 ], [ "large_repairkit", 5 ] ]
+	],
+    "components": [ [ [ "sheet_metal_small", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "pipeMaceZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "time": "5 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "scrap", 8 ] ], [ [ "pipe", 1 ] ] ]
+  },
+  {
+    "result": "spearPipeZhigh",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_PIERCING",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "skills_required": [ "melee", 1 ],
+    "time": "60 m",
+    "autolearn": true,
+    "reversible": true,
+    "components": [ [ [ "scrap", 4 ] ], [ [ "pipe", 3 ] ] ]
   }
 ]

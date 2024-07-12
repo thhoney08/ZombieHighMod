@@ -27,6 +27,7 @@
       "player_bandit",
 	  "razorgirl",
 	  "scoundrel",
+	  "sniperPd2",
       "dallasPd2",
       "wolfPd2",
       "chainsPd2",
@@ -94,6 +95,13 @@
   },
   {
     "type": "start_location",
+    "id": "sloc_ws_fire_lookout_towerZhigh",
+    "name": "fire lookout tower",
+    "terrain": [
+      "ws_fire_lookout_towerZhigh_f4" ]
+  },
+  {
+    "type": "start_location",
     "id": "sloc_hunting_blind",
     "name": "Hunting blind",
     "terrain": [ "hunting_blind" ]
@@ -132,7 +140,7 @@
     "type": "scenario",
     "id": "InSchool",
     "name": "Challenge - School",
-    "points": -8,
+    "points": -10,
     "description": "You were at school when the principal and ate one of the students, and before you knew it the entire campus was overriden by monsters.  Guess school's out forever.",
     "allowed_locs": [ "sloc_school" ],
     "start_name": "In School",
@@ -260,6 +268,7 @@
       "zhighSapper",
 	  "zhighGuerilla",
 	  "zhighNinja",
+	  "zhighEngineer",
       "zhighFrat"
     ],
     "flags": [ "CITY_START" ]
@@ -271,7 +280,7 @@
     "points": -4,
     "//": "Easy senario, made on purpose.",
     "description": "You've attracted the attention of living dead, but you escaped the horde somehow and arrived at a bunker-like school.",
-    "allowed_locs": [ "sloc_ZhighSchoolDorm", "sloc_ZhighSchool" ],
+    "allowed_locs": [ "sloc_ZhighSchool" ],
     "professions": [
       "zhighStudent",
       "zhighChairman",
@@ -396,6 +405,7 @@
       "zhighSapper",
 	  "zhighGuerilla",
 	  "zhighNinja",
+	  "zhighEngineer",
       "zhighFrat"
     ],
     "start_name": "Zombiefied Highschool",
@@ -454,6 +464,16 @@
             "team_lightning"
         ]
       }
+  },
+  {
+    "type": "scenario",
+    "id": "isolationist",
+    "copy-from": "isolationist",
+    "extend": { 
+        "allowed_locs": [ 
+            "sloc_ws_fire_lookout_towerZhigh"
+        ]
+    }
   },
   {
     "type": "scenario",

@@ -67,5 +67,33 @@
     "min_damage": -8,
     "max_damage": -15,
     "flags": [ "RANDOM_DAMAGE", "SILENT", "NO_EXPLOSION_VFX" ]
+  },
+  {
+    "type": "SPELL",
+    "//": "Copied from crit mod.",
+    "id": "zhigh_regenV2",
+    "name": { "str": "Life Drain Spell" },
+    "description": "This exists only to trigger on-self effects from an on-hit action.",
+    "valid_targets": [ "hostile" ],
+    "sprite": "fd_null",
+    "message": "",
+    "effect": "target_attack",
+    "min_range": 2,
+    "max_range": 2,
+    "flags": [ "SILENT", "NO_EXPLOSION_VFX" ],
+    "extra_effects": [ { "id": "zhigh_regenV2_2", "hit_self": true } ]
+  },
+  {
+    "id": "zhigh_regenV2_2",
+    "type": "SPELL",
+    "name": { "str": "Life Drain Effect" },
+    "description": "This creates the effect that heals the caster.",
+    "sprite": "fd_null",
+    "message": "",
+    "valid_targets": [ "self" ],
+    "effect": "target_attack",
+    "min_damage": -145,
+    "max_damage": -150,
+    "flags": [ "RANDOM_DAMAGE", "SILENT", "NO_EXPLOSION_VFX" ]
   }
 ]

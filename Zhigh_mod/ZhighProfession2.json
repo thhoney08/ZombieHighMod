@@ -1,0 +1,1429 @@
+[
+  {
+    "type": "profession",
+    "id": "pistol_hunter",
+    "name": "Pistol Hunter",
+    "description": "Ever since you were a child you loved hunting, and you soon took a liking to the challenge of hunting with a pistol.  Why, if the world ended there's nothing you'd want at your side more than your trusty pistol.  So when it did, you made sure to bring it along.",
+    "points": 2,
+    "skills": [ { "level": 1, "name": "gun" }, { "level": 2, "name": "pistol" } ],
+    "items": {
+      "both": {
+        "items": [
+          "army_top",
+          "knit_scarf",
+          "socks",
+          "boots_steel",
+          "pants_cargo",
+          "jacket_flannel",
+          "hat_hunting",
+          "smart_phone",
+          "9mm",
+          "9mm",
+          "wristwatch"
+        ],
+        "entries": [
+			{ "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "glock_19", "ammo-item": "9mm", "container-item": "holster", "charges": 15 },
+			{ "item": "glockmag", "ammo-item": "9mm", "charges": 15 },
+			{ "item": "glockmag", "ammo-item": "9mm", "charges": 15 },
+			{ "item": "sheath", "contents-item": "knife_hunting" }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "sports_bra", "boxer_shorts" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "revolver_hunter",
+    "name": "Revolver Hunter",
+    "description": "Ever since you were a child you loved hunting, and you soon took a liking to the challenge of hunting with a revolver.  Why, if the world ended there's nothing you'd want at your side more than your trusty pistol.  So when it did, you made sure to bring it along.",
+    "points": 2,
+    "skills": [ { "level": 1, "name": "gun" }, { "level": 2, "name": "pistol" } ],
+    "items": {
+      "both": {
+        "items": [
+          "army_top",
+          "knit_scarf",
+          "socks",
+          "boots_steel",
+          "pants_cargo",
+          "jacket_flannel",
+          "hat_hunting",
+          "smart_phone",
+          "45colt_jhp",
+          "45colt_jhp",
+          "wristwatch"
+        ],
+        "entries": [
+			{ "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "bandolier_pistol", "contents-group": "bandolier_ww_gunslinger" },
+			{ "item": "colt_saa", "ammo-item": "45colt_jhp", "charges": 6, "container-item": "sholster" },
+			{ "item": "sheath", "contents-item": "knife_hunting" }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "sports_bra", "boxer_shorts" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "shotgunDB_hunter",
+    "name": "Double Barrel Shotgun Hunter",
+    "description": "Ever since you were a child you loved hunting, and you soon took a liking to the challenge of hunting with a shotgun.  Why, if the world ended there's nothing you'd want at your side more than your trusty shotgun.  So when it did, you made sure to bring it along.",
+    "points": 2,
+    "skills": [ { "level": 1, "name": "gun" }, { "level": 1, "name": "shotgun" } ],
+    "items": {
+      "both": {
+        "items": [
+          "army_top",
+          "knit_scarf",
+          "socks",
+          "smart_phone",
+          "boots_steel",
+          "pants_cargo",
+          "jacket_flannel",
+          "hat_hunting",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "shotgun_d", "ammo-item": "shot_00", "charges": 2, "contents-item": "shoulder_strap" },
+          { "item": "bandolier_shotgun", "contents-group": "bandolier_shotgun_hunter" },
+          { "item": "sheath", "contents-item": "knife_hunting" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "sports_bra", "boxer_shorts" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "rifle_hunter_smolGame",
+    "name": "Small Game Rifle Hunter",
+    "description": "Ever since you were a child you loved hunting, and you soon took a liking to the challenge of hunting with a rifle.  Why, if the world ended there's nothing you'd want at your side more than your trusty rifle.  So when it did, you made sure to bring it along.",
+    "points": 2,
+    "skills": [ { "level": 1, "name": "gun" }, { "level": 1, "name": "rifle" } ],
+    "items": {
+      "both": {
+        "items": [
+          "army_top",
+          "knit_scarf",
+          "smart_phone",
+          "socks",
+          "boots_steel",
+          "pants_cargo",
+          "jacket_flannel",
+          "hat_hunting",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "ruger_1022", "ammo-item": "22_lr", "charges": 25, "contents-item": "shoulder_strap" },
+          { "item": "ruger1022bigmag", "contents-item": "22_lr", "charges": 25 },
+          { "item": "ruger1022bigmag", "contents-item": "22_lr", "charges": 25 },
+          { "item": "sheath", "contents-item": "knife_hunting" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "sports_bra", "boxer_shorts" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "rifle_hunter_elepGun",
+    "name": "Elephant Gun Hunter",
+    "description": "Ever since you were a child you loved hunting, and you soon took a liking to the challenge of hunting with a rifle.  Why, if the world ended there's nothing you'd want at your side more than your trusty rifle.  So when it did, you made sure to bring the most expensive one along.",
+    "points": 4,
+    "skills": [ { "level": 1, "name": "gun" }, { "level": 1, "name": "rifle" } ],
+    "items": {
+      "both": {
+        "items": [
+          "army_top",
+          "knit_scarf",
+          "smart_phone",
+          "socks",
+          "boots_steel",
+          "pants_cargo",
+          "jacket_flannel",
+          "hat_hunting",
+          "700nx",
+          "700nx",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "trex_gun", "ammo-item": "700nx", "charges": 1, "contents-item": "shoulder_strap" },
+          { "item": "sheath", "contents-item": "knife_hunting" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "sports_bra", "boxer_shorts" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "rifle_hunter_airGun",
+    "name": "Air Rifle Hunter",
+    "description": "Ever since you were a child you loved hunting, and you soon took a liking to the challenge of hunting with a rifle.  Why, if the world ended there's nothing you'd want at your side more than your trusty rifle.  So when it did, you made sure to bring it along.",
+    "points": 2,
+    "skills": [ { "level": 1, "name": "gun" }, { "level": 1, "name": "rifle" } ],
+    "items": {
+      "both": {
+        "items": [
+          "army_top",
+          "knit_scarf",
+          "smart_phone",
+          "bearing",
+          "bearing",
+          "socks",
+          "boots_steel",
+          "pants_cargo",
+          "jacket_flannel",
+          "hat_hunting",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "marble_gun", "ammo-item": "bearing", "charges": 5, "contents-item": "shoulder_strap" },
+          { "item": "sheath", "contents-item": "knife_hunting" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "sports_bra", "boxer_shorts" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "rifle_hunter_airGun_dog",
+    "name": "Hunter with a Dog",
+    "description": "Ever since you were a child you loved hunting, and you soon took a liking to the challenge of hunting with a rifle.  Why, if the world ended there's nothing you'd want at your side more than your trusty rifle.  So when it did, you made sure to bring it along.  And your not-so-little friend too.",
+    "points": 3,
+    "skills": [ { "level": 1, "name": "gun" }, { "level": 1, "name": "rifle" } ],
+    "pets": [ { "name": "mon_dog_gshepherd", "amount": 1 } ],
+    "items": {
+      "both": {
+        "items": [
+          "army_top",
+          "knit_scarf",
+          "smart_phone",
+          "kevlar_armor_small_quadruped",
+          "bearing",
+          "bearing",
+          "socks",
+          "petpack",
+          "dogfood",
+          "boots_steel",
+          "pants_cargo",
+          "jacket_flannel",
+          "hat_hunting",
+          "dog_whistle",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "marble_sniper_gun", "ammo-item": "bearing", "charges": 1, "contents-item": "shoulder_strap" },
+          { "item": "sheath", "contents-item": "knife_hunting" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "sports_bra", "boxer_shorts" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "dallasPd2",
+    "name": "Bank Robber - Crew Chief",
+    "description": "The Crew Chief, also known as the Caporegime, is the head of a branch of an organized crime syndicate.  The Crew Chief commands a crew of soldiers and reports directly to a boss or an underboss.  When the crime syndicate needs to have someone dealt with, the Crew Chief and his soldiers make sure it's done.",
+    "points": 5,
+    "traits": [ "LIAR" ],
+    "skills": [
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "unarmed" },
+      { "level": 2, "name": "speech" },
+	  { "level": 2, "name": "barter" },
+      { "level": 2, "name": "gun" },
+      { "level": 1, "name": "pistol" },
+      { "level": 2, "name": "rifle" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "mask_CrewChief",
+          "gloves_medical",
+          "cig",
+          "762_51",
+          "762_51",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "glock_19", "ammo-item": "9mm", "container-item": "holster", "charges": 15 },
+          {
+            "item": "m14ebr",
+            "ammo-item": "762_51",
+            "charges": 20,
+            "contents-item": [ "shoulder_strap", "rifle_scope" ],
+			"custom-flags": [ "auto_wield" ]
+          },
+          { "item": "glockmag", "ammo-item": "9mm", "charges": 15 },
+          { "item": "glockmag", "ammo-item": "9mm", "charges": 15 },
+          { "item": "modularvestceramic", "contents-group": "army_mags_m14" },
+          { "item": "lighter", "charges": 100 }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "addictions": [ { "intensity": 10, "type": "nicotine" } ]
+  },
+  {
+    "type": "profession",
+    "id": "wolfPd2",
+    "name": "Bank Robber - Armorer",
+    "description": "The Armorer was formerly a profession within the military.  The armorer's job is to maintain, repair and improve armors.  Any self-respecting crime syndicate needs someone who can make sure the soldiers have the necessary protection to do their jobs.",
+    "points": 5,
+    "skills": [
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "fabrication" },
+      { "level": 2, "name": "computer" },
+	  { "level": 2, "name": "mechanics" },
+      { "level": 2, "name": "gun" },
+      { "level": 1, "name": "pistol" },
+      { "level": 2, "name": "rifle" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "mask_Armorer",
+          "gloves_medical",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "m1911", "ammo-item": "45_acp", "charges": 7, "container-item": "holster" },
+          {
+            "item": "ak47",
+            "ammo-item": "762_m87",
+            "charges": [ 60, 75 ],
+            "contents-item": [ "shoulder_strap", "muzzle_brake" ],
+			"custom-flags": [ "auto_wield" ]
+          },
+          { "item": "m1911mag", "ammo-item": "45_acp", "charges": 7 },
+          { "item": "m1911mag", "ammo-item": "45_acp", "charges": 7 },
+          { "item": "modularvestsuper", "contents-group": "army_mags_akm" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "chainsPd2",
+    "name": "Bank Robber - Muscle",
+    "description": "The Muscle is a tough guy who uses violence to send messages from his Mafia superiors.  They are the backbone of any criminal organization.  The muscle is called in whenever you need to rough someone up, break some legs, crush a skull or remind people who's boss.",
+    "points": 5,
+    "skills": [
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "bashing" },
+      { "level": 2, "name": "shotgun" },
+	  { "level": 2, "name": "mechanics" },
+      { "level": 2, "name": "gun" },
+      { "level": 1, "name": "pistol" },
+      { "level": 2, "name": "rifle" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "mask_Muscle",
+          "gloves_medical",
+          "doorgunnervest",
+          "belt223",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "remington_870_breacher", "ammo-item": "shot_00", "charges": 4, "container-item": "XL_holster" },
+          { "item": "bandolier_shotgun", "contents-group": "bandolier_swat_cqc1" },
+          { "item": "m249", "ammo-item": "556", "charges": 200, "contents-item": [ "shoulder_strap", "acog_scope" ], "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "hoxtonPd2",
+    "name": "Bank Robber - Crook",
+    "description": "The Crook is a versatile criminal.  The term is as old as crime itself.  Truly, the crook is a jack of all trades and a master of none.  He steals, lies, cheats and does any and every dishonest or illegal work necessary to get by.",
+    "points": 5,
+    "traits": [ "LIAR" ],
+    "skills": [
+      { "level": 2, "name": "melee" },
+      { "level": 2, "name": "bashing" },
+      { "level": 2, "name": "stabbing" },
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "pistol" },
+      { "level": 2, "name": "rifle" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "mask_Crook",
+          "gloves_medical",
+          "cig",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "glock_18c", "ammo-item": "9mm", "container-item": "holster", "charges": 22 },
+          {
+            "item": "m4a1",
+            "ammo-item": "556",
+            "charges": [ 25, 30 ],
+            "contents-item": [ "shoulder_strap", "suppressor", "holo_sight" ],
+			"custom-flags": [ "auto_wield" ]
+          },
+          { "item": "knife_combat", "container-item": "sheath" },
+          { "item": "glockmag", "ammo-item": "9mm", "charges": 15 },
+          { "item": "glockmag", "ammo-item": "9mm", "charges": 15 },
+          { "item": "modularvestceramic", "contents-group": "army_mags_m4" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "houstonPd2",
+    "name": "Bank Robber - Rogue",
+    "description": "The Rogue is a stealthy criminal, capable of sneaky tricks and deadly force.  Versatile and deceptive, the Rogue is hired to do anything from pickpocketing, to burglaries and con jobs.  The trademark of a Rogue is his versatility - what he lacks in strength he makes up for in skill.",
+    "points": 5,
+    "skills": [
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "bashing" },
+	  { "level": 2, "name": "mechanics" },
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "pistol" },
+      { "level": 2, "name": "smg" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "mask_Rogue",
+          "gloves_medical",
+          "suppressor",
+          "9mm",
+          "9mm",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "glock_19", "ammo-item": "9mm", "container-item": "holster", "charges": 15 },
+          { "item": "glockmag", "ammo-item": "9mm", "charges": 15 },
+          { "item": "glockmag", "ammo-item": "9mm", "charges": 15 },
+          { "item": "chestrig", "contents-group": "army_mags_mp5" },
+          {
+            "item": "hk_mp5",
+            "ammo-item": "9mm",
+            "charges": 30,
+            "contents-item": [ "shoulder_strap", "suppressor", "holo_sight" ],
+			"custom-flags": [ "auto_wield" ]
+          }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "cloverPd2",
+    "name": "Bank Robber - Burglar",
+    "description": "The natural dexterity of the Burglar has benefits beyond merely breaking and entering.  Being nimble allows the Burglar to pick locks, bag bodies and answer pagers faster.  They are also harder to hit in combat.  They stay alive by staying out of the way.  This physical conditioning also gives the Burglar a high tolerance to pain and the ability to shrug off wounds quickly.",
+    "points": 5,
+    "skills": [
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "bashing" },
+	  { "level": 2, "name": "mechanics" },
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "pistol" },
+      { "level": 2, "name": "rifle" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "mask_Burglar",
+          "gloves_medical",
+          "suppressor",
+          "shillelagh",
+          "picklocks",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "glock_19", "ammo-item": "9mm", "container-item": "holster", "charges": 15 },
+          { "item": "glockmag", "ammo-item": "9mm", "charges": 15 },
+          { "item": "glockmag", "ammo-item": "9mm", "charges": 15 },
+          { "item": "chestrig", "contents-group": "army_mags_aug" },
+          {
+            "item": "steyr_aug",
+            "ammo-item": "556",
+            "charges": 40,
+            "contents-item": [ "shoulder_strap", "charm_skull", "holo_sight" ],
+			"custom-flags": [ "auto_wield" ]
+          }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "draganPd2",
+    "name": "Bank Robber - Infiltrator",
+    "description": "The Infiltrator is an agent hired by a government or large criminal organization to obtain information about its enemies, or by a corporation to obtain industrial secrets from its competitors.  The Infiltrator is a close combat specialist who knows how to use the environment in order to get the upper hand.",
+    "points": 5,
+    "traits": [ "LIAR" ],
+    "skills": [
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "speech" },
+	  { "level": 2, "name": "cutting" },
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "pistol" },
+      { "level": 2, "name": "rifle" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "mask_Infiltrator",
+          "gloves_medical",
+          "knife_meat_cleaver",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "usp_45", "ammo-item": "45_acp", "charges": 12, "container-item": "holster" },
+          { "item": "legpouch_large", "contents-group": "army_mags_usp45" },
+          { "item": "chestrig", "contents-group": "army_mags_aug" },
+          {
+            "item": "steyr_aug",
+            "ammo-item": "556",
+            "charges": 40,
+            "contents-item": [ "shoulder_strap", "charm_grenade", "charm_spike" ],
+			"custom-flags": [ "auto_wield" ]
+          }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "jacketPd2",
+    "name": "Bank Robber - Sociopath",
+    "description": "The Sociopath is known to be one of the most effective type of criminals.  Where he is effective, he is also difficult to deal with, which is why larger organizations avoid him.  Bold, disinhibitted and mean, the Sociopath excels in the most violent of jobs.  Unable to feel guilt for the crimes he commits, the Sociopath is a dangerous enemy.",
+    "points": 6,
+    "traits": [ "PSYCHOPATH" ],
+    "skills": [
+      { "level": 2, "name": "gun" },
+      { "level": 1, "name": "smg" },
+      { "level": 1, "name": "shotgun" },
+      { "level": 1, "name": "pistol" },
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "unarmed" },
+      { "level": 1, "name": "stabbing" },
+      { "level": 2, "name": "dodge" }
+    ],
+    "items": {
+      "both": {
+        "ammo": 100,
+        "items": [
+          "jeans",
+          "tshirt",
+          "jacket_baseball",
+          "mask_Psychopath",
+          "gloves_fingerless",
+          "socks",
+          "sneakers"
+        ],
+        "entries": [
+          { "group": "military_standard_pistols" },
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "knife_combat", "container-item": "sheath" },
+          { "group": "weapons", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "boy_shorts", "sports_bra" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "bonniePd2",
+    "name": "Bank Robber - Gambler",
+    "description": "Heading into the furnace of battle requires skill, hardness and more than a little luck.  Some people just have it.  Luck is an elusive quality.  The ancient Greeks believed it was the design of the Gods.  It isn't.  It certainly exists, but it's something you can earn.  It requires preparation and forethought to get your pieces in place, and maximizes your chances of a return.  It's counting cards, rather than the blessing of Fortuna.",
+    "points": 5,
+    "traits": [ "LIAR" ],
+    "skills": [
+      { "level": 2, "name": "melee" },
+      { "level": 2, "name": "speech" },
+      { "level": 2, "name": "barter" },
+	  { "level": 1, "name": "bashing" },
+      { "level": 2, "name": "gun" },
+      { "level": 1, "name": "pistol" },
+      { "level": 2, "name": "shotgun" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "mask_Gambler",
+          "gloves_medical",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "bandolier_shotgun", "contents-group": "bandolier_swat_cqc2" },
+          { "item": "whiskey", "container-item": "bottle_metal" },
+          { "item": "shotgun_d", "ammo-item": "shot_slug", "charges": 2, "contents-item": [ "charm_grenade", "charm_spike" ] }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "addictions": [ { "intensity": 10, "type": "alcohol" } ]
+  },
+  {
+    "type": "profession",
+    "id": "sokolPd2",
+    "name": "Bank Robber - Grinder",
+    "description": "A typical grinder is a hard working individual, able to take control of difficult situations and turn them around.  The grinder relies heavily on always being in the front and dishing out punishment, being able to survive due to the fact that he does damage to the enemies regardless of how much damage he has sustained.",
+    "points": 5,
+    "traits": [ "LIAR" ],
+    "skills": [
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "speech" },
+	  { "level": 2, "name": "bashing" },
+      { "level": 2, "name": "gun" },
+      { "level": 1, "name": "pistol" },
+      { "level": 2, "name": "rifle" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "mask_Grinder",
+          "gloves_medical",
+          "hockey_stick",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "usp_9mm", "ammo-item": "9mm", "charges": 15, "container-item": "holster" },
+          { "item": "tacvest", "contents-group": [ "army_mags_akm", "army_mags_usp9" ] },
+          {
+            "item": "draco",
+            "ammo-item": "762_m87",
+            "charges": [ 60, 75 ],
+            "contents-item": [ "charm_fang", "barrel_ported" ],
+			"custom-flags": [ "auto_wield" ]
+          }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "jiroPd2",
+    "name": "Bank Robber - Yakuza",
+    "description": "The Yakuza are one of the most feared crime syndicates in the world.  Ruled by the ninkyo and lead by the Oyabun, the Yakuza are known for their strict code of conduct, organized nature and the tattoos that cover their entire bodies.  An outcast and a dropout from society, the Yakuza knows how it is to fend for himself.  While he appears gentle, he is not to be taken lightly.",
+    "points": 5,
+    "skills": [
+      { "level": 4, "name": "melee" },
+	  { "level": 4, "name": "cutting" },
+      { "level": 2, "name": "gun" },
+      { "level": 3, "name": "smg" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "mask_Yakuza",
+          "gloves_medical",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "scabbard", "contents-item": "katana_pd2" },
+          { "item": "chestrig", "contents-group": "army_mags_uzi" },
+          {
+            "item": "uzi",
+            "ammo-item": "9mmP2",
+            "charges": 32,
+            "contents-item": [ "suppressor", "recoil_gel", "charm_fang" ],
+			"custom-flags": [ "auto_wield" ]
+          }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "sniperPd2",
+    "name": "Bank Robber - Sniper",
+    "description": "As a sniper, you covered your team by sniping cops that tried or did, harmed your team.  Now that all of your teammates are dead, you have to write your own version of the lone survivor.",
+    "points": 5,
+    "skills": [
+		{ "level": 5, "name": "gun" },
+		{ "level": 4, "name": "rifle" },
+		{ "level": 2, "name": "pistol" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "gloves_medical",
+          "wristwatch",
+          "balclava",
+          "powered_earmuffs",
+          "tacvest"
+        ],
+        "entries": [
+          { "group": "charged_two_way_radio" },
+          { "item": "usp_45", "ammo-item": "45_acp", "charges": 12, "container-item": "holster" },
+          { "item": "legpouch_large", "contents-group": "army_mags_usp45" },
+          { "item": "762_51", "charges": 20 },
+          { "item": "M24", "ammo-item": "762_51", "charges": 20, "container-item": "back_holster" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "boy_shorts" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "driver_van",
+    "name": "Bank Robber - Wheelman, Van",
+    "description": "You specialized in high-stakes getaways, expertly navigating urban landscapes and escaping law enforcement with unparalleled skill behind the wheel of an escape van.  With nerves of steel and a deep understanding of your powerful vehicle, you ensures the crew's swift and safe escape from any heist or dangerous situations.  Now that your crewmates are all dead, your vehicle and your skill is all that you could belive in.",
+    "points": 9,
+    "vehicle": "pd2_van",
+    "skills": [
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "pistol" },
+      { "level": 4, "name": "driving" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "switchblade",
+          "sunglasses",
+		  "holster",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "m53Medusa",
+		    "ammo-item": "9mmP2",
+			"charges": 5,
+            "contents-item": [ "fanning", "recoil_gel", "pistol_grip" ],
+			"custom-flags": [ "auto_wield" ]
+		  },
+          { "group": "ammo_pistol_common" },
+          { "group": "ammo_pistol_common" },
+          { "group": "ammo_pistol_rare" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "driver_car",
+    "name": "Bank Robber - Wheelman, Car",
+    "description": "You specialized in high-stakes getaways, expertly navigating urban landscapes and escaping law enforcement with unparalleled skill behind the wheel of a roaring car.  With nerves of steel and a deep understanding of your fast vehicle, you ensures the crew's swift and safe escape from any heist or dangerous situations.  Now that your crewmates are all dead, your vehicle and your skill is all that you could belive in.",
+    "points": 5,
+    "vehicle": "car_escape",
+    "skills": [
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "pistol" },
+      { "level": 4, "name": "driving" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "socks",
+          "dress_shoes",
+          "smart_phone",
+          "switchblade",
+          "gloves_fingerless",
+          "jacket_leather_gosling",
+		  "holster",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "m53Medusa",
+		    "ammo-item": "9mmP2",
+			"charges": 5,
+            "contents-item": [ "fanning", "recoil_gel", "pistol_grip" ],
+			"custom-flags": [ "auto_wield" ]
+		  },
+          { "group": "ammo_pistol_common" },
+          { "group": "ammo_pistol_common" },
+          { "group": "ammo_pistol_rare" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "old_vet",
+    "name": "Old Veteran",
+	"//": "Got this from a cdda profession.",
+    "description": "You've been through hell once before.  Hopefully those weekend range trips have kept your skills sharp.",
+    "points": 4,
+    "skills": [
+      { "level": 3, "name": "gun" },
+      { "level": 3, "name": "rifle" },
+      { "level": 2, "name": "pistol" },
+      { "level": 2, "name": "firstaid" },
+      { "level": 2, "name": "throw" },
+      { "level": 1, "name": "survival" }
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "wristwatch" },
+          { "item": "blazer" },
+          { "item": "gold_medal", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "boots_combat" },
+          { "item": "socks" },
+          { "item": "suit" },
+          { "item": "pipe_tobacco" },
+          { "item": "tobacco" },
+          { "item": "beret" },
+          { "item": "ref_lighter" },
+          { "item": "cane", "custom-flags": [ "auto_wield" ] },
+          { "item": "chestrig", "contents-group": "army_mags_m14" },
+          { "item": "knife_combat", "container-item": "sheath" },
+          { "item": "m1a", "ammo-item": "762_51", "charges": 20, "contents-item": [ "shoulder_strap" ] }
+        ]
+      },
+      "male": { "entries": [ { "item": "briefs" } ] },
+      "female": { "entries": [ { "item": "boy_shorts" }, { "item": "bra" } ] }
+    }
+  },
+  {
+    "type": "profession",
+    "id": "zhighSlasherFeralNormal",
+    "name": "Feral Slasher",
+    "description": "Kill. Maim. Rip. Burn. Tear.",
+    "points": 3,
+    "skills": [
+      { "level": 2, "name": "melee" },
+      { "level": 2, "name": "cutting" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "tank_top",
+          "jacket_leather",
+          "smart_phone",
+          "socks",
+          "mask_hockey",
+          "sneakers",
+          "wristwatch"
+        ],
+        "entries": [ 
+          { "item": "katana_hm", "custom-flags": [ "auto_wield" ] },
+          { "item": "axe_ring", "contents-item": "hatchet" } ]
+      },
+      "male": [ "boxer_shorts", "pants_zhigh" ],
+      "female": [ "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "sniper_normal",
+    "name": "Sniper",
+    "description": "You get paid, then capped people from a kilometer away while hiding.  No one's hiring you now that the world's ended, but your skills may erase some harm before the harm erase you.",
+    "points": 5,
+    "skills": [
+      { "level": 3, "name": "dodge" },
+      { "level": 1, "name": "melee" },
+      { "level": 3, "name": "gun" },
+      { "level": 3, "name": "rifle" }
+    ],
+    "items": {
+      "both": {
+        "items": [ 
+            "fancy_sunglasses", 
+            "270win_jsp", 
+            "270win_jsp", 
+            "platinum_watch" 
+          ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "remington700_270", "ammo-item": "270win_jsp", "charges": 4, "container-item": "back_holster", "contents-item": [ "suppressor", "acog_scope" ] },
+          { "item": "bandolier_rifle", "contents-group": "bandolier_rifle_hunter" }
+        ]
+      },
+      "male": [
+        "boxer_briefs",
+        "socks",
+        "dress_shoes",
+        "suit",
+        "tie_necktie",
+        "tieclip",
+        "leather_belt",
+        "cufflinks_intricate"
+      ],
+      "female": [
+        "panties",
+        "bra",
+        "stockings",
+        "heels",
+        "gown",
+        "diamond_platinum_tiara",
+        "purse",
+        "platinum_ear",
+        "platinum_necklace",
+        "platinum_hairpin"
+      ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "sniper47",
+    "//": "OP profession. Agent 47.",
+    "name": "Genetically Modified Rouge",
+    "description": "Since you were artificially born and how to use a gun, you get orders, then capped people from some few kilometers away without being seen.  No one's hiring you now that the world's ended, but now you are free... right?",
+    "points": 15,
+    "traits": [ 
+            "PSYCHOPATH",
+            "PAINRESIST",
+            "REGEN",
+            "PRETTY",
+            "TOUGH3",
+            "QUICK",
+            "PER_UP_4",
+            "DEX_UP_4",
+            "INT_UP_4",
+            "STR_UP_4" 
+        ],
+    "skills": [
+      { "level": 2, "name": "speech" },
+      { "level": 2, "name": "throw" },
+      { "level": 3, "name": "shotgun" },
+      { "level": 3, "name": "dodge" },
+      { "level": 3, "name": "melee" },
+      { "level": 5, "name": "gun" },
+      { "level": 3, "name": "pistol" },
+      { "level": 5, "name": "rifle" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+            "socks",
+            "attached_ear_plugs_off",
+            "dress_shoes",
+            "tux",
+            "platinum_watch"
+          ],
+        "entries": [
+          { "group": "nested_WA2000Zhigh" },
+          { "item": "knife_combat", "container-item": "bootsheath" },
+          { "item": "bandolier_rifle", "contents-group": "bandolier_rifle_47" },
+          { "item": "silverballer47", "ammo-item": "45_acp", "charges": 7, "container-item": "holster" },
+          { "item": "legpouch_large", "contents-group": "army_mags_1911" }
+        ]
+      },
+      "male": [
+        "boxer_briefs",
+        "tie_necktie",
+        "tieclip",
+        "cufflinks_intricate"
+      ],
+      "female": [
+        "panties",
+        "bra",
+        "platinum_ear",
+        "platinum_necklace",
+        "platinum_hairpin"
+      ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "JohnWick",
+    "//": "OP profession. John Wick.",
+    "name": "Boogeyman",
+    "description": "You were a killer for hire, trained and equipped to efficiently eliminate your target in various ways.  You kept living like that and will live like that although the world ended.  You'll kill them.  You'll kill them all.",
+    "points": 12,
+    "traits": [ "PAINRESIST", "TOUGH3" ],
+    "skills": [
+      { "level": 2, "name": "speech" },
+      { "level": 2, "name": "throw" },
+      { "level": 4, "name": "rifle" },
+      { "level": 4, "name": "shotgun" },
+      { "level": 4, "name": "dodge" },
+      { "level": 4, "name": "melee" },
+      { "level": 4, "name": "unarmed" },
+      { "level": 4, "name": "stabbing" },
+      { "level": 4, "name": "dodge" },
+      { "level": 4, "name": "gun" },
+      { "level": 4, "name": "pistol" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+            "socks",
+            "dress_shoes",
+            "attached_ear_plugs_off",
+            "tuxWick",
+            "tie_necktie",
+            "tieclip",
+            "leather_belt",
+            "cufflinks_intricate",
+            "platinum_watch" 
+          ],
+        "entries": [
+          { "item": "h&k416a5", "ammo-item": "556", "charges": 30, "custom-flags": [ "auto_wield" ], "contents-item": [ "muzzle_brake", "holo_sight", "pistol_grip", "grip" ] },
+          { "item": "m1014", "ammo-item": "shot_slug", "charges": 8, "contents-item": "shoulder_strap" },
+          { "item": "P30L", "ammo-item": "9mm", "charges": 15, "contents-item": "suppressor", "container-item": "holster" },
+          { "item": "legpouch_large", "contents-group": "army_mags_usp9" },
+          { "item": "knife_hunting", "container-item": "bootsheath" }
+        ]
+      },
+      "male": [ "boxer_briefs" ],
+      "female": [ "panties", "bra" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "hotlineJacket",
+    "name": "Hired Gun",
+    "description": "Someone contacted you to kill, you answer by killing them.  They don't respond now, but who cares?  They never did before the cataclysm struck anyway.",
+    "points": 8,
+    "traits": [ "PSYCHOPATH" ],
+    "skills": [
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "smg" },
+      { "level": 2, "name": "rifle" },
+      { "level": 2, "name": "shotgun" },
+      { "level": 2, "name": "pistol" },
+      { "level": 2, "name": "melee" },
+      { "level": 2, "name": "unarmed" },
+      { "level": 2, "name": "stabbing" },
+      { "level": 2, "name": "dodge" }
+    ],
+    "items": {
+      "both": {
+        "ammo": 100,
+        "items": [
+          "jeans",
+          "tshirt",
+          "jacket_baseball",
+          "mask_Psychopath",
+          "gloves_fingerless",
+          "socks",
+          "sneakers",
+          "webbing_belt",
+          "wristwatch"
+        ],
+        "entries": [
+          { "group": "military_standard_pistols" },
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "knife_combat", "container-item": "sheath" },
+          { "group": "weapons", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "boy_shorts", "sports_bra" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "riot_police_ranged",
+    "name": "Riot Control Unit",
+    "description": "The riots were brutal, and that's before the dead rose and started to devour the living.  Soon it became apparent that the line your buddies were holding was about to break - it was only through a bit of luck and a lot of head-bashing that you got away in one piece, and the worst is yet to come.",
+    "points": 5,
+    "skills": [
+      { "level": 1, "name": "melee" },
+      { "level": 3, "name": "rifle" },
+      { "level": 3, "name": "gun" },
+      { "level": 2, "name": "throw" }
+    ],
+    "traits": [ "PROF_POLICE" ],
+    "items": {
+      "both": {
+        "items": [
+          "socks",
+          "pants_cargo",
+          "longshirt",
+          "boots_combat",
+          "gloves_tactical",
+          "armor_riot",
+          "mask_gas",
+          "helmet_riot",
+          "badge_deputy",
+          "wristwatch",
+          "paintball_tg",
+          "paintball_tg",
+          "gasbomb"
+        ],
+        "entries": [
+          { "group": "charged_two_way_radio" },
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "usp_45", "ammo-item": "45_acp", "charges": 12, "container-item": "holster" },
+          { "item": "legpouch_large", "contents-group": "army_mags_usp45" },
+          { "group": "charged_tazer" },
+          { "item": "paintballG_AR15", "ammo-item": "paintball_tg", "charges": 25, "contents-item": "shoulder_strap", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "boy_shorts" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "hunkReSeries",
+    "name": "Rivtech Security Service",
+    "description": "You were the best of the best, the military's finest.  That's why you're still alive, and called the reaper from others, even after all your comrades fell to the undead.  As far as you can tell, military command abandoned you in this hellhole when you missed the emergency evac.  You don't care.  You finish the mission, whatever the cost.",
+    "points": 6,
+    "traits": [ "PROF_MILITARY" ],
+    "skills": [
+      { "level": 3, "name": "gun" },
+      { "level": 3, "name": "smg" },
+      { "level": 2, "name": "cutting" },
+      { "level": 3, "name": "melee" },
+      { "level": 2, "name": "dodge" },
+      { "level": 1, "name": "firstaid" },
+      { "level": 1, "name": "swimming" },
+      { "level": 1, "name": "survival" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "wetsuit",
+          "pants_army",
+          "mask_gas",
+          "helmet_skid",
+          "wetsuit_gloves",
+          "gloves_tactical",
+          "socks",
+          "boots_combat",
+          "two_way_radio"
+        ],
+        "entries": [
+          { "item": "usp_45", "ammo-item": "45_acp", "charges": 12, "container-item": "holster" },
+          { "item": "legpouch_large", "contents-group": "army_mags_usp45" },
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "knife_combat", "container-item": "sheath" },
+          { "item": "modularvesthard", "contents-group": "army_mags_mp5" },
+          {
+            "item": "hk_mp5",
+            "ammo-item": "9mm",
+            "charges": 30,
+            "contents-item": [ "shoulder_strap", "grip", "suppressor", "holo_sight" ]
+          }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "sports_bra", "boxer_shorts" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "hitman_ManFromNowhere",
+    "name": "Mercenary",
+    "description": "You were a killer for hire, trained and equipped to efficiently eliminate your target while keeping a low profile.  You are all alone now, but your skills may prove useful for staying alive.",
+    "points": 5,
+    "skills": [
+      { "level": 3, "name": "dodge" },
+      { "level": 3, "name": "melee" },
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "pistol" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "tank_top",
+          "jacket_leather",
+          "pants_cargo",
+          "socks",
+          "sneakers",
+          "wristwatch",
+          "smart_phone",
+          "suppressor"
+        ],
+        "entries": [
+          { "item": "karambit", "container-item": "sheath" },
+          { "item": "legpouch_large", "contents-group": "army_mags_usp9" },
+          { "item": "usp_9mm", "ammo-item": "9mmfmj", "charges": 15, "container-item": "holster" }
+        ]
+      },
+      "male": [ "boxer_briefs" ],
+      "female": [ "panties", "bra" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "power_armor_soldier",
+    "name": "Power Armor Soldier",
+    "description": "Those new plutonium power banks they were rolling out never arrived, nevermind the experimental new weapons, but at least your unit received the latest generation of powered armor.  The rest of your squad has fallen, but your gear might see you through.",
+    "points": 8,
+    "traits": [ "PROF_MILITARY" ],
+    "skills": [
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "rifle" },
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "stabbing" },
+      { "level": 2, "name": "mechanics" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+            "8mm_hvp",
+            "8mm_hvp",
+            "8mm_hvp",
+            "8mm_hvp",
+            "8mm_hvp",
+            "8mm_hvp",
+            "power_armor_heavy",
+            "power_armor_helmet_heavy",
+            "power_armor_frame" ],
+        "entries": [
+          { "item": "heavy_plus_battery_cell", "charges": 1500, "container-item": "UPS_off" },
+          { "item": "two_way_radio", "contents-item": [ "battery_ups" ] },
+          { "item": "power_armor_chest_rig", "contents-group": "army_mags_power_armor" },
+          { "item": "knife_combat", "container-item": "power_armor_sheath" },
+          { "item": "boltPistolZhigh", "ammo-item": "8mm_hvp", "charges": 30, "container-item": "power_armor_holster" },
+          {
+            "item": "boltermag",
+            "ammo-item": "8mm_hvp",
+            "charges": 80,
+            "container-item": "bolterZhigh",
+            "custom-flags": [ "auto_wield" ]
+          }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "sports_bra", "boy_shorts" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "team_lightning",
+    "name": "Quick Response Unit",
+    "description": "With a siren, you grabbed your humble gear (literally anything) and went to the command center, only finding the place swarming with zombies.  Man, the day is getting worse than you thought.",
+    "points": 3,
+    "traits": [ "PROF_MILITARY" ],
+    "skills": [
+      { "level": 2, "name": "gun" },
+      { "level": 1, "name": "rifle" },
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "stabbing" },
+      { "level": 1, "name": "dodge" }
+    ],
+    "items": {
+      "both": {
+        "items": [ "pants", "socks", "sneakers", "tshirt", "whistle", "smart_phone", "jacket_light", "rope_30", "hat_ball", "wristwatch" ],
+        "entries": [ { "group": "ZhighGuardWeaponGroups", "custom-flags": [ "auto_wield" ] } ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "boy_shorts" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "malyeon_beongjang",
+    "//": "Contains a Behind the Green Tower reference.",
+    "name": "Sergeant before the day of discharge",
+    "description": "You packed your stuff up, bought a booze from the post exchange, and printed the files that you needed.  And your day of discharge is gone.  Forever.\n<color_green>\"The day before I was discharged from the military, the world is destroyed!  Due to that damned thing, the pain is being transmitted from the back of the brain to the frontal lobe!  Gaaah!!\"</color>",
+    "points": 3,
+    "traits": [ "PROF_MILITARY" ],
+    "skills": [
+      { "level": 2, "name": "gun" },
+      { "level": 1, "name": "rifle" },
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "stabbing" },
+      { "level": 1, "name": "dodge" },
+      { "level": 1, "name": "firstaid" }
+    ],
+    "items": {
+      "both": {
+        "ammo": 100,
+        "items": [
+          "socks",
+          "pants_army",
+          "jacket_army",
+          "boots_combat",
+          "backpack",
+          "beret",
+          "cash_card",
+          "whiskey",
+          "webbing_belt",
+          "file",
+          "wristwatch"
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "sports_bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "observer",
+    "name": "Military Observer",
+    "description": "You were an observer - others use some kind of a heavy weapon, and you tell them the target.  Although the people who use those are dead, you still have your gear and the will to survive.",
+    "points": 4,
+    "traits": [ "PROF_MILITARY" ],
+    "skills": [
+      { "level": 2, "name": "gun" },
+      { "level": 1, "name": "rifle" },
+      { "level": 1, "name": "electronics" },
+      { "level": 1, "name": "computer" },
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "stabbing" },
+      { "level": 1, "name": "dodge" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "pants_army",
+          "tshirt",
+          "jacket_army",
+          "helmet_liner",
+          "helmet_army",
+          "gloves_liner",
+          "gloves_tactical",
+          "socks",
+          "boots_combat",
+          "wristwatch",
+          "canteen",
+          "militarymap",
+          "binoculars",
+          "caff_gum",
+          "molle_pack"
+        ],
+        "entries": [
+          { "group": "charged_two_way_radio" },
+          { "item": "modularvestceramic", "contents-group": "army_mags_m4" },
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "e_tool", "container-item": "webbing_belt" },
+          { "item": "knife_combat", "container-item": "sheath" },
+          { "item": "m4a1", "ammo-item": "556", "charges": 30, "contents-item": [ "shoulder_strap", "holo_sight" ] }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "boy_shorts", "sports_bra" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "player_baduk",
+    "name": "Pro Baduk Player",
+    "description": "Once, you were a pro Baduk player until this cataclysm ended everything that you knew.  You won lots of games, but how will you survive in this hellhole?",
+    "points": 0,
+    "skills": [ { "level": 1, "name": "speech" } ],
+    "items": {
+      "both": [
+        "suit",
+        "tie_necktie",
+        "tieclip",
+        "socks",
+        "dress_shoes",
+        "knit_scarf",
+        "wristwatch",
+        "smart_phone",
+        "briefcase",
+        "baduk",
+        "water_mineral"
+      ],
+      "male": [ "briefs" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "zhighGladiatorNormal",
+    "name": "Gladiator",
+    "description": "The day when the world ends came, and you grabbed whatever you could get your hands on during a crazy riot - some nets and a forked spear.  Ave Imperator, Morituri te salutant.",
+    "points": 2,
+    "skills": [ { "level": 1, "name": "dodge" }, { "level": 2, "name": "melee" } ],
+    "items": {
+      "both": {
+        "items": [
+          "armguard_metal",
+          "smart_phone",
+          "socks",
+          "sneakers",
+          "net",
+          "helmet_football"
+        ],
+        "entries": [ { "item": "spear_forked", "custom-flags": [ "auto_wield" ] } ]
+      },
+      "male": [ "boxer_shorts", "pants" ],
+      "female": [ "bra", "panties", "skirt" ]
+    }
+  }
+]

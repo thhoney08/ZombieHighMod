@@ -105,5 +105,73 @@
         { "item": "splinter", "count": [ 3, 5 ] }
       ]
     }
+  },
+  {
+    "type": "furniture",
+    "id": "f_large_plastic_wall",
+    "looks_like": "f_large_canvas_wall",
+    "name": "canvas wall",
+    "description": "A wall made of stretched, heavy-duty, waterproof plastic wall.",
+    "symbol": "#",
+    "color": "blue",
+    "move_cost_mod": -1,
+    "coverage": 99,
+    "required_str": -1,
+    "flags": [ "BLOCKSDOOR", "NOITEM", "BLOCK_WIND", "EASY_DECONSTRUCT" ],
+    "bash": {
+      "str_min": 18,
+      "str_max": 40,
+      "sound": "crash!",
+      "sound_fail": "thump!",
+      "sound_vol": 8,
+      "collapse_radius": 1,
+      "items": [ { "item": "plastic_chunk", "count": [ 32, 54 ] } ],
+      "ranged": { "reduction": [ 60, 120 ], "destroy_threshold": 120, "block_unaimed_chance": "50%" }
+    },
+    "deconstruct": { "items": [ { "item": "wall_kit" } ] }
+  },
+  {
+    "type": "furniture",
+    "id": "f_dispenserZhigh",
+    "name": "dispenser",
+    "looks_like": "t_gas_pump_a",
+    "description": "A dispenser which, you could make ammo or medkits out of one.",
+    "symbol": "U",
+    "color": "blue",
+    "move_cost_mod": -1,
+    "coverage": 40,
+    "required_str": -1,
+    "crafting_pseudo_item": "dispenserZhighFake",
+    "flags": [ "BLOCKSDOOR", "NOITEM", "BLOCK_WIND", "EASY_DECONSTRUCT" ],
+    "deconstruct": {
+      "items": [
+        { "item": "dispenserZhighFake_kit", "count": 1 }
+      ]
+    },
+    "bash": {
+      "str_min": 18,
+      "str_max": 40,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "items": [
+        { "item": "cable", "charges": [ 4, 8 ] },
+        { "item": "steel_chunk", "count": [ 4, 6 ] },
+        { "item": "steel_lump", "count": [ 1, 2 ] },
+        { "item": "scrap", "count": [ 12, 16 ] },
+        { "item": "steel_plate", "count": [ 2, 4 ] },
+        { "item": "spike", "count": 1 },
+        { "item": "ammoBag", "count": 1 },
+        { "item": "medkitRecharge", "count": 1 },
+        { "item": "plastic_chunk", "count": [ 12, 14 ] },
+        { "item": "motor_small", "count": 1 }
+      ],
+      "ranged": { "reduction": [ 20, 40 ], "destroy_threshold": 150, "block_unaimed_chance": "75%" }
+    }
+  },
+  {
+    "id": "dispenserZhighFake",
+    "copy-from": "fake_item",
+    "type": "TOOL",
+    "name": { "str": "dispenser" }
   }
 ]

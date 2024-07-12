@@ -17,6 +17,14 @@
     "location": "accessories"
   },
   {
+    "id": "charm_ring",
+    "name": { "str": "ring charm" },
+    "type": "GUNMOD",
+    "description": "This is a steel ring.  Increases extra slots for accessories.",
+    "copy-from": "charm_base",
+    "add_mod": [ [ "accessories", 5 ] ]
+  },
+  {
     "id": "charm_cross",
     "name": { "str": "cross charm" },
     "type": "GUNMOD",
@@ -97,6 +105,15 @@
     "dispersion_modifier": -2
   },
   {
+    "id": "charm_fak",
+    "name": { "str": "first aid kit charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a first aid kit.  Increases dispersion but also increases damage and damage of the gun.",
+    "copy-from": "charm_base",
+    "dispersion_modifier": 2,
+    "damage_modifier": { "damage_type": "stab", "amount": 2, "armor_penetration": 2 }
+  },
+  {
     "id": "charm_spike",
     "name": { "str": "spike charm" },
     "type": "GUNMOD",
@@ -133,5 +150,41 @@
     "copy-from": "charm_base",
     "dispersion_modifier": -3,
     "damage_modifier": { "damage_type": "bullet", "amount": -1 }
+  },
+  {
+    "id": "charm_hglass",
+    "name": { "str": "hourglass charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with an hourglass.  Increases dispersion but also increases penetration and damage of the gun.",
+    "copy-from": "charm_base",
+    "dispersion_modifier": 3,
+    "damage_modifier": { "damage_type": "bash", "amount": 3, "armor_penetration": 2 }
+  },
+  {
+    "id": "charm_electric",
+    "name": { "str": "thunderbolt charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a thunderbolt.  Increases dispersion but also increases penetration and damage of the gun.",
+    "copy-from": "charm_base",
+    "dispersion_modifier": 3,
+    "damage_modifier": { "damage_type": "electric", "amount": 3, "armor_penetration": 2 }
+  },
+  {
+    "id": "charm_heat",
+    "name": { "str": "shield charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a shield.  Increases dispersion but also increases penetration and damage of the gun.",
+    "copy-from": "charm_base",
+    "dispersion_modifier": 3,
+    "damage_modifier": { "damage_type": "heat", "amount": 3, "armor_penetration": 2 }
+  },
+  {
+    "id": "charm_comp",
+    "name": { "str": "compass charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with an compass.  Increases dispersion but also increases range.",
+    "copy-from": "charm_base",
+    "dispersion_modifier": 1,
+    "range_modifier": 3
   }
 ]
