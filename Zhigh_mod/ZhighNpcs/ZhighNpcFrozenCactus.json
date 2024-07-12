@@ -1,0 +1,80 @@
+[
+  {
+    "type": "npc",
+    "id": "STUDENT_FROZENCACTUS",
+    "name_unique": "In Jang 'frozen' Ssun",
+    "name_suffix": "Student",
+    "gender": "male",
+    "class": "NC_ZHIGHFROZENCACTUS",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_ZHIGHFROZENCACTUS",
+    "faction": "Zhigh_Survivors"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_ZHIGHFROZENCACTUS",
+    "name": { "str": "In Jang 'frozen' Ssun" },
+    "job_description": "I'm a streamer.",
+    "traits": [
+      { "group": "BG_survival_story_RURAL" },
+      { "group": "Appearance_Frozen_Cactus" },
+      { "trait": "REGEN_zhigh" }
+    ],
+    "bonus_str": { "rng": [ 1, 2 ] },
+    "bonus_int": { "rng": [ 2, 3 ] },
+    "bonus_per": { "rng": [ 2, 3 ] },
+    "bonus_dex": { "rng": [ -1, 1 ] },
+    "worn_override": "NC_Frozen_Cactus_worn",
+    "carry_override": "NC_GUARD_misc",
+    "weapon_override": "NC_Frozen_Cactus_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "melee", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 2, 4 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_Frozen_Cactus_worn",
+    "subtype": "collection",
+    "entries": [
+      { "group": "npc_underwear_bottom_male" },
+      { "group": "npc_underwear_top_male" },
+      { "group": "ZhighNpc_underwear_feet_male" },
+      { "group": "ZhighNpc_shoes_male" },
+      { "item": "pants_zhigh" },
+      { "item": "dress_shirt_zhigh" },
+      { "item": "frozenCactusHatZhigh" },
+      { "item": "jacket_windbreaker" }
+    ]
+  },
+  {
+    "type": "trait_group",
+    "id": "Appearance_Frozen_Cactus",
+    "subtype": "collection",
+    "traits": [ { "trait": "FLOWERS", "prob": 100 },
+                { "trait": "LEAVES3", "prob": 100 },
+                { "trait": "hair_green_fro", "prob": 100 },
+                { "trait": "eye_green", "prob": 100 },
+                { "trait": "SKIN_PINK", "prob": 100 }
+			  ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_Frozen_Cactus_weapon",
+    "subtype": "distribution",
+    "entries": [ { "item": "popGun_zhigh" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ZHIGHFROZENCACTUS",
+    "dynamic_line": "I am just a game streamer.  Damn, never thought those zombies would be real.  This is bullshit!",
+    "responses": [
+      { "text": "I've got to go…", "topic": "TALK_DONE" }
+    ]
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "type": "npc",
+    "id": "STUDENT_OCTOBER",
+    "name_unique": "October",
+    "name_suffix": "Student",
+    "gender": "male",
+    "class": "NC_ZHIGHOCTOBER",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_ZHIGHOCTOBER",
+    "faction": "Zhigh_Survivors"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_ZHIGHOCTOBER",
+    "name": { "str": "October" },
+    "job_description": "I'm a streamer.",
+    "traits": [
+      { "group": "BG_survival_story_RURAL" },
+      { "group": "Appearance_October" },
+      { "trait": "REGEN_zhigh" }
+    ],
+    "bonus_str": { "rng": [ 1, 2 ] },
+    "bonus_int": { "rng": [ 2, 3 ] },
+    "bonus_per": { "rng": [ 2, 3 ] },
+    "bonus_dex": { "rng": [ -1, 1 ] },
+    "worn_override": "NC_October_worn",
+    "carry_override": "NC_GUARD_misc",
+    "weapon_override": "NC_October_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "melee", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 2, 4 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_October_worn",
+    "subtype": "collection",
+    "entries": [
+      { "group": "npc_underwear_bottom_male" },
+      { "group": "npc_underwear_top_male" },
+      { "group": "ZhighNpc_underwear_feet_male" },
+      { "group": "ZhighNpc_shoes_male" },
+      { "item": "pants_zhigh" },
+      { "item": "dress_shirt_zhigh" },
+      { "item": "glassesZhighred" },
+      { "item": "jacket_jean" }
+    ]
+  },
+  {
+    "type": "trait_group",
+    "id": "Appearance_October",
+    "subtype": "collection",
+    "traits": [ { "trait": "hair_white_october", "prob": 100 }, 
+                { "trait": "eye_indigo", "prob": 100 }, 
+                { "trait": "SKIN_PINK", "prob": 100 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_October_weapon",
+    "subtype": "distribution",
+    "entries": [ { "item": "popGun_zhigh" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ZHIGHOCTOBER",
+    "dynamic_line": "I am just a game streamer.  Damn, never thought those zombies would be real.",
+    "responses": [
+      { "text": "I've got to go…", "topic": "TALK_DONE" }
+    ]
+  }
+]
