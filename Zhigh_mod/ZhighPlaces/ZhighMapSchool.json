@@ -14,7 +14,7 @@
     "color": "light_blue",
     "looks_like": "school_1_3",
     "see_cost": 5,
-    "mondensity": 3,
+    "mondensity": 5,
     "flags": [ "SOURCE_PEOPLE", "SOURCE_BOOKS", "SOURCE_SAFETY", "RISK_HIGH" ]
   },
   {
@@ -25,7 +25,7 @@
     "color": "light_blue",
     "looks_like": "school_1_7",
     "see_cost": 5,
-    "mondensity": 0,
+    "mondensity": 5,
     "flags": [ "SOURCE_PEOPLE", "SOURCE_BOOKS", "SOURCE_SAFETY", "RISK_HIGH" ]
   },
   {
@@ -55,7 +55,7 @@
     "color": "light_blue",
     "looks_like": "school_1_3_north",
     "see_cost": 5,
-    "mondensity": 3,
+    "mondensity": 5,
     "flags": [ "SOURCE_BOOKS", "SOURCE_SAFETY", "RISK_HIGH", "SOURCE_PEOPLE" ]
   },
   {
@@ -76,7 +76,7 @@
     "color": "light_blue",
     "looks_like": "school_1_3_north",
     "see_cost": 5,
-    "mondensity": 0,
+    "mondensity": 5,
     "flags": [ "SOURCE_BOOKS", "SOURCE_SAFETY", "RISK_HIGH", "SOURCE_PEOPLE" ]
   },
   {
@@ -348,12 +348,12 @@
       { "point": [ 9, 16, 0 ], "overmap": "empty_rock" },
       { "point": [ 10, -2, 0 ], "overmap": "empty_rock" },
       { "point": [ 10, 0, 0 ], "overmap": "empty_rock" },
-      { "point": [ 10, 3, 0 ], "overmap": "ws_fire_lookout_tower_base_north" },
-      { "point": [ 10, 3, 1 ], "overmap": "ws_fire_lookout_tower_f1_north" },
-      { "point": [ 10, 3, 2 ], "overmap": "ws_fire_lookout_tower_f2_north" },
-      { "point": [ 10, 3, 3 ], "overmap": "ws_fire_lookout_tower_f3_north" },
-      { "point": [ 10, 3, 4 ], "overmap": "ws_fire_lookout_tower_f4_north" },
-      { "point": [ 10, 3, 5 ], "overmap": "ws_fire_lookout_tower_f5_north" },
+      { "point": [ 10, 3, 0 ], "overmap": "ws_fire_lookout_towerZhigh_base_north" },
+      { "point": [ 10, 3, 1 ], "overmap": "ws_fire_lookout_towerZhigh_f1_north" },
+      { "point": [ 10, 3, 2 ], "overmap": "ws_fire_lookout_towerZhigh_f2_north" },
+      { "point": [ 10, 3, 3 ], "overmap": "ws_fire_lookout_towerZhigh_f3_north" },
+      { "point": [ 10, 3, 4 ], "overmap": "ws_fire_lookout_towerZhigh_f4_north" },
+      { "point": [ 10, 3, 5 ], "overmap": "ws_fire_lookout_towerZhigh_f5_north" },
       { "point": [ 10, 5, 0 ], "overmap": "BotanicalGarden_1a_north" },
       { "point": [ 10, 5, 1 ], "overmap": "BotanicalGarden_1a_roof_north" },
       { "point": [ 10, 6, 0 ], "overmap": "road_ew" },
@@ -729,6 +729,7 @@
       ],
       "place_item": [ { "item": "premium_survival_kit", "x": 2, "y": 39, "amount": 1 }, 
                       { "item": "hatchet", "x": 10, "y": 40, "amount": 1 }, 
+                      { "item": "two_way_radio", "x": 8, "y": 39, "amount": 1 }, 
                       { "item": "linuxtshirt", "x": 25, "y": 33, "amount": 1 },
                       { "item": "family_photo", "x": 2, "y": 33, "amount": 1 } ],
       "place_items": [  ],
@@ -845,6 +846,9 @@
         { "class": "GRUNT_MERC", "x": 67, "y": 22 },
         { "class": "Zhigh_guard", "x": 60, "y": 15 },
         { "class": "Zhigh_guard", "x": 34, "y": 34 },
+        { "class": "STUDENT_OCTOBER", "x": 24, "y": 44 },
+        { "class": "STUDENT_FROZENCACTUS", "x": 23, "y": 40 },
+        { "class": "STUDENT_47", "x": 20, "y": 38 },
         { "class": "NAILGUNNER_GUARD", "x": 40, "y": 10 },
         { "class": "JUVENILE_MERC", "x": 40, "y": 40 },
         { "class": "NAILGUNNER_GUARD", "x": 45, "y": 50 },
