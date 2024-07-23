@@ -1013,16 +1013,6 @@
     "magazine_well": "2 L"
   },
   {
-    "id": "fire_ax_1",
-    "copy-from": "fire_ax",
-    "type": "GENERIC",
-    "category": "tools",
-    "weapon_category": [ "2H_AXES" ],
-    "name": { "str": "fire axe" },
-    "description": "This is a large, two-handed pickhead axe normally used by firefighters.  It makes a powerful melee weapon, but is a bit slow to recover between swings.  Better than the original, with rubber ergonomic grips and balanced handle.",
-    "to_hit": 2
-  },
-  {
     "type": "GENERIC",
     "id": "ZhighCoin",
     "name": { "str": "High School Coin" },
@@ -1414,5 +1404,31 @@
     "symbol": ";",
     "color": "green",
     "use_action": { "type": "deploy_furn", "furn_type": "f_dispenserZhigh" }
+  },
+  {
+    "id": "gootrapZhigh",
+    "looks_like": "canister_goo",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "goo trap" },
+    "description": "There is a label on this canister: \"Warning: contains highly toxic and corrosive materials.  Contents may be sentient.  Open at your own risk.\"",
+    "weight": "14000 g",
+    "volume": "1500 ml",
+    "price": "60 USD",
+    "price_postapoc": "10 USD",
+    "to_hit": -2,
+    "bashing": 9,
+    "cutting": 1,
+    "material": "steel",
+    "symbol": ";",
+    "color": "light_gray",
+    "use_action": {
+      "type": "place_trap",
+      "allow_underwater": true,
+      "trap": "tr_goo",
+      "moves": 20,
+      "practice": 4,
+      "done_message": "You set the goo pit."
+    }
   }
 ]

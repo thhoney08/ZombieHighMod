@@ -268,9 +268,10 @@
     "copy-from": "w_table",
     "name": { "str": "wooden table" },
     "description": "A crude wooden table.",
-    "to_hit": 1,
-    "bashing": 20,
-    "weight": "10071 g"
+    "to_hit": -3,
+    "bashing": 60,
+    "weight": "10071 g",
+    "techniques": [ "WBLOCK_3", "WIDE", "SWEEP" ]
   },
   {
     "id": "tazer",
@@ -814,6 +815,7 @@
     "name": { "str": "trench knife (knife)", "str_pl": "trench knives (knife)" },
     "cutting": 16,
     "use_action": {
+	  "menu_text": "Change grip",
       "type": "transform",
       "msg": "You re-grab your trench knife, to use it as a knuckleduster.",
       "target": "knife_trench_bash"
@@ -830,6 +832,7 @@
     "cutting": 6,
     "flags": [ "DURABLE_MELEE", "UNARMED_WEAPON", "SHEATH_KNIFE" ],
     "use_action": {
+	  "menu_text": "Change grip",
       "type": "transform",
       "msg": "You re-grab your trench knife, to use it as a knife.",
       "target": "knife_trench"
@@ -1063,6 +1066,15 @@
     "bashing": 22
   },
   {
+    "id": "qstaff_extended",
+    "copy-from": "qstaff_extended",
+    "type": "GENERIC",
+    "category": "weapons",
+    "name": { "str": "extendable quarterstaff (extended)", "str_pl": "extendable quarterstaves (extended)" },
+    "flags": [ "DURABLE_MELEE", "REACH_ATTACK", "SHEATH_SPEAR", "ALWAYS_TWOHAND" ],
+    "bashing": 32
+  },
+  {
     "id": "i_staff",
     "type": "GENERIC",
     "copy-from": "i_staff",
@@ -1074,9 +1086,15 @@
     "id": "shock_staff",
     "type": "TOOL",
     "copy-from": "shock_staff",
-    "name": { "str": "powered quarterstaff", "str_pl": "powered quarterstaves" },
-    "bashing": 32,
-    "charges_per_use": 50
+    "name": { "str": "powered quarterstaff (off)", "str_pl": "powered quarterstaves (off)" },
+    "bashing": 32
+  },
+  {
+    "id": "shock_staff_on",
+    "type": "TOOL",
+    "copy-from": "shock_staff_on",
+    "name": { "str": "powered quarterstaff (on)", "str_pl": "powered quarterstaves (on)" },
+    "bashing": 32
   },
   {
     "type": "TOOL",
@@ -1126,7 +1144,8 @@
     "name": { "str": "tourist table" },
     "flags": [ "DURABLE_MELEE", "ALWAYS_TWOHAND", "NONCONDUCTIVE", "FLAT_SURFACE" ],
     "to_hit": 1,
-    "bashing": 30
+    "bashing": 50,
+    "techniques": [ "WBLOCK_3", "WIDE", "SWEEP" ]
   },
   {
     "type": "AMMO",
@@ -1230,6 +1249,21 @@
       "moves": 205,
       "practice": 3,
       "done_message": "You string up the tripwire."
+    }
+  },
+  {
+    "id": "can_alarm_trap",
+    "copy-from": "can_alarm_trap",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "makeshift perimeter alarm" },
+    "use_action": {
+      "type": "place_trap",
+      "trap": "tr_can_alarm",
+      "needs_solid_neighbor": false,
+      "moves": 200,
+      "practice": 3,
+      "done_message": "You string up some cans on a tripwire."
     }
   },
   {
@@ -1964,103 +1998,6 @@
     "modes": [ [ "DEFAULT", "single", 1 ], [ "AUTO", "burst", 3 ] ]
   },
   {
-    "id": "m134",
-    "copy-from": "m134",
-    "type": "GUN",
-    "name": { "str": "M134D-H Minigun" },
-    "valid_mod_locations": [
-      [ "accessories", 2 ],
-      [ "sling", 1 ],
-      [ "stock", 1 ],
-      [ "barrel", 1 ],
-      [ "grip", 1 ],
-      [ "rail", 1 ],
-      [ "sights", 1 ],
-      [ "underbarrel", 1 ]
-    ]
-  },
-  {
-    "id": "atgm_launcher",
-    "copy-from": "atgm_launcher",
-    "type": "GUN",
-    "name": { "str_sp": "BGM-71F TOW" },
-    "valid_mod_locations": [
-      [ "accessories", 2 ],
-      [ "sling", 1 ],
-      [ "stock", 1 ],
-      [ "barrel", 1 ],
-      [ "grip", 1 ],
-      [ "rail", 1 ],
-      [ "sights", 1 ],
-      [ "underbarrel", 1 ]
-    ]
-  },
-  {
-    "id": "cannon_3in_ordnance",
-    "copy-from": "cannon_3in_ordnance",
-    "type": "GUN",
-    "name": { "str": "3-inch ordnance rifle" },
-    "valid_mod_locations": [
-      [ "accessories", 2 ],
-      [ "sling", 1 ],
-      [ "stock", 1 ],
-      [ "barrel", 1 ],
-      [ "grip", 1 ],
-      [ "rail", 1 ],
-      [ "sights", 1 ],
-      [ "underbarrel", 1 ]
-    ]
-  },
-  {
-    "id": "m1874_gatling",
-    "copy-from": "m1874_gatling",
-    "looks_like": "m134",
-    "type": "GUN",
-    "name": { "str": "M1874 Gatling gun" },
-    "valid_mod_locations": [
-      [ "accessories", 2 ],
-      [ "sling", 1 ],
-      [ "stock", 1 ],
-      [ "barrel", 1 ],
-      [ "grip", 1 ],
-      [ "rail", 1 ],
-      [ "sights", 1 ],
-      [ "underbarrel", 1 ]
-    ]
-  },
-  {
-    "id": "gatling_mech_laser_rebuilt",
-    "copy-from": "gatling_mech_laser_rebuilt",
-    "type": "GUN",
-    "name": { "str": "rebuilt CMES gatling laser" },
-    "valid_mod_locations": [
-      [ "accessories", 2 ],
-      [ "sling", 1 ],
-      [ "stock", 1 ],
-      [ "barrel", 1 ],
-      [ "grip", 1 ],
-      [ "rail", 1 ],
-      [ "sights", 1 ],
-      [ "underbarrel", 1 ]
-    ]
-  },
-  {
-    "id": "recon_mech_laser_rebuilt",
-    "copy-from": "recon_mech_laser_rebuilt",
-    "type": "GUN",
-    "name": { "str": "rebuilt RMES marksman laser" },
-    "valid_mod_locations": [
-      [ "accessories", 2 ],
-      [ "sling", 1 ],
-      [ "stock", 1 ],
-      [ "barrel", 1 ],
-      [ "grip", 1 ],
-      [ "rail", 1 ],
-      [ "sights", 1 ],
-      [ "underbarrel", 1 ]
-    ]
-  },
-  {
     "id": "watercannon",
     "copy-from": "watercannon",
     "type": "GUN",
@@ -2248,8 +2185,9 @@
     "type": "GUN",
     "name": { "str": "makeshift chemical thrower" },
     "range": 18,
+    "handling": 85,
     "modes": [ [ "DEFAULT", "spray", 5 ] ],
-    "ranged_damage": { "damage_type": "bash", "amount": 1, "armor_penetration": 50 },
+    "ranged_damage": { "damage_type": "bash", "amount": 4, "armor_penetration": 50 },
     "flags": [ "NEVER_JAMS", "NON_FOULING" ]
   },
   {
@@ -2273,7 +2211,9 @@
     "copy-from": "blun_shot",
     "name": { "str": "blunderbuss shot" },
     "count": 30,
-    "stack_size": 30
+    "stack_size": 30,
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 15, "length": 10 } ]
   },
   {
     "type": "AMMO",
@@ -2281,7 +2221,9 @@
     "copy-from": "blun_flechette",
     "name": { "str": "blunderbuss flechette" },
     "count": 30,
-    "stack_size": 30
+    "stack_size": 30,
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 20, "length": 12 } ]
   },
   {
     "id": "signal_flare",
@@ -2438,5 +2380,17 @@
     "damage": { "damage_type": "bash", "amount": 30, "armor_penetration": 20 },
     "dont_recover_one_in": 100,
     "effects": [ "NEVER_MISFIRES", "NON_FOULING" ]
+  },
+  {
+    "id": "belt_clip",
+    "copy-from": "belt_clip",
+    "type": "GUNMOD",
+    "name": { "str": "belt clip" },
+    "mod_targets": [  ],
+    "mod_target_category": [
+      [ "PISTOLS" ],
+      [ "REVOLVERS" ]
+    ],
+    "flags": [ "IS_ARMOR", "COMPACT", "WATER_FRIENDLY" ]
   }
 ]

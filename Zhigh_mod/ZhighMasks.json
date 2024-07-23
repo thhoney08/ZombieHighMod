@@ -31,7 +31,7 @@
   },
   {
     "id": "mask_Armorer",
-    "name": { "str": "wolf mask" },
+    "name": { "str": "Wolf mask" },
     "type": "ARMOR",
     "description": "This is a mask, suitable for the techie.  And make you go one on one with a hulk zombie. Don't.",
     "copy-from": "mask_paper_base"
@@ -262,6 +262,69 @@
     "copy-from": "mask_paper_base"
   },
   {
+    "id": "mask_rabbit",
+    "name": { "str": "rabbit mask" },
+    "type": "ARMOR",
+    "description": "This is a mask, based on a rabbit.",
+    "copy-from": "mask_paper_base"
+  },
+  {
+    "id": "mask_wolf",
+    "name": { "str": "wolf mask" },
+    "type": "ARMOR",
+    "description": "This is a mask, based on a wolf.",
+    "copy-from": "mask_paper_base"
+  },
+  {
+    "id": "mask_giraffe",
+    "name": { "str": "giraffe mask" },
+    "type": "ARMOR",
+    "description": "This is a mask, based on a giraffe.",
+    "copy-from": "mask_paper_base"
+  },
+  {
+    "id": "mask_dog",
+    "name": { "str": "dog mask" },
+    "type": "ARMOR",
+    "description": "This is a mask, based on a dog.",
+    "copy-from": "mask_paper_base"
+  },
+  {
+    "id": "mask_elephant",
+    "name": { "str": "elephant mask" },
+    "type": "ARMOR",
+    "description": "This is a mask, based on an elephant.",
+    "copy-from": "mask_paper_base"
+  },
+  {
+    "id": "mask_camel",
+    "name": { "str": "camel mask" },
+    "type": "ARMOR",
+    "description": "This is a mask, based on a camel.",
+    "copy-from": "mask_paper_base"
+  },
+  {
+    "id": "mask_monkey",
+    "name": { "str": "monkey mask" },
+    "type": "ARMOR",
+    "description": "This is a mask, based on a monkey.",
+    "copy-from": "mask_paper_base"
+  },
+  {
+    "id": "mask_frog",
+    "name": { "str": "frog mask" },
+    "type": "ARMOR",
+    "description": "This is a mask, based on a frog.",
+    "copy-from": "mask_paper_base"
+  },
+  {
+    "id": "mask_mole",
+    "name": { "str": "mole mask" },
+    "type": "ARMOR",
+    "description": "This is a mask, based on a mole.",
+    "copy-from": "mask_paper_base"
+  },
+  {
     "id": "mask_paintball",
     "repairs_like": "mask_gas",
     "type": "ARMOR",
@@ -326,7 +389,19 @@
     "encumbrance": 10,
     "material_thickness": 3,
     "techniques": [ "WBLOCK_2" ],
-    "flags": [ "OVERSIZE", "BELTED", "BLOCK_WHILE_WORN", "POWERARMOR_COMPATIBLE" ]
+    "flags": [ "OVERSIZE", "BELTED", "FANCY", "BLOCK_WHILE_WORN", "POWERARMOR_COMPATIBLE" ]
+  },
+  {
+    "id": "mask_menpo_superalloy",
+    "copy-from": "shield_buckler",
+    "type": "ARMOR",
+    "name": { "str": "superalloy menpo" },
+    "description": "A mask made from made of modern superalloy instead of wood.  Wearing it blocks you from some harm.",
+    "material": [ "superalloy" ],
+    "color": "light_cyan",
+    "encumbrance": 13,
+    "material_thickness": 4,
+    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 }
   },
   {
     "id": "tactical_respirator",

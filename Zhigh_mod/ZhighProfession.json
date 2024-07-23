@@ -22,7 +22,8 @@
                 { "group": "ZhighNpc_masks" },
                 { "group": "ZhighNpc_coat" },
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "group": "ZhighGuardWeaponGroups", "custom-flags": [ "auto_wield" ] } ]
+                { "group": "ZhighGuardWeaponGroups", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -521,11 +522,11 @@
     "id": "zhighTrapper",
     "name": "Student - Trapper",
     "description": "You had the school lunch lady type of job in school.  The job sucked, plus no one heard your whining about rats, so you tried to take the matters in your hands.  Now that the world has ended, the thing that you now have are some traps which you were going to catch some mice.",
-    "points": -2,
+    "points": -1,
     "skills": [
       { "level": 1, "name": "firstaid" },
       { "level": 1, "name": "mechanics" },
-      { "level": 1, "name": "traps" }
+      { "level": 3, "name": "traps" }
     ],
     "traits": [ "REGEN_zhigh" ],
     "items": {
@@ -535,19 +536,18 @@
           "zhigh_smart_phone",
           "socks",
           "sneakers",
-          "beartrap",
-          "board_trap",
-          "bubblewrap",
-          "caltrops",
-          "caltrops_glass",
-          "tripwire",
-          "glass_shard_trap",
           "wristwatch",
-          "swag_bag",
+          "blade_trap",
+          "backpack_leather",
           "apron_cyan"
         ],
         "entries": [ 
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+				{ "group": "ZhighTraps" },
+				{ "group": "ZhighTraps" },
+				{ "group": "ZhighTraps" },
+				{ "group": "ZhighTraps" },
+				{ "group": "ZhighTraps" },
                 { "item": "knife_chef", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
@@ -1310,7 +1310,6 @@
           "hat_ball2",
           "socks",
           "sneakers",
-          "BBallglove",
           "pants_tracksuit_zhigh",
           "wristwatch",
           "sling_rubberball",
@@ -1319,7 +1318,8 @@
           "sling_rubberball"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+                { "item": "BBallglove", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "briefs" ],
       "female": [ "sports_bra", "boy_shorts" ]
@@ -3854,6 +3854,7 @@
           "scabbard",
           "gloves_fingerless",
           "grapnel",
+          "kunaiZhigh",
           "shuriken",
           "shuriken",
           "smokebomb_makeshift"
@@ -3873,7 +3874,7 @@
     "type": "profession",
     "id": "zhighEngineer",
     "name": "Student - Engineer",
-    "description": "You loved making simple AIs and turrets, like that hard hat wearing Texan from good old shooter game.  Sentry going up!",
+    "description": "You loved making simple AIs and turrets, like that hard hat wearing Texan from a good old shooter game.  Sentry going up!",
     "points": 2,
     "skills": [ { "level": 3, "name": "mechanics" }, { "level": 2, "name": "fabrication" }, { "level": 2, "name": "computer" } ],
     "traits": [ "REGEN_zhigh" ],
@@ -3895,7 +3896,43 @@
         "entries": [
                 { "group": "ZhighNpc_coat" },
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "bbmachinepistol", "ammo-item": "bb", "charges": 300, "custom-flags": [ "auto_wield" ] }
+                { "item": "popGunPistol_zhigh", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighMallninja",
+    "name": "Student - mallninja",
+    "description": "While they were living their life you studied the blade.  And now that the world is on fire and the zombies are at the gate people have the audacity to come to you for help.  Nevermind, everyone is dead.",
+    "points": -12,
+    "traits": [ "DISORGANIZED", "BRAWLER", "REGEN_zhigh", "CLUMSY" ],
+    "skills": [
+      { "level": 1, "name": "dodge" },
+      { "level": 2, "name": "throw" },
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "cutting" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "socks",
+          "scabbard",
+          "sneakers",
+          "wristwatch"
+        ],
+        "entries": [ 
+                { "group": "ZhighNpc_masks" },
+                { "group": "ZhighNpc_coat" },
+                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+				{ "item": "kunaiZhigh", "container-item": "sheath" },
+                { "item": "katana_mallninjaZhigh", "custom-flags": [ "auto_wield" ] }
 		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],

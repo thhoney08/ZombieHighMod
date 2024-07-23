@@ -114,12 +114,12 @@
           { "id": "overlay_wielded_thunderball", "fg": 88 },
           { "id": "water_gun", "fg": 91 },
           { "id": "overlay_wielded_water_gun", "fg": 90 },
-          { "id": "knuckle_elec", "fg": 93 },
+          { "id": "knuckle_elec_on", "fg": 93 },
           { "id": "overlay_wielded_zhigh_smart_phone", "fg": 94 },
           { "id": "overlay_wielded_zhigh_smart_phone_flashlight", "fg": 95 },
           { "id": "zhigh_smart_phone", "fg": 94 },
           { "id": "zhigh_smart_phone_flashlight", "fg": 95 },
-          { "id": "overlay_wielded_knuckle_elec", "fg": 92 },
+          { "id": "overlay_wielded_knuckle_elec_on", "fg": 92 },
           { "id": "bandana_skull", "fg": 97 },
           { "id": "overlay_worn_bandana_skull", "fg": 96 },
           { "id": "camp_chair_zhigh", "fg": 99 },
@@ -395,7 +395,6 @@
             "multitile": true,
             "additional_tiles": [ { "id": "broken", "fg": 17502 } ]
           },
-          { "id": "highlight", "fg": 77 },
           { "id": "overlay_worn_jacket_baseball_2", "fg": 78 },
           { "id": "jacket_baseball_2", "fg": 79 },
           { "id": "overlay_wielded_laser_beamlight", "fg": 80 },
@@ -599,8 +598,8 @@
           { "id": "overlay_worn_mask_menpo", "fg": 238 },
           { "id": "overlay_wielded_uno", "fg": 239 },
           { "id": "uno", "fg": 239 },
-          { "id": "overlay_wielded_stunrod", "fg": 240 },
-          { "id": "stunrod", "fg": 241 },
+          { "id": "overlay_wielded_stunrod_on", "fg": 240 },
+          { "id": "stunrod_on", "fg": 241 },
           { "id": "bunny_earsW", "fg": 242 },
           { "id": "bunny_earsB", "fg": 243 },
           { "id": "jacket_tape", "fg": 244 },
@@ -978,6 +977,7 @@
           { "id": "overlay_wielded_horsemanPickZhigh", "fg": 252 },
           { "id": "corpse_mon_feral_human_zhigh", "fg": 253 },
           { "id": "corpse_mon_zombie_leaker", "fg": 254 },
+          { "id": "corpse_mon_zombie_spot", "fg": 254 },
           { "id": "fezZhigh", "fg": 255 }
         ],
         "//": "range 1 to 128",
@@ -1010,7 +1010,48 @@
           { "id": "chainflailZhigh2", "fg": 1 },
           { "id": "overlay_wielded_chainflailZhigh2", "fg": 2 },
           { "id": "chainflailZhigh", "fg": 3 },
-          { "id": "overlay_wielded_chainflailZhigh", "fg": 4 }
+          { "id": "overlay_wielded_chainflailZhigh", "fg": 4 },
+          { "id": "holtzmanShieldZhigh_on", "fg": 5 },
+          { "id": "overlay_worn_holtzmanShieldZhigh_on", "fg": 6 },
+          { "id": "holtzmanShieldZhigh", "fg": 7 },
+          { "id": "overlay_worn_holtzmanShieldZhigh", "fg": 8 },
+          { "id": "crysknifeZhigh", "fg": 9 },
+          { "id": "overlay_wielded_crysknifeZhigh", "fg": 10 },
+          { "id": "falcataZhigh", "fg": 11 },
+          { "id": "overlay_wielded_falcataZhigh", "fg": 12 },
+          { "id": "souWesterZhigh", "fg": 13 },
+          { "id": "tamoshanterZhigh", "fg": 14 },
+          { "id": "jumpRopeZhigh", "fg": 15 },
+          { "id": "overlay_wielded_jumpRopeZhigh", "fg": 16 },
+          { "id": "overlay_wielded_flamethrower_big", "fg": 17 },
+          { "id": "rock_launcher6", "fg": 18 },
+          { "id": "overlay_wielded_rock_launcher6", "fg": 19 },
+          { "id": "glovesboots_plateCyborg", "fg": 20 },
+          { "id": "overlay_worn_glovesboots_plateCyborg", "fg": 21 },
+          { "id": "knife_shockZhigh", "fg": 26 },
+          { "id": "overlay_wielded_knife_shockZhigh", "fg": 27 },
+          { "id": "mask_rabbit", "fg": 28 },
+          { "id": "mask_wolf", "fg": 29 },
+          { "id": "overlay_worn_mask_wolf", "fg": 30 },
+          { "id": "mask_giraffe", "fg": 31 },
+          { "id": "mask_dog", "fg": 34 },
+          { "id": "mask_elephant", "fg": 35 },
+          { "id": "overlay_worn_mask_elephant", "fg": 36 },
+          { "id": "mask_camel", "fg": 37 },
+          { "id": "mask_monkey", "fg": 38 },
+          { "id": "mask_frog", "fg": 39 },
+          { "id": "mask_mole", "fg": 40 },
+          { "id": "overlay_worn_mask_mole", "fg": 41 },
+          { "id": "throwing_club", "fg": 42 },
+          { "id": "overlay_wielded_throwing_club", "fg": 43 },
+          { "id": "kusarigamaSickle", "fg": 44 },
+          { "id": "overlay_wielded_kusarigamaSickle", "fg": 45 },
+          { "id": "bscabbardDouZhigh", "fg": 46 },
+          { "id": "overlay_worn_bscabbardDouZhigh", "fg": 47 },
+          { "id": "stunrod", "fg": 48 },
+          { "id": "overlay_wielded_stunrod", "fg": 49 },
+          { "id": "sheath_multi", "fg": 50 },
+          { "id": "overlay_worn_sheath_multi", "fg": 51 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,
@@ -1098,10 +1139,10 @@
           {
             "id": "mon_pubg_bogup",
             "fg": [
-              { "weight": 10, "sprite": 36 },
-              { "weight": 10, "sprite": 37 },
-              { "weight": 10, "sprite": 38 },
-              { "weight": 10, "sprite": 39 }
+              { "weight": 5, "sprite": 36 },
+              { "weight": 5, "sprite": 37 },
+              { "weight": 5, "sprite": 38 },
+              { "weight": 5, "sprite": 39 }
             ],
             "rotates": false,
             "animated": true
@@ -1110,8 +1151,8 @@
           {
             "id": "mon_iceturret",
             "fg": [
-              { "weight": 10, "sprite": 41 },
-              { "weight": 10, "sprite": 42 }
+              { "weight": 30, "sprite": 41 },
+              { "weight": 30, "sprite": 42 }
             ],
             "rotates": false,
             "animated": true
@@ -1119,8 +1160,8 @@
           {
             "id": "mon_waterturret",
             "fg": [
-              { "weight": 10, "sprite": 43 },
-              { "weight": 10, "sprite": 44 }
+              { "weight": 30, "sprite": 43 },
+              { "weight": 30, "sprite": 44 }
             ],
             "rotates": false,
             "animated": true
@@ -1128,9 +1169,9 @@
           {
             "id": "mon_zombie_bomber",
             "fg": [
-              { "weight": 10, "sprite": 45 },
-              { "weight": 10, "sprite": 46 },
-              { "weight": 10, "sprite": 47 }
+              { "weight": 3, "sprite": 45 },
+              { "weight": 3, "sprite": 46 },
+              { "weight": 3, "sprite": 47 }
             ],
             "rotates": false,
             "animated": true
@@ -1171,6 +1212,53 @@
             ],
             "rotates": false,
             "animated": false
+          },
+          {
+            "id": "mon_feral_human_flamerZhigh",
+            "fg": [
+              { "weight": 10, "sprite": 78 },
+              { "weight": 10, "sprite": 79 },
+              { "weight": 10, "sprite": 80 },
+              { "weight": 10, "sprite": 81 },
+              { "weight": 10, "sprite": 82 },
+              { "weight": 10, "sprite": 83 },
+              { "weight": 10, "sprite": 84 },
+              { "weight": 10, "sprite": 85 },
+              { "weight": 10, "sprite": 86 },
+              { "weight": 10, "sprite": 87 },
+              { "weight": 10, "sprite": 88 },
+              { "weight": 10, "sprite": 89 },
+              { "weight": 10, "sprite": 90 },
+              { "weight": 10, "sprite": 91 },
+              { "weight": 10, "sprite": 92 },
+              { "weight": 10, "sprite": 93 },
+              { "weight": 10, "sprite": 94 },
+              { "weight": 10, "sprite": 95 },
+              { "weight": 10, "sprite": 96 },
+              { "weight": 10, "sprite": 97 }
+            ],
+            "rotates": false,
+            "animated": false
+          },
+          { "id": "mon_Zhigh_finalboss1", "fg": 98 },
+          { "id": "mon_Zhigh_finalboss2", "fg": 99 },
+          {
+            "id": "mon_sniperturret",
+            "fg": [
+              { "weight": 30, "sprite": 100 },
+              { "weight": 30, "sprite": 101 }
+            ],
+            "rotates": false,
+            "animated": true
+          },
+          {
+            "id": "mon_LMGturret",
+            "fg": [
+              { "weight": 30, "sprite": 102 },
+              { "weight": 30, "sprite": 103 }
+            ],
+            "rotates": false,
+            "animated": true
           }
         ],
         "//": "range 1 to 128",
@@ -1200,8 +1288,9 @@
       {
         "file": "Zhigh_monster.png",
         "tiles": [
-          { "id": "mon_Zhigh_finalboss1", "fg": 1 },
-          { "id": "mon_Zhigh_finalboss2", "fg": 2 },
+          { "id": "overlay_wielded_scythe_war", "fg": 1 },
+          { "id": "overlay_wielded_makeshift_scythe_war", "fg": 1 },
+          { "id": "mon_zombie_DJMAX", "fg": 2 },
           { "id": "mon_Zhigh_finalboss3", "fg": 3 },
           {
             "id": "mon_Zhigh_finalboss4",
@@ -1323,6 +1412,10 @@
           { "id": "overlay_male_mutation_eye_indigo", "fg": 43 },
           { "id": "overlay_female_mutation_hair_white_october", "fg": 44 },
           { "id": "overlay_male_mutation_hair_white_october", "fg": 44 },
+          { "id": "overlay_female_mutation_hair_junBird", "fg": 45 },
+          { "id": "overlay_male_mutation_hair_junBird", "fg": 45 },
+          { "id": "overlay_female_mutation_hair_brown_hambro", "fg": 46 },
+          { "id": "overlay_male_mutation_hair_brown_hambro", "fg": 46 },
           { "id": "overlay_male_mutation_hair_orange_short", "fg": 48 },
           { "id": "overlay_female_mutation_hair_orange_short", "fg": 49 },
           { "id": "overlay_male_mutation_hair_orange_mohawk", "fg": 50 },
@@ -1452,7 +1545,15 @@
           { "id": "overlay_male_mutation_hair_dead_eye", "fg": 16 },
           { "id": "overlay_worn_kungLaoHatZhigh", "fg": 17 },
           { "id": "overlay_worn_frozenCactusHatZhigh", "fg": 18 },
-          { "id": "overlay_worn_fezZhigh", "fg": 19 }
+          { "id": "overlay_worn_fezZhigh", "fg": 19 },
+          { "id": "overlay_worn_souWesterZhigh", "fg": 20 },
+          { "id": "overlay_worn_tamoshanterZhigh", "fg": 21 },
+          { "id": "overlay_worn_mask_rabbit", "fg": 22 },
+          { "id": "overlay_worn_mask_giraffe", "fg": 23 },
+          { "id": "overlay_worn_mask_dog", "fg": 24 },
+          { "id": "overlay_worn_mask_camel", "fg": 25 },
+          { "id": "overlay_worn_mask_monkey", "fg": 26 },
+          { "id": "overlay_worn_mask_frog", "fg": 27 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,
@@ -1487,7 +1588,6 @@
           { "id": "overlay_wielded_tonfa", "fg": 4 },
           { "id": "overlay_wielded_tonfa_wood", "fg": 5 },
           { "id": "overlay_wielded_shocktonfa_off", "fg": 6 },
-          { "id": "overlay_wielded_shocktonfa_on", "fg": 7 },
           { "id": "flashbang", "fg": 8 },
           { "id": "overlay_wielded_flashbang", "fg": 9 },
           { "id": "flashbang_act", "fg": 10 },
@@ -1566,9 +1666,6 @@
           { "id": "overlay_wielded_gloves_work", "fg": 68 },
           { "id": "throwing_knife", "fg": 69 },
           { "id": "overlay_wielded_hacksaw", "fg": 70 },
-          { "id": "overlay_wielded_knife_hunting", "fg": 71 },
-          { "id": "overlay_wielded_knife_combat", "fg": 72 },
-          { "id": "overlay_wielded_knife_combat_mod", "fg": 72 },
           { "id": "overlay_wielded_butterfly_swords", "fg": 73 },
           { "id": "pen", "fg": 74 },
           { "id": "overlay_wielded_pen", "fg": 75 },
@@ -1610,7 +1707,29 @@
           { "id": "coilgun", "fg": 103 },
           { "id": "overlay_wielded_knife_heat", "fg": 104 },
           { "id": "knife_heat", "fg": 105 },
-          { "id": "overlay_wielded_sword_metal", "fg": 106 }
+          { "id": "overlay_wielded_sword_metal", "fg": 106 },
+          { "id": "overlay_wielded_hammer", "fg": 107 },
+          { "id": "overlay_wielded_hammer_bronze", "fg": 107 },
+          { "id": "overlay_wielded_makeshift_hammer", "fg": 107 },
+          { "id": "overlay_wielded_dao", "fg": 108 },
+          { "id": "qstaff_retracted", "fg": 109 },
+          { "id": "overlay_wielded_qstaff_retracted", "fg": 110 },
+          { "id": "qstaff_extended", "fg": 111 },
+          { "id": "overlay_wielded_qstaff_extended", "fg": 112 },
+          { "id": "overlay_wielded_shocktonfa_on", "fg": 113 },
+          { "id": "beret", "fg": 114 },
+          { "id": "overlay_worn_beret", "fg": 115 },
+          { "id": "overlay_wielded_knife_combat", "fg": 116 },
+          { "id": "overlay_wielded_knife_combat_mod", "fg": 116 },
+          { "id": "picklocks", "fg": 117 },
+          { "id": "overlay_wielded_picklocks", "fg": 117 },
+          { "id": "crude_picklock", "fg": 117 },
+          { "id": "overlay_wielded_crude_picklock", "fg": 117 },
+          { "id": "overlay_wielded_m240", "fg": 119 },
+          { "id": "overlay_wielded_glass_shiv", "fg": 120 },
+          { "id": "overlay_wielded_sharp_toothbrush", "fg": 121 },
+          { "id": "overlay_wielded_survivor_machete", "fg": 122 },
+          { "id": "overlay_wielded_m249", "fg": 123 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,

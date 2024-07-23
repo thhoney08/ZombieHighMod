@@ -17,7 +17,7 @@
     "acceptable_ammo": [ "arrow" ],
     "dispersion_modifier": 45,
     "damage_modifier": { "damage_type": "stab", "amount": 15 },
-    "ammo_modifier": [ "bolt" ]
+    "ammo_modifier": [ "arrow", "bolt" ]
   },
   {
     "id": "retool_arrow",
@@ -37,7 +37,7 @@
     "acceptable_ammo": [ "bolt" ],
     "dispersion_modifier": 45,
     "damage_modifier": { "damage_type": "stab", "amount": -5 },
-    "ammo_modifier": [ "arrow" ]
+    "ammo_modifier": [ "arrow", "bolt" ]
   },
   {
     "id": "bipodgrip",
@@ -255,7 +255,27 @@
     },
     "techniques": [ "WBLOCK_1", "RAPID" ],
     "qualities": [ [ "CUT", 1 ], [ "COOK", 1 ], [ "BUTCHER", 7 ] ],
-    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD" ]
+    "flags": [ "DURABLE_MELEE", "SHEATH_AXE" ]
+  },
+  {
+    "id": "retool_40mm",
+    "looks_like": "gun_module",
+    "type": "GUNMOD",
+    "name": { "str": "40mm conversion kit" },
+    "description": "A survivor's conversion kit, which makes the modified 40x46mm firearm to shoot 40x53mm grenades, 40x46mm grenades, and rocks after modified.",
+    "weight": "100 g",
+    "volume": "200 ml",
+    "integral_volume": 0,
+    "price": "420 USD",
+    "material": "wood",
+    "symbol": ":",
+    "color": "green",
+    "location": "accessories",
+    "mod_target_category": [ [ "PISTOLS" ], [ "GRENADE_LAUNCHERS" ] ],
+    "acceptable_ammo": [ "40x46mm" ],
+    "dispersion_modifier": 45,
+    "ammo_modifier": [ "40x46mm", "40x53mm", "rock" ],
+    "flags": [ "INSTALL_DIFFICULT", "IRREMOVABLE" ]
   },
   {
     "id": "betterPumpZhigh",
