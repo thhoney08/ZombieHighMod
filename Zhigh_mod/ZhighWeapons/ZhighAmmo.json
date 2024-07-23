@@ -129,7 +129,7 @@
     "weight": "200 g",
     "volume": "250 ml",
     "bashing": 5,
-    "damage": { "damage_type": "bash", "amount": 3 },
+    "damage": { "damage_type": "bash", "amount": 3, "armor_penetration": 1 },
     "range": 0,
     "dispersion": 14,
     "loudness": 0,
@@ -299,8 +299,17 @@
     "copy-from": "sling_grenade",
     "looks_like": "improvised_colabomb",
     "name": { "str": "shootable cola bomb" },
-    "description": "An improvised cola bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "description": "An cola bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
     "drop": "improvised_colabomb_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_improvised_colabombV2",
+    "copy-from": "sling_grenade",
+    "looks_like": "improvised_colabomb",
+    "name": { "str": "shootable frag cola bomb" },
+    "description": "A frag cola bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "improvised_colabombV2_act"
   },
   {
     "type": "AMMO",
@@ -341,12 +350,13 @@
   {
     "type": "AMMO",
     "id": "sling_rubberball",
+    "looks_like": "baseball",
     "copy-from": "rock",
     "name": { "str": "shootable rubber ball" },
     "description": "An improvised rubber ball, which makes you to throw this (using a staff sling) at a longer range.",
     "damage": { "damage_type": "bash", "amount": 8 },
-    "drop": "sling_rubberball",
-    "effects": [ "NOGIB", "BOUNCE", "BEANBAG", "NEVER_MISFIRES" ]
+    "dont_recover_one_in": 40,
+    "effects": [ "BOUNCE", "BEANBAG", "NEVER_MISFIRES" ]
   },
   {
     "type": "AMMO",

@@ -1061,6 +1061,8 @@
     "description": "An improvised, huge, and direct launcher for rocks.  Essentially, two thick-walled steel pipes, equipped with two rubber bands.  Effective as giving a one-two punch from a pro boxer, but only at short to medium range, barely.",
     "range": 18,
     "ranged_damage": { "damage_type": "bullet", "amount": 21, "armor_penetration": 9 },
+	"weight": "2930 g",
+    "volume": "1650 ml",
     "dispersion": 60,
     "durability": 4,
     "loudness": 5,
@@ -1092,7 +1094,7 @@
       [ "sights", 1 ],
       [ "underbarrel", 1 ]
     ],
-    "extend": { "flags": [ "MOUNTED_GUN", "MODE_BURST" ] },
+    "extend": { "flags": [ "MODE_BURST", "MOUNTED_GUN" ] },
     "clip_size": 5000
   },
   {
@@ -1473,8 +1475,8 @@
     "description": "Popular among children.  More accurate than the original one, and easliy modifiable, but BBs deal nearly no damage.",
     "range": 18,
     "material": [ "aluminum", "plastic" ],
-    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 3 ] ],
-    "ranged_damage": { "damage_type": "bullet", "amount": 5, "armor_penetration": 10 },
+    "modes": [ [ "DEFAULT", "burst", 3 ] ],
+    "ranged_damage": { "damage_type": "bullet", "amount": 6, "armor_penetration": 10 },
     "dispersion": 100,
     "clip_size": 60,
     "reload": 90,
@@ -1556,7 +1558,7 @@
     ],
     "magazines": [ [ "BB", [ "BBbelt_500", "BBclip300", "BBclip300release" ] ] ],
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
-    "modes": [ [ "DEFAULT", "single", 1 ], [ "BURST", "full auto", 6 ] ]
+    "modes": [ [ "DEFAULT", "full auto", 6 ] ]
   },
   {
     "id": "BBbelt_500",
@@ -1587,12 +1589,11 @@
     "barrel_length": "80 ml",
     "range": 9,
     "skill": "pistol",
-    "ranged_damage": { "damage_type": "bullet", "amount": 6, "armor_penetration": 6 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 6, "armor_penetration": 18 },
     "dispersion": 100,
     "magazines": [ [ "BB", [ "BBclip300", "BBclip300release" ] ] ],
     "reload": 120,
     "ammo_effects": [ "BEANBAG", "NOGIB" ],
-    "modes": [ [ "DEFAULT", "single", 1 ] ],
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 1 ],
@@ -1601,7 +1602,8 @@
       [ "grip", 1 ],
       [ "rail", 1 ],
       [ "underbarrel", 1 ]
-    ]
+    ],
+    "modes": [ [ "DEFAULT", "double tap", 2 ] ]
   },
   {
     "id": "bbmachinepistol",
@@ -1650,7 +1652,7 @@
     "weapon_category": [ "SUBMACHINE_GUNS", "PNEUMATIC" ],
     "volume": "1200 ml",
     "barrel_length": "130 ml",
-    "range": 10,
+    "range": 11,
     "skill": "smg",
     "ranged_damage": { "damage_type": "bullet", "amount": 3 },
     "dispersion": 100,
@@ -1666,7 +1668,7 @@
       [ "underbarrel", 1 ]
     ],
     "magazines": [ [ "BB", [ "BBclip300", "BBclip300release" ] ] ],
-    "modes": [ [ "DEFAULT", "single", 1 ], [ "AUTO", "full auto", 6 ] ]
+    "modes": [ [ "DEFAULT", "full auto", 8 ] ]
   },
   {
     "id": "bbM4",
@@ -1682,7 +1684,7 @@
     "volume": "1700 ml",
     "barrel_length": "280 ml",
     "description": "Popular among children.  More accurate than the original one, and easliy modifiable, but BBs deal nearly no damage.  This one looks like a M4.",
-    "range": 11,
+    "range": 12,
     "ranged_damage": { "damage_type": "bullet", "amount": 2, "armor_penetration": 3 },
     "dispersion": 100,
     "reload": 130,
@@ -1697,7 +1699,7 @@
       [ "underbarrel", 1 ]
     ],
     "magazines": [ [ "BB", [ "BBclip300", "BBclip300release" ] ] ],
-    "modes": [ [ "DEFAULT", "single", 1 ], [ "BURST", "3 rd.", 3 ], [ "AUTO", "full auto", 8 ] ]
+    "modes": [ [ "DEFAULT", "full auto", 8 ] ]
   },
   {
     "id": "bbAr15",
@@ -1705,6 +1707,7 @@
     "copy-from": "bbM4",
     "type": "GUN",
     "description": "Popular among children.  More accurate than the original one, and easliy modifiable, but BBs deal nearly no damage.  This one looks like a AR-10.",
+    "range": 13,
     "ranged_damage": { "damage_type": "bullet", "amount": 1, "armor_penetration": 4 },
     "name": { "str": "BB AR-10" }
   },
@@ -1714,6 +1717,7 @@
     "copy-from": "bbM4",
     "type": "GUN",
     "description": "Popular among children.  More accurate than the original one, and easliy modifiable, but BBs deal nearly no damage.  This one looks like an AK-47.",
+    "range": 10,
     "ranged_damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 2 },
     "name": { "str": "BB AK-47" }
   },
@@ -1723,6 +1727,7 @@
     "copy-from": "bbM4",
     "type": "GUN",
     "description": "Popular among children.  More accurate than the original one, and easliy modifiable, but BBs deal nearly no damage.  This one looks like a SCAR-H.",
+    "range": 11,
     "ranged_damage": { "damage_type": "bullet", "amount": 4, "armor_penetration": 1 },
     "name": { "str": "BB SCAR-H" }
   },
@@ -1736,7 +1741,7 @@
     "price": "1699 USD",
     "price_postapoc": "2750 cent",
     "color": "brown_yellow",
-    "ranged_damage": { "damage_type": "bullet", "amount": 2 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 9 },
     "dispersion": 260
   },
   {
@@ -1746,7 +1751,7 @@
     "name": { "str": "P30L" },
     "weight": "930 g",
     "price_postapoc": "25 USD",
-    "ranged_damage": { "damage_type": "bullet", "amount": 2 }
+    "ranged_damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 9 }
   },
   {
     "id": "mts255",
@@ -1761,7 +1766,7 @@
     "price": "1008 USD",
     "price_postapoc": "108 USD",
     "material": [ "steel", "wood" ],
-    "ranged_damage": { "damage_type": "bullet", "amount": 2 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 2, "armor_penetration": 1 },
     "dispersion": 460,
     "durability": 8,
     "clip_size": 5,
@@ -1790,7 +1795,7 @@
     "weight": "2594 g",
     "volume": "1127 ml",
     "weapon_category": [ "SHOTGUNS", "REVOLVERS", "MANUAL_ACTION" ],
-    "ranged_damage": { "damage_type": "bullet", "amount": 1 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 1, "armor_penetration": 1 },
     "durability": 7,
     "dispersion": 660
   },
@@ -1806,7 +1811,7 @@
     "price_postapoc": "55 USD",
     "material": [ "steel", "plastic" ],
     "color": "magenta",
-    "range": 30,
+    "range": 20,
     "ranged_damage": { "damage_type": "bullet", "amount": 10, "armor_penetration": 4 },
     "dispersion": 180,
     "loudness": 7,
@@ -1834,7 +1839,7 @@
         "type": "transform",
         "target": "kingsman_umbrella_open",
         "msg": "You opened your umbrella, ready to shield yourself from rain."
-      }
+    }
   },
   {
     "id": "kingsman_umbrella_open",
@@ -2482,11 +2487,13 @@
     "id": "popGun_zhigh",
     "looks_like": "winchester_1897",
     "type": "GUN",
-    "name": { "str_sp": "pop gun" },
+    "name": { "str_sp": "pop gun (rifle)" },
     "description": "A toy gun, which uses air pressure to fire a small tethered or untethered projectile out of a barrel, most often via piston action though sometimes via spring pressure.",
     "weight": "800 g",
     "volume": "2 L",
-    "price": "500 USD",
+    "handling": 6,
+    "price": "5 USD",
+    "price_postapoc": "1 USD",
     "material": [ "aluminum", "wood" ],
     "symbol": "(",
     "color": "pink",
@@ -2496,6 +2503,38 @@
     "dispersion": 60,
     "durability": 10,
     "loudness": 115,
+    "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "ammo_effects": [ "BEANBAG", "HEAVY_HIT", "BLINDS_EYES" ],
+    "valid_mod_locations": [
+      [ "accessories", 8 ],
+      [ "grip", 1 ],
+      [ "stock", 1 ],
+      [ "mechanism", 4 ],
+      [ "sights", 1 ],
+      [ "rail", 1 ],
+      [ "underbarrel", 1 ]
+    ]
+  },
+  {
+    "id": "popGunPistol_zhigh",
+    "looks_like": "rm103a_pistol",
+    "type": "GUN",
+    "name": { "str_sp": "pop gun (pistol)" },
+    "description": "A toy gun, which uses air pressure to fire a small tethered or untethered projectile out of a barrel, most often via piston action though sometimes via spring pressure.",
+    "weight": "380 g",
+    "volume": "550 ml",
+    "handling": 4,
+    "price": "5 USD",
+    "price_postapoc": "1 USD",
+    "material": [ "aluminum", "wood" ],
+    "symbol": "(",
+    "color": "pink",
+    "skill": "pistol",
+    "range": 10,
+    "ranged_damage": { "damage_type": "bullet", "amount": 12, "armor_penetration": 6 },
+    "dispersion": 60,
+    "durability": 10,
+    "loudness": 125,
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
     "ammo_effects": [ "BEANBAG", "HEAVY_HIT", "BLINDS_EYES" ],
     "valid_mod_locations": [
@@ -2602,5 +2641,15 @@
     "ammo_type": [ "762x25" ],
     "capacity": 10,
     "flags": [ "SPEEDLOADER" ]
+  },
+  {
+    "id": "rock_launcher6",
+    "copy-from": "rock_launcher",
+    "looks_like": "mgl",
+    "type": "GUN",
+    "name": { "str": "rock rotary launcher" },
+    "description": "An improvised, huge, and direct launcher for rocks.  Essentially, eight thick-walled steel pipes, equipped with two rubber bands.  Effective as giving a one-two punch from a pro boxer, but only at short to medium range, barely.",
+    "proportional": { "weight": 1.5, "volume": 1.8, "price": 2 },
+    "clip_size": 6
   }
 ]

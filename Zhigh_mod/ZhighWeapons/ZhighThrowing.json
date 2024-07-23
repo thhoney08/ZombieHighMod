@@ -208,6 +208,73 @@
     "flags": [ "TRADER_AVOID" ]
   },
   {
+    "id": "improvised_colabombV2",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "frag cola bomb" },
+    "looks_like": "improvised_colabomb",
+    "description": "This is a plastic bottle filled with cola and a candy.  Use this item to activate, which gives you six seconds to get away from it before it detonates.",
+    "weight": "710 g",
+    "volume": "250 ml",
+    "price": "150 USD",
+    "to_hit": 1,
+    "bashing": 5,
+    "material": "plastic",
+    "symbol": "*",
+    "color": "light_gray",
+    "explode_in_fire": true,
+    "explosion": {
+      "damage": 12,
+      "radius": 1,
+	  "fragment": { "impact": { "damage_type": "cut", "amount": 40, "armor_multiplier": 3 }, "range": 5 }
+    },
+    "use_action": {
+      "target": "improvised_colabombV2_act",
+      "msg": "You activate the frag cola bomb.",
+      "target_charges": 3,
+      "active": true,
+      "menu_text": "Activate",
+      "type": "transform"
+    },
+    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "improvised_colabombV2_act",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "active frag cola bomb" },
+    "looks_like": "improvised_colabomb_act",
+    "description": "This frag cola bomb's fuse is lit, and it will explode any second now.  Throw it immediately!",
+    "weight": "710 g",
+    "volume": "250 ml",
+    "price": "0 USD",
+    "to_hit": 1,
+    "bashing": 5,
+    "material": "steel",
+    "symbol": "*",
+    "color": "light_gray",
+    "initial_charges": 3,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "explode_in_fire": true,
+    "explosion": {
+      "damage": 12,
+      "radius": 2
+    },
+    "use_action": {
+      "type": "explosion",
+      "sound_volume": 0,
+      "sound_msg": "ssss...",
+      "no_deactivate_msg": "You've already lit the %s, try throwing it instead.",
+      "explosion": {
+        "damage": 60,
+        "radius": 2,
+	    "fragment": { "impact": { "damage_type": "cut", "amount": 40, "armor_multiplier": 3 }, "range": 5 }
+      }
+    },
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
 	"id": "heal_grenade",
 	"type": "TOOL",
 	"copy-from": "grenade_canister",
