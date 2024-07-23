@@ -1,33 +1,33 @@
 [
   {
     "type": "npc",
-    "id": "STUDENT_OCTOBER",
-    "name_unique": "October",
+    "id": "STUDENT_HAMBRO",
+    "name_unique": "'Hambro' Ham",
     "name_suffix": "Student",
     "gender": "male",
-    "class": "NC_ZHIGHOCTOBER",
+    "class": "NC_ZHIGHHAMBRO",
     "attitude": 0,
     "mission": 7,
-    "chat": "TALK_ZHIGHOCTOBER",
+    "chat": "TALK_ZHIGHHAMBRO",
     "faction": "Zhigh_Survivors"
   },
   {
     "type": "npc_class",
-    "id": "NC_ZHIGHOCTOBER",
-    "name": { "str": "October" },
+    "id": "NC_ZHIGHHAMBRO",
+    "name": { "str": "'Hambro' Ham" },
     "job_description": "I'm a streamer.",
     "traits": [
       { "group": "BG_survival_story_RURAL" },
-      { "group": "Appearance_October" },
+      { "group": "Appearance_Ham_Bro" },
       { "trait": "REGEN_zhigh" }
     ],
     "bonus_str": { "rng": [ 1, 2 ] },
     "bonus_int": { "rng": [ 2, 3 ] },
     "bonus_per": { "rng": [ 2, 3 ] },
     "bonus_dex": { "rng": [ -1, 1 ] },
-    "worn_override": "NC_October_worn",
+    "worn_override": "NC_Ham_Bro_worn",
     "carry_override": "NC_GUARD_misc",
-    "weapon_override": "NC_October_weapon",
+    "weapon_override": "NC_Ham_Bro_weapon",
     "skills": [
       { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
       { "skill": "melee", "bonus": { "rng": [ 2, 4 ] } },
@@ -39,7 +39,7 @@
   },
   {
     "type": "item_group",
-    "id": "NC_October_worn",
+    "id": "NC_Ham_Bro_worn",
     "subtype": "collection",
     "entries": [
       { "group": "npc_underwear_bottom_male" },
@@ -47,29 +47,32 @@
       { "group": "ZhighNpc_underwear_feet_male" },
       { "group": "ZhighNpc_shoes_male" },
       { "item": "pants_zhigh" },
+      { "item": "gloves_fingerless" },
+      { "item": "knife_arkansasToothpickZhigh", "container-item": "sheath" },
       { "item": "dress_shirt_zhigh" },
-      { "item": "glassesZhighred" },
-      { "item": "jacket_jean" }
+      { "item": "greatcoat" },
+      { "item": "badge_ham" }
     ]
   },
   {
     "type": "trait_group",
-    "id": "Appearance_October",
+    "id": "Appearance_Ham_Bro",
     "subtype": "collection",
-    "traits": [ { "trait": "hair_white_october", "prob": 100 }, 
-                { "trait": "eye_indigo", "prob": 100 }, 
-                { "trait": "SKIN_PINK", "prob": 100 } ]
+    "traits": [ { "trait": "hair_brown_hambro", "prob": 100 },
+                { "trait": "eye_brown", "prob": 100 },
+                { "trait": "SKIN_LIGHT", "prob": 100 }
+			  ]
   },
   {
     "type": "item_group",
-    "id": "NC_October_weapon",
+    "id": "NC_Ham_Bro_weapon",
     "subtype": "distribution",
-    "entries": [ { "item": "popGun_zhigh", "contents-item": [ "knife_combat", "charm_spike", "charm_heat", "charm_electric" ] } ]
+    "entries": [ { "item": "scythe_war" } ]
   },
   {
     "type": "talk_topic",
-    "id": "TALK_ZHIGHOCTOBER",
-    "dynamic_line": "Arrrgh!  This zombie outbreak is bullshit!  Freakin' Operation Chimera!",
+    "id": "TALK_ZHIGHHAMBRO",
+    "dynamic_line": "Jesus Christ!",
     "responses": [
       { "text": "I've got to go…", "topic": "TALK_DONE" }
     ]

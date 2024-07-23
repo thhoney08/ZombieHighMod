@@ -21,10 +21,10 @@
       { "group": "Appearance_Frozen_Cactus" },
       { "trait": "REGEN_zhigh" }
     ],
-    "bonus_str": { "rng": [ 1, 2 ] },
-    "bonus_int": { "rng": [ 2, 3 ] },
-    "bonus_per": { "rng": [ 2, 3 ] },
-    "bonus_dex": { "rng": [ -1, 1 ] },
+    "bonus_str": { "rng": [ 3, 4 ] },
+    "bonus_int": { "rng": [ 0, 1 ] },
+    "bonus_per": { "rng": [ 0, 2 ] },
+    "bonus_dex": { "rng": [ 1, 3 ] },
     "worn_override": "NC_Frozen_Cactus_worn",
     "carry_override": "NC_GUARD_misc",
     "weapon_override": "NC_Frozen_Cactus_weapon",
@@ -48,6 +48,7 @@
       { "group": "ZhighNpc_shoes_male" },
       { "item": "pants_zhigh" },
       { "item": "dress_shirt_zhigh" },
+      { "group": "ZhighNpc_stabbing", "container-item": "sheath" },
       { "item": "frozenCactusHatZhigh" },
       { "item": "jacket_windbreaker" }
     ]
@@ -67,12 +68,12 @@
     "type": "item_group",
     "id": "NC_Frozen_Cactus_weapon",
     "subtype": "distribution",
-    "entries": [ { "item": "popGun_zhigh" } ]
+    "entries": [ { "item": "bwirebat" } ]
   },
   {
     "type": "talk_topic",
     "id": "TALK_ZHIGHFROZENCACTUS",
-    "dynamic_line": "I am just a game streamer.  Damn, never thought those zombies would be real.  This is bullshit!",
+    "dynamic_line": "Damn, never thought those zombies would be real.",
     "responses": [
       { "text": "I've got to go…", "topic": "TALK_DONE" }
     ]

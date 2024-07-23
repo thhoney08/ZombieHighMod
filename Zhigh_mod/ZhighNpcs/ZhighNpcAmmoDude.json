@@ -2,10 +2,8 @@
   {
     "type": "npc",
     "id": "AMMODUDE",
-    "name_unique": "Lim",
-    "name_suffix": "Student",
+    "name_suffix": "Ammo Dealer",
     "class": "NC_AMMODUDE",
-    "gender": "male",
     "attitude": 0,
     "mission": 3,
     "chat": "TALK_AMMODUDE",
@@ -19,34 +17,30 @@
       { "group": "npc_underwear_bottom_male" },
       { "group": "npc_underwear_top_male" },
       { "group": "ZhighNpc_underwear_feet_male" },
-      { "item": "roller_shoes_off" },
+      { "group": "ZhighNpc_shoes_male" },
       { "item": "pants_zhigh" },
       { "item": "dress_shirt_zhigh" },
-      { "item": "gloves_fingerless" },
-      { "item": "jacket_baseball" },
-      { "item": "mask_CombatFake" },
+      { "item": "coat_lab" },
+      { "item": "balclava_lab" },
+      { "item": "mask_dust" },
+      { "item": "glasses_safety_lab" },
+      { "item": "gloves_medical" },
       { "item": "rucksack" },
       { "item": "wristwatch", "prob": 80 }
     ]
   },
   {
-    "type": "trait_group",
-    "id": "Appearance_AmmoDude",
-    "subtype": "collection",
-    "traits": [ { "trait": "hair_black_crewcut" }, { "trait": "eye_brown" }, { "trait": "SKIN_MEDIUM" } ]
-  },
-  {
     "type": "npc_class",
     "id": "NC_AMMODUDE",
-    "name": { "str": "Student" },
+    "name": { "str": "Ammo Dealer" },
     "job_description": "Ammo I deal.",
+    "common": true,
     "traits": [
       { "trait": "BGSS_Scavenger_Merc_1" },
       { "trait": "PSYCHOPATH" },
       { "trait": "REGEN_zhigh" }, 
-      { "group": "Appearance_AmmoDude" }
+      { "group": "Appearance_Mixed" }
     ],
-    "common": false,
     "bonus_str": { "rng": [ 1, 3 ] },
     "bonus_int": { "rng": [ 1, 2 ] },
     "bonus_per": { "rng": [ -1, 1 ] },
@@ -201,6 +195,23 @@
         "text": "[25$]  I'll buy a bag of glow in the dark paintballs.",
         "effect": [ { "u_buy_item": "paintball_glow", "cost": 2500, "count": 70 } ],
         "topic": "TALK_AMMODUDE_AMMODEAL_END"
+      },
+      {
+        "text": "[900$]  I'll buy three basic medkits.",
+        "effect": [ { "u_buy_item": "medkit1", "cost": 75000, "count": 3 } ],
+        "topic": "TALK_AMMODUDE_AMMODEAL_END"
+      },
+      {
+        "text": "[900$]  I'll buy two medium medkits.",
+        "effect": [ { "u_buy_item": "medkit2", "cost": 90000, "count": 2 } ],
+        "topic": "TALK_AMMODUDE_AMMODEAL_END"
+      },
+      {
+        "text": "[1600$]  I'll buy an advanced medkit.",
+        "effect": [
+          { "u_buy_item": "medkit3", "cost": 160000, "count": 1 }
+        ],
+        "topic": "TALK_AMMODUDE_AMMODEAL_END"
       }
     ]
   },
@@ -283,6 +294,23 @@
       {
         "text": "[25$]  I'll buy a bag of glow in the dark paintballs.",
         "effect": [ { "u_buy_item": "paintball_glow", "cost": 2500, "count": 70 } ],
+        "topic": "TALK_AMMODUDE_AMMODEAL_END"
+      },
+      {
+        "text": "[900$]  I'll buy three basic medkits.",
+        "effect": [ { "u_buy_item": "medkit1", "cost": 75000, "count": 3 } ],
+        "topic": "TALK_AMMODUDE_AMMODEAL_END"
+      },
+      {
+        "text": "[900$]  I'll buy two medium medkits.",
+        "effect": [ { "u_buy_item": "medkit2", "cost": 90000, "count": 2 } ],
+        "topic": "TALK_AMMODUDE_AMMODEAL_END"
+      },
+      {
+        "text": "[1600$]  I'll buy an advanced medkit.",
+        "effect": [
+          { "u_buy_item": "medkit3", "cost": 160000, "count": 1 }
+        ],
         "topic": "TALK_AMMODUDE_AMMODEAL_END"
       }
     ]
