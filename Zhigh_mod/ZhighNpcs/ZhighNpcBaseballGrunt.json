@@ -1,0 +1,92 @@
+[
+  {
+    "type": "npc",
+    "id": "GRUNT_BASEBALL_MERC",
+    "//": "Appears in the school as a partner for hire.",
+    "name_suffix": "student",
+    "class": "NC_GRUNT_BASEBALL_MERC",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_GRUNT_BASEBALL_MERC",
+    "faction": "Zhigh_Survivors"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_GRUNT_BASEBALL_MERC",
+    "name": { "str": "Student - Baseball Player" },
+    "job_description": "Fighting for the all-mighty dollar.",
+    "common": true,
+    "traits": [
+      { "trait": "BGSS_Scavenger_Merc_1" },
+      { "trait": "PSYCHOPATH" },
+      { "trait": "PARKOUR" },
+      { "trait": "INSOMNIA" },
+      { "trait": "REGEN_zhigh" },
+      { "group": "Appearance_Mixed" }
+    ],
+    "bonus_str": { "rng": [ 2, 4 ] },
+    "bonus_dex": { "rng": [ 1, 2 ] },
+    "bonus_int": { "rng": [ -1, 0 ] },
+    "bonus_per": { "rng": [ 1, 2 ] },
+    "worn_override": "NC_GRUNT_BASEBALL_MERC_worn",
+    "carry_override": "NC_GRUNT_BASEBALL_MERC_carry",
+    "weapon_override": "NC_GRUNT_BASEBALL_MERC_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "melee", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 3, 4 ] } } 
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_GRUNT_BASEBALL_MERC_worn",
+    "subtype": "collection",
+    "items": [
+      { "item": "boxer_briefs" },
+      { "item": "dress_shirt_zhigh" },
+      { "item": "pants_zhigh" },
+      { "group": "ZhighNpc_Tie" },
+      { "group": "ZhighNpc_masks" },
+      { "group": "ZhighNpc_underwear_feet_male" },
+      { "group": "ZhighNpc_shoes_male" },
+      { "item": "jacket_baseball" },
+      { "group": "NC_SOLDIER_gloves" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_GRUNT_BASEBALL_MERC_weapon",
+    "subtype": "distribution",
+    "entries": [ { "item": "bat" } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_GRUNT_BASEBALL_MERC_carry",
+    "subtype": "collection",
+    "items": [
+      { "group": "NC_GUARD_misc" },
+      { "item": "protein_bar_evac" }
+    ]
+  },
+  {
+    "id": "TALK_GRUNT_BASEBALL_MERC",
+    "type": "talk_topic",
+    "dynamic_line": { "u_is_wearing": "armband_zhigh_halmon", "yes": "I haven't done anything wrong… yet.", "no": "Hm…" },
+    "responses": [
+      { "text": "Follow me.", "topic": "TALK_GRUNT_BASEBALL_MERC_HIRE_SUCCESS" },
+      { "text": "Well, bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_GRUNT_BASEBALL_MERC_HIRE_SUCCESS",
+    "type": "talk_topic",
+    "dynamic_line": "Alright.",
+    "responses": [
+      {
+        "text": "Let's go.",
+        "success": { "effect": "follow", "opinion": { "trust": 1, "value": 1 }, "topic": "TALK_DONE" }
+      }
+    ]
+  }
+]

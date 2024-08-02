@@ -181,6 +181,7 @@
       { "text": "Nevermind.", "topic": "TALK_HACKER_A" },
       {
         "text": "[1 signal marker]  I'll buy a high signal marker.",
+        "condition": { "u_has_items": { "item": "signalMarker", "count": 1 } },
         "effect": [ 
             { "u_sell_item": "signalMarker", "count": 1 },
             { "u_buy_item": "signalMarker3", "count": 1 } ],
@@ -188,6 +189,7 @@
       },
       {
         "text": "[2 signal marker]  I'll buy a medium signal marker.",
+        "condition": { "u_has_items": { "item": "signalMarker", "count": 2 } },
         "effect": [ 
             { "u_sell_item": "signalMarker", "count": 2 },
             { "u_buy_item": "signalMarker2", "count": 1 } ],
@@ -195,9 +197,18 @@
       },
       {
         "text": "[3 signal marker]  I'll buy a low signal marker.",
+        "condition": { "u_has_items": { "item": "signalMarker", "count": 3 } },
         "effect": [ 
             { "u_sell_item": "signalMarker", "count": 3 },
             { "u_buy_item": "signalMarker1", "count": 1 } ],
+        "topic": "TALK_HACKER_DEAL_END"
+      },
+      {
+        "text": "[5 signal marker]  I'll buy a special signal marker.",
+        "condition": { "u_has_items": { "item": "signalMarker", "count": 5 } },
+        "effect": [ 
+            { "u_sell_item": "signalMarker", "count": 5 },
+            { "u_buy_item": "signalMarker0", "count": 1 } ],
         "topic": "TALK_HACKER_DEAL_END"
       },
       {
@@ -225,6 +236,7 @@
       { "text": "Nevermind.", "topic": "TALK_DONE" },
       {
         "text": "[1 signal marker]  I'll buy a high signal marker.",
+        "condition": { "u_has_items": { "item": "signalMarker", "count": 1 } },
         "effect": [ 
             { "u_sell_item": "signalMarker", "count": 1 },
             { "u_buy_item": "signalMarker3", "count": 1 } ],
@@ -232,6 +244,7 @@
       },
       {
         "text": "[2 signal marker]  I'll buy a medium signal marker.",
+        "condition": { "u_has_items": { "item": "signalMarker", "count": 2 } },
         "effect": [ 
             { "u_sell_item": "signalMarker", "count": 2 },
             { "u_buy_item": "signalMarker2", "count": 1 } ],
@@ -239,9 +252,18 @@
       },
       {
         "text": "[3 signal marker]  I'll buy a low signal marker.",
+        "condition": { "u_has_items": { "item": "signalMarker", "count": 3 } },
         "effect": [ 
             { "u_sell_item": "signalMarker", "count": 3 },
             { "u_buy_item": "signalMarker1", "count": 1 } ],
+        "topic": "TALK_HACKER_DEAL_END"
+      },
+      {
+        "text": "[5 signal marker]  I'll buy a special signal marker.",
+        "condition": { "u_has_items": { "item": "signalMarker", "count": 5 } },
+        "effect": [ 
+            { "u_sell_item": "signalMarker", "count": 5 },
+            { "u_buy_item": "signalMarker0", "count": 1 } ],
         "topic": "TALK_HACKER_DEAL_END"
       },
       {

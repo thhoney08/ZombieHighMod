@@ -379,7 +379,7 @@
     "start": {
       "assign_mission_target": { "om_terrain": "ZhighSchool_1_2", "reveal_radius": 5 },
       "update_mapgen": [
-		{ "om_terrain": "golfcourse_31",
+		{ "om_terrain": "ZhighSchool_1_2",
 			"place_monster": [ { "monster": "mon_Zhigh_finalboss4", "name": "Dong-seok Jeong", "x": [ 6, 22 ], "y": [ 1, 2 ], "target": true } ]
 		},
         { "om_terrain": "ZhighSchool_1_2", "place_npcs": [ { "class": "MUSKETEER_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
@@ -448,6 +448,11 @@
       ]
     },
     "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_3_4", "place_npcs": [ { "class": "FIRSTBLOODZHIGH", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_2_4", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_2_2", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
       "effect": [ { "npc_lose_effect": "infection" } ]
     },
     "fail": { "effect": "npc_die" }
@@ -508,7 +513,9 @@
     "end": {
       "update_mapgen": [
         { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "MUSKETEER_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
-        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "MUSCLE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "MUSCLE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
       ],
       "opinion": { "trust": 1, "value": 1 },
       "effect": [

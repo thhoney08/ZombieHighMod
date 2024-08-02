@@ -1,0 +1,341 @@
+[
+  {
+    "type": "npc",
+    "id": "WITCH",
+    "name_unique": "Valentine",
+    "gender": "female",
+    "class": "NC_Witch",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_WITCH",
+    "mission_offered": "MISSION_SCHOOL_MEET_WITCH"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_Witch",
+    "name": { "str": "Witch" },
+    "job_description": "I'm just a passing-through witch.  Remember that!",
+    "traits": [
+      { "group": "BG_survival_story_RURAL" },
+      { "trait": "PER_UP_4" },
+      { "trait": "DEX_UP_4" },
+      { "trait": "INT_UP_4" },
+      { "trait": "STR_UP_4" },
+      { "trait": "FAST_REFLEXES" },
+      { "trait": "PSYCHOPATH" },
+      { "trait": "GOODCARDIO2" },
+      { "trait": "QUICK" },
+      { "trait": "NIGHTVISION" },
+      { "trait": "STRONGBACK" },
+      { "trait": "DEFT" },
+      { "trait": "TOUGH3" },
+      { "trait": "PARKOUR" },
+      { "trait": "INSOMNIA" },
+	  { "trait": "NIGHTVISION3", "prob": 100 },
+	  { "trait": "WAKEFUL3", "prob": 100 },
+	  { "trait": "BEAUTIFUL3", "prob": 100 },
+      { "group": "Appearance_Witch" },
+      [ "REGEN_zhigh", 100 ]
+    ],
+    "common": false,
+    "worn_override": "NC_Witch_worn",
+    "carry_override": "NC_Witch_carry",
+    "weapon_override": "NC_Witch_weapon",
+    "bonus_str": { "rng": [ 12, 13 ] },
+    "bonus_dex": { "rng": [ 12, 13 ] },
+    "bonus_per": { "rng": [ 12, 13 ] },
+    "bonus_int": { "rng": [ 12, 13 ] },
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, 4 ] } ] } ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "computer", "bonus": { "rng": [ 5, 7 ] } },
+      { "skill": "electronics", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 12, 13 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 12, 13 ] } },
+      { "skill": "stabbing", "bonus": { "rng": [ 12, 13 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 12, 13 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 12, 13 ] } },
+      { "skill": "throw", "bonus": { "rng": [ 12, 13 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 12, 13 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 12, 13 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_Witch_weapon",
+    "subtype": "distribution",
+    "entries": [ { "item": "witchBroomZhigh" } ]
+  },
+  {
+    "type": "trait_group",
+    "id": "Appearance_Witch",
+    "subtype": "collection",
+    "traits": [ { "trait": "hair_black_long_witch", "prob": 100 }, 
+                { "trait": "eye_pink", "prob": 100 },
+                { "trait": "PALE", "prob": 100 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_Witch_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "corset" },
+      { "item": "socks" },
+      { "item": "skirt_leather" },
+      { "item": "mocassins" },
+      { "item": "hat_witch_black" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_Witch_carry",
+    "subtype": "collection",
+    "entries": [
+      { "item": "cardZhigh_pack30" },
+      { "item": "cardZhigh_pack30" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_WITCH",
+    "dynamic_line": [
+        "What’s new?",
+        "Hey, what's good?",
+        "How's your day?",
+        "Hey, how's it hanging?",
+        "What's going on?",
+        "How's everything?",
+        "Yo!",
+        "Good to see you!",
+        "Hey there!",
+        "Hey!",
+        "Hi!",
+        "Hi, what’s up?",
+        "Oh, how cute.",
+        "What's up?",
+	    "Welcome...", 
+		"Hey <name_g>!", 
+		"Welcome!",
+		"Good to see you again, <name_g>.",
+		"Hey <name_g>!",
+		"Here to trade stuff, I hope?",
+        "You see anything you want, <name_g>?",
+		"Safe travels, <name_g>."
+    ],
+    "responses": [
+      { "text": "Who... are you?", "topic": "TALK_WITCH_WHO" },
+      { "text": "I'd like to exchange some items.", "topic": "TALK_WITCH_DEAL" },
+      { "text": "Anything I can do for you?", "topic": "TALK_MISSION_LIST" },
+      { "text": "See you later.", "topic": "TALK_WITCH_BYE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_WITCH_WHO",
+    "dynamic_line": "I'm just a passing-through witch.  Remember that!  Or not, your choice.",
+    "responses": [
+      { "text": "Not an actual witch, right?", "topic": "TALK_WITCH_GOVERNMENT" },
+      { "text": "What do you trade?", "topic": "TALK_WITCH_TRADE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_WITCH_GOVERNMENT",
+    "dynamic_line": "Ha!  You could belive my magic or not, but one thing is certain for you; it is useful for anyone, I assure you, kiddo.",
+    "responses": [
+      { "text": "Oh, okay.", "topic": "TALK_WITCH" },
+      { "text": "Oh, okay.  I'll go look for him then!", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_WITCH_TRADE",
+    "dynamic_line": "Welp, I am collecting coins and stuff, so... give me some coins or related things to coins, then I will give you some magic items.",
+    "responses": [
+      { "text": "Magic?", "topic": "TALK_WITCH_MAGIC" },
+      { "text": "Can I buy some items?", "topic": "TALK_WITCH_DEAL" },
+      { "text": "Will do, thanks!", "topic": "TALK_WITCH" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_WITCH_MAGIC",
+    "dynamic_line": "It's a secret.  No questions, just bring me some items, or finish some quests.  Then, you get some magical stuff.  Deal?",
+    "responses": [
+      { "text": "Can I buy some items?", "topic": "TALK_WITCH_DEAL" },
+      { "text": "Alright then...?", "topic": "TALK_WITCH" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_WITCH_BYE",
+    "dynamic_line": "Stay safe out there.  Hate to have to kill you after you've already died.",
+    "responses": [ { "text": "Yeah, I won't.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "TALK_WITCH_DEAL",
+    "type": "talk_topic",
+    "dynamic_line": [ "What do you need?" ],
+    "responses": [
+      { "text": "Nevermind.", "topic": "TALK_WITCH" },
+      {
+        "text": "[1 Collectible Card - Blank]  I'll buy a random card pack.",
+        "condition": { "u_has_items": { "item": "cardZhigh_blank", "count": 1 } },
+        "effect": [ 
+            { "u_sell_item": "cardZhigh_blank", "count": 1 },
+            { "u_buy_item": "cardZhigh_pack", "count": 1 } ],
+        "topic": "TALK_WITCH_DEAL_END"
+      },
+      {
+        "text": "[10 Merch]  I'll buy random card packs.",
+        "condition": { "u_has_items": { "item": "FMCNote", "count": 10 } },
+        "effect": [ 
+            { "u_sell_item": "FMCNote", "count": 10 },
+            { "u_buy_item": "cardZhigh_pack5", "count": 1 } ],
+        "topic": "TALK_WITCH_DEAL_END"
+      },
+      {
+        "text": "[1 Hub 01 Gold Coins]  I'll buy a deck of random cards.",
+        "condition": { "u_has_items": { "item": "RobofacCoin", "count": 1 } },
+        "effect": [ 
+            { "u_sell_item": "RobofacCoin", "count": 1 },
+            { "u_buy_item": "cardZhigh_pack30", "count": 1 } ],
+        "topic": "TALK_WITCH_DEAL_END"
+      },
+      {
+        "text": "[30 High School Coins]  I'll buy random card packs.",
+        "condition": { "u_has_items": { "item": "ZhighCoin", "count": 30 } },
+        "effect": [ 
+            { "u_sell_item": "ZhighCoin", "count": 30 },
+            { "u_buy_item": "cardZhigh_pack5", "count": 1 } ],
+        "topic": "TALK_WITCH_DEAL_END"
+      },
+      {
+        "text": "[5 chits]  I'll buy random card packs.",
+        "condition": { "u_has_items": { "item": "signed_chit", "count": 5 } },
+        "effect": [ 
+            { "u_sell_item": "signed_chit", "count": 5 },
+            { "u_buy_item": "cardZhigh_pack5", "count": 1 } ],
+        "topic": "TALK_WITCH_DEAL_END"
+      },
+      {
+        "text": "[5 FlatCoins]  I'll buy random card packs.",
+        "condition": { "u_has_items": { "item": "FlatCoin", "count": 5 } },
+        "effect": [ 
+            { "u_sell_item": "FlatCoin", "count": 5 },
+            { "u_buy_item": "cardZhigh_pack5", "count": 1 } ],
+        "topic": "TALK_WITCH_DEAL_END"
+      },
+      {
+        "text": "[5 icons]  I'll buy random card packs.",
+        "condition": { "u_has_items": { "item": "icon", "count": 5 } },
+        "effect": [ 
+            { "u_sell_item": "icon", "count": 5 },
+            { "u_buy_item": "cardZhigh_pack5", "count": 1 } ],
+        "topic": "TALK_WITCH_DEAL_END"
+      }
+    ]
+  },
+  {
+    "id": "TALK_WITCH_DEAL_END",
+    "type": "talk_topic",
+    "dynamic_line": [ "Is there anything else you need?" ],
+    "responses": [
+      { "text": "Nevermind.", "topic": "TALK_DONE" },
+      {
+        "text": "[1 Collectible Card - Blank]  I'll buy a random card pack.",
+        "condition": { "u_has_items": { "item": "cardZhigh_blank", "count": 1 } },
+        "effect": [ 
+            { "u_sell_item": "cardZhigh_blank", "count": 1 },
+            { "u_buy_item": "cardZhigh_pack", "count": 1 } ],
+        "topic": "TALK_WITCH_DEAL_END"
+      },
+      {
+        "text": "[10 Merch]  I'll buy random card packs.",
+        "condition": { "u_has_items": { "item": "FMCNote", "count": 10 } },
+        "effect": [ 
+            { "u_sell_item": "FMCNote", "count": 10 },
+            { "u_buy_item": "cardZhigh_pack5", "count": 1 } ],
+        "topic": "TALK_WITCH_DEAL_END"
+      },
+      {
+        "text": "[1 Hub 01 Gold Coins]  I'll buy a deck of random cards.",
+        "condition": { "u_has_items": { "item": "RobofacCoin", "count": 1 } },
+        "effect": [ 
+            { "u_sell_item": "RobofacCoin", "count": 1 },
+            { "u_buy_item": "cardZhigh_pack30", "count": 1 } ],
+        "topic": "TALK_WITCH_DEAL_END"
+      },
+      {
+        "text": "[3 signal marker]  I'll buy random card packs.",
+        "condition": { "u_has_items": { "item": "ZhighCoin", "count": 30 } },
+        "effect": [ 
+            { "u_sell_item": "ZhighCoin", "count": 30 },
+            { "u_buy_item": "cardZhigh_pack5", "count": 1 } ],
+        "topic": "TALK_WITCH_DEAL_END"
+      },
+      {
+        "text": "[5 chits]  I'll buy random card packs.",
+        "condition": { "u_has_items": { "item": "signed_chit", "count": 5 } },
+        "effect": [ 
+            { "u_sell_item": "signed_chit", "count": 5 },
+            { "u_buy_item": "cardZhigh_pack5", "count": 1 } ],
+        "topic": "TALK_WITCH_DEAL_END"
+      },
+      {
+        "text": "[5 FlatCoins]  I'll buy random card packs.",
+        "condition": { "u_has_items": { "item": "FlatCoin", "count": 5 } },
+        "effect": [ 
+            { "u_sell_item": "FlatCoin", "count": 5 },
+            { "u_buy_item": "cardZhigh_pack5", "count": 1 } ],
+        "topic": "TALK_WITCH_DEAL_END"
+      },
+      {
+        "text": "[5 icons]  I'll buy random card packs.",
+        "condition": { "u_has_items": { "item": "icon", "count": 5 } },
+        "effect": [ 
+            { "u_sell_item": "icon", "count": 5 },
+            { "u_buy_item": "cardZhigh_pack5", "count": 1 } ],
+        "topic": "TALK_WITCH_DEAL_END"
+      }
+    ]
+  },
+  {
+    "id": "MISSION_SCHOOL_MEET_WITCH",
+    "type": "mission_definition",
+    "name": { "str": "Magical quest" },
+    "description": "Clear out the rooftop, to get some cards.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 2,
+    "value": 50000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "forest_thick", "reveal_radius": 1 },
+      "update_mapgen": {
+        "om_terrain": "forest_thick",
+        "place_monster": [
+            { "monster": "mon_hound_tindalos", "name": "Beast", "x": [ 6, 22 ], "y": [ 6, 22 ], "target": true } 
+          ]
+      }
+    },
+    "end": {
+      "effect": [
+        { "u_buy_item": "cardZhigh_pack5", "count": 1 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_MEET_WITCH",
+    "dialogue": {
+      "describe": "Do some chores.",
+      "offer": "There are some monsters that were released when the portals opened.  Well... take them down, then return to me.  And when say take them down, I mean kill them.  Not the word I use often, but hey, there are exceptions.  You don't want them to roam around your earth.",
+      "accepted": "Please be careful, you could die.  I warned you.  I did!",
+      "rejected": "Come back when you get a chance, or you could just trade.",
+      "advice": "If you can, get a friend or two to help you.  And get some good weapons.",
+      "inquire": "Is it dead?",
+      "success": "Nice work.  A 5 card pack as your payment.",
+      "success_lie": "What good does this do you?",
+      "failure": "It was a lost cause anyways…"
+    }
+  }
+]

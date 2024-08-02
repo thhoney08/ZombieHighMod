@@ -1,0 +1,242 @@
+[
+  {
+    "type": "npc",
+    "id": "FIRSTBLOODZHIGH",
+    "name_unique": "Dong Seok Jeong",
+    "name_suffix": "Student",
+    "gender": "male",
+    "class": "NC_FIRSTBLOODZHIGH",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_FIRSTBLOODZHIGH",
+    "mission_offered": "MISSION_SCHOOL_FIRSTBLOODZHIGH01",
+    "faction": "Zhigh_Survivors"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_FIRSTBLOODZHIGH",
+    "name": { "str": "Student" },
+    "job_description": "...",
+    "traits": [
+      { "group": "BG_survival_story_RURAL" },
+      { "trait": "PER_UP_4" },
+      { "trait": "DEX_UP_4" },
+      { "trait": "INT_UP_4" },
+      { "trait": "STR_UP_4" },
+      { "trait": "FAST_REFLEXES" },
+      { "trait": "PSYCHOPATH" },
+      { "trait": "GOODCARDIO2" },
+      { "trait": "QUICK" },
+      { "trait": "NIGHTVISION" },
+      { "trait": "STRONGBACK" },
+      { "trait": "DEFT" },
+      { "trait": "TOUGH3" },
+      { "trait": "PARKOUR" },
+      { "trait": "INSOMNIA" },
+      { "group": "Appearance_FIRSTBLOODZHIGH" },
+      { "trait": "REGEN_zhigh" }
+    ],
+    "common": false,
+    "bonus_str": { "rng": [ 12, 13 ] },
+    "bonus_dex": { "rng": [ 12, 13 ] },
+    "bonus_per": { "rng": [ 12, 13 ] },
+    "bonus_int": { "rng": [ 12, 13 ] },
+    "worn_override": "NC_FIRSTBLOODZHIGH_worn",
+    "carry_override": "NC_FIRSTBLOODZHIGH_carry",
+    "weapon_override": "NC_FIRSTBLOODZHIGH_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 3 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "speech", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 1, 2 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FIRSTBLOODZHIGH_carry",
+    "subtype": "collection",
+    "entries": [
+      { "item": "ZhighCoin", "count": [ 10, 20 ] },
+      { "item": "ID_1st" },
+      { "group": "NC_GUARD_misc" },
+      { "item": "zhigh_smart_phone" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FIRSTBLOODZHIGH_weapon",
+    "subtype": "distribution",
+    "entries": [ { "item": "firstBloodPowerZhigh" } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FIRSTBLOODZHIGH_worn",
+    "subtype": "collection",
+    "entries": [
+      { "group": "npc_underwear_bottom_male" },
+      { "group": "npc_underwear_top_male" },
+      { "group": "ZhighNpc_underwear_feet_male" },
+      { "item": "dress_shoes" },
+      { "item": "suit" },
+      { "item": "gloves_tactical" },
+      { "item": "wristwatch" }
+    ]
+  },
+  {
+    "type": "trait_group",
+    "id": "Appearance_FIRSTBLOODZHIGH",
+    "subtype": "collection",
+    "traits": [
+		{ "trait": "hair_black_medium_FirstBloodV2", "prob": 100 },
+		{ "trait": "SKIN_PINK", "prob": 100 }
+	]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_FIRSTBLOODZHIGH",
+    "dynamic_line": {
+      "u_has_any_trait": [ "PROF_SW" ],
+      "yes": [
+        "...",
+        "...",
+        "...",
+        "...",
+        "...",
+        "...",
+        "<greet>.",
+        "School hall monitor."
+      ],
+      "no": [
+        "...",
+        "...",
+        "...",
+        "...",
+        "...",
+        "...",
+        "<greet>."
+	  ]
+    },
+    "responses": [
+      { "text": "What is this place?", "topic": "TALK_FIRSTBLOODZHIGH_PLACE" },
+      { "text": "Who are you?", "topic": "TALK_FIRSTBLOODZHIGH_WHO" },
+      { "text": "Anything I can do for you?", "topic": "TALK_MISSION_LIST" },
+      { "text": "Well, bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_FIRSTBLOODZHIGH_PLACE",
+    "dynamic_line": "Ain't a normal place.  You know it, and I know it.",
+    "responses": [
+      { "text": "Uh huh?", "topic": "TALK_FIRSTBLOODZHIGH_PLACE" },
+      { "text": "What do you trade?", "topic": "TALK_FIRSTBLOODZHIGH_TRADE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SCHOOLHALLMONITOR_WHO",
+    "dynamic_line": "I'm one of the hall monitors.  Well, the only one who is left.  I'm here to help keep the people inside this school safe and make sure everyone is safe.  Let me know if you need any help.",
+    "responses": [
+      { "text": "Oh, <okay>.", "topic": "TALK_FIRSTBLOODZHIGH" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_FIRSTBLOODZHIGH_PLACE",
+    "dynamic_line": "What kind of a school has a subway under the school?  You could grab a crowbar and lift that manhole at the middle of the school building.  You could find out more.",
+    "responses": [
+      { "text": "What's under that manhole?", "topic": "TALK_FIRSTBLOODZHIGH_LAB" },
+      { "text": "Oh, <okay>.  Talk to you later!", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_FIRSTBLOODZHIGH_LAB",
+    "dynamic_line": "Labs.  You could find it yourself.",
+    "responses": [
+      { "text": "Guess you are right.", "topic": "TALK_FIRSTBLOODZHIGH" },
+      { "text": "Hmm, <okay>.  Talk to you later!", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "MISSION_SCHOOL_FIRSTBLOODZHIGH01",
+    "type": "mission_definition",
+    "name": { "str": "Testing your skills" },
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 5,
+    "value": 250000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "music_venue_1", "reveal_radius": 5 },
+      "update_mapgen": {
+        "om_terrain": "music_venue_1",
+        "place_monster": [
+            { "monster": "mon_zombie_DJMAX", "name": "Max", "x": [ 6, 22 ], "y": [ 6, 22 ], "target": true }
+          ]
+      }
+    },
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ws_fire_lookout_towerZhigh_f4", "place_npcs": [ { "class": "WITCH", "x": [ 10, 14 ], "y": [ 6, 8 ] } ] }
+      ],
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "ZhighCoin", "count": 50 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_FIRSTBLOODZHIGH2",
+    "dialogue": {
+      "describe": "Since you did killed me once, you must be stronger than most of the people…",
+      "offer": "Let's start with a test.  At the music venue - that the students call 'the nightclub' there is a DJ who became a zombie.",
+      "accepted": "For a kill, fifty coins you get.",
+      "rejected": "Do it later then.",
+      "advice": "I'd secure an ammo cache and try to sweep a town in multiple passes.",
+      "inquire": "Got this knocked out?",
+      "success": "Good.",
+      "success_lie": "You dunno how to count?",
+      "failure": "Quitting already?"
+    }
+  },
+  {
+    "id": "MISSION_SCHOOL_FIRSTBLOODZHIGH2",
+    "type": "mission_definition",
+    "name": { "str": "Assassination" },
+    "goal": "MGOAL_ASSASSINATE",
+    "difficulty": 10,
+    "value": 300000,
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "zhighloffice_tower_18",
+        "om_special": "office_tower_large_Bandit",
+        "reveal_radius": 1,
+        "min_distance": 10,
+        "search_range": 120
+      },
+      "update_mapgen": { "place_npcs": [ { "class": "RangedDudeBoss", "x": [ 10, 14 ], "y": [ 10, 14 ], "target": true } ] }
+	},
+    "end": {
+      "update_mapgen": [
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "JUVENILE_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] },
+        { "om_terrain": "ZhighSchool_1_9", "place_npcs": [ { "class": "GRUNT_MERC", "x": [ 6, 22 ], "y": [ 6, 22 ] } ] }
+      ],
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "ZhighCoin", "count": 50 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_FIRSTBLOODZHIGH2",
+    "dialogue": {
+      "describe": "You did passed the test.  Want more work?",
+      "offer": "There are some mad scientist group - which I also worked in.  These <name_b> have to be taken down.  Eliminate that <name_b>.",
+      "accepted": "Nice.",
+      "rejected": "Do it later then.",
+      "advice": "Get good guns, good gear - then do the work.",
+      "inquire": "Killed that <name_b>?",
+      "success": "Good.",
+      "success_lie": "You sure?",
+      "failure": "Quitting already?"
+    }
+  }
+]
