@@ -1,0 +1,1430 @@
+[
+  {
+    "id": "inactive_marusaur",
+	"looks_like": "throwing_card_spade",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - Fire Dinosaur" },
+    "description": "This is a card with a drawing of a childish red dinosaur, breathing fire.  When activated, it could surprise you.",
+    "volume": "1 ml",
+    "weight": "1 g",
+    "symbol": ";",
+    "color": "light_gray",
+    "price": "1 USD",
+    "price_postapoc": "60 USD",
+    "material": [ "alien_resin" ],
+    "flags": [ "ACT_ON_RANGED_HIT", "CARDZHIGH", "UNBREAKABLE_MELEE" ],
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_marusaur",
+      "difficulty": 0,
+      "moves": 200,
+      "skills": [ "barter", "speech", "fabrication" ]
+    },
+    "thrown_damage": [ { "damage_type": "stab", "amount": 1 } ]
+  },
+  {
+    "id": "inactive_marusaurV2",
+	"looks_like": "inactive_marusaur",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - Acid Dinosaur" },
+    "description": "This is a card with a drawing of a childish green dinosaur, spraying acid.  When activated, it could surprise you.",
+    "volume": "1 ml",
+    "weight": "1 g",
+    "symbol": ";",
+    "color": "light_gray",
+    "price": "1 USD",
+    "price_postapoc": "60 USD",
+    "material": [ "alien_resin" ],
+    "flags": [ "ACT_ON_RANGED_HIT", "CARDZHIGH", "UNBREAKABLE_MELEE" ],
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_marusaurV2",
+      "difficulty": 0,
+      "moves": 200,
+      "skills": [ "barter", "speech", "fabrication" ]
+    },
+    "thrown_damage": [ { "damage_type": "stab", "amount": 1 } ]
+  },
+  {
+    "id": "cardmultitool",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "card multi-tool" },
+    "description": "A cleverly designed all-in-one tool which combines several smaller tools into a thick sized, card shaped plastic chunk.  Also holds a magnifying glass to start a fire.",
+    "weight": "20 g",
+    "volume": "3 ml",
+    "price": "3000 USD",
+    "price_postapoc": "500 USD",
+    "to_hit": -4,
+    "bashing": 1,
+    "cutting": 2,
+    "material": [ "steel", "plastic" ],
+    "symbol": ";",
+    "color": "light_gray",
+    "qualities": [ 
+            [ "CUT", 1 ], 
+            [ "SAW_W", 1 ], 
+            [ "SAW_M", 1 ], 
+            [ "WRENCH", 1 ], 
+            [ "SCREW", 1 ], 
+            [ "SCREW_FINE", 1 ], 
+            [ "BUTCHER", 7 ] 
+        ],
+    "use_action": { "type": "firestarter", "moves": 2000, "moves_slow": 50000, "need_sunlight": true },
+    "flags": [ "CARDZHIGH", "STAB", "FIRESTARTER" ]
+  },
+  {
+    "abstract": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "name": { "str": "card template" },
+    "description": "Error if this spawn.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "price": "5 USD",
+    "price_postapoc": "1 cent",
+    "material": [ "alien_resin" ],
+    "symbol": ";",
+    "color": "light_gray",
+    "flags": [ "CARDZHIGH" ]
+  },
+  {
+    "id": "cardZhigh_blank",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "name": { "str": "Collectible Card - Blank" },
+    "description": "This is a blank card.  If you contact a proper person, then you could exchange this with a different card."
+  },
+  {
+    "id": "cardZhigh_glow",
+	"looks_like": "cardZhigh_blank",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "Collectible Card - glow" },
+    "description": "This is a unique card, which could be also used as a light.  If you activate it, it will glow like a glowstick for a short time.",
+    "initial_charges": 700,
+    "max_charges": 700,
+    "use_action": {
+      "target": "cardZhigh_glow_lit",
+      "msg": "You activate the card, making it glow up.",
+      "active": true,
+      "menu_text": "Activate",
+      "type": "transform"
+    }
+  },
+  {
+    "id": "cardZhigh_glow_lit",
+	"looks_like": "cardZhigh_glow",
+    "copy-from": "cardZhigh_glow",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "Collectible Card - glow(active)" },
+    "description": "This is glowing and producing light.  It will last for a short time before burning out.",
+    "initial_charges": 700,
+    "max_charges": 700,
+    "turns_per_charge": 3,
+    "revert_to": "cardZhigh_blank",
+    "revert_msg": "The card fades out, turning to a blank one.",
+    "flags": [ "LIGHT_4", "TRADER_AVOID", "SLEEP_IGNORE" ]
+  },
+  {
+    "id": "cardZhigh_game",
+	"looks_like": "cardZhigh_glow",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "Collectible Card - board game" },
+    "description": "This is a unique card, which could be used as a board game.  If you use it, you could play with this for a while.",
+    "use_action": [ "PLAY_GAME", "COIN_FLIP", "MAGIC_8_BALL", "RPGDIE" ]
+  },
+  {
+    "id": "cardZhigh_weather",
+	"looks_like": "cardZhigh_glow",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "Collectible Card - weather reader" },
+    "description": "This is a unique card, which could be used as a weather reader.",
+    "use_action": "WEATHER_TOOL",
+    "flags": [ "CARDZHIGH", "THERMOMETER", "HYGROMETER", "BAROMETER", "WINDMETER" ]
+  },
+  {
+    "id": "cardZhigh_watch",
+	"looks_like": "cardZhigh_glow",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "Collectible Card - watch" },
+    "description": "This is a unique card, which could be used as a watch.  Also has an alarm feature.",
+    "flags": [ "CARDZHIGH", "ALARMCLOCK", "WATCH" ]
+  },
+  {
+    "id": "cardZhigh_relic",
+	"looks_like": "cardZhigh_glow",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "Collectible Card - relic" },
+    "description": "This is a unique card, which could be used as a relic.  A picture of a holy symbol is on the card.",
+    "use_action": "MEDITATE"
+  },
+  {
+    "id": "cardZhigh_gameBoy",
+	"looks_like": "cardZhigh_glow",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "Collectible Card - game console" },
+    "description": "This is a unique card, which could be used as a game console.  If you use it, you could play with this for a while.  Needs batteries to use.",
+    "ammo": "battery",
+    "charges_per_use": 5,
+    "use_action": [ "PORTABLE_GAME" ],
+    "magazines": [
+      [
+        "battery",
+        [
+          "light_battery_cell",
+          "light_plus_battery_cell",
+          "light_minus_battery_cell",
+          "light_atomic_battery_cell",
+          "light_minus_atomic_battery_cell",
+          "light_minus_disposable_cell",
+          "light_disposable_cell"
+        ]
+      ]
+    ],
+    "magazine_well": "250 ml"
+  },
+  {
+    "id": "cardZhigh_lighter",
+	"looks_like": "cardZhigh_glow",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "Collectible Card - lighter" },
+    "description": "This is a unique card, which could be used as a lighter.  If you use it, you could light something up.  Needs batteries to use.",
+    "flags": [ "CARDZHIGH", "FIRESTARTER" ],
+    "ammo": "battery",
+    "charges_per_use": 5,
+    "use_action": { "type": "firestarter", "moves": 75 },
+    "magazines": [
+      [
+        "battery",
+        [
+          "light_battery_cell",
+          "light_plus_battery_cell",
+          "light_minus_battery_cell",
+          "light_atomic_battery_cell",
+          "light_minus_atomic_battery_cell",
+          "light_minus_disposable_cell",
+          "light_disposable_cell"
+        ]
+      ]
+    ],
+    "magazine_well": "250 ml"
+  },
+  {
+    "id": "cardZhigh_smoke",
+	"looks_like": "cardZhigh_blank",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - smoke bomb" },
+    "description": "This is a unique card, which could be used as a smoke bomb.  Use it, and disappear like an anime assassin.",
+    "use_action": {
+      "target": "cardZhigh_smokeOn",
+      "msg": "You activate the smoke bomb card.  Throw it!",
+      "target_charges": 3,
+      "active": true,
+      "menu_text": "Activate smoke",
+      "type": "transform"
+    },
+    "flags": [ "CARDZHIGH", "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "cardZhigh_smokeOn",
+	"looks_like": "cardZhigh_smoke",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - smoke bomb (active)" },
+    "description": "This is a unique card, which could be used as a smoke bomb.  Throw this, or you will be covered with smoke.",
+    "initial_charges": 3,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_smoke",
+      "fields_radius": 1,
+      "fields_min_intensity": 2,
+      "fields_max_intensity": 3,
+      "sound_volume": 8,
+      "sound_msg": "Hsssss.",
+      "no_deactivate_msg": "You've already activated it - get rid of it immediately!",
+      "explosion": { "damage": 1 }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
+    "id": "cardZhigh_goo",
+	"looks_like": "cardZhigh_smoke",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - goo bomb" },
+    "description": "This is a unique card, which could be used as a goo bomb.  Use it, and slow your enemies.",
+    "use_action": {
+      "target": "cardZhigh_gooOn",
+      "msg": "You activate the goo bomb card.  Throw it!",
+      "target_charges": 3,
+      "active": true,
+      "menu_text": "Activate goo",
+      "type": "transform"
+    },
+    "flags": [ "CARDZHIGH", "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "cardZhigh_gooOn",
+	"looks_like": "cardZhigh_smoke",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - goo bomb (active)" },
+    "description": "This is a unique card, which could be used as a goo bomb.  Throw this, or you will be covered with goo.",
+    "initial_charges": 3,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_goo",
+      "fields_radius": 1,
+      "fields_min_intensity": 2,
+      "fields_max_intensity": 3,
+      "sound_volume": 8,
+      "sound_msg": "Hsssss.",
+      "no_deactivate_msg": "You've already activated it - get rid of it immediately!",
+      "explosion": { "damage": 1 }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
+    "id": "cardZhigh_freeze",
+	"looks_like": "cardZhigh_smoke",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - freeze bomb" },
+    "description": "This is a unique card, which could be used as a freeze bomb.  Use it, and stop your enemies.",
+    "use_action": {
+      "target": "cardZhigh_freezeOn",
+      "msg": "You activate the freeze bomb card.  Throw it!",
+      "target_charges": 3,
+      "active": true,
+      "menu_text": "Activate freeze",
+      "type": "transform"
+    },
+    "flags": [ "CARDZHIGH", "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "cardZhigh_freezeOn",
+	"looks_like": "cardZhigh_smoke",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - freeze bomb (active)" },
+    "description": "This is a unique card, which could be used as a freeze bomb.  Throw this, or you will be covered with freeze.",
+    "initial_charges": 3,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_freeze",
+      "fields_radius": 1,
+      "fields_min_intensity": 2,
+      "fields_max_intensity": 3,
+      "sound_volume": 8,
+      "sound_msg": "Hsssss.",
+      "no_deactivate_msg": "You've already activated it - get rid of it immediately!",
+      "explosion": { "damage": 1 }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
+    "id": "cardZhigh_radiation",
+	"looks_like": "cardZhigh_smoke",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - radiation bomb" },
+    "description": "This is a unique card, which could be used as a radiation bomb.  Use it, and cover the area with some radiation.",
+    "use_action": {
+      "target": "cardZhigh_radiationOn",
+      "msg": "You activate the radiation bomb card.  Throw it!",
+      "target_charges": 3,
+      "active": true,
+      "menu_text": "Activate radiation",
+      "type": "transform"
+    },
+    "flags": [ "CARDZHIGH", "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "cardZhigh_radiationOn",
+	"looks_like": "cardZhigh_smoke",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - radiation bomb (active)" },
+    "description": "This is a unique card, which could be used as a radiation bomb.  Throw this, or you will be covered with radiation.",
+    "initial_charges": 3,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_nuke_gas",
+      "fields_radius": 1,
+      "fields_min_intensity": 2,
+      "fields_max_intensity": 3,
+      "sound_volume": 8,
+      "sound_msg": "Hsssss.",
+      "no_deactivate_msg": "You've already activated it - get rid of it immediately!",
+      "explosion": { "damage": 1 }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
+    "id": "cardZhigh_electric",
+	"looks_like": "cardZhigh_smoke",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - electric bomb" },
+    "description": "This is a unique card, which could be used as a electric bomb.  Use it, and hurt whoever is inside.",
+    "use_action": {
+      "target": "cardZhigh_electricOn",
+      "msg": "You activate the electric bomb card.  Throw it!",
+      "target_charges": 3,
+      "active": true,
+      "menu_text": "Activate electric",
+      "type": "transform"
+    },
+    "flags": [ "CARDZHIGH", "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "cardZhigh_electricOn",
+	"looks_like": "cardZhigh_smoke",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - electric bomb (active)" },
+    "description": "This is a unique card, which could be used as a electric bomb.  Throw this, or you will be shocked physically.",
+    "initial_charges": 3,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_electricity",
+      "fields_radius": 1,
+      "fields_min_intensity": 2,
+      "fields_max_intensity": 3,
+      "sound_volume": 8,
+      "sound_msg": "Hsssss.",
+      "no_deactivate_msg": "You've already activated it - get rid of it immediately!",
+      "explosion": { "damage": 1 }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
+    "id": "cardZhigh_fire",
+	"looks_like": "cardZhigh_smoke",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - fire bomb" },
+    "description": "This is a unique card, which could be used as a fire bomb.  Use it, and burn your enemies.",
+    "use_action": {
+      "target": "cardZhigh_fireOn",
+      "msg": "You activate the fire bomb card.  Throw it!",
+      "target_charges": 3,
+      "active": true,
+      "menu_text": "Activate fire",
+      "type": "transform"
+    },
+    "flags": [ "CARDZHIGH", "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "cardZhigh_fireOn",
+	"looks_like": "cardZhigh_smoke",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - fire bomb (active)" },
+    "description": "This is a unique card, which could be used as a fire bomb.  Throw this, or you will be covered with fire.",
+    "initial_charges": 3,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_fire",
+      "fields_radius": 1,
+      "fields_min_intensity": 2,
+      "fields_max_intensity": 3,
+      "sound_volume": 8,
+      "sound_msg": "Hsssss.",
+      "no_deactivate_msg": "You've already activated it - get rid of it immediately!",
+      "explosion": { "damage": 1 }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
+    "id": "cardZhigh_acid",
+	"looks_like": "cardZhigh_smoke",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - acid bomb" },
+    "description": "This is a unique card, which could be used as a acid bomb.  Use it, and melt your foes.",
+    "use_action": {
+      "target": "cardZhigh_acidOn",
+      "msg": "You activate the acid bomb card.  Throw it!",
+      "target_charges": 3,
+      "active": true,
+      "menu_text": "Activate acid",
+      "type": "transform"
+    },
+    "flags": [ "CARDZHIGH", "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "cardZhigh_acidOn",
+	"looks_like": "cardZhigh_smoke",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - acid bomb (active)" },
+    "description": "This is a unique card, which could be used as a acid bomb.  Throw this, or you will be covered with acid.",
+    "initial_charges": 3,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_acid",
+      "fields_radius": 1,
+      "fields_min_intensity": 2,
+      "fields_max_intensity": 3,
+      "sound_volume": 8,
+      "sound_msg": "Hsssss.",
+      "no_deactivate_msg": "You've already activated it - get rid of it immediately!",
+      "explosion": { "damage": 1 }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
+    "id": "cardZhigh_web",
+	"looks_like": "cardZhigh_smoke",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - web bomb" },
+    "description": "This is a unique card, which could be used as a web bomb.  Use it, and bind your enemies.",
+    "use_action": {
+      "target": "cardZhigh_webOn",
+      "msg": "You activate the web bomb card.  Throw it!",
+      "target_charges": 3,
+      "active": true,
+      "menu_text": "Activate web",
+      "type": "transform"
+    },
+    "flags": [ "CARDZHIGH", "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "cardZhigh_webOn",
+	"looks_like": "cardZhigh_smoke",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - web bomb (active)" },
+    "description": "This is a unique card, which could be used as a web bomb.  Throw this, or you will be covered with webs.",
+    "initial_charges": 3,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_web",
+      "fields_radius": 1,
+      "fields_min_intensity": 2,
+      "fields_max_intensity": 3,
+      "sound_volume": 8,
+      "sound_msg": "Hsssss.",
+      "no_deactivate_msg": "You've already activated it - get rid of it immediately!",
+      "explosion": { "damage": 1 }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
+    "id": "cardZhigh_fungicidal",
+	"looks_like": "cardZhigh_smoke",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - fungicidal bomb" },
+    "description": "This is a unique card, which could be used as a fungicidal bomb.  Use it, and clean some fungus.",
+    "use_action": {
+      "target": "cardZhigh_fungicidalOn",
+      "msg": "You activate the fungicidal bomb card.  Throw it!",
+      "target_charges": 3,
+      "active": true,
+      "menu_text": "Activate fungicidal",
+      "type": "transform"
+    },
+    "flags": [ "CARDZHIGH", "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "cardZhigh_fungicidalOn",
+	"looks_like": "cardZhigh_smoke",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - fungicidal bomb (active)" },
+    "description": "This is a unique card, which could be used as a fungicidal bomb.  Throw this, or you will covered with fungicidal gas.",
+    "initial_charges": 3,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_fungicidal_gas",
+      "fields_radius": 1,
+      "fields_min_intensity": 2,
+      "fields_max_intensity": 3,
+      "sound_volume": 8,
+      "sound_msg": "Hsssss.",
+      "no_deactivate_msg": "You've already activated it - get rid of it immediately!",
+      "explosion": { "damage": 1 }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
+    "id": "cardZhigh_insecticidal",
+	"looks_like": "cardZhigh_smoke",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - insecticidal bomb" },
+    "description": "This is a unique card, which could be used as a insecticidal bomb.  Use it, and remove some pests.",
+    "use_action": {
+      "target": "cardZhigh_insecticidalOn",
+      "msg": "You activate the insecticidal bomb card.  Throw it!",
+      "target_charges": 3,
+      "active": true,
+      "menu_text": "Activate insecticidal",
+      "type": "transform"
+    },
+    "flags": [ "CARDZHIGH", "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "cardZhigh_insecticidalOn",
+	"looks_like": "cardZhigh_smoke",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - insecticidal bomb (active)" },
+    "description": "This is a unique card, which could be used as a insecticidal bomb.  Throw this, or you will covered with insecticidal gas.",
+    "initial_charges": 3,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_insecticidal_gas",
+      "fields_radius": 1,
+      "fields_min_intensity": 2,
+      "fields_max_intensity": 3,
+      "sound_volume": 8,
+      "sound_msg": "Hsssss.",
+      "no_deactivate_msg": "You've already activated it - get rid of it immediately!",
+      "explosion": { "damage": 1 }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
+    "id": "cardZhigh_tear",
+	"looks_like": "cardZhigh_smoke",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - tear gas bomb" },
+    "description": "This is a unique card, which could be used as a tear gas bomb.  Use it, and make some people cry.",
+    "use_action": {
+      "target": "cardZhigh_tearOn",
+      "msg": "You activate the tear gas bomb card.  Throw it!",
+      "target_charges": 3,
+      "active": true,
+      "menu_text": "Activate tear",
+      "type": "transform"
+    },
+    "flags": [ "CARDZHIGH", "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "cardZhigh_tearOn",
+	"looks_like": "cardZhigh_smoke",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - tear gas bomb (active)" },
+    "description": "This is a unique card, which could be used as a tear gas bomb.  Throw this, or you will covered with tear gas.",
+    "initial_charges": 3,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_tear_gas",
+      "fields_radius": 1,
+      "fields_min_intensity": 2,
+      "fields_max_intensity": 3,
+      "sound_volume": 8,
+      "sound_msg": "Hsssss.",
+      "no_deactivate_msg": "You've already activated it - get rid of it immediately!",
+      "explosion": { "damage": 1 }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
+    "id": "cardZhigh_toxic",
+	"looks_like": "cardZhigh_smoke",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - toxic gas bomb" },
+    "description": "This is a unique card, which could be used as a toxic gas bomb.  Use it, and hurt who breathes inside.",
+    "use_action": {
+      "target": "cardZhigh_toxicOn",
+      "msg": "You activate the toxic gas bomb card.  Throw it!",
+      "target_charges": 3,
+      "active": true,
+      "menu_text": "Activate toxic",
+      "type": "transform"
+    },
+    "flags": [ "CARDZHIGH", "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "cardZhigh_toxicOn",
+	"looks_like": "cardZhigh_smoke",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Collectible Card - toxic gas bomb (active)" },
+    "description": "This is a unique card, which could be used as a toxic gas bomb.  Throw this, or you will covered with toxic gas.",
+    "initial_charges": 3,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_toxic_gas",
+      "fields_radius": 1,
+      "fields_min_intensity": 2,
+      "fields_max_intensity": 3,
+      "sound_volume": 8,
+      "sound_msg": "Hsssss.",
+      "no_deactivate_msg": "You've already activated it - get rid of it immediately!",
+      "explosion": { "damage": 1 }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
+    "id": "cardZhigh_glassMagnify",
+	"looks_like": "cardZhigh_blank",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "name": { "str": "Collectible Card - magnifying glass" },
+    "description": "This is a unique card, which is used as a magnifying glass.  May be useful for starting fires during sunny skies.",
+    "use_action": { "type": "firestarter", "moves": 1000, "moves_slow": 25000, "need_sunlight": true },
+    "flags": [ "CARDZHIGH", "FIRESTARTER" ]
+  },
+  {
+    "id": "cardZhigh_knife",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "name": { "str": "Collectible Card - knife" },
+    "description": "This is a unique card, which is used as a knife.  Better than nothing.",
+    "cutting": 10,
+    "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 12 ] ],
+    "flags": [ "CARDZHIGH", "STAB" ]
+  },
+  {
+    "id": "cardZhigh_whistle",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - whistle" },
+    "description": "This is a unique card, which is used as a whistle.  Better than nothing.",
+    "use_action": {
+      "type": "manualnoise",
+      "no_charges_message": "Seeing this is an error.",
+      "use_message": "You blow the whistle.",
+      "//": "Use of %s not currently supported.",
+      "noise_message": "FWEEEET!",
+      "noise_id": "misc",
+      "noise_variant": "whistle",
+      "noise": 38,
+      "moves": 150
+    }
+  },
+  {
+    "id": "cardZhigh_tazer",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - tazer" },
+    "description": "This is a unique card, which could be used as stungun.  Needs batteries to use.",
+    "ammo": "battery",
+    "charges_per_use": 50,
+    "use_action": [ "TAZER" ],
+    "magazines": [
+      [
+        "battery",
+        [
+          "light_battery_cell",
+          "light_plus_battery_cell",
+          "light_minus_battery_cell",
+          "light_atomic_battery_cell",
+          "light_minus_atomic_battery_cell",
+          "light_minus_disposable_cell",
+          "light_disposable_cell"
+        ]
+      ]
+    ],
+    "magazine_well": "250 ml"
+  },
+  {
+    "id": "cardZhigh_hologram",
+	"looks_like": "cardZhigh_blank",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - Hologram" },
+    "description": "This is a card with a picture of a hologram on it.  When activated, it could surprise you.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_hologram",
+      "moves": 200,
+      "difficulty": 0,
+      "skills": [ "barter", "speech", "fabrication" ]
+    }
+  },
+  {
+    "id": "cardZhigh_dragon",
+	"looks_like": "cardZhigh_hologram",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - Dragon" },
+    "description": "This is a card with a picture of a dragon on it.  When activated, it could surprise you.  Be careful what you wish for...",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_dragon_dummy",
+      "moves": 200,
+      "difficulty": 8,
+      "skills": [ "barter", "speech", "fabrication" ]
+    }
+  },
+  {
+    "id": "cardZhigh_wyrm",
+	"looks_like": "cardZhigh_hologram",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - Wyrm" },
+    "description": "This is a card with a picture of a wyrm on it.  When activated, it could surprise you.  Be careful what you wish for...",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_dark_wyrm",
+      "moves": 200,
+      "difficulty": 4,
+      "skills": [ "barter", "speech", "fabrication" ]
+    }
+  },
+  {
+    "id": "cardZhigh_spider_widow_giant",
+	"looks_like": "cardZhigh_hologram",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - Giant Black Widow Spider" },
+    "description": "This is a card with a picture of a black widow spider on it.  When activated, it could surprise you.  Be careful what you wish for...",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_spider_widow_giant",
+      "moves": 200,
+      "difficulty": 2,
+      "skills": [ "barter", "speech", "fabrication" ]
+    }
+  },
+  {
+    "id": "cardZhigh_firefly",
+	"looks_like": "cardZhigh_hologram",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - Firefly" },
+    "description": "This is a card with a picture of a firefly on it.  When activated, it could surprise you.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_firefly",
+      "moves": 200,
+      "difficulty": 0,
+      "skills": [ "barter", "speech", "fabrication" ]
+    }
+  },
+  {
+    "id": "cardZhigh_wasp",
+	"looks_like": "cardZhigh_hologram",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - Wasp" },
+    "description": "This is a card with a picture of a wasp on it.  When activated, it could surprise you.  Be careful what you wish for...",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_wasp_guard",
+      "moves": 200,
+      "difficulty": 2,
+      "skills": [ "barter", "speech", "fabrication" ]
+    }
+  },
+  {
+    "id": "cardZhigh_ant",
+	"looks_like": "cardZhigh_hologram",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - Ant" },
+    "description": "This is a card with a picture of a ant on it.  When activated, it could surprise you.  Be careful what you wish for...",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_ant_acid_soldier",
+      "moves": 200,
+      "difficulty": 2,
+      "skills": [ "barter", "speech", "fabrication" ]
+    }
+  },
+  {
+    "id": "cardZhigh_wraith",
+	"looks_like": "cardZhigh_hologram",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - Wraith" },
+    "description": "This is a card with a picture of a wraith on it.  When activated, it could surprise you.  Be careful what you wish for...",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_darkman",
+      "moves": 200,
+      "difficulty": 3,
+      "skills": [ "barter", "speech", "fabrication" ]
+    }
+  },
+  {
+    "id": "cardZhigh_minotaur",
+	"looks_like": "cardZhigh_hologram",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - Minotaur" },
+    "description": "This is a card with a picture of a minotaur on it.  When activated, it could surprise you.  Be careful what you wish for...",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_gozu",
+      "moves": 200,
+      "difficulty": 2,
+      "skills": [ "barter", "speech", "fabrication" ]
+    }
+  },
+  {
+    "id": "cardZhigh_mothman",
+	"looks_like": "cardZhigh_hologram",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - Mothman" },
+    "description": "This is a card with a picture of a mothman on it.  When activated, it could surprise you.  Be careful what you wish for...",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mothman",
+      "moves": 200,
+      "difficulty": 3,
+      "skills": [ "barter", "speech", "fabrication" ]
+    }
+  },
+  {
+    "id": "cardZhigh_vortex",
+	"looks_like": "cardZhigh_hologram",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - Vortex" },
+    "description": "This is a card with a picture of a vortex on it.  When activated, it could surprise you.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_vortex",
+      "moves": 200,
+      "difficulty": 1,
+      "skills": [ "barter", "speech", "fabrication" ]
+    }
+  },
+  {
+    "id": "cardZhigh_demon",
+	"looks_like": "cardZhigh_hologram",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - Demon" },
+    "description": "This is a card with a picture of a demon on it.  When activated, it could surprise you.  Be careful what you wish for...",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mutant_evolved",
+      "moves": 200,
+      "difficulty": 6,
+      "skills": [ "barter", "speech", "fabrication" ]
+    }
+  },
+  {
+    "id": "cardZhigh_migo",
+	"looks_like": "cardZhigh_hologram",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - Mi-go" },
+    "description": "This is a card with a picture of a mi-go on it.  When activated, it could surprise you.  Be careful what you wish for...",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mi_go",
+      "moves": 200,
+      "difficulty": 4,
+      "skills": [ "barter", "speech", "fabrication" ]
+    }
+  },
+  {
+    "id": "cardZhigh_supplyDrop",
+	"looks_like": "cardZhigh_hologram",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - Supply Drop" },
+    "description": "This is a card with a picture of a supply drop on it.  When activated, it could surprise you.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_pubg_bogup",
+      "moves": 200,
+      "difficulty": 0,
+      "skills": [ "barter", "speech", "fabrication" ]
+    }
+  },
+  {
+    "id": "cardZhigh_bear",
+	"looks_like": "cardZhigh_hologram",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - Bear" },
+    "description": "This is a card with a picture of a bear on it.  When activated, it could surprise you.  Be careful what you wish for...",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_bear",
+      "moves": 200,
+      "difficulty": 3,
+      "skills": [ "barter", "speech", "fabrication" ]
+    }
+  },
+  {
+    "id": "cardZhigh_coyote",
+	"looks_like": "cardZhigh_hologram",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - Coyote" },
+    "description": "This is a card with a picture of a coyote on it.  When activated, it could surprise you.  Be careful what you wish for...",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_coyote",
+      "moves": 200,
+      "difficulty": 2,
+      "skills": [ "barter", "speech", "fabrication" ]
+    }
+  },
+  {
+    "id": "cardZhigh_wolf",
+	"looks_like": "cardZhigh_hologram",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - Wolf" },
+    "description": "This is a card with a picture of a wolf on it.  When activated, it could surprise you.  Be careful what you wish for...",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_wolf",
+      "moves": 200,
+      "difficulty": 2,
+      "skills": [ "barter", "speech", "fabrication" ]
+    }
+  },
+  {
+    "id": "cardZhigh_soldier",
+	"looks_like": "cardZhigh_blank",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - Soldier" },
+    "description": "This is a card with a picture of a soldier on it.  When activated, it could surprise you.  Be careful what you wish for...",
+    "use_action": {
+		"type": "place_npc",
+		"npc_class_id": "scavenger_merc",
+		"summon_msg": "A survivor got your signal and surveys the area!",
+		"place_randomly": false,
+		"moves": 60
+    }
+  },
+  {
+    "id": "cardZhigh_operator",
+	"looks_like": "cardZhigh_soldier",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - Operator" },
+    "description": "This is a card with a picture of a operator on it.  When activated, it could surprise you.  Be careful what you wish for...",
+    "use_action": {
+		"type": "place_npc",
+		"npc_class_id": "robofac_merc_1",
+		"summon_msg": "A survivor got your signal and surveys the area!",
+		"place_randomly": false,
+		"moves": 60
+    }
+  },
+  {
+    "id": "cardZhigh_bicycle",
+	"looks_like": "cardZhigh_blank",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - bicycle" },
+    "description": "This is a card with a picture of a bicycle on it.  When activated, it summons a bicycle.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "bicycle",
+      "unfold_msg": "You summon the bicycle.",
+      "moves": 60
+    }
+  },
+  {
+    "id": "cardZhigh_road_roller",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - road roller" },
+    "description": "This is a card with a picture of a golden vampire riding a road roller.  When activated, it summons a road roller without fuel.  No, you cannot smash a high schooler with a road roller.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "road_roller",
+      "unfold_msg": "You summon the road roller.",
+      "moves": 60
+    }
+  },
+  {
+    "id": "cardZhigh_gasoline",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - gasoline" },
+    "description": "This is a unique card, which has a picture of a gasoline.  If you use it, you could get some gasoline.",
+    "use_action": { "type": "unpack", "group": "fuel_gasoline", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_diesel",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - diesel" },
+    "description": "This is a unique card, which has a picture of a diesel.  If you use it, you could get some diesel.",
+    "use_action": { "type": "unpack", "group": "fuel_diesel", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_spirit",
+	"looks_like": "cardZhigh_blank",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - spirit" },
+    "description": "This is a unique card, which has a picture of a flask of spirit.  If you use it, you could get a drink or two.",
+    "use_action": { "type": "unpack", "group": "flask_liquor", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_soda",
+	"looks_like": "cardZhigh_spirit",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - soda" },
+    "description": "This is a unique card, which has a picture of a can of soda.  If you use it, you could get a drink or two.",
+    "use_action": { "type": "unpack", "group": "pizza_soda", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_pizza",
+	"looks_like": "cardZhigh_spirit",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - pizza" },
+    "description": "This is a unique card, which has a picture of a box of pizza.  If you use it, you could have a meal.",
+    "use_action": { "type": "unpack", "group": "pizza_display", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_tea",
+	"looks_like": "cardZhigh_spirit",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - tea" },
+    "description": "This is a unique card, which has a picture of a bottle of tea.  If you use it, you could get a drink or two.",
+    "use_action": { "type": "unpack", "group": "prepared_teas", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_drinks",
+	"looks_like": "cardZhigh_spirit",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - drinks" },
+    "description": "This is a unique card, which has a picture of drinks.  If you use it, you could have a drink.",
+    "use_action": { "type": "unpack", "group": "vending_drink_items", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_snacks",
+	"looks_like": "cardZhigh_spirit",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - snacks" },
+    "description": "This is a unique card, which has a picture of snacks.  If you use it, you could have a snack.",
+    "use_action": { "type": "unpack", "group": "vending_food_items", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_weapons",
+	"looks_like": "cardZhigh_blank",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - weapon" },
+    "description": "This is a unique card, which has a picture of a crate of weapons.  If you use it, you could get a weapon that you can use in a pinch.",
+    "use_action": { "type": "unpack", "group": "weapons", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_grenade",
+	"looks_like": "cardZhigh_weapons",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - grenade" },
+    "description": "This is a unique card, which has a picture of a grenade.  If you use it, you could get a bomb that you can use in a pinch.",
+    "use_action": { "type": "unpack", "group": "grenades", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_pistol",
+	"looks_like": "cardZhigh_weapons",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - pistol" },
+    "description": "This is a unique card, which has a picture of a pistol.  If you use it, you could get a free pistol and some ammo.",
+    "use_action": { "type": "unpack", "group": "carried_guns_pistol_common", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_smg",
+	"looks_like": "cardZhigh_weapons",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - smg" },
+    "description": "This is a unique card, which has a picture of a smg.  If you use it, you could get a free smg and some ammo.",
+    "use_action": { "type": "unpack", "group": "carried_guns_smg_common", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_rifle",
+	"looks_like": "cardZhigh_weapons",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - rifle" },
+    "description": "This is a unique card, which has a picture of a rifle.  If you use it, you could get a free rifle and some ammo.",
+    "use_action": { "type": "unpack", "group": "carried_guns_rifle_common", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_archery",
+	"looks_like": "cardZhigh_weapons",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - archery" },
+    "description": "This is a unique card, which has a picture of a archery.  If you use it, you could get a free archery and some ammo.",
+    "use_action": { "type": "unpack", "group": "carried_guns_archery_common", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_shotgun",
+	"looks_like": "cardZhigh_weapons",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - shotgun" },
+    "description": "This is a unique card, which has a picture of a shotgun.  If you use it, you could get a free shotgun and some ammo.",
+    "use_action": { "type": "unpack", "group": "carried_guns_shotgun_common", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_improvisedFirearms",
+	"looks_like": "cardZhigh_weapons",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - improvised firearms" },
+    "description": "This is a unique card, which has a picture of a improvised firearms.  If you use it, you could get a free improvised firearms and some ammo.",
+    "use_action": { "type": "unpack", "group": "guns_improvised", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_rareFirearms",
+	"looks_like": "cardZhigh_weapons",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - rare firearms" },
+    "description": "This is a unique card, which has a picture of a rare firearms.  If you use it, you could get a free rare firearm and some ammo.",
+    "use_action": { "type": "unpack", "group": "guns_obscure", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_rareGuns",
+	"looks_like": "cardZhigh_weapons",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - rare guns" },
+    "description": "This is a unique card, which has a picture of a rare guns.  If you use it, you could get a free rare guns and some ammo.",
+    "use_action": { "type": "unpack", "group": "guns_safe_guns", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_ammo",
+	"looks_like": "cardZhigh_weapons",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - ammo" },
+    "description": "This is a unique card, which has a picture of a box of ammunition.  If you use it, you could get some random ammo.",
+    "use_action": { "type": "unpack", "group": "vending_ammo", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_archery",
+	"looks_like": "cardZhigh_weapons",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - arrows and bolts" },
+    "description": "This is a unique card, which has a picture of a arrows and bolts.  If you use it, you could get some random arrows and bolts.",
+    "use_action": { "type": "unpack", "group": "archery_ammo", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_religious_books",
+	"looks_like": "cardZhigh_blank",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - religious books" },
+    "description": "This is a unique card, which has a picture of a religious book.  If you use it, you could get a free religious book.",
+    "use_action": { "type": "unpack", "group": "religious_books", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_novels",
+	"looks_like": "cardZhigh_religious_books",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - novels" },
+    "description": "This is a unique card, which has a picture of a novel.  If you use it, you could get a free novel.",
+    "use_action": { "type": "unpack", "group": "novels", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_book_martial",
+	"looks_like": "cardZhigh_religious_books",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - martial art books" },
+    "description": "This is a unique card, which has a picture of a martial art book.  If you use it, you could get a free martial art book.",
+    "use_action": { "type": "unpack", "group": "book_martial", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_stimultants",
+	"looks_like": "cardZhigh_blank",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - stimultants" },
+    "description": "This is a unique card, which has a picture of a stimultants.  If you use it, you could get some random stimultants.",
+    "use_action": { "type": "unpack", "group": "ZhighStimUnkown3", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_cigar",
+	"looks_like": "cardZhigh_stimultants",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - cigar" },
+    "description": "This is a unique card, which has a picture of a cigar.  If you use it, you could get some random smokable drugs.",
+    "use_action": { "type": "unpack", "group": "smokedrugs", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_bionics",
+	"looks_like": "cardZhigh_stimultants",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - bionics" },
+    "description": "This is a unique card, which has a picture of a bionic.  If you use it, you could get some bionics.",
+    "use_action": { "type": "unpack", "group": "bionics", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_tool",
+	"looks_like": "cardZhigh_stimultants",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - tool" },
+    "description": "This is a unique card, which has a picture of a tool.  If you use it, you could get some tools.",
+    "use_action": { "type": "unpack", "group": "tools_general", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_charm",
+	"looks_like": "cardZhigh_stimultants",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "charms",
+    "name": { "str": "Collectible Card - charm" },
+    "description": "This is a unique card, which has a picture of a charm.  If you use it, you could get some charms.",
+    "use_action": { "type": "unpack", "group": "charms_guns", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_coin",
+	"looks_like": "cardZhigh_stimultants",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "charms",
+    "name": { "str": "Collectible Card - coins" },
+    "description": "This is a unique card, which has a picture of a coin.  If you use it, you could get some coins.",
+    "use_action": { "type": "unpack", "group": "coinPackZhigh", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_pack",
+	"looks_like": "cardZhigh_pack",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "name": { "str": "random card pack" },
+    "description": "This is a pack of an unknown card.  Unpack and enjoy.",
+    "use_action": { "type": "unpack", "group": "cardsPackZhigh1", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_pack5",
+	"looks_like": "cardZhigh_pack",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "name": { "str": "random card packs" },
+    "description": "This is a pack of five unknown cards.  Unpack and enjoy.",
+    "volume": "5 ml",
+    "weight": "5 g",
+    "use_action": { "type": "unpack", "group": "cardsPackZhigh5", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_pack30",
+	"looks_like": "cardZhigh_pack5",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "name": { "str": "random card deck" },
+    "description": "This is a pack of thirty unknown cards.  Unpack and enjoy.",
+    "volume": "30 ml",
+    "weight": "30 g",
+    "use_action": { "type": "unpack", "group": "cardsPackZhigh30", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  }
+]

@@ -17,6 +17,7 @@
     "ammo_effects": [ "NEVER_MISFIRES" ],
     "clip_size": 5,
     "modes": [ [ "DEFAULT", "semi", 1 ] ],
+    "flags": [ "RELOAD_ONE", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
     "reload": 30,
     "loudness": 10
   },
@@ -727,12 +728,12 @@
     "volume": "1500 ml",
     "barrel_length": "500 ml",
     "ranged_damage": { "damage_type": "bullet", "amount": 1, "armor_penetration": 50 },
-    "range": 25,
-    "recoil": 30,
+    "range": 20,
+    "recoil": 3,
     "ammo_effects": [ "JET", "NEVER_MISFIRES" ],
     "clip_size": 60,
     "modes": [ [ "DEFAULT", "spraying cash", 3 ] ],
-    "reload": 10,
+    "reload": 1,
     "loudness": 5
   },
   {
@@ -744,6 +745,7 @@
     "description": "An improvised... pistol?  Well, you can use this as a ranged weapon, but it is almost useless.  You have been warned.",
     "price": "8 USD",
     "material": [ "steel", "plastic" ],
+    "skill": "pistol",
     "ammo": [ "MONEY_zhigh" ],
     "weight": "500 g",
     "volume": "500 ml",
@@ -753,7 +755,7 @@
     "ammo_effects": [ "JET", "NEVER_MISFIRES" ],
     "clip_size": 90,
     "modes": [ [ "DEFAULT", "spraying cash", 9 ] ],
-    "reload": 30,
+    "reload": 3,
     "loudness": 5
   },
   {
@@ -768,7 +770,7 @@
     "range": 18,
     "clip_size": 5,
     "ammo_effects": [ "BEANBAG" ],
-    "flags": [ "CROSSBOW", "RELOAD_ONE" ],
+    "flags": [ "CROSSBOW" ],
     "reload": 20
   },
   {
@@ -1043,7 +1045,8 @@
     "name": { "ctxt": "weapon", "str": "catcher's mitt" },
     "description": "A leather glove, easy to use and accurate.  It helps the user to throw rocks and pebbles as ammunition.",
     "price": "1500 USD",
-    "flags": [ "BELT_CLIP", "RELOAD_AND_SHOOT", "WATER_FRIENDLY", "WATERPROOF_GUN", "NEVER_JAMS" ],
+    "flags": [ "BELT_CLIP", "RELOAD_AND_SHOOT", "WATER_FRIENDLY", "WATERPROOF_GUN", "NEVER_JAMS", "UNARMED_WEAPON" ],
+    "handling": 95,
     "weight": "247 g",
     "volume": "600 ml",
     "price_postapoc": "469 USD",
@@ -1135,11 +1138,12 @@
     "weight": "2400 g",
     "volume": "3450 ml",
     "price": "378000 USD",
-    "handling": 35,
+    "handling": 95,
     "range": 100,
     "price_postapoc": "9000 USD",
     "material": [ "steel" ],
-    "dispersion": 450,
+    "dispersion": 50,
+	"min_cycle_recoil": 50,
     "skill": "rifle",
     "ranged_damage": { "damage_type": "bash", "amount": 80 },
     "durability": 9,
@@ -1244,6 +1248,16 @@
     "name": { "str": "disc clip" },
     "description": "A large can, cut in almost half.  Holds up 50 rounds of discs.",
     "ammo_type": "DISC_zhigh",
+    "capacity": 50
+  },
+  {
+    "id": "BbClip_50",
+    "copy-from": "garandclip",
+    "type": "MAGAZINE",
+    "looks_like": "can_food_big",
+    "name": { "str": "airsoft BB hopper" },
+    "description": "A large pipe, makes bb guns reload faster.  Holds up 50 rounds of bbs.",
+    "ammo_type": "BB",
     "capacity": 50
   },
   {
@@ -1478,7 +1492,8 @@
     "modes": [ [ "DEFAULT", "burst", 3 ] ],
     "ranged_damage": { "damage_type": "bullet", "amount": 6, "armor_penetration": 10 },
     "dispersion": 100,
-    "clip_size": 60,
+    "magazines": [ [ "BB", [ "BbClip_50" ] ] ],
+    "clip_size": 50,
     "reload": 90,
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -2192,7 +2207,6 @@
   },
   {
     "id": "crossbow_dartZhigh",
-    "//": "Tileset whitelist for crossbows",
     "copy-from": "xbow_base",
     "type": "GUN",
     "reload_noise_volume": 5,
@@ -2503,6 +2517,8 @@
     "dispersion": 60,
     "durability": 10,
     "loudness": 115,
+    "to_hit": 1,
+    "bashing": 14,
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
     "ammo_effects": [ "BEANBAG", "HEAVY_HIT", "BLINDS_EYES" ],
     "valid_mod_locations": [
@@ -2535,6 +2551,8 @@
     "dispersion": 60,
     "durability": 10,
     "loudness": 125,
+    "to_hit": 1,
+    "bashing": 8,
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
     "ammo_effects": [ "BEANBAG", "HEAVY_HIT", "BLINDS_EYES" ],
     "valid_mod_locations": [
@@ -2551,6 +2569,7 @@
     "id": "tishuna",
     "looks_like": "needlepistol",
     "copy-from": "rifle_pneumatic",
+    "weapon_category": [ "PISTOLS", "PNEUMATIC" ],
     "type": "GUN",
     "reload_noise_volume": 8,
     "color": "light_gray",
@@ -2651,5 +2670,120 @@
     "description": "An improvised, huge, and direct launcher for rocks.  Essentially, eight thick-walled steel pipes, equipped with two rubber bands.  Effective as giving a one-two punch from a pro boxer, but only at short to medium range, barely.",
     "proportional": { "weight": 1.5, "volume": 1.8, "price": 2 },
     "clip_size": 6
+  },
+  {
+    "id": "malAr3516BB",
+    "looks_like": "pkdBlaster",
+    "copy-from": "bbgun",
+    "weapon_category": [ "FIST_WEAPONS", "SAPS", "PISTOLS", "PNEUMATIC" ],
+    "type": "GUN",
+    "price": "4000 USD",
+    "price_postapoc": "10 USD",
+    "name": { "str": "BB blaster pistol" },
+    "weight": "935 g",
+    "volume": "750 ml",
+    "description": "Popular among kidults.  Much more accurate than the original one, and easliy modifiable, but BBs deal nearly no damage.  Custom-made for a guy has some taste.",
+    "range": 16,
+	"skill": "pistol",
+    "material": [ "aluminum", "plastic" ],
+    "bashing": 10,
+    "ammo": [ "nail", "BB" ],
+    "ranged_damage": { "damage_type": "cold", "amount": 15, "armor_penetration": 30 },
+    "ammo_effects": [ "TANGLE", "INCENDIARY", "LARGE_BEANBAG", "NOGIB", "BOUNCE" ],
+    "dispersion": 20,
+    "clip_size": 10,
+    "reload": 20,
+    "valid_mod_locations": [
+      [ "accessories", 1 ],
+      [ "barrel", 1 ],
+      [ "sling", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+    "flags": [ "BELT_CLIP", "UNARMED_WEAPON", "FLAMING", "SHOCKING", "NONCONDUCTIVE", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "modes": [ [ "DEFAULT", "single", 1 ] ]
+  },
+  {
+    "id": "akS74UZhigh",
+    "copy-from": "ak74",
+    "type": "GUN",
+    "name": { "str": "AKS-74UM" },
+    "description": "The successor to the semi-known AK-74 rifle.  It combines the reliability of the AK series and the short length with the high-velocity, with compatible .223 ammo.",
+    "weight": "3000 g",
+    "volume": "1450 ml",
+    "price": "3900 USD",
+    "price_postapoc": "80 USD",
+    "bashing": 11,
+    "material": [ "steel", "wood" ],
+    "color": "brown",
+    "ammo": [ "223", "545x39" ],
+    "dispersion": 500,
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "3 rd.", 3 ] , [ "AUTO", "auto", 4 ] ],
+    "barrel_length": "50 ml",
+    "magazines": [
+      [
+        "223",
+        [
+          "stanag30",
+          "stanag5",
+          "stanag10",
+          "stanag20",
+          "stanag40",
+          "stanag50",
+          "stanag60",
+          "stanag60drum",
+          "stanag90",
+          "stanag100",
+          "stanag100drum",
+          "stanag150",
+          "carbonmag_223",
+          "survivor223mag"
+        ]
+      ],
+	  [
+		"545x39",
+		[
+          "ak74mag",
+		  "rpk74mag"
+		]
+	  ]
+    ],
+    "flags": [ "NEVER_JAMS" ],
+    "relative": { "ranged_damage": { "damage_type": "bullet", "amount": 3 }, "durability": 1 }
+  },
+  {
+    "id": "flamer_bio_mouth_gun",
+    "type": "GUN",
+    "copy-from": "fake_item",
+    "name": { "str": "dragon breath" },
+    "description": "Fake gun that fires some sort of flame at very high speed by unknown means of propulsion.",
+    "flags": [ "NEVER_JAMS" ],
+    "ammo_effects": [ "STREAM", "INCENDIARY", "NEVER_MISFIRES" ],
+    "skill": "rifle",
+    "durability": 10,
+    "range": 10,
+    "dispersion": 100,
+    "ranged_damage": { "damage_type": "heat", "amount": 10, "armor_penetration": 30 }
+  },
+  {
+    "id": "acid_bio_mouth_gun",
+    "type": "GUN",
+    "copy-from": "fake_item",
+    "name": { "str": "dragon breath" },
+    "description": "Fake gun that fires some sort of acid at very high speed by unknown means of propulsion.",
+    "flags": [ "NEVER_JAMS" ],
+    "modes": [ [ "DEFAULT", "auto", 3 ] ],
+    "ammo_effects": [ "ACID_TRAIL", "ACIDBOMB", "BLINDS_EYES", "NEVER_MISFIRES" ],
+    "skill": "rifle",
+    "durability": 10,
+    "range": 12,
+    "dispersion": 1000,
+    "ranged_damage": [
+		{ "damage_type": "acid", "amount": 2, "armor_penetration": 30 },
+		{ "damage_type": "stab", "amount": 8, "armor_multiplier": 0.8 }
+	]
   }
 ]
