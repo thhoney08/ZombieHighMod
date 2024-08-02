@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zhigh_Mod\n"
-"POT-Creation-Date: 2024-07-23 15:52+0900\n"
+"POT-Creation-Date: 2024-08-02 18:17+0900\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -221,6 +221,34 @@ msgid_plural "school ID, 1st graders"
 msgstr[0] ""
 msgstr[1] ""
 
+#. ~ Use action holster_msg for {'str': 'school ID, 1st grader'}.
+#. ~ Use action holster_msg for {'str': 'school ID, 2nd grader'}.
+#. ~ Use action holster_msg for {'str': 'school ID, 3rd grader'}.
+#. ~ Use action holster_msg for {'str': "door gunner's vest", 'str_pl': "door
+#. gunner's vests"}.
+#. ~ Use action holster_msg for {'str': 'cool cosplay vest'}.
+#. ~ Use action holster_msg for {'str': 'javelin bag'}.
+#. ~ Use action holster_msg for {'str': 'large grenade pouch', 'str_pl':
+#. 'large grenade pouches'}.
+#. ~ Use action holster_msg for {'str': 'wallet'}.
+#. ~ Use action holster_msg for {'str': 'long wallet'}.
+#. ~ Use action holster_msg for {'str': 'wearable wallet'}.
+#. ~ Use action holster_msg for {'str': 'duct tape wallet'}.
+#: .\ZhighArmor.json .\ZhighItemRemake.json .\ZhighItems.json
+msgid "You stash your %s."
+msgstr ""
+
+#. ~ Use action holster_prompt for {'str': 'school ID, 1st grader'}.
+#. ~ Use action holster_prompt for {'str': 'school ID, 2nd grader'}.
+#. ~ Use action holster_prompt for {'str': 'school ID, 3rd grader'}.
+#. ~ Use action holster_prompt for {'str': 'wallet'}.
+#. ~ Use action holster_prompt for {'str': 'long wallet'}.
+#. ~ Use action holster_prompt for {'str': 'wearable wallet'}.
+#. ~ Use action holster_prompt for {'str': 'duct tape wallet'}.
+#: .\ZhighArmor.json .\ZhighItems.json
+msgid "Stash cards"
+msgstr ""
+
 #. ~ Description for {'str': 'school ID, 1st grader'}
 #. ~ Description for {'str': 'school ID, 2nd grader'}
 #. ~ Description for {'str': 'school ID, 3rd grader'}
@@ -266,6 +294,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. ~ Use action menu_text for {'str': 'orange hoodie'}.
+#. ~ Use action menu_text for {'str': 'mystery cloak'}.
 #: .\ZhighArmor.json
 msgid "Put on hood"
 msgstr ""
@@ -283,6 +312,7 @@ msgid ""
 msgstr ""
 
 #. ~ Use action menu_text for {'str': 'orange hoodie'}.
+#. ~ Use action menu_text for {'str': 'mystery cloak'}.
 #: .\ZhighArmor.json
 msgid "Take off hood"
 msgstr ""
@@ -309,6 +339,19 @@ msgstr[1] ""
 #: .\ZhighArmor.json
 msgid ""
 "A red and fancy robe for a king, this one have dragons as a decoration."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "Dragon robe (female)"
+msgid_plural "Dragon robe (female)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Dragon robe (female)'}
+#: .\ZhighArmor.json
+msgid ""
+"A red, black and fancy robe for a queen, this one have dragons as a "
+"decoration."
 msgstr ""
 
 #: .\ZhighArmor.json
@@ -506,19 +549,6 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: .\ZhighArmor.json
-msgid "Dragon robe (female)"
-msgid_plural "Dragon robe (female)s"
-msgstr[0] ""
-msgstr[1] ""
-
-#. ~ Description for {'str': 'Dragon robe (female)'}
-#: .\ZhighArmor.json
-msgid ""
-"A red, black and fancy robe for a queen, this one have dragons as a "
-"decoration."
-msgstr ""
-
-#: .\ZhighArmor.json
 msgid "queen's wig"
 msgid_plural "queen's wigs"
 msgstr[0] ""
@@ -589,7 +619,8 @@ msgstr[1] ""
 #. ~ Use action noise_message for {'str': 'tool watch', 'str_pl': 'tool
 #. watches'}.
 #. ~ Use action noise_message for {'str': 'multi whistle'}.
-#: .\ZhighArmor.json
+#. ~ Use action noise_message for {'str': 'Collectible Card - whistle'}.
+#: .\ZhighArmor.json .\ZhighWeapons\ZhighCards.json
 msgid "FWEEEET!"
 msgstr ""
 
@@ -597,7 +628,8 @@ msgstr ""
 #. watches'}.
 #. ~ Use action use_message for {'str': 'multi whistle'}.
 #. ~ Use action use_message for {'str': 'Aztec death whistle'}.
-#: .\ZhighArmor.json .\ZhighItems.json
+#. ~ Use action use_message for {'str': 'Collectible Card - whistle'}.
+#: .\ZhighArmor.json .\ZhighItems.json .\ZhighWeapons\ZhighCards.json
 msgid "You blow the whistle."
 msgstr ""
 
@@ -1178,6 +1210,7 @@ msgstr[1] ""
 #. ~ Use action menu_text for {'str': 'light baton (on)'}.
 #. ~ Use action menu_text for {'str': 'cattle prod (on)', 'str_pl': 'cattle
 #. prods (on)'}.
+#. ~ Use action menu_text for {'str': 'cordless drill (on)'}.
 #: .\ZhighArmor.json .\ZhighItemRemake.json .\ZhighItems.json
 #: .\ZhighWeapons\ZhighMelee.json
 msgid "Turn off"
@@ -1272,16 +1305,6 @@ msgid "door gunner's vest"
 msgid_plural "door gunner's vests"
 msgstr[0] ""
 msgstr[1] ""
-
-#. ~ Use action holster_msg for {'str': "door gunner's vest", 'str_pl': "door
-#. gunner's vests"}.
-#. ~ Use action holster_msg for {'str': 'cool cosplay vest'}.
-#. ~ Use action holster_msg for {'str': 'javelin bag'}.
-#. ~ Use action holster_msg for {'str': 'large grenade pouch', 'str_pl':
-#. 'large grenade pouches'}.
-#: .\ZhighArmor.json .\ZhighItemRemake.json
-msgid "You stash your %s."
-msgstr ""
 
 #. ~ Use action holster_prompt for {'str': "door gunner's vest", 'str_pl':
 #. "door gunner's vests"}.
@@ -1906,6 +1929,155 @@ msgid ""
 "practice.  Activate to sheath/draw a sword."
 msgstr ""
 
+#: .\ZhighArmor.json
+msgid "suit"
+msgid_plural "suits"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighArmor.json
+msgid "pair of super stylish sunglasses"
+msgid_plural "pairs of super stylish sunglasses"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'pair of super stylish sunglasses', 'str_pl':
+#. 'pairs of super stylish sunglasses'}
+#: .\ZhighArmor.json
+msgid ""
+"A pair of super stylish sunglasses.  Look good while keeping the glare out "
+"of your eyes.  You could throw this as an irregular attack, just like that "
+"crotch-punching American actor who fought a four armed giant."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "green goggles"
+msgid_plural "pairs of green goggles"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'green goggles', 'str_pl': 'pairs of green
+#. goggles'}
+#: .\ZhighArmor.json
+msgid ""
+"A custom-built pair of armored goggles with tinted lenses.  Comfortable and "
+"built to last, they provide excellent protection from environmental dangers."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "pair of orange tinted sunglasses"
+msgid_plural "pairs of orange tinted sunglasses"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'pair of orange tinted sunglasses', 'str_pl':
+#. 'pairs of orange tinted sunglasses'}
+#: .\ZhighArmor.json
+msgid ""
+"A pair of orange tinted stylish sunglasses.  Look good while keeping the "
+"glare out of your eyes.  You could throw this as an irregular attack, just "
+"like that crotch-punching American actor who fought a four armed giant."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "biker's motorcycle helmet"
+msgid_plural "biker's motorcycle helmets"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighArmor.json
+msgid "biker's vest"
+msgid_plural "biker's vests"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighArmor.json
+msgid "neat coat"
+msgid_plural "neat coats"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighArmor.json
+msgid "bearskin"
+msgid_plural "bearskins"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'bearskin'}
+#: .\ZhighArmor.json
+msgid ""
+"A hat made from the pelts of bears.  Extremely warm, but heavy and large."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "anti-hero costume"
+msgid_plural "anti-hero costumes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'anti-hero costume'}
+#: .\ZhighArmor.json
+msgid ""
+"A special zentai which protects the actor while taking an action movie."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "magician's top hat"
+msgid_plural "magician's top hats"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': "magician's top hat"}
+#: .\ZhighArmor.json
+msgid ""
+"The only hat for a magician.  Look exquisite while showing a magic trick in "
+"the face of danger!"
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "ice box"
+msgid_plural "ice boxs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'ice box'}
+#: .\ZhighArmor.json
+msgid ""
+"Useful for carrying drinks or frozen foods.  Somehow, this emits a cloud of "
+"cool air."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "mystery cloak"
+msgid_plural "mystery cloaks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action msg for {'str': 'mystery cloak'}.
+#: .\ZhighArmor.json
+msgid "You take the hood off from your cloak."
+msgstr ""
+
+#. ~ Description for {'str': 'mystery cloak'}
+#: .\ZhighArmor.json
+msgid ""
+"Long, flowing robes.  Simple and comfortable to wear.  The uniform of the "
+"school mystery club!  The hood is on, which draws a mysterious shade on your"
+" face."
+msgstr ""
+
+#. ~ Use action msg for {'str': 'mystery cloak'}.
+#: .\ZhighArmor.json
+msgid "You put your hood over your head."
+msgstr ""
+
+#. ~ Description for {'str': 'mystery cloak'}
+#: .\ZhighArmor.json
+msgid ""
+"Long, flowing robes.  Simple and comfortable to wear.  The uniform of the "
+"school mystery club!  The hood is off, which shows your face."
+msgstr ""
+
 #: .\ZhighBionics.json
 msgid "Bionic knuckle"
 msgstr ""
@@ -2348,6 +2520,34 @@ msgid ""
 msgstr ""
 
 #: .\ZhighEffects.json
+msgid "speed up"
+msgstr ""
+
+#. ~ Description of effect 'speed up'.
+#. ~ Apply message for effect(s) 'speed up'.
+#: .\ZhighEffects.json
+msgid "You became faster."
+msgstr ""
+
+#: .\ZhighEffects.json
+msgid "stamina regain"
+msgstr ""
+
+#. ~ Description of effect 'stamina regain'.
+#: .\ZhighEffects.json
+msgid "You gain some extra stamina."
+msgstr ""
+
+#: .\ZhighEffects.json
+msgid "attack buff"
+msgstr ""
+
+#. ~ Description of effect 'attack buff'.
+#: .\ZhighEffects.json
+msgid "You gain an extra attack buff."
+msgstr ""
+
+#: .\ZhighEffects.json
 msgid "F1NK4-Injected"
 msgstr ""
 
@@ -2358,16 +2558,6 @@ msgstr ""
 
 #: .\ZhighEffects.json
 msgid "Regeneration"
-msgstr ""
-
-#: .\ZhighEffects.json
-msgid "speed up"
-msgstr ""
-
-#. ~ Description of effect 'speed up'.
-#. ~ Apply message for effect(s) 'speed up'.
-#: .\ZhighEffects.json
-msgid "You became faster."
 msgstr ""
 
 #: .\ZhighEffects.json
@@ -2534,6 +2724,18 @@ msgid "The goo's too sticky for you to fight effectively."
 msgstr ""
 
 #: .\ZhighEmit.json
+msgid "thin barbed wire"
+msgstr ""
+
+#: .\ZhighEmit.json
+msgid "barbed wire"
+msgstr ""
+
+#: .\ZhighEmit.json
+msgid "thick barbed wire"
+msgstr ""
+
+#: .\ZhighEmit.json
 msgid "goo splatter"
 msgstr ""
 
@@ -2625,6 +2827,24 @@ msgstr ""
 msgid "thick healing gas"
 msgstr ""
 
+#: .\ZhighEmit.json
+msgid "heal effect"
+msgstr ""
+
+#: .\ZhighEmit.json
+msgid "speed effect"
+msgstr ""
+
+#: .\ZhighEmit.json
+msgid "stamina effect"
+msgstr ""
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: .\ZhighFurn.json
+msgid ""
+"This item can be put inside a <info>holder</info> of an appropriate size."
+msgstr ""
+
 #: .\ZhighFurn.json
 msgid "indoor plant"
 msgstr ""
@@ -2696,6 +2916,22 @@ msgstr ""
 
 #: .\ZhighFurn.json
 msgid "clang!"
+msgstr ""
+
+#: .\ZhighFurn.json
+msgid "flame jerrycan"
+msgid_plural "flame jerrycans"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'flame jerrycan'}
+#: .\ZhighFurn.json
+msgid "Metal flame jerrycan for boobytraps.  Use it at your own risk."
+msgstr ""
+
+#. ~ Description for flame jerrycan
+#: .\ZhighFurn.json
+msgid "Modified jerrycan, if destroyed, could blow some serious stuff up."
 msgstr ""
 
 #: .\ZhighGunmods.json
@@ -3131,7 +3367,8 @@ msgid_plural "tazers"
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\ZhighItemRemake.json .\ZhighWeapons\ZhighRanged.json
+#: .\ZhighItemRemake.json .\ZhighWeapons\ZhighArtifacts.json
+#: .\ZhighWeapons\ZhighRanged.json
 msgctxt "gun_type_type"
 msgid "pistol"
 msgstr ""
@@ -3142,23 +3379,31 @@ msgid_plural "cameras"
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\ZhighItemRemake.json .\ZhighMonsters.json .\ZhighWeapons\ZhighRanged.json
-msgid "burst"
-msgstr ""
-
 #: .\ZhighItemRemake.json
 msgid "TEC-9"
 msgid_plural "TEC-9"
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\ZhighItemRemake.json .\ZhighWeapons\ZhighRanged.json
+#: .\ZhighItemRemake.json .\ZhighWeapons\ZhighArtifacts.json
+#: .\ZhighWeapons\ZhighRanged.json
 msgid "semi"
 msgstr ""
 
-#: .\ZhighItemRemake.json .\ZhighWeapons\ZhighRanged.json
+#: .\ZhighItemRemake.json .\ZhighMonsters.json .\ZhighWeapons\ZhighRanged.json
+msgid "burst"
+msgstr ""
+
+#: .\ZhighItemRemake.json .\ZhighWeapons\ZhighArtifacts.json
+#: .\ZhighWeapons\ZhighRanged.json
 msgid "auto"
 msgstr ""
+
+#: .\ZhighItemRemake.json
+msgid "Remington 870 MCS"
+msgid_plural "Remington 870 MCSs"
+msgstr[0] ""
+msgstr[1] ""
 
 #: .\ZhighItemRemake.json
 msgid "aluminum can"
@@ -3187,6 +3432,18 @@ msgstr[1] ""
 #: .\ZhighItemRemake.json
 msgid "throwing stick"
 msgid_plural "throwing sticks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItemRemake.json
+msgid "wooden javelin"
+msgid_plural "wooden javelins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItemRemake.json
+msgid "iron javelin"
+msgid_plural "iron javelins"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -4371,7 +4628,8 @@ msgid_plural "nail rifles"
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\ZhighItemRemake.json .\ZhighMonsters.json .\ZhighWeapons\ZhighRanged.json
+#: .\ZhighItemRemake.json .\ZhighMonsters.json
+#: .\ZhighWeapons\ZhighArtifacts.json .\ZhighWeapons\ZhighRanged.json
 msgctxt "gun_type_type"
 msgid "rifle"
 msgstr ""
@@ -4419,6 +4677,88 @@ msgstr[1] ""
 #: .\ZhighItemRemake.json
 msgid "spiral stone"
 msgid_plural "spiral stones"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItemRemake.json
+msgid "sharp rock"
+msgid_plural "sharp rocks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItemRemake.json
+msgid "cordless drill"
+msgid_plural "cordless drills"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action msg for {'str': 'cordless drill'}.
+#: .\ZhighItemRemake.json
+msgid "You turn the drill on."
+msgstr ""
+
+#. ~ Use action need_charges_msg for {'str': 'cordless drill'}.
+#: .\ZhighItemRemake.json
+msgid "The drill's batteries are dead."
+msgstr ""
+
+#: .\ZhighItemRemake.json
+msgid "cash card"
+msgid_plural "cash cards"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItemRemake.json
+msgid "foodplace loyalty card"
+msgid_plural "foodplace loyalty cards"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItemRemake.json
+msgid "prototype I/O recorder"
+msgid_plural "prototype I/O recorders"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItemRemake.json
+msgid "silver gas discount card"
+msgid_plural "silver gas discount cards"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItemRemake.json
+msgid "gold gas discount card"
+msgid_plural "gold gas discount cards"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItemRemake.json
+msgid "platinum gas discount card"
+msgid_plural "platinum gas discount cards"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItemRemake.json
+msgid "science ID card"
+msgid_plural "science ID cards"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItemRemake.json
+msgid "military ID card"
+msgid_plural "military ID cards"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItemRemake.json
+msgid "industrial ID card"
+msgid_plural "industrial ID cards"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItemRemake.json
+msgid "matchbook"
+msgid_plural "matchbooks"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -4693,20 +5033,6 @@ msgid ""
 "This is a compact and lightweight shaving and hygiene kit made for "
 "travelers.  You can use it to shave, get your hair trimmed, or wash things "
 "up."
-msgstr ""
-
-#: .\ZhighItems.json
-msgid "card multi-tool"
-msgid_plural "card multi-tools"
-msgstr[0] ""
-msgstr[1] ""
-
-#. ~ Description for {'str': 'card multi-tool'}
-#: .\ZhighItems.json
-msgid ""
-"A cleverly designed all-in-one tool which combines several smaller tools "
-"into a thick sized, card shaped plastic chunk.  Also holds a magnifying "
-"glass to start a fire."
 msgstr ""
 
 #: .\ZhighItems.json
@@ -5085,11 +5411,13 @@ msgid ""
 msgstr ""
 
 #: .\ZhighItems.json
-msgid "[low] signal marker"
-msgid_plural "[low] signal markers"
+msgid "[special] signal marker"
+msgid_plural "[special] signal markers"
 msgstr[0] ""
 msgstr[1] ""
 
+#. ~ Description for {'str': '[special] signal marker', 'str_pl': '[special]
+#. signal markers'}
 #. ~ Description for {'str': '[low] signal marker', 'str_pl': '[low] signal
 #. markers'}
 #. ~ Description for {'str': '[med] signal marker', 'str_pl': '[med] signal
@@ -5101,11 +5429,29 @@ msgid ""
 msgstr ""
 
 #: .\ZhighItems.json
-msgid "[med] signal marker"
-msgid_plural "[med] signal markers"
+msgid "modified signal marker"
+msgid_plural "modified signal markers"
 msgstr[0] ""
 msgstr[1] ""
 
+#. ~ Description for {'str': 'modified signal marker', 'str_pl': 'modified
+#. signal markers'}
+#: .\ZhighItems.json
+msgid ""
+"This is a portable radio-like device.  Modified by a special person, you "
+"could call for help.  This one has extra mods, which makes it useable for "
+"almost forever, if one have enough time.  Radioactive when broken, so don't "
+"try to break it."
+msgstr ""
+
+#: .\ZhighItems.json
+msgid "[low] signal marker"
+msgid_plural "[low] signal markers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action friendly_msg for {'str': '[low] signal marker', 'str_pl':
+#. '[low] signal markers'}.
 #. ~ Use action friendly_msg for {'str': '[med] signal marker', 'str_pl':
 #. '[med] signal markers'}.
 #. ~ Use action friendly_msg for {'str': '[high] signal marker', 'str_pl':
@@ -5114,6 +5460,8 @@ msgstr[1] ""
 msgid "A survivor got your signal and surveys the area!"
 msgstr ""
 
+#. ~ Use action hostile_msg for {'str': '[low] signal marker', 'str_pl':
+#. '[low] signal markers'}.
 #. ~ Use action hostile_msg for {'str': '[med] signal marker', 'str_pl':
 #. '[med] signal markers'}.
 #. ~ Use action hostile_msg for {'str': '[high] signal marker', 'str_pl':
@@ -5121,6 +5469,12 @@ msgstr ""
 #: .\ZhighItems.json
 msgid "You send the wrong signal; the survivor is hostile!"
 msgstr ""
+
+#: .\ZhighItems.json
+msgid "[med] signal marker"
+msgid_plural "[med] signal markers"
+msgstr[0] ""
+msgstr[1] ""
 
 #: .\ZhighItems.json
 msgid "[high] signal marker"
@@ -5200,6 +5554,7 @@ msgstr[1] ""
 #. ~ Use action menu_text for {'str': 'goo grenade'}.
 #. ~ Use action menu_text for {'str': 'improvised goo grenade'}.
 #. ~ Use action menu_text for {'str': 'improvised nail bomb'}.
+#. ~ Use action menu_text for {'str': 'web grenade'}.
 #: .\ZhighItems.json .\ZhighWeapons\ZhighThrowing.json
 msgid "Pull pin"
 msgstr ""
@@ -5232,6 +5587,7 @@ msgstr[1] ""
 #. ~ Use action no_deactivate_msg for {'str': 'active improvised goo
 #. grenade'}.
 #. ~ Use action no_deactivate_msg for {'str': 'active improvised nail bomb'}.
+#. ~ Use action no_deactivate_msg for {'str': 'active web grenade'}.
 #: .\ZhighItems.json .\ZhighWeapons\ZhighThrowing.json
 msgid "You've already pulled the %s's pin; try throwing it instead."
 msgstr ""
@@ -5413,19 +5769,6 @@ msgstr ""
 msgid "A simple wooden whistle, with it's unique skull like shape."
 msgstr ""
 
-#: .\ZhighItems.json
-msgid "wall kit"
-msgid_plural "wall kits"
-msgstr[0] ""
-msgstr[1] ""
-
-#. ~ Description for {'str': 'wall kit'}
-#: .\ZhighItems.json
-msgid ""
-"This is a rolled up wall kit, which you could make a wall or an improvised "
-"barricade out of one.  It could break easliy if something blows up nearby."
-msgstr ""
-
 #. ~ Description for {'str': 'dispenser'}
 #: .\ZhighItems.json
 msgid ""
@@ -5434,21 +5777,49 @@ msgid ""
 msgstr ""
 
 #: .\ZhighItems.json
-msgid "goo trap"
-msgid_plural "goo traps"
+msgid "wallet"
+msgid_plural "wallets"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Use action done_message for {'str': 'goo trap'}.
+#. ~ Description for {'str': 'wallet'}
 #: .\ZhighItems.json
-msgid "You set the goo pit."
+msgid "An average wallet.  Useful for holding cards and stuff."
 msgstr ""
 
-#. ~ Description for {'str': 'goo trap'}
+#: .\ZhighItems.json
+msgid "long wallet"
+msgid_plural "long wallets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'long wallet'}
+#: .\ZhighItems.json
+msgid "A fancy long wallet.  Useful for holding cards and stuff."
+msgstr ""
+
+#: .\ZhighItems.json
+msgid "wearable wallet"
+msgid_plural "wearable wallets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'wearable wallet'}
+#: .\ZhighItems.json
+msgid "A wearable wallet.  Useful for holding cards and stuff."
+msgstr ""
+
+#: .\ZhighItems.json
+msgid "duct tape wallet"
+msgid_plural "duct tape wallets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'duct tape wallet'}
 #: .\ZhighItems.json
 msgid ""
-"There is a label on this canister: \"Warning: contains highly toxic and "
-"corrosive materials.  Contents may be sentient.  Open at your own risk.\""
+"A wallet, crudely made with duct tape and cardboard.  Useful for holding "
+"cards and stuff."
 msgstr ""
 
 #: .\ZhighMartialArts.json
@@ -6210,6 +6581,204 @@ msgid "This is a mask, based on a mole."
 msgstr ""
 
 #: .\ZhighMasks.json
+msgid "fox mask"
+msgid_plural "fox masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'fox mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, based on a fox."
+msgstr ""
+
+#: .\ZhighMasks.json
+msgid "kitsune mask"
+msgid_plural "kitsune masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'kitsune mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, based on a kitsune."
+msgstr ""
+
+#: .\ZhighMasks.json
+msgid "octopus mask"
+msgid_plural "octopus masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'octopus mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, based on an octopus."
+msgstr ""
+
+#: .\ZhighMasks.json
+msgid "chameleon mask"
+msgid_plural "chameleon masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'chameleon mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, based on a chameleon."
+msgstr ""
+
+#: .\ZhighMasks.json
+msgid "fish mask"
+msgid_plural "fish masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'fish mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, based on a fish."
+msgstr ""
+
+#: .\ZhighMasks.json
+msgid "bat mask"
+msgid_plural "bat masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'bat mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, based on a bat."
+msgstr ""
+
+#: .\ZhighMasks.json
+msgid "warlus mask"
+msgid_plural "warlus masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'warlus mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, based on a warlus."
+msgstr ""
+
+#: .\ZhighMasks.json
+msgid "hare mask"
+msgid_plural "hare masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'hare mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, based on a hare."
+msgstr ""
+
+#: .\ZhighMasks.json
+msgid "grasshopper mask"
+msgid_plural "grasshopper masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'grasshopper mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, based on a grasshopper."
+msgstr ""
+
+#: .\ZhighMasks.json
+msgid "locust mask"
+msgid_plural "locust masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'locust mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, based on a locust."
+msgstr ""
+
+#: .\ZhighMasks.json
+msgid "cobra mask"
+msgid_plural "cobra masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'cobra mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, based on a cobra."
+msgstr ""
+
+#: .\ZhighMasks.json
+msgid "viper mask"
+msgid_plural "viper masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'viper mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, based on a viper."
+msgstr ""
+
+#: .\ZhighMasks.json
+msgid "black mamba mask"
+msgid_plural "black mamba masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'black mamba mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, based on a black mamba."
+msgstr ""
+
+#: .\ZhighMasks.json
+msgid "mouse mask"
+msgid_plural "mouse masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'mouse mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, based on a mouse."
+msgstr ""
+
+#: .\ZhighMasks.json
+msgid "bull mask"
+msgid_plural "bull masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'bull mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, based on a bull."
+msgstr ""
+
+#: .\ZhighMasks.json
+msgid "swan mask"
+msgid_plural "swan masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'swan mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, based on a swan."
+msgstr ""
+
+#: .\ZhighMasks.json
+msgid "bear mask"
+msgid_plural "bear masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'bear mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, based on a bear."
+msgstr ""
+
+#: .\ZhighMasks.json
+msgid "panda mask"
+msgid_plural "panda masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'panda mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, based on a panda."
+msgstr ""
+
+#: .\ZhighMasks.json
 msgid "paintball mask"
 msgid_plural "paintball masks"
 msgstr[0] ""
@@ -6552,20 +7121,39 @@ msgid ""
 msgstr ""
 
 #: .\ZhighMeds.json
-msgid "injectable xPC-12 antitoxin-antidote"
-msgid_plural "injectable xPC-12 antitoxin-antidotes"
+msgid "injectable xPC-12 antitoxin-antivenom-antidote"
+msgid_plural "injectable xPC-12 antitoxin-antivenom-antidotes"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Use action activation_message for injectable xPC-12 antitoxin-antidote.
+#. ~ Use action activation_message for injectable xPC-12 antitoxin-antivenom-
+#. antidote.
 #: .\ZhighMeds.json
 msgid "You shoot up, and remove the toxins in your body."
 msgstr ""
 
-#. ~ Description for injectable xPC-12 antitoxin-antidote
+#. ~ Description for injectable xPC-12 antitoxin-antivenom-antidote
 #: .\ZhighMeds.json
 msgid ""
 "Removes most of the known poisons and toxins used in the combat industry.  Can be used to relieve the effects of natural poisons.  \n"
+" <color_yellow> Presented by Phoenix corp.</color>"
+msgstr ""
+
+#: .\ZhighMeds.json
+msgid "injectable \"Obdolbos\" cocktail"
+msgid_plural "injectable \"Obdolbos\" cocktails"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action activation_message for injectable "Obdolbos" cocktail.
+#: .\ZhighMeds.json
+msgid "You shoot up, and remove the parasites in your body."
+msgstr ""
+
+#. ~ Description for injectable "Obdolbos" cocktail
+#: .\ZhighMeds.json
+msgid ""
+"Developed for removing various parasites, this turned out to be just as useful when used as a remover for 'abnormal' effects during some scientific experiments.  \n"
 " <color_yellow> Presented by Phoenix corp.</color>"
 msgstr ""
 
@@ -6959,6 +7547,19 @@ msgid ""
 " <color_yellow> Presented by Phoenix corp.</color>"
 msgstr ""
 
+#: .\ZhighMeds.json
+msgid "MPD-0 stim pistol"
+msgid_plural "MPD-0 stim pistols"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'MPD-0 stim pistol'}
+#: .\ZhighMeds.json
+msgid ""
+"The MPD-0 Stim Pistol fires a hypodermic shot to revive himself or teammates"
+" from a distance when a person needs some medical help."
+msgstr ""
+
 #: .\ZhighMonSurvivors.json
 msgid "survivor"
 msgid_plural "survivors"
@@ -6988,7 +7589,7 @@ msgid "Fake gun for a survivor."
 msgstr ""
 
 #: .\ZhighMonSurvivors.json .\ZhighMonsters.json
-#: .\ZhighWeapons\ZhighRanged.json
+#: .\ZhighWeapons\ZhighArtifacts.json .\ZhighWeapons\ZhighRanged.json
 msgctxt "gun_type_type"
 msgid "smg"
 msgstr ""
@@ -7092,12 +7693,6 @@ msgid ""
 msgstr ""
 
 #: .\ZhighMonsters.json
-msgid "unknown machine"
-msgid_plural "unknown machines"
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\ZhighMonsters.json
 msgid "supply drop"
 msgid_plural "supply drops"
 msgstr[0] ""
@@ -7122,21 +7717,21 @@ msgid ""
 "like a salmon, and ready to chop down anything in their way.  En garde!"
 msgstr ""
 
-#: .\ZhighMonsters.json .\ZhighSpells.json
+#: .\ZhighMonsters.json .\ZhighWeapons\ZhighSpells.json
 msgid "Healing dart discharge"
 msgstr ""
 
 #. ~ Description for Healing dart discharge
-#: .\ZhighMonsters.json .\ZhighSpells.json
+#: .\ZhighMonsters.json .\ZhighWeapons\ZhighSpells.json
 msgid "Heal dart go pew pew."
 msgstr ""
 
-#: .\ZhighMonsters.json .\ZhighSpells.json
+#: .\ZhighMonsters.json .\ZhighWeapons\ZhighSpells.json
 msgid "Regeneration effect"
 msgstr ""
 
 #. ~ Description for {'str': 'Regeneration effect'}
-#: .\ZhighMonsters.json .\ZhighSpells.json
+#: .\ZhighMonsters.json .\ZhighWeapons\ZhighSpells.json
 msgid "This creates the effect that heals the user and the ones nearby."
 msgstr ""
 
@@ -7250,6 +7845,12 @@ msgid ""
 "successfully reintroduced and their numbers reached record highs in the "
 "decade before the Cataclysm.  Lucky you."
 msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "unknown machine"
+msgid_plural "unknown machines"
+msgstr[0] ""
+msgstr[1] ""
 
 #. ~ Description for {'str': 'unknown machine'}
 #: .\ZhighMonsters.json
@@ -7440,6 +8041,32 @@ msgid_plural "mounted BB sniper"
 msgstr[0] ""
 msgstr[1] ""
 
+#: .\ZhighMonsters.json
+msgid "fire dinosaur"
+msgid_plural "fire dinosaurs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'fire dinosaur'}
+#. ~ Description for {'str': 'acid dinosaur'}
+#: .\ZhighMonsters.json
+msgid "Yes, it's a dinosaur.  And no, no one knows how this works."
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "The fire dinosaur shoots fire from it's mouth!"
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "acid dinosaur"
+msgid_plural "acid dinosaurs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighMonsters.json
+msgid "The acid dinosaur launches a spray of acid!"
+msgstr ""
+
 #: .\ZhighMutations.json
 msgid "Hair: MJ"
 msgstr ""
@@ -7618,6 +8245,42 @@ msgstr ""
 #. ~ Description for {'str': 'Hair: brown, short, parted'}
 #: .\ZhighMutations.json
 msgid "Short brown parted hair style."
+msgstr ""
+
+#: .\ZhighMutations.json
+msgid "Hair: pale blond, short"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair: pale blond, short'}
+#: .\ZhighMutations.json
+msgid "Short pale blond hair style."
+msgstr ""
+
+#: .\ZhighMutations.json
+msgid "Hair: white, long"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair: white, long'}
+#: .\ZhighMutations.json
+msgid "Long white hair style with pink parts."
+msgstr ""
+
+#: .\ZhighMutations.json
+msgid "Hair: black, medium-length"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair: black, medium-length'}
+#: .\ZhighMutations.json
+msgid "Medium-length black hair style."
+msgstr ""
+
+#: .\ZhighMutations.json
+msgid "Hair: black, long"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair: black, long'}
+#: .\ZhighMutations.json
+msgid "Long black hair style with some pink highlights."
 msgstr ""
 
 #: .\ZhighMutations.json
@@ -8017,6 +8680,15 @@ msgid "Pair of indigo eyes."
 msgstr ""
 
 #: .\ZhighMutations.json
+msgid "Eye color: pale"
+msgstr ""
+
+#. ~ Description for {'str': 'Eye color: pale'}
+#: .\ZhighMutations.json
+msgid "Pair of pale eyes."
+msgstr ""
+
+#: .\ZhighMutations.json
 msgid "School Hall Monitor"
 msgstr ""
 
@@ -8288,7 +8960,8 @@ msgstr[1] ""
 msgid "this a pseudo item"
 msgstr ""
 
-#: .\ZhighMutations.json .\ZhighWeapons\ZhighRanged.json
+#: .\ZhighMutations.json .\ZhighWeapons\ZhighArtifacts.json
+#: .\ZhighWeapons\ZhighRanged.json
 msgctxt "gun_type_type"
 msgid "shotgun"
 msgstr ""
@@ -11815,6 +12488,32 @@ msgstr ""
 
 #: .\ZhighProfession.json
 msgctxt "profession_male"
+msgid "Student - Fursuit Actor"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Fursuit Actor"
+msgstr ""
+
+#. ~ Profession (male Student - Fursuit Actor) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"Some made fun of you, others bullied you when you were in a suit.  Now is "
+"the time to pay them back."
+msgstr ""
+
+#. ~ Profession (female Student - Fursuit Actor) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"Some made fun of you, others bullied you when you were in a suit.  Now is "
+"the time to pay them back."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
 msgid "Student - mallninja"
 msgstr ""
 
@@ -13417,7 +14116,7 @@ msgstr ""
 msgid "Hurry up."
 msgstr ""
 
-#: .\ZhighSpeech.json
+#: .\ZhighSpeech.json .\ZhighNpcs\ZhighNpcBaseballGrunt.json
 msgid "Let's go."
 msgstr ""
 
@@ -13511,24 +14210,6 @@ msgstr ""
 msgid "Come on, we have to move our asses."
 msgstr ""
 
-#: .\ZhighSpells.json
-msgid "Life Drain Spell"
-msgstr ""
-
-#. ~ Description for {'str': 'Life Drain Spell'}
-#: .\ZhighSpells.json
-msgid "This exists only to trigger on-self effects from an on-hit action."
-msgstr ""
-
-#: .\ZhighSpells.json
-msgid "Life Drain Effect"
-msgstr ""
-
-#. ~ Description for {'str': 'Life Drain Effect'}
-#: .\ZhighSpells.json
-msgid "This creates the effect that heals the caster."
-msgstr ""
-
 #: .\ZhighVehichleParts.json
 msgid "mounted heavy flamethrower"
 msgstr ""
@@ -13577,7 +14258,19 @@ msgid "Raider"
 msgstr ""
 
 #: .\ZhighNpcs\ZhighBandit2.json
+msgid "Ranged Combatant"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighBandit2.json
+msgid "Melee Combatant"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighBandit2.json
 msgid "National Guard"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighBandit2.json
+msgid "I'm just here for the paycheck."
 msgstr ""
 
 #: .\ZhighNpcs\ZhighFactionsNpcs.json
@@ -13605,12 +14298,12 @@ msgid ""
 msgstr ""
 
 #: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcArcher.json
-#: .\ZhighNpcs\ZhighNpcBomber.json .\ZhighNpcs\ZhighNpcChairman.json
-#: .\ZhighNpcs\ZhighNpcFireman.json .\ZhighNpcs\ZhighNpcGrunt.json
-#: .\ZhighNpcs\ZhighNpcGunner.json .\ZhighNpcs\ZhighNpcHacker.json
-#: .\ZhighNpcs\ZhighNpcJuvenile.json .\ZhighNpcs\ZhighNpcMedic.json
-#: .\ZhighNpcs\ZhighNpcMuscle.json .\ZhighNpcs\ZhighNpcMusketeer.json
-#: .\ZhighNpcs\ZhighNpcSwordsman.json
+#: .\ZhighNpcs\ZhighNpcBaseballGrunt.json .\ZhighNpcs\ZhighNpcBomber.json
+#: .\ZhighNpcs\ZhighNpcChairman.json .\ZhighNpcs\ZhighNpcFireman.json
+#: .\ZhighNpcs\ZhighNpcGrunt.json .\ZhighNpcs\ZhighNpcGunner.json
+#: .\ZhighNpcs\ZhighNpcHacker.json .\ZhighNpcs\ZhighNpcJuvenile.json
+#: .\ZhighNpcs\ZhighNpcMedic.json .\ZhighNpcs\ZhighNpcMuscle.json
+#: .\ZhighNpcs\ZhighNpcMusketeer.json .\ZhighNpcs\ZhighNpcSwordsman.json
 msgid "student"
 msgstr ""
 
@@ -13652,10 +14345,11 @@ msgid "Don't mind me…"
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpc47.json .\ZhighNpcs\ZhighNpcDeadeye.json
-#: .\ZhighNpcs\ZhighNpcFrozenCactus.json .\ZhighNpcs\ZhighNpcHambro.json
-#: .\ZhighNpcs\ZhighNpcHitman.json .\ZhighNpcs\ZhighNpcJunbird.json
-#: .\ZhighNpcs\ZhighNpcOctober.json .\ZhighNpcs\ZhighNpcRanger.json
-#: .\ZhighNpcs\ZhighNpcSnowman.json .\ZhighNpcs\ZighNpcGunsmith.json
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json .\ZhighNpcs\ZhighNpcFrozenCactus.json
+#: .\ZhighNpcs\ZhighNpcHambro.json .\ZhighNpcs\ZhighNpcHitman.json
+#: .\ZhighNpcs\ZhighNpcJunbird.json .\ZhighNpcs\ZhighNpcOctober.json
+#: .\ZhighNpcs\ZhighNpcRanger.json .\ZhighNpcs\ZhighNpcSnowman.json
+#: .\ZhighNpcs\ZighNpcGunsmith.json
 msgid "Student"
 msgstr ""
 
@@ -13711,8 +14405,8 @@ msgstr ""
 msgid "Welcome, <name_g>!"
 msgstr ""
 
-#: .\ZhighNpcs\ZhighNpcAmmoDude.json .\ZhighNpcs\ZhighNpcRanger.json
-#: .\ZhighNpcs\ZighNpcGunsmith.json
+#: .\ZhighNpcs\ZhighNpcAmmoDude.json .\ZhighNpcs\ZhighNpcFirstBlood.json
+#: .\ZhighNpcs\ZhighNpcRanger.json .\ZhighNpcs\ZighNpcGunsmith.json
 msgid "<greet>."
 msgstr ""
 
@@ -13730,7 +14424,8 @@ msgstr ""
 msgid "I'd like to buy some ammo."
 msgstr ""
 
-#: .\ZhighNpcs\ZhighNpcAmmoDude.json .\ZhighNpcs\ZhighNpcDeadeye.json
+#: .\ZhighNpcs\ZhighNpcAmmoDude.json .\ZhighNpcs\ZhighNpcBaseballGrunt.json
+#: .\ZhighNpcs\ZhighNpcDeadeye.json .\ZhighNpcs\ZhighNpcFirstBlood.json
 #: .\ZhighNpcs\ZhighNpcGrunt.json .\ZhighNpcs\ZhighNpcJuvenile.json
 #: .\ZhighNpcs\ZhighNpcMuscle.json .\ZhighNpcs\ZhighNpcMusketeer.json
 #: .\ZhighNpcs\ZhighNpcRanger.json .\ZhighNpcs\ZhighNpcSchoolJuddak.json
@@ -13771,7 +14466,8 @@ msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcAmmoDude.json .\ZhighNpcs\ZhighNpcDeadeye.json
 #: .\ZhighNpcs\ZhighNpcHacker.json .\ZhighNpcs\ZhighNpcRanger.json
-#: .\ZhighNpcs\ZhighSchoolNurse.json .\ZhighNpcs\ZighNpcGunsmith.json
+#: .\ZhighNpcs\ZhighNpcWitch.json .\ZhighNpcs\ZhighSchoolNurse.json
+#: .\ZhighNpcs\ZighNpcGunsmith.json
 msgid "Nevermind."
 msgstr ""
 
@@ -13849,7 +14545,8 @@ msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcAmmoDude.json .\ZhighNpcs\ZhighNpcDeadeye.json
 #: .\ZhighNpcs\ZhighNpcHacker.json .\ZhighNpcs\ZhighNpcRanger.json
-#: .\ZhighNpcs\ZhighSchoolNurse.json .\ZhighNpcs\ZighNpcGunsmith.json
+#: .\ZhighNpcs\ZhighNpcWitch.json .\ZhighNpcs\ZhighSchoolNurse.json
+#: .\ZhighNpcs\ZighNpcGunsmith.json
 msgid "Is there anything else you need?"
 msgstr ""
 
@@ -13866,62 +14563,74 @@ msgid "I shoot others with a crossbow."
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcChairman.json
+#: .\ZhighNpcs\ZhighNpcWitch.json
 msgid "What’s new?"
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcChairman.json
+#: .\ZhighNpcs\ZhighNpcWitch.json
 msgid "Hey, what's good?"
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcChairman.json
+#: .\ZhighNpcs\ZhighNpcWitch.json
 msgid "How's your day?"
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcChairman.json
+#: .\ZhighNpcs\ZhighNpcWitch.json
 msgid "Hey, how's it hanging?"
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcChairman.json
+#: .\ZhighNpcs\ZhighNpcWitch.json
 msgid "What's going on?"
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcChairman.json
+#: .\ZhighNpcs\ZhighNpcWitch.json
 msgid "How's everything?"
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcChairman.json
+#: .\ZhighNpcs\ZhighNpcWitch.json
 msgid "Yo!"
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcChairman.json
-#: .\ZhighNpcs\ZhighNpcMedic.json
+#: .\ZhighNpcs\ZhighNpcMedic.json .\ZhighNpcs\ZhighNpcWitch.json
 msgid "Good to see you!"
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcChairman.json
+#: .\ZhighNpcs\ZhighNpcWitch.json
 msgid "Hey there!"
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcChairman.json
+#: .\ZhighNpcs\ZhighNpcWitch.json
 msgid "Hey!"
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcChairman.json
+#: .\ZhighNpcs\ZhighNpcWitch.json
 msgid "Hi!"
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcChairman.json
+#: .\ZhighNpcs\ZhighNpcWitch.json
 msgid "Hi, what’s up?"
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcChairman.json
+#: .\ZhighNpcs\ZhighNpcWitch.json
 msgid "What's up?"
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcBomber.json
 #: .\ZhighNpcs\ZhighNpcChairman.json .\ZhighNpcs\ZhighNpcFireman.json
-#: .\ZhighNpcs\ZhighNpcHacker.json .\ZhighNpcs\ZhighNpcSchoolJuddak.json
-#: .\ZhighNpcs\ZhighNpcSwordsman.json
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json .\ZhighNpcs\ZhighNpcHacker.json
+#: .\ZhighNpcs\ZhighNpcSchoolJuddak.json .\ZhighNpcs\ZhighNpcSwordsman.json
 msgid "What is this place?"
 msgstr ""
 
@@ -13931,14 +14640,16 @@ msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcBomber.json
 #: .\ZhighNpcs\ZhighNpcChairman.json .\ZhighNpcs\ZhighNpcFireman.json
-#: .\ZhighNpcs\ZhighNpcHacker.json .\ZhighNpcs\ZhighNpcSchoolJuddak.json
-#: .\ZhighNpcs\ZhighNpcSwordsman.json
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json .\ZhighNpcs\ZhighNpcHacker.json
+#: .\ZhighNpcs\ZhighNpcSchoolJuddak.json .\ZhighNpcs\ZhighNpcSwordsman.json
+#: .\ZhighNpcs\ZhighNpcWitch.json
 msgid "Anything I can do for you?"
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcBomber.json
 #: .\ZhighNpcs\ZhighNpcChairman.json .\ZhighNpcs\ZhighNpcFireman.json
 #: .\ZhighNpcs\ZhighNpcHacker.json .\ZhighNpcs\ZhighNpcSwordsman.json
+#: .\ZhighNpcs\ZhighNpcWitch.json
 msgid "See you later."
 msgstr ""
 
@@ -13955,8 +14666,9 @@ msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcBomber.json
 #: .\ZhighNpcs\ZhighNpcChairman.json .\ZhighNpcs\ZhighNpcFireman.json
-#: .\ZhighNpcs\ZhighNpcHacker.json .\ZhighNpcs\ZhighNpcSchoolJuddak.json
-#: .\ZhighNpcs\ZhighNpcSwordsman.json
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json .\ZhighNpcs\ZhighNpcHacker.json
+#: .\ZhighNpcs\ZhighNpcSchoolJuddak.json .\ZhighNpcs\ZhighNpcSwordsman.json
+#: .\ZhighNpcs\ZhighNpcWitch.json
 msgid "What do you trade?"
 msgstr ""
 
@@ -13970,13 +14682,13 @@ msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcBomber.json
 #: .\ZhighNpcs\ZhighNpcChairman.json .\ZhighNpcs\ZhighNpcFireman.json
-#: .\ZhighNpcs\ZhighNpcHacker.json .\ZhighNpcs\ZhighNpcSchoolJuddak.json
-#: .\ZhighNpcs\ZhighNpcSwordsman.json
+#: .\ZhighNpcs\ZhighNpcHacker.json .\ZhighNpcs\ZhighNpcSwordsman.json
+#: .\ZhighNpcs\ZhighNpcWitch.json
 msgid "Oh, okay."
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcBomber.json
-#: .\ZhighNpcs\ZhighNpcHacker.json
+#: .\ZhighNpcs\ZhighNpcHacker.json .\ZhighNpcs\ZhighNpcWitch.json
 msgid "Oh, okay.  I'll go look for him then!"
 msgstr ""
 
@@ -13997,6 +14709,7 @@ msgstr ""
 #: .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcBomber.json
 #: .\ZhighNpcs\ZhighNpcChairman.json .\ZhighNpcs\ZhighNpcFireman.json
 #: .\ZhighNpcs\ZhighNpcHacker.json .\ZhighNpcs\ZhighNpcSwordsman.json
+#: .\ZhighNpcs\ZhighNpcWitch.json
 msgid "Will do, thanks!"
 msgstr ""
 
@@ -14050,14 +14763,14 @@ msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcBomber.json
 #: .\ZhighNpcs\ZhighNpcChairman.json .\ZhighNpcs\ZhighNpcHacker.json
-#: .\ZhighNpcs\ZhighNpcSwordsman.json
+#: .\ZhighNpcs\ZhighNpcSwordsman.json .\ZhighNpcs\ZhighNpcWitch.json
 msgid ""
 "Stay safe out there.  Hate to have to kill you after you've already died."
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcBomber.json
 #: .\ZhighNpcs\ZhighNpcChairman.json .\ZhighNpcs\ZhighNpcHacker.json
-#: .\ZhighNpcs\ZhighNpcSwordsman.json
+#: .\ZhighNpcs\ZhighNpcSwordsman.json .\ZhighNpcs\ZhighNpcWitch.json
 msgid "Yeah, I won't."
 msgstr ""
 
@@ -14114,6 +14827,36 @@ msgstr ""
 #: .\ZhighNpcs\ZhighNpcArcher.json .\ZhighNpcs\ZhighNpcBomber.json
 #: .\ZhighNpcs\ZhighNpcChairman.json .\ZhighNpcs\ZhighNpcHacker.json
 msgid "Shit happens."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcBaseballGrunt.json
+msgid "Student - Baseball Player"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcBaseballGrunt.json .\ZhighNpcs\ZhighNpcGrunt.json
+#: .\ZhighNpcs\ZhighNpcGunner.json .\ZhighNpcs\ZhighNpcJuvenile.json
+#: .\ZhighNpcs\ZhighNpcMuscle.json .\ZhighNpcs\ZhighNpcMusketeer.json
+msgid "Fighting for the all-mighty dollar."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcBaseballGrunt.json .\ZhighNpcs\ZhighNpcGrunt.json
+#: .\ZhighNpcs\ZhighNpcJuvenile.json .\ZhighNpcs\ZhighNpcMuscle.json
+#: .\ZhighNpcs\ZhighNpcMusketeer.json
+msgid "I haven't done anything wrong… yet."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcBaseballGrunt.json .\ZhighNpcs\ZhighNpcGrunt.json
+#: .\ZhighNpcs\ZhighNpcJuvenile.json .\ZhighNpcs\ZhighNpcMuscle.json
+#: .\ZhighNpcs\ZhighNpcMusketeer.json
+msgid "Hm…"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcBaseballGrunt.json
+msgid "Follow me."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcBaseballGrunt.json .\ZhighNpcs\ZhighNpcRanger.json
+msgid "Alright."
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcBomber.json
@@ -14226,8 +14969,7 @@ msgid ""
 "there are two walls so we cannot escape through roads."
 msgstr ""
 
-#: .\ZhighNpcs\ZhighNpcChairman.json .\ZhighNpcs\ZhighNpcSchoolJuddak.json
-#: .\ZhighNpcs\ZhighNpcSwordsman.json
+#: .\ZhighNpcs\ZhighNpcChairman.json .\ZhighNpcs\ZhighNpcSwordsman.json
 msgid "Oh, okay.  Talk to you later!"
 msgstr ""
 
@@ -14370,12 +15112,13 @@ msgid ""
 "initiative."
 msgstr ""
 
-#: .\ZhighNpcs\ZhighNpcChairman.json .\ZhighNpcs\ZhighNpcSchoolJuddak.json
+#: .\ZhighNpcs\ZhighNpcChairman.json .\ZhighNpcs\ZhighNpcFirstBlood.json
+#: .\ZhighNpcs\ZhighNpcSchoolJuddak.json
 msgid "I'd secure an ammo cache and try to sweep a town in multiple passes."
 msgstr ""
 
-#: .\ZhighNpcs\ZhighNpcChairman.json .\ZhighNpcs\ZhighNpcMedic.json
-#: .\ZhighNpcs\ZhighNpcSchoolJuddak.json
+#: .\ZhighNpcs\ZhighNpcChairman.json .\ZhighNpcs\ZhighNpcFirstBlood.json
+#: .\ZhighNpcs\ZhighNpcMedic.json .\ZhighNpcs\ZhighNpcSchoolJuddak.json
 msgid "Got this knocked out?"
 msgstr ""
 
@@ -14390,8 +15133,8 @@ msgstr ""
 msgid "I don't think that was quite thirty dead zeds."
 msgstr ""
 
-#: .\ZhighNpcs\ZhighNpcChairman.json .\ZhighNpcs\ZhighNpcMedic.json
-#: .\ZhighNpcs\ZhighNpcSchoolJuddak.json
+#: .\ZhighNpcs\ZhighNpcChairman.json .\ZhighNpcs\ZhighNpcFirstBlood.json
+#: .\ZhighNpcs\ZhighNpcMedic.json .\ZhighNpcs\ZhighNpcSchoolJuddak.json
 msgid "Quitting already?"
 msgstr ""
 
@@ -14456,7 +15199,7 @@ msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcChairman.json .\ZhighNpcs\ZhighNpcHacker.json
 #: .\ZhighNpcs\ZhighNpcMedic.json .\ZhighNpcs\ZhighNpcSchoolJuddak.json
-#: .\ZhighNpcs\ZhighNpcSwordsman.json
+#: .\ZhighNpcs\ZhighNpcSwordsman.json .\ZhighNpcs\ZhighNpcWitch.json
 msgid "It was a lost cause anyways…"
 msgstr ""
 
@@ -14661,7 +15404,8 @@ msgstr ""
 msgid "I sell bows and bow accessories."
 msgstr ""
 
-#: .\ZhighNpcs\ZhighNpcDeadeye.json .\ZhighNpcs\ZhighNpcRanger.json
+#: .\ZhighNpcs\ZhighNpcDeadeye.json .\ZhighNpcs\ZhighNpcFirstBlood.json
+#: .\ZhighNpcs\ZhighNpcRanger.json
 msgid "School hall monitor."
 msgstr ""
 
@@ -14866,6 +15610,127 @@ msgstr ""
 msgid "Shit."
 msgstr ""
 
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json
+msgid "Dong Seok Jeong"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json .\ZhighNpcs\ZhighNpcRanger.json
+msgid "..."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json .\ZhighNpcs\ZhighNpcGrunt.json
+#: .\ZhighNpcs\ZhighNpcJuvenile.json .\ZhighNpcs\ZhighNpcMuscle.json
+#: .\ZhighNpcs\ZhighNpcMusketeer.json .\ZhighNpcs\ZhighNpcSchoolJuddak.json
+msgid "Who are you?"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json
+msgid "Ain't a normal place.  You know it, and I know it."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json
+msgid "Uh huh?"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json .\ZhighNpcs\ZhighNpcSchoolJuddak.json
+msgid ""
+"I'm one of the hall monitors.  Well, the only one who is left.  I'm here to "
+"help keep the people inside this school safe and make sure everyone is safe."
+"  Let me know if you need any help."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json .\ZhighNpcs\ZhighNpcSchoolJuddak.json
+msgid "Oh, <okay>."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json
+msgid ""
+"What kind of a school has a subway under the school?  You could grab a "
+"crowbar and lift that manhole at the middle of the school building.  You "
+"could find out more."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json
+msgid "What's under that manhole?"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json .\ZhighNpcs\ZhighNpcSchoolJuddak.json
+msgid "Oh, <okay>.  Talk to you later!"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json
+msgid "Labs.  You could find it yourself."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json .\ZhighNpcs\ZhighNpcSchoolJuddak.json
+msgid "Guess you are right."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json .\ZhighNpcs\ZhighNpcSchoolJuddak.json
+msgid "Hmm, <okay>.  Talk to you later!"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json
+msgid "Testing your skills"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json
+msgid ""
+"Since you did killed me once, you must be stronger than most of the people…"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json
+msgid ""
+"Let's start with a test.  At the music venue - that the students call 'the "
+"nightclub' there is a DJ who became a zombie."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json
+msgid "For a kill, fifty coins you get."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json
+msgid "Do it later then."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json
+msgid "Good."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json
+msgid "You dunno how to count?"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json
+msgid "Assassination"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json
+msgid "You did passed the test.  Want more work?"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json
+msgid ""
+"There are some mad scientist group - which I also worked in.  These <name_b>"
+" have to be taken down.  Eliminate that <name_b>."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json
+msgid "Nice."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json
+msgid "Get good guns, good gear - then do the work."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json
+msgid "Killed that <name_b>?"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcFirstBlood.json
+msgid "You sure?"
+msgstr ""
+
 #: .\ZhighNpcs\ZhighNpcFrozenCactus.json
 msgid "In Jang 'frozen' Ssun"
 msgstr ""
@@ -14881,28 +15746,6 @@ msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcGrunt.json
 msgid "Student - Grunt"
-msgstr ""
-
-#: .\ZhighNpcs\ZhighNpcGrunt.json .\ZhighNpcs\ZhighNpcGunner.json
-#: .\ZhighNpcs\ZhighNpcJuvenile.json .\ZhighNpcs\ZhighNpcMuscle.json
-#: .\ZhighNpcs\ZhighNpcMusketeer.json
-msgid "Fighting for the all-mighty dollar."
-msgstr ""
-
-#: .\ZhighNpcs\ZhighNpcGrunt.json .\ZhighNpcs\ZhighNpcJuvenile.json
-#: .\ZhighNpcs\ZhighNpcMuscle.json .\ZhighNpcs\ZhighNpcMusketeer.json
-msgid "I haven't done anything wrong… yet."
-msgstr ""
-
-#: .\ZhighNpcs\ZhighNpcGrunt.json .\ZhighNpcs\ZhighNpcJuvenile.json
-#: .\ZhighNpcs\ZhighNpcMuscle.json .\ZhighNpcs\ZhighNpcMusketeer.json
-msgid "Hm…"
-msgstr ""
-
-#: .\ZhighNpcs\ZhighNpcGrunt.json .\ZhighNpcs\ZhighNpcJuvenile.json
-#: .\ZhighNpcs\ZhighNpcMuscle.json .\ZhighNpcs\ZhighNpcMusketeer.json
-#: .\ZhighNpcs\ZhighNpcSchoolJuddak.json
-msgid "Who are you?"
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcGrunt.json .\ZhighNpcs\ZhighNpcJuvenile.json
@@ -15048,7 +15891,7 @@ msgstr ""
 msgid "[50$]  I'll buy one."
 msgstr ""
 
-#: .\ZhighNpcs\ZhighNpcHacker.json
+#: .\ZhighNpcs\ZhighNpcHacker.json .\ZhighNpcs\ZhighNpcWitch.json
 msgid "What do you need?"
 msgstr ""
 
@@ -15062,6 +15905,10 @@ msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcHacker.json
 msgid "[3 signal marker]  I'll buy a low signal marker."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcHacker.json
+msgid "[5 signal marker]  I'll buy a special signal marker."
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcHacker.json
@@ -15775,10 +16622,6 @@ msgid "Ranger"
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcRanger.json
-msgid "..."
-msgstr ""
-
-#: .\ZhighNpcs\ZhighNpcRanger.json
 msgid ""
 "My own business, monitor.  You pay me, I give you stuff.  Especially arrow "
 "related items."
@@ -15788,10 +16631,6 @@ msgstr ""
 msgid ""
 "I supply this school with arrows.  Ain't that cheap, but I do have enough to"
 " sell and support others."
-msgstr ""
-
-#: .\ZhighNpcs\ZhighNpcRanger.json
-msgid "Alright."
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcRanger.json
@@ -15973,13 +16812,6 @@ msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcSchoolJuddak.json
 msgid ""
-"I'm one of the hall monitors.  Well, the only one who is left.  I'm here to "
-"help keep the people inside this school safe and make sure everyone is safe."
-"  Let me know if you need any help."
-msgstr ""
-
-#: .\ZhighNpcs\ZhighNpcSchoolJuddak.json
-msgid ""
 "Two walls.  Two walls are blocking the whole school, and the main gate - "
 "there is some kinda mechanical sounds outside the blocked gate, that we "
 "never heard about.  We could tear the doors down if we have some welding "
@@ -15997,14 +16829,6 @@ msgid ""
 "sent some guys with that cosplayer's people, they think they saw some kinda "
 "mushroom/plant tower or something.  They could have been lying, but what is "
 "the point in this kind of situation?"
-msgstr ""
-
-#: .\ZhighNpcs\ZhighNpcSchoolJuddak.json
-msgid "Guess you are right."
-msgstr ""
-
-#: .\ZhighNpcs\ZhighNpcSchoolJuddak.json
-msgid "Hmm, okay.  Talk to you later!"
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcSchoolJuddak.json
@@ -16641,6 +17465,175 @@ msgid ""
 "ASAP."
 msgstr ""
 
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "Valentine"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "Witch"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "I'm just a passing-through witch.  Remember that!"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "Oh, how cute."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json .\ZhighNpcs\ZhighSchoolNurse.json
+msgid "Welcome..."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json .\ZhighNpcs\ZhighSchoolNurse.json
+msgid "Hey <name_g>!"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json .\ZhighNpcs\ZhighSchoolNurse.json
+msgid "Welcome!"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json .\ZhighNpcs\ZhighSchoolNurse.json
+msgid "Good to see you again, <name_g>."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json .\ZhighNpcs\ZhighSchoolNurse.json
+msgid "Here to trade stuff, I hope?"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "You see anything you want, <name_g>?"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json .\ZhighNpcs\ZhighSchoolNurse.json
+msgid "Safe travels, <name_g>."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "Who... are you?"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "I'd like to exchange some items."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid ""
+"I'm just a passing-through witch.  Remember that!  Or not, your choice."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "Not an actual witch, right?"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid ""
+"Ha!  You could belive my magic or not, but one thing is certain for you; it "
+"is useful for anyone, I assure you, kiddo."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid ""
+"Welp, I am collecting coins and stuff, so... give me some coins or related "
+"things to coins, then I will give you some magic items."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "Magic?"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "Can I buy some items?"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid ""
+"It's a secret.  No questions, just bring me some items, or finish some "
+"quests.  Then, you get some magical stuff.  Deal?"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "Alright then...?"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "[1 Collectible Card - Blank]  I'll buy a random card pack."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "[10 Merch]  I'll buy random card packs."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "[1 Hub 01 Gold Coins]  I'll buy a deck of random cards."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "[30 High School Coins]  I'll buy random card packs."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "[5 chits]  I'll buy random card packs."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "[5 FlatCoins]  I'll buy random card packs."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "[5 icons]  I'll buy random card packs."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "[3 signal marker]  I'll buy random card packs."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "Magical quest"
+msgstr ""
+
+#. ~ Description for mission '{'str': 'Magical quest'}'
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "Clear out the rooftop, to get some cards."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "Do some chores."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid ""
+"There are some monsters that were released when the portals opened.  Well..."
+" take them down, then return to me.  And when say take them down, I mean "
+"kill them.  Not the word I use often, but hey, there are exceptions.  You "
+"don't want them to roam around your earth."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "Please be careful, you could die.  I warned you.  I did!"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "Come back when you get a chance, or you could just trade."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid ""
+"If you can, get a friend or two to help you.  And get some good weapons."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "Is it dead?"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "Nice work.  A 5 card pack as your payment."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcWitch.json
+msgid "What good does this do you?"
+msgstr ""
+
 #: .\ZhighNpcs\ZhighSchoolNurse.json
 msgid "School Nurse"
 msgstr ""
@@ -16665,30 +17658,6 @@ msgstr ""
 
 #: .\ZhighNpcs\ZhighSchoolNurse.json
 msgid "Oh, a school hall monitor, how cute."
-msgstr ""
-
-#: .\ZhighNpcs\ZhighSchoolNurse.json
-msgid "Hey <name_g>!"
-msgstr ""
-
-#: .\ZhighNpcs\ZhighSchoolNurse.json
-msgid "Welcome..."
-msgstr ""
-
-#: .\ZhighNpcs\ZhighSchoolNurse.json
-msgid "Welcome!"
-msgstr ""
-
-#: .\ZhighNpcs\ZhighSchoolNurse.json
-msgid "Good to see you again, <name_g>."
-msgstr ""
-
-#: .\ZhighNpcs\ZhighSchoolNurse.json
-msgid "Here to trade stuff, I hope?"
-msgstr ""
-
-#: .\ZhighNpcs\ZhighSchoolNurse.json
-msgid "Safe travels, <name_g>."
 msgstr ""
 
 #: .\ZhighNpcs\ZhighSchoolNurse.json
@@ -16857,6 +17826,10 @@ msgstr ""
 
 #: .\ZhighNpcs\ZhighSchoolNurse.json
 msgid "[85$]  I'll need quick great healing stimultant."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighSchoolNurse.json
+msgid "[85$]  I'll need some parasites to be removed."
 msgstr ""
 
 #: .\ZhighNpcs\ZhighSchoolNurse.json
@@ -17455,6 +18428,19 @@ msgstr[1] ""
 msgid ""
 "A nail bomb modified with some steel scraps, which makes you to throw this "
 "(using a staff sling) at a longer range."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "shootable web grenade"
+msgid_plural "shootable web grenades"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'shootable web grenade'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ""
+"A web grenade modified with some steel scraps, which makes you to throw this"
+" (using a staff sling) at a longer range."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAmmo.json
@@ -18272,6 +19258,257 @@ msgid ""
 " My guiding moonlight...</color>"
 msgstr ""
 
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "multi-weapon prop (bow)"
+msgid_plural "multi-weapon prop (bow)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid ""
+"This unique weapon features a modular design, allowing it to transform "
+"seamlessly between various forms such as a sword, axe, bow, and rifle.  "
+"Crafted from lightweight yet durable materials, it includes interchangeable "
+"parts that can be swiftly assembled or disassembled to suit different combat"
+" scenarios.  This looks like a bow now."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighArtifacts.json .\ZhighWeapons\ZhighRanged.json
+msgid "manual"
+msgstr ""
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "multi-weapon prop (pistol)"
+msgid_plural "multi-weapon prop (pistol)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid ""
+"This unique weapon features a modular design, allowing it to transform "
+"seamlessly between various forms such as a sword, axe, bow, and rifle.  "
+"Crafted from lightweight yet durable materials, it includes interchangeable "
+"parts that can be swiftly assembled or disassembled to suit different combat"
+" scenarios.  This looks like a pistol now."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "multi-weapon prop (smg)"
+msgid_plural "multi-weapon prop (smg)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid ""
+"This unique weapon features a modular design, allowing it to transform "
+"seamlessly between various forms such as a sword, axe, bow, and rifle.  "
+"Crafted from lightweight yet durable materials, it includes interchangeable "
+"parts that can be swiftly assembled or disassembled to suit different combat"
+" scenarios.  This looks like a smg now."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "multi-weapon prop (rifle)"
+msgid_plural "multi-weapon prop (rifle)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid ""
+"This unique weapon features a modular design, allowing it to transform "
+"seamlessly between various forms such as a sword, axe, bow, and rifle.  "
+"Crafted from lightweight yet durable materials, it includes interchangeable "
+"parts that can be swiftly assembled or disassembled to suit different combat"
+" scenarios.  This looks like a rifle now."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "multi-weapon prop (shotgun)"
+msgid_plural "multi-weapon prop (shotgun)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid ""
+"This unique weapon features a modular design, allowing it to transform "
+"seamlessly between various forms such as a sword, axe, bow, and rifle.  "
+"Crafted from lightweight yet durable materials, it includes interchangeable "
+"parts that can be swiftly assembled or disassembled to suit different combat"
+" scenarios.  This looks like a shotgun now."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "multi-weapon prop (launcher)"
+msgid_plural "multi-weapon prop (launcher)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid ""
+"This unique weapon features a modular design, allowing it to transform "
+"seamlessly between various forms such as a sword, axe, bow, and rifle.  "
+"Crafted from lightweight yet durable materials, it includes interchangeable "
+"parts that can be swiftly assembled or disassembled to suit different combat"
+" scenarios.  This looks like a launcher now."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighArtifacts.json .\ZhighWeapons\ZhighRanged.json
+msgctxt "gun_type_type"
+msgid "launcher"
+msgstr ""
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "multi-weapon prop (baton)"
+msgid_plural "multi-weapon prop (baton)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action menu_text for {'str': 'multi-weapon prop (baton)'}.
+#. ~ Use action menu_text for {'str': 'multi-weapon prop (sword)'}.
+#. ~ Use action menu_text for {'str': 'multi-weapon prop (knuckle knife)'}.
+#. ~ Use action menu_text for {'str': 'multi-weapon prop (axe)'}.
+#. ~ Use action menu_text for {'str': 'multi-weapon prop (spear)'}.
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "Transform weapon"
+msgstr ""
+
+#. ~ Use action msg for {'str': 'multi-weapon prop (baton)'}.
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "You change your multi-weapon prop to a sword."
+msgstr ""
+
+#. ~ Description for {'str': 'multi-weapon prop (baton)'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid ""
+"This unique weapon features a modular design, allowing it to transform "
+"seamlessly between various forms such as a sword, axe, bow, and rifle.  "
+"Crafted from lightweight yet durable materials, it includes interchangeable "
+"parts that can be swiftly assembled or disassembled to suit different combat"
+" scenarios.  This looks like a baton now."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "multi-weapon prop (sword)"
+msgid_plural "multi-weapon prop (sword)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action msg for {'str': 'multi-weapon prop (sword)'}.
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "You change your multi-weapon prop to a knuckle knife."
+msgstr ""
+
+#. ~ Description for {'str': 'multi-weapon prop (sword)'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid ""
+"This unique weapon features a modular design, allowing it to transform "
+"seamlessly between various forms such as a sword, axe, bow, and rifle.  "
+"Crafted from lightweight yet durable materials, it includes interchangeable "
+"parts that can be swiftly assembled or disassembled to suit different combat"
+" scenarios.  This looks like a sword now."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "multi-weapon prop (knuckle knife)"
+msgid_plural "multi-weapon prop (knuckle knife)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action msg for {'str': 'multi-weapon prop (knuckle knife)'}.
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "You change your multi-weapon prop to an axe."
+msgstr ""
+
+#. ~ Description for {'str': 'multi-weapon prop (knuckle knife)'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid ""
+"This unique weapon features a modular design, allowing it to transform "
+"seamlessly between various forms such as a sword, axe, bow, and rifle.  "
+"Crafted from lightweight yet durable materials, it includes interchangeable "
+"parts that can be swiftly assembled or disassembled to suit different combat"
+" scenarios.  This looks like a knuckle knife now."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "multi-weapon prop (axe)"
+msgid_plural "multi-weapon prop (axe)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action msg for {'str': 'multi-weapon prop (axe)'}.
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "You change your multi-weapon prop to a spear."
+msgstr ""
+
+#. ~ Description for {'str': 'multi-weapon prop (axe)'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid ""
+"This unique weapon features a modular design, allowing it to transform "
+"seamlessly between various forms such as a sword, axe, bow, and rifle.  "
+"Crafted from lightweight yet durable materials, it includes interchangeable "
+"parts that can be swiftly assembled or disassembled to suit different combat"
+" scenarios.  This looks like an axe now."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "multi-weapon prop (spear)"
+msgid_plural "multi-weapon prop (spear)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action msg for {'str': 'multi-weapon prop (spear)'}.
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "You change your multi-weapon prop to a bow."
+msgstr ""
+
+#. ~ Description for {'str': 'multi-weapon prop (spear)'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid ""
+"This unique weapon features a modular design, allowing it to transform "
+"seamlessly between various forms such as a sword, axe, bow, and rifle.  "
+"Crafted from lightweight yet durable materials, it includes interchangeable "
+"parts that can be swiftly assembled or disassembled to suit different combat"
+" scenarios.  This looks like a spear now."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "broom"
+msgid_plural "broom"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid ""
+"A long-handled broom.  Makes a terrible weapon unless you're chasing cats."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "first blood"
+msgid_plural "first blood"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "The godly power, in one's hands."
+msgstr ""
+
+#. 
+#. ~ Description for {'str': '.'}
+#. ~ Description for pulling
+#. ~ Description for pulling II
+#. ~ Description for pushing
+#. ~ Description for pushing II
+#. ~ Description for heal gas grenade
+#. ~ Description for armed heal gas grenade
+#. ~ Description for {'str': 'Flare trap Trigger'}
+#. ~ Description for {'str': 'Flare trap Effect'}
+#: .\ZhighWeapons\ZhighArtifacts.json .\ZhighWeapons\ZhighSpells.json
+#: .\ZhighWeapons\ZhighThrowing.json .\ZhighWeapons\ZhighTraps.json
+msgid "."
+msgid_plural ".s"
+msgstr[0] ""
+msgstr[1] ""
+
 #: .\ZhighWeapons\ZhighBolts.json
 msgid "crude paper bolt"
 msgid_plural "crude paper bolts"
@@ -18347,6 +19584,1417 @@ msgid ""
 "igniting smoke compound.  When the bolt strikes its target or a solid "
 "surface, the chamber bursts open, releasing a thick cloud of obscuring "
 "smoke."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - Fire Dinosaur"
+msgid_plural "Collectible Card - Fire Dinosaurs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - Fire Dinosaur'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a card with a drawing of a childish red dinosaur, breathing fire.  "
+"When activated, it could surprise you."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - Acid Dinosaur"
+msgid_plural "Collectible Card - Acid Dinosaurs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - Acid Dinosaur'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a card with a drawing of a childish green dinosaur, spraying acid.  "
+"When activated, it could surprise you."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "card multi-tool"
+msgid_plural "card multi-tools"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'card multi-tool'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"A cleverly designed all-in-one tool which combines several smaller tools "
+"into a thick sized, card shaped plastic chunk.  Also holds a magnifying "
+"glass to start a fire."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "card template"
+msgid_plural "card templates"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'card template'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Error if this spawn."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - Blank"
+msgid_plural "Collectible Card - Blanks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - Blank'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a blank card.  If you contact a proper person, then you could "
+"exchange this with a different card."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - glow"
+msgid_plural "Collectible Card - glows"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action menu_text for {'str': 'Collectible Card - glow'}.
+#. ~ Use action menu_text for {'str': 'Plasma Sword (off)'}.
+#. ~ Use action menu_text for {'str': 'Plasma Piercer (off)'}.
+#. ~ Use action menu_text for {'str': 'cola bomb'}.
+#. ~ Use action menu_text for {'str': 'frag cola bomb'}.
+#: .\ZhighWeapons\ZhighCards.json .\ZhighWeapons\ZhighMelee.json
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "Activate"
+msgstr ""
+
+#. ~ Use action msg for {'str': 'Collectible Card - glow'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You activate the card, making it glow up."
+msgstr ""
+
+#. ~ Description for {'str': 'Collectible Card - glow'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be also used as a light.  If you activate"
+" it, it will glow like a glowstick for a short time."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - glow(active)"
+msgid_plural "Collectible Card - glow(active)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - glow(active)'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is glowing and producing light.  It will last for a short time before "
+"burning out."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - board game"
+msgid_plural "Collectible Card - board games"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - board game'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a board game.  If you use it, "
+"you could play with this for a while."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - weather reader"
+msgid_plural "Collectible Card - weather readers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - weather reader'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which could be used as a weather reader."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - watch"
+msgid_plural "Collectible Card - watchs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - watch'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a watch.  Also has an alarm "
+"feature."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - relic"
+msgid_plural "Collectible Card - relics"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - relic'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a relic.  A picture of a holy "
+"symbol is on the card."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - game console"
+msgid_plural "Collectible Card - game consoles"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - game console'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a game console.  If you use "
+"it, you could play with this for a while.  Needs batteries to use."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - lighter"
+msgid_plural "Collectible Card - lighters"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - lighter'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a lighter.  If you use it, you"
+" could light something up.  Needs batteries to use."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - smoke bomb"
+msgid_plural "Collectible Card - smoke bombs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action menu_text for {'str': 'Collectible Card - smoke bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Activate smoke"
+msgstr ""
+
+#. ~ Use action msg for {'str': 'Collectible Card - smoke bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You activate the smoke bomb card.  Throw it!"
+msgstr ""
+
+#. ~ Description for {'str': 'Collectible Card - smoke bomb'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a smoke bomb.  Use it, and "
+"disappear like an anime assassin."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - smoke bomb (active)"
+msgid_plural "Collectible Card - smoke bomb (active)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action no_deactivate_msg for {'str': 'Collectible Card - smoke bomb
+#. (active)'}.
+#. ~ Use action no_deactivate_msg for {'str': 'Collectible Card - goo bomb
+#. (active)'}.
+#. ~ Use action no_deactivate_msg for {'str': 'Collectible Card - freeze bomb
+#. (active)'}.
+#. ~ Use action no_deactivate_msg for {'str': 'Collectible Card - radiation
+#. bomb (active)'}.
+#. ~ Use action no_deactivate_msg for {'str': 'Collectible Card - electric
+#. bomb (active)'}.
+#. ~ Use action no_deactivate_msg for {'str': 'Collectible Card - fire bomb
+#. (active)'}.
+#. ~ Use action no_deactivate_msg for {'str': 'Collectible Card - acid bomb
+#. (active)'}.
+#. ~ Use action no_deactivate_msg for {'str': 'Collectible Card - web bomb
+#. (active)'}.
+#. ~ Use action no_deactivate_msg for {'str': 'Collectible Card - fungicidal
+#. bomb (active)'}.
+#. ~ Use action no_deactivate_msg for {'str': 'Collectible Card - insecticidal
+#. bomb (active)'}.
+#. ~ Use action no_deactivate_msg for {'str': 'Collectible Card - tear gas
+#. bomb (active)'}.
+#. ~ Use action no_deactivate_msg for {'str': 'Collectible Card - toxic gas
+#. bomb (active)'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You've already activated it - get rid of it immediately!"
+msgstr ""
+
+#. ~ Use action sound_msg for {'str': 'Collectible Card - smoke bomb
+#. (active)'}.
+#. ~ Use action sound_msg for {'str': 'Collectible Card - goo bomb (active)'}.
+#. ~ Use action sound_msg for {'str': 'Collectible Card - freeze bomb
+#. (active)'}.
+#. ~ Use action sound_msg for {'str': 'Collectible Card - radiation bomb
+#. (active)'}.
+#. ~ Use action sound_msg for {'str': 'Collectible Card - electric bomb
+#. (active)'}.
+#. ~ Use action sound_msg for {'str': 'Collectible Card - fire bomb
+#. (active)'}.
+#. ~ Use action sound_msg for {'str': 'Collectible Card - acid bomb
+#. (active)'}.
+#. ~ Use action sound_msg for {'str': 'Collectible Card - web bomb (active)'}.
+#. ~ Use action sound_msg for {'str': 'Collectible Card - fungicidal bomb
+#. (active)'}.
+#. ~ Use action sound_msg for {'str': 'Collectible Card - insecticidal bomb
+#. (active)'}.
+#. ~ Use action sound_msg for {'str': 'Collectible Card - tear gas bomb
+#. (active)'}.
+#. ~ Use action sound_msg for {'str': 'Collectible Card - toxic gas bomb
+#. (active)'}.
+#. ~ Use action sound_msg for armed radioactive grenade.
+#: .\ZhighWeapons\ZhighCards.json .\ZhighWeapons\ZhighThrowing.json
+msgid "Hsssss."
+msgstr ""
+
+#. ~ Description for {'str': 'Collectible Card - smoke bomb (active)'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a smoke bomb.  Throw this, or "
+"you will be covered with smoke."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - goo bomb"
+msgid_plural "Collectible Card - goo bombs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action menu_text for {'str': 'Collectible Card - goo bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Activate goo"
+msgstr ""
+
+#. ~ Use action msg for {'str': 'Collectible Card - goo bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You activate the goo bomb card.  Throw it!"
+msgstr ""
+
+#. ~ Description for {'str': 'Collectible Card - goo bomb'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a goo bomb.  Use it, and slow "
+"your enemies."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - goo bomb (active)"
+msgid_plural "Collectible Card - goo bomb (active)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - goo bomb (active)'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a goo bomb.  Throw this, or "
+"you will be covered with goo."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - freeze bomb"
+msgid_plural "Collectible Card - freeze bombs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action menu_text for {'str': 'Collectible Card - freeze bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Activate freeze"
+msgstr ""
+
+#. ~ Use action msg for {'str': 'Collectible Card - freeze bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You activate the freeze bomb card.  Throw it!"
+msgstr ""
+
+#. ~ Description for {'str': 'Collectible Card - freeze bomb'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a freeze bomb.  Use it, and "
+"stop your enemies."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - freeze bomb (active)"
+msgid_plural "Collectible Card - freeze bomb (active)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - freeze bomb (active)'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a freeze bomb.  Throw this, or"
+" you will be covered with freeze."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - radiation bomb"
+msgid_plural "Collectible Card - radiation bombs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action menu_text for {'str': 'Collectible Card - radiation bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Activate radiation"
+msgstr ""
+
+#. ~ Use action msg for {'str': 'Collectible Card - radiation bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You activate the radiation bomb card.  Throw it!"
+msgstr ""
+
+#. ~ Description for {'str': 'Collectible Card - radiation bomb'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a radiation bomb.  Use it, and"
+" cover the area with some radiation."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - radiation bomb (active)"
+msgid_plural "Collectible Card - radiation bomb (active)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - radiation bomb (active)'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a radiation bomb.  Throw this,"
+" or you will be covered with radiation."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - electric bomb"
+msgid_plural "Collectible Card - electric bombs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action menu_text for {'str': 'Collectible Card - electric bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Activate electric"
+msgstr ""
+
+#. ~ Use action msg for {'str': 'Collectible Card - electric bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You activate the electric bomb card.  Throw it!"
+msgstr ""
+
+#. ~ Description for {'str': 'Collectible Card - electric bomb'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a electric bomb.  Use it, and "
+"hurt whoever is inside."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - electric bomb (active)"
+msgid_plural "Collectible Card - electric bomb (active)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - electric bomb (active)'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a electric bomb.  Throw this, "
+"or you will be shocked physically."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - fire bomb"
+msgid_plural "Collectible Card - fire bombs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action menu_text for {'str': 'Collectible Card - fire bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Activate fire"
+msgstr ""
+
+#. ~ Use action msg for {'str': 'Collectible Card - fire bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You activate the fire bomb card.  Throw it!"
+msgstr ""
+
+#. ~ Description for {'str': 'Collectible Card - fire bomb'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a fire bomb.  Use it, and burn"
+" your enemies."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - fire bomb (active)"
+msgid_plural "Collectible Card - fire bomb (active)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - fire bomb (active)'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a fire bomb.  Throw this, or "
+"you will be covered with fire."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - acid bomb"
+msgid_plural "Collectible Card - acid bombs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action menu_text for {'str': 'Collectible Card - acid bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Activate acid"
+msgstr ""
+
+#. ~ Use action msg for {'str': 'Collectible Card - acid bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You activate the acid bomb card.  Throw it!"
+msgstr ""
+
+#. ~ Description for {'str': 'Collectible Card - acid bomb'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a acid bomb.  Use it, and melt"
+" your foes."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - acid bomb (active)"
+msgid_plural "Collectible Card - acid bomb (active)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - acid bomb (active)'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a acid bomb.  Throw this, or "
+"you will be covered with acid."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - web bomb"
+msgid_plural "Collectible Card - web bombs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action menu_text for {'str': 'Collectible Card - web bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Activate web"
+msgstr ""
+
+#. ~ Use action msg for {'str': 'Collectible Card - web bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You activate the web bomb card.  Throw it!"
+msgstr ""
+
+#. ~ Description for {'str': 'Collectible Card - web bomb'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a web bomb.  Use it, and bind "
+"your enemies."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - web bomb (active)"
+msgid_plural "Collectible Card - web bomb (active)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - web bomb (active)'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a web bomb.  Throw this, or "
+"you will be covered with webs."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - fungicidal bomb"
+msgid_plural "Collectible Card - fungicidal bombs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action menu_text for {'str': 'Collectible Card - fungicidal bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Activate fungicidal"
+msgstr ""
+
+#. ~ Use action msg for {'str': 'Collectible Card - fungicidal bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You activate the fungicidal bomb card.  Throw it!"
+msgstr ""
+
+#. ~ Description for {'str': 'Collectible Card - fungicidal bomb'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a fungicidal bomb.  Use it, "
+"and clean some fungus."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - fungicidal bomb (active)"
+msgid_plural "Collectible Card - fungicidal bomb (active)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - fungicidal bomb (active)'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a fungicidal bomb.  Throw "
+"this, or you will covered with fungicidal gas."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - insecticidal bomb"
+msgid_plural "Collectible Card - insecticidal bombs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action menu_text for {'str': 'Collectible Card - insecticidal bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Activate insecticidal"
+msgstr ""
+
+#. ~ Use action msg for {'str': 'Collectible Card - insecticidal bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You activate the insecticidal bomb card.  Throw it!"
+msgstr ""
+
+#. ~ Description for {'str': 'Collectible Card - insecticidal bomb'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a insecticidal bomb.  Use it, "
+"and remove some pests."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - insecticidal bomb (active)"
+msgid_plural "Collectible Card - insecticidal bomb (active)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - insecticidal bomb (active)'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a insecticidal bomb.  Throw "
+"this, or you will covered with insecticidal gas."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - tear gas bomb"
+msgid_plural "Collectible Card - tear gas bombs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action menu_text for {'str': 'Collectible Card - tear gas bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Activate tear"
+msgstr ""
+
+#. ~ Use action msg for {'str': 'Collectible Card - tear gas bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You activate the tear gas bomb card.  Throw it!"
+msgstr ""
+
+#. ~ Description for {'str': 'Collectible Card - tear gas bomb'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a tear gas bomb.  Use it, and "
+"make some people cry."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - tear gas bomb (active)"
+msgid_plural "Collectible Card - tear gas bomb (active)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - tear gas bomb (active)'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a tear gas bomb.  Throw this, "
+"or you will covered with tear gas."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - toxic gas bomb"
+msgid_plural "Collectible Card - toxic gas bombs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action menu_text for {'str': 'Collectible Card - toxic gas bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Activate toxic"
+msgstr ""
+
+#. ~ Use action msg for {'str': 'Collectible Card - toxic gas bomb'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You activate the toxic gas bomb card.  Throw it!"
+msgstr ""
+
+#. ~ Description for {'str': 'Collectible Card - toxic gas bomb'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a toxic gas bomb.  Use it, and"
+" hurt who breathes inside."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - toxic gas bomb (active)"
+msgid_plural "Collectible Card - toxic gas bomb (active)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - toxic gas bomb (active)'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as a toxic gas bomb.  Throw this,"
+" or you will covered with toxic gas."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - magnifying glass"
+msgid_plural "Collectible Card - magnifying glasss"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - magnifying glass'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which is used as a magnifying glass.  May be useful "
+"for starting fires during sunny skies."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - knife"
+msgid_plural "Collectible Card - knifes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - knife'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which is used as a knife.  Better than nothing."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - whistle"
+msgid_plural "Collectible Card - whistles"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - whistle'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which is used as a whistle.  Better than nothing."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - tazer"
+msgid_plural "Collectible Card - tazers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - tazer'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which could be used as stungun.  Needs batteries to "
+"use."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - Hologram"
+msgid_plural "Collectible Card - Holograms"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - Hologram'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a card with a picture of a hologram on it.  When activated, it could"
+" surprise you."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - Dragon"
+msgid_plural "Collectible Card - Dragons"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - Dragon'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a card with a picture of a dragon on it.  When activated, it could "
+"surprise you.  Be careful what you wish for..."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - Wyrm"
+msgid_plural "Collectible Card - Wyrms"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - Wyrm'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a card with a picture of a wyrm on it.  When activated, it could "
+"surprise you.  Be careful what you wish for..."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - Giant Black Widow Spider"
+msgid_plural "Collectible Card - Giant Black Widow Spiders"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - Giant Black Widow Spider'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a card with a picture of a black widow spider on it.  When "
+"activated, it could surprise you.  Be careful what you wish for..."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - Firefly"
+msgid_plural "Collectible Card - Fireflys"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - Firefly'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a card with a picture of a firefly on it.  When activated, it could "
+"surprise you."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - Wasp"
+msgid_plural "Collectible Card - Wasps"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - Wasp'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a card with a picture of a wasp on it.  When activated, it could "
+"surprise you.  Be careful what you wish for..."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - Ant"
+msgid_plural "Collectible Card - Ants"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - Ant'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a card with a picture of a ant on it.  When activated, it could "
+"surprise you.  Be careful what you wish for..."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - Wraith"
+msgid_plural "Collectible Card - Wraiths"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - Wraith'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a card with a picture of a wraith on it.  When activated, it could "
+"surprise you.  Be careful what you wish for..."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - Minotaur"
+msgid_plural "Collectible Card - Minotaurs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - Minotaur'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a card with a picture of a minotaur on it.  When activated, it could"
+" surprise you.  Be careful what you wish for..."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - Mothman"
+msgid_plural "Collectible Card - Mothmans"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - Mothman'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a card with a picture of a mothman on it.  When activated, it could "
+"surprise you.  Be careful what you wish for..."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - Vortex"
+msgid_plural "Collectible Card - Vortexs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - Vortex'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a card with a picture of a vortex on it.  When activated, it could "
+"surprise you."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - Demon"
+msgid_plural "Collectible Card - Demons"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - Demon'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a card with a picture of a demon on it.  When activated, it could "
+"surprise you.  Be careful what you wish for..."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - Mi-go"
+msgid_plural "Collectible Card - Mi-gos"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - Mi-go'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a card with a picture of a mi-go on it.  When activated, it could "
+"surprise you.  Be careful what you wish for..."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - Supply Drop"
+msgid_plural "Collectible Card - Supply Drops"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - Supply Drop'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a card with a picture of a supply drop on it.  When activated, it "
+"could surprise you."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - Bear"
+msgid_plural "Collectible Card - Bears"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - Bear'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a card with a picture of a bear on it.  When activated, it could "
+"surprise you.  Be careful what you wish for..."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - Coyote"
+msgid_plural "Collectible Card - Coyotes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - Coyote'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a card with a picture of a coyote on it.  When activated, it could "
+"surprise you.  Be careful what you wish for..."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - Wolf"
+msgid_plural "Collectible Card - Wolfs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - Wolf'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a card with a picture of a wolf on it.  When activated, it could "
+"surprise you.  Be careful what you wish for..."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - Soldier"
+msgid_plural "Collectible Card - Soldiers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - Soldier'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a card with a picture of a soldier on it.  When activated, it could "
+"surprise you.  Be careful what you wish for..."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - Operator"
+msgid_plural "Collectible Card - Operators"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - Operator'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a card with a picture of a operator on it.  When activated, it could"
+" surprise you.  Be careful what you wish for..."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - bicycle"
+msgid_plural "Collectible Card - bicycles"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - bicycle'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the bicycle."
+msgstr ""
+
+#. ~ Description for {'str': 'Collectible Card - bicycle'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a card with a picture of a bicycle on it.  When activated, it "
+"summons a bicycle."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - road roller"
+msgid_plural "Collectible Card - road rollers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - road roller'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the road roller."
+msgstr ""
+
+#. ~ Description for {'str': 'Collectible Card - road roller'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a card with a picture of a golden vampire riding a road roller.  "
+"When activated, it summons a road roller without fuel.  No, you cannot smash"
+" a high schooler with a road roller."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - gasoline"
+msgid_plural "Collectible Card - gasolines"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - gasoline'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a gasoline.  If you use it, "
+"you could get some gasoline."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - diesel"
+msgid_plural "Collectible Card - diesels"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - diesel'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a diesel.  If you use it, you "
+"could get some diesel."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - spirit"
+msgid_plural "Collectible Card - spirits"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - spirit'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a flask of spirit.  If you use"
+" it, you could get a drink or two."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - soda"
+msgid_plural "Collectible Card - sodas"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - soda'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a can of soda.  If you use it,"
+" you could get a drink or two."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - pizza"
+msgid_plural "Collectible Card - pizzas"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - pizza'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a box of pizza.  If you use "
+"it, you could have a meal."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - tea"
+msgid_plural "Collectible Card - teas"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - tea'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a bottle of tea.  If you use "
+"it, you could get a drink or two."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - drinks"
+msgid_plural "Collectible Card - drinkss"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - drinks'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of drinks.  If you use it, you "
+"could have a drink."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - snacks"
+msgid_plural "Collectible Card - snackss"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - snacks'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of snacks.  If you use it, you "
+"could have a snack."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - weapon"
+msgid_plural "Collectible Card - weapons"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - weapon'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a crate of weapons.  If you "
+"use it, you could get a weapon that you can use in a pinch."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - grenade"
+msgid_plural "Collectible Card - grenades"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - grenade'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a grenade.  If you use it, you"
+" could get a bomb that you can use in a pinch."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - pistol"
+msgid_plural "Collectible Card - pistols"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - pistol'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a pistol.  If you use it, you "
+"could get a free pistol and some ammo."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - smg"
+msgid_plural "Collectible Card - smgs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - smg'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a smg.  If you use it, you "
+"could get a free smg and some ammo."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - rifle"
+msgid_plural "Collectible Card - rifles"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - rifle'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a rifle.  If you use it, you "
+"could get a free rifle and some ammo."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - archery"
+msgid_plural "Collectible Card - archerys"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - archery'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a archery.  If you use it, you"
+" could get a free archery and some ammo."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - shotgun"
+msgid_plural "Collectible Card - shotguns"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - shotgun'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a shotgun.  If you use it, you"
+" could get a free shotgun and some ammo."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - improvised firearms"
+msgid_plural "Collectible Card - improvised firearmss"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - improvised firearms'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a improvised firearms.  If you"
+" use it, you could get a free improvised firearms and some ammo."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - rare firearms"
+msgid_plural "Collectible Card - rare firearmss"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - rare firearms'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a rare firearms.  If you use "
+"it, you could get a free rare firearm and some ammo."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - rare guns"
+msgid_plural "Collectible Card - rare gunss"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - rare guns'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a rare guns.  If you use it, "
+"you could get a free rare guns and some ammo."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - ammo"
+msgid_plural "Collectible Card - ammos"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - ammo'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a box of ammunition.  If you "
+"use it, you could get some random ammo."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - arrows and bolts"
+msgid_plural "Collectible Card - arrows and boltss"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - arrows and bolts'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a arrows and bolts.  If you "
+"use it, you could get some random arrows and bolts."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - religious books"
+msgid_plural "Collectible Card - religious bookss"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - religious books'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a religious book.  If you use "
+"it, you could get a free religious book."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - novels"
+msgid_plural "Collectible Card - novelss"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - novels'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a novel.  If you use it, you "
+"could get a free novel."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - martial art books"
+msgid_plural "Collectible Card - martial art bookss"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - martial art books'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a martial art book.  If you "
+"use it, you could get a free martial art book."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - stimultants"
+msgid_plural "Collectible Card - stimultantss"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - stimultants'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a stimultants.  If you use it,"
+" you could get some random stimultants."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - cigar"
+msgid_plural "Collectible Card - cigars"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - cigar'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a cigar.  If you use it, you "
+"could get some random smokable drugs."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - bionics"
+msgid_plural "Collectible Card - bionicss"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - bionics'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a bionic.  If you use it, you "
+"could get some bionics."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - tool"
+msgid_plural "Collectible Card - tools"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - tool'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a tool.  If you use it, you "
+"could get some tools."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - charm"
+msgid_plural "Collectible Card - charms"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - charm'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a charm.  If you use it, you "
+"could get some charms."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - coins"
+msgid_plural "Collectible Card - coinss"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Collectible Card - coins'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid ""
+"This is a unique card, which has a picture of a coin.  If you use it, you "
+"could get some coins."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "random card pack"
+msgid_plural "random card packs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'random card pack'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a pack of an unknown card.  Unpack and enjoy."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "random card packs"
+msgid_plural "random card packss"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'random card packs'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a pack of five unknown cards.  Unpack and enjoy."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "random card deck"
+msgid_plural "random card decks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'random card deck'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a pack of thirty unknown cards.  Unpack and enjoy."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighMelee.json
@@ -18918,14 +21566,6 @@ msgid "Plasma Sword (off)"
 msgid_plural "Plasma Sword (off)s"
 msgstr[0] ""
 msgstr[1] ""
-
-#. ~ Use action menu_text for {'str': 'Plasma Sword (off)'}.
-#. ~ Use action menu_text for {'str': 'Plasma Piercer (off)'}.
-#. ~ Use action menu_text for {'str': 'cola bomb'}.
-#. ~ Use action menu_text for {'str': 'frag cola bomb'}.
-#: .\ZhighWeapons\ZhighMelee.json .\ZhighWeapons\ZhighThrowing.json
-msgid "Activate"
-msgstr ""
 
 #. ~ Use action msg for {'str': 'Plasma Sword (off)'}.
 #: .\ZhighWeapons\ZhighMelee.json
@@ -20010,6 +22650,113 @@ msgid ""
 "use it as a whip with a metal end."
 msgstr ""
 
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "handheld microphone"
+msgid_plural "handheld microphones"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action noise_message for {'str': 'handheld microphone'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "HOOOOONK!"
+msgstr ""
+
+#. ~ Use action use_message for {'str': 'handheld microphone'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "You honk your airhorn."
+msgstr ""
+
+#. ~ Description for {'str': 'handheld microphone'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A typical microphone used to record or amplify voice.  Comes with a clip.  "
+"Has a 3-pin XLR connector on the bottom in order to connect to am amp.  "
+"Could be used as a weapon or a noisemaker if needed."
+msgstr ""
+
+#. ~ Description for {'str': 'handheld microphone'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A unique microphone used to record or amplify voice, integrated teleporter "
+"makes you to swap with an 'audience.'  Comes with a clip.  Has a 3-pin XLR "
+"connector on the bottom in order to connect to am amp.  Could be used as a "
+"weapon if needed."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "conducting baton (speed)"
+msgid_plural "conducting baton (speed)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action menu_text for {'str': 'conducting baton (speed)'}.
+#. ~ Use action menu_text for {'str': 'conducting baton (stamina)'}.
+#. ~ Use action menu_text for {'str': 'conducting baton (strength)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "Change Posture"
+msgstr ""
+
+#. ~ Use action msg for {'str': 'conducting baton (speed)'}.
+#. ~ Use action msg for {'str': 'conducting baton (stamina)'}.
+#. ~ Use action msg for {'str': 'conducting baton (strength)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "You change the position of the concducting baton."
+msgstr ""
+
+#. ~ Description for {'str': 'conducting baton (speed)'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A conducting baton used to send signals to various musicians during a "
+"musical show.  Could be used as a weapon, change the posture to give "
+"different buffs, or could speed up your allies if needed."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "conducting baton (stamina)"
+msgid_plural "conducting baton (stamina)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'conducting baton (stamina)'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A conducting baton used to send signals to various musicians during a "
+"musical show.  Could be used as a weapon, change the posture to give "
+"different buffs, or could return your allies some stamina if needed."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "conducting baton (strength)"
+msgid_plural "conducting baton (strength)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'conducting baton (strength)'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A conducting baton used to send signals to various musicians during a "
+"musical show.  Could be used as a weapon, change the posture to give "
+"different buffs, or could return your allies some power if needed."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "cordless drill (on)"
+msgid_plural "cordless drill (on)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action msg for {'str': 'cordless drill (on)'}.
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "You turn the drill off."
+msgstr ""
+
+#. ~ Description for {'str': 'cordless drill (on)'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This is a cordless battery-powered drill with a selection of drill bits.  It"
+" is turned on, so it could be used as a weapon if needed."
+msgstr ""
+
 #: .\ZhighWeapons\ZhighRanged.json
 msgid "marble gun"
 msgid_plural "marble guns"
@@ -20251,10 +22998,6 @@ msgid "Paintball revolver"
 msgid_plural "Paintball revolvers"
 msgstr[0] ""
 msgstr[1] ""
-
-#: .\ZhighWeapons\ZhighRanged.json
-msgid "manual"
-msgstr ""
 
 #: .\ZhighWeapons\ZhighRanged.json
 msgid "double barrel paintball gun"
@@ -20622,11 +23365,6 @@ msgid "Spray"
 msgstr ""
 
 #: .\ZhighWeapons\ZhighRanged.json
-msgctxt "gun_type_type"
-msgid "launcher"
-msgstr ""
-
-#: .\ZhighWeapons\ZhighRanged.json
 msgid "bang stick"
 msgid_plural "bang sticks"
 msgstr[0] ""
@@ -20762,6 +23500,17 @@ msgstr[1] ""
 #. ~ Description for {'str': 'disc clip'}
 #: .\ZhighWeapons\ZhighRanged.json
 msgid "A large can, cut in almost half.  Holds up 50 rounds of discs."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "airsoft BB hopper"
+msgid_plural "airsoft BB hoppers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'airsoft BB hopper'}
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "A large pipe, makes bb guns reload faster.  Holds up 50 rounds of bbs."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighRanged.json
@@ -21460,6 +24209,167 @@ msgid ""
 "barely."
 msgstr ""
 
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "BB blaster pistol"
+msgid_plural "BB blaster pistols"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"Popular among kidults.  Much more accurate than the original one, and easliy"
+" modifiable, but BBs deal nearly no damage.  Custom-made for a guy has some "
+"taste."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "AKS-74UM"
+msgid_plural "AKS-74UMs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"The successor to the semi-known AK-74 rifle.  It combines the reliability of"
+" the AK series and the short length with the high-velocity, with compatible "
+".223 ammo."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "dragon breath"
+msgid_plural "dragon breaths"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"Fake gun that fires some sort of flame at very high speed by unknown means "
+"of propulsion."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"Fake gun that fires some sort of acid at very high speed by unknown means of"
+" propulsion."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "Life Drain Spell"
+msgstr ""
+
+#. ~ Description for {'str': 'Life Drain Spell'}
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "This exists only to trigger on-self effects from an on-hit action."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "Life Drain Effect"
+msgstr ""
+
+#. ~ Description for {'str': 'Life Drain Effect'}
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "This creates the effect that heals the caster."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "pulling"
+msgstr ""
+
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "pulling II"
+msgstr ""
+
+#: .\ZhighWeapons\ZhighSpells.json .\ZhighWeapons\ZhighTraps.json
+msgid "pushing"
+msgstr ""
+
+#: .\ZhighWeapons\ZhighSpells.json .\ZhighWeapons\ZhighTraps.json
+msgid "pushing II"
+msgstr ""
+
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "Contacting you"
+msgstr ""
+
+#. ~ Description for Contacting you
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "A great fanservice, is to take the hit for them!"
+msgstr ""
+
+#. ~ Message for SPELL 'Contacting you'
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "You successfully teleport with an 'audience'!"
+msgstr ""
+
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "dashing"
+msgstr ""
+
+#. ~ Description for dashing
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "With some quick skills, you could rush to a place nearby."
+msgstr ""
+
+#. ~ Message for SPELL 'dashing'
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "You successfully rush to the place!"
+msgstr ""
+
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "jump surfing"
+msgstr ""
+
+#. ~ Description for {'str': 'jump surfing'}
+#: .\ZhighWeapons\ZhighSpells.json
+msgid ""
+"This spell projects a large wave, swarming both your foes and friends in it."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "camera flash"
+msgstr ""
+
+#. ~ Description for {'str': 'camera flash'}
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "This spell projects a flash, blinding your enemies."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "wide heal"
+msgstr ""
+
+#. ~ Description for {'str': 'wide heal'}
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "This spell heals everyone around you."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "wide speed up"
+msgstr ""
+
+#. ~ Description for {'str': 'wide speed up'}
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "This spell speeds everyone up around you."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "wide stamina regain"
+msgstr ""
+
+#. ~ Description for {'str': 'wide stamina regain'}
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "This spell gives everyone around you some stamina."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "wide damage buff"
+msgstr ""
+
+#. ~ Description for {'str': 'wide damage buff'}
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "This spell gives everyone around you a good attack buff."
+msgstr ""
+
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "spade throwing card"
 msgid_plural "spade throwing cards"
@@ -21554,6 +24464,11 @@ msgid "armed radioactive grenade"
 msgid_plural "armed radioactive grenades"
 msgstr[0] ""
 msgstr[1] ""
+
+#. ~ Use action no_deactivate_msg for armed radioactive grenade.
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "You've already lit the fuse - get rid of it immediately!"
+msgstr ""
 
 #. ~ Description for armed radioactive grenade
 #: .\ZhighWeapons\ZhighThrowing.json
@@ -21672,12 +24587,6 @@ msgid_plural "heal gas grenades"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for heal gas grenade
-#. ~ Description for armed heal gas grenade
-#: .\ZhighWeapons\ZhighThrowing.json
-msgid "."
-msgstr ""
-
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "armed heal gas grenade"
 msgid_plural "armed heal gas grenades"
@@ -21695,6 +24604,7 @@ msgstr[1] ""
 #. ~ Use action msg for {'str': 'napalm grenade'}.
 #. ~ Use action msg for {'str': 'goo grenade'}.
 #. ~ Use action msg for {'str': 'improvised goo grenade'}.
+#. ~ Use action msg for {'str': 'web grenade'}.
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "You pull the pin on the grenade."
 msgstr ""
@@ -21719,6 +24629,7 @@ msgstr[1] ""
 #. ~ Use action sound_msg for {'str': 'active goo grenade'}.
 #. ~ Use action sound_msg for {'str': 'active improvised goo grenade'}.
 #. ~ Use action sound_msg for {'str': 'active improvised nail bomb'}.
+#. ~ Use action sound_msg for {'str': 'active web grenade'}.
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "Tick."
 msgstr ""
@@ -22054,6 +24965,128 @@ msgid ""
 "A slender long rod of wood with a little curve, while traditionally intended"
 " as a weapon used by Aboriginal Australians.  Not the toy variant of the "
 "family, so don't expect it to return to your hand."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "web grenade"
+msgid_plural "web grenades"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'web grenade'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid ""
+"This is a military-grade web hand grenade.  Use this item to pull the pin "
+"and light the fuse.  You will then have five turns before it explodes into a"
+" pool of web; throwing it would be a good idea."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "active web grenade"
+msgid_plural "active web grenades"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'active web grenade'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid ""
+"This is an active web grenade, likely to burst into a pool of web any second"
+" now.  Better throw it!"
+msgstr ""
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "impact greande"
+msgid_plural "impact greandes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'impact greande'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid ""
+"A defensive grenade.  When thrown, the impact fuze is instantly armed, "
+"blowing up itself and everything nearby.  Normally it was not used due to "
+"the impact fuze was dangerous to store compared to the fuzes that were used "
+"nowdays, but released when the world was facing it's end."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "flare trap"
+msgid_plural "flare traps"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action done_message for {'str': 'flare trap'}.
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "You set the flare trap."
+msgstr ""
+
+#. ~ Description for {'str': 'flare trap'}
+#: .\ZhighWeapons\ZhighTraps.json
+msgid ""
+"This is a simple tripwire is attached to the trigger of a loaded flare.  "
+"When pulled, the flare fires, discharging the flare into the target."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "Flare trap Trigger"
+msgstr ""
+
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "Flare trap Effect"
+msgstr ""
+
+#. ~ Description for the sound of spell '{'str': 'Flare trap Effect'}'
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "flare activating!"
+msgstr ""
+
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "jump board"
+msgid_plural "jump boards"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action done_message for {'str': 'jump board'}.
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "You set the jump board."
+msgstr ""
+
+#. ~ Description for {'str': 'jump board'}
+#: .\ZhighWeapons\ZhighTraps.json
+msgid ""
+"This is a simple board on a spring.  When stepped on, it sends the person "
+"who stepped on flying."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "wall kit"
+msgid_plural "wall kits"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'wall kit'}
+#: .\ZhighWeapons\ZhighTraps.json
+msgid ""
+"This is a rolled up wall kit, which you could make a wall or an improvised "
+"barricade out of one.  It could break easliy if something blows up nearby."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "goo trap"
+msgid_plural "goo traps"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action done_message for {'str': 'goo trap'}.
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "You set the goo pit."
+msgstr ""
+
+#. ~ Description for {'str': 'goo trap'}
+#: .\ZhighWeapons\ZhighTraps.json
+msgid ""
+"There is a label on this canister: \"Warning: contains highly toxic and "
+"corrosive materials.  Contents may be sentient.  Open at your own risk.\""
 msgstr ""
 
 #: .\ZhighZeds\zed-animal.json
