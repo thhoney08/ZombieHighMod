@@ -11,7 +11,7 @@
     "price": "140 USD",
     "price_postapoc": "100 USD",
     "material": [ "cotton" ],
-    "coverage": 80,
+    "coverage": 95,
     "encumbrance": 10,
     "storage": "800 ml",
     "warmth": 20,
@@ -177,6 +177,16 @@
     "material": [ "plastic" ],
     "weight": "10 g",
     "price_postapoc": "10 USD",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stash cards",
+      "holster_msg": "You stash your %s.",
+      "multi": 2,
+      "min_volume": "0 ml",
+      "max_volume": "5 ml",
+      "draw_cost": 60,
+      "flags": [ "CARDZHIGH" ]
+    },
     "description": "A plastic ID card, wearing this will not give you any effects."
   },
   {
@@ -187,6 +197,16 @@
     "material": [ "plastic" ],
     "weight": "10 g",
     "price_postapoc": "10 USD",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stash cards",
+      "holster_msg": "You stash your %s.",
+      "multi": 2,
+      "min_volume": "0 ml",
+      "max_volume": "5 ml",
+      "draw_cost": 60,
+      "flags": [ "CARDZHIGH" ]
+    },
     "description": "A plastic ID card, wearing this will not give you any effects."
   },
   {
@@ -197,6 +217,16 @@
     "material": [ "plastic" ],
     "weight": "10 g",
     "price_postapoc": "10 USD",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stash cards",
+      "holster_msg": "You stash your %s.",
+      "multi": 2,
+      "min_volume": "0 ml",
+      "max_volume": "5 ml",
+      "draw_cost": 60,
+      "flags": [ "CARDZHIGH" ]
+    },
     "description": "A plastic ID card, wearing this will not give you any effects."
   },
   {
@@ -268,6 +298,7 @@
   },
   {
     "id": "king_robe_zhigh",
+    "repairs_like": "trenchcoat",
     "type": "ARMOR",
     "name": { "str": "Dragon robe (male)" },
     "description": "A red and fancy robe for a king, this one have dragons as a decoration.",
@@ -283,6 +314,31 @@
     "covers": [ "torso", "arms", "legs" ],
     "coverage": 90,
     "encumbrance": 15,
+    "storage": "2 L",
+    "warmth": 35,
+    "material_thickness": 4,
+    "environmental_protection": 1,
+    "flags": [ "VARSIZE", "FANCY" ]
+  },
+  {
+    "id": "queen_robe_zhigh",
+    "repairs_like": "trenchcoat",
+    "type": "ARMOR",
+    "name": { "str": "Dragon robe (female)" },
+    "description": "A red, black and fancy robe for a queen, this one have dragons as a decoration.",
+    "weight": "1200 g",
+    "volume": "4 L",
+    "price": "30000 USD",
+    "price_postapoc": "2500 USD",
+    "to_hit": -1,
+    "material": [ "cotton", "gold" ],
+    "symbol": "[",
+    "looks_like": "snuggie",
+    "color": "light_red",
+    "covers": [ "torso", "arms", "legs" ],
+    "coverage": 90,
+    "encumbrance": 15,
+    "storage": "2 L",
     "warmth": 35,
     "material_thickness": 4,
     "environmental_protection": 1,
@@ -514,28 +570,6 @@
     "environmental_protection": 1
   },
   {
-    "id": "queen_robe_zhigh",
-    "type": "ARMOR",
-    "name": { "str": "Dragon robe (female)" },
-    "description": "A red, black and fancy robe for a queen, this one have dragons as a decoration.",
-    "weight": "1200 g",
-    "volume": "4 L",
-    "price": "30000 USD",
-    "price_postapoc": "2500 USD",
-    "to_hit": -1,
-    "material": [ "cotton", "gold" ],
-    "symbol": "[",
-    "looks_like": "snuggie",
-    "color": "light_red",
-    "covers": [ "torso", "arms", "legs" ],
-    "coverage": 90,
-    "encumbrance": 15,
-    "warmth": 35,
-    "material_thickness": 4,
-    "environmental_protection": 1,
-    "flags": [ "VARSIZE", "FANCY" ]
-  },
-  {
     "id": "queen_wig",
     "copy-from": "clown_wig",
     "type": "ARMOR",
@@ -608,7 +642,6 @@
     "symbol": "[",
     "color": "dark_gray",
     "covers": [ "arm_either" ],
-    "ammo": "battery",
     "qualities": [
       [ "ANVIL", 8 ], [ "ANESTHESIA", 8 ], [ "AXE", 8 ], [ "BUTCHER", 8 ], [ "BOIL", 8 ],
 	  [ "CHISEL", 8 ], [ "CHURN", 8 ], [ "CUT", 8 ], [ "CUT_FINE", 8 ], [ "COOK", 8 ],
@@ -621,63 +654,63 @@
       [ "WRENCH_FINE", 8 ], [ "VISE", 8 ]
     ],
     "use_action": [
-      "GUN_CLEAN", "HAND_CRANK", "GUN_REPAIR", "PICKAXE",
-      "HAMMER", "CROWBAR", "BOLTCUTTERS",
-      "OXYTORCH", "WATER_PURIFIER", "BURROW",
-      "EINKTABLETPC", "PORTABLE_GAME",
-      "WEATHER_TOOL", "SIPHON", "MEDITATE",
-      {
-        "type": "repair_item",
-        "item_action_type": "repair_fabric",
-        "materials": [ "cotton", "leather", "nylon", "wool", "fur", "faux_fur", "nomex", "kevlar", "neoprene", "gutskin" ],
-        "skill": "tailor",
-        "tool_quality": 10,
-        "cost_scaling": 0.1,
-        "move_cost": 50
-      },
-      {
-        "type": "sew_advanced",
-        "materials": [
-          "cotton", "leather", "nylon", "wool", "fur",
-          "faux_fur", "nomex", "kevlar", "neoprene",
-          "gutskin", "plastic", "kevlar_rigid"
-        ],
-        "skill": "tailor",
-        "clothing_mods": [ "leather_padded", "steel_padded", "alloy_padded", "kevlar_padded", "furred", "wooled" ]
-      },
-      {
-        "type": "repair_item",
-        "item_action_type": "repair_metal",
-        "materials": [ "kevlar", "acidchitin", "bone", "chitin", "paper", "dry_plant", "cardboard", "wood", "kevlar_rigid", "plastic", "iron", "steel", "hardsteel", "aluminum", "copper", "silver", "gold", "glass" ],
-        "skill": "mechanics",
-        "tool_quality": 10,
-        "cost_scaling": 0.1,
-        "move_cost": 50
-      },
-	  {
-		"type": "heal",
-		"move_cost": 550,
-		"bleed": 0.80,
-		"bite": 0.80,
-		"infect": 0.80,
-		"limb_power": 25,
-		"head_power": 25,
-		"torso_power": 25,
-		"effects": [ { "id": "healing_medkit", "duration": 150 }, { "id": "pkill3", "duration": 100 } ]
-      },
-      {
-        "type": "manualnoise",
-        "no_charges_message": "Seeing this is an error.",
-        "use_message": "You blow the whistle.",
-        "//": "Use of %s not currently supported.",
-        "noise_message": "FWEEEET!",
-        "noise_id": "misc",
-        "noise_variant": "whistle",
-        "noise": 58,
-        "moves": 100
-      },
-      { "type": "firestarter", "moves": 100, "moves_slow": 500, "need_sunlight": false },
-      { "flame": true, "type": "cauterize" }
+		"GUN_CLEAN", "GUN_REPAIR", "PICKAXE",
+		"HAMMER", "CROWBAR", "BOLTCUTTERS",
+		"OXYTORCH", "WATER_PURIFIER", "BURROW",
+		"EINKTABLETPC", "PORTABLE_GAME",
+		"WEATHER_TOOL", "SIPHON", "MEDITATE",
+		{
+			"type": "repair_item",
+			"item_action_type": "repair_fabric",
+			"materials": [ "cotton", "leather", "nylon", "wool", "fur", "faux_fur", "nomex", "kevlar", "neoprene", "gutskin" ],
+			"skill": "tailor",
+			"tool_quality": 10,
+			"cost_scaling": 0.1,
+			"move_cost": 50
+		},
+		{
+			"type": "sew_advanced",
+			"materials": [
+			"cotton", "leather", "nylon", "wool", "fur",
+			"faux_fur", "nomex", "kevlar", "neoprene",
+			"gutskin", "plastic", "kevlar_rigid"
+			],
+			"skill": "tailor",
+			"clothing_mods": [ "leather_padded", "steel_padded", "alloy_padded", "kevlar_padded", "furred", "wooled" ]
+		},
+		{
+			"type": "repair_item",
+			"item_action_type": "repair_metal",
+			"materials": [ "kevlar", "acidchitin", "bone", "chitin", "paper", "dry_plant", "cardboard", "wood", "kevlar_rigid", "plastic", "iron", "steel", "hardsteel", "aluminum", "copper", "silver", "gold", "glass" ],
+			"skill": "mechanics",
+			"tool_quality": 10,
+			"cost_scaling": 0.1,
+			"move_cost": 50
+		},
+		{
+			"type": "heal",
+			"move_cost": 550,
+			"bleed": 0.80,
+			"bite": 0.80,
+			"infect": 0.80,
+			"limb_power": 25,
+			"head_power": 25,
+			"torso_power": 25,
+			"effects": [ { "id": "healing_medkit", "duration": 150 }, { "id": "pkill3", "duration": 100 } ]
+		},
+		{
+			"type": "manualnoise",
+			"no_charges_message": "Seeing this is an error.",
+			"use_message": "You blow the whistle.",
+			"//": "Use of %s not currently supported.",
+			"noise_message": "FWEEEET!",
+			"noise_id": "misc",
+			"noise_variant": "whistle",
+			"noise": 58,
+			"moves": 100
+		},
+		{ "type": "firestarter", "moves": 100, "moves_slow": 500, "need_sunlight": false },
+		{ "flame": true, "type": "cauterize" }
     ],
     "encumbrance": 20,
     "coverage": 3,
@@ -705,25 +738,19 @@
         "COMPACT",
         "OVERSIZE"
 	],
-    "magazines": [
-      [
-        "battery",
-        [
-          "light_battery_cell",
-          "light_plus_battery_cell",
-          "light_minus_battery_cell",
-          "medium_battery_cell",
-          "medium_plus_battery_cell",
-          "heavy_battery_cell",
-          "heavy_plus_battery_cell"
-        ]
-      ]
-    ]
+    "charges_per_use": 1,
+    "max_charges": 300,
+    "initial_charges": 0,
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "5 s", "rate": 10 } ]
+	}
   },
   {
     "id": "skateboard",
     "repairs_like": "roller_blades",
-    "type": "ARMOR",
+    "type": "TOOL_ARMOR",
     "name": { "str": "skateboard" },
     "description": "A skateboard is a type of sports equipment used for skateboarding.  Very fast on flat floors, but they make it hard to move on rough terrain, take hits, or to dodge effectively.",
     "weight": "5000 g",
@@ -738,39 +765,63 @@
     "color": "light_gray",
     "covers": [ "feet" ],
     "coverage": 10,
-    "encumbrance": 15,
-    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "SPEED", "add": 3 } ] } ] },
-    "flags": [ "BELTED", "WATERPROOF", "ROLLER_INLINE", "REQUIRES_BALANCE" ]
+    "encumbrance": 1,
+    "techniques": [ "WBLOCK_3", "WIDE", "SWEEP" ],
+    "use_action": [
+		{ "type": "cast_spell", "spell_id": "backattackerRushZhigh", "no_fail": true, "level": 0 }
+	],
+    "charges_per_use": 1,
+    "max_charges": 6,
+    "initial_charges": 0,
+    "flags": [ "AURA", "WATERPROOF", "ROLLER_INLINE", "REQUIRES_BALANCE" ],
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "SPEED", "add": 2 } ] } ],
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 m", "rate": 3 } ]
+	}
   },
   {
     "id": "skateboard_conan",
     "repairs_like": "roller_blades",
-    "type": "ARMOR",
+    "type": "TOOL_ARMOR",
     "name": { "str": "skateboard" },
     "description": "A skateboard is a type of sports equipment used for skateboarding.  Very fast on flat floors, but they make it hard to move on rough terrain, take hits, or to dodge effectively.  This one is modified by... adding an engine?",
     "weight": "4500 g",
     "volume": "4500 ml",
     "price": "9000 USD",
     "price_postapoc": "3000 USD",
-    "to_hit": 2,
-    "bashing": 10,
+    "to_hit": -2,
+    "bashing": 30,
     "material": [ "plastic", "steel" ],
     "symbol": "[",
     "looks_like": "rollerskates",
     "color": "light_gray",
     "covers": [ "feet" ],
     "coverage": 10,
-    "encumbrance": 15,
-    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "SPEED", "add": 8 } ] } ] },
-    "flags": [ "BELTED", "WATERPROOF", "ROLLER_INLINE", "REQUIRES_BALANCE" ]
+    "encumbrance": 1,
+    "techniques": [ "WBLOCK_3", "WIDE", "SWEEP" ],
+    "use_action": [
+		{ "type": "cast_spell", "spell_id": "backattackerRushZhigh", "no_fail": true, "level": 0 }
+	],
+    "charges_per_use": 1,
+    "max_charges": 60,
+    "initial_charges": 6,
+    "flags": [ "AURA", "WATERPROOF", "ROLLER_INLINE" ],
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "SPEED", "add": 4 } ] } ],
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 m", "rate": 8 } ]
+	}
   },
   {
     "id": "surfboard",
-    "type": "ARMOR",
+    "type": "TOOL_ARMOR",
     "name": { "str": "surfboard" },
     "description": "A narrow plank used in surfing.  Surfboards are relatively light, but are strong enough to support an individual standing on them while riding an ocean wave.",
     "weight": "5000 g",
-    "volume": "5000 ml",
+    "volume": "8000 ml",
     "price": "8500 USD",
     "price_postapoc": "2500 USD",
     "to_hit": 2,
@@ -780,9 +831,21 @@
     "color": "light_gray",
     "covers": [ "feet" ],
     "coverage": 10,
-    "encumbrance": 15,
-    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "SPEED", "add": 4 } ] } ] },
-    "flags": [ "BELTED", "FIN", "WATER_FRIENDLY" ]
+    "encumbrance": 1,
+    "techniques": [ "WBLOCK_3", "WIDE", "SWEEP" ],
+    "use_action": [
+		{ "type": "cast_spell", "spell_id": "waveStrikeZhigh", "no_fail": true, "level": 0 }
+	],
+    "charges_per_use": 1,
+    "max_charges": 4,
+    "initial_charges": 4,
+    "flags": [ "AURA", "FIN", "WATER_FRIENDLY" ],
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "SPEED", "add": 1 } ] } ],
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 m", "rate": 2 } ]
+	}
   },
   {
     "id": "tubeSwim",
@@ -801,8 +864,9 @@
     "covers": [ "torso" ],
     "coverage": 10,
     "encumbrance": 35,
+    "techniques": [ "WBLOCK_3", "WIDE", "SWEEP" ],
     "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "SPEED", "add": 2 } ] } ] },
-    "flags": [ "BELTED", "FIN", "WATER_FRIENDLY" ]
+    "flags": [ "FLOTATION", "AURA", "FIN", "WATER_FRIENDLY" ]
   },
   {
     "id": "KingHat_Zhigh",
@@ -822,7 +886,8 @@
     "coverage": 40,
     "encumbrance": 5,
     "warmth": 4,
-    "material_thickness": 1
+    "material_thickness": 1,
+    "flags": [ "VARSIZE", "SUPER_FANCY" ]
   },
   {
     "id": "snow_suit_body",
@@ -901,7 +966,8 @@
     "color": "pink",
     "covers": [ "torso", "arms" ],
     "coverage": 60,
-    "encumbrance": 2
+    "encumbrance": 2,
+    "flags": [ "OVERSIZE", "HOOD", "OUTER", "FANCY" ]
   },
   {
     "type" : "ARMOR",
@@ -984,6 +1050,10 @@
     "price_postapoc": "10 USD",
     "flags": [
        "WATER_FRIENDLY",
+	   "ALLOWS_NATURAL_ATTACKS",
+	   "OUTER",
+	   "OVERSIZE",
+	   "WATER_FRIENDLY",
        "FIX_NEARSIGHT",
        "FIX_FARSIGHT",
        "FRAGILE"
@@ -1052,6 +1122,7 @@
     "material_thickness": 2,
     "environmental_protection": 1,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
+    "techniques": [ "WBLOCK_3" ],
     "flags": [ "OVERSIZE", "OUTER", "SLOWS_MOVEMENT", "BLOCK_WHILE_WORN", "ONLY_ONE", "FRAGILE" ],
     "relic_data": {
       "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "ench_effects": [ { "effect": "invisibility", "intensity": 1 } ] } ]
@@ -1080,6 +1151,7 @@
     "material_thickness": 2,
     "environmental_protection": 1,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
+    "techniques": [ "WBLOCK_3" ],
     "flags": [ "OVERSIZE", "OUTER", "BLOCK_WHILE_WORN", "ONLY_ONE", "FRAGILE" ]
   },
   {
@@ -2446,5 +2518,247 @@
       "flags": [ "SHEATH_SWORD" ]
     },
     "flags": [ "BELTED", "COMPACT", "OVERSIZE", "WATER_FRIENDLY" ]
+  },
+  {
+    "id": "suitSuperstarZhigh",
+    "repairs_like": "suit",
+    "copy-from": "suit",
+    "name": { "str": "suit" },
+    "type": "ARMOR",
+    "color": "yellow",
+    "flags": [ "VARSIZE", "SUPER_FANCY", "POCKETS" ]
+  },
+  {
+    "id": "fancy_sunglassesStars",
+    "repairs_like": "mold_plastic",
+    "copy-from": "fancy_sunglasses",
+    "name": { "str": "pair of super stylish sunglasses", "str_pl": "pairs of super stylish sunglasses" },
+    "type": "ARMOR",
+    "description": "A pair of super stylish sunglasses.  Look good while keeping the glare out of your eyes.  You could throw this as an irregular attack, just like that crotch-punching American actor who fought a four armed giant.",
+	"price": "500 USD",
+	"price_postapoc": "500 USD",
+    "flags": [ "POWERARMOR_COMPATIBLE", "FIX_NEARSIGHT", "FIX_FARSIGHT", "SUPER_FANCY", "WATER_FRIENDLY", "SUN_GLASSES" ],
+    "material": [ "superalloy", "kevlar", "plastic" ],
+    "use_action": { "type": "firestarter", "moves": 1000, "moves_slow": 25000, "need_sunlight": true },
+    "thrown_damage": [ { "damage_type": "electric", "amount": 80 } ]
+  },
+  {
+    "id": "nanami_gogglesZhigh",
+    "type": "ARMOR",
+    "name": { "str": "green goggles", "str_pl": "pairs of green goggles" },
+    "description": "A custom-built pair of armored goggles with tinted lenses.  Comfortable and built to last, they provide excellent protection from environmental dangers.",
+    "weight": "212 g",
+    "volume": "250 ml",
+    "price": "75 USD",
+    "price_postapoc": "30 USD",
+    "to_hit": -2,
+    "material": [ "superalloy", "kevlar", "plastic" ],
+    "symbol": "[",
+    "looks_like": "glasses_bal",
+    "color": "dark_gray",
+    "covers": [ "eyes" ],
+    "coverage": 100,
+    "encumbrance": 20,
+    "warmth": 5,
+    "material_thickness": 4,
+    "environmental_protection": 15,
+    "qualities": [ [ "GLARE", 1 ] ],
+    "flags": [ "WATER_FRIENDLY", "SUN_GLASSES", "OVERSIZE", "VARSIZE", "STURDY" ]
+  },
+  {
+    "id": "fancy_sunglassesOrange",
+    "repairs_like": "mold_plastic",
+    "copy-from": "fancy_sunglasses",
+    "name": { "str": "pair of orange tinted sunglasses", "str_pl": "pairs of orange tinted sunglasses" },
+    "type": "ARMOR",
+    "description": "A pair of orange tinted stylish sunglasses.  Look good while keeping the glare out of your eyes.  You could throw this as an irregular attack, just like that crotch-punching American actor who fought a four armed giant.",
+	"price": "500 USD",
+	"price_postapoc": "500 USD",
+    "flags": [ "POWERARMOR_COMPATIBLE", "FIX_NEARSIGHT", "FIX_FARSIGHT", "SUPER_FANCY", "WATER_FRIENDLY", "SUN_GLASSES" ],
+    "material": [ "superalloy", "kevlar", "plastic" ],
+    "use_action": { "type": "firestarter", "moves": 1000, "moves_slow": 25000, "need_sunlight": true },
+    "thrown_damage": [ { "damage_type": "electric", "amount": 10 } ]
+  },
+  {
+    "id": "suitColombiaZhigh",
+    "repairs_like": "suit",
+    "copy-from": "suit",
+    "name": { "str": "suit" },
+    "type": "ARMOR",
+    "flags": [ "VARSIZE", "POCKETS" ]
+  },
+  {
+    "id": "suitRedMafiaZhigh",
+    "repairs_like": "suit",
+    "copy-from": "suit",
+    "name": { "str": "suit" },
+    "type": "ARMOR",
+    "flags": [ "VARSIZE", "POCKETS" ]
+  },
+  {
+    "id": "helmet_motorBikerZhigh",
+    "repairs_like": "helmet_motor",
+    "copy-from": "helmet_motor",
+    "name": { "str": "biker's motorcycle helmet" },
+    "type": "ARMOR",
+    "color": "blue",
+    "material": [ "kevlar", "plastic", "nomex" ],
+    "encumbrance": 15
+  },
+  {
+    "id": "vest_leatherBikerZhigh",
+    "repairs_like": "tshirt_tour",
+    "copy-from": "vest_leather",
+    "name": { "str": "biker's vest" },
+    "type": "ARMOR",
+    "color": "light_red",
+    "material": [ "plastic", "cotton" ],
+    "encumbrance": 5
+  },
+  {
+    "id": "coat_fur_sfZhigh",
+    "repairs_like": "coat_fur_sf",
+    "copy-from": "coat_fur_sf",
+    "name": { "str": "neat coat" },
+    "type": "ARMOR",
+    "encumbrance": 25
+  },
+  {
+    "id": "hat_furKingsGuardZhigh",
+    "repairs_like": "hat_fur",
+    "copy-from": "hat_fur",
+    "name": { "str": "bearskin" },
+    "type": "ARMOR",
+    "description": "A hat made from the pelts of bears.  Extremely warm, but heavy and large.",
+    "weight": "1246 g",
+    "volume": "2750 ml"
+  },
+  {
+    "id": "zentaiMerc",
+    "type": "ARMOR",
+    "name": { "str": "anti-hero costume" },
+    "description": "A special zentai which protects the actor while taking an action movie.",
+    "weight": "600 g",
+    "volume": "500 ml",
+    "price": "25 USD",
+    "price_postapoc": "50 cent",
+    "material": [ "kevlar", "plastic", "nomex", "nylon" ],
+    "encumbrance": 10,
+    "symbol": "[",
+    "color": "dark_gray",
+    "covers": [ "head", "mouth", "eyes", "torso", "arms", "hands", "legs", "feet" ],
+    "coverage": 100,
+    "warmth": 20,
+    "storage": "1 L",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "POWERARMOR_COMPATIBLE", "WATER_FRIENDLY" ]
+  },
+  {
+    "id": "tophatZhigh",
+    "repairs_like": "balclava",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "magician's top hat" },
+    "description": "The only hat for a magician.  Look exquisite while showing a magic trick in the face of danger!",
+    "weight": "233 g",
+    "volume": "2500 ml",
+    "price": "195 USD",
+    "price_postapoc": "95 USD",
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "looks_like": "tophat",
+    "color": "dark_gray",
+    "covers": [ "head" ],
+    "coverage": 50,
+    "encumbrance": 20,
+    "warmth": 5,
+    "material_thickness": 2,
+    "environmental_protection": 1,
+    "use_action": [
+		{
+			"type": "heal",
+			"move_cost": 700,
+			"bleed": 0.8,
+			"bite": 0.8,
+			"infect": 0.8,
+			"limb_power": 8,
+			"head_power": 8,
+			"torso_power": 8,
+			"effects": [ { "id": "healing_medkit", "duration": 100 }, { "id": "pkill1", "duration": 50 } ]
+		},
+		{
+			"type": "cast_spell",
+			"spell_id": "entertainerTeleportZhigh",
+			"no_fail": true,
+			"level": 0,
+			"need_wielding": false
+		}
+	],
+    "charges_per_use": 4,
+    "max_charges": 20,
+    "initial_charges": 20,
+    "flags": [ "VARSIZE", "SUPER_FANCY", "SUN_GLASSES" ],
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "2 m", "rate": 1 } ]
+    }
+  },
+  {
+    "id": "coolerCase",
+    "repairs_like": "briefcase",
+    "looks_like": "toolbox_workshop",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "ice box" },
+    "description": "Useful for carrying drinks or frozen foods.  Somehow, this emits a cloud of cool air.",
+    "weight": "1700 g",
+    "volume": "15 L",
+    "price": "240 USD",
+    "price_postapoc": "50 cent",
+    "to_hit": 2,
+    "bashing": 15,
+    "material": [ "plastic" ],
+    "symbol": "[",
+    "color": "blue",
+    "covers": [ "hand_either" ],
+    "coverage": 10,
+    "encumbrance": 15,
+    "storage": "5 L",
+    "material_thickness": 2,
+    "techniques": [ "WBLOCK_3" ],
+    "use_action": [
+		{ "type": "cast_spell", "spell_id": "vacancerHealZhigh", "no_fail": true, "level": 0 }
+	],
+	"emits": [ "emit_cold_air2_stream" ],
+    "charges_per_use": 1,
+    "max_charges": 8,
+    "initial_charges": 1,
+    "flags": [ "FANCY", "OVERSIZE", "BELTED", "RESTRICT_HANDS", "WATER_FRIENDLY", "POWERARMOR_COMPATIBLE" ],
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "15 s", "rate": 1 } ]
+	}
+  },
+  {
+    "id": "mystery_cloakZhigh",
+    "copy-from": "jedi_cloak",
+    "type": "ARMOR",
+    "name": { "str": "mystery cloak" },
+    "description": "Long, flowing robes.  Simple and comfortable to wear.  The uniform of the school mystery club!  The hood is on, which draws a mysterious shade on your face.",
+    "covers": [ "torso", "head", "arms", "hands", "legs" ],
+    "use_action": { "menu_text": "Take off hood", "type": "transform", "target": "mystery_cloakHoodOffZhigh", "msg": "You take the hood off from your cloak." },
+    "coverage": 75,
+    "encumbrance": 8
+  },
+  {
+    "id": "mystery_cloakHoodOffZhigh",
+    "copy-from": "jedi_cloak",
+    "type": "ARMOR",
+    "name": { "str": "mystery cloak" },
+    "description": "Long, flowing robes.  Simple and comfortable to wear.  The uniform of the school mystery club!  The hood is off, which shows your face.",
+    "covers": [ "torso", "arms", "hands", "legs" ],
+    "use_action": { "menu_text": "Put on hood", "type": "transform", "target": "mystery_cloakZhigh", "msg": "You put your hood over your head." },
+    "coverage": 75,
+    "encumbrance": 8
   }
 ]

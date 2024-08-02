@@ -990,13 +990,27 @@
   {
     "type": "recipe",
     "result": "ammo_card",
+    "id_suffix": "from_paper",
     "category": "CC_AMMO",
     "subcategory": "CSC_AMMO_OTHER",
     "skill_used": "fabrication",
+    "difficulty": 3,
     "time": "5 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "paper", 20 ] ] ]
+    "components": [ [ [ "paper", 40 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "ammo_card",
+    "id_suffix": "from_cards",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "time": "5 s",
+    "reversible": false,
+    "autolearn": true,
+    "components": [ [ [ "cards_magic", 1 ], [ "deck_of_cards", 1 ], [ "uno", 1 ] ] ]
   },
   {
     "result": "disc_wood",
@@ -1242,6 +1256,17 @@
     "reversible": true,
     "autolearn": true,
     "components": [ [ [ "zhighNailBomb", 1 ] ], [ [ "paper", 1 ], [ "splinter", 1 ], [ "scrap", 1 ], [ "razor_blade", 1 ], [ "glass_shard", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "sling_grenade_web",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "time": "5 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "grenade_web", 1 ] ], [ [ "paper", 1 ], [ "splinter", 1 ], [ "scrap", 1 ], [ "razor_blade", 1 ], [ "glass_shard", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -1643,7 +1668,6 @@
     "type": "recipe",
     "result": "improvised_colabombV2",
     "id_suffix": "from_basics",
-    "result_mult": 2,
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_EXPLOSIVE",
     "skill_used": "cooking",
@@ -1669,7 +1693,7 @@
     "components": [ 
         [ [ "duct_tape", 10 ] ],
         [ [ "nail", 10 ] ],
-        [ [ "improvised_colabomb", 1 ] ]
+        [ [ "improvised_colabomb", 2 ] ]
 	]
   },
   {
@@ -3240,6 +3264,204 @@
   },
   {
     "type": "recipe",
+    "result": "mask_fox",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "time": "15 m",
+    "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
+    "components": [ [ [ "paper", 20 ] ], [ [ "adhesive", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "mask_kitsune",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "time": "15 m",
+    "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
+    "components": [ [ [ "paper", 20 ] ], [ [ "adhesive", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "mask_octopus",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "time": "15 m",
+    "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
+    "components": [ [ [ "paper", 20 ] ], [ [ "adhesive", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "mask_chameleon",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "time": "15 m",
+    "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
+    "components": [ [ [ "paper", 20 ] ], [ [ "adhesive", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "mask_fish",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "time": "15 m",
+    "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
+    "components": [ [ [ "paper", 20 ] ], [ [ "adhesive", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "mask_bat",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "time": "15 m",
+    "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
+    "components": [ [ [ "paper", 20 ] ], [ [ "adhesive", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "mask_warlus",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "time": "15 m",
+    "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
+    "components": [ [ [ "paper", 20 ] ], [ [ "adhesive", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "mask_hare",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "time": "15 m",
+    "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
+    "components": [ [ [ "paper", 20 ] ], [ [ "adhesive", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "mask_grasshopper",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "time": "15 m",
+    "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
+    "components": [ [ [ "paper", 20 ] ], [ [ "adhesive", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "mask_locust",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "time": "15 m",
+    "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
+    "components": [ [ [ "paper", 20 ] ], [ [ "adhesive", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "mask_cobra",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "time": "15 m",
+    "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
+    "components": [ [ [ "paper", 20 ] ], [ [ "adhesive", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "mask_viper",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "time": "15 m",
+    "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
+    "components": [ [ [ "paper", 20 ] ], [ [ "adhesive", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "mask_blackMamba",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "time": "15 m",
+    "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
+    "components": [ [ [ "paper", 20 ] ], [ [ "adhesive", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "mask_mouse",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "time": "15 m",
+    "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
+    "components": [ [ [ "paper", 20 ] ], [ [ "adhesive", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "mask_bull",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "time": "15 m",
+    "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
+    "components": [ [ [ "paper", 20 ] ], [ [ "adhesive", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "mask_swan",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "time": "15 m",
+    "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
+    "components": [ [ [ "paper", 20 ] ], [ [ "adhesive", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "mask_bear",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "time": "15 m",
+    "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
+    "components": [ [ [ "paper", 20 ] ], [ [ "adhesive", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "mask_panda",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "time": "15 m",
+    "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
+    "components": [ [ [ "paper", 20 ] ], [ [ "adhesive", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
     "result": "signalMarker",
     "category": "CC_ELECTRONIC",
     "subcategory": "CSC_ELECTRONIC_TOOLS",
@@ -3414,6 +3636,93 @@
     "reversible": false,
     "components": [
       [ [ "poison_mix", 1 ] ],
+      [
+        [ "bolt_simple_wood", 1 ],
+        [ "bolt_simple_small_game", 1 ],
+        [ "bolt_makeshift", 1 ],
+        [ "bolt_wood", 1 ],
+        [ "bolt_wood_bodkin", 1 ],
+        [ "bolt_wood_small_game", 1 ],
+        [ "bolt_metal", 1 ],
+        [ "bolt_steel", 1 ],
+        [ "bolt_steel_bodkin", 1 ],
+        [ "bolt_steel_target", 1 ],
+        [ "bolt_cf", 1 ]
+      ]
+    ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "type": "recipe",
+    "result": "bolt_glassAcid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "5 s",
+    "autolearn": true,
+    "reversible": false,
+    "components": [
+      [ [ "acid", 3 ] ],
+      [ [ "glass_shard", 2 ] ],
+      [
+        [ "bolt_simple_wood", 1 ],
+        [ "bolt_simple_small_game", 1 ],
+        [ "bolt_makeshift", 1 ],
+        [ "bolt_wood", 1 ],
+        [ "bolt_wood_bodkin", 1 ],
+        [ "bolt_wood_small_game", 1 ],
+        [ "bolt_metal", 1 ],
+        [ "bolt_steel", 1 ],
+        [ "bolt_steel_bodkin", 1 ],
+        [ "bolt_steel_target", 1 ],
+        [ "bolt_cf", 1 ]
+      ]
+    ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "type": "recipe",
+    "result": "bolt_glassTear",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "5 s",
+    "autolearn": true,
+    "reversible": false,
+    "components": [
+      [ [ "gas_teargas", 3 ] ],
+      [ [ "glass_shard", 2 ] ],
+      [
+        [ "bolt_simple_wood", 1 ],
+        [ "bolt_simple_small_game", 1 ],
+        [ "bolt_makeshift", 1 ],
+        [ "bolt_wood", 1 ],
+        [ "bolt_wood_bodkin", 1 ],
+        [ "bolt_wood_small_game", 1 ],
+        [ "bolt_metal", 1 ],
+        [ "bolt_steel", 1 ],
+        [ "bolt_steel_bodkin", 1 ],
+        [ "bolt_steel_target", 1 ],
+        [ "bolt_cf", 1 ]
+      ]
+    ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "type": "recipe",
+    "result": "bolt_glassSmoke",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "5 s",
+    "autolearn": true,
+    "reversible": false,
+    "components": [
+      [ [ "gas_smoke", 3 ] ],
+      [ [ "glass_shard", 2 ] ],
       [
         [ "bolt_simple_wood", 1 ],
         [ "bolt_simple_small_game", 1 ],
@@ -6219,5 +6528,62 @@
     "autolearn": true,
     "book_learn": [ [ "recipe_melee", 1 ], [ "textbook_weapeast", 1 ] ],
     "components": [ [ [ "scrap", 20 ], [ "steel_chunk", 4 ] ], [ [ "chain", 2 ] ], [ [ "sickle", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "flamecanZhigh",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "fabrication",
+    "time": "8 m",
+    "autolearn": true,
+    "using": [ [ "accelerant_liquid", 1000 ] ],
+    "components": [
+		[ [ "jerrycan", 1 ] ],
+		[ [ "volatile_explosive", 2, "LIST" ], [ "stable_explosive", 2, "LIST" ], [ "military_explosive", 2, "LIST" ] ]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "flare_trapZhigh",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TRAPS",
+    "skill_used": "traps",
+    "difficulty": 2,
+    "time": "5 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "tripwire", 1 ] ],
+      [ [ "handflare", 1 ], [ "signal_flare", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "jumpBoardZhigh",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TRAPS",
+    "skill_used": "traps",
+    "difficulty": 2,
+    "time": "5 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "well_pump", 1 ], [ "hand_pump", 1 ], [ "pump_complex", 1 ] ],
+      [ [ "spring", 1 ] ],
+      [ [ "wood_panel", 1 ], [ "alloy_sheet", 1 ], [ "sheet_metal_small", 2 ], [ "sheet_metal", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "walletDuctTapeZhigh",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "40 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "cardboard", 40 ] ], [ [ "duct_tape", 60 ] ] ]
   }
 ]

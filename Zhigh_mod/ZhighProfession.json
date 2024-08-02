@@ -19,10 +19,10 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_masks" },
-                { "group": "ZhighNpc_coat" },
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "group": "ZhighGuardWeaponGroups", "custom-flags": [ "auto_wield" ] }
+			{ "group": "ZhighNpc_masks" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "ZhighGuardWeaponGroups", "custom-flags": [ "auto_wield" ] }
 		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
@@ -504,16 +504,18 @@
           "zhigh_smart_phone",
           "socks",
           "dress_shoes",
+          "suitSuperstarZhigh",
+          "fancy_sunglassesStars",
           "wristwatch"
         ],
         "entries": [
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
           { "group": "charged_noiseEmitter" },
           { "group": "charged_noiseEmitter" },
-          { "item": "microphone_xlr_generic", "custom-flags": [ "auto_wield" ] } ]
+          { "item": "micZhigh", "custom-flags": [ "auto_wield" ] } ]
       },
-      "male": [ "boxer_shorts", "tux" ],
-      "female": [ "bra", "panties", "gown" ]
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
     },
     "flags": [ "SCEN_ONLY" ]
   },
@@ -596,6 +598,7 @@
           "zhigh_smart_phone",
           "socks",
           "dress_shoes",
+          "tophatZhigh",
           "throwing_card_spade", "throwing_card_club", "throwing_card_diam", "throwing_card_hear",
           "throwing_card_spade", "throwing_card_club", "throwing_card_diam", "throwing_card_hear",
           "throwing_card_spade", "throwing_card_club", "throwing_card_diam", "throwing_card_hear",
@@ -613,7 +616,7 @@
         "entries": [ 
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
       },
-      "male": [ "boxer_shorts", "tux", "tophat" ],
+      "male": [ "boxer_shorts", "tux" ],
       "female": [ "bra", "panties", "gown", "barrette", "jade_brooch" ]
     },
     "flags": [ "SCEN_ONLY" ]
@@ -704,7 +707,9 @@
           "mocassins"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+                { "group": "ZhighTalentWeaponGroups", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "boxer_shorts", "king_robe_zhigh", "KingHat_Zhigh" ],
       "female": [ "bra", "panties", "queen_robe_zhigh", "queen_wig" ]
@@ -726,10 +731,14 @@
         "items": [
           "zhigh_smart_phone",
           "socks",
+          "stimUdR513",
+          "stimUdR513",
+          "stimUdR513",
           "stimInv",
           "stimInv",
           "stimInv",
           "mocassins",
+          "woodenKnife",
           "woodenKnife",
           "woodenKnife",
           "coin_quarter",
@@ -843,7 +852,7 @@
         ],
         "entries": [ 
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "tubeSwim", "custom-flags": [ "auto_wield" ] } ]
+                { "item": "surfboard", "custom-flags": [ "auto_wield" ] } ]
       }
     },
     "flags": [ "SCEN_ONLY" ]
@@ -935,15 +944,13 @@
           "socks",
           "sneakers",
           "jacket_light",
-          "mbag",
-          "medkit1",
-          "medkit1",
+          "coolerCase",
           "matches",
           "wristwatch"
         ],
         "entries": [ 
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "mountable_cooler", "custom-flags": [ "auto_wield" ] } ]
+                { "group": "ZhighGuardWeaponGroups", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "trunks", "pants_zhigh" ],
       "female": [ "bikini_top", "bikini_bottom", "skirt_zhigh" ]
@@ -1043,8 +1050,7 @@
           "jersey",
           "zhigh_smart_phone",
           "socks",
-          "shorts_tracksuit_zhigh",
-          "wristwatch"
+          "shorts_tracksuit_zhigh"
         ],
         "entries": [ 
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
@@ -1441,14 +1447,17 @@
           "socks",
           "dress_shoes",
           "gold_ear",
+          "fancy_sunglassesStars",
+          "light_atomic_battery_cell",
+          "light_atomic_battery_cell",
           "gold_watch"
         ],
         "entries": [ 
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
                 { "item": "selfie_stick_extended", "custom-flags": [ "auto_wield" ] } ]
       },
-      "male": [ "boxer_shorts", "tie_necktie_zhigh" ],
-      "female": [ "bra", "panties", "tie_bow_zhigh" ]
+      "male": [ "boxer_shorts", "pants_zhigh" ],
+      "female": [ "bra", "panties", "skirt_zhigh" ]
     },
     "flags": [ "SCEN_ONLY" ]
   },
@@ -1592,12 +1601,12 @@
           "socks",
           "cloak_mj",
           "sneakers",
-          "teleporter",
+          "light_atomic_battery_cell",
           "wristwatch"
         ],
         "entries": [ 
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "microphone_xlr_generic", "custom-flags": [ "auto_wield" ] } ]
+                { "item": "micZhigh2", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -1622,7 +1631,7 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "item": "screwdriver", "custom-flags": [ "auto_wield" ] } ]
+                { "item": "conductingBatonSpeedZhigh", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "panties" ]
@@ -1751,7 +1760,7 @@
     "id": "zhighCommander",
     "name": "Student - Commander",
     "description": "As you were the leader of an amatuer baseball team, you always led your people to do something; running, practicing, baseball, and cleaning things up.  Since all of your teammates are dead, you wonder how your commanding skills will help you.  At least you got a flare gun from a dead man's hand.",
-    "points": 0,
+    "points": 2,
     "pets": [ { "name": "mon_survivor_human_m4bb", "amount": 1 },
               { "name": "mon_survivor_human_crowbar", "amount": 1 },
               { "name": "mon_survivor_human_pipe", "amount": 2 }
@@ -1770,10 +1779,12 @@
           "sneakers",
           "signal_flare",
           "signal_flare",
+          "signalMarker0",
           "signalMarker1",
           "signalMarker2",
           "signalMarker3",
           "trenchcoat_leather",
+          "signalMarker0Commander",
           "wristwatch"
         ],
         "entries": [
@@ -3774,10 +3785,8 @@
           "socks",
           "sneakers",
           "improvised_demolition_charge",
-          "improvised_demolition_charge",
+          "flamecanZhigh",
           "conTool",
-          "conTool",
-          "bwireTool",
           "bwireTool",
           "bwireTool",
           "bwireTool",
@@ -3897,6 +3906,37 @@
                 { "group": "ZhighNpc_coat" },
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
                 { "item": "popGunPistol_zhigh", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighFurry",
+    "name": "Student - Fursuit Actor",
+    "description": "Some made fun of you, others bullied you when you were in a suit.  Now is the time to pay them back.",
+    "points": -1,
+    "skills": [
+		{ "level": 1, "name": "melee" },
+		{ "level": 1, "name": "tailor" },
+		{ "level": 2, "name": "dodge" }
+	],
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "bags" },
+			{ "group": "ZhighFursuits" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
 		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],

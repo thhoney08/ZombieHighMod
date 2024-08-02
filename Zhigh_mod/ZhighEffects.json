@@ -1,7 +1,72 @@
 [
   {
     "type": "effect_type",
-    "id": "antitoxin",
+    "id": "speedupMaestro",
+    "name": [ "speed up" ],
+    "desc": [ "You became faster." ],
+    "apply_message": "You became faster.",
+    "rating": "good",
+    "max_duration": "5 m",
+    "base_mods": {
+      "speed_mod": [ 20 ]
+    },
+    "show_in_info": true
+  },
+  {
+    "type": "effect_type",
+    "id": "staminupMaestro",
+    "name": [ "stamina regain" ],
+    "desc": [ "You gain some extra stamina." ],
+    "rating": "good",
+    "max_duration": "5 m",
+    "base_mods": {
+	  "int_mod": [ 1 ],
+	  "dex_mod": [ 1 ],
+      "stamina_min": [ 40 ],
+      "stamina_chance": [ 20 ],
+	  "pkill_tick": [ 30 ],
+	  "pkill_min": [ 1 ],
+	  "pkill_max_val": [ 20 ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "strengthupMaestro",
+    "name": [ "attack buff" ],
+    "desc": [ "You gain an extra attack buff." ],
+    "rating": "good",
+    "max_duration": "5 m",
+    "base_mods": {
+      "speed_mod": [ 2 ],
+	  "per_mod": [ 2 ],
+	  "str_mod": [ 2 ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "antiteleportglow",
+    "removes_effects": [
+      "teleglow"
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "obdolbos1",
+    "removes_effects": [
+      "stim_overdose",
+      "zapped",
+      "corroding",
+      "paincysts",
+      "bloodworms",
+      "tapeworm",
+      "amigara",
+      "fearparalyze",
+      "brainworms"
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "antiVenom",
     "removes_effects": [
       "foodpoison",
       "paralyzepoison",
@@ -47,8 +112,9 @@
     "desc": [ "You became faster." ],
     "apply_message": "You became faster.",
     "rating": "good",
+    "max_duration": "5 m",
     "base_mods": {
-      "speed_mod": [ 20 ]
+      "speed_mod": [ 60 ]
     },
     "show_in_info": true
   },
@@ -59,6 +125,7 @@
     "desc": [ "You became stronger." ],
     "apply_message": "You became stronger.",
     "rating": "good",
+    "max_duration": "5 m",
     "base_mods": {
       "str_mod": [ 2 ]
     },
@@ -71,6 +138,7 @@
     "desc": [ "You became smarter." ],
     "apply_message": "You became smarter.",
     "rating": "good",
+    "max_duration": "5 m",
     "base_mods": {
       "int_mod": [ 2 ]
     },
@@ -83,6 +151,7 @@
     "desc": [ "Your perception became better." ],
     "apply_message": "Your perception became better.",
     "rating": "good",
+    "max_duration": "5 m",
     "base_mods": {
       "per_mod": [ 2 ]
     },
@@ -95,6 +164,7 @@
     "desc": [ "Your dexterity became better." ],
     "apply_message": "Your dexterity became better.",
     "rating": "good",
+    "max_duration": "5 m",
     "base_mods": {
       "dex_mod": [ 2 ]
     },
@@ -107,6 +177,7 @@
     "desc": [ "Your stamina became better." ],
     "apply_message": "Your stamina became better.",
     "rating": "good",
+    "max_duration": "5 m",
     "base_mods": {
       "stamina_min": [ 3 ],
       "stamina_max": [ 6 ]
@@ -121,7 +192,7 @@
     "apply_message": "You became slower.",
     "rating": "bad",
     "base_mods": {
-      "speed_mod": [ -20 ]
+      "speed_mod": [ -60 ]
     },
     "show_in_info": true
   },
@@ -230,7 +301,7 @@
     }
   },
   {
-    "//": "Got this line of code from an old mod related to doom. Not original.",
+    "//": "Got this line of code from pk's rebalancing mod. Not original.",
 	"type": "effect_type",
 	"id": "healing_medkit",
 	"int_add_val": 3,

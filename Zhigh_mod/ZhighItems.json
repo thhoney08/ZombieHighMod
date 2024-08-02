@@ -41,17 +41,24 @@
   },
   {
     "id": "selfie_stick",
-    "type": "GENERIC",
+    "type": "TOOL",
     "category": "weapons",
     "name": { "str": "selfie stick" },
     "description": "A telescoping selfie stick that collapses for easy storage.  Makes a mediocre melee weapon.  Activate to expand.",
+    "to_hit": 1,
+    "charges_per_use": 1,
+    "ammo": "battery",
     "weight": "725 g",
     "color": "dark_gray",
     "price_postapoc": "2 USD",
     "symbol": "/",
     "material": [ "aluminum" ],
-    "flags": [ "FRAGILE_MELEE", "BELT_CLIP" ],
-    "use_action": [ "CAMERA", { "menu_text": "Expand", "type": "transform", "target": "selfie_stick_extended", "msg": "You snap open your selfie stick." } ],
+    "flags": [ "BELT_CLIP" ],
+    "use_action": [
+		"CAMERA",
+		{ "type": "cast_spell", "spell_id": "pullZhigh", "no_fail": true, "level": 0, "need_wielding": true },
+		{ "menu_text": "Expand", "type": "transform", "target": "selfie_stick_extended", "msg": "You snap open your selfie stick." }
+	],
     "volume": "250 ml",
     "bashing": 16,
     "magazines": [
@@ -73,17 +80,38 @@
   },
   {
     "id": "selfie_stick_extended",
-    "type": "GENERIC",
+    "type": "TOOL",
     "copy-from": "selfie_stick",
     "weapon_category": [ "BATONS" ],
     "name": { "str": "selfie stick (extended)" },
     "description": "A telescoping selfie stick that collapses for easy storage.  Makes a mediocre melee weapon.  Activate to collapse.",
     "to_hit": 3,
+    "charges_per_use": 1,
+    "ammo": "battery",
     "techniques": [ "WBLOCK_1", "RAPID" ],
-    "use_action": { "menu_text": "Collapse", "type": "transform", "target": "selfie_stick", "msg": "You collapse your selfie stick." },
+    "use_action": [
+		"CAMERA",
+		{ "type": "cast_spell", "spell_id": "pushZhigh", "no_fail": true, "level": 0, "need_wielding": true },
+		{ "menu_text": "Collapse", "type": "transform", "target": "selfie_stick", "msg": "You collapse your selfie stick." }
+	],
     "volume": "950 ml",
-    "flags": [ "FRAGILE_MELEE", "BELT_CLIP", "REACH_ATTACK" ],
-    "bashing": 5
+    "flags": [ "BELT_CLIP", "REACH_ATTACK" ],
+    "magazines": [
+      [
+        "battery",
+        [
+          "light_plus_battery_cell",
+          "light_minus_battery_cell",
+          "light_battery_cell",
+          "light_atomic_battery_cell",
+          "light_minus_atomic_battery_cell",
+          "light_minus_disposable_cell",
+          "light_disposable_cell"
+        ]
+      ]
+    ],
+    "magazine_well": "250 ml",
+    "bashing": 9
   },
   {
     "id": "zhigh_smart_phone",
@@ -323,34 +351,6 @@
     "color": "white",
     "use_action": [ "WASH_ALL_ITEMS", "SHAVEKIT", "HAIRKIT" ],
     "flags": [ "BELT_CLIP", "ALLOWS_REMOTE_USE", "NO_SALVAGE" ]
-  },
-  {
-    "id": "cardmultitool",
-    "type": "GENERIC",
-    "category": "tools",
-    "name": { "str": "card multi-tool" },
-    "description": "A cleverly designed all-in-one tool which combines several smaller tools into a thick sized, card shaped plastic chunk.  Also holds a magnifying glass to start a fire.",
-    "weight": "6 g",
-    "volume": "15 ml",
-    "price": "3000 USD",
-    "price_postapoc": "500 USD",
-    "to_hit": -4,
-    "bashing": 1,
-    "cutting": 2,
-    "material": [ "steel", "plastic" ],
-    "symbol": ";",
-    "color": "light_gray",
-    "qualities": [ 
-            [ "CUT", 1 ], 
-            [ "SAW_W", 1 ], 
-            [ "SAW_M", 1 ], 
-            [ "WRENCH", 1 ], 
-            [ "SCREW", 1 ], 
-            [ "SCREW_FINE", 1 ], 
-            [ "BUTCHER", 7 ] 
-        ],
-    "use_action": { "type": "firestarter", "moves": 1000, "moves_slow": 25000, "need_sunlight": true },
-    "flags": [ "STAB", "FIRESTARTER", "BELT_CLIP" ]
   },
   {
     "id": "ultimatemap",
@@ -862,6 +862,64 @@
     "color": "light_gray"
   },
   {
+    "id": "signalMarker0",
+	"looks_like": "signalMarker",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "[special] signal marker", "str_pl": "[special] signal markers" },
+    "description": "This is a portable radio-like device.  Modified by a special person, you could call for help.  Throwing it also gives the same effect.",
+    "weight": "395 g",
+    "volume": "300 ml",
+    "price": "10 USD",
+    "price_postapoc": "5 USD",
+    "to_hit": -1,
+    "bashing": 4,
+    "use_action": {
+		"type": "place_npc",
+		"npc_class_id": "GRUNT_MERC",
+		"summon_msg": "A survivor got your signal and surveys the area!",
+		"place_randomly": false,
+		"moves": 60
+    },
+    "flags": [ "ACT_ON_RANGED_HIT" ],
+    "material": [ "plastic", "aluminum" ],
+    "symbol": ";",
+    "color": "light_gray"
+  },
+  {
+    "id": "signalMarker0Commander",
+	"looks_like": "signalMarker",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "modified signal marker", "str_pl": "modified signal markers" },
+    "description": "This is a portable radio-like device.  Modified by a special person, you could call for help.  This one has extra mods, which makes it useable for almost forever, if one have enough time.  Radioactive when broken, so don't try to break it.",
+    "weight": "395 g",
+    "volume": "300 ml",
+    "price": "10 USD",
+    "price_postapoc": "5 USD",
+    "to_hit": -1,
+    "bashing": 4,
+    "use_action": {
+		"type": "place_npc",
+		"npc_class_id": "GRUNT_BASEBALL_MERC",
+		"summon_msg": "A survivor got your signal and surveys the area!",
+		"place_randomly": false,
+		"moves": 180
+    },
+    "flags": [ "LEAK_DAM", "RADIOACTIVE" ],
+    "material": [ "plastic", "aluminum" ],
+    "symbol": ";",
+    "charges_per_use": 1,
+    "max_charges": 3,
+    "initial_charges": 3,
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "30 m", "rate": 1 } ]
+    },
+    "color": "light_gray"
+  },
+  {
     "id": "signalMarker1",
     "type": "TOOL",
     "category": "tools",
@@ -873,13 +931,17 @@
     "price_postapoc": "5 USD",
     "to_hit": -1,
     "bashing": 4,
-    "use_action": {
-      "type": "place_npc",
-      "npc_class_id": "GRUNT_MERC",
-      "summon_msg": "A survivor got your signal and surveys the area!",
-      "place_randomly": false,
-      "moves": 60
-    },
+	"use_action": [ {
+		"type": "place_monster",
+		"monster_id": "mon_survivor_human_m4bb",
+		"friendly_msg": "A survivor got your signal and surveys the area!",
+		"hostile_msg": "You send the wrong signal; the survivor is hostile!",
+		"difficulty": 2,
+		"moves": 10,
+		"place_randomly": true,
+		"skills": [ "speech" ]
+    } ],
+    "flags": [ "ACT_ON_RANGED_HIT" ],
     "material": [ "plastic", "aluminum" ],
     "symbol": ";",
     "color": "light_gray"
@@ -897,14 +959,14 @@
     "to_hit": -1,
     "bashing": 4,
 	"use_action": [ {
-      "type": "place_monster",
-      "monster_id": "mon_survivor_human_crowbar",
-      "friendly_msg": "A survivor got your signal and surveys the area!",
-      "hostile_msg": "You send the wrong signal; the survivor is hostile!",
-      "difficulty": 2,
-      "moves": 60,
-      "place_randomly": true,
-      "skills": [ "speech" ]
+		"type": "place_monster",
+		"monster_id": "mon_survivor_human_crowbar",
+		"friendly_msg": "A survivor got your signal and surveys the area!",
+		"hostile_msg": "You send the wrong signal; the survivor is hostile!",
+		"difficulty": 2,
+		"moves": 35,
+		"place_randomly": true,
+		"skills": [ "speech" ]
     } ],
     "flags": [ "ACT_ON_RANGED_HIT" ],
     "material": [ "plastic", "aluminum" ],
@@ -924,14 +986,14 @@
     "to_hit": -1,
     "bashing": 4,
 	"use_action": [ {
-      "type": "place_monster",
-      "monster_id": "mon_survivor_human_pipe",
-      "friendly_msg": "A survivor got your signal and surveys the area!",
-      "hostile_msg": "You send the wrong signal; the survivor is hostile!",
-      "difficulty": 0,
-      "moves": 60,
-      "place_randomly": true,
-      "skills": [ "speech" ]
+		"type": "place_monster",
+		"monster_id": "mon_survivor_human_pipe",
+		"friendly_msg": "A survivor got your signal and surveys the area!",
+		"hostile_msg": "You send the wrong signal; the survivor is hostile!",
+		"difficulty": 0,
+		"moves": 60,
+		"place_randomly": true,
+		"skills": [ "speech" ]
     } ],
     "flags": [ "ACT_ON_RANGED_HIT" ],
     "material": [ "plastic", "aluminum" ],
@@ -1370,24 +1432,6 @@
     }
   },
   {
-    "id": "wall_kit",
-    "looks_like": "shelter_kit",
-    "type": "TOOL",
-    "category": "tools",
-    "name": { "str": "wall kit" },
-    "description": "This is a rolled up wall kit, which you could make a wall or an improvised barricade out of one.  It could break easliy if something blows up nearby.",
-    "weight": "1033 g",
-    "volume": "1500 ml",
-    "price": "150 USD",
-    "price_postapoc": "10 USD",
-    "to_hit": -3,
-    "bashing": 4,
-    "material": [ "plastic", "aluminum" ],
-    "symbol": ";",
-    "color": "green",
-    "use_action": { "type": "deploy_furn", "furn_type": "f_large_plastic_wall" }
-  },
-  {
     "id": "dispenserZhighFake_kit",
     "looks_like": "toolbox",
     "type": "TOOL",
@@ -1406,29 +1450,96 @@
     "use_action": { "type": "deploy_furn", "furn_type": "f_dispenserZhigh" }
   },
   {
-    "id": "gootrapZhigh",
-    "looks_like": "canister_goo",
     "type": "GENERIC",
-    "category": "tools",
-    "name": { "str": "goo trap" },
-    "description": "There is a label on this canister: \"Warning: contains highly toxic and corrosive materials.  Contents may be sentient.  Open at your own risk.\"",
-    "weight": "14000 g",
-    "volume": "1500 ml",
-    "price": "60 USD",
-    "price_postapoc": "10 USD",
-    "to_hit": -2,
-    "bashing": 9,
-    "cutting": 1,
-    "material": "steel",
-    "symbol": ";",
-    "color": "light_gray",
+    "id": "walletZhigh",
+    "symbol": ",",
+    "color": "white",
+    "name": { "str": "wallet" },
+    "description": "An average wallet.  Useful for holding cards and stuff.",
+    "price": "100 USD",
+    "price_postapoc": "10 cent",
+    "material": [ "fur", "leather" ],
+    "weight": "106 g",
+    "volume": "105 ml",
     "use_action": {
-      "type": "place_trap",
-      "allow_underwater": true,
-      "trap": "tr_goo",
-      "moves": 20,
-      "practice": 4,
-      "done_message": "You set the goo pit."
+      "type": "holster",
+      "holster_prompt": "Stash cards",
+      "holster_msg": "You stash your %s.",
+      "multi": 10,
+      "min_volume": "0 ml",
+      "max_volume": "5 ml",
+      "draw_cost": 60,
+      "flags": [ "CARDZHIGH" ]
+    },
+    "to_hit": -3
+  },
+  {
+    "type": "GENERIC",
+    "id": "walletLongZhigh",
+    "symbol": ",",
+    "color": "white",
+    "name": { "str": "long wallet" },
+    "description": "A fancy long wallet.  Useful for holding cards and stuff.",
+    "price": "100 USD",
+    "price_postapoc": "10 cent",
+    "material": [ "gold", "fur", "leather" ],
+    "weight": "166 g",
+    "volume": "205 ml",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stash cards",
+      "holster_msg": "You stash your %s.",
+      "multi": 16,
+      "min_volume": "0 ml",
+      "max_volume": "5 ml",
+      "draw_cost": 60,
+      "flags": [ "CARDZHIGH" ]
+    },
+    "to_hit": -3
+  },
+  {
+    "id": "walletWearableZhigh",
+    "copy-from": "badge_abstract",
+    "type": "ARMOR",
+    "name": { "str": "wearable wallet" },
+    "description": "A wearable wallet.  Useful for holding cards and stuff.",
+    "material": [ "plastic" ],
+    "weight": "56 g",
+    "volume": "55 ml",
+    "price_postapoc": "10 USD",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stash cards",
+      "holster_msg": "You stash your %s.",
+      "multi": 4,
+      "min_volume": "0 ml",
+      "max_volume": "5 ml",
+      "draw_cost": 60,
+      "flags": [ "CARDZHIGH" ]
     }
+  },
+  {
+    "type": "GENERIC",
+    "id": "walletDuctTapeZhigh",
+    "symbol": ",",
+    "color": "white",
+    "name": { "str": "duct tape wallet" },
+    "description": "A wallet, crudely made with duct tape and cardboard.  Useful for holding cards and stuff.",
+    "price": "100 USD",
+    "price_postapoc": "10 cent",
+    "material": [ "plastic", "cardboard" ],
+    "weight": "116 g",
+    "volume": "115 ml",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stash cards",
+      "holster_msg": "You stash your %s.",
+      "multi": 8,
+      "min_volume": "0 ml",
+      "max_volume": "5 ml",
+      "draw_cost": 90,
+      "flags": [ "CARDZHIGH" ]
+    },
+    "to_hit": -3
   }
 ]

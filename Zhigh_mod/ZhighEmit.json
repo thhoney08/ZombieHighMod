@@ -11,6 +11,87 @@
     "base_mods": { "speed_mod": [ -30 ], "dex_mod": [ -2 ] }
   },
   {
+    "id": "fd_barbedWireZhigh",
+    "type": "field_type",
+    "legacy_enum_id": 5,
+    "description_affix": "covered_in",
+    "priority": 2,
+    "phase": "solid",
+    "bash": {
+      "str_min": 1,
+      "str_max": 3,
+      "sound_vol": 2,
+      "sound_fail_vol": 2,
+      "sound": "hsh!",
+      "msg_success": "You brush aside some barbed wire."
+    },
+    "display_items": true,
+    "display_field": true,
+    "intensity_levels": [
+      {
+        "name": "thin barbed wire",
+        "sym": "5",
+        "color": "white",
+        "dangerous": true,
+        "effects": [
+          {
+            "effect_id": "bleed",
+            "body_part": "torso",
+            "intensity": 1,
+            "min_duration": "2 seconds",
+            "max_duration": "2 seconds",
+            "immune_in_vehicle": true,
+            "is_environmental": false,
+            "message": "The barbed wire cuts you!",
+            "message_npc": "The barbed wire cuts <npcname>!",
+            "message_type": "bad"
+          }
+        ]
+      },
+      {
+        "name": "barbed wire",
+        "sym": "5",
+        "color": "white",
+        "dangerous": true,
+        "effects": [
+          {
+            "effect_id": "bleed",
+            "body_part": "torso",
+            "intensity": 1,
+            "min_duration": "4 seconds",
+            "max_duration": "4 seconds",
+            "immune_in_vehicle": true,
+            "is_environmental": false,
+            "message": "The barbed wire cuts you!",
+            "message_npc": "The barbed wire cuts <npcname>!",
+            "message_type": "bad"
+          }
+        ]
+      },
+      {
+        "name": "thick barbed wire",
+        "sym": "5",
+        "color": "white",
+        "dangerous": true,
+        "effects": [
+          {
+            "effect_id": "bleed",
+            "body_part": "torso",
+            "intensity": 1,
+            "min_duration": "6 seconds",
+            "max_duration": "6 seconds",
+            "immune_in_vehicle": true,
+            "is_environmental": false,
+            "message": "The barbed wire cuts you!",
+            "message_npc": "The barbed wire cuts <npcname>!",
+            "message_type": "bad"
+          }
+        ]
+      }
+    ],
+    "looks_like": "fd_web"
+  },
+  {
     "id": "fd_goo",
     "type": "field_type",
     "legacy_enum_id": 8,
@@ -288,7 +369,7 @@
     "dirty_transparency_cache": true,
     "phase": "gas",
     "display_items": true,
-    "display_field": true,
+    "display_field": false,
     "looks_like": "fd_tindalos_gas"
   },
   {
@@ -306,7 +387,7 @@
     "priority": 8,
     "half_life": "30 seconds",
     "phase": "gas",
-    "display_field": true,
+    "display_field": false,
     "looks_like": "fd_relax_gas"
   },
   {
@@ -358,7 +439,7 @@
     "dirty_transparency_cache": true,
     "phase": "gas",
     "display_items": true,
-    "display_field": true,
+    "display_field": false,
     "looks_like": "fd_relax_gas"
   },
   {
@@ -377,7 +458,7 @@
     "half_life": "20 seconds",
     "phase": "gas",
     "display_items": true,
-    "display_field": true,
+    "display_field": false,
     "looks_like": "fd_relax_gas"
   },
   {
@@ -402,6 +483,77 @@
     "type": "emit",
     "//": "thicc zombie gas",
     "field": "fd_zombie2_rift",
+    "intensity": 3,
+    "qty": 9
+  },
+  {
+    "id": "fd_zombie3_rift",
+    "type": "field_type",
+    "intensity_levels": [
+      { "name": "unknown presence", "color": "light_gray", "sym": "*" },
+      { "name": "undead presence", "color": "dark_gray" },
+      {
+        "name": "undead fissure",
+        "color": "magenta",
+        "transparent": true,
+        "monster_spawn_chance": 1,
+        "monster_spawn_count": 1,
+        "monster_spawn_radius": 1,
+        "monster_spawn_group": "GROUP_ZHIGH"
+      }
+    ],
+    "priority": 6,
+    "half_life": "10 seconds",
+    "accelerated_decay": true,
+    "wandering_field": "fd_zombie3_gas",
+    "gas_absorption_factor": 15,
+    "dirty_transparency_cache": true,
+    "phase": "gas",
+    "display_items": true,
+    "display_field": false,
+    "looks_like": "fd_relax_gas"
+  },
+  {
+    "id": "fd_zombie3_gas",
+    "type": "field_type",
+    "intensity_levels": [
+      { "name": "swirl of fog", "translucency": 5 },
+      { "name": "foul fog", "color": "cyan" },
+      { "name": "thick foul fog", "color": "pink" }
+    ],
+    "decay_amount_factor": 7,
+    "percent_spread": 30,
+    "outdoor_age_speedup": "10 seconds",
+    "dirty_transparency_cache": true,
+    "priority": 6,
+    "half_life": "20 seconds",
+    "phase": "gas",
+    "display_items": true,
+    "display_field": false,
+    "looks_like": "fd_relax_gas"
+  },
+  {
+    "id": "emit_zombie3_burst",
+    "type": "emit",
+    "//": "thin zombie gas",
+    "field": "fd_zombie3_gas",
+    "intensity": 3,
+    "chance": 1,
+    "qty": 3
+  },
+  {
+    "id": "emit_zombie3_cloud",
+    "type": "emit",
+    "//": "zombie gas",
+    "field": "fd_zombie3_gas",
+    "intensity": 3,
+    "qty": 6
+  },
+  {
+    "id": "emit_zombie3_cloud_big",
+    "type": "emit",
+    "//": "thicc zombie gas",
+    "field": "fd_zombie3_rift",
     "intensity": 3,
     "qty": 9
   },
@@ -565,5 +717,49 @@
     "field": "fd_heal",
     "intensity": 3,
     "qty": 40
+  },
+  {
+    "id": "fd_healeffect",
+    "type": "field_type",
+    "legacy_enum_id": 26,
+    "intensity_levels": [ { "name": "heal effect", "sym": "&" } ],
+    "description_affix": "illuminated_by",
+    "priority": 1,
+    "half_life": "2 turns",
+    "display_field": true,
+    "looks_like": "fd_laser"
+  },
+  {
+    "id": "fd_speedeffect",
+    "type": "field_type",
+    "legacy_enum_id": 26,
+    "intensity_levels": [ { "name": "speed effect", "sym": "&" } ],
+    "description_affix": "illuminated_by",
+    "priority": 1,
+    "half_life": "2 turns",
+    "display_field": true,
+    "looks_like": "fd_laser"
+  },
+  {
+    "id": "fd_staminaeffect",
+    "type": "field_type",
+    "legacy_enum_id": 26,
+    "intensity_levels": [ { "name": "stamina effect", "sym": "&" } ],
+    "description_affix": "illuminated_by",
+    "priority": 1,
+    "half_life": "2 turns",
+    "display_field": true,
+    "looks_like": "fd_laser"
+  },
+  {
+    "id": "fd_strengtheffect",
+    "type": "field_type",
+    "legacy_enum_id": 26,
+    "intensity_levels": [ { "name": "stamina effect", "sym": "&" } ],
+    "description_affix": "illuminated_by",
+    "priority": 1,
+    "half_life": "2 turns",
+    "display_field": true,
+    "looks_like": "fd_laser"
   }
 ]

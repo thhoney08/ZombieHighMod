@@ -136,7 +136,7 @@
         "type": "gun",
         "cooldown": 3,
         "move_cost": 3,
-        "gun_type": "fakeBBgun_zhigh",
+        "gun_type": "feral_bbm4_gun",
         "fake_skills": [ [ "gun", 8 ], [ "smg", 8 ] ],
         "fake_dex": 12,
         "fake_per": 12,
@@ -158,8 +158,8 @@
         "ammo_type": "beanbag",
         "no_ammo_sound": "\"Die already!\"",
         "fake_skills": [ [ "gun", 3 ], [ "throw", 3 ] ],
-        "fake_dex": 6,
-        "fake_per": 6,
+        "fake_dex": 12,
+        "fake_per": 12,
         "require_targeting_player": false,
         "require_targeting_npc": false,
         "require_targeting_monster": false,
@@ -195,13 +195,14 @@
     "hp": 700,
     "vision_day": 50,
     "vision_night": 10,
-    "regenerates": 50,
+    "emit_fields": [ { "emit_id": "emit_zombie3_cloud_big", "delay": "1 s" } ],
+    "regenerates": 10,
     "special_attacks": [
       {
         "type": "gun",
         "cooldown": 1,
         "move_cost": 3,
-        "gun_type": "fakeAdvBBgun_zhigh",
+        "gun_type": "feral_bbm4_gun",
         "fake_skills": [ [ "gun", 8 ], [ "smg", 8 ] ],
         "fake_dex": 11,
         "fake_per": 15,
@@ -213,7 +214,7 @@
         "require_targeting_npc": false,
         "require_targeting_monster": false,
         "description": "The feral student shoots!",
-        "ranges": [ [ 0, 30, "DEFAULT" ] ]
+        "ranges": [ [ 0, 10, "DEFAULT" ] ]
       },
       {
         "type": "gun",
@@ -230,11 +231,13 @@
         "require_targeting_npc": false,
         "require_targeting_monster": false,
         "targeting_sound": "Seeya, sucker!",
-        "ranges": [ [ 31, 50, "DEFAULT" ] ],
+        "ranges": [ [ 11, 30, "DEFAULT" ] ],
         "description": "The feral student shoots a cola bomb, run!",
         "no_crits": false
       }
     ],
+    "path_settings": { "max_dist": 10 },
+    "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "flags": [
       "SEES",
       "HEARS",
@@ -244,8 +247,8 @@
       "SWIMS",
       "CLIMBS",
       "HUMAN",
-      "PATH_AVOID_DANGER_1",
-      "PRIORITIZE_TARGETS"
+      "PRIORITIZE_TARGETS",
+      "PATH_AVOID_DANGER_1"
     ]
   }
 ]

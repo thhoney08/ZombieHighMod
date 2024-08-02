@@ -1,5 +1,11 @@
 [
   {
+    "id": "CARDZHIGH",
+    "type": "json_flag",
+    "context": [ "GENERIC" ],
+    "info": "This item can be put inside a <info>holder</info> of an appropriate size."
+  },
+  {
     "type": "furniture",
     "id": "f_indoor_plant",
     "name": "indoor plant",
@@ -173,5 +179,47 @@
     "copy-from": "fake_item",
     "type": "TOOL",
     "name": { "str": "dispenser" }
+  },
+  {
+    "id": "flamecanZhigh",
+    "looks_like": "jerrycan_big",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "flame jerrycan" },
+    "description": "Metal flame jerrycan for boobytraps.  Use it at your own risk.",
+    "weight": "6000 g",
+    "volume": "10 L",
+    "price": "50 USD",
+    "price_postapoc": "1 USD",
+    "to_hit": -3,
+    "bashing": 35,
+    "material": [ "steel" ],
+    "flags": [ "FLAT_SURFACE" ],
+    "symbol": "=",
+    "color": "red",
+    "use_action": { "type": "deploy_furn", "furn_type": "f_flamecanZhigh" }
+  },
+  {
+    "type": "furniture",
+    "id": "f_flamecanZhigh",
+    "name": "flame jerrycan",
+    "description": "Modified jerrycan, if destroyed, could blow some serious stuff up.",
+    "symbol": "#",
+    "bgcolor": "red",
+    "move_cost_mod": 1,
+    "coverage": 99,
+    "required_str": 1,
+    "looks_like": "jerrycan_big",
+    "flags": [ "MOUNTABLE", "SHORT", "TRANSPARENT", "BLOCKSDOOR", "NOITEM", "BLOCK_WIND", "EASY_DECONSTRUCT" ],
+    "deconstruct": { "items": [ { "item": "flamecanZhigh", "count": 1 } ] },
+    "bash": {
+      "str_min": 1,
+      "str_max": 250,
+      "sound": "metal screeching!",
+      "explosive": 900,
+      "sound_fail": "clang!",
+      "items": [  ],
+      "ranged": { "reduction": [ 8, 16 ], "destroy_threshold": 1, "block_unaimed_chance": "99%" }
+    }
   }
 ]

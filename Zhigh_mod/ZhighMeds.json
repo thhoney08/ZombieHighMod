@@ -239,7 +239,7 @@
     "id": "stimantivenom",
     "type": "COMESTIBLE",
 	"comestible_type": "MED",
-	"name": "injectable xPC-12 antitoxin-antidote",
+	"name": "injectable xPC-12 antitoxin-antivenom-antidote",
 	"description": "Removes most of the known poisons and toxins used in the combat industry.  Can be used to relieve the effects of natural poisons.  \n <color_yellow> Presented by Phoenix corp.</color>",
 	"weight": "40 g",
     "volume": "10 ml",
@@ -251,7 +251,26 @@
 	"use_action": {
             "type": "consume_drug",
             "activation_message": "You shoot up, and remove the toxins in your body.",
-            "effects": [ { "id": "antitoxin", "duration": "1 m" } ] },
+            "effects": [ { "id": "antiVenom", "duration": "1 m" } ] },
+	"flags": [ "IRREPLACEABLE_CONSUMABLE", "NPC_SAFE", "BELT_CLIP" ]
+  },
+  {
+    "id": "stimObdolbos",
+    "type": "COMESTIBLE",
+	"comestible_type": "MED",
+	"name": "injectable \"Obdolbos\" cocktail",
+	"description": "Developed for removing various parasites, this turned out to be just as useful when used as a remover for 'abnormal' effects during some scientific experiments.  \n <color_yellow> Presented by Phoenix corp.</color>",
+	"weight": "40 g",
+    "volume": "10 ml",
+    "price": "7500 USD",
+    "price_postapoc": "30 USD",
+	"material": "plastic",
+    "symbol": "/",
+    "color": "cyan",
+	"use_action": {
+            "type": "consume_drug",
+            "activation_message": "You shoot up, and remove the parasites in your body.",
+            "effects": [ { "id": "obdolbos1", "duration": "1 m" } ] },
 	"flags": [ "IRREPLACEABLE_CONSUMABLE", "NPC_SAFE", "BELT_CLIP" ]
   },
   {
@@ -943,5 +962,27 @@
       ]
     ],
     "magazine_well": "250 ml"
+  },
+  {
+    "id": "stimPistolZhigh",
+    "looks_like": "needlepistol",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "MPD-0 stim pistol" },
+    "description": "The MPD-0 Stim Pistol fires a hypodermic shot to revive himself or teammates from a distance when a person needs some medical help.",
+    "weight": "316 g",
+    "volume": "500 ml",
+    "price": "1 kUSD",
+    "price_postapoc": "15 USD",
+    "material": [ "ceramic", "superalloy" ],
+    "symbol": ",",
+    "color": "light_gray",
+    "ammo": "anesthetic",
+    "initial_charges": 100,
+    "max_charges": 100,
+    "charges_per_use": 100,
+    "use_action": [
+		{ "type": "cast_spell", "spell_id": "zhigh2_healing_dart", "no_fail": true, "level": 0 }
+	]
   }
 ]
