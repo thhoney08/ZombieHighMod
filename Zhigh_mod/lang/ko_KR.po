@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zhigh_Mod\n"
-"POT-Creation-Date: 2024-08-02 18:15+0900\n"
+"POT-Creation-Date: 2024-08-25 13:21+0900\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -209,6 +209,8 @@ msgstr[0] "1학년 학생증"
 #. ~ Use action holster_msg for {'str': 'long wallet'}.
 #. ~ Use action holster_msg for {'str': 'wearable wallet'}.
 #. ~ Use action holster_msg for {'str': 'duct tape wallet'}.
+#. ~ Use action holster_msg for {'str': 'book card holder'}.
+#. ~ Use action holster_msg for {'str': 'limited edition book card holder'}.
 #: .\ZhighArmor.json .\ZhighItemRemake.json .\ZhighItems.json
 msgid "You stash your %s."
 msgstr "당신은 당신의 %s를 넣었습니다."
@@ -220,6 +222,9 @@ msgstr "당신은 당신의 %s를 넣었습니다."
 #. ~ Use action holster_prompt for {'str': 'long wallet'}.
 #. ~ Use action holster_prompt for {'str': 'wearable wallet'}.
 #. ~ Use action holster_prompt for {'str': 'duct tape wallet'}.
+#. ~ Use action holster_prompt for {'str': 'book card holder'}.
+#. ~ Use action holster_prompt for {'str': 'limited edition book card
+#. holder'}.
 #: .\ZhighArmor.json .\ZhighItems.json
 msgid "Stash cards"
 msgstr "카드 넣기/꺼내기"
@@ -542,6 +547,20 @@ msgstr "휘이이이익!"
 #: .\ZhighArmor.json .\ZhighItems.json .\ZhighWeapons\ZhighCards.json
 msgid "You blow the whistle."
 msgstr "당신은 호루라기를 불었다."
+
+#. ~ Use action gerund for {'str': 'tool watch', 'str_pl': 'tool watches'}.
+#. ~ Use action gerund for {'str': 'pen'}.
+#. ~ Use action gerund for {'str': 'pencil'}.
+#: .\ZhighArmor.json .\ZhighItemRemake.json .\ZhighItems.json
+msgid "Written"
+msgstr "적기"
+
+#. ~ Use action verb for {'str': 'tool watch', 'str_pl': 'tool watches'}.
+#. ~ Use action verb for {'str': 'pen'}.
+#. ~ Use action verb for {'str': 'pencil'}.
+#: .\ZhighArmor.json .\ZhighItemRemake.json .\ZhighItems.json
+msgid "Write"
+msgstr "적기"
 
 #. ~ Description for {'str': 'tool watch', 'str_pl': 'tool watches'}
 #: .\ZhighArmor.json
@@ -1031,6 +1050,7 @@ msgstr[0] "원자력 광 증폭 고글 (켜짐)"
 #. ~ Use action menu_text for {'str_sp': "helicopter pilot's earmuffs (on)"}.
 #. ~ Use action menu_text for {'str': 'Holtzman Shield (on)', 'str_pl':
 #. 'Holtzman Shields (on)'}.
+#. ~ Use action menu_text for {'str': 'paper lantern'}.
 #. ~ Use action menu_text for {'str': 'fan (on)', 'str_pl': 'fans (on)'}.
 #. ~ Use action menu_text for {'str': 'crank flashlight (on)', 'str_pl':
 #. 'crank flashlights (on)'}.
@@ -1770,6 +1790,187 @@ msgstr "당신은 망토에 달린 후드를 머리에 둘러썼다."
 msgid "Long, flowing robes.  Simple and comfortable to wear.  The uniform of the school mystery club!  The hood is off, which shows your face."
 msgstr "길게 흘러내리는 예복.  심플하면서 편하게 입을 수 있습니다.  학교 미스터리부의 유니폼입니다!  후드를 벗어 얼굴을 드러냈습니다."
 
+#: .\ZhighArmor.json
+msgid "Du Jeong Gab (armor)"
+msgid_plural "Du Jeong Gab (armor)s"
+msgstr[0] "두정갑 (갑옷)"
+
+#. ~ Description for {'str': 'Du Jeong Gab (armor)'}
+#: .\ZhighArmor.json
+msgid "Korean(and various Asian) version of the Brigandine armor, this coatlike armor offers great protection from harm.  Also looks pretty cool."
+msgstr "한국(및 다양한 아시아 지역)에서 사용된 브리간딘 갑옷의 친척뻘 되는 갑옷으로, 코트처럼 생긴 이 갑옷은 여러 위협에 대해서 뛰어난 보호 기능을 제공합니다.  또한 꽤 멋져 보입니다."
+
+#: .\ZhighArmor.json
+msgid "Du Jeong Gab (helm)"
+msgid_plural "Du Jeong Gab (helm)s"
+msgstr[0] "두정갑 (투구)"
+
+#. ~ Description for {'str': 'Du Jeong Gab (helm)'}
+#: .\ZhighArmor.json
+msgid "A spiked helmet once worn by Korean military officers.  The spike is very sharp."
+msgstr "과거의 군 관계자나 장교의 위치에 있던 사람들이 착용했던, 날카로운 가시가 달린 투구입니다."
+
+#. ~ Description for {'str': 'Du Jeong Gab (helm)'}
+#: .\ZhighArmor.json
+msgid "A spiked helmet once worn by Korean military officers.  The spike is very sharp.  Has an extra tassel on the top."
+msgstr "과거의 군 관계자나 장교의 위치에 있던 사람들이 착용했던, 날카로운 가시가 달린 투구입니다.  위에 추가로 술 장식이 달려 있습니다."
+
+#: .\ZhighArmor.json
+msgid "survivor's Du Jeong Gab (armor)"
+msgid_plural "survivor's Du Jeong Gab (armor)s"
+msgstr[0] "생존자의 두정갑 (갑옷)"
+
+#. ~ Description for {'str': "survivor's Du Jeong Gab (armor)"}
+#: .\ZhighArmor.json
+msgid "Korean(and various Asian) version of the famous Brigandine armor.  Now upgraded with kevlar and steel, this suit of armor accomplish both the looks and the protection."
+msgstr "한국(및 다양한 아시아 지역)에서 사용된 브리간딘 갑옷의 친척뻘 되는 갑옷이며, 코트처럼 생긴 이 갑옷은 강철과 케블라로 강화되어 뛰어난 보호 기능과 멋을 제공합니다."
+
+#: .\ZhighArmor.json
+msgid "paper lantern"
+msgid_plural "paper lanterns"
+msgstr[0] "초롱"
+
+#. ~ Use action msg for {'str': 'paper lantern'}.
+#: .\ZhighArmor.json
+msgid "You turn the lantern on."
+msgstr "초롱을 켰다."
+
+#. ~ Use action need_charges_msg for {'str': 'paper lantern'}.
+#: .\ZhighArmor.json
+msgid "The lantern is empty."
+msgstr "초롱이 비어 있다."
+
+#. ~ Description for {'str': 'paper lantern'}
+#: .\ZhighArmor.json
+msgid "A stick with a paper lantern on it.  Fragile but fancy."
+msgstr "종이 랜턴이 달린 나무 막대.  화려하지만 부서지기 쉽다."
+
+#. ~ Use action msg for {'str': 'paper lantern'}.
+#: .\ZhighArmor.json
+msgid "The lantern is extinguished."
+msgstr "랜턴이 꺼졌다."
+
+#. ~ Description for {'str': 'paper lantern'}
+#: .\ZhighArmor.json
+msgid "A stick with a paper lantern on it.  Fragile but fancy.  It does not provide much light, but it lasts a long time.  It is turned on.  Use it to turn it off."
+msgstr "종이 랜턴이 달린 나무 막대.  화려하지만 부서지기 쉽다.  많은 빛이 나오지는 않지만 상당히 오래 지속된다.  켜진 상태입니다.  사용하면 끌 수 있습니다."
+
+#: .\ZhighArmor.json
+msgid "modified school blazer"
+msgid_plural "modified school blazers"
+msgstr[0] "개조된 교복 블레이저"
+
+#. ~ Description for {'str': 'modified school blazer'}
+#: .\ZhighArmor.json
+msgid "A thick awesome looking blazer, lined with pockets.  Great for storage, and makes you stand proud."
+msgstr "길고 멋들어진 블레이저로, 주머니가 많다.  물건 담기에 좋을 뿐더러, 당신이 자랑스럽게 설 수 있게 해준다."
+
+#: .\ZhighArmor.json
+msgid "modified school hat"
+msgid_plural "modified school hats"
+msgstr[0] "개조된 학모"
+
+#. ~ Description for {'str': 'modified school hat'}
+#: .\ZhighArmor.json
+msgid "A vintage, yet awesome looking hat, with a symbol of a high school symbol.  A symbol of a bygone world."
+msgstr "어떤 고등학교의 상징이 새겨진, 좀 구식이지만 멋지게 생긴 모자입니다.  지나간 세상의 상징 중 하나이기도 합니다."
+
+#: .\ZhighArmor.json
+msgid "great helm"
+msgid_plural "great helmets"
+msgstr[0] "그레이트헬멧"
+
+#. ~ Description for {'str': 'great helm', 'str_pl': 'great helmets'}
+#: .\ZhighArmor.json
+msgid "A medieval helmet that provides excellent protection to the entire head, at the cost of great encumbrance.  Looking like a skull, this thing is also pretty cool."
+msgstr "중세의 헬멧으로, 머리 전체를 보호하는 데는 탁월하지만 착용감이 좋지 않습니다.  해골처럼 생겼기에, 상당히 멋집니다."
+
+#: .\ZhighArmor.json
+msgid "szyszak helm"
+msgid_plural "szyszak helms"
+msgstr[0] "사이작 헬멧"
+
+#. ~ Description for {'str': 'szyszak helm'}
+#: .\ZhighArmor.json
+msgid "Also called lobster-tailed pot helmet, this helm provides excellent protection for the head, with a mask for the mouth."
+msgstr "랍스터-꼬리 냄비 헬멧이라고도 불리는 이 헬멧은 머리를 보호하는 데 탁월하며, 입에 마스크 또한 있습니다."
+
+#: .\ZhighArmor.json
+msgid "tanker helmet"
+msgid_plural "tanker helmets"
+msgstr[0] "전차 승무원 헬멧"
+
+#. ~ Description for {'str': 'tanker helmet'}
+#: .\ZhighArmor.json
+msgid "A heavy helmet that provides excellent protection from all sorts of damage.  It is labeled as the tanker helmet."
+msgstr "모든 종류의 손상으로부터 탁월한 보호 기능을 제공하는 무거운 헬멧입니다.  전차 승무원 헬멧이라는 라벨이 붙어 있습니다."
+
+#: .\ZhighArmor.json
+msgid "hats hat"
+msgid_plural "hats hats"
+msgstr[0] "모자 모자"
+
+#. ~ Description for {'str': 'hats hat'}
+#: .\ZhighArmor.json
+msgid "Do you like hats?  Cause if you do, I put a hat on a hat so you could wear the hat while you are wearing the hat.  Hope it's worth the wait."
+msgstr "모자를 좋아하십니까?  그렇다면 모자를 쓰고 있는 동안 모자를 쓸 수 있도록 모자 위에 모자를 씌워드렸으니깐 말이죠.  기다릴 만한 가치가 있었기를 바랍니다."
+
+#: .\ZhighArmor.json
+msgid "pair of fancy elbow pads"
+msgid_plural "pairs of fancy elbow pads"
+msgstr[0] "화려한 팔꿈치 패드"
+
+#. ~ Description for {'str': 'pair of fancy elbow pads', 'str_pl': 'pairs of
+#. fancy elbow pads'}
+#: .\ZhighArmor.json
+msgid "A pair of fancy elbow pads made of stout plastic and cloth."
+msgstr "튼튼한 플라스틱과 천으로 만든 화려한 팔꿈치 패드 한 쌍입니다."
+
+#: .\ZhighArmor.json
+msgid "long wool scarf"
+msgid_plural "long wool scarves"
+msgstr[0] "긴 양모 스카프"
+
+#. ~ Use action menu_text for {'str': 'long wool scarf', 'str_pl': 'long wool
+#. scarves'}.
+#: .\ZhighArmor.json
+msgid "Loosen"
+msgstr "풀기"
+
+#. ~ Use action msg for {'str': 'long wool scarf', 'str_pl': 'long wool
+#. scarves'}.
+#: .\ZhighArmor.json
+msgid "You loosen your %s."
+msgstr "당신은 당신의 %s를 풉니다."
+
+#. ~ Description for {'str': 'long wool scarf', 'str_pl': 'long wool scarves'}
+#: .\ZhighArmor.json
+msgid "A really long wool scarf, worn over the mouth for warmth.  With the extra length, it's enough to handle nonstandard facial features and accommodate your hands too.  Use it to loosen it if you get too warm."
+msgstr "보온을 위해 입 위에 착용하는 매우 긴 양모 스카프입니다.  길이가 넉넉해 얼굴의 이목구비를 가리고 손도 충분히 감쌀 수 있습니다.  너무 따뜻해지면 느슨하게 풀어서 사용하세요."
+
+#: .\ZhighArmor.json
+msgid "long wool scarf (loose)"
+msgid_plural "long wool scarves (loose)"
+msgstr[0] "긴 양모 스카프 (느슨함)"
+
+#. ~ Use action menu_text for {'str': 'long wool scarf (loose)', 'str_pl':
+#. 'long wool scarves (loose)'}.
+#: .\ZhighArmor.json
+msgid "Wrap tighter"
+msgstr "조이게 감기"
+
+#. ~ Use action msg for {'str': 'long wool scarf (loose)', 'str_pl': 'long
+#. wool scarves (loose)'}.
+#: .\ZhighArmor.json
+msgid "You wrap your scarf tighter."
+msgstr "당신은 스카프를 조이게 감았다."
+
+#. ~ Description for {'str': 'long wool scarf (loose)', 'str_pl': 'long wool
+#. scarves (loose)'}
+#: .\ZhighArmor.json
+msgid "A really long wool scarf, worn over the mouth for warmth.  With the extra length, it's enough to handle nonstandard facial features and accommodate your hands too.  Use it to wear it tighter if you get too cold."
+msgstr "보온을 위해 입 위에 착용하는 매우 긴 양모 스카프입니다.  길이가 넉넉해 얼굴의 이목구비를 커버하고 손도 충분히 감쌀 수 있습니다.  너무 추울 때는 더 단단하게 착용하세요."
+
 #: .\ZhighBionics.json
 msgid "Bionic knuckle"
 msgstr "바이오닉 너클더스터"
@@ -2109,6 +2310,96 @@ msgid "This is a charm with a shield.  Increases dispersion but also increases p
 msgstr "방패가 달린 부적입니다.  분산도가 증가하지만 총의 관통률과 피해를 올려줍니다."
 
 #: .\ZhighCharms.json
+msgid "vial charm"
+msgid_plural "vial charms"
+msgstr[0] "약병 부적"
+
+#: .\ZhighCharms.json
+msgid "This is a charm with a vial of green liquid.  Increases dispersion but also increases penetration and damage of the gun."
+msgstr "약병이 달린 부적입니다.  분산도가 증가하지만 총의 관통률과 피해를 올려줍니다."
+
+#: .\ZhighCharms.json
+msgid "gem charm"
+msgid_plural "gem charms"
+msgstr[0] "보석 부적"
+
+#: .\ZhighCharms.json
+msgid "This is a charm with an oval gem.  Increases dispersion but also increases penetration and damage of the gun."
+msgstr "보석이 달린 부적입니다.  분산도가 증가하지만 총의 관통률과 피해를 올려줍니다."
+
+#: .\ZhighCharms.json
+msgid "bowie knife charm"
+msgid_plural "bowie knife charms"
+msgstr[0] "보위 나이프 부적"
+
+#: .\ZhighCharms.json
+msgid "This is a charm with a small bowie knife.  Increases dispersion but also increases penetration and damage of the gun."
+msgstr "보위 나이프가 달린 부적입니다.  분산도가 증가하지만 총의 관통률과 피해를 올려줍니다."
+
+#: .\ZhighCharms.json
+msgid "rune 'o' charm"
+msgid_plural "rune 'o' charms"
+msgstr[0] "룬 'O' 부적"
+
+#: .\ZhighCharms.json
+msgid "This is a charm with a rune with an O.  Increases dispersion but also increases penetration and damage of the gun."
+msgstr "O가 붙은 룬이 있는 부적으로, 분산도가 증가시키지만 총의 관통률과 피해를 증가시킵니다."
+
+#: .\ZhighCharms.json
+msgid "rune 'n' charm"
+msgid_plural "rune 'n' charms"
+msgstr[0] "룬 'N' 부적"
+
+#: .\ZhighCharms.json
+msgid "This is a charm with a rune with a N.  Increases dispersion but also increases penetration and damage of the gun."
+msgstr "N이 붙은 룬이 있는 부적으로, 분산도가 증가시키지만 총의 관통률과 피해를 증가시킵니다."
+
+#: .\ZhighCharms.json
+msgid "rune 't' charm"
+msgid_plural "rune 't' charms"
+msgstr[0] "룬 'T' 부적"
+
+#: .\ZhighCharms.json
+msgid "This is a charm with a rune with a T.  Increases dispersion but also increases penetration and damage of the gun."
+msgstr "T가 붙은 룬이 있는 부적으로, 분산도가 증가시키지만 총의 관통률과 피해를 증가시킵니다."
+
+#: .\ZhighCharms.json
+msgid "rune 'r' charm"
+msgid_plural "rune 'r' charms"
+msgstr[0] "룬 'R' 부적"
+
+#: .\ZhighCharms.json
+msgid "This is a charm with a rune with a R.  Increases dispersion but also increases penetration and damage of the gun."
+msgstr "R이 붙은 룬이 있는 부적으로, 분산도가 증가시키지만 총의 관통률과 피해를 증가시킵니다."
+
+#: .\ZhighCharms.json
+msgid "rune 'd' charm"
+msgid_plural "rune 'd' charms"
+msgstr[0] "룬 'D' 부적"
+
+#: .\ZhighCharms.json
+msgid "This is a charm with a rune with a D.  Increases dispersion but also increases penetration and damage of the gun."
+msgstr "D가 붙은 룬이 있는 부적으로, 분산도가 증가시키지만 총의 관통률과 피해를 증가시킵니다."
+
+#: .\ZhighCharms.json
+msgid "magnet charm"
+msgid_plural "magnet charms"
+msgstr[0] "자석 부적"
+
+#: .\ZhighCharms.json
+msgid "This is a charm with a rune with a magnet.  Increases dispersion but also increases penetration and damage of the gun."
+msgstr "자석이 달린 부적입니다.  분산도가 증가하지만 총의 관통률과 피해를 올려줍니다."
+
+#: .\ZhighCharms.json
+msgid "pocketwatch charm"
+msgid_plural "pocketwatch charms"
+msgstr[0] "회중시계 부적"
+
+#: .\ZhighCharms.json
+msgid "This is a charm with a small pocketwatch.  Tells you the time."
+msgstr "회중시계가 달린 부적입니다.  시간을 볼 수 있습니다."
+
+#: .\ZhighCharms.json
 msgid "compass charm"
 msgid_plural "compass charms"
 msgstr[0] "나침반 부적"
@@ -2442,6 +2733,11 @@ msgstr "스테미나 효과"
 msgid "This item can be put inside a <info>holder</info> of an appropriate size."
 msgstr "이 물건은 적절한 크기의 <info>수납공간</info>에 넣을 수 있습니다."
 
+#. ~ weapon category name
+#: .\ZhighFurn.json
+msgid "Korean Swords"
+msgstr "한국 검"
+
 #: .\ZhighFurn.json
 msgid "indoor plant"
 msgstr "실내 조경식물"
@@ -2526,6 +2822,15 @@ msgstr "부비트랩용 금속제 화염 제리캔.  본인 책임하에 사용�
 #: .\ZhighFurn.json
 msgid "Modified jerrycan, if destroyed, could blow some serious stuff up."
 msgstr "개조된 제리캔으로, 파괴 시 거대한 폭발을 일으킬 수 있습니다."
+
+#: .\ZhighFurn.json
+msgid "mechanical light"
+msgstr "기계 조명"
+
+#. ~ Description for mechanical light
+#: .\ZhighFurn.json
+msgid "An industrial flood light set up to illuminate the surroundings."
+msgstr "주변을 비추기 위해 설치된 산업용 투광 조명입니다."
 
 #: .\ZhighGunmods.json
 msgid "tong-a (bows)"
@@ -2844,18 +3149,6 @@ msgstr[0] "야광봉 (켜짐)"
 msgid "pen"
 msgid_plural "pens"
 msgstr[0] "볼펜"
-
-#. ~ Use action gerund for {'str': 'pen'}.
-#. ~ Use action gerund for {'str': 'pencil'}.
-#: .\ZhighItemRemake.json .\ZhighItems.json
-msgid "Written"
-msgstr "적기"
-
-#. ~ Use action verb for {'str': 'pen'}.
-#. ~ Use action verb for {'str': 'pencil'}.
-#: .\ZhighItemRemake.json .\ZhighItems.json
-msgid "Write"
-msgstr "적기"
 
 #: .\ZhighItemRemake.json
 msgid "injectable adrenaline"
@@ -3437,11 +3730,6 @@ msgid_plural "gyroscopic stabilizers"
 msgstr[0] "자이로 안정기"
 
 #: .\ZhighItemRemake.json
-msgid "belt clip"
-msgid_plural "belt clips"
-msgstr[0] "벨트 클립"
-
-#: .\ZhighItemRemake.json
 msgid "tripwire trap"
 msgid_plural "tripwire traps"
 msgstr[0] "인계철선 덫"
@@ -3457,7 +3745,9 @@ msgid_plural "makeshift perimeter alarms"
 msgstr[0] "급조된 경계 경보기"
 
 #. ~ Use action done_message for {'str': 'makeshift perimeter alarm'}.
-#: .\ZhighItemRemake.json
+#. ~ Use action done_message for {'str': 'Collectible Card - perimeter
+#. alarm'}.
+#: .\ZhighItemRemake.json .\ZhighWeapons\ZhighCards.json
 msgid "You string up some cans on a tripwire."
 msgstr "트립와이어에 캔을 몇 개 묶었습니다."
 
@@ -4002,6 +4292,11 @@ msgstr[0] "나선형 돌"
 msgid "sharp rock"
 msgid_plural "sharp rocks"
 msgstr[0] "뾰족한 돌"
+
+#: .\ZhighItemRemake.json
+msgid "belt clip"
+msgid_plural "belt clips"
+msgstr[0] "벨트 클립"
 
 #: .\ZhighItemRemake.json
 msgid "cordless drill"
@@ -4641,21 +4936,6 @@ msgid "This is a portable radio-like device.  Modified by a special person, you 
 msgstr "이것은 들고 다닐 수 있는 라디오같은 장비입니다.  특정인에 의해서 개조가 가해졌기에 당신은 도움을 요청할 수 있습니다.  던지는 것 또한 같은 효과를 발휘합니다."
 
 #: .\ZhighItems.json
-msgid "modified signal marker"
-msgid_plural "modified signal markers"
-msgstr[0] "개조된 신호 표시기"
-
-#. ~ Description for {'str': 'modified signal marker', 'str_pl': 'modified
-#. signal markers'}
-#: .\ZhighItems.json
-msgid ""
-"This is a portable radio-like device.  Modified by a special person, you could call for help.  This one has extra mods, which makes it useable for almost forever, if one have enough time.  Radioactive when broken, so don't "
-"try to break it."
-msgstr ""
-"이것은 들고 다닐 수 있는 라디오같은 장비입니다.  특정인에 의해서 개조가 가해졌기에 당신은 도움을 요청할 수 있습니다.  일반적인 신호 표시기와는 다르게 추가 개조가 되었기에 충분한 시간만 있다면 영원히 사용할 수 있습니다.  부서"
-"지면 방사능을 분출하기에, 파손시키지 마십시오."
-
-#: .\ZhighItems.json
 msgid "[low] signal marker"
 msgid_plural "[low] signal markers"
 msgstr[0] "신호 표시기 [낮은 신호]"
@@ -4974,6 +5254,36 @@ msgstr[0] "덕트 테이프 지갑"
 #: .\ZhighItems.json
 msgid "A wallet, crudely made with duct tape and cardboard.  Useful for holding cards and stuff."
 msgstr "덕트 테이프와 골판지로 급조한 지갑.  카드 등을 담는데 유용하다."
+
+#: .\ZhighItems.json
+msgid "book card holder"
+msgid_plural "book card holders"
+msgstr[0] "책 모양 카드 홀더"
+
+#. ~ Description for {'str': 'book card holder'}
+#: .\ZhighItems.json
+msgid "A book sized card holder.  Useful for holding cards and stuff."
+msgstr "도서 크기의 카드 홀더.  카드 등을 담는데 유용하다."
+
+#: .\ZhighItems.json
+msgid "limited edition book card holder"
+msgid_plural "limited edition book card holders"
+msgstr[0] "한정판 책 모양 카드 홀더"
+
+#. ~ Description for {'str': 'limited edition book card holder'}
+#: .\ZhighItems.json
+msgid "A book sized card holder, limited edition.  Useful for holding lots of cards and stuff."
+msgstr "한정판인 도서 크기의 카드 홀더.  수많은 카드들을 담는데 유용하다."
+
+#: .\ZhighItems.json
+msgid "lute"
+msgid_plural "lutes"
+msgstr[0] "류트"
+
+#. ~ Description for {'str': 'lute'}
+#: .\ZhighItems.json
+msgid "A standard factory-made lute.  Looks to be in working condition."
+msgstr "표준적인 공장제 류트. 상태가 나쁘지 않다."
 
 #: .\ZhighMartialArts.json
 msgid "Marine Corps Martial Arts Program Training Manual"
@@ -5466,6 +5776,26 @@ msgid "This is a mask, suitable for a computer programmer.  The LEDs are shining
 msgstr "한 갱단의 컴퓨터 프로그래머를 위한 가면입니다.  LED가 빛나는 듯 보이지만 실제로는 어떤 빛도 보이지 않습니다."
 
 #: .\ZhighMasks.json
+msgid "pearl mask"
+msgid_plural "pearl masks"
+msgstr[0] "펄 가면"
+
+#. ~ Description for {'str': 'pearl mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, suitable for a con artist.  You may not want to wear this, but have to if needed."
+msgstr "한 갱단의 사기꾼에게 걸맞을 가면입니다.  착용하기 싫을 수도 있지만, 필요하다면 착용해야 합니다."
+
+#: .\ZhighMasks.json
+msgid "duke mask"
+msgid_plural "duke masks"
+msgstr[0] "듀크 가면"
+
+#. ~ Description for {'str': 'duke mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, suitable for a professional art thief.  Let's get some... souvenirs."
+msgstr "한 갱단의 전문 예술품 도둑에게 걸맞을 가면입니다.  기념품... 좀 사러 갑시다."
+
+#: .\ZhighMasks.json
 msgid "jacket mask"
 msgid_plural "jacket masks"
 msgstr[0] "자켓 가면"
@@ -5494,6 +5824,16 @@ msgstr[0] "광대 가면"
 #: .\ZhighMasks.json
 msgid "This is a mask, based on some clown.  It looks creepy."
 msgstr "어떤 광대를 바탕으로 한 가면입니다.  꽤나 오싹하게 생겼습니다."
+
+#: .\ZhighMasks.json
+msgid "ghost mask"
+msgid_plural "ghost masks"
+msgstr[0] "귀신 가면"
+
+#. ~ Description for {'str': 'ghost mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, based on some ghost.  It looks creepy."
+msgstr "어떤 귀신을 바탕으로 한 가면입니다.  꽤나 오싹하게 생겼습니다."
 
 #: .\ZhighMasks.json
 msgid "combat mask"
@@ -5886,6 +6226,16 @@ msgid "This is a mask, based on a panda."
 msgstr "판다를 바탕으로 한 가면입니다."
 
 #: .\ZhighMasks.json
+msgid "beagle mask"
+msgid_plural "beagle masks"
+msgstr[0] "비글 가면"
+
+#. ~ Description for {'str': 'beagle mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, based on a beagle."
+msgstr "비글을 바탕으로 한 가면입니다."
+
+#: .\ZhighMasks.json
 msgid "paintball mask"
 msgid_plural "paintball masks"
 msgstr[0] "페인트볼 가면"
@@ -5894,6 +6244,16 @@ msgstr[0] "페인트볼 가면"
 #: .\ZhighMasks.json
 msgid "A protective face mask made of thick plastic.  Commonly worn by paintball players."
 msgstr "두꺼운 플라스틱으로 만들어진 보호용 가면입니다.  페인트볼 플레이어들이 종종 착용하고 다닙니다."
+
+#: .\ZhighMasks.json
+msgid "kabal mask"
+msgid_plural "kabal masks"
+msgstr[0] "카발 가면"
+
+#. ~ Description for {'str': 'kabal mask'}
+#: .\ZhighMasks.json
+msgid "A protective face mask made of thick plastic.  Good for cospaying a fighting game character."
+msgstr "두꺼운 플라스틱으로 만들어진 보호용 가면입니다.  격투 게임 캐릭터 코스프레하기 좋습니다."
 
 #: .\ZhighMasks.json
 msgid "wooden mask"
@@ -5906,14 +6266,20 @@ msgid "This is a mask made from wood.  Nothing fancy, but it will help the user 
 msgstr "나무로 만들어진 가면입니다.  화려한 것은 아니지만, 착용자의 얼굴이 씹어먹히는 것에서 보호해줍니다.  착용한다고 특별한 효과가 있지는 않습니다."
 
 #: .\ZhighMasks.json
-msgid "menpo"
-msgid_plural "menpos"
-msgstr[0] "면구"
+msgid "tengu mask"
+msgid_plural "tengu masks"
+msgstr[0] "텐구 가면"
 
+#. ~ Description for {'str': 'tengu mask'}
 #. ~ Description for {'str': 'menpo'}
 #: .\ZhighMasks.json
 msgid "This is a mask made from wood.  Pretty fancy, and it will help the user from one's face being eaten.  Wearing it dosen't have any special effects."
 msgstr "나무로 만들어진 가면입니다.  꽤나 화려하고, 착용자의 얼굴이 씹어먹히는 것에서 보호해줍니다.  착용한다고 특별한 효과가 있지는 않습니다."
+
+#: .\ZhighMasks.json
+msgid "menpo"
+msgid_plural "menpos"
+msgstr[0] "면구"
 
 #: .\ZhighMasks.json
 msgid "superalloy menpo"
@@ -5924,6 +6290,16 @@ msgstr[0] "초합금 면구"
 #: .\ZhighMasks.json
 msgid "A mask made from made of modern superalloy instead of wood.  Wearing it blocks you from some harm."
 msgstr "나무 대신 현대식 초합금으로 만든 마스크입니다.  착용하면 일부 피해를 차단할 수 있습니다."
+
+#: .\ZhighMasks.json
+msgid "flower crown"
+msgid_plural "flower crowns"
+msgstr[0] "화관"
+
+#. ~ Description for {'str': 'flower crown'}
+#: .\ZhighMasks.json
+msgid "This is a handmade flower crown.  Fragile but fancy."
+msgstr "수제로 만든 화관.  예쁘지만 약하다."
 
 #: .\ZhighMasks.json
 msgid "tactical respirator"
@@ -6045,6 +6421,16 @@ msgstr[0] "호흡용 보호구"
 #: .\ZhighMasks.json
 msgid "A respirator, that covers the mouth and nose.  Provides excellent protection from smoke and other contaminants.  It must be prepared before use."
 msgstr "입만을 가리는 호흡용 보호구.  연기, 최루탄 등의 오염에 대해 훌륭한 방호력을 제공합니다.  사용하기 전에 준비해야 합니다."
+
+#: .\ZhighMasks.json
+msgid "luchador mask"
+msgid_plural "luchador masks"
+msgstr[0] "루차도르 가면"
+
+#. ~ Description for {'str': 'luchador mask'}
+#: .\ZhighMasks.json
+msgid "A tight mask made of leather.  A symbol of a bygone world."
+msgstr "가죽으로 만든 조이는 가면입니다.  지나간 세상의 상징 중 하나이기도 합니다."
 
 #: .\ZhighMeds.json
 msgid "basic medkit"
@@ -10947,6 +11333,118 @@ msgstr "어떤 사람들은 당신을 놀리고 어떤 사람들은 당신이 �
 
 #: .\ZhighProfession.json
 msgctxt "profession_male"
+msgid "Student - Mystery Club Member"
+msgstr "학생 - 미스터리부 클럽 멤버"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Mystery Club Member"
+msgstr "학생 - 미스터리부 클럽 멤버"
+
+#. ~ Profession (male Student - Mystery Club Member) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid "You were preparing for your mystery club when the world ended.  Damn, who cares about mysteries when an undead is trying to eat your face?"
+msgstr "세상이 멸망하던 그 때 당신은 미스터리부의 활동을 준비중이었습니다.  제기랄, 언데드가 사람 얼굴을 뜯어먹으려 하는데 누가 미스터리 따위에 신경을 쓰나요?"
+
+#. ~ Profession (female Student - Mystery Club Member) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid "You were preparing for your mystery club when the world ended.  Damn, who cares about mysteries when an undead is trying to eat your face?"
+msgstr "세상이 멸망하던 그 때 당신은 미스터리부의 활동을 준비중이었습니다.  제기랄, 언데드가 사람 얼굴을 뜯어먹으려 하는데 누가 미스터리 따위에 신경을 쓰나요?"
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Honour Guard Leader"
+msgstr "학생 - 의장대장"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Honour Guard Leader"
+msgstr "학생 - 의장대장"
+
+#. ~ Profession (male Student - Honour Guard Leader) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid "You were supposed to act as a honour guard at a historical exhibition, which was canceled forever.  Lucky you, at least you have your armor and your fake sword."
+msgstr "역사 전시회에서 의장대의 역할을 맡으려고 했지만, 유감스럽게도 취소되었습니다.  최소한 당신의 갑옷과 모형 검이 있으니 다행이네요."
+
+#. ~ Profession (female Student - Honour Guard Leader) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid "You were supposed to act as a honour guard at a historical exhibition, which was canceled forever.  Lucky you, at least you have your armor and your fake sword."
+msgstr "역사 전시회에서 의장대의 역할을 맡으려고 했지만, 유감스럽게도 취소되었습니다.  최소한 당신의 갑옷과 모형 검이 있으니 다행이네요."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Honour Guard Henchmen"
+msgstr "학생 - 의장대원"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Honour Guard Henchmen"
+msgstr "학생 - 의장대원"
+
+#. ~ Profession (male Student - Honour Guard Henchmen) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid "You were supposed to act as a honour guard at a historical exhibition, which was canceled forever.  Lucky you, at least you have your armor and your spear."
+msgstr "역사 전시회에서 의장대의 역할을 맡으려고 했지만, 유감스럽게도 취소되었습니다.  최소한 당신의 갑옷과 창이 있으니 다행이네요."
+
+#. ~ Profession (female Student - Honour Guard Henchmen) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid "You were supposed to act as a honour guard at a historical exhibition, which was canceled forever.  Lucky you, at least you have your armor and your spear."
+msgstr "역사 전시회에서 의장대의 역할을 맡으려고 했지만, 유감스럽게도 취소되었습니다.  최소한 당신의 갑옷과 창이 있으니 다행이네요."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Cosplayer"
+msgstr "학생 - 코스플레이어"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Cosplayer"
+msgstr "학생 - 코스플레이어"
+
+#. ~ Profession (male Student - Cosplayer) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid "You cosplayed as a 'Masked Biker' when the world ended.  The world is doomed, but why do you need to stop helping other people?"
+msgstr "세상이 끝났을 때 당신은 유명한 히어로의 코스프레를 하고 있었습니다.  세상이 멸망했지만, 그렇다고 다른 사람들을 돕지 말아야 할 이유가 있을까요?"
+
+#. ~ Profession (female Student - Cosplayer) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid "You cosplayed as a 'Masked Biker' when the world ended.  The world is doomed, but why do you need to stop helping other people?"
+msgstr "세상이 끝났을 때 당신은 유명한 히어로의 코스프레를 하고 있었습니다.  세상이 멸망했지만, 그렇다고 다른 사람들을 돕지 말아야 할 이유가 있을까요?"
+
+#. ~ Profession (male Student - Cosplayer) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid "You cosplayed as a 'Ghost User' when the world ended.  The world is doomed, but you grabbed your fist and stand proud."
+msgstr "세상이 끝났을 때 당신은 '유령 사용자'의 코스프레를 하고 있었습니다.  세상이 멸망했지만, 당신은 당신의 주먹을 쥐고 자랑스럽게 일어섭니다."
+
+#. ~ Profession (female Student - Cosplayer) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid "You cosplayed as a 'Ghost User' when the world ended.  The world is doomed, but you grabbed your fist and stand proud."
+msgstr "세상이 끝났을 때 당신은 '유령 사용자'의 코스프레를 하고 있었습니다.  세상이 멸망했지만, 당신은 당신의 주먹을 쥐고 자랑스럽게 일어섭니다."
+
+#. ~ Profession (male Student - Cosplayer) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid "You cosplayed as a 'speedster' when the world ended.  The world is doomed, but you’re ready for some pre-emptive vengeance."
+msgstr "세상이 끝났을 때 당신은 '날쌘돌이'의 코스프레를 하고 있었습니다.  세상이 멸망했지만, 당신은 선취적인 복수를 준비합니다.."
+
+#. ~ Profession (female Student - Cosplayer) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid "You cosplayed as a 'speedster' when the world ended.  The world is doomed, but you’re ready for some pre-emptive vengeance."
+msgstr "세상이 끝났을 때 당신은 '날쌘돌이'의 코스프레를 하고 있었습니다.  세상이 멸망했지만, 당신은 선취적인 복수를 준비합니다.."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
 msgid "Student - mallninja"
 msgstr "학생 - 몰닌자"
 
@@ -11478,6 +11976,28 @@ msgid ""
 msgstr ""
 "야쿠자는 세계에서 가장 두려운 폭력 조직 중 하나입니다.  야쿠자는 임협으로 다스려지고 오야붕에게 통솔되며, 엄격한 행동 강령과 조직성, 그리고 전신을 감싸는 문신으로 잘 알려져 있습니다.  사회로부터 추방되고 낙오된 야쿠자들은 자"
 "기 자신을 보호하기 위해 어떻게 행동해야 하는지 알고 있습니다.  그들이 관대해 보이더라도, 결코 가볍게 봐서는 안됩니다."
+
+#: .\ZhighProfession2.json
+msgctxt "profession_male"
+msgid "Bank Robber - Sicario"
+msgstr "은행 강도 - 시카리오"
+
+#: .\ZhighProfession2.json
+msgctxt "profession_female"
+msgid "Bank Robber - Sicario"
+msgstr "은행 강도 - 시카리오"
+
+#. ~ Profession (male Bank Robber - Sicario) description
+#: .\ZhighProfession2.json
+msgctxt "prof_desc_male"
+msgid "The Sicario is a must in every drug cartel.  Someone who takes care of all types of problems in a most lethal way.  The Sicario never ducks out of a fight, they get the job done - without hesitation or fear."
+msgstr "시카리오는 모든 마약 카르텔에 있어서 필수 인물입니다.  모든 문제를 가장 잔인한 방법으로 처리하는 사람들입니다.  시카리오는 절대 싸움에서 도망치지 않으며, 두려워하거나 주저하지 않고 일을 처리합니다."
+
+#. ~ Profession (female Bank Robber - Sicario) description
+#: .\ZhighProfession2.json
+msgctxt "prof_desc_female"
+msgid "The Sicario is a must in every drug cartel.  Someone who takes care of all types of problems in a most lethal way.  The Sicario never ducks out of a fight, they get the job done - without hesitation or fear."
+msgstr "시카리오는 모든 마약 카르텔에 있어서 필수 인물입니다.  모든 문제를 가장 잔인한 방법으로 처리하는 사람들입니다.  시카리오는 절대 싸움에서 도망치지 않으며, 두려워하거나 주저하지 않고 일을 처리합니다."
 
 #: .\ZhighProfession2.json
 msgctxt "profession_male"
@@ -12108,6 +12628,322 @@ msgid "Zombiefied Highschool"
 msgstr "좀비화된 고등학교"
 
 #: .\ZhighSpeech.json
+msgid "In the grim darkness of the far future, There is only war."
+msgstr "머나먼 어두운 미래에, 오직 전쟁만이 있을 지어니."
+
+#: .\ZhighSpeech.json
+msgid "Where I fall ten more shall take my place!  And one-hundred each of them!  So strike me down!  I am the harbinger!"
+msgstr "내가 쓰러진 자리를 열 명이, 그 열 명의 자리를 백 명이 대신하리라!  그러니 날 쓰러트려 봐라!  나는 시작일 뿐이니!"
+
+#: .\ZhighSpeech.json
+msgid "I am fear incarnate!"
+msgstr "내가 공포의 화신이다!"
+
+#: .\ZhighSpeech.json
+msgid "WAAAAAAGH!!"
+msgstr "와아아아아아아악!"
+
+#: .\ZhighSpeech.json
+msgid "I am your end!"
+msgstr "나는 너의 종언이다!"
+
+#: .\ZhighSpeech.json
+msgid "Wherefore, heroism?"
+msgstr "영웅심은, 어디에 있냐?"
+
+#: .\ZhighSpeech.json
+msgid "Madness… our old friend."
+msgstr "광기… 우리의 오랜 친구여."
+
+#: .\ZhighSpeech.json
+msgid "The bulwarks of the mind have fallen!"
+msgstr "굳건한 마음이 무너졌다!"
+
+#: .\ZhighSpeech.json
+msgid "There can be no hope in this hell… no hope at all."
+msgstr "이 지옥에선 희망이 없다… 전혀 없다."
+
+#: .\ZhighSpeech.json
+msgid "Death waits…"
+msgstr "죽음이 기다린다…"
+
+#: .\ZhighSpeech.json
+msgid "Decimated!"
+msgstr "사라져라!"
+
+#: .\ZhighSpeech.json
+msgid "COME ON THEN!  'CAUSE THIS IS ALL I GOT LEFT!!!"
+msgstr "덤벼봐 그럼!  이게 내가 지켜낸 전부니까!!!"
+
+#: .\ZhighSpeech.json
+msgid "Goddammit, give me a hand here!"
+msgstr "제기랄, 나 좀 도와줘!"
+
+#: .\ZhighSpeech.json
+msgid "...but Earth...  gets a tomorrow."
+msgstr "...하지만 지구는...  내일을 얻겠지."
+
+#: .\ZhighSpeech.json
+msgid "ALWAYS ANGRY!  ALL THE FUCKING TIME!"
+msgstr "항상 분노해라!  씨발 언제나!"
+
+#: .\ZhighSpeech.json
+msgid "Don't need a gun...  ...guns are for wusses!"
+msgstr "총 따윈 필요 없어!  총들은 겁쟁이들만 쓴다고!"
+
+#: .\ZhighSpeech.json
+msgid "Rip and Tear!"
+msgstr "찢고 죽여라!"
+
+#: .\ZhighSpeech.json
+msgid "I do need a gun.  I need a big gun.  I need a really big gun..."
+msgstr "총이 필요하다.  존나게 큰 총이.  존나 큰 총이 필요해..."
+
+#: .\ZhighSpeech.json
+msgid "Might makes light!  And I feel MIGHTY!"
+msgstr "힘은 빛을 만든다!  그리고 난 힘찬 기분이 든다!"
+
+#: .\ZhighSpeech.json
+msgid "Sweet christmas!"
+msgstr "빌어먹을 크리스마스 같으니라고!"
+
+#: .\ZhighSpeech.json
+msgid "My cause is just...  My will is strong...  And my rock is Very, VERY LARGE!"
+msgstr "내 대의는 정당하고 내 의지는 강하다...  그리고 내 돌은 존나게 크고... 아름답다!"
+
+#: .\ZhighSpeech.json
+msgid "Old and weak are doomed."
+msgstr "늙고 약한 자들은 멸망에 이르지."
+
+#: .\ZhighSpeech.json
+msgid "Run.  Think.  Shoot.  Live."
+msgstr "달려라.  생각해라.  쏴라.  살아남아라."
+
+#: .\ZhighSpeech.json
+msgid "Have a very safe day."
+msgstr "안전한 하루 되세요."
+
+#: .\ZhighSpeech.json
+msgid "Hail to the king, BABY!"
+msgstr "왕에게 경배하라, 짜식아!"
+
+#: .\ZhighSpeech.json
+msgid "I am the Law."
+msgstr "내가 법이다."
+
+#: .\ZhighSpeech.json
+msgid "I am the Law!"
+msgstr "내가 법이다!"
+
+#: .\ZhighSpeech.json
+msgid "Buttsauce!"
+msgstr "젠장!"
+
+#: .\ZhighSpeech.json
+msgid "You probably thought you weren't gonna die today?  Surprise!"
+msgstr "오늘 죽을 거라고는 상상도 못 했지?  짜잔!"
+
+#: .\ZhighSpeech.json
+msgid "Don't crowd, there's plenty for everyone!"
+msgstr "진정들 하셔, 충분히 많이 있으니까!"
+
+#: .\ZhighSpeech.json
+msgid "Can't we all just get along?"
+msgstr "그냥 다들 사이좋게 지내면 안 돼?"
+
+#: .\ZhighSpeech.json
+msgid "You gotta be fucking kidding."
+msgstr "씨발 지금 장난하냐."
+
+#: .\ZhighSpeech.json
+msgid "Who the hell are you?"
+msgstr "빌어먹을 넌 누구야?"
+
+#: .\ZhighSpeech.json
+msgid "Come out and fight, you coward!"
+msgstr "나와서 싸워, 이 쫄보야!"
+
+#: .\ZhighSpeech.json
+msgid "Let’s see what you’ve got!"
+msgstr "어디 한번 보자!"
+
+#: .\ZhighSpeech.json
+msgid "You’re dead meat!"
+msgstr "넌 죽은 목숨이야!"
+
+#: .\ZhighSpeech.json
+msgid "You think you’re tough?"
+msgstr "네까짓게 강하다고 생각해?"
+
+#: .\ZhighSpeech.json
+msgid "I’m gonna end you!"
+msgstr "널 끝내주마!"
+
+#: .\ZhighSpeech.json
+msgid "You picked the wrong fight!"
+msgstr "넌 싸울 대상을 잘못 골랐어!"
+
+#: .\ZhighSpeech.json
+msgid "I’ll rip you apart!"
+msgstr "갈기갈기 찢어주마!"
+
+#: .\ZhighSpeech.json
+msgid "I’ll make you regret this!"
+msgstr "후회하게 만들어주지!"
+
+#: .\ZhighSpeech.json
+msgid "You’re gonna pay for that!"
+msgstr "그 대가를 치르게 될 거다!"
+
+#: .\ZhighSpeech.json
+msgid "This is where you die!"
+msgstr "여기서 넌 뒈진다!"
+
+#: .\ZhighSpeech.json
+msgid "I’ll kill you for that!"
+msgstr "널 골로 보내주지!"
+
+#: .\ZhighSpeech.json
+msgid "Come and get some!"
+msgstr "와서 덤벼봐!"
+
+#: .\ZhighSpeech.json
+msgid "Is that all you got?"
+msgstr "그게 니까짓께 할 수 있는 전부냐?"
+
+#: .\ZhighSpeech.json
+msgid "You think that’s funny?"
+msgstr "그딴 게 재미있다고 생각해?"
+
+#: .\ZhighSpeech.json
+msgid "You’ve got another thing coming!"
+msgstr "한방 더 있다!"
+
+#: .\ZhighSpeech.json
+msgid "I’m gonna wipe that smile off your face!"
+msgstr "네 얼굴에서 그 웃음을 싹 지워주마!"
+
+#: .\ZhighSpeech.json
+msgid "I’m not done with you yet!"
+msgstr "아직 너랑 안 끝났어!"
+
+#: .\ZhighSpeech.json
+msgid "You’re messing with the wrong guy!"
+msgstr "넌 덤빌 상대를 잘못 골랐어!"
+
+#: .\ZhighSpeech.json
+msgid "You don’t stand a chance!"
+msgstr "넌 쨉도 안 될거다!"
+
+#: .\ZhighSpeech.json
+msgid "I’ll show you how it’s done!"
+msgstr "어떻게 하는지 내가 보여주지!"
+
+#: .\ZhighSpeech.json
+msgid "You’re gonna regret crossing me!"
+msgstr "날 건드린 걸 후회하게 해 줄꼐!"
+
+#: .\ZhighSpeech.json
+msgid "You’re as good as dead!"
+msgstr "넌 죽은 것이나 마찬가지야!"
+
+#: .\ZhighSpeech.json
+msgid "I’ll make it quick!"
+msgstr "빠르게 끝내주지!"
+
+#: .\ZhighSpeech.json
+msgid "You’re a dead man!"
+msgstr "넌 뒈질꺼다!"
+
+#: .\ZhighSpeech.json
+msgid "You don’t scare me!"
+msgstr "네까짓꺼에 내가 쫄 것 같냐!"
+
+#: .\ZhighSpeech.json
+msgid "I’ll finish you off!"
+msgstr "널 골로 보내주마!"
+
+#: .\ZhighSpeech.json
+msgid "You’re going down!"
+msgstr "쓰러지게 만들어주마!"
+
+#: .\ZhighSpeech.json
+msgid "Come on, show yourself!"
+msgstr "야, 당장 나와봐!"
+
+#: .\ZhighSpeech.json
+msgid "You’re a dead man walking!"
+msgstr "네까짓껀 죽은 목숨이야!"
+
+#: .\ZhighSpeech.json
+msgid "I’ll take you out!"
+msgstr "널 세상에서 치워주마!"
+
+#: .\ZhighSpeech.json
+msgid "I’ll tear you apart!"
+msgstr "갈기갈기 찢어주마!"
+
+#: .\ZhighSpeech.json
+msgid "You’re not walking away from this!"
+msgstr "넌 두 발로 걸어서 못 나갈거다!"
+
+#: .\ZhighSpeech.json
+msgid "You messed with the wrong guy!"
+msgstr "상대를 잘 보고 골랐어야지!"
+
+#: .\ZhighSpeech.json
+msgid "I’m gonna make you pay!"
+msgstr "꼭 갚게 만들어주마!"
+
+#: .\ZhighSpeech.json
+msgid "You’ll regret that!"
+msgstr "후회할 거야!"
+
+#: .\ZhighSpeech.json
+msgid "I’m not afraid of you!"
+msgstr "너따위에 겁 안 나!"
+
+#: .\ZhighSpeech.json
+msgid "I’m gonna bury you!"
+msgstr "묻어주마!"
+
+#: .\ZhighSpeech.json
+msgid "You’re finished!"
+msgstr "끝장을 내주마!"
+
+#: .\ZhighSpeech.json
+msgid "I’ll make you disappear!"
+msgstr "널 세상에서 사라지게 만들어주지!"
+
+#: .\ZhighSpeech.json
+msgid "You picked the wrong day!"
+msgstr "날을 잘못 골랐군!"
+
+#: .\ZhighSpeech.json
+msgid "You’re gonna wish you never met me!"
+msgstr "날 만나지 않았기를 강하게 바랄거다!"
+
+#: .\ZhighSpeech.json
+msgid "I’m gonna enjoy this!"
+msgstr "이거 좀 재미있겠는데!"
+
+#: .\ZhighSpeech.json
+msgid "You’re in for a world of hurt!"
+msgstr "고통의 세계에 들어온 걸 환영한다!"
+
+#: .\ZhighSpeech.json
+msgid "You think you can take me?"
+msgstr "너가 날 상대할 수 있다고 생각하냐?"
+
+#: .\ZhighSpeech.json
+msgid "I’m coming for you!"
+msgstr "내가 너에게 가주마!"
+
+#: .\ZhighSpeech.json
+msgid "You're in the wrong place, pal!"
+msgstr "잘못된 장소에 있구만, 이 자식아!"
+
+#: .\ZhighSpeech.json
 msgid "You shouldn't have done that."
 msgstr "그걸 하지 말았어야지."
 
@@ -12549,6 +13385,10 @@ msgid "Ranged Combatant"
 msgstr "원거리 전투원"
 
 #: .\ZhighNpcs\ZhighBandit2.json
+msgid "Killa"
+msgstr "킬라"
+
+#: .\ZhighNpcs\ZhighBandit2.json
 msgid "Melee Combatant"
 msgstr "근접 전투원"
 
@@ -12623,8 +13463,8 @@ msgstr "저 바깥에 다니는 게 좋아보이진 않는데."
 msgid "Don't mind me…"
 msgstr "신경쓰지 마…"
 
-#: .\ZhighNpcs\ZhighNpc47.json .\ZhighNpcs\ZhighNpcDeadeye.json .\ZhighNpcs\ZhighNpcFirstBlood.json .\ZhighNpcs\ZhighNpcFrozenCactus.json .\ZhighNpcs\ZhighNpcHambro.json .\ZhighNpcs\ZhighNpcHitman.json
-#: .\ZhighNpcs\ZhighNpcJunbird.json .\ZhighNpcs\ZhighNpcOctober.json .\ZhighNpcs\ZhighNpcRanger.json .\ZhighNpcs\ZhighNpcSnowman.json .\ZhighNpcs\ZighNpcGunsmith.json
+#: .\ZhighNpcs\ZhighNpc47.json .\ZhighNpcs\ZhighNpcDeadeye.json .\ZhighNpcs\ZhighNpcFirstBlood.json .\ZhighNpcs\ZhighNpcFrozenCactus.json .\ZhighNpcs\ZhighNpcGaeul.json .\ZhighNpcs\ZhighNpcHambro.json
+#: .\ZhighNpcs\ZhighNpcHitman.json .\ZhighNpcs\ZhighNpcJunbird.json .\ZhighNpcs\ZhighNpcOctober.json .\ZhighNpcs\ZhighNpcRanger.json .\ZhighNpcs\ZhighNpcSnowman.json .\ZhighNpcs\ZighNpcGunsmith.json
 msgid "Student"
 msgstr "학생"
 
@@ -12640,7 +13480,8 @@ msgstr "에이전트 47"
 msgid "I need to use Bathroom."
 msgstr "화장실을 써야 해."
 
-#: .\ZhighNpcs\ZhighNpc47.json .\ZhighNpcs\ZhighNpcFrozenCactus.json .\ZhighNpcs\ZhighNpcHambro.json .\ZhighNpcs\ZhighNpcMedic.json .\ZhighNpcs\ZhighNpcOctober.json .\ZhighNpcs\ZhighNpcSnowman.json
+#: .\ZhighNpcs\ZhighNpc47.json .\ZhighNpcs\ZhighNpcFrozenCactus.json .\ZhighNpcs\ZhighNpcGaeul.json .\ZhighNpcs\ZhighNpcHambro.json .\ZhighNpcs\ZhighNpcMedic.json .\ZhighNpcs\ZhighNpcOctober.json
+#: .\ZhighNpcs\ZhighNpcSnowman.json
 msgid "I've got to go…"
 msgstr "가 봐야 겠군…"
 
@@ -13818,13 +14659,21 @@ msgstr "확실해?"
 msgid "In Jang 'frozen' Ssun"
 msgstr "선 '냉동' 인장"
 
-#: .\ZhighNpcs\ZhighNpcFrozenCactus.json .\ZhighNpcs\ZhighNpcHambro.json .\ZhighNpcs\ZhighNpcJunbird.json .\ZhighNpcs\ZhighNpcOctober.json
+#: .\ZhighNpcs\ZhighNpcFrozenCactus.json .\ZhighNpcs\ZhighNpcGaeul.json .\ZhighNpcs\ZhighNpcHambro.json .\ZhighNpcs\ZhighNpcJunbird.json .\ZhighNpcs\ZhighNpcOctober.json
 msgid "I'm a streamer."
 msgstr "나는 스트리머다."
 
 #: .\ZhighNpcs\ZhighNpcFrozenCactus.json
 msgid "Damn, never thought those zombies would be real."
 msgstr "젠장, 좀비들이 진짜일줄은 몰랐는데."
+
+#: .\ZhighNpcs\ZhighNpcGaeul.json
+msgid "Gaeul 'Autumn' Lee"
+msgstr "이 \"추분\" 가을"
+
+#: .\ZhighNpcs\ZhighNpcGaeul.json
+msgid "Ah, <name_b>!"
+msgstr "아, <name_b>!"
 
 #: .\ZhighNpcs\ZhighNpcGrunt.json
 msgid "Student - Grunt"
@@ -15857,6 +16706,10 @@ msgstr "페인트볼장 옥상"
 msgid "Paintball field"
 msgstr "페인트볼장"
 
+#: .\ZhighPlaces\ZhighSafeHouse.json
+msgid "safe house"
+msgstr "안전 가옥"
+
 #: .\ZhighPlaces\ZhighStCabBase.json
 msgid "cabin basement"
 msgstr "지하"
@@ -16655,6 +17508,16 @@ msgid "A modified rocket candy, useful as ammunition for slings or slingshots.  
 msgstr "슬링이나 새총의 탄약으로 사용할 수 있는 한 움큼의 개조된 로캣캔디.  발사되면, 그 자리에 작동된 로캣캔디를 떨어뜨린다."
 
 #: .\ZhighWeapons\ZhighAmmo.json
+msgid "bouncy ball"
+msgid_plural "bouncy balls"
+msgstr[0] "탱탱볼"
+
+#. ~ Description for {'str': 'bouncy ball'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "A handful of round projectiles made of rubber, useful for slings or slingshots."
+msgstr "고무로 만든 둥근 발사체로, 새총이나 새총에 유용합니다."
+
+#: .\ZhighWeapons\ZhighAmmo.json
 msgid "explosive lance spear"
 msgid_plural "explosive lance spears"
 msgstr[0] "폭발성 밤랜스 작살"
@@ -17091,8 +17954,25 @@ msgstr[0] "퍼스트 블러드"
 msgid "The godly power, in one's hands."
 msgstr "사람의 손에 들려진 신의 힘."
 
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "modified signal marker"
+msgid_plural "modified signal markers"
+msgstr[0] "개조된 신호 표시기"
+
+#. ~ Description for {'str': 'modified signal marker', 'str_pl': 'modified
+#. signal markers'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid ""
+"This is a portable radio-like device.  Modified by a special person, you could call for help.  This one has extra mods, which makes it useable for almost forever, if one have enough time.  Radioactive when broken, so don't "
+"try to break it."
+msgstr ""
+"이것은 들고 다닐 수 있는 라디오같은 장비입니다.  특정인에 의해서 개조가 가해졌기에 당신은 도움을 요청할 수 있습니다.  일반적인 신호 표시기와는 다르게 추가 개조가 되었기에 충분한 시간만 있다면 영원히 사용할 수 있습니다.  부서"
+"지면 방사능을 분출하기에, 파손시키지 마십시오."
+
 #.
 #. ~ Description for {'str': '.'}
+#. ~ Description for {'str': 'ring base'}
+#. ~ Description for {'str': 'amulet base'}
 #. ~ Description for pulling
 #. ~ Description for pulling II
 #. ~ Description for pushing
@@ -17101,10 +17981,306 @@ msgstr "사람의 손에 들려진 신의 힘."
 #. ~ Description for armed heal gas grenade
 #. ~ Description for {'str': 'Flare trap Trigger'}
 #. ~ Description for {'str': 'Flare trap Effect'}
+#. ~ Description for {'str': 'Shock trap Trigger'}
+#. ~ Description for {'str': 'Shock trap Effect'}
+#. ~ Description for {'str': 'LESION mine Trigger'}
+#. ~ Description for {'str': 'LESION mine Effect'}
+#. ~ Description for {'str': 'Light trap Trigger'}
+#. ~ Description for {'str': 'Light trap Effect'}
 #: .\ZhighWeapons\ZhighArtifacts.json .\ZhighWeapons\ZhighSpells.json .\ZhighWeapons\ZhighThrowing.json .\ZhighWeapons\ZhighTraps.json
 msgid "."
 msgid_plural ".s"
 msgstr[0] "."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "artifact base"
+msgid_plural "artifact bases"
+msgstr[0] "아티팩트 베이스"
+
+#. ~ Description for {'str': 'artifact base'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A relic for test purposes"
+msgstr "실험용 렐릭"
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "ring base"
+msgid_plural "ring bases"
+msgstr[0] "반지 베이스"
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "strength ring"
+msgid_plural "strength rings"
+msgstr[0] "힘의 반지"
+
+#. ~ Description for {'str': 'strength ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When worn, this will give you some extra strength."
+msgstr "독특한 반지.  착용시 착용자를 더 강하게 만든다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "dexterity ring"
+msgid_plural "dexterity rings"
+msgstr[0] "민첩성의 반지"
+
+#. ~ Description for {'str': 'dexterity ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When worn, this will give you some extra dexterity."
+msgstr "독특한 반지.  착용시 착용자를 더 민첩하게 만든다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "perception ring"
+msgid_plural "perception rings"
+msgstr[0] "인지의 반지"
+
+#. ~ Description for {'str': 'perception ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When worn, this will give you some extra perception."
+msgstr "독특한 반지.  착용시 착용자의 인지력을 더 높게 만든다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "intelligence ring"
+msgid_plural "intelligence rings"
+msgstr[0] "지능의 반지"
+
+#. ~ Description for {'str': 'intelligence ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When worn, this will give you some extra intelligence."
+msgstr "독특한 반지.  착용시 착용자를 더 똑똑하게 만든다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "speed ring"
+msgid_plural "speed rings"
+msgstr[0] "속도의 반지"
+
+#. ~ Description for {'str': 'speed ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When worn, this will give you some extra speed."
+msgstr "독특한 반지.  착용시 착용자를 더 빠르게 만든다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "attack ring"
+msgid_plural "attack rings"
+msgstr[0] "공격의 반지"
+
+#. ~ Description for {'str': 'attack ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When worn, this will give you some lower attack cost."
+msgstr "독특한 반지.  착용시 휘두르는 시간을 줄여 더 빠르게 공격하게 만든다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "item attack ring"
+msgid_plural "item attack rings"
+msgstr[0] "아이템 공격의 반지"
+
+#. ~ Description for {'str': 'item attack ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When worn, this will give you some lower item attack cost."
+msgstr "독특한 반지.  착용시 물건을 휘두르는 시간을 줄여 더 빠르게 공격하게 만든다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "movement ring"
+msgid_plural "movement rings"
+msgstr[0] "이동력의 반지"
+
+#. ~ Description for {'str': 'movement ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When worn, this will give you some lower move cost."
+msgstr "독특한 반지.  착용시 이동력을 줄여 더 빠르게 움직이게 만든다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "metabolism ring"
+msgid_plural "metabolism rings"
+msgstr[0] "신진대사의 반지"
+
+#. ~ Description for {'str': 'metabolism ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When worn, this will give you some extra metabolism."
+msgstr "독특한 반지.  착용시 배가 고파질 확률을 줄여준다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "stamina ring"
+msgid_plural "stamina rings"
+msgstr[0] "스테미나의 반지"
+
+#. ~ Description for {'str': 'stamina ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When worn, this will give you some extra stamina."
+msgstr "독특한 반지.  착용시 스태미나를 올려준다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "thirst ring"
+msgid_plural "thirst rings"
+msgstr[0] "갈증의 반지"
+
+#. ~ Description for {'str': 'thirst ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When worn, this will give you some protection against thirst."
+msgstr "독특한 반지.  착용시 목이 말라질 확률을 줄여준다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "fatigue ring"
+msgid_plural "fatigue rings"
+msgstr[0] "피로의 반지"
+
+#. ~ Description for {'str': 'fatigue ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When worn, this will give you some protection against fatigue."
+msgstr "독특한 반지.  착용시 회피할 확률을 올려준다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "dodge ring"
+msgid_plural "dodge rings"
+msgstr[0] "회피의 반지"
+
+#. ~ Description for {'str': 'dodge ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When worn, this will give you some extra chance to dodge."
+msgstr "독특한 반지.  착용시 회피할 확률을 올려준다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "cutting damage ring"
+msgid_plural "cutting damage rings"
+msgstr[0] "베기 피해의 반지"
+
+#. ~ Description for {'str': 'cutting damage ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When worn, this will give you some extra damage when using cutting weapons."
+msgstr "독특한 반지.  착용시 베기 피해를 더 줄 수 있게 만든다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "stabbing damage ring"
+msgid_plural "stabbing damage rings"
+msgstr[0] "찌르기 피해의 반지"
+
+#. ~ Description for {'str': 'stabbing damage ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When worn, this will give you some extra damage when using stabbing weapons."
+msgstr "독특한 반지.  착용시 찌르기 피해를 더 줄 수 있게 만든다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "bashing damage ring"
+msgid_plural "bashing damage rings"
+msgstr[0] "둔기 피해의 반지"
+
+#. ~ Description for {'str': 'bashing damage ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When worn, this will give you some extra damage when using bashing weapons."
+msgstr "독특한 반지.  착용시 둔기 피해를 더 줄 수 있게 만든다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "cutting protection ring"
+msgid_plural "cutting protection rings"
+msgstr[0] "베기 보호의 반지"
+
+#. ~ Description for {'str': 'cutting protection ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When worn, this will give you some extra protection against cutting weapons."
+msgstr "독특한 반지.  착용시 기 피해로부터 조금 보호해준다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "stabbing protection ring"
+msgid_plural "stabbing protection rings"
+msgstr[0] "찌르기 보호의 반지"
+
+#. ~ Description for {'str': 'stabbing protection ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When worn, this will give you some extra protection against stabbing weapons."
+msgstr "독특한 반지.  착용시 찌르기 피해로부터 조금 보호해준다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "bashing protection ring"
+msgid_plural "bashing protection rings"
+msgstr[0] "둔기 보호의 반지"
+
+#. ~ Description for {'str': 'bashing protection ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When worn, this will give you some extra protection against bashing weapons."
+msgstr "독특한 반지.  착용시 둔기 피해로부터 조금 보호해준다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "heat ring"
+msgid_plural "heat rings"
+msgstr[0] "열의 반지"
+
+#. ~ Description for {'str': 'heat ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  Could be used as a heating element."
+msgstr "독특한 반지.  열원으로 사용 가능합니다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "feral ring"
+msgid_plural "feral rings"
+msgstr[0] "이성을 잃음의 반지"
+
+#. ~ Description for {'str': 'feral ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When used, this will make zombies friendly to you.  Against people, well..."
+msgstr "독특한 반지.  사용시 좀비들을 친화적으로 만들 수 있습니다.  사람이 대상이라면..."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "status ring"
+msgid_plural "status rings"
+msgstr[0] "능력치의 반지"
+
+#. ~ Description for {'str': 'status ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When worn, this will give you some extra status."
+msgstr "독특한 반지.  착용시 모든 능력치를 올려준다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "heal ring"
+msgid_plural "heal rings"
+msgstr[0] "치료의 반지"
+
+#. ~ Description for {'str': 'heal ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When used, this will heal you or others.  At a price, of course."
+msgstr "독특한 반지.  착용시 특정한 댓가로 자신이나 아군의 치료를 할 수 있게 한다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "uncanny dodge ring"
+msgid_plural "uncanny dodge rings"
+msgstr[0] "극단적 회피의 반지"
+
+#. ~ Description for {'str': 'uncanny dodge ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When worn, this will make you dodge things.  At a price, of course."
+msgstr "독특한 반지.  착용시 특정한 댓가로 회피할 확률을 올려준다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "soft landing ring"
+msgid_plural "soft landing rings"
+msgstr[0] "부드러운 착지의 반지"
+
+#. ~ Description for {'str': 'soft landing ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When worn, this will never make you hurt when you fall from high places.  At a price, of course."
+msgstr "독특한 반지.  착용시 특정한 댓가로 낙하 피해를 막아준다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "heavy weapon ring"
+msgid_plural "heavy weapon rings"
+msgstr[0] "중화기의 반지"
+
+#. ~ Description for {'str': 'heavy weapon ring'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique ring.  When worn, this will make you shoot weapons that you normally cannot.  At a price, of course."
+msgstr "독특한 반지.  착용시 특정한 댓가로 일반적으로 사격 못하는 무기를 쏠 수 있게 만든다."
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "amulet base"
+msgid_plural "amulet bases"
+msgstr[0] "애뮬릿 베이스"
+
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "spider amulet"
+msgid_plural "spider amulets"
+msgstr[0] "거미 애뮬렛"
+
+#. ~ Description for {'str': 'spider amulet'}
+#: .\ZhighWeapons\ZhighArtifacts.json
+msgid "A unique amulet.  When worn, you can make and shoot ropes, from your hunger and thirst as the cost."
+msgstr "독특한 애뮬릿.  착용 시, 허기와 갈증을 댓가로 밧줄을 만들고 쏠 수 있습니다."
 
 #: .\ZhighWeapons\ZhighBolts.json
 msgid "crude paper bolt"
@@ -17313,6 +18489,116 @@ msgstr[0] "수집용 카드 - 라이터"
 #: .\ZhighWeapons\ZhighCards.json
 msgid "This is a unique card, which could be used as a lighter.  If you use it, you could light something up.  Needs batteries to use."
 msgstr "독특한 카드로써, 라이터처럼 사용이 가능합니다.  사용시 불을 붙일 수 있습니다.  사용하려면 배터리가 필요합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - heal spell"
+msgid_plural "Collectible Card - heal spells"
+msgstr[0] "수집용 카드 - 치료 마법"
+
+#. ~ Description for {'str': 'Collectible Card - heal spell'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which could be used as a healing spell...?"
+msgstr "독특한 카드로써, 치료 마법을 사용할 수 있게 합니다...?"
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - speed spell"
+msgid_plural "Collectible Card - speed spells"
+msgstr[0] "수집용 카드 - 가속 마법"
+
+#. ~ Description for {'str': 'Collectible Card - speed spell'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which could be speed you up...?"
+msgstr "독특한 카드로써, 가속 마법을 사용할 수 있게 합니다...?"
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - stamina spell"
+msgid_plural "Collectible Card - stamina spells"
+msgstr[0] "수집용 카드 - 스태미나 마법"
+
+#. ~ Description for {'str': 'Collectible Card - stamina spell'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which could be used as a stamina recovery...?"
+msgstr "독특한 카드로써, 스태미나 마법을 사용할 수 있게 합니다...?"
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - attack buff spell"
+msgid_plural "Collectible Card - attack buff spells"
+msgstr[0] "수집용 카드 - 공격 버프 마법"
+
+#. ~ Description for {'str': 'Collectible Card - attack buff spell'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which could be used as an attack buff...?"
+msgstr "독특한 카드로써, 공격 버프 마법을 사용할 수 있게 합니다...?"
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - wide flash spell"
+msgid_plural "Collectible Card - wide flash spells"
+msgstr[0] "수집용 카드 - 광역 조명 마법"
+
+#. ~ Description for {'str': 'Collectible Card - wide flash spell'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which could be used as a wide blinding spell...?"
+msgstr "독특한 카드로써, 광역 조명 마법을 사용할 수 있게 합니다...?"
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - wide wave spell"
+msgid_plural "Collectible Card - wide wave spells"
+msgstr[0] "수집용 카드 - 넓은 파도 마법"
+
+#. ~ Description for {'str': 'Collectible Card - wide wave spell'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which could be used as a wave attack spell...?"
+msgstr "독특한 카드로써, 넓은 파도 마법을 사용할 수 있게 합니다...?"
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - dash spell"
+msgid_plural "Collectible Card - dash spells"
+msgstr[0] "수집용 카드 - 빠른 이동 마법"
+
+#. ~ Description for {'str': 'Collectible Card - dash spell'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which could be used for quick movment...?"
+msgstr "독특한 카드로써, 빠른 이동을 사용할 수 있게 합니다...?"
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - push spell"
+msgid_plural "Collectible Card - push spells"
+msgstr[0] "수집용 카드 - 밀치기 마법"
+
+#. ~ Description for {'str': 'Collectible Card - push spell'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which could be used as a pushing attack...?"
+msgstr "독특한 카드로써, 밀치기 공격을 사용할 수 있게 합니다...?"
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - fire breath"
+msgid_plural "Collectible Card - fire breaths"
+msgstr[0] "수집용 카드 - 화염 숨결"
+
+#. ~ Description for {'str': 'Collectible Card - fire breath'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which could make you breath fire...?"
+msgstr "독특한 카드로써, 화염을 입에서 뿜어낼 수 있게 합니다...?"
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - pets"
+msgid_plural "Collectible Card - petss"
+msgstr[0] "수집용 카드 - 애완동물"
+
+#. ~ Description for {'str': 'Collectible Card - pets'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which could be used as a pet carrier.  If you use it, you could capture any pets and release them at suitable places."
+msgstr "독특한 카드로써, 애완동물 케이지처럼 사용이 가능합니다.  사용시 어떤 동물이든 잡아서 적절한 장소에 놔 줄 수 있습니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - hose"
+msgid_plural "Collectible Card - hoses"
+msgstr[0] "수집용 카드 - 호스"
+
+#. ~ Description for {'str': 'Collectible Card - hose'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which could be used as a hose.  If you use it, you could fuel from one place to another."
+msgstr "독특한 카드로써, 호스처럼 사용이 가능합니다.  사용시 연료를 이동시킬 수 있습니다."
 
 #: .\ZhighWeapons\ZhighCards.json
 msgid "Collectible Card - smoke bomb"
@@ -17769,6 +19055,319 @@ msgstr[0] "수집용 카드 - 전기충격기"
 msgid "This is a unique card, which could be used as stungun.  Needs batteries to use."
 msgstr "독특한 카드로써, 전기충격기처럼 사용이 가능합니다.  사용하려면 배터리가 필요합니다."
 
+#. ~ Description for {'str': 'Collectible Card - tazer'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which could be used as a bottle, holds 750ml of liquid."
+msgstr "독특한 카드로써, 750ml의 액체를 담을 수 있습니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - cable"
+msgid_plural "Collectible Card - cables"
+msgstr[0] "수집용 카드 - 케이블"
+
+#. ~ Description for {'str': 'Collectible Card - cable'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, and works like other tow cables, but much smaller and lighter.  Less useful than an actual heavy-duty cable, but still useful for it's size and weight."
+msgstr "마법같은 케이블로, 카드처럼 접을 수 있으며, 다른 견인 케이블처럼 작동하지만 훨씬 작고 가볍습니다.  실제 고강도 케이블보다는 덜 유용하지만 크기와 무게를 봤을 때 확실히 유용합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - beartrap"
+msgid_plural "Collectible Card - beartraps"
+msgstr[0] "수집용 카드 - 곰덫"
+
+#. ~ Use action done_message for {'str': 'Collectible Card - beartrap'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You set the beartrap."
+msgstr "곰덫을 설치했다."
+
+#. ~ Description for {'str': 'Collectible Card - beartrap'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which has a picture of a beartrap.  If you use it, you could set a beartrap."
+msgstr "곰덫 그림이 그려진 독특한 카트.  사용시 곰덫을 설치할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - blade trap"
+msgid_plural "Collectible Card - blade traps"
+msgstr[0] "수집용 카드 - 칼날 덫"
+
+#. ~ Use action done_message for {'str': 'Collectible Card - blade trap'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You set the blade trap %d squares away."
+msgstr "칼날 덫 함정을 설치했다."
+
+#. ~ Description for {'str': 'Collectible Card - blade trap'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which has a picture of a blade trap.  If you use it, you could set a blade trap."
+msgstr "칼날 덫 그림이 그려진 독특한 카트.  사용시 칼날 덫을 설치할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - nailboard trap"
+msgid_plural "Collectible Card - nailboard traps"
+msgstr[0] "수집용 카드 - 못판 덫"
+
+#. ~ Use action done_message for {'str': 'Collectible Card - nailboard trap'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You set the board trap on the %s, nails facing up."
+msgstr "못판 덫 함정을 설치했다."
+
+#. ~ Description for {'str': 'Collectible Card - nailboard trap'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which has a picture of a nailboard trap.  If you use it, you could set a nailboard trap."
+msgstr "못판 덫 그림이 그려진 독특한 카트.  사용시 못판 덫을 설치할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - booby trap"
+msgid_plural "Collectible Card - booby traps"
+msgstr[0] "수집용 카드 - 부비트랩"
+
+#. ~ Use action done_message for {'str': 'Collectible Card - booby trap'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You set the booby trap up and activate the grenade."
+msgstr "부비트랩 함정을 설치했다."
+
+#. ~ Description for {'str': 'Collectible Card - booby trap'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which has a picture of a booby trap.  If you use it, you could set a booby trap."
+msgstr "부비트랩 그림이 그려진 독특한 카트.  사용시 부비트랩을 설치할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - bubble wrap"
+msgid_plural "Collectible Card - bubble wraps"
+msgstr[0] "수집용 카드 - 뽁뽁이 포장지"
+
+#. ~ Use action done_message for {'str': 'Collectible Card - bubble wrap'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You set the bubble wrap on the ground, ready to be popped."
+msgstr "뽁뽁이 포장지 함정을 설치했다."
+
+#. ~ Description for {'str': 'Collectible Card - bubble wrap'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which has a picture of a bubble wrap.  If you use it, you could set a bubble wrap."
+msgstr "뽁뽁이 포장지 그림이 그려진 독특한 카트.  사용시 뽁뽁이 포장지를 설치할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - caltrops"
+msgid_plural "Collectible Card - caltropss"
+msgstr[0] "수집용 카드 - 마름쇠"
+
+#. ~ Use action done_message for {'str': 'Collectible Card - caltrops'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You scatter the caltrops on the %s."
+msgstr "마름쇠 함정을 설치했다."
+
+#. ~ Description for {'str': 'Collectible Card - caltrops'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which has a picture of some caltrops.  If you use it, you could set some caltrops."
+msgstr "성긴 마름쇠 그림이 그려진 독특한 카트.  사용시 성긴 마름쇠를 설치할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - glass caltrops"
+msgid_plural "Collectible Card - glass caltropss"
+msgstr[0] "수집용 카드 - 유리 마름쇠"
+
+#. ~ Use action done_message for {'str': 'Collectible Card - glass caltrops'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You scatter the glass caltrops on the %s."
+msgstr "유리 마름쇠 함정을 설치했다."
+
+#. ~ Description for {'str': 'Collectible Card - glass caltrops'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which has a picture of some glass caltrops.  If you use it, you could set some glass caltrops."
+msgstr "성긴 유리 마름쇠 그림이 그려진 독특한 카트.  사용시 성긴 유리 마름쇠를 설치할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - crossbow trap"
+msgid_plural "Collectible Card - crossbow traps"
+msgstr[0] "수집용 카드 - 쇠뇌 덫"
+
+#. ~ Use action done_message for {'str': 'Collectible Card - crossbow trap'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You set the crossbow trap."
+msgstr "쇠뇌 덫 함정을 설치했다."
+
+#. ~ Description for {'str': 'Collectible Card - crossbow trap'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which has a picture of a crossbow trap.  If you use it, you could set a crossbow trap."
+msgstr "쇠뇌 덫 그림이 그려진 독특한 카트.  사용시 쇠뇌 덫을 설치할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - landmine"
+msgid_plural "Collectible Card - landmines"
+msgstr[0] "수집용 카드 - 지뢰"
+
+#. ~ Use action done_message for {'str': 'Collectible Card - landmine'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You set the land mine."
+msgstr "지뢰 함정을 설치했다."
+
+#. ~ Description for {'str': 'Collectible Card - landmine'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which has a picture of a landmine.  If you use it, you could set a landmine."
+msgstr "지뢰 그림이 그려진 독특한 카트.  사용시 지뢰를 설치할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - shotgun trap"
+msgid_plural "Collectible Card - shotgun traps"
+msgstr[0] "수집용 카드 - 산탄총 덫"
+
+#. ~ Use action done_message for {'str': 'Collectible Card - shotgun trap'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You set the shotgun trap."
+msgstr "산탄총 함정을 설치했다."
+
+#. ~ Description for {'str': 'Collectible Card - shotgun trap'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which has a picture of a shotgun trap.  If you use it, you could set a shotgun trap."
+msgstr "산탄총 덫 그림이 그려진 독특한 카트.  사용시 산탄총 덫을 설치할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - tripwire"
+msgid_plural "Collectible Card - tripwires"
+msgstr[0] "수집용 카드 - 인계철선"
+
+#. ~ Use action done_message for {'str': 'Collectible Card - tripwire'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You set the tripwire."
+msgstr "인계철선을 설치했다."
+
+#. ~ Description for {'str': 'Collectible Card - tripwire'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which has a picture of a tripwire.  If you use it, you could set a tripwire."
+msgstr "인계철선 덫 그림이 그려진 독특한 카트.  사용시 인계철선 덫을 설치할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - perimeter alarm"
+msgid_plural "Collectible Card - perimeter alarms"
+msgstr[0] "수집용 카드 - 경계 경보기"
+
+#. ~ Description for {'str': 'Collectible Card - perimeter alarm'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which has a picture of a perimeter alarm.  If you use it, you could set a perimeter alarm."
+msgstr "경계 경보기 그림이 그려진 독특한 카트.  사용시 경계 경보기를 설치할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - glass shard trap"
+msgid_plural "Collectible Card - glass shard traps"
+msgstr[0] "수집용 카드 - 유리 조각 덫"
+
+#. ~ Use action done_message for {'str': 'Collectible Card - glass shard
+#. trap'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You carefully place the shards on the ground, ready to be cracked by something passing by."
+msgstr "유리 조각 덫을 설치했다."
+
+#. ~ Description for {'str': 'Collectible Card - glass shard trap'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which has a picture of a glass shard trap.  If you use it, you could set a glass shard trap."
+msgstr "유리 조각 덫 그림이 그려진 독특한 카트.  사용시 유리 조각 덫을 설치할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - telepad trap"
+msgid_plural "Collectible Card - telepad traps"
+msgstr[0] "수집용 카드 - 텔레포트 패드"
+
+#. ~ Use action done_message for {'str': 'Collectible Card - telepad trap'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You set the telepad trap."
+msgstr "텔레포트 패드 함정을 설치했다."
+
+#. ~ Description for {'str': 'Collectible Card - telepad trap'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which has a picture of a telepad.  If you use it, you could set a telepad trap."
+msgstr "텔레포트 패드 그림이 그려진 독특한 카트.  사용시 텔레포트 패드를 설치할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - goo trap"
+msgid_plural "Collectible Card - goo traps"
+msgstr[0] "수집용 카드 - 끈끈이 구덩이"
+
+#. ~ Use action done_message for {'str': 'Collectible Card - goo trap'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You set the goo pit up."
+msgstr "끈끈이 구덩이를 만들었다."
+
+#. ~ Description for {'str': 'Collectible Card - goo trap'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which has a picture of a goo pit.  If you use it, you could set a goo pit."
+msgstr "끈끈이 구덩이 그림이 그려진 독특한 카트.  사용시 끈끈이 구덩이를 설치할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - dissector"
+msgid_plural "Collectible Card - dissectors"
+msgstr[0] "수집용 카드 - 분해기"
+
+#. ~ Use action done_message for {'str': 'Collectible Card - dissector'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You set the dissector."
+msgstr "분해기 함정을 설치했다."
+
+#. ~ Description for {'str': 'Collectible Card - dissector'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which has a picture of a dissector.  If you use it, you could set a dissector."
+msgstr "분해기 그림이 그려진 독특한 카트.  사용시 분해기를 설치할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - lava"
+msgid_plural "Collectible Card - lavas"
+msgstr[0] "수집용 카드 - 용암"
+
+#. ~ Use action done_message for {'str': 'Collectible Card - lava'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You set the lava pool."
+msgstr "용암을 설치했다."
+
+#. ~ Description for {'str': 'Collectible Card - lava'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which has a picture of a lava pool.  If you use it, you could set a pool of lava."
+msgstr "용암 그림이 그려진 독특한 카트.  사용시 용암을 설치할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - portal"
+msgid_plural "Collectible Card - portals"
+msgstr[0] "수집용 카드 - 포탈"
+
+#. ~ Use action done_message for {'str': 'Collectible Card - portal'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You set the portal."
+msgstr "포탈을 열었다."
+
+#. ~ Description for {'str': 'Collectible Card - portal'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which has a picture of a portal.  If you use it, you could set a portal."
+msgstr "포탈 그림이 그려진 독특한 카트.  사용시 포탈을 설치할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - flare trap"
+msgid_plural "Collectible Card - flare traps"
+msgstr[0] "수집용 카드 - 조명 함정"
+
+#. ~ Use action done_message for {'str': 'Collectible Card - flare trap'}.
+#. ~ Use action done_message for {'str': 'flare trap'}.
+#: .\ZhighWeapons\ZhighCards.json .\ZhighWeapons\ZhighTraps.json
+msgid "You set the flare trap."
+msgstr "조명 함정을 설치했다."
+
+#. ~ Description for {'str': 'Collectible Card - flare trap'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which has a picture of a flare trap.  If you use it, you could set a flare trap."
+msgstr "조명 함정 그림이 그려진 독특한 카트.  사용시 조명 함정을 설치할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - jump board"
+msgid_plural "Collectible Card - jump boards"
+msgstr[0] "수집용 카드 - 점핑 보드"
+
+#. ~ Use action done_message for {'str': 'Collectible Card - jump board'}.
+#. ~ Use action done_message for {'str': 'jump board'}.
+#: .\ZhighWeapons\ZhighCards.json .\ZhighWeapons\ZhighTraps.json
+msgid "You set the jump board."
+msgstr "점핑 보드를 설치했다."
+
+#. ~ Description for {'str': 'Collectible Card - jump board'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which has a picture of a jump board.  If you use it, you could set a jump board."
+msgstr "점핑 보드 그림이 그려진 독특한 카트.  사용시 점핑 보드를 설치할 수 있습니다."
+
 #: .\ZhighWeapons\ZhighCards.json
 msgid "Collectible Card - Hologram"
 msgid_plural "Collectible Card - Holograms"
@@ -17950,13 +19549,23 @@ msgid "This is a card with a picture of a soldier on it.  When activated, it cou
 msgstr "군인이 그려진 카드.  사용하면 당신을 놀라게 만들 수 있습니다.  소원을 빌 때는 조심하세요..."
 
 #: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - Baseball player"
+msgid_plural "Collectible Card - Baseball players"
+msgstr[0] "수집용 카드 - 야구선수"
+
+#. ~ Description for {'str': 'Collectible Card - Baseball player'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a Baseball player on it.  When activated, it could surprise you.  Be careful what you wish for..."
+msgstr "야구선수가 그려진 카드.  사용하면 당신을 놀라게 만들 수 있습니다.  소원을 빌 때는 조심하세요..."
+
+#: .\ZhighWeapons\ZhighCards.json
 msgid "Collectible Card - Operator"
 msgid_plural "Collectible Card - Operators"
 msgstr[0] "수집용 카드 - 요원"
 
 #. ~ Description for {'str': 'Collectible Card - Operator'}
 #: .\ZhighWeapons\ZhighCards.json
-msgid "This is a card with a picture of a operator on it.  When activated, it could surprise you.  Be careful what you wish for..."
+msgid "This is a card with a picture of an operator on it.  When activated, it could surprise you.  Be careful what you wish for..."
 msgstr "요원이 그려진 카드.  사용하면 당신을 놀라게 만들 수 있습니다.  소원을 빌 때는 조심하세요..."
 
 #: .\ZhighWeapons\ZhighCards.json
@@ -17973,6 +19582,352 @@ msgstr "자전거를 소환했다."
 #: .\ZhighWeapons\ZhighCards.json
 msgid "This is a card with a picture of a bicycle on it.  When activated, it summons a bicycle."
 msgstr "자전거가 그려진 카드.  사용하면 자전거를 소환합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - mountain bike"
+msgid_plural "Collectible Card - mountain bikes"
+msgstr[0] "수집용 카드 - 산악 자전거"
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - mountain bike'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the mountain bike."
+msgstr "산악 자전거를 소환했다."
+
+#. ~ Description for {'str': 'Collectible Card - mountain bike'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a mountain bike on it.  When activated, it summons a mountain bike."
+msgstr "산악 자전거가 그려진 카드.  사용하면 산악 자전거를 소환합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - tricycle"
+msgid_plural "Collectible Card - tricycles"
+msgstr[0] "수집용 카드 - 세발자전거"
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - tricycle'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the tricycle."
+msgstr "세발자전거를 소환했다."
+
+#. ~ Description for {'str': 'Collectible Card - tricycle'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a tricycle on it.  When activated, it summons a tricycle."
+msgstr "세발자전거가 그려진 카드.  사용하면 세발자전거를 소환합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - unicycle"
+msgid_plural "Collectible Card - unicycles"
+msgstr[0] "수집용 카드 - 외발자전거"
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - unicycle'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the unicycle."
+msgstr "외발자전거를 소환했다."
+
+#. ~ Description for {'str': 'Collectible Card - unicycle'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a unicycle on it.  When activated, it summons a unicycle."
+msgstr "외발자전거가 그려진 카드.  사용하면 외발자전거를 소환합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - engine crane"
+msgid_plural "Collectible Card - engine cranes"
+msgstr[0] "수집용 카드 - 엔진 크레인"
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - engine crane'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the engine crane."
+msgstr "엔진 크레인을 소환했다."
+
+#. ~ Description for {'str': 'Collectible Card - engine crane'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a engine crane on it.  When activated, it summons a engine crane."
+msgstr "엔진 크레인이 그려진 카드.  사용하면 엔진 크레인을 소환합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - food vendor cart"
+msgid_plural "Collectible Card - food vendor carts"
+msgstr[0] "수집용 카드 - 식료품점 카트"
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - food vendor cart'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the food vendor cart."
+msgstr "식료품점 카트를 소환했다."
+
+#. ~ Description for {'str': 'Collectible Card - food vendor cart'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a food vendor cart on it.  When activated, it summons a food vendor cart."
+msgstr "식료품점 카트가 그려진 카드.  사용하면 식료품점 카트를 소환합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - handjack"
+msgid_plural "Collectible Card - handjacks"
+msgstr[0] "수집용 카드 - 수동식 팔렛잭"
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - handjack'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the handjack."
+msgstr "수동식 팔렛잭을 소환했다."
+
+#. ~ Description for {'str': 'Collectible Card - handjack'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a handjack on it.  When activated, it summons a handjack."
+msgstr "수동식 팔렛잭이 그려진 카드.  사용하면 수동식 팔렛잭을 소환합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - luggage cart"
+msgid_plural "Collectible Card - luggage carts"
+msgstr[0] "수집용 카드 - 수하물 카트"
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - luggage cart'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the luggage cart."
+msgstr "수하물 카트를 소환했다."
+
+#. ~ Description for {'str': 'Collectible Card - luggage cart'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a luggage cart on it.  When activated, it summons a luggage cart."
+msgstr "수하물 카트가 그려진 카드.  사용하면 수하물 카트를 소환합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - shopping cart"
+msgid_plural "Collectible Card - shopping carts"
+msgstr[0] "수집용 카드 - 쇼핑카트"
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - shopping cart'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the shopping cart."
+msgstr "쇼핑카트를 소환했다."
+
+#. ~ Description for {'str': 'Collectible Card - shopping cart'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a shopping cart on it.  When activated, it summons a shopping cart."
+msgstr "쇼핑카트가 그려진 카드.  사용하면 쇼핑카트를 소환합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - grocery cart"
+msgid_plural "Collectible Card - grocery carts"
+msgstr[0] "수집용 카드 - 식료품 카트"
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - grocery cart'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the grocery cart."
+msgstr "식료품 카트를 소환했다."
+
+#. ~ Description for {'str': 'Collectible Card - grocery cart'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a grocery cart on it.  When activated, it summons a grocery cart."
+msgstr "식료품 카트가 그려진 카드.  사용하면 식료품 카트를 소환합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - swivel chair"
+msgid_plural "Collectible Card - swivel chairs"
+msgstr[0] "수집용 카드 - 회전의자"
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - swivel chair'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the swivel chair."
+msgstr "회전의자를 소환했다."
+
+#. ~ Description for {'str': 'Collectible Card - swivel chair'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a swivel chair on it.  When activated, it summons a swivel chair."
+msgstr "회전의자가 그려진 카드.  사용하면 회전의자를 소환합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - water cart"
+msgid_plural "Collectible Card - water carts"
+msgstr[0] "수집용 카드 - 급수 카트"
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - water cart'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the water cart."
+msgstr "급수 카트를 소환했다."
+
+#. ~ Description for {'str': 'Collectible Card - water cart'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a water cart on it.  When activated, it summons a water cart."
+msgstr "급수 카트가 그려진 카드.  사용하면 급수 카트를 소환합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - welding cart"
+msgid_plural "Collectible Card - welding carts"
+msgstr[0] "수집용 카드 - 이동식 용접기"
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - welding cart'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the welding cart."
+msgstr "이동식 용접기를 소환했다."
+
+#. ~ Description for {'str': 'Collectible Card - welding cart'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a welding cart on it.  When activated, it summons a welding cart."
+msgstr "이동식 용접기가 그려진 카드.  사용하면 이동식 용접기를 소환합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - wheelbarrow"
+msgid_plural "Collectible Card - wheelbarrows"
+msgstr[0] "수집용 카드 - 외바퀴 손수레"
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - wheelbarrow'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the wheelbarrow."
+msgstr "외바퀴 손수레를 소환했다."
+
+#. ~ Description for {'str': 'Collectible Card - wheelbarrow'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a wheelbarrow on it.  When activated, it summons a wheelbarrow."
+msgstr "외바퀴 손수레가 그려진 카드.  사용하면 외바퀴 손수레를 소환합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - wheelchair"
+msgid_plural "Collectible Card - wheelchairs"
+msgstr[0] "수집용 카드 - 접이식 휠체어"
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - wheelchair'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the wheelchair."
+msgstr "접이식 휠체어를 소환했다."
+
+#. ~ Description for {'str': 'Collectible Card - wheelchair'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a wheelchair on it.  When activated, it summons a wheelchair."
+msgstr "접이식 휠체어가 그려진 카드.  사용하면 접이식 휠체어를 소환합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - hospital bed"
+msgid_plural "Collectible Card - hospital beds"
+msgstr[0] "수집용 카드 - 병원 침대"
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - hospital bed'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the hospital bed."
+msgstr "병원 침대를 소환했다."
+
+#. ~ Description for {'str': 'Collectible Card - hospital bed'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a hospital bed on it.  When activated, it summons a hospital bed."
+msgstr "병원 침대가 그려진 카드.  사용하면 병원 침대를 소환합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - laundry cart"
+msgid_plural "Collectible Card - laundry carts"
+msgstr[0] "수집용 카드 - 세탁물 카트"
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - laundry cart'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the laundry cart."
+msgstr "세탁물 카트를 소환했다."
+
+#. ~ Description for {'str': 'Collectible Card - laundry cart'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a laundry cart on it.  When activated, it summons a laundry cart."
+msgstr "세탁물 카트가 그려진 카드.  사용하면 세탁물 카트를 소환합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - kayak"
+msgid_plural "Collectible Card - kayaks"
+msgstr[0] "수집용 카드 - 카약"
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - kayak'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the kayak."
+msgstr "카약을 소환했다."
+
+#. ~ Description for {'str': 'Collectible Card - kayak'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a kayak on it.  When activated, it summons a kayak."
+msgstr "카약이 그려진 카드.  사용하면 카약을 소환합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - racing kayak"
+msgid_plural "Collectible Card - racing kayaks"
+msgstr[0] "수집용 카드 - 경주용 카약"
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - racing kayak'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the racing kayak."
+msgstr "경주용 카약을 소환했다."
+
+#. ~ Description for {'str': 'Collectible Card - racing kayak'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a racing kayak on it.  When activated, it summons a racing kayak."
+msgstr "경주용 카약이 그려진 카드.  사용하면 경주용 카약을 소환합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - raft"
+msgid_plural "Collectible Card - rafts"
+msgstr[0] "수집용 카드 - 뗏목"
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - raft'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the raft."
+msgstr "뗏목을 소환했다."
+
+#. ~ Description for {'str': 'Collectible Card - raft'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a raft on it.  When activated, it summons a raft."
+msgstr "뗏목이 그려진 카드.  사용하면 뗏목을 소환합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - inflatable boat"
+msgid_plural "Collectible Card - inflatable boats"
+msgstr[0] "수집용 카드 - 부풀릴 수 있는 보트"
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - inflatable boat'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the inflatable boat."
+msgstr "부풀릴 수 있는 보트를 소환했다."
+
+#. ~ Description for {'str': 'Collectible Card - inflatable boat'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a inflatable boat on it.  When activated, it summons a inflatable boat."
+msgstr "부풀릴 수 있는 보트가 그려진 카드.  사용하면 부풀릴 수 있는 보트를 소환합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - wooden rowboat"
+msgid_plural "Collectible Card - wooden rowboats"
+msgstr[0] "수집용 카드 - 나무 보트"
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - wooden rowboat'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the wooden rowboat."
+msgstr "나무 보트를 소환했다."
+
+#. ~ Description for {'str': 'Collectible Card - wooden rowboat'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a wooden rowboat on it.  When activated, it summons a wooden rowboat."
+msgstr "나무 보트가 그려진 카드.  사용하면 나무 보트를 소환합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - portable generator"
+msgid_plural "Collectible Card - portable generators"
+msgstr[0] "수집용 카드 - 휴대용 발전기"
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - portable
+#. generator'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the portable generator."
+msgstr "휴대용 발전기를 소환했다."
+
+#. ~ Description for {'str': 'Collectible Card - portable generator'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a portable generator on it.  When activated, it summons a portable generator."
+msgstr "휴대용 발전기가 그려진 카드.  사용하면 휴대용 발전기를 소환합니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - work light"
+msgid_plural "Collectible Card - work lights"
+msgstr[0] "수집용 카드 - 작업등"
+
+#. ~ Use action unfold_msg for {'str': 'Collectible Card - work light'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "You summon the work light."
+msgstr "작업등을 소환했다."
+
+#. ~ Description for {'str': 'Collectible Card - work light'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a card with a picture of a work light on it.  When activated, it summons a work light."
+msgstr "작업등이 그려진 카드.  사용하면 작업등을 소환합니다."
 
 #: .\ZhighWeapons\ZhighCards.json
 msgid "Collectible Card - road roller"
@@ -18280,6 +20235,130 @@ msgid "This is a unique card, which has a picture of a coin.  If you use it, you
 msgstr "동전 그림이 그려진 독특한 카트.  사용시 동전을 얻을 수 있습니다."
 
 #: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - seeds"
+msgid_plural "Collectible Card - seedss"
+msgstr[0] "수집용 카드 - 씨앗"
+
+#. ~ Description for {'str': 'Collectible Card - seeds'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which has a picture of seeds.  If you use it, you could get some seeds."
+msgstr "씨앗 그림이 그려진 독특한 카트.  사용시 씨앗을 얻을 수 있습니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - lab map"
+msgid_plural "Collectible Card - lab maps"
+msgstr[0] "수집용 카드 - 실험실 지도"
+
+#. ~ Use action message for {'str': 'Collectible Card - lab map'}.
+#. ~ Use action message for {'str': 'Collectible Card - military map'}.
+#. ~ Use action message for {'str': 'Collectible Card - survivor map'}.
+#. ~ Use action message for {'str': 'Collectible Card - road map'}.
+#. ~ Use action message for {'str': 'Collectible Card - subway map'}.
+#. ~ Use action message for {'str': 'Collectible Card - trail map'}.
+#. ~ Use action message for {'str': 'Collectible Card - tour map'}.
+#. ~ Use action message for {'str': 'Collectible Card - restaurant map'}.
+#. ~ Use action message for {'str': 'Collectible Card - bandit map'}.
+#. ~ Use action message for {'str': 'Collectible Card - ultimate map'}.
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Area is revealed."
+msgstr "주변 지역이 드러났다."
+
+#. ~ Description for {'str': 'Collectible Card - lab map'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which is filled with tiny handwriting and some surprisingly precise diagrams of subway tunnels, access codes, ventilation shafts, and guard shifts."
+msgstr "독특한 카드로써, 지하철 터널, 접속 암호, 환기구, 그리고 순찰 시간대가 놀라울 정도로 정확하게 적혀 있습니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - military map"
+msgid_plural "Collectible Card - military maps"
+msgstr[0] "수집용 카드 - 군사작전 지도"
+
+#. ~ Description for {'str': 'Collectible Card - military map'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which details the locations of evacuation centers and military facilities."
+msgstr "독특한 카드로써, 대피 시설과 군사 시설의 위치를 드러냅니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - survivor map"
+msgid_plural "Collectible Card - survivor maps"
+msgstr[0] "수집용 카드 - 생존자의 지도"
+
+#. ~ Description for {'str': 'Collectible Card - survivor map'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which details the locations of nearby supply sources including gun stores and gas stations."
+msgstr "독특한 카드로써, 총포사와 주유소를 포함하는 근처 보급소의 위치를 드러냅니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - road map"
+msgid_plural "Collectible Card - road maps"
+msgstr[0] "수집용 카드 - 도로 지도"
+
+#. ~ Description for {'str': 'Collectible Card - road map'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which details the locations of hospitals, roads and police stations."
+msgstr "독특한 카드로써, 병원이나 경찰서 같은 공공건물의 위치를 드러냅니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - subway map"
+msgid_plural "Collectible Card - subway maps"
+msgstr[0] "수집용 카드 - 지하철 지도"
+
+#. ~ Description for {'str': 'Collectible Card - subway map'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which details the locations of subway lines and underground stations."
+msgstr "독특한 카드로써, 지하철 노선과 지하 역을 드러냅니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - trail map"
+msgid_plural "Collectible Card - trail maps"
+msgstr[0] "수집용 카드 - 산길 지도"
+
+#. ~ Description for {'str': 'Collectible Card - trail map'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which details the locations of trails, trailhead amenities."
+msgstr "독특한 카드로써, 길과 기점 시설을 드러냅니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - tour map"
+msgid_plural "Collectible Card - tour maps"
+msgstr[0] "수집용 카드 - 관광 지도"
+
+#. ~ Description for {'str': 'Collectible Card - tour map'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which details the locations of local hotels and attractions."
+msgstr "독특한 카드로써, 근처 호텔과 관광지를 드러냅니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - restaurant map"
+msgid_plural "Collectible Card - restaurant maps"
+msgstr[0] "수집용 카드 - 레스토랑 지도"
+
+#. ~ Description for {'str': 'Collectible Card - restaurant map'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which details the locations of best diners and bars."
+msgstr "독특한 카드로써, 최고의 식당과 술집을 드러냅니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - bandit map"
+msgid_plural "Collectible Card - bandit maps"
+msgstr[0] "수집용 카드 - 강도의 지도"
+
+#. ~ Description for {'str': 'Collectible Card - bandit map'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which details the locations of bandit bases."
+msgstr "독특한 카드로써, 강도들의 기지를 드러냅니다."
+
+#: .\ZhighWeapons\ZhighCards.json
+msgid "Collectible Card - ultimate map"
+msgid_plural "Collectible Card - ultimate maps"
+msgstr[0] "수집용 카드 - 완벽한 지도"
+
+#. ~ Description for {'str': 'Collectible Card - ultimate map'}
+#: .\ZhighWeapons\ZhighCards.json
+msgid "This is a unique card, which details the locations of almost everything."
+msgstr "독특한 카드로써, 거의 대부분의 지형을 드러냅니다."
+
+#: .\ZhighWeapons\ZhighCards.json
 msgid "random card pack"
 msgid_plural "random card packs"
 msgstr[0] "무작위 카드 팩"
@@ -18350,14 +20429,74 @@ msgid_plural "magical sapphire staffs"
 msgstr[0] "매지컬 사파이어 지팡이"
 
 #: .\ZhighWeapons\ZhighMelee.json
+msgid "bone staff"
+msgid_plural "bone staffs"
+msgstr[0] "뼈 지팡이"
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "brass staff"
+msgid_plural "brass staffs"
+msgstr[0] "황동 지팡이"
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "bronze staff"
+msgid_plural "bronze staffs"
+msgstr[0] "청동 지팡이"
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "copper staff"
+msgid_plural "copper staffs"
+msgstr[0] "구리 지팡이"
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "glass staff"
+msgid_plural "glass staffs"
+msgstr[0] "유리 지팡이"
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "gold staff"
+msgid_plural "gold staffs"
+msgstr[0] "황금 지팡이"
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "iron staff"
+msgid_plural "iron staffs"
+msgstr[0] "강철 지팡이"
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "ivory staff"
+msgid_plural "ivory staffs"
+msgstr[0] "상아 지팡이"
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "lead staff"
+msgid_plural "lead staffs"
+msgstr[0] "납 지팡이"
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "plastic staff"
+msgid_plural "plastic staffs"
+msgstr[0] "플라스틱 지팡이"
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "silver staff"
+msgid_plural "silver staffs"
+msgstr[0] "은 지팡이"
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "wood staff"
+msgid_plural "wood staffs"
+msgstr[0] "나무 지팡이"
+
+#: .\ZhighWeapons\ZhighMelee.json
 msgid "fancy staff"
 msgid_plural "fancy staffs"
-msgstr[0] "멋진 스태프"
+msgstr[0] "멋진 지팡이"
 
 #: .\ZhighWeapons\ZhighMelee.json
 msgid "metal staff"
 msgid_plural "metal staffs"
-msgstr[0] "금속 스태프"
+msgstr[0] "금속 지팡이"
 
 #: .\ZhighWeapons\ZhighMelee.json
 msgid "bo staff"
@@ -19708,6 +21847,119 @@ msgstr "전동 드릴을 껐다."
 msgid "This is a cordless battery-powered drill with a selection of drill bits.  It is turned on, so it could be used as a weapon if needed."
 msgstr "배터리로 작동하는 무선 드릴입니다.  드릴 비트 세트가 딸려 있습니다.  켜진 상태라 필요하면 무기로 사용할 수 있습니다."
 
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "hwando"
+msgid_plural "hwandos"
+msgstr[0] "환도"
+
+#. ~ Description for {'str': 'hwando'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This is a rare sword from Korea.  Deadly against unarmored targets, and still very effective against armor."
+msgstr "한국에서 온 희귀한 검입니다.  무장하지 않은 적들에게 치명적이지만, 무장한 적들에게도 위협적입니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "hwando replica"
+msgid_plural "hwando replicas"
+msgstr[0] "환도 레플리카"
+
+#. ~ Description for {'str': 'hwando replica'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This is a rare sword from Korea.  While it's got the right edge and weight, the pommel just snaps off, and the blade seems pretty worn."
+msgstr "한국에서 온 희귀한 검입니다.  날의 형태와 무게는 그럴싸하지만, 안장은 그냥 툭툭 끊어지고 칼날은 꽤 닳은 것 같습니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "hwando fake"
+msgid_plural "hwando fakes"
+msgstr[0] "가짜 환도"
+
+#. ~ Description for {'str': 'hwando fake'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This is a dull, cheaply made replica of a rare sword from Korea."
+msgstr "한국에서 전래된 희귀한 칼을 본떠 만든 무디고 저렴한 레플리카."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "jangdo"
+msgid_plural "jangdos"
+msgstr[0] "장도"
+
+#. ~ Description for {'str': 'jangdo'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This is a finely crafted knife from Korea.  Useful as a tool, but not recommended as a weapon."
+msgstr "정성스레 제작된 한국제 단검입니다.  도구로써는 유용하지만, 무기로써는 추천되지 않습니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "hooksword"
+msgid_plural "hookswords"
+msgstr[0] "갈고리 칼"
+
+#. ~ Description for {'str': 'hooksword'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This is an exotic Chinese weapon, traditionally associated with northern Chinese martial arts.  Known for it's unique shape."
+msgstr "독특한 중국의 무기로, 중국 북쪽의 무술과 관련이 있습니다.  독특한 모양으로 알려져 있습니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "hooksword replica"
+msgid_plural "hooksword replicas"
+msgstr[0] "갈고리 칼 레플리카"
+
+#. ~ Description for {'str': 'hooksword replica'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This is an exotic Chinese weapon, traditionally associated with northern Chinese martial arts.  Known for it's unique shape.  This sword appears to be made very poorly, but it should still stand up to a few swings."
+msgstr "독특한 중국의 무기로, 중국 북쪽의 무술과 관련이 있습니다.  독특한 모양으로 알려져 있습니다.  초라하게 만들어진 것 같은 검이지만, 몇 번 휘두르는 정도는 버틸 겁니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "hooksword fake"
+msgid_plural "hooksword fakes"
+msgstr[0] "가짜 갈고리 칼"
+
+#. ~ Description for {'str': 'hooksword fake'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This is a dull, cheaply made replica of an exotic Chinese weapon, traditionally associated with northern Chinese martial arts.  Known for it's unique shape."
+msgstr "독특한 중국의 무기로, 중국 북쪽의 무술과 관련이 있습니다.  독특한 모양으로 알려진 검의 값싸고 뭉툭한 레플리카입니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "messer knife"
+msgid_plural "messer knives"
+msgstr[0] "메서"
+
+#. ~ Description for {'str': 'messer knife', 'str_pl': 'messer knives'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This stout combat knife features a nice design.  Ain't useful as a modern combat knife, this still hurts people.  Or zombies."
+msgstr "이 완강한 전투용 나이프는 괜찮은 디자인을 자랑합니다.  현대의 전투용 나이프보단 못하지만, 사람들을 다치게 할 수 있습니다.  좀비들 또한 예외는 아니죠."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgctxt "weapon"
+msgid "swordstaff"
+msgid_plural "swordstaffs"
+msgstr[0] "소드스태프"
+
+#. ~ Description for {'ctxt': 'weapon', 'str': 'swordstaff'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This is a medieval weapon consisting of a sword blade stuck with a long staff."
+msgstr "긴 봉에 검날을 단 중세 무기입니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgctxt "weapon"
+msgid "swordstaff replica"
+msgid_plural "swordstaff replicas"
+msgstr[0] "소드스태프 레플리카"
+
+#. ~ Description for {'ctxt': 'weapon', 'str': 'swordstaff replica'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This is a medieval weapon consisting of a sword blade stuck with a long staff.  The head seems to be pretty dull, and the whole thing feels poorly made."
+msgstr "긴 봉에 검날을 단 중세 무기입니다.  초라하게 만들어진 것 같은 검이지만, 몇 번 휘두르는 정도는 버틸 겁니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgctxt "weapon"
+msgid "swordstaff fake"
+msgid_plural "swordstaff fakes"
+msgstr[0] "가짜 소드스태프"
+
+#. ~ Description for {'ctxt': 'weapon', 'str': 'swordstaff fake'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This is a dull, cheaply made replica of a medieval weapon consisting of a sword blade stuck with a long staff."
+msgstr "긴 봉에 검날을 단 중세 무기의 값싸고 뭉툭한 레플리카입니다."
+
 #: .\ZhighWeapons\ZhighRanged.json
 msgid "marble gun"
 msgid_plural "marble guns"
@@ -19958,6 +22210,40 @@ msgid "Shout"
 msgstr "소리지르기"
 
 #: .\ZhighWeapons\ZhighRanged.json
+msgid "packed modified fire extinguisher"
+msgid_plural "packed modified fire extinguishers"
+msgstr[0] "개조된 소화기 (포장됨)"
+
+#. ~ Use action menu_text for {'str': 'packed modified fire extinguisher'}.
+#. ~ Use action menu_text for {'str': 'packed roman candle'}.
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Unwrap"
+msgstr "포장 뜯기"
+
+#. ~ Use action msg for {'str': 'packed modified fire extinguisher'}.
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "You unpacked your fire extinguisher, ready to fire it if needed."
+msgstr "개조된 소화기의 포장을 뜯어 필요하면 사격이 가능하게 준비를 해놨다."
+
+#. ~ Description for {'str': 'packed modified fire extinguisher'}
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "This is a modified fire extinguisher, packed in its storage form.  Use it to pop it out and make it ready to fire.  Once it is activated, it cannot be repacked."
+msgstr "포장을 뜯지 않은 개조된 소화기입니다.  사용하면 포장을 뜯어 사격할 수 있게 만듭니다.  한번 포장을 뜯으면 되돌릴 수 없습니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "modified fire extinguisher"
+msgid_plural "modified fire extinguisher"
+msgstr[0] "개조된 소화기"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "A fire extinguisher, which has been modified to make smoke cover... and damage stuff?"
+msgstr "개조된 소화기로, 연막을 뿌리고... 피해를 줄 수 있습니다?"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Spray"
+msgstr "뿌리기"
+
+#: .\ZhighWeapons\ZhighRanged.json
 msgid "squirt gun"
 msgid_plural "squirt guns"
 msgstr[0] "소총형 물총"
@@ -20015,12 +22301,6 @@ msgstr "나무 등에 못을 박을 때 쓰이는 도구입니다.  대충 무�
 msgid "packed roman candle"
 msgid_plural "packed roman candles"
 msgstr[0] "포장된 로만 캔들"
-
-#. ~ Use action menu_text for {'str': 'packed roman candle'}.
-#. ~ Use action menu_text for {'str': 'packed modified fire extinguisher'}.
-#: .\ZhighWeapons\ZhighRanged.json
-msgid "Unwrap"
-msgstr "포장 뜯기"
 
 #. ~ Use action msg for {'str': 'packed roman candle'}.
 #: .\ZhighWeapons\ZhighRanged.json
@@ -20153,34 +22433,6 @@ msgstr[0] "펜 화학약품 분사기"
 #: .\ZhighWeapons\ZhighRanged.json
 msgid "A steel pen chemical thrower, it isn't hard to use, and is very accurate.  Various types of liquid is used as ammunition.  Do not expect a lot of damage."
 msgstr "금속제 펜 모양 총.  사용이 어렵지 않고 매우 정확합니다.  분사식 화학약품이 탄환으로 사용됩니다.  많은 피해를 입히지 못합니다."
-
-#: .\ZhighWeapons\ZhighRanged.json
-msgid "packed modified fire extinguisher"
-msgid_plural "packed modified fire extinguishers"
-msgstr[0] "개조된 소화기 (포장됨)"
-
-#. ~ Use action msg for {'str': 'packed modified fire extinguisher'}.
-#: .\ZhighWeapons\ZhighRanged.json
-msgid "You unpacked your fire extinguisher, ready to fire it if needed."
-msgstr "개조된 소화기의 포장을 뜯어 필요하면 사격이 가능하게 준비를 해놨다."
-
-#. ~ Description for {'str': 'packed modified fire extinguisher'}
-#: .\ZhighWeapons\ZhighRanged.json
-msgid "This is a modified fire extinguisher, packed in its storage form.  Use it to pop it out and make it ready to fire.  Once it is activated, it cannot be repacked."
-msgstr "포장을 뜯지 않은 개조된 소화기입니다.  사용하면 포장을 뜯어 사격할 수 있게 만듭니다.  한번 포장을 뜯으면 되돌릴 수 없습니다."
-
-#: .\ZhighWeapons\ZhighRanged.json
-msgid "modified fire extinguisher"
-msgid_plural "modified fire extinguisher"
-msgstr[0] "개조된 소화기"
-
-#: .\ZhighWeapons\ZhighRanged.json
-msgid "A fire extinguisher, which has been modified to make smoke cover... and damage stuff?"
-msgstr "개조된 소화기로, 연막을 뿌리고... 피해를 줄 수 있습니다?"
-
-#: .\ZhighWeapons\ZhighRanged.json
-msgid "Spray"
-msgstr "뿌리기"
 
 #: .\ZhighWeapons\ZhighRanged.json
 msgid "bang stick"
@@ -20804,6 +23056,11 @@ msgid_plural "pop gun (pistol)"
 msgstr[0] "공압식 장난감총 (권총)"
 
 #: .\ZhighWeapons\ZhighRanged.json
+msgid "pop gun (shotgun)"
+msgid_plural "pop gun (shotgun)"
+msgstr[0] "공압식 장난감총 (산탄총)"
+
+#: .\ZhighWeapons\ZhighRanged.json
 msgid "tishuna"
 msgid_plural "tishunas"
 msgstr[0] "티슈나"
@@ -20882,6 +23139,35 @@ msgstr "알 수 없는 방식으로 불을 뿜는 가짜 총."
 msgid "Fake gun that fires some sort of acid at very high speed by unknown means of propulsion."
 msgstr "알 수 없는 방식으로 산성액을 뿜는 가짜 총."
 
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "kakophoni"
+msgid_plural "kakophoni"
+msgstr[0] "카코포니"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "A noise weapon, which has been modified to make loud noises... and damage stuff greatly?"
+msgstr "큰 소리와... 강한 피해?를 입히기 위한 소음 병기입니다?"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "horn bow"
+msgid_plural "horn bows"
+msgstr[0] "각궁"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "A bow made from multiple materials for increased energy efficiency.  A variation of the composite bow, made in Korea.  Complicated to make, but stronger than an all-wood short bow."
+msgstr "에너지 효율을 위해 다양한 재료를 이용해 만든 활입니다.  합성단궁의 분류에 들어가는 활로, 한국에서 만들어졌습니다.  제작이 까다롭지만, 목제 단궁에 비해 강력합니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "TAC-15 crossbow"
+msgid_plural "TAC-15 crossbows"
+msgstr[0] "TAC-15 석궁"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A slow-loading hand weapon that launches bolts.  Stronger people can reload it much faster.  Bolts fired from this weapon have a good chance of remaining intact for re-use.  Modified from an AR-15, this crossbow is bit "
+"faster to reload."
+msgstr "볼트를 발사하는 장전이 느린 무기.  힘이 센 사람은 더 빨리 장전 할 수 있습니다.  이 무기에서 발사된 볼트는 재사용 확률이 높습니다.  AR-15소총에서 개조되어, 이 석궁은 조금 더 빠르게 장전할 수 있습니다."
+
 #: .\ZhighWeapons\ZhighSpells.json
 msgid "Life Drain Spell"
 msgstr "생명 흡수 마법"
@@ -20950,8 +23236,8 @@ msgstr "점프 서핑"
 
 #. ~ Description for {'str': 'jump surfing'}
 #: .\ZhighWeapons\ZhighSpells.json
-msgid "This spell projects a large wave, swarming both your foes and friends in it."
-msgstr "이 주문은 거대 파도를 생성해서 아군과 적군 모두를 휩싸이게 만든다."
+msgid "This spell projects a large wave, swarming your foes in it."
+msgstr "이 주문은 거대 파도를 생성해서 적군을 휩싸이게 만든다."
 
 #: .\ZhighWeapons\ZhighSpells.json
 msgid "camera flash"
@@ -20997,6 +23283,15 @@ msgstr "광역 피해 증폭"
 #: .\ZhighWeapons\ZhighSpells.json
 msgid "This spell gives everyone around you a good attack buff."
 msgstr "당신의 주변 아군들에게 공격 버프를 준다."
+
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "fire breath"
+msgstr "화염 숨결"
+
+#. ~ Description for {'str': 'fire breath'}
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "This spell projects a cone of fire from your mouth."
+msgstr "입에서 불이 뿜어져 나오게 한다."
 
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "spade throwing card"
@@ -21514,11 +23809,6 @@ msgid "flare trap"
 msgid_plural "flare traps"
 msgstr[0] "조명 함정"
 
-#. ~ Use action done_message for {'str': 'flare trap'}.
-#: .\ZhighWeapons\ZhighTraps.json
-msgid "You set the flare trap."
-msgstr "조명 함정을 설치했다."
-
 #. ~ Description for {'str': 'flare trap'}
 #: .\ZhighWeapons\ZhighTraps.json
 msgid "This is a simple tripwire is attached to the trigger of a loaded flare.  When pulled, the flare fires, discharging the flare into the target."
@@ -21541,11 +23831,6 @@ msgstr "조명 작동!"
 msgid "jump board"
 msgid_plural "jump boards"
 msgstr[0] "점핑 보드"
-
-#. ~ Use action done_message for {'str': 'jump board'}.
-#: .\ZhighWeapons\ZhighTraps.json
-msgid "You set the jump board."
-msgstr "점핑 보드를 설치했다."
 
 #. ~ Description for {'str': 'jump board'}
 #: .\ZhighWeapons\ZhighTraps.json
@@ -21576,6 +23861,85 @@ msgstr "끈끈이 구덩이를 만들었다."
 #: .\ZhighWeapons\ZhighTraps.json
 msgid "There is a label on this canister: \"Warning: contains highly toxic and corrosive materials.  Contents may be sentient.  Open at your own risk.\""
 msgstr "보관 용기에 이렇게 쓰여있다: \"경고: 고농도의 독성,부식성 물질, 매우 민감한 물질. 개봉시 각별한 주의 필요\""
+
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "shock trap"
+msgid_plural "shock traps"
+msgstr[0] "전격 트랩"
+
+#. ~ Use action done_message for {'str': 'shock trap'}.
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "You set the shock trap."
+msgstr "전격 함정을 설치했다."
+
+#. ~ Description for {'str': 'shock trap'}
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "This landmine-looking trap is attached to the trigger of a battery.  When pulled, the electrode goes live, discharging the electric in the air."
+msgstr "이건 단순한 트립와이어에 배터리가 달려 있는 함정입니다.  작동이 된다면, 전극이 발동되며 공기 중에 전기 스파크를 내뿜습니다."
+
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "Shock trap Trigger"
+msgstr "전격 함정 트리거"
+
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "Shock trap Effect"
+msgstr "전격 함정 효과"
+
+#. ~ Description for the sound of spell '{'str': 'Shock trap Effect'}'
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "electric activating!"
+msgstr "전격 작동!"
+
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "gu mine"
+msgid_plural "gu mines"
+msgstr[0] "고독 지뢰"
+
+#. ~ Use action done_message for {'str': 'gu mine'}.
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "You set the gu mine."
+msgstr "고독 지뢰를 설치했다."
+
+#. ~ Description for {'str': 'gu mine'}
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "This soda can-looking trap is attached to the trigger of a battery.  When pulled, the needles goes live, discharging the poison to the target."
+msgstr "이 음료수 캔을 닮은 함정은 배터리가 달린 함정입니다.  작동이 된다면, 바늘이 발동되며 표적에게 독극물을 내뿜습니다."
+
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "LESION mine Trigger"
+msgstr "리전 지뢰 트리거"
+
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "LESION mine Effect"
+msgstr "리전 지뢰 효과"
+
+#. ~ Description for the sound of spell '{'str': 'LESION mine Effect'}'
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "LESION activating!"
+msgstr "리전 지뢰 작동!"
+
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "light trap"
+msgid_plural "light traps"
+msgstr[0] "빛 트랩"
+
+#. ~ Use action done_message for {'str': 'light trap'}.
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "You set the light trap."
+msgstr "빛 트랩을 설치했다."
+
+#. ~ Description for {'str': 'light trap'}
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "This landmine-looking trap is attached to the trigger of a battery.  When pulled, the electrode goes live, discharging light in the air."
+msgstr "지뢰처럼 생긴 이 함정은 배터리 방아쇠에 부착되어 있습니다.  작동되면 전극이 활성화되어 공중에서 빛을 방출합니다."
+
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "Light trap Trigger"
+msgstr "빛 트랩 트리거"
+
+#: .\ZhighWeapons\ZhighTraps.json
+msgid "Light trap Effect"
+msgstr "빛 트랩 효과"
 
 #: .\ZhighZeds\zed-animal.json
 msgid "jawed terror"
@@ -22752,6 +25116,10 @@ msgstr[0] "베테랑 생존자 좀비"
 #: .\ZhighZeds\zed_survivor.json
 msgid "This zombie once was a survivor like you, and a pretty good one at that.  Unfortunately they didn't make it, despite the custom-made, heavy armor pieces they wear and the gear that they are still lugging around."
 msgstr "한때 당신과 같은 생존자였으며 꽤 잘 살아온 것 같습니다.  불행히도, 수제작한 무거운 갑옷 쪼가리와 여전히 짊어지고 다니는 풍족한 장비에도 불구하고 안일사 당한 것 같습니다."
+
+#~ msgid "Collectible Card - shotgun_trap"
+#~ msgid_plural "Collectible Card - shotgun_traps"
+#~ msgstr[0] "수집용 카드 - 산탄총 덫"
 
 #~ msgid "Let's start with a test.  You and a 20 zombies laid to rest, what do you say?"
 #~ msgstr "시험 하나만 보고 시작하자고.  너가 20마리 정도의 좀비들을 죽여봐, 할 수 있겠어?"
