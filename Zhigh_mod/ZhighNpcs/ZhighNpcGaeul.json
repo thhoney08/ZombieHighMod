@@ -1,88 +1,86 @@
 [
   {
     "type": "npc",
-    "id": "STUDENT_HAMBRO",
-    "name_unique": "'Hambro' Ham",
+    "id": "STUDENT_GAEULLEE",
+    "name_unique": "Gaeul 'Autumn' Lee",
     "name_suffix": "Student",
-    "gender": "male",
-    "class": "NC_ZHIGHHAMBRO",
+    "gender": "female",
+    "class": "NC_ZHIGHGAEULLEE",
     "attitude": 0,
     "mission": 7,
-    "chat": "TALK_ZHIGHHAMBRO",
+    "chat": "TALK_ZHIGHGAEULLEE",
     "faction": "Zhigh_Survivors"
   },
   {
     "type": "npc_class",
-    "id": "NC_ZHIGHHAMBRO",
-    "name": { "str": "'Hambro' Ham" },
+    "id": "NC_ZHIGHGAEULLEE",
+    "name": { "str": "Gaeul 'Autumn' Lee" },
     "job_description": "I'm a streamer.",
     "traits": [
       { "group": "BG_survival_story_RURAL" },
-      { "group": "Appearance_Ham_Bro" },
+      { "group": "Appearance_Gaeul_Lee" },
       { "trait": "REGEN_zhigh" }
     ],
-    "bonus_str": { "rng": [ 1, 2 ] },
+    "bonus_str": { "rng": [ 3, 6 ] },
     "bonus_int": { "rng": [ 2, 3 ] },
     "bonus_per": { "rng": [ 2, 3 ] },
     "bonus_dex": { "rng": [ -1, 1 ] },
-    "worn_override": "NC_Ham_Bro_worn",
-    "carry_override": "NC_Ham_Bro_misc",
-    "weapon_override": "NC_Ham_Bro_weapon",
+    "worn_override": "NC_Gaeul_Lee_worn",
+    "carry_override": "NC_Gaeul_Lee_misc",
+    "weapon_override": "NC_Gaeul_Lee_weapon",
     "skills": [
       { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
       { "skill": "melee", "bonus": { "rng": [ 2, 4 ] } },
       { "skill": "bashing", "bonus": { "rng": [ 2, 4 ] } },
-      { "skill": "stabbing", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 2, 4 ] } },
       { "skill": "dodge", "bonus": { "rng": [ 2, 4 ] } }
     ]
   },
   {
     "type": "item_group",
-    "id": "NC_Ham_Bro_worn",
+    "id": "NC_Gaeul_Lee_worn",
     "subtype": "collection",
     "entries": [
-      { "group": "npc_underwear_bottom_male" },
-      { "group": "npc_underwear_top_male" },
       { "group": "ZhighNpc_underwear_feet_male" },
       { "group": "ZhighNpc_shoes_male" },
-      { "item": "pants_zhigh" },
+      { "item": "boy_shorts" },
+      { "item": "sports_bra" },
+      { "item": "sundress_white" },
       { "item": "gloves_fingerless" },
+      { "item": "ragpouch" },
       { "item": "sheath" },
-      { "item": "tshirt_Hawaii" },
-      { "item": "greatcoat" },
-      { "item": "badge_ham" }
+      { "item": "gaeulhairpin" }
     ]
   },
   {
     "type": "trait_group",
-    "id": "Appearance_Ham_Bro",
+    "id": "Appearance_Gaeul_Lee",
     "subtype": "collection",
     "traits": [
-		{ "trait": "hair_brown_hambro", "prob": 100 },
-		{ "trait": "eye_brown", "prob": 100 },
-		{ "trait": "SKIN_LIGHT", "prob": 100 }
+		{ "trait": "hair_brown_long", "prob": 100 },
+		{ "trait": "eye_indigo", "prob": 100 },
+		{ "trait": "SKIN_PINK", "prob": 100 }
 	  ]
   },
   {
     "type": "item_group",
-    "id": "NC_Ham_Bro_misc",
+    "id": "NC_Gaeul_Lee_misc",
     "subtype": "collection",
     "items": [
       { "group": "NC_GUARD_misc" },
-      { "item": "knife_arkansasToothpickZhigh" },
       { "item": "protein_bar_evac" }
     ]
   },
   {
     "type": "item_group",
-    "id": "NC_Ham_Bro_weapon",
+    "id": "NC_Gaeul_Lee_weapon",
     "subtype": "distribution",
-    "entries": [ { "item": "scythe_war" } ]
+    "entries": [ { "item": "impact_knuckle" } ]
   },
   {
     "type": "talk_topic",
-    "id": "TALK_ZHIGHHAMBRO",
-    "dynamic_line": "Jesus Christ!",
+    "id": "TALK_ZHIGHGAEULLEE",
+    "dynamic_line": "Ah, <name_b>!",
     "responses": [
       { "text": "I've got to go…", "topic": "TALK_DONE" }
     ]

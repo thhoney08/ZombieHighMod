@@ -165,7 +165,7 @@
   {
     "type": "npc_class",
     "id": "NC_GANGRANGEDV2",
-    "name": { "str": "Ranged Combatant" },
+    "name": { "str": "Killa" },
     "job_description": "I'm just here for the paycheck.",
     "traits": [
       { "group": "BG_survival_story_CRIMINAL" },
@@ -207,17 +207,14 @@
     "type": "item_group",
     "id": "NC_GANGRANGEDV2_weapon",
     "subtype": "distribution",
-    "entries": [ { "item": "akS74UZhigh", "ammo-item": "545", "charges": 45, "contents-item": [ "shoulder_strap", "barrel_ported", "knife_combat" ] } ]
+    "entries": [ { "item": "m249", "ammo-item": "556_incendiary", "charges": 800, "contents-item": [ "shoulder_strap", "barrel_ported" ] } ]
   },
   {
     "type": "item_group",
     "id": "NC_GANGRANGEDV2_carry",
     "subtype": "collection",
     "items": [
-      { "item": "rpk74mag", "ammo-item": "545", "charges": 45 },
-      { "item": "rpk74mag", "ammo-item": "545", "charges": 45 },
-      { "item": "rpk74mag", "ammo-item": "545", "charges": 45 },
-      { "item": "rpk74mag", "ammo-item": "545", "charges": 45 },
+      { "item": "belt223", "ammo-item": "556_incendiary", "charges": 1000 },
       { "group": "grenades" },
       { "group": "grenades" },
       { "group": "NC_GUARD_misc" },

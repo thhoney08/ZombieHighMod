@@ -53,8 +53,8 @@
       { "group": "ZhighNpc_masks" },
       { "group": "ZhighNpc_underwear_feet_male" },
       { "group": "ZhighNpc_shoes_male" },
+      { "group": "accessory_weaponcarry" },
       { "group": "ZhighNpc_storage" },
-      { "group": "ZhighNpc_stabbing", "container-item": "sheath" },
       { "group": "ZhighNpc_gloves" }
     ]
   },
@@ -65,8 +65,9 @@
     "items": [
       { "group": "NC_GUARD_misc" },
       { "group": "charged_UPS" },
+      { "group": "ZhighNpc_stabbing" },
       { "item": "nail" },
-      { "item": "nailmag", "ammo-item": "nail", "charges": 150 },
+      { "item": "nail" },
       { "item": "nailmag", "ammo-item": "nail", "charges": 150 },
       { "item": "protein_bar_evac" }
     ]
@@ -75,13 +76,16 @@
     "type": "item_group",
     "id": "NC_NAILGUNNER_GUARD_wield",
     "items": [
-      { "item": "marble_sniper_gun", "ammo-item": "nail", "charges": 1, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 20 },
-      { "item": "crossbow_dartZhigh", "ammo-item": "nail", "charges": 1, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 20 },
-      { "item": "hand_crossbow_dartZhigh", "ammo-item": "nail", "charges": 1, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 20 },
+      { "item": "popGun_zhigh", "prob": 10 },
+      { "item": "popGunShotgun_zhigh", "prob": 10 },
+      { "item": "popGunPistol_zhigh", "prob": 10 },
+      { "item": "marble_sniper_gun", "ammo-item": "nail", "charges": 1, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 1 },
+      { "item": "crossbow_dartZhigh", "ammo-item": "nail", "charges": 1, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 1 },
+      { "item": "hand_crossbow_dartZhigh", "ammo-item": "nail", "charges": 1, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 5 },
       { "item": "marble_gun", "ammo-item": "nail", "charges": 5, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 10 },
       { "item": "nailrifle", "ammo-item": "nail", "charges": 150, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 15 },
       { "item": "nailsmg", "ammo-item": "nail", "charges": 100, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 15 },
-      { "item": "nailgun", "ammo-item": "nail", "charges": 25, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 20 }
+      { "item": "nailgun", "ammo-item": "nail", "charges": 25, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 30 }
     ]
   },
   {
