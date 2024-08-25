@@ -38,9 +38,10 @@
       "jacketPd2",
       "bonniePd2",
       "sokolPd2",
+      "sangresPd2",
       "jiroPd2"
     ],
-    "surround_groups": [ [ "GROUP_BLACK_ROAD", 70.0 ] ],
+    "surround_groups": [ [ "GROUP_POLICE", 70.0 ] ],
     "flags": [ "LONE_START" ]
   },
   {
@@ -274,6 +275,11 @@
 	  "zhighEngineer",
 	  "zhighMallninja",
 	  "zhighFurry",
+	  "zhighHonourGuard",
+	  "zhighHonourGuard2",
+	  "zhighKamenRider",
+	  "zhighJOJO",
+	  "zhighKabalMk",
       "zhighFrat"
     ],
     "flags": [ "CITY_START" ]
@@ -416,6 +422,11 @@
 	  "zhighEngineer",
 	  "zhighMallninja",
 	  "zhighFurry",
+	  "zhighHonourGuard",
+	  "zhighHonourGuard2",
+	  "zhighKamenRider",
+	  "zhighJOJO",
+	  "zhighKabalMk",
       "zhighFrat"
     ],
     "start_name": "Zombiefied Highschool",
@@ -437,7 +448,7 @@
       "ANTLERS", "WINGS_BIRD", "WINGS_INSECT",
       "WINGS_BAT", "SMALL", "LARGE"
     ],
-    "flags": [ "CITY_START", "LONE_START" ]
+    "flags": [ "LONE_START" ]
   },
   {
     "type": "scenario",
@@ -477,16 +488,6 @@
   },
   {
     "type": "scenario",
-    "id": "isolationist",
-    "copy-from": "isolationist",
-    "extend": { 
-        "allowed_locs": [ 
-            "sloc_ws_fire_lookout_towerZhigh"
-        ]
-    }
-  },
-  {
-    "type": "scenario",
     "id": "assassination",
     "copy-from": "assassination",
     "extend": { 
@@ -506,7 +507,8 @@
 			"jacketPd2",
 			"bonniePd2",
 			"sokolPd2",
-			"jiroPd2" 
+			"jiroPd2",
+			"sangresPd2"
         ]
       }
   }

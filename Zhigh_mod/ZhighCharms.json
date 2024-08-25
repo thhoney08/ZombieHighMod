@@ -157,7 +157,7 @@
     "type": "GUNMOD",
     "description": "This is a charm with an hourglass.  Increases dispersion but also increases penetration and damage of the gun.",
     "copy-from": "charm_base",
-    "dispersion_modifier": 3,
+    "dispersion_modifier": 6,
     "damage_modifier": { "damage_type": "bash", "amount": 3, "armor_penetration": 2 }
   },
   {
@@ -166,7 +166,7 @@
     "type": "GUNMOD",
     "description": "This is a charm with a thunderbolt.  Increases dispersion but also increases penetration and damage of the gun.",
     "copy-from": "charm_base",
-    "dispersion_modifier": 3,
+    "dispersion_modifier": 6,
     "damage_modifier": { "damage_type": "electric", "amount": 3, "armor_penetration": 2 }
   },
   {
@@ -175,8 +175,97 @@
     "type": "GUNMOD",
     "description": "This is a charm with a shield.  Increases dispersion but also increases penetration and damage of the gun.",
     "copy-from": "charm_base",
-    "dispersion_modifier": 3,
+    "dispersion_modifier": 6,
     "damage_modifier": { "damage_type": "heat", "amount": 3, "armor_penetration": 2 }
+  },
+  {
+    "id": "charm_acid",
+    "name": { "str": "vial charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a vial of green liquid.  Increases dispersion but also increases penetration and damage of the gun.",
+    "copy-from": "charm_base",
+    "dispersion_modifier": 6,
+    "damage_modifier": { "damage_type": "acid", "amount": 3, "armor_penetration": 2 }
+  },
+  {
+    "id": "charm_cold",
+    "name": { "str": "gem charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with an oval gem.  Increases dispersion but also increases penetration and damage of the gun.",
+    "copy-from": "charm_base",
+    "dispersion_modifier": 6,
+    "damage_modifier": { "damage_type": "cold", "amount": 3, "armor_penetration": 2 }
+  },
+  {
+    "id": "charm_cut",
+    "name": { "str": "bowie knife charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a small bowie knife.  Increases dispersion but also increases penetration and damage of the gun.",
+    "copy-from": "charm_base",
+    "dispersion_modifier": 6,
+    "damage_modifier": { "damage_type": "cut", "amount": 3, "armor_penetration": 2 }
+  },
+  {
+    "id": "charm_runeO",
+    "name": { "str": "rune 'o' charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a rune with an O.  Increases dispersion but also increases penetration and damage of the gun.",
+    "copy-from": "charm_base",
+    "dispersion_modifier": 6,
+    "damage_modifier": { "damage_type": "bash", "amount": 1, "armor_penetration": 5 }
+  },
+  {
+    "id": "charm_runeN",
+    "name": { "str": "rune 'n' charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a rune with a N.  Increases dispersion but also increases penetration and damage of the gun.",
+    "copy-from": "charm_base",
+    "dispersion_modifier": 6,
+    "damage_modifier": { "damage_type": "electric", "amount": 1, "armor_penetration": 5 }
+  },
+  {
+    "id": "charm_runeT",
+    "name": { "str": "rune 't' charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a rune with a T.  Increases dispersion but also increases penetration and damage of the gun.",
+    "copy-from": "charm_base",
+    "dispersion_modifier": 6,
+    "damage_modifier": { "damage_type": "heat", "amount": 1, "armor_penetration": 5 }
+  },
+  {
+    "id": "charm_runeR",
+    "name": { "str": "rune 'r' charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a rune with a R.  Increases dispersion but also increases penetration and damage of the gun.",
+    "copy-from": "charm_base",
+    "dispersion_modifier": 6,
+    "damage_modifier": { "damage_type": "acid", "amount": 1, "armor_penetration": 5 }
+  },
+  {
+    "id": "charm_runeD",
+    "name": { "str": "rune 'd' charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a rune with a D.  Increases dispersion but also increases penetration and damage of the gun.",
+    "copy-from": "charm_base",
+    "dispersion_modifier": 6,
+    "damage_modifier": { "damage_type": "cold", "amount": 1, "armor_penetration": 5 }
+  },
+  {
+    "id": "charm_magnet",
+    "name": { "str": "magnet charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a rune with a magnet.  Increases dispersion but also increases penetration and damage of the gun.",
+    "copy-from": "charm_base",
+    "dispersion_modifier": 6,
+    "damage_modifier": { "damage_type": "cut", "amount": 1, "armor_penetration": 5 }
+  },
+  {
+    "id": "charm_watch",
+    "name": { "str": "pocketwatch charm" },
+    "type": "GUNMOD",
+    "description": "This is a charm with a small pocketwatch.  Tells you the time.",
+    "copy-from": "charm_base",
+    "flags": [ "WATCH" ]
   },
   {
     "id": "charm_comp",

@@ -149,11 +149,13 @@
     "description": "Their pupils are dilated and what remains to be seen of the iris and sclera are bloodshot.  This weapon-wielding maniac still breathes, but the zombies treat them like one of their own.",
     "hp": 35,
 	"aggression": 80,
+    "species": [ "ZOMBIE", "HUMAN" ],
 	"speed": 80,
     "melee_dice": 2,
     "melee_dice_sides": 6,
     "starting_ammo": { "rock": 1 },
     "special_attacks": [
+	  [ "PARROT", 5 ],
       {
         "type": "gun",
         "cooldown": 1,
@@ -165,7 +167,7 @@
         "fake_dex": 4,
         "fake_per": 4,
         "require_targeting_player": false,
-        "ranges": [ [ 2, 5, "DEFAULT" ] ],
+        "ranges": [ [ 2, 25, "DEFAULT" ] ],
         "description": "The feral student throws a rock!",
         "no_crits": true
       }
@@ -652,7 +654,7 @@
     "hp": 300,
     "symbol": "D",
     "color": "red",
-    "luminance": 20,
+    "luminance": 2,
     "aggression": 100,
     "morale": 100,
     "vision_day": 50,
@@ -673,11 +675,11 @@
     "copy-from": "mon_zombie_machine",
     "name": { "str": "unknown machine" },
     "default_faction": "zombie",
-    "emit_fields": [ { "emit_id": "emit_zombie2_burst", "delay": "8 m" } ],
+    "emit_fields": [ { "emit_id": "emit_zombie2_burst", "delay": "30 m" } ],
     "armor_bash": 1,
     "armor_cut": 1,
     "armor_bullet": 1,
-    "luminance": 800,
+    "luminance": 8,
     "regenerates": 500
   },
   {

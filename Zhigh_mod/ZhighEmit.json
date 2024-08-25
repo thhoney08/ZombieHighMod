@@ -345,6 +345,31 @@
     "qty": 40
   },
   {
+    "id": "emit_cold_burst",
+    "type": "emit",
+    "//": "thin cold gas",
+    "field": "fd_cold_air1",
+    "intensity": 3,
+    "chance": 1,
+    "qty": 10
+  },
+  {
+    "id": "emit_cold_cloud",
+    "type": "emit",
+    "//": "cold gas",
+    "field": "fd_cold_air3",
+    "intensity": 3,
+    "qty": 20
+  },
+  {
+    "id": "emit_cold_cloud_big",
+    "type": "emit",
+    "//": "thicc cold gas",
+    "field": "fd_cold_air4",
+    "intensity": 3,
+    "qty": 40
+  },
+  {
     "id": "fd_zombie_rift",
     "type": "field_type",
     "intensity_levels": [
@@ -637,7 +662,7 @@
         "dangerous": true,
         "effects": [
           {
-            "effect_id": "healing_medkit",
+            "effect_id": "healing_gas_zhigh",
             "body_part": "num_bp",
             "intensity": 1,
             "min_duration": "10 seconds",
@@ -655,7 +680,7 @@
         "color": "light_gray",
         "effects": [
           {
-            "effect_id": "healing_medkit",
+            "effect_id": "healing_gas_zhigh",
             "body_part": "num_bp",
             "intensity": 1,
             "min_duration": "20 seconds",
@@ -673,7 +698,7 @@
         "color": "light_gray",
         "effects": [
           {
-            "effect_id": "healing_medkit",
+            "effect_id": "healing_gas_zhigh",
             "body_part": "num_bp",
             "intensity": 1,
             "min_duration": "30 seconds",

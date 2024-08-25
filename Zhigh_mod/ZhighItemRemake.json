@@ -1252,14 +1252,6 @@
     "handling_modifier": 25
   },
   {
-    "id": "belt_clip",
-    "copy-from": "belt_clip",
-    "type": "GUNMOD",
-    "name": { "str": "belt clip" },
-    "mod_target_category": [ [ "PISTOLS" ], [ "REVOLVERS" ] ],
-    "flags": [ "BELT_CLIP", "IS_ARMOR", "SKINTIGHT", "WATER_FRIENDLY" ]
-  },
-  {
     "id": "tripwire",
     "copy-from": "tripwire",
     "type": "GENERIC",
@@ -2209,7 +2201,7 @@
     "type": "GUN",
     "name": { "str": "makeshift chemical thrower" },
     "range": 18,
-    "handling": 85,
+    "handling": 1,
     "modes": [ [ "DEFAULT", "spray", 5 ] ],
     "ranged_damage": { "damage_type": "bash", "amount": 4, "armor_penetration": 50 },
     "flags": [ "NEVER_JAMS", "NON_FOULING" ]
@@ -2433,7 +2425,7 @@
       [ "PISTOLS" ],
       [ "REVOLVERS" ]
     ],
-    "flags": [ "IS_ARMOR", "COMPACT", "WATER_FRIENDLY" ]
+    "flags": [ "AURA", "IS_ARMOR", "COMPACT", "WATER_FRIENDLY" ]
   },
   {
     "id": "cordless_drill",

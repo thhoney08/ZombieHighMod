@@ -16,7 +16,7 @@
     "color": "white",
     "covers": [ "mouth", "eyes" ],
     "coverage": 95,
-    "encumbrance": 10,
+    "encumbrance": 3,
     "warmth": 1,
     "material_thickness": 1,
     "environmental_protection": 1,
@@ -142,6 +142,20 @@
     "copy-from": "mask_paper_base"
   },
   {
+    "id": "mask_Grifter",
+    "name": { "str": "pearl mask" },
+    "type": "ARMOR",
+    "description": "This is a mask, suitable for a con artist.  You may not want to wear this, but have to if needed.",
+    "copy-from": "mask_paper_base"
+  },
+  {
+    "id": "mask_Stoic",
+    "name": { "str": "duke mask" },
+    "type": "ARMOR",
+    "description": "This is a mask, suitable for a professional art thief.  Let's get some... souvenirs.",
+    "copy-from": "mask_paper_base"
+  },
+  {
     "id": "mask_Psychopath",
     "name": { "str": "jacket mask" },
     "type": "ARMOR",
@@ -160,6 +174,13 @@
     "name": { "str": "clown mask" },
     "type": "ARMOR",
     "description": "This is a mask, based on some clown.  It looks creepy.",
+    "copy-from": "mask_paper_base"
+  },
+  {
+    "id": "mask_Ghost",
+    "name": { "str": "ghost mask" },
+    "type": "ARMOR",
+    "description": "This is a mask, based on some ghost.  It looks creepy.",
     "copy-from": "mask_paper_base"
   },
   {
@@ -381,6 +402,14 @@
     "copy-from": "mask_paper_base"
   },
   {
+    "id": "mask_hare2",
+    "looks_like": "mask_hare",
+    "name": { "str": "hare mask" },
+    "type": "ARMOR",
+    "description": "This is a mask, based on a hare.",
+    "copy-from": "mask_paper_base"
+  },
+  {
     "id": "mask_grasshopper",
     "name": { "str": "grasshopper mask" },
     "type": "ARMOR",
@@ -451,12 +480,44 @@
     "copy-from": "mask_paper_base"
   },
   {
+    "id": "mask_beagle",
+    "name": { "str": "beagle mask" },
+    "type": "ARMOR",
+    "description": "This is a mask, based on a beagle.",
+    "copy-from": "mask_paper_base"
+  },
+  {
     "id": "mask_paintball",
     "repairs_like": "mask_gas",
     "type": "ARMOR",
     "name": { "str": "paintball mask" },
     "//": "Jason-type costume masks are much cheaper and less protective.",
     "description": "A protective face mask made of thick plastic.  Commonly worn by paintball players.",
+    "weight": "228 g",
+    "volume": "750 ml",
+    "price": "40 USD",
+    "price_postapoc": "250 cent",
+    "to_hit": -3,
+    "material": [ "plastic" ],
+    "symbol": "[",
+    "looks_like": "glasses_safety",
+    "color": "white",
+    "covers": [ "mouth", "eyes" ],
+    "coverage": 95,
+    "encumbrance": 20,
+    "warmth": 5,
+    "material_thickness": 3,
+    "environmental_protection": 1,
+    "valid_mods": [ "steel_padded", "alloy_padded", "resized_large" ],
+    "flags": [ "WATER_FRIENDLY", "STURDY" ]
+  },
+  {
+    "id": "mask_kabalZhigh",
+    "repairs_like": "mask_gas",
+    "type": "ARMOR",
+    "name": { "str": "kabal mask" },
+    "//": "Jason-type costume masks are much cheaper and less protective.",
+    "description": "A protective face mask made of thick plastic.  Good for cospaying a fighting game character.",
     "weight": "228 g",
     "volume": "750 ml",
     "price": "40 USD",
@@ -497,6 +558,27 @@
     "flags": [ "OVERSIZE", "BELTED", "BLOCK_WHILE_WORN", "POWERARMOR_COMPATIBLE" ]
   },
   {
+    "id": "mask_tenguZhigh",
+    "type": "ARMOR",
+    "name": { "str": "tengu mask" },
+    "description": "This is a mask made from wood.  Pretty fancy, and it will help the user from one's face being eaten.  Wearing it dosen't have any special effects.",
+    "weight": "2 kg",
+    "volume": "2 L",
+    "price": "50 USD",
+    "price_postapoc": "5 USD",
+    "to_hit": -1,
+    "bashing": 8,
+    "material": [ "wood" ],
+    "symbol": "[",
+    "color": "brown",
+    "covers": [ "mouth", "eyes" ],
+    "coverage": 90,
+    "encumbrance": 15,
+    "material_thickness": 3,
+    "techniques": [ "WBLOCK_2" ],
+    "flags": [ "SUPER_FANCY", "OVERSIZE", "BELTED", "BLOCK_WHILE_WORN", "POWERARMOR_COMPATIBLE" ]
+  },
+  {
     "id": "mask_menpo",
     "type": "ARMOR",
     "name": { "str": "menpo" },
@@ -528,6 +610,26 @@
     "encumbrance": 13,
     "material_thickness": 4,
     "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 }
+  },
+  {
+    "id": "flowerCrownZhigh",
+    "type": "ARMOR",
+    "category": "clothing",
+    "symbol": "[",
+    "color": "blue",
+    "name": { "str": "flower crown" },
+    "description": "This is a handmade flower crown.  Fragile but fancy.",
+    "price": "40 USD",
+    "price_postapoc": "15 USD",
+    "material": [ "veggy" ],
+    "flags": [ "FANCY", "DURABLE_MELEE", "OVERSIZE", "BELTED", "ALLOWS_NATURAL_ATTACKS" ],
+    "weight": "228 g",
+    "volume": "750 ml",
+    "bashing": 2,
+    "covers": [ "head" ],
+    "encumbrance": 1,
+    "coverage": 10,
+    "material_thickness": 1
   },
   {
     "id": "tactical_respirator",
@@ -817,5 +919,28 @@
     "environmental_protection_with_filter": 16,
     "max_charges": 80,
     "initial_charges": 80
+  },
+  {
+    "id": "luchador_maskZhigh",
+    "repairs_like": "mask_gas",
+    "type": "ARMOR",
+    "name": { "str": "luchador mask" },
+    "description": "A tight mask made of leather.  A symbol of a bygone world.",
+    "weight": "210 g",
+    "volume": "1 L",
+    "price": "40 USD",
+    "price_postapoc": "50 cent",
+    "to_hit": -3,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "looks_like": "balclava",
+    "color": "dark_gray",
+    "covers": [ "head", "eyes", "mouth" ],
+    "coverage": 100,
+    "encumbrance": 30,
+    "warmth": 30,
+    "material_thickness": 2,
+    "environmental_protection": 1,
+    "flags": [ "VARSIZE", "SKINTIGHT" ]
   }
 ]

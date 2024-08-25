@@ -887,39 +887,6 @@
     "color": "light_gray"
   },
   {
-    "id": "signalMarker0Commander",
-	"looks_like": "signalMarker",
-    "type": "TOOL",
-    "category": "tools",
-    "name": { "str": "modified signal marker", "str_pl": "modified signal markers" },
-    "description": "This is a portable radio-like device.  Modified by a special person, you could call for help.  This one has extra mods, which makes it useable for almost forever, if one have enough time.  Radioactive when broken, so don't try to break it.",
-    "weight": "395 g",
-    "volume": "300 ml",
-    "price": "10 USD",
-    "price_postapoc": "5 USD",
-    "to_hit": -1,
-    "bashing": 4,
-    "use_action": {
-		"type": "place_npc",
-		"npc_class_id": "GRUNT_BASEBALL_MERC",
-		"summon_msg": "A survivor got your signal and surveys the area!",
-		"place_randomly": false,
-		"moves": 180
-    },
-    "flags": [ "LEAK_DAM", "RADIOACTIVE" ],
-    "material": [ "plastic", "aluminum" ],
-    "symbol": ";",
-    "charges_per_use": 1,
-    "max_charges": 3,
-    "initial_charges": 3,
-    "relic_data":
-	{
-		"charges_per_activation": 1,
-		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "30 m", "rate": 1 } ]
-    },
-    "color": "light_gray"
-  },
-  {
     "id": "signalMarker1",
     "type": "TOOL",
     "category": "tools",
@@ -1457,7 +1424,7 @@
     "name": { "str": "wallet" },
     "description": "An average wallet.  Useful for holding cards and stuff.",
     "price": "100 USD",
-    "price_postapoc": "10 cent",
+    "price_postapoc": "10 USD",
     "material": [ "fur", "leather" ],
     "weight": "106 g",
     "volume": "105 ml",
@@ -1481,7 +1448,7 @@
     "name": { "str": "long wallet" },
     "description": "A fancy long wallet.  Useful for holding cards and stuff.",
     "price": "100 USD",
-    "price_postapoc": "10 cent",
+    "price_postapoc": "20 USD",
     "material": [ "gold", "fur", "leather" ],
     "weight": "166 g",
     "volume": "205 ml",
@@ -1506,7 +1473,7 @@
     "material": [ "plastic" ],
     "weight": "56 g",
     "volume": "55 ml",
-    "price_postapoc": "10 USD",
+    "price_postapoc": "8 USD",
     "use_action": {
       "type": "holster",
       "holster_prompt": "Stash cards",
@@ -1525,7 +1492,7 @@
     "color": "white",
     "name": { "str": "duct tape wallet" },
     "description": "A wallet, crudely made with duct tape and cardboard.  Useful for holding cards and stuff.",
-    "price": "100 USD",
+    "price": "10 USD",
     "price_postapoc": "10 cent",
     "material": [ "plastic", "cardboard" ],
     "weight": "116 g",
@@ -1541,5 +1508,88 @@
       "flags": [ "CARDZHIGH" ]
     },
     "to_hit": -3
+  },
+  {
+    "type": "GENERIC",
+    "id": "bookCardHolderZhigh",
+    "symbol": ",",
+    "color": "white",
+    "name": { "str": "book card holder" },
+    "description": "A book sized card holder.  Useful for holding cards and stuff.",
+    "price": "100 USD",
+    "price_postapoc": "10 cent",
+    "material": [ "plastic", "leather" ],
+    "weight": "600 g",
+    "volume": "500 ml",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stash cards",
+      "holster_msg": "You stash your %s.",
+      "multi": 30,
+      "min_volume": "0 ml",
+      "max_volume": "5 ml",
+      "draw_cost": 90,
+      "flags": [ "CARDZHIGH" ]
+    },
+    "to_hit": 1
+  },
+  {
+    "type": "GENERIC",
+	"looks_like": "bookCardHolderZhigh",
+    "id": "rideBookerZhigh",
+    "symbol": ",",
+    "color": "white",
+    "name": { "str": "limited edition book card holder" },
+    "description": "A book sized card holder, limited edition.  Useful for holding lots of cards and stuff.",
+    "price": "800 USD",
+    "price_postapoc": "80 USD",
+    "material": [ "superalloy", "alien_resin" ],
+    "weight": "800 g",
+    "volume": "600 ml",
+    "bashing": 10,
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stash cards",
+      "holster_msg": "You stash your %s.",
+      "multi": 80,
+      "min_volume": "0 ml",
+      "max_volume": "5 ml",
+      "draw_cost": 50,
+      "flags": [ "CARDZHIGH" ]
+    },
+    "techniques": [ "WBLOCK_2", "WIDE" ],
+    "flags": [ "UNBREAKABLE_MELEE" ],
+    "to_hit": 3
+  },
+  {
+    "id": "luteZhigh",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "lute" },
+    "description": "A standard factory-made lute.  Looks to be in working condition.",
+    "weight": "2000 g",
+    "volume": "3 L",
+    "price": "75 USD",
+    "price_postapoc": "5 USD",
+    "to_hit": 2,
+    "bashing": 7,
+    "material": [ "wood", "iron" ],
+    "symbol": "|",
+    "color": "white",
+    "initial_charges": 1,
+    "max_charges": 1,
+    "use_action": {
+      "type": "musical_instrument",
+      "volume": 18,
+      "fun": -3,
+      "fun_bonus": 2,
+      "speed_penalty": 18,
+      "description_frequency": 30,
+      "player_descriptions": [
+        "You play a little tune on your lute.",
+        "You play a bluegrass tune on your lute.",
+        "You play a quick, Southern ditty on your lute."
+      ]
+    }
   }
 ]

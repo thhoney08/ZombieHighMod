@@ -532,7 +532,14 @@
     "time": "5 m",
     "autolearn": true,
     "tools": [ [ [ "mold_plastic", -1 ] ], [ [ "surface_heat", 2, "LIST" ] ] ],
-    "components": [ [ [ "plastic_chunk", 10 ] ], [ [ "acid", 10 ] ] ]
+    "components": [
+		[ [ "plastic_chunk", 10 ] ],
+		[ [ "chem_sulphuric_acid", 10 ],
+		  [ "chem_muriatic_acid", 10 ],
+		  [ "chem_nitric_acid", 10 ],
+		  [ "chem_acetic_acid", 10 ],
+		  [ "acid", 10 ] ]
+	    ]
   },
   {
     "type": "recipe",
@@ -814,7 +821,15 @@
     "book_learn": [ [ "recipe_bullets", 3 ], [ "manual_shotgun", 3 ] ],
     "charges": 1,
     "using": [ [ "shot_forming", 1 ], [ "ammo_shot", 1 ] ],
-    "components": [ [ [ "gunpowder", 4 ] ], [ [ "glass_shard", 2 ] ], [ [ "acid", 1 ] ] ]
+    "components": [
+		[ [ "gunpowder", 4 ] ],
+		[ [ "glass_shard", 2 ] ],
+		[ [ "chem_sulphuric_acid", 1 ],
+		  [ "chem_muriatic_acid", 1 ],
+		  [ "chem_nitric_acid", 1 ],
+		  [ "chem_acetic_acid", 1 ],
+		  [ "acid", 1 ] ]
+	    ]
   },
   {
     "result": "rubber_slug",
@@ -2476,6 +2491,56 @@
     ]
   },
   {
+    "result": "mask_tenguZhigh",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "45 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
+    "components": [
+      [ [ "nail", 8 ] ],
+      [ [ "2x4", 4 ], [ "wood_panel", 1 ] ],
+      [ [ "rag", 2 ], [ "felt_patch", 2 ], [ "fur", 2 ], [ "leather", 2 ] ]
+    ]
+  },
+  {
+    "result": "flowerCrownZhigh",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "fabrication",
+    "time": "30 m",
+    "autolearn": true,
+    "components": [
+      [ [ "poppy_bud", 3 ],
+        [ "sunflower", 3 ],
+		[ "chamomile", 3 ],
+        [ "lotus", 3 ],
+		[ "spurge", 3 ],
+		[ "leech_flower", 3 ],
+		[ "hops", 3 ]
+	  ]
+    ]
+  },
+  {
+    "result": "hat_boonieTf2",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "time": "25 m",
+    "autolearn": true,
+    "components": [ 
+		[ [ "hat_boonie", 1 ] ],
+		[ [ "10gal_hat", 1 ] ],
+		[ [ "cowboy_hat", 1 ], [ "cowboy_hat_zhigh", 1 ] ],
+		[ [ "tophat", 1 ] ]
+	]
+  },
+  {
     "result": "mask_menpo",
     "type": "recipe",
     "category": "CC_ARMOR",
@@ -2989,6 +3054,28 @@
   },
   {
     "type": "recipe",
+    "result": "mask_Grifter",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "time": "15 m",
+    "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
+    "components": [ [ [ "paper", 20 ] ], [ [ "adhesive", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "mask_Stoic",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "time": "15 m",
+    "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
+    "components": [ [ [ "paper", 20 ] ], [ [ "adhesive", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
     "result": "mask_DarkSkies",
     "category": "CC_ARMOR",
     "subcategory": "CSC_ARMOR_HEAD",
@@ -3462,6 +3549,17 @@
   },
   {
     "type": "recipe",
+    "result": "mask_beagle",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "time": "15 m",
+    "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
+    "components": [ [ [ "paper", 20 ] ], [ [ "adhesive", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
     "result": "signalMarker",
     "category": "CC_ELECTRONIC",
     "subcategory": "CSC_ELECTRONIC_TOOLS",
@@ -3663,7 +3761,12 @@
     "autolearn": true,
     "reversible": false,
     "components": [
-      [ [ "acid", 3 ] ],
+	  [ [ "chem_sulphuric_acid", 3 ],
+	    [ "chem_muriatic_acid", 3 ],
+	    [ "chem_nitric_acid", 3 ],
+	    [ "chem_acetic_acid", 3 ],
+	    [ "acid", 3 ]
+	  ],
       [ [ "glass_shard", 2 ] ],
       [
         [ "bolt_simple_wood", 1 ],
@@ -4413,7 +4516,11 @@
         [ "feces_manure", 1 ],
         [ "feces_roach", 1 ],
         [ "fetid_goop", 1 ],
-        [ "acid", 1 ],
+		[ "chem_sulphuric_acid", 1 ],
+	    [ "chem_muriatic_acid", 1 ],
+	    [ "chem_nitric_acid", 1 ],
+	    [ "chem_acetic_acid", 1 ],
+	    [ "acid", 1 ],
         [ "sewage", 1 ],
         [ "dogbane", 1 ],
         [ "morphine", 1 ],
@@ -4457,7 +4564,11 @@
         [ "feces_manure", 1 ],
         [ "feces_roach", 1 ],
         [ "fetid_goop", 1 ],
-        [ "acid", 1 ],
+		[ "chem_sulphuric_acid", 1 ],
+	    [ "chem_muriatic_acid", 1 ],
+	    [ "chem_nitric_acid", 1 ],
+	    [ "chem_acetic_acid", 1 ],
+	    [ "acid", 1 ],
         [ "sewage", 1 ],
         [ "dogbane", 1 ],
         [ "morphine", 1 ],
@@ -4502,7 +4613,11 @@
         [ "feces_roach", 2 ],
         [ "fetid_goop", 2 ],
         [ "goo_mix", 2 ],
-        [ "acid", 2 ],
+		[ "chem_sulphuric_acid", 2 ],
+	    [ "chem_muriatic_acid", 2 ],
+	    [ "chem_nitric_acid", 2 ],
+	    [ "chem_acetic_acid", 2 ],
+	    [ "acid", 2 ],
         [ "sewage", 2 ],
         [ "dogbane", 2 ],
         [ "morphine", 2 ],
@@ -4929,7 +5044,13 @@
     "components": [
       [ [ "duct_tape", 5 ] ],
       [ [ "jar_glass", 1 ], [ "bottle_glass", 1 ], [ "clay_canister", 2 ], [ "flask_glass", 2 ] ],
-      [ [ "acid", 1 ] ],
+      [ 
+		[ "chem_sulphuric_acid", 1 ],
+	    [ "chem_muriatic_acid", 1 ],
+	    [ "chem_nitric_acid", 1 ],
+	    [ "chem_acetic_acid", 1 ],
+	    [ "acid", 1 ]
+	  ],
       [
         [ "arrow_field_point_fletched", 1 ],
         [ "arrow_fire_hardened_fletched", 1 ],
@@ -5197,6 +5318,18 @@
     "time": "5 m",
     "autolearn": true,
     "components": [ [ [ "tool_rocket_candy", 1 ] ], [ [ "chem_match_head_powder", 20 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "pebble_rubber",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "25 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "chunk_rubber", 3 ] ] ]
   },
   {
     "type": "recipe",
@@ -5490,7 +5623,12 @@
     "tools": [ [ [ "surface_heat", 25, "LIST" ] ] ],
     "components": [
       [ [ "paper", 6 ], [ "rolling_paper", 36 ] ],
-      [ [ "acid", 2 ], [ "chem_sulphuric_acid", 2 ], [ "chem_nitric_acid", 2 ] ],
+		[ [ "chem_sulphuric_acid", 10 ],
+		  [ "chem_muriatic_acid", 10 ],
+		  [ "chem_nitric_acid", 10 ],
+		  [ "chem_acetic_acid", 10 ],
+		  [ "acid", 10 ]
+	    ],
       [ [ "ammonia", 1 ], [ "chem_ethanol", 250 ], [ "denat_alcohol", 250 ] ],
       [
         [ "soap", 3 ],
@@ -6503,19 +6641,6 @@
     ]
   },
   {
-    "type": "recipe",
-    "result": "gootrapZhigh",
-    "category": "CC_OTHER",
-    "subcategory": "CSC_OTHER_TRAPS",
-    "skill_used": "fabrication",
-    "difficulty": 1,
-    "time": "5 m",
-    "autolearn": true,
-    "//": "'stick the blob globs in a can and seal it' does not seem hugely challenging",
-    "qualities": [ { "id": "SCREW", "level": 1 } ],
-    "components": [ [ [ "canister_empty", 1 ] ], [ [ "slime_scrap", 10 ] ] ]
-  },
-  {
     "result": "kusarigamaSickle",
     "type": "recipe",
     "category": "CC_WEAPON",
@@ -6560,6 +6685,24 @@
   },
   {
     "type": "recipe",
+    "result": "electric_trapZhigh",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TRAPS",
+    "skill_used": "traps",
+    "difficulty": 4,
+    "time": "55 m",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_anarch", 4 ], [ "advanced_electronics", 4 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "tripwire", 1 ] ],
+      [ [ "solder_wire", 5 ] ],
+      [ [ "amplifier", 2 ], [ "power_supply", 2 ] ],
+      [ [ "cable", 5 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
     "result": "jumpBoardZhigh",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_TRAPS",
@@ -6576,6 +6719,58 @@
   },
   {
     "type": "recipe",
+    "result": "gootrapZhigh",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TRAPS",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "5 m",
+    "autolearn": true,
+    "//": "'stick the blob globs in a can and seal it' does not seem hugely challenging",
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [ [ [ "canister_empty", 1 ] ], [ [ "slime_scrap", 10 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "LESION_trapZhigh",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TRAPS",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "result_mult": 2,
+    "time": "5 m",
+    "autolearn": true,
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+		[ [ "canister_empty", 1 ] ],
+		[ [ "poison_mix", 2 ], [ "goo_mix", 2 ], [ "goo_mix2", 1 ] ],
+		[ [ "nail", 10 ], [ "combatnail", 10 ], [ "poison_nail", 10 ], [ "supernail", 10 ] ]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "trap_lightZhigh",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TRAPS",
+    "skill_used": "traps",
+    "time": "45 m",
+    "autolearn": true,
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "atomic_lamp_off", 1 ],
+		[ "atomic_light_off", 1 ],
+		[ "electric_lantern", 1 ],
+		[ "flashlight", 1 ],
+		[ "lightstrip", 1 ],
+		[ "lightstrip_inactive", 1 ],
+		[ "reading_light", 1 ],
+		[ "smart_lamp", 1 ],
+		[ "heavy_flashlight", 1 ]
+	  ]
+    ]
+  },
+  {
+    "type": "recipe",
     "result": "walletDuctTapeZhigh",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_OTHER",
@@ -6585,5 +6780,53 @@
     "autolearn": true,
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [ [ [ "cardboard", 40 ] ], [ [ "duct_tape", 60 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "hwandoZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "fabrication",
+    "difficulty": 8,
+    "time": "12 h",
+    "book_learn": [ [ "textbook_weapeast", 8 ] ],
+    "using": [ [ "blacksmithing_advanced", 8 ], [ "steel_standard", 2 ] ],
+    "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "fabric_hides_any", 2, "LIST" ] ] ]
+  },
+  {
+    "result": "KorBrigandineKevZhigh",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "skills_required": [ "fabrication", 5 ],
+    "time": "2 h 10 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 120 ] ],
+    "components": [
+      [ [ "KorBrigandineZhigh", 1 ] ],
+      [ [ "kevlar", 1 ], [ "modularvest", 1 ], [ "kevlar_plate", 12 ] ],
+      [ [ "rag", 14 ] ],
+      [ [ "duct_tape", 100 ] ]
+    ]
+  },
+  {
+    "result": "paperLantern",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "skills_required": [ "survival", 1 ],
+    "time": "15 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+		[ [ "paper", 50 ] ],
+		[ [ "wire", 1 ] ],
+		[ [ "aluminum_foil", 3 ] ],
+		[ [ "stick", 1 ], [ "broom", 1 ], [ "2x4", 1 ], [ "pool_cue", 1 ], [ "pointy_stick", 1 ] ]
+    ]
   }
 ]

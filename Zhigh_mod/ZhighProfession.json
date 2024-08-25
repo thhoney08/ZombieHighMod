@@ -1199,7 +1199,7 @@
         ],
         "entries": [ 
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "guidebook", "custom-flags": [ "auto_wield" ] } ]
+                { "item": "rideBookerZhigh", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -1442,7 +1442,7 @@
       "both": {
         "items": [
           "dress_shirt_zhigh",
-          "peacoat",
+          "coat_fur_sfZhigh",
           "zhigh_smart_phone",
           "socks",
           "dress_shoes",
@@ -1466,7 +1466,7 @@
     "id": "zhighAnimator",
     "name": "Student - Animator",
     "description": "You did not lose your hope about drawing comics, even after the apocalypse happened.  Unfortunately, hope does not ensure your life.",
-    "points": -2,
+    "points": 1,
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1479,6 +1479,7 @@
           "paper",
           "pen",
           "pencil",
+          "inactive_marusaur",
           "wristwatch"
         ],
         "entries": [ 
@@ -1494,7 +1495,7 @@
     "id": "zhighSplasher",
     "name": "Student - Splasher",
     "description": "As a member of the sea cadet corps, you always liked to go to sea and loved sea-related stuff.  Now, you have to go to sea or aquarium by yourself, without others' help.  Your will and wits that you've learned during training should keep you survive... or not.",
-    "points": -1,
+    "points": 1,
     "skills": [
       { "level": 1, "name": "driving" },
       { "level": 1, "name": "pistol" },
@@ -1513,6 +1514,8 @@
           "sneakers",
           "survival_kit",
           "water_clean",
+          "water_clean",
+          "mbag",
           "shorts_zhigh_marine",
           "wristwatch"
         ],
@@ -2009,7 +2012,6 @@
         "items": [
           "under_armor",
           "under_armor_shorts",
-          "cowboy_hat",
           "socks",
           "pants_zhigh",
           "chaps_leather",
@@ -2021,11 +2023,12 @@
           "sheriffshirt"
         ],
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "bandolier_pistol", "contents-group": "bandolier_zhigh_gunslinger" },
-                { "item": "coffee", "container-item": "flask_hip" },
-                { "item": "pistol_flintlock_revolver", "ammo-item": "flintlock_ammo", "charges": 6, "container-item": "sholster" }
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "NC_COWBOY_hat" },
+			{ "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "bandolier_pistol", "contents-group": "bandolier_zhigh_gunslinger" },
+			{ "item": "coffee", "container-item": "flask_hip" },
+			{ "item": "pistol_flintlock_revolver", "ammo-item": "flintlock_ammo", "charges": 6, "container-item": "sholster" }
         ]
       }
     },
@@ -2049,7 +2052,6 @@
         "items": [
           "under_armor",
           "under_armor_shorts",
-          "cowboy_hat",
           "socks",
           "pants_zhigh",
           "chaps_leather",
@@ -2064,11 +2066,12 @@
           "sheriffshirt"
         ],
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "bandolier_pistol", "contents-group": "bandolier_zhigh_gunslinger" },
-                { "item": "coffee", "container-item": "flask_hip" },
-                { "item": "pistol_flintlock", "ammo-item": "flintlock_ammo", "charges": 6, "container-item": "sholster" }
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "NC_COWBOY_hat" },
+			{ "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "bandolier_pistol", "contents-group": "bandolier_zhigh_gunslinger" },
+			{ "item": "coffee", "container-item": "flask_hip" },
+			{ "item": "pistol_flintlock", "ammo-item": "flintlock_ammo", "charges": 6, "container-item": "sholster" }
         ]
       }
     },
@@ -3435,13 +3438,14 @@
           "pipe_cleaner"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "rifle_flintlock", "ammo-item": "flintlock_ammo", "charges": 1, "contents-item": [ "shoulder_strap", "makeshift_bayonet" ] },
-                { "item": "flintlock_pouch", "contents-group": "flintlock_pouch_reenactor" },
-                { "item": "flintlock_ammo", "charges": 9 },
-                { "item": "vinegar", "container-item": "bottle_plastic_small" },
-                { "item": "lamp_oil", "container-item": "bottle_plastic_small" },
-                { "item": "cavalry_sabre_fake", "container-item": "scabbard" } ]
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "rifle_flintlock", "ammo-item": "flintlock_ammo", "charges": 1, "contents-item": [ "shoulder_strap", "makeshift_bayonet" ] },
+			{ "item": "flintlock_pouch", "contents-group": "flintlock_pouch_reenactor" },
+			{ "item": "flintlock_ammo", "charges": 9 },
+			{ "item": "vinegar", "container-item": "bottle_plastic_small" },
+			{ "item": "lamp_oil", "container-item": "bottle_plastic_small" },
+			{ "item": "cavalry_sabre_fake", "container-item": "scabbard" }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -3470,8 +3474,9 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "coffeemaker", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "coffeemaker", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -3499,8 +3504,7 @@
           "cardmultitool",
           "gold_watch"
         ],
-        "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+        "entries": [ { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -3533,8 +3537,9 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "horse_tack", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "horse_tack", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -3569,9 +3574,10 @@
           "diving_watch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "diveknife", "container-item": "sheath" },
-                { "item": "doublespeargun", "ammo-item": "m_fishspear", "charges": 2, "contents-item": "shoulder_strap", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "diveknife", "container-item": "sheath" },
+			{ "item": "doublespeargun", "ammo-item": "m_fishspear", "charges": 2, "contents-item": "shoulder_strap", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "tie_necktie_zhigh", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "skirt_zhigh" ]
@@ -3593,8 +3599,7 @@
           "dive_bag",
           "goggles_swim"
         ],
-        "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+        "entries": [ { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
       },
       "male": [ "trunks" ],
       "female": [ "wetsuit_spring" ]
@@ -3618,8 +3623,9 @@
           "maid_hat"
         ],
         "entries": [ 
-              { "item": "knife_steak", "custom-flags": [ "auto_wield" ] },
-              { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "item": "knife_steak", "custom-flags": [ "auto_wield" ] },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
       },
       "male": [ "briefs", "socks" ],
       "female": [ "panties", "bra", "stockings" ]
@@ -3643,8 +3649,9 @@
           "tux"
         ],
         "entries": [ 
-              { "item": "knife_steak", "custom-flags": [ "auto_wield" ] },
-              { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "item": "knife_steak", "custom-flags": [ "auto_wield" ] },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
       },
       "male": [ "briefs" ],
       "female": [ "panties", "bra" ]
@@ -3676,10 +3683,11 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "item": "BBclip300release", "ammo-item": "bbincen", "charges": 300 },
-                { "item": "BBclip300release", "ammo-item": "bbPlastic", "charges": 300 },
-                { "item": "bbmachinepistol", "ammo-item": "bbPlastic", "charges": 300, "container-item": "holster" },
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "item": "BBclip300release", "ammo-item": "bbincen", "charges": 300 },
+			{ "item": "BBclip300release", "ammo-item": "bbPlastic", "charges": 300 },
+			{ "item": "bbmachinepistol", "ammo-item": "bbPlastic", "charges": 300, "container-item": "holster" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -3697,8 +3705,8 @@
       "both": {
         "items": [ "polo_shirt", "socks", "golf_shoes", "hat_golf", "gloves_golf", "zhigh_smart_phone", "wristwatch" ],
         "entries": [ 
-              { "item": "golf_club", "custom-flags": [ "auto_wield" ] },
-              { "item": "golf_club", "container-item": "golf_bag" }
+			{ "item": "golf_club", "custom-flags": [ "auto_wield" ] },
+			{ "item": "golf_club", "container-item": "golf_bag" }
         ]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
@@ -3724,9 +3732,9 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "item": "medium_disposable_cell", "ammo-item": "battery", "charges": 1500, "container-item": "knuckle_elec", "custom-flags": [ "auto_wield" ] },
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "group": "charged_tazer" }
+			{ "item": "medium_disposable_cell", "ammo-item": "battery", "charges": 1500, "container-item": "knuckle_elec", "custom-flags": [ "auto_wield" ] },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "charged_tazer" }
          ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
@@ -3760,9 +3768,10 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "item": "axe_ring", "contents-item": "axe_combat" },
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "grapnel", "custom-flags": [ "auto_wield" ] } ]
+			{ "item": "axe_ring", "contents-item": "axe_combat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "grapnel", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -3795,9 +3804,10 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_coat" },
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "hammer_sledge_engineer", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "hammer_sledge_engineer", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -3823,11 +3833,12 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_coat" },
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-				{ "group": "ZhighNpc_masks" },
-				{ "group": "ZhighNpc_stabbing", "container-item": "sheath" },
-                { "group": "NC_JUVENILE_MERC_wield", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "ZhighNpc_masks" },
+			{ "group": "ZhighNpc_stabbing", "container-item": "sheath" },
+			{ "group": "NC_JUVENILE_MERC_wield", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -3846,7 +3857,7 @@
       { "level": 1, "name": "throw" },
       { "level": 2, "name": "melee" },
       { "level": 1, "name": "unarmed" },
-      { "level": 1, "name": "bashing" },
+      { "level": 1, "name": "stabbing" },
       { "level": 1, "name": "cutting" }
     ],
     "items": {
@@ -3869,9 +3880,9 @@
           "smokebomb_makeshift"
         ],
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-				{ "item": "tanto", "container-item": "sheath" },
-                { "item": "ninjatoSwordZhigh", "custom-flags": [ "auto_wield" ] }
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "tanto", "container-item": "sheath" },
+			{ "item": "ninjatoSwordZhigh", "custom-flags": [ "auto_wield" ] }
 		]
       },
       "male": [ "pants_zhigh" ],
@@ -3903,9 +3914,9 @@
           "wristwatch"
         ],
         "entries": [
-                { "group": "ZhighNpc_coat" },
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "popGunPistol_zhigh", "custom-flags": [ "auto_wield" ] }
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "popGunPistol_zhigh", "custom-flags": [ "auto_wield" ] }
 		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
@@ -3918,7 +3929,7 @@
     "id": "zhighFurry",
     "name": "Student - Fursuit Actor",
     "description": "Some made fun of you, others bullied you when you were in a suit.  Now is the time to pay them back.",
-    "points": -1,
+    "points": 1,
     "skills": [
 		{ "level": 1, "name": "melee" },
 		{ "level": 1, "name": "tailor" },
@@ -3946,6 +3957,196 @@
   },
   {
     "type": "profession",
+    "id": "zhighMystery",
+    "name": "Student - Mystery Club Member",
+    "description": "You were preparing for your mystery club when the world ended.  Damn, who cares about mysteries when an undead is trying to eat your face?",
+    "points": -3,
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "socks",
+          "sneakers",
+          "mystery_cloakZhigh",
+          "wristwatch"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "kirpan_cheap", "container-item": "sheath" }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighHonourGuard",
+    "name": "Student - Honour Guard Leader",
+    "description": "You were supposed to act as a honour guard at a historical exhibition, which was canceled forever.  Lucky you, at least you have your armor and your fake sword.",
+    "points": 2,
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "cutting" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "socks",
+          "pants_zhigh",
+          "boots",
+          "KorBrigandineZhigh",
+          "KorBrigandineHelmTassZhigh"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "hwandoZhigh_inferior", "container-item": "scabbard" }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighHonourGuard2",
+    "name": "Student - Honour Guard Henchmen",
+    "description": "You were supposed to act as a honour guard at a historical exhibition, which was canceled forever.  Lucky you, at least you have your armor and your spear.",
+    "points": 2,
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "stabbing" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "socks",
+          "pants_zhigh",
+          "boots",
+          "KorBrigandineZhigh",
+          "KorBrigandineHelmZhigh"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "spear_forked", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighKamenRider",
+    "name": "Student - Cosplayer",
+    "description": "You cosplayed as a 'Masked Biker' when the world ended.  The world is doomed, but why do you need to stop helping other people?",
+    "points": 4,
+    "skills": [
+		{ "level": 2, "name": "melee" },
+		{ "level": 2, "name": "unarmed" },
+		{ "level": 2, "name": "dodge" }
+	],
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "jacket_tracksuit_zhigh_black",
+          "zhigh_smart_phone",
+          "socks",
+          "boots_plate",
+          "pants_tracksuit_zhigh_black",
+          "doom_vest",
+          "scarf_longRedZhigh",
+          "mask_locust",
+          "utility_belt",
+          "gloves_plate"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighJOJO",
+    "name": "Student - Cosplayer",
+    "description": "You cosplayed as a 'Ghost User' when the world ended.  The world is doomed, but you grabbed your fist and stand proud.",
+    "points": 4,
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [
+      { "level": 3, "name": "melee" },
+      { "level": 3, "name": "unarmed" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "army_top",
+          "zhigh_smart_phone",
+          "socks",
+          "pants_zhigh",
+          "dress_shoes",
+          "trenchcoat_jojoZhigh",
+          "hat_jojoZhigh"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "impact_knuckle", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighKabalMk",
+    "name": "Student - Cosplayer",
+    "description": "You cosplayed as a 'speedster' when the world ended.  The world is doomed, but you’re ready for some pre-emptive vengeance.",
+    "points": 4,
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [
+      { "level": 3, "name": "melee" },
+      { "level": 3, "name": "cutting" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "tank_top",
+          "zhigh_smart_phone",
+          "socks",
+          "pants_zhigh",
+          "dress_shoes",
+          "sleeveless_trenchcoat",
+          "mask_kabalZhigh"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "hookswordZhigh_inferior", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
     "id": "zhighMallninja",
     "name": "Student - mallninja",
     "description": "While they were living their life you studied the blade.  And now that the world is on fire and the zombies are at the gate people have the audacity to come to you for help.  Nevermind, everyone is dead.",
@@ -3968,11 +4169,11 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_masks" },
-                { "group": "ZhighNpc_coat" },
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-				{ "item": "kunaiZhigh", "container-item": "sheath" },
-                { "item": "katana_mallninjaZhigh", "custom-flags": [ "auto_wield" ] }
+			{ "group": "ZhighNpc_masks" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "kunaiZhigh", "container-item": "sheath" },
+			{ "item": "katana_mallninjaZhigh", "custom-flags": [ "auto_wield" ] }
 		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],

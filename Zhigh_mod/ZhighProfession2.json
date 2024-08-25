@@ -714,6 +714,54 @@
   },
   {
     "type": "profession",
+    "id": "sangresPd2",
+    "name": "Bank Robber - Sicario",
+    "description": "The Sicario is a must in every drug cartel.  Someone who takes care of all types of problems in a most lethal way.  The Sicario never ducks out of a fight, they get the job done - without hesitation or fear.",
+    "points": 5,
+    "traits": [ "LIAR" ],
+    "skills": [
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "speech" },
+	  { "level": 1, "name": "cutting" },
+      { "level": 2, "name": "gun" },
+      { "level": 3, "name": "pistol" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "socks",
+          "dress_shoes",
+          "police_belt",
+          "44magnum",
+          "44magnum",
+          "44magnum",
+          "pants_cargo",
+          "tshirt_Hawaii",
+          "smart_phone",
+          "mask_Sicario",
+          "gloves_medical",
+          "hockey_stick",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "bscabbard", "contents-item": "machete_pd2" },
+          { "item": "sw629", "ammo-item": "44magnum", "charges": 6, "contents-item": [ "charm_fang" ], "container-item": "holster" },
+          {
+            "item": "sw629",
+            "ammo-item": "44magnum",
+            "charges": 6,
+            "contents-item": [ "charm_fang" ],
+			"custom-flags": [ "auto_wield" ]
+          }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
     "id": "sniperPd2",
     "name": "Bank Robber - Sniper",
     "description": "As a sniper, you covered your team by sniping cops that tried or did, harmed your team.  Now that all of your teammates are dead, you have to write your own version of the lone survivor.",
