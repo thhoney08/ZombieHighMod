@@ -637,6 +637,39 @@
     "valid_mod_locations": [  ]
   },
   {
+    "id": "signalMarker0Commander",
+	"looks_like": "signalMarker",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "modified signal marker", "str_pl": "modified signal markers" },
+    "description": "This is a portable radio-like device.  Modified by a special person, you could call for help.  This one has extra mods, which makes it useable for almost forever, if one have enough time.  Radioactive when broken, so don't try to break it.",
+    "weight": "395 g",
+    "volume": "300 ml",
+    "price": "10 USD",
+    "price_postapoc": "5 USD",
+    "to_hit": -1,
+    "bashing": 4,
+    "use_action": {
+		"type": "place_npc",
+		"npc_class_id": "GRUNT_BASEBALL_MERC",
+		"summon_msg": "A survivor got your signal and surveys the area!",
+		"place_randomly": false,
+		"moves": 180
+    },
+    "flags": [ "LEAK_DAM", "RADIOACTIVE" ],
+    "material": [ "plastic", "aluminum" ],
+    "symbol": ";",
+    "charges_per_use": 1,
+    "max_charges": 3,
+    "initial_charges": 3,
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "30 m", "rate": 1 } ]
+    },
+    "color": "light_gray"
+  },
+  {
     "id": "badge_light",
     "copy-from": "badge_abstract",
     "type": "ARMOR",
@@ -647,13 +680,572 @@
     "flags": [ 
 		"NO_DROP",
 		"NO_UNWIELD",
+		"NO_TAKEOFF",
 		"TRADER_AVOID",
 		"LIGHT_200",
+		"PARTIAL_DEAF",
 		"ALLOWS_NATURAL_ATTACKS",
 		"OUTER",
 		"OVERSIZE",
 		"WATER_FRIENDLY"
 	],
     "description": "."
+  },
+  {
+    "id": "badge_mapZhigh",
+    "copy-from": "badge_abstract",
+    "type": "ARMOR",
+    "name": { "str": "." },
+    "material": [ "plastic" ],
+    "weight": "10 g",
+    "price_postapoc": "10 USD",
+    "flags": [ 
+		"NO_DROP",
+		"NO_UNWIELD",
+		"NO_TAKEOFF",
+		"TRADER_AVOID",
+		"ALLOWS_NATURAL_ATTACKS",
+		"OUTER",
+		"OVERSIZE",
+		"WATER_FRIENDLY"
+	],
+	"//": "Test of automatic maps.",
+    "relic_data": {
+      "passive_effects": [
+        {
+			"has": "WORN",
+			"condition": "ALWAYS",
+			"intermittent_activation": {
+				"effects": [
+					{
+						"frequency": "1 seconds",
+						"spell_effects": [ { "id": "AEA_MAP" } ]
+					}
+				]
+			}
+        }
+      ]
+    },
+    "description": "."
+  },
+  {
+    "id": "artifactBaseZhigh",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "artifact base" },
+    "description": "A relic for test purposes",
+    "weight": "10 g",
+    "volume": "5 ml",
+    "price": "12 USD",
+    "price_postapoc": "10 cent",
+    "material": [ "superalloy", "gemstone" ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "material_thickness": 1,
+    "coverage": 0,
+    "warmth": 0,
+    "flags": [ "OVERSIZE", "ALLOWS_NATURAL_ATTACKS", "FANCY", "ONLY_ONE", "OUTER", "POWERARMOR_COMPATIBLE" ]
+  },
+  {
+    "id": "ringBaseZhigh",
+    "looks_like": "ring_signet",
+    "name": { "str": "ring base" },
+    "type": "TOOL_ARMOR",
+    "description": ".",
+    "copy-from": "artifactBaseZhigh"
+  },
+  {
+    "id": "str1RingZhigh",
+    "name": { "str": "strength ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When worn, this will give you some extra strength.",
+    "copy-from": "ringBaseZhigh",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "STRENGTH", "add": 3 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "dex1RingZhigh",
+    "name": { "str": "dexterity ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When worn, this will give you some extra dexterity.",
+    "copy-from": "ringBaseZhigh",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "DEXTERITY", "add": 3 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "per1RingZhigh",
+    "name": { "str": "perception ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When worn, this will give you some extra perception.",
+    "copy-from": "ringBaseZhigh",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "PERCEPTION", "add": 3 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "int1RingZhigh",
+    "name": { "str": "intelligence ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When worn, this will give you some extra intelligence.",
+    "copy-from": "ringBaseZhigh",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "INTELLIGENCE", "add": 3 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "spd1RingZhigh",
+    "name": { "str": "speed ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When worn, this will give you some extra speed.",
+    "copy-from": "ringBaseZhigh",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "SPEED", "add": 5 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "atk1RingZhigh",
+    "name": { "str": "attack ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When worn, this will give you some lower attack cost.",
+    "copy-from": "ringBaseZhigh",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "ATTACK_COST", "multiply": -0.1 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "itm1RingZhigh",
+    "name": { "str": "item attack ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When worn, this will give you some lower item attack cost.",
+    "copy-from": "ringBaseZhigh",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "ITEM_ATTACK_COST", "add": -5 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "mov1RingZhigh",
+    "name": { "str": "movement ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When worn, this will give you some lower move cost.",
+    "copy-from": "ringBaseZhigh",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "MOVE_COST", "multiply": -0.1 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "met1RingZhigh",
+    "name": { "str": "metabolism ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When worn, this will give you some extra metabolism.",
+    "copy-from": "ringBaseZhigh",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "METABOLISM", "multiply": 0.2 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "sta1RingZhigh",
+    "name": { "str": "stamina ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When worn, this will give you some extra stamina.",
+    "copy-from": "ringBaseZhigh",
+    "relic_data": {
+      "passive_effects": [
+        { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "STAMINA_CAP", "multiply": 0.2 } ] },
+        { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "STAMINA_REGEN", "multiply": 0.2 } ] }
+      ]
+    }
+  },
+  {
+    "id": "tir1RingZhigh",
+    "name": { "str": "thirst ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When worn, this will give you some protection against thirst.",
+    "copy-from": "ringBaseZhigh",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "THIRST", "multiply": -0.1 }
+          ]
+        }
+      ]
+    },
+    "flags": [ "SLOWS_THIRST", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS", "FANCY", "ONLY_ONE", "OUTER", "POWERARMOR_COMPATIBLE" ]
+  },
+  {
+    "id": "fat1RingZhigh",
+    "name": { "str": "fatigue ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When worn, this will give you some protection against fatigue.",
+    "copy-from": "ringBaseZhigh",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "FATIGUE", "multiply": -0.1 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "dod1RingZhigh",
+    "name": { "str": "dodge ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When worn, this will give you some extra chance to dodge.",
+    "copy-from": "ringBaseZhigh",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "BONUS_DODGE", "add": 2 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "cuttRingZhigh",
+    "name": { "str": "cutting damage ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When worn, this will give you some extra damage when using cutting weapons.",
+    "copy-from": "ringBaseZhigh",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "ITEM_DAMAGE_CUT", "multiply": -0.5, "add": 1 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "stabRingZhigh",
+    "name": { "str": "stabbing damage ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When worn, this will give you some extra damage when using stabbing weapons.",
+    "copy-from": "ringBaseZhigh",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "ITEM_DAMAGE_STAB", "multiply": -5, "add": 200 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "bashRingZhigh",
+    "name": { "str": "bashing damage ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When worn, this will give you some extra damage when using bashing weapons.",
+    "copy-from": "ringBaseZhigh",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "ITEM_DAMAGE_BASH", "multiply": -0.5, "add": 1 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "proCuttRingZhigh",
+    "name": { "str": "cutting protection ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When worn, this will give you some extra protection against cutting weapons.",
+    "copy-from": "ringBaseZhigh",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "ARMOR_CUT", "add": -4 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "proStabRingZhigh",
+    "name": { "str": "stabbing protection ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When worn, this will give you some extra protection against stabbing weapons.",
+    "copy-from": "ringBaseZhigh",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "ARMOR_STAB", "add": -4 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "proBashRingZhigh",
+    "name": { "str": "bashing protection ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When worn, this will give you some extra protection against bashing weapons.",
+    "copy-from": "ringBaseZhigh",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "ARMOR_BASH", "add": -4 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "heatRingZhigh",
+    "name": { "str": "heat ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  Could be used as a heating element.",
+    "copy-from": "ringBaseZhigh",
+    "initial_charges": 60,
+    "max_charges": 60,
+    "charges_per_use": 1,
+    "artifact_data": { "charge_type": "ARTC_TIME" },
+    "use_action": [
+		"HOTPLATE",
+		"HEAT_FOOD",
+		{ "type": "firestarter" },
+		{ "flame": false, "type": "cauterize" }
+    ],
+    "extend": { "flags": [ "FLAMING" ] }
+  },
+  {
+    "id": "feralRingZhigh",
+    "name": { "str": "feral ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When used, this will make zombies friendly to you.  Against people, well...",
+    "copy-from": "ringBaseZhigh",
+    "initial_charges": 3,
+    "max_charges": 3,
+    "charges_per_use": 1,
+    "relic_data": {
+		"recharge_scheme": [
+			{ "type": "hp", "interval": "1 s", "rate": 10, "int_min": 1, "int_max": 3 }
+		]
+	},
+    "use_action": "PHEROMONE"
+  },
+  {
+    "id": "all1RingZhigh",
+    "name": { "str": "status ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When worn, this will give you some extra status.",
+    "copy-from": "ringBaseZhigh",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "STRENGTH", "add": 1 },
+            { "value": "DEXTERITY", "add": 1 },
+            { "value": "PERCEPTION", "add": 1 },
+            { "value": "INTELLIGENCE", "add": 1 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "healRingZhigh",
+    "name": { "str": "heal ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When used, this will heal you or others.  At a price, of course.",
+    "copy-from": "ringBaseZhigh",
+    "initial_charges": 1,
+    "max_charges": 10,
+    "charges_per_use": 10,
+    "relic_data": {
+		"recharge_scheme": [
+			{ "type": "fatigue", "interval": "1 s", "rate": 10, "int_min": 1, "int_max": 3 }
+		]
+	},
+	"use_action": {
+      "type": "heal",
+	  "move_cost": 70,
+	  "bleed": 0.2,
+	  "bite": 0.2,
+	  "infect": 0.2,
+	  "limb_power": 10,
+	  "head_power": 10,
+	  "torso_power": 10,
+	  "effects": [ { "id": "healing_medkit", "duration": 100 }, { "id": "pkill1", "duration": 50 } ]
+    }
+  },
+  {
+    "id": "dod2RingZhigh",
+    "name": { "str": "uncanny dodge ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When worn, this will make you dodge things.  At a price, of course.",
+    "copy-from": "ringBaseZhigh",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "mutations": [ "ENCH_UNCANNY_DODGE_EFFECT" ],
+          "intermittent_activation": { "effects": [ { "frequency": "20 minutes", "spell_effects": [ { "id": "AEA_PAIN" } ] } ] }
+        }
+      ]
+    }
+  },
+  {
+    "id": "fallRingZhigh",
+    "name": { "str": "soft landing ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When worn, this will never make you hurt when you fall from high places.  At a price, of course.",
+    "copy-from": "ringBaseZhigh",
+    "flags": [ "EFFECT_FEATHER_FALL", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS", "FANCY", "ONLY_ONE", "OUTER", "POWERARMOR_COMPATIBLE" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "intermittent_activation": { "effects": [ { "frequency": "20 minutes", "spell_effects": [ { "id": "AEA_PAIN" } ] } ] }
+        }
+      ]
+    }
+  },
+  {
+    "id": "hevWRingZhigh",
+    "name": { "str": "heavy weapon ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  When worn, this will make you shoot weapons that you normally cannot.  At a price, of course.",
+    "copy-from": "ringBaseZhigh",
+    "flags": [ "HEAVY_WEAPON_SUPPORT", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS", "FANCY", "ONLY_ONE", "OUTER", "POWERARMOR_COMPATIBLE" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "intermittent_activation": { "effects": [ { "frequency": "20 minutes", "spell_effects": [ { "id": "AEA_PAIN" } ] } ] }
+        }
+      ]
+    }
+  },
+  {
+    "id": "amuletBaseZhigh",
+    "looks_like": "gold_necklace",
+    "name": { "str": "amulet base" },
+    "type": "ARMOR",
+    "description": ".",
+    "copy-from": "artifactBaseZhigh"
+  },
+  {
+    "id": "webRopeAmuletZhigh",
+    "name": { "str": "spider amulet" },
+	"//": "obsolete since it's unuseable.",
+    "type": "TOOL_ARMOR",
+    "description": "A unique amulet.  When worn, you can make and shoot ropes, from your hunger and thirst as the cost.",
+    "copy-from": "amuletBaseZhigh",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ALWAYS",
+		  "mutations": [ "WEB_ROPE", "ARACHNID_ARMS_OK" ]
+        }
+      ]
+    }
   }
 ]

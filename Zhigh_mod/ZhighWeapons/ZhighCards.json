@@ -224,6 +224,110 @@
     "magazine_well": "250 ml"
   },
   {
+    "id": "cardZhigh_spellhealVacancer",
+	"looks_like": "cardZhigh_glow",
+    "copy-from": "cardZhigh_abstract",
+    "type": "COMESTIBLE",
+    "name": { "str": "Collectible Card - heal spell" },
+    "description": "This is a unique card, which could be used as a healing spell...?",
+    "use_action": { "type": "cast_spell", "spell_id": "vacancerHealZhigh", "no_fail": true, "level": 0 },
+    "comestible_type": "FOOD",
+    "flags": [ "NUTRIENT_OVERRIDE", "CARDZHIGH" ]
+  },
+  {
+    "id": "cardZhigh_spellMaeSpe",
+	"looks_like": "cardZhigh_glow",
+    "copy-from": "cardZhigh_spellhealVacancer",
+    "type": "COMESTIBLE",
+    "name": { "str": "Collectible Card - speed spell" },
+    "description": "This is a unique card, which could be speed you up...?",
+    "use_action": { "type": "cast_spell", "spell_id": "maestroSpeedZhigh", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "cardZhigh_spellMaeSta",
+	"looks_like": "cardZhigh_glow",
+    "copy-from": "cardZhigh_spellhealVacancer",
+    "type": "COMESTIBLE",
+    "name": { "str": "Collectible Card - stamina spell" },
+    "description": "This is a unique card, which could be used as a stamina recovery...?",
+    "use_action": { "type": "cast_spell", "spell_id": "maestroStamiZhigh", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "cardZhigh_spellMaeStr",
+	"looks_like": "cardZhigh_glow",
+    "copy-from": "cardZhigh_spellhealVacancer",
+    "type": "COMESTIBLE",
+    "name": { "str": "Collectible Card - attack buff spell" },
+    "description": "This is a unique card, which could be used as an attack buff...?",
+    "use_action": { "type": "cast_spell", "spell_id": "maestroStrengZhigh", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "cardZhigh_spellShuFla",
+	"looks_like": "cardZhigh_glow",
+    "copy-from": "cardZhigh_spellhealVacancer",
+    "type": "COMESTIBLE",
+    "name": { "str": "Collectible Card - wide flash spell" },
+    "description": "This is a unique card, which could be used as a wide blinding spell...?",
+    "use_action": { "type": "cast_spell", "spell_id": "camFlashZhigh", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "cardZhigh_spellSurWav",
+	"looks_like": "cardZhigh_glow",
+    "copy-from": "cardZhigh_spellhealVacancer",
+    "type": "COMESTIBLE",
+    "name": { "str": "Collectible Card - wide wave spell" },
+    "description": "This is a unique card, which could be used as a wave attack spell...?",
+    "use_action": { "type": "cast_spell", "spell_id": "waveStrikeZhigh", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "cardZhigh_spellBacDas",
+	"looks_like": "cardZhigh_glow",
+    "copy-from": "cardZhigh_spellhealVacancer",
+    "type": "COMESTIBLE",
+    "name": { "str": "Collectible Card - dash spell" },
+    "description": "This is a unique card, which could be used for quick movment...?",
+    "use_action": { "type": "cast_spell", "spell_id": "backattackerRushZhigh", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "cardZhigh_spellPush",
+	"looks_like": "cardZhigh_glow",
+    "copy-from": "cardZhigh_spellhealVacancer",
+    "type": "COMESTIBLE",
+    "name": { "str": "Collectible Card - push spell" },
+    "description": "This is a unique card, which could be used as a pushing attack...?",
+    "use_action": { "type": "cast_spell", "spell_id": "pushZhigh", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "cardZhigh_spelldraBre",
+	"looks_like": "cardZhigh_glow",
+    "copy-from": "cardZhigh_spellhealVacancer",
+    "type": "COMESTIBLE",
+    "name": { "str": "Collectible Card - fire breath" },
+    "description": "This is a unique card, which could make you breath fire...?",
+    "use_action": { "type": "cast_spell", "spell_id": "dragonBreathZhigh", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "cardZhigh_pets",
+	"looks_like": "cardZhigh_glow",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "Collectible Card - pets" },
+    "description": "This is a unique card, which could be used as a pet carrier.  If you use it, you could capture any pets and release them at suitable places.",
+    "properties": [ [ "creature_size_capacity", "HUGE" ] ],
+    "use_action": "CAPTURE_MONSTER_ACT"
+  },
+  {
+    "id": "cardZhigh_hose",
+	"looks_like": "cardZhigh_glow",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "Collectible Card - hose" },
+    "description": "This is a unique card, which could be used as a hose.  If you use it, you could fuel from one place to another.",
+    "qualities": [ [ "HOSE", 1 ] ]
+  },
+  {
     "id": "cardZhigh_smoke",
 	"looks_like": "cardZhigh_blank",
     "copy-from": "cardZhigh_abstract",
@@ -794,6 +898,375 @@
     "magazine_well": "250 ml"
   },
   {
+    "id": "cardZhigh_canteen",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "CONTAINER",
+    "category": "other",
+    "name": { "str": "Collectible Card - tazer" },
+    "description": "This is a unique card, which could be used as a bottle, holds 750ml of liquid.",
+    "seals": true,
+    "watertight": true,
+    "qualities": [ [ "CONTAIN", 1 ], [ "BOIL", 2 ] ],
+    "contains": "750 ml"
+  },
+  {
+    "type": "TOOL",
+    "id": "cardZhigh_cable",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "jumper_cable",
+    "name": { "str": "Collectible Card - cable" },
+    "description": "This is a unique card, and works like other tow cables, but much smaller and lighter.  Less useful than an actual heavy-duty cable, but still useful for it's size and weight.",
+    "volume": "1 ml",
+    "weight": "1 g",
+    "max_charges": 13,
+    "initial_charges": 13,
+    "use_action": [ "TOW_ATTACH" ],
+    "flags": [ "CARDZHIGH", "CABLE_SPOOL", "TOW_CABLE" ]
+  },
+  {
+    "id": "cardZhigh_beartrap",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - beartrap" },
+    "description": "This is a unique card, which has a picture of a beartrap.  If you use it, you could set a beartrap.",
+    "use_action": {
+      "type": "place_trap",
+      "allow_underwater": true,
+      "trap": "tr_beartrap",
+      "moves": 2,
+      "practice": 1,
+      "done_message": "You set the beartrap."
+    }
+  },
+  {
+    "id": "cardZhigh_bladetrap",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - blade trap" },
+    "description": "This is a unique card, which has a picture of a blade trap.  If you use it, you could set a blade trap.",
+    "use_action": {
+      "type": "place_trap",
+      "outer_layer_trap": "tr_blade",
+      "trap": "tr_engine",
+      "moves": 2,
+      "practice": 1,
+      "done_message": "You set the blade trap %d squares away."
+    }
+  },
+  {
+    "id": "cardZhigh_nailboardtrap",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - nailboard trap" },
+    "description": "This is a unique card, which has a picture of a nailboard trap.  If you use it, you could set a nailboard trap.",
+    "use_action": {
+      "type": "place_trap",
+      "allow_underwater": true,
+      "trap": "tr_nailboard",
+      "moves": 2,
+      "practice": 1,
+      "done_message": "You set the board trap on the %s, nails facing up."
+    }
+  },
+  {
+    "id": "cardZhigh_boobytrap",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - booby trap" },
+    "description": "This is a unique card, which has a picture of a booby trap.  If you use it, you could set a booby trap.",
+    "use_action": {
+      "type": "place_trap",
+      "trap": "tr_boobytrap",
+      "moves": 2,
+      "practice": 1,
+      "done_message": "You set the booby trap up and activate the grenade."
+    }
+  },
+  {
+    "id": "cardZhigh_bubblewrap",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - bubble wrap" },
+    "description": "This is a unique card, which has a picture of a bubble wrap.  If you use it, you could set a bubble wrap.",
+    "use_action": {
+      "type": "place_trap",
+      "allow_underwater": true,
+      "trap": "tr_bubblewrap",
+      "moves": 2,
+      "practice": 1,
+      "done_message": "You set the bubble wrap on the ground, ready to be popped."
+    }
+  },
+  {
+    "id": "cardZhigh_caltrops",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - caltrops" },
+    "description": "This is a unique card, which has a picture of some caltrops.  If you use it, you could set some caltrops.",
+    "use_action": {
+      "type": "place_trap",
+      "trap": "tr_caltrops",
+      "moves": 2,
+      "practice": 1,
+      "done_message": "You scatter the caltrops on the %s."
+    }
+  },
+  {
+    "id": "cardZhigh_caltrops_glass",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - glass caltrops" },
+    "description": "This is a unique card, which has a picture of some glass caltrops.  If you use it, you could set some glass caltrops.",
+    "use_action": {
+      "type": "place_trap",
+      "trap": "tr_caltrops_glass",
+      "moves": 2,
+      "practice": 1,
+      "done_message": "You scatter the glass caltrops on the %s."
+    }
+  },
+  {
+    "id": "cardZhigh_crossbowtrap",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - crossbow trap" },
+    "description": "This is a unique card, which has a picture of a crossbow trap.  If you use it, you could set a crossbow trap.",
+    "use_action": {
+      "type": "place_trap",
+      "trap": "tr_crossbow",
+      "moves": 2,
+      "practice": 1,
+      "done_message": "You set the crossbow trap."
+    }
+  },
+  {
+    "id": "cardZhigh_landminetrap",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - landmine" },
+    "description": "This is a unique card, which has a picture of a landmine.  If you use it, you could set a landmine.",
+    "use_action": {
+      "type": "place_trap",
+      "trap": "tr_landmine",
+      "moves": 2,
+      "practice": 1,
+      "done_message": "You set the land mine."
+    }
+  },
+  {
+    "id": "cardZhigh_shotgun_trap2",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - shotgun trap" },
+    "description": "This is a unique card, which has a picture of a shotgun trap.  If you use it, you could set a shotgun trap.",
+    "use_action": {
+      "type": "place_trap",
+      "trap": "tr_shotgun_2",
+      "moves": 2,
+      "practice": 1,
+      "done_message": "You set the shotgun trap."
+    }
+  },
+  {
+    "id": "cardZhigh_shotgun_trap1",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - shotgun trap" },
+    "description": "This is a unique card, which has a picture of a shotgun trap.  If you use it, you could set a shotgun trap.",
+    "use_action": {
+      "type": "place_trap",
+      "trap": "tr_shotgun_1",
+      "moves": 2,
+      "practice": 1,
+      "done_message": "You set the shotgun trap."
+    }
+  },
+  {
+    "id": "cardZhigh_tripwire",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - tripwire" },
+    "description": "This is a unique card, which has a picture of a tripwire.  If you use it, you could set a tripwire.",
+    "use_action": {
+      "type": "place_trap",
+      "trap": "tr_tripwire",
+      "moves": 2,
+      "practice": 1,
+      "done_message": "You set the tripwire."
+    }
+  },
+  {
+    "id": "cardZhigh_canalarm",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - perimeter alarm" },
+    "description": "This is a unique card, which has a picture of a perimeter alarm.  If you use it, you could set a perimeter alarm.",
+    "use_action": {
+      "type": "place_trap",
+      "trap": "tr_can_alarm",
+      "moves": 2,
+      "practice": 1,
+      "done_message": "You string up some cans on a tripwire."
+    }
+  },
+  {
+    "id": "cardZhigh_glass_shard_trap",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - glass shard trap" },
+    "description": "This is a unique card, which has a picture of a glass shard trap.  If you use it, you could set a glass shard trap.",
+    "use_action": {
+      "type": "place_trap",
+      "trap": "tr_glass",
+      "moves": 2,
+      "practice": 1,
+      "done_message": "You carefully place the shards on the ground, ready to be cracked by something passing by."
+    }
+  },
+  {
+    "id": "cardZhigh_telepad",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - telepad trap" },
+    "description": "This is a unique card, which has a picture of a telepad.  If you use it, you could set a telepad trap.",
+    "use_action": {
+      "type": "place_trap",
+      "trap": "tr_telepad",
+      "moves": 2,
+      "practice": 1,
+      "done_message": "You set the telepad trap."
+    }
+  },
+  {
+    "id": "cardZhigh_gootrap",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - goo trap" },
+    "description": "This is a unique card, which has a picture of a goo pit.  If you use it, you could set a goo pit.",
+    "use_action": {
+      "type": "place_trap",
+      "trap": "tr_goo",
+      "moves": 2,
+      "practice": 1,
+      "done_message": "You set the goo pit up."
+    }
+  },
+  {
+    "id": "cardZhigh_dissector",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - dissector" },
+    "description": "This is a unique card, which has a picture of a dissector.  If you use it, you could set a dissector.",
+    "use_action": {
+      "type": "place_trap",
+      "trap": "tr_dissector",
+      "moves": 2,
+      "practice": 1,
+      "done_message": "You set the dissector."
+    }
+  },
+  {
+    "id": "cardZhigh_lava",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - lava" },
+    "description": "This is a unique card, which has a picture of a lava pool.  If you use it, you could set a pool of lava.",
+    "use_action": {
+      "type": "place_trap",
+      "trap": "tr_lava",
+      "moves": 2,
+      "practice": 1,
+      "done_message": "You set the lava pool."
+    }
+  },
+  {
+    "id": "cardZhigh_portal",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - portal" },
+    "description": "This is a unique card, which has a picture of a portal.  If you use it, you could set a portal.",
+    "use_action": {
+      "type": "place_trap",
+      "trap": "tr_portal",
+      "moves": 2,
+      "practice": 1,
+      "done_message": "You set the portal."
+    }
+  },
+  {
+    "id": "cardZhigh_flaretrap",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - flare trap" },
+    "description": "This is a unique card, which has a picture of a flare trap.  If you use it, you could set a flare trap.",
+    "use_action": {
+      "type": "place_trap",
+      "allow_underwater": true,
+      "trap": "tr_flareZhigh",
+      "moves": 2,
+      "practice": 1,
+      "done_message": "You set the flare trap."
+    }
+  },
+  {
+    "id": "cardZhigh_jumpBoardZhigh",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - jump board" },
+    "description": "This is a unique card, which has a picture of a jump board.  If you use it, you could set a jump board.",
+    "use_action": {
+      "type": "place_trap",
+      "allow_underwater": true,
+      "trap": "tr_jumpBoardZhigh",
+      "moves": 2,
+      "practice": 1,
+      "done_message": "You set the jump board."
+    }
+  },
+  {
     "id": "cardZhigh_hologram",
 	"looks_like": "cardZhigh_blank",
     "copy-from": "cardZhigh_abstract",
@@ -1064,12 +1537,27 @@
     }
   },
   {
+    "id": "cardZhigh_baseballGrunt",
+	"looks_like": "cardZhigh_soldier",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - Baseball player" },
+    "description": "This is a card with a picture of a Baseball player on it.  When activated, it could surprise you.  Be careful what you wish for...",
+    "use_action": {
+		"type": "place_npc",
+		"npc_class_id": "GRUNT_BASEBALL_MERC",
+		"summon_msg": "A survivor got your signal and surveys the area!",
+		"place_randomly": false,
+		"moves": 60
+    }
+  },
+  {
     "id": "cardZhigh_operator",
 	"looks_like": "cardZhigh_soldier",
     "copy-from": "cardZhigh_abstract",
     "type": "TOOL",
     "name": { "str": "Collectible Card - Operator" },
-    "description": "This is a card with a picture of a operator on it.  When activated, it could surprise you.  Be careful what you wish for...",
+    "description": "This is a card with a picture of an operator on it.  When activated, it could surprise you.  Be careful what you wish for...",
     "use_action": {
 		"type": "place_npc",
 		"npc_class_id": "robofac_merc_1",
@@ -1089,7 +1577,329 @@
       "type": "unfold_vehicle",
       "vehicle_name": "bicycle",
       "unfold_msg": "You summon the bicycle.",
+      "moves": 6
+    }
+  },
+  {
+    "id": "cardZhigh_bicycle_dirt",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - mountain bike" },
+    "description": "This is a card with a picture of a mountain bike on it.  When activated, it summons a mountain bike.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "tricycle_dirt",
+      "unfold_msg": "You summon the mountain bike.",
       "moves": 60
+    }
+  },
+  {
+    "id": "cardZhigh_tricycle",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - tricycle" },
+    "description": "This is a card with a picture of a tricycle on it.  When activated, it summons a tricycle.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "tricycle",
+      "unfold_msg": "You summon the tricycle.",
+      "moves": 6
+    }
+  },
+  {
+    "id": "cardZhigh_unicycle",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - unicycle" },
+    "description": "This is a card with a picture of a unicycle on it.  When activated, it summons a unicycle.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "unicycle",
+      "unfold_msg": "You summon the unicycle.",
+      "moves": 6
+    }
+  },
+  {
+    "id": "cardZhigh_engine_crane",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - engine crane" },
+    "description": "This is a card with a picture of a engine crane on it.  When activated, it summons a engine crane.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "engine_crane",
+      "unfold_msg": "You summon the engine crane.",
+      "moves": 6
+    }
+  },
+  {
+    "id": "cardZhigh_food_cart",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - food vendor cart" },
+    "description": "This is a card with a picture of a food vendor cart on it.  When activated, it summons a food vendor cart.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "food_cart",
+      "unfold_msg": "You summon the food vendor cart.",
+      "moves": 6
+    }
+  },
+  {
+    "id": "cardZhigh_handjack",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - handjack" },
+    "description": "This is a card with a picture of a handjack on it.  When activated, it summons a handjack.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "handjack",
+      "unfold_msg": "You summon the handjack.",
+      "moves": 6
+    }
+  },
+  {
+    "id": "cardZhigh_luggage_cart",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - luggage cart" },
+    "description": "This is a card with a picture of a luggage cart on it.  When activated, it summons a luggage cart.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "luggage_cart",
+      "unfold_msg": "You summon the luggage cart.",
+      "moves": 6
+    }
+  },
+  {
+    "id": "cardZhigh_shopping_cart",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - shopping cart" },
+    "description": "This is a card with a picture of a shopping cart on it.  When activated, it summons a shopping cart.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "shopping_cart",
+      "unfold_msg": "You summon the shopping cart.",
+      "moves": 6
+    }
+  },
+  {
+    "id": "cardZhigh_grocery_cart",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - grocery cart" },
+    "description": "This is a card with a picture of a grocery cart on it.  When activated, it summons a grocery cart.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "grocery_cart",
+      "unfold_msg": "You summon the grocery cart.",
+      "moves": 6
+    }
+  },
+  {
+    "id": "cardZhigh_swivel_chair",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - swivel chair" },
+    "description": "This is a card with a picture of a swivel chair on it.  When activated, it summons a swivel chair.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "swivel_chair",
+      "unfold_msg": "You summon the swivel chair.",
+      "moves": 6
+    }
+  },
+  {
+    "id": "cardZhigh_water_cart",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - water cart" },
+    "description": "This is a card with a picture of a water cart on it.  When activated, it summons a water cart.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "water_cart",
+      "unfold_msg": "You summon the water cart.",
+      "moves": 6
+    }
+  },
+  {
+    "id": "cardZhigh_welding_cart",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - welding cart" },
+    "description": "This is a card with a picture of a welding cart on it.  When activated, it summons a welding cart.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "welding_cart",
+      "unfold_msg": "You summon the welding cart.",
+      "moves": 6
+    }
+  },
+  {
+    "id": "cardZhigh_wheelbarrow",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - wheelbarrow" },
+    "description": "This is a card with a picture of a wheelbarrow on it.  When activated, it summons a wheelbarrow.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "wheelbarrow",
+      "unfold_msg": "You summon the wheelbarrow.",
+      "moves": 6
+    }
+  },
+  {
+    "id": "cardZhigh_wheelchair",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - wheelchair" },
+    "description": "This is a card with a picture of a wheelchair on it.  When activated, it summons a wheelchair.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "wheelchair",
+      "unfold_msg": "You summon the wheelchair.",
+      "moves": 6
+    }
+  },
+  {
+    "id": "cardZhigh_hospital_bed",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - hospital bed" },
+    "description": "This is a card with a picture of a hospital bed on it.  When activated, it summons a hospital bed.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "hospital_bed",
+      "unfold_msg": "You summon the hospital bed.",
+      "moves": 6
+    }
+  },
+  {
+    "id": "cardZhigh_laundry_cart",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - laundry cart" },
+    "description": "This is a card with a picture of a laundry cart on it.  When activated, it summons a laundry cart.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "laundry_cart",
+      "unfold_msg": "You summon the laundry cart.",
+      "moves": 6
+    }
+  },
+  {
+    "id": "cardZhigh_kayak",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - kayak" },
+    "description": "This is a card with a picture of a kayak on it.  When activated, it summons a kayak.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "kayak",
+      "unfold_msg": "You summon the kayak.",
+      "moves": 6
+    }
+  },
+  {
+    "id": "cardZhigh_kayak_racing",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - racing kayak" },
+    "description": "This is a card with a picture of a racing kayak on it.  When activated, it summons a racing kayak.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "kayak_racing",
+      "unfold_msg": "You summon the racing kayak.",
+      "moves": 6
+    }
+  },
+  {
+    "id": "cardZhigh_raft",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - raft" },
+    "description": "This is a card with a picture of a raft on it.  When activated, it summons a raft.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "raft",
+      "unfold_msg": "You summon the raft.",
+      "moves": 6
+    }
+  },
+  {
+    "id": "cardZhigh_inflatable_boat",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - inflatable boat" },
+    "description": "This is a card with a picture of a inflatable boat on it.  When activated, it summons a inflatable boat.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "inflatable_boat",
+      "unfold_msg": "You summon the inflatable boat.",
+      "moves": 6
+    }
+  },
+  {
+    "id": "cardZhigh_wood_rowboat_double",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - wooden rowboat" },
+    "description": "This is a card with a picture of a wooden rowboat on it.  When activated, it summons a wooden rowboat.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "wood_rowboat_double",
+      "unfold_msg": "You summon the wooden rowboat.",
+      "moves": 6
+    }
+  },
+  {
+    "id": "cardZhigh_portable_generator",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - portable generator" },
+    "description": "This is a card with a picture of a portable generator on it.  When activated, it summons a portable generator.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "portable_generator",
+      "unfold_msg": "You summon the portable generator.",
+      "moves": 6
+    }
+  },
+  {
+    "id": "cardZhigh_oa_work_light",
+	"looks_like": "cardZhigh_bicycle",
+    "copy-from": "cardZhigh_abstract",
+    "type": "TOOL",
+    "name": { "str": "Collectible Card - work light" },
+    "description": "This is a card with a picture of a work light on it.  When activated, it summons a work light.",
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "oa_work_light",
+      "unfold_msg": "You summon the work light.",
+      "moves": 6
     }
   },
   {
@@ -1391,10 +2201,297 @@
 	"looks_like": "cardZhigh_stimultants",
     "copy-from": "cardZhigh_abstract",
     "type": "GENERIC",
-    "category": "charms",
+    "category": "tools",
     "name": { "str": "Collectible Card - coins" },
     "description": "This is a unique card, which has a picture of a coin.  If you use it, you could get some coins.",
     "use_action": { "type": "unpack", "group": "coinPackZhigh", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_seed",
+	"looks_like": "cardZhigh_stimultants",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - seeds" },
+    "description": "This is a unique card, which has a picture of seeds.  If you use it, you could get some seeds.",
+    "use_action": { "type": "unpack", "group": "farming_seeds", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_mapLab",
+	"looks_like": "cardZhigh_blank",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "name": { "str": "Collectible Card - lab map" },
+    "description": "This is a unique card, which is filled with tiny handwriting and some surprisingly precise diagrams of subway tunnels, access codes, ventilation shafts, and guard shifts.",
+    "use_action": {
+      "type": "reveal_map",
+      "radius": 80,
+      "message": "Area is revealed.",
+      "terrain": [
+        "subway",
+        "sub_station",
+        "microlab_sub_connector",
+        "microlab_sub_station",
+        "central_lab_train_depot",
+        "lab_train_depot"
+      ]
+    }
+  },
+  {
+    "id": "cardZhigh_mapMil",
+	"looks_like": "cardZhigh_mapLab",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "name": { "str": "Collectible Card - military map" },
+    "description": "This is a unique card, which details the locations of evacuation centers and military facilities.",
+    "use_action": {
+      "type": "reveal_map",
+      "radius": 80,
+      "message": "Area is revealed.",
+      "terrain": [
+        "hiway",
+        "road",
+        "bridge",
+        "fema_entrance",
+        "bunker",
+        "helipad",
+        "outpost",
+        { "om_terrain": "silo", "om_terrain_match_type": "TYPE" },
+        { "om_terrain": "shelter", "om_terrain_match_type": "TYPE" },
+        "police",
+        "mil_base_road_entrance"
+      ]
+    }
+  },
+  {
+    "id": "cardZhigh_mapSur",
+	"looks_like": "cardZhigh_mapLab",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "name": { "str": "Collectible Card - survivor map" },
+    "description": "This is a unique card, which details the locations of nearby supply sources including gun stores and gas stations.",
+    "use_action": {
+      "type": "reveal_map",
+      "radius": 80,
+      "message": "Area is revealed.",
+      "terrain": [
+		"hiway",
+		"road",
+		"bridge",
+		"s_pharm",
+		"s_gun",
+		"s_grocery",
+		"s_hunting",
+		"mil_surplus",
+		"s_gas"
+	  ]
+    }
+  },
+  {
+    "id": "cardZhigh_mapRoa",
+	"looks_like": "cardZhigh_mapLab",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "name": { "str": "Collectible Card - road map" },
+    "description": "This is a unique card, which details the locations of hospitals, roads and police stations.",
+    "use_action": {
+      "type": "reveal_map",
+      "radius": 80,
+      "message": "Area is revealed.",
+      "terrain": [
+        "hiway",
+        "road",
+        "bridge",
+        { "om_terrain": "shelter", "om_terrain_match_type": "TYPE" },
+        "hospital",
+        "school",
+        "police",
+        { "om_terrain": "sub_station", "om_terrain_match_type": "TYPE" },
+        "bank"
+	  ]
+    }
+  },
+  {
+    "id": "cardZhigh_mapSub",
+	"looks_like": "cardZhigh_mapLab",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "name": { "str": "Collectible Card - subway map" },
+    "description": "This is a unique card, which details the locations of subway lines and underground stations.",
+    "use_action": {
+      "type": "reveal_map",
+      "radius": 80,
+      "message": "Area is revealed.",
+      "terrain": [
+		"subway",
+		"sub_station",
+        "BanditSub_station",
+        "sewer_BanditSub_station",
+        "underground_BanditSub_station",
+        "underground_BanditSub_station2",
+        "zhighSub_station",
+        "sewer_zhighSub_station",
+        "underground_zhighSub_station",
+        "underground_zhighSub_station2"
+	  ]
+    }
+  },
+  {
+    "id": "cardZhigh_mapTra",
+	"looks_like": "cardZhigh_mapLab",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "name": { "str": "Collectible Card - trail map" },
+    "description": "This is a unique card, which details the locations of trails, trailhead amenities.",
+    "use_action": {
+      "type": "reveal_map",
+      "radius": 80,
+      "message": "Area is revealed.",
+      "terrain": [ "forest_trail", "trailhead" ]
+    }
+  },
+  {
+    "id": "cardZhigh_mapTou",
+	"looks_like": "cardZhigh_mapLab",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "name": { "str": "Collectible Card - tour map" },
+    "description": "This is a unique card, which details the locations of local hotels and attractions.",
+    "use_action": {
+      "type": "reveal_map",
+      "radius": 80,
+      "message": "Area is revealed.",
+      "terrain": [ "hiway", "road", "bridge", "hotel_tower", "s_restaurant", "cathedral", "s_restaurant_fast", "megastore", "museum" ]
+    }
+  },
+  {
+    "id": "cardZhigh_mapRes",
+	"looks_like": "cardZhigh_mapLab",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "name": { "str": "Collectible Card - restaurant map" },
+    "description": "This is a unique card, which details the locations of best diners and bars.",
+    "use_action": {
+      "type": "reveal_map",
+      "radius": 80,
+      "message": "Area is revealed.",
+      "terrain": [
+        "hiway",
+        "road",
+        "bridge",
+        "s_restaurant_coffee",
+        "s_restaurant",
+        { "om_terrain": "bar", "om_terrain_match_type": "TYPE" },
+        "s_pizza_parlor",
+        "s_restaurant_fast"
+      ]
+    }
+  },
+  {
+    "id": "cardZhigh_mapBan",
+	"looks_like": "cardZhigh_mapLab",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "name": { "str": "Collectible Card - bandit map" },
+    "description": "This is a unique card, which details the locations of bandit bases.",
+    "use_action": {
+      "type": "reveal_map",
+      "radius": 80,
+      "message": "Area is revealed.",
+      "terrain": [
+        "BanditSub_station",
+        "sewer_BanditSub_station",
+        "underground_BanditSub_station",
+        "underground_BanditSub_station2",
+		"zhighloffice_tower_1",
+		"zhighloffice_tower_2",
+		"zhighloffice_tower_3",
+		"zhighloffice_tower_4",
+		"zhighloffice_tower_5",
+		"zhighloffice_tower_6",
+		"zhighloffice_tower_7",
+		"zhighloffice_tower_8",
+		"zhighloffice_tower_9",
+		"zhighloffice_tower_9b",
+		"zhighloffice_tower_10",
+		"zhighloffice_tower_10b",
+		"zhighloffice_tower_11",
+		"zhighloffice_tower_12",
+		"zhighloffice_tower_13",
+		"zhighloffice_tower_14",
+		"zhighloffice_tower_15",
+		"zhighloffice_tower_16",
+        "bandit_cabin",
+        "bandit_camp_1",
+        "bandit_camp_2",
+        "bandit_camp_3",
+        "bandit_camp_4",
+        "bandit_garage_1",
+        "bandit_garage_2",
+        "zhighSub_station",
+        "sewer_zhighSub_station",
+        "underground_zhighSub_station",
+        "underground_zhighSub_station2"
+      ]
+    }
+  },
+  {
+    "id": "cardZhigh_mapUlt",
+	"looks_like": "cardZhigh_mapLab",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "name": { "str": "Collectible Card - ultimate map" },
+    "description": "This is a unique card, which details the locations of almost everything.",
+    "use_action": {
+      "type": "reveal_map",
+      "radius": 100,
+      "message": "Area is revealed.",
+      "terrain": [
+        "hiway", "road", "bridge", "subway", "sub_station",
+        "s_restaurant_coffee", "s_restaurant",
+        "hospital", "school", "police", "bank", "s_pharm", "s_gun", 
+        "s_grocery", "s_hunting", "mil_surplus", "s_gas",
+        "s_pizza_parlor", "s_restaurant_fast", "hotel_tower", "s_restaurant",
+        "cathedral", "s_restaurant_fast", "megastore", "museum",
+        "fema_entrance", "bunker", "helipad", "outpost",
+        "microlab_sub_connector", "microlab_sub_station",
+        "central_lab_train_depot", "lab_train_depot",
+        { "om_terrain": "silo", "om_terrain_match_type": "TYPE" },
+        { "om_terrain": "shelter", "om_terrain_match_type": "TYPE" },
+        { "om_terrain": "sub_station", "om_terrain_match_type": "TYPE" },
+        { "om_terrain": "bar", "om_terrain_match_type": "TYPE" },
+        "police", "mil_base_road_entrance",
+        "BanditSub_station",
+        "sewer_BanditSub_station",
+        "underground_BanditSub_station",
+        "underground_BanditSub_station2",
+		"zhighloffice_tower_1",
+		"zhighloffice_tower_2",
+		"zhighloffice_tower_3",
+		"zhighloffice_tower_4",
+		"zhighloffice_tower_5",
+		"zhighloffice_tower_6",
+		"zhighloffice_tower_7",
+		"zhighloffice_tower_8",
+		"zhighloffice_tower_9",
+		"zhighloffice_tower_9b",
+		"zhighloffice_tower_10",
+		"zhighloffice_tower_10b",
+		"zhighloffice_tower_11",
+		"zhighloffice_tower_12",
+		"zhighloffice_tower_13",
+		"zhighloffice_tower_14",
+		"zhighloffice_tower_15",
+		"zhighloffice_tower_16",
+        "bandit_cabin",
+        "bandit_camp_1",
+        "bandit_camp_2",
+        "bandit_camp_3",
+        "bandit_camp_4",
+        "bandit_garage_1",
+        "bandit_garage_2"
+      ]
+    }
   },
   {
     "id": "cardZhigh_pack",

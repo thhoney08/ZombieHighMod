@@ -16,7 +16,7 @@
     "count": 12,
     "stack_size": 12,
     "ammo_type": "thrown",
-    "flags": [ "CARDZHIGH", "NPC_THROWN", "SHATTERS" ],
+    "flags": [ "FRAGILE_MELEE", "CARDZHIGH", "NOGIB", "NPC_THROWN", "SHATTERS" ],
     "thrown_damage": [ { "damage_type": "stab", "amount": 20 } ]
   },
   {
@@ -28,8 +28,7 @@
     "description": "A thin and flat club card made for throwing.",
     "cutting": 1,
     "ammo_type": "thrown",
-    "flags": [ "CARDZHIGH", "NOGIB", "TANGLE", "NPC_THROWN", "SHATTERS" ],
-    "thrown_damage": [ { "damage_type": "bullet", "amount": 20 } ]
+    "thrown_damage": [ { "damage_type": "acid", "amount": 20 } ]
   },
   {
     "type": "AMMO",
@@ -125,7 +124,7 @@
 	"copy-from": "cryo_grenade",
 	"name": "armed cryo grenade",
 	"description": "This cryo grenade currently lost its pin, thus creating a dangerous cryo field.",
-	"emits": [ "emit_freeze_cloud_big" ],
+	"emits": [ "emit_cold_cloud_big", "emit_freeze_cloud_big" ],
 	"countdown_interval": 30,
 	"countdown_action": { "type": "transform", "target": "canister_empty" },
 	"flags": [ "TRADER_AVOID" ]

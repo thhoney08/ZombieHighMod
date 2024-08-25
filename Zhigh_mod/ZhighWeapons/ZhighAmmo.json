@@ -905,8 +905,9 @@
     "ammo_type": "powder_zhigh",
     "damage": { "damage_type": "bullet", "amount": 5 },
     "loudness": 1,
-    "range": 7,
-    "effects": [ "NEVER_MISFIRES", "SMOKE", "BEANBAG" ]
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 20, "length": 7 } ],
+    "effects": [ "NEVER_MISFIRES", "BLINDS_EYES", "MUZZLE_SMOKE", "TRAIL", "SMOKE_BIG", "SMOKE", "TANGLE" ]
   },
   {
     "id": "gas_smoke",
@@ -1183,6 +1184,28 @@
     "count": 20,
     "loudness": 0,
     "effects": [ "NEVER_MISFIRES" ]
+  },
+  {
+    "type": "AMMO",
+    "id": "pebble_rubber",
+    "price": "150 cent",
+    "price_postapoc": "10 cent",
+    "name": { "str": "bouncy ball" },
+    "symbol": "=",
+    "color": "light_gray",
+    "looks_like": "pebble",
+    "description": "A handful of round projectiles made of rubber, useful for slings or slingshots.",
+    "material": "rubber",
+    "volume": "250 ml",
+    "weight": "3 g",
+    "ammo_type": "pebble",
+    "damage": { "damage_type": "bash", "amount": 1 },
+    "range": 20,
+    "dispersion": 12,
+    "loudness": 0,
+    "count": 30,
+    "flags": [ "SHATTERS" ],
+    "effects": [ "BOUNCE", "NEVER_MISFIRES" ]
   },
   {
     "id": "bomblanceAmmoREALZhigh",

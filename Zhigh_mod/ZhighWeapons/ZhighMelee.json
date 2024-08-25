@@ -30,21 +30,13 @@
     "weight": "1200 g",
     "use_action": { "type": "cast_spell", "spell_id": "pushZhigh", "no_fail": true, "level": 0, "need_wielding": true },
     "charges_per_use": 1,
-    "ammo": "battery",
-    "magazines": [
-      [
-        "battery",
-        [
-          "light_plus_battery_cell",
-          "light_minus_battery_cell",
-          "light_battery_cell",
-          "light_atomic_battery_cell",
-          "light_minus_atomic_battery_cell",
-          "light_minus_disposable_cell",
-          "light_disposable_cell"
-        ]
-      ]
-    ],
+    "max_charges": 10,
+    "initial_charges": 10,
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "30 s", "rate": 1 } ]
+    },
     "magazine_well": "250 ml",
     "volume": "1 L",
     "bashing": 12,
@@ -77,6 +69,90 @@
     "type": "GENERIC",
     "category": "weapons",
     "name": { "str": "magical sapphire staff" }
+  },
+  {
+    "id": "stick_swag_bone",
+    "copy-from": "stick_swag",
+    "type": "GENERIC",
+    "category": "weapons",
+    "name": { "str": "bone staff" }
+  },
+  {
+    "id": "stick_swag_brass",
+    "copy-from": "stick_swag",
+    "type": "GENERIC",
+    "category": "weapons",
+    "name": { "str": "brass staff" }
+  },
+  {
+    "id": "stick_swag_bronze",
+    "copy-from": "stick_swag",
+    "type": "GENERIC",
+    "category": "weapons",
+    "name": { "str": "bronze staff" }
+  },
+  {
+    "id": "stick_swag_copper",
+    "copy-from": "stick_swag",
+    "type": "GENERIC",
+    "category": "weapons",
+    "name": { "str": "copper staff" }
+  },
+  {
+    "id": "stick_swag_glass",
+    "copy-from": "stick_swag",
+    "type": "GENERIC",
+    "category": "weapons",
+    "name": { "str": "glass staff" }
+  },
+  {
+    "id": "stick_swag_gold",
+    "copy-from": "stick_swag",
+    "type": "GENERIC",
+    "category": "weapons",
+    "name": { "str": "gold staff" }
+  },
+  {
+    "id": "stick_swag_iron",
+    "copy-from": "stick_swag",
+    "type": "GENERIC",
+    "category": "weapons",
+    "name": { "str": "iron staff" }
+  },
+  {
+    "id": "stick_swag_ivory",
+    "copy-from": "stick_swag",
+    "type": "GENERIC",
+    "category": "weapons",
+    "name": { "str": "ivory staff" }
+  },
+  {
+    "id": "stick_swag_lead",
+    "copy-from": "stick_swag",
+    "type": "GENERIC",
+    "category": "weapons",
+    "name": { "str": "lead staff" }
+  },
+  {
+    "id": "stick_swag_plastic",
+    "copy-from": "stick_swag",
+    "type": "GENERIC",
+    "category": "weapons",
+    "name": { "str": "plastic staff" }
+  },
+  {
+    "id": "stick_swag_silver",
+    "copy-from": "stick_swag",
+    "type": "GENERIC",
+    "category": "weapons",
+    "name": { "str": "silver staff" }
+  },
+  {
+    "id": "stick_swag_wood",
+    "copy-from": "stick_swag",
+    "type": "GENERIC",
+    "category": "weapons",
+    "name": { "str": "wood staff" }
   },
   {
     "id": "staff_fancy_zhigh",
@@ -731,6 +807,18 @@
     "flags": [ "UNBREAKABLE_MELEE", "SHEATH_SWORD", "NONCONDUCTIVE" ]
   },
   {
+    "id": "machete_pd2",
+    "looks_like": "katana_hm",
+    "type": "GENERIC",
+    "copy-from": "survivor_machete",
+    "name": { "str": "Shinsakuto Katana" },
+	"weight": "1333 g",
+    "to_hit": 3,
+	"cutting": 25,
+	"bashing": 7,
+    "flags": [ "UNBREAKABLE_MELEE", "SHEATH_SWORD", "NONCONDUCTIVE" ]
+  },
+  {
     "id": "plasmaSaberZhigh",
     "type": "TOOL",
     "category": "weapons",
@@ -1195,7 +1283,7 @@
     "id": "sevenBladeZhigh",
     "type": "GENERIC",
     "category": "weapons",
-    "weapon_category": [ "2H_SWORDS" ],
+    "weapon_category": [ "KOREAN_SWORDS", "2H_SWORDS" ],
     "name": { "str": "seven branched sword" },
     "description": "This is a reproduction of huge, weirdly shaped, and two-handed sword from Korea.  It packs a real punch, but is quite unwieldy.",
     "weight": "3176 g",
@@ -2229,7 +2317,7 @@
 		{ "menu_text": "Change Posture", "type": "transform", "target": "conductingBatonStrengZhigh", "msg": "You change the position of the concducting baton." },
 		{ "type": "cast_spell", "spell_id": "maestroStamiZhigh", "no_fail": true, "level": 0, "need_wielding": true }
 	],
-    "charges_per_use": 1,
+    "charges_per_use": 10,
     "max_charges": 10,
     "initial_charges": 10,
     "relic_data":
@@ -2302,5 +2390,198 @@
       ]
     ],
     "magazine_well": "500 ml"
+  },
+  {
+    "id": "hwandoZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "1H_SWORDS", "SHORT_SWORDS", "KOREAN_SWORDS" ],
+    "name": { "str": "hwando" },
+    "description": "This is a rare sword from Korea.  Deadly against unarmored targets, and still very effective against armor.",
+    "weight": "1133 g",
+    "volume": "1750 ml",
+    "price": "980 USD",
+    "price_postapoc": "45 USD",
+    "to_hit": 2,
+    "bashing": 1,
+    "cutting": 36,
+    "material": [ "leather", "steel" ],
+    "symbol": "/",
+    "color": "light_gray",
+    "techniques": [ "RAPID", "WIDE" ],
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 9 ] ],
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NONCONDUCTIVE" ]
+  },
+  {
+    "id": "hwandoZhigh_inferior",
+    "type": "GENERIC",
+    "copy-from": "hwandoZhigh",
+    "name": { "str": "hwando replica" },
+    "description": "This is a rare sword from Korea.  While it's got the right edge and weight, the pommel just snaps off, and the blade seems pretty worn.",
+    "price": "980 USD",
+    "price_postapoc": "250 cent",
+    "material": [ "leather", "budget_steel" ],
+    "flags": [ "SHEATH_SWORD" ],
+    "bashing": 18,
+    "cutting": 12
+  },
+  {
+    "id": "hwandoZhigh_fake",
+    "type": "GENERIC",
+    "copy-from": "hwandoZhigh",
+    "name": { "str": "hwando fake" },
+    "description": "This is a dull, cheaply made replica of a rare sword from Korea.",
+    "price": "50 USD",
+    "price_postapoc": "50 cent",
+    "material": [ "leather", "aluminum" ],
+    "flags": [ "SHEATH_SWORD", "FRAGILE_MELEE" ],
+    "weight": "753 g",
+    "bashing": 8,
+    "cutting": 5,
+    "to_hit": 1,
+    "qualities": [  ]
+  },
+  {
+    "id": "jangdoZhigh",
+    "type": "GENERIC",
+    "copy-from": "pockknife",
+    "name": { "str": "jangdo" },
+    "description": "This is a finely crafted knife from Korea.  Useful as a tool, but not recommended as a weapon.",
+    "price": "50 USD",
+    "price_postapoc": "5 USD",
+    "material": [ "wood", "leather", "steel", "gold" ],
+    "flags": [ "STAB", "FANCY" ],
+    "weight": "753 g",
+    "cutting": 9,
+    "to_hit": 0,
+    "armor_data": { "covers": [  ] }
+  },
+  {
+    "id": "hookswordZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "1H_SWORDS" ],
+    "name": { "str": "hooksword" },
+    "description": "This is an exotic Chinese weapon, traditionally associated with northern Chinese martial arts.  Known for it's unique shape.",
+    "weight": "1433 g",
+    "volume": "1750 ml",
+    "price": "1200 USD",
+    "price_postapoc": "50 USD",
+    "to_hit": 2,
+    "bashing": 8,
+    "cutting": 35,
+    "material": "steel",
+    "symbol": "/",
+    "color": "light_gray",
+    "techniques": [ "WBLOCK_1", "DEF_DISARM", "SWEEP" ],
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 9 ] ],
+    "flags": [ "ALWAYS_TWOHAND", "DURABLE_MELEE", "SHEATH_SWORD", "NONCONDUCTIVE" ]
+  },
+  {
+    "id": "hookswordZhigh_inferior",
+    "type": "GENERIC",
+    "copy-from": "hookswordZhigh",
+    "name": { "str": "hooksword replica" },
+    "description": "This is an exotic Chinese weapon, traditionally associated with northern Chinese martial arts.  Known for it's unique shape.  This sword appears to be made very poorly, but it should still stand up to a few swings.",
+    "price_postapoc": "750 cent",
+    "material": "budget_steel",
+    "flags": [ "ALWAYS_TWOHAND", "SHEATH_SWORD" ],
+    "bashing": 7,
+    "cutting": 29
+  },
+  {
+    "id": "hookswordZhigh_fake",
+    "type": "GENERIC",
+    "copy-from": "hookswordZhigh",
+    "name": { "str": "hooksword fake" },
+    "description": "This is a dull, cheaply made replica of an exotic Chinese weapon, traditionally associated with northern Chinese martial arts.  Known for it's unique shape.",
+    "price": "120 USD",
+    "price_postapoc": "50 cent",
+    "material": "aluminum",
+    "flags": [ "ALWAYS_TWOHAND", "SHEATH_SWORD", "FRAGILE_MELEE" ],
+    "weight": "1053 g",
+    "bashing": 10,
+    "cutting": 2,
+    "to_hit": 1
+  },
+  {
+    "id": "knife_messerZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "KNIVES" ],
+    "name": { "str": "messer knife", "str_pl": "messer knives" },
+    "description": "This stout combat knife features a nice design.  Ain't useful as a modern combat knife, this still hurts people.  Or zombies.",
+    "weight": "608 g",
+    "volume": "500 ml",
+    "price": "110 USD",
+    "price_postapoc": "1250 cent",
+    "to_hit": 1,
+    "cutting": 16,
+    "thrown_damage": [ { "damage_type": "stab", "amount": 14 } ],
+    "material": [ "steel", "plastic" ],
+    "symbol": ";",
+    "color": "dark_gray",
+    "techniques": [ "RAPID" ],
+    "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 19 ] ],
+    "flags": [ "STAB", "DURABLE_MELEE", "SHEATH_KNIFE", "NPC_THROWN" ]
+  },
+  {
+    "id": "swordstaffZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "GLAIVES", "PIKES" ],
+    "name": { "ctxt": "weapon", "str": "swordstaff" },
+    "description": "This is a medieval weapon consisting of a sword blade stuck with a long staff.",
+    "weight": "2500 g",
+    "volume": "3500 ml",
+    "price": "400 USD",
+    "price_postapoc": "50 USD",
+    "bashing": 9,
+    "cutting": 32,
+    "material": [ "iron", "wood" ],
+    "symbol": "/",
+    "color": "brown",
+    "techniques": [ "IMPALE", "WBLOCK_1" ],
+    "qualities": [ [ "COOK", 1 ] ],
+    "flags": [
+      "DURABLE_MELEE",
+      "POLEARM",
+      "SPEAR",
+      "REACH_ATTACK",
+      "REACH3",
+      "NONCONDUCTIVE",
+      "SHEATH_SPEAR",
+      "ALWAYS_TWOHAND"
+    ]
+  },
+  {
+    "id": "swordstaffZhigh_inferior",
+    "type": "GENERIC",
+    "copy-from": "swordstaffZhigh",
+    "name": { "ctxt": "weapon", "str": "swordstaff replica" },
+    "description": "This is a medieval weapon consisting of a sword blade stuck with a long staff.  The head seems to be pretty dull, and the whole thing feels poorly made.",
+    "price_postapoc": "1250 cent",
+    "to_hit": -1,
+    "bashing": 25,
+    "cutting": 8,
+    "material": [ "budget_steel", "wood" ],
+    "looks_like": "swordstaff",
+    "flags": [ "POLEARM", "SPEAR", "REACH_ATTACK", "REACH3", "NONCONDUCTIVE", "ALWAYS_TWOHAND" ]
+  },
+  {
+    "id": "swordstaffZhigh_fake",
+    "type": "GENERIC",
+    "copy-from": "swordstaffZhigh",
+    "name": { "ctxt": "weapon", "str": "swordstaff fake" },
+    "description": "This is a dull, cheaply made replica of a medieval weapon consisting of a sword blade stuck with a long staff.",
+    "weight": "2000 g",
+    "price": "40 USD",
+    "price_postapoc": "5 USD",
+    "to_hit": 1,
+    "bashing": 13,
+    "cutting": 2,
+    "material": [ "aluminum", "wood" ],
+    "looks_like": "swordstaff",
+    "flags": [ "POLEARM", "SPEAR", "REACH_ATTACK", "REACH3", "NONCONDUCTIVE", "ALWAYS_TWOHAND", "FRAGILE_MELEE" ]
   }
 ]
