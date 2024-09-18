@@ -955,6 +955,32 @@
           { "id": "overlay_wielded_sparkShotZhigh", "fg": 228 },
           { "id": "charm_heat", "fg": 229 },
           { "id": "overlay_wielded_charm_heat", "fg": 229 },
+          { "id": "combatsaw_off", "fg": 230 },
+          { "id": "e_combatsaw_off", "fg": 230 },
+          { "id": "overlay_wielded_combatsaw_off", "fg": 231 },
+          { "id": "overlay_wielded_e_combatsaw_off", "fg": 231 },
+          { "id": "combatsaw_on", "fg": 232 },
+          { "id": "e_combatsaw_on", "fg": 232 },
+          {
+            "id": "overlay_wielded_combatsaw_on",
+            "fg": [
+              { "weight": 7, "sprite": 233 },
+              { "weight": 7, "sprite": 234 },
+              { "weight": 7, "sprite": 235 }
+            ],
+            "rotates": false,
+            "animated": true
+          },
+          {
+            "id": "overlay_wielded_e_combatsaw_on",
+            "fg": [
+              { "weight": 7, "sprite": 233 },
+              { "weight": 7, "sprite": 234 },
+              { "weight": 7, "sprite": 235 }
+            ],
+            "rotates": false,
+            "animated": true
+          },
           { "id": "deathWhistleZhigh", "fg": 236 },
           { "id": "overlay_wielded_deathWhistleZhigh", "fg": 237 },
           { "id": "charm_electric", "fg": 238 },
@@ -1261,6 +1287,17 @@
             ],
             "rotates": false,
             "animated": true
+          },
+          { "id": "balloon_trapZhigh", "fg": 255 },
+          {
+            "id": "tr_balloonZhigh",
+            "fg": [
+              { "weight": 20, "sprite": 252 },
+              { "weight": 20, "sprite": 253 },
+              { "weight": 20, "sprite": 254 }
+            ],
+            "rotates": false,
+            "animated": true
           }
         ],
         "//": "range 1 to 128",
@@ -1386,6 +1423,16 @@
           { "id": "overlay_worn_flowerCrownZhigh", "fg": 194 },
           { "id": "helmet_sovTank", "fg": 195 },
           { "id": "overlay_worn_helmet_sovTank", "fg": 196 },
+          { "id": "freeze_trapZhigh", "fg": 197 },
+          {
+            "id": "tr_freezeZhigh",
+            "fg": [
+              { "weight": 5, "sprite": 197 },
+              { "weight": 20, "sprite": 198 }
+            ],
+            "rotates": false,
+            "animated": true
+          },
           { "id": "hat_boonieTf2", "fg": 199 },
           { "id": "popGunShotgun_zhigh", "fg": 200 },
           { "id": "overlay_wielded_popGunShotgun_zhigh", "fg": 201 },
@@ -1400,7 +1447,140 @@
             ],
             "rotates": false,
             "animated": true
+          },
+          { "id": "badge_snowman", "fg": 205 },
+          { "id": "lockpickKitHitmanZhigh", "fg": 208 },
+          { "id": "peaked_capZhigh", "fg": 209 },
+          { "id": "overlay_worn_peaked_capZhigh", "fg": 210 },
+          { "id": "costumePowerArmorZhigh", "fg": 211 },
+          { "id": "overlay_worn_costumePowerArmorZhigh", "fg": 212 },
+          { "id": "overlay_worn_costumePowerArmorZhigh2", "fg": 213 },
+          { "id": "RichHat_Zhigh", "fg": 214 },
+          { "id": "overlay_worn_costumePowerArmorHelmZhigh", "fg": 215 },
+          { "id": "normal_robe_zhigh", "fg": 216 },
+          { "id": "overlay_worn_normal_robe_zhigh", "fg": 217 },
+          { "id": "rich_robe_zhigh", "fg": 218 },
+          { "id": "overlay_worn_rich_robe_zhigh", "fg": 219 },
+          { "id": "RichHat2_Zhigh", "fg": 220 },
+          { "id": "shovelTacticalZHigh", "fg": 221 },
+          { "id": "overlay_wielded_shovelTacticalZHigh", "fg": 222 },
+          { "id": "muzzle_weightZhigh", "fg": 223 },
+          { "id": "overlay_wielded_muzzle_weightZhigh", "fg": 223 },
+          { "id": "underbarrelFlaregunZhigh", "fg": 224 },
+          { "id": "overlay_wielded_underbarrelFlaregunZhigh", "fg": 224 },
+          { "id": "underbarrelFlameZhigh", "fg": 225 },
+          { "id": "overlay_wielded_underbarrelFlameZhigh", "fg": 225 },
+          { "id": "underbarrelTazerZhigh", "fg": 226 },
+          { "id": "overlay_wielded_underbarrelTazerZhigh", "fg": 226 },
+          { "id": "pistol_gripLaserZhigh", "fg": 227 },
+          { "id": "overlay_wielded_pistol_gripLaserZhigh", "fg": 227 },
+          { "id": "svdZhigh_13", "fg": 228 },
+          { "id": "overlay_wielded_svdZhigh_13", "fg": 229 },
+          { "id": "mosin_bayonetZhigh", "fg": 230 },
+          { "id": "rhinoRevolverZhigh", "fg": 231 },
+          { "id": "overlay_wielded_rhinoRevolverZhigh", "fg": 232 },
+          { "id": "DP28Zhigh", "fg": 233 },
+          { "id": "overlay_wielded_DP28Zhigh", "fg": 234 },
+          { "id": "swimKickboardZhigh", "fg": 235 },
+          { "id": "overlay_worn_swimKickboardZhigh", "fg": 236 },
+          { "id": "underbarrelPaintballgunZhigh", "fg": 237 },
+          { "id": "overlay_wielded_underbarrelPaintballgunZhigh", "fg": 237 },
+          { "id": "underbarrelNailgunZhigh", "fg": 238 },
+          { "id": "overlay_wielded_underbarrelNailgunZhigh", "fg": 238 },
+          { "id": "underbarrelChemZhigh", "fg": 239 },
+          { "id": "overlay_wielded_underbarrelChemZhigh", "fg": 239 },
+          { "id": "jacket_armyZhigh", "fg": 240 },
+          { "id": "overlay_worn_jacket_armyZhigh", "fg": 241 },
+          { "id": "pants_armyZhigh", "fg": 242 },
+          { "id": "overlay_worn_pants_armyZhigh", "fg": 243 },
+          { "id": "RPDZhigh", "fg": 244 },
+          { "id": "overlay_wielded_RPDZhigh", "fg": 245 },
+          { "id": "sv98Zhigh", "fg": 246 },
+          { "id": "overlay_wielded_sv98Zhigh", "fg": 247 },
+          { "id": "overlay_worn_bunny_tailZhigh", "fg": 248 },
+          { "id": "pedersenStenZhigh", "fg": 249 },
+          { "id": "underbarrelLazerZhigh", "fg": 250 },
+          { "id": "overlay_wielded_underbarrelLazerZhigh", "fg": 250 },
+          { "id": "gripWeightZhigh", "fg": 251 },
+          { "id": "overlay_wielded_gripWeightZhigh", "fg": 251 },
+          { "id": "overlay_wielded_flame_trapZhigh", "fg": 252 },
+          { "id": "flame_trapZhigh", "fg": 252 },
+          {
+            "id": "tr_flameZhigh",
+            "fg": [
+              { "weight": 5, "sprite": 252 },
+              { "weight": 20, "sprite": 253 }
+            ],
+            "rotates": false,
+            "animated": true
+          },
+          { "id": "overlay_wielded_acid_trapZhigh", "fg": 254 },
+          { "id": "acid_trapZhigh", "fg": 254 },
+          {
+            "id": "tr_acidZhigh",
+            "fg": [
+              { "weight": 5, "sprite": 254 },
+              { "weight": 20, "sprite": 255 }
+            ],
+            "rotates": false,
+            "animated": true
           }
+        ],
+        "//": "range 1 to 128",
+        "sprite_width": 32,
+        "sprite_height": 32,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": 0
+      }
+    ]
+  },
+  {
+    "type": "mod_tileset",
+    "compatibility": [
+      "Chibi_Ultica",
+      "UltimateCataclysm",
+      "MshockXottoplus",
+      "UNDEAD_PEOPLE",
+      "UNDEAD_PEOPLE_BASE",
+      "UNDEAD_PEOPLE_LEGACY",
+      "UlticaShell",
+      "MshockXottoplus12",
+      "MSX++DEAD_PEOPLE",
+      "MXplus12_for_cosmetics",
+      "MSXotto+"
+    ],
+    "tiles-new": [
+      {
+        "file": "Zhigh_items6.png",
+        "tiles": [
+          { "id": "93rZhigh", "fg": 1 },
+          { "id": "overlay_wielded_93rZhigh", "fg": 2 },
+          { "id": "mask_cavalry_superalloyZhigh", "fg": 3 },
+          { "id": "overlay_worn_mask_cavalry_superalloyZhigh", "fg": 4 },
+          { "id": "mask_cavalry_goldZhigh", "fg": 5 },
+          { "id": "overlay_worn_mask_cavalry_goldZhigh", "fg": 6 },
+          { "id": "balclava_hoodZhigh", "fg": 7 },
+          { "id": "overlay_worn_balclava_hoodZhigh", "fg": 8 },
+          { "id": "mask_gasHandmade", "fg": 11 },
+          { "id": "overlay_worn_mask_gasHandmade", "fg": 12 },
+          { "id": "handPickZhigh", "fg": 13 },
+          { "id": "overlay_wielded_handPickZhigh", "fg": 14 },
+          { "id": "jacket_armyZhigh2", "fg": 16 },
+          { "id": "overlay_worn_jacket_armyZhigh2", "fg": 17 },
+          { "id": "pants_armyZhigh2", "fg": 18 },
+          { "id": "overlay_worn_pants_armyZhigh2", "fg": 19 },
+          { "id": "obrezZhigh", "fg": 20 },
+          { "id": "overlay_wielded_obrezZhigh", "fg": 21 },
+          { "id": "mask_catcherZhigh", "fg": 22 },
+          { "id": "overlay_worn_mask_catcherZhigh", "fg": 23 },
+          { "id": "ammobandZhigh", "fg": 24 },
+          { "id": "overlay_worn_ammobandZhigh", "fg": 25 },
+          { "id": "automag", "fg": 26 },
+          { "id": "overlay_wielded_automag", "fg": 27 },
+          { "id": "acidgun", "fg": 28 },
+          { "id": "overlay_wielded_acidgun", "fg": 29 },
+          { "id": "mask_noiseZhigh", "fg": 32 },
+          { "id": "overlay_worn_mask_noiseZhigh", "fg": 33 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,
@@ -1654,7 +1834,8 @@
           { "id": "overlay_wielded_hookswordZhigh", "fg": 9 },
           { "id": "mon_marusaur", "fg": 10 },
           { "id": "mon_marusaurV2", "fg": 11 },
-          { "id": "overlay_wielded_swordstaffZhigh", "fg": 12 }
+          { "id": "overlay_wielded_swordstaffZhigh", "fg": 12 },
+          { "id": "overlay_effect_speedupExtra", "fg": 13 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 64,
@@ -1937,13 +2118,16 @@
           { "id": "overlay_worn_helmet_szyszakZhigh", "fg": 51 },
           { "id": "overlay_worn_mask_beagle", "fg": 52 },
           { "id": "overlay_worn_hat_boonieTf2", "fg": 53 },
-          { "id": "overlay_worn_mask_hare2", "fg": 54 }
+          { "id": "overlay_worn_mask_hare2", "fg": 54 },
+          { "id": "overlay_worn_badge_snowman", "fg": 55 },
+          { "id": "overlay_worn_RichHat_Zhigh", "fg": 56 },
+          { "id": "overlay_worn_RichHat2_Zhigh", "fg": 57 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,
         "sprite_height": 32,
         "sprite_offset_x": 0,
-        "sprite_offset_y": -10
+        "sprite_offset_y": -13
       }
     ]
   },
@@ -2137,7 +2321,11 @@
           { "id": "deagle_44", "fg": 142 },
           { "id": "switchblade", "fg": 143 },
           { "id": "remington_870_breacher", "fg": 144 },
-          { "id": "overlay_wielded_remington_870_breacher", "fg": 145 }
+          { "id": "overlay_wielded_remington_870_breacher", "fg": 145 },
+          { "id": "knife_carbon", "fg": 146 },
+          { "id": "overlay_wielded_knife_carbon", "fg": 147 },
+          { "id": "famas", "fg": 148 },
+          { "id": "overlay_wielded_famas", "fg": 149 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,

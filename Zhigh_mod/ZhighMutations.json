@@ -1300,6 +1300,21 @@
   },
   {
     "type": "mutation",
+    "id": "ARTIFACTSPIDER",
+    "name": { "str": "spider artifact" },
+    "points": 2,
+    "description": "Spider artifact blesses you.",
+    "valid": false,
+    "purifiable": false,
+    "active": true,
+    "cost": 80,
+    "ranged_mutation": { "type": "webSlingerZhigh", "message": "You fire off webs from your arms." },
+    "hunger": true,
+    "thirst": true,
+    "spawn_item": { "type": "rope_30", "message": "You spin a rope from your silk." }
+  },
+  {
+    "type": "mutation",
     "id": "FRESHWATEROSMOSIS",
     "name": { "str": "Freshwater Osmosis" },
     "points": 4,

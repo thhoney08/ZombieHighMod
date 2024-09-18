@@ -96,13 +96,6 @@
   },
   {
     "type": "start_location",
-    "id": "sloc_ws_fire_lookout_towerZhigh",
-    "name": "fire lookout tower",
-    "terrain": [
-      "ws_fire_lookout_towerZhigh_f4" ]
-  },
-  {
-    "type": "start_location",
     "id": "sloc_hunting_blind",
     "name": "Hunting blind",
     "terrain": [ "hunting_blind" ]
@@ -133,6 +126,8 @@
       "swat_heavy",
       "sniper_police",
       "riot_police",
+      "copLeonRe2",
+      "enforcerDirtyHarry",
       "riot_police_ranged"
     ],
     "flags": [ "CITY_START" ]
@@ -280,6 +275,11 @@
 	  "zhighKamenRider",
 	  "zhighJOJO",
 	  "zhighKabalMk",
+	  "zhighSPESSMEHRENS",
+	  "zhighHankMc",
+	  "zhighWatchDogs",
+	  "zhighCodGhost",
+	  "zhighBunnyGirl",
       "zhighFrat"
     ],
     "flags": [ "CITY_START" ]
@@ -427,6 +427,11 @@
 	  "zhighKamenRider",
 	  "zhighJOJO",
 	  "zhighKabalMk",
+	  "zhighSPESSMEHRENS",
+	  "zhighHankMc",
+	  "zhighWatchDogs",
+	  "zhighCodGhost",
+	  "zhighBunnyGirl",
       "zhighFrat"
     ],
     "start_name": "Zombiefied Highschool",
@@ -488,8 +493,18 @@
   },
   {
     "type": "scenario",
+    "id": "isolationist",
+    "copy-from": "isolationist",
+    "extend": {
+        "allowed_locs": [ "sloc_ZhighSafehouse", "sloc_ZhighFireLookouthouse" ]
+      }
+  },
+  {
+    "type": "scenario",
     "id": "assassination",
     "copy-from": "assassination",
+    "flags": [ "CITY_START", "LONE_START" ],
+    "allowed_locs": [ "sloc_ZhighSafehouse" ],
     "extend": { 
         "professions": [ 
             "hunkReSeries",

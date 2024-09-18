@@ -1005,17 +1005,17 @@
     "description": "Since you were artificially born and how to use a gun, you get orders, then capped people from some few kilometers away without being seen.  No one's hiring you now that the world's ended, but now you are free... right?",
     "points": 15,
     "traits": [ 
-            "PSYCHOPATH",
-            "PAINRESIST",
-            "REGEN",
-            "PRETTY",
-            "TOUGH3",
-            "QUICK",
-            "PER_UP_4",
-            "DEX_UP_4",
-            "INT_UP_4",
-            "STR_UP_4" 
-        ],
+		"PSYCHOPATH",
+		"PAINRESIST",
+		"REGEN",
+		"PRETTY",
+		"TOUGH3",
+		"QUICK",
+		"PER_UP_4",
+		"DEX_UP_4",
+		"INT_UP_4",
+		"STR_UP_4" 
+	],
     "skills": [
       { "level": 2, "name": "speech" },
       { "level": 2, "name": "throw" },
@@ -1036,7 +1036,8 @@
             "platinum_watch"
           ],
         "entries": [
-          { "group": "nested_WA2000Zhigh" },
+          { "item": "WA2000Zhigh", "ammo-item": "300_winmag", "charges": 6, "custom-flags": [ "auto_wield" ], "contents-item": [ "shoulder_strap" ] },
+          { "group": "nested_WA2000Zhigh47" },
           { "item": "knife_combat", "container-item": "bootsheath" },
           { "item": "bandolier_rifle", "contents-group": "bandolier_rifle_47" },
           { "item": "silverballer47", "ammo-item": "45_acp", "charges": 7, "container-item": "holster" },
@@ -1188,6 +1189,69 @@
       },
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "boy_shorts" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "copLeonRe2",
+    "name": "Rookie Police Officer",
+    "description": "First day on your job and the world ended.  This is not how you imagined your first day...",
+    "points": 1,
+    "skills": [ { "level": 1, "name": "gun" }, { "level": 1, "name": "pistol" } ],
+    "traits": [ "PROF_POLICE" ],
+    "items": {
+      "both": {
+        "items": [
+          "socks",
+          "smart_phone",
+          "armor_riot",
+          "police_belt",
+          "badge_deputy",
+          "boots",
+          "whistle",
+          "wristwatch"
+        ],
+        "entries": [
+          { "group": "charged_two_way_radio" },
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "usp_45", "ammo-item": "45_acp", "charges": 12, "container-item": "holster" },
+          { "item": "legpouch_large", "contents-group": "army_mags_usp45" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "boy_shorts" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "enforcerDirtyHarry",
+    "name": "Enforcer",
+    "description": "You were fighting against an weirdo who bite through your partner's shoulder.  Now that suspect is dead.  Your partner is dead.  Do you feel lucky, survivor?",
+    "points": 4,
+    "skills": [ { "level": 3, "name": "gun" }, { "level": 3, "name": "pistol" } ],
+    "traits": [ "PROF_POLICE" ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "police_belt",
+          "badge_detective",
+          "gloves_leather",
+          "wristwatch",
+          "socks",
+          "dress_shoes",
+          "badge_deputy",
+          "smart_phone",
+          "ref_lighter"
+        ],
+        "entries": [
+          { "item": "sw629", "ammo-item": "44fmj", "charges": 6, "container-item": "shoulder_holster" },
+          { "item": "legpouch_large", "contents-group": "speedloaders_44_detective" },
+          { "item": "44fmj", "charges": 18 }
+        ]
+      },
+      "male": [ "briefs" ],
+      "female": [ "bra", "panties" ]
     }
   },
   {

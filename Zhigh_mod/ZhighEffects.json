@@ -1,6 +1,19 @@
 [
   {
     "type": "effect_type",
+    "id": "speedupExtra",
+    "name": [ "speed up" ],
+    "desc": [ "You became faster." ],
+    "apply_message": "You became faster.",
+    "rating": "good",
+    "max_duration": "5 m",
+    "base_mods": {
+      "speed_mod": [ 5 ]
+    },
+    "show_in_info": true
+  },
+  {
+    "type": "effect_type",
     "id": "speedupMaestro",
     "name": [ "speed up" ],
     "desc": [ "You became faster." ],

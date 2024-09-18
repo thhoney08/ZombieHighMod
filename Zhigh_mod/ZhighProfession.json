@@ -251,7 +251,8 @@
       },
       "male": [ "briefs" ],
       "female": [ "sports_bra", "panties" ]
-    }
+    },
+    "flags": [ "SCEN_ONLY" ]
   },
   {
     "type": "profession",
@@ -1124,7 +1125,7 @@
     "name": "Student - Hacker",
     "description": "You always liked electrical stuff - drones, computers, pc, tablets, and so on.  As SHTF you brought your own army of drones, and started to fight back against the undead.",
     "points": 3,
-    "skills": [ { "level": 3, "name": "computer" } ],
+    "skills": [ { "level": 4, "name": "computer" } ],
     "items": {
       "both": {
         "items": [
@@ -1145,7 +1146,8 @@
       },
       "male": [ "briefs" ],
       "female": [ "panties" ]
-    }
+    },
+    "flags": [ "SCEN_ONLY" ]
   },
   {
     "type": "profession",
@@ -1176,7 +1178,8 @@
       },
       "male": [ "briefs", "jacket_light" ],
       "female": [ "bra", "panties", "sweater" ]
-    }
+    },
+    "flags": [ "SCEN_ONLY" ]
   },
   {
     "type": "profession",
@@ -1575,9 +1578,9 @@
           "firecracker_pack",
           "firecracker_pack",
           "firecracker_pack",
-          "balloon",
-          "balloon",
-          "balloon"
+          "balloon_trapZhigh",
+          "balloon_trapZhigh",
+          "balloon_trapZhigh"
         ],
         "entries": [ 
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
@@ -1727,7 +1730,8 @@
       },
       "male": [ "briefs" ],
       "female": [ "sports_bra", "panties" ]
-    }
+    },
+    "flags": [ "SCEN_ONLY" ]
   },
   {
     "type": "profession",
@@ -2227,9 +2231,9 @@
           "wristwatch"
         ],
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "bbpistol", "ammo-item": "bb", "charges": [ 1, 50 ], "container-item": "sholster" },
-                { "item": "bbM4", "ammo-item": "bb", "charges": [ 1, 300 ], "contents-item": [ "shoulder_strap" ], "custom-flags": [ "auto_wield" ] }
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "bbpistol", "ammo-item": "bb", "charges": [ 1, 50 ], "container-item": "sholster" },
+			{ "item": "bbM4", "ammo-item": "bb", "charges": [ 1, 300 ], "contents-item": [ "shoulder_strap" ], "custom-flags": [ "auto_wield" ] }
         ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
@@ -2442,7 +2446,8 @@
                 { "item": "cash_gun", "ammo-item": "ammo_cash", "charges": 89 } ] },
       "male": [ "boxer_shorts", "pants_zhigh", "dress_shoes", "polo_shirt", "socks" ],
       "female": [ "tank_top", "bra", "panties", "skirt_zhigh", "heels", "jacket_leather", "stockings" ]
-    }
+    },
+    "flags": [ "SCEN_ONLY" ]
   },
   {
     "type": "profession",
@@ -2888,7 +2893,8 @@
       },
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "boy_shorts" ]
-    }
+    },
+    "flags": [ "SCEN_ONLY" ]
   },
   {
     "type": "profession",
@@ -2926,8 +2932,8 @@
     "id": "zhighDmr",
     "name": "Student - Marksman",
     "description": "You always liked to shoot guns. More likely, you liked to shoot guns quite accurately, and you were pretty good at it.  While you were playing a round shooting BBs, apocalypse happened and it turned your world 180 degrees.  You are nothing like the sniper from a cool movie, but determined enough to survive in this damn hellhole.",
-    "points": -1,
-    "skills": [ { "level": 3, "name": "gun" }, { "level": 3, "name": "rifle" } ],
+    "points": 1,
+    "skills": [ { "level": 2, "name": "gun" }, { "level": 2, "name": "rifle" } ],
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3014,7 +3020,8 @@
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
-    }
+    },
+    "flags": [ "SCEN_ONLY" ]
   },
   {
     "type": "profession",
@@ -3052,7 +3059,8 @@
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
-    }
+    },
+    "flags": [ "SCEN_ONLY" ]
   },
   {
     "type": "profession",
@@ -3110,7 +3118,8 @@
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
-    }
+    },
+    "flags": [ "SCEN_ONLY" ]
   },
   {
     "type": "profession",
@@ -3179,7 +3188,11 @@
     "name": "Student - Trencher",
     "description": "You were a maniac in WW1 - but never expected a trench warfare to happen right in front of your face.  No officers to hide secrets from you, but you know that you are screwed up.",
     "points": 1,
-    "skills": [ { "level": 1, "name": "gun" }, { "level": 1, "name": "survival" }, { "level": 1, "name": "shotgun" } ],
+    "skills": [
+		{ "level": 1, "name": "gun" },
+		{ "level": 1, "name": "survival" },
+		{ "level": 1, "name": "shotgun" }
+	],
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3700,6 +3713,7 @@
     "name": "Student - Golfer",
     "description": "You decided to get away from school for the day to do a little golfing by yourself.",
     "points": -1,
+    "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "bashing" }, { "level": 1, "name": "melee" } ],
     "items": {
       "both": {
@@ -3711,7 +3725,8 @@
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
       "female": [ "bra", "panties", "skirt_zhigh" ]
-    }
+    },
+    "flags": [ "SCEN_ONLY" ]
   },
   {
     "type": "profession",
@@ -4109,7 +4124,7 @@
 		]
       },
       "male": [ "boxer_shorts" ],
-      "female": [ "bra", "panties" ]
+      "female": [ "panties" ]
     },
     "flags": [ "SCEN_ONLY" ]
   },
@@ -4141,7 +4156,157 @@
 		]
       },
       "male": [ "boxer_shorts" ],
+      "female": [ "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighSPESSMEHRENS",
+    "name": "Student - Cosplayer",
+    "description": "You cosplayed as a 'space soldier' when the world ended.  The world is doomed, but you still try to find the holy globules.  Praise the space king!",
+    "points": 4,
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "dodge" },
+      { "level": 1, "name": "cutting" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "socks",
+          "pants_zhigh",
+          "dress_shoes",
+          "costumePowerArmorHelmZhigh"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "ZhighPowerArmor" },
+			{ "item": "swordsmanSword", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
       "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighHankMc",
+    "name": "Student - Cosplayer",
+    "description": "You cosplayed as a 'mad protagonist' when the world ended.  The world is doomed, but you still try survive.  Somewhere in Nevada...",
+    "points": 4,
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [
+      { "level": 2, "name": "melee" },
+      { "level": 2, "name": "dodge" },
+      { "level": 2, "name": "gun" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "chestwrap",
+          "zhigh_smart_phone",
+          "socks",
+          "pants_zhigh",
+          "dress_shoes",
+          "trenchcoat_leather",
+          "mask_rioter",
+          "survivor_goggles"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighWatchDogs",
+    "name": "Student - Cosplayer",
+    "description": "You cosplayed as a 'middle-aged hacker' when the world ended.  The world is doomed, but you still try to control the damn thing.",
+    "points": 4,
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [
+      { "level": 2, "name": "melee" },
+      { "level": 2, "name": "bashing" },
+      { "level": 2, "name": "computer" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "socks",
+          "pants_zhigh",
+          "dress_shoes",
+          "trenchcoat_leather",
+          "baton",
+          "hat_ball"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighCodGhost",
+    "name": "Student - Cosplayer",
+    "description": "You cosplayed as a 'spectre' when the world ended.  The world is doomed, but you get dirty and the world stays clean.  That's the mission.",
+    "points": 4,
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [
+		{ "level": 3, "name": "gun" },
+		{ "level": 3, "name": "rifle" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "socks",
+          "pants_zhigh",
+          "boots_combat",
+          "modularvest",
+          "bandana_skull",
+          "fancy_sunglassesStars"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "bbpistol", "ammo-item": "bb", "charges": [ 1, 50 ], "container-item": "sholster" },
+			{ "item": "bbM4", "ammo-item": "bb", "charges": [ 1, 300 ], "contents-item": [ "shoulder_strap" ], "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighBunnyGirl",
+    "name": { "male": "Bunny Boy", "female": "Bunny Girl" },
+    "description": "You used to be a person wearing a bunny outfit before the Cataclysm, and now that is the only thing you've got.",
+    "points": -3,
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": { "items": [ "stockings", "heels", "corset", "hot_pants_leather", "bunny_tailZhigh", "bunny_earsB", "zhigh_smart_phone" ],
+        "entries": [
+			{ "group": "ZhighNpc_ids" },
+			{ "item": "zhigh_smart_phone", "custom-flags": [ "auto_wield" ] }
+		]
+	  }
     },
     "flags": [ "SCEN_ONLY" ]
   },

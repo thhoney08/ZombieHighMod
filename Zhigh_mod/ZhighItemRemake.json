@@ -285,7 +285,7 @@
     "ammo": "battery",
     "name": { "str": "tazer" },
     "range": 7,
-    "ranged_damage": { "damage_type": "electric", "amount": 8, "armor_penetration": 5 },
+    "ranged_damage": { "damage_type": "electric", "amount": 8, "armor_penetration": 8 },
     "dispersion": 20,
     "loudness": 7,
     "ammo_effects": [ "LIGHTNING", "HEAVY_HIT" ],
@@ -343,10 +343,10 @@
     "copy-from": "remington_870_breacher",
     "type": "GUN",
     "name": { "str": "Remington 870 MCS" },
-    "volume": "824 ml",
+    "volume": "1024 ml",
     "ascii_picture": "remington870mcs",
     "ranged_damage": { "damage_type": "bullet", "amount": 1, "armor_penetration": 8 },
-    "sight_dispersion": 800
+    "sight_dispersion": 600
   },
   {
     "id": "can_drink",
@@ -1248,7 +1248,7 @@
     "type": "GUNMOD",
     "name": { "str": "gyroscopic stabilizer" },
     "integral_volume": "25 ml",
-    "dispersion_modifier": -10,
+    "dispersion_modifier": -20,
     "handling_modifier": 25
   },
   {
@@ -2559,5 +2559,13 @@
     "weight": "8 g",
     "volume": "3 ml",
     "flags": [ "CARDZHIGH", "FIRESTARTER" ]
+  },
+  {
+    "id": "m134",
+    "copy-from": "m134",
+    "type": "GUN",
+    "name": { "str": "M134D-H Minigun" },
+    "ranged_damage": { "damage_type": "bullet", "amount": 5 },
+    "modes": [ [ "DEFAULT", "low auto", 6 ], [ "AUTO", "high auto", 12 ] ]
   }
 ]
