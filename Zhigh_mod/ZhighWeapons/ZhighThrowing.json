@@ -462,7 +462,7 @@
     "turns_per_charge": 1,
     "use_action": {
       "type": "explosion",
-      "fields_type": "fd_fire",
+      "fields_type": "fd_incendiary",
       "fields_radius": 6,
       "fields_min_intensity": 6,
       "fields_max_intensity": 6,
@@ -711,11 +711,12 @@
     "color": "light_gray",
     "description": "A thin and flat knife made for throwing.  Its ineffective cutting edge and odd shape makes it unsuitable for use as a tool.",
     "material": "steel",
-    "volume": "150 ml",
-    "weight": "168 g",
+    "volume": "90 ml",
+    "weight": "125 g",
     "bashing": 1,
-    "cutting": 10,
-    "thrown_damage": [ { "damage_type": "stab", "amount": 7 }, { "damage_type": "cut", "amount": 7 } ]
+    "cutting": 5,
+    "thrown_damage": [ { "damage_type": "stab", "amount": 7 }, { "damage_type": "cut", "amount": 7 } ],
+    "flags": [ "HURT_WHEN_WIELDED", "BELT_CLIP" ]
   },
   {
     "type": "GENERIC",

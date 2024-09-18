@@ -1224,6 +1224,16 @@
     }
   },
   {
+    "id": "ammoRingZhigh",
+    "name": { "str": "ammo ring" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique ring.  Could be used to make some ammo.",
+    "copy-from": "ringBaseZhigh",
+    "initial_charges": 1,
+    "max_charges": 1,
+    "artifact_data": { "charge_type": "ARTC_TIME" }
+  },
+  {
     "id": "amuletBaseZhigh",
     "looks_like": "gold_necklace",
     "name": { "str": "amulet base" },
@@ -1241,9 +1251,9 @@
     "relic_data": {
       "passive_effects": [
         {
-          "has": "HELD",
+          "has": "WORN",
           "condition": "ALWAYS",
-		  "mutations": [ "WEB_ROPE", "ARACHNID_ARMS_OK" ]
+		  "mutations": [ "ARTIFACTSPIDER" ]
         }
       ]
     }
