@@ -10,8 +10,17 @@
     "power": 50,
     "food_supply": 3000000,
     "wealth": 3000000,
-	"currency": "FMCNote",
+	"currency": "ZhighCoin",
     "relations": {
+      "Zhigh_Survivors": {
+        "kill on sight": false,
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
       "your_followers": {
         "kill on sight": false,
         "watch your back": true,
@@ -61,5 +70,59 @@
         "text": "    While they were struggling to survive in this chaos, some helping hands rose them up.  It was not easy for all of them to survive - and some of the helping hands did not made it.  Day by day, they slowly but steadliy constructed a society, a place that they could call home."
       }
     ]
+  },
+  {
+    "type": "faction",
+    "id": "specOpsDudesZhigh",
+    "name": "Navy Survivors",
+    "likes_u": 15,
+    "respects_u": 15,
+    "known_by_u": false,
+    "size": 70,
+    "power": 100,
+    "food_supply": 115200,
+    "wealth": 75000,
+    "currency": "RobofacCoin",
+    "relations": {
+      "specOpsDudesZhigh": {
+        "kill on sight": false,
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "your_followers": {
+        "kill on sight": false,
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "no_faction": {
+        "kill on sight": false,
+        "watch your back": false,
+        "share my stuff": false,
+        "guard your stuff": false,
+        "lets you in": true,
+        "defends your space": false,
+        "knows your voice": true
+      },
+      "robofac": {
+        "kill on sight": false,
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "hells_raiders": { "kill on sight": true },
+      "marloss": { "kill on sight": true }
+    },
+    "description": "A survivors of a ship accident, while on their own unkown mission."
   }
 ]

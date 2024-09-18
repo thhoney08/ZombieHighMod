@@ -91,5 +91,133 @@
       }
     ],
     "responses": [ { "text": "Don't mind me…", "topic": "TALK_DONE" } ]
+  },
+  {
+    "type": "npc",
+    "id": "Zhigh_Soldier",
+    "name_suffix": "soldier",
+    "class": "NC_ZHIGHSoldier",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_ZHIGH_Soldier",
+    "faction": "specOpsDudesZhigh"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_ZHIGHSoldier",
+    "name": { "str": "Soldier" },
+    "job_description": "I'm protecting my school.",
+    "traits": [ 
+      { "group": "BG_survival_story_RURAL" }, 
+      { "group": "NPC_starting_traits" }, 
+      { "group": "Appearance_Mixed" },
+      { "trait": "REGEN_zhigh" } ],
+    "bonus_str": { "rng": [ 2, 3 ] },
+    "bonus_dex": { "rng": [ -3, 4 ] },
+    "bonus_per": { "rng": [ 1, 2 ] },
+    "worn_override": "NC_ZhighSoldier_worn",
+    "carry_override": "NC_Soldier_misc",
+    "weapon_override": "NC_ZhighSoldier_wield",
+    "shopkeeper_item_group": "NC_Soldier_misc",
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "melee", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "stabbing", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "throw", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "launcher", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "shotgun", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "smg", "bonus": { "rng": [ 3, 5 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ZhighSoldier_worn",
+    "subtype": "collection",
+    "items": [
+      { "item": "boxer_briefs" },
+      { "group": "ZhighNpc_underwear_feet_male" },
+      { "item": "dress_shirt_zhigh" },
+      { "item": "pants_armyZhigh" },
+      { "item": "jacket_armyZhigh" },
+      { "item": "modularvesthardSpecops" },
+      { "group": "npc_gloves" },
+      { "item": "boots_combat" },
+      { "group": "NC_Soldier_head" },
+      { "group": "npc_extra" },
+      { "group": "npc_wrist" },
+      { "group": "npc_storage" },
+      { "group": "npc_belt" },
+      { "item": "badge_light" },
+      { "item": "knife_combat", "container-item": "bootsheath" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_Soldier_head",
+    "items": [
+	  { "item": "null", "prob": 20 },
+      { "item": "helmet_maska", "prob": 10 },
+      { "item": "helmet_maska_raised", "prob": 10 },
+      { "item": "glasses_bal", "prob": 10 },
+      { "item": "glasses_safety", "prob": 10 },
+      { "item": "fancy_sunglasses" },
+      { "item": "sunglasses", "prob": 10 },
+      { "item": "beret", "prob": 10 },
+      { "item": "beret_wool", "prob": 10 },
+      { "item": "balclava", "prob": 10 },
+      { "item": "balclava_skull", "prob": 10 },
+      { "item": "bandana", "prob": 10 },
+      { "item": "bandana_skull", "prob": 10 },
+      { "item": "tac_helmet", "prob": 10 },
+      { "item": "helmet_skid", "prob": 10 },
+      { "item": "tac_fullhelmet", "prob": 10 },
+      { "item": "helmet_lobster", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_Soldier_misc",
+    "subtype": "collection",
+    "entries": [
+      { "group": "npc_misc" },
+      { "item": "762_m43" },
+      { "item": "762_m43" },
+      { "item": "762_m43" },
+      { "group": "ZhighNpc_throw", "count": [ 1, 2 ], "prob": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ZhighSoldier_wield",
+    "subtype": "distribution",
+    "items": [
+      { "item": "RPDZhigh", "ammo-item": "762_m43", "charges": 100, "contents-item": [ "rail_laser_sight", "shoulder_strap" ], "prob": 15 },
+      { "item": "ak47", "ammo-item": "762_m43", "charges": 30, "contents-item": [ "rail_laser_sight", "shoulder_strap" ], "prob": 30 },
+      { "item": "arx160", "ammo-item": "762_m43", "charges": 30, "contents-item": [ "rail_laser_sight", "shoulder_strap" ], "prob": 20 },
+      { "item": "aksemi", "ammo-item": "762_m43", "charges": 75, "contents-item": [ "rail_laser_sight", "shoulder_strap" ], "prob": 30 },
+      { "item": "draco", "ammo-item": "762_m43", "charges": 75, "contents-item": [ "rail_laser_sight" ], "prob": 10 }
+     ]
+  },
+  {
+    "id": "TALK_ZHIGH_Soldier",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "I'm not in charge here, you're looking for someone else...",
+      "Keep civil or I'll bring the pain.",
+      "Just on watch, move along.",
+      {
+        "u_male": [ "Hey.", "Rough out there, isn't it?" ],
+        "no": [ "Hey.", "Hey, you really shouldn't be traveling out there." ]
+      }
+    ],
+    "responses": [ { "text": "Don't mind me…", "topic": "TALK_DONE" } ]
   }
 ]
