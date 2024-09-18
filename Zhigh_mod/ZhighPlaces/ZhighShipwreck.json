@@ -1,0 +1,309 @@
+[
+  {
+    "type": "overmap_terrain",
+    "id": [ "shipwreckZhigh_river_1" ],
+    "name": "Unknown Ship",
+    "looks_like": "shipwreck_river_1",
+    "sym": "w",
+    "color": "red",
+    "see_cost": 4
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "shipwreckZhigh_river_2" ],
+    "name": "Unknown Ship",
+    "looks_like": "shipwreck_river_2",
+    "sym": "w",
+    "color": "red",
+    "see_cost": 4
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "shipwreckZhigh_river_3" ],
+    "name": "Unknown Ship",
+    "looks_like": "shipwreck_river_3",
+    "sym": "w",
+    "color": "red",
+    "see_cost": 4
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "shipwreckZhigh_river_4" ],
+    "name": "Unknown Ship",
+    "looks_like": "shipwreck_river_4",
+    "sym": "w",
+    "color": "red",
+    "see_cost": 4
+  },
+  {
+    "type": "overmap_special",
+    "id": "UnknownShip",
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "shipwreckZhigh_river_1_north" },
+      { "point": [ 1, 0, 0 ], "overmap": "shipwreckZhigh_river_2_north" },
+      { "point": [ 0, 0, -1 ], "overmap": "shipwreckZhigh_river_3_north" },
+      { "point": [ 1, 0, -1 ], "overmap": "shipwreckZhigh_river_4_north" }
+    ],
+    "locations": [ "water" ],
+    "occurrences": [ 0, 2 ]
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "shipwreckZhigh_river_1" ],
+    "object": {
+      "faction_owner": [ { "id": "specOpsDudesZhigh", "x": [ 0, 23 ], "y": [ 0, 23 ] } ],
+      "rows": [
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........... ............",
+        "........................",
+        ".........#..............",
+        "...c #cccccccccccccc----",
+        ".ccc #c            63r  ",
+        "#~~~#cc     C       3r 6",
+        "..~-cc   ##  6ee    3r  ",
+        ".CC-Ccc ~~~~  #    ~--#-",
+        ".ccc #c             #  .",
+        "...c #cccccccccccccc----",
+        "~~#-.~~..~~~##~~~~~~~~~~",
+        "..~~~~  ~~.##-..~~~.~~~~",
+        "##---.cc.....   ~~......",
+        "..........-.-##.......~.",
+        "....~~...c..............",
+        "........................",
+        "........................",
+        "........................",
+        "........................"
+      ],
+      "terrain": {
+        " ": "t_bulkhead_floor",
+        "#": "t_dirt",
+        "+": "t_door_metal_bulkhead_c",
+        "-": [ [ "t_bulkhead_floor", 20 ], [ "t_wall_bulkhead", 80 ] ],
+        ".": [
+          "t_water_sh",
+          { "ter": "t_water_sh" },
+          { "ter": "t_dirt" },
+          { "ter": "t_grass" },
+          { "ter": "t_dirt" },
+          { "ter": "t_dirtmound" }
+        ],
+        "3": "t_reinforced_glass_shutter",
+        "6": "t_utility_light",
+        "C": "t_bulkhead_floor",
+        "c": "t_guardrail_bg_dp",
+        "e": "t_machinery_heavy",
+        "r": "t_console_broken",
+        "~": [ [ "t_water_sh", 20 ], [ "t_bulkhead_floor", 80 ] ]
+      },
+      "furniture": { "#": "f_locker" },
+      "place_npcs": [
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] }
+      ],
+      "items": {
+		  "#": { "item": "military", "chance": 100, "repeat": 15 },
+		  "D": { "item": "office", "chance": 70 },
+		  "C": { "item": "military", "chance": 10, "repeat": 3 }
+	  }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "shipwreckZhigh_river_2" ],
+    "object": {
+      "faction_owner": [ { "id": "specOpsDudesZhigh", "x": [ 0, 23 ], "y": [ 0, 23 ] } ],
+      "rows": [
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........... ............",
+        ".C........~~~~~.........",
+        "..CC~~~~~~~CCC..........",
+        "---------------.........",
+        "A-~   ~~>-   #---.......",
+        "~-~~~~~~~+ ~~###--~.....",
+        " -~ ------ 6  CCC~~.....",
+        "+-+--  ~C~~~  C --.~~...",
+        "~~~  ~~~~ ---##-#~......",
+        "##~~~ ..---~~~~~~~C-....",
+        "~~#-.~~..~~~####-C-.....",
+        "..~~~~~~~~.##-.C-.......",
+        "##---........----.......",
+        "..........-.-##.........",
+        "....~~..................",
+        "........................",
+        "........................",
+        "........................",
+        "........................"
+      ],
+      "terrain": {
+        " ": "t_bulkhead_floor",
+        "#": "t_dirt",
+        "+": "t_door_metal_bulkhead_c",
+        "-": [ [ "t_bulkhead_floor", 10 ], [ "t_wall_bulkhead", 90 ] ],
+        ".": [
+          "t_water_sh",
+          { "ter": "t_water_sh" },
+          { "ter": "t_dirt" },
+          { "ter": "t_grass" },
+          { "ter": "t_dirt" },
+          { "ter": "t_dirtmound" }
+        ],
+        ">": "t_stairs_down",
+        "6": "t_utility_light",
+        "A": "t_bulkhead_floor",
+        "C": "t_bulkhead_floor",
+        "~": [ [ "t_water_sh", 20 ], [ "t_bulkhead_floor", 80 ] ]
+      },
+      "furniture": { "#": "f_wreckage", "A": "f_safe_l" },
+      "place_loot": [ { "group": "guns_safe", "x": 0, "y": 9, "chance": 70, "ammo": 95, "magazine": 100 } ],
+      "place_npcs": [
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] }
+      ],
+      "items": {
+		  "#": { "item": "military", "chance": 100, "repeat": 15 },
+		  "C": { "item": "military", "chance": 10, "repeat": 3 }
+	  }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "shipwreckZhigh_river_3" ],
+    "object": {
+      "faction_owner": [ { "id": "specOpsDudesZhigh", "x": [ 0, 23 ], "y": [ 0, 23 ] } ],
+      "rows": [
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        ".... -------------------",
+        ".....-#   ~~C~ C~#~~66e-",
+        ".....--# ##C~~ ~~~~~  #-",
+        "... . -# ##R~~~ #eTGG ~ ",
+        ".....--# #CC ~~6 ~~~~~~-",
+        ".....-#  ###CC~~~~666ee-",
+        ".....-------------------",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................"
+      ],
+      "terrain": {
+        " ": "t_bulkhead_floor",
+        "#": "t_bulkhead_floor",
+        "+": "t_door_metal_bulkhead_c",
+        "-": "t_wall_bulkhead",
+        ".": "t_rock",
+        "6": "t_utility_light",
+        "C": "t_bulkhead_floor",
+        "G": "t_generator_broken",
+        "R": "t_plut_generator",
+        "T": "t_bulkhead_floor",
+        "e": "t_machinery_heavy",
+        "~": "t_bulkhead_floor"
+      },
+      "furniture": { "#": "f_warehouse_shelf", "T": "f_steam_turbine" },
+      "place_npcs": [
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] }
+      ],
+      "items": {
+		  "#": { "item": "military", "chance": 100, "repeat": 15 },
+		  "C": { "item": "military", "chance": 10, "repeat": 3 }
+	  }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "shipwreckZhigh_river_4" ],
+    "object": {
+      "faction_owner": [ { "id": "specOpsDudesZhigh", "x": [ 0, 23 ], "y": [ 0, 23 ] } ],
+      "rows": [
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "-------------------- ...",
+        "-~~~~  -<~-A~~ee 6#--...",
+        "---##---~~-- ~   ###-...",
+        "~~~~~~C~~~ +  6e6~~#-...",
+        "---~-~~   C-   ~ ~~#-...",
+        "-~~~-C 6 C -9 eee###-...",
+        "---------------------...",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................",
+        "........................"
+      ],
+      "terrain": {
+        " ": "t_bulkhead_floor",
+        "#": "t_bulkhead_floor",
+        "+": "t_door_metal_bulkhead_c",
+        "-": "t_wall_bulkhead",
+        ".": "t_rock",
+        "6": "t_utility_light",
+        "9": "t_bulkhead_floor",
+        "<": "t_stairs_up",
+        "A": "t_bulkhead_floor",
+        "C": "t_bulkhead_floor",
+        "e": "t_machinery_heavy",
+        "~": "t_bulkhead_floor"
+      },
+      "furniture": { "#": "f_warehouse_shelf", "9": "f_locker", "A": "f_standing_tank" },
+      "place_npcs": [
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
+        { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] }
+      ],
+      "items": {
+		  "9": { "item": "hardware_plumbing", "chance": 90, "repeat": 15 },
+		  "#": { "item": "military", "chance": 100, "repeat": 15 },
+		  "C": { "item": "military", "chance": 20, "repeat": 5 }
+	  }
+    }
+  }
+]

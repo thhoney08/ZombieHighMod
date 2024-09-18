@@ -1,5 +1,11 @@
 [
   {
+    "type": "start_location",
+    "id": "sloc_ZhighFireLookouthouse",
+    "name": "Fire Lookout Tower",
+    "terrain": [ "ws_fire_lookout_towerZhigh_f3" ]
+  },
+  {
     "type": "overmap_terrain",
     "id": [
       "ws_fire_lookout_towerZhigh_base",
@@ -29,7 +35,7 @@
     ],
     "locations": [ "wilderness" ],
     "city_distance": [ 20, 40 ],
-    "occurrences": [ 0, 5 ],
+    "occurrences": [ 10, 50 ],
     "flags": [ "CLASSIC", "WILDERNESS", "ELECTRIC_GRID" ]
   },
   {
@@ -313,12 +319,12 @@
         "c": { "item": "trash", "chance": 100 }
       },
       "add": [
-        { "item": "coffeemaker", "x": 14, "y": [ 8, 9 ], "chance": 2 },
-        { "item": "binoculars", "x": 9, "y": [ 10, 12 ], "chance": 2 },
-        { "item": "pan", "x": 14, "y": 10, "chance": 1 },
-        { "item": "jug_plastic", "x": 14, "y": 12, "chance": 3 },
-        { "item": "water_clean", "x": 14, "y": 12, "chance": 2 },
-        { "item": "char_purifier", "x": 14, "y": 11, "chance": 2 }
+        { "item": "coffeemaker", "x": 14, "y": [ 8, 9 ], "chance": 100 },
+        { "item": "binoculars", "x": 9, "y": [ 10, 12 ], "chance": 100 },
+        { "item": "pan", "x": 14, "y": 10, "chance": 100 },
+        { "item": "jug_plastic", "x": 14, "y": 12, "chance": 100 },
+        { "item": "water_clean", "x": 14, "y": 12, "chance": 100 },
+        { "item": "char_purifier", "x": 14, "y": 11, "chance": 100 }
       ]
     }
   },
@@ -365,7 +371,7 @@
         ">": "t_ladder_down"
       },
       "furniture": { "g": "f_grid_plut_generator", "h": "f_chair" },
-      "items": { "s": { "item": "flt_loot_vehicle", "chance": 100 }, ",": { "item": "trash_forest", "chance": 2 } }
+      "items": { "s": { "item": "flt_loot_vehicle", "chance": 100 }, ",": { "item": "trash_forest", "chance": 100 } }
     }
   },
   {

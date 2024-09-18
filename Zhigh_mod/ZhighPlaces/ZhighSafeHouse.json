@@ -2,9 +2,8 @@
   {
     "type": "start_location",
     "id": "sloc_ZhighSafehouse",
-    "name": "safe house",
-    "terrain": [
-      "safeHouseZhigh_north" ]
+    "name": "Safe House",
+    "terrain": [ "safeHouseZhigh" ]
   },
   {
     "type": "overmap_special",
@@ -15,9 +14,9 @@
 		{ "point": [ 0, 0, 1 ], "overmap": "safeHouseZhigh_roof_north" }
 	],
     "connections": [ { "point": [ 0, -1, 0 ], "connection": "local_road" } ],
-    "locations": [ "land" ],
-    "occurrences": [ 4, 5 ],
-    "flags": [ "CLASSIC", "URBAN", "ELECTRIC_GRID" ]
+    "occurrences": [ 10, 11 ],
+    "locations": [ "wilderness" ],
+    "flags": [ "CLASSIC", "WILDERNESS", "ELECTRIC_GRID" ]
   },
   {
     "type": "overmap_terrain",
@@ -62,7 +61,7 @@
         ".:.....~%#I  +  yb|Dzd#.",
         "..&&&..~%o$  |@   ||+|#.",
         "..&X&.:~%o>  |@sT    I#.",
-        "..&&&..~%##[####o###o##.",
+        "..&&&..~%##*####o###o##.",
         ".:.....~.%%~~%%%%%%%%%^.",
         ".......~...~~........P..",
         ".......~.~~~~~~~~jjj~...",
@@ -74,8 +73,8 @@
       ],
       "palettes": [ "standard_domestic_paletteZhigh" ],
       "terrain": {
-        "%": [ "t_region_shrub", "t_region_shrub_fruit", "t_region_shrub_decorative" ],
-        ":": [ [ "t_region_tree_fruit", 20 ], [ "t_region_tree_nut", 20 ] ],
+        "%": [ "t_shrub_grape" ],
+        ":": [ [ "t_region_tree_fruit", 80 ], [ "t_region_tree_nut", 20 ] ],
         "&": "t_region_groundcover_urban",
         "$": "t_railing_h",
         "_": "t_pavement",
@@ -89,7 +88,7 @@
         "9": "t_linoleum_gray",
         "S": "t_linoleum_gray",
         "Q": "t_linoleum_gray",
-        "[": "t_door_glass_c"
+        "*": "t_door_metal_c"
       },
       "furniture": { 
         "P": "f_grid_plut_generator",
@@ -99,8 +98,13 @@
       "place_loot": [
         { "group": "barbecue", "x": [ 12, 14 ], "y": [ 20, 20 ], "chance": 100, "repeat": [ 1, 4 ] },
         { "item": "television", "x": [ 19, 19 ], "y": [ 4, 4 ], "chance": 100 },
+        { "item": "briefcase_AgentZhigh", "x": [ 18, 18 ], "y": [ 4, 4 ], "chance": 100 },
+        { "group": "grenades", "x": [ 18, 18 ], "y": [ 4, 4 ], "chance": 80 },
+        { "group": "spy_pen_collections", "x": [ 18, 18 ], "y": [ 4, 4 ], "chance": 100, "repeat": [ 2, 3 ] },
         { "item": "char_smoker", "x": [ 18, 18 ], "y": [ 19, 19 ], "chance": 100 },
-        { "item": "charcoal", "x": [ 18, 18 ], "y": [ 19, 19 ], "chance": 100, "repeat": [ 1, 3 ] }
+        { "item": "knife_hitmanZhigh", "x": [ 18, 18 ], "y": [ 16, 16 ], "chance": 100 },
+        { "item": "lockpickKitHitmanZhigh", "x": [ 18, 18 ], "y": [ 11, 11 ], "chance": 100 },
+        { "item": "charcoal", "x": [ 18, 18 ], "y": [ 19, 19 ], "chance": 100, "repeat": [ 30, 49 ] }
       ],
       "place_nested": [
         {
@@ -303,36 +307,36 @@
       "<": "t_wood_stairs_up",
       ">": "t_wood_stairs_down"
     },
-    "liquids": { "g": { "liquid": "water", "amount": [ 0, 100 ] } },
+    "liquids": { "g": { "liquid": "water", "amount": [ 99, 100 ] } },
     "items": {
-      "a": { "item": "stash_wood", "chance": 30, "repeat": [ 2, 5 ] },
+      "a": { "item": "stash_wood", "chance": 100, "repeat": [ 2, 5 ] },
       "d": [
-        { "item": "SUS_dresser_mens", "chance": 50, "repeat": [ 1, 2 ] },
-        { "item": "SUS_dresser_womens", "chance": 50, "repeat": [ 1, 2 ] }
+        { "item": "SUS_dresser_mens", "chance": 100, "repeat": [ 1, 2 ] },
+        { "item": "SUS_dresser_womens", "chance": 100, "repeat": [ 1, 2 ] }
       ],
       "e": { "item": "pool_table", "chance": 100, "repeat": [ 1, 2 ] },
       "f": [
-        { "item": "dishes_dining", "chance": 30 },
+        { "item": "dishes_dining", "chance": 100 },
         { "item": "tea_dishes", "chance": 100, "repeat": [ 1, 2 ] },
         { "item": "baked_goods", "chance": 5 },
         { "item": "groce_condiment", "chance": 100, "repeat": [ 1, 2 ] },
         { "item": "dining", "chance": 100 }
       ],
-      "k": { "item": "stash_wood", "chance": 30, "repeat": [ 2, 5 ] },
+      "k": { "item": "stash_wood", "chance": 100, "repeat": [ 2, 5 ] },
       "l": [
-        { "item": "elecsto_persele", "chance": 10, "repeat": [ 1, 3 ] },
-        { "item": "livingroom", "chance": 10, "repeat": [ 1, 3 ] }
+        { "item": "elecsto_persele", "chance": 100, "repeat": [ 1, 3 ] },
+        { "item": "livingroom", "chance": 100, "repeat": [ 1, 3 ] }
       ],
       "s": [
-        { "item": "consumer_electronics", "chance": 10, "repeat": [ 1, 3 ] },
-        { "item": "livingroom", "chance": 10, "repeat": [ 1, 3 ] }
+        { "item": "consumer_electronics", "chance": 100, "repeat": [ 1, 3 ] },
+        { "item": "livingroom", "chance": 100, "repeat": [ 1, 3 ] }
       ],
-      "m": { "item": "SUS_fridge", "chance": 80 },
-      "n": { "item": "SUS_dishwasher", "chance": 70 },
-      "p": { "item": "mail", "chance": 30, "repeat": [ 2, 5 ] },
+      "m": { "item": "SUS_fridge", "chance": 100 },
+      "n": { "item": "SUS_dishwasher", "chance": 100 },
+      "p": { "item": "mail", "chance": 100, "repeat": [ 2, 5 ] },
       "q": [
-        { "item": "tools_home", "chance": 40 },
-        { "item": "cleaning", "chance": 30, "repeat": [ 1, 2 ] },
+        { "item": "tools_home", "chance": 100 },
+        { "item": "cleaning", "chance": 100, "repeat": [ 1, 2 ] },
         { "item": "mechanics", "chance": 1, "repeat": [ 1, 2 ] },
         { "item": "camping", "chance": 100 },
         { "item": "tools_survival", "chance": 100, "repeat": [ 1, 2 ] }
@@ -341,11 +345,11 @@
       "t": { "item": "SUS_toilet", "chance": 75 },
       "w": [
         { "item": "shower", "chance": 20 },
-        { "item": "cleaning", "chance": 30, "repeat": [ 1, 2 ] },
-        { "item": "bed", "chance": 30, "repeat": [ 1, 2 ] }
+        { "item": "cleaning", "chance": 100, "repeat": [ 1, 2 ] },
+        { "item": "bed", "chance": 100, "repeat": [ 1, 2 ] }
       ],
-      "x": { "item": "consumer_electronics", "chance": 10, "repeat": [ 1, 3 ] },
-      "B": { "item": "shower", "chance": 10, "repeat": [ 1, 2 ] },
+      "x": { "item": "consumer_electronics", "chance": 100, "repeat": [ 1, 3 ] },
+      "B": { "item": "shower", "chance": 100, "repeat": [ 1, 2 ] },
       "D": [
         { "item": "SUS_wardrobe_mens", "chance": 50, "repeat": [ 1, 2 ] },
         { "item": "SUS_wardrobe_womens", "chance": 50, "repeat": [ 1, 2 ] }
@@ -353,52 +357,52 @@
       "F": { "item": "SUS_fridge", "chance": 100 },
       "I": [ { "item": "SUS_desks_bedroom_unisex", "chance": 5 }, { "item": "office", "chance": 25 } ],
       "J": { "item": "kitchen_counters", "chance": 5 },
-      "L": { "item": "unisex_coat_rack", "chance": 30, "repeat": [ 1, 4 ] },
-      "M": { "item": "home_display_case", "chance": 80 },
+      "L": { "item": "unisex_coat_rack", "chance": 100, "repeat": [ 1, 4 ] },
+      "M": { "item": "home_display_case", "chance": 100 },
       "N": [
         { "item": "tools_common", "chance": 20, "repeat": [ 1, 2 ] },
-        { "item": "hardware", "chance": 30, "repeat": [ 1, 2 ] },
-        { "item": "cleaning", "chance": 10, "repeat": [ 1, 2 ] }
+        { "item": "hardware", "chance": 100, "repeat": [ 1, 2 ] },
+        { "item": "cleaning", "chance": 100, "repeat": [ 1, 2 ] }
       ],
       "O": { "item": "SUS_oven", "chance": 100 },
       "P": { "item": "office_paper", "chance": 100 },
       "Q": [
         { "item": "shower", "chance": 20 },
-        { "item": "cleaning", "chance": 30, "repeat": [ 1, 2 ] },
-        { "item": "bed", "chance": 30, "repeat": [ 1, 2 ] }
+        { "item": "cleaning", "chance": 100, "repeat": [ 1, 2 ] },
+        { "item": "bed", "chance": 100, "repeat": [ 1, 2 ] }
       ],
-      "R": { "item": "homebooks", "chance": 30, "repeat": [ 1, 4 ] },
+      "R": { "item": "homebooks", "chance": 100, "repeat": [ 1, 4 ] },
       "S": { "item": "SUS_bathroom_sink", "chance": 75 },
       "U": [
         { "item": "home_hw", "chance": 20, "repeat": [ 1, 2 ] },
-        { "item": "cleaning", "chance": 40, "repeat": [ 1, 2 ] },
+        { "item": "cleaning", "chance": 100, "repeat": [ 1, 2 ] },
         { "item": "camping", "chance": 5, "repeat": [ 1, 2 ] }
       ],
       "V": { "item": "home_display_case", "chance": 50 },
-      "Y": { "item": "trash", "chance": 30, "repeat": [ 1, 4 ] },
+      "Y": { "item": "trash", "chance": 100, "repeat": [ 1, 4 ] },
       "1": [ { "item": "SUS_dishes", "chance": 100 }, { "item": "SUS_silverware", "chance": 100 } ],
       "2": { "item": "SUS_cookware", "chance": 100 },
       "3": [ { "item": "SUS_utensils", "chance": 50 }, { "item": "SUS_knife_drawer", "chance": 50 } ],
       "4": { "item": "SUS_junk_drawer", "chance": 100 },
       "5": { "item": "SUS_kitchen_sink", "chance": 100 },
       "6": [ { "item": "SUS_pantry", "chance": 25 }, { "item": "cannedfood", "chance": 20, "repeat": [ 1, 2 ] } ],
-      "7": [ { "item": "SUS_breakfast_cupboard", "chance": 30 }, { "item": "SUS_coffee_cupboard", "chance": 50 } ],
+      "7": [ { "item": "SUS_breakfast_cupboard", "chance": 100 }, { "item": "SUS_coffee_cupboard", "chance": 50 } ],
       "8": [
         { "item": "SUS_hair_drawer", "chance": 50 },
         { "item": "SUS_bathroom_cabinet", "chance": 50 },
         { "item": "softdrugs", "chance": 100, "repeat": [ 1, 9 ] },
         { "item": "harddrugs", "chance": 2 }
       ],
-      "9": { "item": "shower", "chance": 30, "repeat": [ 1, 2 ] },
-      "¤": { "item": "nightstand", "chance": 30 },
-      "Ə": { "item": "table_foyer", "chance": 40 },
+      "9": { "item": "shower", "chance": 100, "repeat": [ 1, 2 ] },
+      "¤": { "item": "nightstand", "chance": 100 },
+      "Ə": { "item": "table_foyer", "chance": 100 },
       "@": { "item": "bed", "chance": 50 },
       "Z": { "item": "laundry", "chance": 100 },
       "W": { "item": "laundry", "chance": 50 },
       "z": [
-        { "item": "allsporting", "chance": 40, "repeat": [ 1, 2 ] },
+        { "item": "allsporting", "chance": 100, "repeat": [ 1, 2 ] },
         { "item": "chem_home", "chance": 50, "repeat": [ 1, 2 ] },
-        { "item": "child_items", "chance": 30, "repeat": [ 1, 2 ] },
+        { "item": "child_items", "chance": 100, "repeat": [ 1, 2 ] },
         { "item": "stash_drugs", "chance": 1 },
         { "item": "maps", "chance": 7 }
       ]
