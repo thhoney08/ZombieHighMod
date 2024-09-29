@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zhigh_Mod\n"
-"POT-Creation-Date: 2024-09-18 16:50+0900\n"
+"POT-Creation-Date: 2024-09-28 14:36+0900\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -227,8 +227,8 @@ msgstr[1] ""
 #. ~ Use action holster_msg for {'str': "door gunner's vest", 'str_pl': "door
 #. gunner's vests"}.
 #. ~ Use action holster_msg for {'str': 'cool cosplay vest'}.
-#. ~ Use action holster_msg for {'str': 'MBR vest (hard plates)', 'str_pl':
-#. 'MBR vests (hard plates)'}.
+#. ~ Use action holster_msg for {'str': 'MBR flotation vest (hard plates)',
+#. 'str_pl': 'MBR flotation vests (hard plates)'}.
 #. ~ Use action holster_msg for {'str': 'javelin bag'}.
 #. ~ Use action holster_msg for {'str': 'large grenade pouch', 'str_pl':
 #. 'large grenade pouches'}.
@@ -683,7 +683,6 @@ msgstr ""
 #. ~ Use action use_message for {'str': 'tool watch', 'str_pl': 'tool
 #. watches'}.
 #. ~ Use action use_message for {'str': 'multi whistle'}.
-#. ~ Use action use_message for {'str': 'noise mask'}.
 #. ~ Use action use_message for {'str': 'Aztec death whistle'}.
 #. ~ Use action use_message for {'str': 'Collectible Card - whistle'}.
 #: .\ZhighArmor.json .\ZhighItems.json .\ZhighWeapons\ZhighCards.json
@@ -1420,8 +1419,8 @@ msgstr[1] ""
 #. ~ Use action holster_prompt for {'str': "door gunner's vest", 'str_pl':
 #. "door gunner's vests"}.
 #. ~ Use action holster_prompt for {'str': 'cool cosplay vest'}.
-#. ~ Use action holster_prompt for {'str': 'MBR vest (hard plates)', 'str_pl':
-#. 'MBR vests (hard plates)'}.
+#. ~ Use action holster_prompt for {'str': 'MBR flotation vest (hard plates)',
+#. 'str_pl': 'MBR flotation vests (hard plates)'}.
 #: .\ZhighArmor.json
 msgid "Stash ammo"
 msgstr ""
@@ -2736,42 +2735,66 @@ msgstr[1] ""
 msgid "A warm hood covering that protects the head from the cold."
 msgstr ""
 
-#: .\ZhighArmor.json .\ZhighItemRemake.json
-msgid "army jacket"
-msgid_plural "army jacket"
+#: .\ZhighArmor.json
+msgid "navy jacket"
+msgid_plural "navy jacket"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str_sp': 'army jacket'}
+#. ~ Description for {'str_sp': 'navy jacket'}
+#: .\ZhighArmor.json
+msgid "A tough jacket with lots of pockets.  Favored by the navy."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "navy pants"
+msgid_plural "navy pants"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str_sp': 'navy pants'}
+#: .\ZhighArmor.json
+msgid "A tough pair of pants lined with pockets.  Favored by the navy."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "spec-ops jacket"
+msgid_plural "spec-ops jacket"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str_sp': 'spec-ops jacket'}
 #: .\ZhighArmor.json
 msgid "A tough jacket with lots of pockets.  Favored by the special forces."
 msgstr ""
 
 #: .\ZhighArmor.json
-msgid "army pants"
-msgid_plural "army pants"
+msgid "spec-ops pants"
+msgid_plural "spec-ops pants"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str_sp': 'army pants'}
+#. ~ Description for {'str_sp': 'spec-ops pants'}
 #: .\ZhighArmor.json
 msgid ""
 "A tough pair of pants lined with pockets.  Favored by the special forces."
 msgstr ""
 
 #: .\ZhighArmor.json
-msgid "MBR vest (hard plates)"
-msgid_plural "MBR vests (hard plates)"
+msgid "MBR flotation vest (hard plates)"
+msgid_plural "MBR flotation vests (hard plates)"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str': 'MBR vest (hard plates)', 'str_pl': 'MBR vests
-#. (hard plates)'}
+#. ~ Description for {'str': 'MBR flotation vest (hard plates)', 'str_pl':
+#. 'MBR flotation vests (hard plates)'}
 #: .\ZhighArmor.json
 msgid ""
 "A Modular Bullet Resistant Vest.  Hardened steel plates have been inserted, "
 "greatly increasing its protection at the cost of a great deal of weight and "
-"loss of flexibility.  It has six pouches capable of carrying magazines."
+"loss of flexibility.  It has six pouches capable of carrying magazines.  "
+"Modified from the original, wearing this makes you float in water, at the "
+"cost of some encumberence."
 msgstr ""
 
 #: .\ZhighArmor.json
@@ -2835,9 +2858,13 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. ~ Use action noise_message for {'str': 'noise mask'}.
-#. ~ Use action noise_message for {'str': 'Aztec death whistle'}.
-#: .\ZhighArmor.json .\ZhighItems.json
-msgid "AHHHHHHHH!"
+#: .\ZhighArmor.json
+msgid "WAAAAAAGH!"
+msgstr ""
+
+#. ~ Use action use_message for {'str': 'noise mask'}.
+#: .\ZhighArmor.json
+msgid "You scream through your mask."
 msgstr ""
 
 #. ~ Description for {'str': 'noise mask'}
@@ -2845,6 +2872,19 @@ msgstr ""
 msgid ""
 "A simple piece of machine that straps over the mouth.  Makes noise, and "
 "protects your mouth and ears while doing it."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "war bonnets"
+msgid_plural "war bonnetss"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'war bonnets'}
+#: .\ZhighArmor.json
+msgid ""
+"Feathered headgear traditionally worn by male leaders of the Native "
+"Americans."
 msgstr ""
 
 #: .\ZhighBionics.json
@@ -4934,6 +4974,12 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: .\ZhighItemRemake.json
+msgid "army jacket"
+msgid_plural "army jacket"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItemRemake.json
 msgid "survival marker"
 msgid_plural "survival markers"
 msgstr[0] ""
@@ -6863,6 +6909,11 @@ msgid_plural "Aztec death whistles"
 msgstr[0] ""
 msgstr[1] ""
 
+#. ~ Use action noise_message for {'str': 'Aztec death whistle'}.
+#: .\ZhighItems.json
+msgid "AHHHHHHHH!"
+msgstr ""
+
 #. ~ Description for {'str': 'Aztec death whistle'}
 #: .\ZhighItems.json
 msgid "A simple wooden whistle, with it's unique skull like shape."
@@ -7631,6 +7682,17 @@ msgid "This is a mask, based on a pig."
 msgstr ""
 
 #: .\ZhighMasks.json
+msgid "boar mask"
+msgid_plural "boar masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'boar mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, based on a boar."
+msgstr ""
+
+#: .\ZhighMasks.json
 msgid "tiger mask"
 msgid_plural "tiger masks"
 msgstr[0] ""
@@ -8235,6 +8297,34 @@ msgid ""
 "A rather roomy mask with filters attached, designed to accommodate exotic "
 "anatomy.  Provides excellent protection from smoke, teargas, and other "
 "contaminants.  It must be prepared before use."
+msgstr ""
+
+#: .\ZhighMasks.json
+msgid "welding mask"
+msgid_plural "welding masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'welding mask'}
+#: .\ZhighMasks.json
+msgid ""
+"A plastic mask with a dark visor, meant to protect the entire face while "
+"welding.  It also serves as somewhat good armor, and the modification makes "
+"it easy to see."
+msgstr ""
+
+#: .\ZhighMasks.json
+msgid "fake beard"
+msgid_plural "fake beards"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'fake beard'}
+#: .\ZhighMasks.json
+msgid ""
+"A simple piece of cotton that straps over the mouth.  Provides a small "
+"amount of protection from airborne illness and dust.  Use to look like a "
+"certain saint."
 msgstr ""
 
 #: .\ZhighMeds.json
@@ -8884,6 +8974,36 @@ msgstr ""
 
 #: .\ZhighMonSurvivors.json
 msgid "The feral student shoots a cola bomb, run!"
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "feral militia"
+msgid_plural "feral militias"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'feral militia'}
+#: .\ZhighMonsters.json
+msgid ""
+"Wearing a camo uniform with a kevlar vest, this person was a militia member "
+"turned feral.  Their hands grip a light machine gun as bloodshot eyes scan "
+"around; a headlamp above them illuminating their surroundings."
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "The feral militia fires their machine gun!"
+msgstr ""
+
+#. ~ Description for {'str': 'feral militia'}
+#: .\ZhighMonsters.json
+msgid ""
+"Wearing a camo uniform with a kevlar vest, this person was a militia member "
+"turned feral.  Their hands grip a semi-auto shotgun as bloodshot eyes scan "
+"around; a headlamp above them illuminating their surroundings."
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "The feral militia fires their shotgun!"
 msgstr ""
 
 #: .\ZhighMonsters.json
@@ -16111,6 +16231,132 @@ msgstr ""
 
 #: .\ZhighSpeech.json
 msgid "Come on, we have to move our asses."
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"Look at me.  I am the captain now.\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid ""
+"\"I don't have to take this abuse from you, there are plenty of people to "
+"abuse me!\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"You're a monster!\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"I've had enough of your bullshit!\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"Adios, motherfucker!\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"Get out of here or I'll kill you!\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"Keep your distance!\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"This is my territory, asshole!\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"Fuck off, I saw this place first!\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"Get out of here, I own this town now!\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"Reach for the sky!\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"Clear my line of fire!\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"Weapons hot!\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"Lock and load!\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"You're gonna rot in hell for this!\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"You're gonna rot in hell, you pieces of shit!\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"Kill them all and let God sort them out!\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"I love the smell of napalm in the morning.\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"This is the way the fuckin' world ends.\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"Look at this fuckin' shit we're in, man.\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"I'ma cut those fuckin' tentacles off, bitch!\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"Watch you bleed out!\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"God damn it!\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"Damn it!\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"Fuck!\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"Shit!\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"Fuckin' piece of garbage.\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"Nobody is helping us.\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"We're on our own.\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"It's heading right for us!\""
+msgstr ""
+
+#: .\ZhighSpeech.json
+msgid "\"We're both scavs, in't we?\""
 msgstr ""
 
 #: .\ZhighVehichleParts.json
@@ -28347,6 +28593,79 @@ msgstr[1] ""
 msgid ""
 "A plastic single shot pistol, modified from a flaregun, that can be loaded "
 "with acids."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "DBX57"
+msgid_plural "DBX57s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"Made by Diamondback Firearms, this OA-98 looking handgun is big but quite "
+"useful."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Howdah pistol"
+msgid_plural "Howdah pistols"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A sawn-off elephant gun.  Just like obrezs or Luparas, this is also a pistol"
+" version of the rifle version.  Used for self defence, and could be still "
+"used for self defence."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "R9-ARMS"
+msgid_plural "R9-ARMS"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"The R9-ARMS is a gun with a lot of mysteries.  Nobody knows where it was "
+"made and how many people are using it."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Colt 9mm Submachine Gun"
+msgid_plural "Colt 9mm Submachine Guns"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A popular carbine, long used by the US sheriffs.  Though accurate, small, "
+"and lightweight, it is infamous for its unreliability when not properly "
+"maintained."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "AKMSU"
+msgid_plural "AKMSUs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"One of the most recognizable assault rifles ever made, the AKM is renowned "
+"for its durability even under the worst conditions.  This one's origin is "
+"unknown, but who cares, this is a great defence weapon in the apocalypse."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Sharps pistol"
+msgid_plural "Sharps pistols"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "A single shot pistol made from 1874 Sharps rifle."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighSpells.json

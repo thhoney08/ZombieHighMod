@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zhigh_Mod\n"
-"POT-Creation-Date: 2024-09-18 16:50+0900\n"
+"POT-Creation-Date: 2024-09-28 14:36+0900\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -202,8 +202,8 @@ msgstr[0] "1학년 학생증"
 #. ~ Use action holster_msg for {'str': "door gunner's vest", 'str_pl': "door
 #. gunner's vests"}.
 #. ~ Use action holster_msg for {'str': 'cool cosplay vest'}.
-#. ~ Use action holster_msg for {'str': 'MBR vest (hard plates)', 'str_pl':
-#. 'MBR vests (hard plates)'}.
+#. ~ Use action holster_msg for {'str': 'MBR flotation vest (hard plates)',
+#. 'str_pl': 'MBR flotation vests (hard plates)'}.
 #. ~ Use action holster_msg for {'str': 'javelin bag'}.
 #. ~ Use action holster_msg for {'str': 'large grenade pouch', 'str_pl':
 #. 'large grenade pouches'}.
@@ -584,7 +584,6 @@ msgstr "휘이이이익!"
 #. ~ Use action use_message for {'str': 'tool watch', 'str_pl': 'tool
 #. watches'}.
 #. ~ Use action use_message for {'str': 'multi whistle'}.
-#. ~ Use action use_message for {'str': 'noise mask'}.
 #. ~ Use action use_message for {'str': 'Aztec death whistle'}.
 #. ~ Use action use_message for {'str': 'Collectible Card - whistle'}.
 #: .\ZhighArmor.json .\ZhighItems.json .\ZhighWeapons\ZhighCards.json
@@ -1221,8 +1220,8 @@ msgstr[0] "헬리콥터 사수 조끼"
 #. ~ Use action holster_prompt for {'str': "door gunner's vest", 'str_pl':
 #. "door gunner's vests"}.
 #. ~ Use action holster_prompt for {'str': 'cool cosplay vest'}.
-#. ~ Use action holster_prompt for {'str': 'MBR vest (hard plates)', 'str_pl':
-#. 'MBR vests (hard plates)'}.
+#. ~ Use action holster_prompt for {'str': 'MBR flotation vest (hard plates)',
+#. 'str_pl': 'MBR flotation vests (hard plates)'}.
 #: .\ZhighArmor.json
 msgid "Stash ammo"
 msgstr "탄약 보관하기"
@@ -2297,37 +2296,60 @@ msgstr[0] "천 두건"
 msgid "A warm hood covering that protects the head from the cold."
 msgstr "머리를 추위로부터 가려주는 따듯한 두건."
 
-#: .\ZhighArmor.json .\ZhighItemRemake.json
-msgid "army jacket"
-msgid_plural "army jacket"
-msgstr[0] "전투복 상의"
+#: .\ZhighArmor.json
+msgid "navy jacket"
+msgid_plural "navy jacket"
+msgstr[0] "해군 상의"
 
-#. ~ Description for {'str_sp': 'army jacket'}
+#. ~ Description for {'str_sp': 'navy jacket'}
+#: .\ZhighArmor.json
+msgid "A tough jacket with lots of pockets.  Favored by the navy."
+msgstr "튼튼하고 주머니가 많은 상의.  해군들이 주로 사용합니다."
+
+#: .\ZhighArmor.json
+msgid "navy pants"
+msgid_plural "navy pants"
+msgstr[0] "해군 바지"
+
+#. ~ Description for {'str_sp': 'navy pants'}
+#: .\ZhighArmor.json
+msgid "A tough pair of pants lined with pockets.  Favored by the navy."
+msgstr "튼튼하고 주머니가 많은 바지.  해군들이 주로 사용합니다."
+
+#: .\ZhighArmor.json
+msgid "spec-ops jacket"
+msgid_plural "spec-ops jacket"
+msgstr[0] "특수부대원 재킷"
+
+#. ~ Description for {'str_sp': 'spec-ops jacket'}
 #: .\ZhighArmor.json
 msgid "A tough jacket with lots of pockets.  Favored by the special forces."
 msgstr "튼튼하고 주머니가 많은 상의.  특수부대원들이 주로 사용합니다."
 
 #: .\ZhighArmor.json
-msgid "army pants"
-msgid_plural "army pants"
-msgstr[0] "전투복 바지"
+msgid "spec-ops pants"
+msgid_plural "spec-ops pants"
+msgstr[0] "특수부대원 바지"
 
-#. ~ Description for {'str_sp': 'army pants'}
+#. ~ Description for {'str_sp': 'spec-ops pants'}
 #: .\ZhighArmor.json
 msgid "A tough pair of pants lined with pockets.  Favored by the special forces."
 msgstr "튼튼하고 주머니가 많은 바지.  특수부대원들이 주로 사용합니다."
 
 #: .\ZhighArmor.json
-msgid "MBR vest (hard plates)"
-msgid_plural "MBR vests (hard plates)"
-msgstr[0] "MBR 방탄조끼 (경화철판)"
+msgid "MBR flotation vest (hard plates)"
+msgid_plural "MBR flotation vests (hard plates)"
+msgstr[0] "MBR 구명 방탄조끼 (경화철판)"
 
-#. ~ Description for {'str': 'MBR vest (hard plates)', 'str_pl': 'MBR vests
-#. (hard plates)'}
+#. ~ Description for {'str': 'MBR flotation vest (hard plates)', 'str_pl':
+#. 'MBR flotation vests (hard plates)'}
 #: .\ZhighArmor.json
 msgid ""
-"A Modular Bullet Resistant Vest.  Hardened steel plates have been inserted, greatly increasing its protection at the cost of a great deal of weight and loss of flexibility.  It has six pouches capable of carrying magazines."
-msgstr "모듈식 방탄조끼.  추가 장갑판 주머니에 경화 강철 장갑판을 넣어서 방어력이 크게 향상했지만, 무게와 유연성도 크게 잃었습니다.  탄창을 넣을 수 있는 주머니가 6개 달려있습니다."
+"A Modular Bullet Resistant Vest.  Hardened steel plates have been inserted, greatly increasing its protection at the cost of a great deal of weight and loss of flexibility.  It has six pouches capable of carrying magazines.  "
+"Modified from the original, wearing this makes you float in water, at the cost of some encumberence."
+msgstr ""
+"모듈식 방탄조끼.  추가 장갑판 주머니에 경화 강철 장갑판을 넣어서 방어력이 크게 향상했지만, 무게와 유연성도 크게 잃었습니다.  탄창을 넣을 수 있는 주머니가 6개 달려있습니다.  원래의 버전에서 개조가 되어 물 위에서 뜰 수 있게 만"
+"들었지만, 방해도가 희생되었습니다."
 
 #: .\ZhighArmor.json
 msgid "bunny tail"
@@ -2375,15 +2397,29 @@ msgid_plural "noise masks"
 msgstr[0] "소음 발생 가면"
 
 #. ~ Use action noise_message for {'str': 'noise mask'}.
-#. ~ Use action noise_message for {'str': 'Aztec death whistle'}.
-#: .\ZhighArmor.json .\ZhighItems.json
-msgid "AHHHHHHHH!"
-msgstr "아아아아아아아아아!"
+#: .\ZhighArmor.json
+msgid "WAAAAAAGH!"
+msgstr "와아아아아아아악!"
+
+#. ~ Use action use_message for {'str': 'noise mask'}.
+#: .\ZhighArmor.json
+msgid "You scream through your mask."
+msgstr "가면 뒤에서 소리를 지릅니다."
 
 #. ~ Description for {'str': 'noise mask'}
 #: .\ZhighArmor.json
 msgid "A simple piece of machine that straps over the mouth.  Makes noise, and protects your mouth and ears while doing it."
 msgstr "입에 걸치는 간단한 장치입니다.  소음을 발생시킬 수 있으며, 사용자의 입과 귀를 보호합니다."
+
+#: .\ZhighArmor.json
+msgid "war bonnets"
+msgid_plural "war bonnetss"
+msgstr[0] "전쟁 보닛"
+
+#. ~ Description for {'str': 'war bonnets'}
+#: .\ZhighArmor.json
+msgid "Feathered headgear traditionally worn by male leaders of the Native Americans."
+msgstr "아메리카 원주민의 남성 지도자들이 전통적으로 착용했던 깃털 달린 모자입니다."
 
 #: .\ZhighBionics.json
 msgid "Bionic knuckle"
@@ -4168,6 +4204,11 @@ msgid_plural "pairs of boxing gloves"
 msgstr[0] "권투 글러브"
 
 #: .\ZhighItemRemake.json
+msgid "army jacket"
+msgid_plural "army jacket"
+msgstr[0] "전투복 상의"
+
+#: .\ZhighItemRemake.json
 msgid "survival marker"
 msgid_plural "survival markers"
 msgstr[0] "수제 마커"
@@ -5797,6 +5838,11 @@ msgid "Aztec death whistle"
 msgid_plural "Aztec death whistles"
 msgstr[0] "아즈텍제 죽음 호루라기"
 
+#. ~ Use action noise_message for {'str': 'Aztec death whistle'}.
+#: .\ZhighItems.json
+msgid "AHHHHHHHH!"
+msgstr "아아아아아아아아아!"
+
 #. ~ Description for {'str': 'Aztec death whistle'}
 #: .\ZhighItems.json
 msgid "A simple wooden whistle, with it's unique skull like shape."
@@ -6528,6 +6574,16 @@ msgid "This is a mask, based on a pig."
 msgstr "돼지를 바탕으로 한 가면입니다."
 
 #: .\ZhighMasks.json
+msgid "boar mask"
+msgid_plural "boar masks"
+msgstr[0] "맷돼지 가면"
+
+#. ~ Description for {'str': 'boar mask'}
+#: .\ZhighMasks.json
+msgid "This is a mask, based on a boar."
+msgstr "맷돼지를 바탕으로 한 가면입니다."
+
+#: .\ZhighMasks.json
 msgid "tiger mask"
 msgid_plural "tiger masks"
 msgstr[0] "호랑이 가면"
@@ -7053,6 +7109,26 @@ msgstr[0] "특대형 수제작 가스 마스크"
 #: .\ZhighMasks.json
 msgid "A rather roomy mask with filters attached, designed to accommodate exotic anatomy.  Provides excellent protection from smoke, teargas, and other contaminants.  It must be prepared before use."
 msgstr "남다른 신체를 가진 사람도 착용할 수 있도록 넉넉하게 만들어진 수제작 방독면.  연기, 최루가스 등의 오염을 많이 막아줍니다.  사용하기 전에 준비해야 합니다."
+
+#: .\ZhighMasks.json
+msgid "welding mask"
+msgid_plural "welding masks"
+msgstr[0] "용접ㅇ 가면"
+
+#. ~ Description for {'str': 'welding mask'}
+#: .\ZhighMasks.json
+msgid "A plastic mask with a dark visor, meant to protect the entire face while welding.  It also serves as somewhat good armor, and the modification makes it easy to see."
+msgstr "용접하는 동안 얼굴 전체를 보호하기 위한 어두운 바이저가 달린 플라스틱 마스크입니다.  또한 어느 정도 좋은 갑옷 역할을 하며 개조되었기에 원본보다 바깥을 쉽게 볼 수 있습니다."
+
+#: .\ZhighMasks.json
+msgid "fake beard"
+msgid_plural "fake beards"
+msgstr[0] "가짜 수염"
+
+#. ~ Description for {'str': 'fake beard'}
+#: .\ZhighMasks.json
+msgid "A simple piece of cotton that straps over the mouth.  Provides a small amount of protection from airborne illness and dust.  Use to look like a certain saint."
+msgstr "입에 걸치는 간단한 면 조각입니다.  공기 중 질병과 먼지로부터 소량의 보호 기능을 제공합니다.  특정한 인물처럼 보일 때 종종 사용합니다."
 
 #: .\ZhighMeds.json
 msgid "basic medkit"
@@ -7695,6 +7771,29 @@ msgstr "이성을 잃은 학생이 사격합니다!"
 #: .\ZhighMonSurvivors.json
 msgid "The feral student shoots a cola bomb, run!"
 msgstr "이성을 잃은 학생이 콜라 폭탄을 던집니다, 도망치세요!"
+
+#: .\ZhighMonsters.json
+msgid "feral militia"
+msgid_plural "feral militias"
+msgstr[0] "이성을 잃은 군인"
+
+#. ~ Description for {'str': 'feral militia'}
+#: .\ZhighMonsters.json
+msgid "Wearing a camo uniform with a kevlar vest, this person was a militia member turned feral.  Their hands grip a light machine gun as bloodshot eyes scan around; a headlamp above them illuminating their surroundings."
+msgstr "케블라 조끼와 위장복을 입은 이 사람은 야수처럼 변한 민병대원이었습니다.  손에는 경기관총을 들고 충혈된 눈으로 주변을 살피고 있으며, 머리 위에는 헤드램프가 주변을 비추고 있습니다."
+
+#: .\ZhighMonsters.json
+msgid "The feral militia fires their machine gun!"
+msgstr "이성을 잃은 군인이 경기관총을 사격한다!"
+
+#. ~ Description for {'str': 'feral militia'}
+#: .\ZhighMonsters.json
+msgid "Wearing a camo uniform with a kevlar vest, this person was a militia member turned feral.  Their hands grip a semi-auto shotgun as bloodshot eyes scan around; a headlamp above them illuminating their surroundings."
+msgstr "케블라 조끼와 위장복을 입은 이 사람은 야수처럼 변한 민병대원이었습니다.  손에는 반자동 산탄총을 들고 충혈된 눈으로 주변을 살피고 있으며, 머리 위에는 헤드램프가 주변을 비추고 있습니다."
+
+#: .\ZhighMonsters.json
+msgid "The feral militia fires their shotgun!"
+msgstr "이성을 잃은 군인이 사격합니다!"
 
 #: .\ZhighMonsters.json
 msgid "zombie witch"
@@ -14079,6 +14178,130 @@ msgstr "배터리 용량이 낮습니다.  배터리를 교체해 주세요…"
 #: .\ZhighSpeech.json
 msgid "Come on, we have to move our asses."
 msgstr "이봐요, 움직여야 합니다."
+
+#: .\ZhighSpeech.json
+msgid "\"Look at me.  I am the captain now.\""
+msgstr "\"나를 봐.  내가 이제 대장이라고.\""
+
+#: .\ZhighSpeech.json
+msgid "\"I don't have to take this abuse from you, there are plenty of people to abuse me!\""
+msgstr "\"너에게서 이 학대를 받을 필요가 없어, 주변에 날 학대할 녀석들이 충분한데!\""
+
+#: .\ZhighSpeech.json
+msgid "\"You're a monster!\""
+msgstr "\"넌 괴물이야!\""
+
+#: .\ZhighSpeech.json
+msgid "\"I've had enough of your bullshit!\""
+msgstr "\"네 개소리는 충분히 들었어!\""
+
+#: .\ZhighSpeech.json
+msgid "\"Adios, motherfucker!\""
+msgstr "\"잘 가라, 이 씨밤바야!\""
+
+#: .\ZhighSpeech.json
+msgid "\"Get out of here or I'll kill you!\""
+msgstr "\"여기서 안 나가면 널 죽여버리겠어!\""
+
+#: .\ZhighSpeech.json
+msgid "\"Keep your distance!\""
+msgstr "\"멀리 떨어져!\""
+
+#: .\ZhighSpeech.json
+msgid "\"This is my territory, asshole!\""
+msgstr "\"여긴 내 구역이야, 개새끼야!\""
+
+#: .\ZhighSpeech.json
+msgid "\"Fuck off, I saw this place first!\""
+msgstr "\"꺼져, 여긴 내가 먼저 찜했어!\""
+
+#: .\ZhighSpeech.json
+msgid "\"Get out of here, I own this town now!\""
+msgstr "\"여기서 나가, 여긴 내 동네라고!\""
+
+#: .\ZhighSpeech.json
+msgid "\"Reach for the sky!\""
+msgstr "\"손 들어!\""
+
+#: .\ZhighSpeech.json
+msgid "\"Clear my line of fire!\""
+msgstr "\"내 사선에서 나가!\""
+
+#: .\ZhighSpeech.json
+msgid "\"Weapons hot!\""
+msgstr "\"무기 준비되었어!\""
+
+#: .\ZhighSpeech.json
+msgid "\"Lock and load!\""
+msgstr "\"장전 및 사격 준비 끝!\""
+
+#: .\ZhighSpeech.json
+msgid "\"You're gonna rot in hell for this!\""
+msgstr "\"지옥서 썩을 준비나 해라!\""
+
+#: .\ZhighSpeech.json
+msgid "\"You're gonna rot in hell, you pieces of shit!\""
+msgstr "\"지옥에서 썩을 거다, 이 쓰레기 자식아!\""
+
+#: .\ZhighSpeech.json
+msgid "\"Kill them all and let God sort them out!\""
+msgstr "\"다 죽이고 신께서 구분하게 하자!\""
+
+#: .\ZhighSpeech.json
+msgid "\"I love the smell of napalm in the morning.\""
+msgstr "\"아침에 맡는 네이팜 냄새는 최고야!\""
+
+#: .\ZhighSpeech.json
+msgid "\"This is the way the fuckin' world ends.\""
+msgstr "\"이렇게 망할 세상이 끝나는구만.\""
+
+#: .\ZhighSpeech.json
+msgid "\"Look at this fuckin' shit we're in, man.\""
+msgstr "\"우리들이 있는 이 족같은 상황을 봐, 니미.\""
+
+#: .\ZhighSpeech.json
+msgid "\"I'ma cut those fuckin' tentacles off, bitch!\""
+msgstr "\"내래 니년 촉수들을 죄다 잘라버리갔어!\""
+
+#: .\ZhighSpeech.json
+msgid "\"Watch you bleed out!\""
+msgstr "\"피 흘릴 준비나 해라!\""
+
+#: .\ZhighSpeech.json
+msgid "\"God damn it!\""
+msgstr "\"빌어먹을!\""
+
+#: .\ZhighSpeech.json
+msgid "\"Damn it!\""
+msgstr "\"이런 니미 썅!\""
+
+#: .\ZhighSpeech.json
+msgid "\"Fuck!\""
+msgstr "\"시발!\""
+
+#: .\ZhighSpeech.json
+msgid "\"Shit!\""
+msgstr "\"젠장!\""
+
+#: .\ZhighSpeech.json
+msgid "\"Fuckin' piece of garbage.\""
+msgstr "\"쓰레기 자식.\""
+
+#: .\ZhighSpeech.json
+msgid "\"Nobody is helping us.\""
+msgstr "\"어느 누구도 우릴 돕지 않아.\""
+
+#: .\ZhighSpeech.json
+msgid "\"We're on our own.\""
+msgstr "\"이제 우리뿐이구만.\""
+
+#: .\ZhighSpeech.json
+msgid "\"It's heading right for us!\""
+msgstr "\"우리에게 오고 있어!\""
+
+#: .\ZhighSpeech.json
+msgid "\"We're both scavs, in't we?\""
+msgstr "\"우린 모두 스캐브지, 그렇지?\""
 
 #: .\ZhighVehichleParts.json
 msgid "mounted heavy flamethrower"
@@ -24253,6 +24476,61 @@ msgstr[0] "산성총"
 #: .\ZhighWeapons\ZhighRanged.json
 msgid "A plastic single shot pistol, modified from a flaregun, that can be loaded with acids."
 msgstr "조명탄 총을 개조한 단발식 플라스틱 권총으로, 산성액을 장전 가능합니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "DBX57"
+msgid_plural "DBX57s"
+msgstr[0] "DBX57"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Made by Diamondback Firearms, this OA-98 looking handgun is big but quite useful."
+msgstr "다이아몬드백 파이어암즈에서 제작된 이 OA-98을 닮은 권총은 좀 크지만 쓸만합니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Howdah pistol"
+msgid_plural "Howdah pistols"
+msgstr[0] "하우다 권총"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "A sawn-off elephant gun.  Just like obrezs or Luparas, this is also a pistol version of the rifle version.  Used for self defence, and could be still used for self defence."
+msgstr "잘라낸 엘리펀트 건입니다.  오브레즈나 루파라처럼, 소총을 잘라낸 권총버전입니다.  호신용으로 쓰였으며, 현재에도 호신용으로 사용될 수 있습니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "R9-ARMS"
+msgid_plural "R9-ARMS"
+msgstr[0] "R9-ARMS"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "The R9-ARMS is a gun with a lot of mysteries.  Nobody knows where it was made and how many people are using it."
+msgstr "여러 미스터리를 가진 총기입니다.  어느 누구도 이것이 어디서 만들어졌고 얼마나 사용되는지 알지 못합니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Colt 9mm Submachine Gun"
+msgid_plural "Colt 9mm Submachine Guns"
+msgstr[0] "콜트 9mm 기관단총"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "A popular carbine, long used by the US sheriffs.  Though accurate, small, and lightweight, it is infamous for its unreliability when not properly maintained."
+msgstr "유명한 카빈으로, 미국의 보안관들이 주로 사용했습니다.  정확하고 작고 가볍지만, 올바르게 정비하지 않으면 꽤나 믿음직하지 못합니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "AKMSU"
+msgid_plural "AKMSUs"
+msgstr[0] "AKMSU"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"One of the most recognizable assault rifles ever made, the AKM is renowned for its durability even under the worst conditions.  This one's origin is unknown, but who cares, this is a great defence weapon in the apocalypse."
+msgstr "만들어진 것들 중에 가장 유명한 돌격소총으로, AKM은 최악의 상황에서도 작동하는 유명세를 지니고 있습니다.  이 버전은 어디에서 왔는지 알 수 없지만, 누가 신경이나 씁니까?  세기말의 완벽한 호신용 무기인데 말이죠."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Sharps pistol"
+msgid_plural "Sharps pistols"
+msgstr[0] "샤프스 권총"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "A single shot pistol made from 1874 Sharps rifle."
+msgstr "단발식 권총으로, 1874 샤프스 소총을 기반으로 제작되었습니다."
 
 #: .\ZhighWeapons\ZhighSpells.json
 msgid "Life Drain Spell"
