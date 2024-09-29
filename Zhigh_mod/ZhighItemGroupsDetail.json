@@ -929,6 +929,134 @@
     ]
   },
   {
+    "id": "everyday_HowdahPistolZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "HowdahPistolZhigh", "ammo-group": "on_hand_700nx", "charges": [ 0, 2 ] },
+      { "group": "on_hand_700nx", "charges": [ 10, 20 ], "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "nested_HowdahPistolZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [ { "item": "HowdahPistolZhigh", "ammo-group": "on_hand_700nx", "charges": [ 0, 2 ] }, { "group": "on_hand_700nx" } ]
+  },
+  {
+    "id": "nested_r9armszhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "r9armszhigh", "ammo-group": "on_hand_9mm", "charges": [ 0, 32 ] },
+      { "item": "uzimag", "ammo-group": "on_hand_9mm" },
+      { "item": "uzimag", "ammo-group": "on_hand_9mm", "prob": 50 },
+      { "group": "on_hand_9mm" }
+    ]
+  },
+  {
+    "id": "everyday_r9armszhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "r9armszhigh", "ammo-group": "on_hand_9mm", "charges": [ 0, 32 ] },
+      { "item": "uzimag", "charges-min": 0, "prob": 80, "ammo-group": "on_hand_9mm" },
+      { "item": "uzimag", "charges-min": 0, "ammo-group": "on_hand_9mm", "prob": 50 },
+      { "group": "on_hand_9mm", "prob": 25, "charges": [ 10, 20 ], "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "nested_colt9mmZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "colt9mmZhigh", "ammo-group": "on_hand_9mm", "charges": [ 0, 32 ] },
+      { "item": "uzimag", "ammo-group": "on_hand_9mm" },
+      { "item": "uzimag", "ammo-group": "on_hand_9mm", "prob": 50 },
+      { "group": "on_hand_9mm" }
+    ]
+  },
+  {
+    "id": "everyday_colt9mmZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "colt9mmZhigh", "ammo-group": "on_hand_9mm", "charges": [ 0, 32 ] },
+      { "item": "uzimag", "charges-min": 0, "prob": 80, "ammo-group": "on_hand_9mm" },
+      { "item": "uzimag", "charges-min": 0, "ammo-group": "on_hand_9mm", "prob": 50 },
+      { "group": "on_hand_9mm", "prob": 25, "charges": [ 10, 20 ], "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "everyday_akmsuZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "akmsuZhigh", "ammo-group": "on_hand_762", "charges": [ 0, 30 ] },
+      { "group": "nested_ak47_mag", "charges-min": 0, "prob": 80 },
+      { "group": "nested_ak47_mag", "charges-min": 0, "prob": 50 },
+      { "group": "on_hand_762", "prob": 25, "charges": [ 10, 20 ], "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "nested_akmsuZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "akmsuZhigh", "ammo-group": "on_hand_762", "charges": [ 0, 30 ] },
+      { "group": "nested_ak47_mag" },
+      { "group": "nested_ak47_mag", "prob": 50 },
+      { "group": "on_hand_762" }
+    ]
+  },
+  {
+    "id": "everyday_dbx57Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "dbx57Zhigh", "ammo-group": "on_hand_57", "charges": [ 0, 20 ] },
+      { "group": "nested_dbx57Zhigh_mag", "charges-min": 0, "prob": 80 },
+      { "group": "nested_dbx57Zhigh_mag", "charges-min": 0, "prob": 50 },
+      { "group": "on_hand_57", "prob": 25, "charges": [ 10, 20 ], "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "nested_dbx57Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "dbx57Zhigh", "ammo-group": "on_hand_57", "charges": [ 0, 20 ] },
+      { "group": "nested_dbx57Zhigh_mag" },
+      { "group": "nested_dbx57Zhigh_mag", "prob": 50 },
+      { "group": "on_hand_57" }
+    ]
+  },
+  {
+    "id": "nested_dbx57Zhigh_mag",
+    "type": "item_group",
+    "subtype": "distribution",
+    "ammo": 100,
+    "entries": [
+      { "item": "fn57mag", "ammo-group": "on_hand_57", "prob": 100 },
+      { "item": "fn57mag", "ammo-group": "on_hand_57", "prob": 5 }
+    ]
+  },
+  {
     "type": "item_group",
     "subtype": "collection",
     "id": "bandolier_rifle_47",

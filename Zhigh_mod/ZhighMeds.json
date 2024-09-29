@@ -127,7 +127,7 @@
     "stim": -5,
     "healthy": -3,
 	"use_action": "STIMPACK",
-	"flags": [ "IRREPLACEABLE_CONSUMABLE", "NPC_SAFE", "BELT_CLIP" ]
+	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
   },
   {
     "id": "stimrx12",
@@ -145,7 +145,7 @@
     "stim": -5,
     "healthy": -3,
 	"use_action": "JET_INJECTOR",
-	"flags": [ "IRREPLACEABLE_CONSUMABLE", "NPC_SAFE", "BELT_CLIP" ]
+	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
   },
   {
     "id": "stimmorphine",
@@ -165,7 +165,7 @@
     "fun": 25,
     "addiction_potential": 20,
     "addiction_type": "opiate",
-    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ],
+    "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You shoot up.",
@@ -186,7 +186,7 @@
     "symbol": "/",
     "color": "cyan",
     "quench": -150,
-    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ],
+    "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": { "type": "heal", "bleed": 0.9, "bite": 0.3, "move_cost": 5 }
   },
   {
@@ -205,7 +205,7 @@
     "stim": -5,
     "addiction_potential": 30,
     "addiction_type": "opiate",
-    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ],
+    "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You shoot up.",
@@ -230,7 +230,7 @@
     "fun": 25,
     "addiction_potential": 15,
     "addiction_type": "opiate",
-    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ],
+    "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": { "type": "heal", "bleed": 0.9, "bite": 0.9, "disinfectant_power": 4, "move_cost": 5,
       "effects": [ { "id": "pkill3", "duration": "1 m" }, { "id": "pkill2", "duration": "5 m" } ]
     }
@@ -252,7 +252,7 @@
             "type": "consume_drug",
             "activation_message": "You shoot up, and remove the toxins in your body.",
             "effects": [ { "id": "antiVenom", "duration": "1 m" } ] },
-	"flags": [ "IRREPLACEABLE_CONSUMABLE", "NPC_SAFE", "BELT_CLIP" ]
+	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
   },
   {
     "id": "stimObdolbos",
@@ -271,7 +271,7 @@
             "type": "consume_drug",
             "activation_message": "You shoot up, and remove the parasites in your body.",
             "effects": [ { "id": "obdolbos1", "duration": "1 m" } ] },
-	"flags": [ "IRREPLACEABLE_CONSUMABLE", "NPC_SAFE", "BELT_CLIP" ]
+	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
   },
   {
     "id": "stimInv",
@@ -293,7 +293,7 @@
             "type": "consume_drug",
             "activation_message": "You shoot up, making yourself invisible.",
             "effects": [ { "id": "invisibility", "duration": "5 m" } ] },
-	"flags": [ "IRREPLACEABLE_CONSUMABLE", "NPC_SAFE", "BELT_CLIP" ]
+	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
   },
   {
     "id": "stimL1",
@@ -314,7 +314,7 @@
     "healthy": 3,
     "addiction_potential": 20,
     "addiction_type": "opiate",
-    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ],
+    "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You shoot up.",
@@ -339,7 +339,7 @@
     "fun": 25,
     "addiction_potential": 25,
     "addiction_type": "opiate",
-    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ],
+    "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You shoot up.",
@@ -366,7 +366,7 @@
             "effects": [ { "id": "antitoxin", "duration": "1 m" },
                                 { "id": "antirad", "duration": "1 m" },
                                 { "id": "panacea", "duration": 2 } ] },
-	"flags": [ "IRREPLACEABLE_CONSUMABLE", "NPC_SAFE", "BELT_CLIP" ]
+	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
   },
   {
     "id": "stimPNB",
@@ -381,7 +381,7 @@
 	"material": "plastic",
     "symbol": "/",
     "color": "cyan",
-    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ],
+    "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You shoot up.",
@@ -402,7 +402,7 @@
     "symbol": "/",
     "healthy": 15,
     "color": "cyan",
-    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ],
+    "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You shoot up.",
@@ -424,7 +424,7 @@
     "quench": -150,
     "calories": -150,
     "color": "cyan",
-    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ],
+    "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You shoot up.",
@@ -447,7 +447,7 @@
     "calories": -150,
     "fun": 25,
     "color": "cyan",
-    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ],
+    "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You shoot up.",
@@ -470,7 +470,7 @@
     "calories": -150,
     "fun": 25,
     "color": "cyan",
-    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ],
+    "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You shoot up.",
@@ -493,7 +493,7 @@
     "calories": 50,
     "fun": 15,
     "color": "cyan",
-    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ],
+    "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You shoot up.",
@@ -516,7 +516,7 @@
     "calories": -150,
     "fun": 25,
     "color": "cyan",
-    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ],
+    "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You shoot up.",
@@ -539,7 +539,7 @@
     "calories": -150,
     "fun": -25,
     "color": "cyan",
-    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ],
+    "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": "PHEROMONE"
   },
   {
@@ -561,7 +561,7 @@
             "activation_message": "You shoot up, and remove the stunning effects in your body.",
             "effects": [ { "id": "antiflashbang", "duration": "1 m" } ]
      },
-	"flags": [ "IRREPLACEABLE_CONSUMABLE", "NPC_SAFE", "BELT_CLIP" ]
+	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
   },
   {
     "id": "stimHealingSerum",
@@ -589,7 +589,7 @@
 	  "torso_power": 12,
 	  "effects": [ { "id": "healing_medkit", "duration": 150 }, { "id": "pkill2", "duration": 50 } ]
     },
-	"flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "NPC_SAFE", "BELT_CLIP" ]
+	"flags": [ "NO_INGEST", "NPC_SAFE", "BELT_CLIP" ]
   },
   {
     "id": "stimETGChange",
@@ -620,7 +620,7 @@
 	  "torso_power": 20,
 	  "effects": [ { "id": "healing_medkit", "duration": 150 }, { "id": "pkill2", "duration": 150 } ]
     },
-	"flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "NPC_SAFE", "BELT_CLIP" ]
+	"flags": [ "NO_INGEST", "NPC_SAFE", "BELT_CLIP" ]
   },
   {
     "id": "stim_pack1",
@@ -667,7 +667,7 @@
     "material": "veggy",
     "symbol": "!",
     "color": "blue",
-    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE" ],
+    "flags": [ "NO_INGEST" ],
     "use_action": {
         "type": "heal",
         "disinfectant_power": 3,
@@ -690,7 +690,7 @@
     "material": "veggy",
     "symbol": "!",
     "color": "green",
-    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE" ],
+    "flags": [ "NO_INGEST" ],
     "use_action": {
         "type": "heal",
     	"limb_power": 4,
@@ -734,7 +734,7 @@
     "material": "veggy",
     "symbol": "!",
     "color": "green",
-    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ],
+    "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": {
         "type": "heal", 
     	"limb_power": 8,
@@ -759,7 +759,7 @@
     "material": "veggy",
     "symbol": "!",
     "color": "green",
-    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ],
+    "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": {
         "type": "heal", 
     	"limb_power": 12,
@@ -783,7 +783,7 @@
     "material": "veggy",
     "symbol": "!",
     "color": "green",
-    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ],
+    "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": {
         "type": "heal", 
     	"limb_power": 16,
@@ -807,7 +807,7 @@
     "material": "veggy",
     "symbol": "!",
     "color": "green",
-    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ],
+    "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": {
         "type": "heal", 
     	"limb_power": 20,
@@ -831,7 +831,7 @@
     "material": "veggy",
     "symbol": "!",
     "color": "blue",
-    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ],
+    "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": {
         "type": "heal",
     	"limb_power": 6,
@@ -857,7 +857,7 @@
     "material": "veggy",
     "symbol": "!",
     "color": "blue",
-    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ],
+    "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": {
         "type": "heal",
     	"limb_power": 10,
@@ -883,7 +883,7 @@
     "material": "veggy",
     "symbol": "!",
     "color": "blue",
-    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ],
+    "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": {
         "type": "heal",
     	"limb_power": 16,

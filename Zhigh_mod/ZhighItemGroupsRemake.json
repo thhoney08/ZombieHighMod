@@ -1779,6 +1779,7 @@
       { "group": "nested_DP28Zhigh", "prob": 5 },
       { "group": "nested_famasZhigh", "prob": 5 },
       { "group": "nested_ar57Zhigh", "prob": 10 },
+      { "group": "nested_colt9mmZhigh", "prob": 10 },
       { "group": "nested_m1918", "prob": 30 },
       { "group": "nested_m2010", "prob": 20 },
       { "group": "nested_M24", "prob": 15 },
@@ -1808,12 +1809,43 @@
       { "group": "everyday_DP28Zhigh", "prob": 5 },
       { "group": "everyday_famasZhigh", "prob": 5 },
       { "group": "everyday_ar57Zhigh", "prob": 10 },
+      { "group": "everyday_colt9mmZhigh", "prob": 10 },
       { "group": "everyday_m1918", "prob": 30 },
       { "group": "everyday_m2010", "prob": 20 },
       { "group": "everyday_M24", "prob": 15 },
       { "group": "everyday_m27iar", "prob": 5 },
       { "group": "everyday_m4a1", "prob": 45 },
       { "group": "everyday_sig552", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "guns_smg_rare",
+    "//": "SMGs including those only used by police/paramilitary forces.",
+    "items": [
+      { "group": "nested_calico", "prob": 30 },
+      { "group": "nested_r9armszhigh", "prob": 30 },
+      { "group": "nested_akmsuZhigh", "prob": 15 },
+      { "group": "nested_fn_p90", "prob": 50 },
+      { "group": "nested_hk_mp5", "prob": 100 },
+      { "group": "nested_hk_mp5sd", "prob": 10 },
+      { "group": "nested_hk_mp7", "prob": 60 },
+      { "group": "nested_hk_ump45", "prob": 30 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "carried_guns_smg_rare",
+    "//": "SMGs including those only carried by police/paramilitary forces. Either mags or loose ammo are included.",
+    "items": [
+      { "group": "everyday_calico", "prob": 30 },
+      { "group": "everyday_r9armszhigh", "prob": 30 },
+      { "group": "everyday_akmsuZhigh", "prob": 15 },
+      { "group": "everyday_fn_p90", "prob": 50 },
+      { "group": "everyday_hk_mp5", "prob": 100 },
+      { "group": "everyday_hk_mp5sd", "prob": 10 },
+      { "group": "everyday_hk_mp7", "prob": 60 },
+      { "group": "everyday_hk_ump45", "prob": 30 }
     ]
   },
   {
@@ -1833,11 +1865,13 @@
       { "group": "nested_ots62", "prob": 30 },
       { "group": "nested_rhinoRevolverZhigh", "prob": 30 },
       { "group": "nested_tatZhigh", "prob": 10 },
+      { "group": "nested_HowdahPistolZhigh", "prob": 10 },
       { "group": "nested_p50Zhigh", "prob": 20 },
       { "group": "nested_mossberg_500_SupaShotaZhigh", "prob": 20 },
       { "group": "nested_agram2000Zhigh", "prob": 10 },
       { "group": "nested_mauserC96Zhigh", "prob": 35 },
       { "group": "nested_m53Medusa", "prob": 35 },
+      { "group": "nested_dbx57Zhigh", "prob": 35 },
       { "group": "nested_contender_zhigh", "prob": 50 },
       { "group": "nested_pkdBlaster", "prob": 5 },
       { "group": "nested_sig_40", "prob": 35 }
@@ -1861,11 +1895,13 @@
       { "group": "everyday_rhinoRevolverZhigh", "prob": 30 },
       { "group": "everyday_pkdBlaster", "prob": 30 },
       { "group": "nested_tatZhigh", "prob": 10 },
+      { "group": "everyday_HowdahPistolZhigh", "prob": 10 },
       { "group": "everyday_p50Zhigh", "prob": 20 },
       { "group": "everyday_mossberg_500_SupaShotaZhigh", "prob": 20 },
       { "group": "everyday_agram2000Zhigh", "prob": 10 },
-      { "group": "nested_m53Medusa", "prob": 1 },
-      { "group": "nested_contender_zhigh", "prob": 1 },
+      { "group": "nested_m53Medusa", "prob": 35 },
+      { "group": "everyday_dbx57Zhigh", "prob": 35 },
+      { "group": "nested_contender_zhigh", "prob": 50 },
       { "group": "nested_pkdBlaster", "prob": 1 },
       { "group": "everyday_sig_40", "prob": 35 }
     ]

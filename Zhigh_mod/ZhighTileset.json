@@ -1561,6 +1561,8 @@
           { "id": "overlay_worn_mask_cavalry_goldZhigh", "fg": 6 },
           { "id": "balclava_hoodZhigh", "fg": 7 },
           { "id": "overlay_worn_balclava_hoodZhigh", "fg": 8 },
+          { "id": "APSZhigh", "fg": 9 },
+          { "id": "overlay_wielded_APSZhigh", "fg": 10 },
           { "id": "mask_gasHandmade", "fg": 11 },
           { "id": "overlay_worn_mask_gasHandmade", "fg": 12 },
           { "id": "handPickZhigh", "fg": 13 },
@@ -1580,7 +1582,15 @@
           { "id": "acidgun", "fg": 28 },
           { "id": "overlay_wielded_acidgun", "fg": 29 },
           { "id": "mask_noiseZhigh", "fg": 32 },
-          { "id": "overlay_worn_mask_noiseZhigh", "fg": 33 }
+          { "id": "overlay_worn_mask_noiseZhigh", "fg": 33 },
+          { "id": "mask_boar", "fg": 40 },
+          { "id": "overlay_worn_mask_boar", "fg": 41 },
+          { "id": "welding_maskModZhigh", "fg": 42 },
+          { "id": "overlay_worn_welding_maskModZhigh", "fg": 43 },
+          { "id": "overlay_worn_fakeBeardZhigh", "fg": 45 },
+          { "id": "naaheadgearZhigh", "fg": 46 },
+          { "id": "sharpsPistolZhigh", "fg": 47 },
+          { "id": "overlay_wielded_sharpsPistolZhigh", "fg": 48 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,
@@ -1788,6 +1798,30 @@
             ],
             "rotates": false,
             "animated": true
+          },
+          {
+            "id": "mon_feral_breacherZhigh",
+            "fg": [
+              { "weight": 10, "sprite": 109 },
+              { "weight": 10, "sprite": 110 },
+              { "weight": 10, "sprite": 111 },
+              { "weight": 10, "sprite": 112 },
+              { "weight": 10, "sprite": 113 }
+            ],
+            "rotates": false,
+            "animated": false
+          },
+          {
+            "id": "mon_feral_militiaLmgZhigh",
+            "fg": [
+              { "weight": 10, "sprite": 114 },
+              { "weight": 10, "sprite": 115 },
+              { "weight": 10, "sprite": 116 },
+              { "weight": 10, "sprite": 117 },
+              { "weight": 10, "sprite": 118 }
+            ],
+            "rotates": false,
+            "animated": false
           }
         ],
         "//": "range 1 to 128",
@@ -2121,7 +2155,8 @@
           { "id": "overlay_worn_mask_hare2", "fg": 54 },
           { "id": "overlay_worn_badge_snowman", "fg": 55 },
           { "id": "overlay_worn_RichHat_Zhigh", "fg": 56 },
-          { "id": "overlay_worn_RichHat2_Zhigh", "fg": 57 }
+          { "id": "overlay_worn_RichHat2_Zhigh", "fg": 57 },
+          { "id": "overlay_worn_naaheadgearZhigh", "fg": 58 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,

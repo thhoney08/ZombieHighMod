@@ -248,6 +248,13 @@
     "copy-from": "mask_paper_base"
   },
   {
+    "id": "mask_boar",
+    "name": { "str": "boar mask" },
+    "type": "ARMOR",
+    "description": "This is a mask, based on a boar.",
+    "copy-from": "mask_paper_base"
+  },
+  {
     "id": "mask_tigerInj",
     "name": { "str": "tiger mask" },
     "type": "ARMOR",
@@ -997,5 +1004,51 @@
     "ammo": "gasfilter_m",
     "use_action": "GASMASK",
     "flags": [ "FRAGILE", "OVERSIZE", "SLEEP_IGNORE" ]
+  },
+  {
+    "id": "welding_maskModZhigh",
+    "repairs_like": "xlkevlar",
+    "type": "ARMOR",
+    "name": { "str": "welding mask" },
+    "description": "A plastic mask with a dark visor, meant to protect the entire face while welding.  It also serves as somewhat good armor, and the modification makes it easy to see.",
+    "weight": "1 kg",
+    "volume": "4 L",
+    "price": "14 USD",
+    "price_postapoc": "5 USD",
+    "to_hit": -3,
+    "material": [ "kevlar_rigid", "plastic" ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "covers": [ "head", "mouth", "eyes" ],
+    "coverage": 90,
+    "warmth": 5,
+    "encumbrance": 60,
+    "material_thickness": 3,
+    "qualities": [ [ "GLARE", 3 ] ],
+    "flags": [ "FANCY", "STURDY", "SUN_GLASSES", "FLASH_PROTECTION" ]
+  },
+  {
+    "id": "fakeBeardZhigh",
+    "repairs_like": "tshirt",
+    "looks_like": "rag",
+    "type": "ARMOR",
+    "name": { "str": "fake beard" },
+    "description": "A simple piece of cotton that straps over the mouth.  Provides a small amount of protection from airborne illness and dust.  Use to look like a certain saint.",
+    "weight": "168 g",
+    "volume": "100 ml",
+    "price": "8 USD",
+    "price_postapoc": "10 cent",
+    "to_hit": -3,
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "color": "white",
+    "covers": [ "mouth" ],
+    "coverage": 100,
+    "encumbrance": 8,
+    "warmth": 5,
+    "material_thickness": 1,
+    "environmental_protection": 2,
+    "valid_mods": [ "resized_large" ],
+    "flags": [ "FANCY" ]
   }
 ]

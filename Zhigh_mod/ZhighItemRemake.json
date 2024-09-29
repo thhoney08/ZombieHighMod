@@ -227,7 +227,7 @@
     "weight": "40 g",
     "volume": "20 ml",
     "use_action": "ADRENALINE_INJECTOR",
-    "flags": [ "NO_INGEST", "NPC_SAFE", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ]
+    "flags": [ "NO_INGEST", "NPC_SAFE", "BELT_CLIP" ]
   },
   {
     "id": "vaccine_shot",
@@ -237,7 +237,7 @@
     "name": "gamma globulin shot",
     "weight": "40 g",
     "volume": "20 ml",
-    "flags": [ "NO_INGEST", "NPC_SAFE", "TRADER_AVOID", "IRREPLACEABLE_CONSUMABLE", "BELT_CLIP" ]
+    "flags": [ "NO_INGEST", "NPC_SAFE", "TRADER_AVOID", "BELT_CLIP" ]
   },
   {
     "id": "glass_macuahuitl",
@@ -369,7 +369,7 @@
     "copy-from": "throwing_axe",
     "category": "weapons",
     "name": { "str": "throwing axe" },
-    "thrown_damage": [ { "damage_type": "bash", "amount": 12 }, { "damage_type": "cut", "amount": 32 } ]
+    "thrown_damage": [ { "damage_type": "bash", "amount": 42 }, { "damage_type": "cut", "amount": 42 } ]
   },
   {
     "type": "GENERIC",
@@ -386,7 +386,7 @@
     "category": "weapons",
     "name": { "str": "throwing stick" },
     "bashing": 8,
-    "thrown_damage": [ { "damage_type": "bash", "amount": 8 } ]
+    "thrown_damage": [ { "damage_type": "bash", "amount": 28 } ]
   },
   {
     "type": "GENERIC",
@@ -395,7 +395,7 @@
     "category": "weapons",
     "weapon_category": [ "SPEARS" ],
     "name": { "str": "wooden javelin" },
-    "thrown_damage": [ { "damage_type": "bash", "amount": 10 }, { "damage_type": "stab", "amount": 33 } ]
+    "thrown_damage": [ { "damage_type": "bash", "amount": 30 }, { "damage_type": "stab", "amount": 33 } ]
   },
   {
     "type": "GENERIC",
@@ -404,7 +404,7 @@
     "category": "weapons",
     "weapon_category": [ "SPEARS" ],
     "name": { "str": "iron javelin" },
-    "thrown_damage": [ { "damage_type": "bash", "amount": 15 }, { "damage_type": "stab", "amount": 39 } ]
+    "thrown_damage": [ { "damage_type": "bash", "amount": 35 }, { "damage_type": "stab", "amount": 49 } ]
   },
   {
     "id": "golf_bag",
@@ -775,7 +775,7 @@
     "type": "TOOL",
     "category": "drugs",
     "name": { "str": "inhaler" },
-    "flags": [ "BELT_CLIP", "IRREPLACEABLE_CONSUMABLE" ]
+    "flags": [ "BELT_CLIP" ]
   },
   {
     "id": "stethoscope",

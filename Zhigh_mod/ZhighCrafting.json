@@ -7545,23 +7545,6 @@
 	]
   },
   {
-    "type": "recipe",
-    "result": "obrezZhigh",
-    "category": "CC_WEAPON",
-    "subcategory": "CSC_WEAPON_RANGED",
-    "time": "20 m",
-    "reversible": false,
-    "autolearn": true,
-    "qualities": [ { "id": "SAW_M_FINE", "level": 1 } ],
-    "components": [
-		[ [ "mosin44", 1 ],
-		  [ "mosin91_30", 1 ],
-		  [ "mosin44_ebr", 1 ],
-		  [ "mosin91_30_ebr", 1 ]
-		]
-	]
-  },
-  {
     "result": "sweatbandZhigh",
     "type": "recipe",
     "category": "CC_ARMOR",
@@ -7642,5 +7625,80 @@
     "autolearn": true,
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [ [ [ "pipe", 1 ] ], [ [ "flaregun", 1 ] ], [ [ "scrap", 2 ] ] ]
+  },
+  {
+    "result": "mask_noiseZhigh",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "time": "20 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 1 ] ],
+    "components": [
+      [ [ "cordage", 1, "LIST" ], [ "duct_tape", 10 ], [ "medical_tape", 20 ] ],
+      [ [ "megaphone_zhigh", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "obrezZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "20 m",
+    "reversible": false,
+    "autolearn": true,
+    "qualities": [ { "id": "SAW_M_FINE", "level": 1 } ],
+    "components": [
+		[ [ "mosin44", 1 ],
+		  [ "mosin91_30", 1 ],
+		  [ "mosin44_ebr", 1 ],
+		  [ "mosin91_30_ebr", 1 ]
+		]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "HowdahPistolZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "20 m",
+    "reversible": false,
+    "autolearn": true,
+    "qualities": [ { "id": "SAW_M_FINE", "level": 1 } ],
+    "components": [	[ [ "trex_gun", 1 ]	]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "sharpsPistolZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "20 m",
+    "reversible": false,
+    "autolearn": true,
+    "qualities": [ { "id": "SAW_M_FINE", "level": 1 } ],
+    "components": [	[ [ "sharps", 1 ]	]
+	]
+  },
+  {
+    "result": "welding_maskModZhigh",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "difficulty": 5,
+    "time": "40 m",
+    "autolearn": true,
+    "tools": [ [ [ "soldering_standard", 40, "LIST" ], [ "surface_heat", 40, "LIST" ] ] ],
+    "components": [
+      [
+        [ "welding_mask", 1 ],
+        [ "welding_mask_crude", 1 ],
+        [ "welding_mask_raised", 1 ],
+        [ "welding_mask_crude_raised", 1 ]
+      ],
+      [ [ "kevlar_plate", 12 ] ]
+    ]
   }
 ]
