@@ -119,6 +119,24 @@
     }
   },
   {
+    "id": "wall_kit",
+    "looks_like": "shelter_kit",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "wall kit" },
+    "description": "This is a rolled up wall kit, which you could make a wall or an improvised barricade out of one.  It could break easliy if something blows up nearby.",
+    "weight": "1033 g",
+    "volume": "1500 ml",
+    "price": "150 USD",
+    "price_postapoc": "10 USD",
+    "to_hit": -3,
+    "bashing": 4,
+    "material": [ "plastic", "aluminum" ],
+    "symbol": ";",
+    "color": "green",
+    "use_action": { "type": "deploy_furn", "furn_type": "f_large_plastic_wall" }
+  },
+  {
     "type": "furniture",
     "id": "f_large_plastic_wall",
     "looks_like": "f_large_canvas_wall",
@@ -130,13 +148,15 @@
     "coverage": 99,
     "required_str": -1,
     "flags": [ "BLOCKSDOOR", "NOITEM", "BLOCK_WIND", "EASY_DECONSTRUCT" ],
+    "examine_action": "deployed_furniture",
+    "deployed_item": "wall_kit",
     "bash": {
-      "str_min": 18,
-      "str_max": 40,
+      "str_min": 23,
+      "str_max": 400,
       "sound": "crash!",
       "sound_fail": "thump!",
       "sound_vol": 8,
-      "collapse_radius": 1,
+      "collapse_radius": 5,
       "items": [ { "item": "plastic_chunk", "count": [ 32, 54 ] } ],
       "ranged": { "reduction": [ 60, 120 ], "destroy_threshold": 120, "block_unaimed_chance": "50%" }
     },
@@ -216,6 +236,8 @@
     "coverage": 99,
     "required_str": 1,
     "looks_like": "jerrycan_big",
+    "examine_action": "deployed_furniture",
+    "deployed_item": "flamecanZhigh",
     "flags": [ "MOUNTABLE", "SHORT", "TRANSPARENT", "BLOCKSDOOR", "NOITEM", "BLOCK_WIND", "EASY_DECONSTRUCT" ],
     "deconstruct": { "items": [ { "item": "flamecanZhigh", "count": 1 } ] },
     "bash": {
@@ -229,6 +251,25 @@
     }
   },
   {
+    "id": "lighthouseZhigh_light",
+    "looks_like": "jerrycan_big",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": "mechanical light",
+    "description": "An industrial flood light set up to illuminate the surroundings.",
+    "weight": "6000 g",
+    "volume": "10 L",
+    "price": "50 USD",
+    "price_postapoc": "1 USD",
+    "to_hit": -3,
+    "bashing": 35,
+    "material": [ "steel" ],
+    "flags": [ "FLAT_SURFACE" ],
+    "symbol": "=",
+    "color": "red",
+    "use_action": { "type": "deploy_furn", "furn_type": "f_lighthouseZhigh_light" }
+  },
+  {
     "type": "furniture",
     "id": "f_lighthouseZhigh_light",
     "name": "mechanical light",
@@ -239,7 +280,9 @@
     "move_cost_mod": 84,
     "required_str": 24,
     "light_emitted": 99999999,
-    "flags": [ "FLAMMABLE_HARD", "SUPPORTS_ROOF", "BLOCKSDOOR", "FLAT" ],
+    "flags": [ "FLAMMABLE_HARD", "SUPPORTS_ROOF", "BLOCKSDOOR", "FLAT", "EASY_DECONSTRUCT" ],
+    "examine_action": "deployed_furniture",
+    "deployed_item": "lighthouseZhigh_light",
     "deconstruct": {
       "items": [
         { "item": "cable", "charges": 4 },

@@ -1,5 +1,14 @@
 [
   {
+    "id": "achievement_kill_monsters_1000000Zhigh",
+    "type": "achievement",
+    "name": { "str": "[Combat] Statistics" },
+    "hidden_by": [ "achievement_kill_monsters_100" ],
+    "kill_requirements": [ { "is": ">=", "count": 1000000 } ],
+    "description": "The death of one zed is a comedy; the death of millions is a statistic.",
+    "requirements": [ { "event_statistic": "num_avatar_kills", "is": "anything" } ]
+  },
+  {
     "id": "num_avatar_bots_kills",
     "type": "event_statistic",
     "stat_type": "count",

@@ -14,7 +14,8 @@
     "material": [ "steel", "plastic" ],
     "symbol": "[",
     "color": "white",
-    "location": "accessories"
+    "location": "accessories",
+    "flags": [ "CONSUMABLE" ]
   },
   {
     "id": "charm_ring",
@@ -22,7 +23,8 @@
     "type": "GUNMOD",
     "description": "This is a steel ring.  Increases extra slots for accessories.",
     "copy-from": "charm_base",
-    "add_mod": [ [ "accessories", 5 ] ]
+    "add_mod": [ [ "accessories", 5 ] ],
+    "delete": { "flags": [ "CONSUMABLE" ] }
   },
   {
     "id": "charm_cross",

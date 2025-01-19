@@ -20,10 +20,10 @@
 	  "bleed": 0.2,
 	  "bite": 0.2,
 	  "infect": 0.2,
-	  "limb_power": 5,
-	  "head_power": 5,
-	  "torso_power": 5,
-	  "effects": [ { "id": "healing_medkit", "duration": 100 }, { "id": "pkill1", "duration": 25 } ]
+	  "limb_power": 10,
+	  "head_power": 10,
+	  "torso_power": 10,
+	  "effects": [ { "id": "pkill1", "duration": 25 } ]
     },
 	"flags": [ "NO_INGEST", "NPC_SAFE" ]
   },
@@ -48,10 +48,10 @@
 	  "bleed": 0.50,
 	  "bite": 0.50,
 	  "infect": 0.50,
-	  "limb_power": 10,
-	  "head_power": 10,
-	  "torso_power": 10,
-	  "effects": [ { "id": "healing_medkit", "duration": 150 }, { "id": "pkill2", "duration": 50 } ]
+	  "limb_power": 15,
+	  "head_power": 15,
+	  "torso_power": 15,
+	  "effects": [ { "id": "pkill2", "duration": 50 } ]
     },
 	"flags": [ "NO_INGEST", "NPC_SAFE" ]
   },
@@ -76,10 +76,10 @@
 	  "bleed": 0.80,
 	  "bite": 0.80,
 	  "infect": 0.80,
-	  "limb_power": 15,
-	  "head_power": 15,
-	  "torso_power": 15,
-	  "effects": [ { "id": "healing_medkit", "duration": 200 }, { "id": "pkill2", "duration": 75 } ]
+	  "limb_power": 20,
+	  "head_power": 20,
+	  "torso_power": 20,
+	  "effects": [ { "id": "pkill2", "duration": 75 } ]
     },
 	"flags": [ "NO_INGEST", "NPC_SAFE" ]
   },
@@ -107,7 +107,7 @@
 	  "limb_power": 50,
 	  "head_power": 50,
 	  "torso_power": 50,
-	  "effects": [ { "id": "healing_medkit", "duration": 300 }, {"id": "panacea", "duration": 30 }, {"id": "cureall", "duration": 30 }, { "id": "pkill3", "duration": 300 } ]
+	  "effects": [ {"id": "panacea", "duration": 30 }, {"id": "cureall", "duration": 30 }, { "id": "pkill3", "duration": 300 } ]
     },
 	"flags": [ "NO_INGEST", "NPC_SAFE" ]
   },
@@ -251,7 +251,7 @@
 	"use_action": {
             "type": "consume_drug",
             "activation_message": "You shoot up, and remove the toxins in your body.",
-            "effects": [ { "id": "antiVenom", "duration": "1 m" } ] },
+            "effects": [ { "id": "antiVenom", "duration": "10 m" } ] },
 	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
   },
   {
@@ -524,6 +524,28 @@
     }
   },
   {
+    "id": "stim2a2btg",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": "injectable 2A2-(b-TG) stimulant",
+    "description": "This stim positively affects the fighter's efficiency to assess the environment, and also enhances their ability to carry equipment.  The stimulant’s effective duration is accompanied by increased loss of hydration.  \n <color_yellow> Presented by Phoenix corp.</color>",
+    "weight": "40 g",
+    "volume": "10 ml",
+    "price": "7500 USD",
+    "price_postapoc": "30 USD",
+	"material": "plastic",
+    "symbol": "/",
+    "color": "cyan",
+    "stim": -5,
+    "quench": -200,
+    "flags": [ "NO_INGEST", "BELT_CLIP" ],
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You shoot up.",
+      "effects": [ { "id": "strengthup", "duration": "15 m" }, { "id": "perceptionup", "duration": "15 m" } ]
+    }
+  },
+  {
     "id": "stimUdR513",
     "type": "COMESTIBLE",
     "comestible_type": "MED",
@@ -535,9 +557,9 @@
     "price_postapoc": "30 USD",
 	"material": "plastic",
     "symbol": "/",
-    "quench": -150,
-    "calories": -150,
-    "fun": -25,
+    "quench": -10,
+    "calories": -10,
+    "fun": -5,
     "color": "cyan",
     "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": "PHEROMONE"
@@ -560,6 +582,27 @@
             "type": "consume_drug",
             "activation_message": "You shoot up, and remove the stunning effects in your body.",
             "effects": [ { "id": "antiflashbang", "duration": "1 m" } ]
+     },
+	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
+  },
+  {
+    "id": "stimantiExThirFull",
+    "type": "COMESTIBLE",
+	"comestible_type": "MED",
+	"name": "injectable CalmaGuts",
+	"description": "Using this serum when you feel bloated or poisoned by food, will remove the effect pretty soon.  \n <color_yellow> Presented by Phoenix corp.</color>",
+	"weight": "40 g",
+    "volume": "10 ml",
+    "price": "7500 USD",
+    "price_postapoc": "30 USD",
+	"material": "plastic",
+    "symbol": "/",
+    "healthy": -6,
+    "color": "cyan",
+	"use_action": {
+            "type": "consume_drug",
+            "activation_message": "You shoot up, and remove the stunning effects in your body.",
+            "effects": [ { "id": "antiExThirFull", "duration": "1 m" } ]
      },
 	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
   },
@@ -623,6 +666,138 @@
 	"flags": [ "NO_INGEST", "NPC_SAFE", "BELT_CLIP" ]
   },
   {
+    "id": "stimantiteleportglow",
+    "type": "COMESTIBLE",
+	"comestible_type": "MED",
+	"name": "injectable Vortexin",
+	"description": "A cutting-edge stimulant designed to stabilize neural pathways during rapid spatial displacement.  Removes several effects caused by teleportation, allowing for immediate operational readiness.  \n <color_yellow> Presented by Phoenix corp.</color>",
+	"weight": "40 g",
+    "volume": "10 ml",
+    "price": "7500 USD",
+    "price_postapoc": "30 USD",
+	"material": "plastic",
+    "symbol": "/",
+    "color": "cyan",
+	"use_action": {
+            "type": "consume_drug",
+            "activation_message": "You shoot up, and remove the weirdness in your body.",
+            "effects": [ { "id": "antiteleportglow", "duration": "1 m" } ] },
+	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
+  },
+  {
+    "id": "stimMedDarktide",
+    "type": "COMESTIBLE",
+	"comestible_type": "MED",
+	"name": "injectable Hemoforge stim",
+	"description": "A regenerative boost that rapidly restores the user's health over a short duration.  This stim is vital for recovering from critical injuries during prolonged combat engagements.  \n <color_yellow> Presented by Phoenix corp.</color>",
+	"weight": "40 g",
+    "volume": "10 ml",
+    "price": "7500 USD",
+    "price_postapoc": "30 USD",
+	"material": "plastic",
+    "symbol": "/",
+    "color": "cyan",
+	"use_action": {
+      "type": "heal",
+	  "move_cost": 10,
+	  "bleed": 0.50,
+	  "bite": 0.50,
+	  "infect": 0.50,
+	  "limb_power": 15,
+	  "head_power": 15,
+	  "torso_power": 15,
+	  "effects": [ { "id": "pkill2", "duration": "1 m" } ]
+    },
+	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
+  },
+  {
+    "id": "stimCombatDarktide",
+    "type": "COMESTIBLE",
+	"comestible_type": "MED",
+	"name": "injectable Kriegshot stim",
+	"description": "An adrenaline-fueled enhancement that significantly boosts damage output and melee efficiency.  Ideal for closing the gap on enemies or dominating hordes in brutal, close-range combat.  \n <color_yellow> Presented by Phoenix corp.</color>",
+	"weight": "40 g",
+    "volume": "10 ml",
+    "price": "7500 USD",
+    "price_postapoc": "30 USD",
+	"material": "plastic",
+    "symbol": "/",
+    "color": "cyan",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You shoot up, and forget the pain for a short time.",
+      "effects": [
+	  { "id": "pkill3", "duration": "1 m" },
+	  { "id": "speedup", "duration": "1 m" }
+	  ]
+    },
+	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
+  },
+  {
+    "id": "stimCelerityDarktide",
+    "type": "COMESTIBLE",
+	"comestible_type": "MED",
+	"name": "injectable Hastevial-7 stim",
+	"description": "Heightens physical capabilities, allowing for increased stamina regeneration and melee attack speed.  Perfect for carving through waves of enemies with relentless ferocity.  \n <color_yellow> Presented by Phoenix corp.</color>",
+	"weight": "40 g",
+    "volume": "10 ml",
+    "price": "7500 USD",
+    "price_postapoc": "30 USD",
+	"material": "plastic",
+    "symbol": "/",
+    "color": "cyan",
+	"use_action": {
+            "type": "consume_drug",
+            "activation_message": "You shoot up, and you feel great!",
+            "effects": [ { "id": "adrenalineZhigh", "duration": "1 m" } ] },
+	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
+  },
+  {
+    "id": "stimConcentrationDarktide",
+    "type": "COMESTIBLE",
+	"comestible_type": "MED",
+	"name": "injectable Cogitation stim",
+	"description": "A hyper-accelerant that enhances movement speed and agility, enabling users to outmaneuver enemies or close distances rapidly.  Its effects make it a powerful tool for evasion and swift tactical repositioning.  \n <color_yellow> Presented by Phoenix corp.</color>",
+	"weight": "40 g",
+    "volume": "10 ml",
+    "price": "7500 USD",
+    "price_postapoc": "30 USD",
+	"material": "plastic",
+    "symbol": "/",
+    "color": "cyan",
+	"use_action": {
+            "type": "consume_drug",
+            "activation_message": "You shoot up, and remove the weirdness in your body.",
+            "effects": [
+				{ "id": "perceptionup", "duration": "1 m" },
+				{ "id": "dexterityup", "duration": "1 m" }
+		]
+	},
+	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
+  },
+  {
+    "id": "stimClockUpZhigh",
+    "type": "COMESTIBLE",
+	"comestible_type": "MED",
+	"name": "injectable Quantam Acceleration stim",
+	"description": "A stimultant which allows the user to reach extremely high speed.  \n <color_yellow> Presented by Phoenix corp.</color>",
+	"weight": "40 g",
+    "volume": "10 ml",
+    "price": "7500 USD",
+    "price_postapoc": "30 USD",
+	"material": "plastic",
+    "symbol": "/",
+    "color": "cyan",
+	"use_action": {
+		"type": "consume_drug",
+		"activation_message": "CLOCK UP!",
+		"effects": [
+			{ "id": "clockUpZhigh", "duration": "15 s" }
+		]
+	},
+	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
+  },
+  {
     "id": "stim_pack1",
     "type": "GENERIC",
     "category": "tools",
@@ -630,7 +805,8 @@
     "description": "An unknown syringe pack, with no label on it.  Unpack and enjoy.",
     "weight": "40 g",
     "volume": "20 ml",
-    "price": "10000 USD",
+    "price": "1000 USD",
+    "price_postapoc": "10 USD",
     "material": "aluminum",
     "symbol": "!",
     "color": "green",
@@ -645,7 +821,8 @@
     "description": "An unknown 3-syringe pack, with no label on it.  Unpack and enjoy.",
     "weight": "120 g",
     "volume": "60 ml",
-    "price": "10000 USD",
+    "price": "3000 USD",
+    "price_postapoc": "30 USD",
     "material": "aluminum",
     "symbol": "!",
     "color": "green",
@@ -672,7 +849,7 @@
         "type": "heal",
         "disinfectant_power": 3,
         "bite": 0.80,
-        "move_cost": 150
+        "move_cost": 250
     }
   },
   {
@@ -696,7 +873,7 @@
     	"limb_power": 4,
         "head_power": 4,
         "torso_power": 4,
-        "move_cost": 150 
+        "move_cost": 250 
     }
   },
   {
@@ -740,7 +917,7 @@
     	"limb_power": 8,
         "head_power": 8,
         "torso_power": 8,
-        "move_cost": 150 
+        "move_cost": 250 
     }
   },
   {
@@ -765,7 +942,7 @@
     	"limb_power": 12,
         "head_power": 12,
         "torso_power": 12,
-        "move_cost": 150 
+        "move_cost": 250 
     }
   },
   {
@@ -789,7 +966,7 @@
     	"limb_power": 16,
         "head_power": 16,
         "torso_power": 16,
-        "move_cost": 150 
+        "move_cost": 250 
     }
   },
   {
@@ -810,9 +987,9 @@
     "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": {
         "type": "heal", 
-    	"limb_power": 20,
-        "head_power": 20,
-        "torso_power": 20,
+    	"limb_power": 16,
+        "head_power": 16,
+        "torso_power": 16,
         "move_cost": 100 
     }
   },
@@ -839,7 +1016,7 @@
         "torso_power": 6,
         "disinfectant_power": 3,
         "bite": 0.90,
-        "move_cost": 150
+        "move_cost": 250
     }
   },
   {
@@ -860,12 +1037,12 @@
     "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": {
         "type": "heal",
-    	"limb_power": 10,
-        "head_power": 10,
-        "torso_power": 10,
+    	"limb_power": 8,
+        "head_power": 8,
+        "torso_power": 8,
         "disinfectant_power": 3,
         "bite": 0.90,
-        "move_cost": 150
+        "move_cost": 250
     }
   },
   {
@@ -886,12 +1063,12 @@
     "flags": [ "NO_INGEST", "BELT_CLIP" ],
     "use_action": {
         "type": "heal",
-    	"limb_power": 16,
-        "head_power": 16,
-        "torso_power": 16,
+    	"limb_power": 14,
+        "head_power": 14,
+        "torso_power": 14,
         "disinfectant_power": 3,
         "bite": 0.90,
-        "move_cost": 150
+        "move_cost": 250
     }
   },
   {
@@ -940,7 +1117,7 @@
 	  "limb_power": 25,
 	  "head_power": 25,
 	  "torso_power": 25,
-	  "effects": [ { "id": "healing_medkit", "duration": 150 }, { "id": "pkill2", "duration": 100 } ]
+	  "effects": [ { "id": "pkill2", "duration": 100 } ]
     },
 	"flags": [ "BELTED", "COMPACT", "FRAGILE", "ALLOWS_NATURAL_ATTACKS", "WATER_FRIENDLY", "ALLOWS_REMOTE_USE", "NPC_SAFE" ],
     "magazines": [
@@ -962,6 +1139,33 @@
       ]
     ],
     "magazine_well": "250 ml"
+  },
+  {
+    "id": "holyH20Zhigh",
+    "type": "COMESTIBLE",
+    "looks_like": "flask_hip",
+	"comestible_type": "MED",
+	"name": "holy water",
+	"description": "A flask of holy water.  Thy be blessed.",
+	"weight": "400 g",
+    "volume": "250 ml",
+    "price": "7500 USD",
+    "price_postapoc": "30 USD",
+	"material": "plastic",
+    "symbol": "/",
+    "color": "cyan",
+    "quench": 30,
+    "fun": 5,
+	"use_action": {
+		"type": "consume_drug",
+		"activation_message": "You bless yourself, removing some unnatural harmful effects in your body.  Thy be blessed.",
+		"effects": [
+			{ "id": "holyH2OZhighEffect", "duration": "5 m" },
+			{ "id": "healing_gas_zhigh", "duration": "2 m" }
+		]
+	},
+    "armor_data": { "covers": [ "leg_either" ], "coverage": 2, "material_thickness": 1 },
+	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
   },
   {
     "id": "stimPistolZhigh",

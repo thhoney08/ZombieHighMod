@@ -947,18 +947,19 @@
   },
   {
     "type": "mutation",
+    "//": "error when start, only have the energy drink itself, not the can. gonna fix it later",
     "id": "PREP_ED",
     "name": { "str": "Pocket items: energy drink" },
     "points": 1,
     "description": "You happened to have a can of energy drink in your pocket when this whole thing happened.",
     "valid": false,
-    "starting_trait": true,
+    "starting_trait": false,
     "purifiable": false,
     "profession": false
   },
   {
     "type": "profession_item_substitutions",
-    "item": "energy_drink",
+	"item": "energy_drink",
     "bonus": { "present": [ "PREP_ED" ] }
   },
   {
@@ -991,7 +992,7 @@
   {
     "type": "profession_item_substitutions",
     "item": "attached_ear_plugs_off",
-    "bonus": { "present": [ "PREP_PK" ] }
+    "bonus": { "present": [ "PREP_EP" ] }
   },
   {
     "type": "mutation",
@@ -1300,21 +1301,6 @@
   },
   {
     "type": "mutation",
-    "id": "ARTIFACTSPIDER",
-    "name": { "str": "spider artifact" },
-    "points": 2,
-    "description": "Spider artifact blesses you.",
-    "valid": false,
-    "purifiable": false,
-    "active": true,
-    "cost": 80,
-    "ranged_mutation": { "type": "webSlingerZhigh", "message": "You fire off webs from your arms." },
-    "hunger": true,
-    "thirst": true,
-    "spawn_item": { "type": "rope_30", "message": "You spin a rope from your silk." }
-  },
-  {
-    "type": "mutation",
     "id": "FRESHWATEROSMOSIS",
     "name": { "str": "Freshwater Osmosis" },
     "points": 4,
@@ -1361,5 +1347,34 @@
     "fatigue_modifier": -2.0,
     "fatigue_regen_modifier": 1.0,
     "max_stamina_modifier": 0.55
+  },
+  {
+    "type": "mutation",
+    "id": "ARTIFACTSPIDER",
+    "name": { "str": "spider artifact" },
+    "points": 2,
+    "description": "Spider artifact blesses you.",
+    "valid": false,
+    "purifiable": false,
+    "active": true,
+    "cost": 80,
+    "ranged_mutation": { "type": "webSlingerZhigh", "message": "You fire off webs from your arms." },
+    "hunger": true,
+    "thirst": true,
+    "spawn_item": { "type": "rope_30", "message": "You spin a rope from your silk." }
+  },
+  {
+    "type": "mutation",
+    "id": "WITCH_ZHIGH",
+    "name": { "str": "Magical blood" },
+    "points": 4,
+    "description": "You could make some magic cards, due to some weird reason.",
+    "valid": false,
+    "purifiable": false,
+    "active": true,
+    "cost": 60,
+    "hunger": true,
+    "thirst": true,
+    "spawn_item": { "type": "cardZhigh_pack", "message": "You magically make a card pack." }
   }
 ]

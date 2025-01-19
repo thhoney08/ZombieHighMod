@@ -242,12 +242,13 @@
           "gloves_fingerless",
           "hoodie_ora",
           "wristwatch",
-          "zhigh_smart_phone",
-          "skateboard"
+          "folding_skateboard",
+          "zhigh_smart_phone"
         ],
         "entries": [ 
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "hammer", "custom-flags": [ "auto_wield" ] } ]
+                { "item": "hammer", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "briefs" ],
       "female": [ "sports_bra", "panties" ]
@@ -414,7 +415,7 @@
           "socks",
           "sneakers",
           "arrow_exploding",
-          "arrow_exploding",
+          "ZhighArrow_electric",
           "vambrace_larmor"
         ],
         "entries": [ 
@@ -655,8 +656,8 @@
     "id": "zhighShooter",
     "name": "Student - Shooter",
     "description": "As a basketball player, it was going to be your first major game, but then the Cataclysm struck.  Thanks to your quick feet, you were among the lucky few to survive and escape from the creatures.",
-    "points": -2,
-    "traits": [ "REGEN_zhigh" ],
+    "points": 0,
+    "traits": [ "REGEN_zhigh", "GOODCARDIO" ],
     "skills": [ { "level": 2, "name": "dodge" }, { "level": 3, "name": "throw" } ],
     "items": {
       "both": { "items": [ "tank_top", "jersey", "b_shorts", "zhigh_smart_phone", "socks_ankle", "sneakers", "sports_drink" ] },
@@ -732,18 +733,13 @@
         "items": [
           "zhigh_smart_phone",
           "socks",
-          "stimUdR513",
-          "stimUdR513",
-          "stimUdR513",
-          "stimInv",
-          "stimInv",
-          "stimInv",
           "mocassins",
           "woodenKnife",
           "woodenKnife",
           "woodenKnife",
           "coin_quarter",
           "coin_quarter",
+          "zhighXtraHatInside",
           "wristwatch"
         ],
         "entries": [ 
@@ -798,8 +794,9 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "laser_spotlight", "custom-flags": [ "auto_wield" ] } ]
+			{ "item": "heavy_plus_battery_cell", "charges": 1500, "container-item": "UPS_off" },
+            { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+            { "item": "laser_spotlight", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "boxer_shorts", "spot_hanboktop_zhigh", "spot_strap_zhigh", "spot_hanbokpants_zhigh" ],
       "female": [ "bra", "panties", "hanbok_fl_top", "hanbok_fl_skirt", "spi_hairpin" ]
@@ -823,8 +820,9 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "laser_beamlight", "custom-flags": [ "auto_wield" ] } ]
+			{ "item": "heavy_plus_battery_cell", "charges": 1500, "container-item": "UPS_off" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "laser_beamlight", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "boxer_shorts", "spot_hanboktop_zhigh", "spot_strap_zhigh", "spot_hanbokpants_zhigh" ],
       "female": [ "bra", "panties", "hanbok_fl_top", "hanbok_fl_skirt", "spi_hairpin" ]
@@ -1039,12 +1037,12 @@
     "id": "zhighStriker",
     "name": "Student - Striker",
     "description": "As a semi-pro scoccer player, you were practicing till SHTF happened.  Guess you do need to run more than a lot in order to survive.",
-    "points": -2,
+    "points": 0,
     "skills": [
       { "level": 1, "name": "melee" },
       { "level": 2, "name": "unarmed" }
     ],
-    "traits": [ "REGEN_zhigh" ],
+    "traits": [ "REGEN_zhigh", "GOODCARDIO" ],
     "items": {
       "both": {
         "items": [
@@ -1136,18 +1134,20 @@
           "mbag",
           "caffeine",
           "electrohack",
+          "light_minus_atomic_battery_cell",
           "control_laptop",
-          "bot_attack_drone",
+          "bot_heal_drone",
           "wristwatch"
         ],
         "entries": [ 
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
                 { "item": "bot_attack_drone", "custom-flags": [ "auto_wield" ] } ]
       },
-      "male": [ "briefs" ],
-      "female": [ "panties" ]
+      "male": [ "boxer_shorts", "pants_zhigh" ],
+      "female": [ "bra", "panties", "skirt_zhigh" ]
     },
-    "flags": [ "SCEN_ONLY" ]
+    "flags": [ "SCEN_ONLY" ],
+    "addictions": [ { "intensity": 10, "type": "caffeine" } ]
   },
   {
     "type": "profession",
@@ -1647,7 +1647,7 @@
   {
     "type": "profession",
     "id": "zhighFrisbee",
-    "name": "Student - Thrower",
+    "name": "Student - Disk Thrower",
     "description": "As a half - rapper and a half - frisbee player, you grabbed the best weapon in your hand - a frisbee - and dived into the apocalypse.  Some tunes in your pocket, weapon in your hand, and now you are ready to go.",
     "points": -2,
     "skills": [ { "level": 2, "name": "throw" }, { "level": 2, "name": "speech" } ],
@@ -1712,21 +1712,30 @@
     "name": "Student - Skater",
     "description": "You were hell on wheels prior to the apocalypse.  Now the rest of your team is dead, and you probably wouldn't have lived this long if not for your penchant for high-speed violence.  Things are looking grim; how long can you race laps around the undead before you get blocked for good?",
     "points": -1,
-    "skills": [ { "level": 1, "name": "melee" }, { "level": 1, "name": "unarmed" }, { "level": 1, "name": "dodge" } ],
+    "skills": [
+		{ "level": 1, "name": "melee" },
+		{ "level": 1, "name": "unarmed" },
+		{ "level": 1, "name": "driving" },
+		{ "level": 1, "name": "dodge" }
+	],
     "traits": [ "PROF_SKATER", "REGEN_zhigh" ],
     "items": {
       "both": {
         "items": [
           "socks",
-          "shorts",
+          "shorts_tracksuit_zhigh",
           "gloves_fingerless",
           "hoodie",
+          "lighter",
           "wristwatch",
+          "sneakers",
           "zhigh_smart_phone"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "skateboard", "custom-flags": [ "auto_wield" ] } ]
+            { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "ZhighNadeGroups" },
+			{ "item": "folding_skateboard", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "briefs" ],
       "female": [ "sports_bra", "panties" ]
@@ -1934,10 +1943,10 @@
     "name": "Student - Dodgeball Player",
     "description": "You liked to play dodgeball, where failing to dodge the ball meant you were out.  Now failing to dodge threatens your life.  Don't slip up.",
     "points": -1,
-    "traits": [ "REGEN_zhigh" ],
+    "traits": [ "REGEN_zhigh", "GOODCARDIO" ],
     "skills": [ { "level": 1, "name": "dodge" }, { "level": 1, "name": "throw" } ],
     "items": {
-      "both": { "items": [ "tshirt", "jacket_light", "zhigh_smart_phone", "jeans", "socks_ankle", "lowtops", "slingpack", "juice" ] },
+      "both": { "items": [ "tshirt", "jacket_light", "zhigh_smart_phone", "pants_tracksuit_zhigh", "socks_ankle", "lowtops", "slingpack", "juice" ] },
       "male": [ "briefs" ],
       "female": [ "boy_shorts" ]
     },
@@ -2232,7 +2241,7 @@
         ],
         "entries": [
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-			{ "item": "bbpistol", "ammo-item": "bb", "charges": [ 1, 50 ], "container-item": "sholster" },
+			{ "item": "bbpistol", "ammo-item": "bb", "charges": [ 200, 250 ], "container-item": "sholster" },
 			{ "item": "bbM4", "ammo-item": "bb", "charges": [ 1, 300 ], "contents-item": [ "shoulder_strap" ], "custom-flags": [ "auto_wield" ] }
         ]
       },
@@ -2265,7 +2274,7 @@
         ],
         "entries": [
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "bbpistol", "ammo-item": "bb", "charges": [ 1, 50 ], "container-item": "sholster" },
+                { "item": "bbpistol", "ammo-item": "bb", "charges": [ 200, 250 ], "container-item": "sholster" },
                 { "item": "bbsmg", "ammo-item": "bb", "charges": [ 1, 300 ], "contents-item": [ "shoulder_strap" ], "custom-flags": [ "auto_wield" ] }
         ]
       },
@@ -2289,7 +2298,7 @@
     "id": "zhighSniper",
     "name": "Student - Sniper",
     "description": "You always liked to shoot guns.  More likely, you liked to shoot guns accurately, and you were good at it.  While you were playing a round shooting BBs, apocalypse happened and it turned your world 180 degrees.  You are nothing like the sniper from a cool movie, but determined enough to survive in this damn hellhole.",
-    "points": -1,
+    "points": 1,
     "skills": [ { "level": 3, "name": "gun" }, { "level": 3, "name": "rifle" } ],
     "traits": [ "REGEN_zhigh" ],
     "items": {
@@ -2303,12 +2312,14 @@
           "gloves_tactical",
           "hat_boonie",
           "acidbomb",
-          "bbpistol",
           "bb",
+          "fancy_sunglassesStars",
           "wristwatch"
         ],
         "entries": [
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+				{ "item": "bbpistol", "ammo-item": "bb", "charges": [ 200, 250 ], "container-item": "sholster" },
+				{ "item": "kukri", "container-item": "sheath" },
                 { "item": "bbSnip", "ammo-item": "bb", "charges": 5, "contents-item": "shoulder_strap" } ]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
@@ -2496,16 +2507,18 @@
           "doom_vest",
           "zhigh_smart_phone",
           "socks",
-          "paintball",
-          "paintball_shot",
-          "paintball_shot",
+          "shotcanister_flechette",
+          "shotcanister_flechette",
+          "shotcanister_bearing",
+          "shotcanister_bearing",
+          "shotcanister_bearing",
           "mbag",
           "boots_steel",
           "doom_fullhelmet"
         ],
         "entries": [
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "shotgun_d_paint", "ammo-item": "paintball_shot", "charges": 2, "contents-item": "shoulder_strap", "custom-flags": [ "auto_wield" ] } ]
+                { "item": "pneumatic_shotgun", "ammo-item": "shotcanister_bearing", "charges": 2, "contents-item": "shoulder_strap", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -2861,7 +2874,7 @@
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
                 { "item": "napalm", "container-item": "test_tube" },
                 { "item": "gas_chloramine", "container-item": "test_tube" },
-                { "item": "gas_smoke", "container-item": "test_tube" },
+                { "item": "ZhighGas_smoke", "container-item": "test_tube" },
                 { "item": "gas_fungicidal", "container-item": "test_tube" },
                 { "item": "gas_insecticidal", "container-item": "test_tube" } ]
       },
@@ -3441,7 +3454,7 @@
       "both": {
         "items": [
           "dress_shirt_zhigh",
-          "peacoat",
+          "trenchcoat",
           "zhigh_smart_phone",
           "socks",
           "sneakers",
@@ -3575,19 +3588,20 @@
           "blazer_zhigh",
           "zhigh_smart_phone",
           "wetsuit_booties",
-          "swim_fins",
+          "lowtops",
           "m_fishspear",
           "m_fishspear",
           "m_fishspear",
-          "scuba_tank",
+          "dive_bag",
           "goggles_swim",
           "rebreather",
           "wetsuit_gloves",
-          "dive_bag",
           "diving_watch"
         ],
         "entries": [ 
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "swim_fins", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "scuba_tank", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "diveknife", "container-item": "sheath" },
 			{ "item": "doublespeargun", "ammo-item": "m_fishspear", "charges": 2, "contents-item": "shoulder_strap", "custom-flags": [ "auto_wield" ] }
 		]
@@ -3843,12 +3857,13 @@
           "zhigh_smart_phone",
           "socks",
           "sneakers",
-          "gasbomb_makeshift",
-          "smokebomb_makeshift",
+          "lighter",
           "wristwatch"
         ],
         "entries": [ 
 			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNadeGroups" },
+			{ "group": "ZhighTraps" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "group": "ZhighNpc_masks" },
 			{ "group": "ZhighNpc_stabbing", "container-item": "sheath" },
@@ -4278,14 +4293,210 @@
           "socks",
           "pants_zhigh",
           "boots_combat",
-          "modularvest",
-          "bandana_skull",
+          "tacvest",
+          "balclava_skull",
+          "toynadeZhigh",
+          "bb",
           "fancy_sunglassesStars"
         ],
         "entries": [
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-			{ "item": "bbpistol", "ammo-item": "bb", "charges": [ 1, 50 ], "container-item": "sholster" },
-			{ "item": "bbM4", "ammo-item": "bb", "charges": [ 1, 300 ], "contents-item": [ "shoulder_strap" ], "custom-flags": [ "auto_wield" ] }
+			{ "item": "bbpistol", "ammo-item": "bb", "charges": [ 200, 250 ], "container-item": "holster" },
+			{ "item": "bbM4", "ammo-item": "bb", "charges": [ 250, 300 ], "contents-item": [ "shoulder_strap" ], "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighHlAsmith",
+    "name": "Student - Cosplayer",
+    "description": "You cosplayed as a 'spec ops' from 'Full Strife' series when the world ended.  The world is doomed, FOXTROT UNIFORM.",
+    "points": 4,
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [
+		{ "level": 3, "name": "gun" },
+		{ "level": 3, "name": "smg" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "socks",
+          "pants_zhigh",
+          "boots_combat",
+          "gloves_fingerless",
+          "helmet_skid",
+          "HalfLifePcvZhigh_vest",
+          "HalfLifeHevZhigh_mask",
+          "toynadeZhigh",
+          "bb",
+          "bb"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "bbMp5", "ammo-item": "bb", "charges": [ 250, 300 ], "contents-item": [ "shoulder_strap" ], "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighHlGfreeman",
+    "name": "Student - Cosplayer",
+    "description": "You cosplayed as a 'researcher' from 'Full Strife' series when the world ended.  The world is doomed, but the right man in the wrong place can make all the difference in the world.",
+    "points": 4,
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [
+		{ "level": 2, "name": "electronics" },
+		{ "level": 1, "name": "cooking" },
+		{ "level": 2, "name": "bashing" },
+		{ "level": 1, "name": "dodge" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "zhigh_smart_phone",
+          "socks",
+          "glasses_bifocal",
+          "HalfLifeHevZhigh_suit"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "crowbar", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighDsIclark",
+    "name": "Student - Cosplayer",
+    "description": "You cosplayed as an 'engineer' from 'Dread Spruce' series when the world ended.  The world is doomed, but who cares, you quit trying to make sense of it all back on the day 1.",
+    "points": 4,
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [
+		{ "level": 1, "name": "unarmed" },
+		{ "level": 1, "name": "bashing" },
+		{ "level": 1, "name": "cutting" },
+		{ "level": 2, "name": "dodge" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "zhigh_smart_phone",
+          "socks",
+          "combatnail",
+          "DeadSpaceZhigh_suit"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "nailsmg", "ammo-item": "combatnail", "charges": [ 25, 100 ], "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighHaloChief",
+    "name": "Student - Cosplayer",
+    "description": "You cosplayed as a 'master chief' from 'Starbind' series when the world ended.  As the original character did, you gotta finish this fight.",
+    "points": 4,
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [
+		{ "level": 3, "name": "gun" },
+		{ "level": 2, "name": "rifle" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "zhigh_smart_phone",
+          "socks",
+          "haloMasChiZhigh_suit",
+          "haloMasChiZhigh_helm",
+          "bb"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "bbBRifle", "ammo-item": "bb", "charges": [ 250, 300 ], "contents-item": [ "shoulder_strap" ], "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighLeCom",
+    "name": "Student - Cosplayer",
+    "description": "You cosplayed as a 'scavenger' from 'Mortal Syndicate' series when the world ended.  The world is doomed, but make yourself at home.",
+    "points": 4,
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [
+		{ "level": 1, "name": "bashing" },
+		{ "level": 2, "name": "dodge" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "zhigh_smart_phone",
+          "socks",
+          "boots",
+          "gloves_leather",
+          "helmet_liner",
+          "scuba_tank",
+          "hazmat_suit",
+          "mask_gas"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "roadSignZhigh", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighJedi",
+    "name": "Student - Cosplayer",
+    "description": "You cosplayed as a 'sensei' from 'galactic warfare' series when the world ended.  May the force be with you.",
+    "points": 4,
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [
+		{ "level": 1, "name": "bashing" },
+		{ "level": 1, "name": "melee" },
+		{ "level": 2, "name": "dodge" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "zhigh_smart_phone",
+          "socks",
+          "boots",
+          "kimono",
+          "police_belt",
+          "jedi_cloak"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+            { "item": "light_battery_cell", "ammo-item": "battery", "charges": 100, "container-item": "baton_light", "custom-flags": [ "auto_wield" ] }
 		]
       },
       "male": [ "boxer_shorts" ],
@@ -4312,8 +4523,98 @@
   },
   {
     "type": "profession",
+    "id": "zhighJavelinPlayer",
+    "name": "Student - Javelin Thrower",
+    "description": "You hurled that javelin like your life depended on it, piercing the undead straight through the skull.  In this moment, you aren’t just a thrower—you are a survivor.",
+    "points": 1,
+    "traits": [ "REGEN_zhigh", "GOODCARDIO" ],
+    "skills": [ { "level": 1, "name": "dodge" }, { "level": 2, "name": "throw" } ],
+    "items": {
+      "both": { "items": [ "tshirt", "jacket_tracksuit_zhigh", "zhigh_smart_phone", "pants_tracksuit_zhigh", "socks_ankle", "lowtops" ],
+				"entries": [ { "item": "javelin_iron", "custom-flags": [ "auto_wield" ] } ]
+	  },
+      "male": [ "briefs" ],
+      "female": [ "boy_shorts" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighShotPutPlayer",
+    "name": "Student - Shot Put Thrower",
+    "description": "You hurled that shot put like it was your last chance, launching it with every ounce of strength as the zombies closed in.  That throw was more than just power—it was pure survival.",
+    "points": 0,
+    "traits": [ "REGEN_zhigh", "GOODCARDIO" ],
+    "skills": [ { "level": 1, "name": "dodge" }, { "level": 2, "name": "throw" } ],
+    "items": {
+      "both": { "items": [ "tshirt", "jacket_tracksuit_zhigh", "zhigh_smart_phone", "pants_tracksuit_zhigh", "socks_ankle", "lowtops" ],
+				"entries": [ { "item": "bearingBig", "custom-flags": [ "auto_wield" ] } ]
+	  },
+      "male": [ "briefs" ],
+      "female": [ "boy_shorts" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighLacrossePlayer",
+    "name": "Student - Lacrosse Player",
+    "description": "You played like a warrior on the lacrosse field, but in the zombie apocalypse, your speed and agility became survival skills.  You dodged and weaved through the hordes, as if every zombie was an opponent you had to outmaneuver to stay alive.",
+    "points": 2,
+    "traits": [ "REGEN_zhigh", "GOODCARDIO" ],
+    "skills": [ { "level": 1, "name": "dodge" }, { "level": 1, "name": "bashing" }, { "level": 1, "name": "throw" } ],
+    "items": {
+      "both": { "items": [ "tshirt", "football_armor", "helmet_football", "zhigh_smart_phone", "pants_tracksuit_zhigh", "socks_ankle", "lowtops", "bearingBig", "bearingBig" ],
+				"entries": [ { "item": "lacrosseStickZhigh", "custom-flags": [ "auto_wield" ] } ]
+	  },
+      "male": [ "briefs" ],
+      "female": [ "boy_shorts" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighBiker",
+    "name": "Student - Biker",
+    "description": "You spent most of your life on a minibike, out on the open road with your club.  Now they're all dead.  Time to ride or die.",
+    "points": 1,
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [
+      { "level": 1, "name": "mechanics" },
+      { "level": 2, "name": "driving" },
+      { "level": 1, "name": "melee" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "tshirt_tour",
+          "pants_zhigh",
+          "helmet_motorBikerZhigh",
+          "zhigh_smart_phone",
+          "socks",
+          "boots",
+          "vest_leatherBikerZhigh",
+          "throwing_knife",
+          "throwing_knife",
+          "throwing_knife",
+          "bandolier_knife",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "knife_meat_cleaver", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties" ]
+    },
+    "vehicle": "miniBikeZhigh",
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
     "id": "zhighMallninja",
-    "name": "Student - mallninja",
+    "name": "Student - Mallninja",
     "description": "While they were living their life you studied the blade.  And now that the world is on fire and the zombies are at the gate people have the audacity to come to you for help.  Nevermind, everyone is dead.",
     "points": -12,
     "traits": [ "DISORGANIZED", "BRAWLER", "REGEN_zhigh", "CLUMSY" ],

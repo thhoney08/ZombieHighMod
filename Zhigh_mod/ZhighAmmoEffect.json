@@ -32,6 +32,16 @@
       "fragment": { "impact": { "damage_type": "cut", "amount": 30, "armor_multiplier": 3 }, "range": 3 } }
   },
   {
+    "id": "LIGHTNINGZHIGH",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_electricity", "intensity_min": 2, "intensity_max": 2 }
+  },
+  {
+    "id": "FLAMEZHIGH",
+    "type": "ammo_effect",
+    "trail": { "field_type": "fd_fire", "intensity_min": 1, "intensity_max": 3 }
+  },
+  {
     "id": "GOOAMMO1",
     "type": "ammo_effect",
     "aoe": { "field_type": "fd_goo", "intensity_min": 2, "intensity_max": 2, "size": 3 }
@@ -95,6 +105,16 @@
     "id": "TEARGASBIG",
     "type": "ammo_effect",
     "aoe": { "field_type": "fd_smoke", "intensity_min": 3, "intensity_max": 3, "radius": 6 }
+  },
+  {
+    "id": "CORROSIONGAS",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_acidGasZhigh", "intensity_min": 3, "intensity_max": 3 }
+  },
+  {
+    "id": "CORROSIONGASBIG",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_acidGasZhigh", "intensity_min": 3, "intensity_max": 3, "radius": 6 }
   },
   {
     "id": "ACIDBIG",

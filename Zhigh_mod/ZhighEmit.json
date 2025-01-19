@@ -11,6 +11,129 @@
     "base_mods": { "speed_mod": [ -30 ], "dex_mod": [ -2 ] }
   },
   {
+    "id": "emit_corrosiveZhigh_stream",
+    "type": "emit",
+    "//": "Steady stream of thick corrosive gas (example: corrosive gas grenade)",
+    "field": "fd_acidGasZhigh",
+    "intensity": 3,
+    "qty": 24
+  },
+  {
+    "id": "fd_acidGasZhigh",
+    "type": "field_type",
+    "legacy_enum_id": 7,
+    "intensity_levels": [
+      {
+        "name": "hazy corrosive cloud",
+        "sym": "8",
+        "dangerous": true,
+        "translucency": 1,
+        "effects": [
+          {
+            "effect_id": "paralyzepoison",
+            "body_part": "mouth",
+            "intensity": 5,
+            "min_duration": "10 seconds",
+            "max_duration": "10 seconds",
+            "//": "won't be applied outside of vehicles, so it could apply harsher effect",
+            "immune_outside_vehicle": true,
+            "message_type": "bad"
+          },
+          {
+            "effect_id": "poison",
+            "body_part": "mouth",
+            "intensity": 2,
+            "min_duration": "10 seconds",
+            "max_duration": "10 seconds",
+            "immune_inside_vehicle": true,
+            "message": "You feel sick and slow from inhaling the hazy corrosive cloud",
+            "message_type": "bad"
+          }
+        ]
+      },
+      {
+        "name": "corrosive gas",
+        "color": "light_green",
+        "transparent": false,
+        "translucency": 10,
+        "effects": [
+          {
+            "effect_id": "paralyzepoison",
+            "body_part": "mouth",
+            "intensity": 5,
+            "min_duration": "20 seconds",
+            "max_duration": "20 seconds",
+            "//": "won't be applied outside of vehicles, so it could apply harsher effect",
+            "immune_outside_vehicle": true,
+            "message_type": "bad"
+          },
+          {
+            "effect_id": "poison",
+            "body_part": "mouth",
+            "intensity": 5,
+            "min_duration": "20 seconds",
+            "max_duration": "20 seconds",
+            "immune_inside_vehicle": true,
+            "message": "You feel sick and slow from inhaling the corrosive gas",
+            "message_type": "bad"
+          }
+        ]
+      },
+      {
+        "name": "thick corrosive gas",
+        "color": "green",
+        "translucency": 0,
+        "effects": [
+          {
+            "effect_id": "paralyzepoison",
+            "body_part": "mouth",
+            "intensity": 5,
+            "min_duration": "30 seconds",
+            "max_duration": "30 seconds",
+            "//": "won't be applied outside of vehicles, so it could apply harsher effect",
+            "immune_outside_vehicle": true,
+            "message_type": "bad"
+          },
+          {
+            "effect_id": "poison",
+            "body_part": "mouth",
+            "intensity": 5,
+            "min_duration": "30 seconds",
+            "max_duration": "30 seconds",
+            "//": "won't be applied outside of vehicles, so it could apply harsher effect",
+            "immune_outside_vehicle": true,
+            "message": "You feel sick and slow from inhaling the thick corrosive gas",
+            "message_type": "bad"
+          },
+          {
+            "effect_id": "badpoison",
+            "body_part": "mouth",
+            "intensity": 5,
+            "min_duration": "15 seconds",
+            "max_duration": "15 seconds",
+            "//": "won't be applied inside of vehicles, so it could apply lesser effect",
+            "immune_inside_vehicle": true,
+            "message": "You feel sick from inhaling the thick corrosive gas",
+            "message_type": "bad"
+          }
+        ]
+      }
+    ],
+    "decay_amount_factor": 5,
+    "gas_absorption_factor": 15,
+    "immunity_data": { "traits": [ "ACIDPROOF" ] },
+    "percent_spread": 30,
+    "outdoor_age_speedup": "3 minutes",
+    "dirty_transparency_cache": true,
+    "has_acid": true,
+    "priority": 8,
+    "half_life": "10 minutes",
+    "phase": "gas",
+    "display_items": false,
+    "display_field": true,
+    "looks_like": "fd_nuke_gas"
+  },
+  {
     "id": "fd_barbedWireZhigh",
     "type": "field_type",
     "legacy_enum_id": 5,
@@ -394,7 +517,7 @@
     "dirty_transparency_cache": true,
     "phase": "gas",
     "display_items": true,
-    "display_field": false,
+    "display_field": true,
     "looks_like": "fd_tindalos_gas"
   },
   {
@@ -412,7 +535,8 @@
     "priority": 8,
     "half_life": "30 seconds",
     "phase": "gas",
-    "display_field": false,
+    "display_items": true,
+    "display_field": true,
     "looks_like": "fd_relax_gas"
   },
   {
@@ -464,7 +588,7 @@
     "dirty_transparency_cache": true,
     "phase": "gas",
     "display_items": true,
-    "display_field": false,
+    "display_field": true,
     "looks_like": "fd_relax_gas"
   },
   {

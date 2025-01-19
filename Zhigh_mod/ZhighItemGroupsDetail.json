@@ -1,6 +1,41 @@
 [
   {
     "type": "item_group",
+    "id": "guns_cardZhigh",
+    "//": "Makeshift or otherwise poor quality guns of all types.",
+    "items": [
+      { "group": "guns_common", "prob": 80 },
+      { "group": "guns_milspec", "prob": 60 },
+      { "group": "guns_improvised", "prob": 40 },
+      { "group": "archery_hunting", "prob": 20 },
+      { "group": "guns_hunting", "prob": 20 },
+      { "group": "guns_survival", "prob": 20 },
+      { "group": "carried_guns_swat", "prob": 20 },
+      { "group": "guns_rare", "prob": 10 },
+      { "group": "guns_obscure", "prob": 5 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "distribution",
+    "id": "turretBoxZhighGroups",
+    "entries": [
+		{ "item": "bot_LMGturretZhigh", "prob": 30 },
+		{ "item": "bot_electricturretZhigh", "prob": 30 },
+        { "item": "bot_sniperturretZhigh", "prob": 30 },
+        { "item": "bot_iceturret", "prob": 30 },
+        { "item": "bot_waterturret", "prob": 30 },
+        { "item": "bot_acidturretZhigh", "prob": 30 },
+        { "item": "bot_flameturretZhigh", "prob": 30 },
+        { "item": "bot_RockTurretZhigh", "prob": 30 },
+        { "item": "bot_healturret", "prob": 30 },
+        { "item": "bot_heal_drone", "prob": 30 },
+        { "item": "bot_attack_drone", "prob": 30 },
+        { "item": "bot_enz_hack", "prob": 3 }
+	]
+  },
+  {
+    "type": "item_group",
     "subtype": "collection",
     "id": "mon_marusaur_drops",
     "entries": [ { "item": "inactive_marusaur", "prob": 100 } ]
@@ -14,7 +49,7 @@
   {
     "id": "ZhighPlayPropGroups",
     "type": "item_group",
-    "subtype": "collection",
+    "subtype": "distribution",
     "ammo": 100,
     "magazine": 100,
     "items": [
@@ -22,19 +57,19 @@
       { "group": "ZhighWeaponGroups", "prob": 90, "count": [ 1, 2 ] },
       { "group": "ZhighWeaponGroups", "prob": 100, "count": [ 0, 4 ] },
       { "group": "ZhighWeaponGroups", "prob": 30, "count": [ 1, 2 ] },
-      { "group": "ZhighWeaponGroups", "prob": 30, "count": [ 1, 2 ] },
-      { "group": "ZhighWeaponGroups", "prob": 30, "count": [ 1, 2 ] },
       { "group": "ZhighPlayOutfitGroups", "prob": 90, "count": [ 1, 2 ] },
       { "group": "ZhighPlayOutfitGroups", "prob": 90, "count": [ 1, 2 ] },
       { "group": "ZhighPlayOutfitGroups", "prob": 90, "count": [ 1, 2 ] },
       { "group": "ZhighPlayOutfitGroups", "prob": 30, "count": [ 1, 2 ] },
-      { "group": "mon_feral_human_zhigh_death_drops_pipe", "prob": 100, "count": [ 5, 6 ] },
-      { "group": "hatstore_hats", "prob": 90, "count": [ 2, 3 ] },
-      { "group": "hatstore_hats", "prob": 90, "count": [ 2, 3 ] },
-      { "group": "hatstore_hats", "prob": 90, "count": [ 2, 3 ] },
-      { "group": "pawn", "prob": 90, "count": [ 2, 3 ] },
-      { "group": "pawn", "prob": 90, "count": [ 2, 3 ] },
-      { "group": "pawn", "prob": 30, "count": [ 2, 3 ] },
+      { "group": "toy_box", "prob": 100, "count": [ 0, 4 ] },
+      { "group": "mon_feral_human_zhigh_death_drops_pipe", "prob": 60, "count": [ 5, 6 ] },
+      { "group": "hatstore_hats", "prob": 30, "count": [ 2, 3 ] },
+      { "group": "hatstore_hats", "prob": 30, "count": [ 2, 3 ] },
+      { "group": "hatstore_hats", "prob": 30, "count": [ 2, 3 ] },
+      { "group": "accessory_cat", "prob": 100, "count": [ 1, 4 ] },
+      { "group": "museum_armor", "prob": 90, "count": [ 2, 3 ] },
+      { "group": "museum_melee", "prob": 90, "count": [ 2, 3 ] },
+      { "group": "museum_guns", "prob": 30, "count": [ 2, 3 ] },
       { "group": "everyday_gear", "prob": 30, "count": [ 2, 3 ] },
       { "group": "everyday_gear", "prob": 30, "count": [ 2, 3 ] },
       { "group": "museum_melee", "prob": 30, "count": [ 1, 2 ] }
@@ -50,6 +85,7 @@
       { "group": "ZhighMaskGroups", "prob": 90, "count": [ 1, 2 ] },
       { "group": "ZhighMaskGroups", "prob": 50, "count": [ 2, 3 ] },
       { "group": "hatstore_hats", "prob": 50, "count": [ 2, 3 ] },
+      { "group": "accessory_cat", "prob": 100, "count": [ 1, 2 ] },
       { "group": "allclothes", "prob": 90, "count": [ 1, 2 ] },
       { "group": "allclothes", "prob": 90, "count": [ 1, 2 ] },
       { "group": "allclothes", "prob": 10, "count": [ 1, 2 ] },
@@ -91,6 +127,17 @@
       [ "shorts_zhigh_marine", 10 ],
       [ "pantsSecurity", 10 ],
       [ "jacketSecurity", 10 ],
+      [ "HalfLifeHevZhigh_suit", 10 ],
+      [ "DeadSpaceZhigh_suit", 10 ],
+      [ "HalfLifeHevZhigh_mask", 10 ],
+      [ "HalfLifePcvZhigh_vest", 10 ],
+      [ "haloMasChiZhigh_suit", 10 ],
+      [ "haloMasChiZhigh_helm", 10 ],
+      [ "doom_fullhelmet", 10 ],
+      [ "zhighWitcherCosplayArmor_lightplate", 10 ],
+      [ "doom_vest", 10 ],
+      [ "costumePowerArmorZhigh", 10 ],
+      [ "costumePowerArmorZhigh2", 10 ],
       [ "talentSpearZhigh", 10 ]
     ]
   },
@@ -144,7 +191,9 @@
       [ "dod2RingZhigh", 2 ],
       [ "fallRingZhigh", 2 ],
       [ "hevWRingZhigh", 2 ],
-      [ "crysknifeZhigh", 2 ]
+      [ "ammoRingZhigh", 2 ],
+      [ "crysknifeZhigh", 2 ],
+      [ "infiniteVodkaZhigh", 2 ]
     ]
   },
   {
@@ -220,12 +269,21 @@
     "subtype": "collection",
     "id": "mon_feral_human_zhigh_death_drops_pipe",
     "entries": [
-      { "group": "ZhighWeaponGroups", "prob": 100, "damage": [ 0, 2 ] },
+      { "group": "ZhighWeaponGroups", "prob": 100, "damage": [ 0, 2 ], "count": [ 0, 2 ] },
       { "group": "ZhighMaskGroups", "prob": 30, "damage": [ 0, 2 ] },
-      { "group": "ZhighClothingGroups", "prob": 30, "damage": [ 0, 2 ], "count": [ 1, 2 ] },
-      { "group": "NC_GUARD_misc", "prob": 30, "damage": [ 0, 2 ], "count": [ 1, 2 ] },
-      { "group": "default_zombie_items_pockets", "prob": 50 }
+      { "group": "ZhighClothingGroups", "prob": 30, "damage": [ 0, 2 ], "count": [ 1, 2 ] }
     ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "army_mags_rpk74mag",
+    "entries": [
+		{ "item": "rpk74mag", "ammo-item": "545", "charges": 32 },
+		{ "item": "rpk74mag", "ammo-item": "545", "charges": 32 },
+		{ "item": "rpk74mag", "ammo-item": "545", "charges": 32 },
+		{ "item": "rpk74mag", "ammo-item": "545", "charges": 32 }
+	]
   },
   {
     "type": "item_group",
@@ -302,6 +360,17 @@
     ]
   },
   {
+    "id": "nested_Lp500Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "Lp500Zhigh", "charges-min": 0, "charges-max": 1 },
+      { "group": "on_hand_pebbles" }
+    ]
+  },
+  {
     "id": "nested_m53Medusa",
     "type": "item_group",
     "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
@@ -370,6 +439,36 @@
       { "item": "tatZhigh", "charges-min": 0, "charges-max": 1 },
       { "item": "50bmg", "prob": 50 },
       { "item": "50bmg" }
+    ]
+  },
+  {
+    "id": "nested_thor308Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "thor308Zhigh", "ammo-group": "on_hand_308", "charges-min": 0, "charges-max": 1 },
+	  { "group": "on_hand_308" },
+	  { "group": "on_hand_308", "prob": 50 }
+    ]
+  },
+  {
+    "id": "nested_colt_saaChainZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [ { "item": "colt_saaChainZhigh", "ammo-group": "on_hand_45colt", "charges": [ 0, 6 ] }, { "group": "on_hand_45colt" } ]
+  },
+  {
+    "id": "everyday_colt_saaChainZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "colt_saaChainZhigh", "ammo-group": "on_hand_45colt", "charges": [ 0, 6 ] },
+      { "group": "on_hand_45colt", "charges": [ 10, 20 ], "count": [ 1, 2 ] }
     ]
   },
   {
@@ -1057,6 +1156,328 @@
     ]
   },
   {
+    "id": "everyday_m1941Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "m1941Zhigh", "ammo-group": "on_hand_3006", "charges": [ 0, 10 ] },
+      { "group": "nested_m1941Zhigh_mag", "charges-min": 0, "prob": 80 },
+      { "group": "nested_m1941Zhigh_mag", "charges-min": 0, "prob": 50 },
+      { "group": "on_hand_3006", "prob": 25, "charges": [ 10, 20 ], "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "nested_m1941Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "m1941Zhigh", "ammo-group": "on_hand_3006", "charges": [ 0, 10 ] },
+      { "group": "nested_m1941Zhigh_mag" },
+      { "group": "nested_m1941Zhigh_mag", "prob": 50 },
+      { "group": "on_hand_3006" }
+    ]
+  },
+  {
+    "id": "nested_m1941Zhigh_mag",
+    "type": "item_group",
+    "subtype": "distribution",
+    "ammo": 100,
+    "entries": [
+      { "item": "3006_clipZhigh", "ammo-group": "on_hand_3006", "prob": 100 },
+      { "item": "3006_clipZhigh", "ammo-group": "on_hand_3006", "prob": 5 }
+    ]
+  },
+  {
+    "id": "everyday_gilboaSnakeZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "gilboaSnakeZhigh", "ammo-group": "on_hand_223", "charges": [ 0, 60 ] },
+      { "group": "nested_gilboaSnakeZhigh_mag", "charges-min": 0, "prob": 80 },
+      { "group": "nested_gilboaSnakeZhigh_mag", "charges-min": 0, "prob": 50 },
+      { "group": "on_hand_223", "prob": 25, "charges": [ 10, 30 ], "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "nested_gilboaSnakeZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "gilboaSnakeZhigh", "ammo-group": "on_hand_223", "charges": [ 0, 60 ] },
+      { "group": "nested_gilboaSnakeZhigh_mag" },
+      { "group": "nested_stanag_mag", "prob": 50 },
+      { "group": "on_hand_223" }
+    ]
+  },
+  {
+    "id": "nested_gilboaSnakeZhigh_mag",
+    "type": "item_group",
+    "subtype": "distribution",
+    "ammo": 100,
+    "entries": [
+      { "item": "gilboaSnakeZhighmag", "ammo-group": "on_hand_223", "prob": 100 },
+      { "item": "gilboaSnakeZhighmag", "ammo-group": "on_hand_223", "prob": 5 }
+    ]
+  },
+  {
+    "id": "nested_shotgun_3BrarrelZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [ { "item": "shotgun_3BrarrelZhigh", "charges-min": 0, "charges-max": 3 }, { "group": "on_hand_shot" } ]
+  },
+  {
+    "id": "everyday_shotgun_3BrarrelZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [ { "item": "shotgun_3BrarrelZhigh", "charges-min": 0, "charges-max": 3 }, { "group": "on_hand_shot" } ]
+  },
+  {
+    "id": "nested_shotgun_sAlamoZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [ { "item": "shotgun_sAlamoZhigh", "charges-min": 0, "charges-max": 5 }, { "group": "on_hand_shot" } ]
+  },
+  {
+    "id": "everyday_shotgun_sAlamoZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [ { "item": "shotgun_sAlamoZhigh", "charges-min": 0, "charges-max": 5 }, { "group": "on_hand_shot" } ]
+  },
+  {
+    "id": "nested_galilZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "galilZhigh", "ammo-group": "on_hand_223", "charges": [ 0, 30 ] },
+      { "group": "nested_stanag_mag" },
+      { "group": "nested_stanag_mag", "prob": 50 },
+      { "group": "on_hand_223" }
+    ]
+  },
+  {
+    "id": "everyday_galilZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "galilZhigh", "ammo-group": "on_hand_223", "charges": [ 0, 30 ] },
+      { "group": "nested_stanag_mag", "charges-min": 0, "prob": 80 },
+      { "group": "nested_stanag_mag", "charges-min": 0, "prob": 50 },
+      { "group": "on_hand_223", "prob": 25, "charges": [ 10, 20 ], "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "everyday_STRV9Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "STRV9Zhigh", "ammo-group": "on_hand_9mm", "charges": [ 0, 32 ] },
+      { "group": "on_hand_9mm", "prob": 25, "charges": [ 10, 32 ], "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "nested_STRV9Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "STRV9Zhigh", "ammo-group": "on_hand_9mm", "charges": [ 0, 32 ] },
+      { "group": "on_hand_9mm" }
+    ]
+  },
+  {
+    "id": "everyday_M1895Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "M1895Zhigh", "ammo-group": "on_hand_762x25", "charges": [ 0, 7 ] },
+      { "group": "on_hand_762x25", "prob": 25, "charges": [ 10, 32 ], "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "nested_M1895Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "M1895Zhigh", "ammo-group": "on_hand_762x25", "charges": [ 0, 7 ] },
+      { "group": "on_hand_762x25" }
+    ]
+  },
+  {
+    "id": "nested_sr47Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "sr47Zhigh", "ammo-group": "on_hand_762", "charges": [ 0, 30 ] },
+      { "group": "nested_ak47_mag" },
+      { "group": "nested_ak47_mag", "prob": 50 },
+      { "group": "on_hand_762" }
+    ]
+  },
+  {
+    "id": "everyday_sr47Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "sr47Zhigh", "ammo-group": "on_hand_762", "charges": [ 0, 30 ] },
+      { "group": "nested_ak47_mag", "charges-min": 0, "prob": 80 },
+      { "group": "nested_ak47_mag", "charges-min": 0, "prob": 50 },
+      { "group": "on_hand_762", "prob": 25, "charges": [ 10, 20 ], "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "everyday_m231Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "m231Zhigh", "ammo-group": "on_hand_223", "charges": [ 0, 30 ] },
+      { "group": "nested_stanag_mag", "charges-min": 0, "prob": 80 },
+      { "group": "nested_stanag_mag", "charges-min": 0, "prob": 50 },
+      { "group": "on_hand_223", "prob": 25, "charges": [ 10, 30 ], "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "nested_m231Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "m231Zhigh", "ammo-group": "on_hand_223", "charges": [ 0, 30 ] },
+      { "group": "nested_stanag_mag" },
+      { "group": "nested_stanag_mag", "prob": 50 },
+      { "group": "on_hand_223" }
+    ]
+  },
+  {
+    "id": "everyday_scar_lPdwZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "scar_lPdwZhigh", "ammo-group": "on_hand_223", "charges": [ 0, 30 ] },
+      { "group": "nested_stanag_mag", "charges-min": 0, "prob": 80 },
+      { "group": "nested_stanag_mag", "charges-min": 0, "prob": 50 },
+      { "group": "on_hand_223", "prob": 25, "charges": [ 10, 30 ], "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "nested_scar_lPdwZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "scar_lPdwZhigh", "ammo-group": "on_hand_223", "charges": [ 0, 30 ] },
+      { "group": "nested_stanag_mag" },
+      { "group": "nested_stanag_mag", "prob": 50 },
+      { "group": "on_hand_223" }
+    ]
+  },
+  {
+    "id": "everyday_scar_hPdwZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "scar_hPdwZhigh", "ammo-group": "on_hand_308", "charges": [ 0, 20 ] },
+      { "group": "nested_scar_h_mag", "charges-min": 0, "prob": 80 },
+      { "group": "nested_scar_h_mag", "charges-min": 0, "prob": 50 },
+      { "group": "on_hand_308", "prob": 25, "charges": [ 10, 30 ], "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "nested_scar_hPdwZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "scar_hPdwZhigh", "ammo-group": "on_hand_308", "charges": [ 0, 20 ] },
+      { "group": "nested_scar_h_mag" },
+      { "group": "nested_scar_h_mag", "prob": 50 },
+      { "group": "on_hand_308" }
+    ]
+  },
+  {
+    "id": "everyday_volcanicHandgunZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "volcanicHandgunZhigh", "ammo-group": "on_hand_44", "charges": [ 0, 10 ] },
+      { "group": "on_hand_44", "charges": [ 10, 20 ], "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "nested_volcanicHandgunZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [ { "item": "volcanicHandgunZhigh", "ammo-group": "on_hand_44", "charges": [ 0, 10 ] }, { "group": "on_hand_44" } ]
+  },
+  {
+    "id": "everyday_srm1216Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "srm1216Zhigh", "ammo-group": "on_hand_shot", "charges": [ 0, 16 ] },
+      { "group": "nested_srm1216Zhigh_mag", "charges-min": 0, "prob": 80 },
+      { "group": "nested_srm1216Zhigh_mag", "charges-min": 0, "prob": 50 },
+      { "group": "on_hand_shot", "prob": 25, "charges": [ 10, 30 ], "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "nested_srm1216Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "srm1216Zhigh", "ammo-group": "on_hand_shot", "charges": [ 0, 16 ] },
+      { "group": "nested_srm1216Zhigh_mag" },
+      { "group": "nested_srm1216Zhigh_mag", "prob": 50 },
+      { "group": "on_hand_shot" }
+    ]
+  },
+  {
+    "id": "nested_srm1216Zhigh_mag",
+    "type": "item_group",
+    "subtype": "distribution",
+    "ammo": 100,
+    "entries": [
+      { "item": "srm1216ZhighMag", "ammo-group": "on_hand_shot", "prob": 100 },
+      { "item": "srm1216ZhighMag", "ammo-group": "on_hand_shot", "prob": 5 }
+    ]
+  },
+  {
     "type": "item_group",
     "subtype": "collection",
     "id": "bandolier_rifle_47",
@@ -1148,7 +1569,7 @@
   {
     "id": "ZhighSupplyDrop",
     "type": "item_group",
-    "subtype": "collection",
+    "subtype": "distribution",
     "entries": [
       { "group": "ZhighStimUnkown3" },
       { "item": "box_large", "prob": 100 },
@@ -1162,13 +1583,16 @@
     "ammo": 100,
     "magazine": 100,
     "type": "item_group",
-    "subtype": "collection",
+    "subtype": "distribution",
     "entries": [
       { "item": "ZhighCoin", "prob": 80, "count": [ 5, 10 ] },
+      { "group": "ZhighPlayPropGroups", "prob": 10, "count": [ 5, 10 ] },
       { "group": "ear_protection", "prob": 90 },
-      { "group": "accessory_weaponcarry", "prob": 95, "count": [ 1, 2 ] },
-      { "group": "gloves_unisex", "prob": 90 },
+      { "group": "accessory_weaponcarry", "prob": 25, "count": [ 1, 2 ] },
+      { "item": "binoculars", "prob": 20 },
+      { "group": "gloves_unisex", "prob": 30 },
       { "group": "ZhighNpc_ids", "prob": 10 },
+      { "group": "3d_printing_raw_materials", "prob": 10 },
       { "group": "charms_guns", "prob": 15 },
       { "group": "ZhighArtifactGroups", "prob": 5, "count": [ 1, 2 ] },
       { "item": "UPS_off", "prob": 40 },
@@ -1182,17 +1606,13 @@
       { "item": "chocolate", "prob": 60, "count": [ 3, 5 ] },
       { "item": "caff_gum", "prob": 60, "count": [ 1, 3 ] },
       { "item": "hand_crank_charger", "prob": 5 },
-      { "item": "binoculars", "prob": 5 },
       { "item": "canister_goo", "prob": 5 },
       { "item": "cash_card", "prob": 35, "charges-min": 30000, "charges-max": 500000 },
       { "group": "ammo_atomic_batteries", "prob": 25 },
       { "group": "ammo_pocket_batteries_full", "prob": 45 },
       { "group": "bags", "prob": 90 },
-      { "group": "tools_lighting", "prob": 90 },
+      { "group": "tools_lighting", "prob": 50 },
       { "group": "tools_common", "prob": 20, "count": [ 1, 2 ] },
-      { "group": "tools_survival", "prob": 15, "count": [ 1, 2 ] },
-      { "group": "tools_home", "prob": 15, "count": [ 1, 2 ] },
-      { "group": "tools_general", "prob": 30, "count": [ 1, 2 ] },
       { "group": "ZhighStylishGroups", "prob": 20, "count": [ 1, 2 ] },
       { "group": "ZhighMaskGroups", "prob": 40, "count": [ 1, 2 ] },
       { "group": "games", "prob": 10, "count": [ 1, 2 ] },
@@ -1202,16 +1622,16 @@
       { "group": "office", "prob": 50, "count": [ 2, 3 ] },
       { "group": "school", "prob": 50, "count": [ 1, 4 ] },
       { "group": "camping", "prob": 15, "count": [ 1, 2 ] },
-      { "group": "tools_lighting", "prob": 90 },
       { "group": "snacks", "prob": 45, "count": [ 2, 4 ] },
-      { "group": "ZhighWeaponGroups", "prob": 100, "count": [ 0, 4 ] },
-      { "group": "ZhighGuardWeaponGroups", "prob": 100, "count": [ 1, 2 ] },
-      { "group": "locker_ammo", "prob": 100, "count": [ 2, 5 ] },
-      { "group": "locker_guns", "prob": 100, "count": [ 0, 3 ] },
-      { "group": "ZhighTraps", "prob": 90, "count": [ 1, 2 ] },
-      { "group": "ZhighTracksuitGroups", "prob": 40, "count": [ 1, 3 ] },
-      { "group": "ZhighClothingGroups", "prob": 40, "count": [ 1, 2 ] },
-      { "group": "ZhighUniformGroups", "prob": 40, "count": [ 1, 2 ] }
+      { "group": "ZhighWeaponGroups", "prob": 100, "count": [ 0, 3 ] },
+      { "group": "ZhighGuardWeaponGroups", "prob": 60, "count": [ 1, 2 ] },
+      { "group": "locker_ammoZhigh", "prob": 100, "count": [ 2, 5 ] },
+      { "group": "locker_gunsZhigh", "prob": 80, "count": [ 1, 3 ] },
+      { "group": "ZhighTraps", "prob": 70, "count": [ 1, 2 ] },
+      { "group": "ZhighTracksuitGroups", "prob": 30, "count": [ 1, 3 ] },
+      { "group": "ZhighClothingGroups", "prob": 30, "count": [ 1, 2 ] },
+      { "group": "turretBoxZhighGroups", "prob": 15, "count": [ 0, 2 ] },
+      { "group": "ZhighUniformGroups", "prob": 30, "count": [ 1, 2 ] }
     ]
   },
   {
@@ -1221,14 +1641,15 @@
     "type": "item_group",
     "subtype": "collection",
     "entries": [
-      { "item": "ZhighCoin", "prob": 80, "count": [ 5, 10 ] },
-      { "group": "everyday_gear", "prob": 100, "count": [ 7, 10 ] },
-      { "group": "dresser", "prob": 100, "count": [ 9, 17 ] },
+      { "item": "ZhighCoin", "prob": 90, "count": [ 5, 10 ] },
+      { "group": "everyday_gear", "prob": 60, "count": [ 2, 3 ] },
+      { "group": "dresser", "prob": 100, "count": [ 4, 7 ] },
       { "group": "toy_box", "prob": 30, "count": [ 0, 2 ] },
       { "group": "ear_protection", "prob": 90 },
       { "group": "accessory_weaponcarry", "prob": 95, "count": [ 1, 2 ] },
       { "group": "gloves_unisex", "prob": 90 },
       { "group": "ZhighNpc_ids", "prob": 10 },
+      { "group": "3d_printing_raw_materials", "prob": 10 },
       { "group": "charms_guns", "prob": 15 },
       { "item": "UPS_off", "prob": 40 },
       { "item": "adv_UPS_off", "prob": 30 },
@@ -1261,13 +1682,14 @@
       { "group": "office", "prob": 50, "count": [ 2, 3 ] },
       { "group": "school", "prob": 50, "count": [ 1, 4 ] },
       { "group": "camping", "prob": 15, "count": [ 1, 2 ] },
+      { "group": "turretBoxZhighGroups", "prob": 15, "count": [ 1, 2 ] },
       { "group": "tools_lighting", "prob": 90 },
       { "group": "snacks", "prob": 45, "count": [ 2, 4 ] },
-      { "group": "ZhighWeaponGroups", "prob": 100, "count": [ 0, 4 ] },
+      { "group": "ZhighWeaponGroups", "prob": 100, "count": [ 2, 4 ] },
       { "group": "ZhighGuardWeaponGroups", "prob": 100, "count": [ 1, 2 ] },
-      { "group": "locker_ammo", "prob": 100, "count": [ 2, 5 ] },
-      { "group": "locker_guns", "prob": 90, "count": [ 0, 3 ] },
-      { "group": "ZhighTraps", "prob": 90, "count": [ 1, 2 ] },
+      { "group": "locker_ammoZhigh", "prob": 70, "count": [ 6, 8 ] },
+      { "group": "locker_gunsZhigh", "prob": 70, "count": [ 1, 3 ] },
+      { "group": "ZhighTraps", "prob": 70, "count": [ 1, 2 ] },
       { "group": "ZhighTracksuitGroups", "prob": 40, "count": [ 1, 3 ] },
       { "group": "ZhighClothingGroups", "prob": 40, "count": [ 1, 2 ] },
       { "group": "ZhighUniformGroups", "prob": 40, "count": [ 1, 2 ] }
@@ -1342,6 +1764,7 @@
       [ "penFlame", 10 ],
       [ "penstungun", 10 ],
       [ "penade", 10 ],
+      [ "penScope", 10 ],
       [ "pencam", 20 ]
     ]
   },
@@ -1360,7 +1783,7 @@
       { "item": "penGun" },
       { "item": "penFlame" },
       { "item": "penade" },
-      { "item": "penChem" },
+      { "item": "penScope" },
       { "item": "pencam" }
     ]
   },
@@ -1443,7 +1866,6 @@
       [ "ear_spool", 10 ],
       [ "wrapped_rad_badge", 5 ],
       [ "sheath", 5 ],
-      [ "skateboard", 1 ],
       [ "surfboard", 1 ],
       [ "sheath_multi", 3 ],
       [ "bootsheath", 3 ],
@@ -1539,6 +1961,7 @@
       [ "yukata", 5 ],
       [ "coat_lab", 20 ],
       [ "clown_suit", 10 ],
+      { "group": "ZhighClothingGroups", "prob": 15 },
       { "group": "jewelry_front", "prob": 15 },
       { "group": "accessory_cat", "prob": 25 },
       [ "zhigh_smart_phone", 10 ],
@@ -1672,10 +2095,18 @@
       [ "stimSJ6", 10 ],
       [ "stimSJ12", 10 ],
       [ "stim3BTG", 10 ],
+      [ "stimETGChange", 10 ],
+      [ "stim2a2btg", 10 ],
       [ "stimantiflash", 10 ],
       [ "stimHealingSerum", 10 ],
-      [ "stimETGChange", 10 ],
-      [ "stimUdR513", 10 ]
+      [ "stimUdR513", 10 ],
+      [ "stimantiExThirFull", 10 ],
+      [ "stimantiteleportglow", 10 ],
+      [ "stimMedDarktide", 10 ],
+      [ "stimCombatDarktide", 10 ],
+      [ "stimCelerityDarktide", 10 ],
+      [ "stimConcentrationDarktide", 10 ],
+      [ "stimClockUpZhigh", 10 ]
     ]
   },
   {
@@ -1786,6 +2217,7 @@
       [ "bandana", 25 ],
       [ "balclava", 15 ],
       [ "badge_snowman", 5 ],
+      [ "HalfLifeHevZhigh_mask", 5 ],
       [ "mask_bal", 5 ],
       [ "mask_dust", 45 ],
       [ "mask_rioter", 45 ],
@@ -1796,17 +2228,18 @@
       [ "mask_cavalry_bronze", 5 ],
       [ "mask_cavalry_goldZhigh", 5 ],
       [ "mask_cavalry_superalloyZhigh", 5 ],
+      [ "mask_cavalry_boneZhigh", 5 ],
       [ "mask_ski_loose", 45 ]
     ]
   },
   {
     "type": "item_group",
-    "id": "locker_ammo",
+    "id": "locker_ammoZhigh",
     "ammo": 100,
     "magazine": 100,
     "items": [
       { "group": "archery_ammo", "prob": 40 },
-      [ "BBclip300", 30 ],
+      [ "BBclip300", 40 ],
       [ "BBclip300release", 20 ],
       [ "BBbelt_500", 15 ],
       [ "marble_pump_gun_speedloader", 15 ],
@@ -1815,10 +2248,38 @@
       [ "paintball_beanb", 20 ],
       [ "paintball_glow", 20 ],
       [ "paintball_shot", 20 ],
-      [ "chem_sulphuric_acid", 5 ],
-      [ "chem_muriatic_acid", 5 ],
-      [ "chem_nitric_acid", 5 ],
-      [ "chem_acetic_acid", 5 ],
+      [ "shotcanister_scrap", 10 ],
+      [ "shotcanister_pebble", 10 ],
+      [ "shotcanister_flechette", 10 ],
+      [ "shotcanister_bearing", 10 ],
+      {
+        "item": "chem_sulphuric_acid",
+        "prob": 5,
+        "container-item": "jug_plastic",
+        "charges-min": 14,
+        "charges-max": 15
+      },
+      {
+        "item": "chem_muriatic_acid",
+        "prob": 5,
+        "container-item": "jug_plastic",
+        "charges-min": 14,
+        "charges-max": 15
+      },
+      {
+        "item": "chem_nitric_acid",
+        "prob": 5,
+        "container-item": "jug_plastic",
+        "charges-min": 14,
+        "charges-max": 15
+      },
+      {
+        "item": "chem_acetic_acid",
+        "prob": 5,
+        "container-item": "jug_plastic",
+        "charges-min": 14,
+        "charges-max": 15
+      },
       {
         "item": "acid",
         "prob": 5,
@@ -1840,8 +2301,29 @@
         "charges-min": 14,
         "charges-max": 15
       },
+      [ "gas_chloramine", 25 ],
+      [ "gas_fungicidal", 25 ],
+      [ "gas_insecticidal", 25 ],
+      [ "ZhighGas_flashpowder", 25 ],
+      [ "ZhighGas_corrosivegas", 25 ],
+      [ "ZhighGas_teargas", 25 ],
+      [ "ZhighGas_smoke", 25 ],
+      [ "ZhighGas_electricshock", 25 ],
+      [ "arrow_exploding", 1 ],
       [ "arrow_wood", 10 ],
-      [ "arrow_splay", 10 ],
+      [ "ZhighArrow_splay", 10 ],
+      [ "ZhighArrow_glassAcid", 5 ],
+      [ "ZhighArrow_glassToxic", 5 ],
+      [ "ZhighArrow_glassFungi", 5 ],
+      [ "ZhighArrow_glassInsect", 5 ],
+      [ "ZhighArrow_glassSmoke", 5 ],
+      [ "ZhighArrow_glassTear", 5 ],
+      [ "ZhighArrow_sigFlare", 5 ],
+      [ "ZhighArrow_boxing", 5 ],
+      [ "ZhighArrow_poisonPara", 5 ],
+      [ "ZhighArrow_poison", 5 ],
+      [ "ZhighArrow_Bounce", 5 ],
+      [ "ZhighArrow_electric", 5 ],
       [ "arrow_cf", 5 ],
       [ "bolt_wood_bodkin", 30 ],
       [ "bolt_wood", 40 ],
@@ -1868,9 +2350,16 @@
       [ "bolt_steel_target", 20 ],
       [ "flamable_arrow", 5 ],
       [ "bolt_explosive", 5 ],
-      [ "shootable_rocketCandy", 5 ],
-      [ "arrow_exploding", 1 ],
+      [ "shootable_rocketCandy", 10 ],
+      [ "shootable_Firecracker", 20 ],
+      [ "pebble_poison", 20 ],
+      [ "pebble_triffid", 20 ],
       [ "pebble_rubber", 20 ],
+      [ "pebble", 20 ],
+      [ "pebble_clay", 20 ],
+      [ "bearing", 20 ],
+      [ "rubber_slug", 20 ],
+      [ "sling_bullet_small", 20 ],
       [ "fishspear", 30 ],
       [ "c_fishspear", 10 ],
       [ "m_fishspear", 10 ],
@@ -1895,6 +2384,13 @@
       {
         "item": "goo_mix2",
         "prob": 5,
+        "container-item": "bottle_plastic",
+        "charges-min": 10,
+        "charges-max": 20
+      },
+      {
+        "item": "water_paint",
+        "prob": 15,
         "container-item": "bottle_plastic",
         "charges-min": 10,
         "charges-max": 20
@@ -2016,18 +2512,26 @@
   },
   {
     "type": "item_group",
-    "id": "locker_guns",
+    "id": "locker_gunsZhigh",
     "ammo": 100,
     "magazine": 100,
     "items": [
       {
-        "distribution": [
+        "collection": [
+          { "item": "bot_heal_drone", "prob": 30 },
+          { "item": "bot_attack_drone", "prob": 30 },
+          { "item": "bot_enz_hack", "prob": 1 },
+          { "item": "bot_healturret", "prob": 30 },
           { "item": "bot_LMGturretZhigh", "prob": 30 },
+          { "item": "bot_electricturretZhigh", "prob": 30 },
+          { "item": "bot_acidturretZhigh", "prob": 30 },
+          { "item": "bot_flameturretZhigh", "prob": 30 },
+          { "item": "bot_RockTurretZhigh", "prob": 30 },
           { "item": "bot_sniperturretZhigh", "prob": 30 },
           { "item": "bot_iceturret", "prob": 30 },
           { "item": "bot_waterturret", "prob": 30 }
         ],
-        "prob": 30
+        "prob": 10
       },
       [ "flame_crudeZhigh", 20 ],
       [ "chemical_crudeZhigh", 20 ],
@@ -2043,6 +2547,8 @@
       [ "popGunPistol_zhigh", 20 ],
       [ "compositebow", 10 ],
       [ "airbow", 10 ],
+      [ "discShooter", 30 ],
+      [ "discShooterBig", 10 ],
       [ "shortbow", 30 ],
       [ "compbow", 10 ],
       [ "longbow", 10 ],
@@ -2069,7 +2575,9 @@
           { "item": "bbmachinepistol", "prob": 30 },
           { "item": "bbSnip", "prob": 60 },
           { "item": "bbsmg", "prob": 60 },
+          { "item": "bbMp5", "prob": 60 },
           { "item": "bbDMR", "prob": 60 },
+          { "item": "bbBRifle", "prob": 60 },
           { "item": "bbgun", "prob": 80 },
           { "item": "bbM4", "prob": 60 },
           { "item": "bbAr15", "prob": 60 },
@@ -2135,6 +2643,30 @@
   },
   {
     "type": "item_group",
+    "id": "ZhighNadeGroups",
+    "ammo": 100,
+    "magazine": 100,
+    "items": [
+      [ "tool_rocket_candy", 30 ],
+      [ "firecracker", 30 ],
+      [ "firecracker_pack", 30 ],
+      [ "molotov", 20 ],
+      [ "acidbomb", 20 ],
+      [ "improvised_colabomb", 20 ],
+      [ "improvised_colabombV2", 10 ],
+      [ "smokebomb", 10 ],
+      [ "fungicidalbomb", 10 ],
+      [ "fungicidalbomb_makeshift", 10 ],
+      [ "gasbomb", 10 ],
+      [ "gasbomb_makeshift", 10 ],
+      [ "insecticidalbomb", 10 ],
+      [ "insecticidalbomb_makeshift", 10 ],
+      [ "improvised_pipebomb", 5 ],
+      [ "improvised_pipebombZhigh", 5 ]
+    ]
+  },
+  {
+    "type": "item_group",
     "id": "ZhighWeaponGroups",
     "ammo": 95,
     "magazine": 100,
@@ -2150,6 +2682,7 @@
       [ "grip_hook", 30 ],
       [ "fire_ax", 20 ],
       [ "fire_ax_1", 10 ],
+      [ "roadSignZhigh", 10 ],
       [ "flamecanZhigh", 1 ],
       [ "stethoscope", 3 ],
       [ "ax", 20 ],
@@ -2168,6 +2701,7 @@
       [ "throwing_stick", 80 ],
       [ "mambele", 5 ],
       [ "chakram", 5 ],
+      [ "folding_skateboard", 25 ],
       [ "shuriken", 15 ],
       [ "throwing_knife_scrap", 60 ],
       [ "throwing_card_spade", 300 ],
@@ -2192,10 +2726,11 @@
       [ "camera", 30 ],
       [ "water_gun", 25 ],
       [ "water_pistol", 25 ],
+      { "group": "ZhighNadeGroups", "prob": 20 },
       { "group": "ZhighTraps", "prob": 80 },
       { "group": "ZhighGuardWeaponGroups", "prob": 50 },
       { "group": "ammo_any_batteries_full", "prob": 80 },
-      { "group": "locker_ammo", "prob": 40 },
+      { "group": "locker_ammoZhigh", "prob": 60 },
       { "group": "knife_shop", "prob": 20 },
       { "group": "archery", "prob": 20 },
       { "group": "archery_mods", "prob": 20 },
@@ -2203,10 +2738,11 @@
       { "group": "suit_of_armor", "prob": 20 },
       { "group": "medieval", "prob": 20 },
       { "group": "museum_melee", "prob": 20 },
-      { "group": "locker_guns", "prob": 90 },
+      { "group": "locker_gunsZhigh", "prob": 90 },
       { "group": "sports_bulk", "prob": 60 },
       { "group": "ammo_pocket_batteries", "prob": 90 },
       { "group": "ammo_pocket_batteries_full", "prob": 40 },
+      { "group": "turretBoxZhighGroups", "prob": 15, "count": [ 1, 2 ] },
       { "group": "charged_UPS", "prob": 25 },
       {
         "distribution": [
@@ -2219,15 +2755,6 @@
       },
       {
         "distribution": [
-          { "item": "bot_LMGturretZhigh", "prob": 30 },
-          { "item": "bot_sniperturretZhigh", "prob": 30 },
-          { "item": "bot_iceturret", "prob": 30 },
-          { "item": "bot_waterturret", "prob": 30 }
-        ],
-        "prob": 10
-      },
-      {
-        "distribution": [
           { "item": "javelin", "prob": 30 },
           { "item": "javelin_iron", "prob": 10 },
           { "item": "javelin_bag", "prob": 1 }
@@ -2235,15 +2762,11 @@
         "prob": 20
       },
       [ "claw_bar", 10 ],
+      [ "turretBoxZhigh", 10 ],
       [ "gasbomb_makeshift", 15 ],
       [ "smokebomb_makeshift", 20 ],
       [ "shocktonfa_off", 10 ],
       [ "pipe", 50 ],
-      [ "gas_chloramine", 25 ],
-      [ "gas_smoke", 25 ],
-      [ "gas_fungicidal", 25 ],
-      [ "gas_insecticidal", 25 ],
-      [ "gas_flashpowder", 25 ],
       [ "tonfa", 25 ],
       [ "tonfa_wood", 28 ],
       [ "blackjack", 30 ],
@@ -2277,15 +2800,17 @@
       [ "bow_sight", 10 ],
       [ "arrow_wood", 5 ],
       [ "arrow_cf", 5 ],
-      [ "arrow_splay", 5 ],
+      [ "ZhighArrow_splay", 5 ],
       [ "manual_mcmap", 1 ],
       [ "retool_bolt", 20 ],
       [ "retool_arrow", 20 ],
       [ "sheath", 35 ],
-      [ "skateboard", 30 ],
       [ "surfboard", 30 ],
       [ "marble_gun", 15 ],
       [ "marble_pump_gun", 15 ],
+      [ "tihar", 5 ],
+      [ "helsing", 5 ],
+      [ "pneumatic_shotgun", 5 ],
       [ "bootsheath", 30 ],
       [ "sheath_multi", 10 ],
       [ "pool_cue", 20 ],
@@ -2294,7 +2819,9 @@
       [ "bbpistol", 30 ],
       [ "bbmachinepistol", 20 ],
       [ "bbsmg", 20 ],
+      [ "bbMp5", 20 ],
       [ "bbDMR", 20 ],
+      [ "bbBRifle", 20 ],
       [ "bbgun", 20 ],
       [ "bbM4", 20 ],
       [ "bbAr15", 10 ],
@@ -2345,8 +2872,8 @@
       [ "pencil", 90 ],
       [ "bb", 90 ],
       [ "bbPlastic", 250 ],
-      [ "bearing", 200 ],
-      [ "marble", 900 ],
+      [ "bearing", 100 ],
+      [ "marble", 100 ],
       [ "paintball", 90 ],
       [ "paintball_acid", 20 ],
       [ "paintball_beanb", 20 ],
@@ -2358,8 +2885,8 @@
       [ "wristrocket", 20 ],
       [ "golf_club", 35 ],
       [ "baton_light", 20 ],
-      [ "nail", 900 ],
-      [ "combatnail", 200 ],
+      [ "nail", 100 ],
+      [ "combatnail", 40 ],
       [ "Rc_Packed", 33 ],
       [ "discShooter", 20 ],
       [ "woodenKnife", 20 ],
@@ -2376,6 +2903,11 @@
       [ "RPG_die", 40 ],
       [ "metal_RPG_die", 30 ],
       [ "improvised_colabomb", 16 ],
+      [ "improvised_colabombV2", 8 ],
+      [ "puppetZhigh_tommy", 10 ],
+      [ "puppetZhigh_hook", 10 ],
+      [ "puppetZhigh_peterpan", 10 ],
+      [ "puppetZhigh_peterhook", 1 ],
       [ "molotov", 16 ]
     ]
   }

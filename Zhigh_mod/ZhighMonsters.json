@@ -43,7 +43,7 @@
         "fake_skills": [ [ "gun", 2 ], [ "rifle", 3 ] ],
         "fake_dex": 8,
         "fake_per": 10,
-        "ranges": [ [ 0, 30, "BURST" ], [ 0, 30, "AUTO" ] ],
+        "ranges": [ [ 15, 30, "BURST" ], [ 0, 16, "AUTO" ] ],
         "require_targeting_player": false,
         "description": "The feral militia fires their machine gun!",
         "no_crits": true
@@ -109,7 +109,7 @@
         "fake_dex": 8,
         "fake_per": 9,
         "//": "(ferals don't care about max-effective range.)",
-        "ranges": [ [ 0, 18, "DEFAULT" ] ],
+        "ranges": [ [ 0, 8, "DEFAULT" ] ],
         "require_targeting_player": false,
         "description": "The feral militia fires their shotgun!",
         "no_crits": true
@@ -261,10 +261,10 @@
           { "damage_type": "stab", "amount": 20, "armor_multiplier": 2 },
           { "damage_type": "bash", "amount": 27, "armor_multiplier": 2 }
         ],
-        "effects": [ { "id": "grabbed", "duration": 1000, "bp": "torso" } ],
+        "effects": [ { "id": "grabbed", "duration": 10, "bp": "torso" } ],
         "no_infection_chance": 2
       },
-      { "type": "leap", "cooldown": 40, "max_range": 18, "min_consider_range": 5, "max_consider_range": 17 },
+      { "type": "leap", "cooldown": 300, "max_range": 18, "min_consider_range": 5, "max_consider_range": 17 },
       [ "SHRIEK", 20 ],
       [ "LONGSWIPE", 30 ],
       [ "STRETCH_ATTACK", 30 ],
@@ -282,33 +282,61 @@
     "copy-from": "mon_feral_human_pipe",
     "name": { "str": "feral student" },
     "description": "Their pupils are dilated and what remains to be seen of the iris and sclera are bloodshot.  This weapon-wielding maniac still breathes, but the zombies treat them like one of their own.",
-    "hp": 35,
+    "hp": 25,
+    "luminance": 1,
 	"aggression": 80,
     "species": [ "ZOMBIE", "HUMAN" ],
-	"speed": 80,
+	"speed": 70,
     "melee_dice": 2,
-    "melee_dice_sides": 6,
-    "starting_ammo": { "rock": 1 },
+    "melee_dice_sides": 4,
+    "vision_night": 4,
     "special_attacks": [
-	  [ "PARROT", 5 ],
-      {
-        "type": "gun",
-        "cooldown": 1,
-        "move_cost": 1,
-        "gun_type": "feral_human_thrown_rock",
-        "ammo_type": "rock",
-        "no_ammo_sound": "",
-        "fake_skills": [ [ "gun", 1 ], [ "throw", 1 ] ],
-        "fake_dex": 4,
-        "fake_per": 4,
-        "require_targeting_player": false,
-        "ranges": [ [ 2, 25, "DEFAULT" ] ],
-        "description": "The feral student throws a rock!",
-        "no_crits": true
-      }
+	  [ "PARROT", 3 ]
     ],
     "zombify_into": "mon_zombie",
-    "death_drops": "mon_feral_human_zhigh_death_drops_pipe"
+    "death_function": [ "DISAPPEAR" ],
+    "death_drops": "mon_feral_human_zhigh_death_drops_pipe",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "HUMAN",
+      "CAN_OPEN_DOORS",
+      "DROPS_AMMO"
+    ]
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_summon_feral_human_zhigh",
+    "name": "Backup call",
+    "description": "Summons several permanent feral students.",
+    "flags": [ "HOSTILE_SUMMON", "PERMANENT", "NO_EXPLOSION_VFX" ],
+    "valid_targets": [ "ground" ],
+    "min_damage": 1,
+    "max_damage": 3,
+    "min_range": 5,
+    "max_range": 5,
+    "min_aoe": 3,
+    "max_aoe": 3,
+    "base_casting_time": 10,
+    "effect": "summon",
+    "effect_str": "mon_feral_human_zhigh"
+  },
+  {
+    "id": "mon_feral_human_SchoolWatchzhigh",
+    "type": "MONSTER",
+    "copy-from": "mon_feral_human_zhigh",
+    "name": { "str": "feral hall monitor" },
+    "description": "Their pupils are dilated and what remains to be seen of the iris and sclera are bloodshot.  This light baton-wielding maniac still breathes, but the zombies treat them like one of their own.  For some reason, these ferals can call more of his friends.",
+    "hp": 35,
+    "luminance": 10,
+    "special_attacks": [
+	  [ "PARROT", 3 ],
+	  { "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh" }, "cooldown": 45 }
+    ]
   },
   {
     "id": "mon_feral_human_flamerZhigh",
@@ -413,8 +441,8 @@
     "effect": "line_attack",
     "sprite": "fd_null",
     "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_FAIL", "NO_HANDS", "NO_LEGS" ],
-    "min_damage": -18,
-    "max_damage": -10,
+    "min_damage": -8,
+    "max_damage": -6,
     "min_range": 19,
     "max_range": 19,
     "damage_increment": 3.0,
@@ -428,6 +456,25 @@
     ]
   },
   {
+    "type": "SPELL",
+    "id": "zhigh_healing_dartV2",
+    "name": "Healing dart discharge",
+    "description": "Heal dart go pew pew.",
+    "valid_targets": [ "ally", "self" ],
+    "effect": "line_attack",
+    "sprite": "fd_null",
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_FAIL", "NO_HANDS", "NO_LEGS" ],
+    "min_damage": -8,
+    "max_damage": -6,
+    "min_range": 19,
+    "max_range": 19,
+    "damage_increment": 3.0,
+    "min_aoe": 6,
+    "max_aoe": 6,
+    "max_level": 40,
+    "message": ""
+  },
+  {
     "id": "zhigh_regen_eff",
     "type": "SPELL",
     "name": { "str": "Regeneration effect" },
@@ -437,8 +484,8 @@
     "flags": [ "RANDOM_DAMAGE", "SILENT", "NO_FAIL", "NO_HANDS", "NO_LEGS" ],
     "valid_targets": [ "ally", "self" ],
     "effect": "target_attack",
-    "min_damage": -15,
-    "max_damage": -10,
+    "min_damage": -6,
+    "max_damage": -5,
     "min_range": 19,
     "max_range": 19,
     "max_level": 40,
@@ -453,7 +500,8 @@
     "description": "An automated anti-personnel drone, a small quadcopter robot surrounded by whirring blades and an improvised firearm.",
     "diff": 6,
     "dodge": 5,
-    "speed": 200,
+    "speed": 180,
+    "aggression": 100,
     "color": "light_blue",
     "melee_skill": 10,
     "melee_dice": 2,
@@ -484,12 +532,14 @@
         "require_targeting_npc": true,
         "require_targeting_monster": true,
         "description": "Heal drone launches a hail of BBs!",
-        "ranges": [ [ 0, 20, "DEFAULT" ] ]
+        "ranges": [ [ 0, 20, "DEFAULT" ] ],
+        "no_ammo_sound": "a chk!"
       },
       { 
         "type": "spell",
-        "spell_data": { "id": "zhigh_healing_dart" },
-        "cooldown": 15 }
+        "spell_data": { "id": "zhigh_healing_dartV2" },
+        "cooldown": 30
+	  }
     ],
     "special_when_hit": [ "RETURN_FIRE", 100 ],
     "death_drops": { "groups": [ [ "robots", 4 ], [ "manhack", 1 ] ] },
@@ -501,7 +551,7 @@
     "type": "GUN",
     "copy-from": "fake_item",
     "name": { "str_sp": "mounted BB machine gun" },
-    "description": "Fake gun for an Attack Drone.",
+    "description": "Fake gun for a Heal Drone.",
     "range": 8,
     "ranged_damage": { "damage_type": "electric", "amount": 5 },
     "dispersion": 10,
@@ -509,7 +559,7 @@
     "skill": "smg",
     "loudness": 5,
     "ammo_effects": [ "LASER", "NEVER_MISFIRES", "NO_DAMAGE_SCALING" ],
-    "modes": [ [ "DEFAULT", "full auto", 9 ] ],
+    "modes": [ [ "DEFAULT", "full auto", 3 ] ],
     "flags": [ "NEVER_JAMS" ]
   },
   {
@@ -520,7 +570,8 @@
     "description": "An automated anti-personnel drone, a small quadcopter robot surrounded by whirring blades.",
     "diff": 6,
     "dodge": 7,
-    "speed": 250,
+    "speed": 200,
+    "aggression": 100,
     "color": "light_blue",
     "melee_skill": 10,
     "melee_dice": 2,
@@ -530,7 +581,7 @@
     "armor_bash": 6,
     "armor_bullet": 6,
     "armor_fire": 6,
-    "hp": 90,
+    "hp": 150,
     "revert_to_itype": "bot_enz_hack",
     "symbol": "+",
     "vision_day": 20,
@@ -548,7 +599,8 @@
         "require_targeting_npc": true,
         "require_targeting_monster": true,
         "description": "Enz launches a hail of BBs!",
-        "ranges": [ [ 0, 15, "DEFAULT" ] ]
+        "ranges": [ [ 0, 15, "DEFAULT" ] ],
+        "no_ammo_sound": "a chk!"
       }
     ],
     "special_when_hit": [ "RETURN_FIRE", 100 ],
@@ -563,7 +615,7 @@
     "name": { "str_sp": "mounted BB machine gun" },
     "description": "Fake gun for Enz manhack.",
     "range": 20,
-    "ranged_damage": { "damage_type": "bash", "amount": 2, "armor_penetration": 9 },
+    "ranged_damage": { "damage_type": "bash", "amount": 5, "armor_penetration": 6 },
     "dispersion": 10,
     "durability": 10,
     "skill": "smg",
@@ -580,7 +632,8 @@
     "description": "An automated anti-personnel drone, a small quadcopter robot surrounded by whirring blades and an improvised firearm.",
     "diff": 6,
     "dodge": 5,
-    "speed": 200,
+    "speed": 180,
+    "aggression": 100,
     "color": "light_blue",
     "melee_skill": 10,
     "melee_dice": 2,
@@ -605,13 +658,14 @@
         "fake_per": 12,
         "laser_lock": false,
         "targeting_cost": 35,
-        "targeting_sound": "\"Tango Locked, Engaging. Light support engaging.\"",
+        "targeting_sound": "\"Tango locked, engaging light support.\"",
         "targeting_volume": 30,
         "require_targeting_player": false,
         "require_targeting_npc": false,
         "require_targeting_monster": false,
         "description": "Attack drone launches a hail of BBs!",
-        "ranges": [ [ 0, 20, "DEFAULT" ] ]
+        "ranges": [ [ 0, 20, "DEFAULT" ] ],
+        "no_ammo_sound": "a chk!"
       }
     ],
     "special_when_hit": [ "RETURN_FIRE", 100 ],
@@ -794,8 +848,8 @@
     "luminance": 2,
     "aggression": 100,
     "morale": 100,
-    "vision_day": 50,
-    "vision_night": 50,
+    "vision_day": 0,
+    "vision_night": 0,
     "emit_fields": [ { "emit_id": "emit_zombie3_cloud_big", "delay": "1 s" } ],
     "armor_bash": 10,
     "armor_cut": 10,
@@ -817,7 +871,7 @@
     "armor_cut": 1,
     "armor_bullet": 1,
     "luminance": 8,
-    "regenerates": 500
+    "regenerates": 5
   },
   {
     "id": "mon_Zhigh_finalboss1",
@@ -1264,6 +1318,8 @@
       {
         "type": "gun",
         "cooldown": 1,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
         "target_moving_vehicles": true,
         "gun_type": "water_cannon_turret_fake",
         "fake_skills": [ [ "gun", 8 ], [ "rifle", 8 ] ],
@@ -1283,7 +1339,8 @@
       "IMMOBILE",
       "NO_BREATHE",
       "BIOPROOF"
-    ]
+    ],
+    "regenerates": 50
   },
   {
     "id": "water_cannon_turret_fake",
@@ -1296,7 +1353,7 @@
     "skill": "rifle",
     "durability": 10,
     "range": 100,
-    "dispersion": 1000,
+    "dispersion": 100,
     "ranged_damage": { "damage_type": "cold", "amount": 10 }
   },
   {
@@ -1327,6 +1384,8 @@
       {
         "type": "gun",
         "cooldown": 1,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
         "target_moving_vehicles": true,
         "gun_type": "ice_cannon_turret_fake",
         "fake_skills": [ [ "gun", 8 ], [ "rifle", 8 ] ],
@@ -1346,7 +1405,8 @@
       "IMMOBILE",
       "NO_BREATHE",
       "BIOPROOF"
-    ]
+    ],
+    "regenerates": 50
   },
   {
     "id": "ice_cannon_turret_fake",
@@ -1359,7 +1419,7 @@
     "skill": "rifle",
     "durability": 10,
     "range": 100,
-    "dispersion": 1000,
+    "dispersion": 100,
     "ranged_damage": { "damage_type": "cold", "amount": 10 }
   },
   {
@@ -1391,6 +1451,8 @@
       {
         "type": "gun",
         "cooldown": 1,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
         "target_moving_vehicles": true,
         "gun_type": "fakeBBgunV2_zhigh",
         "fake_skills": [ [ "gun", 8 ], [ "rifle", 8 ] ],
@@ -1410,7 +1472,8 @@
       "IMMOBILE",
       "NO_BREATHE",
       "BIOPROOF"
-    ]
+    ],
+    "regenerates": 50
   },
   {
     "id": "fakeBBgunV2_zhigh",
@@ -1423,8 +1486,8 @@
     "dispersion": 10,
     "durability": 10,
     "skill": "rifle",
-    "loudness": 30,
-    "ammo_effects": [ "HEAVY_HIT", "NOGIB", "WIDE", "NEVER_MISFIRES", "NO_DAMAGE_SCALING" ],
+    "loudness": 60,
+    "ammo_effects": [ "NOGIB", "NEVER_MISFIRES", "NO_DAMAGE_SCALING" ],
     "modes": [ [ "DEFAULT", "burst", 6 ] ],
     "flags": [ "NEVER_JAMS" ]
   },
@@ -1457,6 +1520,8 @@
       {
         "type": "gun",
         "cooldown": 1,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
         "target_moving_vehicles": true,
         "gun_type": "fakeBBgunV3_zhigh",
         "fake_skills": [ [ "gun", 8 ], [ "rifle", 8 ] ],
@@ -1476,7 +1541,8 @@
       "IMMOBILE",
       "NO_BREATHE",
       "BIOPROOF"
-    ]
+    ],
+    "regenerates": 50
   },
   {
     "id": "fakeBBgunV3_zhigh",
@@ -1493,6 +1559,350 @@
     "ammo_effects": [ "HEAVY_HIT", "NOGIB", "WIDE", "NEVER_MISFIRES", "NO_DAMAGE_SCALING" ],
     "modes": [ [ "DEFAULT", "single", 1 ] ],
     "flags": [ "NEVER_JAMS" ]
+  },
+  {
+    "id": "mon_acidturret",
+    "looks_like": "mon_turret",
+    "type": "MONSTER",
+    "name": { "str": "acid turret" },
+    "description": "The acid turret is an automated defense system offering simple, but wide fire support.  With a swiveling base and wide range attacks, it ensures robust perimeter protection.",
+    "default_faction": "military",
+    "species": [ "ROBOT" ],
+    "diff": 20,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 30,
+    "speed": 100,
+    "material": [ "steel" ],
+    "symbol": "2",
+    "color": "white",
+    "aggression": 100,
+    "morale": 100,
+    "armor_bash": 2,
+    "armor_cut": 2,
+    "armor_bullet": 2,
+    "armor_fire": 2,
+    "vision_day": 50,
+    "vision_night": 50,
+    "revert_to_itype": "bot_acidturretZhigh",
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 1,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "target_moving_vehicles": true,
+        "gun_type": "acid_turretGunZhigh",
+        "fake_skills": [ [ "gun", 8 ], [ "rifle", 8 ] ],
+        "ranges": [ [ 0, 8, "DEFAULT" ] ],
+        "require_sunlight": false,
+        "no_crits": false
+      }
+    ],
+    "special_when_hit": [ "RETURN_FIRE", 100 ],
+    "death_drops": {  },
+    "death_function": [ "BROKEN" ],
+    "flags": [
+      "SEES",
+      "NOHEAD",
+      "ELECTRONIC",
+      "ACIDPROOF",
+      "COLDPROOF",
+      "IMMOBILE",
+      "NO_BREATHE",
+      "BIOPROOF"
+    ],
+    "regenerates": 5
+  },
+  {
+    "id": "acid_turretGunZhigh",
+    "type": "GUN",
+    "copy-from": "fake_item",
+    "name": { "str": "mounted turret firearm" },
+    "description": "Fake gun that fires some sort of acid at very high speed by unknown means of propulsion.",
+    "flags": [ "NEVER_JAMS" ],
+    "modes": [ [ "DEFAULT", "auto", 3 ] ],
+    "ammo_effects": [ "ACID_TRAIL", "ACIDBOMB", "BLINDS_EYES", "NEVER_MISFIRES" ],
+    "skill": "rifle",
+    "durability": 10,
+    "range": 10,
+    "dispersion": 100,
+    "ranged_damage": [
+		{ "damage_type": "acid", "amount": 4, "armor_penetration": 30 },
+		{ "damage_type": "stab", "amount": 2, "armor_multiplier": 0.8 }
+	]
+  },
+  {
+    "id": "mon_flameturret",
+    "looks_like": "mon_turret",
+    "type": "MONSTER",
+    "name": { "str": "flame turret" },
+    "description": "The flame turret is an automated defense system offering simple, but wide fire support.  With a swiveling base and wide range attacks, it ensures robust perimeter protection.",
+    "default_faction": "military",
+    "species": [ "ROBOT" ],
+    "diff": 20,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 30,
+    "speed": 100,
+    "material": [ "steel" ],
+    "symbol": "2",
+    "color": "white",
+    "aggression": 100,
+    "morale": 100,
+    "armor_bash": 2,
+    "armor_cut": 2,
+    "armor_bullet": 2,
+    "armor_fire": 2,
+    "vision_day": 50,
+    "vision_night": 50,
+    "revert_to_itype": "bot_flameturretZhigh",
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 1,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "target_moving_vehicles": true,
+        "gun_type": "flamer_turretGunZhigh",
+        "fake_skills": [ [ "gun", 8 ], [ "rifle", 8 ] ],
+        "ranges": [ [ 0, 8, "DEFAULT" ] ],
+        "require_sunlight": false,
+        "no_crits": false
+      }
+    ],
+    "special_when_hit": [ "RETURN_FIRE", 100 ],
+    "death_drops": {  },
+    "death_function": [ "BROKEN" ],
+    "flags": [
+      "SEES",
+      "NOHEAD",
+      "ELECTRONIC",
+      "COLDPROOF",
+      "FIREPROOF",
+      "IMMOBILE",
+      "NO_BREATHE",
+      "BIOPROOF"
+    ],
+    "regenerates": 5
+  },
+  {
+    "id": "flamer_turretGunZhigh",
+    "type": "GUN",
+    "copy-from": "fake_item",
+    "name": { "str": "mounted turret firearm" },
+    "description": "Fake gun that fires some sort of flame at very high speed by unknown means of propulsion.",
+    "flags": [ "NEVER_JAMS" ],
+    "ammo_effects": [ "FLAMEZHIGH", "NEVER_MISFIRES" ],
+    "skill": "rifle",
+    "durability": 10,
+    "range": 10,
+    "dispersion": 100,
+    "modes": [ [ "DEFAULT", "auto", 3 ] ],
+    "ranged_damage": { "damage_type": "heat", "amount": 6, "armor_penetration": 30 }
+  },
+  {
+    "id": "mon_electricturret",
+    "looks_like": "mon_turret",
+    "type": "MONSTER",
+    "name": { "str": "electric turret" },
+    "description": "The electric turret is an automated defense system offering simple, but wide fire support.  With a swiveling base and wide range attacks, it ensures robust perimeter protection.",
+    "default_faction": "military",
+    "species": [ "ROBOT" ],
+    "diff": 20,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 30,
+    "speed": 100,
+    "material": [ "steel" ],
+    "symbol": "2",
+    "color": "white",
+    "aggression": 100,
+    "morale": 100,
+    "armor_bash": 2,
+    "armor_cut": 2,
+    "armor_bullet": 2,
+    "armor_fire": 2,
+    "vision_day": 50,
+    "vision_night": 50,
+    "revert_to_itype": "bot_electricturretZhigh",
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 1,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "target_moving_vehicles": true,
+        "gun_type": "electric_turretGunZhigh",
+        "fake_skills": [ [ "gun", 8 ], [ "rifle", 8 ] ],
+        "ranges": [ [ 0, 8, "DEFAULT" ] ],
+        "require_sunlight": false,
+        "no_crits": false
+      }
+    ],
+    "special_when_hit": [ "ZAPBACK", 100 ],
+    "death_drops": {  },
+    "death_function": [ "BROKEN" ],
+    "flags": [
+      "SEES",
+      "NOHEAD",
+      "ELECTRONIC",
+      "ELECTRIC",
+      "COLDPROOF",
+      "IMMOBILE",
+      "NO_BREATHE",
+      "BIOPROOF"
+    ],
+    "regenerates": 5
+  },
+  {
+    "id": "electric_turretGunZhigh",
+    "type": "GUN",
+    "copy-from": "fake_item",
+    "name": { "str": "mounted turret firearm" },
+    "description": "Fake gun that fires some sort of electricity at very high speed by unknown means of propulsion.",
+    "flags": [ "NEVER_JAMS" ],
+    "ammo_effects": [ "LIGHTNING", "BOUNCE", "NEVER_MISFIRES" ],
+    "skill": "rifle",
+    "durability": 10,
+    "range": 6,
+    "dispersion": 100,
+    "modes": [ [ "DEFAULT", "auto", 3 ] ],
+    "ranged_damage": { "damage_type": "electric", "amount": 6, "armor_penetration": 30 }
+  },
+  {
+    "id": "mon_RockTurret",
+    "looks_like": "mon_turret",
+    "type": "MONSTER",
+    "name": { "str": "rock thrower turret" },
+    "description": "The rock thrower turret is an automated defense system offering slow but precise fire support.  With a swiveling base and advanced targeting, it ensures robust perimeter protection.",
+    "default_faction": "military",
+    "species": [ "ROBOT" ],
+    "diff": 20,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 30,
+    "speed": 100,
+    "material": [ "steel" ],
+    "symbol": "2",
+    "color": "white",
+    "aggression": 100,
+    "morale": 100,
+    "armor_bash": 2,
+    "armor_cut": 2,
+    "armor_bullet": 2,
+    "armor_fire": 2,
+    "vision_day": 50,
+    "vision_night": 50,
+    "revert_to_itype": "bot_RockTurretZhigh",
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 1,
+        "move_cost": 60,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "target_moving_vehicles": true,
+        "gun_type": "fakeRockgun_zhigh",
+        "fake_skills": [ [ "gun", 8 ], [ "launcher", 5 ] ],
+        "ranges": [ [ 0, 32, "DEFAULT" ] ],
+        "require_sunlight": false,
+        "no_crits": false
+      }
+    ],
+    "special_when_hit": [ "RETURN_FIRE", 100 ],
+    "death_drops": {  },
+    "death_function": [ "BROKEN" ],
+    "flags": [
+      "SEES",
+      "NOHEAD",
+      "ELECTRONIC",
+      "COLDPROOF",
+      "IMMOBILE",
+      "NO_BREATHE",
+      "BIOPROOF"
+    ],
+    "regenerates": 50
+  },
+  {
+    "id": "fakeRockgun_zhigh",
+    "type": "GUN",
+    "copy-from": "fake_item",
+    "name": { "str_sp": "mounted rock blaster" },
+    "description": "Fake gun for an Attack Drone.",
+    "range": 35,
+    "ranged_damage": { "damage_type": "bash", "amount": 22, "armor_penetration": 15 },
+    "dispersion": 10,
+    "durability": 10,
+    "skill": "launcher",
+    "loudness": 60,
+    "modes": [ [ "DEFAULT", "single", 1 ] ],
+    "ammo_effects": [ "BEANBAG", "NOGIB", "NEVER_MISFIRES", "NO_DAMAGE_SCALING" ],
+    "flags": [ "NEVER_JAMS" ]
+  },
+  {
+    "id": "mon_healturret",
+    "type": "MONSTER",
+    "name": { "str": "heal turret" },
+    "description": "The heal turret employs high-pressure heal jets to nearby friends with precision and non-lethal force, making it an ideal support for sensitive areas.  It provides 360-degree coverage and reliable protection in all weather conditions.",
+    "default_faction": "military",
+    "species": [ "ROBOT" ],
+    "diff": 20,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 30,
+    "speed": 100,
+    "material": [ "steel" ],
+    "symbol": "2",
+    "color": "white",
+    "aggression": 100,
+    "morale": 100,
+    "armor_bash": 2,
+    "armor_cut": 2,
+    "armor_bullet": 2,
+    "armor_fire": 2,
+    "vision_day": 50,
+    "vision_night": 50,
+    "revert_to_itype": "bot_healturret",
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 1,
+        "move_cost": 30,
+        "gun_type": "fakeMedBBgun_zhigh",
+        "fake_skills": [ [ "gun", 3 ], [ "smg", 3 ] ],
+        "fake_dex": 3,
+        "fake_per": 3,
+        "laser_lock": true,
+        "targeting_cost": 75,
+        "targeting_sound": "\"Tango Locked, Engaging.\"",
+        "targeting_volume": 30,
+        "require_targeting_player": false,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "description": "Heal turret launches a hail of BBs!",
+        "ranges": [ [ 0, 10, "DEFAULT" ] ],
+        "no_ammo_sound": "a chk!"
+      },
+      { 
+        "type": "spell",
+        "spell_data": { "id": "zhigh_healing_dart" },
+        "cooldown": 5
+	  }
+    ],
+    "special_when_hit": [ "RETURN_FIRE", 100 ],
+    "death_drops": {  },
+    "death_function": [ "BROKEN" ],
+    "flags": [
+      "SEES",
+      "NOHEAD",
+      "ELECTRONIC",
+      "COLDPROOF",
+      "IMMOBILE",
+      "NO_BREATHE",
+      "BIOPROOF"
+    ],
+    "regenerates": 50
   },
   {
     "id": "mon_marusaur",
@@ -1529,7 +1939,8 @@
         "fake_skills": [ [ "gun", 8 ], [ "rifle", 8 ] ],
         "fake_dex": 8,
         "fake_per": 8,
-        "require_targeting_player": false,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
         "target_moving_vehicles": true,
         "description": "The fire dinosaur shoots fire from it's mouth!",
         "ranges": [ [ 1, 10, "DEFAULT" ] ]
@@ -1589,7 +2000,9 @@
           "fake_skills": [ [ "gun", 4 ], [ "rifle", 4 ] ],
           "fake_dex": 8,
           "fake_per": 8,
-          "require_targeting_player": false,
+          "require_targeting_npc": true,
+          "require_targeting_monster": true,
+          "target_moving_vehicles": true,
           "description": "The acid dinosaur launches a spray of acid!",
           "ranges": [ [ 1, 11, "DEFAULT" ] ]
         }

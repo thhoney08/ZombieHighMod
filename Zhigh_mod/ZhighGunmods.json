@@ -1,5 +1,26 @@
 [
   {
+    "id": "retool_flintlockZhigh",
+    "looks_like": "retool_ar15_300blk",
+    "type": "GUNMOD",
+    "name": { "str": "flintlock conversion kit" },
+    "description": "Replacing several key parts of a .36 paper cartridge, .44 paper cartridge or paper cartridge firearm converts it to a .22 firearm.  The conversion results in a slight reduction to accuracy.",
+    "weight": "114 g",
+    "volume": "250 ml",
+    "integral_volume": "0 ml",
+    "price": "320 USD",
+    "material": "steel",
+    "symbol": ":",
+    "color": "green",
+    "location": "accessories",
+    "mod_target_category": [ [ "PISTOLS" ], [ "SUBMACHINE_GUNS" ], [ "RIFLES" ], [ "SHOTGUNS" ] ],
+    "acceptable_ammo": [ "flintlock", "flintlockshot", "shotpaper", "36paper", "44paper" ],
+    "dispersion_modifier": 15,
+    "ammo_modifier": "22",
+    "min_skills": [ [ "weapon", 3 ], [ "mechanics", 2 ] ],
+    "flags": [ "INSTALL_DIFFICULT", "IRREMOVABLE" ]
+  },
+  {
     "id": "retool_bolt",
     "looks_like": "blowpipe",
     "type": "GUNMOD",
@@ -938,5 +959,56 @@
       "mode_modifier": [ [ "REACH", "bayonet", 3, [ "MELEE", "REACH_ATTACK" ] ] ]
     },
     "extend": { "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "PUMP_RAIL_COMPATIBLE" ] }
+  },
+  {
+    "id": "m203RockZhigh",
+    "weapon_category": [ "GRENADE_LAUNCHERS" ],
+    "type": "GUNMOD",
+    "name": { "str_sp": "underbarrel rock launcher" },
+    "description": "This is an underbarrel launcher modeled similar to the M203 grenade launcher, designed to fire rocks with devastating force.",
+    "weight": "1360 g",
+    "volume": "500 ml",
+    "price": "650 USD",
+    "price_postapoc": "10 USD",
+    "material": [ "steel", "plastic" ],
+    "symbol": ":",
+    "color": "light_red",
+    "location": "underbarrel",
+    "mod_target_category": [
+      [ "SUBMACHINE_GUNS" ],
+      [ "RIFLES" ],
+      [ "MACHINE_GUNS" ],
+      [ "GATLING_GUNS" ],
+      [ "SHOTGUNS" ],
+      [ "M_XBOWS" ],
+      [ "GRENADE_LAUNCHERS" ],
+      [ "ROCKET_LAUNCHERS" ],
+      [ "FLAMETHROWERS" ]
+    ],
+    "gun_data": { "ammo": "rock", "skill": "launcher", "dispersion": 150, "durability": 10, "clip_size": 1 },
+    "flags": [ "NEVER_JAMS" ]
+  },
+  {
+    "id": "grip_ragZhigh",
+    "looks_like": "rag",
+    "copy-from": "grip",
+    "type": "GUNMOD",
+    "name": { "str": "rag forward grip" },
+    "description": "An improvised grip placed forward on the barrel allows for greater control.  Not as effective as an average grip, but will work anyways.",
+    "handling_modifier": 3,
+    "mod_target_category": [
+      [ "PISTOLS" ],
+      [ "REVOLVERS" ],
+      [ "SUBMACHINE_GUNS" ],
+      [ "RIFLES" ],
+      [ "MACHINE_GUNS" ],
+      [ "GATLING_GUNS" ],
+      [ "SHOTGUNS" ],
+      [ "S_XBOWS" ],
+      [ "M_XBOWS" ],
+      [ "GRENADE_LAUNCHERS" ],
+      [ "ROCKET_LAUNCHERS" ],
+      [ "FLAMETHROWERS" ]
+    ]
   }
 ]

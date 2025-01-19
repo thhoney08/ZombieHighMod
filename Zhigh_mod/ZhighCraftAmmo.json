@@ -1651,7 +1651,7 @@
     "tools": [ [ [ "ammoRingZhigh", 1 ], [ "ammoBag", 5 ], [ "ammoPurse", 10 ] ] ]
   },
   {
-    "result": "gas_smoke",
+    "result": "ZhighGas_smoke",
     "id_suffix": "using_ammoBag",
     "type": "recipe",
     "category": "CC_AMMO",
@@ -1664,7 +1664,7 @@
     "tools": [ [ [ "ammoRingZhigh", 1 ], [ "ammoBag", 5 ], [ "ammoPurse", 10 ] ] ]
   },
   {
-    "result": "gas_teargas",
+    "result": "ZhighGas_teargas",
     "id_suffix": "using_ammoBag",
     "type": "recipe",
     "category": "CC_AMMO",
@@ -1677,7 +1677,7 @@
     "tools": [ [ [ "ammoRingZhigh", 1 ], [ "ammoBag", 5 ], [ "ammoPurse", 10 ] ] ]
   },
   {
-    "result": "gas_flashpowder",
+    "result": "ZhighGas_flashpowder",
     "id_suffix": "using_ammoBag",
     "type": "recipe",
     "category": "CC_AMMO",
@@ -2314,7 +2314,7 @@
     "tools": [ [ [ "ammoBag", 3 ], [ "ammoPurse", 6 ] ] ]
   },
   {
-    "result": "poison_nail",
+    "result": "poison_nailZhigh",
     "id_suffix": "using_ammoBag",
     "type": "recipe",
     "category": "CC_AMMO",
@@ -2327,7 +2327,20 @@
     "tools": [ [ [ "ammoBag", 3 ], [ "ammoPurse", 6 ] ] ]
   },
   {
-    "result": "supernail",
+    "result": "paralyze_nailZhigh",
+    "id_suffix": "using_ammoBag",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "time": "1 s",
+    "batch_time_factors": [ 60, 5 ],
+    "reversible": false,
+    "flags": [ "BLIND_EASY" ],
+    "tools": [ [ [ "ammoBag", 3 ], [ "ammoPurse", 6 ] ] ]
+  },
+  {
+    "result": "super_nailZhigh",
     "id_suffix": "using_ammoBag",
     "type": "recipe",
     "category": "CC_AMMO",
@@ -3107,7 +3120,7 @@
     "tools": [ [ [ "ammoBag", 7 ], [ "ammoPurse", 14 ] ] ]
   },
   {
-    "result": "arrow_glassAcid",
+    "result": "ZhighArrow_glassAcid",
     "id_suffix": "using_ammoBag",
     "type": "recipe",
     "category": "CC_AMMO",
@@ -3120,7 +3133,7 @@
     "tools": [ [ [ "ammoBag", 1 ], [ "ammoPurse", 2 ] ] ]
   },
   {
-    "result": "arrow_glassToxic",
+    "result": "ZhighArrow_glassToxic",
     "id_suffix": "using_ammoBag",
     "type": "recipe",
     "category": "CC_AMMO",
@@ -3133,7 +3146,7 @@
     "tools": [ [ [ "ammoBag", 1 ], [ "ammoPurse", 2 ] ] ]
   },
   {
-    "result": "arrow_glassFungi",
+    "result": "ZhighArrow_glassFungi",
     "id_suffix": "using_ammoBag",
     "type": "recipe",
     "category": "CC_AMMO",
@@ -3146,7 +3159,7 @@
     "tools": [ [ [ "ammoBag", 1 ], [ "ammoPurse", 2 ] ] ]
   },
   {
-    "result": "arrow_glassInsect",
+    "result": "ZhighArrow_glassInsect",
     "id_suffix": "using_ammoBag",
     "type": "recipe",
     "category": "CC_AMMO",
@@ -3159,7 +3172,7 @@
     "tools": [ [ [ "ammoBag", 1 ], [ "ammoPurse", 2 ] ] ]
   },
   {
-    "result": "arrow_glassSmoke",
+    "result": "ZhighArrow_glassSmoke",
     "id_suffix": "using_ammoBag",
     "type": "recipe",
     "category": "CC_AMMO",
@@ -3172,7 +3185,7 @@
     "tools": [ [ [ "ammoBag", 1 ], [ "ammoPurse", 2 ] ] ]
   },
   {
-    "result": "arrow_glassTear",
+    "result": "ZhighArrow_glassTear",
     "id_suffix": "using_ammoBag",
     "type": "recipe",
     "category": "CC_AMMO",
@@ -3185,7 +3198,7 @@
     "tools": [ [ [ "ammoBag", 1 ], [ "ammoPurse", 2 ] ] ]
   },
   {
-    "result": "arrow_sigFlare",
+    "result": "ZhighArrow_sigFlare",
     "id_suffix": "using_ammoBag",
     "type": "recipe",
     "category": "CC_AMMO",
@@ -3198,7 +3211,7 @@
     "tools": [ [ [ "ammoBag", 1 ], [ "ammoPurse", 2 ] ] ]
   },
   {
-    "result": "arrow_boxing",
+    "result": "ZhighArrow_boxing",
     "id_suffix": "using_ammoBag",
     "type": "recipe",
     "category": "CC_AMMO",
@@ -3211,7 +3224,7 @@
     "tools": [ [ [ "ammoBag", 1 ], [ "ammoPurse", 2 ] ] ]
   },
   {
-    "result": "arrow_poison",
+    "result": "ZhighArrow_poisonPara",
     "id_suffix": "using_ammoBag",
     "type": "recipe",
     "category": "CC_AMMO",
@@ -3224,7 +3237,46 @@
     "tools": [ [ [ "ammoBag", 1 ], [ "ammoPurse", 2 ] ] ]
   },
   {
-    "result": "arrow_splay",
+    "result": "ZhighArrow_poison",
+    "id_suffix": "using_ammoBag",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "time": "1 s",
+    "batch_time_factors": [ 60, 5 ],
+    "reversible": false,
+    "flags": [ "BLIND_EASY" ],
+    "tools": [ [ [ "ammoBag", 1 ], [ "ammoPurse", 2 ] ] ]
+  },
+  {
+    "result": "ZhighArrow_splay",
+    "id_suffix": "using_ammoBag",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "time": "1 s",
+    "batch_time_factors": [ 60, 5 ],
+    "reversible": false,
+    "flags": [ "BLIND_EASY" ],
+    "tools": [ [ [ "ammoBag", 1 ], [ "ammoPurse", 2 ] ] ]
+  },
+  {
+    "result": "ZhighArrow_Bounce",
+    "id_suffix": "using_ammoBag",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "time": "1 s",
+    "batch_time_factors": [ 60, 5 ],
+    "reversible": false,
+    "flags": [ "BLIND_EASY" ],
+    "tools": [ [ [ "ammoBag", 1 ], [ "ammoPurse", 2 ] ] ]
+  },
+  {
+    "result": "ZhighArrow_electric",
     "id_suffix": "using_ammoBag",
     "type": "recipe",
     "category": "CC_AMMO",
@@ -3250,7 +3302,7 @@
     "tools": [ [ [ "ammoBag", 1 ], [ "ammoPurse", 2 ] ] ]
   },
   {
-    "result": "bolt_paper",
+    "result": "ZhighBolt_paper",
     "id_suffix": "using_ammoBag",
     "type": "recipe",
     "category": "CC_AMMO",
@@ -3263,7 +3315,7 @@
     "tools": [ [ [ "ammoBag", 1 ], [ "ammoPurse", 2 ] ] ]
   },
   {
-    "result": "bolt_poison",
+    "result": "ZhighBolt_poison",
     "id_suffix": "using_ammoBag",
     "type": "recipe",
     "category": "CC_AMMO",
@@ -3276,7 +3328,7 @@
     "tools": [ [ [ "ammoBag", 1 ], [ "ammoPurse", 2 ] ] ]
   },
   {
-    "result": "bolt_glassAcid",
+    "result": "ZhighBolt_poisonPara",
     "id_suffix": "using_ammoBag",
     "type": "recipe",
     "category": "CC_AMMO",
@@ -3289,7 +3341,7 @@
     "tools": [ [ [ "ammoBag", 1 ], [ "ammoPurse", 2 ] ] ]
   },
   {
-    "result": "bolt_glassTear",
+    "result": "ZhighBolt_glassAcid",
     "id_suffix": "using_ammoBag",
     "type": "recipe",
     "category": "CC_AMMO",
@@ -3302,7 +3354,20 @@
     "tools": [ [ [ "ammoBag", 1 ], [ "ammoPurse", 2 ] ] ]
   },
   {
-    "result": "bolt_glassSmoke",
+    "result": "ZhighBolt_glassTear",
+    "id_suffix": "using_ammoBag",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "time": "1 s",
+    "batch_time_factors": [ 60, 5 ],
+    "reversible": false,
+    "flags": [ "BLIND_EASY" ],
+    "tools": [ [ [ "ammoBag", 1 ], [ "ammoPurse", 2 ] ] ]
+  },
+  {
+    "result": "ZhighBolt_glassSmoke",
     "id_suffix": "using_ammoBag",
     "type": "recipe",
     "category": "CC_AMMO",
@@ -3627,6 +3692,19 @@
     "tools": [ [ [ "ammoBag", 3 ], [ "ammoPurse", 6 ] ] ]
   },
   {
+    "result": "rubber_slug",
+    "id_suffix": "using_ammoBag",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "time": "1 s",
+    "batch_time_factors": [ 60, 5 ],
+    "reversible": false,
+    "flags": [ "BLIND_EASY" ],
+    "tools": [ [ [ "ammoBag", 3 ], [ "ammoPurse", 6 ] ] ]
+  },
+  {
     "result": "marble",
     "id_suffix": "using_ammoBag",
     "type": "recipe",
@@ -3693,6 +3771,45 @@
   },
   {
     "result": "shootable_rocketCandy",
+    "id_suffix": "using_ammoBag",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "time": "1 s",
+    "batch_time_factors": [ 60, 5 ],
+    "reversible": false,
+    "flags": [ "BLIND_EASY" ],
+    "tools": [ [ [ "ammoBag", 3 ], [ "ammoPurse", 6 ] ] ]
+  },
+  {
+    "result": "shootable_Firecracker",
+    "id_suffix": "using_ammoBag",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "time": "1 s",
+    "batch_time_factors": [ 60, 5 ],
+    "reversible": false,
+    "flags": [ "BLIND_EASY" ],
+    "tools": [ [ [ "ammoBag", 3 ], [ "ammoPurse", 6 ] ] ]
+  },
+  {
+    "result": "pebble_poison",
+    "id_suffix": "using_ammoBag",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "time": "1 s",
+    "batch_time_factors": [ 60, 5 ],
+    "reversible": false,
+    "flags": [ "BLIND_EASY" ],
+    "tools": [ [ [ "ammoBag", 3 ], [ "ammoPurse", 6 ] ] ]
+  },
+  {
+    "result": "pebble_triffid",
     "id_suffix": "using_ammoBag",
     "type": "recipe",
     "category": "CC_AMMO",

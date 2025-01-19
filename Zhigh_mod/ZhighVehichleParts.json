@@ -1,5 +1,17 @@
 [
   {
+    "id": "mounted_flint_nock",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": { "str": "mounted nock gun" },
+    "item": "flint_nock",
+    "looks_like": "flamethrower",
+    "color": "green",
+    "broken_color": "green",
+    "breaks_into": [ { "item": "scrap", "count": 80 }, { "item": "steel_chunk", "count": 48 }, { "item": "steel_lump", "count": 18 } ],
+    "requirements": { "install": { "skills": [ [ "mechanics", 3 ] ] }, "removal": { "skills": [ [ "mechanics", 2 ] ] } }
+  },
+  {
     "id": "mounted_flamethrower_big",
     "copy-from": "turret",
     "type": "vehicle_part",

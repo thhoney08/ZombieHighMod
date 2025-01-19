@@ -11,6 +11,8 @@
 	  [ "schoolbusZhigh", 5 ],
 	  [ "bus", 1000 ],
 	  [ "schoolbus", 100 ],
+      [ "pd2_van", 10 ],
+      [ "car_escape", 20 ],
 	  [ "bus_tour", 50 ]
     ]
   },
@@ -18,10 +20,11 @@
     "type": "vehicle_group",
     "id": "speedway_bike",
     "vehicles": [
-      [ "goKartZhigh", 5 ],
+      [ "goKartZhigh", 30 ],
 	  [ "motorcycle", 690 ],
 	  [ "superbike", 200 ],
 	  [ "motorcycle_sidecart", 100 ],
+	  [ "miniBikeZhigh", 50 ],
 	  [ "scooter", 10 ]
     ]
   },
@@ -48,6 +51,8 @@
       [ "bicycle_electric", 600 ],
       [ "bicycle_dirt", 750 ],
       [ "unicycle", 50 ],
+      [ "miniBikeZhigh", 50 ],
+      [ "goKartZhigh", 30 ],
       [ "scooter", 100 ],
       [ "scooter_electric", 50 ],
       [ "tandem", 300 ],
@@ -72,6 +77,7 @@
       [ "car_hatch", 2 ],
       [ "car_chassis", 20 ],
       [ "engine_crane", 40 ],
+      [ "miniBikeZhigh", 40 ],
       [ "goKartZhigh", 30 ],
       [ "motorcycle", 10 ],
       [ "motorcycle_chassis", 20 ],
@@ -353,8 +359,36 @@
     "name": "handmade go kart",
     "blueprint": [ "oo" ],
     "parts": [
-      { "x": 1, "y": 0, "parts": [ "frame_vertical_2", "engine_vtwin", "alternator_motorbike", "battery_motorbike", "wheel_mount_light", "wheel_wheelchair" ] },
+      { "x": 1, "y": 0, "parts": [ "frame_vertical_2", "engine_vtwin", "alternator_motorbike", "battery_motorbike", "wheel_mount_light_steerable", "wheel_wheelchair" ] },
       { "x": 0, "y": 0, "parts": [ "frame_vertical_2", "seat", "wheel_mount_light", "wheel_wheelchair", "controls", "controls_electronic" ] },
+      { "x": 0, "y": 0, "parts": [ { "part": "tank_small", "fuel": "gasoline" } ] }
+    ]
+  },
+  {
+    "id": "miniBikeZhigh",
+    "type": "vehicle",
+    "name": "mini bike",
+    "blueprint": [ "oo" ],
+    "parts": [
+      { "x": 1, "y": 0, "parts": [
+		"frame_handle", 
+		"engine_1cyl_large", 
+		"alternator_motorbike", 
+		"battery_motorbike",
+		"wheel_mount_light_steerable", 
+		"wheel_motorbike_or"
+		]
+	  },
+      { "x": 0, "y": 0, "parts": [
+		"frame_handle",
+		"saddle_motor",
+		"muffler", 
+		"wheel_mount_light",
+		"wheel_motorbike_or",
+		"controls",
+		"controls_electronic"
+		]
+	  },
       { "x": 0, "y": 0, "parts": [ { "part": "tank_small", "fuel": "gasoline" } ] }
     ]
   },
