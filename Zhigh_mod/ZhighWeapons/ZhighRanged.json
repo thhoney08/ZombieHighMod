@@ -20,6 +20,7 @@
     "modes": [ [ "DEFAULT", "semi", 1 ] ],
     "flags": [ "RELOAD_ONE", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
     "reload": 30,
+	"handling": 15,
     "loudness": 10
   },
   {
@@ -54,6 +55,7 @@
     "clip_size": 10,
     "modes": [ [ "DEFAULT", "semi", 1 ] ],
     "reload": 15,
+	"handling": 15,
     "magazines": [ [ "pebble", [ "marble_pump_gun_speedloader" ] ] ],
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -130,6 +132,7 @@
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "low auto", 10 ], ["AUTO", "high auto", 30] ],
     "loudness": 40,
     "ups_charges": 5,
+	"handling": 15,
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "emitter", 1 ],
@@ -160,6 +163,7 @@
     "modes": [ [ "DEFAULT", "semi", 1 ] ],
     "loudness": 40,
     "ups_charges": 60,
+	"handling": 15,
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "emitter", 1 ],
@@ -311,7 +315,7 @@
     "clip_size": 7,
     "modes": [ [ "DEFAULT", "7 rd.", 7 ] ],
     "volume": "1400 ml",
-    "proportional": { "dispersion": 3.5 }
+    "proportional": { "dispersion": 5.5 }
   },
   {
     "id": "pistol_flintlock_smol",
@@ -356,6 +360,7 @@
     "weight": "300 g",
     "volume": "500 ml",
     "bashing": 2,
+	"handling": 1,
     "dispersion": 200,
     "clip_size": 20,
     "reload": 20,
@@ -386,6 +391,7 @@
     "weight": "300 g",
     "volume": "500 ml",
     "bashing": 2,
+	"handling": 5,
     "dispersion": 200,
     "clip_size": 6,
     "reload": 20,
@@ -409,7 +415,7 @@
 	"skill": "shotgun",
     "weight": "3000 g",
     "volume": "2500 ml",
-    "handling": 50,
+    "handling": 10,
     "clip_size": 2,
     "reload": 10,
     "valid_mod_locations": [
@@ -438,7 +444,7 @@
 	"skill": "shotgun",
     "weight": "3000 g",
     "volume": "2500 ml",
-    "handling": 50,
+    "handling": 10,
     "clip_size": 10,
     "reload": 10,
     "magazines": [ [ "paintball", [ "marble_pump_gun_speedloader" ] ] ],
@@ -468,7 +474,7 @@
 	"skill": "rifle",
     "weight": "3000 g",
     "volume": "2500 ml",
-    "handling": 50,
+    "handling": 10,
     "clip_size": 25,
     "reload": 90,
     "valid_mod_locations": [
@@ -497,7 +503,7 @@
 	"skill": "smg",
     "weight": "1800 g",
     "volume": "2034 ml",
-    "handling": 50,
+    "handling": 5,
     "clip_size": 25,
     "reload": 12,
     "valid_mod_locations": [
@@ -526,7 +532,6 @@
     "volume": "2300 ml",
     "dispersion": 390,
     "clip_size": 3,
-    "ups_charges": 60,
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 3 ] ],
     "extend": { "flags": [ "FIRE_TWOHAND", "RELOAD_ONE" ] }
   },
@@ -543,16 +548,17 @@
     "color": "red",
     "skill": "pistol",
     "range": 7,
-    "ranged_damage": { "damage_type": "bullet", "amount": 9, "armor_penetration": 5 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 4, "armor_penetration": 8 },
     "dispersion": 6,
     "ammo": [ "NOISE_zhigh" ],
     "durability": 10,
     "clip_size": 100,
     "loudness": 50,
-    "reload": 1,
+    "reload": 10,
     "ammo_effects": [ "JET", "BEANBAG" ],
     "modes": [ [ "DEFAULT", "Shout", 5 ] ],
     "flags": [ "NEVER_JAMS", "NON_FOULING", "WATERPROOF_GUN" ],
+	"handling": 15,
     "use_action": {
       "type": "manualnoise",
       "no_charges_message": "Seeing this is an error.",
@@ -576,7 +582,7 @@
     "volume": "20000 ml",
     "price": "2000 USD",
     "price_postapoc": "40 USD",
-    "bashing": 18,
+    "bashing": 48,
     "material": "paper",
     "symbol": ")",
     "color": "green",
@@ -598,7 +604,7 @@
     "description": "A fire extinguisher, which has been modified to make smoke cover... and damage stuff?",
     "skill": "launcher",
     "range": 7,
-    "ranged_damage": { "damage_type": "bullet", "amount": 6, "armor_penetration": 8 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 8 },
     "dispersion": 900,
     "durability": 10,
 	"handling": 3,
@@ -609,11 +615,16 @@
     "price": "50 USD",
     "price_postapoc": "1 USD",
     "to_hit": 3,
-    "bashing": 18,
+    "bashing": 48,
     "material": "steel",
     "symbol": ";",
     "color": "red",
     "clip_size": 100,
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "10 seconds", "rate": 30 } ]
+    },
     "modes": [ [ "DEFAULT", "Spray", 5 ] ],
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NO_UNLOAD", "NO_RELOAD", "WATERPROOF_GUN" ]
   },
@@ -634,10 +645,11 @@
     "ammo_effects": [ "NEVER_MISFIRES" ],
     "flags": [ "NEVER_JAMS", "NON_FOULING", "WATERPROOF_GUN" ],
     "dispersion": 100,
-    "ranged_damage": { "damage_type": "bullet", "amount": 20 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 10 },
     "ammo": [ "acid", "water", "chemical_spray", "reactor_slurry" ],
     "clip_size": 35,
     "valid_mod_locations": [ [ "sling", 1 ], [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "underbarrel", 1 ] ],
+	"handling": 15,
     "relative": { "reload": 10 }
   },
   {
@@ -656,10 +668,11 @@
     "modes": [ [ "DEFAULT", "Shoot", 1 ] ],
     "flags": [ "NEVER_JAMS", "NON_FOULING", "WATERPROOF_GUN" ],
     "dispersion": 100,
-    "ranged_damage": { "damage_type": "bullet", "amount": 14 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 6 },
     "ammo": [ "acid", "water", "chemical_spray", "reactor_slurry" ],
     "clip_size": 8,
     "valid_mod_locations": [ [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "underbarrel", 1 ] ],
+	"handling": 10,
     "relative": { "reload": 10 }
   },
   {
@@ -670,10 +683,10 @@
     "description": "Made to spray some water, this thing is not a toy, but a weapon.  It freezes your enemies.",
     "range": 13,
     "dispersion": 70,
-    "ranged_damage": { "damage_type": "bullet", "amount": 15, "armor_penetration": 6 },
     "ammo": [ "water" ],
     "clip_size": 25,
     "ammo_effects": [ "COLDAMMO2", "FREEZEAMMO2" ],
+	"handling": 15,
     "relative": { "reload": 20 }
   },
   {
@@ -683,7 +696,7 @@
     "name": { "str": "sling bow" },
     "ammo": [ "pebble", "arrow", "bolt" ],
     "range": 10,
-    "handling": 70,
+    "handling": 1,
     "description": "A wooden sling bow, easy to use and accurate.  This one have some modification so that it can shoot arrows and bolts.",
     "ranged_damage": { "damage_type": "bash", "amount": 14, "armor_penetration": 4 }
   },
@@ -694,7 +707,7 @@
     "name": { "str": "brace sling bow" },
     "ammo": [ "pebble", "arrow", "bolt" ],
     "range": 12,
-    "handling": 80,
+    "handling": 2,
     "description": "A modern slingshot with a wrist brace, it is easy to use, accurate, and quite powerful.  This one have some modification so that it can shoot arrows and bolts.",
     "ranged_damage": { "damage_type": "bash", "amount": 20, "armor_penetration": 8 }
   },
@@ -707,13 +720,13 @@
     "volume": "560 ml",
     "dispersion": 80,
     "clip_size": 100,
-    "reload": 60,
+    "reload": 80,
     "skill": "smg",
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
-    "ammo_effects": [  ],
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "full auto", 4 ] ],
     "ranged_damage": { "damage_type": "stab", "amount": 6, "armor_penetration": 4 },
     "valid_mod_locations": [ [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] ],
+	"handling": 15,
     "range": 10
   },
   {
@@ -756,6 +769,8 @@
     "range": 7,
     "ammo_effects": [ "LASER", "PLASMA" ],
     "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NO_RELOAD", "NON_FOULING", "FRAGILE", "SHEATH_SPEAR" ],
+    "ranged_damage": { "damage_type": "bullet", "amount": 7 },
+	"handling": 20,
     "proportional": { "dispersion": 0.2 }
   },
   {
@@ -791,6 +806,7 @@
       [ "underbarrel", 1 ]
     ],
     "reload": 1,
+	"handling": 15,
     "loudness": 5
   },
   {
@@ -826,6 +842,7 @@
       [ "underbarrel", 1 ]
     ],
     "reload": 3,
+	"handling": 5,
     "loudness": 5
   },
   {
@@ -837,10 +854,27 @@
     "ammo": "DISC_zhigh",
     "ranged_damage": { "damage_type": "bullet", "amount": 9 },
     "dispersion": 400,
-    "range": 18,
+    "range": 10,
     "clip_size": 5,
     "ammo_effects": [ "BEANBAG" ],
     "flags": [ "CROSSBOW" ],
+	"handling": 10,
+    "reload": 20
+  },
+  {
+    "id": "discShooterBig",
+    "copy-from": "crossbow",
+    "type": "GUN",
+    "name": { "str": "disc blaster" },
+    "description": "A single shot rifle that loads discs.  Surprisingly, those discs does not just include normal frizbees, but more.",
+    "ammo": "DISC_zhigh",
+    "ranged_damage": { "damage_type": "bullet", "amount": 14 },
+    "dispersion": 200,
+    "range": 20,
+    "clip_size": 10,
+    "ammo_effects": [ "BEANBAG" ],
+    "flags": [ "CROSSBOW" ],
+	"handling": 15,
     "reload": 20
   },
   {
@@ -869,6 +903,7 @@
     "armor_data": { "covers": [ "hand_either" ], "coverage": 10, "encumbrance": 2, "material_thickness": 2 },
     "loudness": 5,
     "use_action": "WEATHER_TOOL",
+	"handling": 1,
     "flags": [ "THERMOMETER", "HYGROMETER", "BAROMETER", "WATCH", "SUPER_FANCY", "BELTED", "FRAGILE", "ALLOWS_NATURAL_ATTACKS", "WATER_FRIENDLY", "OVERSIZE" ]
   },
   {
@@ -894,6 +929,7 @@
     "ups_charges": 35,
     "ammo": [ "12mm", "bolt", "metal_rail", "nail" ],
     "ammo_effects": [ "BOUNCE", "TRAIL", "INCENDIARY" ],
+	"handling": 25,
     "valid_mod_locations": [ [ "dampening", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "underbarrel", 1 ] ]
   },
   {
@@ -919,6 +955,7 @@
     "ranged_damage": { "damage_type": "stab", "amount": 1 },
     "range": 8,
     "dispersion": 50,
+	"handling": 1,
     "durability": 9
   },
   {
@@ -942,6 +979,7 @@
       [ "emitter", 1 ],
       [ "lens", 1 ]
     ],
+	"handling": 1,
     "ammo_effects": [ "LASER", "BLINDS_EYES", "INCENDIARY" ]
   },
   {
@@ -964,16 +1002,16 @@
     "durability": 10,
     "loudness": 115,
     "to_hit": 1,
-    "handling": 1,
     "bashing": 4,
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
     "modes": [ [ "DEFAULT", "beam", 5 ] ],
+	"handling": 1,
     "ammo_effects": [ "LASER", "BLINDS_EYES" ]
   },
   {
     "id": "penGun",
     "type": "GUN",
-    "copy-from": "bbgun",
+    "copy-from": "rifle_pneumatic",
     "color": "brown",
     "name": { "str": "pen gun" },
     "description": "A steel pen gun, it isn't hard to use, and is very accurate.  Darts are used as ammunition.  Do not expect a lot of damage.",
@@ -996,6 +1034,7 @@
     "range": 9,
     "loudness": 1,
     "dispersion": 20,
+	"handling": 1,
     "durability": 9
   },
   {
@@ -1023,7 +1062,8 @@
     "loudness": 1,
     "dispersion": 20,
     "durability": 9,
-    "ammo_effects": [ "NEVER_MISFIRES", "FLARE", "INCENDIARY" ]
+	"handling": 1,
+    "ammo_effects": [ "NEVER_MISFIRES", "FLAMEZHIGH", "INCENDIARY" ]
   },
   {
     "id": "penChem",
@@ -1049,6 +1089,7 @@
     "loudness": 1,
     "dispersion": 20,
     "durability": 9,
+	"handling": 1,
     "ammo_effects": [ "JET", "BEANBAG", "NEVER_MISFIRES" ]
   },
   {
@@ -1065,6 +1106,7 @@
     "durability": 2,
     "clip_size": 1,
     "reload": 180,
+	"handling": 1,
     "bashing": 10
   },
   {
@@ -1075,7 +1117,6 @@
     "description": "A leather glove, easy to use and accurate.  It helps the user to throw rocks and pebbles as ammunition.",
     "price": "1500 USD",
     "flags": [ "BELT_CLIP", "RELOAD_AND_SHOOT", "WATER_FRIENDLY", "WATERPROOF_GUN", "NEVER_JAMS", "UNARMED_WEAPON" ],
-    "handling": 95,
     "weight": "247 g",
     "volume": "600 ml",
     "price_postapoc": "469 USD",
@@ -1083,6 +1124,7 @@
     "range": 9,
     "armor_data": { "covers": [ "hand_either" ], "coverage": 10, "encumbrance": 15, "material_thickness": 2 },
     "dispersion": 80,
+	"handling": 1,
     "durability": 10
   },
   {
@@ -1091,7 +1133,7 @@
     "type": "GUN",
     "name": { "str": "rock launcher" },
     "description": "An improvised, huge, and direct launcher for rocks.  Essentially, two thick-walled steel pipes, equipped with two rubber bands.  Effective as giving a one-two punch from a pro boxer, but only at short to medium range, barely.",
-    "range": 18,
+    "range": 14,
     "ranged_damage": { "damage_type": "bullet", "amount": 21, "armor_penetration": 9 },
 	"weight": "2930 g",
     "volume": "1650 ml",
@@ -1101,7 +1143,32 @@
     "clip_size": 1,
     "flags": [ "NON_FOULING", "RELOAD_ONE" ],
     "ammo_effects": [ "LARGE_BEANBAG", "NOGIB" ],
+	"handling": 15,
     "ammo": "rock"
+  },
+  {
+    "id": "rock_launcher6",
+    "copy-from": "rock_launcher",
+    "looks_like": "mgl",
+    "type": "GUN",
+    "name": { "str": "rock rotary launcher" },
+    "description": "An improvised, huge, and direct launcher for rocks.  Essentially, eight thick-walled steel pipes, equipped with two rubber bands.  Effective as giving a one-two punch from a pro boxer, but only at short to medium range, barely.",
+    "proportional": { "weight": 1.5, "volume": 1.8, "price": 2 },
+    "relative": { "range": 10 },
+    "clip_size": 8
+  },
+  {
+    "id": "sniper_rock_launcher",
+    "copy-from": "rock_launcher",
+    "looks_like": "AT4",
+    "type": "GUN",
+    "name": "rock sniper blaster",
+    "description": "An improvised, huge, and direct launcher for rocks.  Essentially, two thick-walled steel pipes, equipped with two rubber bands.  Effective as giving a one-two punch from a pro boxer.  This launcher has significantly increased accuracy at the cost of taking even longer to reload.",
+    "weight": "3700 g",
+    "volume": "1700 ml",
+    "relative": { "range": 24 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 24, "armor_penetration": 9 },
+    "proportional": { "dispersion": 0.5, "reload": 2.5 }
   },
   {
     "id": "flamethrower_big",
@@ -1127,6 +1194,7 @@
       [ "underbarrel", 1 ]
     ],
     "extend": { "flags": [ "MODE_BURST", "MOUNTED_GUN" ] },
+	"handling": 1,
     "clip_size": 5000
   },
   {
@@ -1145,6 +1213,7 @@
     "dispersion": 60,
     "durability": 5,
     "reload": 25,
+	"handling": 15,
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "grip", 1 ],
@@ -1167,7 +1236,7 @@
     "weight": "2400 g",
     "volume": "3450 ml",
     "price": "378000 USD",
-    "handling": 95,
+    "handling": 20,
     "range": 100,
     "price_postapoc": "9000 USD",
     "material": [ "steel" ],
@@ -1211,6 +1280,7 @@
     "skill": "pistol",
     "modes": [ [ "DEFAULT", "semi", 1 ] ],
     "barrel_length": "50 ml",
+	"handling": 15,
     "ammo_effects": [ "FRAGBOMBLANCE", "BEANBAG" ],
     "magazines": [ [ "8x40mm", [ "boltersmolmag", "boltermag" ] ] ]
   },
@@ -1255,16 +1325,17 @@
     "copy-from": "bbM134",
     "type": "GUN",
     "name": { "str": "maelstrom disc blaster" },
-    "weight": "5500 g",
+    "weight": "3500 g",
     "volume": "2500 ml",
     "ammo": "DISC_zhigh",
     "barrel_length": "500 ml",
     "material": [ "steel", "plastic" ],
     "description": "Disc shooting guns were a simple toy before cataclysm, and wasn't much of a danger, much less to call it a weapon.  However, some people did had some twisted intent and made the good ol' toy into a deadly, multi-targeting weapon.  It's heavy, but reliable for a hand-made weapon.",
-    "range": 18,
-    "ranged_damage": { "damage_type": "bullet", "amount": 5, "armor_penetration": 6 },
-    "dispersion": 100,
+    "range": 28,
+    "ranged_damage": { "damage_type": "bullet", "amount": 35, "armor_penetration": 9 },
+    "dispersion": 10,
     "reload": 250,
+	"handling": 20,
     "magazines": [ [ "DISC_zhigh", [ "DiscClip_50" ] ] ],
     "ammo_effects": [ "BOUNCE" ],
     "modes": [ [ "SINGLE", "single", 1 ], [ "BURST", "3 rd.", 3 ], [ "DEFAULT", "full auto", 6 ] ]
@@ -1276,12 +1347,14 @@
     "looks_like": "can_food_big",
     "name": { "str": "disc clip" },
     "description": "A large can, cut in almost half.  Holds up 50 rounds of discs.",
+    "volume": "50 ml",
+    "weight": "15 g",
     "ammo_type": "DISC_zhigh",
     "capacity": 50
   },
   {
     "id": "BbClip_50",
-    "copy-from": "garandclip",
+    "copy-from": "44_speedloader6",
     "type": "MAGAZINE",
     "looks_like": "can_food_big",
     "name": { "str": "airsoft BB hopper" },
@@ -1302,6 +1375,7 @@
     "range": 3,
     "ranged_damage": { "damage_type": "bullet", "amount": 2, "armor_penetration": 2 },
     "durability": 9,
+	"handling": 15,
     "ammo": [ "9mm", "45" ],
     "magazines": [ [ "9mm", [ "m9mag", "m9bigmag" ] ], [ "45", [ "m1911mag", "m1911bigmag" ] ] ],
     "flags": [ "WATERPROOF_GUN", "NEVER_JAMS" ],
@@ -1325,6 +1399,7 @@
     "modes": [ [ "DEFAULT", "semi", 1 ] ],
     "flags": [ "NEVER_JAMS", "FIRE_20", "NEEDS_NO_LUBE", "NON_FOULING" ],
     "loudness": 12,
+	"handling": 20,
     "ammo": "battery",
     "ammo_effects": [ "LASER", "INCENDIARY" ],
     "magazines": [
@@ -1369,6 +1444,7 @@
     "modes": [ [ "DEFAULT", "semi", 1 ] ],
     "flags": [ "NEVER_JAMS", "FIRE_20", "NEEDS_NO_LUBE", "NON_FOULING" ],
     "loudness": 12,
+	"handling": 20,
     "ammo": "battery",
     "ammo_effects": [ "LASER", "INCENDIARY" ],
     "use_action": "HAND_CRANK",
@@ -1405,6 +1481,7 @@
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "AUTO", "auto", 3 ] ],
     "clip_size": 30,
     "reload": 750,
+	"handling": 20,
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "emitter", 1 ],
@@ -1425,18 +1502,41 @@
     "weight": "200 g",
     "volume": "600 ml",
     "price": "500 USD",
-    "material": [ "veggy" ],
+    "material": [ "chitin", "veggy" ],
     "symbol": "(",
     "color": "pink",
     "skill": "pistol",
-    "range": 7,
-    "ranged_damage": { "damage_type": "bullet", "amount": 1, "armor_penetration": 9 },
+    "range": 8,
+    "ranged_damage": { "damage_type": "acid", "amount": 3, "armor_penetration": 49 },
     "dispersion": 60,
     "durability": 10,
     "loudness": 5,
-    "ammo_effects": [ "PARALYZEPOISON", "HEAVY_HIT", "BLINDS_EYES" ],
-    "modes": [ [ "AUTO", "full auto", 3 ] ],
-    "flags": [ "NEVER_JAMS" ]
+	"handling": 1,
+    "to_hit": 1,
+    "bashing": 10,
+    "ammo": "battery",
+    "clip_size": 200,
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 seconds", "rate": 40 } ],
+        "passive_effects": [
+			{
+			"has": "WIELD",
+			"condition": "ALWAYS",
+			"hit_you_effect": [
+					{
+					"id": "poison",
+					"message": "Audrey injects a small amount of poison into your target.",
+					"npc_message": "%1$s stings their target."
+					}
+				]
+			}
+        ]
+    },
+    "ammo_effects": [ "PARALYZEPOISON", "POISON", "HEAVY_HIT", "BLINDS_EYES" ],
+    "modes": [ [ "DEFAULT", "poison burst", 7 ] ],
+    "flags": [ "NEVER_JAMS", "NON_FOULING", "NO_UNLOAD", "NO_RELOAD", "WATERPROOF_GUN" ]
   },
   {
     "id": "BBclip300",
@@ -1477,7 +1577,7 @@
   {
     "id": "bbSnip",
     "looks_like": "m107a1",
-    "copy-from": "bbgun",
+    "copy-from": "rifle_pneumatic",
     "type": "GUN",
     "price": "42 USD",
     "price_postapoc": "8 USD",
@@ -1491,8 +1591,10 @@
     "modes": [ [ "DEFAULT", "semi", 1 ] ],
     "ranged_damage": { "damage_type": "bullet", "amount": 14, "armor_penetration": 20 },
     "dispersion": 100,
+    "ammo": "BB",
     "clip_size": 10,
     "reload": 20,
+	"handling": 20,
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 1 ],
@@ -1507,7 +1609,7 @@
   {
     "id": "bbDMR",
     "looks_like": "m14ebr",
-    "copy-from": "bbgun",
+    "copy-from": "rifle_pneumatic",
     "type": "GUN",
     "price": "42 USD",
     "price_postapoc": "8 USD",
@@ -1518,12 +1620,50 @@
     "description": "Popular among children.  More accurate than the original one, and easliy modifiable, but BBs deal nearly no damage.",
     "range": 18,
     "material": [ "aluminum", "plastic" ],
-    "modes": [ [ "DEFAULT", "burst", 3 ] ],
+    "modes": [ [ "DEFAULT", "burst", 5 ] ],
     "ranged_damage": { "damage_type": "bullet", "amount": 6, "armor_penetration": 10 },
     "dispersion": 100,
+    "ammo": "BB",
     "magazines": [ [ "BB", [ "BbClip_50" ] ] ],
     "clip_size": 50,
     "reload": 90,
+	"handling": 20,
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "sling", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "underbarrel", 1 ]
+    ]
+  },
+  {
+    "id": "bbBRifle",
+    "looks_like": "m14ebr",
+    "copy-from": "rifle_pneumatic",
+    "type": "GUN",
+    "price": "42 USD",
+    "price_postapoc": "8 USD",
+    "name": { "str": "BB Battle Rifle" },
+    "weight": "2600 g",
+    "volume": "1700 ml",
+    "barrel_length": "280 ml",
+    "description": "Popular among children.  More accurate than the original one, and easliy modifiable, but BBs deal nearly no damage.",
+    "range": 14,
+    "material": [ "aluminum", "plastic" ],
+    "modes": [ [ "DEFAULT", "burst", 3 ] ],
+    "ranged_damage": [
+		{ "damage_type": "stab", "amount": 2, "armor_penetration": 30 },
+		{ "damage_type": "bullet", "amount": 4, "armor_penetration": 30 },
+		{ "damage_type": "bash", "amount": 4, "armor_multiplier": 0.6 }
+	],
+    "dispersion": 100,
+    "ammo": "BB",
+    "reload": 90,
+	"handling": 15,
+    "magazines": [ [ "BB", [ "BBclip300", "BBclip300release" ] ] ],
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 1 ],
@@ -1575,7 +1715,7 @@
     "copy-from": "mg_base",
     "type": "GUN",
     "name": { "str": "BB machine gun" },
-    "handling": 30,
+    "handling": 25,
     "weight": "6000 g",
     "volume": "3 L",
     "ammo": "BB",
@@ -1647,6 +1787,7 @@
       [ "rail", 1 ],
       [ "underbarrel", 1 ]
     ],
+	"handling": 15,
     "modes": [ [ "DEFAULT", "double tap", 2 ] ]
   },
   {
@@ -1671,6 +1812,7 @@
     "reload": 160,
     "magazines": [ [ "BB", [ "BBclip300release", "BBclip300" ] ] ],
     "modes": [ [ "DEFAULT", "full auto", 10 ] ],
+	"handling": 15,
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 1 ],
@@ -1698,7 +1840,7 @@
     "barrel_length": "130 ml",
     "range": 11,
     "skill": "smg",
-    "ranged_damage": { "damage_type": "bullet", "amount": 3 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 4 },
     "dispersion": 100,
     "reload": 130,
     "valid_mod_locations": [
@@ -1711,8 +1853,19 @@
       [ "rail", 1 ],
       [ "underbarrel", 1 ]
     ],
+	"handling": 15,
     "magazines": [ [ "BB", [ "BBclip300", "BBclip300release" ] ] ],
     "modes": [ [ "DEFAULT", "full auto", 8 ] ]
+  },
+  {
+    "id": "bbMp5",
+    "copy-from": "bbsmg",
+    "type": "GUN",
+    "description": "Popular among children.  More accurate than the original one, and easliy modifiable, but BBs deal nearly no damage.  This one looks like a H&K MP5A4.",
+    "range": 13,
+    "ranged_damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 1 },
+	"handling": 5,
+    "name": { "str": "BB H&K MP5A4" }
   },
   {
     "id": "bbM4",
@@ -1742,6 +1895,7 @@
       [ "rail", 1 ],
       [ "underbarrel", 1 ]
     ],
+	"handling": 15,
     "magazines": [ [ "BB", [ "BBclip300", "BBclip300release" ] ] ],
     "modes": [ [ "DEFAULT", "full auto", 8 ] ]
   },
@@ -1750,7 +1904,7 @@
     "looks_like": "ar10",
     "copy-from": "bbM4",
     "type": "GUN",
-    "description": "Popular among children.  More accurate than the original one, and easliy modifiable, but BBs deal nearly no damage.  This one looks like a AR-10.",
+    "description": "Popular among children.  More accurate than the original one, and easliy modifiable, but BBs deal nearly no damage.  This one looks like an AR-10.",
     "range": 13,
     "ranged_damage": { "damage_type": "bullet", "amount": 1, "armor_penetration": 4 },
     "name": { "str": "BB AR-10" }
@@ -1785,6 +1939,7 @@
     "price": "1699 USD",
     "price_postapoc": "2750 cent",
     "color": "brown_yellow",
+	"handling": 15,
     "ranged_damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 9 },
     "dispersion": 260
   },
@@ -1795,6 +1950,7 @@
     "name": { "str": "P30L" },
     "weight": "930 g",
     "price_postapoc": "25 USD",
+	"handling": 15,
     "ranged_damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 9 }
   },
   {
@@ -1828,6 +1984,7 @@
       [ "sights", 1 ],
       [ "underbarrel", 1 ]
     ],
+	"handling": 20,
     "flags": [ "RELOAD_ONE" ]
   },
   {
@@ -1841,6 +1998,7 @@
     "weapon_category": [ "SHOTGUNS", "REVOLVERS", "MANUAL_ACTION" ],
     "ranged_damage": { "damage_type": "bullet", "amount": 1, "armor_penetration": 1 },
     "durability": 7,
+	"handling": 15,
     "dispersion": 660
   },
   {
@@ -1860,6 +2018,7 @@
     "dispersion": 180,
     "loudness": 7,
     "ups_charges": 10,
+	"handling": 15,
     "ammo_effects": [ "WEBAMMO", "TANGLE" ]
   },
   {
@@ -1931,6 +2090,7 @@
     "valid_mod_locations": [ ],
     "dispersion": 250,
     "durability": 8,
+	"handling": 15,
     "clip_size": 1
   },
   {
@@ -1958,6 +2118,7 @@
 		"NONCONDUCTIVE",
 		"NEVER_JAMS"
 	],
+	"handling": 15,
     "durability": 7
   },
   {
@@ -1983,6 +2144,7 @@
     "durability": 9,
     "clip_size": 1,
     "reload": 1040,
+	"handling": 20,
     "loudness": 16
   },
   {
@@ -2000,6 +2162,7 @@
     "ranged_damage": { "damage_type": "bullet", "amount": 15 },
     "ups_charges": 5,
     "ammo_effects": [ "LASER", "INCENDIARY" ],
+	"handling": 15,
     "dispersion": 160
   },
   {
@@ -2024,6 +2187,7 @@
 	"loudness": -80,
     "clip_size": 8,
     "reload": 200,
+	"handling": 20,
     "ammo_effects": [ "LARGE_BEANBAG" ],
     "ups_charges": 5,
     "extend": { "flags": [ "RELOAD_ONE" ] }
@@ -2100,6 +2264,7 @@
     "durability": 6,
     "clip_size": 1,
     "reload": 80,
+	"handling": 15,
     "valid_mod_locations": [
       [ "accessories", 1 ],
       [ "grip", 1 ],
@@ -2154,6 +2319,7 @@
 	],
     "dispersion": 480,
     "blackpowder_tolerance": 46,
+	"handling": 15,
     "valid_mod_locations": [
       [ "accessories", 2 ],
       [ "barrel", 1 ],
@@ -2190,6 +2356,7 @@
     "durability": 6,
     "clip_size": 10,
     "reload": 200,
+	"handling": 20,
     "valid_mod_locations": [ [ "sling", 1 ], [ "dampening", 1 ], [ "grip", 1 ], [ "mechanism", 1 ] ]
   },
   {
@@ -2216,6 +2383,7 @@
     "durability": 6,
     "clip_size": 10,
     "reload": 200,
+	"handling": 20,
     "valid_mod_locations": [ [ "sling", 1 ], [ "dampening", 1 ], [ "grip", 1 ], [ "mechanism", 1 ] ]
   },
   {
@@ -2232,6 +2400,7 @@
     "weight": "900 g",
     "volume": "500 ml",
     "bashing": 4,
+	"handling": 15,
     "ranged_damage": { "damage_type": "stab", "amount": 12 }
   },
   {
@@ -2255,6 +2424,7 @@
     "range": 22,
     "dispersion": 375,
     "durability": 6,
+	"handling": 20,
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "dampening", 1 ],
@@ -2288,6 +2458,7 @@
     "blackpowder_tolerance": 96,
     "clip_size": 1,
     "reload": 680,
+	"handling": 15,
     "valid_mod_locations": [ [ "accessories", 1 ], [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] ],
     "techniques": [ "WBLOCK_2", "RAPID" ],
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 8 ] ],
@@ -2314,6 +2485,7 @@
 	"clip_size": 5,
 	"bashing": 5,
     "cutting": 16,
+	"handling": 15,
     "blackpowder_tolerance": 96,
     "extend": { "flags": [ "SHEATH_KNIFE", "DURABLE_MELEE" ] }
   },
@@ -2333,6 +2505,7 @@
     "range": 6,
     "dispersion": 300,
     "clip_size": 30,
+	"handling": 1,
     "valid_mod_locations": [ [ "sling", 1 ], [ "stock", 1 ], [ "rail", 1 ] ],
 	"reload": 2
   },
@@ -2352,6 +2525,8 @@
     "range": 2,
     "dispersion": 300,
     "clip_size": 30,
+	"handling": 1,
+    "ammo_effects": [ "FLAMEZHIGH" ],
 	"flags": [ "NEVER_JAMS", "FIRESTARTER", "PYROMANIAC_WEAPON" ],
     "valid_mod_locations": [ [ "sling", 1 ], [ "stock", 1 ], [ "rail", 1 ] ],
 	"reload": 2
@@ -2376,6 +2551,7 @@
 	"skill": "launcher",
     "ranged_damage": { "damage_type": "stab", "amount": 6 },
     "range": 6,
+	"handling": 20,
     "techniques": [ "WBLOCK_1", "IMPALE" ],
 	"flags": [ 
 		"SPEAR", 
@@ -2407,6 +2583,7 @@
     "material": [ "steel", "wood" ],
     "color": "brown",
     "ammo": "50",
+	"handling": 18,
     "ranged_damage": { "damage_type": "bullet", "amount": -8 },
     "dispersion": 900,
     "durability": 6,
@@ -2441,6 +2618,7 @@
     "range": 45,
     "dispersion": 20,
     "durability": 9,
+	"handling": 20,
     "blackpowder_tolerance": 99,
     "barrel_length": "500 ml",
     "built_in_mods": [ "stabilizer", "match_trigger" ],
@@ -2489,6 +2667,7 @@
 	"flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "STR_RELOAD", "RELOAD_ONE" ],
     "recoil": 150,
     "clip_size": 20,
+	"handling": 20,
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "AUTO", "auto", 3 ] ],
     "loudness": 14
   },
@@ -2515,6 +2694,7 @@
     "durability": 6,
     "clip_size": 2,
     "reload": 80,
+	"handling": 1,
 	"flags": [ "UNARMED_WEAPON", "RELOAD_ONE", "RELOAD_EJECT", "NEVER_JAMS" ],
     "valid_mod_locations": [
       [ "accessories", 1 ],
@@ -2549,8 +2729,14 @@
     "loudness": 115,
     "to_hit": 1,
     "bashing": 14,
-    "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "flags": [ "NO_UNLOAD", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
     "ammo_effects": [ "BEANBAG", "BLINDS_EYES" ],
+    "ammo": "battery",
+    "clip_size": 80,
+    "relic_data":
+	{
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "2 seconds", "rate": 40 } ]
+    },
     "valid_mod_locations": [
       [ "accessories", 8 ],
       [ "grip", 1 ],
@@ -2584,8 +2770,14 @@
     "loudness": 125,
     "to_hit": 1,
     "bashing": 8,
-    "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "flags": [ "NO_UNLOAD", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
     "ammo_effects": [ "BEANBAG", "HEAVY_HIT", "BLINDS_EYES" ],
+    "ammo": "battery",
+    "clip_size": 20,
+    "relic_data":
+	{
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "2 seconds", "rate": 10 } ]
+    },
     "valid_mod_locations": [
       [ "accessories", 8 ],
       [ "grip", 1 ],
@@ -2613,14 +2805,20 @@
     "color": "pink",
     "skill": "shotgun",
     "range": 8,
-    "ranged_damage": { "damage_type": "bullet", "amount": 18, "armor_penetration": 8 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 20, "armor_penetration": 8 },
     "dispersion": 60,
     "durability": 10,
     "loudness": 125,
     "to_hit": 1,
     "bashing": 14,
-    "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "flags": [ "NO_UNLOAD", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "FIRE_20" ],
     "ammo_effects": [ "BEANBAG", "BLINDS_EYES" ],
+    "ammo": "battery",
+    "clip_size": 100,
+    "relic_data":
+	{
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "2 seconds", "rate": 20 } ]
+    },
     "valid_mod_locations": [
       [ "accessories", 8 ],
       [ "grip", 1 ],
@@ -2638,6 +2836,7 @@
     "weapon_category": [ "PISTOLS", "PNEUMATIC" ],
     "type": "GUN",
     "reload_noise_volume": 8,
+	"handling": 15,
     "color": "light_gray",
 	"//": "The name means silence. At least that's what the translator told me.",
     "name": { "str": "tishuna" },
@@ -2648,13 +2847,40 @@
     "ammo": [ "pebble" ],
 	"weight": "380 g",
     "volume": "550 ml",
-    "barrel_length": "250 ml",
+    "barrel_length": "50 ml",
     "ranged_damage": { "damage_type": "bash", "amount": 10, "armor_penetration": 4 },
     "range": 13,
     "durability": 7,
     "recoil": 350,
 	"skill": "pistol",
     "clip_size": 8,
+    "modes": [ [ "DEFAULT", "semi", 1 ] ],
+    "loudness": 14
+  },
+  {
+    "id": "Lp500Zhigh",
+    "looks_like": "tishuna",
+    "copy-from": "rifle_pneumatic",
+    "weapon_category": [ "PISTOLS", "PNEUMATIC" ],
+    "type": "GUN",
+    "reload_noise_volume": 8,
+	"handling": 15,
+    "color": "light_gray",
+    "name": { "str": "LP500" },
+    "description": "A multistroke pneumatic pistol for shoootoing competitons.  Be careful where you reload it, pumping air into the tank takes a few seconds.  Very quiet and quite deadly.",
+    "price": "2000 USD",
+    "price_postapoc": "100 USD",
+    "material": [ "steel", "wood" ],
+    "ammo": [ "pebble" ],
+	"weight": "430 g",
+    "volume": "550 ml",
+    "barrel_length": "250 ml",
+    "ranged_damage": { "damage_type": "bash", "amount": 30, "armor_penetration": 4 },
+    "range": 10,
+    "durability": 9,
+    "recoil": 30,
+	"skill": "pistol",
+    "clip_size": 1,
     "modes": [ [ "DEFAULT", "semi", 1 ] ],
     "loudness": 14
   },
@@ -2673,6 +2899,7 @@
     "symbol": "(",
     "color": "magenta",
     "range": 15,
+	"handling": 20,
     "ranged_damage": { "damage_type": "electric", "amount": 16, "armor_penetration": 10 },
     "dispersion": 20,
     "loudness": 14,
@@ -2708,6 +2935,12 @@
     "min_cycle_recoil": 270,
     "magazine_well": "250 ml",
     "clip_size": 10,
+	"handling": 15,
+	"flags": [
+	  "RELOAD_ONE",
+      "NEVER_JAMS",
+      "WATERPROOF_GUN"
+    ],
     "magazines": [ [ "762x25", [ "762x25mauserClipZhigh" ] ] ]
   },
   {
@@ -2728,19 +2961,9 @@
     "flags": [ "SPEEDLOADER" ]
   },
   {
-    "id": "rock_launcher6",
-    "copy-from": "rock_launcher",
-    "looks_like": "mgl",
-    "type": "GUN",
-    "name": { "str": "rock rotary launcher" },
-    "description": "An improvised, huge, and direct launcher for rocks.  Essentially, eight thick-walled steel pipes, equipped with two rubber bands.  Effective as giving a one-two punch from a pro boxer, but only at short to medium range, barely.",
-    "proportional": { "weight": 1.5, "volume": 1.8, "price": 2 },
-    "clip_size": 6
-  },
-  {
     "id": "malAr3516BB",
     "looks_like": "pkdBlaster",
-    "copy-from": "bbgun",
+    "copy-from": "rifle_pneumatic",
     "weapon_category": [ "FIST_WEAPONS", "SAPS", "PISTOLS", "PNEUMATIC" ],
     "type": "GUN",
     "price": "4000 USD",
@@ -2754,6 +2977,7 @@
     "material": [ "aluminum", "plastic" ],
     "bashing": 10,
     "ammo": [ "nail", "BB" ],
+	"handling": 10,
     "ranged_damage": { "damage_type": "cold", "amount": 15, "armor_penetration": 30 },
     "ammo_effects": [ "TANGLE", "INCENDIARY", "LARGE_BEANBAG", "NOGIB", "BOUNCE" ],
     "dispersion": 20,
@@ -2777,7 +3001,7 @@
     "copy-from": "ak74",
     "type": "GUN",
     "name": { "str": "AKS-74UM" },
-    "description": "The successor to the semi-known AK-74 rifle.  It combines the reliability of the AK series and the short length with the high-velocity, with compatible .223 ammo.",
+    "description": "The successor to the semi-known AK-74 rifle.  It combines the reliability of the AK series and the short length with the high-velocity.",
     "weight": "3000 g",
     "volume": "1450 ml",
     "price": "3900 USD",
@@ -2785,30 +3009,12 @@
     "bashing": 11,
     "material": [ "steel", "wood" ],
     "color": "brown",
-    "ammo": [ "223", "545x39" ],
+    "ammo": [ "545x39" ],
     "dispersion": 500,
+	"handling": 20,
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "3 rd.", 3 ], [ "AUTO", "auto", 4 ] ],
     "barrel_length": "50 ml",
     "magazines": [
-      [
-        "223",
-        [
-          "stanag30",
-          "stanag5",
-          "stanag10",
-          "stanag20",
-          "stanag40",
-          "stanag50",
-          "stanag60",
-          "stanag60drum",
-          "stanag90",
-          "stanag100",
-          "stanag100drum",
-          "stanag150",
-          "carbonmag_223",
-          "survivor223mag"
-        ]
-      ],
 	  [
 		"545x39",
 		[
@@ -2827,7 +3033,7 @@
     "name": { "str": "dragon breath" },
     "description": "Fake gun that fires some sort of flame at very high speed by unknown means of propulsion.",
     "flags": [ "NEVER_JAMS" ],
-    "ammo_effects": [ "INCENDIARY", "NEVER_MISFIRES" ],
+    "ammo_effects": [ "FLARE", "INCENDIARY", "NEVER_MISFIRES" ],
     "skill": "rifle",
     "durability": 10,
     "range": 10,
@@ -2960,6 +3166,7 @@
     "modes": [ [ "DEFAULT", "burst", 2 ] ],
     "durability": 7,
     "clip_size": 16,
+	"handling": 20,
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 1 ],
@@ -2990,6 +3197,7 @@
     "material": [ "steel", "plastic" ],
     "color": "dark_gray",
     "ammo": "46",
+	"handling": 20,
     "dispersion": 150,
     "durability": 7,
     "min_cycle_recoil": 1350,
@@ -3012,6 +3220,7 @@
     "material": [ "steel", "plastic" ],
     "color": "dark_gray",
     "ammo": "57",
+	"handling": 20,
     "dispersion": 150,
     "durability": 7,
     "min_cycle_recoil": 1350,
@@ -3034,6 +3243,7 @@
     "material": [ "steel", "plastic" ],
     "color": "dark_gray",
     "ammo": "57",
+	"handling": 20,
     "dispersion": 150,
     "durability": 7,
     "min_cycle_recoil": 1350,
@@ -3067,6 +3277,7 @@
     "price_postapoc": "2750 cent",
     "ascii_picture": "FN_five_seven",
     "material": [ "steel", "plastic" ],
+	"handling": 15,
     "ammo": "46",
     "ranged_damage": { "damage_type": "bullet", "amount": -2 },
     "dispersion": 440,
@@ -3107,7 +3318,7 @@
     "dispersion": 520,
     "durability": 6,
     "min_cycle_recoil": 450,
-    "handling": 40,
+    "handling": 30,
     "built_in_mods": [ "grip" ],
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "AUTO", "auto", 4 ] ],
     "magazine_well": "250 ml",
@@ -3143,6 +3354,7 @@
     "price_postapoc": "2750 cent",
     "ascii_picture": "shotgun_pistol",
     "material": [ "steel", "plastic" ],
+	"handling": 15,
     "ammo": "57",
     "ranged_damage": { "damage_type": "bullet", "amount": -2 },
     "dispersion": 440,
@@ -3173,6 +3385,7 @@
     "barrel_length": "250 ml",
     "price": "3200 USD",
     "price_postapoc": "60 USD",
+	"handling": 20,
     "material": [ "steel", "plastic" ],
     "color": "dark_gray",
     "ammo": "762R",
@@ -3217,6 +3430,7 @@
     "skill": "pistol",
     "material": [ "steel", "aluminum", "plastic" ],
     "sight_dispersion": 600,
+	"handling": 20,
     "dispersion": 395,
     "clip_size": 3,
     "built_in_mods": [ "grip" ],
@@ -3231,6 +3445,7 @@
     "weight": "905 g",
     "volume": "382 ml",
     "barrel_length": "50 ml",
+	"handling": 20,
     "price": "424 USD",
     "price_postapoc": "1250 cent",
     "bashing": 9,
@@ -3250,6 +3465,7 @@
     "color": "light_gray",
     "price_postapoc": "35 USD",
 	"barrel_length": "2000 ml",
+	"handling": 20,
 	"clip_size": 0,
 	"ranged_damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 9 },
     "valid_mod_locations": [
@@ -3299,6 +3515,7 @@
     "price_postapoc": "40 USD",
     "material": [ "steel", "wood" ],
     "color": "brown",
+	"handling": 20,
     "ammo": "762",
 	"range": 3,
     "dispersion": 180,
@@ -3663,7 +3880,7 @@
     "looks_like": "flaregun",
     "copy-from": "pistol_1shot",
     "type": "GUN",
-    "name": { "str": "acidgun" },
+    "name": { "str": "acid gun" },
     "description": "A plastic single shot pistol, modified from a flaregun, that can be loaded with acids.",
     "weight": "213 g",
     "volume": "500 ml",
@@ -3835,5 +4052,533 @@
       [ "rail", 1 ],
       [ "underbarrel", 1 ]
     ]
+  },
+  {
+    "id": "lacrosseStickZhigh",
+    "copy-from": "sling_base",
+    "looks_like": "staff_sling",
+    "type": "GUN",
+    "color": "brown",
+    "name": { "str": "lacrosse stick" },
+    "description": "A lacrosse stick, or crosse is used to play the sport of lacrosse.  Facing armageddon, you could use this to throw rocks.",
+    "price": "150 cent",
+    "material": [ "aluminum", "plastic" ],
+    "weapon_category": [ "QUARTERSTAVES" ],
+    "extend": { "flags": [ "BELTED", "DURABLE_MELEE", "NONCONDUCTIVE", "SHEATH_SPEAR", "ALWAYS_TWOHAND" ] },
+    "techniques": [ "WBLOCK_2", "RAPID", "SWEEP" ],
+    "ammo": [ "pebble", "rock" ],
+    "weight": "1350 g",
+    "volume": "2 L",
+    "price_postapoc": "250 cent",
+    "to_hit": 2,
+    "ranged_damage": { "damage_type": "bash", "amount": 3 },
+    "bashing": 10,
+    "range": 15,
+    "dispersion": 150,
+    "durability": 8
+  },
+  {
+    "id": "pipeSmok22Gun",
+    "copy-from": "pistol_1shot",
+    "looks_like": "pipe_tobacco",
+    "type": "GUN",
+    "name": { "str": "tobacco pipe pistol" },
+    "description": "A single shot pistol that loads .22 LR cartridges, and could be also used as a smoking pipe.  Somehow much more damaging than other .22 firearms, but lacks range.",
+    "weight": "372 g",
+    "volume": "250 ml",
+    "barrel_length": "100 ml",
+    "price": "1 kUSD",
+    "price_postapoc": "5 USD",
+    "to_hit": -2,
+    "ascii_picture": "ashot",
+    "bashing": 6,
+    "material": [ "steel", "wood" ],
+    "color": "brown",
+    "ammo": "22",
+    "ranged_damage": { "damage_type": "bash", "amount": 85, "armor_penetration": 99 },
+    "dispersion": 90,
+    "durability": 6,
+    "clip_size": 1,
+    "reload": 80,
+    "range": -5,
+    "valid_mod_locations": [ ],
+    "qualities": [ [ "SMOKE_PIPE", 1 ] ]
+  },
+  {
+    "id": "m1941Zhigh",
+    "copy-from": "rifle_manual",
+    "type": "GUN",
+    "name": { "str": "M1941 Johnson" },
+    "description": "Known for it's unique rotary magazine, this rifle was used by US Marines as an alternative of a Garand.",
+    "weight": "10 g",
+    "volume": "3 L",
+    "price": "800 USD",
+    "price_postapoc": "3250 cent",
+    "material": [ "steel", "wood" ],
+    "color": "brown",
+    "ammo": "3006",
+    "dispersion": 120,
+    "blackpowder_tolerance": 40,
+    "clip_size": 10,
+    "barrel_length": "1000 ml",
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "brass catcher", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+    "magazines": [ [ "3006", [ "3006_clipZhigh" ] ] ],
+    "flags": [ "RELOAD_ONE" ]
+  },
+  {
+    "id": "3006_clipZhigh",
+    "looks_like": "3006_clip",
+    "type": "MAGAZINE",
+    "name": { "str": ".30-06 long clip" },
+    "//": "Provisional.",
+    "description": "A tiny piece of grooved metal designed to allow a shooter to quickly load a bolt-action rifle.",
+    "weight": "80 g",
+    "volume": "100 ml",
+    "price": "5 USD",
+    "price_postapoc": "50 cent",
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "3006",
+    "capacity": 10,
+    "flags": [ "SPEEDLOADER" ]
+  },
+  {
+    "id": "gilboaSnakeZhigh",
+    "copy-from": "rifle_auto",
+    "type": "GUN",
+    "name": { "str": "Gilboa Snake" },
+    "description": "A weapon developed in Israel.  Unlike the original, this one have two barrels, thus doubling the fun.",
+    "weight": "4260 g",
+    "volume": "2350 ml",
+    "barrel_length": "250 ml",
+    "price": "2400 USD",
+    "price_postapoc": "50 USD",
+    "ascii_picture": "m4a1",
+    "material": [ "steel", "plastic" ],
+    "color": "dark_gray",
+    "ammo": "223",
+    "ranged_damage": { "damage_type": "bullet", "amount": -2 },
+    "dispersion": 180,
+    "durability": 6,
+    "min_cycle_recoil": 1350,
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ], [ "AUTO", "auto", 4 ] ],
+    "magazines": [
+      [
+        "223",
+        [
+          "gilboaSnakeZhighmag",
+          "stanag30",
+          "stanag5",
+          "stanag10",
+          "stanag20",
+          "stanag40",
+          "stanag50",
+          "stanag60",
+          "stanag60drum",
+          "stanag90",
+          "stanag100",
+          "stanag100drum",
+          "stanag150",
+          "carbonmag_223",
+          "survivor223mag"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "gilboaSnakeZhighmag",
+    "looks_like": "stanag30",
+    "type": "MAGAZINE",
+    "name": { "str": "Gilboa Snake 60-round magazine" },
+    "description": "A high-capacity 60-round casket magazine for use with Gilboa Snake rifles.",
+    "weight": "191 g",
+    "volume": "800 ml",
+    "price": "120 USD",
+    "price_postapoc": "8 USD",
+    "material": "aluminum",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": [ "223" ],
+    "capacity": 60,
+    "reliability": 8,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  {
+    "id": "shotgun_3BrarrelZhigh",
+    "looks_like": "shotgun_d",
+    "copy-from": "shotgun_s",
+    "type": "GUN",
+    "name": { "str": "triple barrel shotgun" },
+    "description": "Ol' shotgun on steroids, this cerberus of shot will make anything into a hamburger meat.",
+    "modes": [ [ "DEFAULT", "single", 1 ], [ "DOUBLE", "double", 2 ], [ "BURST", "triple", 3 ] ],
+    "weight": "4402 g",
+    "volume": "3246 ml",
+    "clip_size": 3,
+    "ranged_damage": { "damage_type": "bullet", "amount": 4, "armor_penetration": 3 }
+  },
+  {
+    "id": "shotgun_sAlamoZhigh",
+    "copy-from": "shotgun_s",
+    "looks_like": "revolver_shotgun",
+    "type": "GUN",
+    "name": { "str": "\"alamo\" shotgun" },
+    "description": "A single barrel shotgun with an external magazine and reloading device, a.k.a \"alamo system.\"  Holds up to five shells at a time, including the one in the chamber.  Due to the unique system, it needs longer time to reload.",
+    "ranged_damage": { "damage_type": "bullet", "amount": 6, "armor_penetration": 6 },
+    "weight": "3402 g",
+    "volume": "2946 ml",
+    "clip_size": 6,
+    "proportional": { "reload": 2.7 },
+    "flags": [ "RELOAD_ONE" ]
+  },
+  {
+    "id": "galilZhigh",
+    "copy-from": "ak47",
+    "type": "GUN",
+    "name": { "str": "Galil" },
+    "description": "Israeli-made rifle, the Galil works well in worst conditions, at the cost of it's heavy weight.",
+    "weight": "3752 g",
+    "volume": "4414 ml",
+    "ammo": "223",
+    "magazines": [
+      [
+        "223",
+        [
+          "stanag30",
+          "stanag5",
+          "stanag10",
+          "stanag20",
+          "stanag40",
+          "stanag50",
+          "stanag60",
+          "stanag60drum",
+          "stanag90",
+          "stanag100",
+          "stanag100drum",
+          "stanag150",
+          "carbonmag_223",
+          "survivor223mag"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "puppetZhigh_tommy",
+    "copy-from": "rifle_pneumatic",
+    "type": "GUN",
+    "reload_noise_volume": 8,
+    "color": "light_gray",
+    "name": { "str": "mafia hand puppet" },
+    "description": "A hand puppet, which looks like a mafia with a tommy gun in it's hands.  Somehow you could fire the tiny tommy gun that the doll has.",
+    "price": "3 USD",
+    "price_postapoc": "250 cent",
+    "material": [ "aluminum", "cotton" ],
+    "ammo": [ "pebble" ],
+    "weight": "211 g",
+    "volume": "250 ml",
+    "ranged_damage": { "damage_type": "bash", "amount": 26, "armor_penetration": 6 },
+    "range": 0,
+    "durability": 6,
+    "recoil": 300,
+    "clip_size": 10,
+    "modes": [ [ "DEFAULT", "auto", 2 ] ],
+    "loudness": 14
+  },
+  {
+    "id": "STRV9Zhigh",
+    "copy-from": "pistol_revolver",
+    "looks_like": "ruger_lcr_38",
+    "type": "GUN",
+    "name": { "str_sp": "STRV9" },
+    "description": "A Korean revolver, which was for the police.  This civilian model excludes it's unique smart module.",
+    "weight": "670 g",
+    "volume": "754 ml",
+    "price": "740 USD",
+    "price_postapoc": "2250 cent",
+    "bashing": 10,
+    "ascii_picture": "sw_610",
+    "material": [ "steel", "wood" ],
+    "color": "dark_gray",
+    "ammo": [ "9mm", "9x18" ],
+    "ranged_damage": { "damage_type": "bullet", "amount": 1 },
+    "dispersion": 320,
+    "blackpowder_tolerance": 56,
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ]
+  },
+  {
+    "id": "M1895Zhigh",
+    "copy-from": "pistol_revolver",
+    "looks_like": "ruger_lcr_38",
+    "//": "Tileset whitelist for revolvers.",
+    "type": "GUN",
+    "name": { "str_sp": "M1895" },
+    "description": "A seven-round revolver made in soviet union.  Also known for the usage of suppressor on a revolver, thanks to it's unique mechanism.",
+    "weight": "804 g",
+    "volume": "508 ml",
+    "price": "620 USD",
+    "price_postapoc": "1250 cent",
+    "bashing": 9,
+    "material": [ "steel", "plastic" ],
+    "color": "light_gray",
+    "ranged_damage": { "damage_type": "bullet", "amount": -2 },
+    "ammo": "762x25",
+    "dispersion": 320,
+    "durability": 10,
+    "blackpowder_tolerance": 56,
+    "clip_size": 7,
+    "reload": 40,
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ]
+  },
+  {
+    "id": "sr47Zhigh",
+    "copy-from": "rifle_semi",
+    "looks_like": "ar10",
+    "type": "GUN",
+    "name": { "str": "KAC SR-47" },
+    "description": "Based on the AR-15, the KAC SR-47 is chambered for ammo that is used for an AKM.",
+    "weight": "3590 g",
+    "volume": "2 L",
+    "barrel_length": "250 ml",
+    "price": "1200 USD",
+    "price_postapoc": "55 USD",
+    "material": [ "steel", "plastic" ],
+    "color": "dark_gray",
+    "ammo": "762",
+    "ranged_damage": { "damage_type": "bullet", "amount": 1 },
+    "dispersion": 80,
+    "durability": 7,
+    "min_cycle_recoil": 2700,
+    "magazines": [ [ "762", [ "akmag30", "akmag10", "akmag20", "akmag40", "akdrum75" ] ] ]
+  },
+  {
+    "id": "thor308Zhigh",
+    "copy-from": "pistol_1shot",
+    "type": "GUN",
+    "name": { "str": "EAA Thor" },
+    "description": "A single shot pistol that loads .308 Winchester.",
+    "weight": "828 g",
+    "volume": "500 ml",
+    "barrel_length": "100 ml",
+    "price": "1 kUSD",
+    "price_postapoc": "5 USD",
+    "to_hit": -2,
+    "ascii_picture": "ashot",
+    "bashing": 6,
+    "material": [ "steel", "wood" ],
+    "color": "brown",
+    "ammo": "308",
+    "ranged_damage": { "damage_type": "bullet", "amount": -6 },
+    "dispersion": 900,
+    "durability": 6,
+    "clip_size": 1,
+    "reload": 80,
+    "valid_mod_locations": [
+      [ "accessories", 1 ],
+      [ "grip", 1 ],
+      [ "stock", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "sights", 1 ],
+      [ "rail", 1 ],
+      [ "underbarrel", 1 ]
+    ]
+  },
+  {
+    "id": "colt_saaChainZhigh",
+    "copy-from": "colt_saa",
+    "type": "GUN",
+    "name": { "str_sp": "Uberti Chainman" },
+    "description": "This 7.5\" barreled Uberti Cattleman was modified to hold an ammo belt, not a cylinder.  However, the reload mechanism is still the same, so the user have to reload the bullets one by one.",
+    "weight": "1248 g",
+    "volume": "424 ml",
+    "price": "679 USD",
+    "price_postapoc": "45 USD",
+    "clip_size": 28
+  },
+  {
+    "id": "m231Zhigh",
+    "copy-from": "oa93",
+    "type": "GUN",
+    "name": { "str": "M231 Firing Port Weapon" },
+    "description": "The M231 Firing Port Weapon (FPW) is an adapted version of the M16 assault rifle for shooting from firing ports on tanks.  It's unique shape makes the handling of the gun quite difficult.",
+    "modes": [ [ "DEFAULT", "4 rd.", 4 ] ],
+    "default_mods": [ "wire_stock" ],
+    "barrel_length": "500 ml"	
+  },
+  {
+    "id": "patriotZhigh",
+    "copy-from": "m231Zhigh",
+    "type": "GUN",
+    "name": { "str": "Patriot" },
+    "description": "The world must be made whole again.  In Memory of a Patriot, Who Saved the World.",
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ {
+			"type": "time",
+			"req": "none",
+			"interval": "1 seconds",
+			"rate": 300
+			}
+		]
+    },
+    "clip_size": 150,
+    "weight": "1848 g",
+    "volume": "3100 ml",
+    "extend": { "flags": [ "NO_RELOAD", "NO_UNLOAD", "TRADER_AVOID", "NON_FOULING", "NEEDS_NO_LUBE" ] },
+    "magazines": [  ]
+  },
+  {
+    "id": "scar_lPdwZhigh",
+    "copy-from": "scar_l",
+    "type": "GUN",
+    "weapon_category": [ "SUBMACHINE_GUNS", "AUTOLOADING" ],
+    "skill": "smg",
+    "name": { "str_sp": "FN SCAR-L PDW" },
+    "description": "A highly accurate and modular assault rifle specially designed for the United States Special Operations Command.  The 'L' in its name stands for light, as it uses the lightweight 5.56x45mm round.  This model features a shorter barrel and a side folding stock for vehicle or aircraft crew use.",
+    "weight": "2500 g",
+    "volume": "1850 ml",
+    "ascii_picture": "scar-L",
+    "range": -4,
+    "ranged_damage": { "damage_type": "bullet", "amount": -5 },
+    "min_cycle_recoil": 2200,
+    "barrel_length": "50 ml",
+    "magazine_well": "250 ml",
+    "built_in_mods": [ "folding_stock" ]
+  },
+  {
+    "id": "scar_hPdwZhigh",
+    "looks_like": "scar_lPdwZhigh",
+    "copy-from": "scar_h",
+    "type": "GUN",
+    "weapon_category": [ "SUBMACHINE_GUNS", "AUTOLOADING" ],
+    "skill": "smg",
+    "name": { "str_sp": "FN SCAR-H PDW" },
+    "description": "A highly accurate and modular battle rifle specially designed for the United States Special Operations Command.  The 'H' in its name stands for heavy, as it uses the powerful 7.62x51mm (.308) round.  This model features a shorter barrel and a side folding stock for vehicle or aircraft crew use.",
+    "weight": "2800 g",
+    "volume": "1850 ml",
+    "ascii_picture": "scar-H",
+    "range": -4,
+    "ranged_damage": { "damage_type": "bullet", "amount": -5 },
+    "min_cycle_recoil": 3450,
+    "barrel_length": "50 ml",
+    "magazine_well": "250 ml",
+    "built_in_mods": [ "folding_stock" ]
+  },
+  {
+    "id": "srm1216Zhigh",
+    "copy-from": "shotgun_base",
+    "looks_like": "popGun_zhigh",
+    "type": "GUN",
+    "name": { "str": "SRM Arms Model 1216" },
+    "description": "The SRM Arms Model 1216 is a semi-automatic shotgun with a 16-round detachable revolver magazine.  Designed for mobility, it is light and short and intended for home defense and law enforcement.",
+    "weight": "3300 g",
+    "volume": "2150 ml",
+    "price": "1890 USD",
+    "price_postapoc": "45 USD",
+    "material": [ "steel", "plastic" ],
+    "dispersion": 415,
+    "durability": 7,
+    "barrel_length": "100 ml",
+    "magazine_well": "250 ml",
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "mechanism", 4 ],
+      [ "barrel", 1 ],
+      [ "brass catcher", 1 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+    "magazines": [ [ "shot", [ "srm1216ZhighMag" ] ] ]
+  },
+  {
+    "id": "srm1216ZhighMag",
+    "looks_like": "m74_clip",
+    "type": "MAGAZINE",
+    "name": { "str": "SRM Arms Model 1216 box magazine" },
+    "description": "A removable plastic magazine for the SRM Arms Model 1216 shotgun.  Holds 16 rounds.",
+    "weight": "710 g",
+    "volume": "600 ml",
+    "price": "45 USD",
+    "price_postapoc": "1 USD",
+    "material": "plastic",
+    "symbol": "#",
+    "color": "dark_gray",
+    "ammo_type": "shot",
+    "capacity": 16,
+    "reliability": 9,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  {
+    "id": "volcanicHandgunZhigh",
+    "copy-from": "rifle_manual",
+    "type": "GUN",
+    "name": { "str": "Volcanic volitional Repeater" },
+	"weapon_category": [ "PISTOLS", "MANUAL_ACTION" ],
+    "description": "A prototype American repeating rifle, recreated and rechambered for some .44 ammo.  Unreliable but powerful.",
+    "weight": "2994 g",
+    "volume": "1127 ml",
+    "looks_like": "winchester_1887",
+    "price": "1008 USD",
+    "price_postapoc": "2250 cent",
+    "proportional": { "bashing": 0.67 },
+    "material": [ "steel", "wood" ],
+    "ranged_damage": { "damage_type": "bullet", "amount": -3 },
+    "dispersion": 860,
+    "durability": 4,
+    "clip_size": 10,
+    "reload": 120,
+	"skill": "pistol",
+    "ammo": "44",
+    "modes": [ [ "DEFAULT", "single", 1 ] ],
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "stock", 1 ],
+      [ "mechanism", 2 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "brass catcher", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+    "flags": [ "RELOAD_ONE", "ALWAYS_TWOHAND" ]
   }
 ]

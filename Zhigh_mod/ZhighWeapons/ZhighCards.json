@@ -307,6 +307,15 @@
     "use_action": { "type": "cast_spell", "spell_id": "dragonBreathZhigh", "no_fail": true, "level": 0 }
   },
   {
+    "id": "cardZhigh_spellRandom",
+	"looks_like": "cardZhigh_glow",
+    "copy-from": "cardZhigh_spellhealVacancer",
+    "type": "COMESTIBLE",
+    "name": { "str": "Collectible Card - random magic" },
+    "description": "This is a unique card, but looks the picture on the card is erased.",
+    "use_action": { "type": "cast_spell", "spell_id": "spellMixZhigh", "no_fail": true, "level": 0 }
+  },
+  {
     "id": "cardZhigh_pets",
 	"looks_like": "cardZhigh_glow",
     "copy-from": "cardZhigh_abstract",
@@ -2215,6 +2224,16 @@
     "name": { "str": "Collectible Card - seeds" },
     "description": "This is a unique card, which has a picture of seeds.  If you use it, you could get some seeds.",
     "use_action": { "type": "unpack", "group": "farming_seeds", "items_fit": true, "filthy_volume_threshold": "1 L" }
+  },
+  {
+    "id": "cardZhigh_guns",
+	"looks_like": "cardZhigh_stimultants",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - guns" },
+    "description": "This is a unique card, which has a picture of guns.  If you use it, you could get some guns.",
+    "use_action": { "type": "unpack", "group": "guns_cardZhigh", "items_fit": true, "filthy_volume_threshold": "1 L" }
   },
   {
     "id": "cardZhigh_mapLab",

@@ -1,7 +1,7 @@
 [
   {
     "type": "AMMO",
-    "id": "bolt_paper",
+    "id": "ZhighBolt_paper",
     "looks_like": "bolt_metal",
     "price": "1 USD",
     "name": { "str": "crude paper bolt" },
@@ -22,7 +22,29 @@
   },
   {
     "type": "AMMO",
-    "id": "bolt_poison",
+    "id": "ZhighBolt_poisonPara",
+    "price": "150 USD",
+    "name": { "str": "paralyze bolt" },
+    "symbol": "=",
+    "color": "green",
+    "description": "A lethal projectile designed to deliver a potent dose of chemical upon impact.  The bolt's head is fitted with a hollow chamber that contains a fast-acting poison.  When the bolt strikes its target, the chamber pierces the flesh and releases the toxin directly into the bloodstream, causing immediate and debilitating effects.",
+    "material": [ "steel" ],
+    "volume": "250 ml",
+    "price_postapoc": "5 USD",
+    "weight": "33 g",
+    "bashing": 1,
+    "ammo_type": "bolt",
+    "damage": { "damage_type": "stab", "amount": 5 },
+    "range": 8,
+    "dispersion": 135,
+    "loudness": 0,
+    "stack_size": 10,
+    "dont_recover_one_in": 10,
+    "effects": [ "PARALYZEPOISON" ]
+  },
+  {
+    "type": "AMMO",
+    "id": "ZhighBolt_poison",
     "price": "150 USD",
     "name": { "str": "poison bolt" },
     "symbol": "=",
@@ -40,11 +62,11 @@
     "loudness": 0,
     "stack_size": 10,
     "dont_recover_one_in": 10,
-    "effects": [ "PARALYZEPOISON" ]
+    "effects": [ "POISON" ]
   },
   {
     "type": "AMMO",
-    "id": "bolt_glassAcid",
+    "id": "ZhighBolt_glassAcid",
     "price": "150 USD",
     "name": { "str": "acid bolt" },
     "symbol": "=",
@@ -66,7 +88,7 @@
   },
   {
     "type": "AMMO",
-    "id": "bolt_glassTear",
+    "id": "ZhighBolt_glassTear",
     "price": "150 USD",
     "name": { "str": "tear gas bolt" },
     "symbol": "=",
@@ -88,7 +110,7 @@
   },
   {
     "type": "AMMO",
-    "id": "bolt_glassSmoke",
+    "id": "ZhighBolt_glassSmoke",
     "price": "150 USD",
     "name": { "str": "smoke bolt" },
     "symbol": "=",

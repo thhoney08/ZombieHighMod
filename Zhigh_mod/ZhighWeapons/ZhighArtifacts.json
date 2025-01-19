@@ -37,6 +37,37 @@
     "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NONCONDUCTIVE" ]
   },
   {
+    "id": "zhighXtraHatInside",
+    "looks_like": "kippah",
+	"//": "Tang Gun",
+	"repairs_like": "balclava",
+    "type": "TOOL",
+	"name": "goblin's hat",
+	"description": "A hat, which has magical effects.",
+	"weight": "800 g",
+    "volume": "300 ml",
+	"price": "7500 USD",
+    "price_postapoc": "30 USD",
+	"material": "cotton",
+	"symbol": "[",
+	"color": "white",
+    "charges_per_use": 1,
+    "max_charges": 3,
+    "initial_charges": 3,
+    "armor_data": { "covers": [ "arm_either" ], "coverage": 10, "encumbrance": 10, "material_thickness": 2 },
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "10 m", "rate": 1 } ]
+    },
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You became invisible, using the goblin's hat.",
+      "effects": [ { "id": "invisibility", "duration": "1 m" }, { "id": "speedup", "duration": "1 m" } ]
+    },
+	"flags": [ "SKINTIGHT", "POWERARMOR_COMPATIBLE", "COMPACT", "FRAGILE", "ALLOWS_NATURAL_ATTACKS", "WATER_FRIENDLY", "ALLOWS_REMOTE_USE" ]
+  },
+  {
     "id": "crysknifeZhigh",
     "copy-from": "bone_knife",
     "type": "GENERIC",
@@ -182,8 +213,15 @@
     "to_hit": 2,
     "bashing": 4,
     "modes": [ [ "DEFAULT", "manual", 1 ] ],
-    "ammo_effects": [ "INCENDIARY", "HEAVY_HIT", "BLINDS_EYES", "NEVER_MISFIRES", "BEANBAG" ],
-    "flags": [ "WATERPROOF_GUN", "FIRE_TWOHAND", "BELT_CLIP", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "ammo_effects": [ "INCENDIARY", "POISON", "BLINDS_EYES", "NEVER_MISFIRES", "PARALYZEPOISON" ],
+    "flags": [ "NO_UNLOAD", "WATERPROOF_GUN", "FIRE_TWOHAND", "BELT_CLIP", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "ammo": "battery",
+    "clip_size": 100,
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 seconds", "rate": 10 } ]
+    },
     "valid_mod_locations": [  ]
   },
   {
@@ -212,7 +250,14 @@
     "bashing": 4,
     "modes": [ [ "DEFAULT", "manual", 1 ] ],
     "ammo_effects": [ "HEAVY_HIT", "BLINDS_EYES", "NEVER_MISFIRES", "BEANBAG" ],
-    "flags": [ "WATERPROOF_GUN", "BELT_CLIP", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "flags": [ "NO_UNLOAD", "WATERPROOF_GUN", "BELT_CLIP", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "ammo": "battery",
+    "clip_size": 100,
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 seconds", "rate": 10 } ]
+    },
     "valid_mod_locations": [  ]
   },
   {
@@ -241,7 +286,14 @@
     "bashing": 4,
     "modes": [ [ "DEFAULT", "auto", 3 ] ],
     "ammo_effects": [ "NEVER_MISFIRES" ],
-    "flags": [ "WATERPROOF_GUN", "BELT_CLIP", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "flags": [ "NO_UNLOAD", "WATERPROOF_GUN", "BELT_CLIP", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "ammo": "battery",
+    "clip_size": 100,
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 seconds", "rate": 10 } ]
+    },
     "valid_mod_locations": [  ]
   },
   {
@@ -262,7 +314,7 @@
     "color": "red_cyan",
     "skill": "rifle",
     "range": 26,
-    "ranged_damage": { "damage_type": "bullet", "amount": 18, "armor_penetration": 50 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 25, "armor_penetration": 50 },
     "dispersion": 60,
     "durability": 10,
     "loudness": 115,
@@ -270,7 +322,14 @@
     "bashing": 4,
     "modes": [ [ "DEFAULT", "semi", 1 ] ],
     "ammo_effects": [ "NEVER_MISFIRES" ],
-    "flags": [ "WATERPROOF_GUN", "FIRE_TWOHAND", "BELT_CLIP", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "flags": [ "NO_UNLOAD", "WATERPROOF_GUN", "FIRE_TWOHAND", "BELT_CLIP", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "FIRE_20" ],
+    "ammo": "battery",
+    "clip_size": 100,
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 seconds", "rate": 10 } ]
+    },
     "valid_mod_locations": [  ]
   },
   {
@@ -299,7 +358,14 @@
     "bashing": 4,
     "modes": [ [ "DEFAULT", "semi", 1 ] ],
     "ammo_effects": [ "NEVER_MISFIRES", "SHOT" ],
-    "flags": [ "WATERPROOF_GUN", "FIRE_TWOHAND", "BELT_CLIP", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "ammo": "battery",
+    "clip_size": 100,
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 seconds", "rate": 10 } ]
+    },
+    "flags": [ "NO_UNLOAD", "WATERPROOF_GUN", "FIRE_TWOHAND", "BELT_CLIP", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "FIRE_20" ],
     "valid_mod_locations": [  ]
   },
   {
@@ -319,8 +385,8 @@
     "symbol": "@",
     "color": "red_cyan",
     "skill": "launcher",
-    "range": 11,
-    "ranged_damage": { "damage_type": "bullet", "amount": 10, "armor_penetration": 50 },
+    "range": 51,
+    "ranged_damage": { "damage_type": "bullet", "amount": 30, "armor_penetration": 50 },
     "dispersion": 60,
     "durability": 10,
     "loudness": 185,
@@ -328,14 +394,21 @@
     "bashing": 4,
     "modes": [ [ "DEFAULT", "semi", 1 ] ],
     "ammo_effects": [ "NEVER_MISFIRES", "LARGE_BEANBAG", "HEAVY_HIT", "EXPLOSIVE" ],
-    "flags": [ "WATERPROOF_GUN", "FIRE_TWOHAND", "BELT_CLIP", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "ammo": "battery",
+    "clip_size": 100,
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 seconds", "rate": 10 } ]
+    },
+    "flags": [ "NO_UNLOAD", "WATERPROOF_GUN", "FIRE_TWOHAND", "BELT_CLIP", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "FIRE_100" ],
     "valid_mod_locations": [  ]
   },
   {
     "id": "talentBatonZhigh",
     "looks_like": "stunrod",
-    "type": "GENERIC",
-    "category": "weapons",
+    "type": "TOOL",
+    "category": "tools",
     "weapon_category": [ "BATONS", "CLUBS" ],
     "name": { "str": "multi-weapon prop (baton)" },
     "description": "This unique weapon features a modular design, allowing it to transform seamlessly between various forms such as a sword, axe, bow, and rifle.  Crafted from lightweight yet durable materials, it includes interchangeable parts that can be swiftly assembled or disassembled to suit different combat scenarios.  This looks like a baton now.",
@@ -350,13 +423,20 @@
     "symbol": "@",
     "color": "red_cyan",
     "techniques": [ "WBLOCK_1", "RAPID" ],
-    "flags": [ "BELT_CLIP", "NONCONDUCTIVE" ]
+    "ammo": "battery",
+    "max_charges": 100,
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 seconds", "rate": 10 } ]
+    },
+    "flags": [ "NO_UNLOAD", "BELT_CLIP", "NONCONDUCTIVE" ]
   },
   {
     "id": "talentSwordZhigh",
     "looks_like": "survivor_machete",
-    "type": "GENERIC",
-    "category": "weapons",
+    "type": "TOOL",
+    "category": "tools",
     "weapon_category": [ "2H_SWORDS", "JAPANESE_SWORDS", "1H_SWORDS", "MEDIEVAL_SWORDS", "DUELING_SWORDS", "SHORT_SWORDS" ],
     "name": { "str": "multi-weapon prop (sword)" },
     "description": "This unique weapon features a modular design, allowing it to transform seamlessly between various forms such as a sword, axe, bow, and rifle.  Crafted from lightweight yet durable materials, it includes interchangeable parts that can be swiftly assembled or disassembled to suit different combat scenarios.  This looks like a sword now.",
@@ -373,13 +453,20 @@
     "color": "red_cyan",
     "techniques": [ "PRECISE", "RAPID", "WBLOCK_2" ],
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 15 ] ],
-    "flags": [ "SHEATH_SWORD", "NONCONDUCTIVE" ]
+    "ammo": "battery",
+    "max_charges": 100,
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 seconds", "rate": 10 } ]
+    },
+    "flags": [ "NO_UNLOAD", "SHEATH_SWORD", "NONCONDUCTIVE" ]
   },
   {
     "id": "talentKnucklesZhigh",
     "looks_like": "knife_trench",
-    "type": "GENERIC",
-    "category": "weapons",
+    "type": "TOOL",
+    "category": "tools",
     "weapon_category": [ "KNIVES", "FIST_WEAPONS" ],
     "name": { "str": "multi-weapon prop (knuckle knife)" },
     "description": "This unique weapon features a modular design, allowing it to transform seamlessly between various forms such as a sword, axe, bow, and rifle.  Crafted from lightweight yet durable materials, it includes interchangeable parts that can be swiftly assembled or disassembled to suit different combat scenarios.  This looks like a knuckle knife now.",
@@ -396,13 +483,20 @@
     "color": "red_cyan",
     "techniques": [ "WBLOCK_1" ],
     "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 3 ] ],
-    "flags": [ "NONCONDUCTIVE", "BELT_CLIP", "UNARMED_WEAPON", "STAB", "SHOCKING", "FLAMING" ]
+    "ammo": "battery",
+    "max_charges": 100,
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 seconds", "rate": 10 } ]
+    },
+    "flags": [ "NO_UNLOAD", "NONCONDUCTIVE", "BELT_CLIP", "UNARMED_WEAPON", "STAB", "SHOCKING", "FLAMING" ]
   },
   {
     "id": "talentAxZhigh",
     "looks_like": "axe_combat",
-    "type": "GENERIC",
-    "category": "weapons",
+    "type": "TOOL",
+    "category": "tools",
     "weapon_category": [ "2H_AXES", "HAND_AXES", "1H_AXES" ],
     "name": { "str": "multi-weapon prop (axe)" },
     "description": "This unique weapon features a modular design, allowing it to transform seamlessly between various forms such as a sword, axe, bow, and rifle.  Crafted from lightweight yet durable materials, it includes interchangeable parts that can be swiftly assembled or disassembled to suit different combat scenarios.  This looks like an axe now.",
@@ -418,13 +512,20 @@
     "color": "red_cyan",
     "techniques": [ "WBLOCK_1", "BRUTAL", "SWEEP" ],
     "qualities": [ [ "AXE", 2 ], [ "PRY", 3 ], [ "BUTCHER", -30 ] ],
-    "flags": [ "NONCONDUCTIVE", "BELT_CLIP", "SHEATH_AXE" ]
+    "ammo": "battery",
+    "max_charges": 100,
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 seconds", "rate": 10 } ]
+    },
+    "flags": [ "NO_UNLOAD", "NONCONDUCTIVE", "BELT_CLIP", "SHEATH_AXE" ]
   },
   {
     "id": "talentSpearZhigh",
     "looks_like": "spear_steel",
-    "type": "GENERIC",
-    "category": "weapons",
+    "type": "TOOL",
+    "category": "tools",
     "weapon_category": [ "SPEARS", "GLAIVES", "PIKES" ],
     "name": { "str": "multi-weapon prop (spear)" },
     "description": "This unique weapon features a modular design, allowing it to transform seamlessly between various forms such as a sword, axe, bow, and rifle.  Crafted from lightweight yet durable materials, it includes interchangeable parts that can be swiftly assembled or disassembled to suit different combat scenarios.  This looks like a spear now.",
@@ -440,8 +541,16 @@
     "color": "red_cyan",
     "techniques": [ "WIDE", "BRUTAL", "IMPALE", "WBLOCK_1" ],
     "qualities": [ [ "COOK", 1 ] ],
+    "ammo": "battery",
+    "max_charges": 100,
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 seconds", "rate": 10 } ]
+    },
     "flags": [
-      "POLEARM",
+      "NO_UNLOAD",
+	  "POLEARM",
       "SPEAR",
       "REACH_ATTACK",
       "REACH3",
@@ -659,7 +768,7 @@
     "flags": [ "LEAK_DAM", "RADIOACTIVE" ],
     "material": [ "plastic", "aluminum" ],
     "symbol": ";",
-    "charges_per_use": 1,
+    "charges_per_use": 3,
     "max_charges": 3,
     "initial_charges": 3,
     "relic_data":
@@ -1184,7 +1293,7 @@
           "has": "WORN",
           "condition": "ALWAYS",
           "mutations": [ "ENCH_UNCANNY_DODGE_EFFECT" ],
-          "intermittent_activation": { "effects": [ { "frequency": "20 minutes", "spell_effects": [ { "id": "AEA_PAIN" } ] } ] }
+          "intermittent_activation": { "effects": [ { "frequency": "2 minutes", "spell_effects": [ { "id": "AEA_PAIN" } ] } ] }
         }
       ]
     }
@@ -1201,7 +1310,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "intermittent_activation": { "effects": [ { "frequency": "20 minutes", "spell_effects": [ { "id": "AEA_PAIN" } ] } ] }
+          "intermittent_activation": { "effects": [ { "frequency": "2 minutes", "spell_effects": [ { "id": "AEA_PAIN" } ] } ] }
         }
       ]
     }
@@ -1218,7 +1327,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "intermittent_activation": { "effects": [ { "frequency": "20 minutes", "spell_effects": [ { "id": "AEA_PAIN" } ] } ] }
+          "intermittent_activation": { "effects": [ { "frequency": "2 minutes", "spell_effects": [ { "id": "AEA_PAIN" } ] } ] }
         }
       ]
     }
@@ -1257,5 +1366,30 @@
         }
       ]
     }
+  },
+  {
+    "type": "TOOL",
+    "id": "infiniteVodkaZhigh",
+    "looks_like": "flask_hip",
+    "name": "bottle of limitless alcohol",
+    "description": "A magical hip flask with an infinite amount of alcohol.  Although it is too strong for you to drink itself, you could unload some to a container nearby and make good use of it.",
+    "armor_data": { "covers": [ "leg_either" ], "coverage": 2, "material_thickness": 1 },
+    "max_charges": 10,
+    "to_hit": 1,
+    "bashing": 3,
+    "material": "iron",
+    "color": "light_gray",
+    "symbol": ")",
+    "relic_data": {
+      "recharge_scheme": [
+        {
+          "type": "time",
+          "req": "none",
+          "interval": "1 s",
+          "rate": 1
+        }
+      ]
+    },
+    "flags": [ "WAIST", "COMPACT", "OVERSIZE", "WATER_FRIENDLY" ]
   }
 ]

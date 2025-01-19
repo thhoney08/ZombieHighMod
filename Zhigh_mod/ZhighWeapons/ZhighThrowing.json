@@ -17,6 +17,7 @@
     "stack_size": 12,
     "ammo_type": "thrown",
     "flags": [ "FRAGILE_MELEE", "CARDZHIGH", "NOGIB", "NPC_THROWN", "SHATTERS" ],
+    "range": 14,
     "thrown_damage": [ { "damage_type": "stab", "amount": 20 } ]
   },
   {
@@ -146,8 +147,8 @@
     "color": "light_gray",
     "explode_in_fire": true,
     "explosion": {
-      "damage": 12,
-      "radius": 1
+      "damage": 1,
+	  "fragment": { "impact": { "damage_type": "cut", "amount": 40, "armor_multiplier": 2 }, "range": 5 }
     },
     "use_action": {
       "target": "improvised_colabomb_act",
@@ -179,8 +180,8 @@
     "turns_per_charge": 1,
     "explode_in_fire": true,
     "explosion": {
-      "damage": 12,
-      "radius": 2
+      "damage": 1,
+	  "fragment": { "impact": { "damage_type": "cut", "amount": 40, "armor_multiplier": 2 }, "range": 5 }
     },
     "use_action": {
       "type": "explosion",
@@ -188,8 +189,8 @@
       "sound_msg": "ssss...",
       "no_deactivate_msg": "You've already lit the %s, try throwing it instead.",
       "explosion": {
-        "damage": 60,
-        "radius": 2
+        "damage": 1,
+        "fragment": { "impact": { "damage_type": "bullet", "amount": 40, "armor_multiplier": 2 }, "range": 5 }
       }
     },
     "flags": [ "TRADER_AVOID" ]
@@ -211,9 +212,8 @@
     "color": "light_gray",
     "explode_in_fire": true,
     "explosion": {
-      "damage": 12,
-      "radius": 1,
-	  "fragment": { "impact": { "damage_type": "cut", "amount": 40, "armor_multiplier": 3 }, "range": 5 }
+      "damage": 1,
+	  "fragment": { "impact": { "damage_type": "cut", "amount": 60, "armor_multiplier": 3 }, "range": 5 }
     },
     "use_action": {
       "target": "improvised_colabombV2_act",
@@ -245,8 +245,8 @@
     "turns_per_charge": 1,
     "explode_in_fire": true,
     "explosion": {
-      "damage": 12,
-      "radius": 2
+      "damage": 1,
+	  "fragment": { "impact": { "damage_type": "cut", "amount": 60, "armor_multiplier": 3 }, "range": 5 }
     },
     "use_action": {
       "type": "explosion",
@@ -254,9 +254,8 @@
       "sound_msg": "ssss...",
       "no_deactivate_msg": "You've already lit the %s, try throwing it instead.",
       "explosion": {
-        "damage": 60,
-        "radius": 2,
-	    "fragment": { "impact": { "damage_type": "cut", "amount": 40, "armor_multiplier": 3 }, "range": 5 }
+        "damage": 1,
+	    "fragment": { "impact": { "damage_type": "cut", "amount": 60, "armor_multiplier": 3 }, "range": 5 }
       }
     },
     "flags": [ "TRADER_AVOID" ]
@@ -848,10 +847,10 @@
   {
     "id": "boomerangZhigh",
     "looks_like": "throwing_stick",
-    "type": "GENERIC",
+    "type": "AMMO",
     "category": "weapons",
     "weapon_category": [ "BATONS" ],
-    "name": { "str": "combat booerang" },
+    "name": { "str": "combat booemrang" },
     "description": "A slender long rod of wood with a little curve, while traditionally intended as a weapon used by Aboriginal Australians.  Not the toy variant of the family, so don't expect it to return to your hand.",
     "weight": "400 g",
     "to_hit": 3,
@@ -864,6 +863,8 @@
     "bashing": 9,
     "price": "10 USD",
     "flags": [ "NOGIB" ],
+    "ammo_type": "thrown",
+    "effects": [ "BOUNCE" ],
     "thrown_damage": [ { "damage_type": "bash", "amount": 40 } ]
   },
   {
@@ -923,13 +924,38 @@
     "flags": [ "BOMB", "TRADER_AVOID" ]
   },
   {
-    "id": "grenadeImpactZhigh",
-    "looks_like": "grenade",
-    "type": "AMMO",
-	"ammo_type": "thrown",
+    "id": "grenadeImpactZhighOff",
+    "looks_like": "grenadeImpactZhigh",
+    "type": "TOOL",
     "category": "weapons",
     "name": { "str": "impact greande" },
     "description": "A defensive grenade.  When thrown, the impact fuze is instantly armed, blowing up itself and everything nearby.  Normally it was not used due to the impact fuze was dangerous to store compared to the fuzes that were used nowdays, but released when the world was facing it's end.",
+    "weight": "397 g",
+    "volume": "250 ml",
+    "price": "15 USD",
+    "price_postapoc": "10 USD",
+    "to_hit": -1,
+    "bashing": 6,
+    "material": [ "steel" ],
+    "symbol": "*",
+    "color": "green",
+    "use_action": {
+      "target": "grenadeImpactZhigh",
+      "msg": "You pull the pin on the grenade.",
+      "target_charges": 6,
+      "active": true,
+      "menu_text": "Pull pin",
+      "type": "transform"
+    },
+    "flags": [ "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "grenadeImpactZhigh",
+    "looks_like": "grenade",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "live impact greande" },
+    "description": "An active defensive grenade.  When thrown, the impact fuze is instantly armed, blowing up itself and everything nearby.  Normally it was not used due to the impact fuze was dangerous to store compared to the fuzes that were used nowdays, but released when the world was facing it's end.",
     "weight": "397 g",
     "volume": "200 ml",
     "price": "15 USD",
@@ -938,12 +964,269 @@
     "bashing": 6,
     "symbol": "*",
     "color": "green",
+    "initial_charges": 6,
+    "max_charges": 6,
+    "turns_per_charge": 1,
+    "material": [ "glass" ],
     "countdown_action": { "type": "explosion", "explosion": { "damage": 4, "radius": 3 } },
     "explosion": {
 		"damage": 40,
 		"radius": 2,
 		"fragment": { "impact": { "damage_type": "bullet", "amount": 60, "armor_multiplier": 1 }, "range": 3 }
 	},
-    "flags": [ "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION", "BOMB", "GRENADE" ]
+    "flags": [ "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION", "BOMB", "GRENADE", "SHATTERS", "FRAGILE", "FRAGILE_MELEE" ]
+  },
+  {
+    "id": "grenadeMiniZhigh",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "mini grenade" },
+    "description": "This is a military-grade fragmentary hand grenade.  Use this item to pull the pin and light the fuse.  You will then have five turns before it explodes; throwing it would be a good idea.  It's small size makes a person to carry more of them.",
+    "weight": "197 g",
+    "volume": "150 ml",
+    "price": "15 USD",
+    "price_postapoc": "10 USD",
+    "to_hit": -1,
+    "bashing": 6,
+    "material": [ "steel" ],
+    "symbol": "*",
+    "color": "green",
+    "use_action": {
+      "target": "grenadeMiniZhigh_act",
+      "msg": "You pull the pin on the grenade.",
+      "target_charges": 5,
+      "active": true,
+      "menu_text": "Pull pin",
+      "type": "transform"
+    },
+    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE", "BELT_CLIP" ]
+  },
+  {
+    "id": "grenadeMiniZhigh_act",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "active mini grenade" },
+    "description": "This is an active grenade, and will explode any second now.  Better throw it!",
+    "weight": "197 g",
+    "volume": "150 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "to_hit": -1,
+    "bashing": 6,
+    "material": [ "steel" ],
+    "symbol": "*",
+    "color": "green",
+    "initial_charges": 5,
+    "max_charges": 5,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "sound_volume": 0,
+      "sound_msg": "Tick.",
+      "no_deactivate_msg": "You've already pulled the %s's pin; try throwing it instead.",
+      "explosion": {
+        "damage": 20,
+        "radius": 3,
+        "fragment": { "impact": { "damage_type": "bullet", "amount": 40, "armor_multiplier": 2 }, "range": 3 }
+      }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
+    "type": "TOOL",
+    "id": "toynadeZhigh",
+    "looks_like": "grenade",
+    "copy-from": "throwing_card_spade",
+    "category": "weapons",
+    "name": { "str": "toy grenade" },
+    "description": "A grenade lookalike prop.  Not that useful compared to the original, but still good enough.",
+    "color": "light_gray",
+    "weight": "100 g",
+    "volume": "150 ml",
+    "bashing": 1,
+    "material": "aluminum",
+    "flags": [ "FRAGILE_MELEE", "GRENADE", "NOGIB", "NPC_THROWN", "BELT_CLIP" ],
+    "thrown_damage": [ { "damage_type": "bash", "amount": 30 } ]
+  },
+  {
+    "id": "improvised_pipebombZhigh",
+    "looks_like": "improvised_pipebomb",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "improvised pipe bomb, long fuse" },
+    "description": "This is a section of a pipe filled with stable explosives and a primer.  Use this item to light the fuse, which gives you eight seconds to get away from it before it detonates.  You'll need a lighter or some matches to use it.",
+    "weight": "710 g",
+    "//": "Only one third (410 g) of a whole pipe is being used",
+    "volume": "500 ml",
+    "price": "15 USD",
+    "to_hit": 1,
+    "bashing": 5,
+    "material": "steel",
+    "symbol": "*",
+    "color": "light_gray",
+    "explode_in_fire": true,
+    "explosion": {
+      "damage": 20,
+      "radius": 4,
+      "fragment": { "impact": { "damage_type": "bullet", "amount": 70, "armor_multiplier": 3 }, "range": 8 }
+    },
+    "use_action": {
+      "target": "improvised_pipebombZhigh_act",
+      "msg": "You light the fuse on the pipe bomb.",
+      "target_charges": 20,
+      "active": true,
+      "need_fire": 1,
+      "menu_text": "Light fuse",
+      "type": "transform"
+    },
+    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "NPC_ACTIVATE", "GRENADE" ]
+  },
+  {
+    "id": "improvised_pipebombZhigh_act",
+    "looks_like": "improvised_pipebomb_act",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "active improvised pipe bomb, long fuse" },
+    "description": "This pipe bomb's fuse is lit, and it will explode any second now.  Throw it immediately!",
+    "weight": "710 g",
+    "volume": "500 ml",
+    "price": "0 cent",
+    "to_hit": 1,
+    "bashing": 5,
+    "material": "steel",
+    "symbol": "*",
+    "color": "light_gray",
+    "initial_charges": 20,
+    "max_charges": 20,
+    "turns_per_charge": 1,
+    "explode_in_fire": true,
+    "explosion": {
+      "damage": 20,
+      "radius": 4,
+      "fragment": { "impact": { "damage_type": "bullet", "amount": 70, "armor_multiplier": 3 }, "range": 8 }
+    },
+    "use_action": {
+      "type": "explosion",
+      "sound_volume": 50,
+      "sound_msg": "Beep!",
+      "no_deactivate_msg": "You've already lit the %s, try throwing it instead.",
+      "explosion": {
+        "damage": 20,
+        "radius": 4,
+        "fragment": { "impact": { "damage_type": "bullet", "amount": 70, "armor_multiplier": 3 }, "range": 8 }
+      }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID", "DANGEROUS" ]
+  },
+  {
+    "id": "feralStudentNadeZhigh",
+    "copy-from": "grenade_canister",
+    "type": "GENERIC",
+    "name": { "str": "undead signal bomb" },
+    "description": "This is a canister grenade filled with a variety of pyrotechnic chemicals.  Use this item to pull the pin and light the fuse, turning it into an active undead signal bomb.  Five turns after you do that, it will begin to expel a thick undead signal smoke.  This smoke will summon some zombies.",
+    "price": "18 USD",
+    "price_postapoc": "0 cent",
+    "weight": "569 g",
+    "countdown_action": { "type": "transform", "target": "feralStudentNadeZhigh_act" }
+  },
+  {
+    "id": "feralStudentNadeZhigh_act",
+    "copy-from": "feralStudentNadeZhigh",
+    "type": "GENERIC",
+    "name": { "str": "armed undead signal bomb" },
+    "description": "This undead signal bomb has had its pin removed and is expelling thick undead signal smoke... or something like that.",
+    "emits": [ "emit_zombie3_cloud_big" ],
+    "countdown_interval": 100,
+    "countdown_action": { "type": "transform", "target": "canister_empty" },
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "id": "corrosiveGasNadeZhigh",
+    "copy-from": "grenade_canister",
+    "type": "GENERIC",
+    "name": { "str": "corrosive gas grenade" },
+    "description": "This is a canister grenade filled with a variety of pyrotechnic chemicals.  Use this item to pull the pin and light the fuse, turning it into an active corrosive gas grenade.  Five turns after you do that, it will begin to expel a thick black smoke.  This smoke will slow those who enter it, as well as obscuring vision and scent.",
+    "price": "18 USD",
+    "price_postapoc": "0 cent",
+    "weight": "569 g",
+    "countdown_action": { "type": "transform", "target": "corrosiveGasNadeZhigh_act" }
+  },
+  {
+    "id": "corrosiveGasNadeZhigh_act",
+    "copy-from": "corrosiveGasNadeZhigh",
+    "type": "GENERIC",
+    "name": { "str": "armed corrosive gas grenade" },
+    "description": "This corrosive gas grenade has had its pin removed and is expelling thick corrosive gas.",
+    "emits": [ "emit_corrosiveZhigh_stream" ],
+    "countdown_interval": 100,
+    "countdown_action": { "type": "transform", "target": "canister_empty" },
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "id": "ZhighHolyGrenade",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "Holy Hand Grenade of Antioch" },
+    "description": "This is a Holy Hand Grenade.  Use this item to pull the pin and light the fuse.  You will then have three turns before it explodes; throwing it would be a good idea.  \n <color_light_green>First shalt thou take out the Holy Pin.  Then, shalt thou count to three.  No more.  No less.  Three shalt be the number thou shalt count, and the number of the counting shalt be three.  Four shalt thou not count, nor either count thou two, excepting that thou then proceed to three.  Five is right out.  Once the number three, being the third number, be reached, then lobbest thou thy Holy Hand Grenade of Antioch towards thy foe, who, being naughty in My sight, shall snuff it.</color>",
+    "weight": "397 g",
+    "volume": "250 ml",
+    "price": "15 USD",
+    "price_postapoc": "10 USD",
+    "to_hit": -1,
+    "bashing": 6,
+    "material": [ "steel" ],
+    "symbol": "*",
+    "color": "green",
+    "use_action": {
+      "target": "ZhighHolyGrenade_act",
+      "msg": "You pull the pin on the grenade.",
+      "target_charges": 3,
+      "active": true,
+      "menu_text": "Pull pin",
+      "type": "transform"
+    },
+    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "ZhighHolyGrenade_act",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "active Holy Hand Grenade of Antioch" },
+    "description": "This is an active Holy Hand Grenade of Antioch, and will explode any second now.  Better throw it!",
+    "weight": "397 g",
+    "volume": "250 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "to_hit": -1,
+    "bashing": 6,
+    "material": [ "steel" ],
+    "symbol": "*",
+    "color": "green",
+    "initial_charges": 3,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "sound_volume": 0,
+      "sound_msg": "PIE JESU DOMINE, DONA EIS REQUIEM.",
+      "no_deactivate_msg": "PIE JESU DOMINE, DONA EIS REQUIEM.",
+      "explosion": {
+        "damage": 40,
+        "radius": 3,
+        "fragment": { "impact": { "damage_type": "bullet", "amount": 8000, "armor_multiplier": 200 }, "range": 4 }
+      }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
+    "id": "boneThrowKniZhigh",
+    "type": "GENERIC",
+    "copy-from": "throwing_knife",
+    "looks_like": "bone_knife",
+    "name": { "str": "bone throwing dagger" },
+    "description": "A thin and flat bone shard made for throwing, which is capable of slicing foes in with swiftness and efficiency.",
+    "material": [ "bone_heavy", "bone" ],
+    "thrown_damage": [ { "damage_type": "stab", "amount": 14 } ],
+    "proportional": { "weight": 0.8, "cutting": 0.9 }
   }
 ]
