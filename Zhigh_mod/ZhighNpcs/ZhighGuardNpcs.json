@@ -23,9 +23,9 @@
     "bonus_dex": { "rng": [ -3, 4 ] },
     "bonus_per": { "rng": [ 1, 2 ] },
     "worn_override": "NC_ZhighGUARD_worn",
-    "carry_override": "NC_GUARD_misc",
+    "carry_override": "ZhighNpc_misc",
     "weapon_override": "NC_ZhighGUARD_wield",
-    "shopkeeper_item_group": "NC_GUARD_misc",
+    "shopkeeper_item_group": "ZhighNpc_misc",
     "skills": [
       { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
       { "skill": "melee", "bonus": { "rng": [ 2, 5 ] } },
@@ -57,17 +57,6 @@
       { "group": "npc_belt" },
       { "group": "ZhighNpc_stabbing", "container-item": "bootsheath" },
       { "group": "ZhighNpc_underwear_feet_male" }
-    ]
-  },
-  {
-    "type": "item_group",
-    "id": "NC_GUARD_misc",
-    "subtype": "collection",
-    "entries": [
-      { "group": "npc_misc" },
-      { "group": "ZhighNpc_throw", "count": [ 1, 2 ], "prob": 20 },
-      { "group": "ZhighNpc_ids" },
-      { "item": "zhigh_smart_phone" }
     ]
   },
   {
@@ -106,7 +95,8 @@
     "type": "npc_class",
     "id": "NC_ZHIGHSoldier",
     "name": { "str": "Soldier" },
-    "job_description": "I'm protecting my school.",
+    "job_description": "I'm protecting my boat.",
+    "common": false,
     "traits": [ 
       { "group": "BG_survival_story_RURAL" }, 
       { "group": "NPC_starting_traits" }, 
@@ -220,5 +210,267 @@
       }
     ],
     "responses": [ { "text": "Don't mind me…", "topic": "TALK_DONE" } ]
+  },
+  {
+    "type": "npc",
+    "id": "Zhigh_SoldierMedic",
+    "name_suffix": "Quarter Master",
+    "class": "NC_ZHIGHSoldierMedic",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_Zhigh_SoldierMedic",
+    "faction": "specOpsDudesZhigh"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_ZHIGHSoldierMedic",
+    "name": { "str": "First Sergeant" },
+    "job_description": "I'm protecting my boat.",
+    "common": false,
+    "traits": [ 
+      { "group": "BG_survival_story_RURAL" }, 
+      { "group": "NPC_starting_traits" }, 
+      { "group": "Appearance_Mixed" },
+      { "trait": "REGEN_zhigh" } ],
+    "bonus_str": { "rng": [ 6, 8 ] },
+    "bonus_dex": { "rng": [ 3, 4 ] },
+    "bonus_per": { "rng": [ 4, 6 ] },
+    "worn_override": "NC_ZhighSoldier_worn",
+    "carry_override": "NC_Soldier_misc",
+    "weapon_override": "NC_ZhighSoldier_wield",
+    "shopkeeper_item_group": "NC_Soldier_misc",
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "melee", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "stabbing", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "throw", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "launcher", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "shotgun", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "smg", "bonus": { "rng": [ 3, 5 ] } }
+    ]
+  },
+  {
+    "id": "TALK_Zhigh_SoldierMedic",
+    "type": "talk_topic",
+    "dynamic_line": [
+	    "Welcome...", 
+		"Oi <name_g>!", 
+		"Welcome.",
+		"Good to see you again, <name_g>.",
+		"Hey <name_g>!",
+		"Here to trade stuff, I hope?",
+		"Safe travels, <name_g>."
+    ],
+    "responses": [
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_Zhigh_SoldierMedic" },
+      { "text": "What are you doing here?", "topic": "TALK_Zhigh_SoldierMedic_DOING" },
+      { "text": "I'd like to buy some meds.", "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL" },
+      { "text": "Well, bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_Zhigh_SoldierMedic_DOING",
+    "type": "talk_topic",
+    "dynamic_line": [
+		"We have been supplying this boat here with meds and stims.  The roads are though and dangerous, but there is no other way.  And do not ask about where did these chems from, I've got my own ways."
+    ],
+    "responses": [ { "text": "Okay then.  Keep safe, First Sergeant.", "topic": "TALK_Zhigh_SoldierMedic" } ]
+  },
+  {
+    "id": "TALK_Zhigh_SoldierMedic_STIMDEAL",
+    "//": "This is all the dialogue related to buying bulk chemicals.  It should remain somewhat prohibitively expensive and time-consuming so the chemist doesn't become a one-stop shop for survival needs. TO-DO - Use variables to refine shop system. See SCRIPT_EFFECTS.md and isolated road fabriation system.",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "npc_has_effect": "currently_busy",
+      "yes": "Not now, <name_g>.  It takes a while to get the meds - but I'm working hard to replace it.  What can I get you in the meantime?",
+      "no": "I'll see what I've got around here for you.  I've gotta warn you: it ain't cheap.  Hard to stay supplied in the apocalypse, you know.  What do you need?"
+    },
+    "responses": [
+      { "text": "Nevermind.", "topic": "TALK_DONE" },
+      {
+        "text": "[10$]  I'll buy some bandagess.",
+        "effect": [ { "u_buy_item": "bandages", "cost": 1000, "container": "bag_plastic", "count": 20 } ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      },
+      {
+        "text": "[40$]  I'll buy some aspirin.",
+        "effect": [ { "u_buy_item": "aspirin", "container": "bottle_plastic_pill_prescription", "cost": 4000, "count": 20 } ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      },
+      {
+        "text": "[750$]  I'll buy three basic medkits.",
+        "effect": [ { "u_buy_item": "medkit1", "cost": 75000, "count": 3 } ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      },
+      {
+        "text": "[750$]  I'll buy two medium medkits.",
+        "effect": [ { "u_buy_item": "medkit2", "cost": 75000, "count": 2 } ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      },
+      {
+        "text": "[800$]  I'll buy an advanced medkit.",
+        "effect": [
+          { "u_buy_item": "medkit3", "cost": 80000, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "2 h" }
+        ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a morphine injector.",
+        "effect": [
+          { "u_buy_item": "stimmorphine", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "1 h" }
+        ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a random stimultant.",
+        "effect": [
+          { "u_buy_item": "stim_pack1", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "1 h" }
+        ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a healing stim.",
+        "effect": [
+          { "u_buy_item": "stimMedDarktide", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "1 h" }
+        ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a combat stim.",
+        "effect": [
+          { "u_buy_item": "stimCombatDarktide", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "1 h" }
+        ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a sight increasing stim.",
+        "effect": [
+          { "u_buy_item": "stimCelerityDarktide", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "1 h" }
+        ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a speed increasing stim.",
+        "effect": [
+          { "u_buy_item": "stimConcentrationDarktide", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "1 h" }
+        ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a signal supply flare.",
+        "effect": [
+          { "u_buy_item": "signal_supply_flare", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "8 h" }
+        ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      }
+    ]
+  },
+  {
+    "id": "TALK_Zhigh_SoldierMedic_STIMDEAL_END",
+    "type": "talk_topic",
+    "dynamic_line": [ "Is there anything else you need?" ],
+    "responses": [
+      { "text": "Nevermind.", "topic": "TALK_DONE" },
+      {
+        "text": "[10$]  I'll buy some bandagess.",
+        "effect": [ { "u_buy_item": "bandages", "cost": 1000, "container": "bag_plastic", "count": 20 } ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      },
+      {
+        "text": "[40$]  I'll buy some aspirin.",
+        "effect": [ { "u_buy_item": "aspirin", "container": "bottle_plastic_pill_prescription", "cost": 4000, "count": 20 } ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      },
+      {
+        "text": "[750$]  I'll buy three basic medkits.",
+        "effect": [ { "u_buy_item": "medkit1", "cost": 75000, "count": 3 } ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      },
+      {
+        "text": "[750$]  I'll buy two medium medkits.",
+        "effect": [ { "u_buy_item": "medkit2", "cost": 75000, "count": 2 } ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      },
+      {
+        "text": "[800$]  I'll buy an advanced medkit.",
+        "effect": [
+          { "u_buy_item": "medkit3", "cost": 80000, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "2 h" }
+        ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a morphine injector.",
+        "effect": [
+          { "u_buy_item": "stimmorphine", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "1 h" }
+        ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a random stimultant.",
+        "effect": [
+          { "u_buy_item": "stim_pack1", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "1 h" }
+        ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a healing stim.",
+        "effect": [
+          { "u_buy_item": "stimMedDarktide", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "1 h" }
+        ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a combat stim.",
+        "effect": [
+          { "u_buy_item": "stimCombatDarktide", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "1 h" }
+        ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a sight increasing stim.",
+        "effect": [
+          { "u_buy_item": "stimCelerityDarktide", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "1 h" }
+        ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a speed increasing stim.",
+        "effect": [
+          { "u_buy_item": "stimConcentrationDarktide", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "1 h" }
+        ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      },
+      {
+        "text": "[75$]  I'll buy a signal supply flare.",
+        "effect": [
+          { "u_buy_item": "signal_supply_flare", "cost": 7500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "8 h" }
+        ],
+        "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
+      }
+    ]
   }
 ]

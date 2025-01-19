@@ -80,6 +80,7 @@
       { "item": "medkit4", "count": [ 1, 2 ], "prob": 10 },
       { "item": "stim_pack3", "count": [ 1, 3 ], "prob": 100 },
       { "item": "bfipowder", "count": [ 2, 3 ], "prob": 50 },
+      { "group": "ZhighNpc_misc" },
       { "item": "quikclot", "count": [ 2, 3 ], "prob": 50 }
     ]
   },
@@ -358,6 +359,22 @@
           { "npc_add_effect": "currently_busy", "duration": "2 h" }
         ],
         "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[85$]  I feel dizzy after I teleported.  Smells weird, too.",
+        "effect": [
+          { "u_buy_item": "stimantiteleportglow", "cost": 8500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "2 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[85$]  I ate too much.  Maybe I ate something weird.",
+        "effect": [
+          { "u_buy_item": "stim2a2btg", "cost": 8500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "2 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
       }
     ]
   },
@@ -567,6 +584,22 @@
         "text": "[85$]  I'll need some parasites to be removed.",
         "effect": [
           { "u_buy_item": "stimObdolbos", "cost": 8500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "2 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[85$]  I feel dizzy after I teleported.  Smells weird, too.",
+        "effect": [
+          { "u_buy_item": "stimantiteleportglow", "cost": 8500, "count": 1 },
+          { "npc_add_effect": "currently_busy", "duration": "2 h" }
+        ],
+        "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"
+      },
+      {
+        "text": "[85$]  I ate too much.  Maybe I ate something weird.",
+        "effect": [
+          { "u_buy_item": "stim2a2btg", "cost": 8500, "count": 1 },
           { "npc_add_effect": "currently_busy", "duration": "2 h" }
         ],
         "topic": "TALK_PCZHIGHNURSE_STIMDEAL_END"

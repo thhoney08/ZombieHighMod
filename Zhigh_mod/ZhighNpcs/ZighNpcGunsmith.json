@@ -64,7 +64,7 @@
     "type": "item_group",
     "id": "NC_GUNSMITH_weapon",
     "items": [
-      { "item": "marble_gun", "ammo-item": "supernail", "charges": 5, "contents-item": [ "shoulder_strap", "holo_sight", "knife_combat" ] }
+      { "item": "marble_gun", "ammo-item": "super_nailZhigh", "charges": 5, "contents-item": [ "shoulder_strap", "holo_sight", "knife_combat" ] }
     ]
   },
   {
@@ -72,8 +72,9 @@
     "subtype": "collection",
     "id": "NC_GUNSMITH_misc",
     "items": [
-      { "item": "supernail" },
-      { "item": "supernail" },
+      { "item": "super_nailZhigh" },
+      { "item": "super_nailZhigh" },
+      { "group": "ZhighNpc_misc" },
       { "item": "combatnail", "count-min": 1, "count-max": 2, "prob": 100 }
     ]
   },

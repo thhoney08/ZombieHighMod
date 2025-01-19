@@ -1,0 +1,185 @@
+[
+  {
+    "type": "npc",
+    "id": "HAIRDRESSERZHIGH",
+    "name_unique": "Wu Yeon",
+    "name_suffix": "student",
+    "gender": "male",
+    "class": "NC_HAIRDRESSER",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_HAIRDRESSER",
+    "mission_offered": "MISSION_SCHOOL_GET_THREAD",
+    "faction": "Zhigh_Survivors"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_HAIRDRESSER",
+    "name": { "str": "Hairdresser" },
+    "job_description": "I design people's hair.",
+    "traits": [
+      { "group": "BG_survival_story_RURAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "Appearance_HAIRDRESSER" },
+      { "trait": "QUICK" },
+      [ "REGEN_zhigh", 100 ]
+    ],
+    "common": false,
+    "worn_override": "NC_HAIRDRESSER_worn",
+    "carry_override": "NC_HAIRDRESSER_carry",
+    "weapon_override": "NC_HAIRDRESSER_weapon",
+    "bonus_str": { "rng": [ 0, 1 ] },
+    "bonus_int": { "rng": [ -1, 2 ] },
+    "bonus_per": { "rng": [ 0, 1 ] },
+    "bonus_dex": { "rng": [ 4, 6 ] },
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "fabrication", "bonus": { "rng": [ 1, 6 ] } },
+      { "skill": "tailor", "bonus": { "rng": [ 4, 6 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 3, 4 ] } }
+    ]
+  },
+  {
+    "type": "trait_group",
+    "id": "Appearance_HAIRDRESSER",
+    "subtype": "collection",
+    "traits": [ { "trait": "hair_green_crewcut_mint", "prob": 100 }, 
+                { "trait": "eye_purple", "prob": 100 }, 
+                { "trait": "SKIN_LIGHT", "prob": 100 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_HAIRDRESSER_weapon",
+    "subtype": "distribution",
+    "entries": [ { "item": "xacto" } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_HAIRDRESSER_worn",
+    "subtype": "collection",
+    "entries": [
+      { "group": "npc_underwear_bottom_male" },
+      { "group": "npc_underwear_top_male" },
+      { "group": "ZhighNpc_underwear_feet_male" },
+      { "group": "ZhighNpc_shoes_male" },
+      { "item": "pants_zhigh" },
+      { "item": "dress_shirt_zhigh_march" },
+      { "item": "gloves_leather" },
+      { "item": "tie_necktie_zhigh" },
+      { "item": "blazer_zhigh" },
+      { "item": "wristwatch", "prob": 80 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_HAIRDRESSER_carry",
+    "subtype": "collection",
+    "entries": [
+      { "item": "pencil", "count": [ 1, 2 ] },
+      { "item": "tailor_portfolio" },
+      { "item": "ID_3rd" },
+      { "group": "ZhighNpc_misc" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HAIRDRESSER",
+    "dynamic_line": {
+      "u_is_wearing": "armband_zhigh_halmon",
+      "yes": [
+        "School hall monitor's fashion is always simple.",
+        "Hate the guys who wears that yellow armband.  Like you!",
+        "Damn.  One of you guys again?",
+        "I hate the apocalypse, it ruins fashion.  Although you hall monitors' fashion were ruined anyway.",
+        "You don't call that fashion, right?",
+        "Enforcers of school, ruiners of fashion."
+      ],
+      "no": [ 
+        "Now that is an outfit that I'd like to unsee.",
+        "Terrible outfit you have.",
+        "I hate the apocalypse, it ruins fashion.",
+        "You don't call that fashion, right?",
+        "Wear black and white if you know nothing about fashion.  Not all-black or all-white outfit, though.",
+        "Now that fashion is an eye sore."
+	  ]
+    },
+    "responses": [
+      { "text": "What is this place?", "topic": "TALK_HAIRDRESSER_PLACE" },
+      { "text": "Anything I can do for you?", "topic": "TALK_MISSION_LIST" },
+      { "text": "See you later.", "topic": "TALK_HAIRDRESSER_BYE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HAIRDRESSER_PLACE",
+    "dynamic_line": "This is a school that we are stuck inside.  Well, more fashion wondering time for me!",
+    "responses": [
+      { "text": "The world has ended, and you are still thinking about fashion?", "topic": "TALK_HAIRDRESSER_FASHION" },
+      { "text": "What do you trade?", "topic": "TALK_HAIRDRESSER_TRADE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HAIRDRESSER_FASHION",
+    "dynamic_line": "Why not?  Don't hurt to look good, not even in the face of Armageddon.",
+    "responses": [
+      { "text": "Whatever.", "topic": "TALK_HAIRDRESSER" },
+      { "text": "Hmph.  Good bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HAIRDRESSER_TRADE",
+    "dynamic_line": "Anything valuable really.  If you really want to know, go ask one of the actual traders.  I'm just with other survivors.",
+    "responses": [
+      { "text": "I'll go talk to them later.", "topic": "TALK_HAIRDRESSER" },
+      { "text": "Will do, thanks.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HAIRDRESSER_SCHOOLMONIT",
+    "dynamic_line": "They are the police type of guys for school. Well, they were, before the whole world ended.",
+    "responses": [
+      { "text": "Huh, I had another question.", "topic": "TALK_HAIRDRESSER" },
+      { "text": "Okay, I'll go look for him then. Thanks.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HAIRDRESSER_BYE",
+    "dynamic_line": "Stay fashionable out there.  Love to kill a poorly fashioned zombie.",
+    "responses": [ { "text": "Yeah, <name_b>.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "MISSION_SCHOOL_GET_THREAD",
+    "type": "mission_definition",
+    "name": { "str": "Thread needed" },
+    "description": "Get a hat or an outfit by giving a ton of thread.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 1,
+    "value": 1000,
+    "item": "thread",
+    "count": 5000,
+    "end": {
+      "opinion": { "trust": 1, "value": 1 },
+      "effect": [
+        { "u_buy_item": "clothesBoxZhigh", "count": 1 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SCHOOL_GET_THREAD",
+    "dialogue": {
+      "describe": "Let's have a deal.",
+      "offer": "The world is doomed, and I don't want to go out there.  Get me some thread and I'll give you something fashionable.",
+      "accepted": "Good to see you thinking about your outfit.",
+      "rejected": "Well, I'll find someone else then.",
+      "advice": "Plenty of them in towns.  Or disassemble some rags.",
+      "inquire": "Got them?",
+      "success": "So, you got the job done, great.",
+      "success_lie": "OK, then hand it over.",
+      "failure": "Shit happens."
+    }
+  }
+]
