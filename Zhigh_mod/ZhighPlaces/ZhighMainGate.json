@@ -8,7 +8,7 @@
     "looks_like": "school_1_3",
     "see_cost": 5,
     "mondensity": 8,
-    "flags": [ "NO_ROTATE", "RISK_HIGH" ]
+    "flags": [ "RISK_HIGH" ]
   },
   {
     "type": "mapgen",
@@ -44,10 +44,13 @@
         "***,_______,,_______,***"
       ],
       "palettes": [ "zhighMainGate_palette" ],
-      "place_monster": [ { "monster": "mon_turret_medium", "x": 6, "y": 6 },
-						 { "monster": "mon_turret_medium", "x": 6, "y": 17 },
-						 { "monster": "mon_turret_medium", "x": 17, "y": 6 },
-						 { "monster": "mon_turret_medium", "x": 17, "y": 17 } ]
+      "place_monster":
+	  [
+		{ "monster": "mon_turret_medium", "x": 6, "y": 6 },
+		{ "monster": "mon_turret_medium", "x": 6, "y": 17 },
+		{ "monster": "mon_turret_medium", "x": 17, "y": 6 },
+		{ "monster": "mon_turret_medium", "x": 17, "y": 17 }
+	  ]
     }
   },
   {
@@ -56,8 +59,8 @@
     "terrain": {
       "*": "t_wall_bulkhead",
       ",": "t_pavement_y",
-      "1": "t_gates_mech_control",
-      "2": "t_door_metal_locked",
+	  "1": "t_gates_mech_control",
+	  "2": [ [ "t_door_metal_locked", 20 ], [ "t_pavement", 20 ] ],
       "_": "t_pavement"
     }
   }

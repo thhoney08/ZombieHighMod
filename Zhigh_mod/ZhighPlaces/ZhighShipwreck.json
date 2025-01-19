@@ -85,7 +85,6 @@
         "+": "t_door_metal_bulkhead_c",
         "-": [ [ "t_bulkhead_floor", 20 ], [ "t_wall_bulkhead", 80 ] ],
         ".": [
-          "t_water_sh",
           { "ter": "t_water_sh" },
           { "ter": "t_dirt" },
           { "ter": "t_grass" },
@@ -154,7 +153,6 @@
         "+": "t_door_metal_bulkhead_c",
         "-": [ [ "t_bulkhead_floor", 10 ], [ "t_wall_bulkhead", 90 ] ],
         ".": [
-          "t_water_sh",
           { "ter": "t_water_sh" },
           { "ter": "t_dirt" },
           { "ter": "t_grass" },
@@ -173,12 +171,13 @@
         { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
         { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
         { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
+        { "class": "Zhigh_SoldierMedic", "x": [ 2, 22 ], "y": [ 2, 22 ] },
         { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
         { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] },
         { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] }
       ],
       "items": {
-		  "#": { "item": "military", "chance": 100, "repeat": 15 },
+		  "#": { "item": "military", "chance": 100, "repeat": 5 },
 		  "C": { "item": "military", "chance": 10, "repeat": 3 }
 	  }
     }
@@ -239,7 +238,7 @@
         { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] }
       ],
       "items": {
-		  "#": { "item": "military", "chance": 100, "repeat": 15 },
+		  "#": { "item": "military", "chance": 10, "repeat": 15 },
 		  "C": { "item": "military", "chance": 10, "repeat": 3 }
 	  }
     }
@@ -300,8 +299,8 @@
         { "class": "Zhigh_Soldier", "x": [ 2, 22 ], "y": [ 2, 22 ] }
       ],
       "items": {
-		  "9": { "item": "hardware_plumbing", "chance": 90, "repeat": 15 },
-		  "#": { "item": "military", "chance": 100, "repeat": 15 },
+		  "9": { "item": "hardware_plumbing", "chance": 90, "repeat": 5 },
+		  "#": { "item": "military", "chance": 100, "repeat": 5 },
 		  "C": { "item": "military", "chance": 20, "repeat": 5 }
 	  }
     }

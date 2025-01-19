@@ -310,7 +310,11 @@
       "items": {
         "C": { "item": "flt_loot_rare", "chance": 100 },
         "d": { "item": "flt_loot_misc", "chance": 100 },
-        "L": { "item": "flt_loot_misc", "chance": 100 },
+		"L": [ { "item": "flt_loot_misc", "chance": 100 }, 
+			   { "item": "flt_loot_misc", "chance": 100 }, 
+			   { "item": "flt_loot_misc", "chance": 100 }, 
+			   { "item": "flt_loot_rare", "chance": 100 }
+		],
         "b": { "item": "flt_loot_books", "chance": 100 },
         "F": { "item": "flt_loot_food", "chance": 100 },
         "t": { "item": "flt_loot_food", "chance": 100 },
@@ -371,7 +375,7 @@
         ">": "t_ladder_down"
       },
       "furniture": { "g": "f_grid_plut_generator", "h": "f_chair" },
-      "items": { "s": { "item": "flt_loot_vehicle", "chance": 100 }, ",": { "item": "trash_forest", "chance": 100 } }
+      "items": { "s": { "item": "flt_loot_vehicle", "chance": 100 }, ",": { "item": "trash_forest", "chance": 10 } }
     }
   },
   {
