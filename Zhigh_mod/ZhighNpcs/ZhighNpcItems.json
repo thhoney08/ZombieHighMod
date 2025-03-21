@@ -167,7 +167,11 @@
       [ "club_spiked", 5 ],
       [ "halligan", 5 ],
       [ "ny_hook", 5 ],
-      [ "pipe", 10 ]
+      [ "pipe", 10 ],
+	  { "group": "NC_THUG_bashing", "prob": 5 },
+	  { "group": "NC_THUG_cutting", "prob": 5 },
+	  { "group": "NC_THUG_stabbing", "prob": 5 },
+	  { "group": "NC_THUG_unarmed", "prob": 5 }
     ]
   },
   {
@@ -427,6 +431,10 @@
       [ "mask_panda", 5 ],
       [ "mask_beagle", 5 ],
       [ "mask_oni", 5 ],
+      [ "balclavaBandZhigh", 5 ],
+      [ "mask_plagueZhighBlk", 5 ],
+      [ "mask_plagueZhighWte", 5 ],
+      [ "mask_plagueZhighBrn", 5 ],
       [ "hat_furKingsGuardZhigh", 5 ],
       [ "mask_paintball", 5 ],
       [ "mask_cavalry_iron", 5 ],
@@ -480,7 +488,8 @@
       [ "helmet_football", 5 ],
       [ "pot_helmet", 5 ],
       [ "firehelmet", 5 ],
-      [ "helmet_army", 5 ],
+      [ "airsoftHelm_zhigh", 5 ],
+      [ "helmet_army", 1 ],
       [ "clown_wig", 5 ],
       [ "wetsuit_hood", 5 ],
       [ "nomex_hood", 5 ],
@@ -682,12 +691,10 @@
 		[ "knife_arkansasToothpickZhigh", 5 ],
 		[ "knife_hunting", 5 ],
 		[ "kunaiZhigh", 5 ],
-		[ "ninjatoStikZhigh", 5 ],
 		[ "knife_hitmanZhigh", 5 ],
 		[ "macheteSpetzZhigh", 5 ],
 		[ "knife_saex", 5 ],
 		[ "diveknife", 5 ],
-		[ "chakram", 5 ],
 		[ "knife_rambo", 5 ],
 		{ "group": "survivor_knife", "prob": 5 }
 	]
@@ -700,14 +707,12 @@
   {
     "type": "item_group",
     "id": "ZhighNpc_misc",
-    "ammo": 75,
-    "magazine": 50,
     "subtype": "collection",
-    "entries": [
-      { "item": "ZhighCoin", "count": [ 5, 10 ] },
+    "items": [
+      { "item": "ZhighCoin", "count": [ 5, 10 ], "prob": 80 },
       { "group": "ZhighNpc_throw", "count": [ 1, 2 ], "prob": 20 },
       { "group": "ZhighNadeGroups", "count": [ 0, 1 ], "prob": 10 },
-      { "item": "medkit2", "count": [ 0, 2 ] },
+      { "item": "medkit2", "count": [ 1, 2 ] },
       { "item": "zhigh_smart_phone_flashlight" }
     ]
   }

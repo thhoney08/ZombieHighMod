@@ -1,0 +1,212 @@
+[
+  {
+    "type": "npc",
+    "id": "RECRUITER",
+    "name_suffix": "student",
+    "gender": "male",
+    "class": "NC_Recruiter",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_RECRUITER",
+    "mission_offered": "MISSION_GET_SOFTWAREZHIGH",
+    "faction": "Zhigh_Survivors"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_Recruiter",
+    "name": { "str": "Recruiter" },
+    "job_description": "Fighting for the all-mighty dollar.",
+    "traits": [
+      { "group": "BG_survival_story_RURAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "Appearance_Mixed" },
+      { "trait": "QUICK" },
+      [ "REGEN_zhigh", 100 ]
+    ],
+    "common": false,
+    "worn_override": "NC_Recruiter_worn",
+    "carry_override": "NC_Recruiter_carry",
+    "weapon_override": "NC_Recruiter_wield",
+    "bonus_str": { "rng": [ 2, 4 ] },
+    "bonus_int": { "rng": [ -1, 2 ] },
+    "bonus_per": { "rng": [ 3, 4 ] },
+    "bonus_dex": { "rng": [ 2, 3 ] },
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 4, 6 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 1, 3 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_Recruiter_wield",
+    "items": [
+      { "item": "bbM134", "ammo-item": "bb", "charges": 1100, "contents-item": [ "charm_spike", "charm_grenade", "shoulder_strap" ], "prob": 5 },
+      { "item": "bbM60", "ammo-item": "bb", "charges": 1100, "contents-item": [ "charm_spike", "charm_grenade", "shoulder_strap" ], "prob": 10 },
+      { "item": "bbsmg", "ammo-item": "bb", "charges": 300, "contents-item": [ "charm_spike", "charm_grenade", "shoulder_strap" ], "prob": 10 },
+      { "item": "bbMp5", "ammo-item": "bb", "charges": 200, "contents-item": [ "charm_spike", "charm_grenade", "grip", "shoulder_strap" ], "prob": 10 },
+      { "item": "bbDMR", "ammo-item": "bb", "charges": 50, "contents-item": [ "charm_spike", "charm_grenade", "grip", "shoulder_strap" ], "prob": 10 },
+      { "item": "bbBRifle", "ammo-item": "bb", "charges": 300, "contents-item": [ "charm_spike", "charm_grenade", "grip", "shoulder_strap" ], "prob": 10 },
+      { "item": "bbM4", "ammo-item": "bb", "charges": 300, "contents-item": [ "charm_spike", "charm_grenade", "grip", "shoulder_strap" ], "prob": 15 },
+      { "item": "bbAr15", "ammo-item": "bb", "charges": 300, "contents-item": [ "charm_spike", "charm_grenade", "grip", "shoulder_strap" ], "prob": 15 },
+      { "item": "bbAkm", "ammo-item": "bb", "charges": 300, "contents-item": [ "charm_spike", "charm_grenade", "grip", "shoulder_strap" ], "prob": 15 },
+      { "item": "bbScar", "ammo-item": "bb", "charges": 300, "contents-item": [ "charm_spike", "charm_grenade", "grip", "shoulder_strap" ], "prob": 15 },
+      { "item": "bbgun", "ammo-item": "bb", "charges": 300, "contents-item": [ "charm_spike", "charm_grenade", "shoulder_strap" ], "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_Recruiter_worn",
+    "subtype": "collection",
+    "entries": [
+      { "group": "npc_underwear_bottom_male" },
+      { "group": "npc_underwear_top_male" },
+      { "group": "NC_SOLDIER_shoes" },
+      { "group": "ZhighNpc_shoes_male" },
+      { "item": "pants_zhigh" },
+      { "item": "tshirt_tour" },
+      { "group": "NC_SOLDIER_gloves" },
+      { "group": "NC_SOLDIER_masks" },
+      { "group": "NC_SOLDIER_hat" },
+      { "group": "NC_TRADER_storage" },
+      { "item": "modularvest" },
+      { "item": "wristwatch", "prob": 80 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_Recruiter_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "ZhighNpc_misc" },
+      { "group": "ZhighNpc_stabbing" },
+      { "item": "zhigh_smart_phone_flashlight" },
+      { "item": "bb" },
+      { "item": "bb" },
+      { "item": "BBclip300", "ammo-item": "bb", "charges": 300 },
+      { "item": "BBclip300", "ammo-item": "bb", "charges": 300 },
+      { "item": "protein_bar_evac" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_RECRUITER",
+    "dynamic_line": {
+      "u_is_wearing": "armband_zhigh_halmon",
+      "yes": [
+        "Good to see a fellow who is our school student."
+      ],
+      "no": [ 
+        "Good to see somone alive."
+	  ]
+    },
+    "responses": [
+      { "text": "What is this place?", "topic": "TALK_RECRUITER_PLACE" },
+      { "text": "Anything I can do for you?", "topic": "TALK_MISSION_LIST" },
+      { "text": "See you later.", "topic": "TALK_RECRUITER_BYE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_RECRUITER_PLACE",
+    "dynamic_line": "A bb shooting range.  After this shtf happened, we made this place into a base. Not much, but still.",
+    "responses": [
+      { "text": "So the world is doomed, and this is some kinda shelter, yeah?", "topic": "TALK_RECRUITER_GOVERNMENT" },
+      { "text": "What do you trade?", "topic": "TALK_RECRUITER_TRADE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_RECRUITER_GOVERNMENT",
+    "dynamic_line": "Yeah.  Still, we don't have much, but this is better than nothing.",
+    "responses": [
+      { "text": "Oh, okay.", "topic": "TALK_RECRUITER" },
+      { "text": "Oh, okay.  Talk to you later!", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_RECRUITER_TRADE",
+    "dynamic_line": "Not here, actually.  You could go to our school, then they will trade.",
+    "responses": [
+      { "text": "I'll go talk to them later.", "topic": "TALK_RECRUITER" },
+      { "text": "Will do, thanks!", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_RECRUITER_BYE",
+    "dynamic_line": "Stay safe out there.  Hate to have to kill you after you've already died.",
+    "responses": [ { "text": "Yeah, I won't.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "MISSION_GET_SOFTWAREZHIGH",
+    "type": "mission_definition",
+    "name": { "str": "Retrieve Software" },
+    "goal": "MGOAL_FIND_ANY_ITEM",
+    "description": "Visit the location this person requested you to visit and <color_light_red>access the terminal their software is stored on</color>.  You'll need to bring an <color_light_blue>empty USB drive</color> with you.",
+    "difficulty": 2,
+    "value": 80000,
+    "place": "near_town",
+    "start": "place_npc_software",
+    "followup": "MISSION_KILL_FERALZHIGH",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "Oh man, I can't believe I forgot to download it…",
+      "offer": "There's some important software on my computer that I need on USB.",
+      "accepted": "Thanks!  Just pull the data onto this USB drive and bring it to me.",
+      "rejected": "Seriously?  It's an easy job…",
+      "advice": "Take this USB drive.  Use the console, and download the software.",
+      "inquire": "So, do you have my software yet?",
+      "success": "Excellent, thank you!",
+      "success_lie": "What?!  You liar!",
+      "failure": "Wow, you failed?  All that work, down the drain…"
+    }
+  },
+  {
+    "id": "MISSION_KILL_FERALZHIGH",
+    "type": "mission_definition",
+    "name": { "str": "Kill Feral Hall Monitor" },
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 5,
+    "value": 200000,
+    "urgent": true,
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "s_gun",
+        "reveal_radius": 6,
+        "search_range": 200,
+        "min_distance": 45,
+        "z": 0
+      },
+      "update_mapgen": {
+		  "place_monster": [
+			{ "monster": "mon_feral_human_SchoolWatchzhighBoss", "name": "The Boss", "x": [ 0, 23 ], "y": [ 0, 23 ], "target": true },
+			{ "monster": "mon_feral_human_SchoolWatchzhigh", "name": "The Underboss", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+			{ "monster": "mon_feral_human_SchoolWatchzhigh", "name": "The Crew", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+			{ "monster": "mon_feral_human_SchoolWatchzhigh", "name": "The Soldier", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+			{ "monster": "mon_feral_human_SchoolWatchzhigh", "name": "The Associate", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+		  ]
+	  }
+    },
+    "end": {
+      "effect": [
+        { "u_buy_item": "cardZhigh_school", "count": 1 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_GET_SOFTWAREZHIGH",
+    "dialogue": {
+      "describe": "I've sent some team, and they did not made it out alive...",
+      "offer": "A few days ago I sent some team of school hall monitors, but the last thing I've heard was them going mad for some reason.",
+      "accepted": "Thanks, make sure you're ready for whatever they are.",
+      "rejected": "Hey, I know I wouldn't volunteer for it either.",
+      "advice": "I'd carry a shotgun at least, I've sent pretty lot of them.",
+      "inquire": "Any luck?",
+      "success": "You look a little shaken up, I can't tell you how glad I am that you killed it though.",
+      "success_lie": "Something in the shadows still seems to stare at me when I look at the woods.",
+      "failure": "I'm glad you came back alive…  I wasn't sure if I had sent you to your death."
+    }
+  }
+]
