@@ -1,11 +1,21 @@
 [
   {
+    "id": "ACID_TRAIL",
+    "type": "ammo_effect",
+    "trail": { "field_type": "fd_acid", "intensity_min": 1, "intensity_max": 3 }
+  },
+  {
     "id": "FRAGBOMBLANCE",
     "type": "ammo_effect",
     "explosion": { 
       "damage": 80,
       "radius": 2,
       "fragment": { "impact": { "damage_type": "cut", "amount": 80, "armor_multiplier": 8 }, "range": 2 } }
+  },
+  {
+    "id": "TRAILZHIGH",
+    "type": "ammo_effect",
+    "trail": { "field_type": "fd_smoke", "intensity_min": 3, "intensity_max": 3 }
   },
   {
     "id": "FRAG_BIG",
@@ -24,12 +34,37 @@
       "fragment": { "impact": { "damage_type": "cut", "amount": 50, "armor_multiplier": 3 }, "range": 5 } }
   },
   {
-    "id": "FRAG_SMALL",
+    "id": "FRAG_SMALLZHIGH",
     "type": "ammo_effect",
     "explosion": { 
       "damage": 20,
       "radius": 2,
       "fragment": { "impact": { "damage_type": "cut", "amount": 30, "armor_multiplier": 3 }, "range": 3 } }
+  },
+  {
+    "id": "FRAG_RAYGUNZHIGH",
+    "type": "ammo_effect",
+    "explosion": { "fragment": { "impact": { "damage_type": "bullet", "amount": 100, "armor_multiplier": 2 }, "range": 2 } }
+  },
+  {
+    "id": "DAZZLETRAILZHIGH",
+    "type": "ammo_effect",
+    "trail": { "field_type": "fd_dazzling", "intensity_min": 1, "intensity_max": 3 }
+  },
+  {
+    "id": "LIGHTAOEZHIGH",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_spotlight", "intensity_min": 3, "intensity_max": 3, "size": 1 }
+  },
+  {
+    "id": "BWIREAOEZHIGH",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_barbedWireZhigh", "intensity_min": 1, "intensity_max": 3, "size": 2 }
+  },
+  {
+    "id": "BWIRETRAILZHIGH",
+    "type": "ammo_effect",
+    "trail": { "field_type": "fd_barbedWireZhigh", "intensity_min": 1, "intensity_max": 3 }
   },
   {
     "id": "LIGHTNINGZHIGH",
@@ -125,5 +160,15 @@
     "id": "NUKEGAS",
     "type": "ammo_effect",
     "aoe": { "field_type": "fd_nuke_gas", "intensity_min": 3, "intensity_max": 3 }
+  },
+  {
+    "id": "FIREWORKZHIGH",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_dazzling", "intensity_min": 1, "intensity_max": 3, "size": 2 }
+  },
+  {
+    "id": "FIREWORK2ZHIGH",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_laser", "intensity_min": 1, "intensity_max": 3, "size": 5 }
   }
 ]

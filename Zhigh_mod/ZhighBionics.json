@@ -87,7 +87,8 @@
     "bash_protec": [ [ "arm_l", 12 ], [ "arm_r", 12 ], [ "hand_l", 12 ], [ "hand_r", 12 ] ],
     "cut_protec": [ [ "arm_l", 12 ], [ "arm_r", 12 ], [ "hand_l", 12 ], [ "hand_r", 12 ] ],
     "bullet_protec": [ [ "arm_l", 10 ], [ "arm_r", 10 ], [ "hand_l", 10 ], [ "hand_r", 10 ] ],
-    "flags": [ "BIONIC_NPC_USABLE", "BIONIC_SHOCKPROOF" ]
+    "flags": [ "BIONIC_NPC_USABLE", "BIONIC_SHOCKPROOF" ],
+    "upgraded_bionic": "bio_armor_arms"
   },
   {
     "id": "bio_armorV2_eyes",
@@ -98,7 +99,8 @@
     "env_protec": [ [ "eyes", 14 ] ],
     "bash_protec": [ [ "eyes", 6 ] ],
     "cut_protec": [ [ "eyes", 6 ] ],
-    "flags": [ "BIONIC_NPC_USABLE", "BIONIC_SHOCKPROOF" ]
+    "flags": [ "BIONIC_NPC_USABLE", "BIONIC_SHOCKPROOF" ],
+    "upgraded_bionic": "bio_armor_eyes"
   },
   {
     "id": "bio_armorV2_head",
@@ -109,7 +111,8 @@
     "bash_protec": [ [ "head", 12 ], [ "mouth", 12 ] ],
     "cut_protec": [ [ "head", 12 ], [ "mouth", 12 ] ],
     "bullet_protec": [ [ "head", 10 ], [ "mouth", 10 ] ],
-    "flags": [ "BIONIC_NPC_USABLE", "BIONIC_SHOCKPROOF" ]
+    "flags": [ "BIONIC_NPC_USABLE", "BIONIC_SHOCKPROOF" ],
+    "upgraded_bionic": "bio_armor_head"
   },
   {
     "id": "bio_armorV2_legs",
@@ -120,7 +123,8 @@
     "bash_protec": [ [ "leg_l", 12 ], [ "leg_r", 12 ], [ "foot_l", 12 ], [ "foot_r", 12 ] ],
     "cut_protec": [ [ "leg_l", 12 ], [ "leg_r", 12 ], [ "foot_l", 12 ], [ "foot_r", 12 ] ],
     "bullet_protec": [ [ "leg_l", 10 ], [ "leg_r", 10 ], [ "foot_l", 10 ], [ "foot_r", 10 ] ],
-    "flags": [ "BIONIC_NPC_USABLE", "BIONIC_SHOCKPROOF" ]
+    "flags": [ "BIONIC_NPC_USABLE", "BIONIC_SHOCKPROOF" ],
+    "upgraded_bionic": "bio_armor_legs"
   },
   {
     "id": "bio_armorV2_torso",
@@ -131,11 +135,13 @@
     "bash_protec": [ [ "torso", 12 ] ],
     "cut_protec": [ [ "torso", 12 ] ],
     "bullet_protec": [ [ "torso", 12 ] ],
-    "flags": [ "BIONIC_NPC_USABLE", "BIONIC_SHOCKPROOF" ]
+    "flags": [ "BIONIC_NPC_USABLE", "BIONIC_SHOCKPROOF" ],
+    "upgraded_bionic": "bio_armor_torso"
   },
   {
     "id": "bio_armorV2_arms",
     "copy-from": "bionic_general_npc_usable",
+    "looks_like": "bio_int_enhancer",
     "type": "BIONIC_ITEM",
     "name": { "str": "Arms Alloy Plating Mk.2 CBM" },
     "description": "The better version of the original alloy plating that replaces the flesh on the user's arms.  Provides 12 bash and cut protection, 10 ballistic protection, and can be used in conjunction with bionic martial arts.",
@@ -145,9 +151,9 @@
   {
     "id": "bio_armorV2_eyes",
     "copy-from": "bionic_general_npc_usable",
+    "looks_like": "bio_int_enhancer",
     "type": "BIONIC_ITEM",
     "name": { "str": "Protective Lenses Mk.2 CBM" },
-    "looks_like": "bio_int_enhancer",
     "description": "A bionic package that seals the user's eye sockets with highly protective mirrored lenses and re-routes their tear ducts to their mouth.  Provides 3 bash and cut protection, and 7 environmental protection.",
     "price": "5500 USD",
     "weight": "500 g",
@@ -156,9 +162,9 @@
   {
     "id": "bio_armorV2_head",
     "copy-from": "bionic_general_npc_usable",
+    "looks_like": "bio_int_enhancer",
     "type": "BIONIC_ITEM",
     "name": { "str": "Head Alloy Plating Mk.2 CBM" },
-    "looks_like": "bio_int_enhancer",
     "description": "The better version of the original alloy plating that replaces the flesh on the user's head, protecting both their head and jaw regions.  Provides 12 bash and cut protection, and 10 ballistic protection.",
     "price": "3500 USD",
     "weight": "1000 g",
@@ -167,9 +173,9 @@
   {
     "id": "bio_armorV2_legs",
     "copy-from": "bionic_general_npc_usable",
+    "looks_like": "bio_int_enhancer",
     "type": "BIONIC_ITEM",
     "name": { "str": "Legs Alloy Plating Mk.2 CBM" },
-    "looks_like": "bio_int_enhancer",
     "description": "The better version of the original alloy plating that replaces the flesh on the user's legs.  Provides 12 bash and cut protection, 10 ballistic protection, and can be used in conjunction with bionic martial arts.",
     "price": "3500 USD",
     "difficulty": 3
@@ -177,12 +183,95 @@
   {
     "id": "bio_armorV2_torso",
     "copy-from": "bionic_general_npc_usable",
+    "looks_like": "bio_int_enhancer",
     "type": "BIONIC_ITEM",
     "name": { "str": "Torso Alloy Plating Mk.2 CBM" },
-    "looks_like": "bio_int_enhancer",
     "description": "The better version of the original alloy plating that replaces the flesh on the user's torso, protecting it from physical trauma.  Provides 12 bash and cut protection, and 12 ballistic protection.",
     "price": "3500 USD",
     "weight": "3000 g",
     "difficulty": 4
+  },
+  {
+    "id": "bio_laserEyeZhigh",
+    "copy-from": "bionic_general",
+    "looks_like": "bio_int_enhancer",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Laser Flash Eye CBM" },
+    "description": "Heavy-duty laser eye was integrated into your left eye!  You may use your energy banks to fire a damaging electric flash.",
+    "price": "2200 USD",
+    "difficulty": 3
+  },
+  {
+    "id": "bio_laserEyeZhigh",
+    "type": "bionic",
+    "name": { "str": "Laser Flash Eye" },
+    "description": "Heavy-duty laser eye was integrated into your left eye!  You may use your energy banks to fire a damaging electric flash.",
+    "occupied_bodyparts": [ [ "eyes", 1 ] ],
+    "act_cost": "3 kJ",
+    "fake_item": "bio_laserEyeZhigh_gun",
+    "flags": [ "BIONIC_GUN", "BIONIC_NPC_USABLE" ]
+  },
+  {
+    "id": "bio_laserEyeZhigh_gun",
+    "looks_like": "bio_infrared",
+    "weapon_category": [ "ENERGY_WEAPONS" ],
+    "type": "GUN",
+    "name": { "str": "laser flash eye" },
+    "description": "this a pseudo item",
+    "volume": "1 L",
+    "price": "0 cent",
+    "material": [ "steel", "plastic" ],
+    "symbol": "(",
+    "color": "magenta",
+    "skill": "pistol",
+    "range": 10,
+    "ranged_damage": { "damage_type": "electric", "amount": 22, "armor_penetration": 30 },
+    "dispersion": 30,
+    "durability": 10,
+    "loudness": 12,
+    "modes": [ [ "DEFAULT", "3 rd.", 3 ] ],
+    "reload": 500,
+    "ammo_effects": [ "BLINDS_EYES", "DAZZLETRAILZHIGH", "PLASMA" ],
+    "flags": [ "NEVER_JAMS", "NO_DROP", "NEVER_JAMS", "TRADER_AVOID" ]
+  },
+  {
+    "id": "bio_hidBladeZhigh",
+    "type": "bionic",
+    "name": { "str": "Hidden Blade" },
+    "description": "Your left hand conceals a short blade, which is, or was, good for assassinating.",
+    "occupied_bodyparts": [ [ "hand_l", 1 ] ],
+    "act_cost": "0 J",
+    "fake_item": "bio_hidBladeZhigh_weapon",
+    "flags": [ "BIONIC_TOGGLED", "BIONIC_WEAPON", "BIONIC_NPC_USABLE" ]
+  },
+  {
+    "id": "bio_hidBladeZhigh",
+    "copy-from": "bionic_general_npc_usable",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Hidden Blade CBM" },
+    "looks_like": "bio_int_enhancer",
+    "description": "A razor-sharp knife of advanced material that is installed inside the hand, able to use with just a flick of the user's wrist.  Though exceptionally sharp, it will prevent the user from holding anything else while extended.",
+    "price": "2000 USD",
+    "weight": "250 g",
+    "difficulty": 0
+  },
+  {
+    "id": "bio_hidBladeZhigh_weapon",
+    "looks_like": "switchblade",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "BIONIC_WEAPONRY", "KNIVES" ],
+    "name": { "str": "hidden blade" },
+    "description": "A long, thin knife of high-tech material, good for assassinating enemies.",
+    "weight": "100 g",
+    "to_hit": 3,
+    "color": "dark_gray",
+    "symbol": "{",
+    "material": [ "superalloy" ],
+    "techniques": [ "WIDE" ],
+    "volume": "250 ml",
+    "cutting": 18,
+    "flags": [ "STAB", "UNARMED_WEAPON", "NO_DROP", "NO_UNWIELD", "UNBREAKABLE_MELEE", "TRADER_AVOID" ],
+    "qualities": [ [ "SAW_M", 1 ], [ "SAW_W", 1 ] ]
   }
 ]

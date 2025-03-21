@@ -740,9 +740,7 @@
 		{
 			"type": "sew_advanced",
 			"materials": [
-			"cotton", "leather", "nylon", "wool", "fur",
-			"faux_fur", "nomex", "kevlar", "neoprene",
-			"gutskin", "plastic", "kevlar_rigid"
+			"cotton", "leather", "nylon", "wool", "fur", "faux_fur", "nomex", "kevlar", "neoprene",	"gutskin", "plastic", "kevlar_rigid"
 			],
 			"skill": "tailor",
 			"clothing_mods": [ "leather_padded", "steel_padded", "alloy_padded", "kevlar_padded", "furred", "wooled" ]
@@ -1414,6 +1412,95 @@
     "copy-from": "cowboy_hat",
     "name": { "str": "cowboy hat" },
     "description": "Whether you are cleaning zoos, feeding some animals, or fighting some undead, this is the hat for the job."
+  },
+  {
+    "id": "cowboy_hat_zhigh1",
+    "type": "ARMOR",
+    "copy-from": "cowboy_hat",
+    "name": { "str": "cowboy hat" },
+    "description": "Whether you are cleaning zoos, feeding some animals, or robbing some banks, this is the hat for the job."
+  },
+  {
+    "id": "poncho_zhigh",
+    "type": "ARMOR",
+    "copy-from": "poncho",
+    "name": { "str": "cotton poncho" },
+    "material": [ "cotton" ]
+  },
+  {
+    "id": "airsoftHelm_zhigh",
+    "type": "ARMOR",
+    "copy-from": "helmet_bike",
+    "name": { "str": "airsoft helmet" },
+    "description": "A lightweight helmet that is fashioned to look like a real military helmet, but is made of plastic and only protects against BB's and other light threats.",
+    "looks_like": "helmet_army"
+  },
+  {
+    "id": "mask_SquidTriZhigh",
+    "type": "ARMOR",
+    "copy-from": "mask_hockey",
+    "name": { "str": "soldier mask" },
+    "description": "A protective face mask made of thick plastic.  Commonly worn by pink soldiers."
+  },
+  {
+    "id": "mask_SquidSqaZhigh",
+    "type": "ARMOR",
+    "copy-from": "mask_hockey",
+    "name": { "str": "soldier mask" },
+    "description": "A protective face mask made of thick plastic.  Commonly worn by pink soldiers."
+  },
+  {
+    "id": "mask_SquidCirZhigh",
+    "type": "ARMOR",
+    "copy-from": "mask_hockey",
+    "name": { "str": "soldier mask" },
+    "description": "A protective face mask made of thick plastic.  Commonly worn by pink soldiers."
+  },
+  {
+    "id": "jacket_tracksuitSquidGrn_zhigh",
+    "repairs_like": "trenchcoat",
+    "copy-from": "jacket_light",
+    "type": "ARMOR",
+    "coverage": 95,
+    "name": { "str": "tracksuit jacket" },
+    "description": "A green cotton jacket.  Good for brisk weather and light workout.",
+    "flags": [ "VARSIZE", "POCKETS", "OUTER" ]
+  },
+  {
+    "id": "pants_tracksuitSquidGrn_zhigh",
+    "type": "ARMOR",
+    "copy-from": "technician_pants_gray",
+    "name": { "str": "tracksuit pants" },
+    "description": "A pair of green tracksuit pants.",
+    "color": "blue",
+    "encumbrance": 8,
+    "storage": "1600 ml",
+    "warmth": 15,
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "POCKETS" ]
+  },
+  {
+    "id": "jacket_tracksuitSquidPnk_zhigh",
+    "repairs_like": "trenchcoat",
+    "copy-from": "jacket_light",
+    "type": "ARMOR",
+    "coverage": 95,
+    "name": { "str": "tracksuit jacket" },
+    "description": "A pink cotton jacket.  Good for brisk weather and light workout.",
+    "flags": [ "VARSIZE", "POCKETS", "OUTER" ]
+  },
+  {
+    "id": "pants_tracksuitSquidPnk_zhigh",
+    "type": "ARMOR",
+    "copy-from": "technician_pants_gray",
+    "name": { "str": "tracksuit pants" },
+    "description": "A pair of pink tracksuit pants.",
+    "color": "blue",
+    "encumbrance": 8,
+    "storage": "1600 ml",
+    "warmth": 15,
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "POCKETS" ]
   },
   {
     "id": "medcase",
@@ -2808,6 +2895,15 @@
     "flags": [ "VARSIZE", "POCKETS" ]
   },
   {
+    "id": "suitOfficerZhigh",
+    "repairs_like": "suit",
+    "copy-from": "suit",
+    "name": { "str": "officer uniform" },
+    "description": "A sleek navy/green black suit for general officers in the army or the navy.  A symbol of a bygone world.",
+    "type": "ARMOR",
+    "flags": [ "VARSIZE", "POCKETS", "FANCY" ]
+  },
+  {
     "id": "helmet_motorBikerZhigh",
     "repairs_like": "helmet_motor",
     "copy-from": "helmet_motor",
@@ -3386,7 +3482,7 @@
     "to_hit": -1,
     "material": [ "paper" ],
     "symbol": "O",
-    "looks_like": "armor_scrapsuit",
+    "looks_like": "costumePowerArmorZhigh",
     "color": "light_gray",
     "covers": [ "torso", "arms", "hands", "legs", "feet" ],
     "coverage": 96,
@@ -4508,5 +4604,104 @@
         }
       ]
     }
+  },
+  {
+    "id": "shield_buckler_PeltaZhigh",
+    "copy-from": "shield_buckler",
+    "type": "ARMOR",
+    "name": { "str": "pelta shield" },
+    "description": "A small wooden shield historically used for light protection from arrows.  This one is made of wood.  It's small and light enough to not hinder the use of your hands.",
+    "material": [ "wood" ],
+    "color": "blue",
+    "encumbrance": 13,
+    "proportional": { "weight": 2, "price": 0.6, "price_postapoc": 0.6 }
+  },
+  {
+	"id": "nguniShieldZhigh",
+    "looks_like": "shield_leather_large",
+	"type": "ARMOR",
+	"name": { "str": "nguni shield" },
+	"description": "A large leather shield from Africa.  Light, less encumbering and covers a lot of areas, but not that sturdy compard to the wooden ones.",
+	"weight": "4200 g",
+	"volume": "5 L",
+	"price": "80 USD",
+	"price_postapoc": "10 USD",
+	"to_hit": -1,
+	"bashing": 8,
+	"material": [ "bone", "leather" ],
+	"symbol": "[",
+	"color": "blue",
+	"covers": [	"arm_either", "hand_either", "leg_either" ],
+	"coverage": 95,
+	"encumbrance": 16,
+	"material_thickness": 4,
+	"techniques": [	"WBLOCK_3" ],
+	"flags": [
+	  "OVERSIZE",
+	  "BELTED",
+	  "RESTRICT_HANDS",
+	  "BLOCK_WHILE_WORN",
+	  "POWERARMOR_COMPATIBLE"
+	],
+	"copy-from": "shield_leather"
+  },
+  {
+    "id": "nazarZhigh",
+    "type": "ARMOR",
+    "name": { "str": "nazar" },
+    "description": "An eye-shaped amulet believed by many to protect against the evil eye.  Also doubles as a set of prayer beads, if you're so inclined.",
+    "looks_like": "silver_necklace",
+    "weight": "15 g",
+    "volume": "10 ml",
+    "price": "1 USD",
+    "price_postapoc": "10 cent",
+    "material": [ "stone" ],
+    "flags": [ "FANCY" ],
+    "symbol": "u",
+    "color": "blue",
+    "use_action": "MEDITATE"
+  },
+  {
+    "id": "balclavaBandZhigh",
+    "looks_like": "bandages",
+    "type": "ARMOR",
+    "name": { "str": "bandage balaclava" },
+    "description": "A warm covering that protects the head and face from the cold, improvised from bandages.",
+    "weight": "40 g",
+    "volume": "250 ml",
+    "price": "35 USD",
+    "price_postapoc": "50 cent",
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "covers": [ "head", "mouth" ],
+    "coverage": 95,
+    "encumbrance": 5,
+    "warmth": 20,
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "SKINTIGHT", "POWERARMOR_COMPATIBLE" ]
+  },
+  {
+    "id": "kasayaZhigh",
+    "repairs_like": "trenchcoat",
+    "type": "ARMOR",
+    "name": { "str": "Kasaya" },
+    "description": "A piece of clerical clothing, usually worn by Buddhist priests.",
+    "weight": "1000 g",
+    "volume": "5 L",
+    "price": "50 USD",
+    "price_postapoc": "250 cent",
+    "to_hit": -5,
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "looks_like": "cloak",
+    "color": "brown",
+    "covers": [ "legs", "torso", "arms" ],
+    "coverage": 80,
+    "encumbrance": 12,
+    "storage": "3 L",
+    "warmth": 20,
+    "material_thickness": 2,
+    "flags": [ "VARSIZE" ]
   }
 ]

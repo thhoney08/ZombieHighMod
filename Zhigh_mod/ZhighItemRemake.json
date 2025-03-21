@@ -455,81 +455,6 @@
     "flags": [ "BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS", "WATER_FRIENDLY" ]
   },
   {
-    "//": "Got this line of code from dogmeat's mod.",
-    "id": "flamethrower",
-    "type": "GUN",
-    "name": { "str": "flamethrower" },
-    "copy-from": "flamethrower",
-    "ammo": [ "jp8", "motor_oil", "lamp_oil", "flammable", "diesel", "gasoline" ],
-    "flags": [ "FIRESTARTER", "NEVER_JAMS", "PYROMANIAC_WEAPON" ],
-    "magazines": [ [ "flammable", [ "aux_pressurized_tank", "pressurized_tank" ] ],
-                   [ "jp8", [ "aux_pressurized_tank", "pressurized_tank" ] ],
-                   [ "motor_oil", [ "aux_pressurized_tank", "pressurized_tank" ] ],
-                   [ "lamp_oil", [ "aux_pressurized_tank", "pressurized_tank" ] ],
-                   [ "diesel", [ "aux_pressurized_tank", "pressurized_tank" ] ],
-                   [ "gasoline", [ "aux_pressurized_tank", "pressurized_tank" ] ]
-                 ]
-  },
-  {
-    "id": "rm451_flamethrower",
-    "type": "GUN",
-    "name": { "str": "RM451 flamethrower" },
-    "copy-from": "rm451_flamethrower",
-    "ammo": [ "jp8", "motor_oil", "lamp_oil", "flammable", "diesel", "gasoline" ],
-    "flags": [ "FIRESTARTER", "NEVER_JAMS", "PYROMANIAC_WEAPON" ],
-    "magazines": [ [ "jp8", [ "rm4502", "rm4504" ] ],
-                   [ "motor_oil", [ "rm4502", "rm4504" ] ],
-                   [ "lamp_oil", [ "rm4502", "rm4504" ] ],
-                   [ "flammable", [ "rm4502", "rm4504" ] ],
-                   [ "diesel", [ "rm4502", "rm4504" ] ],
-                   [ "gasoline", [ "rm4502", "rm4504" ] ]
-                 ]
-  },
-  {
-    "id": "flamethrower_simple",
-    "type": "GUN",
-    "name": { "str": "simple flamethrower" },
-    "copy-from": "flamethrower_simple",
-    "ammo": [ "jp8", "motor_oil", "lamp_oil", "flammable", "diesel", "gasoline" ],
-    "flags": [ "FIRESTARTER", "NEVER_JAMS", "PYROMANIAC_WEAPON" ],
-    "magazines": [ [ "flammable", [ "aux_pressurized_tank", "pressurized_tank" ] ],
-                   [ "jp8", [ "aux_pressurized_tank", "pressurized_tank" ] ],
-                   [ "motor_oil", [ "aux_pressurized_tank", "pressurized_tank" ] ],
-                   [ "lamp_oil", [ "aux_pressurized_tank", "pressurized_tank" ] ],
-                   [ "diesel", [ "aux_pressurized_tank", "pressurized_tank" ] ],
-                   [ "gasoline", [ "aux_pressurized_tank", "pressurized_tank" ] ]
-                 ],
-    "valid_mod_locations": [ [ "sling", 1 ] ]
-  },
-  {
-    "id": "pressurized_tank",
-    "type": "MAGAZINE",
-    "name": { "str": "pressurized fuel tank" },
-    "copy-from": "pressurized_tank",
-    "ammo_type": [ "jp8", "motor_oil", "lamp_oil", "flammable", "diesel", "gasoline" ]
-  },
-  {
-    "id": "aux_pressurized_tank",
-    "type": "MAGAZINE",
-    "name": { "str": "small pressurized fuel tank" },
-    "copy-from": "aux_pressurized_tank",
-    "ammo_type": [ "jp8", "motor_oil", "lamp_oil", "flammable", "diesel", "gasoline" ]
-  },
-  {
-    "id": "rm4502",
-    "type": "MAGAZINE",
-    "name": { "str": "RM450-2 fuel canister" },
-    "copy-from": "rm4502",
-    "ammo_type": [ "jp8", "motor_oil", "lamp_oil", "flammable", "diesel", "gasoline" ]
-  },
-  {
-    "id": "rm4504",
-    "type": "MAGAZINE",
-    "name": { "str": "RM450-4 fuel canister" },
-    "copy-from": "rm4504",
-    "ammo_type": [ "jp8", "motor_oil", "lamp_oil", "flammable", "diesel", "gasoline" ]
-  },
-  {
     "id": "bp_shot_bird",
     "type": "AMMO",
     "name": { "str": "birdshot, black powder" },
@@ -787,13 +712,6 @@
     "//": "The code from dogmeat's mod ends here."
   },
   {
-    "id": "shocktonfa_on",
-    "copy-from": "shocktonfa_on",
-    "type": "TOOL",
-    "name": { "str": "tactical tonfa (on)", "str_pl": "tactical tonfas (on)" },
-    "flags": [ "DURABLE_MELEE", "TRADER_AVOID", "NONCONDUCTIVE", "BELT_CLIP", "LIGHT_300" ]
-  },
-  {
     "id": "1st_aid",
     "copy-from": "1st_aid",
     "type": "GENERIC",
@@ -879,7 +797,7 @@
     "copy-from": "surv_rocket_launcher",
     "type": "GUN",
     "name": { "str": "crude rocket launcher" },
-    "ammo": [ "homebrew_rocket", "m235", "40x46mm", "RPG-7", "atgm", "84x246mm" ]
+    "ammo": [ "cannon", "homebrew_rocket", "m235", "40x46mm", "RPG-7", "atgm", "84x246mm" ]
   },
   {
     "id": "case_violin",
@@ -891,7 +809,7 @@
       "max_volume": "2500 ml",
       "min_volume": "1500 ml",
       "draw_cost": 200,
-      "skills": [ "smg", "shotgun", "rifle", "launcher" ]
+      "skills": [ "smg", "shotgun", "rifle" ]
     }
   },
   {
@@ -1866,7 +1784,7 @@
     "durability": 9,
     "recoil": 100,
     "clip_size": 21,
-    "ammo": [ "pebble", "paintball" ]
+    "ammo": [ "pebble", "paintball", "nail" ]
   },
   {
     "id": "triple_launcher_simple",
@@ -2030,7 +1948,7 @@
     "ranged_damage": { "damage_type": "bullet", "amount": 2 },
     "dispersion": 50,
     "durability": 8,
-    "clip_size": 75,
+    "clip_size": 90,
     "valid_mod_locations": [
 		[ "accessories", 4 ],
 		[ "sling", 1 ],
@@ -2917,5 +2835,41 @@
     "name": { "str": "bearing shotcanister" },
     "copy-from": "shotcanister_bearing",
     "range": 3
+  },
+  {
+    "id": "cs_lajatang_off",
+    "copy-from": "cs_lajatang_off",
+    "type": "TOOL",
+    "name": { "str": "chainsaw lajatang (off)", "str_pl": "chainsaw lajatangs (off)" },
+    "cutting": 40,
+    "to_hit": 1,
+    "flags": [ "NONCONDUCTIVE", "POWERED", "ALWAYS_TWOHAND", "REACH_ATTACK", "REACH3" ]
+  },
+  {
+    "id": "cs_lajatang_on",
+    "copy-from": "cs_lajatang_on",
+    "type": "TOOL",
+    "name": { "str": "chainsaw lajatang (on)", "str_pl": "chainsaw lajatangs (on)" },
+    "cutting": 190,
+    "to_hit": 1,
+    "flags": [ "MESSY", "FRAGILE_MELEE", "TRADER_AVOID", "NONCONDUCTIVE", "ALWAYS_TWOHAND", "WATER_DISABLE", "REACH_ATTACK", "REACH3" ]
+  },
+  {
+    "id": "ecs_lajatang_off",
+    "copy-from": "ecs_lajatang_off",
+    "type": "TOOL",
+    "name": { "str": "electric chainsaw lajatang (off)", "str_pl": "electric chainsaw lajatangs (off)" },
+    "cutting": 40,
+    "to_hit": 1,
+    "flags": [ "NONCONDUCTIVE", "POWERED", "ALWAYS_TWOHAND", "REACH_ATTACK", "REACH3" ]
+  },
+  {
+    "id": "ecs_lajatang_on",
+    "copy-from": "ecs_lajatang_on",
+    "type": "TOOL",
+    "name": { "str": "electric chainsaw lajatang (on)", "str_pl": "electric chainsaw lajatangs (on)" },
+    "cutting": 190,
+    "to_hit": 1,
+    "flags": [ "MESSY", "DURABLE_MELEE", "TRADER_AVOID", "NONCONDUCTIVE", "ALWAYS_TWOHAND", "WATER_DISABLE", "REACH_ATTACK", "REACH3" ]
   }
 ]

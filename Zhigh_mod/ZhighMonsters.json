@@ -277,6 +277,28 @@
     "flags": [ "SEES", "HEARS", "GOODHEARING", "SMELLS", "KEENNOSE", "PATH_AVOID_DANGER_1", "ANIMAL", "BLEED", "ATTACKMON", "SWIMS" ]
   },
   {
+    "type": "AMMO",
+    "id": "brickZhigh",
+    "symbol": "*",
+    "color": "light_gray",
+    "name": { "str": "rock" },
+    "description": "A rock the size of a baseball.  Makes a decent melee weapon, and is also good for throwing at enemies.",
+    "category": "rocks",
+    "material": "stone",
+    "ammo_type": "rock",
+    "flags": [ "TRADER_AVOID" ],
+    "weight": "500 g",
+    "volume": "250 ml",
+    "bashing": 7,
+    "damage": { "damage_type": "bash", "amount": 7, "armor_penetration": 30 },
+    "range": 10,
+    "dispersion": 14,
+    "loudness": 0,
+    "to_hit": -1,
+    "qualities": [ [ "HAMMER", 1 ] ],
+    "effects": [ "NEVER_MISFIRES", "NON_FOULING", "NOGIB" ]
+  },
+  {
     "id": "mon_feral_human_zhigh",
     "type": "MONSTER",
     "copy-from": "mon_feral_human_pipe",
@@ -291,8 +313,24 @@
     "melee_dice_sides": 4,
     "vision_night": 4,
     "special_attacks": [
-	  [ "PARROT", 3 ]
+	  [ "PARROT", 3 ],
+      {
+        "type": "gun",
+        "cooldown": 5,
+        "move_cost": 150,
+        "gun_type": "feral_human_thrown_rock",
+        "ammo_type": "brickZhigh",
+        "no_ammo_sound": "",
+        "fake_skills": [ [ "gun", 2 ], [ "throw", 2 ] ],
+        "fake_dex": 6,
+        "fake_per": 6,
+        "require_targeting_player": false,
+        "ranges": [ [ 2, 5, "DEFAULT" ] ],
+        "description": "The feral human throws a rock!",
+        "no_crits": true
+      }
     ],
+    "starting_ammo": { "brickZhigh": 4 },
     "zombify_into": "mon_zombie",
     "death_function": [ "DISAPPEAR" ],
     "death_drops": "mon_feral_human_zhigh_death_drops_pipe",
@@ -304,8 +342,7 @@
       "BASHES",
       "GROUP_BASH",
       "HUMAN",
-      "CAN_OPEN_DOORS",
-      "DROPS_AMMO"
+      "CAN_OPEN_DOORS"
     ]
   },
   {
@@ -315,7 +352,7 @@
     "description": "Summons several permanent feral students.",
     "flags": [ "HOSTILE_SUMMON", "PERMANENT", "NO_EXPLOSION_VFX" ],
     "valid_targets": [ "ground" ],
-    "min_damage": 1,
+    "min_damage": 2,
     "max_damage": 3,
     "min_range": 5,
     "max_range": 5,
@@ -336,6 +373,107 @@
     "special_attacks": [
 	  [ "PARROT", 3 ],
 	  { "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh" }, "cooldown": 45 }
+    ]
+  },
+  {
+    "id": "mon_feral_human_SchoolWatchzhighBoss",
+    "type": "MONSTER",
+    "copy-from": "mon_feral_human_SchoolWatchzhigh",
+    "name": { "str": "feral hall monitor" },
+    "looks_like": "mon_feral_human_SchoolWatchzhigh",
+    "hp": 95,
+    "luminance": 120,
+    "special_attacks": [
+	  [ "PARROT", 3 ],
+	  { "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh" }, "cooldown": 5 },
+      {
+        "type": "gun",
+        "cooldown": 3,
+        "move_cost": 30,
+        "gun_type": "fakeMedBBgun_zhigh",
+        "fake_skills": [ [ "gun", 8 ], [ "smg", 8 ] ],
+        "fake_dex": 12,
+        "fake_per": 12,
+        "laser_lock": true,
+        "targeting_cost": 75,
+        "targeting_sound": "\"Enemy in sight!\"",
+        "targeting_volume": 30,
+        "require_targeting_player": false,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "description": "The feral hall monitor drone launches a hail of BBs!",
+        "ranges": [ [ 0, 10, "DEFAULT" ] ],
+        "no_ammo_sound": "a chk!"
+      },
+      {
+        "type": "bite",
+        "cooldown": 8,
+        "damage_max_instance": [ { "damage_type": "stab", "amount": 8, "armor_multiplier": 0.8 } ]
+      }
+    ]
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_summon_mon_zombie",
+    "name": "Calling people",
+    "description": "Summons several zombies.",
+    "flags": [ "HOSTILE_SUMMON", "PERMANENT", "NO_EXPLOSION_VFX" ],
+    "valid_targets": [ "ground" ],
+    "min_damage": 2,
+    "max_damage": 3,
+    "min_range": 5,
+    "max_range": 5,
+    "min_aoe": 3,
+    "max_aoe": 3,
+    "base_casting_time": 10,
+    "effect": "summon",
+    "effect_str": "mon_zombie"
+  },
+  {
+    "id": "mon_zombie_screamerZhigh",
+    "type": "MONSTER",
+    "copy-from": "mon_zombie_resort_bouncer",
+    "name": { "str": "screamer zombie" },
+    "description": "This zombie wears a tattered straitjacket.  For some reason, these zombies can shout to call more of his friends.",
+    "luminance": 10,
+    "special_attacks": [
+	  { "type": "spell", "spell_data": { "id": "mon_summon_mon_zombie" }, "cooldown": 25 }
+    ]
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_summon_mon_zombie_soldier",
+    "name": "Calling for backup",
+    "description": "Summons several zombie soldiers.",
+    "flags": [ "HOSTILE_SUMMON", "PERMANENT", "NO_EXPLOSION_VFX" ],
+    "valid_targets": [ "ground" ],
+    "min_damage": 3,
+    "max_damage": 3,
+    "min_range": 5,
+    "max_range": 5,
+    "min_aoe": 3,
+    "max_aoe": 3,
+    "base_casting_time": 10,
+    "effect": "summon",
+    "effect_str": "mon_zombie_soldier"
+  },
+  {
+    "id": "mon_zombie_QmasterZhigh",
+    "type": "MONSTER",
+    "copy-from": "mon_zombie_soldier",
+    "name": { "str": "zombie quarter master" },
+    "description": "Once a soldier, it is dressed head to toe in combat gear and carries itself rather steadily for a zombie.  For some reason, these zombies can shout to call more of his squad members.",
+    "hp": 135,
+	"vision_day": 30,
+    "vision_night": 35,
+    "death_drops": "ZhighQmasterDrop",
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 8,
+        "damage_max_instance": [ { "damage_type": "stab", "amount": 8, "armor_multiplier": 0.8 } ]
+      },
+	  { "type": "spell", "spell_data": { "id": "mon_summon_mon_zombie_soldier" }, "cooldown": 5 }
     ]
   },
   {
@@ -1208,7 +1346,7 @@
     "vision_day": 35,
     "vision_night": 5,
     "harvest": "zombie_maybe_mil_bionics",
-    "starting_ammo": { "improvised_demolition_charge": 1 },
+    "starting_ammo": { "c4armed": 1 },
     "special_attacks": [
 		{ "type": "bite", "cooldown": 5 },
 		[ "SUICIDE", 5 ],
@@ -1903,6 +2041,75 @@
       "BIOPROOF"
     ],
     "regenerates": 50
+  },
+  {
+    "id": "mon_chemicalturret",
+    "looks_like": "mon_turret",
+    "type": "MONSTER",
+    "name": { "str": "chemical turret" },
+    "description": "The chemical turret is an automated defense system offering simple, but wide fire support.  With a swiveling base and wide range attacks, it ensures robust perimeter protection.",
+    "default_faction": "military",
+    "species": [ "ROBOT" ],
+    "diff": 20,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 30,
+    "speed": 100,
+    "material": [ "steel" ],
+    "symbol": "2",
+    "color": "white",
+    "aggression": 100,
+    "morale": 100,
+    "armor_bash": 2,
+    "armor_cut": 2,
+    "armor_bullet": 2,
+    "armor_fire": 2,
+    "vision_day": 50,
+    "vision_night": 50,
+    "revert_to_itype": "bot_chemicalturretZhigh",
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 1,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "target_moving_vehicles": true,
+        "gun_type": "chemical_turretGunZhigh",
+        "fake_skills": [ [ "gun", 8 ], [ "rifle", 8 ] ],
+        "ranges": [ [ 0, 10, "DEFAULT" ] ],
+        "require_sunlight": false,
+        "no_crits": false
+      }
+    ],
+    "special_when_hit": [ "ZAPBACK", 100 ],
+    "death_drops": {  },
+    "death_function": [ "BROKEN" ],
+    "flags": [
+      "SEES",
+      "NOHEAD",
+      "ELECTRONIC",
+      "ELECTRIC",
+      "COLDPROOF",
+      "IMMOBILE",
+      "NO_BREATHE",
+      "BIOPROOF"
+    ],
+    "regenerates": 5
+  },
+  {
+    "id": "chemical_turretGunZhigh",
+    "type": "GUN",
+    "copy-from": "fake_item",
+    "name": { "str": "mounted turret firearm" },
+    "description": "Fake gun that fires some sort of chemical at very high speed by unknown means of propulsion.",
+    "flags": [ "NEVER_JAMS" ],
+    "ammo_effects": [ "GAS_FUNGICIDAL", "TOXICGAS", "GAS_INSECTICIDAL", "NEVER_MISFIRES" ],
+    "skill": "rifle",
+    "durability": 10,
+    "range": 10,
+    "dispersion": 100,
+    "modes": [ [ "DEFAULT", "auto", 3 ] ],
+    "ranged_damage": { "damage_type": "acid", "amount": 6, "armor_penetration": 30 }
   },
   {
     "id": "mon_marusaur",

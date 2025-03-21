@@ -1,6 +1,38 @@
 [
   {
     "type": "profession",
+    "id": "detectivePersonalZhigh",
+    "name": "Private Investigator",
+    "description": "You were searching for some clues that the client asked for when the Cataclysm struck.  Now that client is dead.  Everyone's dead.",
+    "points": 3,
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "duster",
+          "badge_detective",
+          "gloves_leather",
+          "knit_scarf",
+          "hat_hunting",
+          "wristwatch",
+          "socks",
+          "dress_shoes",
+          "smart_phone"
+        ],
+        "entries": [
+          { "group": "charged_two_way_radio" },
+          { "item": "sw629", "ammo-item": "44fmj", "charges": 6, "container-item": "shoulder_holster" },
+          { "item": "legpouch_large", "contents-group": "speedloaders_44_detective" },
+          { "item": "44fmj", "charges": 12 }
+        ]
+      },
+      "male": [ "briefs" ],
+      "female": [ "bra", "panties" ]
+    },
+    "skills": [ { "level": 3, "name": "gun" }, { "level": 3, "name": "pistol" } ]
+  },
+  {
+    "type": "profession",
     "id": "pistol_hunter",
     "name": "Pistol Hunter",
     "description": "Ever since you were a child you loved hunting, and you soon took a liking to the challenge of hunting with a pistol.  Why, if the world ended there's nothing you'd want at your side more than your trusty pistol.  So when it did, you made sure to bring it along.",
@@ -1537,5 +1569,540 @@
       "male": [ "boxer_shorts", "pants" ],
       "female": [ "bra", "panties", "skirt" ]
     }
+  },
+  {
+    "type": "profession",
+    "id": "zhighNormKamenRider",
+    "name": "Cosplayer",
+    "description": "You cosplayed as a 'Masked Biker' when the world ended.  The world is doomed, but why do you need to stop helping other people?",
+    "points": 6,
+    "skills": [
+		{ "level": 2, "name": "melee" },
+		{ "level": 2, "name": "unarmed" },
+		{ "level": 2, "name": "dodge" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "jacket_tracksuit_zhigh_black",
+          "smart_phone",
+          "socks",
+          "boots_plate",
+          "pants_tracksuit_zhigh_black",
+          "doom_vest",
+          "scarf_longRedZhigh",
+          "mask_locust",
+          "utility_belt",
+          "gloves_plate"
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighNormJOJO",
+    "name": "Cosplayer",
+    "description": "You cosplayed as a 'Ghost User' when the world ended.  The world is doomed, but you grabbed your fist and stand proud.",
+    "points": 6,
+    "skills": [
+      { "level": 3, "name": "melee" },
+      { "level": 3, "name": "unarmed" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "army_top",
+          "smart_phone",
+          "socks",
+          "pants_zhigh",
+          "dress_shoes",
+          "trenchcoat_jojoZhigh",
+          "hat_jojoZhigh"
+        ],
+        "entries": [
+			{ "item": "impact_knuckle", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighNormKabalMk",
+    "name": "Cosplayer",
+    "description": "You cosplayed as a 'speedster' when the world ended.  The world is doomed, but you’re ready for some pre-emptive vengeance.",
+    "points": 6,
+    "skills": [
+      { "level": 3, "name": "melee" },
+      { "level": 3, "name": "cutting" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "tank_top",
+          "smart_phone",
+          "socks",
+          "pants_zhigh",
+          "dress_shoes",
+          "sleeveless_trenchcoat",
+          "mask_kabalZhigh"
+        ],
+        "entries": [
+			{ "item": "hookswordZhigh_inferior", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighNormSPESSMEHRENS",
+    "name": "Cosplayer",
+    "description": "You cosplayed as a 'space soldier' when the world ended.  The world is doomed, but you still try to find the holy globules.  Praise the space king!",
+    "points": 6,
+    "skills": [
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "dodge" },
+      { "level": 1, "name": "cutting" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "smart_phone",
+          "socks",
+          "pants_zhigh",
+          "dress_shoes",
+          "costumePowerArmorHelmZhigh"
+        ],
+        "entries": [
+			{ "group": "ZhighPowerArmor" },
+			{ "item": "swordsmanSword", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighNormHankMc",
+    "name": "Cosplayer",
+    "description": "You cosplayed as a 'mad protagonist' when the world ended.  The world is doomed, but you still try survive.  Somewhere in Nevada...",
+    "points": 6,
+    "skills": [
+      { "level": 2, "name": "melee" },
+      { "level": 2, "name": "dodge" },
+      { "level": 2, "name": "gun" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "chestwrap",
+          "smart_phone",
+          "socks",
+          "pants_zhigh",
+          "dress_shoes",
+          "trenchcoat_leather",
+          "mask_rioter",
+          "survivor_goggles"
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighNormWatchDogs",
+    "name": "Cosplayer",
+    "description": "You cosplayed as a 'middle-aged hacker' when the world ended.  The world is doomed, but you still try to control the damn thing.",
+    "points": 6,
+    "skills": [
+      { "level": 2, "name": "melee" },
+      { "level": 2, "name": "bashing" },
+      { "level": 2, "name": "computer" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "smart_phone",
+          "socks",
+          "pants_zhigh",
+          "dress_shoes",
+          "trenchcoat_leather",
+          "baton",
+          "hat_ball"
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighNormCodGhost",
+    "name": "Cosplayer",
+    "description": "You cosplayed as a 'spectre' when the world ended.  The world is doomed, but you get dirty and the world stays clean.  That's the mission.",
+    "points": 6,
+    "skills": [
+		{ "level": 3, "name": "gun" },
+		{ "level": 3, "name": "rifle" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "smart_phone",
+          "socks",
+          "pants_zhigh",
+          "boots_combat",
+          "tacvest",
+          "balclava_skull",
+          "toynadeZhigh",
+          "bb",
+          "fancy_sunglassesStars"
+        ],
+        "entries": [
+			{ "item": "bbpistol", "ammo-item": "bb", "charges": [ 200, 250 ], "container-item": "holster" },
+			{ "item": "bbM4", "ammo-item": "bb", "charges": [ 250, 300 ], "contents-item": [ "shoulder_strap" ], "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighNormHlAsmith",
+    "name": "Cosplayer",
+    "description": "You cosplayed as a 'spec ops' from 'Full Strife' series when the world ended.  The world is doomed, FOXTROT UNIFORM.",
+    "points": 6,
+    "skills": [
+		{ "level": 3, "name": "gun" },
+		{ "level": 3, "name": "smg" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "smart_phone",
+          "socks",
+          "pants_zhigh",
+          "boots_combat",
+          "gloves_fingerless",
+          "helmet_skid",
+          "HalfLifePcvZhigh_vest",
+          "HalfLifeHevZhigh_mask",
+          "toynadeZhigh",
+          "bb",
+          "bb"
+        ],
+        "entries": [
+			{ "item": "bbMp5", "ammo-item": "bb", "charges": [ 250, 300 ], "contents-item": [ "shoulder_strap" ], "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighNormHlGfreeman",
+    "name": "Cosplayer",
+    "description": "You cosplayed as a 'researcher' from 'Full Strife' series when the world ended.  The world is doomed, but the right man in the wrong place can make all the difference in the world.",
+    "points": 6,
+    "skills": [
+		{ "level": 2, "name": "electronics" },
+		{ "level": 1, "name": "cooking" },
+		{ "level": 2, "name": "bashing" },
+		{ "level": 1, "name": "dodge" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "smart_phone",
+          "socks",
+          "glasses_bifocal",
+          "HalfLifeHevZhigh_suit"
+        ],
+        "entries": [
+			{ "item": "crowbar", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighNormDsIclark",
+    "name": "Cosplayer",
+    "description": "You cosplayed as an 'engineer' from 'Dread Spruce' series when the world ended.  The world is doomed, but who cares, you quit trying to make sense of it all back on the day 1.",
+    "points": 6,
+    "skills": [
+		{ "level": 1, "name": "unarmed" },
+		{ "level": 1, "name": "bashing" },
+		{ "level": 1, "name": "cutting" },
+		{ "level": 2, "name": "dodge" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "smart_phone",
+          "socks",
+          "combatnail",
+          "DeadSpaceZhigh_suit"
+        ],
+        "entries": [
+			{ "item": "nailsmg", "ammo-item": "combatnail", "charges": [ 25, 100 ], "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighNormHaloChief",
+    "name": "Cosplayer",
+    "description": "You cosplayed as a 'master chief' from 'Starbind' series when the world ended.  As the original character did, you gotta finish this fight.",
+    "points": 6,
+    "skills": [
+		{ "level": 3, "name": "gun" },
+		{ "level": 2, "name": "rifle" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "smart_phone",
+          "socks",
+          "haloMasChiZhigh_suit",
+          "haloMasChiZhigh_helm",
+          "bb"
+        ],
+        "entries": [
+			{ "item": "bbBRifle", "ammo-item": "bb", "charges": [ 250, 300 ], "contents-item": [ "shoulder_strap" ], "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighNormLeCom",
+    "name": "Cosplayer",
+    "description": "You cosplayed as a 'scavenger' from 'Mortal Syndicate' series when the world ended.  The world is doomed, but make yourself at home.",
+    "points": 6,
+    "skills": [
+		{ "level": 1, "name": "bashing" },
+		{ "level": 2, "name": "dodge" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "smart_phone",
+          "socks",
+          "boots",
+          "gloves_leather",
+          "helmet_liner",
+          "scuba_tank",
+          "hazmat_suit",
+          "mask_gas"
+        ],
+        "entries": [
+			{ "item": "roadSignZhigh", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighNormJedi",
+    "name": "Cosplayer",
+    "description": "You cosplayed as a 'sensei' from 'galactic warfare' series when the world ended.  May the force be with you.",
+    "points": 6,
+    "skills": [
+		{ "level": 1, "name": "bashing" },
+		{ "level": 1, "name": "melee" },
+		{ "level": 2, "name": "dodge" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "smart_phone",
+          "socks",
+          "boots",
+          "kimono",
+          "police_belt",
+          "jedi_cloak"
+        ],
+        "entries": [
+            { "item": "light_battery_cell", "ammo-item": "battery", "charges": 100, "container-item": "baton_light", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighNormSquidCirGrunt",
+    "name": "Cosplayer",
+    "description": "You cosplayed as a 'staff' from 'Cephalopoda recreation' when the world ended.  Do you still trust people?",
+    "points": 6,
+    "skills": [
+		{ "level": 4, "name": "gun" },
+		{ "level": 3, "name": "pistol" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "pants_tracksuitSquidPnk_zhigh",
+          "smart_phone",
+          "socks",
+          "jacket_tracksuitSquidPnk_zhigh",
+          "lowtops",
+          "balclava_skull",
+          "mask_SquidCirZhigh",
+          "bb"
+        ],
+        "entries": [
+			{ "item": "bbpistol", "ammo-item": "bb", "charges": [ 200, 250 ], "container-item": "holster" }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighNormSquidTriGrunt",
+    "name": "Cosplayer",
+    "description": "You cosplayed as a 'medium staff' from 'Cephalopoda recreation' when the world ended.  Living is no fun, is it?",
+    "points": 6,
+    "skills": [
+		{ "level": 4, "name": "gun" },
+		{ "level": 3, "name": "smg" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "pants_tracksuitSquidPnk_zhigh",
+          "smart_phone",
+          "socks",
+          "jacket_tracksuitSquidPnk_zhigh",
+          "lowtops",
+          "balclava_skull",
+          "mask_SquidTriZhigh",
+          "bb"
+        ],
+        "entries": [
+			{ "item": "bbMp5", "ammo-item": "bb", "charges": [ 250, 300 ], "contents-item": [ "shoulder_strap" ], "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighNormSquidSquGrunt",
+    "name": "Cosplayer",
+    "description": "You cosplayed as a 'top staff' from 'Cephalopoda recreation' when the world ended.  Life is short.",
+    "points": 6,
+    "skills": [
+		{ "level": 4, "name": "gun" },
+		{ "level": 3, "name": "rifle" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "pants_tracksuitSquidPnk_zhigh",
+          "smart_phone",
+          "socks",
+          "jacket_tracksuitSquidPnk_zhigh",
+          "lowtops",
+          "balclava_skull",
+          "mask_SquidSqaZhigh",
+          "bb"
+        ],
+        "entries": [
+			{ "item": "bbM4", "ammo-item": "bb", "charges": [ 250, 300 ], "contents-item": [ "shoulder_strap" ], "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighNormSquidplayer",
+    "name": "Cosplayer",
+    "description": "You cosplayed as a 'player' from 'Cephalopoda recreation' when the world ended.  Is our world any better than this?",
+    "points": 6,
+    "skills": [
+		{ "level": 2, "name": "melee" },
+		{ "level": 2, "name": "stabbing" },
+		{ "level": 2, "name": "cutting" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "pants_tracksuitSquidGrn_zhigh",
+          "smart_phone",
+          "socks",
+          "jacket_tracksuitSquidGrn_zhigh",
+          "lowtops",
+          "marble"
+        ],
+        "entries": [
+			{ "item": "glass_shiv", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighNormBunnyGirl",
+    "name": { "male": "Bunny Boy", "female": "Bunny Girl" },
+    "description": "You used to be a person wearing a bunny outfit before the Cataclysm, and now that is the only thing you've got.",
+    "points": -2,
+    "items": {
+      "both": { "items": [ "stockings", "heels", "corset", "hot_pants_leather", "bunny_tailZhigh", "bunny_earsB", "smart_phone" ],
+        "entries": [
+			{ "group": "ZhighNpc_ids" },
+			{ "item": "smart_phone", "custom-flags": [ "auto_wield" ] }
+		]
+	  }
+    },
+    "flags": [ "SCEN_ONLY" ]
   }
 ]

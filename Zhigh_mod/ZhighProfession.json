@@ -2201,15 +2201,13 @@
           "sneakers",
           "bead_bracelet",
           "bead_necklace",
-          "pockknife",
           "holybook_tripitaka",
           "holy_symbol",
-          "matches",
           "wristwatch"
         ],
         "entries": [ 
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "q_staff", "custom-flags": [ "auto_wield" ] } ]
+                { "item": "holy_staffZhigh", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -4506,6 +4504,137 @@
   },
   {
     "type": "profession",
+    "id": "zhighSquidCirGrunt",
+    "name": "Student - Cosplayer",
+    "description": "You cosplayed as a 'staff' from 'Cephalopoda recreation' when the world ended.  Do you still trust people?",
+    "points": 4,
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [
+		{ "level": 4, "name": "gun" },
+		{ "level": 3, "name": "pistol" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "pants_tracksuitSquidPnk_zhigh",
+          "zhigh_smart_phone",
+          "socks",
+          "jacket_tracksuitSquidPnk_zhigh",
+          "lowtops",
+          "balclava_skull",
+          "mask_SquidCirZhigh",
+          "bb"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "bbpistol", "ammo-item": "bb", "charges": [ 200, 250 ], "container-item": "holster" }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighSquidTriGrunt",
+    "name": "Student - Cosplayer",
+    "description": "You cosplayed as a 'medium staff' from 'Cephalopoda recreation' when the world ended.  Living is no fun, is it?",
+    "points": 4,
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [
+		{ "level": 4, "name": "gun" },
+		{ "level": 3, "name": "smg" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "pants_tracksuitSquidPnk_zhigh",
+          "zhigh_smart_phone",
+          "socks",
+          "jacket_tracksuitSquidPnk_zhigh",
+          "lowtops",
+          "balclava_skull",
+          "mask_SquidTriZhigh",
+          "bb"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "bbMp5", "ammo-item": "bb", "charges": [ 250, 300 ], "contents-item": [ "shoulder_strap" ], "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighSquidSquGrunt",
+    "name": "Student - Cosplayer",
+    "description": "You cosplayed as a 'top staff' from 'Cephalopoda recreation' when the world ended.  Life is short.",
+    "points": 4,
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [
+		{ "level": 4, "name": "gun" },
+		{ "level": 3, "name": "rifle" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "pants_tracksuitSquidPnk_zhigh",
+          "zhigh_smart_phone",
+          "socks",
+          "jacket_tracksuitSquidPnk_zhigh",
+          "lowtops",
+          "balclava_skull",
+          "mask_SquidSqaZhigh",
+          "bb"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "bbM4", "ammo-item": "bb", "charges": [ 250, 300 ], "contents-item": [ "shoulder_strap" ], "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighSquidplayer",
+    "name": "Student - Cosplayer",
+    "description": "You cosplayed as a 'player' from 'Cephalopoda recreation' when the world ended.  Is our world any better than this?",
+    "points": 4,
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [
+		{ "level": 2, "name": "melee" },
+		{ "level": 2, "name": "stabbing" },
+		{ "level": 2, "name": "cutting" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "pants_tracksuitSquidGrn_zhigh",
+          "zhigh_smart_phone",
+          "socks",
+          "jacket_tracksuitSquidPnk_zhigh",
+          "lowtops",
+          "marble"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "glass_shiv", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
     "id": "zhighBunnyGirl",
     "name": { "male": "Bunny Boy", "female": "Bunny Girl" },
     "description": "You used to be a person wearing a bunny outfit before the Cataclysm, and now that is the only thing you've got.",
@@ -4610,6 +4739,43 @@
     },
     "vehicle": "miniBikeZhigh",
     "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighPirate",
+    "name": "Student - Pirate",
+    "description": "Arr!  Your costume may be shipshape, but the end of the world's scuppered all your plans.  Strike up your Jolly Roger and hoist the Bloody Red, for no quarter shall be given.",
+    "points": 3,
+    "skills": [
+      { "level": 2, "name": "swimming" },
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "pistol" },
+      { "level": 1, "name": "cutting" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "socks",
+          "breeches",
+          "longshirt",
+          "duster",
+          "tricorne",
+          "boots",
+          "leather_pouch",
+          "scabbard",
+          "gold_ear"
+        ],
+        "entries": [
+          { "item": "cutlass_inferior", "custom-flags": [ "auto_wield" ] },
+          { "item": "baldric_holster", "contents-group": "pistols_pirate" },
+          { "item": "flintlock_pouch", "contents-group": "flintlock_pouch_reenactor" },
+          { "item": "flintlock_ammo", "charges": 8 }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "boy_shorts", "sports_bra" ]
+    }
   },
   {
     "type": "profession",

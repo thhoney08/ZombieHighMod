@@ -29,8 +29,8 @@
       [ "knife_butcher", 10 ],
       [ "knife_meat_cleaver", 10 ],
       [ "knife_vegetable_cleaver", 10 ],
-      [ "knife_chef_superalloyZhigh", 1 ],
-      [ "knife_meat_cleaver_superalloyZhigh", 1 ]
+      [ "knife_chef_superalloyZhigh", 5 ],
+      [ "knife_meat_cleaver_superalloyZhigh", 5 ]
     ]
   },
   {
@@ -64,6 +64,7 @@
     "entries": [
       { "item": "cowboy_hat", "prob": 60 },
       { "item": "cowboy_hat_zhigh", "prob": 20 },
+      { "item": "cowboy_hat_zhigh1", "prob": 1 },
       { "item": "10gal_hat", "prob": 10 },
       { "item": "hat_ball", "prob": 10 },
       { "item": "hat_hard", "prob": 10 },
@@ -316,6 +317,7 @@
           { "item": "shorts_zhigh_marine", "prob": 5 },
           { "item": "cowboy_hat", "prob": 20 },
           { "item": "cowboy_hat_zhigh", "prob": 20 },
+          { "item": "cowboy_hat_zhigh1", "prob": 5 },
           { "item": "straw_fedora", "prob": 5 },
           { "item": "hat_golf", "prob": 15 },
           { "item": "straw_hat", "prob": 15 },
@@ -354,6 +356,7 @@
       [ "bone_bugleZhigh", 5 ],
       [ "caneGunZhigh", 5 ],
       [ "pipeSmok22Gun", 1 ],
+      [ "holy_staffZhigh", 10 ],
       [ "zentaiMerc", 10 ],
       [ "suitRedMafiaZhigh", 10 ],
       [ "suitColombiaZhigh", 10 ],
@@ -518,12 +521,15 @@
       { "item": "jezail_flintlock", "prob": 2 },
       { "item": "revolverValoisZhigh", "prob": 1 },
       { "item": "pistolFlintlockSaberZhigh", "prob": 1 },
+      { "item": "spear_flintlockZhigh", "prob": 1 },
       { "item": "shotgun_paper", "prob": 4 },
       { "item": "boxing_gloves", "prob": 12 },
       { "item": "straw_doll", "prob": 1 },
       { "item": "pitchfork", "prob": 1 },
       { "item": "straw_sandals", "prob": 1 },
       { "item": "holy_symbol", "prob": 10 },
+      { "item": "holy_staffZhigh", "prob": 10 },
+      { "item": "nazarZhigh", "prob": 5 },
       { "item": "magic_8_ball", "prob": 1 },
       { "item": "coin_quarter", "prob": 1 },
       { "item": "bronze_medal", "prob": 1 },
@@ -655,6 +661,7 @@
       [ "bowhat", 50 ],
       [ "cowboy_hat", 100 ],
       [ "cowboy_hat_zhigh", 100 ],
+      [ "cowboy_hat_zhigh1", 10 ],
       [ "fezZhigh", 15 ],
       [ "souWesterZhigh", 15 ],
       [ "tamoshanterZhigh", 15 ],
@@ -734,6 +741,7 @@
       { "item": "flint_nock", "prob": 10 },
       { "item": "revolverValoisZhigh", "prob": 5 },
       { "item": "pistolFlintlockSaberZhigh", "prob": 5 },
+      { "item": "spear_flintlockZhigh", "prob": 5 },
       { "item": "jezail_flintlock", "prob": 15 },
       { "item": "carbine_flintlock_double", "prob": 18 },
       { "item": "carbine_flintlock", "prob": 20 },
@@ -763,6 +771,7 @@
       { "item": "flint_nock", "prob": 10 },
       { "item": "revolverValoisZhigh", "prob": 5 },
       { "item": "pistolFlintlockSaberZhigh", "prob": 5 },
+      { "item": "spear_flintlockZhigh", "prob": 5 },
       { "item": "jezail_flintlock", "prob": 10 },
       { "item": "carbine_flintlock_double", "prob": 18 },
       { "item": "carbine_flintlock", "prob": 20 },
@@ -1318,7 +1327,10 @@
       { "group": "nested_svdZhigh_13", "prob": 15 },
       { "group": "nested_cmmg46Zhigh", "prob": 15 },
       { "group": "nested_cmmg57Zhigh", "prob": 15 },
+      { "group": "nested_ar1544Zhigh", "prob": 15 },
+      { "group": "nested_combination_gunZhigh", "prob": 15 },
       { "group": "nested_sv98Zhigh", "prob": 15 },
+      { "group": "nested_blazeRifle", "prob": 50 },
       { "group": "nested_RPDZhigh", "prob": 5 },
       { "group": "nested_DP28Zhigh", "prob": 5 },
       { "group": "nested_famasZhigh", "prob": 5 },
@@ -1326,6 +1338,7 @@
       { "group": "nested_colt9mmZhigh", "prob": 10 },
       { "group": "nested_m1941Zhigh", "prob": 10 },
       { "group": "nested_gilboaSnakeZhigh", "prob": 5 },
+      { "group": "nested_sw40LeverRifleZhigh", "prob": 5 },
       { "group": "nested_sr47Zhigh", "prob": 5 }
     ]
   },
@@ -1337,7 +1350,10 @@
       { "group": "everyday_svdZhigh_13", "prob": 15 },
       { "group": "everyday_cmmg46Zhigh", "prob": 15 },
       { "group": "everyday_cmmg57Zhigh", "prob": 15 },
+      { "group": "everyday_ar1544Zhigh", "prob": 15 },
+      { "group": "everyday_combination_gunZhigh", "prob": 15 },
       { "group": "everyday_sv98Zhigh", "prob": 15 },
+      { "group": "everyday_blazeRifle", "prob": 50 },
       { "group": "everyday_RPDZhigh", "prob": 5 },
       { "group": "everyday_DP28Zhigh", "prob": 5 },
       { "group": "everyday_famasZhigh", "prob": 5 },
@@ -1345,6 +1361,7 @@
       { "group": "everyday_colt9mmZhigh", "prob": 10 },
       { "group": "everyday_m1941Zhigh", "prob": 10 },
       { "group": "everyday_gilboaSnakeZhigh", "prob": 5 },
+      { "group": "everyday_sw40LeverRifleZhigh", "prob": 5 },
       { "group": "everyday_sr47Zhigh", "prob": 5 }
     ]
   },
@@ -1353,7 +1370,8 @@
     "id": "guns_smg_rare",
     "//": "SMGs including those only used by police/paramilitary forces.",
     "items": [
-      { "group": "nested_r9armszhigh", "prob": 30 }
+      { "group": "nested_r9armszhigh", "prob": 30 },
+      { "group": "nested_mpxZhigh", "prob": 30 }
     ]
   },
   {
@@ -1361,7 +1379,8 @@
     "id": "carried_guns_smg_rare",
     "//": "SMGs including those only carried by police/paramilitary forces. Either mags or loose ammo are included.",
     "items": [
-      { "group": "everyday_r9armszhigh", "prob": 30 }
+      { "group": "everyday_r9armszhigh", "prob": 30 },
+      { "group": "everyday_mpxZhigh", "prob": 30 }
     ]
   },
   {
@@ -1371,6 +1390,7 @@
     "items": [
       { "group": "nested_scar_lPdwZhigh", "prob": 50 },
       { "group": "nested_scar_hPdwZhigh", "prob": 50 },
+      { "group": "nested_bizonZhigh", "prob": 10 },
       { "group": "nested_akmsuZhigh", "prob": 50 }
     ]
   },
@@ -1381,6 +1401,7 @@
     "items": [
       { "group": "everyday_scar_lPdwZhigh", "prob": 50 },
       { "group": "everyday_scar_hPdwZhigh", "prob": 50 },
+      { "group": "everyday_bizonZhigh", "prob": 10 },
       { "group": "everyday_akmsuZhigh", "prob": 50 }
     ]
   },
@@ -1389,6 +1410,7 @@
     "id": "guns_pistol_rare",
     "//": "Pistols including those only used by police/paramilitary forces, or self printed.",
     "items": [
+      { "group": "nested_coonanZhigh", "prob": 5 },
       { "group": "nested_93rZhigh", "prob": 5 },
       { "group": "nested_APSZhigh", "prob": 5 },
       { "group": "nested_automag", "prob": 10 },
@@ -1415,6 +1437,7 @@
     "id": "carried_guns_pistol_rare",
     "//": "Pistols including those only used by police/paramilitary forces. As these are carried, they either have mags OR loose ammo rather than both",
     "items": [
+      { "group": "everyday_coonanZhigh", "prob": 5 },
       { "group": "everyday_93rZhigh", "prob": 5 },
       { "group": "everyday_APSZhigh", "prob": 5 },
       { "group": "everyday_automag", "prob": 10 },
@@ -1551,6 +1574,7 @@
       { "item": "knife_messerZhigh", "prob": 2 },
       { "item": "swordstaffZhigh", "prob": 1 },
       { "item": "cavalry_sabre", "prob": 10 },
+      { "item": "mortuarySwordZhigh", "prob": 10 },
       { "item": "bardicheZhigh", "prob": 10 },
       { "item": "coupeCoupeZhigh", "prob": 10 },
       { "item": "hookswordZhigh", "prob": 10 },
@@ -1589,6 +1613,7 @@
       { "item": "pistol_flintlock_double", "prob": 3 },
       { "item": "lemat_revolver_flintlock", "prob": 3 },
       { "item": "pistolFlintlockSaberZhigh", "prob": 3 },
+      { "item": "spear_flintlockZhigh", "prob": 3 },
       { "item": "revolverValoisZhigh", "prob": 3 },
       { "item": "blunderlock", "prob": 3 },
       { "item": "flint_nock", "prob": 3 },
@@ -1612,6 +1637,113 @@
       { "item": "sharps", "prob": 8 },
       { "item": "colt_saa", "prob": 2 },
 	  { "group": "medieval", "prob": 60 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "medieval",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "katana", "prob": 2 },
+      { "item": "katana_inferior", "prob": 2 },
+      { "item": "cestus", "prob": 2 },
+      { "item": "mace", "prob": 20 },
+      { "item": "mace_inferior", "prob": 25 },
+      { "item": "morningstar", "prob": 10 },
+      { "item": "morningstar_inferior", "prob": 15 },
+      { "item": "glaive", "prob": 10 },
+      { "item": "fauchardZhigh", "prob": 10 },
+      { "item": "rapier", "prob": 3 },
+      { "item": "cavalry_sabre", "prob": 3 },
+      { "item": "mortuarySwordZhigh", "prob": 3 },
+      { "item": "estoc", "prob": 3 },
+      { "item": "estoc_inferior", "prob": 3 },
+      { "item": "cutlass", "prob": 3 },
+      { "item": "cutlass_inferior", "prob": 3 },
+      { "item": "scimitar", "prob": 20 },
+      { "item": "scimitar_inferior", "prob": 25 },
+      { "item": "arming_sword", "prob": 25 },
+      { "item": "arming_sword_inferior", "prob": 25 },
+      { "item": "colichemardeZhigh", "prob": 25 },
+      { "item": "broadsword", "prob": 30 },
+      { "item": "broadsword_inferior", "prob": 30 },
+      { "item": "longsword", "prob": 25 },
+      { "item": "longsword_inferior", "prob": 25 },
+      { "item": "zweihander", "prob": 20 },
+      { "item": "zweihander_inferior", "prob": 20 },
+      { "item": "battleaxe", "prob": 20 },
+      { "item": "battleaxe_inferior", "prob": 20 },
+      { "item": "lochaberaxeZhigh", "prob": 20 },
+      { "item": "lochaberaxeZhigh_inferior", "prob": 20 },
+      { "item": "warhammer", "prob": 10 },
+      { "item": "halberd", "prob": 5 },
+      { "item": "lucern_hammer", "prob": 3 },
+      { "item": "lucern_hammerfake", "prob": 5 },
+      { "item": "pike", "prob": 5 },
+      { "item": "pike_inferior", "prob": 10 },
+      { "item": "spear_steel", "prob": 5 },
+      { "item": "shillelagh", "prob": 3 },
+      { "item": "shillelagh_weighted", "prob": 2 },
+      { "item": "helmet_plate", "prob": 1 },
+      { "item": "armor_plate", "prob": 2 },
+      { "item": "huge_crossbow", "prob": 2 },
+      { "item": "quiver", "prob": 2 },
+      { "item": "quiver_large", "prob": 1 },
+      { "item": "baldric", "prob": 4 },
+      { "item": "nodachi", "prob": 1 },
+      { "item": "nodachi_inferior", "prob": 2 },
+      { "item": "knife_baselard", "prob": 2 },
+      { "item": "gambeson", "prob": 3 },
+      { "item": "cap_arming", "prob": 2 },
+      { "item": "tunic", "prob": 1 },
+      { "item": "armor_lamellar", "prob": 2 },
+      { "item": "armor_lightplate", "prob": 1 },
+      { "item": "cuirass_lightplate", "prob": 2 },
+      { "item": "armguard_lightplate", "prob": 1 },
+      { "item": "legguard_lightplate", "prob": 1 },
+      { "item": "armor_samurai", "prob": 1 },
+      { "item": "helmet_kabuto", "prob": 1 },
+      { "item": "gloves_plate", "prob": 1 },
+      { "item": "boots_plate", "prob": 1 },
+      { "item": "helmet_barbute", "prob": 1 },
+      { "item": "helmet_conical", "prob": 1 },
+      { "item": "helmet_galea", "prob": 1 },
+      { "item": "helmet_nasal", "prob": 1 },
+      { "item": "helmet_Dantioch", "prob": 1 },
+      { "item": "helmet_szyszakZhigh", "prob": 1 },
+      { "item": "chainmail_suit", "prob": 1 },
+      { "item": "chainmail_hood", "prob": 3 },
+      { "item": "chainmail_vest", "prob": 3 },
+      { "item": "chainmail_arms", "prob": 3 },
+      { "item": "chainmail_legs", "prob": 3 },
+      { "item": "chainmail_feet", "prob": 3 },
+      { "item": "chainmail_hands", "prob": 3 },
+      { "item": "legguard_metal", "prob": 1 },
+      { "item": "textbook_weapwest", "prob": 5 },
+      { "item": "textbook_weapeast", "prob": 5 },
+      { "item": "textbook_armwest", "prob": 5 },
+      { "item": "textbook_armeast", "prob": 5 },
+      { "item": "textbook_armschina", "prob": 5 },
+      { "item": "q_staff", "prob": 10 },
+      { "item": "i_staff", "prob": 5 },
+      { "item": "sword_bayonet", "prob": 10 },
+      { "item": "bagh_nakha", "prob": 5 },
+      { "item": "kris", "prob": 5 },
+      { "item": "cheese_hard", "prob": 1 },
+      { "item": "tinderbox", "prob": 4 },
+      { "item": "flint_steel", "prob": 7 },
+      { "item": "crossbow_lever", "prob": 2 },
+      { "item": "canteen_wood", "prob": 5 },
+      { "item": "shield_wooden", "prob": 3 },
+      { "item": "shield_wooden_large", "prob": 3 },
+      { "item": "shield_banded", "prob": 3 },
+      { "item": "shield_banded_large", "prob": 3 },
+      { "item": "shield_buckler_PeltaZhigh", "prob": 3 },
+      { "item": "apron_leather", "prob": 1 },
+      { "item": "pot_copper", "prob": 3 },
+      { "item": "katar", "prob": 3 },
+      { "item": "jamadhar", "prob": 3 },
+      { "group": "tinware", "prob": 10 }
     ]
   },
   {
@@ -1648,6 +1780,7 @@
       { "item": "toastem2", "prob": 45 },
       { "item": "toastem3", "prob": 45 },
       { "item": "cookies", "prob": 45 },
+      { "item": "airsoftHelm_zhigh", "prob": 15 },
       { "item": "bat", "prob": 15 },
       { "item": "backpack", "prob": 20 },
       { "item": "hairpin", "prob": 10 },
@@ -1660,6 +1793,8 @@
       { "item": "folding_bicycle", "prob": 3 },
       { "item": "sunglasses", "prob": 25 },
       { "item": "cowboy_hat", "prob": 25 },
+      { "item": "cowboy_hat_zhigh", "prob": 25 },
+      { "item": "cowboy_hat_zhigh1", "prob": 5 },
       { "item": "mp3", "prob": 35 },
       { "item": "wolfsuit", "prob": 5 },
       { "item": "dinosuit", "prob": 5 },
@@ -1758,6 +1893,7 @@
       [ "fc_hairpin", 30 ],
       { "group": "kids_books", "prob": 170, "count": [ 1, 4 ] },
       { "group": "games", "prob": 170, "count": [ 1, 2 ] },
+      [ "airsoftHelm_zhigh", 20 ],
       [ "backpack", 20 ],
       [ "baseball", 30 ],
       [ "football", 20 ],
@@ -2039,6 +2175,7 @@
       [ "arming_sword", 2 ],
       [ "arming_sword_fake", 8 ],
       [ "arming_sword_inferior", 10 ],
+      [ "colichemardeZhigh", 2 ],
       [ "shotelZhigh", 2 ],
       [ "shotelZhigh_fake", 8 ],
       [ "shotelZhigh_inferior", 10 ],
@@ -2127,6 +2264,8 @@
       [ "rapier_fake", 8 ],
       [ "cavalry_sabre", 4 ],
       [ "cavalry_sabre_fake", 8 ],
+      [ "mortuarySwordZhigh", 4 ],
+      [ "mortuarySwordZhigh_fake", 8 ],
       [ "estoc", 3 ],
       [ "estoc_inferior", 4 ],
       [ "estoc_fake", 5 ],
@@ -2144,6 +2283,7 @@
       [ "q_staff", 8 ],
       [ "i_staff", 6 ],
       [ "glaive", 3 ],
+      [ "fauchardZhigh", 3 ],
       [ "naginata", 2 ],
       [ "halberd", 2 ],
       [ "halberd_fake", 6 ],
@@ -2152,6 +2292,9 @@
       [ "battleaxe", 2 ],
       [ "battleaxe_fake", 6 ],
       [ "battleaxe_inferior", 10 ],
+      [ "lochaberaxeZhigh", 2 ],
+      [ "lochaberaxeZhigh_fake", 6 ],
+      [ "lochaberaxeZhigh_inferior", 10 ],
       [ "mace", 1 ],
       [ "mace_fake", 2 ],
       [ "mace_inferior", 3 ],
@@ -2220,6 +2363,7 @@
       [ "jezail_flintlock", 15 ],
       [ "revolverValoisZhigh", 5 ],
       [ "pistolFlintlockSaberZhigh", 5 ],
+      [ "spear_flintlockZhigh", 5 ],
       [ "flintlock_pouch", 30 ],
       [ "flintlock_ammo", 60 ],
       [ "flintlock_shot", 40 ],
@@ -2252,7 +2396,7 @@
       { "group": "charms_guns", "prob": 15 },
       [ "paintballgun", 55 ],
       [ "paintballG_AR15", 25 ],
-      [ "paintballG_MP7", 25 ],
+      [ "paintballG_MP7", 2 ],
       [ "shotgun_pump_paint", 25 ], 
       [ "shotgun_d_paint", 25 ], 
       [ "paintballgun_pistol", 25 ], 
@@ -2376,6 +2520,7 @@
       [ "muzzle_weightZhigh", 40 ],
       [ "rapidFireMechZhigh", 20 ],
       [ "pistol_gripLaserZhigh", 10 ],
+      [ "barrel_deagleZhigh", 5 ],
       [ "bipodgrip", 10 ],
       [ "fanning", 10 ],
       [ "axe_bayonet", 10 ],
@@ -2425,6 +2570,9 @@
       { "item": "glowstick", "prob": 5 },
       { "item": "pen", "count": [ 1, 2 ], "prob": 10 },
       { "item": "pencil", "count": [ 1, 2 ], "prob": 7 },
+      { "item": "inkZhigh", "count": [ 1, 2 ], "prob": 10 },
+      { "item": "pen_fountainZhigh", "count": [ 0, 1 ], "prob": 4 },
+      { "item": "pen_fountainZhigh01", "count": [ 0, 1 ], "prob": 1 },
       { "item": "mobile_memory_card_encrypted", "count": [ 1, 2 ], "prob": 7 }
     ]
   },
@@ -2448,6 +2596,9 @@
       { "item": "pen", "count": [ 1, 2 ], "prob": 20 },
       { "item": "pencil", "count": [ 1, 2 ], "prob": 15 },
       { "group": "spy_pens", "prob": 5 },
+      { "item": "inkZhigh", "count": [ 1, 2 ], "prob": 10 },
+      { "item": "pen_fountainZhigh", "count": [ 0, 1 ], "prob": 4 },
+      { "item": "pen_fountainZhigh01", "count": [ 0, 1 ], "prob": 1 },
       { "item": "glowstick", "prob": 5 },
       { "item": "stapler", "prob": 60 },
       { "item": "scissors", "prob": 35 },
@@ -2498,7 +2649,8 @@
       [ "bio_armorV2_eyes", 10 ],
       [ "bio_armorV2_head", 10 ],
       [ "bio_armorV2_legs", 10 ],
-      [ "bio_armorV2_torso", 10 ]
+      [ "bio_armorV2_torso", 10 ],
+      [ "bio_laserEyeZhigh", 10 ]
     ]
   },
   {
@@ -2688,6 +2840,7 @@
       { "item": "doorgunnervest", "prob": 15 },
       { "item": "holster", "prob": 15 },
       { "item": "sholster", "prob": 10 },
+      { "item": "suitOfficerZhigh", "prob": 3 },
       { "item": "wristholster", "prob": 3 },
       { "item": "multi_holster", "prob": 3 },
       { "item": "bandolier_shotgun", "prob": 12 },
@@ -2856,6 +3009,7 @@
     "magazine": 100,
     "subtype": "distribution",
     "entries": [
+      { "item": "hk_g36RailGunStalker", "prob": 1, "count-min": 0, "count-max": 1 },
       { "group": "guns_launcher_milspec", "prob": 5 },
       { "group": "guns_launcher_rocket", "prob": 44 },
       { "group": "guns_rifle_milspec", "prob": 10 },
@@ -2927,6 +3081,7 @@
       { "item": "helmet_lobster", "prob": 2 },
       { "item": "cowboy_hat", "prob": 4 },
       { "item": "cowboy_hat_zhigh", "prob": 4 },
+      { "item": "cowboy_hat_zhigh1", "prob": 1 },
       { "item": "peaked_capZhigh", "prob": 4 },
       { "item": "mask_bal", "prob": 1 },
       { "item": "sm_extinguisher", "prob": 10 },
@@ -2939,6 +3094,94 @@
       { "item": "briefcase", "prob": 5 },
       { "item": "survnote", "prob": 2 },
       { "item": "robot_controls", "prob": 3 }
+    ]
+  },
+  {
+    "id": "coats_unisex",
+    "type": "item_group",
+    "//": "unisex coats, jackets, cloaks, etc.",
+    "subtype": "distribution",
+    "items": [
+      {
+        "distribution": [
+          { "item": "cloak", "prob": 80 },
+          { "item": "cloak_wool", "prob": 40 },
+          { "item": "cloak_leather", "prob": 20 },
+          { "item": "cloak_fur", "prob": 10 },
+          { "item": "jedi_cloak", "prob": 5 }
+        ],
+        "prob": 20
+      },
+      {
+        "distribution": [
+          { "item": "duster", "prob": 80 },
+          { "item": "duster_leather", "prob": 60 },
+          { "item": "duster_faux_fur", "prob": 30 },
+          { "item": "duster_fur", "prob": 5 },
+          { "item": "sleeveless_duster", "prob": 70 },
+          { "item": "sleeveless_duster_leather", "prob": 50 },
+          { "item": "sleeveless_duster_fur", "prob": 20 },
+          { "item": "sleeveless_duster_faux_fur", "prob": 10 }
+        ],
+        "prob": 60
+      },
+      {
+        "distribution": [
+          { "item": "trenchcoat", "prob": 80 },
+          { "item": "trenchcoat_leather", "prob": 60 },
+          { "item": "trenchcoat_faux_fur", "prob": 30 },
+          { "item": "trenchcoat_fur", "prob": 5 },
+          { "item": "suitDukeZhigh", "prob": 5 },
+          { "item": "suitRedMafiaZhigh", "prob": 5 },
+          { "item": "suitColombiaZhigh", "prob": 5 },
+          { "item": "sleeveless_trenchcoat", "prob": 40 },
+          { "item": "sleeveless_trenchcoat_leather", "prob": 30 },
+          { "item": "sleeveless_trenchcoat_fur", "prob": 10 },
+          { "item": "sleeveless_trenchcoat_faux_fur", "prob": 20 }
+        ],
+        "prob": 40
+      },
+      {
+        "distribution": [
+          { "item": "coat_rain", "prob": 80 },
+          { "item": "coat_winter", "prob": 50 },
+          { "item": "peacoat", "prob": 50 },
+          { "item": "greatcoat", "prob": 35 },
+          { "item": "coat_faux_fur", "prob": 20 },
+          { "item": "coat_fur", "prob": 10 },
+          { "item": "coat_fur_sf", "prob": 5 },
+          { "item": "coat_fur_sfZhigh", "prob": 5 }
+        ],
+        "prob": 80
+      },
+      {
+        "distribution": [
+          { "item": "jacket_jean", "prob": 80 },
+          { "item": "jacket_flannel", "prob": 50 },
+          { "item": "jacket_leather", "prob": 50 },
+          { "item": "jacket_leather_red", "prob": 25 },
+          { "item": "jacket_light", "prob": 60 },
+          { "item": "jacket_windbreaker", "prob": 70 },
+          { "item": "poncho", "prob": 20 },
+          { "item": "poncho_zhigh", "prob": 20 },
+          { "item": "ski_jacket", "prob": 25 }
+        ],
+        "prob": 60
+      },
+      {
+        "distribution": [ { "item": "house_coat", "prob": 80 }, { "item": "kimono", "prob": 20 }, { "item": "robe", "prob": 10 } ],
+        "prob": 30
+      },
+      {
+        "distribution": [
+          { "item": "vest", "prob": 80 },
+          { "item": "vest_leather", "prob": 20 },
+          { "item": "vest_leatherBikerZhigh", "prob": 20 },
+          { "item": "army_top", "prob": 40 },
+          { "item": "blazer", "prob": 70 }
+        ],
+        "prob": 40
+      }
     ]
   }
 ]

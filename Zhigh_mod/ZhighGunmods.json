@@ -45,7 +45,7 @@
     "looks_like": "blowpipe",
     "type": "GUNMOD",
     "name": { "str": "tong-a (crossbows)" },
-    "description": "Just a narrow wooden barrel cut in half.  By adding this to a bow, you can shoot arrows instead of bolts.  Adds damage, but hard to aim accurately.",
+    "description": "Just a narrow wooden barrel cut in half.  By adding this to a crossbow, you can shoot arrows instead of bolts.  Adds damage, but hard to aim accurately.",
     "weight": "100 g",
     "volume": "200 ml",
     "integral_volume": 0,
@@ -147,6 +147,7 @@
     "mod_targets": [ 
          "glock_17", 
          "glock_19", 
+         "glock_20", 
          "glock_21", 
          "glock_22", 
          "glock_31"  
@@ -476,7 +477,7 @@
       [ "FLAMETHROWERS" ]
     ],
     "gun_data": {
-      "ammo": [ "jp8", "motor_oil", "lamp_oil", "flammable", "diesel", "gasoline" ],
+      "ammo": [ "jp8", "flammable", "diesel", "gasoline" ],
       "skill": "launcher",
       "ranged_damage": { "damage_type": "heat", "amount": -1 },
       "dispersion": 425,
@@ -1010,5 +1011,28 @@
       [ "ROCKET_LAUNCHERS" ],
       [ "FLAMETHROWERS" ]
     ]
+  },
+  {
+    "id": "barrel_deagleZhigh",
+    "looks_like": "barrel_big",
+    "type": "GUNMOD",
+    "name": { "str": "Desert Eagle barrel extension" },
+    "description": "A longer barrel increases the muzzle velocity of a Desert Eagle, contributing to both accuracy and damage but reduces portability and slows aiming.",
+    "weight": "400 g",
+    "volume": "520 ml",
+    "price": "200 USD",
+    "to_hit": 2,
+    "bashing": 5,
+    "material": [ "steel" ],
+    "symbol": ":",
+    "color": "light_gray",
+    "location": "barrel",
+    "mod_target_category": [ [ "PISTOLS" ], [ "SUBMACHINE_GUNS" ], [ "RIFLES" ], [ "MACHINE_GUNS" ], [ "GATLING_GUNS" ], [ "SHOTGUNS" ] ],
+    "damage_modifier": { "damage_type": "bullet", "amount": 3 },
+    "dispersion_modifier": -100,
+    "min_skills": [ [ "weapon", 4 ] ],
+    "range_modifier": 2,
+    "mod_targets": [ "deagle_44" ],
+    "handling_modifier": -4
   }
 ]

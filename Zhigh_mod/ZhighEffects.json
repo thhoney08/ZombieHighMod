@@ -65,6 +65,20 @@
   },
   {
     "type": "effect_type",
+    "id": "anticorroding",
+    "removes_effects": [
+      "corroding"
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "antionfire",
+    "removes_effects": [
+      "onfire"
+    ]
+  },
+  {
+    "type": "effect_type",
     "id": "holyH2OZhighEffect",
     "removes_effects": [
       "sad",
@@ -228,6 +242,18 @@
     "rating": "bad",
     "base_mods": {
       "speed_mod": [ -60 ]
+    },
+    "show_in_info": true
+  },
+  {
+    "type": "effect_type",
+    "id": "speeddownBarb",
+    "name": [ "speed down" ],
+    "desc": [ "You became slower." ],
+    "apply_message": "You became slower.",
+    "rating": "bad",
+    "base_mods": {
+      "speed_mod": [ -20 ]
     },
     "show_in_info": true
   },

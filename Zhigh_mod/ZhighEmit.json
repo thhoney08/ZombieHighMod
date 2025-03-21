@@ -135,17 +135,19 @@
   },
   {
     "id": "fd_barbedWireZhigh",
+    "looks_like": "t_fence_barbed",
     "type": "field_type",
     "legacy_enum_id": 5,
     "description_affix": "covered_in",
     "priority": 2,
     "phase": "solid",
     "bash": {
-      "str_min": 1,
-      "str_max": 3,
+      "str_min": 5,
+      "str_max": 12,
       "sound_vol": 2,
       "sound_fail_vol": 2,
-      "sound": "hsh!",
+      "sound": "clang!",
+	  "sound_fail": "clang!",
       "msg_success": "You brush aside some barbed wire."
     },
     "display_items": true,
@@ -168,6 +170,18 @@
             "message": "The barbed wire cuts you!",
             "message_npc": "The barbed wire cuts <npcname>!",
             "message_type": "bad"
+          },
+          {
+            "effect_id": "speeddownBarb",
+            "body_part": "torso",
+            "intensity": 1,
+            "min_duration": "2 seconds",
+            "max_duration": "2 seconds",
+            "immune_in_vehicle": true,
+            "is_environmental": false,
+            "message": "The barbed wire slows you down!",
+            "message_npc": "The barbed wire slows <npcname> down!",
+            "message_type": "bad"
           }
         ]
       },
@@ -180,13 +194,25 @@
           {
             "effect_id": "bleed",
             "body_part": "torso",
-            "intensity": 1,
+            "intensity": 2,
             "min_duration": "4 seconds",
             "max_duration": "4 seconds",
             "immune_in_vehicle": true,
             "is_environmental": false,
             "message": "The barbed wire cuts you!",
             "message_npc": "The barbed wire cuts <npcname>!",
+            "message_type": "bad"
+          },
+          {
+            "effect_id": "speeddownBarb",
+            "body_part": "torso",
+            "intensity": 2,
+            "min_duration": "4 seconds",
+            "max_duration": "4 seconds",
+            "immune_in_vehicle": true,
+            "is_environmental": false,
+            "message": "The barbed wire slows you down!",
+            "message_npc": "The barbed wire slows <npcname> down!",
             "message_type": "bad"
           }
         ]
@@ -200,7 +226,7 @@
           {
             "effect_id": "bleed",
             "body_part": "torso",
-            "intensity": 1,
+            "intensity": 3,
             "min_duration": "6 seconds",
             "max_duration": "6 seconds",
             "immune_in_vehicle": true,
@@ -208,11 +234,22 @@
             "message": "The barbed wire cuts you!",
             "message_npc": "The barbed wire cuts <npcname>!",
             "message_type": "bad"
+          },
+          {
+            "effect_id": "speeddownBarb",
+            "body_part": "torso",
+            "intensity": 3,
+            "min_duration": "6 seconds",
+            "max_duration": "6 seconds",
+            "immune_in_vehicle": true,
+            "is_environmental": false,
+            "message": "The barbed wire slows you down!",
+            "message_npc": "The barbed wire slows <npcname> down!",
+            "message_type": "bad"
           }
         ]
       }
-    ],
-    "looks_like": "fd_web"
+    ]
   },
   {
     "id": "fd_goo",
@@ -910,5 +947,13 @@
     "half_life": "2 turns",
     "display_field": true,
     "looks_like": "fd_laser"
+  },
+  {
+    "id": "emit_smaller_fd_fire",
+    "type": "emit",
+    "//": "Small plume of fire",
+    "field": "fd_fire",
+    "qty": 1,
+    "chance": 30
   }
 ]

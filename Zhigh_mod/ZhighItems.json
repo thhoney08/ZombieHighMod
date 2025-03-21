@@ -136,9 +136,10 @@
       },
       "CAMERA",
       "PORTABLE_GAME",
+	  "WEATHER_TOOL",
       "EINKTABLETPC"
     ],
-    "flags": [ "WATCH", "BELT_CLIP", "ALARMCLOCK", "TWO_WAY_RADIO", "NO_UNLOAD", "NO_RELOAD" ]
+    "flags": [ "WATCH", "BELT_CLIP", "ALARMCLOCK", "TWO_WAY_RADIO", "NO_UNLOAD", "NO_RELOAD", "THERMOMETER", "HYGROMETER", "BAROMETER", "WINDMETER" ]
   },
   {
     "id": "zhigh_smart_phone_flashlight",
@@ -152,7 +153,7 @@
       "menu_text": "Turn off flashlight",
       "type": "transform"
     },
-    "flags": [ "WATCH", "BELT_CLIP", "LIGHT_500", "TRADER_AVOID", "ALARMCLOCK", "TWO_WAY_RADIO", "NO_UNLOAD", "NO_RELOAD" ]
+    "flags": [ "WATCH", "BELT_CLIP", "LIGHT_240", "TRADER_AVOID", "ALARMCLOCK", "TWO_WAY_RADIO", "NO_UNLOAD", "NO_RELOAD" ]
   },
   {
     "id": "KorGong",
@@ -293,7 +294,7 @@
     "volume": "20 ml",
     "price": "2 USD",
     "price_postapoc": "1 USD",
-    "to_hit": -2,
+    "to_hit": 1,
     "cutting": 8,
     "material": [ "wood" ],
     "symbol": ";",
@@ -1556,6 +1557,40 @@
     "copy-from": "broken_turret"
   },
   {
+    "id": "bot_chemicalturretZhigh",
+    "looks_like": "toolbox",
+    "type": "TOOL",
+    "name": { "str": "inactive chemical turret" },
+    "description": "This is an inactive chemical turret.  Using this item involves turning it on and placing it on the ground, where it will attach itself.  If reprogrammed and rewired successfully the turret will identify you as a friendly, and attack all enemies with its revolving chemical cannons.",
+    "weight": "3522 g",
+    "volume": "2500 ml",
+    "price": "6 USD",
+    "price_postapoc": "12 USD",
+    "to_hit": -3,
+    "bashing": 8,
+    "material": [ "steel", "plastic" ],
+    "symbol": ";",
+    "color": "white",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_chemicalturret",
+      "difficulty": 0,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "type": "GENERIC",
+    "id": "broken_chemicalturret",
+    "looks_like": "broken_turret_light",
+    "symbol": ",",
+    "color": "green",
+    "name": { "str": "broken chemical turret" },
+    "weight": "3522 g",
+    "volume": "2500 ml",
+    "copy-from": "broken_turret"
+  },
+  {
     "type": "TOOL_ARMOR",
     "category": "clothing",
     "id": "deathWhistleZhigh",
@@ -1828,6 +1863,22 @@
     "flags": [ "NO_REPAIR", "NO_SALVAGE" ]
   },
   {
+    "id": "potionBoxZhigh",
+	"looks_like": "box_small",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "unknown potion pack" },
+    "description": "A box with a random potion inside.  Unpack and enjoy.",
+    "weight": "520 g",
+    "volume": "1 L",
+    "price": "10000 USD",
+    "material": "aluminum",
+    "symbol": "!",
+    "color": "green",
+    "use_action": { "type": "unpack", "group": "potionsZhigh_items", "items_fit": true, "filthy_volume_threshold": "10 L" },
+    "flags": [ "NO_REPAIR", "NO_SALVAGE" ]
+  },
+  {
     "id": "okMunGangZhigh",
     "type": "GENERIC",
     "category": "tools",
@@ -1847,6 +1898,7 @@
   },
   {
     "id": "bone_bugleZhigh",
+	"looks_like": "bugleZhigh",
     "type": "TOOL",
     "category": "tools",
     "name": { "str": "horn bugle" },
@@ -1934,5 +1986,87 @@
     "price_postapoc": "3 USD",
     "fun": -4,
     "flags": [ "EATEN_HOT" ]
+  },
+  {
+    "id": "pen_fountainZhigh",
+    "type": "TOOL",
+    "category": "tools",
+    "weapon_category": [ "KNIVES" ],
+    "name": { "str": "fountain pen" },
+    "description": "This is a long, thin object, usually made of various materials, for writing or drawing, with a sharp metal point at one end.  You could use this as a weapon, but it is not that great.  You have been warned.",
+    "weight": "40 g",
+    "volume": "20 ml",
+    "price": "200 USD",
+    "price_postapoc": "3 USD",
+    "to_hit": 1,
+    "cutting": 8,
+    "material": [ "plastic", "aluminum", "wood" ],
+    "symbol": ";",
+    "color": "dark_gray",
+    "techniques": [ "RAPID" ],
+    "initial_charges": 20,
+    "max_charges": 20,
+    "charges_per_use": 1,
+    "ammo": "inkAmmoZhigh",
+    "use_action": { "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": true, "material_restricted": false },
+    "flags": [ "STAB", "SHEATH_KNIFE", "WRITE_MESSAGE", "BELT_CLIP" ]
+  },
+  {
+    "id": "pen_fountainZhigh01",
+    "copy-from": "pen_fountainZhigh",
+	"looks_like": "pen_fountainZhigh",
+    "type": "TOOL",
+    "category": "tools",
+    "weapon_category": [ "KNIVES" ],
+    "name": { "str": "fountain pen" },
+    "description": "This is a long, thin object, usually made of precious materials, for writing or drawing, with a sharp metal point at one end.  You could use this as a weapon, but it is not that great.  You have been warned.",
+    "price": "2000 USD",
+    "price_postapoc": "30 USD",
+    "material": [ "gold", "silver", "wood" ],
+    "initial_charges": 40,
+    "max_charges": 40
+  },
+  {
+    "id": "pen_fountainZhigh02",
+    "copy-from": "pen_fountainZhigh",
+	"looks_like": "feather",
+    "type": "TOOL",
+    "category": "tools",
+    "weapon_category": [ "KNIVES" ],
+    "name": { "str": "fountain pen" },
+    "description": "This is a long, thin object, usually made of a feather, for writing or drawing, with a sharp point at one end.  You could use this as a weapon, but it is not that great.  You have been warned.",
+    "price": "2 USD",
+    "price_postapoc": "1 USD",
+    "material": [ "cotton" ],
+    "to_hit": -1,
+    "cutting": 5,
+    "initial_charges": 5,
+    "max_charges": 5
+  },
+  {
+    "type": "TOOL",
+    "category": "tools",
+    "id": "bugleZhigh",
+    "name": { "str": "bugle" },
+    "volume": "10 ml",
+    "description": "A simple metal bugle, used to make sound.",
+    "weight": "25 g",
+    "to_hit": -1,
+    "bashing": 8,
+    "color": "yellow",
+    "price": "20 USD",
+    "price_postapoc": "50 cent",
+    "material": [ "brass" ],
+    "symbol": "-",
+    "use_action": {
+      "type": "manualnoise",
+      "no_charges_message": "Seeing this is an error.",
+      "use_message": "You blow the bugle.",
+      "noise_message": "HOOOOONK!",
+      "noise_id": "misc",
+      "noise_variant": "horn_loud",
+      "noise": 100,
+      "moves": 100
+    }
   }
 ]
