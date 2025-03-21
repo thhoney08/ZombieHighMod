@@ -1,0 +1,358 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "convention_up_left_anime",
+    "object": {
+      "mapgensize": [ 19, 19 ],
+      "rows": [
+        "         h   n     ",
+        "     n h     n     ",
+        "     n    h  n     ",
+        "     n       n     ",
+        "     nnnnnnnnn     ",
+        "                   ",
+        "                   ",
+        "                   ",
+        "                   ",
+        "                   ",
+        "                   ",
+        "     **  *  **     ",
+        "     n  h*   n     ",
+        "     n   *  hn     ",
+        "     n  X*   n│    ",
+        "     **  *X **     ",
+        "     n   *X  n     ",
+        "     n h * h n     ",
+        "     n  X*   n     "
+      ],
+      "place_monsters": [ { "monster": "GROUP_GROCERY", "x": [ 0, 19 ], "y": [ 0, 19 ], "density": 0.2 } ],
+      "furniture": { "X": "f_crate_c" },
+      "items": {
+        "n": [ { "item": "animeStuffZhigh", "chance": 20 }, { "item": "animeStuffZhigh", "chance": 20 } ],
+        " ": [ { "item": "animeStuffZhigh", "chance": 2 }, { "item": "animeStuffZhigh", "chance": 1 } ],
+        "X": [ { "item": "animeStuffZhigh", "chance": 70 }, { "item": "animeStuffZhigh", "chance": 40 } ]
+      },
+      "palettes": [ "convention_nested_palette" ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "convention_up_right_anime",
+    "object": {
+      "mapgensize": [ 19, 19 ],
+      "rows": [
+        "         X   n     ",
+        "     n     h n     ",
+        "     n h     n     ",
+        "     n   h   n     ",
+        "     nnnnnnnnn     ",
+        "                   ",
+        "                   ",
+        "                   ",
+        "                   ",
+        "                   ",
+        "                   ",
+        " nnnnnn            ",
+        " n  h n            ",
+        "      n            ",
+        " n                 ",
+        " n h  n            ",
+        " nnnnnn            ",
+        "                   ",
+        "                   "
+      ],
+      "place_monsters": [ { "monster": "GROUP_GROCERY", "x": [ 0, 19 ], "y": [ 0, 19 ], "density": 0.2 } ],
+      "furniture": { "X": "f_crate_c" },
+      "items": {
+        "n": [ { "item": "animeStuffZhigh", "chance": 20 }, { "item": "animeStuffZhigh", "chance": 20 } ],
+        " ": [ { "item": "animeStuffZhigh", "chance": 2 }, { "item": "animeStuffZhigh", "chance": 1 } ],
+        "X": [ { "item": "animeStuffZhigh", "chance": 70 }, { "item": "animeStuffZhigh", "chance": 40 } ]
+      },
+      "palettes": [ "convention_nested_palette" ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "convention_mid_left_anime",
+    "object": {
+      "mapgensize": [ 24, 24 ],
+      "rows": [
+        "│││││     **  *  **     ",
+        "│││││     n   *  hn     ",
+        "│││││     n   *   n     ",
+        "│││││     nh X*   n     ",
+        "│││││     **  *  **     ",
+        "│││││     n   *   n     ",
+        "│││││     n   * h n     ",
+        "│││││     n  h*   n     ",
+        "│││││     **  *  **     ",
+        "│││││                   ",
+        "│││││                   ",
+        "│││││                   ",
+        "│││││                   ",
+        "│││││                   ",
+        "│││││                   ",
+        "│││││     **  *  **     ",
+        "│││││     n   *h  n     ",
+        "│││││     nh  *   n     ",
+        "│││││     n   *   n     ",
+        "│││││     **  *  **     ",
+        "│││││     n  X*   n     ",
+        "│││││     nh  *   n     ",
+        "│││││     n   * h n     ",
+        "│││││     **  *  **     "
+      ],
+      "place_monsters": [ { "monster": "GROUP_GROCERY", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.2 } ],
+      "furniture": { "X": "f_crate_c" },
+      "items": {
+        "n": [ { "item": "animeStuffZhigh", "chance": 20 }, { "item": "animeStuffZhigh", "chance": 20 } ],
+        " ": [ { "item": "animeStuffZhigh", "chance": 2 }, { "item": "animeStuffZhigh", "chance": 1 } ],
+        "X": [ { "item": "animeStuffZhigh", "chance": 70 }, { "item": "animeStuffZhigh", "chance": 40 } ]
+      },
+      "palettes": [ "convention_nested_palette" ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "convention_mid_right_anime",
+    "object": {
+      "mapgensize": [ 24, 24 ],
+      "rows": [
+        "                   │││││",
+        "                   │││││",
+        "                   │││││",
+        "             ***   │││││",
+        "             n     │││││",
+        "             nh   X│││││",
+        "             n     │││││",
+        "             **    │││││",
+        "             n     │││││",
+        "             n  ││││││││",
+        "             nh ││││││││",
+        "             ** ││││││││",
+        "             n  ││││││││",
+        "             n  ││││││││",
+        "             n h││││││││",
+        "             **  XX│││││",
+        "             nh    │││││",
+        " nnnnnn      n     │││││",
+        " n    n      n    X│││││",
+        "    h n      **    │││││",
+        " nh          n     │││││",
+        " n    n      n     │││││",
+        " nnnnnn      n h   │││││",
+        "             ***   │││││"
+      ],
+      "place_monsters": [ { "monster": "GROUP_GROCERY", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.2 } ],
+      "furniture": { "X": "f_crate_c" },
+      "items": {
+        "n": [ { "item": "animeStuffZhigh", "chance": 20 }, { "item": "animeStuffZhigh", "chance": 20 } ],
+        " ": [ { "item": "animeStuffZhigh", "chance": 2 }, { "item": "animeStuffZhigh", "chance": 1 } ],
+        "X": [ { "item": "animeStuffZhigh", "chance": 70 }, { "item": "animeStuffZhigh", "chance": 40 } ]
+      },
+      "palettes": [ "convention_nested_palette" ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "convention_down_left_anime",
+    "object": {
+      "mapgensize": [ 19, 19 ],
+      "rows": [
+        "     n   * h n     ",
+        "     nh  *   n     ",
+        "     n   *X  n     ",
+        "     **  *X **     ",
+        "     n   *   n     ",
+        "     n h *   n     ",
+        "     n   *  hn     ",
+        "     **  *X **     ",
+        "                   ",
+        "                   ",
+        "                   ",
+        "                   ",
+        "                   ",
+        "                   ",
+        "                   ",
+        "                   ",
+        "                   ",
+        "                   ",
+        "                   "
+      ],
+      "place_monsters": [ { "monster": "GROUP_GROCERY", "x": [ 0, 19 ], "y": [ 0, 19 ], "density": 0.2 } ],
+      "furniture": { "X": "f_crate_c" },
+      "items": {
+        "n": [ { "item": "animeStuffZhigh", "chance": 20 }, { "item": "animeStuffZhigh", "chance": 20 } ],
+        " ": [ { "item": "animeStuffZhigh", "chance": 2 }, { "item": "animeStuffZhigh", "chance": 1 } ],
+        "X": [ { "item": "animeStuffZhigh", "chance": 70 }, { "item": "animeStuffZhigh", "chance": 40 } ]
+      },
+      "palettes": [ "convention_nested_palette" ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "convention_down_right_anime",
+    "object": {
+      "mapgensize": [ 19, 19 ],
+      "rows": [
+        "                   ",
+        "                   ",
+        "                   ",
+        "                   ",
+        "                   ",
+        " *nnn*nnn*nnn*     ",
+        " *  h*   *   *     ",
+        "           h       ",
+        "     X  h          ",
+        " *************     ",
+        "     XX            ",
+        "  h                ",
+        " *   *h  * h *     ",
+        " *nnn*nnn*nnn*     ",
+        "                   ",
+        "                   ",
+        "                   ",
+        "                   ",
+        "               X XX"
+      ],
+      "place_monsters": [ { "monster": "GROUP_GROCERY", "x": [ 0, 19 ], "y": [ 0, 19 ], "density": 0.2 } ],
+      "furniture": { "X": "f_crate_c" },
+      "items": {
+        "n": [ { "item": "animeStuffZhigh", "chance": 20 }, { "item": "animeStuffZhigh", "chance": 20 } ],
+        " ": [ { "item": "animeStuffZhigh", "chance": 2 }, { "item": "animeStuffZhigh", "chance": 1 } ],
+        "X": [ { "item": "animeStuffZhigh", "chance": 70 }, { "item": "animeStuffZhigh", "chance": 40 } ]
+      },
+      "palettes": [ "convention_nested_palette" ]
+    }
+  },
+  {
+    "type": "palette",
+    "id": "convention_nested_anime",
+    "nested": {
+      "1": { "chunks": [ "convention_up_left_anime" ] },
+      "2": { "chunks": [ "convention_up_right_anime" ] },
+      "3": { "chunks": [ "convention_mid_left_anime" ] },
+      "4": { "chunks": [ "convention_mid_right_anime" ] },
+      "5": { "chunks": [ "convention_down_left_anime" ] },
+      "6": { "chunks": [ "convention_down_right_anime" ] },
+      "7": { "chunks": [ "convention_up_left_anime" ] },
+      "8": { "chunks": [ "convention_up_right_anime" ] },
+      "9": { "chunks": [ "convention_down_left_anime" ] },
+      "0": { "chunks": [ "convention_down_right_anime" ] }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "convention_palette",
+    "palettes": [
+      {
+        "distribution": [
+          [ "convention_nested_vacant", 2 ],
+          [ "convention_nested_fandom", 5 ],
+          [ "convention_nested_gunshow", 7 ],
+          [ "convention_nested_anime", 7 ],
+          [ "convention_nested_lecture_small", 2 ],
+          [ "convention_nested_lecture_big", 3 ]
+        ]
+      }
+    ],
+    "terrain": {
+      "│": "t_hole",
+      "_": "t_concrete",
+      "A": "t_concrete",
+      "f": "t_chainfence",
+      "G": "t_chaingate_l",
+      "-": "t_wall_glass",
+      "=": "t_door_glass_c",
+      "+": "t_door_metal_c",
+      "|": "t_concrete_wall",
+      ".": "t_linoleum_white",
+      ":": "t_linoleum_gray",
+      " ": "t_thconc_floor",
+      "H": "t_thconc_floor",
+      "N": "t_thconc_floor",
+      "[": "t_thconc_floor",
+      "l": "t_thconc_floor",
+      "g": "t_thconc_floor",
+      "1": "t_thconc_floor",
+      "2": "t_thconc_floor",
+      "4": "t_thconc_floor",
+      "5": "t_thconc_floor",
+      "6": "t_thconc_floor",
+      "7": "t_thconc_floor",
+      "8": "t_thconc_floor",
+      "9": "t_thconc_floor",
+      "0": "t_thconc_floor",
+      ",": "t_floor",
+      "(": "t_floor",
+      ")": "t_floor",
+      "!": "t_grate_indoor",
+      "?": "t_grate",
+      "'": "t_metal_railing",
+      "/": "t_glass_railing",
+      "E": "t_elevator",
+      "<": "t_stairs_up",
+      ">": "t_stairs_down",
+      "^": "t_ladder_up",
+      "I": "t_gutter_downspout",
+      "o": "t_glass_roof",
+      "*": "t_open_air_rooved"
+    },
+    "furniture": {
+      "e": "f_fridge",
+      "é": "f_fridge",
+      "m": "f_glass_fridge",
+      "r": "f_utility_shelf",
+      "O": "f_oven",
+      "c": "f_counter",
+      "d": "f_desk",
+      "P": "f_filing_cabinet",
+      "h": "f_chair",
+      "b": "f_metal_bench",
+      "y": [ "f_indoor_plant", "f_indoor_plant_y" ],
+      "H": "f_chair_folding",
+      "N": "f_tourist_table",
+      "n": "f_table",
+      "[": "f_room_divider",
+      "S": "f_sink",
+      "l": "f_locker",
+      "g": "f_water_heater",
+      "A": "f_dumpster",
+      "a": "f_trashcan"
+    },
+    "items": {
+      "e": { "item": "SUS_fridge", "chance": 80 },
+      "é": { "item": "fast_fridge", "chance": 80, "repeat": [ 4, 10 ] },
+      "r": { "item": "fast_kitchen", "chance": 80, "repeat": [ 2, 5 ] },
+      "m": { "item": "groce_softdrink", "chance": 80, "repeat": [ 4, 10 ] },
+      "O": { "item": "SUS_oven", "chance": 80 },
+      "P": { "item": "SUS_office_filing_cabinet", "chance": 33 },
+      "d": { "item": "SUS_office_desk", "chance": 33 },
+      "l": { "item": "SUS_janitors_closet", "chance": 100 },
+      "a": { "item": "trash", "chance": 33, "repeat": [ 1, 3 ] },
+      "A": { "item": "trash_dumpster", "chance": 80 }
+    },
+    "liquids": { "g": { "liquid": "water_clean", "amount": [ 0, 100 ] } },
+    "vendingmachines": { "D": { "item_group": "vending_drink" }, "F": { "item_group": "vending_food" } },
+    "toilets": { "t": {  } },
+    "nested": {
+      "(": {
+        "chunks": [
+          [ "null", 2 ],
+          [ "conference_small_vacant", 6 ],
+          [ "conference_small_lecture", 3 ],
+          [ "conference_small_meeting", 3 ]
+        ]
+      },
+      ")": {
+        "chunks": [ [ "null", 2 ], [ "conference_big_vacant", 6 ], [ "conference_big_lecture", 3 ], [ "conference_big_meeting", 3 ] ]
+      }
+    }
+  }
+]
