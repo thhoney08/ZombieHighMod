@@ -1,5 +1,22 @@
 [
   {
+    "id": "staminaCandyZhigh",
+    "type": "SPELL",
+    "name": { "str": "stamina regain" },
+    "description": "This spell gives everyone around you some stamina.",
+    "valid_targets": [ "self" ],
+    "flags": [ "RANDOM_DURATION", "SOMATIC", "SILENT", "NO_EXPLOSION_VFX", "NO_FAIL" ],
+    "min_duration": 800,
+    "max_duration": 850,
+    "effect": "projectile_attack",
+    "effect_str": "staminupMaestro",
+    "min_damage": 0,
+    "max_damage": 0,
+    "field_id": "fd_staminaeffect",
+    "min_field_intensity": 2,
+    "max_field_intensity": 2
+  },
+  {
     "type": "SPELL",
     "id": "zhigh2_healing_dart",
     "name": "Healing dart discharge",
@@ -392,7 +409,7 @@
     "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX" ]
   },
   {
-    "id": "FreezeZhigh",
+    "id": "FreezeSpellZhigh",
     "type": "SPELL",
     "name": { "str": "Freeze" },
     "description": "Freezes the target.",
@@ -404,5 +421,74 @@
     "min_duration": 1500,
     "max_duration": 3000,
     "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX" ]
+  },
+  {
+    "id": "BurnSpellZhigh",
+    "type": "SPELL",
+    "name": { "str": "Burn" },
+    "description": "Burns the target.",
+    "effect": "target_attack",
+    "effect_str": "onfire",
+    "valid_targets": [ "hostile" ],
+    "min_range": 2,
+    "max_range": 2,
+    "min_duration": 1500,
+    "max_duration": 3000,
+    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX" ]
+  },
+  {
+    "id": "EmpSpellZhigh",
+    "type": "SPELL",
+    "name": { "str": "Discharge" },
+    "description": "Fries the target with emp.",
+    "effect": "target_attack",
+    "effect_str": "emp",
+    "valid_targets": [ "hostile" ],
+    "min_range": 2,
+    "max_range": 2,
+    "min_duration": 1500,
+    "max_duration": 3000,
+    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX" ]
+  },
+  {
+    "id": "acidSpellZhigh",
+    "type": "SPELL",
+    "name": { "str": "corroding" },
+    "description": "Melts the target.",
+    "effect": "target_attack",
+    "effect_str": "emp",
+    "valid_targets": [ "hostile" ],
+    "min_range": 2,
+    "max_range": 2,
+    "min_duration": 1500,
+    "max_duration": 3000,
+    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX" ]
+  },
+  {
+    "id": "CritZhigh",
+    "type": "SPELL",
+    "name": { "str": "Critical" },
+    "description": "Hit the target with extra damage.",
+    "effect": "target_attack",
+    "valid_targets": [ "hostile" ],
+    "min_damage": 80,
+    "max_damage": 140,
+    "min_duration": 1500,
+    "max_duration": 3000,
+    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX" ]
+  },
+  {
+    "id": "pushWeapEffectZhigh",
+    "type": "SPELL",
+    "name": "pushing",
+    "description": "Pushes enemies away.",
+    "flags": [ "SILENT", "NO_EXPLOSION_VFX" ],
+    "effect": "area_push",
+    "effect_filter": [ "hostile" ],
+    "valid_targets": [ "ally", "hostile", "ground" ],
+    "min_range": 3,
+    "max_range": 4,
+    "min_aoe": 3,
+    "max_aoe": 4
   }
 ]

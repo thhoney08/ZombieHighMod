@@ -838,6 +838,40 @@
     "description": "."
   },
   {
+    "id": "badge_noiseZhigh",
+    "copy-from": "badge_abstract",
+    "type": "ARMOR",
+    "name": { "str": "." },
+    "material": [ "plastic" ],
+    "weight": "10 g",
+    "price_postapoc": "10 USD",
+    "flags": [ 
+		"TRADER_AVOID",
+		"ALLOWS_NATURAL_ATTACKS",
+		"OUTER",
+		"OVERSIZE",
+		"WATER_FRIENDLY"
+	],
+	"//": "Test of noise.",
+    "relic_data": {
+      "passive_effects": [
+        {
+			"has": "WORN",
+			"condition": "ALWAYS",
+			"intermittent_activation": {
+				"effects": [
+					{
+						"frequency": "40 seconds",
+						"spell_effects": [ { "id": "AEA_NOISE" } ]
+					}
+				]
+			}
+        }
+      ]
+    },
+    "description": "."
+  },
+  {
     "id": "artifactBaseZhigh",
     "type": "TOOL_ARMOR",
     "name": { "str": "artifact base" },

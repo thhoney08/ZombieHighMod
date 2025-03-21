@@ -871,7 +871,7 @@
     "looks_like": "katana_hm",
     "type": "GENERIC",
     "copy-from": "survivor_machete",
-    "name": { "str": "Shinsakuto Katana" },
+    "name": { "str": "machete knife" },
 	"weight": "1333 g",
     "to_hit": 3,
 	"cutting": 25,
@@ -911,7 +911,7 @@
     "type": "TOOL",
     "category": "weapons",
     "copy-from": "plasmaSaberZhigh",
-    "weapon_category": [ "BATONS", "DUELING_SWORDS" ],
+    "weapon_category": [ "ENERGY_WEAPONS", "BATONS", "DUELING_SWORDS" ],
     "name": { "str": "Plasma Sword (on)" },
     "description": "A handle that collapses for easy storage, is now emitting a blade of plasma.  Makes an excellent melee weapon.  Activate to collapse.",
     "to_hit": 3,
@@ -964,7 +964,7 @@
     "type": "TOOL",
     "category": "weapons",
     "copy-from": "PsybladeZhigh",
-    "weapon_category": [ "FIST_WEAPONS" ],
+    "weapon_category": [ "ENERGY_WEAPONS", "FIST_WEAPONS" ],
     "name": { "str": "Plasma Piercer (on)" },
     "description": "A knuckle-like weapon, which emits a blade of energy now.  Makes an excellent melee weapon.  Activate to collapse.",
     "to_hit": 3,
@@ -2084,6 +2084,34 @@
     },
     "min_skills": [ [ "weapon", 2 ], [ "melee", 1 ] ],
     "techniques": [ "RAPID", "WBLOCK_1" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "poison_paralyze",
+              "once_in": 3,
+              "message": "The knife injects a small amount of poison into your target.",
+              "npc_message": "%1$s stings their target."
+            },
+            {
+              "id": "poison",
+              "once_in": 3,
+              "message": "The knife injects a small amount of poison into your target.",
+              "npc_message": "%1$s stings their target."
+            },
+            {
+              "id": "shockZhigh",
+              "once_in": 3,
+              "message": "The knife shocks your target.",
+              "npc_message": "%1$s shocks their target."
+            }
+          ]
+        }
+      ]
+    },
     "qualities": [ [ "CUT", 8 ], [ "CUT_FINE", 8 ], [ "BUTCHER", 19 ] ],
     "thrown_damage": [ { "damage_type": "stab", "amount": 44 } ],
     "flags": [ "STAB", "DURABLE_MELEE", "SHEATH_KNIFE", "NONCONDUCTIVE" ]
@@ -3613,7 +3641,7 @@
     "id": "knife_chef_superalloyZhigh",
     "copy-from": "knife_chef",
     "looks_like": "knife_chef",
-    "type": "ARMOR",
+    "type": "TOOL",
     "name": { "str": "superalloy chef knife", "str_pl": "superalloy chef knives" },
     "description": "This is a long-bladed kitchen knife.  The blade is wider than the handle, giving room for the wielder's knuckles, and it has a characteristic curve for a fast rocking action for chopping vegetables.  It makes a good melee weapon, but the wide blade is unwieldy for butchering.  This one is specially made in superalloy, which makes it more durable compared to an average one.",
     "material": [ "superalloy" ],
@@ -3625,7 +3653,7 @@
     "id": "knife_meat_cleaver_superalloyZhigh",
     "copy-from": "knife_meat_cleaver",
     "looks_like": "knife_meat_cleaver",
-    "type": "ARMOR",
+    "type": "TOOL",
     "name": { "str": "superalloy cleaver", "str_pl": "superalloy cleavers" },
     "description": "This is a menacing looking knife with a broad, square shaped blade.  Its heft and sharpness would make it a very effective melee weapon, and an excellent butchering tool.  This one is specially made in superalloy, which makes it more durable compared to an average one.",
     "material": [ "superalloy" ],
@@ -3712,5 +3740,557 @@
         }
       ]
     }
+  },
+  {
+    "id": "spear_stinger",
+    "type": "GENERIC",
+    "copy-from": "spear_steel",
+    "name": { "str": "stinger spear" },
+    "description": "A stout wooden pole with a sharpened mutant insect stinger for a spearhead, to add a venomous touch to a classic weapon.",
+    "material": [ "chitin", "wood" ],
+    "proportional": { "weight": 0.8, "cutting": 0.9 },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "poison",
+              "once_in": 3,
+              "message": "The stinger injects a small amount of poison into your target.",
+              "npc_message": "%1$s stings their target."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "spear_triffid",
+    "type": "GENERIC",
+    "copy-from": "spear_stinger",
+    "name": { "str": "triffid spear" },
+    "description": "A stout wooden pole tipped with a stinger from a strange plant monster.  An alien twist on hunting with poison-tipped weapons made from natural sources.",
+    "material": [ "wood" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "poison_paralyze",
+              "once_in": 3,
+              "message": "The stinger injects a small amount of poison into your target.",
+              "npc_message": "%1$s stings their target."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "spear_heatZhigh",
+    "copy-from": "spear_steel",
+    "name": { "str": "thermospear" },
+    "description": "This is a spear with an aftermarket modification to heat the spearhead.  The makeshift atomic battery means it will effectively never run out of power, but it can irradiate the wielder when damaged.",
+    "weight": "1328 g",
+    "price_postapoc": "75 USD",
+    "use_action": "HOTPLATE",
+    "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 30 ] ],
+    "flags": [ "STAB", "SHEATH_SPEAR", "SPEAR", "REACH_ATTACK", "NONCONDUCTIVE", "LEAK_DAM", "RADIOACTIVE", "FLAMING" ]
+  },
+  {
+    "type": "TOOL",
+    "id": "spear_shockZhigh",
+    "copy-from": "spear_steel",
+    "name": { "str": "shockspear" },
+    "description": "This is a spear with an aftermarket modification to electrify the spearhead.  The makeshift atomic battery means it will effectively never run out of power, but it can irradiate the wielder when damaged.",
+    "weight": "1328 g",
+    "price_postapoc": "75 USD",
+    "use_action": "TAZER",
+    "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 30 ] ],
+    "flags": [ "STAB", "SHEATH_SPEAR", "SPEAR", "REACH_ATTACK", "NONCONDUCTIVE", "LEAK_DAM", "RADIOACTIVE", "SHOCKING" ]
+  },
+  {
+    "id": "knife_stinger",
+    "type": "GENERIC",
+    "copy-from": "dagger_medieval",
+    "looks_like": "bone_knife",
+    "name": { "str": "stinger dagger" },
+    "description": "A dagger made from a sharpened mutant insect stinger.  It's only natural that the Cataclysm would advent new, creative forms of old weapons.",
+    "material": [ "chitin" ],
+    "proportional": { "weight": 0.8, "cutting": 0.9 },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "poison",
+              "once_in": 3,
+              "message": "The stinger injects a small amount of poison into your target.",
+              "npc_message": "%1$s stings their target."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "knife_triffid",
+    "type": "GENERIC",
+    "copy-from": "knife_stinger",
+    "name": { "str": "triffid dagger" },
+    "description": "A dagger made from the stinger of a strange plant monster.  Fitting that the Cataclysm brings with it a few creative twists on ancient weapons.",
+    "material": [ "wood" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "poison_paralyze",
+              "once_in": 3,
+              "message": "The stinger injects a small amount of poison into your target.",
+              "npc_message": "%1$s stings their target."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "javelin_heatZhigh",
+    "copy-from": "javelin",
+    "name": { "str": "thermojavelin" },
+    "description": "This is a javelin with an aftermarket modification to heat the spearhead.  The makeshift atomic battery means it will effectively never run out of power, but it can irradiate the wielder when damaged.",
+    "weight": "588 g",
+    "price": "93 USD",
+    "price_postapoc": "8 USD",
+    "material": [ "wood", "iron" ],
+    "use_action": "HOTPLATE",
+    "flags": [ "STAB", "SHEATH_SPEAR", "JAVELIN", "LEAK_DAM", "RADIOACTIVE", "FLAMING" ]
+  },
+  {
+    "type": "TOOL",
+    "id": "javelin_shockZhigh",
+    "copy-from": "javelin",
+    "name": { "str": "shockjavelin" },
+    "description": "This is a javelin with an aftermarket modification to electrify the spearhead.  The makeshift atomic battery means it will effectively never run out of power, but it can irradiate the wielder when damaged.",
+    "weight": "588 g",
+    "price": "93 USD",
+    "price_postapoc": "8 USD",
+    "material": [ "wood", "iron" ],
+    "use_action": "TAZER",
+    "flags": [ "STAB", "SHEATH_SPEAR", "JAVELIN", "LEAK_DAM", "RADIOACTIVE", "SHOCKING" ]
+  },
+  {
+    "id": "javelin_stingerZhigh",
+    "type": "GENERIC",
+    "copy-from": "javelin_iron",
+    "name": { "str": "stinger javelin" },
+    "description": "A stout wooden throwing spear with a sharpened mutant insect stinger for a spearhead, to add a venomous touch to a classic weapon.  The grip area has been carved and covered for better grip.",
+    "material": [ "chitin", "wood" ],
+    "proportional": { "weight": 0.8, "cutting": 0.9 },
+    "thrown_damage": [ { "damage_type": "bash", "amount": 5 }, { "damage_type": "stab", "amount": 15 } ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "poison",
+              "message": "The stinger injects a small amount of poison into your target.",
+              "npc_message": "%1$s stings their target."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "javelin_triffidZhigh",
+    "type": "GENERIC",
+    "copy-from": "knife_stinger",
+    "name": { "str": "triffid javelin" },
+    "description": "A stout wooden throwing spear with a stinger of a strange plant monster.  Fitting that the Cataclysm brings with it a few creative twists on ancient weapons.  The grip area has been carved and covered for better grip.",
+    "material": [ "wood" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "poison_paralyze",
+              "message": "The stinger injects a small amount of poison into your target.",
+              "npc_message": "%1$s stings their target."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "punch_dagger_heatZhigh",
+    "copy-from": "punch_dagger",
+    "name": { "str": "thermo punch dagger" },
+    "description": "This is a punch dagger with an aftermarket modification to heat the blade.  The makeshift atomic battery means it will effectively never run out of power, but it can irradiate the wielder when damaged.",
+    "weight": "288 g",
+    "price_postapoc": "550 cent",
+    "use_action": "HOTPLATE",
+    "flags": [ "UNARMED_WEAPON", "STAB", "SHEATH_KNIFE", "LEAK_DAM", "RADIOACTIVE", "FLAMING" ]
+  },
+  {
+    "type": "TOOL",
+    "id": "punch_dagger_shockZhigh",
+    "copy-from": "punch_dagger",
+    "name": { "str": "shock punch dagger" },
+    "description": "This is a punch dagger with an aftermarket modification to electrify the blade.  The makeshift atomic battery means it will effectively never run out of power, but it can irradiate the wielder when damaged.",
+    "weight": "288 g",
+    "price_postapoc": "550 cent",
+    "use_action": "TAZER",
+    "flags": [ "UNARMED_WEAPON", "STAB", "SHEATH_KNIFE", "LEAK_DAM", "RADIOACTIVE", "SHOCKING" ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "punch_dagger_stingerZhigh",
+    "copy-from": "punch_dagger",
+    "name": { "str": "stinger punch dagger" },
+    "description": "This is a punch dagger with a poisoned blade.  It's only natural that the Cataclysm would advent new, creative forms of old weapons.",
+    "price_postapoc": "550 cent",
+	"material": [ "chitin" ],
+    "proportional": { "weight": 0.8, "cutting": 0.9 },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "poison",
+              "once_in": 5,
+              "message": "The stinger injects a small amount of poison into your target.",
+              "npc_message": "%1$s stings their target."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "GENERIC",
+    "id": "punch_dagger_triffidZhigh",
+    "copy-from": "punch_dagger_stingerZhigh",
+    "name": { "str": "triffid punch dagger" },
+    "description": "This is a punch dagger with a paralyzing poisoned blade.  It's only natural that the Cataclysm would advent new, creative forms of old weapons.",
+	"material": [ "wood" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "poison_paralyze",
+              "once_in": 5,
+              "message": "The stinger injects a small amount of poison into your target.",
+              "npc_message": "%1$s stings their target."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "holy_staffZhigh",
+    "type": "GENERIC",
+    "copy-from": "q_staff",
+    "name": { "str": "Khakkhara", "str_pl": "Khakkharas" },
+    "description": "A smooth and sturdy metal staff with a leather-wrapped grip.  Durable and well-balanced, it is surprisingly easy to handle.",
+    "price": "6000 USD",
+    "price_postapoc": "100 USD",
+    "material": [ "silver", "gold" ],
+    "extend": { "flags": [ "NONCONDUCTIVE" ] },
+    "weight": "1275 g",
+    "bashing": 30,
+    "use_action": "MEDITATE",
+    "qualities": [ [ "HAMMER", 1 ] ]
+  },
+  {
+    "id": "handcuff_knuckle",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "FIST_WEAPONS" ],
+    "looks_like": "e_handcuffs",
+    "symbol": "]",
+    "color": "dark_gray",
+    "name": { "str": "pair of handcuffs", "str_pl": "pairs of handcuffs" },
+    "description": "A pair of good old handcuffs, used by police and riot bots to detain captives.  Not used these days, after the introduction of electric handcuffs.",
+    "material": [ "steel" ],
+    "volume": "550 ml",
+    "weight": "750g",
+    "bashing": 18,
+    "price": "500 USD",
+    "qualities": [ [ "HAMMER", 2 ] ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "CritZhigh",
+              "once_in": 8
+            }
+          ]
+        }
+      ]
+    },
+    "flags": [ "UNARMED_WEAPON", "DURABLE_MELEE", "BELT_CLIP" ]
+  },
+  {
+    "id": "jian_JingweiZhigh",
+    "type": "GENERIC",
+    "copy-from": "jian",
+    "looks_like": "jian",
+    "name": { "str": "shocksword" },
+    "description": "This is an ancient Chinese doubled-edged straight sword, with an ornate guard and a tassel attached to the pommel.  Though it was lethal before, it is now more lethal, yet still familiar to an experienced warrior.  Unlike the average shock-weapons, this one does not irradiate the wielder when the weapon is damaged.",
+    "relative": { "weight": -35 },
+    "cutting": 35,
+    "extend": { "flags": [ "SHOCKING" ] }
+  },
+  {
+    "id": "knife_breadShivZhigh",
+    "name": { "str": "shiv knife", "str_pl": "shiv knives" },
+    "type": "TOOL",
+    "weapon_category": [ "KNIVES" ],
+    "description": "This dull knife is modified to be used as a sharp shiv.\n\"What are you gonna do, spread some jam on me?\"\n\"... I will.\"\n\"... Fuck.\"",
+    "copy-from": "knife_bread",
+    "looks_like": "knife_bread",
+    "weight": "250 g",
+    "volume": "180 ml",
+    "cutting": 10,
+    "to_hit": 1,
+    "extend": { "flags": [ "STAB" ] }
+  },
+  {
+    "id": "heatHawkZhigh_off",
+    "type": "TOOL",
+    "copy-from": "hatchet",
+    "name": { "str": "heat hawk (off)", "str_pl": "heat hawks (off)" },
+    "description": "The modifications made to this hatchet may not be sporting, but they might help you end a \"heated\" arguement aginst the dead.  Extra effort has been made to insulate the grip and a thermal shock system has been attached to the handle, wired to the tip along the hatchet's groove.  Activate the switch to burn your foes up!",
+    "ammo": "battery",
+    "price_postapoc": "1250 cent",
+    "use_action": {
+      "type": "transform",
+      "msg": "You press a button and the hatchet's blade glows yellowish-red.",
+      "active": true,
+      "need_charges": 1,
+      "need_charges_msg": "The %s's batteries are dead.",
+      "target": "heatHawkZhigh_on"
+    },
+    "weight": "1000 g",
+    "cutting": 20,
+    "magazines": [
+      [
+        "battery",
+        [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ]
+      ]
+    ],
+    "magazine_well": "500 ml"
+  },
+  {
+    "id": "heatHawkZhigh_on",
+    "copy-from": "heatHawkZhigh_off",
+    "type": "TOOL",
+    "name": { "str": "heat hawk (on)", "str_pl": "heat hawks (on)" },
+    "description": "The modifications made to this hatchet may not be sporting, but they might help you end a \"heated\" arguement aginst the dead.  Extra effort has been made to insulate the grip and a thermal shock system has been attached to the handle, wired through the electronic scoring circuit to the tip.  It is currently turned on.",
+    "revert_to": "heatHawkZhigh_off",
+    "revert_msg": "The %s's batteries run dry.",
+    "use_action": { "type": "transform", "msg": "You press a button and the hatchet turns off.", "target": "heatHawkZhigh_off" },
+    "extend": { "flags": [ "TRADER_AVOID", "FIRE", "FLAMING" ] },
+    "power_draw": 50000,
+    "cutting": 22,
+    "magazine_well": "500 ml"
+  },
+  {
+    "id": "fauchardZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "GLAIVES" ],
+    "symbol": "/",
+    "color": "light_gray",
+    "name": { "str": "fauchard" },
+    "description": "A sturdy polearm with a sizable, single-edged blade on the end.",
+    "price": "500 USD",
+    "material": [ "steel", "wood" ],
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", -28 ] ],
+    "flags": [ "DURABLE_MELEE", "REACH_ATTACK", "NONCONDUCTIVE", "POLEARM", "SHEATH_SPEAR", "SPEAR" ],
+    "techniques": [ "WIDE", "WBLOCK_1" ],
+    "weight": "1298 g",
+    "volume": "1750 ml",
+    "to_hit": 1,
+    "bashing": 24,
+    "cutting": 24,
+    "price_postapoc": "80 USD"
+  },
+  {
+    "id": "lochaberaxeZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "2H_AXES" ],
+    "name": { "str": "lochaber axe" },
+    "description": "This is a huge axe designed for warfare, in Scotland.  Though intended for use as a weapon, it can also be pressed into service as a rather clumsy woodcutting tool.",
+    "weight": "2002 g",
+    "volume": "2500 ml",
+    "price": "400 USD",
+    "price_postapoc": "120 USD",
+    "to_hit": 1,
+    "bashing": 2,
+    "cutting": 60,
+    "material": [ "steel", "wood" ],
+    "symbol": "/",
+    "color": "light_gray",
+    "techniques": [ "WBLOCK_1", "BRUTAL", "SWEEP" ],
+    "qualities": [ [ "AXE", 3 ], [ "BUTCHER", -20 ] ],
+    "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "SHEATH_AXE" ]
+  },
+  {
+    "id": "lochaberaxeZhigh_inferior",
+    "type": "GENERIC",
+    "copy-from": "lochaberaxeZhigh",
+    "name": { "str": "lochaber axe replica" },
+    "description": "This is a huge axe designed for warfare.  You notice that the axe heads aren't seated properly at all.",
+    "price_postapoc": "20 USD",
+    "material": [ "budget_steel", "wood" ],
+    "repairs_like": "lochaberaxeZhigh",
+    "proportional": { "weight": 1.2, "cutting": 0.85 },
+    "relative": { "to_hit": -1 },
+    "delete": { "flags": [ "DURABLE_MELEE" ] }
+  },
+  {
+    "id": "lochaberaxeZhigh_fake",
+    "type": "GENERIC",
+    "copy-from": "lochaberaxeZhigh",
+    "name": { "str": "lochaber axe fake" },
+    "description": "This is a dull, cheaply made replica of a massive axe designed for warfare.",
+    "price": "1050 cent",
+    "price_postapoc": "5 USD",
+    "material": [ "aluminum", "wood" ],
+    "qualities": [  ],
+    "repairs_like": "lochaberaxeZhigh",
+    "proportional": { "weight": 0.6, "bashing": 0.75, "cutting": 0.1 },
+    "relative": { "to_hit": -1 },
+    "extend": { "flags": [ "FRAGILE_MELEE" ] },
+    "delete": { "flags": [ "DURABLE_MELEE" ] }
+  },
+  {
+    "id": "yariZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "GLAIVES", "HOOKED_POLES" ],
+    "name": { "str_sp": "yari" },
+    "description": "A sturdy polearm with a curved blade, made in the same manner as the katana and other Japanese blades.  Occasionally used by samurais, from lower class to the higher ones.",
+    "weight": "1298 g",
+    "color": "light_gray",
+    "symbol": "/",
+    "material": [ "steel", "wood" ],
+    "techniques": [ "IMPALE", "WIDE", "WBLOCK_1" ],
+    "volume": "3750 ml",
+    "bashing": 2,
+    "cutting": 45,
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", -24 ] ],
+    "flags": [ "DURABLE_MELEE", "REACH_ATTACK", "REACH3", "ALWAYS_TWOHAND", "NONCONDUCTIVE", "POLEARM", "SHEATH_SPEAR", "SPEAR" ],
+    "price": "800 USD",
+    "price_postapoc": "95 USD"
+  },
+  {
+    "id": "yariZhigh_inferior",
+    "type": "GENERIC",
+    "copy-from": "yariZhigh",
+    "name": { "str": "yari replica" },
+    "description": "A sturdy polearm with a curved blade, made in the same manner as the katana and other Japanese blades.  This one has a bit of wiggle to its blade and feels a bit shoddily made.",
+    "material": [ "budget_steel", "wood" ],
+    "repairs_like": "yariZhigh",
+    "proportional": { "weight": 1.2, "cutting": 0.85 },
+    "relative": { "to_hit": -1 },
+    "delete": { "flags": [ "DURABLE_MELEE" ] },
+    "price_postapoc": "15 USD"
+  },
+  {
+    "id": "yariZhigh_fake",
+    "type": "GENERIC",
+    "copy-from": "yariZhigh",
+    "name": { "str": "yari fake" },
+    "description": "This is a dull, slightly floppy replica of a Japanese polearm with a curved blade.  With a little difficulty, you could use it administer a solid slap from a distance.",
+    "material": [ "aluminum", "wood" ],
+    "price": "80 USD",
+    "price_postapoc": "5 USD",
+    "qualities": [  ],
+    "repairs_like": "yariZhigh",
+    "proportional": { "weight": 0.6, "bashing": 0.75, "cutting": 0.1 },
+    "relative": { "to_hit": -1 },
+    "extend": { "flags": [ "FRAGILE_MELEE" ] },
+    "delete": { "flags": [ "DURABLE_MELEE" ] }
+  },
+  {
+    "id": "colichemardeZhigh",
+    "type": "GENERIC",
+    "copy-from": "fencing_foil",
+    "name": { "str": "colichemarde" },
+    "description": "A descendant of the transitional rapier, this smallsword are used for parrying.",
+    "techniques": [ "tec_medievalpole_counter" ],
+    "weight": "1360 g",
+    "volume": "2 L",
+    "bashing": 24,
+    "cutting": 21,
+    "delete": { "flags": [ "STAB" ] },
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 8 ] ]
+  },
+  {
+    "id": "mortuarySwordZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "1H_SWORDS", "MEDIEVAL_SWORDS", "DUELING_SWORDS" ],
+    "name": { "str": "mortuary sword" },
+    "description": "This is a straight sword associated with cavalry known for it's basket-shaped guard that protects the hand.  Lightweight but a deadly slashing weapon.",
+    "weight": "910 g",
+    "volume": "1050 ml",
+    "price": "970 USD",
+    "price_postapoc": "40 USD",
+    "to_hit": 2,
+    "bashing": 2,
+    "cutting": 20,
+    "material": "steel",
+    "symbol": "/",
+    "color": "dark_gray",
+    "techniques": [ "RAPID" ],
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 8 ] ],
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NONCONDUCTIVE" ]
+  },
+  {
+    "id": "mortuarySwordZhigh_fake",
+    "type": "GENERIC",
+    "copy-from": "mortuarySwordZhigh",
+    "name": { "str": "mortuary sword fake" },
+    "description": "This is a dull, cheap replica of a straight sword associated with cavalry, known for it's basket-shaped guard that protects the hand.",
+    "price": "97 USD",
+    "price_postapoc": "50 cent",
+    "material": "aluminum",
+    "qualities": [  ],
+    "repairs_like": "mortuarySwordZhigh",
+    "proportional": { "weight": 0.6, "bashing": 0.75, "cutting": 0.1 },
+    "relative": { "to_hit": -1 },
+    "extend": { "flags": [ "FRAGILE_MELEE" ] },
+    "delete": { "flags": [ "DURABLE_MELEE" ] }
   }
 ]

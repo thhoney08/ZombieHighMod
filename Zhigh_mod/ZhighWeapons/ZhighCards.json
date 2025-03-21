@@ -2513,6 +2513,22 @@
     }
   },
   {
+    "id": "cardZhigh_school",
+	"looks_like": "cardZhigh_blank",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "name": { "str": "Collectible Card - school" },
+    "description": "This is a unique card, which has an address of a school.",
+    "use_action": {
+      "type": "reveal_map",
+      "radius": 2000,
+      "message": "Area is revealed.",
+      "terrain": [
+        "ZhighSchool_1_5"
+      ]
+    }
+  },
+  {
     "id": "cardZhigh_pack",
 	"looks_like": "cardZhigh_pack",
     "copy-from": "cardZhigh_abstract",

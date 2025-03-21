@@ -688,7 +688,7 @@
     "price": "3500 USD",
     "count": 10,
     "flags": [  ],
-    "proportional": { "damage": { "damage_type": "stab", "amount": 3, "armor_penetration": 0.1 }, "recoil": 0.6, "loudness": 0.8 },
+    "proportional": { "damage": { "damage_type": "stab", "amount": 0.3, "armor_penetration": 0.1 }, "recoil": 0.6, "loudness": 0.8 },
     "effects": [ "FLAME", "STREAM", "INCENDIARY", "NEVER_MISFIRES" ]
   },
   {
@@ -700,7 +700,7 @@
     "price": "3500 USD",
     "count": 10,
     "flags": [  ],
-    "proportional": { "damage": { "damage_type": "stab", "amount": 1.2 }, "recoil": 0.6, "loudness": 0.1 },
+    "proportional": { "damage": { "damage_type": "stab", "amount": 0.2 }, "recoil": 0.6, "loudness": 0.1 },
     "effects" : [ "TOXICGAS", "NEVER_MISFIRES", "JET" ]
   },
   {
@@ -736,7 +736,7 @@
     "price": "3500 USD",
     "count": 10,
     "flags": [  ],
-    "proportional": { "damage": { "damage_type": "stab", "amount": 3, "armor_penetration": 0.1 }, "recoil": 0.6, "loudness": 0.8 },
+    "proportional": { "damage": { "damage_type": "acid", "amount": 0.3, "armor_penetration": 0.1 }, "recoil": 0.6, "loudness": 0.8 },
     "effects": [ "ACIDBOMB", "NEVER_MISFIRES" ]
   },
   {
@@ -748,7 +748,7 @@
     "price": "3500 USD",
     "count": 10,
     "flags": [  ],
-    "proportional": { "damage": { "damage_type": "stab", "amount": 8, "armor_penetration": 0.1 }, "recoil": 0.6, "loudness": 0.8 },
+    "proportional": { "damage": { "damage_type": "stab", "amount": 0.8, "armor_penetration": 0.1 }, "recoil": 0.6, "loudness": 0.8 },
     "effects": [ "LIGHTNING", "NEVER_MISFIRES" ]
   },
   {
@@ -772,7 +772,7 @@
     "price": "3500 USD",
     "count": 10,
     "flags": [  ],
-    "proportional": { "damage": { "damage_type": "stab", "amount": 3, "armor_penetration": 0.1 }, "recoil": 0.6, "loudness": 0.8 },
+    "proportional": { "damage": { "damage_type": "stab", "amount": 0.3, "armor_penetration": 0.1 }, "recoil": 0.6, "loudness": 0.8 },
     "effects": [ "FLASHBANG", "NEVER_MISFIRES" ]
   },
   {
@@ -867,7 +867,46 @@
     "loudness": 1,
     "range": 0,
     "shape": [ "cone", { "half_angle": 20, "length": 7 } ],
-    "effects": [ "NEVER_MISFIRES", "BLINDS_EYES", "MUZZLE_SMOKE", "TRAIL", "SMOKE_BIG", "SMOKE", "TANGLE" ]
+    "effects": [ "NEVER_MISFIRES", "BLINDS_EYES", "MUZZLE_SMOKE", "TRAILZHIGH", "SMOKE_BIG", "SMOKE", "TANGLE" ]
+  },
+  {
+    "id": "pelletZhigh",
+    "type": "AMMO",
+    "name": { "str": "pellet" },
+    "description": "Some pellets for pop guns.",
+    "weight": "2 g",
+    "volume": "2 ml",
+    "price": "50 USD",
+    "price_postapoc": "10 USD",
+    "flags": [  ],
+    "material": [ "powder" ],
+    "symbol": "=",
+    "color": "red",
+    "count": 20,
+    "stack_size": 20,
+    "ammo_type": "pellet_zhigh",
+    "damage": { "damage_type": "bullet", "amount": 4 },
+    "loudness": 1,
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 15, "length": 8 } ],
+    "effects": [ "NEVER_MISFIRES", "TANGLE" ]
+  },
+  {
+    "type": "AMMO",
+    "id": "slugPopGunZhigh",
+    "category": "spare_parts",
+    "price": "120 USD",
+    "price_postapoc": "2 cent",
+    "name": { "str": "slug" },
+    "description": "Some pellets for pop guns.",
+    "symbol": "=",
+    "color": "yellow",
+    "flags": [ "TRADER_AVOID" ],
+    "material": "iron",
+    "effects": [ "COOKOFF" ],
+    "volume": "100 ml",
+    "ammo_type": "slug_zhigh",
+    "count": 100
   },
   {
     "id": "ZhighGas_electricshock",
@@ -1036,6 +1075,7 @@
     "range": 20,
     "symbol": "=",
     "color": "dark_gray",
+    "dont_recover_one_in": 1600,
     "proportional": { 
         "loudness": 0.1, 
         "price": 9, 
@@ -1312,6 +1352,48 @@
     "explode_in_fire": true,
     "damage": { "damage_type": "bullet", "amount": 36, "armor_penetration": 42 },
     "explosion": { "damage": 40, "radius": 2 }
+  },
+  {
+    "id": "meltaAmmoZhigh",
+    "type": "AMMO",
+    "name": { "str": "pellet" },
+    "description": "Some pellets for melta guns.",
+    "weight": "2 g",
+    "volume": "2 ml",
+    "price": "50 USD",
+    "price_postapoc": "10 USD",
+    "flags": [  ],
+    "material": [ "powder" ],
+    "symbol": "=",
+    "color": "red",
+    "count": 20,
+    "stack_size": 20,
+    "ammo_type": "meltaammo_zhigh",
+    "damage": { "damage_type": "heat", "amount": 29 },
+    "loudness": 1,
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 10, "length": 25 } ],
+    "effects": [ "NEVER_MISFIRES", "INCENDIARY" ]
+  },
+  {
+    "type": "AMMO",
+    "id": "inkZhigh",
+	"looks_like": "mutagen_slime",
+    "category": "spare_parts",
+    "price": "120 USD",
+    "price_postapoc": "2 cent",
+    "name": { "str": "ink" },
+    "symbol": "=",
+    "color": "dark_gray",
+    "description": "Some ink.  This can be reloaded into fountain pens.  Or could be used as an ammo for blinding others.",
+    "flags": [ "TRADER_AVOID" ],
+    "phase": "liquid",
+    "volume": "100 ml",
+    "weight": "100 g",
+    "ammo_type": "inkAmmoZhigh",
+    "container": "bottle_plastic_small",
+    "effects": [ "BLINDS_EYES", "NEVER_MISFIRES" ],
+    "count": 50
   },
   {
     "id": "40x46mm_antiFungi",

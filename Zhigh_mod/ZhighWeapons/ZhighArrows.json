@@ -327,5 +327,27 @@
     "dispersion": 1,
     "loudness": 0,
     "count": 10
+  },
+  {
+    "type": "AMMO",
+    "id": "ZhighArrow_bWire",
+    "price": "10 USD",
+    "name": { "str": "concertina arrow" },
+    "symbol": "=",
+    "color": "green",
+    "looks_like": "arrow_fire_hardened_fletched",
+    "description": "A fletched wooden arrow shaft with a wierd tip, like a small roll of barbed wire.  Useful for quick entanglement.  Stands no chance of remaining intact once fired.",
+    "material": [ "wood", "steel" ],
+    "volume": "250 ml",
+    "price_postapoc": "250 cent",
+    "weight": "30 g",
+    "bashing": 2,
+    "cutting": 1,
+    "ammo_type": "arrow",
+    "dispersion": 1,
+    "loudness": 0,
+    "count": 10,
+    "effects": [ "BWIREAOEZHIGH", "BWIRETRAILZHIGH" ],
+    "drop": "arrow_fire_hardened_fletched"
   }
 ]
