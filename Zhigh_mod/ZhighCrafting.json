@@ -9390,6 +9390,20 @@
     "components": [ [ [ "m1911", 1 ] ], [ [ "scrap", 3 ] ], [ [ "glockswitch", 1 ] ], [ [ "grip", 1 ], [ "grip_mod", 1 ] ] ]
   },
   {
+    "type": "recipe",
+    "result": "makarov_mpZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "mechanics",
+    "skills_required": [ "gun", 6 ],
+    "difficulty": 6,
+    "time": "60 m",
+    "autolearn": true,
+    "book_learn": [ [ "manual_luty", 4 ] ],
+    "qualities": [ { "id": "SAW_M_FINE", "level": 1 }, { "id": "SCREW_FINE", "level": 1 } ],
+    "components": [ [ [ "makarov", 1 ] ], [ [ "scrap", 3 ] ], [ [ "glockswitch", 1 ] ], [ [ "grip", 1 ], [ "grip_mod", 1 ] ] ]
+  },
+  {
     "result": "balclavaBandZhigh",
     "type": "recipe",
     "category": "CC_ARMOR",
@@ -9514,7 +9528,7 @@
     "difficulty": 1,
     "result_mult": 2,
     "time": "5 m",
-    "reversible": true,
+    "reversible": false,
     "book_learn": [ [ "textbook_weapeast", 1 ] ],
     "qualities": [ { "id": "SAW_M", "level": 1 } ],
     "components": [
