@@ -7,6 +7,8 @@
       { "group": "foodsZhigh_items", "count-min": 8, "count-max": 10 },
       { "group": "foodsZhigh_items", "prob": 80, "count-min": 5, "count-max": 10 },
       { "group": "foodsZhigh_items", "prob": 80, "count-min": 5, "count-max": 10 },
+      { "group": "foodsZhigh_items", "prob": 80, "count-min": 5, "count-max": 10 },
+      { "group": "foodsZhigh_items", "prob": 80, "count-min": 5, "count-max": 10 },
       { "group": "foodsZhigh_items", "prob": 25, "count-min": 5, "count-max": 10 }
     ]
   },
@@ -16,6 +18,8 @@
     "id": "vending_drinkZhigh",
     "entries": [
       { "group": "drinksZhigh_items", "count-min": 8, "count-max": 10 },
+      { "group": "drinksZhigh_items", "prob": 80, "count-min": 5, "count-max": 10 },
+      { "group": "drinksZhigh_items", "prob": 80, "count-min": 5, "count-max": 10 },
       { "group": "drinksZhigh_items", "prob": 80, "count-min": 5, "count-max": 10 },
       { "group": "drinksZhigh_items", "prob": 80, "count-min": 5, "count-max": 10 },
       { "group": "drinksZhigh_items", "prob": 25, "count-min": 5, "count-max": 10 }
@@ -389,6 +393,7 @@
     "ammo": 100,
     "magazine": 100,
     "items": [
+      [ "null", 20 ],
       [ "str1RingZhigh", 2 ],
       [ "dex1RingZhigh", 2 ],
       [ "per1RingZhigh", 2 ],
@@ -1891,6 +1896,31 @@
     ]
   },
   {
+    "id": "everyday_mx4Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "mx4Zhigh", "ammo-group": "on_hand_9mm", "charges": [ 0, 30 ] },
+      { "group": "nested_m9_mag", "charges-min": 0, "prob": 80 },
+      { "group": "nested_m9_mag", "charges-min": 0, "prob": 50 },
+      { "group": "on_hand_9mm", "prob": 25, "charges": [ 10, 20 ], "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "nested_mx4Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "mx4Zhigh", "ammo-group": "on_hand_9mm", "charges": [ 0, 30 ] },
+      { "group": "nested_m9_mag" },
+      { "group": "nested_m9_mag", "prob": 50 },
+      { "group": "on_hand_9mm" }
+    ]
+  },
+  {
     "id": "everyday_coonanZhigh",
     "type": "item_group",
     "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
@@ -3134,6 +3164,7 @@
       [ "fakeFlashBangZhigh", 10 ],
       [ "insecticidalbomb", 10 ],
       [ "insecticidalbomb_makeshift", 10 ],
+      [ "smokebombBigZhigh", 5 ],
       [ "ConcertinaBombZhigh", 5 ],
       [ "improvised_pipebomb", 5 ],
       [ "improvised_pipebombZhigh", 5 ]

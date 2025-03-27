@@ -1386,6 +1386,27 @@
     "vitamins": [ [ "junk_allergen", 1 ] ]
   },
   {
+    "type": "COMESTIBLE",
+    "id": "emerRationZhigh",
+    "name": { "str_sp": "handmade ration" },
+    "weight": "60 g",
+    "color": "brown",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "quench": -4,
+    "calories": 100,
+    "description": "A concentrated mixture of various foods used as a nutritious high-energy pill.  Composed of meat and edible plants, it provides excellent nutrition in an easy to carry form.",
+    "price": "6 USD",
+    "spoils_in": "30 days 20 hours",
+    "price_postapoc": "350 cent",
+    "material": [ "flesh", "veggy" ],
+    "flags": [ "MAG_COMPACT", "NUTRIENT_OVERRIDE" ],
+    "volume": "50 ml",
+    "vitamins": [ [ "vitA", 3 ], [ "vitB", 3 ], [ "vitC", 3 ], [ "calcium", 12 ], [ "iron", 12 ] ],
+    "charges": 4,
+    "fun": 3
+  },
+  {
     "id": "catsnackZhigh",
     "type": "COMESTIBLE",
     "category": "tools_farming",

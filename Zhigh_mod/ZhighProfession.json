@@ -2330,7 +2330,7 @@
     "id": "zhighSurvivor",
     "name": "Student - Survivor",
     "description": "Either due to your skill or sheer luck, you were able to survive this whole disaster untill now.  You do not know what will happen tomorrow, but at least you live to die another day.",
-    "points": 3,
+    "points": 5,
     "skills": [
       { "level": 3, "name": "survival" },
       { "level": 2, "name": "gun" },
@@ -2913,7 +2913,7 @@
     "name": "Student - Trooper",
     "description": "You've always liked military-related stuff; guns, uniform, helmets, etc.  As you were on your way to a military related club, a story of war changed into a story of survival.",
     "points": -1,
-    "skills": [ { "level": 3, "name": "gun" }, { "level": 3, "name": "rifle" } ],
+    "skills": [ { "level": 2, "name": "gun" }, { "level": 1, "name": "rifle" } ],
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3575,7 +3575,7 @@
     "id": "zhighDiver2",
     "name": "Student - Pro Diver",
     "description": "Underwater was just a mystery to you before - now, it is just a danger.",
-    "points": 3,
+    "points": 2,
     "skills": [ { "level": 2, "name": "rifle" }, { "level": 3, "name": "swimming" } ],
     "traits": [ "REGEN_zhigh" ],
     "items": {
@@ -3891,30 +3891,28 @@
     "items": {
       "both": {
         "items": [
-          "dress_shirt_zhigh",
+          "ninjakarate_giFakeZhigh",
           "loincloth",
           "zhigh_smart_phone",
           "socks",
           "sneakers",
           "utility_belt",
-          "haori",
-          "mask_rioter",
+          "ninjaCowlFakeZhigh",
           "scabbard",
           "gloves_fingerless",
           "grapnel",
           "kunaiZhigh",
           "shuriken",
           "shuriken",
-          "smokebomb_makeshift"
+          "tool_ninjaBomb"
         ],
         "entries": [
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "tanto", "container-item": "sheath" },
-			{ "item": "ninjatoSwordZhigh", "custom-flags": [ "auto_wield" ] }
+			{ "item": "nunchunkZhigh", "custom-flags": [ "auto_wield" ] }
 		]
       },
-      "male": [ "pants_zhigh" ],
-      "female": [ "chestwrap", "skirt_zhigh" ]
+      "female": [ "chestwrap" ]
     },
     "flags": [ "SCEN_ONLY" ]
   },
@@ -4776,6 +4774,102 @@
       "male": [ "boxer_shorts" ],
       "female": [ "boy_shorts", "sports_bra" ]
     }
+  },
+  {
+    "type": "profession",
+    "id": "zhighPoloPlayer",
+    "name": "Student - Polo Player",
+    "description": "Galloping across the overgrown ruins, mallet in hand, you strike not a ball but the skulls of the undead, a polo player adapting to a new kind of match—one where survival is the only prize.",
+    "points": 1,
+    "skills": [
+		{ "level": 2, "name": "bashing" },
+		{ "level": 2, "name": "melee" },
+		{ "level": 1, "name": "dodge" }
+	],
+    "traits": [ "REGEN_zhigh" ],
+    "pets": [ { "name": "mon_horse", "amount": 1 } ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "pants_zhigh",
+          "socks",
+          "boots",
+          "horse_tack",
+          "cattlefodder",
+          "gloves_light",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "item": "helmet_bike" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "hockey_stick", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighShooterRifle",
+    "name": "Student - Rifle Shooter",
+    "description": "Steady breath, firm grip—You once aimed for bullseyes in competition, but now your targets shamble in the dark, each precise shot the difference between life and death.",
+    "points": 2,
+    "skills": [ { "level": 2, "name": "gun" }, { "level": 2, "name": "rifle" } ],
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "socks",
+          "sneakers",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "22_lr", "charges": 12 },
+			{ "item": "marlin_9a", "ammo-item": "22_lr", "charges": 19, "contents-item": "shoulder_strap", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighShooterPistol",
+    "name": "Student - Pistol Shooter",
+    "description": "Steady breath, firm grip—You once aimed for bullseyes in competition, but now your targets shamble in the dark, each precise shot the difference between life and death.",
+    "points": 1,
+    "skills": [ { "level": 2, "name": "gun" }, { "level": 2, "name": "pistol" } ],
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "socks",
+          "sneakers",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "22_lr", "charges": 12 },
+			{ "item": "ruger_lcr_22", "ammo-item": "22_lr", "charges": 8, "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
   },
   {
     "type": "profession",

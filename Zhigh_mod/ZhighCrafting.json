@@ -1337,6 +1337,83 @@
   },
   {
     "type": "recipe",
+    "result": "sling_grenadeMiniZhigh",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "time": "5 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "grenadeMiniZhigh", 1 ] ], [ [ "paper", 1 ], [ "splinter", 1 ], [ "scrap", 1 ], [ "razor_blade", 1 ], [ "glass_shard", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "sling_improvised_pipebombZhigh",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "time": "5 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "improvised_pipebombZhigh", 1 ] ], [ [ "paper", 1 ], [ "splinter", 1 ], [ "scrap", 1 ], [ "razor_blade", 1 ], [ "glass_shard", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "sling_feralStudentNadeZhigh",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "time": "5 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "feralStudentNadeZhigh", 1 ] ], [ [ "paper", 1 ], [ "splinter", 1 ], [ "scrap", 1 ], [ "razor_blade", 1 ], [ "glass_shard", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "sling_corrosiveGasNadeZhigh",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "time": "5 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "corrosiveGasNadeZhigh", 1 ] ], [ [ "paper", 1 ], [ "splinter", 1 ], [ "scrap", 1 ], [ "razor_blade", 1 ], [ "glass_shard", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "sling_ConcertinaBombZhigh",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "time": "5 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "ConcertinaBombZhigh", 1 ] ], [ [ "paper", 1 ], [ "splinter", 1 ], [ "scrap", 1 ], [ "razor_blade", 1 ], [ "glass_shard", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "sling_fakeFlashBangZhigh",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "time": "5 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "fakeFlashBangZhigh", 1 ] ], [ [ "paper", 1 ], [ "splinter", 1 ], [ "scrap", 1 ], [ "razor_blade", 1 ], [ "glass_shard", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "sling_tool_ninjaBomb",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "time": "5 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "tool_ninjaBomb", 1 ] ], [ [ "paper", 1 ], [ "splinter", 1 ], [ "scrap", 1 ], [ "razor_blade", 1 ], [ "glass_shard", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
     "result": "sling_rubberball",
     "category": "CC_AMMO",
     "subcategory": "CSC_AMMO_OTHER",
@@ -9536,6 +9613,214 @@
       [ [ "sugar", 20 ] ],
       [ [ "pipe", 1 ] ],
       [ [ "delay_fuze", 1 ], [ "fuse", 1 ] ]
+    ]
+  },
+  {
+    "result": "ninjaCowlZhigh",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 8,
+    "time": "1 h 10 m",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_armeast", 5 ] ],
+    "using": [ [ "sewing_standard", 3 ] ],
+    "components": [ [ [ "rag", 4 ] ] ]
+  },
+  {
+    "result": "ninjakarate_giZhigh",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 8,
+    "time": "3 h 30 m",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_armeast", 3 ] ],
+    "using": [ [ "sewing_standard", 35 ] ],
+    "components": [ [ [ "rag", 35 ] ] ]
+  },
+  {
+    "result": "ninjaCowlFakeZhigh",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "time": "10 m",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_armeast", 5 ] ],
+    "using": [ [ "sewing_standard", 3 ] ],
+    "components": [ [ [ "rag", 4 ] ] ]
+  },
+  {
+    "result": "ninjakarate_giFakeZhigh",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "time": "2 h 30 m",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_armeast", 3 ] ],
+    "using": [ [ "sewing_standard", 35 ] ],
+    "components": [ [ [ "rag", 35 ] ] ]
+  },
+  {
+    "result": "karate_gi",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "time": "2 h 30 m",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_armeast", 3 ] ],
+    "using": [ [ "sewing_standard", 35 ] ],
+    "components": [ [ [ "rag", 25 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "sjambokZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "1 h",
+    "reversible": true,
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "leather", 10 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "sunMoonBladeZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "fabrication",
+    "difficulty": 5,
+    "time": "10 h",
+    "book_learn": [ [ "textbook_weapeast", 9 ], [ "recipe_melee", 4 ] ],
+    "using": [ [ "blacksmithing_advanced", 3 ], [ "steel_standard", 3 ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "deerHornDaggerZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "fabrication",
+    "difficulty": 5,
+    "time": "9 h",
+    "book_learn": [ [ "textbook_weapeast", 9 ], [ "recipe_melee", 4 ] ],
+    "using": [ [ "blacksmithing_advanced", 3 ], [ "steel_standard", 3 ] ]
+  },
+  {
+    "result": "smokebombBigZhigh",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "mechanics",
+    "difficulty": 1,
+    "time": "3 h 30 m",
+    "autolearn": true,
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "extinguisher", 1 ] ],
+      [ [ "scrap", 10 ] ],
+      [ [ "pilot_light", 1 ] ],
+      [ [ "adhesive", 1, "LIST" ] ]
+    ]
+  },
+  {
+    "result": "smokebombBigZhigh",
+    "id_suffix": "higherSkills",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "mechanics",
+    "difficulty": 6,
+    "time": "30 m",
+    "autolearn": true,
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "extinguisher", 1 ] ],
+      [ [ "scrap", 10 ] ],
+      [ [ "pilot_light", 1 ] ],
+      [ [ "adhesive", 1, "LIST" ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "battletorch",
+    "obsolete": false
+  },
+  {
+    "type": "recipe",
+    "result": "shishkebab_off",
+    "obsolete": false
+  },
+  {
+    "type": "recipe",
+    "result": "firemachete_off",
+    "obsolete": false
+  },
+  {
+    "type": "recipe",
+    "result": "broadfire_off",
+    "obsolete": false
+  },
+  {
+    "type": "recipe",
+    "result": "firekatana_off",
+    "obsolete": false
+  },
+  {
+    "type": "recipe",
+    "result": "zweifire_off",
+    "obsolete": false
+  },
+  {
+    "result": "haladieZhigh",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_PIERCING",
+    "skill_used": "fabrication",
+    "difficulty": 5,
+    "time": "3 h",
+    "book_learn": [ [ "textbook_weapeast", 5 ] ],
+    "using": [ [ "blacksmithing_advanced", 2 ], [ "steel_tiny", 4 ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "emerRationZhigh",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_MEAT",
+    "skill_used": "cooking",
+    "difficulty": 5,
+    "charges": 4,
+    "time": "3 h 30 m",
+    "autolearn": true,
+    "batch_time_factors": [ 16, 1 ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "tools": [ [ [ "surface_heat", 10, "LIST" ] ] ],
+    "components": [
+      [
+        [ "meat_nofish_raw", 2, "LIST" ],
+        [ "meat_red_cooked", 2, "LIST" ],
+        [ "offals_cooked", 2, "LIST" ],
+        [ "fishs_cooked", 2, "LIST" ],
+        [ "fish", 2 ]
+      ],
+      [
+        [ "veggy_any", 1, "LIST" ],
+        [ "mushroom", 1 ],
+        [ "mushroom_cooked", 1 ],
+        [ "dry_mushroom", 1 ],
+        [ "morel_cooked", 1 ],
+        [ "nuts_tasty", 1, "LIST" ],
+        [ "sweet_fruit_like", 1, "LIST" ]
+      ]
     ]
   }
 ]

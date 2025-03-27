@@ -16,7 +16,7 @@
     "storage": "800 ml",
     "warmth": 20,
     "material_thickness": 3,
-    "flags": [ "VARSIZE", "OUTER", "POCKETS" ]
+    "flags": [ "STURDY", "VARSIZE", "OUTER", "POCKETS" ]
   },
   {
     "id": "blazer_zhighXL",
@@ -29,7 +29,7 @@
     "volume": "5600 ml",
     "price": "160 USD",
     "price_postapoc": "120 USD",
-    "flags": [ "OVERSIZE", "OUTER", "POCKETS" ]
+    "flags": [ "STURDY", "OVERSIZE", "OUTER", "POCKETS" ]
   },
   {
     "id": "dress_shirt_zhigh",
@@ -45,7 +45,7 @@
     "encumbrance": 3,
     "storage": "200 ml",
     "warmth": 8,
-    "flags": [ "VARSIZE" ]
+    "flags": [ "STURDY", "VARSIZE" ]
   },
   {
     "id": "dress_shirt_zhighXL",
@@ -58,7 +58,7 @@
     "price": "110 USD",
     "price_postapoc": "35 USD",
     "encumbrance": 8,
-    "flags": [ "OVERSIZE" ]
+    "flags": [ "STURDY", "OVERSIZE" ]
   },
   {
     "id": "skirt_zhigh",
@@ -74,7 +74,7 @@
     "storage": "500 ml",
     "warmth": 10,
     "material_thickness": 2,
-    "flags": [ "POCKETS", "VARSIZE" ]
+    "flags": [ "STURDY", "POCKETS", "VARSIZE" ]
   },
   {
     "id": "skirt_zhighXL",
@@ -87,7 +87,7 @@
     "price": "110 USD",
     "price_postapoc": "35 USD",
     "encumbrance": 8,
-    "flags": [ "POCKETS", "OVERSIZE" ]
+    "flags": [ "STURDY", "POCKETS", "OVERSIZE" ]
   },
   {
     "id": "tie_bow_zhigh",
@@ -125,7 +125,8 @@
     "price_postapoc": "25 USD",
     "encumbrance": 8,
     "storage": "2 L",
-    "warmth": 11
+    "warmth": 11,
+    "flags": [ "STURDY", "POCKETS", "VARSIZE" ]
   },
   {
     "id": "pants_zhighXL",
@@ -138,7 +139,7 @@
     "price": "110 USD",
     "price_postapoc": "35 USD",
     "encumbrance": 10,
-    "flags": [ "POCKETS", "OVERSIZE" ]
+    "flags": [ "STURDY", "POCKETS", "OVERSIZE" ]
   },
   {
     "id": "coat_rain_froggo",
@@ -4703,5 +4704,92 @@
     "warmth": 20,
     "material_thickness": 2,
     "flags": [ "VARSIZE" ]
+  },
+  {
+    "id": "trenchcoat_merchantZhigh",
+    "repairs_like": "trenchcoat_leather",
+    "copy-from": "trenchcoat_leather",
+    "looks_like": "trenchcoat_leather",
+    "name": { "str": "leather trenchcoat" },
+    "type": "ARMOR"
+  },
+  {
+    "id": "ninjakarate_giZhigh",
+    "repairs_like": "karate_gi",
+    "copy-from": "karate_gi",
+    "looks_like": "touring_suit",
+    "name": { "str": "ninja gi" },
+    "description": "Plain black ninja gi.  Loose and flowing, it offers little protection, and little encumbrance.  This one is quite different...",
+    "coverage": 95,
+    "material": [ "cotton", "plastic", "leather" ],
+    "material_thickness": 3,
+    "encumbrance": 5,
+    "type": "ARMOR",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "mutations": [ "ENCH_NINJAZHIGH_DODGE_EFFECT" ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "ninjaCowlZhigh",
+    "repairs_like": "karate_gi",
+    "copy-from": "helmet_nomad",
+    "looks_like": "mask_rioter",
+    "name": { "str": "ninja mask" },
+    "description": "Plain black ninja mask.  These are usually worn by ninjas to hide their identity.  This one is quite different...",
+    "coverage": 95,
+    "type": "ARMOR",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "mutations": [ "ENCH_NINJAZHIGH_DODGE_EFFECT" ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "enchantment",
+    "id": "ENCH_NINJAZHIGH_DODGE",
+    "mutations": [ "ENCH_NINJAZHIGH_DODGE_EFFECT" ]
+  },
+  {
+    "type": "mutation",
+    "id": "ENCH_NINJAZHIGH_DODGE_EFFECT",
+    "name": { "str": "Ninja Dodge" },
+    "points": 0,
+    "valid": false,
+    "description": "You're shrowded within the shadows.",
+    "dodge_modifier": 1.7,
+    "player_display": false
+  },
+  {
+    "id": "ninjakarate_giFakeZhigh",
+    "repairs_like": "karate_gi",
+    "copy-from": "karate_gi",
+    "looks_like": "ninjakarate_giZhigh",
+    "name": { "str": "ninja gi" },
+    "description": "Plain black ninja gi.  Loose and flowing, it offers little protection, and little encumbrance.",
+    "coverage": 95,
+    "material": [ "cotton", "plastic", "leather" ],
+    "material_thickness": 3,
+    "encumbrance": 5,
+    "type": "ARMOR"
+  },
+  {
+    "id": "ninjaCowlFakeZhigh",
+    "repairs_like": "karate_gi",
+    "copy-from": "helmet_nomad",
+    "looks_like": "ninjaCowlZhigh",
+    "name": { "str": "ninja mask" },
+    "description": "Plain black ninja mask.  These are usually worn by ninjas to hide their identity.",
+    "coverage": 95,
+    "type": "ARMOR"
   }
 ]
