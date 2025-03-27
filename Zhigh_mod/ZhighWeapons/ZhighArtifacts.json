@@ -872,6 +872,47 @@
     "description": "."
   },
   {
+    "id": "badge_lightV2",
+    "copy-from": "badge_abstract",
+    "type": "ARMOR",
+    "name": { "str": "." },
+    "material": [ "plastic" ],
+    "weight": "10 g",
+    "price_postapoc": "10 USD",
+    "flags": [ 
+		"NO_DROP",
+		"NO_UNWIELD",
+		"NO_TAKEOFF",
+		"TRADER_AVOID",
+		"LIGHT_200",
+		"PARTIAL_DEAF",
+		"ALLOWS_NATURAL_ATTACKS",
+		"OUTER",
+		"OVERSIZE",
+		"WATER_FRIENDLY"
+	],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "SPEED", "add": 30 } ],
+          "hit_you_effect": [
+            {
+              "id": "zhigh_regenV2"
+            }
+		  ],
+          "hit_me_effect": [
+            {
+              "id": "zhigh_regenV2"
+            }
+          ]
+        }
+      ]
+    },
+    "description": "."
+  },
+  {
     "id": "artifactBaseZhigh",
     "type": "TOOL_ARMOR",
     "name": { "str": "artifact base" },

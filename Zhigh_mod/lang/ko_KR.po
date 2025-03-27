@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zhigh_Mod\n"
-"POT-Creation-Date: 2025-03-21 16:11-0500\n"
+"POT-Creation-Date: 2025-03-25 16:56-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -2719,6 +2719,31 @@ msgstr[0] "가사"
 msgid "A piece of clerical clothing, usually worn by Buddhist priests."
 msgstr "스님들이 주로 입는 성직자 복장입니다."
 
+#: .\ZhighArmor.json
+msgid "leather trenchcoat"
+msgid_plural "leather trenchcoats"
+msgstr[0] "가죽 트렌치코트"
+
+#: .\ZhighArmor.json
+msgid "ninja gi"
+msgid_plural "ninja gis"
+msgstr[0] "닌자 도복"
+
+#. ~ Description for {'str': 'ninja gi'}
+#: .\ZhighArmor.json
+msgid "Plain black ninja gi.  Loose and flowing, it offers little protection, and little encumbrance."
+msgstr "평범한 검은색 닌자 도복.  느슨하게 흘러내리며 보호 기능이 거의 없고 몸을 거의 방해하지 않습니다."
+
+#: .\ZhighArmor.json
+msgid "ninja mask"
+msgid_plural "ninja masks"
+msgstr[0] "닌자 가면"
+
+#. ~ Description for {'str': 'ninja mask'}
+#: .\ZhighArmor.json
+msgid "Plain black ninja mask.  These are usually worn by ninjas to hide their identity."
+msgstr "평범한 검은색 닌자 복면입니다.  닌자들이 자신들의 신분을 감추기 위해 사용합니다."
+
 #: .\ZhighBionics.json
 msgid "Bionic knuckle"
 msgstr "바이오닉 너클더스터"
@@ -2904,7 +2929,7 @@ msgstr[0] "레이저 조명 의안"
 msgid "this a pseudo item"
 msgstr "더미 아이템. 이걸 보고 있다는건 뭔가 잘못됐다는 뜻입니다"
 
-#: .\ZhighBionics.json .\ZhighGunmods.json .\ZhighWeapons\ZhighRanged.json
+#: .\ZhighBionics.json .\ZhighWeapons\ZhighGunmods.json .\ZhighWeapons\ZhighRanged.json
 msgid "3 rd."
 msgstr "3발 점사."
 
@@ -2954,7 +2979,7 @@ msgstr[0] "기본적인 부적"
 msgid "generic item template"
 msgstr "기본적인 아이템 템플릿"
 
-#: .\ZhighCharms.json .\ZhighGunmods.json
+#: .\ZhighCharms.json .\ZhighWeapons\ZhighGunmods.json
 msgid "accessories"
 msgstr "장신구"
 
@@ -4746,452 +4771,6 @@ msgstr[0] "기계식 조명"
 msgid "An industrial flood light set up to illuminate the surroundings."
 msgstr "주변을 비추기 위해 설치된 산업용 투광 조명입니다."
 
-#: .\ZhighGunmods.json
-msgid "flintlock conversion kit"
-msgid_plural "flintlock conversion kits"
-msgstr[0] "플린트락 컨버전 키트"
-
-#: .\ZhighGunmods.json
-msgid "Replacing several key parts of a .36 paper cartridge, .44 paper cartridge or paper cartridge firearm converts it to a .22 firearm.  The conversion results in a slight reduction to accuracy."
-msgstr ".36 종이 카트리지, .44 종이 카트리지 또는 종이 카트리지 총기의 주요 부품 몇 개를 교체해서 .22 총기로 변환합니다.  컨버전을 하게 되면 명중률과 피해가 조금 깎입니다."
-
-#: .\ZhighGunmods.json
-msgid "tong-a (bows)"
-msgid_plural "tong-a (bows)s"
-msgstr[0] "활 전용 통아"
-
-#: .\ZhighGunmods.json
-msgid "Just a narrow wooden barrel cut in half.  By adding this to a bow, you can shoot bolts instead of arrows.  Adds damage, but hard to aim accurately."
-msgstr "그냥 좁은 나무 원통을 반으로 쪼갠 것입니다.  활에 이것을 더함으로써, 당신은 화살 대신 석궁의 볼트를 쏠 수 있다.  피해가 늘어나지만 조준하기 어려워집니다."
-
-#: .\ZhighGunmods.json
-msgid "tong-a (crossbows)"
-msgid_plural "tong-a (crossbows)s"
-msgstr[0] "석궁 전용 통아"
-
-#: .\ZhighGunmods.json
-msgid "Just a narrow wooden barrel cut in half.  By adding this to a crossbow, you can shoot arrows instead of bolts.  Adds damage, but hard to aim accurately."
-msgstr "그냥 좁은 나무 원통을 반으로 쪼갠 것입니다.  석궁에 이것을 더함으로써, 당신은 화살 대신 석궁 볼트를 쏠 수 있다.  피해가 늘어나지만 조준하기 어려워집니다."
-
-#: .\ZhighGunmods.json
-msgid "bipod grip"
-msgid_plural "bipod grips"
-msgstr[0] "양각대 수직손잡이"
-
-#: .\ZhighGunmods.json
-msgid ""
-"A grip placed forward on the barrel allows for greater control.  Not as effective as a bipod but usable under all conditions.  Added bipods are commonly used on rifles and machine guns to provide a forward rest and reduce "
-"motion.  Although they greatly improve handling of recoil they are usable only on certain surfaces and are slow to equip."
-msgstr ""
-"총열에 부착하는 수직손잡이입니다.  양각대보다는 못하지만 여전히 반동 제어 성능이 크게 향상되며, 어떤 상황에서든 쓸만합니다.  추가된 양각대는 소총과 기관총에 장착하여 전방 지지대 역할을 하며, 진동을 감소시킵니다.  반동 제어 성"
-"능이 크게 향상되지만, 튼튼한 표면에만 놓을 수 있고 총기를 손에 드는데 시간이 오래 걸리게 됩니다."
-
-#: .\ZhighGunmods.json .\ZhighWeapons\ZhighRanged.json
-msgid "underbarrel"
-msgstr "총열하단"
-
-#: .\ZhighGunmods.json
-msgid "modified bipod grip"
-msgid_plural "modified bipod grips"
-msgstr[0] "개량된 양각대 수직손잡이"
-
-#: .\ZhighGunmods.json
-msgid ""
-"A grip placed forward on the barrel allows for greater control.  Not as effective as a bipod but usable under all conditions. Added bipods are commonly used on rifles and machine guns to provide a forward rest and reduce "
-"motion.  Although they greatly improve handling of recoil they are usable only on certain surfaces and are slow to equip. This one was modified and customized to mount on pretty much any weapon, if you so want."
-msgstr ""
-"총열에 부착하는 수직손잡이입니다.  양각대보다는 못하지만 여전히 반동 제어 성능이 크게 향상되며, 어떤 상황에서든 쓸만합니다.  추가된 양각대는 소총과 기관총에 장착하여 전방 지지대 역할을 하며, 진동을 감소시킵니다.  반동 제어 성"
-"능이 크게 향상되지만, 튼튼한 표면에만 놓을 수 있고 총기를 손에 드는데 시간이 오래 걸리게 됩니다.  원한다면 어느 무기에든 장착할 수 있도록 개조되었습니다."
-
-#: .\ZhighGunmods.json
-msgid "fanning mod"
-msgid_plural "fanning mods"
-msgstr[0] "패닝 모드"
-
-#: .\ZhighGunmods.json
-msgid ""
-"As someone uses the revolver, the person thought it will be easier to shoot more if it's modified in a correct order.  Now, by using this, the modified gun can shoot it's bullets in full auto.  The only drawback is that it "
-"empties all or half of the cartridges in the cylinder."
-msgstr ""
-"누군가가 리볼버를 사용할 때, 개조만 잘 한다면 더 많은 총알을 쓸 수 있을 것이라고 생각했습니다.  이제, 이것을 사용함으로써, 개조된 총은 완전자동으로 발사할 수 있습니다.  유일한 단점으로는 이 모드가 약실 총알의 반에서 전부를 비"
-"워버릴 수 있다는 사실입니다."
-
-#: .\ZhighGunmods.json
-msgid "3 round fanning"
-msgstr "3발 패닝 난사"
-
-#: .\ZhighGunmods.json
-msgid "fanning"
-msgstr "패닝 난사"
-
-#: .\ZhighGunmods.json
-msgid "glock automatic accessory"
-msgid_plural "glock automatic accessorys"
-msgstr[0] "글록 연사부품"
-
-#: .\ZhighGunmods.json
-msgid "Compared to Glock 18, other models could not use full auto due to many reasons, and law was one of them.  Now however, there is nobody to stop you - unless you do not like pistols going BRRRRRRRRT!"
-msgstr ""
-"글록 18과 비교했을 때, 다른 모델들은 다양한 이유로 자동연사를 쓸 수 없었고, 법은 그러한 이유들 중에 하나였습니다.  하지만 이제는 당신을 막을 사람은 없습니다.  당신이 당신의 권총이 부와앜 하고 나가는 것을 싫어하지 않는 이상 말"
-"이죠!"
-
-#: .\ZhighGunmods.json .\ZhighItemRemake.json .\ZhighMonSurvivors.json .\ZhighMonsters.json .\ZhighWeapons\ZhighRanged.json
-msgid "full auto"
-msgstr "완전 자동"
-
-#: .\ZhighGunmods.json
-msgctxt "gun_type_type"
-msgid "glock_17"
-msgstr "글록 17"
-
-#: .\ZhighGunmods.json
-msgctxt "gun_type_type"
-msgid "glock_19"
-msgstr "글록 19"
-
-#: .\ZhighGunmods.json
-msgctxt "gun_type_type"
-msgid "glock_20"
-msgstr "글록 20"
-
-#: .\ZhighGunmods.json
-msgctxt "gun_type_type"
-msgid "glock_21"
-msgstr "글록 21"
-
-#: .\ZhighGunmods.json
-msgctxt "gun_type_type"
-msgid "glock_22"
-msgstr "글록 22"
-
-#: .\ZhighGunmods.json
-msgctxt "gun_type_type"
-msgid "glock_31"
-msgstr "글록 31"
-
-#: .\ZhighGunmods.json
-msgid "recoil gel pad"
-msgid_plural "recoil gel pads"
-msgstr[0] "반동제어 젤 패드"
-
-#: .\ZhighGunmods.json
-msgid "This single red rubber-like thing with rubber-like straps is used over a grip(so it is not a grip), and lowers recoil."
-msgstr "이 붉은색의 고무 덩어리는 그립 겉을 고무같은 끈으로 감싸며(따라서 그립이라고 할 수는 없습니다.), 반동을 낮춥니다."
-
-#: .\ZhighGunmods.json
-msgid "handmade rifle grenade launcher"
-msgid_plural "handmade rifle grenade launchers"
-msgstr[0] "수제작 총류탄 발사기"
-
-#: .\ZhighGunmods.json
-msgid "This is a home built launcher tube that can be attached to almost any infantry, bullet shooting firearms.  It allows a single rock-sized ammo to be loaded and fired.  Light and long ranged, but not that useful."
-msgstr "이것은 수제작으로 만들어진 발사기로, 총알을 쏘는 어떠한 보병 화기에도 장착이 가능합니다.  이 발사기는 돌 크기의 탄약이 장전 및 발사될 수 있게 합니다.  가볍고 긴 범위를 지니지만, 그리 쓸모있지는 않습니다."
-
-#: .\ZhighGunmods.json
-msgid "muzzle"
-msgstr "총구"
-
-#: .\ZhighGunmods.json
-msgid "sinew bowstring"
-msgid_plural "sinew bowstrings"
-msgstr[0] "힘줄 활대"
-
-#: .\ZhighGunmods.json
-msgid "A handmade sinew bowstring designed for crossbows.  It allows bolts to hit harder and fly faster, but it's bit too high-tension to use in a regular bow."
-msgstr "석궁에 장착하는 용도의 수제작 힘줄 활대 보강물입니다.  장력을 강화시켜 볼트가 더 빠르고 멀리 날아가게 하지만, 재장전을 조금 어렵게 만듭니다.."
-
-#: .\ZhighGunmods.json
-msgid "mechanism"
-msgstr "내부구조"
-
-#: .\ZhighGunmods.json
-msgid "pebble conversion kit"
-msgid_plural "pebble conversion kits"
-msgstr[0] "조약돌 컨버전 키트"
-
-#: .\ZhighGunmods.json
-msgid "Replacing several key parts of a paintball firearm converts it to a pebble firearm.  The conversion results in a slight reduction to accuracy and damage."
-msgstr "페인트볼 화기의 일부 부분을 개조해서 조약돌을 발사할 수 있게 만듭니다.  컨버전을 하게 되면 명중률과 피해가 조금 깎입니다."
-
-#: .\ZhighGunmods.json
-msgid "axe bayonet"
-msgid_plural "axe bayonets"
-msgstr[0] "도끼 총검"
-
-#. ~ Description for {'str': 'axe bayonet'}
-#: .\ZhighGunmods.json
-msgid "A axe bayonet is a large slashing weapon that can be attached to the front of a firearm or crossbow converting it into an axe."
-msgstr "도끼 총검은 쇠뇌 또는 화기 앞에 긴 도끼 형태로 장착하여 넓게 휘두를 수 있는 무기입니다."
-
-#: .\ZhighGunmods.json
-msgid "40mm conversion kit"
-msgid_plural "40mm conversion kits"
-msgstr[0] "40mm 컨버전 키트"
-
-#: .\ZhighGunmods.json
-msgid "A survivor's conversion kit, which makes the modified 40x46mm firearm to shoot 40x53mm grenades, 40x46mm grenades, and rocks after modified."
-msgstr "개조 후 40x46mm 총기를 40x53mm 수류탄, 40x46mm 수류탄, 및 돌을 발사할 수 있도록 개조하는 생존자의 수제 개조 키트입니다."
-
-#: .\ZhighGunmods.json
-msgid "advanced pump"
-msgid_plural "advanced pumps"
-msgstr[0] "개량형 공기펌프"
-
-#: .\ZhighGunmods.json
-msgid "This is a reinforced hose and pieces, which increases the pneumatic system better.  Increases damage and range but also increase the noise of the modified firearm."
-msgstr "이것은 강화된 호스와 부품으로 공압 시스템을 더욱 향상시킵니다.  피해량과 사거리가 증가하지만 개조된 총기의 격발 시의 소음도 증가합니다."
-
-#: .\ZhighGunmods.json
-msgctxt "gun_type_type"
-msgid "helsing"
-msgstr "헬싱"
-
-#: .\ZhighGunmods.json
-msgctxt "gun_type_type"
-msgid "tihar"
-msgstr "티할"
-
-#: .\ZhighGunmods.json
-msgctxt "gun_type_type"
-msgid "pneumatic_shotgun"
-msgstr "공압식 산탄총"
-
-#: .\ZhighGunmods.json
-msgctxt "gun_type_type"
-msgid "marble_gun"
-msgstr "구슬 총"
-
-#: .\ZhighGunmods.json
-msgctxt "gun_type_type"
-msgid "marble_sniper_gun"
-msgstr "구슬 저격총"
-
-#: .\ZhighGunmods.json
-msgctxt "gun_type_type"
-msgid "tiharBigZhigh"
-msgstr "대형 티할"
-
-#: .\ZhighGunmods.json
-msgctxt "gun_type_type"
-msgid "popGun_zhigh"
-msgstr "팝 건"
-
-#: .\ZhighGunmods.json
-msgctxt "gun_type_type"
-msgid "tishuna"
-msgstr "티슈나"
-
-#: .\ZhighGunmods.json
-msgid "rapid fire mechanism"
-msgid_plural "rapid fire mechanisms"
-msgstr[0] "고속연사 장치"
-
-#: .\ZhighGunmods.json
-msgid "An improved blowback mechanism makes your firearm's automatic fire faster, at the cost of reduced accuracy and increased noise."
-msgstr "개선된 블로우백 장치로써 설치된 총기의 연사속도를 반동과 소리를 댓가로 높입니다."
-
-#: .\ZhighGunmods.json
-msgid "laser grip"
-msgid_plural "laser grips"
-msgstr[0] "레이저 그립"
-
-#: .\ZhighGunmods.json
-msgid "A set of ergonomic replacement furniture for a firearm improving handling.  Also have an extra laser for accuracy."
-msgstr "총기를 더 쉽게 다룰 수 있도록 장착하는 인체공학적 부품입니다.  명중률을 위해 추가 레이저가 달려 있습니다."
-
-#: .\ZhighGunmods.json
-msgid "grip"
-msgstr "그립"
-
-#: .\ZhighGunmods.json
-msgid "heavy barrel"
-msgid_plural "heavy barrels"
-msgstr[0] "중총열"
-
-#: .\ZhighGunmods.json
-msgid "A heavier, thicker barrel lowers recoil greatly but also increases weight greatly."
-msgstr "반동을 크게 줄이지만 무게를 크게 늘리는 길고 굵은 총열입니다."
-
-#: .\ZhighGunmods.json
-msgid "muzzle weight"
-msgid_plural "muzzle weights"
-msgstr[0] "총구 부착 추"
-
-#: .\ZhighGunmods.json
-msgid "A muzzle brake makes the barrel heavier, improving recoil but increasing bulk slightly."
-msgstr "총구 부착 추는 총구 부분을 더 무겁게 만들어 반동을 개선시키지만 부피를 약간 증가시킵니다."
-
-#: .\ZhighGunmods.json
-msgid "underbarrel flamethrower"
-msgid_plural "underbarrel flamethrowers"
-msgstr[0] "총열하단 화염방사기"
-
-#: .\ZhighGunmods.json
-msgid "A flamethrower, which was almost useful as a toy or a big lighter.  Nowdays however, this could save your life in close combat."
-msgstr "이 화염방사기는 장난감이나 초대형 라이터로나 쓸만했던 물건입니다.  하지만 요즘과 같은 시대에는 이게 근접전에서 당신의 목숨을 구할 수 있을 겁니다."
-
-#: .\ZhighGunmods.json
-msgid "underbarrel shotgun"
-msgid_plural "underbarrel shotguns"
-msgstr[0] "총열하단 산탄총"
-
-#: .\ZhighGunmods.json
-msgid ""
-"A single shot shotshell blaster, which could be used for close combat.  Thanks to it's small size, this could be attached to every type of guns.  \n"
-"\n"
-"I'm a Catholic whore, currently enjoying congress out of wedlock with my black, Jewish boyfriend who works in a Military abortion clinic.  So, hail Satan... and have a lovely afternoon Madam."
-msgstr ""
-"근접전에서 사용할 수 있는 단발식 산탄 발사기입니다.  작은 크기 덕분에, 모든 종류의 총기에 부착할 수 있습니다.\n"
-"\n"
-"나는 가톨릭 남창이고, 나와 불륜을 즐기는 관계인 유대계 흑인 남자친구는 군 낙태 시술소에서 근무하고 있어요.  요컨대, 사탄 만세. 그럼 좋은 오후 되세요, 부인."
-
-#: .\ZhighGunmods.json
-msgid "underbarrel 12 guage shotgun"
-msgid_plural "underbarrel 12 guage shotguns"
-msgstr[0] "총열하단 12 게이지 산탄총"
-
-#: .\ZhighGunmods.json
-msgid "A single shot underbarrel gun that loads 12 gauge shotgun shells, handcrafted from scrap."
-msgstr "12 게이지 산탄을 사용하는 단발 총열하단 권총입니다.  고철을 이용해 만든 수제 무기입니다."
-
-#: .\ZhighGunmods.json
-msgid "underbarrel flaregun"
-msgid_plural "underbarrel flareguns"
-msgstr[0] "총열하단 조명탄 발사기"
-
-#: .\ZhighGunmods.json
-msgid "A single shot flare blaster, which could be used for close combat.  Thanks to it's small size, this could be attached to every type of guns."
-msgstr "근접전에서 사용할 수 있는 단발식 조명탄 발사기입니다.  작은 크기 덕분에, 모든 종류의 총기에 부착할 수 있습니다."
-
-#: .\ZhighGunmods.json
-msgid "underbarrel tazer"
-msgid_plural "underbarrel tazers"
-msgstr[0] "총열하단 테이저"
-
-#: .\ZhighGunmods.json
-msgid "A underbarrel tazer, which could be used for close combat.  Thanks to it's small size, this could be attached to every type of guns."
-msgstr "근접전에서 사용할 수 있는 테이저입니다.  작은 크기 덕분에, 모든 종류의 총기에 부착할 수 있습니다."
-
-#: .\ZhighGunmods.json
-msgid "underbarrel paintball gun"
-msgid_plural "underbarrel paintball guns"
-msgstr[0] "총열하단 페인트볼 총"
-
-#: .\ZhighGunmods.json
-msgid "A six shot paintball blaster, which could be used for various uses.  Thanks to it's small size, this could be attached to every type of guns."
-msgstr "다용도로 사용할 수 있는 약실 6개의 페인트볼 발사기입니다.  작은 크기 덕분에, 모든 종류의 총기에 부착할 수 있습니다."
-
-#: .\ZhighGunmods.json
-msgid "underbarrel naligun"
-msgid_plural "underbarrel naliguns"
-msgstr[0] "총열하단 못총"
-
-#: .\ZhighGunmods.json
-msgid "A nail gun, which could be used for fun.  Thanks to it's small size, this could be attached to every type of guns."
-msgstr "재미삼아 사용할 수 있는 못총입니다.  작은 크기 덕분에, 모든 종류의 총기에 부착할 수 있습니다."
-
-#: .\ZhighGunmods.json
-msgid "underbarrel chemical blaster"
-msgid_plural "underbarrel chemical blasters"
-msgstr[0] "총열하단 화학약품 발사기"
-
-#: .\ZhighGunmods.json
-msgid "A small chemical/water shooter.  Since chemical firearms are not quite useful, this could be used as a sidearm for various uses."
-msgstr "소형의 화학약품/물총입니다.  이런 종류의 화기는 그리 유용하지 않기에, 다용도의 부무장으로 사용할 수 있습니다."
-
-#: .\ZhighGunmods.json
-msgid "Pedersen Sten gun"
-msgid_plural "Pedersen Sten guns"
-msgstr[0] "페더슨 스텐 기관단총"
-
-#: .\ZhighGunmods.json
-msgid "Inheriting the name of both STEN and the Pedersen Device, this sub-machine gun is attached underbarrel, and could be used for close quarters combat."
-msgstr "스텐 기관단총과 페더슨 장비의 이름을 모두 물려받은 특수한 기관단총으로, 총열하단에 부착되며, 근접전에서 사용될 수 있습니다."
-
-#: .\ZhighGunmods.json
-msgid "underbarrel laser"
-msgid_plural "underbarrel lasers"
-msgstr[0] "총열하단 레이저"
-
-#: .\ZhighGunmods.json
-msgid "A underbarrel laser, which could be used for blinding enemies in close combat.  Thanks to it's small size, this could be attached to every type of guns."
-msgstr "근접전에서 상대방의 눈을 멀게 하는 데 사용할 수 있는 레이저입니다.  작은 크기 덕분에, 모든 종류의 총기에 부착할 수 있습니다."
-
-#: .\ZhighGunmods.json
-msgid "weighted grip"
-msgid_plural "weighted grips"
-msgstr[0] "무게추 그립"
-
-#: .\ZhighGunmods.json
-msgid "A set of weight at the grip for a better accuracy."
-msgstr "더 나은 명중률을 위해 그립에 달 수 있는 무게추 달린 그립."
-
-#: .\ZhighGunmods.json
-msgid "93R forward grip"
-msgid_plural "93R forward grips"
-msgstr[0] "93R 전방손잡이"
-
-#: .\ZhighGunmods.json
-msgid "A grip placed forward on the barrel of 93R.  It's irremovable."
-msgstr "93R의 앞에 부착된 수직손잡이.  제거가 불가능합니다."
-
-#: .\ZhighGunmods.json
-msgid "loudener"
-msgid_plural "loudeners"
-msgstr[0] "확성기"
-
-#: .\ZhighGunmods.json
-msgid ""
-"A loudener increases the amount of noise and damage generated by the report of a firearm.  Gunfire is extremely loud and can damage your hearing without protection; a loudener will bring the loudness of a report down to "
-"absolutly dangerous levels."
-msgstr "확성기는 총기 신고로 인해 발생하는 소음과 피해의 양을 증가시킵니다.  총소리는 매우 시끄러워 보호 장비 없이 청력을 손상시킬 수 있으므로 확성기를 사용하면 신고 음량을 매우 위험한 수준까지 높일 수 있습니다."
-
-#: .\ZhighGunmods.json
-msgid "Mosin-Nagant bayonet"
-msgid_plural "Mosin-Nagant bayonets"
-msgstr[0] "모신나강 총검"
-
-#. ~ Description for {'str': 'Mosin-Nagant bayonet'}
-#: .\ZhighGunmods.json
-msgid "A unique bayonet that fits for a Mosin-Nagant.  When equipped, you could use the rifle as a pike."
-msgstr "모신나강 전용의 독특한 총검.  적용시키면, 당신의 소총을 파이크처럼 사용할 수 있습니다."
-
-#: .\ZhighGunmods.json
-msgid "underbarrel rock launcher"
-msgid_plural "underbarrel rock launcher"
-msgstr[0] "총열하단 돌 발사기"
-
-#: .\ZhighGunmods.json
-msgid "This is an underbarrel launcher modeled similar to the M203 grenade launcher, designed to fire rocks with devastating force."
-msgstr "M203 유탄 발사기와 유사한 생김새를 한 언더배럴 발사기로, 강력한 힘으로 바위를 발사하도록 만들어졌습니다."
-
-#: .\ZhighGunmods.json
-msgid "rag forward grip"
-msgid_plural "rag forward grips"
-msgstr[0] "천조각 수직손잡이"
-
-#: .\ZhighGunmods.json
-msgid "An improvised grip placed forward on the barrel allows for greater control.  Not as effective as an average grip, but will work anyways."
-msgstr "총열에 부착하는 급조된 수직손잡이입니다.  일반적인 수직손잡이보다는 못하지만 여전히 반동 제어 성능이 크게 향상되며, 어떤 상황에서든 쓸만합니다."
-
-#: .\ZhighGunmods.json
-msgid "Desert Eagle barrel extension"
-msgid_plural "Desert Eagle barrel extensions"
-msgstr[0] "데저트 이글 연장 총열"
-
-#: .\ZhighGunmods.json
-msgid "A longer barrel increases the muzzle velocity of a Desert Eagle, contributing to both accuracy and damage but reduces portability and slows aiming."
-msgstr "데저트 이글의 탄속을 증가시키는 연장 총열로, 정확도와 살상력이 늘어나지만 휴대성을 낮추고 조준을 느리게 만듭니다."
-
-#: .\ZhighGunmods.json
-msgid "barrel"
-msgstr "총열"
-
-#: .\ZhighGunmods.json
-msgctxt "gun_type_type"
-msgid "deagle_44"
-msgstr "데저트 이글"
-
 #: .\ZhighItemRemake.json
 msgid "multi-tool"
 msgid_plural "multi-tools"
@@ -6200,6 +5779,10 @@ msgstr[0] "BB탄 총"
 #: .\ZhighItemRemake.json .\ZhighMonsters.json .\ZhighWeapons\ZhighRanged.json
 msgid "single"
 msgstr "단발"
+
+#: .\ZhighItemRemake.json .\ZhighMonSurvivors.json .\ZhighMonsters.json .\ZhighWeapons\ZhighGunmods.json .\ZhighWeapons\ZhighRanged.json
+msgid "full auto"
+msgstr "완전 자동"
 
 #: .\ZhighItemRemake.json
 msgid "Paintball gun"
@@ -14894,6 +14477,62 @@ msgstr "앍!  당신의 의상은 우주선 모양일지 몰라도 세상의 종
 
 #: .\ZhighProfession.json
 msgctxt "profession_male"
+msgid "Student - Polo Player"
+msgstr "학생 - 폴로 선수"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Polo Player"
+msgstr "학생 - 폴로 선수"
+
+#. ~ Profession (male Student - Polo Player) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid "Galloping across the overgrown ruins, mallet in hand, you strike not a ball but the skulls of the undead, a polo player adapting to a new kind of match—one where survival is the only prize."
+msgstr "당신은 한 손에 망치를 든 채, 무성한 폐허를 질주하며 공이 아니라 언데드를 치는 폴로 플레이어가 되어 생존이 유일한 보상인 새로운 경기에 적응해야 합니다."
+
+#. ~ Profession (female Student - Polo Player) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid "Galloping across the overgrown ruins, mallet in hand, you strike not a ball but the skulls of the undead, a polo player adapting to a new kind of match—one where survival is the only prize."
+msgstr "당신은 한 손에 망치를 든 채, 무성한 폐허를 질주하며 공이 아니라 언데드를 치는 폴로 플레이어가 되어 생존이 유일한 보상인 새로운 경기에 적응해야 합니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Rifle Shooter"
+msgstr "학생 - 소총 사격 선수"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Rifle Shooter"
+msgstr "학생 - 소총 사격 선수"
+
+#. ~ Profession (male Student - Rifle Shooter) description
+#. ~ Profession (male Student - Pistol Shooter) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid "Steady breath, firm grip—You once aimed for bullseyes in competition, but now your targets shamble in the dark, each precise shot the difference between life and death."
+msgstr "안정된 호흡, 확고한 그립 - 한때는 대회에서 과녁을 노렸지만, 이제는 어둠 속의 흔들리는 목표물에게 사격한 정확한 한 발 한 발이 생사를 가릅니다."
+
+#. ~ Profession (female Student - Rifle Shooter) description
+#. ~ Profession (female Student - Pistol Shooter) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid "Steady breath, firm grip—You once aimed for bullseyes in competition, but now your targets shamble in the dark, each precise shot the difference between life and death."
+msgstr "안정된 호흡, 확고한 그립 - 한때는 대회에서 과녁을 노렸지만, 이제는 어둠 속의 흔들리는 목표물에게 사격한 정확한 한 발 한 발이 생사를 가릅니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Pistol Shooter"
+msgstr "학생 - 권총 사격 선수"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Pistol Shooter"
+msgstr "학생 - 권총 사격 선수"
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
 msgid "Student - Mallninja"
 msgstr "학생 - 몰닌자"
 
@@ -15969,6 +15608,28 @@ msgstr "코스플레이어"
 msgctxt "profession_female"
 msgid "Cosplayer"
 msgstr "코스플레이어"
+
+#: .\ZhighProfession2.json
+msgctxt "profession_male"
+msgid "Park Ranger"
+msgstr "자연공원 관리인"
+
+#: .\ZhighProfession2.json
+msgctxt "profession_female"
+msgid "Park Ranger"
+msgstr "자연공원 관리인"
+
+#. ~ Profession (male Park Ranger) description
+#: .\ZhighProfession2.json
+msgctxt "prof_desc_male"
+msgid "You once protected the wilderness from careless hikers and wildfires—now, you navigate the untamed ruins, tracking the undead like predators, the forest as your last sanctuary."
+msgstr "한때는 자연을 부주의한 등산객과 산불로부터 보호했지만, 이제는 야생적인 폐허를 탐험하며 언데드 포식자들을 추적하며 숲을 마지막 안식처삼아 지내야 합니다."
+
+#. ~ Profession (female Park Ranger) description
+#: .\ZhighProfession2.json
+msgctxt "prof_desc_female"
+msgid "You once protected the wilderness from careless hikers and wildfires—now, you navigate the untamed ruins, tracking the undead like predators, the forest as your last sanctuary."
+msgstr "한때는 자연을 부주의한 등산객과 산불로부터 보호했지만, 이제는 야생적인 폐허를 탐험하며 언데드 포식자들을 추적하며 숲을 마지막 안식처삼아 지내야 합니다."
 
 #. ~ Name for scenario 'Challenge - Bank Robbery' for a male character
 #: .\ZhighSenarios.json
@@ -21104,6 +20765,76 @@ msgid "A web grenade modified with some steel scraps, which makes you to throw t
 msgstr "금속 조각들로 개조된 거미줄 수류탄으로, 스태프 슬링 등을 사용해서 더 멀리까지 던질 수 있습니다."
 
 #: .\ZhighWeapons\ZhighAmmo.json
+msgid "shootable mini grenade"
+msgid_plural "shootable mini grenades"
+msgstr[0] "슬링 투척형 소형 수류탄"
+
+#. ~ Description for {'str': 'shootable mini grenade'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "A mini grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range."
+msgstr "금속 조각들로 개조된 소형 수류탄으로, 스태프 슬링 등을 사용해서 더 멀리까지 던질 수 있습니다."
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "shootable improvised pipe bomb, long fuse"
+msgid_plural "shootable improvised pipe bomb, long fuses"
+msgstr[0] "슬링 투척형 급조 파이프 폭탄, 긴 퓨즈"
+
+#. ~ Description for {'str': 'shootable improvised pipe bomb, long fuse'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "A long fuse improvised pipe bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range."
+msgstr "금속 조각들로 개조된 긴 퓨즈의 파이프 폭탄으로, 스태프 슬링 등을 사용해서 더 멀리까지 던질 수 있습니다."
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "shootable undead signal bomb"
+msgid_plural "shootable undead signal bombs"
+msgstr[0] "슬링 투척형 언데드 신호 폭탄"
+
+#. ~ Description for {'str': 'shootable undead signal bomb'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "An undead signal bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range."
+msgstr "금속 조각들로 개조된 언데드 신호 폭탄으로, 스태프 슬링 등을 사용해서 더 멀리까지 던질 수 있습니다."
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "shootable corrosive gas grenade"
+msgid_plural "shootable corrosive gas grenades"
+msgstr[0] "슬링 투척형 부식성 가스 수류탄"
+
+#. ~ Description for {'str': 'shootable corrosive gas grenade'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "A corrosive gas grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range."
+msgstr "금속 조각들로 개조된 부식성 가스 수류탄으로, 스태프 슬링 등을 사용해서 더 멀리까지 던질 수 있습니다."
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "shootable concertina bomb"
+msgid_plural "shootable concertina bombs"
+msgstr[0] "슬링 투척형 철조망 폭탄"
+
+#. ~ Description for {'str': 'shootable concertina bomb'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "A concertina bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range."
+msgstr "금속 조각들로 개조된 철조망 폭탄으로, 스태프 슬링 등을 사용해서 더 멀리까지 던질 수 있습니다."
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "shootable flash bomb"
+msgid_plural "shootable flash bombs"
+msgstr[0] "슬링 투척형 섬광 폭탄"
+
+#. ~ Description for {'str': 'shootable flash bomb'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "A flash bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range."
+msgstr "금속 조각들로 개조된 섬광 폭탄으로, 스태프 슬링 등을 사용해서 더 멀리까지 던질 수 있습니다."
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "shootable ninja bomb"
+msgid_plural "shootable ninja bombs"
+msgstr[0] "슬링 투척형 닌자 폭탄"
+
+#. ~ Description for {'str': 'shootable ninja bomb'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "A ninja bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range."
+msgstr "금속 조각들로 개조된 닌자 폭탄으로, 스태프 슬링 등을 사용해서 더 멀리까지 던질 수 있습니다."
+
+#: .\ZhighWeapons\ZhighAmmo.json
 msgid "acid paintball"
 msgid_plural "acid paintballs"
 msgstr[0] "산성 페인트볼"
@@ -24631,6 +24362,448 @@ msgstr[0] "무작위 카드 덱"
 msgid "This is a pack of thirty unknown cards.  Unpack and enjoy."
 msgstr "무작위 카드 30장이 든 팩.  사용하여 포장을 풀고 내용물을 즐길 수 있습니다."
 
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "flintlock conversion kit"
+msgid_plural "flintlock conversion kits"
+msgstr[0] "플린트락 컨버전 키트"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "Replacing several key parts of a .36 paper cartridge, .44 paper cartridge or paper cartridge firearm converts it to a .22 firearm.  The conversion results in a slight reduction to accuracy."
+msgstr ".36 종이 카트리지, .44 종이 카트리지 또는 종이 카트리지 총기의 주요 부품 몇 개를 교체해서 .22 총기로 변환합니다.  컨버전을 하게 되면 명중률과 피해가 조금 깎입니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "tong-a (bows)"
+msgid_plural "tong-a (bows)s"
+msgstr[0] "활 전용 통아"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "Just a narrow wooden barrel cut in half.  By adding this to a bow, you can shoot bolts instead of arrows.  Adds damage, but hard to aim accurately."
+msgstr "그냥 좁은 나무 원통을 반으로 쪼갠 것입니다.  활에 이것을 더함으로써, 당신은 화살 대신 석궁의 볼트를 쏠 수 있다.  피해가 늘어나지만 조준하기 어려워집니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "tong-a (crossbows)"
+msgid_plural "tong-a (crossbows)s"
+msgstr[0] "석궁 전용 통아"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "Just a narrow wooden barrel cut in half.  By adding this to a crossbow, you can shoot arrows instead of bolts.  Adds damage, but hard to aim accurately."
+msgstr "그냥 좁은 나무 원통을 반으로 쪼갠 것입니다.  석궁에 이것을 더함으로써, 당신은 화살 대신 석궁 볼트를 쏠 수 있다.  피해가 늘어나지만 조준하기 어려워집니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "bipod grip"
+msgid_plural "bipod grips"
+msgstr[0] "양각대 수직손잡이"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid ""
+"A grip placed forward on the barrel allows for greater control.  Not as effective as a bipod but usable under all conditions.  Added bipods are commonly used on rifles and machine guns to provide a forward rest and reduce "
+"motion.  Although they greatly improve handling of recoil they are usable only on certain surfaces and are slow to equip."
+msgstr ""
+"총열에 부착하는 수직손잡이입니다.  양각대보다는 못하지만 여전히 반동 제어 성능이 크게 향상되며, 어떤 상황에서든 쓸만합니다.  추가된 양각대는 소총과 기관총에 장착하여 전방 지지대 역할을 하며, 진동을 감소시킵니다.  반동 제어 성"
+"능이 크게 향상되지만, 튼튼한 표면에만 놓을 수 있고 총기를 손에 드는데 시간이 오래 걸리게 됩니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json .\ZhighWeapons\ZhighRanged.json
+msgid "underbarrel"
+msgstr "총열하단"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "modified bipod grip"
+msgid_plural "modified bipod grips"
+msgstr[0] "개량된 양각대 수직손잡이"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid ""
+"A grip placed forward on the barrel allows for greater control.  Not as effective as a bipod but usable under all conditions. Added bipods are commonly used on rifles and machine guns to provide a forward rest and reduce "
+"motion.  Although they greatly improve handling of recoil they are usable only on certain surfaces and are slow to equip. This one was modified and customized to mount on pretty much any weapon, if you so want."
+msgstr ""
+"총열에 부착하는 수직손잡이입니다.  양각대보다는 못하지만 여전히 반동 제어 성능이 크게 향상되며, 어떤 상황에서든 쓸만합니다.  추가된 양각대는 소총과 기관총에 장착하여 전방 지지대 역할을 하며, 진동을 감소시킵니다.  반동 제어 성"
+"능이 크게 향상되지만, 튼튼한 표면에만 놓을 수 있고 총기를 손에 드는데 시간이 오래 걸리게 됩니다.  원한다면 어느 무기에든 장착할 수 있도록 개조되었습니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "fanning mod"
+msgid_plural "fanning mods"
+msgstr[0] "패닝 모드"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid ""
+"As someone uses the revolver, the person thought it will be easier to shoot more if it's modified in a correct order.  Now, by using this, the modified gun can shoot it's bullets in full auto.  The only drawback is that it "
+"empties all or half of the cartridges in the cylinder."
+msgstr ""
+"누군가가 리볼버를 사용할 때, 개조만 잘 한다면 더 많은 총알을 쓸 수 있을 것이라고 생각했습니다.  이제, 이것을 사용함으로써, 개조된 총은 완전자동으로 발사할 수 있습니다.  유일한 단점으로는 이 모드가 약실 총알의 반에서 전부를 비"
+"워버릴 수 있다는 사실입니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "3 round fanning"
+msgstr "3발 패닝 난사"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "fanning"
+msgstr "패닝 난사"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "glock automatic accessory"
+msgid_plural "glock automatic accessorys"
+msgstr[0] "글록 연사부품"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "Compared to Glock 18, other models could not use full auto due to many reasons, and law was one of them.  Now however, there is nobody to stop you - unless you do not like pistols going BRRRRRRRRT!"
+msgstr ""
+"글록 18과 비교했을 때, 다른 모델들은 다양한 이유로 자동연사를 쓸 수 없었고, 법은 그러한 이유들 중에 하나였습니다.  하지만 이제는 당신을 막을 사람은 없습니다.  당신이 당신의 권총이 부와앜 하고 나가는 것을 싫어하지 않는 이상 말"
+"이죠!"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "glock_17"
+msgstr "글록 17"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "glock_19"
+msgstr "글록 19"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "glock_20"
+msgstr "글록 20"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "glock_21"
+msgstr "글록 21"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "glock_22"
+msgstr "글록 22"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "glock_31"
+msgstr "글록 31"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "recoil gel pad"
+msgid_plural "recoil gel pads"
+msgstr[0] "반동제어 젤 패드"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "This single red rubber-like thing with rubber-like straps is used over a grip(so it is not a grip), and lowers recoil."
+msgstr "이 붉은색의 고무 덩어리는 그립 겉을 고무같은 끈으로 감싸며(따라서 그립이라고 할 수는 없습니다.), 반동을 낮춥니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "handmade rifle grenade launcher"
+msgid_plural "handmade rifle grenade launchers"
+msgstr[0] "수제작 총류탄 발사기"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "This is a home built launcher tube that can be attached to almost any infantry, bullet shooting firearms.  It allows a single rock-sized ammo to be loaded and fired.  Light and long ranged, but not that useful."
+msgstr "이것은 수제작으로 만들어진 발사기로, 총알을 쏘는 어떠한 보병 화기에도 장착이 가능합니다.  이 발사기는 돌 크기의 탄약이 장전 및 발사될 수 있게 합니다.  가볍고 긴 범위를 지니지만, 그리 쓸모있지는 않습니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "muzzle"
+msgstr "총구"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "sinew bowstring"
+msgid_plural "sinew bowstrings"
+msgstr[0] "힘줄 활대"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "A handmade sinew bowstring designed for crossbows.  It allows bolts to hit harder and fly faster, but it's bit too high-tension to use in a regular bow."
+msgstr "석궁에 장착하는 용도의 수제작 힘줄 활대 보강물입니다.  장력을 강화시켜 볼트가 더 빠르고 멀리 날아가게 하지만, 재장전을 조금 어렵게 만듭니다.."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "mechanism"
+msgstr "내부구조"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "pebble conversion kit"
+msgid_plural "pebble conversion kits"
+msgstr[0] "조약돌 컨버전 키트"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "Replacing several key parts of a paintball firearm converts it to a pebble firearm.  The conversion results in a slight reduction to accuracy and damage."
+msgstr "페인트볼 화기의 일부 부분을 개조해서 조약돌을 발사할 수 있게 만듭니다.  컨버전을 하게 되면 명중률과 피해가 조금 깎입니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "axe bayonet"
+msgid_plural "axe bayonets"
+msgstr[0] "도끼 총검"
+
+#. ~ Description for {'str': 'axe bayonet'}
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "A axe bayonet is a large slashing weapon that can be attached to the front of a firearm or crossbow converting it into an axe."
+msgstr "도끼 총검은 쇠뇌 또는 화기 앞에 긴 도끼 형태로 장착하여 넓게 휘두를 수 있는 무기입니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "40mm conversion kit"
+msgid_plural "40mm conversion kits"
+msgstr[0] "40mm 컨버전 키트"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "A survivor's conversion kit, which makes the modified 40x46mm firearm to shoot 40x53mm grenades, 40x46mm grenades, and rocks after modified."
+msgstr "개조 후 40x46mm 총기를 40x53mm 수류탄, 40x46mm 수류탄, 및 돌을 발사할 수 있도록 개조하는 생존자의 수제 개조 키트입니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "advanced pump"
+msgid_plural "advanced pumps"
+msgstr[0] "개량형 공기펌프"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "This is a reinforced hose and pieces, which increases the pneumatic system better.  Increases damage and range but also increase the noise of the modified firearm."
+msgstr "이것은 강화된 호스와 부품으로 공압 시스템을 더욱 향상시킵니다.  피해량과 사거리가 증가하지만 개조된 총기의 격발 시의 소음도 증가합니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "helsing"
+msgstr "헬싱"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "tihar"
+msgstr "티할"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "pneumatic_shotgun"
+msgstr "공압식 산탄총"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "marble_gun"
+msgstr "구슬 총"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "marble_sniper_gun"
+msgstr "구슬 저격총"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "tiharBigZhigh"
+msgstr "대형 티할"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "popGun_zhigh"
+msgstr "팝 건"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "tishuna"
+msgstr "티슈나"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "rapid fire mechanism"
+msgid_plural "rapid fire mechanisms"
+msgstr[0] "고속연사 장치"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "An improved blowback mechanism makes your firearm's automatic fire faster, at the cost of reduced accuracy and increased noise."
+msgstr "개선된 블로우백 장치로써 설치된 총기의 연사속도를 반동과 소리를 댓가로 높입니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "laser grip"
+msgid_plural "laser grips"
+msgstr[0] "레이저 그립"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "A set of ergonomic replacement furniture for a firearm improving handling.  Also have an extra laser for accuracy."
+msgstr "총기를 더 쉽게 다룰 수 있도록 장착하는 인체공학적 부품입니다.  명중률을 위해 추가 레이저가 달려 있습니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "grip"
+msgstr "그립"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "heavy barrel"
+msgid_plural "heavy barrels"
+msgstr[0] "중총열"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "A heavier, thicker barrel lowers recoil greatly but also increases weight greatly."
+msgstr "반동을 크게 줄이지만 무게를 크게 늘리는 길고 굵은 총열입니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "muzzle weight"
+msgid_plural "muzzle weights"
+msgstr[0] "총구 부착 추"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "A muzzle brake makes the barrel heavier, improving recoil but increasing bulk slightly."
+msgstr "총구 부착 추는 총구 부분을 더 무겁게 만들어 반동을 개선시키지만 부피를 약간 증가시킵니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "underbarrel flamethrower"
+msgid_plural "underbarrel flamethrowers"
+msgstr[0] "총열하단 화염방사기"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "A flamethrower, which was almost useful as a toy or a big lighter.  Nowdays however, this could save your life in close combat."
+msgstr "이 화염방사기는 장난감이나 초대형 라이터로나 쓸만했던 물건입니다.  하지만 요즘과 같은 시대에는 이게 근접전에서 당신의 목숨을 구할 수 있을 겁니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "underbarrel shotgun"
+msgid_plural "underbarrel shotguns"
+msgstr[0] "총열하단 산탄총"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid ""
+"A single shot shotshell blaster, which could be used for close combat.  Thanks to it's small size, this could be attached to every type of guns.  \n"
+"\n"
+"I'm a Catholic whore, currently enjoying congress out of wedlock with my black, Jewish boyfriend who works in a Military abortion clinic.  So, hail Satan... and have a lovely afternoon Madam."
+msgstr ""
+"근접전에서 사용할 수 있는 단발식 산탄 발사기입니다.  작은 크기 덕분에, 모든 종류의 총기에 부착할 수 있습니다.\n"
+"\n"
+"나는 가톨릭 남창이고, 나와 불륜을 즐기는 관계인 유대계 흑인 남자친구는 군 낙태 시술소에서 근무하고 있어요.  요컨대, 사탄 만세. 그럼 좋은 오후 되세요, 부인."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "underbarrel 12 guage shotgun"
+msgid_plural "underbarrel 12 guage shotguns"
+msgstr[0] "총열하단 12 게이지 산탄총"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "A single shot underbarrel gun that loads 12 gauge shotgun shells, handcrafted from scrap."
+msgstr "12 게이지 산탄을 사용하는 단발 총열하단 권총입니다.  고철을 이용해 만든 수제 무기입니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "underbarrel flaregun"
+msgid_plural "underbarrel flareguns"
+msgstr[0] "총열하단 조명탄 발사기"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "A single shot flare blaster, which could be used for close combat.  Thanks to it's small size, this could be attached to every type of guns."
+msgstr "근접전에서 사용할 수 있는 단발식 조명탄 발사기입니다.  작은 크기 덕분에, 모든 종류의 총기에 부착할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "underbarrel tazer"
+msgid_plural "underbarrel tazers"
+msgstr[0] "총열하단 테이저"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "A underbarrel tazer, which could be used for close combat.  Thanks to it's small size, this could be attached to every type of guns."
+msgstr "근접전에서 사용할 수 있는 테이저입니다.  작은 크기 덕분에, 모든 종류의 총기에 부착할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "underbarrel paintball gun"
+msgid_plural "underbarrel paintball guns"
+msgstr[0] "총열하단 페인트볼 총"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "A six shot paintball blaster, which could be used for various uses.  Thanks to it's small size, this could be attached to every type of guns."
+msgstr "다용도로 사용할 수 있는 약실 6개의 페인트볼 발사기입니다.  작은 크기 덕분에, 모든 종류의 총기에 부착할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "underbarrel naligun"
+msgid_plural "underbarrel naliguns"
+msgstr[0] "총열하단 못총"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "A nail gun, which could be used for fun.  Thanks to it's small size, this could be attached to every type of guns."
+msgstr "재미삼아 사용할 수 있는 못총입니다.  작은 크기 덕분에, 모든 종류의 총기에 부착할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "underbarrel chemical blaster"
+msgid_plural "underbarrel chemical blasters"
+msgstr[0] "총열하단 화학약품 발사기"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "A small chemical/water shooter.  Since chemical firearms are not quite useful, this could be used as a sidearm for various uses."
+msgstr "소형의 화학약품/물총입니다.  이런 종류의 화기는 그리 유용하지 않기에, 다용도의 부무장으로 사용할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "Pedersen Sten gun"
+msgid_plural "Pedersen Sten guns"
+msgstr[0] "페더슨 스텐 기관단총"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "Inheriting the name of both STEN and the Pedersen Device, this sub-machine gun is attached underbarrel, and could be used for close quarters combat."
+msgstr "스텐 기관단총과 페더슨 장비의 이름을 모두 물려받은 특수한 기관단총으로, 총열하단에 부착되며, 근접전에서 사용될 수 있습니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "underbarrel laser"
+msgid_plural "underbarrel lasers"
+msgstr[0] "총열하단 레이저"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "A underbarrel laser, which could be used for blinding enemies in close combat.  Thanks to it's small size, this could be attached to every type of guns."
+msgstr "근접전에서 상대방의 눈을 멀게 하는 데 사용할 수 있는 레이저입니다.  작은 크기 덕분에, 모든 종류의 총기에 부착할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "weighted grip"
+msgid_plural "weighted grips"
+msgstr[0] "무게추 그립"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "A set of weight at the grip for a better accuracy."
+msgstr "더 나은 명중률을 위해 그립에 달 수 있는 무게추 달린 그립."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "93R forward grip"
+msgid_plural "93R forward grips"
+msgstr[0] "93R 전방손잡이"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "A grip placed forward on the barrel of 93R.  It's irremovable."
+msgstr "93R의 앞에 부착된 수직손잡이.  제거가 불가능합니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "loudener"
+msgid_plural "loudeners"
+msgstr[0] "확성기"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid ""
+"A loudener increases the amount of noise and damage generated by the report of a firearm.  Gunfire is extremely loud and can damage your hearing without protection; a loudener will bring the loudness of a report down to "
+"absolutly dangerous levels."
+msgstr "확성기는 총기 신고로 인해 발생하는 소음과 피해의 양을 증가시킵니다.  총소리는 매우 시끄러워 보호 장비 없이 청력을 손상시킬 수 있으므로 확성기를 사용하면 신고 음량을 매우 위험한 수준까지 높일 수 있습니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "Mosin-Nagant bayonet"
+msgid_plural "Mosin-Nagant bayonets"
+msgstr[0] "모신나강 총검"
+
+#. ~ Description for {'str': 'Mosin-Nagant bayonet'}
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "A unique bayonet that fits for a Mosin-Nagant.  When equipped, you could use the rifle as a pike."
+msgstr "모신나강 전용의 독특한 총검.  적용시키면, 당신의 소총을 파이크처럼 사용할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "underbarrel rock launcher"
+msgid_plural "underbarrel rock launcher"
+msgstr[0] "총열하단 돌 발사기"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "This is an underbarrel launcher modeled similar to the M203 grenade launcher, designed to fire rocks with devastating force."
+msgstr "M203 유탄 발사기와 유사한 생김새를 한 언더배럴 발사기로, 강력한 힘으로 바위를 발사하도록 만들어졌습니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "rag forward grip"
+msgid_plural "rag forward grips"
+msgstr[0] "천조각 수직손잡이"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "An improvised grip placed forward on the barrel allows for greater control.  Not as effective as an average grip, but will work anyways."
+msgstr "총열에 부착하는 급조된 수직손잡이입니다.  일반적인 수직손잡이보다는 못하지만 여전히 반동 제어 성능이 크게 향상되며, 어떤 상황에서든 쓸만합니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "Desert Eagle barrel extension"
+msgid_plural "Desert Eagle barrel extensions"
+msgstr[0] "데저트 이글 연장 총열"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "A longer barrel increases the muzzle velocity of a Desert Eagle, contributing to both accuracy and damage but reduces portability and slows aiming."
+msgstr "데저트 이글의 탄속을 증가시키는 연장 총열로, 정확도와 살상력이 늘어나지만 휴대성을 낮추고 조준을 느리게 만듭니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "barrel"
+msgstr "총열"
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "deagle_44"
+msgstr "데저트 이글"
+
 #: .\ZhighWeapons\ZhighMelee.json
 msgid "millwall brick"
 msgid_plural "millwall bricks"
@@ -26225,11 +26398,11 @@ msgid "A custom 3D-printed knuckles made out of carbon fiber.  It is more lightw
 msgstr "3D 프린터를 이용해 만든 탄소섬유 너클입니다.  제조 방식 덕분에 일반적인 너클에 비해 훨씬 가볍지만, 3D 프린터로만 수리할 수 있습니다."
 
 #: .\ZhighWeapons\ZhighMelee.json
-msgid "pick"
-msgid_plural "picks"
-msgstr[0] "소형 곡괭이"
+msgid "mattock"
+msgid_plural "mattocks"
+msgstr[0] "한손 곡괭이"
 
-#. ~ Description for {'str': 'pick'}
+#. ~ Description for {'str': 'mattock'}
 #: .\ZhighWeapons\ZhighMelee.json
 msgid "A one-handed pickaxe.  Makes a great melee weapon, and is useful both for digging things and for use as a hammer."
 msgstr "한손으로 쓸 수 있는 곡괭이.  훌륭한 근접 무기이며 땅을 파거나 망치처럼 써야 할 때도 쓸만합니다."
@@ -27067,6 +27240,16 @@ msgstr[0] "가짜 모튜에리 소드"
 #: .\ZhighWeapons\ZhighMelee.json
 msgid "This is a dull, cheap replica of a straight sword associated with cavalry, known for it's basket-shaped guard that protects the hand."
 msgstr "손을 보호하는 특유의 바구니 모양의 손 보호대로 유명한 기병들의 직선형 도검을 본떠 만든 무디고 저렴한 레플리카."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "sjambok"
+msgid_plural "sjamboks"
+msgstr[0] "샘복"
+
+#. ~ Description for {'str': 'sjambok'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "A short but heavy leather whip, which also could be used as a cudgel."
+msgstr "짧지만 무거운 가죽 채찍으로, 몽둥이로도 사용할 수 있습니다."
 
 #: .\ZhighWeapons\ZhighRanged.json
 msgid "marble gun"
@@ -29139,6 +29322,15 @@ msgid "A gun that uses atomic energy, as a dragon's breath shotgun.  It is overh
 msgstr "원자력을 바탕으로 작동되는, 용의 숨결과 같은 총기.  적들을 쓸어버리기에 최고입니다.  과열되었기에 식으려면 좀 기다려야 합니다."
 
 #: .\ZhighWeapons\ZhighRanged.json
+msgid "RARAN Prototype 1130"
+msgid_plural "RARAN Prototype 1130s"
+msgstr[0] "RARAN 프로토타입 1130"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Modified Makarov PM, which shoots 9x18mm cartridge in full auto.  Also have a built-in foregrip."
+msgstr "자동사격이 가능한 마카로프 PM 권총으로, 9x18mm구경의 탄환을 연사할 수 있습니다.  내장된 수직손잡이 또한 달려 있습니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
 msgid "crystal skull"
 msgid_plural "crystal skull"
 msgstr[0] "수정 해골"
@@ -29146,6 +29338,15 @@ msgstr[0] "수정 해골"
 #: .\ZhighWeapons\ZhighRanged.json
 msgid "A crystal skull, which shoots projectiles."
 msgstr "수정으로 만들어진 해골로, 발사체를 발사합니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Mx4 Storm"
+msgid_plural "Mx4 Storms"
+msgstr[0] "Mx4 스톰"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "A small pistol caliber carbine designed for military use, the Mx4 Storm uses magazines that are interchangeable with other Beretta 9x19mm handguns."
+msgstr "군용의 권총탄을 사용하는 소형 카빈입니다.  Mx4 스톰은 베레타 9x19mm 권총권총의 탄창과도 호환이 됩니다."
 
 #. ~ Description for {'str': 'stamina regain'}
 #. ~ Description for {'str': 'wide stamina regain'}
@@ -30187,6 +30388,30 @@ msgstr[0] "닌자 폭탄 (켜짐)"
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "A black round item, which releases an area of darkness when activated.  It is active now, ready to cover you in darkness for a short time."
 msgstr "검은색의 둥그런 물건으로, 작동하면 어둠으로 덮인 영역을 전개합니다.  이제 작동되어, 당신을 어둠에 덮을 준비가 되었습니다."
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "smoke bomb, big"
+msgid_plural "smoke bomb, bigs"
+msgstr[0] "대형 연막탄"
+
+#. ~ Description for {'str': 'smoke bomb, big'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid ""
+"This is a modified fire extinguisher filled with a variety of pyrotechnic chemicals.  Use this item to pull the pin and light the fuse, turning it into an active smoke bomb.  Ten turns after you do that, it will begin to "
+"expel a thick black smoke.  This smoke will slow those who enter it, as well as obscuring vision and scent."
+msgstr ""
+"다양한 불꽃성의 화학물들이 담긴 개조된 연막탄.  사용하면 핀을 뽑으며 도화선에 불이 붙어 켜진 수제작 연막탄으로 바뀝니다.  10턴이 지나고 나면, 짙은 검은 연기를 내뿜게 됩니다.  이 연기는 상대방의 행동을 느리게 만들고, 더불어 시"
+"야와 냄새까지 차단합니다."
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "armed smoke bomb, big"
+msgid_plural "armed smoke bomb, bigs"
+msgstr[0] "대형 연막탄 (켜짐)"
+
+#. ~ Description for {'str': 'armed smoke bomb, big'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "This big smoke bomb has had its pin removed and is expelling thick smoke."
+msgstr "핀이 뽑힌 대형 연막탄으로, 짙은 연기를 내뿜고 있습니다."
 
 #: .\ZhighWeapons\ZhighTraps.json
 msgid "flare trap"
@@ -31719,6 +31944,10 @@ msgstr[0] "베테랑 생존자 좀비"
 msgid "This zombie once was a survivor like you, and a pretty good one at that.  Unfortunately they didn't make it, despite the custom-made, heavy armor pieces they wear and the gear that they are still lugging around."
 msgstr "한때 당신과 같은 생존자였으며 꽤 잘 살아온 것 같습니다.  불행히도, 수제작한 무거운 갑옷 쪼가리와 여전히 짊어지고 다니는 풍족한 장비에도 불구하고 안일사 당한 것 같습니다."
 
+#~ msgid "pick"
+#~ msgid_plural "picks"
+#~ msgstr[0] "소형 곡괭이"
+
 #, fuzzy
 #~| msgid "You activate the toxic gas bomb card.  Throw it!"
 #~ msgid "You light the rocket candy on fire.  Throw it!"
@@ -31853,9 +32082,6 @@ msgstr "한때 당신과 같은 생존자였으며 꽤 잘 살아온 것 같습�
 
 #~ msgid "I am just a game streamer.  Damn, never thought those zombies would be real.  This is bullshit!"
 #~ msgstr "나는 그냥 게임 스트리머야.  젠장, 좀비들이 진짜일줄은 몰랐는데.  이거 완전 개떡같은 소리잖아!"
-
-#~ msgid "An improvised cola bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range."
-#~ msgstr "금속 조각들로 개조된 콜라 폭탄으로, 스태프 슬링 등을 사용해서 더 멀리까지 던질 수 있습니다."
 
 #~ msgctxt "scenario_male"
 #~ msgid "Gone hunting"

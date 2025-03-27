@@ -714,7 +714,7 @@
     "weight": "125 g",
     "bashing": 1,
     "cutting": 5,
-    "thrown_damage": [ { "damage_type": "stab", "amount": 17 }, { "damage_type": "cut", "amount": 17 } ],
+    "thrown_damage": [ { "damage_type": "stab", "amount": 12 }, { "damage_type": "cut", "amount": 12 } ],
     "flags": [ "HURT_WHEN_WIELDED", "BELT_CLIP" ]
   },
   {
@@ -1460,5 +1460,31 @@
       "explosion": { "damage": 1 }
     },
     "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
+    "id": "smokebombBigZhigh",
+    "looks_like": "extinguisher",
+    "copy-from": "grenade_canister",
+    "type": "GENERIC",
+    "name": { "str": "smoke bomb, big" },
+    "description": "This is a modified fire extinguisher filled with a variety of pyrotechnic chemicals.  Use this item to pull the pin and light the fuse, turning it into an active smoke bomb.  Ten turns after you do that, it will begin to expel a thick black smoke.  This smoke will slow those who enter it, as well as obscuring vision and scent.",
+    "price": "38 USD",
+    "price_postapoc": "4 USD",
+    "weight": "13813 g",
+    "volume": "20000 ml",
+	"countdown_interval": 10,
+    "countdown_action": { "type": "transform", "target": "smokebombBigZhigh_act" }
+  },
+  {
+    "id": "smokebombBigZhigh_act",
+    "looks_like": "extinguisher",
+    "copy-from": "smokebombBigZhigh",
+    "type": "GENERIC",
+    "name": { "str": "armed smoke bomb, big" },
+    "description": "This big smoke bomb has had its pin removed and is expelling thick smoke.",
+    "emits": [ "emit_smoke_blast" ],
+    "countdown_interval": 500,
+    "countdown_action": { "type": "transform", "target": "jerrycan_big" },
+    "flags": [ "TRADER_AVOID" ]
   }
 ]

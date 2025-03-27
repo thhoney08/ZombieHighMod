@@ -2235,6 +2235,7 @@
     "weight": "4100 g",
     "volume": "2000 ml",
     "relative": { "range": 18 },
+    "ammo": "flintlock",
     "proportional": { "dispersion": 0.5, "reload": 1.5 }
   },
   {
@@ -5232,6 +5233,21 @@
     "flags": [ "FLAMING" ]
   },
   {
+    "id": "makarov_mpZhigh",
+    "copy-from": "makarov",
+    "looks_like": "makarov",
+    "type": "GUN",
+    "name": { "str": "RARAN Prototype 1130" },
+    "description": "Modified Makarov PM, which shoots 9x18mm cartridge in full auto.  Also have a built-in foregrip.",
+    "weight": "1057 g",
+    "volume": "502 ml",
+    "price": "784 USD",
+    "price_postapoc": "30 USD",
+    "magazine_well": "250 ml",
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "AUTO", "auto", 6 ] ],
+    "built_in_mods": [ "grip" ]
+  },
+  {
     "id": "skullCrystal_01_zhigh",
     "looks_like": "deathWhistleZhigh",
     "type": "GUN",
@@ -5272,5 +5288,27 @@
       [ "rail", 1 ],
       [ "underbarrel", 1 ]
     ]
+  },
+  {
+    "id": "mx4Zhigh",
+    "copy-from": "cx4",
+    "type": "GUN",
+	"weapon_category": [
+		"SUBMACHINE_GUNS",
+		"AUTOLOADING"
+	],
+    "name": { "str": "Mx4 Storm" },
+    "description": "A small pistol caliber carbine designed for military use, the Mx4 Storm uses magazines that are interchangeable with other Beretta 9x19mm handguns.",
+    "weight": "2280 g",
+    "volume": "1300 ml",
+    "price": "900 USD",
+    "price_postapoc": "40 USD",
+    "range": 17,
+	"handling": 15,
+    "ranged_damage": { "damage_type": "bullet", "amount": 3 },
+    "dispersion": 200,
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "AUTO", "auto", 4 ] ],
+	"skill": "smg",
+    "barrel_length": "20 ml"
   }
 ]
