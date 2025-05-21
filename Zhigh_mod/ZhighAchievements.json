@@ -67,5 +67,52 @@
     "kill_requirements": [ { "species": "INSECT", "is": ">=", "count": 50 } ],
     "description": "Kill 50 bugs",
     "requirements": [ { "event_statistic": "num_avatar_bugs_kills", "is": "anything" } ]
+  },
+  {
+    "id": "num_gains_akimbo_Zhigh",
+    "type": "event_statistic",
+    "stat_type": "count",
+    "event_transformation": "avatar_gains_akimbo_Zhigh",
+    "description": { "str_sp": "akimbo pistols skill level up." }
+  },
+  {
+    "id": "avatar_gains_akimbo_Zhigh",
+    "type": "event_transformation",
+    "event_type": "gains_skill_level",
+    "value_constraints": { "character": { "equals_statistic": "avatar_id" }, "skill": { "equals": "akimbo_Zhigh" } },
+    "drop_fields": [ "character", "skill" ]
+  },
+  {
+    "id": "achievement_lvl_5_akimbo_Zhigh",
+    "type": "achievement",
+    "name": { "str": "[Skill] Infernal Affairs" },
+    "description": "You are not a zombie.  Or are you?",
+    "skill_requirements": [ { "skill": "akimbo_Zhigh", "is": ">=", "level": 5 } ],
+    "requirements": [ { "event_statistic": "num_gains_akimbo_Zhigh", "is": "anything" } ]
+  },
+  {
+    "id": "achievement_lvl_10_akimbo_Zhigh",
+    "type": "achievement",
+    "name": { "str": "[Skill] A Better Tomorrow" },
+    "description": "A god is someone who controls his destiny.  You win some, you lose some.",
+    "skill_requirements": [ { "skill": "akimbo_Zhigh", "is": ">=", "level": 10 } ],
+    "requirements": [ { "event_statistic": "num_gains_akimbo_Zhigh", "is": "anything" } ],
+    "hidden_by": [ "achievement_lvl_5_akimbo_Zhigh" ]
+  },
+  {
+    "type": "weapon_category",
+    "id": "AKIMBOZHIGH",
+    "name": "Akimbo Pistols",
+    "//": "Handgun/revolvers/SMGs, but two."
+  },
+  {
+    "type": "skill",
+    "id": "akimbo_Zhigh",
+    "name": { "str": "Akimbo Firearms" },
+    "description": "Hard to aim, not that bad for close combat, good for firepower.",
+    "tags": [ "combat_skill", "weapon_skill" ],
+    "time_to_attack": { "min_time": 10, "base_time": 80, "time_reduction_per_level": 7 },
+    "display_category": "display_ranged",
+    "companion_skill_practice": [ { "skill": "hunting", "weight": 15 } ]
   }
 ]

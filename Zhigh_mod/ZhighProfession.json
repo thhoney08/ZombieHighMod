@@ -4,7 +4,7 @@
     "id": "zhighStudent",
     "name": "Student",
     "description": "Some would say that there's nothing particularly notable about you.  But you've survived, and that's more than most could say right now.",
-    "points": -2,
+    "points": -4,
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -35,7 +35,7 @@
     "id": "zhighChairman",
     "name": "Student - Chairman",
     "description": "When this disaster happened, you grabbed the best weapon - a chair - and started to fight.  How long will you survive, in this wave of chaos?",
-    "points": -2,
+    "points": -1,
     "traits": [ "REGEN_zhigh" ],
     "skills": [
       { "level": 2, "name": "melee" },
@@ -52,8 +52,8 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "camp_chair_zhigh", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "camp_chair_zhigh", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -330,6 +330,111 @@
   },
   {
     "type": "profession",
+    "id": "zhighViking",
+    "name": "Student - Warrior",
+    "description": "You were a LARPer - an actor with a mix of a comedian.  The major problem is that there is no more LARPing anymore.  For the Allfather, for Vahalla.",
+    "points": 3,
+    "skills": [
+      { "level": 2, "name": "melee" },
+      { "level": 2, "name": "cutting" },
+      { "level": 1, "name": "dodge" },
+      { "level": 2, "name": "bashing" }
+    ],
+    "traits": [ "REGEN_zhigh", "PROF_CHURL" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "socks",
+          "boots_larmor",
+          "chainmail_vest",
+          "helmet_nasal",
+          "gauntlets_larmor",
+          "axe_ring",
+          "wristwatch"
+        ],
+        "entries": [ 
+                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+                { "item": "beardedAxeZhigh_inferior", "custom-flags": [ "auto_wield" ] },
+                { "item": "knife_saex", "container-item": "sheath" } ]
+      },
+      "male": [ "boxer_shorts", "pants_zhigh" ],
+      "female": [ "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighSamurai",
+    "name": "Student - Ronin",
+    "description": "You were a LARPer - an actor with a mix of a comedian.  The major problem is that there is no more LARPing anymore.  In this war, the winners were the dead.  But you won't just sit down and wait for the death to come over.",
+    "points": 3,
+    "skills": [
+      { "level": 2, "name": "melee" },
+      { "level": 2, "name": "cutting" },
+      { "level": 2, "name": "dodge" },
+      { "level": 1, "name": "bashing" }
+    ],
+    "traits": [ "REGEN_zhigh", "PROF_CHURL" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "tabi_gi",
+          "loincloth",
+          "geta",
+          "armor_samuraiOrnamental",
+          "scabbard",
+          "mask_menpo",
+          "straw_hat_Asia"
+        ],
+        "entries": [ 
+                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+                { "item": "katana_inferior", "custom-flags": [ "auto_wield" ] },
+                { "item": "tanto_fake", "container-item": "sheath" } ]
+      },
+      "male": [ "pants_zhigh" ],
+      "female": [ "chestwrap", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighBerserker",
+    "name": "Student - Berserker",
+    "description": "Drenched in fake blood that soon turned real, you charge into hordes with foam weapons reforged in steel, howling like the character you once played.  In a world gone mad, your madness makes you king.",
+    "points": 0,
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [
+      { "level": 2, "name": "melee" },
+      { "level": 2, "name": "bashing" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "jacket_leather_bone",
+          "zhigh_smart_phone",
+          "adrenaline_injector",
+          "helmet_skull",
+          "boots",
+          "sneakers",
+          "greaves_bone",
+          "armguard_bone"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "daneAxeZhigh_inferior", "custom-flags": [ "auto_wield" ] } ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
     "id": "zhighCheerleader",
     "name": "Student - Cheerleader",
     "description": "The team that you cheered before had a high chance of winning, and won many games.  Against the new team called undead, that didn't worked.  Now that the team are all dead, guess you have to cheer for yourself.  Or fight.  Or both.",
@@ -420,7 +525,8 @@
         ],
         "entries": [ 
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "compositebow", "custom-flags": [ "auto_wield" ], "contents-item": [ "bow_scope", "bow_stabilizer_set" ] }, { "item": "quiver", "contents-group": "quiver_RangerZhigh" } ]
+                { "item": "compositebow", "custom-flags": [ "auto_wield" ], "contents-item": [ "bow_scope", "bow_stabilizer_set" ] },
+				{ "item": "quiver", "contents-group": "quiver_RangerZhigh" } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -468,9 +574,9 @@
       { "level": 2, "name": "dodge" }, 
       { "level": 2, "name": "gun" },
       { "level": 1, "name": "rifle" },
-      { "level": 1, "name": "pistol" }
+      { "level": 1, "name": "akimbo_Zhigh" }
     ],
-    "traits": [ "REGEN_zhigh", "SQUEAMISH" ],
+    "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
         "items": [
@@ -483,7 +589,7 @@
         ],
         "entries": [ 
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "cash_gun", "ammo-item": "ammo_cash", "charges": 87, "container-item": "holster" },
+                { "item": "cash_gunAkim", "ammo-item": "ammo_cash", "charges": 180, "container-item": "holsterAkimZhigh" },
                 { "item": "ammo_cash", "charges": 140 },
                 { "item": "cash_blaster", "ammo-item": "ammo_cash", "charges": 67, "custom-flags": [ "auto_wield" ] } ]
       },
@@ -563,9 +669,13 @@
     "type": "profession",
     "id": "zhighShouter",
     "name": "Student - Shouter",
-    "description": "As the school hall monitor, you belived in your leadership.  It will make your job easier while leading people, but against zombies...  Guess you need another method.",
-    "points": -2,
-    "skills": [ { "level": 1, "name": "melee" }, { "level": 3, "name": "barter" } ],
+    "description": "Once a strict enforcer of hallway rules, you now patrol bloodstained corridors with a handcuff instead of a clipboard.  You know every shortcut, every blind spot—and use them to keep the few remaining students alive.  Discipline didn’t die with the world.",
+    "points": 0,
+    "skills": [
+		{ "level": 2, "name": "melee" },
+		{ "level": 2, "name": "unarmed" },
+		{ "level": 2, "name": "barter" }
+	],
     "traits": [ "REGEN_zhigh", "PROF_SW" ],
     "items": {
       "both": {
@@ -577,10 +687,13 @@
           "sneakers",
           "pencil",
           "water_clean",
+          "armband_zhigh_halmon",
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "handcuff_knuckle", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -1244,7 +1357,11 @@
     "id": "zhighLancer",
     "name": "Student - Lancer",
     "description": "As the leader of a marching band, you swung your swagger stick to give your members a good beat.  As there are no bands for you to lead, you could only swing the stick in order to protect yourself.",
-    "points": -2,
+    "points": -1,
+    "skills": [
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "bashing" }
+    ],
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1259,6 +1376,32 @@
         "entries": [ 
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
                 { "item": "stick_swag", "custom-flags": [ "auto_wield" ] } ]
+      },
+      "male": [ "boxer_shorts", "socks", "pants_zhigh_march" ],
+      "female": [ "bra", "panties", "stockings", "skirt_zhigh_march" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighBannerMan",
+    "name": "Student - Bannerman",
+    "description": "You carry the tattered banner of a fallen world, not for kings or nations, but to rally the last sparks of hope.  Amidst ruin and rot, your colors still fly—defiant, unbroken, and seen from miles around.",
+    "points": -1,
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh_march",
+          "zeonJacketZhigh",
+          "zhigh_smart_phone",
+          "dress_shoes",
+          "beret",
+          "wristwatch"
+        ],
+        "entries": [ 
+                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+                { "item": "bannerZhigh", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "boxer_shorts", "socks", "pants_zhigh_march" ],
       "female": [ "bra", "panties", "stockings", "skirt_zhigh_march" ]
@@ -2017,7 +2160,7 @@
     "traits": [ "REGEN_zhigh" ],
     "skills": [
       { "level": 2, "name": "gun" },
-      { "level": 3, "name": "pistol" },
+      { "level": 3, "name": "akimbo_Zhigh" },
       { "level": 1, "name": "survival" }
     ],
     "items": {
@@ -2041,7 +2184,7 @@
 			{ "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "bandolier_pistol", "contents-group": "bandolier_zhigh_gunslinger" },
 			{ "item": "coffee", "container-item": "flask_hip" },
-			{ "item": "pistol_flintlock_revolver", "ammo-item": "flintlock_ammo", "charges": 6, "container-item": "sholster" }
+			{ "item": "pistol_flintlock_revolverAkim", "ammo-item": "flintlock_ammo", "charges": 12, "container-item": "holsterAkimZhigh" }
         ]
       }
     },
@@ -2076,6 +2219,7 @@
           "horse_tack",
           "cattlefodder",
           "bullwhip",
+          "sholster",
           "sheriffshirt"
         ],
         "entries": [
@@ -2084,7 +2228,8 @@
 			{ "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "bandolier_pistol", "contents-group": "bandolier_zhigh_gunslinger" },
 			{ "item": "coffee", "container-item": "flask_hip" },
-			{ "item": "pistol_flintlock", "ammo-item": "flintlock_ammo", "charges": 6, "container-item": "sholster" }
+            { "item": "pistol_flintlock", "ammo-item": "flintlock_ammo", "charges": 1, "custom-flags": [ "auto_wield" ] },
+			{ "item": "pistol_flintlock", "ammo-item": "flintlock_ammo", "charges": 1, "container-item": "sholster" }
         ]
       }
     },
@@ -2113,7 +2258,7 @@
           "wristwatch"
         ],
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }, 
+                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
                 { "item": "katana_hm", "custom-flags": [ "auto_wield" ] },
                 { "item": "sheath", "contents-item": "knife_hunting" } ]
       },
@@ -2705,17 +2850,17 @@
           "socks",
           "boots_scrap",
           "gloves_tactical",
-          "armor_scrapsuit",
+          "depowered_armor",
           "bb",
           "bb",
           "bb",
           "bb",
-          "mask_cavalry_iron"
+          "depowered_helmet"
         ],
         "entries": [
                 { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "BBbelt_500", "ammo-item": "bb", "charges": [ 900, 1190 ] },
-                { "item": "BBbelt_500", "ammo-item": "bb", "charges": [ 900, 1190 ] },
+                { "item": "BBbelt_500", "ammo-item": "bb", "charges": [ 1100, 1190 ] },
+                { "item": "BBbelt_500", "ammo-item": "bbincen", "charges": [ 1100, 1190 ] },
                 { "item": "bbM134", "ammo-item": "bb", "charges": [ 900, 1190 ], "custom-flags": [ "auto_wield" ] }
         ]
       },
@@ -3478,6 +3623,46 @@
   },
   {
     "type": "profession",
+    "id": "zhighHighlander",
+    "name": "Student - Highlander",
+    "description": "You were on your way to the History exhibition when the end of the world made you the final Highlander.",
+    "points": 4,
+    "skills": [
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "cutting" },
+      { "level": 1, "name": "archery" },
+      { "level": 1, "name": "gun" },
+      { "level": 1, "name": "pistol" }
+    ],
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "jacket_flannel",
+          "zhigh_smart_phone",
+          "socks",
+          "sneakers",
+          "kilt",
+          "tricorne",
+          "bagpipes"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+            { "item": "longbow", "custom-flags": [ "auto_wield" ], "contents-item": [ "bow_scope", "bow_stabilizer_set" ] },
+			{ "item": "quiver", "contents-group": "quiver_RangerZhigh" },
+			{ "item": "flintlock_ammo", "charges": 9 },
+			{ "item": "pistol_flintlock", "ammo-item": "flintlock_ammo", "charges": 1, "container-item": "holster" },
+			{ "item": "broadsword", "container-item": "scabbard" }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
     "id": "zhighBarista",
     "name": "Student - Barista",
     "description": "You used to learn how to make coffee as best as you could, but now you are wondering whether it is worth anymore.",
@@ -3709,13 +3894,48 @@
         ],
         "entries": [ 
 			{ "item": "BBclip300release", "ammo-item": "bbincen", "charges": 300 },
-			{ "item": "BBclip300release", "ammo-item": "bbPlastic", "charges": 300 },
 			{ "item": "bbmachinepistol", "ammo-item": "bbPlastic", "charges": 300, "container-item": "holster" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
 		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighComedianWatchmen",
+    "name": "Student - Vigilantine",
+    "description": "As a vigilantine wannabe, you grabbed your gear and...  Well, you don't care.  Doomsday clock strike twelve.",
+    "points": 1,
+    "skills": [
+      { "level": 1, "name": "pistol" },
+      { "level": 2, "name": "dodge" }
+    ],
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "linuxtshirt",
+          "survivor_vest",
+          "zhigh_smart_phone",
+          "socks",
+          "carbon_boots",
+          "pants_zhigh",
+          "elbow_padsComedianZhigh",
+          "dominoMaskZhigh",
+          "bondage_mask"
+        ],
+        "entries": [ 
+			{ "item": "BBclip300release", "ammo-item": "bbPlastic", "charges": 300 },
+			{ "item": "knife_combat", "container-item": "sheath" },
+			{ "item": "bbmachinepistol", "ammo-item": "bbPlastic", "charges": 300, "container-item": "holster" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
     },
     "flags": [ "SCEN_ONLY" ]
   },
@@ -3898,9 +4118,7 @@
           "sneakers",
           "utility_belt",
           "ninjaCowlFakeZhigh",
-          "scabbard",
           "gloves_fingerless",
-          "grapnel",
           "kunaiZhigh",
           "shuriken",
           "shuriken",
@@ -4636,7 +4854,7 @@
     "id": "zhighBunnyGirl",
     "name": { "male": "Bunny Boy", "female": "Bunny Girl" },
     "description": "You used to be a person wearing a bunny outfit before the Cataclysm, and now that is the only thing you've got.",
-    "points": -3,
+    "points": -4,
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": { "items": [ "stockings", "heels", "corset", "hot_pants_leather", "bunny_tailZhigh", "bunny_earsB", "zhigh_smart_phone" ],
@@ -4799,10 +5017,10 @@
           "horse_tack",
           "cattlefodder",
           "gloves_light",
+          "helmet_skid",
           "wristwatch"
         ],
         "entries": [ 
-			{ "item": "helmet_bike" },
 			{ "group": "ZhighNpc_coat" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "hockey_stick", "custom-flags": [ "auto_wield" ] }
@@ -4864,6 +5082,104 @@
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "22_lr", "charges": 12 },
 			{ "item": "ruger_lcr_22", "ammo-item": "22_lr", "charges": 8, "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighNativeAmericans",
+    "name": "Student - Native American",
+    "description": "You move like a shadow through the land of your ancestors, reading the earth and sky as you track both game and the undead.  The old ways guide your survival—silent, swift, and unseen, a hunter in a world that has forgotten how to live.",
+    "points": -1,
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "socks",
+          "mocassins",
+          "helmet_bone",
+          "vest_leather",
+          "gloves_fingerless",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "item": "bone_knife", "container-item": "sheath" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "tomahawk_primitive", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighNcrRanger",
+    "name": "Student - Reacon",
+    "description": "Once a hall monitor, now you geared up to protect yourself... and a bit more.  Let's make the world a better place.",
+    "points": 2,
+    "skills": [ { "level": 2, "name": "gun" }, { "level": 2, "name": "rifle" } ],
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "kevlar",
+          "zhigh_smart_phone",
+          "socks",
+          "boots_western",
+          "armband_zhigh_halmon",
+          "pants_zhigh",
+          "chaps_leather",
+          "trenchcoat",
+          "respirator",
+          "survivor_goggles",
+          "airsoftHelm_zhigh",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "marble", "charges": 32 },
+			{ "item": "marble_sniper_gun", "ammo-item": "marble", "charges": 1, "contents-item": "shoulder_strap", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighHouseholdDivision",
+    "name": "Student - Royal Guard",
+    "description": "You are a Royal Division cosplayer, red coat soaked in gore, bayonet raised.  The dead swarm, but you hold the line like the palace still stands.",
+    "points": 2,
+    "skills": [
+		{ "level": 1, "name": "gun" },
+		{ "level": 1, "name": "melee" },
+		{ "level": 2, "name": "rifle" }
+	  ],
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "socks",
+          "boots_combat",
+          "jacket_leather_red_march",
+          "hat_furKingsGuardZhigh"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "flintlock_ammo", "charges": 12 },
+			{ "item": "carbine_flintlock_double", "ammo-item": "flintlock_ammo", "charges": 2, "contents-item": "sword_bayonet", "custom-flags": [ "auto_wield" ] }
 		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],

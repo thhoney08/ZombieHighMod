@@ -915,7 +915,7 @@
     "material": "aluminum",
     "symbol": "!",
     "color": "green",
-    "use_action": { "type": "unpack", "group": "ZhighStimUnkown1", "items_fit": true, "filthy_volume_threshold": "10 L" },
+    "use_action": { "type": "unpack", "group": "ZhighStimUnkown1", "items_fit": true },
     "flags": [ "NO_REPAIR", "NO_SALVAGE" ]
   },
   {
@@ -931,7 +931,7 @@
     "material": "aluminum",
     "symbol": "!",
     "color": "green",
-    "use_action": { "type": "unpack", "group": "ZhighStimUnkown3", "items_fit": true, "filthy_volume_threshold": "10 L" },
+    "use_action": { "type": "unpack", "group": "ZhighStimUnkown3", "items_fit": true },
     "flags": [ "NO_REPAIR", "NO_SALVAGE" ]
   },
   {
@@ -999,7 +999,10 @@
     "stim": 1,
     "fun": 2,
     "flags": [ "NO_INGEST" ],
-    "use_action": "CHEW"
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You chew your red herb."
+    }
   },
   {
     "id": "reHerbGrn2",
@@ -1196,7 +1199,7 @@
     "warmth": 10,
     "material_thickness": 3,
     "flags": [ "BELTED", "WATER_FRIENDLY", "NO_SALVAGE" ],
-    "use_action": { "type": "unpack", "group": "EmtGear_contents", "filthy_volume_threshold": "10 L" }
+    "use_action": { "type": "unpack", "group": "EmtGear_contents" }
   },
   {
     "id": "medkitRecharge",
@@ -1278,7 +1281,34 @@
     "relic_data":
 	{
 		"charges_per_activation": 1,
-		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "10 seconds", "rate": 10 } ]
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 seconds", "rate": 10 } ],
+        "passive_effects": [
+          {
+            "has": "WORN",
+            "condition": "ALWAYS",
+            "mutations": [ "ENCH_ZHIGH_DODGE_EFFECT" ],
+			"intermittent_activation": {
+				"effects": [
+					{
+						"frequency": "10 seconds",
+						"spell_effects": [ { "id": "vacancerHealZhigh" } ]
+					}
+				]
+			},
+            "hit_me_effect": [
+              {
+                "id": "vacancerHealZhigh",
+                "once_in": 3
+              }
+		    ],
+            "hit_you_effect": [
+              {
+                "id": "vacancerHealZhigh",
+                "once_in": 3
+              }
+            ]
+          }
+        ]
     }
   },
   {
@@ -1307,6 +1337,24 @@
 	},
     "armor_data": { "covers": [ "leg_either" ], "coverage": 2, "material_thickness": 1 },
 	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
+  },
+  {
+    "id": "bandagesRubberZhigh",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "rubber band tourniquet" },
+    "description": "Simple rubber tourniquet.  Easy to make, high chance to stop bleeding, but takes a while to use.",
+    "weight": "40 g",
+    "volume": "50 ml",
+    "price": "6 USD",
+    "price_postapoc": "1 USD",
+    "material": "rubber",
+    "symbol": "!",
+    "color": "white",
+    "charges": 3,
+    "stack_size": 9,
+    "flags": [ "NO_INGEST" ],
+    "use_action": { "type": "heal", "bleed": 0.9, "move_cost": 900 }
   },
   {
     "id": "stimPistolZhigh",

@@ -183,8 +183,7 @@
       "POISON",
       "ATTACKMON",
       "NO_BREATHE",
-      "REVIVES",
-      "FILTHY"
+      "REVIVES"
     ]
   },
   {
@@ -316,7 +315,7 @@
 	  [ "PARROT", 3 ],
       {
         "type": "gun",
-        "cooldown": 5,
+        "cooldown": 30,
         "move_cost": 150,
         "gun_type": "feral_human_thrown_rock",
         "ammo_type": "brickZhigh",
@@ -324,7 +323,10 @@
         "fake_skills": [ [ "gun", 2 ], [ "throw", 2 ] ],
         "fake_dex": 6,
         "fake_per": 6,
-        "require_targeting_player": false,
+        "targeting_cost": 50,
+        "require_targeting_player": true,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
         "ranges": [ [ 2, 5, "DEFAULT" ] ],
         "description": "The feral human throws a rock!",
         "no_crits": true
@@ -356,8 +358,8 @@
     "max_damage": 3,
     "min_range": 5,
     "max_range": 5,
-    "min_aoe": 3,
-    "max_aoe": 3,
+    "min_aoe": 7,
+    "max_aoe": 9,
     "base_casting_time": 10,
     "effect": "summon",
     "effect_str": "mon_feral_human_zhigh"
@@ -401,7 +403,7 @@
         "require_targeting_player": false,
         "require_targeting_npc": true,
         "require_targeting_monster": true,
-        "description": "The feral hall monitor drone launches a hail of BBs!",
+        "description": "The feral hall monitor launches a hail of BBs!",
         "ranges": [ [ 0, 10, "DEFAULT" ] ],
         "no_ammo_sound": "a chk!"
       },
@@ -423,8 +425,8 @@
     "max_damage": 3,
     "min_range": 5,
     "max_range": 5,
-    "min_aoe": 3,
-    "max_aoe": 3,
+    "min_aoe": 7,
+    "max_aoe": 9,
     "base_casting_time": 10,
     "effect": "summon",
     "effect_str": "mon_zombie"
@@ -451,8 +453,8 @@
     "max_damage": 3,
     "min_range": 5,
     "max_range": 5,
-    "min_aoe": 3,
-    "max_aoe": 3,
+    "min_aoe": 7,
+    "max_aoe": 9,
     "base_casting_time": 10,
     "effect": "summon",
     "effect_str": "mon_zombie_soldier"
@@ -509,6 +511,95 @@
     ],
     "zombify_into": "mon_zombie",
     "death_drops": "mon_feral_human_flamerZhigh_death_drops"
+  },
+  {
+    "id": "docZhighHeal",
+    "type": "SPELL",
+    "name": "Healing dart discharge",
+    "description": "Heal dart go pew pew.",
+    "flags": [ "RANDOM_DURATION", "SILENT" ],
+    "valid_targets": [ "ally", "hostile", "ground", "self" ],
+    "effect": "line_attack",
+    "extra_effects": [ { "id": "docZhighHeal_healing" } ],
+    "sprite": "fd_healeffect",
+    "min_range": 15,
+    "max_range": 15,
+    "min_duration": 1000,
+    "max_duration": 2000,
+    "field_id": "fd_healeffect",
+    "field_chance": 2,
+    "min_field_intensity": 3,
+    "max_field_intensity": 3
+  },
+  {
+    "id": "docZhighHeal_healing",
+    "type": "SPELL",
+    "name": "Healing dart discharge",
+    "description": "Heal dart go pew pew.",
+    "flags": [ "RANDOM_DAMAGE", "SILENT", "NO_EXPLOSION_VFX" ],
+    "valid_targets": [ "ally", "hostile", "ground", "self" ],
+    "effect": "target_attack",
+    "sprite": "fd_healeffect",
+    "min_damage": -10,
+    "max_damage": -30,
+    "min_range": 15,
+    "max_range": 15,
+    "min_aoe": 4,
+    "max_aoe": 4
+  },
+  {
+    "id": "mon_feral_docZhigh",
+    "type": "MONSTER",
+    "name": { "str": "feral doctor" },
+    "description": "A doctor staggers forward, their bloodshot eyes flickering with the last traces of human awareness.  Torn between instinct and intellect, they clutch a rusted scalpel, as if desperately clinging to their former purpose.  Fortunately, the healing activity of the doctor does not care if the patient is this feral's enemy or not.",
+    "default_faction": "zombie",
+    "looks_like": "mon_feral_scientist_scalpel",
+    "bodytype": "human",
+    "species": [ "HUMAN" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 80,
+    "speed": 100,
+    "material": [ "flesh" ],
+    "symbol": "@",
+    "color": "magenta",
+    "aggression": 30,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 1,
+    "melee_dice_sides": 3,
+    "melee_cut": 2,
+    "dodge": 1,
+    "harvest": "CBM_SCI_FERAL",
+    "path_settings": { "max_dist": 10 },
+    "vision_day": 50,
+    "vision_night": 3,
+    "death_drops": "feral_scientists_death_drops_scalpel",
+    "death_function": [ "NORMAL" ],
+    "special_attacks": [
+		[ "PARROT_AT_DANGER", 5 ],
+		{
+			"type": "spell",
+			"spell_data": { "id": "docZhighHeal" },
+			"cooldown": 30,
+			"monster_message": "The feral doctor heals one of your enemies!"
+		}
+	],
+    "zombify_into": "mon_zombie_scientist",
+    "anger_triggers": [ "FRIEND_DIED", "FRIEND_ATTACKED", "HURT", "PLAYER_CLOSE" ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "HUMAN",
+      "CAN_OPEN_DOORS",
+      "PATH_AVOID_DANGER_2",
+      "DROPS_AMMO",
+      "CBM_SCI"
+    ]
   },
   {
     "id": "mon_pubg_bogup",
@@ -568,7 +659,7 @@
     "luminance": 0,
     "harvest": "zombie_leather",
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "SWIMS", "AQUATIC", "POISON", "NO_BREATHE", "REVIVES", "FILTHY" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "SWIMS", "AQUATIC", "POISON", "NO_BREATHE", "REVIVES" ]
   },
   {
     "type": "SPELL",
@@ -577,7 +668,7 @@
     "description": "Heal dart go pew pew.",
     "valid_targets": [ "ally", "self" ],
     "effect": "line_attack",
-    "sprite": "fd_null",
+    "sprite": "fd_healeffect",
     "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_FAIL", "NO_HANDS", "NO_LEGS" ],
     "min_damage": -8,
     "max_damage": -6,
@@ -600,7 +691,7 @@
     "description": "Heal dart go pew pew.",
     "valid_targets": [ "ally", "self" ],
     "effect": "line_attack",
-    "sprite": "fd_null",
+    "sprite": "fd_healeffect",
     "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_FAIL", "NO_HANDS", "NO_LEGS" ],
     "min_damage": -8,
     "max_damage": -6,
@@ -617,7 +708,7 @@
     "type": "SPELL",
     "name": { "str": "Regeneration effect" },
     "description": "This creates the effect that heals the user and the ones nearby.",
-    "sprite": "fd_null",
+    "sprite": "fd_healeffect",
     "message": "",
     "flags": [ "RANDOM_DAMAGE", "SILENT", "NO_FAIL", "NO_HANDS", "NO_LEGS" ],
     "valid_targets": [ "ally", "self" ],
@@ -675,7 +766,7 @@
       },
       { 
         "type": "spell",
-        "spell_data": { "id": "zhigh_healing_dartV2" },
+        "spell_data": { "id": "zhigh_healing_dart" },
         "cooldown": 30
 	  }
     ],
@@ -703,7 +794,7 @@
   {
     "id": "mon_enz_hack",
     "type": "MONSTER",
-    "name": "Enz",
+    "name": "ENZ",
     "copy-from": "base_drone",
     "description": "An automated anti-personnel drone, a small quadcopter robot surrounded by whirring blades.",
     "diff": 6,
@@ -758,7 +849,7 @@
     "durability": 10,
     "skill": "smg",
     "loudness": 5,
-    "ammo_effects": [ "BEANBAG", "LASER", "TANGLE", "BOUNCE", "LIGHTNING", "NEVER_MISFIRES", "NO_DAMAGE_SCALING" ],
+    "ammo_effects": [ "BEANBAG", "TANGLE", "BOUNCE", "FIREWORKZHIGH1", "NEVER_MISFIRES", "NO_DAMAGE_SCALING" ],
     "modes": [ [ "DEFAULT", "full auto", 6 ] ],
     "flags": [ "NEVER_JAMS" ]
   },
@@ -1004,7 +1095,8 @@
     "copy-from": "mon_zombie_machine",
     "name": { "str": "unknown machine" },
     "default_faction": "zombie",
-    "emit_fields": [ { "emit_id": "emit_zombie2_burst", "delay": "30 m" } ],
+    "emit_fields": [ { "emit_id": "emit_zombie2_burst", "delay": "1 s" } ],
+    "hp": 150,
     "armor_bash": 1,
     "armor_cut": 1,
     "armor_bullet": 1,
@@ -1311,7 +1403,6 @@
       "REVIVES",
       "PATH_AVOID_DANGER_2",
       "PRIORITIZE_TARGETS",
-      "FILTHY",
       "NO_FUNG_DMG",
       "BIOPROOF"
     ]
@@ -1369,8 +1460,7 @@
       "NO_BREATHE",
       "REVIVES",
       "PUSH_MON",
-      "NOHEAD",
-      "FILTHY"
+      "NOHEAD"
     ]
   },
   {
@@ -1424,8 +1514,7 @@
       "POISON",
       "BLEED",
       "REVIVES",
-      "PUSH_MON",
-      "FILTHY"
+      "PUSH_MON"
     ]
   },
   {
@@ -1478,7 +1567,7 @@
       "NO_BREATHE",
       "BIOPROOF"
     ],
-    "regenerates": 50
+    "regenerates": 5
   },
   {
     "id": "water_cannon_turret_fake",
@@ -1544,7 +1633,7 @@
       "NO_BREATHE",
       "BIOPROOF"
     ],
-    "regenerates": 50
+    "regenerates": 5
   },
   {
     "id": "ice_cannon_turret_fake",
@@ -1611,7 +1700,7 @@
       "NO_BREATHE",
       "BIOPROOF"
     ],
-    "regenerates": 50
+    "regenerates": 5
   },
   {
     "id": "fakeBBgunV2_zhigh",
@@ -1680,7 +1769,7 @@
       "NO_BREATHE",
       "BIOPROOF"
     ],
-    "regenerates": 50
+    "regenerates": 5
   },
   {
     "id": "fakeBBgunV3_zhigh",
@@ -1906,7 +1995,7 @@
     "range": 6,
     "dispersion": 100,
     "modes": [ [ "DEFAULT", "auto", 3 ] ],
-    "ranged_damage": { "damage_type": "electric", "amount": 6, "armor_penetration": 30 }
+    "ranged_damage": { "damage_type": "electric", "amount": 3, "armor_penetration": 30 }
   },
   {
     "id": "mon_RockTurret",
@@ -1937,7 +2026,10 @@
       {
         "type": "gun",
         "cooldown": 1,
-        "move_cost": 60,
+        "move_cost": 80,
+		"laser_lock": true,
+		"targeting_cost": 200,
+		"targeting_sound": "\"Hostile detected.\"",
         "require_targeting_npc": true,
         "require_targeting_monster": true,
         "target_moving_vehicles": true,
@@ -1960,7 +2052,7 @@
       "NO_BREATHE",
       "BIOPROOF"
     ],
-    "regenerates": 50
+    "regenerates": 5
   },
   {
     "id": "fakeRockgun_zhigh",
@@ -2040,7 +2132,7 @@
       "NO_BREATHE",
       "BIOPROOF"
     ],
-    "regenerates": 50
+    "regenerates": 5
   },
   {
     "id": "mon_chemicalturret",
@@ -2103,13 +2195,13 @@
     "name": { "str": "mounted turret firearm" },
     "description": "Fake gun that fires some sort of chemical at very high speed by unknown means of propulsion.",
     "flags": [ "NEVER_JAMS" ],
-    "ammo_effects": [ "GAS_FUNGICIDAL", "TOXICGAS", "GAS_INSECTICIDAL", "NEVER_MISFIRES" ],
+    "ammo_effects": [ "STREAM_GAS_INSECTICIDAL", "STREAM_GAS_TOXIC", "STREAM_GAS_FUNGICIDAL", "NEVER_MISFIRES" ],
     "skill": "rifle",
     "durability": 10,
     "range": 10,
     "dispersion": 100,
-    "modes": [ [ "DEFAULT", "auto", 3 ] ],
-    "ranged_damage": { "damage_type": "acid", "amount": 6, "armor_penetration": 30 }
+    "modes": [ [ "DEFAULT", "auto", 1 ] ],
+    "ranged_damage": { "damage_type": "acid", "amount": 12, "armor_penetration": 30 }
   },
   {
     "id": "mon_marusaur",
@@ -2232,5 +2324,48 @@
       "BIOPROOF",
 	  "ACID_BLOOD"
     ]
+  },
+  {
+    "id": "mon_triffid_AudreyZhigh",
+    "looks_like": "mon_triffid_flower",
+    "type": "MONSTER",
+    "name": { "str": "Audrey", "str_pl": "Audrey" },
+    "description": "A giant plant with a thick stalk adorned by a purple flower with huge rows of teeth.  Its petals are open with ominous shine in center.",
+    "default_faction": "triffid",
+    "species": [ "PLANT" ],
+    "diff": 4,
+    "volume": "150 L",
+    "weight": "200 kg",
+    "hp": 280,
+    "speed": 90,
+    "material": [ "veggy" ],
+    "symbol": "F",
+    "color": "magenta",
+    "aggression": 100,
+    "morale": 100,
+    "melee_cut": 0,
+    "harvest": "triffid_large",
+    "special_attacks": [ [ "GROWPLANTS", 20 ], [ "SPIT_SAP", 2 ], [ "PARA_STING", 2 ], [ "TRIFFID_HEARTBEAT", 5 ] ],
+    "emit_fields": [ { "emit_id": "emit_pollen_stream", "delay": "1 s" } ],
+    "death_function": [ "AMIGARA" ],
+    "flags": [ "NOHEAD" ]
+  },
+  {
+    "id": "mon_targetZhigh",
+    "type": "MONSTER",
+    "name": "target",
+    "description": ".",
+    "bodytype": "human",
+    "default_faction": "factionless",
+    "species": [ "UNKNOWN" ],
+    "volume": "75000 ml",
+    "weight": "70 kg",
+    "hp": 1,
+    "speed": 1,
+    "symbol": "⊕",
+    "color": "white",
+    "death_function": [ "DISAPPEAR" ],
+    "special_attacks": [ [ "DISAPPEAR", 1 ] ],
+    "flags": [ "HUMAN", "IMMOBILE", "NO_BREATHE", "PACIFIST", "SEES", "HEARS" ]
   }
 ]

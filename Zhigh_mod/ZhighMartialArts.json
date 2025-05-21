@@ -5,7 +5,7 @@
     "looks_like": "manual_taekwondo",
     "type": "GENERIC",
     "name": { "str_sp": "Marine Corps Martial Arts Program Training Manual" },
-    "price_postapoc": 2000,
+    "price_postapoc": "20 USD",
     "description": "A complete guide to Marine Corps Martial Arts Program.",
     "book_data": { "martial_art": "style_mcmap" }
   },
@@ -315,5 +315,42 @@
         "SPEARS"
       ],
       "weapons": [ "glass_macuahuitl", "sickle", "scythe", "hockey_stick", "golf_club" ]
+  },
+  {
+    "id": "manual_bataireacht",
+    "copy-from": "book_martial",
+    "looks_like": "manual_taekwondo",
+    "type": "GENERIC",
+    "name": { "str_sp": "The Irish Scrapper" },
+    "price_postapoc": "20 USD",
+    "description": "A complete guide to Bataireacht.",
+    "book_data": { "martial_art": "style_bataireacht" }
+  },
+  {
+    "type": "martial_art",
+    "id": "style_bataireacht",
+    "name": { "str": "Bataireacht" },
+    "description": "An Irish martial art, which was based on melee combat by mainly using shillelagh, their traditional weapon.",
+    "initiate": [ "You prepare to kick ass.", "%s gets ready to kick ass." ],
+    "arm_block": 4,
+    "leg_block": 5,
+    "allow_melee": true,
+    "weapon_category": [
+        "KNIVES",
+        "BATONS", 
+        "SAPS", 
+        "CLUBS"
+      ],
+    "techniques": [
+      "tec_boxing_cross",
+      "tec_krav_maga_rapid",
+      "tec_silat_dirty",
+      "tec_brawl_power",
+      "tec_brawl_trip",
+      "tec_brawl_disarm_melee",
+      "tec_brawl_counter_melee",
+      "tec_brawl_feint_melee",
+      "tec_brawl_break_melee"
+    ]
   }
 ]

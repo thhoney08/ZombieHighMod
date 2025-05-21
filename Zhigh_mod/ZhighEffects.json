@@ -35,9 +35,8 @@
     "base_mods": {
 	  "int_mod": [ 1 ],
 	  "dex_mod": [ 1 ],
-	  "stamina_amount": [ 20000, 30000 ],
-      "stamina_min": [ 4000 ],
-      "stamina_chance": [ 2000 ],
+	  "stamina_amount": [ 50, 60 ],
+      "stamina_chance": [ 100 ],
 	  "pkill_tick": [ 30 ],
 	  "pkill_min": [ 1 ],
 	  "pkill_max_val": [ 20 ]
@@ -54,6 +53,24 @@
       "speed_mod": [ 2 ],
 	  "per_mod": [ 2 ],
 	  "str_mod": [ 2 ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "staminupCandy",
+    "name": [ "stamina regain" ],
+    "desc": [ "You gain some extra stamina." ],
+    "rating": "good",
+    "max_duration": "5 m",
+    "base_mods": {
+	  "int_mod": [ 1 ],
+	  "dex_mod": [ 1 ],
+	  "stamina_amount": [ 20000, 30000 ],
+      "stamina_min": [ 4000 ],
+      "stamina_chance": [ 2000 ],
+	  "pkill_tick": [ 30 ],
+	  "pkill_min": [ 1 ],
+	  "pkill_max_val": [ 20 ]
     }
   },
   {

@@ -492,7 +492,8 @@
     "name": { "str": "00 shot" },
     "copy-from": "shot_00",
     "range": 0,
-    "shape": [ "cone", { "half_angle": 10, "length": 10 } ]
+    "damage": { "damage_type": "bullet", "amount": 85, "armor_multiplier": 2 },
+    "shape": [ "cone", { "half_angle": 10, "length": 15 } ]
   },
   {
     "id": "shot_beanbag",
@@ -508,7 +509,7 @@
     "name": { "str": "birdshot" },
     "copy-from": "shot_bird",
     "range": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 14 } ]
+    "shape": [ "cone", { "half_angle": 20, "length": 14 } ]
   },
   {
     "id": "shot_dragon",
@@ -516,7 +517,7 @@
     "name": { "str": "dragon's breath shell" },
     "copy-from": "shot_dragon",
     "range": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 8 } ]
+    "shape": [ "cone", { "half_angle": 15, "length": 10 } ]
   },
   {
     "id": "shot_flechette",
@@ -524,7 +525,7 @@
     "name": { "str": "flechette shell" },
     "copy-from": "shot_flechette",
     "range": 0,
-    "shape": [ "cone", { "half_angle": 10, "length": 12 } ]
+    "shape": [ "cone", { "half_angle": 10, "length": 20 } ]
   },
   {
     "id": "shot_scrap",
@@ -2149,16 +2150,21 @@
     "name": { "str": "makeshift chemical thrower" },
     "range": 18,
     "handling": 1,
-    "modes": [ [ "DEFAULT", "spray", 20 ] ],
-    "ranged_damage": { "damage_type": "acid", "amount": 4, "armor_penetration": 5, "armor_multiplier": -1  },
-    "flags": [ "NEVER_JAMS", "NON_FOULING" ]
+    "modes": [ [ "DEFAULT", "spray", 10 ] ],
+    "ranged_damage": { "damage_type": "acid", "amount": 2, "armor_penetration": 1, "armor_multiplier": -1  },
+	"ammo_to_fire": 1,
+	"ammo": [ "chemical_spray", "acid" ],
+    "flags": [ "NEVER_JAMS", "NON_FOULING" ],
+    "magazines": [
+		[ "acid", [ "pressurized_tank_chem" ] ],
+		[ "chemical_spray", [ "pressurized_tank_chem" ] ] ]
   },
   {
     "id": "pressurized_tank_chem",
     "copy-from": "pressurized_tank_chem",
     "type": "MAGAZINE",
     "name": { "str": "pressurized chemical tank" },
-    "ammo_type": [ "water", "chemical_spray", "acid" ]
+    "ammo_type": [ "chemical_spray", "acid" ]
   },
   {
     "type": "AMMO",
@@ -2871,5 +2877,112 @@
     "cutting": 190,
     "to_hit": 1,
     "flags": [ "MESSY", "DURABLE_MELEE", "TRADER_AVOID", "NONCONDUCTIVE", "ALWAYS_TWOHAND", "WATER_DISABLE", "REACH_ATTACK", "REACH3" ]
+  },
+  {
+    "id": "ugl_buttstock",
+    "type": "GENERIC",
+    "symbol": ",",
+    "color": "dark_gray",
+    "name": { "str": "underbarrel weapon buttstock" },
+    "category": "spare_parts",
+    "description": "A collapsible buttstock designed for various underbarrel weapons.  When combined with this stock, the gun can be used as a standalone weapon.",
+    "price": "100 USD",
+    "price_postapoc": "250 cent",
+    "material": [ "plastic", "steel" ],
+    "weight": "600 g",
+    "volume": "250 ml",
+    "to_hit": 1
+  },
+  {
+	"id": "flintlock_shot",
+    "type": "AMMO",
+    "copy-from": "flintlock_shot",
+    "name": { "str": "paper shot cartridge" },
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 15, "length": 8 } ]
+  },
+  {
+	"id": "spear_forked",
+    "type": "GENERIC",
+    "category": "weapons",
+    "copy-from": "spear_forked",
+    "name": { "str": "forked spear" }
+  },
+  {
+	"id": "cig",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "copy-from": "cig",
+    "name": { "str": "cigarette" },
+    "extend": { "flags": [ "PERSONAL" ] },
+    "armor_data": { "covers": [  ] }
+  },
+  {
+	"id": "cig_lit",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "copy-from": "cig_lit",
+    "name": { "str": "cigarette" },
+    "extend": { "flags": [ "PERSONAL" ] },
+    "armor_data": { "covers": [  ] }
+  },
+  {
+	"id": "cig_butt",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "copy-from": "cig_butt",
+    "name": { "str": "cigarette butt" },
+    "extend": { "flags": [ "PERSONAL" ] },
+    "armor_data": { "covers": [  ] }
+  },
+  {
+	"id": "cigar",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "copy-from": "cigar",
+    "name": { "str": "cigar" },
+    "extend": { "flags": [ "PERSONAL" ] },
+    "armor_data": { "covers": [  ] }
+  },
+  {
+	"id": "cigar_lit",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "copy-from": "cigar_lit",
+    "name": { "str": "cigar" },
+    "extend": { "flags": [ "PERSONAL" ] },
+    "armor_data": { "covers": [  ] }
+  },
+  {
+	"id": "cigar_butt",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "copy-from": "cigar_butt",
+    "name": { "str": "cigar butt" },
+    "extend": { "flags": [ "PERSONAL" ] },
+    "armor_data": { "covers": [  ] }
+  },
+  {
+	"id": "pipe_tobacco",
+    "type": "GENERIC",
+    "category": "tools",
+    "copy-from": "pipe_tobacco",
+    "name": { "str": "tobacco pipe" },
+    "extend": { "flags": [ "PERSONAL" ] },
+    "armor_data": { "covers": [  ] }
+  },
+  {
+	"id": "suitcase_m",
+    "type": "ARMOR",
+    "copy-from": "suitcase_m",
+    "name": { "str": "suitcase" },
+    "storage": "30 L"
+  },
+  {
+	"id": "suitcase_l",
+    "type": "ARMOR",
+    "copy-from": "suitcase_l",
+    "name": { "str": "suitcase" },
+    "storage": "60 L"
   }
 ]

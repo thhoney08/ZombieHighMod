@@ -1,5 +1,66 @@
 [
   {
+    "result": "flintlock_ammo",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_RIFLE",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "skills_required": [ "gun", 1 ],
+    "time": "1 m",
+    "batch_time_factors": [ 60, 5 ],
+    "autolearn": true,
+    "charges": 1,
+    "reversible": true,
+    "using": [ [ "ammo_bullet", 10 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+		[ [ "gunpowder", 4 ], [ "chem_black_powder", 5 ], [ "chem_match_head_powder", 5 ] ],
+		[ [ "paper", 1 ] ]
+	]
+  },
+  {
+    "result": "flintlock_shot",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_RIFLE",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "skills_required": [ "gun", 1 ],
+    "time": "1 m",
+    "batch_time_factors": [ 60, 5 ],
+    "autolearn": true,
+    "charges": 1,
+    "reversible": true,
+    "using": [ [ "ammo_bullet", 10 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+		[ [ "gunpowder", 4 ], [ "chem_black_powder", 5 ], [ "chem_match_head_powder", 5 ] ],
+		[ [ "paper", 1 ] ]
+	]
+  },
+  {
+    "result": "flintlock_flechetteZhigh",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_RIFLE",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "skills_required": [ "gun", 1 ],
+    "time": "1 m",
+    "batch_time_factors": [ 60, 5 ],
+    "autolearn": true,
+    "charges": 1,
+    "reversible": true,
+    "using": [ [ "ammo_bullet", 1 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+		[ [ "gunpowder", 4 ], [ "chem_black_powder", 5 ], [ "chem_match_head_powder", 5 ] ],
+		[ [ "combatnail", 10 ], [ "nail", 10 ] ],
+		[ [ "paper", 1 ] ]
+	]
+  },
+  {
     "type": "recipe",
     "result": "mlbrick",
     "category": "CC_WEAPON",
@@ -179,6 +240,39 @@
     "components": [
       [ [ "scissors", 1 ] ],
       [ [ "fabric_standard", 2, "LIST" ], [ "fabric_hides_any", 2, "LIST" ], [ "felt_patch", 2 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "bullwhipScrapZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "difficulty": 6,
+    "time": "1 h",
+    "reversible": true,
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+	  [ [ "ceramic_shard", 5 ], [ "splinter", 5 ], [ "scrap", 5 ], [ "razor_blade", 5 ], [ "glass_shard", 5 ] ],
+      [ [ "leather", 20 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "bullwhipScrapZhigh",
+    "id_suffix": "from_bullwhip",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "15 m",
+    "reversible": true,
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+	  [ [ "ceramic_shard", 5 ], [ "splinter", 5 ], [ "scrap", 5 ], [ "razor_blade", 5 ], [ "glass_shard", 5 ] ],
+      [ [ "bullwhip", 1 ] ]
     ]
   },
   {
@@ -401,6 +495,36 @@
     "book_learn": [ [ "textbook_fabrication", 2 ] ],
     "qualities": [ { "id": "SAW_M_FINE", "level": 1 }, { "id": "GLARE", "level": 2 } ],
     "components": [ [ [ "2x4", 3 ] ], [ [ "pipe", 3 ] ], [ [ "sharp_rock", 1 ] ], [ [ "spring", 1 ] ], [ [ "steel_chunk", 4 ] ], [ [ "scrap", 4 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "pistol_flintlock_doubleShot",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "skills_required": [ "pistol", 4 ],
+    "difficulty": 8,
+    "time": "140 m",
+    "autolearn": true,
+    "book_learn": [ [ "manual_pistol", 5 ], [ "mag_pistol", 6 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SCREW_FINE", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "using": [ [ "blacksmithing_advanced", 2 ], [ "steel_standard", 3 ] ],
+    "components": [ [ [ "2x4", 1 ] ], [ [ "varnish", 1, "LIST" ] ], [ [ "pipe", 1 ] ], [ [ "sharp_rock", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "pistol_flintlock_singleShot",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "skills_required": [ "pistol", 4 ],
+    "difficulty": 8,
+    "time": "80 m",
+    "autolearn": true,
+    "book_learn": [ [ "manual_pistol", 5 ], [ "mag_pistol", 6 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SCREW_FINE", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "using": [ [ "blacksmithing_advanced", 2 ], [ "steel_standard", 3 ] ],
+    "components": [ [ [ "2x4", 1 ] ], [ [ "varnish", 1, "LIST" ] ], [ [ "pipe", 1 ] ], [ [ "sharp_rock", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -1558,6 +1682,22 @@
       [ [ "cordage_superior", 1, "LIST" ] ],
       [ [ "nail_glue", 10, "LIST" ] ]
     ]
+  },
+  {
+    "type": "recipe",
+    "result": "longbowBulletZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "skills_required": [ "archery", 2 ],
+    "difficulty": 4,
+    "time": "15 m",
+    "reversible": true,
+    "decomp_learn": 1,
+    "autolearn": true,
+    "book_learn": [ [ "manual_archery", 2 ], [ "recipe_bows", 1 ], [ "book_archery", 3 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "components": [ [ [ "stick_long", 1 ], [ "2x4", 1 ] ], [ [ "varnish", 2, "LIST" ] ], [ [ "cordage_superior", 2, "LIST" ] ] ]
   },
   {
     "type": "recipe",
@@ -2999,12 +3139,12 @@
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_TOOLS",
     "skill_used": "fabrication",
-    "difficulty": 3,
-    "time": "40 m",
+    "difficulty": 2,
+    "time": "20 m",
     "reversible": true,
     "autolearn": true,
-    "qualities": [ { "id": "HAMMER", "level": 1 }, { "id": "SAW_W", "level": 1 } ],
-    "components": [ [ [ "rope_superior", 6, "LIST" ] ], [ [ "2x4", 5 ] ], [ [ "nail", 30 ] ] ]
+    "qualities": [ { "id": "SAW_W", "level": 1 } ],
+    "components": [ [ [ "rope_superior", 6, "LIST" ] ], [ [ "2x4", 5 ] ] ]
   },
   {
     "type": "recipe",
@@ -5568,9 +5708,7 @@
       [ [ "steel_tiny", 1, "LIST" ], [ "scrap_bronze", 1 ] ],
       [ [ "stick", 1 ], [ "broom", 1 ], [ "2x4", 1 ], [ "bee_sting", 1 ] ],
       [ [ "fletching", 1, "LIST" ] ]
-    ],
-    "delete_flags": [ "FILTHY" ],
-    "flags": [ "ALLOW_FILTHY" ]
+    ]
   },
   {
     "type": "recipe",
@@ -6445,6 +6583,7 @@
     "difficulty": 7,
     "time": "6 h",
     "book_learn": [ [ "textbook_weapwest", 7 ], [ "scots_cookbook", 9 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 12 ], [ "steel_standard", 3 ] ],
     "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "fabric_hides_any", 1, "LIST" ] ] ]
   },
@@ -6457,6 +6596,7 @@
     "difficulty": 8,
     "time": "7 h",
     "book_learn": [ [ "textbook_weapwest", 7 ], [ "scots_cookbook", 9 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 12 ], [ "steel_standard", 3 ] ],
     "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "fabric_hides_any", 1, "LIST" ] ] ]
   },
@@ -6469,6 +6609,7 @@
     "difficulty": 8,
     "time": "7 h",
     "book_learn": [ [ "textbook_armschina", 7 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 12 ], [ "steel_standard", 3 ] ],
     "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "fabric_hides_any", 1, "LIST" ] ] ]
   },
@@ -6481,6 +6622,7 @@
     "difficulty": 8,
     "time": "7 h",
     "book_learn": [ [ "textbook_weapwest", 7 ], [ "scots_cookbook", 9 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 16 ], [ "steel_standard", 4 ] ],
     "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "fabric_hides_any", 1, "LIST" ] ] ]
   },
@@ -6493,6 +6635,7 @@
     "difficulty": 8,
     "time": "7 h",
     "book_learn": [ [ "textbook_weapwest", 7 ], [ "scots_cookbook", 9 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 16 ], [ "steel_standard", 4 ] ],
     "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "fabric_hides_any", 1, "LIST" ] ] ]
   },
@@ -6517,6 +6660,7 @@
     "difficulty": 5,
     "time": "6 h 20 m",
     "book_learn": [ [ "textbook_weapwest", 7 ], [ "scots_cookbook", 9 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 20 ], [ "steel_standard", 5 ] ],
     "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "fabric_hides_any", 2, "LIST" ] ] ]
   },
@@ -6781,6 +6925,7 @@
     "difficulty": 8,
     "time": "6 h",
     "book_learn": [ [ "textbook_weapwest", 7 ], [ "scots_cookbook", 9 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 12 ], [ "steel_standard", 3 ] ],
     "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "fabric_hides_any", 1, "LIST" ] ] ]
   },
@@ -6830,6 +6975,7 @@
     "difficulty": 8,
     "time": "8 h",
     "book_learn": [ [ "textbook_weapwest", 8 ], [ "recipe_melee", 7 ], [ "scots_cookbook", 9 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 12 ], [ "steel_standard", 3 ] ],
     "components": [ [ [ "2x4", 2 ], [ "stick", 4 ] ], [ [ "fabric_hides_any", 2, "LIST" ] ] ]
   },
@@ -6842,6 +6988,7 @@
     "difficulty": 8,
     "time": "8 h",
     "book_learn": [ [ "textbook_weapwest", 8 ], [ "recipe_melee", 7 ], [ "scots_cookbook", 9 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 12 ], [ "steel_standard", 3 ] ],
     "components": [ [ [ "2x4", 2 ], [ "stick", 4 ] ], [ [ "fabric_hides_any", 2, "LIST" ] ] ]
   },
@@ -6854,6 +7001,7 @@
     "difficulty": 8,
     "time": "8 h",
     "book_learn": [ [ "textbook_weapwest", 8 ], [ "recipe_melee", 7 ], [ "scots_cookbook", 9 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 12 ], [ "steel_standard", 3 ] ],
     "components": [ [ [ "2x4", 2 ], [ "stick", 4 ] ], [ [ "fabric_hides_any", 2, "LIST" ] ] ]
   },
@@ -6918,6 +7066,7 @@
     "difficulty": 7,
     "time": "6 h 40 m",
     "book_learn": [ [ "textbook_weapwest", 6 ], [ "scots_cookbook", 8 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 12 ], [ "steel_standard", 3 ] ],
     "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "fabric_hides_any", 1, "LIST" ] ] ]
   },
@@ -7563,6 +7712,7 @@
     "difficulty": 8,
     "time": "12 h",
     "book_learn": [ [ "textbook_weapeast", 8 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 8 ], [ "steel_standard", 2 ] ],
     "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "fabric_hides_any", 2, "LIST" ] ] ]
   },
@@ -8108,12 +8258,11 @@
     "result": "knuckles_carbonZhigh",
     "type": "recipe",
     "category": "CC_WEAPON",
-    "subcategory": "CSC_WEAPON_CUTTING",
+    "subcategory": "CSC_WEAPON_BASHING",
     "skill_used": "computer",
     "difficulty": 4,
     "skills_required": [ [ "fabrication", 2 ] ],
-    "//": "Increased time since some forging incorporated into material for the edge",
-    "time": "45 m",
+    "time": "25 m",
     "book_learn": [ [ "textbook_computer", 4 ], [ "advanced_electronics", 4 ], [ "reference_fabrication1", 4 ] ],
     "using": [ [ "3d_printing_standard", 5 ], [ "steel_tiny", 2 ], [ "blacksmithing_standard", 2 ] ],
     "components": [ [ [ "carbon_fiber_filament", 50 ] ] ]
@@ -8433,6 +8582,7 @@
     "difficulty": 7,
     "time": "6 h",
     "book_learn": [ [ "textbook_weapwest", 6 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 8 ], [ "steel_standard", 2 ] ],
     "components": [ [ [ "long_pole", 1 ] ], [ [ "fabric_hides_any", 2, "LIST" ] ] ]
   },
@@ -8445,6 +8595,7 @@
     "difficulty": 6,
     "time": "6 h",
     "book_learn": [ [ "textbook_weapeast", 7 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 12 ], [ "steel_standard", 3 ] ],
     "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "fabric_hides_any", 1, "LIST" ] ] ]
   },
@@ -8458,6 +8609,7 @@
     "time": "1 h 30 m",
     "autolearn": true,
     "book_learn": [ [ "manual_knives", 3 ], [ "recipe_melee", 2 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 4 ], [ "steel_standard", 1 ] ]
   },
   {
@@ -8470,6 +8622,7 @@
     "time": "3 h 30 m",
     "autolearn": true,
     "book_learn": [ [ "manual_knives", 3 ], [ "recipe_melee", 2 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 4 ], [ "steel_standard", 3 ] ]
   },
   {
@@ -8481,6 +8634,7 @@
     "difficulty": 6,
     "time": "6 h",
     "book_learn": [ [ "textbook_weapeast", 8 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 8 ], [ "steel_standard", 2 ] ],
     "components": [ [ [ "2x4", 2 ], [ "stick", 4 ] ], [ [ "fabric_hides_any", 2, "LIST" ] ] ]
   },
@@ -8518,6 +8672,7 @@
     "difficulty": 9,
     "time": "8 h",
     "book_learn": [ [ "textbook_weapeast", 8 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 8 ], [ "steel_standard", 2 ] ],
     "components": [ [ [ "2x4", 2 ], [ "stick", 4 ] ], [ [ "fabric_hides_any", 2, "LIST" ] ] ]
   },
@@ -8644,6 +8799,7 @@
     "difficulty": 10,
     "time": "9 h 40 m",
     "book_learn": [ [ "textbook_weapwest", 7 ], [ "scots_cookbook", 9 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 20 ], [ "steel_standard", 5 ] ],
     "components": [ [ [ "2x4", 3 ], [ "stick", 6 ] ], [ [ "fabric_hides_any", 3, "LIST" ] ] ]
   },
@@ -8836,9 +8992,7 @@
 	  [ [ "scrap", 2 ] ],
       [ [ "stick", 1 ], [ "broom", 1 ], [ "2x4", 1 ], [ "bee_sting", 1 ] ],
       [ [ "fletching", 1, "LIST" ] ]
-    ],
-    "delete_flags": [ "FILTHY" ],
-    "flags": [ "ALLOW_FILTHY" ]
+    ]
   },
   {
     "type": "recipe",
@@ -8859,9 +9013,7 @@
       [ [ "steel_tiny", 1, "LIST" ], [ "scrap_bronze", 1 ] ],
       [ [ "stick", 1 ], [ "broom", 1 ], [ "2x4", 1 ], [ "bee_sting", 1 ] ],
       [ [ "fletching", 1, "LIST" ] ]
-    ],
-    "delete_flags": [ "FILTHY" ],
-    "flags": [ "ALLOW_FILTHY" ]
+    ]
   },
   {
     "type": "recipe",
@@ -8875,17 +9027,34 @@
     "time": "10 m",
     "autolearn": true,
     "book_learn": [ [ "recipe_arrows", 3 ] ],
-    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "CUT", "level": 1 }, { "id": "ANVIL", "level": 1 } ],
-    "tools": [ [ [ "tongs", -1 ] ] ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "CUT", "level": 1 } ],
     "components": [
       [ [ "adhesive", 1, "LIST" ], [ "filament", 20, "LIST" ] ],
       [ [ "clockworks", 1 ] ],
       [ [ "wire_barbed", 1 ] ],
       [ [ "stick", 1 ], [ "broom", 1 ], [ "2x4", 1 ], [ "bee_sting", 1 ] ],
       [ [ "fletching", 1, "LIST" ] ]
-    ],
-    "delete_flags": [ "FILTHY" ],
-    "flags": [ "ALLOW_FILTHY" ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "ZhighArrow_flash",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "archery", 4 ], [ "survival", 1 ] ],
+    "using": [ [ "forging_standard", 1 ] ],
+    "difficulty": 5,
+    "time": "10 m",
+    "autolearn": true,
+    "book_learn": [ [ "recipe_arrows", 3 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "adhesive", 1, "LIST" ], [ "filament", 20, "LIST" ] ],
+      [ [ "flashbang", 1 ], [ "fakeFlashBangZhigh", 1 ] ],
+      [ [ "stick", 1 ], [ "broom", 1 ], [ "2x4", 1 ], [ "bee_sting", 1 ] ],
+      [ [ "fletching", 1, "LIST" ] ]
+    ]
   },
   {
     "type": "recipe",
@@ -8893,7 +9062,7 @@
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_BASHING",
     "skill_used": "fabrication",
-    "skills_required": [ "melee", 1 ],
+    "skills_required": [ "melee", 2 ],
     "difficulty": 5,
     "time": "5 m",
     "autolearn": true,
@@ -8933,7 +9102,7 @@
     "type": "recipe",
     "result": "sword_stinger",
     "category": "CC_WEAPON",
-    "subcategory": "CSC_WEAPON_PIERCING",
+    "subcategory": "CSC_WEAPON_CUTTING",
     "skill_used": "fabrication",
     "difficulty": 4,
     "skills_required": [ [ "survival", 2 ] ],
@@ -8956,7 +9125,7 @@
     "type": "recipe",
     "result": "sword_triffid",
     "category": "CC_WEAPON",
-    "subcategory": "CSC_WEAPON_PIERCING",
+    "subcategory": "CSC_WEAPON_CUTTING",
     "skill_used": "fabrication",
     "difficulty": 4,
     "skills_required": [ [ "survival", 2 ] ],
@@ -8978,7 +9147,7 @@
     "type": "recipe",
     "result": "sword_2PoiZhigh",
     "category": "CC_WEAPON",
-    "subcategory": "CSC_WEAPON_PIERCING",
+    "subcategory": "CSC_WEAPON_CUTTING",
     "skill_used": "fabrication",
     "difficulty": 4,
     "skills_required": [ [ "survival", 2 ] ],
@@ -9519,6 +9688,7 @@
     "difficulty": 7,
     "time": "7 h 40 m",
     "book_learn": [ [ "textbook_weapwest", 6 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 8 ], [ "steel_standard", 2 ] ],
     "components": [ [ [ "stick_long", 1 ] ], [ [ "fabric_hides_any", 2, "LIST" ] ] ]
   },
@@ -9531,6 +9701,7 @@
     "difficulty": 8,
     "time": "8 h",
     "book_learn": [ [ "textbook_weapwest", 8 ], [ "recipe_melee", 7 ], [ "scots_cookbook", 9 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 12 ], [ "steel_standard", 3 ] ],
     "components": [ [ [ "2x4", 2 ], [ "stick", 4 ] ], [ [ "fabric_hides_any", 2, "LIST" ] ] ]
   },
@@ -9543,6 +9714,7 @@
     "difficulty": 7,
     "time": "7 h 40 m",
     "book_learn": [ [ "textbook_weapeast", 6 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 8 ], [ "steel_standard", 2 ] ],
     "components": [ [ [ "long_pole", 1 ] ], [ [ "fabric_hides_any", 2, "LIST" ] ] ]
   },
@@ -9568,6 +9740,7 @@
     "difficulty": 8,
     "time": "8 h",
     "book_learn": [ [ "textbook_weapwest", 7 ], [ "scots_cookbook", 9 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 12 ], [ "steel_standard", 3 ] ],
     "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "fabric_hides_any", 1, "LIST" ] ] ]
   },
@@ -9580,6 +9753,7 @@
     "difficulty": 8,
     "time": "360 m",
     "book_learn": [ [ "textbook_weapwest", 7 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
     "using": [ [ "blacksmithing_advanced", 2 ], [ "steel_standard", 2 ] ],
     "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "fabric_hides_any", 2, "LIST" ] ] ]
   },
@@ -9751,6 +9925,49 @@
     ]
   },
   {
+    "result": "shockbombBigZhigh",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "mechanics",
+    "difficulty": 1,
+    "time": "3 h 30 m",
+    "autolearn": true,
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "heavy_battery_cell", 1 ],
+	    [ "heavy_plus_battery_cell", 1 ],
+		[ "heavy_atomic_battery_cell", 1 ],
+		[ "huge_atomic_battery_cell", 1 ],
+		[ "heavy_disposable_cell", 1 ] ],
+      [ [ "scrap", 10 ] ],
+      [ [ "pilot_light", 1 ] ],
+      [ [ "adhesive", 1, "LIST" ] ]
+    ]
+  },
+  {
+    "result": "shockbombBigZhigh",
+    "id_suffix": "higherSkills",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "mechanics",
+    "difficulty": 6,
+    "time": "30 m",
+    "autolearn": true,
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "heavy_battery_cell", 1 ],
+	    [ "heavy_plus_battery_cell", 1 ],
+		[ "heavy_atomic_battery_cell", 1 ],
+		[ "huge_atomic_battery_cell", 1 ],
+		[ "heavy_disposable_cell", 1 ] ],
+      [ [ "scrap", 10 ] ],
+      [ [ "pilot_light", 1 ] ],
+      [ [ "adhesive", 1, "LIST" ] ]
+    ]
+  },
+  {
     "type": "recipe",
     "result": "battletorch",
     "obsolete": false
@@ -9820,6 +10037,1158 @@
         [ "morel_cooked", 1 ],
         [ "nuts_tasty", 1, "LIST" ],
         [ "sweet_fruit_like", 1, "LIST" ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "ropeDartZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "time": "5 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "kunaiZhigh", 1 ] ], [ [ "rope_makeshift_30", 1 ], [ "rope_30", 1 ] ] ]
+  },
+  {
+    "result": "YakTenM9bigmag",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MAGAZINES",
+    "skill_used": "fabrication",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "m9bigmag", 2 ] ] ]
+  },
+  {
+    "result": "YakTenM9mag",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MAGAZINES",
+    "skill_used": "fabrication",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "m9mag", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "m320",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "launcher",
+    "time": "45 s",
+    "reversible": true,
+    "autolearn": true,
+    "decomp_learn": 0,
+    "components": [ [ [ "m320_mod", 1 ], [ "m320_mod_mod", 1 ] ], [ [ "ugl_buttstock", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "m26_massZhighFull",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "shotgun",
+    "time": "45 s",
+    "reversible": true,
+    "autolearn": true,
+    "decomp_learn": 0,
+    "components": [ [ [ "m26_massZhigh", 1 ], [ "m26_massZhigh_mod", 1 ] ], [ [ "ugl_buttstock", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "flareRifleZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "shotgun",
+    "time": "45 s",
+    "reversible": true,
+    "autolearn": true,
+    "decomp_learn": 0,
+    "components": [ [ [ "underbarrelFlaregunZhigh", 1 ] ], [ [ "ugl_buttstock", 1 ] ] ]
+  },
+  {
+    "result": "boots_JungleZhigh",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_FEET",
+    "skill_used": "tailor",
+    "difficulty": 1,
+    "time": "55 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 10 ] ],
+    "components": [
+		[ [ "boots_combat", 1 ], [ "boots", 1 ] ],
+		[ [ "steel_armor", 1 ], [ "steel_plate", 1 ] ]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "pen_fountainZhigh02",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "qualities": [
+      { "id": "CUT", "level": 1 }
+    ],
+    "time": "30 m",
+    "difficulty": 3,
+    "reversible": false,
+    "autolearn": true,
+    "components": [
+      [ [ "feather", 1 ] ],
+      [ [ "scrap", 1 ] ]
+    ]
+  },
+  {
+    "result": "ppshdrum_makarovmagZhigh",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MAGAZINES",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "skills_required": [ "gun", 1 ],
+    "time": "20 m",
+    "autolearn": true,
+    "tools": [ [ [ "makarov", -1 ], [ "makarov_mpZhigh", -1 ] ] ],
+    "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "HAMMER", "level": 1 }, { "id": "SCREW_FINE", "level": 1 } ],
+    "components": [
+		[ [ "ppshdrum", 1 ] ],
+		[ [ "sheet_metal_small", 1 ] ],
+		[ [ "spring", 1 ] ],
+		[ [ "duct_tape", 40 ] ]
+	]
+  },
+  {
+    "result": "ammo_satchelZhigh",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "time": "4 h",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 30 ] ],
+    "components": [ [ [ "fabric_standard", 24, "LIST" ] ] ]
+  },
+  {
+    "result": "ammo_satchelZhigh",
+    "id_suffix": "ammo_satchelUseage",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "time": "1 h 20 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 5 ] ],
+    "components": [
+		[ [ "ammo_satchel", 1 ], [ "mag_satchel_leg", 1 ] ],
+		[ [ "ammo_satchel", 1 ], [ "mag_satchel_leg", 1 ] ],
+		[ [ "ammo_satchel", 1 ], [ "mag_satchel_leg", 1 ] ]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "gauntletBladeZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_PIERCING",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "1 h",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_weapeast", 3 ], [ "recipe_melee", 4 ] ],
+    "using": [ [ "soldering_standard", 10 ] ],
+    "components": [
+		[ [ "gloves_plate", 1 ] ],
+		[ [ "blade", 1 ], [ "blade_scythe", 1 ] ]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "yoroiDoshiZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_PIERCING",
+    "skill_used": "fabrication",
+    "difficulty": 6,
+    "time": "5 h 20 m",
+    "book_learn": [ [ "textbook_weapeast", 6 ], [ "manual_knives", 7 ], [ "recipe_melee", 8 ] ],
+    "using": [ [ "blacksmithing_advanced", 4 ], [ "steel_standard", 1 ] ],
+    "components": [ [ [ "2x4", 1 ], [ "stick", 1 ] ], [ [ "fabric_hides_any", 2, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "tettoZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "difficulty": 8,
+    "time": "7 h",
+    "book_learn": [ [ "textbook_weapeast", 7 ] ],
+    "using": [ [ "blacksmithing_advanced", 8 ], [ "steel_standard", 2 ] ],
+    "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "fabric_hides_any", 2, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "pataZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "fabrication",
+    "difficulty": 7,
+    "time": "7 h",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_weapeast", 3 ], [ "recipe_melee", 4 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "using": [ [ "blacksmithing_standard", 24 ], [ "steel_standard", 8 ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "shepherdCrookZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": "18 m",
+    "reversible": true,
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "stick_long", 1 ] ], [ [ "fabric_hides_any", 2, "LIST" ] ] ]
+  },
+  {
+    "result": "ankusZhigh",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "difficulty": 5,
+    "time": "2 h",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_weapeast", 3 ], [ "recipe_melee", 4 ] ],
+    "using": [ [ "blacksmithing_advanced", 6 ], [ "steel_standard", 1 ] ],
+    "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "knifeZhigh_stinger",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_PIERCING",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "skills_required": [ [ "survival", 2 ] ],
+    "time": "30 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "knife_stinger", 1 ] ],
+      [ [ "bee_sting", 1 ], [ "wasp_sting", 1 ] ],
+      [ [ "bee_sting", 1 ], [ "wasp_sting", 1 ] ],
+      [ [ "bee_sting", 1 ], [ "wasp_sting", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "knifeZhigh_triffid",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_PIERCING",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "skills_required": [ [ "survival", 2 ] ],
+    "time": "30 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "knife_triffid", 1 ] ],
+      [ [ "fighter_sting", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "knifeZhigh_multi",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_PIERCING",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "skills_required": [ [ "survival", 2 ] ],
+    "time": "30 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "knifeZhigh_triffid", 1 ] ],
+      [ [ "knifeZhigh_stinger", 1 ] ]
+    ]
+  },
+  {
+    "result": "bandagesRubberZhigh",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MEDICAL",
+    "skill_used": "firstaid",
+    "time": "20 s",
+    "autolearn": true,
+    "components": [
+      [ [ "chunk_rubber", 3 ] ],
+      [ [ "scrap", 1 ] ]
+    ]
+  },
+  {
+    "result": "minasbadZhigh",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "fabrication",
+    "difficulty": 8,
+    "time": "420 m",
+    "book_learn": [ [ "textbook_weapeast", 7 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "using": [ [ "blacksmithing_advanced", 2 ], [ "steel_standard", 2 ] ],
+    "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "varnish", 1, "LIST" ] ], [ [ "fabric_hides_any", 2, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "hatchetImpZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "fabrication",
+    "time": "5 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ 
+		[ [ "2x4", 1 ], [ "stick", 2 ] ], 
+		[ [ "duct_tape", 50 ] ],
+		[ [ "blade", 1 ] ],
+		[ [ "varnish", 1, "LIST" ] ]
+	]
+  },
+  {
+    "result": "blindfold",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "time": "3 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+      [
+        [ "bandana", 1 ],
+        [ "scarf", 1 ],
+        [ "scarf_long", 1 ],
+        [ "patchwork_scarf", 1 ],
+        [ "long_patchwork_scarf", 1 ],
+        [ "scarf_fur", 1 ],
+        [ "scarf_fur_long", 1 ],
+        [ "knit_scarf", 1 ],
+        [ "long_knit_scarf", 1 ],
+        [ "scarf_loose", 1 ],
+        [ "scarf_long_loose", 1 ],
+        [ "patchwork_scarf_loose", 1 ],
+        [ "long_patchwork_scarf_loose", 1 ],
+        [ "scarf_fur_loose", 1 ],
+        [ "scarf_fur_long_loose", 1 ],
+        [ "knit_scarf_loose", 1 ],
+        [ "long_knit_scarf_loose", 1 ],
+        [ "tie_necktie_zhigh", 1 ],
+        [ "spot_strap_zhigh", 1 ],
+        [ "scarf_longRedZhigh", 1 ],
+        [ "bandages_all", 2, "LIST" ]
+      ]
+    ],
+    "flags": [ "BLIND_EASY", "NO_RESIZE" ]
+  },
+  {
+    "result": "dominoMaskZhigh",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "time": "3 m",
+    "reversible": true,
+    "autolearn": false,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [
+        [ "bandana", 1 ],
+        [ "scarf", 1 ],
+        [ "scarf_long", 1 ],
+        [ "patchwork_scarf", 1 ],
+        [ "long_patchwork_scarf", 1 ],
+        [ "scarf_fur", 1 ],
+        [ "scarf_fur_long", 1 ],
+        [ "knit_scarf", 1 ],
+        [ "long_knit_scarf", 1 ],
+        [ "scarf_loose", 1 ],
+        [ "scarf_long_loose", 1 ],
+        [ "patchwork_scarf_loose", 1 ],
+        [ "long_patchwork_scarf_loose", 1 ],
+        [ "scarf_fur_loose", 1 ],
+        [ "scarf_fur_long_loose", 1 ],
+        [ "knit_scarf_loose", 1 ],
+        [ "long_knit_scarf_loose", 1 ],
+        [ "tie_necktie_zhigh", 1 ],
+        [ "spot_strap_zhigh", 1 ],
+        [ "scarf_longRedZhigh", 1 ],
+        [ "bandages_all", 2, "LIST" ]
+      ]
+    ],
+    "flags": [ "BLIND_EASY", "NO_RESIZE" ]
+  },
+  {
+    "result": "spear_tridentZhigh",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_PIERCING",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "time": "60 m",
+    "autolearn": true,
+    "using": [ [ "blacksmithing_intermediate", 1 ], [ "steel_standard", 2 ] ],
+    "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
+    "qualities": [ { "id": "SANDING", "level": 1 } ],
+    "components": [
+      [ [ "stick_long", 1 ] ],
+      [ [ "filament", 100, "LIST" ] ],
+      [ [ "varnish", 2, "LIST" ] ],
+      [ [ "fabric_standard", 2, "LIST" ], [ "felt_patch", 2 ], [ "fabric_hides_any", 2, "LIST" ] ]
+    ]
+  },
+  {
+    "result": "holsterAkimZhigh",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "time": "1 h 15 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 15 ] ],
+    "components": [ [ [ "leather", 12 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "nailgunAkimZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "nailgun", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "paintballgun_pistolAkimZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "paintballgun_pistol", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "paintballgun_revolverAkimZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "paintballgun_revolver", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "shotgun_d_paintAkimZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "shotgun_d_paint", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "cash_gunAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "cash_gun", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "tishunaAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "tishuna", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "Lp500ZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "Lp500Zhigh", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "dartgunZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "dartgunZhigh", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "popGunPistol_zhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "popGunPistol_zhigh", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "pistol_flintlockAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "pistol_flintlock", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "pistol_flintlock_doubleAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "pistol_flintlock_double", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "pistol_flintlock_singleShotAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "pistol_flintlock_singleShot", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "pistol_flintlock_doubleShotAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "pistol_flintlock_doubleShot", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "pistol_blunderbussAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "pistol_blunderbuss", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "pistol_blunderbuss_dbAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "pistol_blunderbuss_db", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "pistol_flintlock_revolverAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "pistol_flintlock_revolver", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "pistol_flintlock_smolAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "pistol_flintlock_smol", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "pistol_flintlock_duckfootAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "pistol_flintlock_duckfoot", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "hand_crossbowAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "hand_crossbow", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "hand_crossbow_dartZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "hand_crossbow_dartZhigh", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "discShooterAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "discShooter", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "bullet_hand_crossbowAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "bullet_hand_crossbow", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "minispeargunAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "minispeargun", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "flaregunAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "flaregun", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "v29Akim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "v29", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "colt_navyAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "colt_navy", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "colt_armyAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "colt_army", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "colt_saaAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "colt_saa", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "cop_38Akim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "cop_38", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "bond_410Akim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "bond_410", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "bbpistolAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "bbpistol", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "BBclip600",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MAGAZINES",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "BBclip300", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "atlatlZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": "3 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "stick", 1 ], [ "2x4", 1 ], [ "pool_cue", 1 ] ] ]
+  },
+  {
+    "result": "pirateBombZhigh",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "fabrication",
+    "difficulty": 5,
+    "time": "15 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+      [ [ "volatile_explosive", 60, "LIST" ], [ "stable_explosive", 60, "LIST" ], [ "military_explosive", 60, "LIST" ] ],
+      [ [ "cannonball_4lb", 1 ] ],
+      [ [ "delay_fuze", 1 ], [ "fuse", 1 ] ]
+    ]
+  },
+  {
+    "result": "eyepatchLeftZhigh",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "skills_required": [ "tailor", 1 ],
+    "difficulty": 1,
+    "time": "5 m",
+    "reversible": true,
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 20 ] ],
+    "components": [ [ [ "fabric_hides_proper", 1, "LIST" ] ] ]
+  },
+  {
+    "result": "eyepatchWLeftZhigh",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "skills_required": [ "tailor", 1 ],
+    "difficulty": 1,
+    "time": "5 m",
+    "reversible": true,
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 20 ] ],
+    "components": [ [ [ "fabric_hides_proper", 1, "LIST" ] ] ]
+  },
+  {
+    "result": "capeZhigh",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 8,
+    "time": "95 m",
+    "reversible": true,
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 18 ] ],
+    "components": [ [ [ "rag", 20 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "woodenCupZhigh",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_CONTAINERS",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "1 h",
+    "autolearn": true,
+    "qualities": [ { "id": "HAMMER", "level": 1 }, { "id": "SAW_W", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "components": [ [ [ "2x4", 2 ] ], [ [ "varnish", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "knife_acidZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_PIERCING",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "skills_required": [ [ "survival", 2 ] ],
+    "time": "30 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "components": [
+      [
+        [ "fabric_standard", 1, "LIST" ],
+        [ "felt_patch", 1 ],
+        [ "duct_tape", 50 ],
+        [ "cordage_short", 2, "LIST" ],
+        [ "filament", 100, "LIST" ]
+      ],
+	  [ [ "acid", 3 ] ],
+      [ [ "varnish", 1, "LIST" ] ],
+      [ [ "acidchitin_piece", 2 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "spear_acidZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_PIERCING",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "skills_required": [ [ "survival", 2 ] ],
+    "time": "30 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "components": [
+      [ [ "acidchitin_piece", 2 ] ],
+	  [ [ "acid", 3 ] ],
+      [ [ "stick_long", 1 ] ],
+      [ [ "varnish", 2, "LIST" ] ],
+      [ [ "fabric_standard", 1, "LIST" ], [ "felt_patch", 1 ], [ "fabric_hides_any", 1, "LIST" ] ],
+      [ [ "duct_tape", 20 ], [ "filament", 20, "LIST" ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "sword_acidZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "skills_required": [ [ "survival", 2 ] ],
+    "time": "80 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [
+        [ "fabric_standard", 1, "LIST" ],
+        [ "felt_patch", 1 ],
+        [ "duct_tape", 50 ],
+        [ "cordage_short", 2, "LIST" ],
+        [ "filament", 100, "LIST" ]
+      ],
+      [ [ "acidchitin_piece", 4 ] ],
+	  [ [ "acid", 6 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "javelin_acidZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_PIERCING",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "skills_required": [ [ "survival", 2 ] ],
+    "time": "30 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "acidchitin_piece", 4 ] ],
+	  [ [ "acid", 6 ] ],
+      [
+        [ "javelin_iron", 1 ],
+        [ "javelin", 1 ]
+      ],
+      [ [ "fabric_standard", 1, "LIST" ], [ "felt_patch", 1 ], [ "fabric_hides_any", 1, "LIST" ] ],
+      [ [ "duct_tape", 20 ], [ "filament", 20, "LIST" ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "knife_huntingZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "fabrication",
+    "difficulty": 6,
+    "time": "8 h 30 m",
+    "book_learn": [ [ "manual_knives", 3 ], [ "recipe_melee", 4 ] ],
+    "using": [ [ "blacksmithing_advanced", 4 ], [ "steel_standard", 2 ] ],
+    "components": [ [ [ "fabric_hides_any", 1, "LIST" ] ] ]
+  },
+  {
+    "result": "mace_knuckleZhigh",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "difficulty": 7,
+    "time": "5 h",
+    "autolearn": true,
+    "book_learn": [ [ "recipe_melee", 4 ] ],
+    "using": [ [ "blacksmithing_standard", 12 ], [ "steel_standard", 6 ] ],
+    "components": [
+		[ [ "fabric_standard", 5, "LIST" ] ],
+		[ [ "cannonball_4lb", 2 ] ],
+		[ [ "filament", 25, "LIST" ] ]
+	]
+  },
+  {
+    "result": "shield_woodenScabbard",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": "3 m",
+    "autolearn": true,
+    "components": [
+      [ [ "nail_glue", 2, "LIST" ] ],
+      [ [ "shield_wooden", 1 ] ],
+      [ [ "scabbard", 1 ], [ "bscabbard", 1 ] ]
+    ]
+  },
+  {
+    "result": "shield_wooden_largeScabbard",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": "3 m",
+    "autolearn": true,
+    "components": [
+      [ [ "nail_glue", 2, "LIST" ] ],
+      [ [ "shield_wooden_large", 1 ] ],
+      [ [ "scabbard", 1 ], [ "bscabbard", 1 ] ]
+    ]
+  },
+  {
+    "result": "shield_leatherScabbard",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": "3 m",
+    "autolearn": true,
+    "components": [
+      [ [ "nail_glue", 2, "LIST" ] ],
+      [ [ "shield_leather", 1 ] ],
+      [ [ "scabbard", 1 ], [ "bscabbard", 1 ] ]
+    ]
+  },
+  {
+    "result": "shield_bandedScabbard",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": "3 m",
+    "autolearn": true,
+    "components": [
+      [ [ "nail_glue", 2, "LIST" ] ],
+      [ [ "shield_banded", 1 ] ],
+      [ [ "scabbard", 1 ], [ "bscabbard", 1 ] ]
+    ]
+  },
+  {
+    "result": "shield_leather_largeScabbard",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": "3 m",
+    "autolearn": true,
+    "components": [
+      [ [ "nail_glue", 2, "LIST" ] ],
+      [ [ "shield_leather_large", 1 ] ],
+      [ [ "scabbard", 1 ], [ "bscabbard", 1 ] ]
+    ]
+  },
+  {
+    "result": "shield_banded_largeScabbard",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": "3 m",
+    "autolearn": true,
+    "components": [
+      [ [ "nail_glue", 2, "LIST" ] ],
+      [ [ "shield_banded_large", 1 ] ],
+      [ [ "scabbard", 1 ], [ "bscabbard", 1 ] ]
+    ]
+  },
+  {
+    "result": "shield_weldedScabbard",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": "3 m",
+    "autolearn": true,
+    "components": [
+      [ [ "nail_glue", 2, "LIST" ] ],
+      [ [ "shield_welded", 1 ] ],
+      [ [ "scabbard", 1 ], [ "bscabbard", 1 ] ]
+    ]
+  },
+  {
+    "result": "shield_welded_superalloyScabbard",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": "3 m",
+    "autolearn": true,
+    "components": [
+      [ [ "nail_glue", 2, "LIST" ] ],
+      [ [ "shield_welded_superalloy", 1 ] ],
+      [ [ "scabbard", 1 ], [ "bscabbard", 1 ] ]
+    ]
+  },
+  {
+    "result": "shield_spikedScabbard",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": "3 m",
+    "autolearn": true,
+    "components": [
+      [ [ "nail_glue", 2, "LIST" ] ],
+      [ [ "shield_spiked", 1 ] ],
+      [ [ "scabbard", 1 ], [ "bscabbard", 1 ] ]
+    ]
+  },
+  {
+    "result": "shield_spiked_largeScabbard",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": "3 m",
+    "autolearn": true,
+    "components": [
+      [ [ "nail_glue", 2, "LIST" ] ],
+      [ [ "shield_spiked_large", 1 ] ],
+      [ [ "scabbard", 1 ], [ "bscabbard", 1 ] ]
+    ]
+  },
+  {
+    "result": "shield_ballisticMagpouch",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": "3 m",
+    "autolearn": true,
+    "components": [
+      [ [ "nail_glue", 2, "LIST" ] ],
+      [ [ "shield_ballistic", 1 ] ],
+      [ [ "legpouch_large", 1 ], [ "legpouch", 2 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "masakariZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "fabrication",
+    "difficulty": 8,
+    "time": "8 h",
+    "book_learn": [ [ "textbook_weapwest", 8 ], [ "recipe_melee", 7 ], [ "scots_cookbook", 9 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "using": [ [ "blacksmithing_advanced", 12 ], [ "steel_standard", 3 ] ],
+    "components": [ [ [ "2x4", 2 ], [ "stick", 4 ] ], [ [ "fabric_hides_any", 2, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "ZhighArrow_whistle",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "archery", 4 ] ],
+    "difficulty": 4,
+    "time": "90 s",
+    "charges": 1,
+    "reversible": true,
+    "book_learn": [ [ "recipe_arrows", 6 ], [ "textbook_anarch", 4 ], [ "recipe_bullets", 7 ] ],
+    "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [
+		[ "whistle", 1 ],
+		[ "whistle_multitool", 1 ],
+		[ "whistlemulti", 1 ]
+	  ],
+      [
+        [ "arrow_field_point_fletched", 1 ],
+        [ "arrow_fire_hardened_fletched", 1 ],
+        [ "arrow_wood", 1 ],
+        [ "arrow_heavy_fire_hardened_fletched", 1 ],
+        [ "arrow_heavy_field_point_fletched", 1 ],
+        [ "arrow_wood_heavy", 1 ],
+        [ "arrow_metal", 1 ]
       ]
     ]
   }

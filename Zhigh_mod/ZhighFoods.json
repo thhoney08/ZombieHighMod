@@ -1,6 +1,17 @@
 [
   {
     "type": "COMESTIBLE",
+    "id": "coffee_iced_tea",
+    "copy-from": "coffee",
+    "name": { "str": "iced tea with coffee" },
+    "description": "A small fad of the pre-apocalyptic world, created from coffee cherries through a complex process of seed removal, roasting, grinding, and brewing.  Coffee is substantially richer in caffeine than its rival tea.  With added sweet tea for better taste.",
+    "price": "9 USD",
+    "price_postapoc": 60,
+    "calories": 80,
+    "fun": 15
+  },
+  {
+    "type": "COMESTIBLE",
 	"//": "twice the weight, 1.5 times fun.",
     "looks_like": "creamsoda",
     "id": "creamsodaZhigh",
@@ -706,7 +717,12 @@
     "stim": 1,
     "fun": 4,
     "flags": [ "MAG_COMPACT", "NO_INGEST" ],
-    "use_action": "CHEW"
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You chew your chewing gum.",
+      "snippet_category": "chewing_gum_flavor",
+      "snippet_chance": 1
+    }
   },
   {
     "id": "gum02Zhigh",
@@ -728,7 +744,12 @@
     "fun": 2,
     "vitamins": [ [ "iron", 7 ] ],
     "flags": [ "MAG_COMPACT", "NO_INGEST" ],
-    "use_action": "CHEW"
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You chew your chewing gum.",
+      "snippet_category": "chewing_gum_flavor",
+      "snippet_chance": 1
+    }
   },
   {
     "id": "gum03Zhigh",
@@ -750,7 +771,12 @@
     "fun": 2,
     "vitamins": [ [ "vitC", 7 ] ],
     "flags": [ "MAG_COMPACT", "NO_INGEST" ],
-    "use_action": "CHEW"
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You chew your chewing gum.",
+      "snippet_category": "chewing_gum_flavor",
+      "snippet_chance": 1
+    }
   },
   {
     "id": "gum04Zhigh",
@@ -772,7 +798,12 @@
     "fun": 2,
     "vitamins": [ [ "calcium", 7 ] ],
     "flags": [ "MAG_COMPACT", "NO_INGEST" ],
-    "use_action": "CHEW"
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You chew your chewing gum.",
+      "snippet_category": "chewing_gum_flavor",
+      "snippet_chance": 1
+    }
   },
   {
     "id": "caff_gumZhigh",
@@ -794,7 +825,12 @@
     "stim": 10,
     "fun": 1,
     "flags": [ "MAG_COMPACT", "NO_INGEST" ],
-    "use_action": "CHEW"
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You chew your chewing gum.",
+      "snippet_category": "chewing_gum_flavor",
+      "snippet_chance": 1
+    }
   },
   {
     "type": "COMESTIBLE",
@@ -1529,5 +1565,27 @@
       "type": "consume_drug",
       "effects": [ { "id": "antionfire", "duration": "1 h" } ]
     }
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "kvassZhigh",
+    "name": "kvass",
+    "weight": "500 g",
+    "color": "brown",
+    "stim": 1,
+    "healthy": 1,
+    "comestible_type": "FOOD",
+    "symbol": "~",
+    "quench": 80,
+    "description": "A fermented, cereal-based, low-alcoholic beverage of cloudy appearance and sweet-sour taste.  Fits with a tracksuit, a balaclava and a fur hat.  \n <color_yellow> Presented by Phoenix corp.</color>",
+    "price": "90 cent",
+    "price_postapoc": "25 cent",
+    "volume": "500 ml",
+    "material": "foodplace_foodstuff",
+    "addiction_type": "alcohol",
+    "use_action": "ALCOHOL",
+    "addiction_potential": 1,
+    "flags": [ "MAG_COMPACT", "EATEN_HOT", "NUTRIENT_OVERRIDE", "EATEN_COLD" ],
+    "fun": 8
   }
 ]

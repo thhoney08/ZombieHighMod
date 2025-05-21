@@ -464,7 +464,7 @@
     "symbol": "[",
     "looks_like": "holster",
     "color": "light_gray",
-    "covers": [ "leg_either" ],
+    "covers": [ "legs" ],
     "coverage": 2,
     "encumbrance": 4,
     "storage": "3 L",
@@ -713,15 +713,16 @@
     "color": "dark_gray",
     "covers": [ "arm_either" ],
     "qualities": [
-      [ "ANVIL", 8 ], [ "ANESTHESIA", 8 ], [ "AXE", 8 ], [ "BUTCHER", 8 ], [ "BOIL", 8 ],
-	  [ "CHISEL", 8 ], [ "CHURN", 8 ], [ "CUT", 8 ], [ "CUT_FINE", 8 ], [ "COOK", 8 ],
-      [ "DRILL", 8 ], [ "DIG", 8 ], [ "DISTILL", 8 ], [ "EXTRACT", 8 ], [ "FISHING", 8 ], [ "FILE", 8 ], [ "FILTER", 8 ],
-      [ "GRIND", 8 ], [ "HAMMER", 8 ], [ "HAMMER_FINE", 8 ], [ "HOSE", 8 ],
-      [ "KNIT", 5 ], [ "LEATHER_AWL", 5 ], [ "LIFT", 5 ], [ "LOCKPICK", 8 ], [ "PRY", 8 ], [ "PULL", 8 ], [ "REAM", 8 ], [ "SAW_M", 8 ],
+      [ "ANVIL", 8 ], [ "ANESTHESIA", 8 ], [ "AXE", 8 ], [ "BUTCHER", 8 ], [ "BOIL", 8 ], [ "CHEM", 8 ],
+	  [ "CHISEL", 8 ], [ "CHURN", 8 ], [ "CUT", 8 ], [ "CUT_FINE", 8 ], [ "CUT_M", 8 ], [ "COOK", 8 ],
+      [ "DRILL", 8 ], [ "DIG", 8 ], [ "DISTILL", 8 ], [ "EXTRACT", 8 ], [ "FISHING", 8 ],
+	  [ "FILE", 8 ], [ "FILTER", 8 ], [ "GRIND", 8 ], [ "HAMMER", 8 ], [ "HAMMER_FINE", 8 ],
+	  [ "HOSE", 8 ], [ "KNIT", 5 ], [ "LEATHER_AWL", 5 ], [ "LIFT", 5 ], [ "LOCKPICK", 8 ],
+	  [ "PRY", 8 ], [ "PULL", 8 ], [ "REAM", 8 ], [ "SANDING", 8 ], [ "SAW_M", 8 ],
       [ "SAW_M_FINE", 8 ], [ "SAW_W", 8 ], [ "SEW_CURVED", 8 ], [ "SEW", 8 ],
-      [ "SCREW", 8 ], [ "SCREW_FINE", 8 ], [ "SMOKE_PIPE", 8 ],
-      [ "SMOOTH", 8 ], [ "SHEAR", 8 ], [ "PRESSURIZATION", 8 ], [ "WELD", 8 ], [ "WRENCH", 8 ],
-      [ "WRENCH_FINE", 8 ], [ "VISE", 8 ]
+      [ "SCREW", 8 ], [ "SCREW_FINE", 8 ], [ "SMOKE_PIPE", 8 ], [ "SMOOTH", 8 ],
+	  [ "SHEAR", 8 ], [ "PRESSURIZATION", 8 ], [ "PULL_FINE", 8 ], [ "WELD", 8 ], [ "WRENCH", 8 ],
+      [ "WRENCH_FINE", 8 ], [ "VISE", 8 ], [ "VOLT_MEASURE", 8 ]
     ],
     "use_action": [
 		"GUN_CLEAN", "GUN_REPAIR", "PICKAXE",
@@ -4730,7 +4731,14 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "mutations": [ "ENCH_NINJAZHIGH_DODGE_EFFECT" ]
+          "values": [ { "value": "SPEED", "add": 10 } ],
+          "mutations": [ "ENCH_NINJAZHIGH_DODGE_EFFECT" ],
+          "hit_me_effect": [
+            {
+              "id": "spell_ninjaVanishZhigh",
+              "once_in": 3
+            }
+          ]
         }
       ]
     }
@@ -4749,15 +4757,39 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "mutations": [ "ENCH_NINJAZHIGH_DODGE_EFFECT" ]
+          "values": [ { "value": "SPEED", "add": 10 } ],
+          "mutations": [ "ENCH_NINJAZHIGH_DODGE_EFFECT" ],
+          "hit_me_effect": [
+            {
+              "id": "spell_ninjaVanishZhigh",
+              "once_in": 3
+            }
+          ]
         }
       ]
     }
   },
   {
-    "type": "enchantment",
-    "id": "ENCH_NINJAZHIGH_DODGE",
-    "mutations": [ "ENCH_NINJAZHIGH_DODGE_EFFECT" ]
+    "id": "spell_ninjaVanishZhigh",
+    "type": "SPELL",
+    "name": { "str": "Ninja Dodge" },
+    "description": "You're shrowded within the shadows.",
+    "message": "",
+    "effect": "target_attack",
+    "effect_str": "blind",
+    "extra_effects": [ { "id": "spell_mothman_ninja_vanish_teleport" } ],
+    "valid_targets": [ "hostile", "ground" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT" ],
+    "min_range": 1,
+    "max_range": 1,
+    "min_aoe": 3,
+    "max_aoe": 3,
+    "min_duration": 1000,
+    "max_duration": 2000,
+    "field_id": "fd_smoke",
+    "field_chance": 1,
+    "min_field_intensity": 3,
+    "max_field_intensity": 3
   },
   {
     "type": "mutation",
@@ -4791,5 +4823,536 @@
     "description": "Plain black ninja mask.  These are usually worn by ninjas to hide their identity.",
     "coverage": 95,
     "type": "ARMOR"
+  },
+  {
+    "id": "boots_JungleZhigh",
+    "looks_like": "boots_combat",
+    "repairs_like": "boots_survivor",
+    "type": "ARMOR",
+    "name": { "str": "pair of jungle boots", "str_pl": "pairs of jungle boots" },
+    "description": "Modern reinforced tactical combat boots, modified.  Very durable and protects your feet from booby traps.",
+    "weight": "1360 g",
+    "volume": "2 L",
+    "price": "70 USD",
+    "price_postapoc": "15 USD",
+    "to_hit": -1,
+    "bashing": 6,
+    "material": [ "kevlar", "leather", "steel" ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "covers": [ "feet" ],
+    "coverage": 100,
+    "encumbrance": 35,
+    "warmth": 25,
+    "material_thickness": 4,
+    "environmental_protection": 2,
+    "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ]
+  },
+  {
+    "id": "sunglassesAilenZhigh",
+    "type": "ARMOR",
+    "name": { "str": "pair of sunglasses", "str_pl": "pairs of sunglasses" },
+    "description": "A pair of sunglasses, good for keeping the glare out of your eyes.  This one have a funny shaped pair of lenses.",
+    "weight": "35 g",
+    "volume": "250 ml",
+    "price": "50 USD",
+    "price_postapoc": "10 cent",
+    "to_hit": -2,
+    "material": [ "glass", "plastic" ],
+    "symbol": "[",
+    "looks_like": "glasses_eye",
+    "color": "dark_gray",
+    "covers": [ "eyes" ],
+    "coverage": 85,
+    "encumbrance": 1,
+    "material_thickness": 1,
+    "environmental_protection": 1,
+    "qualities": [ [ "GLARE", 1 ] ],
+    "flags": [ "WATER_FRIENDLY", "SUN_GLASSES", "FRAGILE" ]
+  },
+  {
+    "id": "ammo_satchelZhigh",
+    "looks_like": "ammo_satchel",
+    "type": "ARMOR",
+    "name": { "str": "magazine satchel strap" },
+    "description": "A modified magazine satchel worn at the waist which is capable of holding six magazines, ammo belts, speedloaders, and grenades of nearly any size close at hand.",
+    "weight": "280 g",
+    "volume": "700 ml",
+    "price": "20 USD",
+    "price_postapoc": "20 USD",
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "covers": [ "torso" ],
+    "coverage": 20,
+    "encumbrance": 1,
+    "max_encumbrance": 10,
+    "material_thickness": 2,
+    "//": "Able to hold up to a fully-loaded .308 or .50 BMG ammo belt",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stash ammo",
+      "holster_msg": "You stash your %s.",
+      "min_volume": "250 ml",
+      "max_volume": "2500 ml",
+      "multi": 6,
+      "draw_cost": 40,
+      "flags": [ "GRENADE", "MAG_COMPACT", "MAG_BULKY", "MAG_BELT", "SPEEDLOADER" ]
+    },
+    "valid_mods": [ "resized_large" ],
+    "flags": [ "WATER_FRIENDLY", "WAIST", "COMPACT" ]
+  },
+  {
+    "id": "holsterAkimZhigh",
+    "looks_like": "multi_holster",
+    "type": "ARMOR",
+    "name": { "str": "akimbo pistol holster" },
+    "description": "A leather strap worn on the hip for holding akimbo pistols.  Activate to holster/draw a gun.",
+    "weight": "440 g",
+    "volume": "1 L",
+    "price": "180 USD",
+    "price_postapoc": "10 USD",
+    "material": [ "leather" ],
+    "symbol": "[",
+    "color": "light_gray",
+    "covers": [ "legs" ],
+    "coverage": 2,
+    "encumbrance": 2,
+    "material_thickness": 1,
+    "use_action": {
+      "type": "holster",
+      "max_volume": "2 L",
+      "min_volume": "500 ml",
+      "skills": [ "akimbo_Zhigh" ],
+      "flags": [ "HOLSTER_PISTOL" ]
+    },
+    "flags": [ "WAIST", "COMPACT", "OVERSIZE" ]
+  },
+  {
+    "id": "dominoMaskZhigh",
+    "type": "ARMOR",
+    "name": { "str": "domino mask" },
+    "//": "A folded bandana still takes up some space on the head.",
+    "description": "A simple fabric covering tied over the eye parts to hide identity.  Useful for cosplaying.",
+    "weight": "72 g",
+    "volume": "250 ml",
+    "price": "6 USD",
+    "price_postapoc": "10 cent",
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "looks_like": "blindfold",
+    "color": "dark_gray",
+    "covers": [ "eyes" ],
+    "coverage": 95,
+    "encumbrance": 10,
+    "warmth": 5,
+    "material_thickness": 1,
+    "environmental_protection": 1,
+    "flags": [ "OVERSIZE" ]
+  },
+  {
+    "id": "eyepatchLeftZhigh",
+    "type": "ARMOR",
+    "name": { "str": "eyepatch" },
+    "//": "A folded bandana still takes up some space on the head.",
+    "description": "A simple fabric covering tied over an eye to block sight.  Useful for looking like a pirate.  This one covers the left eye.",
+    "weight": "36 g",
+    "volume": "125 ml",
+    "price": "6 USD",
+    "price_postapoc": "10 cent",
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "covers": [ "eyes" ],
+    "coverage": 50,
+    "encumbrance": 10,
+    "warmth": 5,
+    "material_thickness": 1,
+    "environmental_protection": 1,
+    "flags": [ "OVERSIZE" ],
+    "use_action": {
+      "menu_text": "Change sides",
+      "type": "transform",
+      "target": "eyepatchRightZhigh",
+      "msg": "You change the eye patch to cover your right eye."
+    }
+  },
+  {
+    "id": "eyepatchRightZhigh",
+    "looks_like": "eyepatchLeftZhigh",
+    "type": "ARMOR",
+    "name": { "str": "eyepatch" },
+    "//": "A folded bandana still takes up some space on the head.",
+    "description": "A simple fabric covering tied over an eye to block sight.  Useful for looking like a pirate.  This one covers the right eye.",
+    "weight": "36 g",
+    "volume": "125 ml",
+    "price": "6 USD",
+    "price_postapoc": "10 cent",
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "covers": [ "eyes" ],
+    "coverage": 50,
+    "encumbrance": 10,
+    "warmth": 5,
+    "material_thickness": 1,
+    "environmental_protection": 1,
+    "flags": [ "OVERSIZE" ],
+    "use_action": {
+      "menu_text": "Change sides",
+      "type": "transform",
+      "target": "eyepatchLeftZhigh",
+      "msg": "You change the eye patch to cover your left eye."
+    }
+  },
+  {
+    "id": "eyepatchWLeftZhigh",
+    "type": "ARMOR",
+    "name": { "str": "eyepatch" },
+    "//": "A folded bandana still takes up some space on the head.",
+    "description": "A simple fabric covering tied over an eye to block sight.  This one covers the left eye.",
+    "weight": "36 g",
+    "volume": "125 ml",
+    "price": "6 USD",
+    "price_postapoc": "10 cent",
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "covers": [ "eyes" ],
+    "coverage": 50,
+    "encumbrance": 10,
+    "warmth": 5,
+    "material_thickness": 1,
+    "environmental_protection": 1,
+    "flags": [ "OVERSIZE" ],
+    "use_action": {
+      "menu_text": "Change sides",
+      "type": "transform",
+      "target": "eyepatchWRightZhigh",
+      "msg": "You change the eye patch to cover your right eye."
+    }
+  },
+  {
+    "id": "eyepatchWRightZhigh",
+    "looks_like": "eyepatchWLeftZhigh",
+    "type": "ARMOR",
+    "name": { "str": "eyepatch" },
+    "//": "A folded bandana still takes up some space on the head.",
+    "description": "A simple fabric covering tied over an eye to block sight.  This one covers the right eye.",
+    "weight": "36 g",
+    "volume": "125 ml",
+    "price": "6 USD",
+    "price_postapoc": "10 cent",
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "covers": [ "eyes" ],
+    "coverage": 50,
+    "encumbrance": 10,
+    "warmth": 5,
+    "material_thickness": 1,
+    "environmental_protection": 1,
+    "flags": [ "OVERSIZE" ],
+    "use_action": {
+      "menu_text": "Change sides",
+      "type": "transform",
+      "target": "eyepatchWLeftZhigh",
+      "msg": "You change the eye patch to cover your left eye."
+    }
+  },
+  {
+    "id": "capeZhigh",
+    "type": "ARMOR",
+    "name": { "str": "cape" },
+    "description": "A cape meant to be thrown over your body, like a cloak.  Looks cooler though.",
+    "weight": "1175 g",
+    "volume": "3 L",
+    "price": "107 USD",
+    "price_postapoc": "5 USD",
+    "to_hit": -1,
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "looks_like": "cloak",
+    "color": "green",
+    "covers": [ "torso", "arms", "legs" ],
+    "coverage": 35,
+    "encumbrance": 3,
+    "warmth": 20,
+    "material_thickness": 2,
+    "environmental_protection": 3,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "mutations": [ "ENCH_ZHIGH_CLOAK_EFFECT" ]
+        }
+      ]
+    },
+    "flags": [ "OVERSIZE", "HOOD", "OUTER", "FANCY", "ONLY_ONE" ]
+  },
+  {
+    "type": "mutation",
+    "id": "ENCH_ZHIGH_CLOAK_EFFECT",
+    "name": { "str": "." },
+    "points": 0,
+    "valid": false,
+    "description": "You're shrowded within the shadows.",
+    "dodge_modifier": 2.7,
+    "player_display": false
+  },
+  {
+    "id": "haloZhigh",
+    "type": "ARMOR",
+    "name": { "str": "halo" },
+    "description": "A shiny ring which is a symbol for many fantasy creatures.  You can wear it if you like, but it won't provide any effects.",
+    "weight": "26 g",
+    "volume": "1 ml",
+    "price": "900 USD",
+    "price_postapoc": "25 cent",
+    "material": [ "plastic" ],
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "FANCY" ]
+  },
+  {
+    "id": "mitreHatZHigh",
+    "repairs_like": "balclava",
+    "type": "ARMOR",
+    "name": { "str": "mitre hat" },
+    "description": "A high, white cap with a very unique shape.  Traditionally worn by bishops.",
+    "weight": "120 g",
+    "volume": "500 ml",
+    "price": "70 USD",
+    "price_postapoc": "50 cent",
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "looks_like": "eboshi",
+    "color": "white",
+    "covers": [ "head" ],
+    "coverage": 60,
+    "encumbrance": 10,
+    "warmth": 4,
+    "material_thickness": 1,
+    "valid_mods": [ "resized_large" ]
+  },
+  {
+    "id": "zeonJacketZhigh",
+    "copy-from": "jacket_leather_red",
+    "type": "ARMOR",
+    "name": { "str": "space army jacket" },
+    "description": "A camo leather jacket, for space soilders.  It also has several golden buttons and ropes, so it is quite fancy."
+  },
+  {
+    "id": "armor_samuraiOrnamental",
+    "copy-from": "armor_samurai",
+    "looks_like": "armor_samurai",
+    "type": "ARMOR",
+    "name": { "str": "ornamental O-yoroi" },
+    "description": "An ornamental suit of Japanese samurai armor.  Looks fancier compared to the traditional ones, and looks bulkier.",
+    "weight": "15220 g",
+    "volume": "18500 ml",
+    "price": "900 USD",
+    "price_postapoc": "80 USD",
+    "bashing": 8,
+    "material": [ "iron", "leather" ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "covers": [ "torso", "legs", "arms", "hands" ],
+    "coverage": 85,
+    "encumbrance": 35,
+    "warmth": 25,
+    "material_thickness": 4,
+    "flags": [ "VARSIZE", "STURDY", "OUTER" ]
+  },
+  {
+    "id": "shield_woodenScabbard",
+    "copy-from": "shield_wooden",
+    "looks_like": "shield_wooden",
+    "type": "ARMOR",
+    "name": { "str": "wooden scabbard shield" },
+    "description": "A crude wooden shield lacking any metal or leather reinforcement.  Tolerable weight but not very tough.  Also have a sheath to hold a sword.",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Sheath sword",
+      "holster_msg": "You sheath your %s",
+      "max_volume": "2750 ml",
+      "flags": [ "SHEATH_SWORD" ]
+    }
+  },
+  {
+    "id": "shield_wooden_largeScabbard",
+    "copy-from": "shield_wooden_large",
+    "looks_like": "shield_wooden_large",
+    "type": "ARMOR",
+    "name": { "str": "large wooden scabbard shield" },
+    "description": "A crude wooden tower shield lacking any metal or leather reinforcement.  Bulky, but offers a decent amount of protection.  Also have a sheath to hold a sword.",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Sheath sword",
+      "holster_msg": "You sheath your %s",
+      "max_volume": "2750 ml",
+      "flags": [ "SHEATH_SWORD" ]
+    }
+  },
+  {
+    "id": "shield_leatherScabbard",
+    "copy-from": "shield_leather",
+    "looks_like": "shield_leather",
+    "type": "ARMOR",
+    "name": { "str": "leather-reinforced scabbard shield" },
+    "description": "A simple round shield made of wood with leather reinforcement.  Sturdier and stronger than a simple wooden shield, and less encumbering than a metal one.  Also have a sheath to hold a sword.",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Sheath sword",
+      "holster_msg": "You sheath your %s",
+      "max_volume": "2750 ml",
+      "flags": [ "SHEATH_SWORD" ]
+    }
+  },
+  {
+    "id": "shield_bandedScabbard",
+    "copy-from": "shield_banded",
+    "looks_like": "shield_banded",
+    "type": "ARMOR",
+    "name": { "str": "banded scabbard shield" },
+    "description": "A simple round shield made of wood with bands of steel reinforcing it.  Stronger than a simple wooden shield, but also more encumbering.  Also have a sheath to hold a sword.",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Sheath sword",
+      "holster_msg": "You sheath your %s",
+      "max_volume": "2750 ml",
+      "flags": [ "SHEATH_SWORD" ]
+    }
+  },
+  {
+    "id": "shield_leather_largeScabbard",
+    "copy-from": "shield_leather_large",
+    "looks_like": "shield_leather_large",
+    "type": "ARMOR",
+    "name": { "str": "large leather-reinforced scabbard shield" },
+    "description": "A large shield made of wood with leather reinforcement.  Sturdier and stronger than a basic wooden shield, and less encumbering than a metal one.  Also have a sheath to hold a sword.",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Sheath sword",
+      "holster_msg": "You sheath your %s",
+      "max_volume": "2750 ml",
+      "flags": [ "SHEATH_SWORD" ]
+    }
+  },
+  {
+    "id": "shield_banded_largeScabbard",
+    "copy-from": "shield_banded_large",
+    "looks_like": "shield_banded_large",
+    "type": "ARMOR",
+    "name": { "str": "large banded scabbard shield" },
+    "description": "A large shield made of wood with steel bands reinforcing it.  Stronger than a simple wooden shield, but also more encumbering.  Also have a sheath to hold a sword.",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Sheath sword",
+      "holster_msg": "You sheath your %s",
+      "max_volume": "2750 ml",
+      "flags": [ "SHEATH_SWORD" ]
+    }
+  },
+  {
+    "id": "shield_weldedScabbard",
+    "copy-from": "shield_welded",
+    "looks_like": "shield_welded",
+    "type": "ARMOR",
+    "name": { "str": "welded scabbard shield" },
+    "description": "A shield made out of steel armor plating with handles welded on.  It's a lot heavier and less well-made compared to a proper medieval shield, but it certainly works.  Also have a sheath to hold a sword.",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Sheath sword",
+      "holster_msg": "You sheath your %s",
+      "max_volume": "2750 ml",
+      "flags": [ "SHEATH_SWORD" ]
+    }
+  },
+  {
+    "id": "shield_welded_superalloyScabbard",
+    "copy-from": "shield_welded_superalloy",
+    "looks_like": "shield_welded_superalloy",
+    "type": "ARMOR",
+    "name": { "str": "welded superalloy scabbard shield" },
+    "description": "A shield made out of superalloy armor plating with handles welded on.  It's heavier and less well-made compared to a proper medieval shield, but it certainly works.  Also have a sheath to hold a sword.",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Sheath sword",
+      "holster_msg": "You sheath your %s",
+      "max_volume": "2750 ml",
+      "flags": [ "SHEATH_SWORD" ]
+    }
+  },
+  {
+    "id": "shield_spikedScabbard",
+    "copy-from": "shield_spiked",
+    "looks_like": "shield_spiked",
+    "type": "ARMOR",
+    "name": { "str": "spiked scabbard shield" },
+    "description": "A metal reinforced shield with spikes jutting out of it.  Can be used as a melee weapon if need be.  Also have a sheath to hold a sword.",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Sheath sword",
+      "holster_msg": "You sheath your %s",
+      "max_volume": "2750 ml",
+      "flags": [ "SHEATH_SWORD" ]
+    }
+  },
+  {
+    "id": "shield_spiked_largeScabbard",
+    "copy-from": "shield_spiked_large",
+    "looks_like": "shield_spiked_large",
+    "type": "ARMOR",
+    "name": { "str": "large spiked scabbard shield" },
+    "description": "A large metal reinforced shield with spikes jutting out of it.  Can be used as a melee weapon if need be.  Also have a sheath to hold a sword.",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Sheath sword",
+      "holster_msg": "You sheath your %s",
+      "max_volume": "2750 ml",
+      "flags": [ "SHEATH_SWORD" ]
+    }
+  },
+  {
+    "id": "shield_ballisticMagpouch",
+    "copy-from": "shield_ballistic",
+    "looks_like": "shield_ballistic",
+    "type": "ARMOR",
+    "name": { "str": "ballistic nmag pouch shield" },
+    "description": "A heavy composite shield used by SWAT teams and other armed forces.  It can handle the occasional pistol bullet, but its heavy-duty nature means it's quite encumbering and doesn't cover the legs very well.  Also have a fabric ammo pouch that can be strapped to your leg and capable of holding two magazines close at hand.",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stash ammo",
+      "holster_msg": "You stash your %s.",
+      "multi": 2,
+      "min_volume": "50 ml",
+      "max_volume": "500 ml",
+      "draw_cost": 40,
+      "flags": [ "MAG_COMPACT", "SPEEDLOADER" ]
+    }
+  },
+  {
+	"id": "mask_cavalry_chainmailZhigh",
+	"repairs_like": "mask_cavalry_iron",
+	"type": "ARMOR",
+	"name": { "str": "chainmail battle mask" },
+	"description": "A face-covering mask made from tightly woven rings of iron chainmail, modeled after ancient battle masks.  It's lighter than a full metal mask but offers modest protection and a fearsome post-apocalyptic presence.",
+	"weight": "1400 g",
+	"volume": "500 ml",
+	"price": "150 USD",
+	"price_postapoc": "3 USD",
+	"material": [ "iron", "cotton" ],
+	"symbol": "[",
+	"looks_like": "mask_bal",
+	"color": "light_red",
+	"covers": [ "mouth", "eyes" ],
+	"coverage": 95,
+	"encumbrance": 12,
+	"warmth": 5,
+	"material_thickness": 2,
+	"environmental_protection": 0,
+	"flags": [ "STURDY" ]
   }
 ]

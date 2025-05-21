@@ -122,7 +122,7 @@
     "id": "wall_kit",
     "looks_like": "shelter_kit",
     "type": "TOOL",
-    "category": "tools",
+    "category": "deployables",
     "name": { "str": "wall kit" },
     "description": "This is a rolled up wall kit, which you could make a wall or an improvised barricade out of one.  It could break easliy if something blows up nearby.",
     "weight": "1033 g",
@@ -134,7 +134,8 @@
     "material": [ "plastic", "aluminum" ],
     "symbol": ";",
     "color": "green",
-    "use_action": { "type": "deploy_furn", "furn_type": "f_large_plastic_wall" }
+    "use_action": { "type": "deploy_furn", "furn_type": "f_large_plastic_wall" },
+    "flags": [ "DESTROY_ON_DECHARGE" ]
   },
   {
     "type": "furniture",
@@ -256,6 +257,134 @@
     "qualities": [ [ "BOIL", 1 ] ],
     "emits": [ "emit_hot_air2_blast", "emit_smaller_fd_fire" ],
     "flags": [ "FIRE", "LIGHT_240", "FLAMING", "TRADER_AVOID" ]
+  },
+  {
+    "type": "furniture",
+    "id": "f_tablesaw",
+    "name": "tablesaw",
+    "looks_like": "t_machinery_light",
+    "description": "A rotating saw blade set into a large flat table, for making straight measured cuts.  One of the key tools in a carpenter's arsenal.",
+    "symbol": "7",
+    "color": "yellow_red",
+    "move_cost_mod": 8,
+    "coverage": 50,
+    "required_str": 10,
+    "crafting_pseudo_item": "hacksaw",
+    "flags": [ "BLOCKSDOOR", "TRANSPARENT", "MOUNTABLE" ],
+    "//": "some day this should be something you can activate to take down and get an item version of.  That day is not today.",
+    "bash": {
+      "str_min": 40,
+      "str_max": 150,
+      "sound_fail": "clang!",
+      "items": [
+        { "item": "hacksaw", "charges": [ 0, 2 ] },
+        { "item": "cable", "charges": [ 0, 4 ] },
+        { "item": "scrap", "count": [ 8, 12 ] },
+        { "item": "steel_chunk", "count": [ 2, 4 ] },
+        { "item": "plastic_chunk", "count": [ 4, 10 ] },
+        { "item": "steel_plate", "count": [ 2, 4 ] }
+      ],
+      "//": "Variable reduction since might hit more or less material.",
+      "ranged": { "reduction": [ 20, 40 ], "destroy_threshold": 150, "block_unaimed_chance": "50%" }
+    },
+    "deconstruct": {
+      "items": [
+        { "item": "hacksaw", "charges": [ 0, 1 ] },
+        { "item": "cable", "charges": [ 4, 8 ] },
+        { "item": "steel_chunk", "count": [ 4, 6 ] },
+        { "item": "steel_lump", "count": [ 1, 2 ] },
+        { "item": "scrap", "count": [ 12, 16 ] },
+        { "item": "steel_plate", "count": [ 2, 4 ] },
+        { "item": "circsaw_blade", "count": [ 1, 2 ] },
+        { "item": "plastic_chunk", "count": [ 4, 14 ] },
+        { "item": "motor_small", "count": 1 }
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_mitresaw",
+    "name": "mitre saw",
+    "looks_like": "t_machinery_light",
+    "description": "A circular saw blade on an arm that can slide and rotate in several directions, this is a staple tool for nearly any carpentry.",
+    "symbol": "7",
+    "color": "yellow_cyan",
+    "move_cost_mod": -1,
+    "coverage": 40,
+    "required_str": 10,
+    "crafting_pseudo_item": "hacksaw",
+    "flags": [ "BLOCKSDOOR", "TRANSPARENT" ],
+    "//": "some day this should be something you can activate to take down and get an item version of.  That day is not today.",
+    "bash": {
+      "str_min": 40,
+      "str_max": 150,
+      "sound_fail": "clang!",
+      "items": [
+        { "item": "hacksaw", "charges": [ 0, 2 ] },
+        { "item": "cable", "charges": [ 0, 4 ] },
+        { "item": "scrap", "count": [ 8, 12 ] },
+        { "item": "steel_chunk", "count": [ 2, 4 ] },
+        { "item": "plastic_chunk", "count": [ 4, 10 ] },
+        { "item": "steel_plate", "count": [ 2, 4 ] }
+      ],
+      "//": "Variable reduction since might hit more or less material.",
+      "ranged": { "reduction": [ 20, 40 ], "destroy_threshold": 150, "block_unaimed_chance": "25%" }
+    },
+    "deconstruct": {
+      "items": [
+        { "item": "hacksaw", "charges": [ 0, 1 ] },
+        { "item": "cable", "charges": [ 4, 8 ] },
+        { "item": "pipe", "count": [ 4, 6 ] },
+        { "item": "steel_lump", "count": [ 1, 2 ] },
+        { "item": "scrap", "count": [ 12, 16 ] },
+        { "item": "steel_plate", "count": [ 2, 4 ] },
+        { "item": "circsaw_blade", "count": [ 1, 2 ] },
+        { "item": "plastic_chunk", "count": [ 4, 14 ] },
+        { "item": "motor_small", "count": 1 }
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_bandsaw",
+    "name": "bandsaw",
+    "looks_like": "t_machinery_light",
+    "description": "A ribbonlike sawblade runs in a single direction in this tool, allowing precise cuts at almost any angle.",
+    "symbol": "7",
+    "color": "yellow_cyan",
+    "move_cost_mod": -1,
+    "coverage": 50,
+    "required_str": 10,
+    "crafting_pseudo_item": "hacksaw",
+    "flags": [ "BLOCKSDOOR" ],
+    "bash": {
+      "str_min": 40,
+      "str_max": 150,
+      "sound_fail": "clang!",
+      "items": [
+        { "item": "hacksaw", "charges": [ 0, 2 ] },
+        { "item": "cable", "charges": [ 0, 4 ] },
+        { "item": "scrap", "count": [ 8, 12 ] },
+        { "item": "steel_chunk", "count": [ 2, 4 ] },
+        { "item": "plastic_chunk", "count": [ 4, 10 ] },
+        { "item": "steel_plate", "count": [ 2, 4 ] }
+      ],
+      "//": "Variable reduction since might hit more or less material.",
+      "ranged": { "reduction": [ 20, 40 ], "destroy_threshold": 150, "block_unaimed_chance": "50%" }
+    },
+    "deconstruct": {
+      "items": [
+        { "item": "hacksaw", "charges": [ 0, 1 ] },
+        { "item": "cable", "charges": [ 4, 8 ] },
+        { "item": "steel_chunk", "count": [ 4, 6 ] },
+        { "item": "steel_lump", "count": [ 1, 2 ] },
+        { "item": "scrap", "count": [ 12, 16 ] },
+        { "item": "steel_plate", "count": [ 2, 4 ] },
+        { "item": "wire", "count": [ 1, 2 ] },
+        { "item": "plastic_chunk", "count": [ 4, 14 ] },
+        { "item": "motor_small", "count": 1 }
+      ]
+    }
   },
   {
     "id": "flamecanZhigh",
