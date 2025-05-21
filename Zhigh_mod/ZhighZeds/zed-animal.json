@@ -27,7 +27,7 @@
     "luminance": 0,
     "harvest": "zombie_leather",
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "SWIMS", "AQUATIC", "POISON", "REVIVES", "FILTHY" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "SWIMS", "AQUATIC", "POISON", "REVIVES" ]
   },
   {
     "id": "mon_zombie_dog",
@@ -58,7 +58,7 @@
     "special_attacks": [ { "type": "bite", "cooldown": 5 } ],
     "death_function": [ "NORMAL" ],
     "upgrades": { "half_life": 28, "into_group": "GROUP_ZOMBIE_DOG_UPGRADE" },
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "REVIVES", "FILTHY" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "REVIVES" ]
   },
   {
     "id": "mon_dog_skeleton",
@@ -90,7 +90,7 @@
     "harvest": "mr_bones",
     "special_attacks": [ { "type": "bite", "cooldown": 5 } ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "HARDTOSHOOT", "REVIVES", "POISON", "FILTHY" ]
+    "flags": [ "SEES", "HEARS", "HARDTOSHOOT", "REVIVES", "POISON" ]
   },
   {
     "id": "mon_dog_zombie_cop",
@@ -124,7 +124,7 @@
     "special_attacks": [ { "type": "bite", "cooldown": 5 } ],
     "death_drops": { "subtype": "collection", "groups": [ [ "dog_cop", 40 ] ], "//": "40% chance of an item from group dog_cop" },
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "REVIVES", "PUSH_MON", "FILTHY" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "REVIVES", "PUSH_MON" ]
   },
   {
     "id": "mon_dog_zombie_rot",
@@ -154,7 +154,7 @@
     "harvest": "zombie",
     "special_attacks": [ { "type": "bite", "cooldown": 2, "accuracy": 4, "no_infection_chance": 12 } ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "REVIVES", "PUSH_MON", "FILTHY" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "REVIVES", "PUSH_MON" ]
   },
   {
     "id": "mon_zolf",
@@ -185,7 +185,7 @@
     "anger_triggers": [ "PLAYER_CLOSE", "HURT" ],
     "fear_triggers": [ "FIRE" ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "KEENNOSE", "BASHES", "POISON", "REVIVES", "FILTHY" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "KEENNOSE", "BASHES", "POISON", "REVIVES" ]
   },
   {
     "id": "mon_zombear",
@@ -219,7 +219,7 @@
     "anger_triggers": [ "PLAYER_CLOSE", "HURT" ],
     "fear_triggers": [ "FIRE" ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "REVIVES", "PUSH_MON", "FILTHY" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "REVIVES", "PUSH_MON" ]
   },
   {
     "id": "mon_zombie_pig",
@@ -261,8 +261,7 @@
       "BLEED",
       "BASHES",
       "POISON",
-      "REVIVES",
-      "FILTHY"
+      "REVIVES"
     ],
     "//": "1d8->2d5, minor bonus over 1d9"
   },
@@ -295,7 +294,7 @@
     "anger_triggers": [ "PLAYER_CLOSE", "HURT" ],
     "fear_triggers": [ "FIRE" ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "REVIVES", "FILTHY", "SWIMS" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "REVIVES", "SWIMS" ]
   },
   {
     "id": "mon_zoose",
@@ -328,7 +327,7 @@
     "anger_triggers": [ "PLAYER_CLOSE", "HURT" ],
     "fear_triggers": [ "FIRE" ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "REVIVES", "FILTHY" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "REVIVES" ]
   },
   {
     "id": "mon_zougar",
@@ -371,8 +370,7 @@
       "GOODHEARING",
       "BASHES",
       "POISON",
-      "REVIVES",
-      "FILTHY"
+      "REVIVES"
     ]
   }
 ]
