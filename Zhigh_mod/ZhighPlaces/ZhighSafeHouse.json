@@ -16,7 +16,7 @@
     "connections": [ { "point": [ 0, -1, 0 ], "connection": "local_road" } ],
     "occurrences": [ 0, 2 ],
     "locations": [ "wilderness" ],
-    "flags": [ "CLASSIC", "WILDERNESS", "ELECTRIC_GRID" ]
+    "flags": [ "CLASSIC", "WILDERNESS", "ELECTRIC_GRID", "GLOBALLY_UNIQUE" ]
   },
   {
     "type": "overmap_terrain",
@@ -100,7 +100,7 @@
         { "item": "television", "x": [ 19, 19 ], "y": [ 4, 4 ], "chance": 100 },
         { "item": "briefcase_AgentZhigh", "x": [ 18, 18 ], "y": [ 4, 4 ], "chance": 100 },
         { "group": "grenades", "x": [ 18, 18 ], "y": [ 4, 4 ], "chance": 80 },
-        { "group": "spy_pen_collections", "x": [ 18, 18 ], "y": [ 4, 4 ], "chance": 100, "repeat": [ 2, 3 ] },
+        { "group": "spy_pen_collections", "x": [ 18, 18 ], "y": [ 4, 4 ], "chance": 100, "repeat": [ 14, 25 ] },
         { "item": "char_smoker", "x": [ 18, 18 ], "y": [ 19, 19 ], "chance": 100 },
         { "item": "knife_hitmanZhigh", "x": [ 18, 18 ], "y": [ 16, 16 ], "chance": 100 },
         { "item": "lockpickKitHitmanZhigh", "x": [ 10, 10 ], "y": [ 11, 11 ], "chance": 100 },
