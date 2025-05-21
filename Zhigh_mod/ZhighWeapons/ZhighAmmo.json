@@ -29,7 +29,7 @@
     "volume": "1 L",
     "price": "200 USD",
     "price_postapoc": "20 USD",
-    "drop": "improvised_pipebomb_act",
+    "drop": "pirateBombZhigh_act",
     "looks_like": "cannon_round_ball",
     "//2": "Base damage of 544, rounded down to 450 to be close to 25% that of round shot, balanced as FMJ.",
     "damage": { "damage_type": "bullet", "amount": 450, "armor_penetration": 355 },
@@ -498,7 +498,7 @@
     "count": 50,
     "stack_size": 50,
     "loudness": 9,
-    "effects": [ "NOGIB", "FLARE", "NEVER_MISFIRES" ]
+    "effects": [ "NOGIB", "FIREWORKZHIGH", "NEVER_MISFIRES" ]
   },
   {
     "type": "AMMO",
@@ -561,11 +561,27 @@
     "flags": [ "LIGHT_8", "TRADER_AVOID", "SLEEP_IGNORE" ]
   },
   {
-    "type": "AMMO",
     "id": "paintball_dead",
-    "copy-from": "paintball",
+    "type": "GENERIC",
+    "category": "scrap_plastic",
     "name": { "str": "dead glowing paintball" },
-    "color": "dark_gray"
+    "description": "This is a piece of plastic.  It could be used to make a plastic scrap.",
+    "weight": "1 g",
+    "volume": "2 ml",
+    "price": "0 cent",
+    "price_postapoc": "10 cent",
+    "material": "plastic",
+    "symbol": ",",
+    "color": "light_blue",
+    "flags": [ "NO_SALVAGE" ],
+    "use_action": {
+      "menu_text": "Strike the striker",
+      "type": "transform",
+      "target": "plastic_scrap",
+      "active": false,
+      "msg": "You change the plastic orb to a scrap."
+    },
+    "stackable": true
   },
   {
     "type": "AMMO",
@@ -866,12 +882,13 @@
   {
     "id": "shot_flare",
     "copy-from": "shot_slug",
-    "looks_like": "bombard_flare",
+    "looks_like": "signal_flare",
     "type": "AMMO",
     "name": { "str": "flare shot" },
-    "description": "A shotshell designed to shoot flares.",
+    "description": "A shotshell designed to shoot flares.  Compared to normal signal flares, this one have a shorter range.",
     "price": "3500 USD",
     "count": 10,
+	"range": 22,
     "flags": [  ],
     "proportional": { "damage": { "damage_type": "stab", "amount": 0.2 }, "recoil": 1.6, "loudness": 3.8 },
     "drop": "handflare_lit",
@@ -915,7 +932,7 @@
     "type": "AMMO",
     "name": { "str": "fire extinguisher powder" },
     "description": "Some powder for extinguishing fire.",
-    "weight": "2 g",
+    "weight": "130 g",
     "volume": "2 ml",
     "price": "50 USD",
     "price_postapoc": "10 USD",
@@ -987,10 +1004,9 @@
     "phase": "liquid",
     "ammo_type": "chemical_spray",
     "looks_like": "marloss_gel",
-    "range": 4,
     "count": 100,
-    "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 99 },
-    "effects": [ "LIGHTNING", "SHOT", "NEVER_MISFIRES", "PLASMA" ]
+    "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 3 },
+    "effects": [ "LIGHTNING", "SHOT", "NEVER_MISFIRES" ]
   },
   {
     "id": "ZhighGas_smoke",
@@ -1008,7 +1024,6 @@
     "phase": "liquid",
     "ammo_type": "chemical_spray",
     "looks_like": "chem_chloroform",
-    "range": 4,
     "count": 100,
     "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 99 },
     "effects": [ "SMOKE", "TRAIL", "NEVER_MISFIRES", "JET" ]
@@ -1029,7 +1044,6 @@
     "phase": "liquid",
     "ammo_type": "chemical_spray",
     "looks_like": "chem_agar",
-    "range": 4,
     "count": 100,
     "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 99 },
     "effects": [ "TEARGAS", "TRAIL", "NEVER_MISFIRES", "JET" ]
@@ -1052,8 +1066,8 @@
     "range": 4,
     "count": 100,
     "looks_like": "nicotine_liquid",
-    "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 99 },
-    "effects": [ "CORROSIONGAS", "TRAIL", "NEVER_MISFIRES", "JET" ]
+    "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 1 },
+    "effects": [ "CORROSIONGAS", "NEVER_MISFIRES", "JET" ]
   },
   {
     "id": "ZhighGas_flashpowder",
@@ -1072,7 +1086,7 @@
     "phase": "liquid",
     "ammo_type": "chemical_spray",
     "range": 0,
-    "damage": { "damage_type": "heat", "amount": 3, "armor_penetration": 99 },
+    "damage": { "damage_type": "heat", "amount": 3, "armor_penetration": 1 },
     "shape": [ "cone", { "half_angle": 30, "length": 8 } ],
     "count": 100,
     "effects": [ "BLINDS_EYES", "NEVER_MISFIRES" ]
@@ -1457,6 +1471,134 @@
     "container": "bottle_plastic_small",
     "effects": [ "BLINDS_EYES", "NEVER_MISFIRES" ],
     "count": 50
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_bulletSpikeZhigh",
+    "symbol": "*",
+    "color": "light_gray",
+    "looks_like": "rock",
+    "name": { "str": "sling spiked bullet" },
+    "description": "A ball of lead roughly the size of a baseball.  Traditionally thrown from a sling, and hits a lot harder than any old rock.  Now with spikes, this gives more damage.",
+    "material": "lead",
+    "ammo_type": "rock",
+    "weight": "150 g",
+    "volume": "50 ml",
+    "bashing": 14,
+    "damage": [ { "damage_type": "bash", "amount": 16 }, { "damage_type": "stab", "amount": 6 } ],
+    "range": 14,
+    "dispersion": 10,
+    "loudness": 0,
+    "to_hit": -1,
+    "dont_recover_one_in": 1000,
+    "effects": [ "NEVER_MISFIRES", "NON_FOULING" ]
+  },
+  {
+    "id": "flintlock_flechetteZhigh",
+    "copy-from": "flintlock_shot",
+    "looks_like": "flintlock_shot",
+    "type": "AMMO",
+    "name": { "str": "paper flechette cartridge" },
+    "description": "A paper cartridge containing black powder and nails.  Historically used to reload muzzleloaders in a more reasonable time.",
+    "relative": { "damage": { "damage_type": "bullet", "amount": -20, "armor_penetration": 30, "armor_multiplier": -1 } },
+    "shape": [ "cone", { "half_angle": 10, "length": 12 } ]
+  },
+  {
+	"id": "survivor_flare",
+	"type": "TOOL",
+    "weight": "128 g",
+    "volume": "50 ml",
+    "material": [ "plastic", "powder" ],
+    "color": "green",
+    "symbol": ";",
+	"copy-from": "grenade_canister",
+	"looks_like": "handflare",
+	"name": "survivor's flare",
+    "flags": [ "ACT_ON_RANGED_HIT" ],
+	"description": "This flare is unique, and when activated, sends some signal to bring some survivors.",
+	"countdown_action": { "menu_text": "Pull pin", "type": "transform", "target": "survivor_flare_act" }
+  },
+  {
+	"id": "survivor_flare_act",
+	"type": "TOOL",
+	"copy-from": "survivor_flare",
+	"name": "active survivor's signal flare",
+	"description": "This unique flare currently is activated, thus sending some signal to bring some survivors.",
+	"emits": [ "emit_survivor_cloud" ],
+	"countdown_interval": 30,
+	"countdown_action": { "type": "transform", "target": "handflare_dead" },
+	"flags": [ "TRADER_AVOID", "SLEEP_IGNORE", "LIGHT_8" ]
+  },
+  {
+    "id": "signal_survivor_flare",
+    "type": "AMMO",
+	"copy-from": "signal_flare",
+    "name": { "str": "survivor's signal flare" },
+    "damage": { "damage_type": "heat", "amount": 14 },
+    "dispersion": 20,
+    "recoil": 150,
+    "drop": "survivor_flare_act"
+  },
+  {
+	"id": "supply_flare",
+	"looks_like": "survivor_flare",
+	"type": "TOOL",
+    "weight": "128 g",
+    "volume": "50 ml",
+    "material": [ "plastic", "powder" ],
+    "color": "green",
+    "symbol": ";",
+	"copy-from": "grenade_canister",
+	"name": "supply drop flare",
+    "flags": [ "ACT_ON_RANGED_HIT" ],
+	"description": "This flare is unique, and when activated, sends some signal to bring some supplies.",
+	"countdown_action": { "menu_text": "Pull pin", "type": "transform", "target": "supply_flare_act" }
+  },
+  {
+	"id": "supply_flare_act",
+	"looks_like": "survivor_flare_act",
+	"type": "TOOL",
+	"copy-from": "supply_flare",
+	"name": "active supply drop signal flare",
+	"description": "This unique flare currently is activated, thus sending some signal to bring some supplies.",
+	"emits": [ "emit_supplydrop_gas_leak" ],
+	"countdown_interval": 30,
+	"countdown_action": { "type": "transform", "target": "handflare_dead" },
+	"flags": [ "TRADER_AVOID", "SLEEP_IGNORE", "LIGHT_8" ]
+  },
+  {
+    "id": "signal_supply_flare",
+	"looks_like": "signal_survivor_flare",
+    "type": "AMMO",
+	"copy-from": "signal_flare",
+    "name": { "str": "supply drop signal flare" },
+    "damage": { "damage_type": "heat", "amount": 14 },
+    "dispersion": 20,
+    "recoil": 150,
+    "drop": "supply_flare_act"
+  },
+  {
+    "id": "signal_flashZhigh",
+    "type": "AMMO",
+    "name": { "str": "flash flare" },
+    "description": "A lighter flashbang cartridge made for use in flare guns.  It appears to be a modified 12 gauge shotgun shell.",
+    "weight": "32 g",
+    "volume": "250 ml",
+    "price": "5 USD",
+    "price_postapoc": "5 USD",
+    "material": [ "plastic", "powder" ],
+    "symbol": "=",
+    "color": "red",
+    "count": 4,
+    "stack_size": 20,
+    "ammo_type": "signal_flare",
+    "casing": "shot_hull",
+    "range": 30,
+    "damage": { "damage_type": "heat", "amount": 16 },
+    "dispersion": 200,
+    "recoil": 100,
+    "loudness": 55,
+    "effects": [ "NEVER_MISFIRES", "DAZZLEAOEFLAREZHIGH", "NO_EMBED" ]
   },
   {
     "id": "40x46mm_antiFungi",

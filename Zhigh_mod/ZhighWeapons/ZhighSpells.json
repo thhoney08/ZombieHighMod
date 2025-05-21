@@ -1,5 +1,22 @@
 [
   {
+    "type": "SPELL",
+    "id": "mon_summon_survivor_legionZhigh",
+    "name": { "str": "Summon Survivors" },
+    "description": "Summons survivors.",
+    "flags": [ "NO_LEGS", "NO_HANDS", "NO_FAIL", "SOMATIC", "PERMANENT", "NO_EXPLOSION_VFX" ],
+    "valid_targets": [ "ground", "self" ],
+    "min_damage": 38,
+    "max_damage": 40,
+    "min_range": 0,
+    "max_range": 0,
+    "min_aoe": 2,
+    "max_aoe": 10,
+    "effect": "summon",
+    "field_id": "fd_spotlight",
+    "effect_str": "mon_survivor_human_pipeSpell"
+  },
+  {
     "id": "staminaCandyZhigh",
     "type": "SPELL",
     "name": { "str": "stamina regain" },
@@ -9,7 +26,7 @@
     "min_duration": 800,
     "max_duration": 850,
     "effect": "projectile_attack",
-    "effect_str": "staminupMaestro",
+    "effect_str": "staminupCandy",
     "min_damage": 0,
     "max_damage": 0,
     "field_id": "fd_staminaeffect",
@@ -66,7 +83,7 @@
     "name": { "str": "Life Drain Spell" },
     "description": "This exists only to trigger on-self effects from an on-hit action.",
     "valid_targets": [ "hostile" ],
-    "sprite": "fd_null",
+    "sprite": "fd_healeffect",
     "effect": "target_attack",
     "min_range": 2,
     "max_range": 2,
@@ -78,55 +95,56 @@
     "type": "SPELL",
     "name": { "str": "Life Drain Effect" },
     "description": "This creates the effect that heals the caster.",
-    "sprite": "fd_null",
+    "sprite": "fd_healeffect",
     "valid_targets": [ "self" ],
     "effect": "target_attack",
     "min_damage": -14,
     "max_damage": -15,
-    "flags": [ "RANDOM_DAMAGE", "SILENT", "NO_EXPLOSION_VFX" ]
+    "flags": [ "RANDOM_DAMAGE", "SILENT", "NO_EXPLOSION_VFX", "NO_FAIL" ]
   },
   {
     "id": "pullZhigh",
     "type": "SPELL",
     "name": "pulling",
     "description": ".",
-    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_EXPLOSION_VFX" ],
     "effect": "area_pull",
-    "effect_filter": [ "ally", "hostile" ],
-    "valid_targets": [ "self" ],
+    "effect_filter": [ "ally", "hostile", "self" ],
+    "valid_targets": [ "ally", "hostile", "self", "ground" ],
     "min_range": 0,
     "max_range": 0,
     "range_increment": 2.0,
     "min_aoe": 0,
     "max_aoe": 0,
-	"energy_source": "STAMINA",
+	"energy_source": "NONE",
     "base_energy_cost": 10,
     "aoe_increment": 1.0,
-    "extra_effects": [ { "id": "pullZhigh_2" } ]
+    "extra_effects": [ { "id": "pullZhigh_2" } ],
+    "flags": [ "RANDOM_DAMAGE", "SILENT", "NO_EXPLOSION_VFX", "NO_FAIL" ]
   },
   {
     "id": "pullZhigh_2",
     "type": "SPELL",
     "name": "pulling II",
     "description": ".",
-    "flags": [ "SILENT", "NO_EXPLOSION_VFX" ],
     "effect": "area_pull",
-    "effect_filter": [ "ally", "hostile" ],
-    "valid_targets": [ "ally", "hostile", "ground" ],
+    "effect_filter": [ "ally", "hostile", "self" ],
+    "valid_targets": [ "ally", "hostile", "self", "ground" ],
+	"energy_source": "NONE",
     "min_range": 5,
     "max_range": 6,
     "min_aoe": 8,
-    "max_aoe": 9
+    "max_aoe": 9,
+    "flags": [ "RANDOM_DAMAGE", "SILENT", "NO_EXPLOSION_VFX", "NO_FAIL" ]
   },
   {
     "id": "pushZhigh",
     "type": "SPELL",
     "name": "pushing",
     "description": ".",
-    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_EXPLOSION_VFX" ],
+    "flags": [ "NO_HANDS", "NO_LEGS", "SILENT", "NO_EXPLOSION_VFX" ],
     "effect": "area_push",
-    "effect_filter": [ "ally", "hostile" ],
-    "valid_targets": [ "self" ],
+    "effect_filter": [ "ally", "hostile", "self" ],
+    "valid_targets": [ "ally", "hostile", "self", "ground" ],
     "min_range": 0,
     "max_range": 0,
     "range_increment": 2.0,
@@ -140,16 +158,30 @@
   {
     "id": "pushZhigh_2",
     "type": "SPELL",
-    "name": "pushing II",
+    "name": "pushing",
     "description": ".",
-    "flags": [ "SILENT", "NO_EXPLOSION_VFX" ],
+    "flags": [ "NO_HANDS", "NO_LEGS", "SILENT", "NO_EXPLOSION_VFX" ],
     "effect": "area_push",
-    "effect_filter": [ "ally", "hostile" ],
-    "valid_targets": [ "ally", "hostile", "ground" ],
+    "effect_filter": [ "ally", "hostile", "self" ],
+    "valid_targets": [ "ally", "hostile", "self", "ground" ],
     "min_range": 5,
     "max_range": 6,
     "min_aoe": 8,
     "max_aoe": 9
+  },
+  {
+    "id": "pushZhigh_3",
+    "type": "SPELL",
+    "name": "pushing",
+    "description": ".",
+    "flags": [ "NO_HANDS", "NO_LEGS", "SILENT", "NO_EXPLOSION_VFX" ],
+    "effect": "area_push",
+    "effect_filter": [ "ally", "hostile", "self" ],
+    "valid_targets": [ "ally", "hostile", "self", "ground" ],
+    "min_range": 8,
+    "max_range": 9,
+    "min_aoe": 10,
+    "max_aoe": 14
   },
   {
     "id": "entertainerTeleportZhigh",
@@ -237,8 +269,8 @@
     "field_id": "fd_healeffect",
     "min_field_intensity": 2,
     "max_field_intensity": 2,
-    "min_damage": -2,
-    "max_damage": -3,
+    "min_damage": -10,
+    "max_damage": -23,
     "min_aoe": 2,
     "max_aoe": 2,
     "aoe_increment": 5,
@@ -336,16 +368,11 @@
     "min_damage": 1,
     "max_damage": 1,
     "extra_effects": [
-      { "id": "dragonBreathZhigh" },
       { "id": "maestroStrengZhigh" },
       { "id": "maestroStamiZhigh" },
       { "id": "maestroSpeedZhigh" },
       { "id": "vacancerHealZhigh", "hit_self": true },
       { "id": "zhigh_regen", "hit_self": true },
-      { "id": "camFlashZhigh" },
-      { "id": "waveStrikeZhigh" },
-      { "id": "backattackerRushZhigh" },
-      { "id": "entertainerTeleportZhigh" },
       { "id": "pushZhigh" },
       { "id": "pullZhigh" },
       { "id": "zhigh_regen" }
@@ -363,7 +390,7 @@
     "max_range": 2,
     "min_duration": 1500,
     "max_duration": 3000,
-    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX" ]
+    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX", "NO_FAIL" ]
   },
   {
     "id": "HitZhigh",
@@ -376,7 +403,7 @@
     "max_damage": 14,
     "min_duration": 1500,
     "max_duration": 3000,
-    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX" ]
+    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX", "NO_FAIL" ]
   },
   {
     "id": "CutZhigh",
@@ -391,7 +418,7 @@
     "max_duration": 3000,
     "min_pierce": 3,
     "max_pierce": 5,
-    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX" ]
+    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX", "NO_FAIL" ]
   },
   {
     "id": "PierceZhigh",
@@ -406,7 +433,7 @@
     "max_duration": 3000,
     "min_pierce": 5,
     "max_pierce": 7,
-    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX" ]
+    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX", "NO_FAIL" ]
   },
   {
     "id": "FreezeSpellZhigh",
@@ -420,7 +447,7 @@
     "max_range": 2,
     "min_duration": 1500,
     "max_duration": 3000,
-    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX" ]
+    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX", "NO_FAIL" ]
   },
   {
     "id": "BurnSpellZhigh",
@@ -434,7 +461,7 @@
     "max_range": 2,
     "min_duration": 1500,
     "max_duration": 3000,
-    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX" ]
+    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX", "NO_FAIL" ]
   },
   {
     "id": "EmpSpellZhigh",
@@ -448,7 +475,7 @@
     "max_range": 2,
     "min_duration": 1500,
     "max_duration": 3000,
-    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX" ]
+    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX", "NO_FAIL" ]
   },
   {
     "id": "acidSpellZhigh",
@@ -456,13 +483,13 @@
     "name": { "str": "corroding" },
     "description": "Melts the target.",
     "effect": "target_attack",
-    "effect_str": "emp",
+    "effect_str": "corroding",
     "valid_targets": [ "hostile" ],
     "min_range": 2,
     "max_range": 2,
     "min_duration": 1500,
     "max_duration": 3000,
-    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX" ]
+    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX", "NO_FAIL" ]
   },
   {
     "id": "CritZhigh",
@@ -475,20 +502,114 @@
     "max_damage": 140,
     "min_duration": 1500,
     "max_duration": 3000,
-    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX" ]
+    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX", "NO_FAIL" ]
   },
   {
-    "id": "pushWeapEffectZhigh",
+    "id": "stunnedZhigh",
     "type": "SPELL",
-    "name": "pushing",
-    "description": "Pushes enemies away.",
-    "flags": [ "SILENT", "NO_EXPLOSION_VFX" ],
-    "effect": "area_push",
-    "effect_filter": [ "hostile" ],
-    "valid_targets": [ "ally", "hostile", "ground" ],
-    "min_range": 3,
-    "max_range": 4,
-    "min_aoe": 3,
-    "max_aoe": 4
+    "name": { "str": "Stunned" },
+    "description": "Stuns the target.",
+    "effect": "target_attack",
+    "effect_str": "stunned",
+    "valid_targets": [ "hostile" ],
+    "min_range": 2,
+    "max_range": 2,
+    "min_duration": 15000,
+    "max_duration": 30000,
+    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX", "NO_FAIL" ]
+  },
+  {
+    "id": "dazedZhigh",
+    "type": "SPELL",
+    "name": { "str": "Dazed" },
+    "description": "Dazes the target.",
+    "effect": "target_attack",
+    "effect_str": "dazed",
+    "valid_targets": [ "hostile" ],
+    "min_range": 2,
+    "max_range": 2,
+    "min_duration": 15000,
+    "max_duration": 30000,
+    "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "RANDOM_DURATION", "NO_EXPLOSION_VFX", "NO_FAIL" ]
+  },
+  {
+    "id": "pullGrappleZhigh",
+    "type": "SPELL",
+    "name": "pulling",
+    "description": ".",
+    "flags": [ "NO_HANDS", "NO_LEGS", "SILENT", "NO_EXPLOSION_VFX" ],
+    "valid_targets": [ "ground" ],
+    "effect": "summon",
+    "effect_str": "mon_targetZhigh",
+    "energy_source": "STAMINA",
+    "min_range": 20,
+    "max_range": 20,
+    "range_increment": 1.2,
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_duration": 1,
+    "max_duration": 1,
+    "extra_effects": [ { "id": "pullGrappleZhigh2" } ]
+  },
+  {
+    "id": "pullGrappleZhigh2",
+    "type": "SPELL",
+    "name": ".",
+    "description": ".",
+    "valid_targets": [ "ally" ],
+    "effect": "target_attack",
+    "flags": [ "SWAP_POS", "SILENT", "NO_EXPLOSION_VFX" ],
+    "min_range": 1,
+    "max_range": 1
+  },
+  {
+    "id": "noiseChainZhigh",
+    "type": "SPELL",
+    "name": { "str": "engine noise" },
+    "description": "Makes engine noise at your location",
+    "message": "You hear some engine noise from your location!",
+    "sound_description": "engine noise",
+    "sound_type": "combat",
+    "sound_ambient": true,
+    "sound_id": "chainsaw_idle",
+    "sound_variant": "chainsaw_idle",
+    "min_damage": 50,
+    "max_damage": 50,
+    "valid_targets": [ "self" ],
+    "effect": "noise",
+    "extra_effects": [ { "id": "noiseChainZhigh2" } ]
+  },
+  {
+    "id": "noiseChainZhigh2",
+    "type": "SPELL",
+    "name": { "str": "engine noise" },
+    "description": "Makes engine noise at your location",
+    "message": "You hear some engine noise from your location!",
+    "sound_description": "engine noise",
+    "sound_type": "combat",
+    "sound_ambient": true,
+    "sound_id": "chainsaw_idle",
+    "sound_variant": "chainsaw_idle",
+    "min_damage": 50,
+    "max_damage": 50,
+    "valid_targets": [ "self" ],
+    "effect": "noise",
+    "extra_effects": [ { "id": "noiseChainZhigh3" } ]
+  },
+  {
+    "id": "noiseChainZhigh3",
+    "type": "SPELL",
+    "name": { "str": "engine noise" },
+    "description": "Makes engine noise at your location",
+    "message": "You hear some engine noise from your location!",
+    "sound_description": "engine noise",
+    "sound_type": "combat",
+    "sound_ambient": true,
+    "sound_id": "chainsaw_idle",
+    "sound_variant": "chainsaw_idle",
+    "min_damage": 50,
+    "max_damage": 50,
+    "valid_targets": [ "self" ],
+    "effect": "noise"
   }
 ]

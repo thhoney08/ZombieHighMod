@@ -1446,7 +1446,7 @@
     "color": "green",
     "initial_charges": 2,
     "max_charges": 2,
-    "turns_per_charge": 3,
+    "turns_per_charge": 1,
     "emits": [ "emit_shadow_field", "emit_smoke_stream" ],
     "use_action": {
       "type": "explosion",
@@ -1486,5 +1486,156 @@
     "countdown_interval": 500,
     "countdown_action": { "type": "transform", "target": "jerrycan_big" },
     "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "id": "shockbombBigZhigh",
+    "looks_like": "heavy_battery_cell",
+    "copy-from": "grenade_canister",
+    "type": "GENERIC",
+    "name": { "str": "shock bomb, big" },
+    "description": "This is a modified heavy battery.  Use this item to pull the pin and light the fuse, turning it into an active shock bomb.  Ten turns after you do that, it will begin to expel a thick shock cloud.  This shock will slow those who enter it, as well as shocking them.",
+    "price": "38 USD",
+    "price_postapoc": "4 USD",
+    "weight": "13813 g",
+    "volume": "20000 ml",
+	"countdown_interval": 10,
+    "countdown_action": { "type": "transform", "target": "shockbombBigZhigh_act" }
+  },
+  {
+    "id": "shockbombBigZhigh_act",
+    "looks_like": "heavy_battery_cell",
+    "copy-from": "shockbombBigZhigh",
+    "type": "GENERIC",
+    "name": { "str": "armed shock bomb, big" },
+    "description": "This big shock bomb has had its pin removed and is expelling thick shock.",
+    "emits": [ "emit_shock_cloud_big" ],
+    "countdown_interval": 500,
+    "countdown_action": { "type": "transform", "target": "heavy_battery_cell" },
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "id": "pirateBombZhigh",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "pirate bomb" },
+    "looks_like": "pipebomb",
+    "description": "This is a classic bomb which is used by pirates, by emptying the cannonball and filling it with gunpowder.  Light it up and it will give doom to it's victims.",
+    "weight": "1200 g1200 g",
+    "volume": "200 ml",
+    "price": "15 USD",
+    "to_hit": 1,
+    "bashing": 5,
+    "material": "steel",
+    "symbol": "*",
+    "color": "light_gray",
+    "explode_in_fire": true,
+    "explosion": {
+      "damage": 30,
+      "radius": 5,
+      "fragment": { "impact": { "damage_type": "bullet", "amount": 70, "armor_multiplier": 4 }, "range": 5 }
+    },
+    "use_action": {
+      "target": "pirateBombZhigh_act",
+      "msg": "You light the fuse on the pipe bomb.",
+      "target_charges": 3,
+      "active": true,
+      "need_fire": 1,
+      "menu_text": "Light fuse",
+      "type": "transform"
+    },
+    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "NPC_ACTIVATE", "GRENADE" ]
+  },
+  {
+    "id": "pirateBombZhigh_act",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "active pirate bomb" },
+    "looks_like": "pipebomb_act",
+    "description": "This pirate bomb's fuse is lit, and it will explode any second now.  Throw it immediately!",
+    "weight": "1200 g",
+    "volume": "200 ml",
+    "price": "0 cent",
+    "to_hit": 1,
+    "bashing": 5,
+    "material": "steel",
+    "symbol": "*",
+    "color": "light_gray",
+    "initial_charges": 3,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "explode_in_fire": true,
+    "explosion": {
+      "damage": 30,
+      "radius": 5,
+      "fragment": { "impact": { "damage_type": "bullet", "amount": 70, "armor_multiplier": 4 }, "range": 5 }
+    },
+    "use_action": {
+      "type": "explosion",
+      "sound_volume": 0,
+      "sound_msg": "ssss...",
+      "no_deactivate_msg": "You've already lit the %s, try throwing it instead.",
+      "explosion": {
+        "damage": 30,
+        "radius": 5,
+        "fragment": { "impact": { "damage_type": "bullet", "amount": 70, "armor_multiplier": 4 }, "range": 5 }
+      }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID", "DANGEROUS" ]
+  },
+  {
+    "id": "grenadeThermoZhigh",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "thermobaric grenade" },
+    "description": "This is a military-grade thermobaric grenade.  Use this item to pull the pin and activate the fuel-air mixture.  You will then have seven turns before it detonates in a searing overpressure blast; throwing it into a confined space would be a very good idea.",
+    "weight": "397 g",
+    "volume": "250 ml",
+    "price": "15 USD",
+    "price_postapoc": "10 USD",
+    "to_hit": -1,
+    "bashing": 6,
+    "material": [ "steel" ],
+    "symbol": "*",
+    "color": "green",
+    "use_action": {
+      "target": "grenadeThermoZhigh_act",
+      "msg": "You pull the pin on the grenade.",
+      "target_charges": 7,
+      "active": true,
+      "menu_text": "Pull pin",
+      "type": "transform"
+    },
+    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "grenadeThermoZhigh_act",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "active thermobaric grenade" },
+    "description": "This is an active thermobaric grenade, and will explode any second now.  Better throw it!",
+    "weight": "397 g",
+    "volume": "250 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "to_hit": -1,
+    "bashing": 6,
+    "material": [ "steel" ],
+    "symbol": "*",
+    "color": "green",
+    "initial_charges": 7,
+    "max_charges": 7,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "sound_volume": 0,
+      "sound_msg": "Tick.",
+      "no_deactivate_msg": "You've already pulled the %s's pin; try throwing it instead.",
+      "explosion": {
+        "damage": 20,
+        "radius": 2,
+        "fragment": { "impact": { "damage_type": "heat", "amount": 90, "armor_multiplier": 1 }, "range": 7 }
+      }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
   }
 ]

@@ -63,7 +63,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You became invisible, using the goblin's hat.",
-      "effects": [ { "id": "invisibility", "duration": "1 m" }, { "id": "speedup", "duration": "1 m" } ]
+      "effects": [ { "id": "invisibility", "duration": "2 m" }, { "id": "speedup", "duration": "2 m" } ]
     },
 	"flags": [ "SKINTIGHT", "POWERARMOR_COMPATIBLE", "COMPACT", "FRAGILE", "ALLOWS_NATURAL_ATTACKS", "WATER_FRIENDLY", "ALLOWS_REMOTE_USE" ]
   },
@@ -643,9 +643,7 @@
 			},
 			"hit_you_effect": [
             {
-              "id": "zhigh_regen",
-              "message": "Your wounds regenerate as you chop %2$s down.",
-              "npc_message": "%1$s's wounds disappear as they chop %2$s down."
+              "id": "zhigh_regen"
             }
           ]
         }
@@ -735,9 +733,7 @@
 			},
 			"hit_you_effect": [
             {
-              "id": "zhigh_regen",
-              "message": "Your wounds regenerate as you chop %2$s down.",
-              "npc_message": "%1$s's wounds disappear as they chop %2$s down."
+              "id": "zhigh_regen"
             }
           ]
         }
@@ -896,21 +892,26 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "values": [ { "value": "SPEED", "add": 30 } ],
+          "mutations": [ "ENCH_ZHIGH_DODGE_EFFECT" ],
           "hit_you_effect": [
             {
               "id": "zhigh_regenV2"
             }
-		  ],
-          "hit_me_effect": [
-            {
-              "id": "zhigh_regenV2"
-            }
-          ]
+		  ]
         }
       ]
     },
     "description": "."
+  },
+  {
+    "type": "mutation",
+    "id": "ENCH_ZHIGH_DODGE_EFFECT",
+    "name": { "str": "." },
+    "points": 0,
+    "valid": false,
+    "description": "You're shrowded within the shadows.",
+    "dodge_modifier": 4.7,
+    "player_display": false
   },
   {
     "id": "artifactBaseZhigh",
@@ -1438,6 +1439,29 @@
           "has": "WORN",
           "condition": "ALWAYS",
 		  "mutations": [ "ARTIFACTSPIDER" ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "ninjaVanishAmuletZhigh",
+    "name": { "str": "ninja amulet" },
+    "type": "TOOL_ARMOR",
+    "description": "A unique amulet.  When worn, you can teleport when you get hit.",
+    "copy-from": "amuletBaseZhigh",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "SPEED", "add": 10 } ],
+          "mutations": [ "ENCH_ZHIGH_DODGE_EFFECT" ],
+          "hit_me_effect": [
+            {
+              "id": "spell_ninjaVanishZhigh",
+              "once_in": 3
+            }
+          ]
         }
       ]
     }

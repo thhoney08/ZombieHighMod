@@ -307,6 +307,33 @@
     "use_action": { "type": "cast_spell", "spell_id": "dragonBreathZhigh", "no_fail": true, "level": 0 }
   },
   {
+    "id": "cardZhigh_spellBallAcid",
+	"looks_like": "cardZhigh_glow",
+    "copy-from": "cardZhigh_spellhealVacancer",
+    "type": "COMESTIBLE",
+    "name": { "str": "Collectible Card - acid ball" },
+    "description": "This is a unique card, which could make you shoot acid...?",
+    "use_action": { "type": "cast_spell", "spell_id": "AEA_ACIDBALL", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "cardZhigh_spellBugsSummon",
+	"looks_like": "cardZhigh_glow",
+    "copy-from": "cardZhigh_spellhealVacancer",
+    "type": "COMESTIBLE",
+    "name": { "str": "Collectible Card - summon bugs" },
+    "description": "This is a unique card, which could make you summon bugs...?",
+    "use_action": { "type": "cast_spell", "spell_id": "AEA_BUGS", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "cardZhigh_spellPulse",
+	"looks_like": "cardZhigh_glow",
+    "copy-from": "cardZhigh_spellhealVacancer",
+    "type": "COMESTIBLE",
+    "name": { "str": "Collectible Card - pulse" },
+    "description": "This is a unique card, which could shake the terrain...?",
+    "use_action": { "type": "cast_spell", "spell_id": "AEA_PULSE", "no_fail": true, "level": 0 }
+  },
+  {
     "id": "cardZhigh_spellRandom",
 	"looks_like": "cardZhigh_glow",
     "copy-from": "cardZhigh_spellhealVacancer",
@@ -1933,7 +1960,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - gasoline" },
     "description": "This is a unique card, which has a picture of a gasoline.  If you use it, you could get some gasoline.",
-    "use_action": { "type": "unpack", "group": "fuel_gasoline", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "fuel_gasoline", "items_fit": true }
   },
   {
     "id": "cardZhigh_diesel",
@@ -1943,7 +1970,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - diesel" },
     "description": "This is a unique card, which has a picture of a diesel.  If you use it, you could get some diesel.",
-    "use_action": { "type": "unpack", "group": "fuel_diesel", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "fuel_diesel", "items_fit": true }
   },
   {
     "id": "cardZhigh_spirit",
@@ -1953,7 +1980,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - spirit" },
     "description": "This is a unique card, which has a picture of a flask of spirit.  If you use it, you could get a drink or two.",
-    "use_action": { "type": "unpack", "group": "flask_liquor", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "flask_liquor", "items_fit": true }
   },
   {
     "id": "cardZhigh_soda",
@@ -1963,7 +1990,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - soda" },
     "description": "This is a unique card, which has a picture of a can of soda.  If you use it, you could get a drink or two.",
-    "use_action": { "type": "unpack", "group": "pizza_soda", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "pizza_soda", "items_fit": true }
   },
   {
     "id": "cardZhigh_pizza",
@@ -1973,7 +2000,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - pizza" },
     "description": "This is a unique card, which has a picture of a box of pizza.  If you use it, you could have a meal.",
-    "use_action": { "type": "unpack", "group": "pizza_display", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "pizza_display", "items_fit": true }
   },
   {
     "id": "cardZhigh_tea",
@@ -1983,7 +2010,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - tea" },
     "description": "This is a unique card, which has a picture of a bottle of tea.  If you use it, you could get a drink or two.",
-    "use_action": { "type": "unpack", "group": "prepared_teas", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "prepared_teas", "items_fit": true }
   },
   {
     "id": "cardZhigh_drinks",
@@ -1993,7 +2020,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - drinks" },
     "description": "This is a unique card, which has a picture of drinks.  If you use it, you could have a drink.",
-    "use_action": { "type": "unpack", "group": "vending_drink_items", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "vending_drink_items", "items_fit": true }
   },
   {
     "id": "cardZhigh_snacks",
@@ -2003,7 +2030,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - snacks" },
     "description": "This is a unique card, which has a picture of snacks.  If you use it, you could have a snack.",
-    "use_action": { "type": "unpack", "group": "vending_food_items", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "vending_food_items", "items_fit": true }
   },
   {
     "id": "cardZhigh_weapons",
@@ -2013,7 +2040,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - weapon" },
     "description": "This is a unique card, which has a picture of a crate of weapons.  If you use it, you could get a weapon that you can use in a pinch.",
-    "use_action": { "type": "unpack", "group": "weapons", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "weapons", "items_fit": true }
   },
   {
     "id": "cardZhigh_grenade",
@@ -2023,7 +2050,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - grenade" },
     "description": "This is a unique card, which has a picture of a grenade.  If you use it, you could get a bomb that you can use in a pinch.",
-    "use_action": { "type": "unpack", "group": "grenades", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "grenades", "items_fit": true }
   },
   {
     "id": "cardZhigh_pistol",
@@ -2033,7 +2060,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - pistol" },
     "description": "This is a unique card, which has a picture of a pistol.  If you use it, you could get a free pistol and some ammo.",
-    "use_action": { "type": "unpack", "group": "carried_guns_pistol_common", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "carried_guns_pistol_common", "items_fit": true }
   },
   {
     "id": "cardZhigh_smg",
@@ -2043,7 +2070,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - smg" },
     "description": "This is a unique card, which has a picture of a smg.  If you use it, you could get a free smg and some ammo.",
-    "use_action": { "type": "unpack", "group": "carried_guns_smg_common", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "carried_guns_smg_common", "items_fit": true }
   },
   {
     "id": "cardZhigh_rifle",
@@ -2053,7 +2080,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - rifle" },
     "description": "This is a unique card, which has a picture of a rifle.  If you use it, you could get a free rifle and some ammo.",
-    "use_action": { "type": "unpack", "group": "carried_guns_rifle_common", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "carried_guns_rifle_common", "items_fit": true }
   },
   {
     "id": "cardZhigh_archery",
@@ -2063,7 +2090,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - archery" },
     "description": "This is a unique card, which has a picture of a archery.  If you use it, you could get a free archery and some ammo.",
-    "use_action": { "type": "unpack", "group": "carried_guns_archery_common", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "carried_guns_archery_common", "items_fit": true }
   },
   {
     "id": "cardZhigh_shotgun",
@@ -2073,7 +2100,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - shotgun" },
     "description": "This is a unique card, which has a picture of a shotgun.  If you use it, you could get a free shotgun and some ammo.",
-    "use_action": { "type": "unpack", "group": "carried_guns_shotgun_common", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "carried_guns_shotgun_common", "items_fit": true }
   },
   {
     "id": "cardZhigh_improvisedFirearms",
@@ -2083,7 +2110,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - improvised firearms" },
     "description": "This is a unique card, which has a picture of a improvised firearms.  If you use it, you could get a free improvised firearms and some ammo.",
-    "use_action": { "type": "unpack", "group": "guns_improvised", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "guns_improvised", "items_fit": true }
   },
   {
     "id": "cardZhigh_rareFirearms",
@@ -2093,7 +2120,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - rare firearms" },
     "description": "This is a unique card, which has a picture of a rare firearms.  If you use it, you could get a free rare firearm and some ammo.",
-    "use_action": { "type": "unpack", "group": "guns_obscure", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "guns_obscure", "items_fit": true }
   },
   {
     "id": "cardZhigh_rareGuns",
@@ -2103,7 +2130,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - rare guns" },
     "description": "This is a unique card, which has a picture of a rare guns.  If you use it, you could get a free rare guns and some ammo.",
-    "use_action": { "type": "unpack", "group": "guns_safe_guns", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "guns_safe_guns", "items_fit": true }
   },
   {
     "id": "cardZhigh_ammo",
@@ -2113,7 +2140,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - ammo" },
     "description": "This is a unique card, which has a picture of a box of ammunition.  If you use it, you could get some random ammo.",
-    "use_action": { "type": "unpack", "group": "vending_ammo", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "vending_ammo", "items_fit": true }
   },
   {
     "id": "cardZhigh_archery",
@@ -2123,7 +2150,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - arrows and bolts" },
     "description": "This is a unique card, which has a picture of a arrows and bolts.  If you use it, you could get some random arrows and bolts.",
-    "use_action": { "type": "unpack", "group": "archery_ammo", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "archery_ammo", "items_fit": true }
   },
   {
     "id": "cardZhigh_religious_books",
@@ -2133,7 +2160,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - religious books" },
     "description": "This is a unique card, which has a picture of a religious book.  If you use it, you could get a free religious book.",
-    "use_action": { "type": "unpack", "group": "religious_books", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "religious_books", "items_fit": true }
   },
   {
     "id": "cardZhigh_novels",
@@ -2143,7 +2170,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - novels" },
     "description": "This is a unique card, which has a picture of a novel.  If you use it, you could get a free novel.",
-    "use_action": { "type": "unpack", "group": "novels", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "novels", "items_fit": true }
   },
   {
     "id": "cardZhigh_book_martial",
@@ -2153,7 +2180,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - martial art books" },
     "description": "This is a unique card, which has a picture of a martial art book.  If you use it, you could get a free martial art book.",
-    "use_action": { "type": "unpack", "group": "book_martial", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "book_martial", "items_fit": true }
   },
   {
     "id": "cardZhigh_stimultants",
@@ -2163,7 +2190,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - stimultants" },
     "description": "This is a unique card, which has a picture of a stimultants.  If you use it, you could get some random stimultants.",
-    "use_action": { "type": "unpack", "group": "ZhighStimUnkown3", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "ZhighStimUnkown3", "items_fit": true }
   },
   {
     "id": "cardZhigh_cigar",
@@ -2173,7 +2200,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - cigar" },
     "description": "This is a unique card, which has a picture of a cigar.  If you use it, you could get some random smokable drugs.",
-    "use_action": { "type": "unpack", "group": "smokedrugs", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "smokedrugs", "items_fit": true }
   },
   {
     "id": "cardZhigh_bionics",
@@ -2183,7 +2210,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - bionics" },
     "description": "This is a unique card, which has a picture of a bionic.  If you use it, you could get some bionics.",
-    "use_action": { "type": "unpack", "group": "bionics", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "bionics", "items_fit": true }
   },
   {
     "id": "cardZhigh_tool",
@@ -2193,7 +2220,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - tool" },
     "description": "This is a unique card, which has a picture of a tool.  If you use it, you could get some tools.",
-    "use_action": { "type": "unpack", "group": "tools_general", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "tools_general", "items_fit": true }
   },
   {
     "id": "cardZhigh_charm",
@@ -2203,7 +2230,7 @@
     "category": "charms",
     "name": { "str": "Collectible Card - charm" },
     "description": "This is a unique card, which has a picture of a charm.  If you use it, you could get some charms.",
-    "use_action": { "type": "unpack", "group": "charms_guns", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "charms_guns", "items_fit": true }
   },
   {
     "id": "cardZhigh_coin",
@@ -2213,7 +2240,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - coins" },
     "description": "This is a unique card, which has a picture of a coin.  If you use it, you could get some coins.",
-    "use_action": { "type": "unpack", "group": "coinPackZhigh", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "coinPackZhigh", "items_fit": true }
   },
   {
     "id": "cardZhigh_seed",
@@ -2223,7 +2250,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - seeds" },
     "description": "This is a unique card, which has a picture of seeds.  If you use it, you could get some seeds.",
-    "use_action": { "type": "unpack", "group": "farming_seeds", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "farming_seeds", "items_fit": true }
   },
   {
     "id": "cardZhigh_guns",
@@ -2233,7 +2260,7 @@
     "category": "tools",
     "name": { "str": "Collectible Card - guns" },
     "description": "This is a unique card, which has a picture of guns.  If you use it, you could get some guns.",
-    "use_action": { "type": "unpack", "group": "guns_cardZhigh", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "guns_cardZhigh", "items_fit": true }
   },
   {
     "id": "cardZhigh_mapLab",
@@ -2463,7 +2490,7 @@
     "description": "This is a unique card, which details the locations of almost everything.",
     "use_action": {
       "type": "reveal_map",
-      "radius": 100,
+      "radius": 300,
       "message": "Area is revealed.",
       "terrain": [
         "hiway", "road", "bridge", "subway", "sub_station",
@@ -2535,7 +2562,7 @@
     "type": "GENERIC",
     "name": { "str": "random card pack" },
     "description": "This is a pack of an unknown card.  Unpack and enjoy.",
-    "use_action": { "type": "unpack", "group": "cardsPackZhigh1", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "cardsPackZhigh1", "items_fit": true }
   },
   {
     "id": "cardZhigh_pack5",
@@ -2546,7 +2573,7 @@
     "description": "This is a pack of five unknown cards.  Unpack and enjoy.",
     "volume": "5 ml",
     "weight": "5 g",
-    "use_action": { "type": "unpack", "group": "cardsPackZhigh5", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "cardsPackZhigh5", "items_fit": true }
   },
   {
     "id": "cardZhigh_pack30",
@@ -2557,6 +2584,6 @@
     "description": "This is a pack of thirty unknown cards.  Unpack and enjoy.",
     "volume": "30 ml",
     "weight": "30 g",
-    "use_action": { "type": "unpack", "group": "cardsPackZhigh30", "items_fit": true, "filthy_volume_threshold": "1 L" }
+    "use_action": { "type": "unpack", "group": "cardsPackZhigh30", "items_fit": true }
   }
 ]
