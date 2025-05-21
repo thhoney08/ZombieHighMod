@@ -27,14 +27,15 @@
     "worn_override": "NC_Hacker_worn",
     "carry_override": "NC_Hacker_carry",
     "weapon_override": "NC_ZhighGUARD_wield",
-    "bonus_str": { "rng": [ -2, 1 ] },
-    "bonus_int": { "rng": [ 2, 6 ] },
-    "bonus_per": { "rng": [ -2, 1 ] },
-    "bonus_dex": { "rng": [ 1, 2 ] },
+    "bonus_str": { "rng": [ 4, 7 ] },
+    "bonus_dex": { "rng": [ 4, 7 ] },
+    "bonus_int": { "rng": [ 4, 7 ] },
+    "bonus_per": { "rng": [ 4, 7 ] },
     "skills": [
       { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
       { "skill": "mechanics", "bonus": { "rng": [ 3, 4 ] } },
       { "skill": "computer", "bonus": { "rng": [ 5, 7 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 4, 9 ] } },
       { "skill": "electronics", "bonus": { "rng": [ 3, 4 ] } }
     ]
   },
@@ -219,12 +220,12 @@
       },
       {
         "text": "[800$]  I'll buy an attack drone.",
-        "effect": [ { "u_buy_item": "bot_attack_drone", "cost": 80000, "count": 1 } ],
+        "effect": [ { "u_buy_item": "bot_attack_drone2", "cost": 80000, "count": 1 } ],
         "topic": "TALK_HACKER_DEAL_END"
       },
       {
         "text": "[800$]  I'll buy a heal drone.",
-        "effect": [ { "u_buy_item": "bot_heal_drone", "cost": 80000, "count": 1 } ],
+        "effect": [ { "u_buy_item": "bot_heal_drone2", "cost": 80000, "count": 1 } ],
         "topic": "TALK_HACKER_DEAL_END"
       }
     ]
@@ -274,12 +275,12 @@
       },
       {
         "text": "[800$]  I'll buy an attack drone.",
-        "effect": [ { "u_buy_item": "bot_attack_drone", "cost": 80000, "count": 1 } ],
+        "effect": [ { "u_buy_item": "bot_attack_drone2", "cost": 80000, "count": 1 } ],
         "topic": "TALK_HACKER_DEAL_END"
       },
       {
         "text": "[800$]  I'll buy a heal drone.",
-        "effect": [ { "u_buy_item": "bot_heal_drone", "cost": 80000, "count": 1 } ],
+        "effect": [ { "u_buy_item": "bot_heal_drone2", "cost": 80000, "count": 1 } ],
         "topic": "TALK_HACKER_DEAL_END"
       }
     ]
@@ -478,7 +479,7 @@
       "opinion": { "trust": 1, "value": 1 },
       "effect": [
         { "u_learn_recipe": "bot_enz_hack" },
-        { "u_buy_item": "bot_enz_hack", "count": 1 } ]
+        { "u_buy_item": "bot_enz_hack2", "count": 1 } ]
       },
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_SCHOOL_BETTER_DRONES_2",
@@ -507,7 +508,7 @@
     "end": {
       "opinion": { "trust": 1, "value": 1 },
       "effect": [
-        { "u_buy_item": "bot_attack_drone", "count": 1 } ]
+        { "u_buy_item": "bot_attack_drone2", "count": 1 } ]
       },
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_SCHOOL_BETTER_DRONES_2",

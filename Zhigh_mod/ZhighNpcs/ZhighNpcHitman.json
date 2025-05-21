@@ -22,18 +22,18 @@
       { "trait": "REGEN_zhigh" }
     ],
     "common": false,
-    "bonus_str": { "rng": [ 1, 2 ] },
-    "bonus_int": { "rng": [ 2, 3 ] },
-    "bonus_per": { "rng": [ 2, 3 ] },
-    "bonus_dex": { "rng": [ -1, 1 ] },
+    "bonus_str": { "rng": [ 4, 7 ] },
+    "bonus_dex": { "rng": [ 4, 7 ] },
+    "bonus_int": { "rng": [ 4, 7 ] },
+    "bonus_per": { "rng": [ 4, 7 ] },
     "worn_override": "NC_Hitman_worn",
     "carry_override": "ZhighNpc_misc",
     "weapon_override": "NC_Hitman_weapon",
     "skills": [
       { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
       { "skill": "melee", "bonus": { "rng": [ 3, 4 ] } },
-      { "skill": "bashing", "bonus": { "rng": [ 3, 4 ] } },
-      { "skill": "dodge", "bonus": { "rng": [ 3, 4 ] } }
+      { "skill": "dodge", "bonus": { "rng": [ 4, 9 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 3, 4 ] } }
     ]
   },
   {

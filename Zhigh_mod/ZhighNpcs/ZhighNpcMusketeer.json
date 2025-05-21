@@ -27,16 +27,17 @@
       { "trait": "REGEN_zhigh" },
       { "group": "Appearance_Mixed" }
     ],
-    "bonus_str": { "rng": [ 2, 4 ] },
-    "bonus_dex": { "rng": [ 1, 2 ] },
-    "bonus_int": { "rng": [ -1, 0 ] },
-    "bonus_per": { "rng": [ 1, 2 ] },
+    "bonus_str": { "rng": [ 4, 7 ] },
+    "bonus_dex": { "rng": [ 4, 7 ] },
+    "bonus_int": { "rng": [ 4, 7 ] },
+    "bonus_per": { "rng": [ 4, 7 ] },
     "worn_override": "NC_MUSKETEER_MERC_worn",
     "carry_override": "NC_MUSKETEER_MERC_carry",
     "weapon_override": "NC_MUSKETEER_MERC_wield",
     "skills": [
       { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
       { "skill": "gun", "bonus": { "rng": [ 4, 5 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 4, 9 ] } },
       { "skill": "pistol", "bonus": { "rng": [ 2, 3 ] } },
       { "skill": "rifle", "bonus": { "rng": [ 2, 3 ] } } 
     ]
@@ -67,6 +68,7 @@
       { "item": "popGun_zhigh", "prob": 10 },
       { "item": "popGunShotgun_zhigh", "prob": 10 },
       { "item": "popGunPistol_zhigh", "prob": 10 },
+      { "item": "popGunPistol_zhighAkim", "prob": 10 },
       { "item": "marble_gun", "ammo-item": "bearing", "charges": 4, "prob": 20 },
       { "item": "marble_pump_gun", "ammo-item": "bearing", "charges": 10, "prob": 20 },
       { "item": "tihar", "ammo-item": "bearing", "charges": 20, "prob": 20 }

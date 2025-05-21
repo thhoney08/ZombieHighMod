@@ -18,16 +18,17 @@
     "job_description": "I'm the school nurse.",
     "traits": [ { "group": "NPC_starting_traits" }, { "group": "Appearance_ZhighNurse" } ],
     "common": false,
-    "bonus_str": { "rng": [ -3, 1 ] },
-    "bonus_int": { "rng": [ 2, 4 ] },
-    "bonus_per": { "rng": [ 0, 1 ] },
-    "bonus_dex": { "rng": [ 2, 3 ] },
+    "bonus_str": { "rng": [ 4, 7 ] },
+    "bonus_dex": { "rng": [ 4, 7 ] },
+    "bonus_int": { "rng": [ 4, 7 ] },
+    "bonus_per": { "rng": [ 4, 7 ] },
     "weapon_override": "NC_MedicZhigh_weapon",
     "carry_override": "NC_PCZHIGHNURSE_misc",
     "worn_override": "NC_ZhighNurse_worn",
     "skills": [
       { "skill": "computer", "bonus": { "rng": [ 1, 5 ] } },
       { "skill": "firstaid", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 4, 9 ] } },
       { "skill": "speech", "bonus": { "rng": [ 3, 6 ] } },
       { "skill": "barter", "bonus": { "rng": [ 3, 5 ] } }
     ]

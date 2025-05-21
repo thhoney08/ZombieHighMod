@@ -26,10 +26,10 @@
       { "trait": "REGEN_zhigh" },
       { "group": "Appearance_Mixed" }
     ],
-    "bonus_str": { "rng": [ 2, 4 ] },
-    "bonus_dex": { "rng": [ 1, 2 ] },
-    "bonus_int": { "rng": [ -1, 0 ] },
-    "bonus_per": { "rng": [ 1, 2 ] },
+    "bonus_str": { "rng": [ 4, 7 ] },
+    "bonus_dex": { "rng": [ 4, 7 ] },
+    "bonus_int": { "rng": [ 4, 7 ] },
+    "bonus_per": { "rng": [ 4, 7 ] },
     "worn_override": "NC_GRUNT_MERC_worn",
     "carry_override": "NC_GRUNT_MERC_carry",
     "weapon_override": "ZhighGuardWeaponGroups",
@@ -37,11 +37,11 @@
       { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
       { "skill": "melee", "bonus": { "rng": [ 2, 5 ] } },
       { "skill": "unarmed", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 4, 9 ] } },
       { "skill": "stabbing", "bonus": { "rng": [ 2, 3 ] } },
       { "skill": "cutting", "bonus": { "rng": [ 2, 3 ] } },
       { "skill": "bashing", "bonus": { "rng": [ 2, 3 ] } },
-      { "skill": "throw", "bonus": { "rng": [ 2, 3 ] } },
-      { "skill": "dodge", "bonus": { "rng": [ 2, 3 ] } } 
+      { "skill": "throw", "bonus": { "rng": [ 2, 3 ] } }
     ]
   },
   {

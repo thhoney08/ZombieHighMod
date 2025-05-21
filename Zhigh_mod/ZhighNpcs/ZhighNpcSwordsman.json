@@ -13,6 +13,33 @@
     "faction": "Zhigh_Survivors"
   },
   {
+    "type": "npc_class",
+    "id": "NC_SWORDSMAN",
+    "name": { "str": "swordsman" },
+    "job_description": "I smash others with a chair.",
+    "traits": [
+      { "group": "BG_survival_story_RURAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "Appearance_SWORDSMAN" },
+      { "trait": "QUICK" },
+      [ "REGEN_zhigh", 100 ]
+    ],
+    "common": false,
+    "worn_override": "NC_SWORDSMAN_worn",
+    "carry_override": "NC_SWORDSMAN_carry",
+    "weapon_override": "NC_SWORDSMAN_weapon",
+    "bonus_str": { "rng": [ 4, 7 ] },
+    "bonus_dex": { "rng": [ 4, 7 ] },
+    "bonus_int": { "rng": [ 4, 7 ] },
+    "bonus_per": { "rng": [ 4, 7 ] },
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 4, 9 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 4, 6 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 1, 3 ] } }
+    ]
+  },
+  {
     "type": "trait_group",
     "id": "Appearance_SWORDSMAN",
     "subtype": "collection",
@@ -40,7 +67,7 @@
       { "item": "dress_shirt_zhigh" },
       { "item": "gauntlets_larmor" },
       { "item": "cuirass_lightplate" },
-      { "item": "wristwatch", "prob": 80 }
+      { "item": "capeZhigh", "prob": 80 }
     ]
   },
   {
@@ -51,33 +78,6 @@
       { "item": "ZhighCoin", "count": [ 10, 20 ] },
       { "item": "ID_1st" },
       { "group": "ZhighNpc_misc" }
-    ]
-  },
-  {
-    "type": "npc_class",
-    "id": "NC_SWORDSMAN",
-    "name": { "str": "swordsman" },
-    "job_description": "I smash others with a chair.",
-    "traits": [
-      { "group": "BG_survival_story_RURAL" },
-      { "group": "NPC_starting_traits" },
-      { "group": "Appearance_SWORDSMAN" },
-      { "trait": "QUICK" },
-      [ "REGEN_zhigh", 100 ]
-    ],
-    "common": false,
-    "worn_override": "NC_SWORDSMAN_worn",
-    "carry_override": "NC_SWORDSMAN_carry",
-    "weapon_override": "NC_SWORDSMAN_weapon",
-    "bonus_str": { "rng": [ 2, 4 ] },
-    "bonus_int": { "rng": [ -1, 2 ] },
-    "bonus_per": { "rng": [ 0, 2 ] },
-    "bonus_dex": { "rng": [ 2, 3 ] },
-    "skills": [
-      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
-      { "skill": "dodge", "bonus": { "rng": [ 1, 3 ] } },
-      { "skill": "melee", "bonus": { "rng": [ 4, 6 ] } },
-      { "skill": "bashing", "bonus": { "rng": [ 1, 3 ] } }
     ]
   },
   {

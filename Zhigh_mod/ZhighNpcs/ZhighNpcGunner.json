@@ -27,15 +27,16 @@
       { "trait": "REGEN_zhigh" },
       { "group": "Appearance_Mixed" }
     ],
-    "bonus_str": { "rng": [ 2, 4 ] },
-    "bonus_dex": { "rng": [ 1, 2 ] },
-    "bonus_int": { "rng": [ -1, 0 ] },
-    "bonus_per": { "rng": [ 1, 2 ] },
+    "bonus_str": { "rng": [ 4, 7 ] },
+    "bonus_dex": { "rng": [ 4, 7 ] },
+    "bonus_int": { "rng": [ 4, 7 ] },
+    "bonus_per": { "rng": [ 4, 7 ] },
     "worn_override": "NC_NAILGUNNER_GUARD_worn",
     "carry_override": "NC_NAILGUNNER_GUARD_carry",
     "weapon_override": "NC_NAILGUNNER_GUARD_wield",
     "skills": [
       { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 4, 9 ] } },
       { "skill": "gun", "bonus": { "rng": [ 2, 5 ] } },
       { "skill": "smg", "bonus": { "rng": [ 1, 3 ] } } 
     ]
@@ -80,13 +81,15 @@
       { "item": "popGun_zhigh", "prob": 10 },
       { "item": "popGunShotgun_zhigh", "prob": 10 },
       { "item": "popGunPistol_zhigh", "prob": 10 },
+      { "item": "popGunPistol_zhighAkim", "prob": 10 },
       { "item": "marble_sniper_gun", "ammo-item": "nail", "charges": 1, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 10 },
       { "item": "crossbow_dartZhigh", "ammo-item": "nail", "charges": 1, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 10 },
       { "item": "hand_crossbow_dartZhigh", "ammo-item": "nail", "charges": 1, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 5 },
       { "item": "marble_gun", "ammo-item": "nail", "charges": 5, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 10 },
       { "item": "nailrifle", "ammo-item": "nail", "charges": 150, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 35 },
       { "item": "nailsmg", "ammo-item": "nail", "charges": 100, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 25 },
-      { "item": "nailgun", "ammo-item": "nail", "charges": 25, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 10 }
+      { "item": "nailgunAkimZhigh", "ammo-item": "nail", "charges": 40, "prob": 25 },
+      { "item": "nailgun", "ammo-item": "nail", "charges": 25, "prob": 10 }
     ]
   },
   {
