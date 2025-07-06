@@ -54,6 +54,17 @@
     "thrown_damage": [ { "damage_type": "bash", "amount": 20 } ]
   },
   {
+    "type": "GENERIC",
+    "id": "throwing_knife_trickster",
+    "copy-from": "throwing_knife",
+    "category": "weapons",
+    "name": { "str": "glass throwing knife", "str_pl": "glass throwing knives" },
+    "material": "glass",
+    "description": "A thin and flat glass knife made for throwing.  Its ineffective cutting edge, the material, and odd shape makes it unsuitable for use as a tool.",
+    "flags": [ "FRAGILE_MELEE" ],
+    "thrown_damage": [ { "damage_type": "stab", "amount": 30 } ]
+  },
+  {
 	"id": "zap_grenade",
 	"type": "TOOL",
 	"copy-from": "grenade_canister",
@@ -731,8 +742,9 @@
     "volume": "250 ml",
     "weight": "268 g",
     "bashing": 2,
-    "cutting": 14,
-    "thrown_damage": [ { "damage_type": "cut", "amount": 48 } ]
+    "cutting": 6,
+    "thrown_damage": [ { "damage_type": "cut", "amount": 48 } ],
+    "flags": [ "HURT_WHEN_WIELDED" ]
   },
   {
     "type": "GENERIC",
@@ -1637,5 +1649,62 @@
       }
     },
     "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
+    "id": "dynamite_bundle",
+    "looks_like": "dynamite_bomb",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "dynamite bundle" },
+    "description": "These are several sticks of dynamites with a fuse attached.  Use this item to light the fuse.  You will, of course, need a lighter or matches in your inventory to do this.  Shortly after lighting the fuse, this item will explode, so get away!",
+    "weight": "7931 g",
+    "volume": "5250 ml",
+    "price": "420 USD",
+    "price_postapoc": "70 USD",
+    "to_hit": -3,
+    "bashing": 4,
+    "material": [ "paper", "powder" ],
+    "symbol": "*",
+    "color": "red",
+    "explode_in_fire": true,
+    "explosion": { "damage": 700, "radius": 6 },
+    "use_action": {
+      "target": "dynamite_bundle_act",
+      "msg": "You light the dynamite.",
+      "target_charges": 70,
+      "active": true,
+      "need_fire": 1,
+      "menu_text": "Light fuse",
+      "type": "transform"
+    },
+    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "dynamite_bundle_act",
+    "looks_like": "dynamite_bomb_act",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "dynamite (lit)", "str_pl": "dynamites (lit)" },
+    "description": "The fuse on this dynamite is lit and hissing.  It'll explode any moment now.",
+    "weight": "7931 g",
+    "volume": "5250 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "to_hit": -3,
+    "bashing": 4,
+    "material": [ "paper", "powder" ],
+    "symbol": "*",
+    "color": "red",
+    "turns_per_charge": 1,
+    "explode_in_fire": true,
+    "explosion": { "damage": 100, "radius": 6 },
+    "use_action": {
+      "type": "explosion",
+      "sound_volume": 0,
+      "sound_msg": "ssss...",
+      "no_deactivate_msg": "You've already lit the %s, try throwing it instead.",
+      "explosion": { "damage": 700, "radius": 6 }
+    },
+    "flags": [ "TRADER_AVOID", "BOMB" ]
   }
 ]

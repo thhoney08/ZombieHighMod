@@ -474,10 +474,10 @@
     "id": "paintball_shot",
     "name": { "str": "shot paintball" },
     "description": "A tube of small paintballs.  They deal virtually no damage, but can hit multiple targets.",
-    "damage": { "damage_type": "bullet", "amount": 3 },
+    "damage": { "damage_type": "bullet", "amount": 6 },
     "range": 0,
     "stack_size": 50,
-    "shape": [ "cone", { "half_angle": 30, "length": 7 } ]
+    "shape": [ "cone", { "half_angle": 25, "length": 7 } ]
   },
   {
     "type": "AMMO",
@@ -493,7 +493,7 @@
     "weight": "100 g",
     "range": 10,
     "ammo_type": "paintball",
-    "damage": { "damage_type": "bullet", "amount": 3 },
+    "damage": { "damage_type": "heat", "amount": 3 },
     "dispersion": 100,
     "count": 50,
     "stack_size": 50,
@@ -539,7 +539,7 @@
     "stack_size": 50,
     "loudness": 9,
     "drop": "paintball_glow_glow",
-    "effects": [ "NOGIB", "NEVER_MISFIRES" ]
+    "effects": [ "NO_EMBED", "NOGIB", "NEVER_MISFIRES" ]
   },
   {
     "id": "paintball_glow_glow",
@@ -603,6 +603,27 @@
     "stack_size": 50,
     "loudness": 9,
     "effects": [ "NOGIB", "TEARGAS", "NEVER_MISFIRES" ]
+  },
+  {
+    "type": "AMMO",
+    "id": "paintball_goo",
+    "looks_like": "paintball_tg",
+    "price": "100 USD",
+    "price_postapoc": "50 USD",
+    "name": { "str": "goo paintball" },
+    "symbol": "=",
+    "color": "yellow",
+    "description": "A tube of small paintballs.  They deal virtually no damage, but they will let some sticky liquid.",
+    "material": "plastic",
+    "volume": "250 ml",
+    "weight": "100 g",
+    "ammo_type": "paintball",
+    "damage": { "damage_type": "bullet", "amount": 2 },
+    "dispersion": 100,
+    "count": 50,
+    "stack_size": 50,
+    "loudness": 9,
+    "effects": [ "NOGIB", "GOOAMMO1", "NEVER_MISFIRES" ]
   },
   {
     "id": "disc_compact",
@@ -1313,7 +1334,7 @@
     "ammo_type": "pebble",
     "damage": { "damage_type": "bash", "amount": 1 },
     "drop": "tool_rocket_candy_act",
-    "range": 16,
+    "range": 8,
     "dispersion": 12,
     "count": 20,
     "loudness": 0,
@@ -1335,7 +1356,7 @@
     "ammo_type": "pebble",
     "damage": { "damage_type": "bash", "amount": 1 },
     "drop": "firecracker_act",
-    "range": 16,
+    "range": 8,
     "dispersion": 12,
     "count": 20,
     "loudness": 0,
@@ -1356,11 +1377,11 @@
     "weight": "3 g",
     "ammo_type": "pebble",
     "damage": { "damage_type": "acid", "amount": 1, "armor_penetration": 4 },
-    "drop": "pebble",
-    "range": 20,
+    "range": 8,
     "dispersion": 12,
     "count": 20,
     "loudness": 0,
+    "dont_recover_one_in": 20,
     "effects": [ "POISON", "NEVER_MISFIRES" ]
   },
   {
@@ -1378,11 +1399,11 @@
     "weight": "3 g",
     "ammo_type": "pebble",
     "damage": { "damage_type": "acid", "amount": 1, "armor_penetration": 4 },
-    "drop": "pebble",
-    "range": 20,
+    "range": 8,
     "dispersion": 12,
     "count": 20,
     "loudness": 0,
+    "dont_recover_one_in": 20,
     "effects": [ "PARALYZEPOISON", "NEVER_MISFIRES" ]
   },
   {
@@ -1400,12 +1421,12 @@
     "weight": "3 g",
     "ammo_type": "pebble",
     "damage": { "damage_type": "bash", "amount": 2 },
-    "range": 20,
+    "range": 8,
     "dispersion": 12,
     "loudness": 0,
     "count": 30,
     "flags": [ "SHATTERS" ],
-    "dont_recover_one_in": 4,
+    "dont_recover_one_in": 20,
     "effects": [ "BOUNCE", "NEVER_MISFIRES" ]
   },
   {
@@ -1599,6 +1620,172 @@
     "recoil": 100,
     "loudness": 55,
     "effects": [ "NEVER_MISFIRES", "DAZZLEAOEFLAREZHIGH", "NO_EMBED" ]
+  },
+  {
+	"id": "bombard_flare",
+	"looks_like": "survivor_flare",
+    "category": "weapons",
+	"type": "TOOL",
+    "weight": "128 g",
+    "volume": "50 ml",
+    "material": [ "plastic", "powder" ],
+    "color": "green",
+    "symbol": ";",
+	"copy-from": "grenade_canister",
+	"name": "aerial bombardment flare",
+    "flags": [ "ACT_ON_RANGED_HIT" ],
+	"description": "This flare is unique, and when activated, sends some signal to bring some firepower.",
+	"countdown_action": { "menu_text": "Pull pin", "type": "transform", "target": "bombard_flare_act" }
+  },
+  {
+	"id": "bombard_flare_act",
+	"looks_like": "survivor_flare_act",
+    "category": "weapons",
+	"type": "TOOL",
+	"copy-from": "bombard_flare",
+	"name": "active aerial bombardment signal flare",
+	"description": "This unique flare currently is activated, thus sending some signal to bring some firepower.",
+	"emits": [ "emit_smoke_stream" ],
+    "initial_charges": 20,
+    "max_charges": 20,
+    "turns_per_charge": 20,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_smoke",
+      "fields_radius": 10,
+      "fields_min_intensity": 3,
+      "fields_max_intensity": 3,
+      "sound_volume": 20,
+      "sound_msg": "Tick.",
+      "no_deactivate_msg": "You've already pulled the %s's pin; try throwing it instead.",
+      "explosion": {
+        "damage": 240,
+        "radius": 6,
+        "fragment": { "impact": { "damage_type": "bullet", "amount": 130, "armor_multiplier": 8 }, "range": 10 }
+      }
+    },
+	"flags": [ "TRADER_AVOID", "SLEEP_IGNORE", "LIGHT_8" ]
+  },
+  {
+    "id": "signal_bombard_flare",
+	"looks_like": "signal_survivor_flare",
+    "type": "AMMO",
+	"copy-from": "signal_flare",
+    "name": { "str": "aerial bombardment signal flare" },
+    "damage": { "damage_type": "heat", "amount": 4 },
+    "dispersion": 20,
+    "recoil": 150,
+    "extend": { "effects": [ "SMOKE" ] },
+    "drop": "bombard_flare_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "mininukeCannonballZhigh",
+	"looks_like": "cannonball_4lb",
+    "symbol": "*",
+    "color": "light_gray",
+    "name": { "str": "modified cannonball" },
+    "description": "A heavily modified 3-inch cast-iron cannonball.  Since it is a huge chunk of steel, it does not blow up; it just blows a really heavy punch.",
+    "material": "iron",
+    "ammo_type": "mininuke_mod",
+    "weight": "2576 g",
+    "volume": "500 ml",
+    "bashing": 15,
+    "damage": { "damage_type": "bash", "amount": 300, "armor_penetration": 50 },
+	"stack_size": 2,
+    "dispersion": 14,
+    "loudness": 0,
+    "to_hit": -1,
+    "dont_recover_one_in": 100,
+    "effects": [ "BEANBAG", "LARGE_BEANBAG", "HEAVY_HIT", "NEVER_MISFIRES", "HEAVY_HIT", "NON_FOULING" ]
+  },
+  {
+	"id": "lawn_dartElecZhigh",
+    "type": "AMMO",
+    "copy-from": "lawn_dart",
+    "name": { "str": "shock dart" },
+    "ammo_type": "thrown",
+    "effects": [ "LIGHTNING" ],
+    "thrown_damage": [ { "damage_type": "electric", "amount": 20 } ],
+    "count": 3,
+    "stack_size": 3,
+    "extend": { "flags": [ "SHOCKING" ] }
+  },
+  {
+	"id": "lawn_dartHeatZhigh",
+    "type": "AMMO",
+    "copy-from": "lawn_dart",
+    "name": { "str": "thermo dart" },
+    "ammo_type": "thrown",
+    "effects": [ "INCENDIARY", "FLAMESMOL" ],
+    "thrown_damage": [ { "damage_type": "heat", "amount": 20 } ],
+    "count": 3,
+    "stack_size": 3,
+    "extend": { "flags": [ "FLAMING" ] }
+  },
+  {
+	"id": "lawn_dartPoisZhigh",
+    "type": "AMMO",
+    "copy-from": "lawn_dart",
+    "name": { "str": "stinger dart" },
+    "ammo_type": "thrown",
+    "effects": [ "POISON" ],
+    "thrown_damage": [ { "damage_type": "stab", "amount": 20 } ],
+    "count": 3,
+    "stack_size": 3,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "poison",
+              "message": "The stinger injects a small amount of poison into your target.",
+              "npc_message": "%1$s stings their target."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+	"id": "lawn_dartTrifZhigh",
+    "type": "AMMO",
+    "copy-from": "lawn_dart",
+    "name": { "str": "triffid dart" },
+    "ammo_type": "thrown",
+    "effects": [ "PARALYZEPOISON" ],
+    "thrown_damage": [ { "damage_type": "stab", "amount": 20 } ],
+    "count": 3,
+    "stack_size": 3,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "poison",
+              "message": "The stinger injects a small amount of poison into your target.",
+              "npc_message": "%1$s stings their target."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+	"id": "lawn_dartAcidZhigh",
+    "type": "AMMO",
+    "copy-from": "lawn_dart",
+    "name": { "str": "triffid dart" },
+    "ammo_type": "thrown",
+    "effects": [ "ACIDBOMB" ],
+    "thrown_damage": [ { "damage_type": "acid", "amount": 20 } ],
+    "count": 3,
+    "stack_size": 3,
+    "extend": { "flags": [ "ACIDIC" ] }
   },
   {
     "id": "40x46mm_antiFungi",

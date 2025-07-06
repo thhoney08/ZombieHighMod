@@ -882,17 +882,6 @@
     "flags": [ "BELT_CLIP", "REACH_ATTACK", "FRAGILE_MELEE" ]
   },
   {
-    "type": "GENERIC",
-    "id": "throwing_knife_trickster",
-    "copy-from": "throwing_knife",
-    "category": "weapons",
-    "name": { "str": "glass throwing knife", "str_pl": "glass throwing knives" },
-    "material": "glass",
-    "description": "A thin and flat glass knife made for throwing.  Its ineffective cutting edge, the material, and odd shape makes it unsuitable for use as a tool.",
-    "flags": [ "FRAGILE_MELEE" ],
-    "thrown_damage": [ { "damage_type": "stab", "amount": 20 } ]
-  },
-  {
     "id": "bat_metal_zhigh",
     "type": "GENERIC",
     "copy-from": "bat",
@@ -4376,7 +4365,7 @@
     "techniques": [ "tec_medievalpole_counter" ],
     "weight": "1360 g",
     "volume": "2 L",
-    "bashing": 24,
+    "bashing": 4,
     "cutting": 21,
     "delete": { "flags": [ "STAB" ] },
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 8 ] ]
@@ -4862,66 +4851,6 @@
     "flags": [ "DURABLE_MELEE", "STAB", "SHEATH_KNIFE" ]
   },
   {
-    "id": "bannerZhigh",
-    "type": "TOOL",
-    "category": "weapons",
-    "weapon_category": [ "SPEARS" ],
-    "symbol": "/",
-    "color": "dark_gray",
-    "name": { "str": "legion banner" },
-    "description": "A flagpole that a teen group used for a cosplay event.  If used, it could summon a group of survivors.  A symbol of a bygone world.  Could be used as a weapon if needed.",
-    "price": "50 USD",
-    "material": [ "wood", "steel", "cotton" ],
-    "techniques": [ "WBLOCK_1", "SWEEP" ],
-    "flags": [ "DURABLE_MELEE", "REACH_ATTACK", "NONCONDUCTIVE", "SHEATH_SPEAR" ],
-    "weight": "3100 g",
-    "volume": "1250 ml",
-    "bashing": 20,
-    "to_hit": 2,
-    "use_action": [
-		{ "type": "cast_spell", "spell_id": "mon_summon_survivor_legionZhigh", "no_fail": true, "level": 0, "need_wielding": true }
-	],
-    "charges_per_use": 90,
-    "max_charges": 120,
-    "initial_charges": 90,
-    "armor_data": { "covers": [ "arm_either", "hand_either" ], "coverage": 10, "encumbrance": 30, "material_thickness": 2 },
-    "relic_data":
-	{
-		"charges_per_activation": 1,
-		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 m", "rate": 1 } ]
-    },
-    "price_postapoc": "50 cent"
-  },
-  {
-    "id": "grappleGunZhigh",
-    "type": "TOOL",
-    "category": "weapons",
-    "weapon_category": [ "PISTOLS" ],
-    "symbol": "/",
-    "color": "dark_gray",
-    "name": { "str": "grapple gun" },
-    "description": "A universal tool which lets the user to move pretty fast.  Needs enough ammo to work.",
-    "price": "50 USD",
-    "material": [ "wood", "steel", "cotton" ],
-    "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "BELT_CLIP" ],
-    "weight": "500 g",
-    "volume": "350 ml",
-    "bashing": 2,
-    "to_hit": 2,
-    "use_action": [
-		{ "type": "cast_spell", "spell_id": "pullGrappleZhigh", "no_fail": true, "level": 0, "need_wielding": false }
-	],
-    "charges_per_use": 1,
-    "max_charges": 120,
-    "initial_charges": 90,
-    "relic_data":
-	{
-		"charges_per_activation": 1,
-		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 m", "rate": 1 } ]
-    },
-    "price_postapoc": "50 cent"
-  },
-  {
     "id": "crystalBallZhigh",
     "type": "GENERIC",
     "category": "tools_cooking",
@@ -5091,7 +5020,7 @@
 	"looks_like": "bone_knife",
     "name": { "str": "regianblade" },
     "description": "A dagger made from a sharpened mutant acidic chitin.  It's only natural that the Cataclysm would advent new, creative forms of old weapons.",
-    "material": [ "chitin" ],
+    "material": [ "acidchitin" ],
 	"proportional": { "weight": 0.8, "cutting": 0.9 },
     "flags": [ "STAB", "SHEATH_KNIFE", "ACIDIC" ]
   },
@@ -5102,7 +5031,7 @@
 	"category": "weapons",
     "name": { "str": "regian spear" },
     "description": "A stout wooden pole with a sharpened mutant acidic chitin for a spearhead, to add an acidic touch to a classic weapon.",
-    "material": [ "chitin", "wood" ],
+    "material": [ "acidchitin", "wood" ],
     "proportional": { "weight": 0.8, "cutting": 0.9 },
     "flags": [ "DURABLE_MELEE", "SPEAR", "REACH_ATTACK", "NONCONDUCTIVE", "SHEATH_SPEAR", "STAB", "ACIDIC" ]
   },
@@ -5113,7 +5042,7 @@
     "looks_like": "sword_bone",
     "name": { "str": "regian cleaver" },
     "description": "A shortsword made from sharpened mutant acidic chitins.  It's only natural that the Cataclysm would advent new, creative forms of old weapons.",
-    "material": [ "chitin" ],
+    "material": [ "acidchitin" ],
     "proportional": { "weight": 0.8, "cutting": 0.9 },
     "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NONCONDUCTIVE", "ACIDIC" ]
   },
@@ -5123,7 +5052,7 @@
     "copy-from": "javelin",
     "name": { "str": "regian javelin" },
     "description": "A stout wooden throwing spear with a mutant acidic chitin.  Fitting that the Cataclysm brings with it a few creative twists on ancient weapons.  The grip area has been carved and covered for better grip.",
-    "material": [ "wood" ],
+    "material": [ "acidchitin", "wood" ],
     "weight": "588 g",
     "price": "93 USD",
     "price_postapoc": "8 USD",
@@ -5214,6 +5143,457 @@
     "repairs_like": "masakariZhigh",
     "proportional": { "weight": 0.5, "bashing": 0.6, "cutting": 0.2 },
     "relative": { "to_hit": -2 },
+    "extend": { "flags": [ "FRAGILE_MELEE" ] },
+    "delete": { "flags": [ "DURABLE_MELEE" ] }
+  },
+  {
+    "id": "hammer_sledge_woodZhigh",
+    "type": "GENERIC",
+    "copy-from": "hammer_sledge",
+    "name": { "str": "wooden mallet" },
+    "description": "A large mallet with a massive, heavy, almost comical log as it's head.  This unwieldy tool is meant to break concrete, rock, brick, anything really.  Was used in ancient warfare, making rice cakes, and some modern military do use them as sledgehammers.",
+    "weight": "11500 g",
+    "looks_like": "hammer_sledge",
+    "techniques": [ "WBLOCK_1", "BRUTAL" ],
+    "volume": "2600 ml",
+    "bashing": 100,
+    "to_hit": -4,
+    "price": "240 USD",
+    "price_postapoc": "750 cent"
+  },
+  {
+    "id": "nunchunk3flailZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "FLAILS" ],
+    "name": { "str": "three-section-staff (flail mod)" },
+    "description": "This is a short stick with another sticks attached to its both ends by a long and flexible chain, makes the range longer than using only one stick.  Was used for fighting on horseback.",
+    "weight": "1200 g",
+    "volume": "1200 ml",
+    "price": "350 USD",
+    "price_postapoc": "40 USD",
+    "bashing": 22,
+    "material": [ "wood", "steel" ],
+    "symbol": "\\",
+    "color": "light_gray",
+    "techniques": [ "WRAP", "SPIN" ],
+    "use_action": { "menu_text": "Regrab", "type": "transform", "target": "nunchunk3stickZhigh", "msg": "You regrab your three-section-staff." },
+    "flags": [ "BELT_CLIP", "REACH_ATTACK", "REACH3", "NONCONDUCTIVE" ]
+  },
+  {
+    "id": "nunchunk3stickZhigh",
+    "looks_like": "nunchunk3flailZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "BATONS", "CLUBS" ],
+    "name": { "str": "three-section-staff (stick mod)" },
+    "description": "This is a short stick with another sticks attached to its both ends by a long and flexible chain, makes the range longer than using only one stick.  Was used for fighting in close quarters, unlike the flail mod.",
+    "weight": "1200 g",
+    "volume": "1200 ml",
+    "price": "350 USD",
+    "price_postapoc": "40 USD",
+    "bashing": 16,
+    "material": [ "wood", "steel" ],
+    "symbol": "\\",
+    "color": "light_gray",
+    "techniques": [ "WBLOCK_2", "RAPID", "WIDE", "SWEEP" ],
+    "use_action": { "menu_text": "Regrab", "type": "transform", "target": "nunchunk3flailZhigh", "msg": "You regrab your three-section-staff." },
+    "flags": [ "BELT_CLIP", "DURABLE_MELEE", "ALWAYS_TWOHAND", "NONCONDUCTIVE" ]
+  },
+  {
+    "id": "bonesawZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "KNIVES" ],
+    "name": { "str": "bonesaw" },
+    "description": "This is a medical tool used for cutting through bone.  It could be used as a weapon, in extreme cases.  Could be used to cosplay as a doctor.",
+    "weight": "500 g",
+    "volume": "750 ml",
+    "price": "80 USD",
+    "price_postapoc": "1250 cent",
+    "cutting": 22,
+    "to_hit": -1,
+    "material": [ "steel", "plastic" ],
+    "symbol": "/",
+    "color": "dark_gray",
+    "techniques": [ "WBLOCK_2" ],
+    "qualities": [
+		[ "SAW_M", 1 ],
+		[ "SAW_W", 1 ],
+		[ "SAW_M_FINE", 1 ],
+		[ "BUTCHER", -68 ]
+	],
+    "flags": [ "MESSY", "BELT_CLIP" ]
+  },
+  {
+    "id": "tenderizerZhigh",
+    "type": "GENERIC",
+    "copy-from": "hammer_sledge",
+    "name": { "str": "meat tenderizer" },
+    "description": "A shorter sledge hammer, still as weighty, however, due to the same steel head.  Mediocre as a melee weapon but is a more portable tool.  Spikes attached to the hammer makes the meat(or your enemy) tender.",
+    "weight": "4000 g",
+    "looks_like": "hammer_sledge_short",
+    "techniques": [ "WBLOCK_1", "BRUTAL", "SWEEP" ],
+    "volume": "900 ml",
+    "extend": { "flags": [ "STAB" ] },
+    "bashing": 30,
+    "cutting": 5,
+    "to_hit": 1,
+    "price_postapoc": "250 cent"
+  },
+  {
+    "id": "totokiaZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "BATONS" ],
+    "symbol": "/",
+    "color": "brown",
+    "name": { "str": "totokia" },
+    "description": "A type of club or battlehammer from Fiji.  It also have a wooden spike that can puncture an enemy.",
+    "price": "250 USD",
+    "price_postapoc": "1250 cent",
+    "material": "wood",
+    "techniques": [ "WBLOCK_1", "SWEEP" ],
+    "flags": [ "DURABLE_MELEE", "BELT_CLIP", "STAB" ],
+    "weight": "910 g",
+    "volume": "1500 ml",
+    "bashing": 20,
+    "cutting": 6,
+    "to_hit": 2
+  },
+  {
+    "id": "totokiaZhigh_weighted",
+    "type": "GENERIC",
+    "copy-from": "totokiaZhigh",
+    "name": { "str": "Gaffi Stick" },
+    "description": "A totokia covered with metals to make it more weighty; packs a surprising punch for how easy it is to make.  Also have a spike on the other end.  Good for cosplaying a space mercenary.",
+    "price": "300 USD",
+    "price_postapoc": "1750 cent",
+    "material": [ "lead", "wood" ],
+    "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "BELT_CLIP", "STAB" ],
+    "weight": "1135 g",
+    "volume": "1500 ml",
+    "cutting": 10,
+    "bashing": 30
+  },
+  {
+    "id": "cudgel_metalZhigh",
+    "type": "GENERIC",
+    "copy-from": "cudgel",
+    "name": { "str": "steel cudgel" },
+    "description": "An steel cudgel, heavier than a wooden cudgel but more damaging as a result.",
+    "color": "light_gray",
+    "price_postapoc": "80 cent",
+    "material": [ "steel" ],
+    "proportional": { "weight": 1.2, "bashing": 1.2 },
+    "qualities": [ [ "HAMMER", 1 ] ]
+  },
+  {
+    "id": "cudgel_stingerZhigh",
+    "type": "GENERIC",
+    "copy-from": "cudgel",
+    "looks_like": "cudgel",
+    "name": { "str": "stinger cudgel" },
+    "description": "A cudgel made from a sharpened mutant insect stinger.  It's only natural that the Cataclysm would advent new, creative forms of old weapons.",
+    "material": [ "chitin" ],
+    "proportional": { "weight": 0.8, "bashing": 0.9 },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "poison",
+              "once_in": 3,
+              "message": "The stinger injects a small amount of poison into your target.",
+              "npc_message": "%1$s stings their target."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "cudgel_triffidZhigh",
+    "type": "GENERIC",
+    "copy-from": "cudgel",
+    "looks_like": "cudgel",
+    "name": { "str": "triffid cudgel" },
+    "description": "A cudgel made from a strange plant monster.  It's only natural that the Cataclysm would advent new, creative forms of old weapons.",
+    "proportional": { "weight": 0.8, "bashing": 0.9 },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "poison",
+              "once_in": 3,
+              "message": "The stinger injects a small amount of poison into your target.",
+              "npc_message": "%1$s stings their target."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "cudgel_heatZhigh",
+    "copy-from": "cudgel_metalZhigh",
+    "looks_like": "cudgel_metalZhigh",
+    "name": { "str": "thermoclub" },
+    "description": "This is a cudgel with an aftermarket modification to heat the bashing part.  The makeshift atomic battery means it will effectively never run out of power, but it can irradiate the wielder when damaged.",
+    "weight": "430 g",
+    "price_postapoc": "550 cent",
+    "use_action": "HOTPLATE",
+    "flags": [ "BELT_CLIP", "LEAK_DAM", "RADIOACTIVE", "FLAMING" ]
+  },
+  {
+    "type": "TOOL",
+    "id": "cudgel_shockZhigh",
+    "copy-from": "cudgel_metalZhigh",
+    "looks_like": "cudgel_metalZhigh",
+    "name": { "str": "shockclub" },
+    "description": "This is a cudgel with an aftermarket modification to electrify the bashing part.  The makeshift atomic battery means it will effectively never run out of power, but it can irradiate the wielder when damaged.",
+    "weight": "430 g",
+    "price_postapoc": "550 cent",
+    "use_action": "TAZER",
+    "flags": [ "BELT_CLIP", "LEAK_DAM", "RADIOACTIVE", "SHOCKING" ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "cudgel_acidZhigh",
+    "copy-from": "cudgel",
+    "looks_like": "cudgel",
+    "name": { "str": "regianclub" },
+    "description": "A cudgel made from a sharpened mutant acidic chitin.  It's only natural that the Cataclysm would advent new, creative forms of old weapons.",
+    "price_postapoc": "550 cent",
+    "proportional": { "weight": 0.8, "bashing": 0.9 },
+    "material": [ "acidchitin" ],
+    "flags": [ "BELT_CLIP", "ACIDIC" ]
+  },
+  {
+    "id": "stilettoZhigh",
+    "looks_like": "switchblade",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "STILETTOS" ],
+    "name": { "str": "stiletto" },
+    "description": "A medieval dagger, used for piercing and stabbing.  Switchblades with similar designs were popular between mafias.",
+    "weight": "350 g",
+    "volume": "550 ml",
+    "price": "19590 cent",
+    "to_hit": 1,
+    "cutting": 16,
+    "material": [ "iron" ],
+    "symbol": ";",
+    "color": "dark_gray",
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 20 ] ],
+    "flags": [ "STAB", "SHEATH_KNIFE", "NONCONDUCTIVE", "DURABLE_MELEE" ]
+  },
+  {
+    "id": "hammer_sledge_nerfZhigh",
+    "type": "GENERIC",
+    "copy-from": "hammer_sledge",
+    "name": { "str": "wooden sledge hammer" },
+    "description": "A sledge hammer made out of wood.  Light, well-balanced, and easy to wield, but less damaging.",
+    "proportional": { "weight": 0.6, "bashing": 0.7 },
+    "to_hit": 2,
+    "material": [ "wood" ],
+    "volume": "850 ml",
+    "price": "25 USD"
+  },
+  {
+    "id": "glass_punch_daggerHandwrap",
+    "looks_like": "gloves_wraps",
+    "type": "GENERIC",
+    "name": { "str": "glass coated handwrap" },
+    "copy-from": "punch_dagger",
+    "description": "A handwrap, covered in glue, then covered in glass shards, designed to allow the user to give a \"sharp\" punch.",
+    "material": [ "cotton" ],
+    "volume": "50 ml",
+    "cutting": 12,
+	"bashing": 9,
+    "price": "50 cent",
+    "price_postapoc": "50 cent",
+    "qualities": [ [ "CUT", -1 ], [ "BUTCHER", -20 ] ],
+    "armor_data": { "covers": [ "hands" ], "coverage": 5, "warmth": 5, "material_thickness": 1 },
+    "flags": [ "UNARMED_WEAPON", "FRAGILE_MELEE", "SKINTIGHT", "OVERSIZE", "COMPACT", "ALLOWS_NATURAL_ATTACKS" ]
+  },
+  {
+    "id": "goedendagZhigh",
+    "copy-from": "pointy_stick",
+    "looks_like": "spear_knife",
+    "type": "GENERIC",
+    "weapon_category": [ "SPEARS" ],
+    "name": { "str": "goedendag" },
+    "description": "A combination of a club and a spear, and the name means \"good day\" in Dutch.  An appropriate greeting method for the apocalypse!",
+    "volume": "2500 ml",
+    "weight": "1800 g",
+    "bashing": 17,
+    "cutting": 20,
+    "material": [ "wood", "iron" ],
+    "techniques": [ "WBLOCK_1" ],
+    "extend": { "flags": [ "REACH_ATTACK", "SHEATH_SPEAR" ] },
+    "delete": { "flags": [ "JAVELIN" ] }
+  },
+  {
+    "id": "hatchet_stingerZhigh",
+    "type": "GENERIC",
+    "copy-from": "hatchet",
+    "looks_like": "hatchet",
+    "name": { "str": "stinger hatchet" },
+    "description": "A hatchet made from a sharpened mutant insect stinger.  It's only natural that the Cataclysm would advent new, creative forms of old weapons.",
+    "material": [ "chitin" ],
+    "proportional": { "weight": 0.8, "bashing": 0.9 },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "poison",
+              "once_in": 3,
+              "message": "The stinger injects a small amount of poison into your target.",
+              "npc_message": "%1$s stings their target."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "hatchet_triffidZhigh",
+    "type": "GENERIC",
+    "copy-from": "hatchet",
+    "looks_like": "hatchet",
+    "name": { "str": "triffid hatchet" },
+    "description": "A hatchet made from a strange plant monster.  It's only natural that the Cataclysm would advent new, creative forms of old weapons.",
+    "proportional": { "weight": 0.8, "bashing": 0.9 },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "poison",
+              "once_in": 3,
+              "message": "The stinger injects a small amount of poison into your target.",
+              "npc_message": "%1$s stings their target."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "hatchet_heatZhigh",
+    "copy-from": "hatchet",
+    "looks_like": "hatchet",
+    "name": { "str": "thermohatchet" },
+    "description": "This is a hatchet with an aftermarket modification to heat the bashing part.  The makeshift atomic battery means it will effectively never run out of power, but it can irradiate the wielder when damaged.",
+    "weight": "430 g",
+    "price_postapoc": "550 cent",
+    "use_action": "HOTPLATE",
+    "flags": [ "DURABLE_MELEE", "SHEATH_AXE", "BELT_CLIP", "LEAK_DAM", "RADIOACTIVE", "FLAMING", "NONCONDUCTIVE" ]
+  },
+  {
+    "type": "TOOL",
+    "id": "hatchet_shockZhigh",
+    "copy-from": "hatchet",
+    "looks_like": "hatchet",
+    "name": { "str": "shockhatchet" },
+    "description": "This is a hatchet with an aftermarket modification to electrify the bashing part.  The makeshift atomic battery means it will effectively never run out of power, but it can irradiate the wielder when damaged.",
+    "weight": "430 g",
+    "price_postapoc": "550 cent",
+    "use_action": "TAZER",
+    "flags": [ "DURABLE_MELEE", "SHEATH_AXE", "BELT_CLIP", "LEAK_DAM", "RADIOACTIVE", "SHOCKING", "NONCONDUCTIVE" ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "hatchet_acidZhigh",
+    "copy-from": "hatchet",
+    "looks_like": "hatchet",
+    "name": { "str": "regianhatchet" },
+    "description": "A hatchet made from a sharpened mutant acidic chitin.  It's only natural that the Cataclysm would advent new, creative forms of old weapons.",
+    "price_postapoc": "550 cent",
+    "proportional": { "weight": 0.8, "bashing": 0.9 },
+    "material": [ "acidchitin" ],
+    "flags": [ "DURABLE_MELEE", "SHEATH_AXE", "BELT_CLIP", "ACIDIC", "NONCONDUCTIVE" ]
+  },
+  {
+    "id": "butterfly_swordZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "SHORT_SWORDS" ],
+    "symbol": "/",
+    "color": "light_gray",
+    "name": { "str": "butterfly sword", "str_pl": "butterfly swords" },
+    "description": "This is a traditional Shaolin butterfly sword.  This is about the size of a machete but have hand guards and wider blades.",
+    "price": "250 USD",
+    "price_postapoc": "30 USD",
+    "material": "steel",
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NONCONDUCTIVE" ],
+    "techniques": [ "WBLOCK_1" ],
+    "weight": "883 g",
+    "volume": "7500 ml",
+    "to_hit": 1,
+    "bashing": 7,
+    "cutting": 32,
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 8 ] ]
+  },
+  {
+    "id": "claymoreZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "1H_SWORDS", "MEDIEVAL_SWORDS", "DUELING_SWORDS" ],
+    "name": { "str": "claymore" },
+    "description": "This is a Scottish sword seeing use in the 14th, 15th, and 16th centuries.  The term claymore is an anglicisation of the Gaelic claidheamh-mòr, which means greatsword.",
+    "weight": "2133 g",
+    "volume": "2450 ml",
+    "price": "1200 USD",
+    "price_postapoc": "50 USD",
+    "to_hit": 2,
+    "bashing": 13,
+    "cutting": 37,
+    "material": "steel",
+    "symbol": "/",
+    "color": "light_gray",
+    "techniques": [ "WBLOCK_2" ],
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 9 ] ],
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NONCONDUCTIVE" ]
+  },
+  {
+    "id": "claymoreZhigh_inferior",
+    "type": "GENERIC",
+    "copy-from": "claymoreZhigh",
+    "name": { "str": "claymore replica" },
+    "description": "This is a Scottish sword seeing use in the 14th, 15th, and 16th centuries.  This sword appears to be made very poorly, but it should still stand up to a few swings.",
+    "price_postapoc": "750 cent",
+    "material": "budget_steel",
+    "repairs_like": "claymoreZhigh",
+    "proportional": { "weight": 1.2, "cutting": 0.85 },
+    "relative": { "to_hit": -1 },
+    "delete": { "flags": [ "DURABLE_MELEE" ] }
+  },
+  {
+    "id": "claymoreZhigh_fake",
+    "type": "GENERIC",
+    "copy-from": "claymoreZhigh",
+    "name": { "str": "claymore fake" },
+    "description": "This is a dull, cheaply made replica of a Scottish sword seeing use in the 14th, 15th, and 16th centuries.  The term claymore is an anglicisation of the Gaelic claidheamh-mòr, which means greatsword.",
+    "price": "120 USD",
+    "price_postapoc": "50 cent",
+    "material": "aluminum",
+    "repairs_like": "claymoreZhigh",
+    "proportional": { "weight": 0.6, "bashing": 0.75, "cutting": 0.1 },
+    "relative": { "to_hit": -1 },
     "extend": { "flags": [ "FRAGILE_MELEE" ] },
     "delete": { "flags": [ "DURABLE_MELEE" ] }
   }

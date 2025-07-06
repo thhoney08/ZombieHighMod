@@ -54,7 +54,7 @@
     "charges_per_use": 1,
     "max_charges": 3,
     "initial_charges": 3,
-    "armor_data": { "covers": [ "arm_either" ], "coverage": 10, "encumbrance": 10, "material_thickness": 2 },
+    "armor_data": { "covers": [  ], "coverage": 10, "material_thickness": 2 },
     "relic_data":
 	{
 		"charges_per_activation": 1,
@@ -1490,5 +1490,213 @@
       ]
     },
     "flags": [ "WAIST", "COMPACT", "OVERSIZE", "WATER_FRIENDLY" ]
+  },
+  {
+    "id": "holyGrailSword_zhigh",
+    "type": "GUN",
+    "name": { "str_sp": "Sword and Grail" },
+	"weapon_category": [ "RIFLES", "PNEUMATIC", "MEDIEVAL_SWORDS", "2H_SWORDS" ],
+    "description": "The Grail and the Sword are a twin relic set, said to bind divinity and vengeance in one breath.  The grail radiates eternal light, healing the worthy; the sword sings only for those who’ve tasted despair.  Together, they judge both soul and flesh without mercy.",
+    "weight": "800 g",
+    "volume": "2 L",
+    "handling": 1,
+    "price": "5 USD",
+    "price_postapoc": "1 USD",
+    "material": [ "aluminum", "wood" ],
+    "symbol": "(",
+    "color": "pink",
+    "skill": "rifle",
+    "range": 8,
+    "ranged_damage": { "damage_type": "bullet", "amount": 30, "armor_penetration": 15 },
+    "dispersion": 60,
+    "durability": 10,
+    "loudness": 115,
+    "to_hit": 8,
+    "bashing": 14,
+	"cutting": 34,
+    "flags": [ "NO_UNWIELD", "UNBREAKABLE_MELEE", "NO_UNLOAD", "NO_RELOAD", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "ammo_effects": [ "BEANBAG", "LASER", "HEAVY_HIT", "WIDE", "BOUNCE", "BLINDS_EYES" ],
+    "ammo": "slug_zhigh",
+    "clip_size": 120,
+    "modes": [ [ "DEFAULT", "divine burst", 3 ] ],
+    "techniques": [
+		"PRECISE",
+		"RAPID",
+		"SWEEP",
+		"BRUTAL",
+		"IMPALE",
+		"WIDE",
+		"SPIN",
+		"DEF_DISARM",
+		"WBLOCK_3"
+	],
+    "relic_data":
+	{
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 seconds", "rate": 60 } ],
+        "passive_effects": [
+          {
+			"values": [
+				{ "value": "ARMOR_ELEC", "multiply": -1.0 },
+				{ "value": "SPEED", "add": 10 }
+			],
+            "condition": "ALWAYS",
+            "mutations": [ "ENCH_ZHIGH_DODGE_EFFECT" ],
+			"intermittent_activation": {
+				"effects": [
+					{
+						"frequency": "1 seconds",
+						"spell_effects": [ { "id": "vacancerHealZhigh" } ]
+					},
+					{
+						"frequency": "1 seconds",
+						"spell_effects": [ { "id": "maestroSpeedZhigh" } ]
+					},
+					{
+						"frequency": "1 seconds",
+						"spell_effects": [ { "id": "maestroStami2Zhigh" } ]
+					},
+					{
+						"frequency": "1 seconds",
+						"spell_effects": [ { "id": "maestroStrengZhigh" } ]
+					}
+				]
+			},
+            "hit_me_effect": [
+              {
+                "id": "vacancerHealZhigh"
+              },
+              {
+                "id": "maestroSpeedZhigh"
+              },
+              {
+                "id": "maestroStami2Zhigh"
+              },
+              {
+                "id": "maestroStrengZhigh"
+              },
+              {
+                "id": "zhigh_regen"
+              }
+		    ],
+            "hit_you_effect": [
+              {
+                "id": "vacancerHealZhigh"
+              },
+              {
+                "id": "maestroSpeedZhigh"
+              },
+              {
+                "id": "maestroStami2Zhigh"
+              },
+              {
+                "id": "maestroStrengZhigh"
+              },
+              {
+                "id": "zhigh_regen"
+              }
+            ]
+          }
+        ]
+    },
+    "valid_mod_locations": [
+      [ "accessories", 20 ],
+      [ "grip", 1 ],
+      [ "stock", 1 ],
+      [ "mechanism", 4 ],
+      [ "sights", 1 ],
+      [ "rail", 1 ],
+      [ "underbarrel", 1 ]
+    ]
+  },
+  {
+    "id": "bannerZhigh",
+    "type": "TOOL",
+    "category": "weapons",
+    "weapon_category": [ "SPEARS" ],
+    "symbol": "/",
+    "color": "dark_gray",
+    "name": { "str": "legion banner" },
+    "description": "A flagpole that a teen group used for a cosplay event.  If used, it could summon a group of survivors.  A symbol of a bygone world.  Could be used as a weapon if needed.",
+    "price": "50 USD",
+    "material": [ "wood", "steel", "cotton" ],
+    "techniques": [ "WBLOCK_1", "SWEEP" ],
+    "flags": [ "DURABLE_MELEE", "REACH_ATTACK", "NONCONDUCTIVE", "SHEATH_SPEAR" ],
+    "weight": "3100 g",
+    "volume": "1250 ml",
+    "bashing": 20,
+    "to_hit": 2,
+    "use_action": [
+		{ "type": "cast_spell", "spell_id": "mon_summon_survivor_legionZhigh", "no_fail": true, "level": 0, "need_wielding": true }
+	],
+    "charges_per_use": 90,
+    "max_charges": 120,
+    "initial_charges": 90,
+    "armor_data": { "covers": [ "arm_either", "hand_either" ], "coverage": 10, "encumbrance": 30, "material_thickness": 2 },
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 m", "rate": 1 } ]
+    },
+    "price_postapoc": "50 cent"
+  },
+  {
+    "id": "grappleGunZhigh",
+    "type": "TOOL",
+    "category": "weapons",
+    "weapon_category": [ "PISTOLS" ],
+    "symbol": "/",
+    "color": "dark_gray",
+    "name": { "str": "grapple gun" },
+    "description": "A universal tool which lets the user to move pretty fast.  Needs enough ammo to work.",
+    "price": "50 USD",
+    "material": [ "wood", "steel", "cotton" ],
+    "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "BELT_CLIP" ],
+    "weight": "500 g",
+    "volume": "350 ml",
+    "bashing": 2,
+    "to_hit": 2,
+    "use_action": [
+		{ "type": "cast_spell", "spell_id": "pullGrappleZhigh", "no_fail": true, "level": 0, "need_wielding": false }
+	],
+    "charges_per_use": 1,
+    "max_charges": 120,
+    "initial_charges": 90,
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 m", "rate": 1 } ]
+    },
+    "price_postapoc": "50 cent"
+  },
+  {
+    "id": "beehiveZhigh",
+    "type": "TOOL",
+    "category": "weapons",
+    "looks_like": "briefcase",
+    "symbol": "/",
+    "color": "dark_gray",
+    "name": { "str": "portable beehive" },
+    "description": "A large, enclosed wooden box with multiple sliding frames in it.  With some time, it can be used to summon a hive.",
+    "price": "50 USD",
+    "material": [ "plastic" ],
+    "techniques": [ "WBLOCK_3" ],
+    "flags": [ "FANCY", "OVERSIZE", "BELTED", "RESTRICT_HANDS", "WATER_FRIENDLY", "POWERARMOR_COMPATIBLE" ],
+    "weight": "8100 g",
+    "volume": "15 L",
+    "bashing": 20,
+    "to_hit": 2,
+    "use_action": [
+		{ "type": "cast_spell", "spell_id": "spellBeesZhigh", "no_fail": true, "level": 0, "need_wielding": false }
+	],
+    "charges_per_use": 20,
+    "max_charges": 120,
+    "initial_charges": 20,
+    "armor_data": { "covers": [ "arm_either", "hand_either" ], "coverage": 10, "encumbrance": 30, "material_thickness": 2 },
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "20 seconds", "rate": 1 } ]
+    },
+    "price_postapoc": "50 cent"
   }
 ]
