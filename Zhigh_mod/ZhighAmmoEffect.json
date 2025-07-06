@@ -84,6 +84,11 @@
     "trail": { "field_type": "fd_fire", "intensity_min": 1, "intensity_max": 3 }
   },
   {
+    "id": "FLAMESMOL",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_fire", "intensity_min": 1, "intensity_max": 3 }
+  },
+  {
     "id": "GOOAMMO1",
     "type": "ammo_effect",
     "aoe": { "field_type": "fd_goo", "intensity_min": 2, "intensity_max": 2, "size": 3 }
@@ -141,12 +146,12 @@
   {
     "id": "TEARGAS",
     "type": "ammo_effect",
-    "aoe": { "field_type": "fd_smoke", "intensity_min": 3, "intensity_max": 3 }
+    "aoe": { "field_type": "fd_tear_gas", "intensity_min": 3, "intensity_max": 3 }
   },
   {
     "id": "TEARGASBIG",
     "type": "ammo_effect",
-    "aoe": { "field_type": "fd_smoke", "intensity_min": 3, "intensity_max": 3, "radius": 6 }
+    "aoe": { "field_type": "fd_tear_gas", "intensity_min": 3, "intensity_max": 3, "radius": 6 }
   },
   {
     "id": "CORROSIONGAS",

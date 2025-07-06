@@ -16,7 +16,7 @@
     "color": "white",
     "covers": [ "mouth", "eyes" ],
     "coverage": 95,
-    "encumbrance": 3,
+    "encumbrance": 2,
     "warmth": 1,
     "material_thickness": 1,
     "environmental_protection": 1,
@@ -522,6 +522,82 @@
     "copy-from": "mask_paper_base"
   },
   {
+    "id": "mask_SquidTriZhigh",
+    "type": "ARMOR",
+    "copy-from": "mask_hockey",
+    "name": { "str": "soldier mask" },
+    "description": "A protective face mask made of thick plastic.  Commonly worn by pink soldiers."
+  },
+  {
+    "id": "mask_SquidSqaZhigh",
+    "type": "ARMOR",
+    "copy-from": "mask_hockey",
+    "name": { "str": "soldier mask" },
+    "description": "A protective face mask made of thick plastic.  Commonly worn by pink soldiers."
+  },
+  {
+    "id": "mask_SquidCirZhigh",
+    "type": "ARMOR",
+    "copy-from": "mask_hockey",
+    "name": { "str": "soldier mask" },
+    "description": "A protective face mask made of thick plastic.  Commonly worn by pink soldiers."
+  },
+  {
+    "id": "mask_cavalry_goldZhigh",
+    "copy-from": "mask_cavalry_iron",
+    "type": "ARMOR",
+    "name": { "str": "gold battle mask" },
+    "description": "A full-face mask made of gold, in the vein of Roman cavalry masks.  Provides decent protection and gives an imposing, yet cool post-apocalyptic look.",
+    "weight": "950 g",
+    "price": "500 USD",
+    "material": [ "gold" ],
+    "color": "yellow",
+    "flags": [ "FANCY", "STURDY" ]
+  },
+  {
+    "id": "mask_cavalry_superalloyZhigh",
+    "copy-from": "mask_cavalry_iron",
+    "type": "ARMOR",
+    "name": { "str": "superalloy battle mask" },
+    "description": "A full-face mask made of superalloy, in the vein of survivors.  Provides decent protection and gives an imposing post-apocalyptic look.",
+    "material": [ "superalloy" ],
+    "color": "light_cyan",
+    "proportional": { "weight": 0.6, "price": 3, "price_postapoc": 3 }
+  },
+  {
+    "id": "mask_cavalry_boneZhigh",
+    "copy-from": "mask_cavalry_iron",
+    "type": "ARMOR",
+    "name": { "str": "bone battle mask" },
+    "description": "A full-face mask made of bone, in the vein of Roman cavalry masks.  Provides decent protection and gives an imposing post-apocalyptic look.",
+    "weight": "950 g",
+    "price": "500 USD",
+    "material": [ "bone" ],
+    "color": "white"
+  },
+  {
+	"id": "mask_cavalry_chainmailZhigh",
+	"repairs_like": "mask_cavalry_iron",
+	"type": "ARMOR",
+	"name": { "str": "chainmail battle mask" },
+	"description": "A face-covering mask made from tightly woven rings of iron chainmail, modeled after ancient battle masks.  It's lighter than a full metal mask but offers modest protection and a fearsome post-apocalyptic presence.",
+	"weight": "1400 g",
+	"volume": "500 ml",
+	"price": "150 USD",
+	"price_postapoc": "3 USD",
+	"material": [ "iron", "cotton" ],
+	"symbol": "[",
+	"looks_like": "mask_bal",
+	"color": "light_red",
+	"covers": [ "mouth", "eyes" ],
+	"coverage": 95,
+	"encumbrance": 12,
+	"warmth": 5,
+	"material_thickness": 2,
+	"environmental_protection": 0,
+	"flags": [ "STURDY" ]
+  },
+  {
     "id": "mask_paintball",
     "repairs_like": "mask_gas",
     "type": "ARMOR",
@@ -636,7 +712,8 @@
   },
   {
     "id": "mask_menpo_superalloy",
-    "copy-from": "shield_buckler",
+    "copy-from": "mask_menpo",
+    "looks_like": "mask_menpo",
     "type": "ARMOR",
     "name": { "str": "superalloy menpo" },
     "description": "A mask made from made of modern superalloy instead of wood.  Wearing it blocks you from some harm.",
@@ -644,7 +721,20 @@
     "color": "light_cyan",
     "encumbrance": 13,
     "material_thickness": 4,
-    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 }
+    "proportional": { "weight": 0.6, "price": 3, "price_postapoc": 4 }
+  },
+  {
+    "id": "mask_menpo_kevlar",
+    "copy-from": "mask_menpo",
+    "looks_like": "mask_menpo",
+    "type": "ARMOR",
+    "name": { "str": "ballistic menpo" },
+    "description": "A mask made from made of modern kevlar instead of wood.  Wearing it blocks you from some harm.",
+    "material": [ "kevlar" ],
+    "color": "light_cyan",
+    "encumbrance": 11,
+    "material_thickness": 4,
+    "proportional": { "price": 2, "price_postapoc": 2 }
   },
   {
     "id": "flowerCrownZhigh",
@@ -883,7 +973,6 @@
     "price": "450 USD",
     "price_postapoc": "50 USD",
     "to_hit": -1,
-    "material": [ "kevlar_rigid", "plastic" ],
     "flags": [ "WATER_FRIENDLY", "STURDY", "FANCY" ]
   },
   {
@@ -951,6 +1040,7 @@
     "description": "A respirator, that covers the mouth and nose.  Provides excellent protection from smoke and other contaminants.  It must be prepared before use.",
     "encumbrance": 13,
     "warmth": 8,
+    "covers": [ "mouth" ],
     "environmental_protection_with_filter": 16,
     "max_charges": 80,
     "initial_charges": 80

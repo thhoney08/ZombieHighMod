@@ -1134,7 +1134,7 @@
     "copy-from": "adjustable_stock",
     "type": "GUNMOD",
     "name": { "str": "adjustable stock" },
-    "dispersion_modifier": -20,
+    "dispersion_modifier": -90,
     "handling_modifier": 45
   },
   {
@@ -1539,7 +1539,7 @@
     "name": { "str": "ashot" },
     "weight": "600 g",
     "volume": "500 ml",
-    "ranged_damage": { "damage_type": "bullet", "amount": 1, "armor_penetration": 2 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 1, "armor_penetration": 1 },
     "dispersion": 700,
     "durability": 9,
     "valid_mod_locations": [
@@ -1818,7 +1818,11 @@
     "to_hit": -2,
     "ranged_damage": { "damage_type": "bash", "amount": 14, "armor_penetration": 4 },
     "dispersion": 75,
-    "durability": 6
+    "durability": 6,
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "grip", 1 ]
+    ]
   },
   {
     "id": "wristrocket",
@@ -1838,7 +1842,14 @@
     "to_hit": -2,
     "ranged_damage": { "damage_type": "bash", "amount": 20, "armor_penetration": 8 },
     "dispersion": 45,
-    "durability": 7
+    "durability": 7,
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ]
   },
   {
     "id": "bullet_crossbow",
@@ -2251,10 +2262,26 @@
     "type": "TOOL_ARMOR",
     "category": "tools",
     "name": { "str": "advanced UPS", "str_pl": "advanced UPS's" },
-    "weight": "150 g",
-    "volume": "150 ml",
+    "description": "This is an advanced version of the unified power supply, or UPS.  Designed for military use to power advanced weapons, it has a hand crank, but only accepts rechargeable batteries.  It can power many household electronics as well.",
+    "weight": "100 g",
+    "volume": "100 ml",
     "covers": [  ],
-    "max_charges": 5000
+    "ammo": "battery",
+    "use_action": "HAND_CRANK",
+    "magazines": [
+      [
+        "battery",
+        [
+          "heavy_battery_cell",
+          "heavy_plus_battery_cell",
+          "medium_battery_cell",
+          "medium_plus_battery_cell",
+          "light_battery_cell",
+          "light_plus_battery_cell",
+          "light_minus_battery_cell"
+        ]
+      ]
+    ]
   },
   {
     "id": "nailgun",
@@ -2984,5 +3011,248 @@
     "copy-from": "suitcase_l",
     "name": { "str": "suitcase" },
     "storage": "60 L"
+  },
+  {
+	"id": "410shot_000",
+    "type": "AMMO",
+    "copy-from": "410shot_000",
+    "name": { "str": ".410 000 shot" },
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 10, "length": 13 } ]
+  },
+  {
+	"id": "bp_410shot_000",
+    "type": "AMMO",
+    "copy-from": "bp_410shot_000",
+    "name": { "str": ".410 000 shot, black powder" },
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 10, "length": 12 } ]
+  },
+  {
+    "type": "SPELL",
+    "id": "AEA_MAPCIV",
+    "effect": "map",
+    "name": { "str": "Civilian GPS" },
+    "description": "Reveals an area around you on the overmap",
+    "valid_targets": [ "self" ],
+    "min_aoe": 7,
+    "max_aoe": 7,
+    "message": "You have a vision of the surrounding area…",
+    "base_casting_time": 150,
+    "flags": [
+		"NO_HANDS",
+		"NO_LEGS",
+		"NO_EXPLOSION_VFX",
+		"NO_FAIL",
+		"SILENT"	
+	]
+  },
+  {
+    "type": "SPELL",
+    "id": "AEA_MAPMIL",
+    "effect": "map",
+    "name": { "str": "Military GPS" },
+    "description": "Reveals an area around you on the overmap",
+    "valid_targets": [ "self" ],
+    "min_aoe": 15,
+    "max_aoe": 15,
+    "message": "You have a vision of the surrounding area…",
+    "base_casting_time": 100,
+    "flags": [
+		"NO_HANDS",
+		"NO_LEGS",
+		"NO_EXPLOSION_VFX",
+		"NO_FAIL",
+		"SILENT"	
+	]
+  },
+  {
+	"id": "gps_device",
+    "type": "TOOL",
+    "category": "electronics",
+    "looks_like": "cell_phone",
+    "name": { "str": "gps pinpointer" },
+    "description": "Durable handheld GPS unit built for outdoor navigation.  Activate to acquire satellite lock and search the database.",
+    "weight": "230 g",
+    "volume": "350 ml",
+    "price": "100 USD",
+    "price_postapoc": "50 USD",
+    "material": [ "plastic", "aluminum" ],
+    "symbol": ";",
+    "color": "yellow",
+	"ammo": "battery",
+    "use_action": [
+		{
+			"type": "transform",
+			"msg": "You turn the gps pinpointer on.",
+			"target": "gps_device_on",
+			"transform_charges": 1,
+			"active": true,
+			"need_charges": 1,
+			"need_charges_msg": "The gps pinpointer's batteries are dead."
+		},
+		{ "type": "gps_device", "radius": 400, "additional_charges_per_tile": 0.1 }
+	],
+    "magazines": [
+      [
+        "battery",
+        [
+          "light_plus_battery_cell",
+          "light_minus_battery_cell",
+          "light_minus_disposable_cell",
+          "light_battery_cell",
+          "light_disposable_cell",
+          "light_atomic_battery_cell",
+          "light_minus_atomic_battery_cell"
+        ]
+      ]
+    ]
+  },
+  {
+	"id": "gps_device_on",
+    "type": "TOOL",
+    "copy-from": "gps_device",
+    "name": { "str": "gps pinpointer (on)" },
+    "power_draw": 10000,
+    "use_action": [
+		{
+			"type": "transform",
+			"msg": "You turn the gps pinpointer off.",
+			"menu_text": "Turn off",
+			"target": "gps_device",
+			"need_charges_msg": "The gps pinpointer's batteries are dead."
+		}
+	],
+    "relic_data": {
+      "passive_effects": [
+        {
+			"condition": "ALWAYS",
+			"intermittent_activation": {
+				"effects": [
+					{
+						"frequency": "20 seconds",
+						"spell_effects": [ { "id": "AEA_MAPCIV" } ]
+					}
+				]
+			}
+        }
+      ]
+    }
+  },
+  {
+	"id": "mil_gps_device",
+    "type": "TOOL",
+    "copy-from": "gps_device",
+    "name": { "str": "military gps pinpointer" },
+    "description": "Durable handheld GPS unit built for outdoor navigation.  Activate to acquire satellite lock and search the database.  This one has encrpytion keys for military-grade satellites, allowing a much greater search range.",
+    "use_action": [
+		{
+			"type": "transform",
+			"msg": "You turn the military gps pinpointer on.",
+			"target": "mil_gps_device_on",
+			"transform_charges": 1,
+			"active": true,
+			"need_charges": 1,
+			"need_charges_msg": "The gps pinpointer's batteries are dead."
+		},
+		{ "type": "gps_device", "radius": 1200, "additional_charges_per_tile": 0.1 }
+	],
+    "magazines": [
+      [
+        "battery",
+        [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ]
+      ]
+    ]
+  },
+  {
+	"id": "mil_gps_device_on",
+    "type": "TOOL",
+    "copy-from": "gps_device",
+    "name": { "str": "military gps pinpointer (on)" },
+    "power_draw": 5000,
+    "use_action": [
+		{
+			"type": "transform",
+			"msg": "You turn the military gps pinpointer off.",
+			"menu_text": "Turn off",
+			"target": "mil_gps_device",
+			"need_charges_msg": "The military gps pinpointer's batteries are dead."
+		}
+	],
+    "relic_data": {
+      "passive_effects": [
+        {
+			"condition": "ALWAYS",
+			"intermittent_activation": {
+				"effects": [
+					{
+						"frequency": "5 seconds",
+						"spell_effects": [ { "id": "AEA_MAPMIL" } ]
+					}
+				]
+			}
+        }
+      ]
+    }
+  },
+  {
+	"id": "lawn_dart",
+    "type": "AMMO",
+    "copy-from": "lawn_dart",
+    "name": { "str": "lawn dart" },
+    "ammo_type": "thrown",
+    "thrown_damage": [ { "damage_type": "stab", "amount": 20 } ],
+    "count": 3,
+    "stack_size": 3
+  },
+  {
+    "id": "slingshot_cannon",
+    "copy-from": "rifle_elastic",
+    "type": "GUN",
+    "weapon_category": [ "SLINGSHOTS", "ELASTIC" ],
+    "color": "brown",
+    "looks_like": "LAW",
+    "name": { "str": "slingshot cannon" },
+    "description": "Somewhere between a bullet crossbow and a slingshot on steroids, this shoulder-mounted weapon uses a winch to keep several elastic bands under tension.  It fires full-size rocks with much more power and range than pebbles out of a normal slingshot.  High strength will make it faster to reload.",
+    "price": "115 USD",
+    "price_postapoc": "15 USD",
+    "material": [ "wood", "plastic" ],
+    "ammo": "rock",
+    "weight": "8 kg",
+    "volume": "4 L",
+    "skill": "launcher",
+    "ranged_damage": { "damage_type": "bash", "amount": 55, "armor_penetration": 10 },
+    "dispersion": 60,
+    "range": 50,
+    "reload": 700,
+    "durability": 9,
+    "clip_size": 1,
+    "valid_mod_locations": [ [ "accessories", 2 ], [ "sights", 1 ], [ "sling", 1 ] ],
+    "delete": { "flags": [ "WATERPROOF_GUN", "UNDERWATER_GUN" ] },
+    "loudness": 15
+  },
+  {
+    "id": "survivor_vest",
+    "copy-from": "survivor_vest",
+    "type": "ARMOR",
+    "name": { "str": "survivor harness", "str_pl": "survivor harnesses" },
+    "use_action": {
+		"type": "holster",
+		"max_volume": "4750 ml",
+		"min_volume": "10 ml",
+		"draw_cost": 150,
+		"skills": [ "pistol", "smg", "shotgun", "rifle", "launcher" ],
+		"flags": [ "SHEATH_AXE", "BELT_CLIP", "SHEATH_SWORD", "SHEATH_KNIFE", "HOLSTER_PISTOL" ]
+	}
+  },
+  {
+	"id": "cobalt_60",
+    "type": "AMMO",
+    "copy-from": "cobalt_60",
+    "name": { "str": "cobalt-60 pellet" },
+    "ammo_type": "pebble",
+    "damage": { "damage_type": "acid", "amount": 3 },
+    "count": 3,
+    "stack_size": 3
   }
 ]

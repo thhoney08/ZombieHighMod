@@ -6,7 +6,7 @@
     "looks_like": "frog_umbrella_open",
     "weapon_category": [ "BATONS", "SPEARS" ],
     "to_hit": 3,
-    "bashing": 6,
+    "bashing": 10,
     "cutting": 4,
     "material": [ "aluminum", "plastic" ],
     "techniques": [ "WBLOCK_1", "RAPID" ],
@@ -134,6 +134,7 @@
         "active": true,
         "type": "transform"
       },
+	  { "type": "gps_device", "radius": 120 },
       "CAMERA",
       "PORTABLE_GAME",
 	  "WEATHER_TOOL",
@@ -304,7 +305,8 @@
     "max_charges": 30,
     "charges_per_use": 1,
     "use_action": { "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": true, "material_restricted": false },
-    "flags": [ "STAB", "SHEATH_KNIFE", "WRITE_MESSAGE", "BELT_CLIP" ]
+    "flags": [ "STAB", "SHEATH_KNIFE", "WRITE_MESSAGE", "BELT_CLIP" ],
+    "armor_data": { "covers": [  ] }
   },
   {
     "id": "ultimatecontrol",
@@ -2117,7 +2119,7 @@
   },
   {
     "id": "oldKeysZhigh",
-    "type": "GENERIC",
+    "type": "TOOL",
     "category": "tools_entry",
     "name": { "str": "old key" },
     "description": "This is a fragile looking old key.  You could use this to open doors, but only once.",
@@ -2128,8 +2130,11 @@
     "material": "steel",
     "symbol": ";",
     "color": "light_gray",
-    "qualities": [ [ "LOCKPICK", 3 ] ],
-    "flags": [ "DESTROY_ON_DECHARGE", "PERFECT_LOCKPICK" ]
+    "initial_charges": 1,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "use_action": [ "PICK_LOCK" ],
+    "flags": [ "PERFECT_LOCKPICK" ]
   },
   {
     "id": "yutnoriZhigh",
@@ -2146,5 +2151,100 @@
     "color": "brown",
     "flags": [ "NO_REPAIR" ],
     "use_action": "PLAY_GAME"
+  },
+  {
+    "id": "4inaRowZhigh",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "4-in-a-row set" },
+    "description": "A wooden box containing all the equipment needed to play a game of 4-in-a-row.",
+    "weight": "907 g",
+    "volume": "2 L",
+    "price": "75 USD",
+    "price_postapoc": "1 USD",
+    "material": [ "wood" ],
+    "symbol": "?",
+    "color": "brown",
+    "flags": [ "NO_REPAIR" ],
+    "use_action": "PLAY_GAME"
+  },
+  {
+    "type": "GENERIC",
+    "id": "trophyGoldZhigh",
+    "symbol": "/",
+    "color": "yellow",
+    "name": { "str": "gold trophy" },
+    "description": "A gold trophy.",
+    "category": "valuables",
+    "price": "200 USD",
+    "price_postapoc": "10 cent",
+    "material": "gold",
+    "weight": "1500 g",
+    "volume": "250 ml",
+    "to_hit": 1,
+    "container_data": { "contains": "750 ml", "watertight": true },
+    "bashing": 16
+  },
+  {
+    "type": "GENERIC",
+    "id": "trophySilverZhigh",
+    "symbol": "/",
+    "color": "yellow",
+    "name": { "str": "silver trophy" },
+    "description": "A silver trophy.",
+    "category": "valuables",
+    "price": "150 USD",
+    "price_postapoc": "10 cent",
+    "material": "silver",
+    "weight": "1500 g",
+    "volume": "250 ml",
+    "to_hit": 1,
+    "container_data": { "contains": "500 ml", "watertight": true },
+    "bashing": 16
+  },
+  {
+    "type": "GENERIC",
+    "id": "trophyBronzeZhigh",
+    "symbol": "/",
+    "color": "yellow",
+    "name": { "str": "bronze trophy" },
+    "description": "A bronze trophy.",
+    "category": "valuables",
+    "price": "100 USD",
+    "price_postapoc": "10 cent",
+    "material": "bronze",
+    "weight": "1500 g",
+    "volume": "250 ml",
+    "to_hit": 1,
+    "container_data": { "contains": "250 ml", "watertight": true },
+    "bashing": 16
+  },
+  {
+    "id": "cash_cardZhighInfinite",
+    "looks_like": "cash_card",
+    "type": "TOOL",
+    "symbol": ",",
+    "color": "yellow",
+    "name": { "str": "cash card" },
+    "ascii_picture": "cashcard",
+    "description": "A yellow plastic card used to store money.  These became popular once the government officially moved to all electronic money.  It holds up to 2 million dollars.",
+    "price": "10 USD",
+    "price_postapoc": "0 cent",
+    "material": "plastic",
+    "flags": [ "NO_UNLOAD", "NO_RELOAD", "CARDZHIGH" ],
+    "weight": "6 g",
+    "volume": "5 ml",
+    "to_hit": -3,
+    "max_charges": 200000000,
+    "rand_charges": [
+      50000,
+      100000
+    ],
+    "relic_data":
+	{
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 seconds", "rate": 1000 } ]
+    },
+    "ammo": "money",
+    "category": "valuables"
   }
 ]

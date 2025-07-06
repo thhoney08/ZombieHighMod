@@ -30,6 +30,16 @@
         "translucency": 1,
         "effects": [
           {
+            "effect_id": "corroding",
+            "body_part": "mouth",
+            "intensity": 5,
+            "min_duration": "10 seconds",
+            "max_duration": "10 seconds",
+            "//": "won't be applied outside of vehicles, so it could apply harsher effect",
+            "immune_outside_vehicle": true,
+            "message_type": "bad"
+          },
+          {
             "effect_id": "paralyzepoison",
             "body_part": "mouth",
             "intensity": 5,
@@ -58,6 +68,16 @@
         "translucency": 10,
         "effects": [
           {
+            "effect_id": "corroding",
+            "body_part": "mouth",
+            "intensity": 5,
+            "min_duration": "20 seconds",
+            "max_duration": "20 seconds",
+            "//": "won't be applied outside of vehicles, so it could apply harsher effect",
+            "immune_outside_vehicle": true,
+            "message_type": "bad"
+          },
+          {
             "effect_id": "paralyzepoison",
             "body_part": "mouth",
             "intensity": 5,
@@ -84,6 +104,16 @@
         "color": "green",
         "translucency": 0,
         "effects": [
+          {
+            "effect_id": "corroding",
+            "body_part": "mouth",
+            "intensity": 5,
+            "min_duration": "30 seconds",
+            "max_duration": "30 seconds",
+            "//": "won't be applied outside of vehicles, so it could apply harsher effect",
+            "immune_outside_vehicle": true,
+            "message_type": "bad"
+          },
           {
             "effect_id": "paralyzepoison",
             "body_part": "mouth",

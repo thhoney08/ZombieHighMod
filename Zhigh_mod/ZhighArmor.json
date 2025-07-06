@@ -728,7 +728,7 @@
 		"GUN_CLEAN", "GUN_REPAIR", "PICKAXE",
 		"HAMMER", "CROWBAR", "BOLTCUTTERS",
 		"OXYTORCH", "WATER_PURIFIER", "BURROW",
-		"EINKTABLETPC", "PORTABLE_GAME",
+		"EINKTABLETPC", "PORTABLE_GAME", "JACKHAMMER",
 		"WEATHER_TOOL", "SIPHON", "MEDITATE",
 		{
 			"type": "repair_item",
@@ -756,6 +756,7 @@
 			"cost_scaling": 0.1,
 			"move_cost": 50
 		},
+		{ "type": "gps_device", "radius": 400, "additional_charges_per_tile": 0.1 },
 		{
 			"type": "heal",
 			"move_cost": 550,
@@ -793,6 +794,7 @@
         "STAB",
         "ONLY_ONE",
         "DURABLE_MELEE",
+        "DIG_TOOL",
         "BAROMETER",
         "HYGROMETER",
         "THERMOMETER",
@@ -1436,27 +1438,6 @@
     "name": { "str": "airsoft helmet" },
     "description": "A lightweight helmet that is fashioned to look like a real military helmet, but is made of plastic and only protects against BB's and other light threats.",
     "looks_like": "helmet_army"
-  },
-  {
-    "id": "mask_SquidTriZhigh",
-    "type": "ARMOR",
-    "copy-from": "mask_hockey",
-    "name": { "str": "soldier mask" },
-    "description": "A protective face mask made of thick plastic.  Commonly worn by pink soldiers."
-  },
-  {
-    "id": "mask_SquidSqaZhigh",
-    "type": "ARMOR",
-    "copy-from": "mask_hockey",
-    "name": { "str": "soldier mask" },
-    "description": "A protective face mask made of thick plastic.  Commonly worn by pink soldiers."
-  },
-  {
-    "id": "mask_SquidCirZhigh",
-    "type": "ARMOR",
-    "copy-from": "mask_hockey",
-    "name": { "str": "soldier mask" },
-    "description": "A protective face mask made of thick plastic.  Commonly worn by pink soldiers."
   },
   {
     "id": "jacket_tracksuitSquidGrn_zhigh",
@@ -2596,6 +2577,15 @@
     "description": "A large American flag cape made to fly in even the worst conditions.  Wearing this does not give you the ability to fly, shoot lasers from your eyes, or run really fast.  At least you can have an obsession of drinking milk.",
     "covers": [ "torso", "arms", "legs" ],
     "coverage": 30,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "mutations": [ "ENCH_ZHIGH_CLOAK2_EFFECT" ]
+        }
+      ]
+    },
     "encumbrance": 10
   },
   {
@@ -3891,39 +3881,6 @@
     "flags": [ "OVERSIZE", "BELTED", "FRAGILE", "FIN", "RESTRICT_HANDS", "BLOCK_WHILE_WORN", "POWERARMOR_COMPATIBLE" ]
   },
   {
-    "id": "mask_cavalry_goldZhigh",
-    "copy-from": "mask_cavalry_iron",
-    "type": "ARMOR",
-    "name": { "str": "gold battle mask" },
-    "description": "A full-face mask made of gold, in the vein of Roman cavalry masks.  Provides decent protection and gives an imposing, yet cool post-apocalyptic look.",
-    "weight": "950 g",
-    "price": "500 USD",
-    "material": [ "gold" ],
-    "color": "yellow",
-    "flags": [ "FANCY", "STURDY" ]
-  },
-  {
-    "id": "mask_cavalry_superalloyZhigh",
-    "copy-from": "mask_cavalry_iron",
-    "type": "ARMOR",
-    "name": { "str": "superalloy battle mask" },
-    "description": "A full-face mask made of superalloy, in the vein of survivors.  Provides decent protection and gives an imposing post-apocalyptic look.",
-    "material": [ "superalloy" ],
-    "color": "light_cyan",
-    "proportional": { "weight": 0.6, "price": 3, "price_postapoc": 3 }
-  },
-  {
-    "id": "mask_cavalry_boneZhigh",
-    "copy-from": "mask_cavalry_iron",
-    "type": "ARMOR",
-    "name": { "str": "bone battle mask" },
-    "description": "A full-face mask made of bone, in the vein of Roman cavalry masks.  Provides decent protection and gives an imposing post-apocalyptic look.",
-    "weight": "950 g",
-    "price": "500 USD",
-    "material": [ "bone" ],
-    "color": "white"
-  },
-  {
     "id": "balclava_hoodZhigh",
     "type": "ARMOR",
     "name": { "str": "rag hood" },
@@ -4932,7 +4889,6 @@
     "id": "dominoMaskZhigh",
     "type": "ARMOR",
     "name": { "str": "domino mask" },
-    "//": "A folded bandana still takes up some space on the head.",
     "description": "A simple fabric covering tied over the eye parts to hide identity.  Useful for cosplaying.",
     "weight": "72 g",
     "volume": "250 ml",
@@ -5099,6 +5055,47 @@
     "valid": false,
     "description": "You're shrowded within the shadows.",
     "dodge_modifier": 2.7,
+    "player_display": false
+  },
+  {
+    "id": "cape2Zhigh",
+    "looks_like": "cloak_wool",
+    "type": "ARMOR",
+    "name": { "str": "cape" },
+    "description": "A cape meant to be thrown over your body, like a cloak.  This one is made out of blankets, so not as cool as the ones that were sold on the internet.",
+    "weight": "1175 g",
+    "volume": "3 L",
+    "price": "107 USD",
+    "price_postapoc": "5 USD",
+    "to_hit": -1,
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "color": "green",
+    "covers": [ "torso", "arms", "legs" ],
+    "coverage": 35,
+    "encumbrance": 3,
+    "warmth": 20,
+    "material_thickness": 2,
+    "environmental_protection": 3,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "mutations": [ "ENCH_ZHIGH_CLOAK2_EFFECT" ]
+        }
+      ]
+    },
+    "flags": [ "OVERSIZE", "HOOD", "OUTER", "FANCY", "ONLY_ONE" ]
+  },
+  {
+    "type": "mutation",
+    "id": "ENCH_ZHIGH_CLOAK2_EFFECT",
+    "name": { "str": "." },
+    "points": 0,
+    "valid": false,
+    "description": "You're shrowded within the shadows.",
+    "dodge_modifier": 1.2,
     "player_display": false
   },
   {
@@ -5334,25 +5331,265 @@
     }
   },
   {
-	"id": "mask_cavalry_chainmailZhigh",
-	"repairs_like": "mask_cavalry_iron",
-	"type": "ARMOR",
-	"name": { "str": "chainmail battle mask" },
-	"description": "A face-covering mask made from tightly woven rings of iron chainmail, modeled after ancient battle masks.  It's lighter than a full metal mask but offers modest protection and a fearsome post-apocalyptic presence.",
-	"weight": "1400 g",
-	"volume": "500 ml",
-	"price": "150 USD",
-	"price_postapoc": "3 USD",
-	"material": [ "iron", "cotton" ],
-	"symbol": "[",
-	"looks_like": "mask_bal",
-	"color": "light_red",
-	"covers": [ "mouth", "eyes" ],
-	"coverage": 95,
-	"encumbrance": 12,
-	"warmth": 5,
-	"material_thickness": 2,
-	"environmental_protection": 0,
-	"flags": [ "STURDY" ]
+    "id": "hachiganeZhigh",
+    "type": "ARMOR",
+	"name": { "str": "hachigane" },
+    "description": "One of traditional japanese armors, this is a strip of cloth with a metal plate to protect one's forhead.",
+    "weight": "184 g",
+    "volume": "250 ml",
+    "price": "75 USD",
+    "price_postapoc": "5 USD",
+    "to_hit": -2,
+	"material": [ "steel", "cotton" ],
+    "symbol": "[",
+    "looks_like": "spot_strap_zhigh",
+    "color": "dark_gray",
+    "covers": [ "eyes" ],
+    "coverage": 60,
+    "encumbrance": 3,
+    "warmth": 5,
+    "material_thickness": 3,
+    "environmental_protection": 2,
+    "flags": [ "WATER_FRIENDLY" ]
+  },
+  {
+    "id": "hachiganeZhigh_superalloy",
+    "looks_like": "hachiganeZhigh",
+    "copy-from": "hachiganeZhigh",
+    "type": "ARMOR",
+    "name": { "str": "superalloy hachigane" },
+    "description": "One of traditional japanese armors, this is a strip of cloth with a metal plate to protect one's forhead.  This one is made of modern superalloy instead of steel.",
+    "material": [ "superalloy", "cotton" ],
+    "color": "light_cyan",
+    "encumbrance": 1,
+    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 },
+    "material_thickness": 4
+  },
+  {
+    "id": "shield_riotTazer",
+    "copy-from": "shield_riot",
+    "looks_like": "shield_riot",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "riot shock shield" },
+    "description": "A large but fairly light plastic shield designed for riot police officers.  Not too encumbering, but designed for fending off thrown rocks rather than bullets.  Now with a high-powered stun gun.  Use this item to attempt to electrocute an adjacent enemy, damaging and temporarily paralyzing them.  Because the shock can actually jump through the air, it is difficult to miss.",
+    "ammo": "battery",
+    "charges_per_use": 25,
+    "use_action": "TAZER",
+    "magazines": [
+      [
+        "battery",
+        [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ]
+      ]
+    ],
+    "magazine_well": "500 ml"
+  },
+  {
+    "id": "agentEarpiece",
+    "copy-from": "badge_abstract",
+    "type": "TOOL_ARMOR",
+	"category": "clothing",
+    "name": { "str": "radio earpiece" },
+    "material": [ "plastic", "aluminum" ],
+    "weight": "10 g",
+    "price_postapoc": "10 cent",
+    "description": "A two-way radio that is so small that it can fit to a person's ear.  However, only ultra-light batteries fits in here.",
+    "ammo": "battery",
+    "charges_per_use": 1,
+    "flags": [ "TWO_WAY_RADIO" ],
+    "magazines": [
+      [
+        "battery",
+        [
+          "light_minus_disposable_cell",
+          "light_minus_battery_cell",
+          "light_minus_atomic_battery_cell"
+        ]
+      ]
+    ],
+    "magazine_well": "250 ml"
+  },
+  {
+    "type": "TOOL_ARMOR",
+    "category": "clothing",
+    "id": "whoopeeCapZhigh",
+    "name": { "str": "whoopee cap" },
+    "weight": "350 g",
+    "color": "brown",
+    "covers": [ "head" ],
+    "symbol": "[",
+    "description": "A style of headwear popular among youths in the mid-20th century in the United States.  Looks like a crown made out of felt, suitable for a king of wastelands.",
+    "price": "75 USD",
+    "price_postapoc": "1 USD",
+    "material": [ "leather" ],
+    "volume": "1750 ml",
+    "warmth": 5,
+    "environmental_protection": 3,
+    "encumbrance": 10,
+    "coverage": 50,
+    "flags": [ "FANCY", "VARSIZE" ],
+    "material_thickness": 1
+  },
+  {
+    "id": "jeepcapZhigh",
+    "type": "ARMOR",
+    "name": { "str": "jeepcap" },
+    "description": "A knit cap with a short visor made mostly from knitted yarn.  Very warm and useful for paddings for helmets.",
+    "weight": "120 g",
+    "volume": "250 ml",
+    "price": "30 USD",
+    "price_postapoc": "1 USD",
+    "material": [ "wool" ],
+    "symbol": "[",
+    "looks_like": "hat_cotton",
+    "color": "dark_gray",
+    "covers": [ "head" ],
+    "coverage": 65,
+    "warmth": 40,
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "HELMET_COMPAT", "SUN_GLASSES" ]
+  },
+  {
+    "id": "capotainZhigh",
+    "repairs_like": "tricorne",
+    "type": "ARMOR",
+    "name": { "str": "capotain hat" },
+    "description": "A conical hat which were worn by Puritans.  Also famous by various inquisitors and witch hunters.",
+    "weight": "400 g",
+    "volume": "2500 ml",
+    "price": "179 USD",
+    "price_postapoc": "250 cent",
+    "material": [ "wool" ],
+    "symbol": "[",
+    "looks_like": "cowboy_hat",
+    "color": "brown",
+    "covers": [ "head" ],
+    "coverage": 50,
+    "encumbrance": 20,
+    "warmth": 8,
+    "material_thickness": 2,
+    "environmental_protection": 2,
+    "flags": [ "FANCY", "VARSIZE", "SUN_GLASSES" ]
+  },
+  {
+    "id": "pants_leopard",
+    "repairs_like": "pants",
+    "copy-from": "pants",
+    "name": { "str": "leopard pants" },
+    "type": "ARMOR",
+    "description": "A pair of pants.  Have leopard prints on them."
+  },
+  {
+    "id": "cavalierHatZhigh",
+    "type": "ARMOR",
+    "name": { "str": "cavalier hat" },
+    "description": "A cowboy hat lookalike hat which was famous in the 1600s.  Fits for a cavelier, bard, and more.",
+    "weight": "390 g",
+    "volume": "2 L",
+    "price": "95 USD",
+    "price_postapoc": "250 cent",
+    "material": [ "leather" ],
+    "symbol": "[",
+    "looks_like": "cowboy_hat",
+    "color": "brown",
+    "covers": [ "head" ],
+    "coverage": 50,
+    "encumbrance": 10,
+    "warmth": 7,
+    "material_thickness": 2,
+    "environmental_protection": 2,
+    "flags": [ "FANCY", "VARSIZE", "SUN_GLASSES" ]
+  },
+  {
+    "id": "campaignHatZhigh",
+    "type": "ARMOR",
+    "name": { "str": "campaign hat" },
+    "description": "Often used in the military, just like the boonie hat, especially for a drill instructor with a jelly doughnut.",
+    "weight": "92 g",
+    "volume": "500 ml",
+    "price": "12 USD",
+    "price_postapoc": "50 cent",
+    "material": [ "wool" ],
+    "symbol": "[",
+    "looks_like": "hat_boonie",
+    "color": "dark_gray",
+    "covers": [ "head" ],
+    "coverage": 65,
+    "encumbrance": 10,
+    "warmth": 10,
+    "material_thickness": 1,
+    "environmental_protection": 2,
+    "flags": [ "VARSIZE", "SUN_GLASSES" ]
+  },
+  {
+    "id": "helmet_nasalHorn",
+    "repairs_like": "helmet_nasal",
+    "copy-from": "helmet_nasal",
+    "name": { "str": "horned nasal helm" },
+    "type": "ARMOR",
+    "description": "An early medieval helmet with a projection guarding the nose, to better protect the face without obstructing vision.  Improper viking gear, unlike the original nasal helm.",
+    "cutting": 6,
+    "extend": { "flags": [ "STAB" ] }
+  },
+  {
+    "id": "ammobandShotZhigh",
+    "looks_like": "shotbelt_20",
+    "copy-from": "ammobandZhigh",
+    "type": "ARMOR",
+    "name": { "str": "shotshell ammo band" },
+    "description": "A simple fabric covering tied over the eyes to keep your sweat from your eyes.  Useful for protection against some unwanted liquids from outside.  Also useful to keep some shotgun ammo at your hand.",
+    "use_action": { "type": "bandolier", "capacity": 12, "ammo": [ "410shot", "shot", "20x66mm", "signal_flare" ], "draw_cost": 20 }
+  },
+  {
+    "id": "peaked_capZhigh_black",
+    "repairs_like": "peaked_capZhigh",
+    "copy-from": "peaked_capZhigh",
+    "name": { "str": "peaked cap" },
+    "type": "ARMOR",
+    "color": "dark_gray"
+  },
+  {
+    "type": "TOOL_ARMOR",
+    "category": "clothing",
+    "id": "fedora_whiteZhigh",
+    "name": { "str": "fancy fedora" },
+    "weight": "300 g",
+    "color": "light_gray",
+    "covers": [ "head" ],
+    "use_action": { "menu_text": "Tip", "type": "transform", "target": "fedora_whiteZhigh", "msg": "You tip your %s." },
+    "symbol": "[",
+    "description": "Fancy fedora hat, comfortable and stylish.  Its brim helps keep the sun out of your eyes.  It's design is fancier than an average one.",
+    "price": "75 USD",
+    "price_postapoc": "1 USD",
+    "material": [ "leather" ],
+    "volume": "1250 ml",
+    "warmth": 5,
+    "environmental_protection": 3,
+    "encumbrance": 10,
+    "coverage": 50,
+    "flags": [ "SUPER_FANCY", "VARSIZE", "SUN_GLASSES" ],
+    "material_thickness": 2
+  },
+  {
+    "id": "helmet_redHoodZhigh",
+    "type": "ARMOR",
+    "name": { "str": "red cylinder helmet" },
+    "description": "A helmet made from special meterial.  Covers the entire head; very light and durable.  Used by a jester during a factory raid.",
+    "weight": "1447 g",
+    "volume": "2500 ml",
+    "price": "380 USD",
+    "price_postapoc": "1250 cent",
+    "to_hit": -2,
+    "bashing": 2,
+    "material": [ "kevlar_rigid", "plastic" ],
+    "symbol": "[",
+    "looks_like": "helmet_larmor",
+    "color": "green",
+    "covers": [ "head", "eyes", "mouth" ],
+    "coverage": 95,
+    "encumbrance": 10,
+    "warmth": 10,
+    "material_thickness": 4,
+    "environmental_protection": 4,
+    "flags": [ "WATERPROOF", "STURDY" ]
   }
 ]

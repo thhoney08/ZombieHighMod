@@ -97,14 +97,14 @@
     "vision_day": 40,
     "vision_night": 10,
     "death_drops": "ZhighWeaponGroups",
-    "starting_ammo": { "rock": 2 },
+    "starting_ammo": { "sling_bullet": 20 },
     "special_attacks": [
       {
         "type": "gun",
         "cooldown": 3,
         "move_cost": 60,
         "gun_type": "feral_human_thrown_rock",
-        "ammo_type": "rock",
+        "ammo_type": "sling_bullet",
         "no_ammo_sound": "\"Come at me, I dare you!\"",
         "fake_skills": [ [ "gun", 3 ], [ "throw", 3 ] ],
         "fake_dex": 6,
@@ -141,7 +141,7 @@
     "copy-from": "mon_survivor_human_pipe",
     "looks_like": "mon_feral_human_crowbar",
     "description": "This mysterious human arrived here somehow.  If this person becomes hostile, shout to them so that they know you are not the enemy.",
-    "starting_ammo": { "sling_bullet": 90 },
+    "starting_ammo": { "sling_bullet": 30 },
     "special_attacks": [
       {
         "type": "gun",
@@ -172,7 +172,6 @@
     "copy-from": "mon_survivor_human_pipe",
     "looks_like": "mon_feral_militia",
     "description": "This mysterious human arrived here somehow.  If this person becomes hostile, shout to them so that they know you are not the enemy.",
-    "starting_ammo": { "beanbag": 8 },
     "special_when_hit": [ "RETURN_FIRE", 1 ],
     "vision_day": 50,
     "vision_night": 15,

@@ -1312,6 +1312,41 @@
     }
   },
   {
+    "id": "medkitRechargeV3",
+    "looks_like": "ammo_pouch",
+    "type": "TOOL",
+	"name": "rechargeable medkit",
+	"description": "A modification of a medium medkit, released to civilians with some high costs.  Although it is not the best option and more expensive than the basic one, the healing activates instantly.  This one has been modified to use batteries, and some toolkits to make some medications.  \n <color_yellow> Presented by Phoenix corp.</color>",
+	"weight": "80 g",
+    "volume": "30 ml",
+	"price": "7500 USD",
+    "price_postapoc": "30 USD",
+	"material": "plastic",
+	"symbol": "+",
+	"color": "red",
+    "charges_per_use": 1,
+    "armor_data": { "covers": [  ], "coverage": 10, "material_thickness": 2 },
+	"use_action": {
+      "type": "heal",
+	  "move_cost": 9000,
+	  "bleed": 0.99,
+	  "bite": 0.99,
+	  "infect": 0.99,
+	  "limb_power": 99,
+	  "head_power": 99,
+	  "torso_power": 99,
+	  "effects": [ { "id": "pkill3", "duration": 100 } ]
+    },
+	"flags": [ "BELTED", "COMPACT", "NO_DROP", "ALLOWS_NATURAL_ATTACKS", "WATER_FRIENDLY", "ALLOWS_REMOTE_USE", "NPC_SAFE", "NO_UNLOAD", "NO_TAKEOFF" ],
+    "max_charges": 1,
+    "initial_charges": 1,
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1440 m", "rate": 1 } ]
+    }
+  },
+  {
     "id": "holyH20Zhigh",
     "type": "COMESTIBLE",
     "looks_like": "flask_hip",
