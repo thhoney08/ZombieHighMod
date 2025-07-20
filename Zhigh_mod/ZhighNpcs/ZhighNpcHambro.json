@@ -29,7 +29,7 @@
     "carry_override": "NC_Ham_Bro_misc",
     "weapon_override": "NC_Ham_Bro_weapon",
     "skills": [
-      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 20 ] }, { "rng": [ 0, -4 ] } ] } ] } },
       { "skill": "melee", "bonus": { "rng": [ 2, 4 ] } },
       { "skill": "dodge", "bonus": { "rng": [ 4, 9 ] } },
       { "skill": "bashing", "bonus": { "rng": [ 2, 4 ] } },
@@ -85,7 +85,118 @@
     "id": "TALK_ZHIGHHAMBRO",
     "dynamic_line": "Jesus Christ!",
     "responses": [
+      { "text": "I'd like to buy some stuff.", "topic": "TALK_ZHIGHHAMBRO_WPNDEAL" },
       { "text": "I've got to go…", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_ZHIGHHAMBRO_WPNDEAL",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "npc_has_effect": "currently_busy",
+      "yes": "I'm out of some things, <name_g>.  It takes a while to get some stuff - but I'm working hard to replace it.  What can I get you in the meantime?",
+      "no": "I'll see what I've got around here for you.  I've gotta warn you: it ain't cheap.  Hard to stay supplied when crap hits the fan, you know.  What do you need?"
+    },
+    "responses": [
+      { "text": "Nevermind.", "topic": "TALK_NONE" },
+      {
+        "text": "[60 High School Coin]  I'll buy a crude rocket launcher.",
+        "condition": { "u_has_items": { "item": "ZhighCoin", "count": 60 } },
+        "effect": [
+			{ "npc_add_effect": "currently_busy", "duration": "30 m" },
+            { "u_sell_item": "ZhighCoin", "count": 20 },
+            { "u_buy_item": "surv_rocket_launcher", "count": 1 } ],
+        "topic": "TALK_ZHIGHHAMBRO_WPNDEAL_END"
+      },
+      {
+        "text": "[20 High School Coin]  I'll buy a spiked homemade rocket.",
+        "condition": { "u_has_items": { "item": "ZhighCoin", "count": 20 } },
+        "effect": [
+			{ "npc_add_effect": "currently_busy", "duration": "2 h" },
+            { "u_sell_item": "ZhighCoin", "count": 20 },
+            { "u_buy_item": "spiked_rocket", "count": 1 } ],
+        "topic": "TALK_ZHIGHHAMBRO_WPNDEAL_END"
+      },
+      {
+        "text": "[20 High School Coin]  I'll buy a explosive homemade rocket.",
+        "condition": { "u_has_items": { "item": "ZhighCoin", "count": 20 } },
+        "effect": [
+			{ "npc_add_effect": "currently_busy", "duration": "2 h" },
+            { "u_sell_item": "ZhighCoin", "count": 20 },
+            { "u_buy_item": "explosive_hm_rocket", "count": 1 } ],
+        "topic": "TALK_ZHIGHHAMBRO_WPNDEAL_END"
+      },
+      {
+        "text": "[20 High School Coin]  I'll buy a incendiary homemade rocket.",
+        "condition": { "u_has_items": { "item": "ZhighCoin", "count": 20 } },
+        "effect": [
+			{ "npc_add_effect": "currently_busy", "duration": "2 h" },
+            { "u_sell_item": "ZhighCoin", "count": 20 },
+            { "u_buy_item": "incendiary_hm_rocket", "count": 1 } ],
+        "topic": "TALK_ZHIGHHAMBRO_WPNDEAL_END"
+      },
+      {
+        "text": "[20 High School Coin]  I'll buy a shotcanister homemade rocket.",
+        "condition": { "u_has_items": { "item": "ZhighCoin", "count": 20 } },
+        "effect": [
+			{ "npc_add_effect": "currently_busy", "duration": "2 h" },
+            { "u_sell_item": "ZhighCoin", "count": 20 },
+            { "u_buy_item": "shot_hm_rocket", "count": 1 } ],
+        "topic": "TALK_ZHIGHHAMBRO_WPNDEAL_END"
+      }
+    ]
+  },
+  {
+    "id": "TALK_ZHIGHHAMBRO_WPNDEAL_END",
+    "type": "talk_topic",
+    "dynamic_line": [ "Is there anything else you need?" ],
+    "responses": [
+      { "text": "Nevermind.", "topic": "TALK_DONE" },
+      {
+        "text": "[60 High School Coin]  I'll buy a crude rocket launcher.",
+        "condition": { "u_has_items": { "item": "ZhighCoin", "count": 60 } },
+        "effect": [
+			{ "npc_add_effect": "currently_busy", "duration": "30 m" },
+            { "u_sell_item": "ZhighCoin", "count": 20 },
+            { "u_buy_item": "surv_rocket_launcher", "count": 1 } ],
+        "topic": "TALK_ZHIGHHAMBRO_WPNDEAL_END"
+      },
+      {
+        "text": "[20 High School Coin]  I'll buy a spiked homemade rocket.",
+        "condition": { "u_has_items": { "item": "ZhighCoin", "count": 20 } },
+        "effect": [ 
+			{ "npc_add_effect": "currently_busy", "duration": "2 h" },
+            { "u_sell_item": "ZhighCoin", "count": 20 },
+            { "u_buy_item": "spiked_rocket", "count": 1 } ],
+        "topic": "TALK_ZHIGHHAMBRO_WPNDEAL_END"
+      },
+      {
+        "text": "[20 High School Coin]  I'll buy a explosive homemade rocket.",
+        "condition": { "u_has_items": { "item": "ZhighCoin", "count": 20 } },
+        "effect": [
+			{ "npc_add_effect": "currently_busy", "duration": "2 h" },
+            { "u_sell_item": "ZhighCoin", "count": 20 },
+            { "u_buy_item": "explosive_hm_rocket", "count": 1 } ],
+        "topic": "TALK_ZHIGHHAMBRO_WPNDEAL_END"
+      },
+      {
+        "text": "[20 High School Coin]  I'll buy a incendiary homemade rocket.",
+        "condition": { "u_has_items": { "item": "ZhighCoin", "count": 20 } },
+        "effect": [
+			{ "npc_add_effect": "currently_busy", "duration": "2 h" },
+            { "u_sell_item": "ZhighCoin", "count": 20 },
+            { "u_buy_item": "incendiary_hm_rocket", "count": 1 } ],
+        "topic": "TALK_ZHIGHHAMBRO_WPNDEAL_END"
+      },
+      {
+        "text": "[20 High School Coin]  I'll buy a shotcanister homemade rocket.",
+        "condition": { "u_has_items": { "item": "ZhighCoin", "count": 20 } },
+        "effect": [
+			{ "npc_add_effect": "currently_busy", "duration": "2 h" },
+            { "u_sell_item": "ZhighCoin", "count": 20 },
+            { "u_buy_item": "shot_hm_rocket", "count": 1 } ],
+        "topic": "TALK_ZHIGHHAMBRO_WPNDEAL_END"
+      }
     ]
   }
 ]
