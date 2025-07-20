@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zhigh_Mod\n"
-"POT-Creation-Date: 2025-07-06 09:23-0500\n"
+"POT-Creation-Date: 2025-07-20 09:35-0500\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1409,10 +1409,11 @@ msgstr ""
 #. goggles', 'str_pl': 'pairs of atomic multi-visor goggles'}.
 #. ~ Use action need_charges_msg for {'str': 'pair of brawler gloves',
 #. 'str_pl': 'pairs of brawler gloves'}.
+#. ~ Use action need_charges_msg for defibrillator.
 #. ~ Use action need_charges_msg for {'str': 'shock club'}.
 #. ~ Use action need_charges_msg for {'str': 'heat hawk (off)', 'str_pl':
 #. 'heat hawks (off)'}.
-#: .\ZhighArmor.json .\ZhighWeapons\ZhighMelee.json
+#: .\ZhighArmor.json .\ZhighMeds.json .\ZhighWeapons\ZhighMelee.json
 msgid "The %s's batteries are dead."
 msgstr ""
 
@@ -1702,11 +1703,13 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. ~ Use action msg for {'str': 'ballistic helmet'}.
+#. ~ Use action msg for {'str': 'bulletproof visor helmet'}.
 #: .\ZhighArmor.json
 msgid "You raise your visor."
 msgstr ""
 
 #. ~ Description for {'str': 'ballistic helmet'}
+#. ~ Description for {'str': 'bulletproof visor helmet'}
 #: .\ZhighArmor.json
 msgid ""
 "A helmet with a plastic shield that covers your entire face.  Activate to "
@@ -1721,6 +1724,8 @@ msgstr[1] ""
 
 #. ~ Use action msg for {'str': 'ballistic helmet (raised visor)', 'str_pl':
 #. 'ballistic helmets (raised visor)'}.
+#. ~ Use action msg for {'str': 'bulletproof visor helmet (raised visor)',
+#. 'str_pl': 'bulletproof visor helmets (raised visor)'}.
 #: .\ZhighArmor.json
 msgid "You put down your visor."
 msgstr ""
@@ -3465,7 +3470,7 @@ msgstr ""
 #. ~ Description for {'str': 'Freeze trap Effect'}
 #. ~ Description for {'str': 'Balloon trap Trigger'}
 #. ~ Description for {'str': 'Balloon trap Effect'}
-#. ~ Description for {'str': 'Flame trapp Trigger'}
+#. ~ Description for {'str': 'Flame trap Trigger'}
 #. ~ Description for {'str': 'Flame trapp Effect'}
 #. ~ Description for {'str': 'Acid trap Trigger'}
 #. ~ Description for {'str': 'Acid trap Effect'}
@@ -3894,8 +3899,191 @@ msgstr[1] ""
 #. ~ Description for {'str': 'red cylinder helmet'}
 #: .\ZhighArmor.json
 msgid ""
-"A helmet made from special meterial.  Covers the entire head; very light and"
+"A helmet made from special material.  Covers the entire head; very light and"
 " durable.  Used by a jester during a factory raid."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "chitinous shield"
+msgid_plural "chitinous shields"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'chitinous shield'}
+#: .\ZhighArmor.json
+msgid ""
+"A crude chitinous shield lacking any metal or leather reinforcement.  "
+"Tolerable weight but not very tough."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "large chitinous shield"
+msgid_plural "large chitinous shields"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'large chitinous shield'}
+#: .\ZhighArmor.json
+msgid ""
+"A crude chitinous tower shield lacking any metal or leather reinforcement.  "
+"Bulky, but offers a decent amount of protection."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "biosilicified chitin shield"
+msgid_plural "biosilicified chitin shields"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'biosilicified chitin shield'}
+#: .\ZhighArmor.json
+msgid ""
+"A crude biosilicified chitin shield lacking any metal or leather "
+"reinforcement.  Tolerable weight but not very tough."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "large biosilicified chitin shield"
+msgid_plural "large biosilicified chitin shields"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'large biosilicified chitin shield'}
+#: .\ZhighArmor.json
+msgid ""
+"A crude biosilicified chitin tower shield lacking any metal or leather "
+"reinforcement.  Bulky, but offers a decent amount of protection."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "boater hat"
+msgid_plural "boater hats"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'boater hat'}
+#: .\ZhighArmor.json
+msgid ""
+"A semi-formal summer hat for men.  Most popular in the late 19th century and"
+" early 20th century, still common among those in sailing or rowing events, "
+"period-related theatrical and musical performances."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "pith helmet"
+msgid_plural "pith helmets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'pith helmet'}
+#: .\ZhighArmor.json
+msgid ""
+"A lightweight cloth-covered helmet made of sholapith.  Called by various "
+"names, such as salacot, safari helmet, and topee."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "jack-o-lantern helmet"
+msgid_plural "jack-o-lantern helmets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'jack-o-lantern helmet'}
+#: .\ZhighArmor.json
+msgid ""
+"A helmet made from special meterial.  Covers the entire head; very light and"
+" durable.  Used during halloween."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "arrow headband"
+msgid_plural "arrow headbands"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'arrow headband'}
+#: .\ZhighArmor.json
+msgid ""
+"A headband with an arrowhead and a fletching is added on it.  An item which "
+"was used for silly jokes."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "apple headband"
+msgid_plural "apple headbands"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'apple headband'}
+#: .\ZhighArmor.json
+msgid ""
+"A headband with an apple is added on it.  An item which was used for silly "
+"jokes."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "nail headband"
+msgid_plural "nail headbands"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'nail headband'}
+#: .\ZhighArmor.json
+msgid ""
+"A headband with a long nail is added on it.  An item which was used for "
+"silly jokes."
+msgstr ""
+
+#. ~ Description for {'str': 'cosplay leather body armor'}
+#: .\ZhighArmor.json
+msgid ""
+"Thick leather body armor.  Light and comfortable.  Looks good when you need "
+"to look like a SWAT."
+msgstr ""
+
+#. ~ Description for {'str': 'cosplay leather body armor'}
+#: .\ZhighArmor.json
+msgid ""
+"Thick leather body armor.  Light and comfortable.  Looks good when you need "
+"to look like a riot officer."
+msgstr ""
+
+#. ~ Description for {'str': 'cosplay leather body armor'}
+#: .\ZhighArmor.json
+msgid ""
+"Thick leather body armor.  Light and comfortable.  Looks good when you need "
+"to look like a CBRN agent."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "bulletproof visor helmet"
+msgid_plural "bulletproof visor helmets"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighArmor.json
+msgid "bulletproof visor helmet (raised visor)"
+msgid_plural "bulletproof visor helmets (raised visor)"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'bulletproof visor helmet (raised visor)',
+#. 'str_pl': 'bulletproof visor helmets (raised visor)'}
+#: .\ZhighArmor.json
+msgid ""
+"A bulletproof visor helmet with a plastic face shield which is raised up.  "
+"Activate to lower the shield."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "sun visor"
+msgid_plural "sun visors"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'sun visor'}
+#: .\ZhighArmor.json
+msgid "A sun visor.  It provides protection from sunlight."
 msgstr ""
 
 #: .\ZhighBionics.json
@@ -8195,6 +8383,46 @@ msgid_plural "cobalt-60 pellets"
 msgstr[0] ""
 msgstr[1] ""
 
+#: .\ZhighItemRemake.json
+msgid "spiked homemade rocket"
+msgid_plural "spiked homemade rockets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'spiked homemade rocket'}
+#: .\ZhighItemRemake.json
+msgid ""
+"A hand built rocket, consisting of a spike welded onto a pipe that was "
+"filled with improvised rocket fuel.  Horribly inaccurate, as can be expected"
+" of this grade of weapon, but packs a fierce punch… if it hits."
+msgstr ""
+
+#: .\ZhighItemRemake.json
+msgid "explosive homemade rocket"
+msgid_plural "explosive homemade rockets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'explosive homemade rocket'}
+#: .\ZhighItemRemake.json
+msgid ""
+"A hand built rocket, consisting of a simple explosive warhead attached onto "
+"a pipe, filled with improvised rocket fuel.  Not very powerful, but can be "
+"made from scratch."
+msgstr ""
+
+#: .\ZhighItemRemake.json
+msgid "Ruger Mini-14"
+msgid_plural "Ruger Mini-14s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItemRemake.json .\ZhighWeapons\ZhighRanged.json
+msgid "spraycan flamethrower"
+msgid_plural "spraycan flamethrowers"
+msgstr[0] ""
+msgstr[1] ""
+
 #: .\ZhighItems.json
 msgid "umbrella, closed"
 msgid_plural "umbrella, closeds"
@@ -9629,6 +9857,19 @@ msgid ""
 "million dollars."
 msgstr ""
 
+#: .\ZhighItems.json
+msgid "keytar"
+msgid_plural "keytars"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'keytar'}
+#: .\ZhighItems.json
+msgid ""
+"A keyboard instrument with a strap so you can wear it around, even when not "
+"playing."
+msgstr ""
+
 #: .\ZhighMartialArts.json
 msgid "Marine Corps Martial Arts Program Training Manual"
 msgid_plural "Marine Corps Martial Arts Program Training Manual"
@@ -10766,6 +11007,33 @@ msgid ""
 msgstr ""
 
 #: .\ZhighMasks.json
+msgid "chitinous battle mask"
+msgid_plural "chitinous battle masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'chitinous battle mask'}
+#: .\ZhighMasks.json
+msgid ""
+"A full-face mask made of chitinous, in the vein of Roman cavalry masks.  "
+"Provides decent protection and gives an imposing post-apocalyptic look."
+msgstr ""
+
+#: .\ZhighMasks.json
+msgid "biosilicified chitin battle mask"
+msgid_plural "biosilicified chitin battle masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'biosilicified chitin battle mask'}
+#: .\ZhighMasks.json
+msgid ""
+"A full-face mask made of biosilicified chitin, in the vein of Roman cavalry "
+"masks.  Provides decent protection and gives an imposing post-apocalyptic "
+"look."
+msgstr ""
+
+#: .\ZhighMasks.json
 msgid "paintball mask"
 msgid_plural "paintball masks"
 msgstr[0] ""
@@ -11169,6 +11437,15 @@ msgstr[1] ""
 #. stimulant.
 #. ~ Use action activation_message for injectable 3-(b-TG) stimulant.
 #. ~ Use action activation_message for injectable 2A2-(b-TG) stimulant.
+#. ~ Use action activation_message for injectable Pyrostatin.
+#. ~ Use action activation_message for injectable Cryonix.
+#. ~ Use action activation_message for injectable Acidgarde.
+#. ~ Use action activation_message for injectable Voltbloc.
+#. ~ Use action activation_message for injectable Luxstat.
+#. ~ Use action activation_message for injectable Noctivex.
+#. ~ Use action activation_message for injectable Vermacline.
+#. ~ Use action activation_message for injectable test stim.
+#. ~ Use action activation_message for injectable Reactor+ stimulant.
 #: .\ZhighMeds.json
 msgid "You shoot up."
 msgstr ""
@@ -11593,6 +11870,123 @@ msgid ""
 msgstr ""
 
 #: .\ZhighMeds.json
+msgid "injectable Pyrostatin"
+msgid_plural "injectable Pyrostatins"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for injectable Pyrostatin
+#: .\ZhighMeds.json
+msgid ""
+"Emergency anti-thermal stimulant used by soldiers, doctors, and PMCs operating in heat-intensive zones.  Prevents burn damage, blisters, and heat-induced slowdown for a limited time.  \n"
+" <color_yellow> Presented by Phoenix corp.</color>"
+msgstr ""
+
+#: .\ZhighMeds.json
+msgid "injectable Cryonix"
+msgid_plural "injectable Cryonixs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for injectable Cryonix
+#: .\ZhighMeds.json
+msgid ""
+"Military-grade thermal regulator used in arctic operations.  Prevents frostbite, cold-induced slowdown, and internal freezing for a short duration.  \n"
+" <color_yellow> Presented by Phoenix corp.</color>"
+msgstr ""
+
+#: .\ZhighMeds.json
+msgid "injectable Acidgarde"
+msgid_plural "injectable Acidgardes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for injectable Acidgarde
+#: .\ZhighMeds.json
+msgid ""
+"A specialized anti-corrosive agent developed for contact with industrial acids and toxic spills.  Shields tissue from acid burns and neutralizes corrosive effects on contact.  \n"
+" <color_yellow> Presented by Phoenix corp.</color>"
+msgstr ""
+
+#: .\ZhighMeds.json
+msgid "injectable Voltbloc"
+msgid_plural "injectable Voltblocs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for injectable Voltbloc
+#: .\ZhighMeds.json
+msgid ""
+"Electro-insulative stimulant designed for high-voltage environments.  Dampens nerve disruption, muscle spasms, and prevents damage from electrical shocks.  \n"
+" <color_yellow> Presented by Phoenix corp.</color>"
+msgstr ""
+
+#: .\ZhighMeds.json
+msgid "injectable Luxstat"
+msgid_plural "injectable Luxstats"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for injectable Luxstat
+#: .\ZhighMeds.json
+msgid ""
+"Ocular stabilizer used by breaching units and tunnel operators.  Prevents flashbang-induced blindness and reduces sensitivity to sudden light exposure.  \n"
+" <color_yellow> Presented by Phoenix corp.</color>"
+msgstr ""
+
+#: .\ZhighMeds.json
+msgid "injectable Noctivex"
+msgid_plural "injectable Noctivexs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for injectable Noctivex
+#: .\ZhighMeds.json
+msgid ""
+"Advanced Luxstat stim for full-spectrum vision stability.  Counters flash glare, darkness, snow blindness, and temporary vision loss across all environments.  \n"
+" <color_yellow> Presented by Phoenix corp.</color>"
+msgstr ""
+
+#: .\ZhighMeds.json
+msgid "injectable Vermacline"
+msgid_plural "injectable Vermaclines"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for injectable Vermacline
+#: .\ZhighMeds.json
+msgid ""
+"Anti-parasitic stimulant used in biohazard containment zones.  Temporarily fortifies the body against infestation, incubation, and parasitic infiltration.  \n"
+" <color_yellow> Presented by Phoenix corp.</color>"
+msgstr ""
+
+#: .\ZhighMeds.json
+msgid "injectable test stim"
+msgid_plural "injectable test stims"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for injectable test stim
+#: .\ZhighMeds.json
+msgid ""
+"A debug stim.  \n"
+" <color_yellow> Presented by Phoenix corp.</color>"
+msgstr ""
+
+#: .\ZhighMeds.json
+msgid "injectable Reactor+ stimulant"
+msgid_plural "injectable Reactor+ stimulants"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for injectable Reactor+ stimulant
+#: .\ZhighMeds.json
+msgid ""
+"Next-gen performance enhancer originally developed for special forces.  Temporarily boosts all physical and cognitive stats to peak efficiency.  \n"
+" <color_yellow> Presented by Phoenix corp.</color>"
+msgstr ""
+
+#: .\ZhighMeds.json
 msgid "injectable calcium stim"
 msgid_plural "injectable calcium stims"
 msgstr[0] ""
@@ -11909,6 +12303,45 @@ msgstr[1] ""
 msgid ""
 "The MPD-0 Stim Pistol fires a hypodermic shot to revive himself or teammates"
 " from a distance when a person needs some medical help."
+msgstr ""
+
+#: .\ZhighMeds.json
+msgid "defibrillator"
+msgid_plural "defibrillators"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action msg for defibrillator.
+#: .\ZhighMeds.json
+msgid "You press a button and the defibrillator crackles with electricity."
+msgstr ""
+
+#. ~ Description for defibrillator
+#: .\ZhighMeds.json
+msgid ""
+"A defibrillator is a medical device that delivers an electrical shock to the heart to restore a normal heartbeat in cases of cardiac arrest or certain life-threatening arrhythmias.  Using this on other body parts, like your head, arms, and legs, won't be as effective compared to the usage on one's torso.  Needs batteries to use.  Could be used as a melee weapon, although it is not recommended.  \n"
+" <color_yellow> Presented by Phoenix corp.</color>"
+msgstr ""
+
+#: .\ZhighMeds.json
+msgid "defibrillator (on)"
+msgid_plural "defibrillator (on)"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action msg for {'str': 'defibrillator (on)', 'str_pl': 'defibrillator
+#. (on)'}.
+#: .\ZhighMeds.json
+msgid "You press a button and the defibrillator turns off."
+msgstr ""
+
+#. ~ Description for {'str': 'defibrillator (on)', 'str_pl': 'defibrillator
+#. (on)'}
+#: .\ZhighMeds.json
+msgid ""
+"A defibrillator is a medical device that delivers an electrical shock to the heart to restore a normal heartbeat in cases of cardiac arrest or certain life-threatening arrhythmias.  Needs batteries to use.  Could be used as a melee weapon, although it is not recommended.  \n"
+" <color_yellow> Presented by Phoenix corp.</color>  \n"
+"It is currently turned on, crackling with electricity.  Charge...  Clear!"
 msgstr ""
 
 #: .\ZhighMonSurvivors.json
@@ -12820,6 +13253,60 @@ msgstr[1] ""
 msgid ""
 "With a stinger the size of a kitchen knife, this dog-sized insect's black "
 "and yellow markings warn you to leave it undisturbed."
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "inactive remote vehicle"
+msgid_plural "inactive remote vehicles"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action friendly_msg for {'str': 'inactive remote vehicle'}.
+#: .\ZhighMonsters.json
+msgid "The remote vehicle rolls into action ready to pursue."
+msgstr ""
+
+#. ~ Use action hostile_msg for {'str': 'inactive remote vehicle'}.
+#: .\ZhighMonsters.json
+msgid ""
+"A siren howls and lights flash as the remote vehicle looks at you weird!"
+msgstr ""
+
+#. ~ Description for {'str': 'inactive remote vehicle'}
+#: .\ZhighMonsters.json
+msgid ""
+"This is an inactive police robot.  Using this item involves placing it on "
+"the ground and turning it on.  If reprogrammed and rewired successfully the "
+"remote vehicle will then identify you as law enforcement, roam around or "
+"follow you, and attempt to detain lawbreakers."
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "broken remote vehicle"
+msgid_plural "broken remote vehicles"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'broken remote vehicle'}
+#: .\ZhighMonsters.json
+msgid ""
+"A broken remote vehicle.  Much less threatening now that it's quiet and "
+"still.  Could be gutted for parts."
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "remote vehicle"
+msgid_plural "remote vehicles"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'remote vehicle'}
+#: .\ZhighMonsters.json
+msgid ""
+"One of the many models of armored law enforcement robots employed shortly "
+"before the collapse of civilization.  Solar powered like many other robots, "
+"it maintains its programmed pursuit of law and order, propelled on a trio of"
+" omni wheels."
 msgstr ""
 
 #: .\ZhighMutations.json
@@ -13743,6 +14230,16 @@ msgstr ""
 #: .\ZhighMutations.json
 msgid ""
 "You happened to have an EMT Gear on you when this whole thing happened."
+msgstr ""
+
+#: .\ZhighMutations.json
+msgid "Pocket items: cash card"
+msgstr ""
+
+#. ~ Description for {'str': 'Pocket items: cash card'}
+#: .\ZhighMutations.json
+msgid ""
+"You happened to born with a silver spoon before this whole thing happened."
 msgstr ""
 
 #: .\ZhighMutations.json
@@ -18566,6 +19063,146 @@ msgstr ""
 
 #: .\ZhighProfession.json
 msgctxt "profession_male"
+msgid "Student - Detective"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Detective"
+msgstr ""
+
+#. ~ Profession (male Student - Detective) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"As a genius young detective, you were on the brink of a major breakthrough "
+"in your last homicide case when the Cataclysm struck.  Now that suspect is "
+"dead.  Everyone's dead.  There is always only one truth - the world has "
+"ended."
+msgstr ""
+
+#. ~ Profession (female Student - Detective) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"As a genius young detective, you were on the brink of a major breakthrough "
+"in your last homicide case when the Cataclysm struck.  Now that suspect is "
+"dead.  Everyone's dead.  There is always only one truth - the world has "
+"ended."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Nader"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Nader"
+msgstr ""
+
+#. ~ Profession (male Student - Nader) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"You rain chaos from behind cover, lobbing fire, smoke, and shrapnel with a "
+"grin and perfect aim.  In the world’s end, you don’t need a plan—just the "
+"right grenade for the job."
+msgstr ""
+
+#. ~ Profession (female Student - Nader) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"You rain chaos from behind cover, lobbing fire, smoke, and shrapnel with a "
+"grin and perfect aim.  In the world’s end, you don’t need a plan—just the "
+"right grenade for the job."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Loner"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Loner"
+msgstr ""
+
+#. ~ Profession (male Student - Loner) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"Squatting by the ruins in your trusty track suit, you cook canned meat on a "
+"tire fire and laugh like it's just another Tuesday.  With a shovel in one "
+"hand and slav spirit in the other, you survive hardbass-style-cyka, blyat, "
+"and unstoppable."
+msgstr ""
+
+#. ~ Profession (female Student - Loner) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"Squatting by the ruins in your trusty track suit, you cook canned meat on a "
+"tire fire and laugh like it's just another Tuesday.  With a shovel in one "
+"hand and slav spirit in the other, you survive hardbass-style-cyka, blyat, "
+"and unstoppable."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - First Day"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - First Day"
+msgstr ""
+
+#. ~ Profession (male Student - First Day) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"This is not how you imagined your first day of high school.  At least you "
+"have your stuff with you.  Yippee."
+msgstr ""
+
+#. ~ Profession (female Student - First Day) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"This is not how you imagined your first day of high school.  At least you "
+"have your stuff with you.  Yippee."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Chainsmoker"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Chainsmoker"
+msgstr ""
+
+#. ~ Profession (male Student - Chainsmoker) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"You always smoked as much as possible, hiding from teachers.  Now nobody "
+"will scold you for smoking, but at what cost?"
+msgstr ""
+
+#. ~ Profession (female Student - Chainsmoker) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"You always smoked as much as possible, hiding from teachers.  Now nobody "
+"will scold you for smoking, but at what cost?"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
 msgid "Student - Mallninja"
 msgstr ""
 
@@ -19850,6 +20487,32 @@ msgid ""
 "you managed to grab some utensils and honey."
 msgstr ""
 
+#: .\ZhighProfession2.json
+msgctxt "profession_male"
+msgid "Brawler"
+msgstr ""
+
+#: .\ZhighProfession2.json
+msgctxt "profession_female"
+msgid "Brawler"
+msgstr ""
+
+#. ~ Profession (male Brawler) description
+#: .\ZhighProfession2.json
+msgctxt "prof_desc_male"
+msgid ""
+"You were an assassin who erased your targets by your fists.  Time to punch "
+"another target again."
+msgstr ""
+
+#. ~ Profession (female Brawler) description
+#: .\ZhighProfession2.json
+msgctxt "prof_desc_female"
+msgid ""
+"You were an assassin who erased your targets by your fists.  Time to punch "
+"another target again."
+msgstr ""
+
 #. ~ Name for scenario 'Challenge - School' for a male character
 #: .\ZhighSenarios.json
 msgctxt "scenario_male"
@@ -20983,6 +21646,75 @@ msgstr ""
 msgid "mounted paintball machine gun"
 msgstr ""
 
+#: .\ZhighVehichleParts.json
+msgid "fridge"
+msgstr ""
+
+#. ~ Description for {'str': 'fridge'}
+#: .\ZhighVehichleParts.json
+msgid ""
+"A small fridge.  When turned on, it will cool the food inside, extended the "
+"time until the food spoils."
+msgstr ""
+
+#: .\ZhighVehichleParts.json
+msgid "freezer"
+msgstr ""
+
+#: .\ZhighVehichleParts.json
+msgid "glass freezer"
+msgstr ""
+
+#: .\ZhighVehichleParts.json
+msgid "huge cargo space"
+msgstr ""
+
+#: .\ZhighVehichleParts.json
+msgid "external huge cargo rack"
+msgstr ""
+
+#. ~ Description for {'str': 'external huge cargo rack'}
+#. ~ Description for {'str': 'external huge carbon cargo rack'}
+#: .\ZhighVehichleParts.json
+msgid ""
+"Storage space, mounted outside your vehicle's armor and vulnerable to "
+"damage."
+msgstr ""
+
+#: .\ZhighVehichleParts.json
+msgid "huge carbon cargo space"
+msgstr ""
+
+#: .\ZhighVehichleParts.json
+msgid "external huge carbon cargo rack"
+msgstr ""
+
+#: .\ZhighVehichleParts.json
+msgid "huge cargo carrier"
+msgid_plural "huge cargo carriers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'huge cargo carrier'}
+#: .\ZhighVehichleParts.json
+msgid ""
+"A heavy frame outfitted with tie-downs and attachment points for carrying "
+"cargo."
+msgstr ""
+
+#: .\ZhighVehichleParts.json
+msgid "carbon huge cargo carrier"
+msgid_plural "carbon huge cargo carriers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'carbon huge cargo carrier'}
+#: .\ZhighVehichleParts.json
+msgid ""
+"A sturdy, yet lightweight carbon structure outfitted with tie-downs and "
+"attachment points for carrying cargo."
+msgstr ""
+
 #: .\ZhighVehicle.json
 msgid "Escape Car"
 msgstr ""
@@ -21001,6 +21733,14 @@ msgstr ""
 
 #: .\ZhighVehicle.json
 msgid "Schoolbus"
+msgstr ""
+
+#: .\ZhighVehicle.json
+msgid "Military Gun Truck"
+msgstr ""
+
+#: .\ZhighVehicle.json
+msgid "Paintball Turret"
 msgstr ""
 
 #: .\ZhighWeather.json
@@ -21227,9 +21967,9 @@ msgstr ""
 
 #: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcAmmoDude.json
 #: .\ZhighNpcs\ZhighNpcDeadeye.json .\ZhighNpcs\ZhighNpcFrozenCactus.json
-#: .\ZhighNpcs\ZhighNpcHacker.json .\ZhighNpcs\ZhighNpcRanger.json
-#: .\ZhighNpcs\ZhighNpcWitch.json .\ZhighNpcs\ZhighSchoolNurse.json
-#: .\ZhighNpcs\ZighNpcGunsmith.json
+#: .\ZhighNpcs\ZhighNpcHacker.json .\ZhighNpcs\ZhighNpcHambro.json
+#: .\ZhighNpcs\ZhighNpcRanger.json .\ZhighNpcs\ZhighNpcWitch.json
+#: .\ZhighNpcs\ZhighSchoolNurse.json .\ZhighNpcs\ZighNpcGunsmith.json
 msgid "Nevermind."
 msgstr ""
 
@@ -21283,9 +22023,9 @@ msgstr ""
 
 #: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcAmmoDude.json
 #: .\ZhighNpcs\ZhighNpcDeadeye.json .\ZhighNpcs\ZhighNpcFrozenCactus.json
-#: .\ZhighNpcs\ZhighNpcHacker.json .\ZhighNpcs\ZhighNpcRanger.json
-#: .\ZhighNpcs\ZhighNpcWitch.json .\ZhighNpcs\ZhighSchoolNurse.json
-#: .\ZhighNpcs\ZighNpcGunsmith.json
+#: .\ZhighNpcs\ZhighNpcHacker.json .\ZhighNpcs\ZhighNpcHambro.json
+#: .\ZhighNpcs\ZhighNpcRanger.json .\ZhighNpcs\ZhighNpcWitch.json
+#: .\ZhighNpcs\ZhighSchoolNurse.json .\ZhighNpcs\ZighNpcGunsmith.json
 msgid "Is there anything else you need?"
 msgstr ""
 
@@ -21389,7 +22129,7 @@ msgid ""
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcAmmoDude.json .\ZhighNpcs\ZhighNpcFrozenCactus.json
-#: .\ZhighNpcs\ZighNpcGunsmith.json
+#: .\ZhighNpcs\ZhighNpcHambro.json .\ZhighNpcs\ZighNpcGunsmith.json
 msgid ""
 "I'll see what I've got around here for you.  I've gotta warn you: it ain't "
 "cheap.  Hard to stay supplied when crap hits the fan, you know.  What do you"
@@ -22678,7 +23418,7 @@ msgstr ""
 msgid "I'd like to buy some weapons."
 msgstr ""
 
-#: .\ZhighNpcs\ZhighNpcFrozenCactus.json
+#: .\ZhighNpcs\ZhighNpcFrozenCactus.json .\ZhighNpcs\ZhighNpcHambro.json
 msgid ""
 "I'm out of some things, <name_g>.  It takes a while to get some stuff - but "
 "I'm working hard to replace it.  What can I get you in the meantime?"
@@ -23236,6 +23976,30 @@ msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcHambro.json
 msgid "Jesus Christ!"
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcHambro.json
+msgid "I'd like to buy some stuff."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcHambro.json
+msgid "[60 High School Coin]  I'll buy a crude rocket launcher."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcHambro.json
+msgid "[20 High School Coin]  I'll buy a spiked homemade rocket."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcHambro.json
+msgid "[20 High School Coin]  I'll buy a explosive homemade rocket."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcHambro.json
+msgid "[20 High School Coin]  I'll buy a incendiary homemade rocket."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcHambro.json
+msgid "[20 High School Coin]  I'll buy a shotcanister homemade rocket."
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcHitman.json
@@ -25936,6 +26700,31 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo .410 ashot"
+msgid_plural "akimbo .410 ashots"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid ""
+"A single shot pistol that loads .410 shells, handcrafted from scrap.  Now "
+"comes in two."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo double barrel .410 ashot"
+msgid_plural "akimbo double barrel .410 ashots"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid ""
+"A double shot pistol that loads two .410 shells, handcrafted from scrap.  "
+"You can fire it one by one, or you can fire both barrels at the same time.  "
+"Now comes in two."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAkim.json
 msgid "akimbo S&W Model 10"
 msgid_plural "akimbo S&W Model 10s"
 msgstr[0] ""
@@ -26207,6 +26996,20 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo \"revolver\""
+msgid_plural "akimbo \"revolver\"s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid ""
+"A large and heavy revolver evidently welded from scrap.  It's not pretty, "
+"but the .45 and .44 it's chambered with packs a serious punch.  Just watch "
+"out for the kick.  This one is especially made so that the suppressor is "
+"avilable to use.  Now comes in two."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAkim.json
 msgid "akimbo homemade hand cannon"
 msgid_plural "akimbo homemade hand cannons"
 msgstr[0] ""
@@ -26217,6 +27020,19 @@ msgid ""
 "A large and heavy revolver evidently welded from scrap.  It's not pretty, "
 "but the .45 it's chambered with packs a serious punch.  Just watch out for "
 "the kick.  Now comes in two."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo Magnum Research BFR"
+msgid_plural "akimbo Magnum Research BFRs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid ""
+"A massive single-action revolver.  While the .45-70 rifle round loses "
+"significant velocity in its short pistol barrel, it still competes with "
+"other large magnum handguns in terms of power.  Now comes in two."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAkim.json
@@ -26241,6 +27057,90 @@ msgstr[1] ""
 msgid ""
 "A revolver modified to accept shotgun ammo, it can hold 3 cartridges.  Now "
 "comes in two."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo Taurus Lightning"
+msgid_plural "akimbo Taurus Lightnings"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid ""
+"The Taurus Lightning is a 5-shot revolver chambered in .308.  It has "
+"impressive stopping power.  Now comes in two."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo Taurus Dragoon"
+msgid_plural "akimbo Taurus Dragoons"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid ""
+"The Taurus Dragoon is a 5-shot revolver chambered in 7.62x39mm and "
+"7.62x54mm.  It has impressive stopping power.  Now comes in two."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo Triple Action Thunder"
+msgid_plural "akimbo Triple Action Thunders"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid ""
+"A Breech-loading, single shot handgun designed to fire the .50 BMG "
+"cartridge.  Reconstruct the word \"Hand Cannon\".  Now comes in two."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo Rossi 20x66mm shotgun pistol"
+msgid_plural "akimbo Rossi 20x66mm shotgun pistols"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid ""
+"A single shot pistol that loads 20x66mm shotgun shells.  Handy sidearm in "
+"the apocalypse.  Now comes in two."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo Taurus 550 samaritan"
+msgid_plural "akimbo Taurus 550 samaritans"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid ""
+"Considered overkill by many, the Taurus 550 samaritan remains an ultimate "
+"powerful sidearm to the arsenal of anybody.  Now comes in two."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo Udar"
+msgid_plural "akimbo Udars"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid ""
+"A police weapon designed and developed in Russia.  Accepts 9x18mm "
+"cartridges.  Now comes in two."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo 1911 dart"
+msgid_plural "akimbo 1911 darts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid ""
+"A M1911 that loads and shoots metal rails, for special operators during "
+"special missions.  Now comes in two."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAkim.json
@@ -26384,8 +27284,8 @@ msgstr[1] ""
 #. ~ Description for {'str': 'akimbo Taurus Spectrum magazine'}
 #: .\ZhighWeapons\ZhighAkim.json
 msgid ""
-"A compact, 6-round steel box magazine for use with the Taurus Spectrum.  Now"
-" comes in two."
+"A compact, 6-round steel box magazine for use with the akimbo Taurus "
+"Spectrum.  Now comes in two."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAkim.json
@@ -26865,8 +27765,8 @@ msgstr[1] ""
 #. ~ Description for {'str': 'akimbo SIG Pro .40 magazine'}
 #: .\ZhighWeapons\ZhighAkim.json
 msgid ""
-"A compact and reliable magazine for use with the SIG Pro .40 pistol.  Now "
-"comes in two."
+"A compact and reliable magazine for use with the akimbo SIG Pro .40 pistol."
+"  Now comes in two."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAkim.json
@@ -27056,6 +27956,31 @@ msgid ""
 "hardly different from any other commercial 1911 design save for their dual "
 "recoil springs.  Most were replaced in 2016 with Glock 19's due to logistics"
 " issues.  Now comes in two."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo Silverballer"
+msgid_plural "akimbo Silverballers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid ""
+"The AMT Hardballer is a stainless steel clone of the Colt M1911A1 made by "
+"Arcadia Machine & Tool.  Reliable, almost like the original.  Now comes in "
+"two."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo M1911 machine pistol"
+msgid_plural "akimbo M1911 machine pistols"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid ""
+"Modified 1911, which shoots .45 bullet in full auto.  Also have a built-in "
+"foregrip.  Now comes in two."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAkim.json
@@ -27648,6 +28573,12 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo P30L"
+msgid_plural "akimbo P30Ls"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighAkim.json
 msgid "akimbo USP 9mm magazine"
 msgid_plural "akimbo USP 9mm magazines"
 msgstr[0] ""
@@ -27925,7 +28856,8 @@ msgstr[1] ""
 #. ~ Description for {'str': 'akimbo CZ 75 26-round magazine'}
 #: .\ZhighWeapons\ZhighAkim.json
 msgid ""
-"A 26-round steel box magazine for use with the CZ 75.  Now comes in two."
+"A 26-round steel box magazine for use with the akimbo CZ 75.  Now comes in "
+"two."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAkim.json
@@ -27992,6 +28924,39 @@ msgstr[1] ""
 msgid ""
 "The standard magazine for the akimbo Pistolet Makarova, holds 8 rounds.  Now"
 " comes in two."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo RARAN Prototype 1130"
+msgid_plural "akimbo RARAN Prototype 1130s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid ""
+"Modified Makarov PM, which shoots 9x18mm cartridge in full auto.  Also have "
+"a built-in foregrip.  Now comes in two."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAkim.json .\ZhighWeapons\ZhighRanged.json
+msgid "low auto"
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAkim.json .\ZhighWeapons\ZhighRanged.json
+msgid "high auto"
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo RARAN 71-round drum magazine"
+msgid_plural "akimbo RARAN 71-round drum magazines"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'akimbo RARAN 71-round drum magazine'}
+#: .\ZhighWeapons\ZhighAkim.json
+msgid ""
+"A high-capacity drum magazine for the RARAN Prototype 1130, modified from "
+"PPSh-41 drum magazine.  Now comes in two."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAkim.json
@@ -29477,6 +30442,11 @@ msgid_plural "aerial bombardment signal flares"
 msgstr[0] ""
 msgstr[1] ""
 
+#. ~ Description for {'str': 'aerial bombardment signal flare'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "A signal."
+msgstr ""
+
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "modified cannonball"
 msgid_plural "modified cannonballs"
@@ -29525,6 +30495,92 @@ msgstr[1] ""
 msgid ""
 "A low velocity 40mm fungicidal gas canister.  It is effective for fungal "
 "life forms."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ".410 beanbag"
+msgid_plural ".410 beanbags"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': '.410 beanbag'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ""
+"A beanbag round for .410 shell firearms, not deadly but designed to disable."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ".410 dragon's breath shell"
+msgid_plural ".410 dragon's breath shells"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': ".410 dragon's breath shell"}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ""
+"A .410 shell filled with magnesium pellets or shards, used mostly as a "
+"distress flare or pyrotechnics tool.  When the round is fired, high "
+"temperature sparks and flames shoot out of the barrel, igniting everything "
+"in their path."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ".410 dragon's breath shell, black powder"
+msgid_plural ".410 dragon's breath shell, black powders"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "flechette .410 shell"
+msgid_plural "flechette .410 shells"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'flechette .410 shell'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ""
+"A .410 shell filled with tiny steel darts.  Extremely damaging, plus the "
+"spread makes it very accurate at short range.  Slices through most forms of "
+"armor with ease."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "flechette .410 shell, black powder"
+msgid_plural "flechette .410 shell, black powders"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ".410 slug"
+msgid_plural ".410 slugs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': '.410 slug'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ""
+"A heavy metal slug used with .410 shell firearms to give them the range "
+"capabilities of a rifle.  Extremely damaging but rather inaccurate."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ".410 slug, black powder"
+msgid_plural ".410 slug, black powders"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "shotcanister homemade rocket"
+msgid_plural "shotcanister homemade rockets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'shotcanister homemade rocket'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ""
+"A hand built rocket, consisting of a handfull of scraps as a warhead "
+"attached onto a pipe, filled with improvised rocket fuel.  Not very "
+"powerful, but can be made from scratch."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighArrows.json
@@ -33451,6 +34507,32 @@ msgstr[1] ""
 msgid ""
 "A axe bayonet is a large slashing weapon that can be attached to the front "
 "of a firearm or crossbow converting it into an axe."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "mace barrel"
+msgid_plural "mace barrels"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'mace barrel'}
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid ""
+"This is a mace barrel gunmod.  It is heavy, and could be deadly in either "
+"the right hands or when attached on a gun."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "mace grip"
+msgid_plural "mace grips"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'mace grip'}
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid ""
+"This is a mace grip gunmod.  It is heavy, and could be deadly in either the "
+"right hands or when attached on a pistol-sized gun."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighGunmods.json
@@ -37897,6 +38979,20 @@ msgid ""
 "the Gaelic claidheamh-mòr, which means greatsword."
 msgstr ""
 
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "bone cestus"
+msgid_plural "bone cestuses"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'bone cestus', 'str_pl': 'bone cestuses'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This weapon is a series of leather wrappings with a bone plate that has a "
+"series of jagged bones attached to it.  For when your punches need more "
+"damage."
+msgstr ""
+
 #: .\ZhighWeapons\ZhighRanged.json
 msgid "marble gun"
 msgid_plural "marble guns"
@@ -37975,6 +39071,28 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighRanged.json
+msgid ".410 ashot"
+msgid_plural ".410 ashots"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "A single shot pistol that loads .410 shells, handcrafted from scrap."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "double barrel .410 ashot"
+msgid_plural "double barrel .410 ashots"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A double shot pistol that loads two .410 shells, handcrafted from scrap.  "
+"You can fire it one by one, or you can fire both barrels at the same time."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
 msgid "spotlight - wide"
 msgid_plural "spotlight - wides"
 msgstr[0] ""
@@ -37984,14 +39102,6 @@ msgstr[1] ""
 msgid ""
 "A crappy laser machine gun, made with duct tape, lots of circuts, a steel "
 "drum, and hope."
-msgstr ""
-
-#: .\ZhighWeapons\ZhighRanged.json
-msgid "low auto"
-msgstr ""
-
-#: .\ZhighWeapons\ZhighRanged.json
-msgid "high auto"
 msgstr ""
 
 #: .\ZhighWeapons\ZhighRanged.json
@@ -39345,12 +40455,6 @@ msgid ""
 "to disperse chemicals, and a small pump attached to the side allows for "
 "repressurization, though this process takes a few minutes."
 msgstr ""
-
-#: .\ZhighWeapons\ZhighRanged.json
-msgid "spraycan flamethrower"
-msgid_plural "spraycan flamethrowers"
-msgstr[0] ""
-msgstr[1] ""
 
 #: .\ZhighWeapons\ZhighRanged.json
 msgid ""
@@ -41261,8 +42365,8 @@ msgstr[1] ""
 
 #: .\ZhighWeapons\ZhighRanged.json
 msgid ""
-"The PP-19-01 Vityaz is a Russian submachine gun from the 1950s, chambered in"
-" 9x18mm Makarov."
+"The PP-19-01 Vityaz is a Russian submachine gun/pistol caliber carbine from "
+"the 1950s, chambered in 9x18mm Makarov."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighRanged.json
@@ -41297,6 +42401,172 @@ msgstr[1] ""
 
 #: .\ZhighWeapons\ZhighRanged.json
 msgid "A revolver modified to accept shotgun ammo, it can hold 3 cartridges."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "bombardment radio"
+msgid_plural "bombardment radio"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A radio, which can give off a radio wave to a certain area for a loud "
+"bombardment.  For some reason, the people on the other side of the walkie-"
+"talkie don't seem to care whoever you are."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Ithaca Deerslayer"
+msgid_plural "Ithaca Deerslayer"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"The Ithaca Deerslayer is a slug gun which is designed for long range while "
+"using a shotshell.  Unlike an average shotgun, this model have a rifled "
+"barrel."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Browning A-Bolt"
+msgid_plural "Browning A-Bolt"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"The A-Bolt is a bolt-action slug gun which loads and shoots .410 caliber "
+"shotshells.  Was used for hunting animals, and can be used for hunting "
+"undead."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Taurus Lightning"
+msgid_plural "Taurus Lightning"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"The Taurus Lightning is a 5-shot revolver chambered in .308.  It has "
+"impressive stopping power."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Taurus Dragoon"
+msgid_plural "Taurus Dragoon"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"The Taurus Dragoon is a 5-shot revolver chambered in 7.62x39mm and "
+"7.62x54mm.  It has impressive stopping power."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Rossi 20x66mm shotgun pistol"
+msgid_plural "Rossi 20x66mm shotgun pistols"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A single shot pistol that loads 20x66mm shotgun shells.  Handy sidearm in "
+"the apocalypse."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Taurus 550 samaritan"
+msgid_plural "Taurus 550 samaritans"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"Considered overkill by many, the Taurus 550 samaritan remains an ultimate "
+"powerful sidearm to the arsenal of anybody."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Udar"
+msgid_plural "Udar"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A police weapon designed and developed in Russia.  Accepts 9x18mm "
+"cartridges."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "S&W M&P 410"
+msgid_plural "S&W M&P 410"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A bullpup pump-action shotgun, the S&W M&P 410 uses a pair of magazine tubes"
+" to increase its capacity.  Each tube has to be loaded separately, but this "
+"offers the option of loading different ammunition for different situations."
+"  An integral top rail is provided for mounting sights, without which it "
+"will perform poorly."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "M&P 410 second magazine"
+msgid_plural "M&P 410 second magazines"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"The integrated second shotgun magazine of the S&W M&P 410 which holds 7 "
+"shots.  It's irremovable."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "crude double barrel rocket launcher"
+msgid_plural "crude double barrel rocket launchers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"An improvised, direct ignition launcher for home-made rockets.  Essentially,"
+" two thick-walled steel pipes, equipped with a pilot light each, several "
+"batteries and a simple circuit board.  Effective only at medium range, "
+"barely."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "crude quad barrel rocket launcher"
+msgid_plural "crude quad barrel rocket launchers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"An improvised, direct ignition launcher for home-made rockets.  Essentially,"
+" four thick-walled steel pipes, equipped with a pilot light each, several "
+"batteries and a simple circuit board.  Effective only at medium range, "
+"barely."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Buntline Special"
+msgid_plural "Buntline Special"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"This is a long-barreled variant of the Uberti Cattleman, also with a stock."
+"  Fast is fine, but accuracy is final."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighSpells.json
@@ -41512,6 +42782,15 @@ msgid "Melts the target."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighSpells.json
+msgid "Bleed"
+msgstr ""
+
+#. ~ Description for {'str': 'Bleed'}
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "Bleed the target."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighSpells.json
 msgid "Critical"
 msgstr ""
 
@@ -41536,6 +42815,15 @@ msgstr ""
 #. ~ Description for {'str': 'Dazed'}
 #: .\ZhighWeapons\ZhighSpells.json
 msgid "Dazes the target."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "Push"
+msgstr ""
+
+#. ~ Description for {'str': 'Push'}
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "Pushes the target."
 msgstr ""
 
 #. 
@@ -42938,7 +44226,7 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighTraps.json
-msgid "Flame trapp Trigger"
+msgid "Flame trap Trigger"
 msgstr ""
 
 #: .\ZhighWeapons\ZhighTraps.json

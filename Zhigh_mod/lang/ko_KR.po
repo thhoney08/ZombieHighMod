@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zhigh_Mod\n"
-"POT-Creation-Date: 2025-07-06 09:23-0500\n"
+"POT-Creation-Date: 2025-07-20 09:35-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -1216,10 +1216,11 @@ msgstr "당신은 당신의 %s를 작동시켰다."
 #. goggles', 'str_pl': 'pairs of atomic multi-visor goggles'}.
 #. ~ Use action need_charges_msg for {'str': 'pair of brawler gloves',
 #. 'str_pl': 'pairs of brawler gloves'}.
+#. ~ Use action need_charges_msg for defibrillator.
 #. ~ Use action need_charges_msg for {'str': 'shock club'}.
 #. ~ Use action need_charges_msg for {'str': 'heat hawk (off)', 'str_pl':
 #. 'heat hawks (off)'}.
-#: .\ZhighArmor.json .\ZhighWeapons\ZhighMelee.json
+#: .\ZhighArmor.json .\ZhighMeds.json .\ZhighWeapons\ZhighMelee.json
 msgid "The %s's batteries are dead."
 msgstr "%s의 배터리가 방전되었다."
 
@@ -1473,11 +1474,13 @@ msgid_plural "ballistic helmets"
 msgstr[0] "방탄 헬멧"
 
 #. ~ Use action msg for {'str': 'ballistic helmet'}.
+#. ~ Use action msg for {'str': 'bulletproof visor helmet'}.
 #: .\ZhighArmor.json
 msgid "You raise your visor."
 msgstr "당신은 가리개를 올렸다."
 
 #. ~ Description for {'str': 'ballistic helmet'}
+#. ~ Description for {'str': 'bulletproof visor helmet'}
 #: .\ZhighArmor.json
 msgid "A helmet with a plastic shield that covers your entire face.  Activate to raise the face shield."
 msgstr "당신의 얼굴을 가리는 플라스틱 가리개가 달린 헬멧입니다.  사용하면 가리개를 올립니다."
@@ -1489,6 +1492,8 @@ msgstr[0] "방탄 헬멧 (가리개 올림)"
 
 #. ~ Use action msg for {'str': 'ballistic helmet (raised visor)', 'str_pl':
 #. 'ballistic helmets (raised visor)'}.
+#. ~ Use action msg for {'str': 'bulletproof visor helmet (raised visor)',
+#. 'str_pl': 'bulletproof visor helmets (raised visor)'}.
 #: .\ZhighArmor.json
 msgid "You put down your visor."
 msgstr "당신은 가리개를 내렸다."
@@ -2912,7 +2917,7 @@ msgstr "일반적인 망토와 다르게 몸에 두르기 위한 가벼운 망�
 #. ~ Description for {'str': 'Freeze trap Effect'}
 #. ~ Description for {'str': 'Balloon trap Trigger'}
 #. ~ Description for {'str': 'Balloon trap Effect'}
-#. ~ Description for {'str': 'Flame trapp Trigger'}
+#. ~ Description for {'str': 'Flame trap Trigger'}
 #. ~ Description for {'str': 'Flame trapp Effect'}
 #. ~ Description for {'str': 'Acid trap Trigger'}
 #. ~ Description for {'str': 'Acid trap Effect'}
@@ -3243,8 +3248,149 @@ msgstr[0] "붉은 실린더형 헬멧"
 
 #. ~ Description for {'str': 'red cylinder helmet'}
 #: .\ZhighArmor.json
-msgid "A helmet made from special meterial.  Covers the entire head; very light and durable.  Used by a jester during a factory raid."
+msgid "A helmet made from special material.  Covers the entire head; very light and durable.  Used by a jester during a factory raid."
 msgstr "특수 소재로 제작된 헬멧입니다.  머리 전체를 덮을 수 있으며 매우 가볍고 내구성이 뛰어납니다.  공장 습격을 했을 적에 한 광대가 사용했습니다."
+
+#: .\ZhighArmor.json
+msgid "chitinous shield"
+msgid_plural "chitinous shields"
+msgstr[0] "키틴질 방패"
+
+#. ~ Description for {'str': 'chitinous shield'}
+#: .\ZhighArmor.json
+msgid "A crude chitinous shield lacking any metal or leather reinforcement.  Tolerable weight but not very tough."
+msgstr "금속이나 가죽 등의 보강물이 없는 조잡한 키틴질 방패입니다.  가볍지만 내구성이 부족합니다."
+
+#: .\ZhighArmor.json
+msgid "large chitinous shield"
+msgid_plural "large chitinous shields"
+msgstr[0] "대형 키틴질 방패"
+
+#. ~ Description for {'str': 'large chitinous shield'}
+#: .\ZhighArmor.json
+msgid "A crude chitinous tower shield lacking any metal or leather reinforcement.  Bulky, but offers a decent amount of protection."
+msgstr "금속이나 가죽 등의 보강물이 없는 조잡한 대형 키틴질 방패입니다.  크기 때문에 다루기 힘들지만, 방어력은 쓸만합니다."
+
+#: .\ZhighArmor.json
+msgid "biosilicified chitin shield"
+msgid_plural "biosilicified chitin shields"
+msgstr[0] "유기규소 키틴질 방패"
+
+#. ~ Description for {'str': 'biosilicified chitin shield'}
+#: .\ZhighArmor.json
+msgid "A crude biosilicified chitin shield lacking any metal or leather reinforcement.  Tolerable weight but not very tough."
+msgstr "금속이나 가죽 등의 보강물이 없는 조잡한 유기규소 키틴질 방패입니다.  가볍지만 내구성이 부족합니다."
+
+#: .\ZhighArmor.json
+msgid "large biosilicified chitin shield"
+msgid_plural "large biosilicified chitin shields"
+msgstr[0] "대형 유기규소 키틴질 방패"
+
+#. ~ Description for {'str': 'large biosilicified chitin shield'}
+#: .\ZhighArmor.json
+msgid "A crude biosilicified chitin tower shield lacking any metal or leather reinforcement.  Bulky, but offers a decent amount of protection."
+msgstr "금속이나 가죽 등의 보강물이 없는 조잡한 대형 유기규소 키틴질 방패입니다.  크기 때문에 다루기 힘들지만, 방어력은 쓸만합니다.  검을 보관할 수 있는 검집도 내장되어 있습니다."
+
+#: .\ZhighArmor.json
+msgid "boater hat"
+msgid_plural "boater hats"
+msgstr[0] "보터 모자"
+
+#. ~ Description for {'str': 'boater hat'}
+#: .\ZhighArmor.json
+msgid "A semi-formal summer hat for men.  Most popular in the late 19th century and early 20th century, still common among those in sailing or rowing events, period-related theatrical and musical performances."
+msgstr "남성용 세미 정장용 여름 모자.  19세기 말과 20세기 초에 가장 인기가 많았으며, 요트나 조정 경기, 시대 관련 연극 및 뮤지컬 공연에서 여전히 흔히 볼 수 있습니다."
+
+#: .\ZhighArmor.json
+msgid "pith helmet"
+msgid_plural "pith helmets"
+msgstr[0] "피스 헬멧"
+
+#. ~ Description for {'str': 'pith helmet'}
+#: .\ZhighArmor.json
+msgid "A lightweight cloth-covered helmet made of sholapith.  Called by various names, such as salacot, safari helmet, and topee."
+msgstr "숄라피스로 만든 가벼운 천으로 덮은 헬멧입니다.  살라코트, 사파리 헬멧, 토피 등 다양한 이름으로 불립니다."
+
+#: .\ZhighArmor.json
+msgid "jack-o-lantern helmet"
+msgid_plural "jack-o-lantern helmets"
+msgstr[0] "잭오랜턴 헬멧"
+
+#. ~ Description for {'str': 'jack-o-lantern helmet'}
+#: .\ZhighArmor.json
+msgid "A helmet made from special meterial.  Covers the entire head; very light and durable.  Used during halloween."
+msgstr "특수 소재로 제작된 헬멧입니다.  머리 전체를 덮을 수 있으며 매우 가볍고 내구성이 뛰어납니다.  할로윈에 사용합니다."
+
+#: .\ZhighArmor.json
+msgid "arrow headband"
+msgid_plural "arrow headbands"
+msgstr[0] "화살 머리띠"
+
+#. ~ Description for {'str': 'arrow headband'}
+#: .\ZhighArmor.json
+msgid "A headband with an arrowhead and a fletching is added on it.  An item which was used for silly jokes."
+msgstr "화살촉과 깃이 달린 머리띠입니다.  장난할 때 사용하던 물건입니다."
+
+#: .\ZhighArmor.json
+msgid "apple headband"
+msgid_plural "apple headbands"
+msgstr[0] "사과 머리띠"
+
+#. ~ Description for {'str': 'apple headband'}
+#: .\ZhighArmor.json
+msgid "A headband with an apple is added on it.  An item which was used for silly jokes."
+msgstr "사과가 달려있는 머리띠입니다.  장난할 때 사용하던 물건입니다."
+
+#: .\ZhighArmor.json
+msgid "nail headband"
+msgid_plural "nail headbands"
+msgstr[0] "못 머리띠"
+
+#. ~ Description for {'str': 'nail headband'}
+#: .\ZhighArmor.json
+msgid "A headband with a long nail is added on it.  An item which was used for silly jokes."
+msgstr "기다란 못이 달려있는 머리띠입니다.  장난할 때 사용하던 물건입니다."
+
+#. ~ Description for {'str': 'cosplay leather body armor'}
+#: .\ZhighArmor.json
+msgid "Thick leather body armor.  Light and comfortable.  Looks good when you need to look like a SWAT."
+msgstr "두꺼운 가죽 갑옷입니다.  가볍고 편안합니다.  SWAT처럼 보여야 할 때 멋진 모습을 보여줄 수 있습니다."
+
+#. ~ Description for {'str': 'cosplay leather body armor'}
+#: .\ZhighArmor.json
+msgid "Thick leather body armor.  Light and comfortable.  Looks good when you need to look like a riot officer."
+msgstr "두꺼운 가죽 갑옷입니다.  가볍고 편안합니다.  시위 진압 부대원처럼 보여야 할 때 멋진 모습을 보여줄 수 있습니다."
+
+#. ~ Description for {'str': 'cosplay leather body armor'}
+#: .\ZhighArmor.json
+msgid "Thick leather body armor.  Light and comfortable.  Looks good when you need to look like a CBRN agent."
+msgstr "두꺼운 가죽 갑옷입니다.  가볍고 편안합니다.  CBRN 요원처럼 보여야 할 때 멋진 모습을 보여줄 수 있습니다."
+
+#: .\ZhighArmor.json
+msgid "bulletproof visor helmet"
+msgid_plural "bulletproof visor helmets"
+msgstr[0] "방탄 바이저 헬멧"
+
+#: .\ZhighArmor.json
+msgid "bulletproof visor helmet (raised visor)"
+msgid_plural "bulletproof visor helmets (raised visor)"
+msgstr[0] "방탄 바이저 헬멧 (가리개 올림)"
+
+#. ~ Description for {'str': 'bulletproof visor helmet (raised visor)',
+#. 'str_pl': 'bulletproof visor helmets (raised visor)'}
+#: .\ZhighArmor.json
+msgid "A bulletproof visor helmet with a plastic face shield which is raised up.  Activate to lower the shield."
+msgstr "당신의 얼굴을 가리는 플라스틱 가리개가 달린 바이저 헬멧입니다.  사용하면 가리개를 내립니다."
+
+#: .\ZhighArmor.json
+msgid "sun visor"
+msgid_plural "sun visors"
+msgstr[0] "선 바이저"
+
+#. ~ Description for {'str': 'sun visor'}
+#: .\ZhighArmor.json
+msgid "A sun visor.  It provides protection from sunlight."
+msgstr "선 바이저입니다.  태양빛에서 보호해줍니다."
 
 #: .\ZhighBionics.json
 msgid "Bionic knuckle"
@@ -7152,6 +7298,36 @@ msgid "cobalt-60 pellet"
 msgid_plural "cobalt-60 pellets"
 msgstr[0] "코발트-60 알갱이"
 
+#: .\ZhighItemRemake.json
+msgid "spiked homemade rocket"
+msgid_plural "spiked homemade rockets"
+msgstr[0] "못 달린 수제 로켓"
+
+#. ~ Description for {'str': 'spiked homemade rocket'}
+#: .\ZhighItemRemake.json
+msgid "A hand built rocket, consisting of a spike welded onto a pipe that was filled with improvised rocket fuel.  Horribly inaccurate, as can be expected of this grade of weapon, but packs a fierce punch… if it hits."
+msgstr "급조 로켓 연료가 채워진 파이프 끝에 스파이크를 박은 수제 로켓입니다.  급조한 무기답게 정확도는 아주 떨어지지만, 아주 따끔한 한 방을 먹여줄 수 있습니다... 맞기만 한다면요."
+
+#: .\ZhighItemRemake.json
+msgid "explosive homemade rocket"
+msgid_plural "explosive homemade rockets"
+msgstr[0] "폭발형 수제 로켓"
+
+#. ~ Description for {'str': 'explosive homemade rocket'}
+#: .\ZhighItemRemake.json
+msgid "A hand built rocket, consisting of a simple explosive warhead attached onto a pipe, filled with improvised rocket fuel.  Not very powerful, but can be made from scratch."
+msgstr "급조 로켓 연료가 채워진 파이프 끝에 간단한 폭발물 탄두를 단 수제로켓입니다.  아주 강력하지는 않지만 갖춰진 것이 없어도 제작할 수 있습니다."
+
+#: .\ZhighItemRemake.json
+msgid "Ruger Mini-14"
+msgid_plural "Ruger Mini-14s"
+msgstr[0] "루거 미니-14"
+
+#: .\ZhighItemRemake.json .\ZhighWeapons\ZhighRanged.json
+msgid "spraycan flamethrower"
+msgid_plural "spraycan flamethrowers"
+msgstr[0] "스프레이캔 화염방사기"
+
 #: .\ZhighItems.json
 msgid "umbrella, closed"
 msgid_plural "umbrella, closeds"
@@ -8378,6 +8554,16 @@ msgstr "동 트로피입니다."
 msgid "A yellow plastic card used to store money.  These became popular once the government officially moved to all electronic money.  It holds up to 2 million dollars."
 msgstr "돈을 보관하는데 쓰는 노란색 플라스틱 카드.  정부가 공식적으로 기존 화폐를 전자 화폐로 완전히 대체한 이래로 널리 쓰이게 되었습니다.  최대 200만 달러까지 보관할 수 있습니다."
 
+#: .\ZhighItems.json
+msgid "keytar"
+msgid_plural "keytars"
+msgstr[0] "키타"
+
+#. ~ Description for {'str': 'keytar'}
+#: .\ZhighItems.json
+msgid "A keyboard instrument with a strap so you can wear it around, even when not playing."
+msgstr "키보드가 달려 있는 키타.  끈이 달려있어서 연주하지 않을 때에도 몸에 매고 다닐 수 있다."
+
 #: .\ZhighMartialArts.json
 msgid "Marine Corps Martial Arts Program Training Manual"
 msgid_plural "Marine Corps Martial Arts Program Training Manual"
@@ -9439,6 +9625,26 @@ msgid "A face-covering mask made from tightly woven rings of iron chainmail, mod
 msgstr "고대의 전투 마스크에서 모티브를 얻어 제작된 금속 사슬 고리들을 엮은 가면입니다.  풀 페이스 가면보다는 가볍지만 적당한 보호력과 무시무시한 생김새를 자랑합니다."
 
 #: .\ZhighMasks.json
+msgid "chitinous battle mask"
+msgid_plural "chitinous battle masks"
+msgstr[0] "키틴질 전투 가면"
+
+#. ~ Description for {'str': 'chitinous battle mask'}
+#: .\ZhighMasks.json
+msgid "A full-face mask made of chitinous, in the vein of Roman cavalry masks.  Provides decent protection and gives an imposing post-apocalyptic look."
+msgstr "로마 기병대 가면처럼 얼굴을 완전히 가리는 키틴질로 만들어진 가면입니다.  얼굴을 그럭저럭 보호해주며, 무시무시하며 멋진 포스트 아포칼립스풍 분위기를 냅니다."
+
+#: .\ZhighMasks.json
+msgid "biosilicified chitin battle mask"
+msgid_plural "biosilicified chitin battle masks"
+msgstr[0] "유기규소 키틴질 전투 가면"
+
+#. ~ Description for {'str': 'biosilicified chitin battle mask'}
+#: .\ZhighMasks.json
+msgid "A full-face mask made of biosilicified chitin, in the vein of Roman cavalry masks.  Provides decent protection and gives an imposing post-apocalyptic look."
+msgstr "로마 기병대 가면처럼 얼굴을 완전히 가리는 유기규소 키틴질로 만들어진 가면입니다.  얼굴을 그럭저럭 보호해주며, 무시무시하며 멋진 포스트 아포칼립스풍 분위기를 냅니다."
+
+#: .\ZhighMasks.json
 msgid "paintball mask"
 msgid_plural "paintball masks"
 msgstr[0] "페인트볼 가면"
@@ -9788,6 +9994,15 @@ msgstr[0] "모르핀 주사제"
 #. stimulant.
 #. ~ Use action activation_message for injectable 3-(b-TG) stimulant.
 #. ~ Use action activation_message for injectable 2A2-(b-TG) stimulant.
+#. ~ Use action activation_message for injectable Pyrostatin.
+#. ~ Use action activation_message for injectable Cryonix.
+#. ~ Use action activation_message for injectable Acidgarde.
+#. ~ Use action activation_message for injectable Voltbloc.
+#. ~ Use action activation_message for injectable Luxstat.
+#. ~ Use action activation_message for injectable Noctivex.
+#. ~ Use action activation_message for injectable Vermacline.
+#. ~ Use action activation_message for injectable test stim.
+#. ~ Use action activation_message for injectable Reactor+ stimulant.
 #: .\ZhighMeds.json
 msgid "You shoot up."
 msgstr "약물을 투여했다."
@@ -10252,6 +10467,132 @@ msgstr ""
 " <color_yellow>불새재단에서 제공.</color>"
 
 #: .\ZhighMeds.json
+msgid "injectable Pyrostatin"
+msgid_plural "injectable Pyrostatins"
+msgstr[0] "파이로스태틴 주사제"
+
+#. ~ Description for injectable Pyrostatin
+#: .\ZhighMeds.json
+msgid ""
+"Emergency anti-thermal stimulant used by soldiers, doctors, and PMCs operating in heat-intensive zones.  Prevents burn damage, blisters, and heat-induced slowdown for a limited time.  \n"
+" <color_yellow> Presented by Phoenix corp.</color>"
+msgstr ""
+"열이 많은 지역에서 활동하는 군인, 의사, PMC가 사용하는 응급 열 자극제입니다.  제한된 시간 동안 화상 손상, 물집, 열로 인한 속도 저하를 방지합니다.  \n"
+" <color_yellow>불새재단에서 제공.</color>"
+
+#: .\ZhighMeds.json
+msgid "injectable Cryonix"
+msgid_plural "injectable Cryonixs"
+msgstr[0] "크라이오닉스 주사제"
+
+#. ~ Description for injectable Cryonix
+#: .\ZhighMeds.json
+msgid ""
+"Military-grade thermal regulator used in arctic operations.  Prevents frostbite, cold-induced slowdown, and internal freezing for a short duration.  \n"
+" <color_yellow> Presented by Phoenix corp.</color>"
+msgstr ""
+"북극 작전에 사용되는 군용 체온 조절기.  동상, 추위로 인한 속도 저하 및 단기간의 내부 동결을 방지합니다.  \n"
+" <color_yellow>불새재단에서 제공.</color>"
+
+#: .\ZhighMeds.json
+msgid "injectable Acidgarde"
+msgid_plural "injectable Acidgardes"
+msgstr[0] "애시드가데 주사제"
+
+#. ~ Description for injectable Acidgarde
+#: .\ZhighMeds.json
+msgid ""
+"A specialized anti-corrosive agent developed for contact with industrial acids and toxic spills.  Shields tissue from acid burns and neutralizes corrosive effects on contact.  \n"
+" <color_yellow> Presented by Phoenix corp.</color>"
+msgstr ""
+"산업용 산 및 유독성 유출물과의 접촉을 위해 개발된 특수 부식 방지제입니다.  산성 화상으로부터 조직을 보호하고 접촉 시 부식 효과를 중화합니다.  \n"
+" <color_yellow>불새재단에서 제공.</color>"
+
+#: .\ZhighMeds.json
+msgid "injectable Voltbloc"
+msgid_plural "injectable Voltblocs"
+msgstr[0] "볼트블록 주사제"
+
+#. ~ Description for injectable Voltbloc
+#: .\ZhighMeds.json
+msgid ""
+"Electro-insulative stimulant designed for high-voltage environments.  Dampens nerve disruption, muscle spasms, and prevents damage from electrical shocks.  \n"
+" <color_yellow> Presented by Phoenix corp.</color>"
+msgstr ""
+"고전압 환경을 위해 설계된 전기 절연 자극제입니다.  신경 장애, 근육 경련을 완화하고 감전으로 인한 손상을 방지합니다.  \n"
+" <color_yellow>불새재단에서 제공.</color>"
+
+#: .\ZhighMeds.json
+msgid "injectable Luxstat"
+msgid_plural "injectable Luxstats"
+msgstr[0] "럭스탯 주사제"
+
+#. ~ Description for injectable Luxstat
+#: .\ZhighMeds.json
+msgid ""
+"Ocular stabilizer used by breaching units and tunnel operators.  Prevents flashbang-induced blindness and reduces sensitivity to sudden light exposure.  \n"
+" <color_yellow> Presented by Phoenix corp.</color>"
+msgstr ""
+"침투 부대와 터널 작업자가 사용하는 안구 안정제입니다.  섬광탄으로 인한 실명을 방지하고 갑작스러운 빛 노출에 대한 민감도를 감소시킵니다.  \n"
+" <color_yellow>불새재단에서 제공.</color>"
+
+#: .\ZhighMeds.json
+msgid "injectable Noctivex"
+msgid_plural "injectable Noctivexs"
+msgstr[0] "녹티벡스 주사제"
+
+#. ~ Description for injectable Noctivex
+#: .\ZhighMeds.json
+msgid ""
+"Advanced Luxstat stim for full-spectrum vision stability.  Counters flash glare, darkness, snow blindness, and temporary vision loss across all environments.  \n"
+" <color_yellow> Presented by Phoenix corp.</color>"
+msgstr ""
+"전체 스펙트럼의 시력 안정성을 위해 개발된 럭스탯 주사제의 개량형입니다.  모든 환경에서 섬광, 어둠, 눈부심, 일시적인 시력 상실에 대응합니다.  \n"
+" <color_yellow>불새재단에서 제공.</color>"
+
+#: .\ZhighMeds.json
+msgid "injectable Vermacline"
+msgid_plural "injectable Vermaclines"
+msgstr[0] "베르마클라인 주사제"
+
+#. ~ Description for injectable Vermacline
+#: .\ZhighMeds.json
+msgid ""
+"Anti-parasitic stimulant used in biohazard containment zones.  Temporarily fortifies the body against infestation, incubation, and parasitic infiltration.  \n"
+" <color_yellow> Presented by Phoenix corp.</color>"
+msgstr ""
+"생물학적 위험 격리 구역에서 사용되는 항기생충 자극제.  감염, 잠복, 기생충 침입으로부터 신체를 일시적으로 강화합니다.  \n"
+" <color_yellow>불새재단에서 제공.</color>"
+
+#: .\ZhighMeds.json
+msgid "injectable test stim"
+msgid_plural "injectable test stims"
+msgstr[0] "시험용 주사제"
+
+#. ~ Description for injectable test stim
+#: .\ZhighMeds.json
+msgid ""
+"A debug stim.  \n"
+" <color_yellow> Presented by Phoenix corp.</color>"
+msgstr ""
+"시험용 주사제.  \n"
+" <color_yellow>불새재단에서 제공.</color>"
+
+#: .\ZhighMeds.json
+msgid "injectable Reactor+ stimulant"
+msgid_plural "injectable Reactor+ stimulants"
+msgstr[0] "리액터+ 주사제"
+
+#. ~ Description for injectable Reactor+ stimulant
+#: .\ZhighMeds.json
+msgid ""
+"Next-gen performance enhancer originally developed for special forces.  Temporarily boosts all physical and cognitive stats to peak efficiency.  \n"
+" <color_yellow> Presented by Phoenix corp.</color>"
+msgstr ""
+"원래 특수 부대를 위해 개발된 차세대 성능 강화제입니다.  일시적으로 모든 신체 및 인지 능력치를 최고 효율로 끌어올립니다.  \n"
+" <color_yellow>불새재단에서 제공.</color>"
+
+#: .\ZhighMeds.json
 msgid "injectable calcium stim"
 msgid_plural "injectable calcium stims"
 msgstr[0] "칼슘 주사제"
@@ -10531,6 +10872,45 @@ msgstr[0] "MPD-0 자극제 권총"
 #: .\ZhighMeds.json
 msgid "The MPD-0 Stim Pistol fires a hypodermic shot to revive himself or teammates from a distance when a person needs some medical help."
 msgstr "MPD-0 자극제 권총은 피하에 약물이 투여되는 주사기를 발사하여 자기 자신이나 원거리에서 의료 도움이 필요한 팀원을 소생시킬 수 있습니다."
+
+#: .\ZhighMeds.json
+msgid "defibrillator"
+msgid_plural "defibrillators"
+msgstr[0] "제세동기"
+
+#. ~ Use action msg for defibrillator.
+#: .\ZhighMeds.json
+msgid "You press a button and the defibrillator crackles with electricity."
+msgstr "단추를 누르자 제세동기는 전기로 지직거리기 시작했습니다."
+
+#. ~ Description for defibrillator
+#: .\ZhighMeds.json
+msgid ""
+"A defibrillator is a medical device that delivers an electrical shock to the heart to restore a normal heartbeat in cases of cardiac arrest or certain life-threatening arrhythmias.  Using this on other body parts, like your "
+"head, arms, and legs, won't be as effective compared to the usage on one's torso.  Needs batteries to use.  Could be used as a melee weapon, although it is not recommended.  \n"
+" <color_yellow> Presented by Phoenix corp.</color>"
+msgstr ""
+
+#: .\ZhighMeds.json
+msgid "defibrillator (on)"
+msgid_plural "defibrillator (on)"
+msgstr[0] "제세동기 (켜짐)"
+
+#. ~ Use action msg for {'str': 'defibrillator (on)', 'str_pl': 'defibrillator
+#. (on)'}.
+#: .\ZhighMeds.json
+msgid "You press a button and the defibrillator turns off."
+msgstr "단추를 누르자 제세동기가 꺼집니다."
+
+#. ~ Description for {'str': 'defibrillator (on)', 'str_pl': 'defibrillator
+#. (on)'}
+#: .\ZhighMeds.json
+msgid ""
+"A defibrillator is a medical device that delivers an electrical shock to the heart to restore a normal heartbeat in cases of cardiac arrest or certain life-threatening arrhythmias.  Needs batteries to use.  Could be used as "
+"a melee weapon, although it is not recommended.  \n"
+" <color_yellow> Presented by Phoenix corp.</color>  \n"
+"It is currently turned on, crackling with electricity.  Charge...  Clear!"
+msgstr ""
 
 #: .\ZhighMonSurvivors.json
 msgid "survivor"
@@ -11271,6 +11651,50 @@ msgstr[0] "대형 벌"
 #: .\ZhighMonsters.json
 msgid "With a stinger the size of a kitchen knife, this dog-sized insect's black and yellow markings warn you to leave it undisturbed."
 msgstr "침의 크기가 주방용 칼에 필적하는 거대 꿀벌로, 개 정도의 크기를 가진 이 곤충의 검은색과 노란색 무늬는 당신에게 얌전히 떠나라는 경고를 보내고 있는 것 같습니다."
+
+#: .\ZhighMonsters.json
+msgid "inactive remote vehicle"
+msgid_plural "inactive remote vehicles"
+msgstr[0] "비활성화된 원격 무인기"
+
+#. ~ Use action friendly_msg for {'str': 'inactive remote vehicle'}.
+#: .\ZhighMonsters.json
+msgid "The remote vehicle rolls into action ready to pursue."
+msgstr "원격 무인기가 작동해서 추격을 준비합니다."
+
+#. ~ Use action hostile_msg for {'str': 'inactive remote vehicle'}.
+#: .\ZhighMonsters.json
+msgid "A siren howls and lights flash as the remote vehicle looks at you weird!"
+msgstr "원격 무인기의 사이렌과 불빛들이 반짝이며 당신을 기묘하게 처다봅니다!"
+
+#. ~ Description for {'str': 'inactive remote vehicle'}
+#: .\ZhighMonsters.json
+msgid ""
+"This is an inactive police robot.  Using this item involves placing it on the ground and turning it on.  If reprogrammed and rewired successfully the remote vehicle will then identify you as law enforcement, roam around or "
+"follow you, and attempt to detain lawbreakers."
+msgstr "이것은 비활성 원격 무인기입니다.  이 아이템을 사용하려면 전원을 켜고 바닥에 내려놓으면 자동으로 부착됩니다.  재프로그래밍에 성공하면 포탑이 아군으로 인식하고 회전하는 얼음 대포로 모든 적을 공격합니다."
+
+#: .\ZhighMonsters.json
+msgid "broken remote vehicle"
+msgid_plural "broken remote vehicles"
+msgstr[0] "고장난 원격 무인기"
+
+#. ~ Description for {'str': 'broken remote vehicle'}
+#: .\ZhighMonsters.json
+msgid "A broken remote vehicle.  Much less threatening now that it's quiet and still.  Could be gutted for parts."
+msgstr "고장난 원격 무인기입니다.  땅바닥에 쓰러져 있으니 그다지 위협적이지 않다.  부품 회수 가능."
+
+#: .\ZhighMonsters.json
+msgid "remote vehicle"
+msgid_plural "remote vehicles"
+msgstr[0] "원격 무인기"
+
+#. ~ Description for {'str': 'remote vehicle'}
+#: .\ZhighMonsters.json
+msgid ""
+"One of the many models of armored law enforcement robots employed shortly before the collapse of civilization.  Solar powered like many other robots, it maintains its programmed pursuit of law and order, propelled on a trio "
+"of omni wheels."
+msgstr "문명의 붕괴가 일어나기 얼마 전에 많이 사용되기 시작한 법률 집행용 무장 로봇 중 하나로, 다른 로봇들처럼 태양광으로 작동합니다.  프로그램된 규칙에 따라 움직이며, 세 옴니 휠을 통해 움직입니다."
 
 #: .\ZhighMutations.json
 msgid "Hair: MJ"
@@ -12153,6 +12577,15 @@ msgstr "주머니 안 물건: 응급구조대원 키트"
 #: .\ZhighMutations.json
 msgid "You happened to have an EMT Gear on you when this whole thing happened."
 msgstr "어쩌다 보니 이 사태가 발생했을 때 응급구조대원 키트를 소지하고 있는 상태였습니다."
+
+#: .\ZhighMutations.json
+msgid "Pocket items: cash card"
+msgstr "주머니 안 물건: 현금 카드"
+
+#. ~ Description for {'str': 'Pocket items: cash card'}
+#: .\ZhighMutations.json
+msgid "You happened to born with a silver spoon before this whole thing happened."
+msgstr "어쩌다 보니 이 사태가 발생했을 때 현금 카드를 소지하고 있는 상태였습니다."
 
 #: .\ZhighMutations.json
 msgid "Complete Combat Training"
@@ -16256,6 +16689,130 @@ msgstr "당신은 양봉업자에 준하는 사람이었습니다.  세상은 �
 
 #: .\ZhighProfession.json
 msgctxt "profession_male"
+msgid "Student - Detective"
+msgstr "학생 - 탐정"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Detective"
+msgstr "학생 - 탐정"
+
+#. ~ Profession (male Student - Detective) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"As a genius young detective, you were on the brink of a major breakthrough in your last homicide case when the Cataclysm struck.  Now that suspect is dead.  Everyone's dead.  There is always only one truth - the world has "
+"ended."
+msgstr ""
+"천재 탐정으로써, 당신은 수사하고 있던 마지막 살인사건의 진실을 밝혀내기 직전 대격변이 일어나버렸습니다.  용의자도 죽고, 모두 죽어버린 지금, 당신은 담배가 필요합니다.  진실은 언제나 하나입니다 - 세상이 멸망했다는 것이죠."
+
+#. ~ Profession (female Student - Detective) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"As a genius young detective, you were on the brink of a major breakthrough in your last homicide case when the Cataclysm struck.  Now that suspect is dead.  Everyone's dead.  There is always only one truth - the world has "
+"ended."
+msgstr ""
+"천재 탐정으로써, 당신은 수사하고 있던 마지막 살인사건의 진실을 밝혀내기 직전 대격변이 일어나버렸습니다.  용의자도 죽고, 모두 죽어버린 지금, 당신은 담배가 필요합니다.  진실은 언제나 하나입니다 - 세상이 멸망했다는 것이죠."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Nader"
+msgstr "학생 - 네이더"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Nader"
+msgstr "학생 - 네이더"
+
+#. ~ Profession (male Student - Nader) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid "You rain chaos from behind cover, lobbing fire, smoke, and shrapnel with a grin and perfect aim.  In the world’s end, you don’t need a plan—just the right grenade for the job."
+msgstr "웃음과 완벽한 조준을 통해서 당신은 엄폐하며 불과 연기 그리고 파편을 뿌리고 다닙니다.  세상의 끝에서 당신은 계획 따윈 하지 않습니다 - 그저 더 많은 수류탄을 뿌릴 뿐이죠."
+
+#. ~ Profession (female Student - Nader) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid "You rain chaos from behind cover, lobbing fire, smoke, and shrapnel with a grin and perfect aim.  In the world’s end, you don’t need a plan—just the right grenade for the job."
+msgstr "웃음과 완벽한 조준을 통해서 당신은 엄폐하며 불과 연기 그리고 파편을 뿌리고 다닙니다.  세상의 끝에서 당신은 계획 따윈 하지 않습니다 - 그저 더 많은 수류탄을 뿌릴 뿐이죠."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Loner"
+msgstr "학생 - 로너"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Loner"
+msgstr "학생 - 로너"
+
+#. ~ Profession (male Student - Loner) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"Squatting by the ruins in your trusty track suit, you cook canned meat on a tire fire and laugh like it's just another Tuesday.  With a shovel in one hand and slav spirit in the other, you survive hardbass-style-cyka, blyat, "
+"and unstoppable."
+msgstr ""
+"당신의 믿음직한 운동복을 입고 폐허 위에서 쭈그려 앉은 채, 마치 또다른 화요일마냥 웃으며 타이어로 만든 불 위에서 통조림 햄을 조리합니다.  한 손에는 삽과 다른 손에는 슬라브 정신을 지닌 채, 하드바스 스타일-쑤카, 블랏, 아무도 당"
+"신을 막을 수 없는 자세-로 하루하루를 살아갑니다."
+
+#. ~ Profession (female Student - Loner) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"Squatting by the ruins in your trusty track suit, you cook canned meat on a tire fire and laugh like it's just another Tuesday.  With a shovel in one hand and slav spirit in the other, you survive hardbass-style-cyka, blyat, "
+"and unstoppable."
+msgstr ""
+"당신의 믿음직한 운동복을 입고 폐허 위에서 쭈그려 앉은 채, 마치 또다른 화요일마냥 웃으며 타이어로 만든 불 위에서 통조림 햄을 조리합니다.  한 손에는 삽과 다른 손에는 슬라브 정신을 지닌 채, 하드바스 스타일-쑤카, 블랏, 아무도 당"
+"신을 막을 수 없는 자세-로 하루하루를 살아갑니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - First Day"
+msgstr "학생 - 학교의 첫 날"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - First Day"
+msgstr "학생 - 학교의 첫 날"
+
+#. ~ Profession (male Student - First Day) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid "This is not how you imagined your first day of high school.  At least you have your stuff with you.  Yippee."
+msgstr "이건 당신이 상상했던 학교의 첫 날이 아닙니다.  최소한 당신의 물건들은 가지고 있네요.  아이 신나라."
+
+#. ~ Profession (female Student - First Day) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid "This is not how you imagined your first day of high school.  At least you have your stuff with you.  Yippee."
+msgstr "이건 당신이 상상했던 학교의 첫 날이 아닙니다.  최소한 당신의 물건들은 가지고 있네요.  아이 신나라."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Chainsmoker"
+msgstr "학생 - 흡연자"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Chainsmoker"
+msgstr "학생 - 흡연자"
+
+#. ~ Profession (male Student - Chainsmoker) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid "You always smoked as much as possible, hiding from teachers.  Now nobody will scold you for smoking, but at what cost?"
+msgstr "당신은 선생님들의 시야에서 벗어나 가능한 많이 담배를 피려고 했습니다.  이제는 담배를 피던말던 아무도 뭐라 그럴 사람이 없지만 그럴 가치가 있는지 의문입니다."
+
+#. ~ Profession (female Student - Chainsmoker) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid "You always smoked as much as possible, hiding from teachers.  Now nobody will scold you for smoking, but at what cost?"
+msgstr "당신은 선생님들의 시야에서 벗어나 가능한 많이 담배를 피려고 했습니다.  이제는 담배를 피던말던 아무도 뭐라 그럴 사람이 없지만 그럴 가치가 있는지 의문입니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
 msgid "Student - Mallninja"
 msgstr "학생 - 몰닌자"
 
@@ -17406,6 +17963,28 @@ msgctxt "prof_desc_female"
 msgid "You used to be a professional beekeeper.  The world has ended, but at least you managed to grab some utensils and honey."
 msgstr "당신은 전문 양봉업자였습니다.  세상은 멸망했지만, 최소한 당신의 기본적인 장비와 꿀은 챙길 수 있었습니다."
 
+#: .\ZhighProfession2.json
+msgctxt "profession_male"
+msgid "Brawler"
+msgstr "브롤러"
+
+#: .\ZhighProfession2.json
+msgctxt "profession_female"
+msgid "Brawler"
+msgstr "브롤러"
+
+#. ~ Profession (male Brawler) description
+#: .\ZhighProfession2.json
+msgctxt "prof_desc_male"
+msgid "You were an assassin who erased your targets by your fists.  Time to punch another target again."
+msgstr "당신은 두 주먹으로 당신의 목표들을 사살하던 암살자였습니다.  이제 다른 암살대상을 주먹으로 패야 할 시간입니다."
+
+#. ~ Profession (female Brawler) description
+#: .\ZhighProfession2.json
+msgctxt "prof_desc_female"
+msgid "You were an assassin who erased your targets by your fists.  Time to punch another target again."
+msgstr "당신은 두 주먹으로 당신의 목표들을 사살하던 암살자였습니다.  이제 다른 암살대상을 주먹으로 패야 할 시간입니다."
+
 #. ~ Name for scenario 'Challenge - School' for a male character
 #: .\ZhighSenarios.json
 msgctxt "scenario_male"
@@ -18490,6 +19069,65 @@ msgstr "견착된 Aeroknox XM556"
 msgid "mounted paintball machine gun"
 msgstr "견착된 페인트볼 기관총"
 
+#: .\ZhighVehichleParts.json
+msgid "fridge"
+msgstr "냉장고"
+
+#. ~ Description for {'str': 'fridge'}
+#: .\ZhighVehichleParts.json
+msgid "A small fridge.  When turned on, it will cool the food inside, extended the time until the food spoils."
+msgstr "작은 냉장고입니다.  켜진 상태하면, 음식을 차게 유지시켜 보존 기한을 증가시킵니다."
+
+#: .\ZhighVehichleParts.json
+msgid "freezer"
+msgstr "냉동고"
+
+#: .\ZhighVehichleParts.json
+msgid "glass freezer"
+msgstr "유리 냉동고"
+
+#: .\ZhighVehichleParts.json
+msgid "huge cargo space"
+msgstr "대형 화물 운반고"
+
+#: .\ZhighVehichleParts.json
+msgid "external huge cargo rack"
+msgstr "외부 대형 화물 운반고"
+
+#. ~ Description for {'str': 'external huge cargo rack'}
+#. ~ Description for {'str': 'external huge carbon cargo rack'}
+#: .\ZhighVehichleParts.json
+msgid "Storage space, mounted outside your vehicle's armor and vulnerable to damage."
+msgstr "차량 장갑판 외부에 설치된 저장공간입니다.  쉽게 손상될 수 있습니다."
+
+#: .\ZhighVehichleParts.json
+msgid "huge carbon cargo space"
+msgstr "탄소섬유 대형 화물 운반고"
+
+#: .\ZhighVehichleParts.json
+msgid "external huge carbon cargo rack"
+msgstr "외부 탄소섬유 대형 화물 운반고"
+
+#: .\ZhighVehichleParts.json
+msgid "huge cargo carrier"
+msgid_plural "huge cargo carriers"
+msgstr[0] "대형 화물 운반고"
+
+#. ~ Description for {'str': 'huge cargo carrier'}
+#: .\ZhighVehichleParts.json
+msgid "A heavy frame outfitted with tie-downs and attachment points for carrying cargo."
+msgstr "화물을 운반하기 위한 고정끈과 운반고가 갖춰진 무거운 프레임입니다."
+
+#: .\ZhighVehichleParts.json
+msgid "carbon huge cargo carrier"
+msgid_plural "carbon huge cargo carriers"
+msgstr[0] "탄소섬유 대형 화물 운반고"
+
+#. ~ Description for {'str': 'carbon huge cargo carrier'}
+#: .\ZhighVehichleParts.json
+msgid "A sturdy, yet lightweight carbon structure outfitted with tie-downs and attachment points for carrying cargo."
+msgstr "화물을 운반하기 위한 고정끈과 운반고가 갖춰진 튼튼하면서도 가벼운 프레임입니다."
+
 #: .\ZhighVehicle.json
 msgid "Escape Car"
 msgstr "탈출 차량"
@@ -18509,6 +19147,14 @@ msgstr "미니바이크"
 #: .\ZhighVehicle.json
 msgid "Schoolbus"
 msgstr "스쿨버스"
+
+#: .\ZhighVehicle.json
+msgid "Military Gun Truck"
+msgstr "군용 건 트럭"
+
+#: .\ZhighVehicle.json
+msgid "Paintball Turret"
+msgstr "페인트볼 포탑"
 
 #: .\ZhighWeather.json
 msgid "UNKNOWN"
@@ -18701,8 +19347,8 @@ msgstr "당장은 안된다고, <name_g>.  약물 구하는 데에 시간이 좀
 msgid "I'll see what I've got around here for you.  I've gotta warn you: it ain't cheap.  Hard to stay supplied in the apocalypse, you know.  What do you need?"
 msgstr "여기서 뭘 찾을 수 있는지 봐 줄게.  근데 미리 경고하마: 그리 값싸지는 않으니까.  세계멸망이 물건 구하는 걸 어렵게 하니까, 너도 알다시피.  뭐가 필요하니?"
 
-#: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcAmmoDude.json .\ZhighNpcs\ZhighNpcDeadeye.json .\ZhighNpcs\ZhighNpcFrozenCactus.json .\ZhighNpcs\ZhighNpcHacker.json .\ZhighNpcs\ZhighNpcRanger.json
-#: .\ZhighNpcs\ZhighNpcWitch.json .\ZhighNpcs\ZhighSchoolNurse.json .\ZhighNpcs\ZighNpcGunsmith.json
+#: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcAmmoDude.json .\ZhighNpcs\ZhighNpcDeadeye.json .\ZhighNpcs\ZhighNpcFrozenCactus.json .\ZhighNpcs\ZhighNpcHacker.json .\ZhighNpcs\ZhighNpcHambro.json
+#: .\ZhighNpcs\ZhighNpcRanger.json .\ZhighNpcs\ZhighNpcWitch.json .\ZhighNpcs\ZhighSchoolNurse.json .\ZhighNpcs\ZighNpcGunsmith.json
 msgid "Nevermind."
 msgstr "필요 없을 것 같네."
 
@@ -18754,8 +19400,8 @@ msgstr "[75$]  속도증가 주사제 하나 주세요."
 msgid "[75$]  I'll buy a signal supply flare."
 msgstr "[75$]  보급용 신호탄 하나 주세요."
 
-#: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcAmmoDude.json .\ZhighNpcs\ZhighNpcDeadeye.json .\ZhighNpcs\ZhighNpcFrozenCactus.json .\ZhighNpcs\ZhighNpcHacker.json .\ZhighNpcs\ZhighNpcRanger.json
-#: .\ZhighNpcs\ZhighNpcWitch.json .\ZhighNpcs\ZhighSchoolNurse.json .\ZhighNpcs\ZighNpcGunsmith.json
+#: .\ZhighNpcs\ZhighGuardNpcs.json .\ZhighNpcs\ZhighNpcAmmoDude.json .\ZhighNpcs\ZhighNpcDeadeye.json .\ZhighNpcs\ZhighNpcFrozenCactus.json .\ZhighNpcs\ZhighNpcHacker.json .\ZhighNpcs\ZhighNpcHambro.json
+#: .\ZhighNpcs\ZhighNpcRanger.json .\ZhighNpcs\ZhighNpcWitch.json .\ZhighNpcs\ZhighSchoolNurse.json .\ZhighNpcs\ZighNpcGunsmith.json
 msgid "Is there anything else you need?"
 msgstr "다른 거 더 필요하니?"
 
@@ -18841,7 +19487,7 @@ msgstr "알겠어.  안전하게 있으라고, <name_g>."
 msgid "I'm out of some things, <name_g>.  It takes a while to get some ammo - but I'm working hard to replace it.  What can I get you in the meantime?"
 msgstr "물건 몇 개가 나갔어, <name_g>.  총알을 가져오려면 좀 걸리네 - 물론 그걸 하려고 노력중이지만.  그 대신에 뭘 해드릴까?"
 
-#: .\ZhighNpcs\ZhighNpcAmmoDude.json .\ZhighNpcs\ZhighNpcFrozenCactus.json .\ZhighNpcs\ZighNpcGunsmith.json
+#: .\ZhighNpcs\ZhighNpcAmmoDude.json .\ZhighNpcs\ZhighNpcFrozenCactus.json .\ZhighNpcs\ZhighNpcHambro.json .\ZhighNpcs\ZighNpcGunsmith.json
 msgid "I'll see what I've got around here for you.  I've gotta warn you: it ain't cheap.  Hard to stay supplied when crap hits the fan, you know.  What do you need?"
 msgstr "여기 있는 것들을 팔지.  하지만 경고는 하겠네: 꽤나 비싸.  이런 상황에서 물자들 조달하는 게 쉽지는 않다고.  뭐가 필요하나?"
 
@@ -19952,7 +20598,7 @@ msgstr "젠장, 좀비들이 진짜일줄은 몰랐는데."
 msgid "I'd like to buy some weapons."
 msgstr "무기를 좀 사고 싶은데."
 
-#: .\ZhighNpcs\ZhighNpcFrozenCactus.json
+#: .\ZhighNpcs\ZhighNpcFrozenCactus.json .\ZhighNpcs\ZhighNpcHambro.json
 msgid "I'm out of some things, <name_g>.  It takes a while to get some stuff - but I'm working hard to replace it.  What can I get you in the meantime?"
 msgstr "물건 몇 개가 나갔어, <name_g>.  물건들을 가져오려면 좀 걸리네 - 물론 그걸 하려고 노력중이지만.  그 대신에 뭘 해드릴까?"
 
@@ -20444,6 +21090,30 @@ msgstr "'햄브로' 햄"
 #: .\ZhighNpcs\ZhighNpcHambro.json
 msgid "Jesus Christ!"
 msgstr "지저스 크라이스트!"
+
+#: .\ZhighNpcs\ZhighNpcHambro.json
+msgid "I'd like to buy some stuff."
+msgstr "물건 좀 사고 싶은데."
+
+#: .\ZhighNpcs\ZhighNpcHambro.json
+msgid "[60 High School Coin]  I'll buy a crude rocket launcher."
+msgstr "[학교 동전 60개]  조잡한 로켓발사기 살게."
+
+#: .\ZhighNpcs\ZhighNpcHambro.json
+msgid "[20 High School Coin]  I'll buy a spiked homemade rocket."
+msgstr "[학교 동전 20개]  못 달린 수제 로켓 살게."
+
+#: .\ZhighNpcs\ZhighNpcHambro.json
+msgid "[20 High School Coin]  I'll buy a explosive homemade rocket."
+msgstr "[학교 동전 20개]  폭발형 수제 로켓 살게."
+
+#: .\ZhighNpcs\ZhighNpcHambro.json
+msgid "[20 High School Coin]  I'll buy a incendiary homemade rocket."
+msgstr "[학교 동전 20개]  소이형 수제 로켓 살게."
+
+#: .\ZhighNpcs\ZhighNpcHambro.json
+msgid "[20 High School Coin]  I'll buy a shotcanister homemade rocket."
+msgstr "[학교 동전 20개]  산탄 수제 로켓 살게."
 
 #: .\ZhighNpcs\ZhighNpcHitman.json
 msgid "Yong Kyu Mah"
@@ -22794,6 +23464,24 @@ msgid "A single shot pistol that loads 40mm grenades, handcrafted from scrap.  P
 msgstr "40mm 유탄을 사용하는 단발 권총입니다.  고철을 이용해 만든 수제 무기입니다.  주머니 속에 들어가는 콰광입니다!  이제 두 자루를 들고 있습니다."
 
 #: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo .410 ashot"
+msgid_plural "akimbo .410 ashots"
+msgstr[0] "아킴보 .410 에이샷"
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "A single shot pistol that loads .410 shells, handcrafted from scrap.  Now comes in two."
+msgstr ".410구경 산탄을 사용하는 단발 권총입니다.  고철을 이용해 만든 수제 무기입니다.  이제 두 자루를 들고 있습니다."
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo double barrel .410 ashot"
+msgid_plural "akimbo double barrel .410 ashots"
+msgstr[0] "아킴보 더블 배럴 .410 에이샷"
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "A double shot pistol that loads two .410 shells, handcrafted from scrap.  You can fire it one by one, or you can fire both barrels at the same time.  Now comes in two."
+msgstr ".410구경 산탄을 사용하는 단발 권총입니다.  고철을 이용해 만든 수제 무기입니다.  한 발씩 쏘거나, 양쪽 총열에서 두 발을 동시에 쏠 수 있습니다.  이제 두 자루를 들고 있습니다."
+
+#: .\ZhighWeapons\ZhighAkim.json
 msgid "akimbo S&W Model 10"
 msgid_plural "akimbo S&W Model 10s"
 msgstr[0] "아킴보 S&W 모델 10"
@@ -23000,6 +23688,19 @@ msgstr ""
 "남북전쟁 시기에 사용된 LeMat 리볼버의 조잡하고 거대한 재생산분으로, 더 오래된 종이 카트리지 탄환을 사용합니다.  현대 재료를 이용해 높은 품질을 이룩한 동시에, 섬세한 디자인을 유지하고 있습니다.  이제 두 자루를 들고 있습니다."
 
 #: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo \"revolver\""
+msgid_plural "akimbo \"revolver\"s"
+msgstr[0] "아킴보 \"리볼버\""
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid ""
+"A large and heavy revolver evidently welded from scrap.  It's not pretty, but the .45 and .44 it's chambered with packs a serious punch.  Just watch out for the kick.  This one is especially made so that the suppressor is "
+"avilable to use.  Now comes in two."
+msgstr ""
+"고철을 용접해 만든게 훤히 보이는, 크고 무거운 리볼버입니다.  썩 예쁘지는 않지만, .45 탄이나 .44탄을 장전해 묵직한 한방을 날려줄 수 있습니다.  반동에 주의하세요.  이 리볼버는 특별하게 만들어져 소음기도 사용할 수 있습니다.  이"
+"제 두 자루를 들고 있습니다."
+
+#: .\ZhighWeapons\ZhighAkim.json
 msgid "akimbo homemade hand cannon"
 msgid_plural "akimbo homemade hand cannons"
 msgstr[0] "아킴보 수제 핸드캐논"
@@ -23009,6 +23710,15 @@ msgid "A large and heavy revolver evidently welded from scrap.  It's not pretty,
 msgstr ""
 "고철을 용접해 만든게 훤히 보이는, 크고 무거운 리볼버입니다.  썩 예쁘지는 않지만, .45 탄이나 .44탄을 장전해 묵직한 한방을 날려줄 수 있습니다.  반동에 주의하세요.  이 리볼버는 특별하게 만들어져 소음기도 사용할 수 있습니다.  이"
 "제 두 자루를 들고 있습니다."
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo Magnum Research BFR"
+msgid_plural "akimbo Magnum Research BFRs"
+msgstr[0] "아킴보 매그넘 리서치 BFR"
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "A massive single-action revolver.  While the .45-70 rifle round loses significant velocity in its short pistol barrel, it still competes with other large magnum handguns in terms of power.  Now comes in two."
+msgstr "거대한 싱글액션 리볼버입니다. .45-70 소총탄이 이 짧은 권총 총열에서 탄속을 상당히 잃어버리지만, 충격량을 놓고 보자면 여전히 다른 대형 매그넘 권총과 비교할만합니다.  이제 두 자루를 들고 있습니다."
 
 #: .\ZhighWeapons\ZhighAkim.json
 msgid "akimbo Rossi 12 gauge shotgun pistol"
@@ -23027,6 +23737,69 @@ msgstr[0] "아킴보 리볼버 산탄총"
 #: .\ZhighWeapons\ZhighAkim.json
 msgid "A revolver modified to accept shotgun ammo, it can hold 3 cartridges.  Now comes in two."
 msgstr "고철을 용접해 만든게 훤히 보이는, 크고 무거운 리볼버입니다.  썩 예쁘지는 않지만, .45 탄을 장전해 묵직한 한방을 날려줄 수 있습니다.  반동에 주의하세요.  이제 두 자루를 들고 있습니다."
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo Taurus Lightning"
+msgid_plural "akimbo Taurus Lightnings"
+msgstr[0] "아킴보 타우루스 라이트닝"
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "The Taurus Lightning is a 5-shot revolver chambered in .308.  It has impressive stopping power.  Now comes in two."
+msgstr "타우루스 라이트닝은 308구경의 5연발 리볼버입니다.  인상적인 저지력을 자랑합니다.  이제 두 자루를 들고 있습니다."
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo Taurus Dragoon"
+msgid_plural "akimbo Taurus Dragoons"
+msgstr[0] "아킴보 타우루스 드라군"
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "The Taurus Dragoon is a 5-shot revolver chambered in 7.62x39mm and 7.62x54mm.  It has impressive stopping power.  Now comes in two."
+msgstr "타우루스 드라군은 7.62x39mm와 7.62x54mm구경의 5연발 리볼버입니다.  인상적인 저지력을 자랑합니다.  이제 두 자루를 들고 있습니다."
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo Triple Action Thunder"
+msgid_plural "akimbo Triple Action Thunders"
+msgstr[0] "아킴보 트리플 액션 썬더"
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "A Breech-loading, single shot handgun designed to fire the .50 BMG cartridge.  Reconstruct the word \"Hand Cannon\".  Now comes in two."
+msgstr "50구경 총알을 위한 후장식 단발 권총입니다.  핸드 캐논이라는 단어를 재정의합니다.  이제 두 자루를 들고 있습니다."
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo Rossi 20x66mm shotgun pistol"
+msgid_plural "akimbo Rossi 20x66mm shotgun pistols"
+msgstr[0] "아킴보 로시 20x66mm 산탄 권총"
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "A single shot pistol that loads 20x66mm shotgun shells.  Handy sidearm in the apocalypse.  Now comes in two."
+msgstr "20x66mm 산탄을 사용하는 단발 권총입니다.  세기말에 쓸만한 부무장입니다.  이제 두 자루를 들고 있습니다."
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo Taurus 550 samaritan"
+msgid_plural "akimbo Taurus 550 samaritans"
+msgstr[0] "아킴보 타우루스 550 사마리아인"
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "Considered overkill by many, the Taurus 550 samaritan remains an ultimate powerful sidearm to the arsenal of anybody.  Now comes in two."
+msgstr "화력이 과도하다는 평을 자주 듣는 타우루스 550 사마리아인 리볼버는 어떤 사수가 사용하더라도 강력한 화력을 보장합니다.  이제 두 자루를 들고 있습니다."
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo Udar"
+msgid_plural "akimbo Udars"
+msgstr[0] "아킴보 우다르"
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "A police weapon designed and developed in Russia.  Accepts 9x18mm cartridges.  Now comes in two."
+msgstr "러시아에서 디자인되고 제작된 경찰용 무기입니다.  9x18mm구경의 총알들을 장전 및 사격할 수 있습니다.  이제 두 자루를 들고 있습니다."
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo 1911 dart"
+msgid_plural "akimbo 1911 darts"
+msgstr[0] "아킴보 다트발사 M1911"
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "A M1911 that loads and shoots metal rails, for special operators during special missions.  Now comes in two."
+msgstr "특수부대원의 특수임무를 위한 금속 레일을 발사할 수 있는 M1911입니다.  이제 두 자루를 들고 있습니다."
 
 #: .\ZhighWeapons\ZhighAkim.json
 msgid "akimbo Kel-Tec P3AT"
@@ -23141,8 +23914,8 @@ msgstr[0] "아킴보 Taurus Spectrum 탄창"
 
 #. ~ Description for {'str': 'akimbo Taurus Spectrum magazine'}
 #: .\ZhighWeapons\ZhighAkim.json
-msgid "A compact, 6-round steel box magazine for use with the Taurus Spectrum.  Now comes in two."
-msgstr "타우러스 스펙트럼에 사용되는 6발들이 소형 박스 탄창.  이제 두 자루를 들고 있습니다."
+msgid "A compact, 6-round steel box magazine for use with the akimbo Taurus Spectrum.  Now comes in two."
+msgstr "아킴보 타우러스 스펙트럼에 사용되는 6발들이 소형 박스 탄창.  이제 두 자루를 들고 있습니다."
 
 #: .\ZhighWeapons\ZhighAkim.json
 msgid "akimbo Glock 20"
@@ -23516,8 +24289,8 @@ msgstr[0] "아킴보 SIG Pro .40 탄창"
 
 #. ~ Description for {'str': 'akimbo SIG Pro .40 magazine'}
 #: .\ZhighWeapons\ZhighAkim.json
-msgid "A compact and reliable magazine for use with the SIG Pro .40 pistol.  Now comes in two."
-msgstr "SIG 프로 .40 권총에 사용되는 신뢰성이 높은 소형 탄창.  이제 두 자루를 들고 있습니다."
+msgid "A compact and reliable magazine for use with the akimbo SIG Pro .40 pistol.  Now comes in two."
+msgstr "아킴보 SIG 프로 .40 권총에 사용되는 신뢰성이 높은 소형 탄창.  이제 두 자루를 들고 있습니다."
 
 #: .\ZhighWeapons\ZhighAkim.json
 msgid "akimbo Browning Hi-Power .40 S&W"
@@ -23666,6 +24439,24 @@ msgid ""
 msgstr ""
 "M45A1은 해병 원정대 정찰대가 사용하던 구형 M45 MEUSOC 권총을 대체했습니다.  오리지널 M45 권총은 미 해병대 병참에서 M1911A1을 수작업으로 개조한 것이지만, 업데이트된 M45A1은 이중 반동 스프링을 제외하면 다른 상용 1911 설계와 거"
 "의 차이가 없습니다.  2016년에는 물류 문제로 인해 대부분 글록 19로 교체되었습니다.  이제 두 자루를 들고 있습니다."
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo Silverballer"
+msgid_plural "akimbo Silverballers"
+msgstr[0] "아킴보 실버볼러"
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "The AMT Hardballer is a stainless steel clone of the Colt M1911A1 made by Arcadia Machine & Tool.  Reliable, almost like the original.  Now comes in two."
+msgstr "아크라디아 머신 & 툴에서 제작한 AMT 하드볼러는 콜트 M19911A1의 스테인레스 스틸 복제품입니다.  원본과 거의 비슷하게 믿음직합니다.  이제 두 자루를 들고 있습니다."
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo M1911 machine pistol"
+msgid_plural "akimbo M1911 machine pistols"
+msgstr[0] "아킴보 M1911 기관권총"
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "Modified 1911, which shoots .45 bullet in full auto.  Also have a built-in foregrip.  Now comes in two."
+msgstr "자동사격이 가능한 1911 권총으로, 45구경의 탄환을 연사할 수 있습니다.  내장된 수직손잡이 또한 달려 있습니다.  이제 두 자루를 들고 있습니다."
 
 #: .\ZhighWeapons\ZhighAkim.json
 msgid "akimbo USP .45"
@@ -24121,6 +24912,11 @@ msgid_plural "akimbo USP 9mms"
 msgstr[0] "아킴보 USP 9mm"
 
 #: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo P30L"
+msgid_plural "akimbo P30Ls"
+msgstr[0] "아킴보 P30L"
+
+#: .\ZhighWeapons\ZhighAkim.json
 msgid "akimbo USP 9mm magazine"
 msgid_plural "akimbo USP 9mm magazines"
 msgstr[0] "아킴보 USP 9mm 탄창"
@@ -24265,8 +25061,8 @@ msgid ""
 "The Hi-Point C-9 is a blowback operated semi-automatic pistol designed by Hi-Point Firearms, which is known for making inexpensive firearms, and for making said firearms bulky and uncomfortable.  Hi-Points have slides made "
 "with a zinc pot-metal which is relatively fragile compared to steel slides.  Now comes in two."
 msgstr ""
-"하이-포인트 C-9은 값싼 총을 만들고, 그 총들을 두껍고 불편하게 제조하는 하이-포인트 파이어암 사의 블로우백 작동식 반자동 권총입니다.  하이-포인트 사의 권총들은 강철제 슬라이드에 비하면 상대적으로 깨지기 쉬운 아연 합금제로 이루"
-"어진 슬라이드를 지닙니다.  이제 두 자루를 들고 있습니다."
+"하이-포인트 C-9은 블로우백 방식으로 노리쇠뭉치를 후퇴시키는 반자동권총입니다.  저렴하지만 크고 불편한 총기로 유명한 하이-포인트 파이어암 사에서 설계되었습니다.  하이-포인트는 아연 합금 슬라이드를 사용하는 탓에 강철 슬라이드"
+"에 비해 내구성이 떨어진다는 평이 있습니다.  이제 두 자루를 들고 있습니다."
 
 #: .\ZhighWeapons\ZhighAkim.json
 msgid "akimbo C-9 8-round magazine"
@@ -24338,8 +25134,8 @@ msgstr[0] "아킴보 CZ 75 26발 탄창"
 
 #. ~ Description for {'str': 'akimbo CZ 75 26-round magazine'}
 #: .\ZhighWeapons\ZhighAkim.json
-msgid "A 26-round steel box magazine for use with the CZ 75.  Now comes in two."
-msgstr "아킴보 CZ 75에 사용되는 26발들이 철제 박스 탄창입니다.  이제 두 자루를 들고 있습니다."
+msgid "A 26-round steel box magazine for use with the akimbo CZ 75.  Now comes in two."
+msgstr "아킴보 CZ 75에 사용되는 12발들이 철제 박스 탄창입니다.  이제 두 자루를 들고 있습니다."
 
 #: .\ZhighWeapons\ZhighAkim.json
 msgid "akimbo Walther CCP"
@@ -24351,8 +25147,8 @@ msgid ""
 "The Walther CCP is a gas-delayed blowback semi-automatic pistol intended for the concealed carry consumer market.  Internally, it is nearly identical to the cult classic H&K P7.  Its fixed barrel design makes it potentially "
 "more accurate than many other pistols, though this may difficult to realize with its average trigger and short sight radius.  Now comes in two."
 msgstr ""
-"월터 CCP는 가스작동식 반자동 권총으로, 숨겨서 휴대하는 총기로 민간 시작에 팔리기 위해 제작되었습니다.  내부 구조는 고전적인 H&K P7과 거의 동일합니다.  총열이 고정되어 있어 다른 권총에 비해 정확하지만, 평균적인 방아쇠압과 짧"
-"은 사거리가 단점입니다.  이제 두 자루를 들고 있습니다."
+"월터 CCP는 가스 지연 블로우백 시스템 반자동 권총으로, 숨겨서 휴대하는 총기로 민간 시작에 팔기 위해 제작되었습니다.  내부 구조는 고전적인 H&K P7과 거의 동일합니다.  총열이 고정되어 있어 다른 권총에 비해 정확하지만, 평균적인 방"
+"아쇠압과 짧은 사거리가 단점입니다.  이제 두 자루를 들고 있습니다."
 
 #: .\ZhighWeapons\ZhighAkim.json
 msgid "akimbo CCP magazine"
@@ -24391,6 +25187,33 @@ msgstr[0] "아킴보 마카로프 PM 탄창"
 #: .\ZhighWeapons\ZhighAkim.json
 msgid "The standard magazine for the akimbo Pistolet Makarova, holds 8 rounds.  Now comes in two."
 msgstr "마카로프 권총에 사용되는 8발들이 표준 탄창입니다.  이제 두 자루를 들고 있습니다."
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo RARAN Prototype 1130"
+msgid_plural "akimbo RARAN Prototype 1130s"
+msgstr[0] "아킴보 RARAN 프로토타입 1130"
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "Modified Makarov PM, which shoots 9x18mm cartridge in full auto.  Also have a built-in foregrip.  Now comes in two."
+msgstr "자동사격이 가능한 마카로프 PM 권총으로, 9x18mm구경의 탄환을 연사할 수 있습니다.  내장된 수직손잡이 또한 달려 있습니다.  이제 두 자루를 들고 있습니다."
+
+#: .\ZhighWeapons\ZhighAkim.json .\ZhighWeapons\ZhighRanged.json
+msgid "low auto"
+msgstr "저연사"
+
+#: .\ZhighWeapons\ZhighAkim.json .\ZhighWeapons\ZhighRanged.json
+msgid "high auto"
+msgstr "고연사"
+
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo RARAN 71-round drum magazine"
+msgid_plural "akimbo RARAN 71-round drum magazines"
+msgstr[0] "아킴보 RARAN 71발 드럼탄창"
+
+#. ~ Description for {'str': 'akimbo RARAN 71-round drum magazine'}
+#: .\ZhighWeapons\ZhighAkim.json
+msgid "A high-capacity drum magazine for the RARAN Prototype 1130, modified from PPSh-41 drum magazine.  Now comes in two."
+msgstr "RARAN 프로토타입 1130 모델을 위한 대용량 드럼탄창으로, PPSh-41 드럼 탄창을 개조했습니다.  이제 두 자루를 들고 있습니다."
 
 #: .\ZhighWeapons\ZhighAkim.json
 msgid "akimbo Stechkin APS"
@@ -25563,6 +26386,11 @@ msgid "aerial bombardment signal flare"
 msgid_plural "aerial bombardment signal flares"
 msgstr[0] "지역 폭격 조명탄"
 
+#. ~ Description for {'str': 'aerial bombardment signal flare'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "A signal."
+msgstr "신호."
+
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "modified cannonball"
 msgid_plural "modified cannonballs"
@@ -25602,6 +26430,73 @@ msgstr[0] "40x46mm 살진균가스탄"
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "A low velocity 40mm fungicidal gas canister.  It is effective for fungal life forms."
 msgstr "저속 40mm 살균 가스 용기입니다.  곰팡이 계열의 생명체에 효과적입니다."
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ".410 beanbag"
+msgid_plural ".410 beanbags"
+msgstr[0] ".410 빈백탄"
+
+#. ~ Description for {'str': '.410 beanbag'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "A beanbag round for .410 shell firearms, not deadly but designed to disable."
+msgstr ".410 구경 산탄총용 빈백탄.  살상용이 아닌 무력화용 탄입니다."
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ".410 dragon's breath shell"
+msgid_plural ".410 dragon's breath shells"
+msgstr[0] ".410 드래곤브레스탄"
+
+#. ~ Description for {'str': ".410 dragon's breath shell"}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ""
+"A .410 shell filled with magnesium pellets or shards, used mostly as a distress flare or pyrotechnics tool.  When the round is fired, high temperature sparks and flames shoot out of the barrel, igniting everything in their "
+"path."
+msgstr "마그네슘 파편이 채워진 .410 구경 샷건 탄약.  발사 시 마그네슘이 급속히 연소하며 초고열을 발생시킨다.  보통 신호탄이나 불꽃놀이 따위에 쓰이지만, 충분히 불을 지르는 데 쓸 수 있다."
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ".410 dragon's breath shell, black powder"
+msgid_plural ".410 dragon's breath shell, black powders"
+msgstr[0] ".410 드래곤브레스탄, 흑색화약"
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "flechette .410 shell"
+msgid_plural "flechette .410 shells"
+msgstr[0] ".410 플레셰트 산탄"
+
+#. ~ Description for {'str': 'flechette .410 shell'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "A .410 shell filled with tiny steel darts.  Extremely damaging, plus the spread makes it very accurate at short range.  Slices through most forms of armor with ease."
+msgstr "매우 작은 철제 화살이 가득찬 .410 구경 산탄.  극도로 살상력이 높으며 탄 확산이 낮아 근거리에서 명중률이 높습니다.  대부분의 장갑을 쉽게 관통합니다."
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "flechette .410 shell, black powder"
+msgid_plural "flechette .410 shell, black powders"
+msgstr[0] ".410 플레셰트 산탄, 흑색화약"
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ".410 slug"
+msgid_plural ".410 slugs"
+msgstr[0] ".410 슬러그탄"
+
+#. ~ Description for {'str': '.410 slug'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "A heavy metal slug used with .410 shell firearms to give them the range capabilities of a rifle.  Extremely damaging but rather inaccurate."
+msgstr ".410 구경 산탄총에 장전해 소총과 같은 장거리 사격 능력을 제공하는 무겁고 날카로운 금속 슬러그탄.  상대적으로 약하지만, 그 대신 꽤나 정확합니다."
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ".410 slug, black powder"
+msgid_plural ".410 slug, black powders"
+msgstr[0] ".410 슬러그탄, 흑색화약"
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "shotcanister homemade rocket"
+msgid_plural "shotcanister homemade rockets"
+msgstr[0] "산탄 수제 로켓"
+
+#. ~ Description for {'str': 'shotcanister homemade rocket'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "A hand built rocket, consisting of a handfull of scraps as a warhead attached onto a pipe, filled with improvised rocket fuel.  Not very powerful, but can be made from scratch."
+msgstr "급조 로켓 연료가 채워진 파이프 끝에 한 줌의 금속 파편들을 넣은 수제로켓입니다.  아주 강력하지는 않지만 갖춰진 것이 없어도 제작할 수 있습니다."
 
 #: .\ZhighWeapons\ZhighArrows.json
 msgid "acid arrow"
@@ -28859,6 +29754,26 @@ msgstr[0] "도끼 총검"
 #: .\ZhighWeapons\ZhighGunmods.json
 msgid "A axe bayonet is a large slashing weapon that can be attached to the front of a firearm or crossbow converting it into an axe."
 msgstr "도끼 총검은 쇠뇌 또는 화기 앞에 긴 도끼 형태로 장착하여 넓게 휘두를 수 있는 무기입니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "mace barrel"
+msgid_plural "mace barrels"
+msgstr[0] "철퇴 총열"
+
+#. ~ Description for {'str': 'mace barrel'}
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "This is a mace barrel gunmod.  It is heavy, and could be deadly in either the right hands or when attached on a gun."
+msgstr "철퇴 총열입니다.  무거운데다, 올바른 손에 쥐어지거나 총기에 부착되면 치명적입니다."
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "mace grip"
+msgid_plural "mace grips"
+msgstr[0] "철퇴 그립"
+
+#. ~ Description for {'str': 'mace grip'}
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "This is a mace grip gunmod.  It is heavy, and could be deadly in either the right hands or when attached on a pistol-sized gun."
+msgstr "철퇴 그립입니다.  무거운데다, 올바른 손에 쥐어지거나 권총 크기의 총기에 부착되면 치명적입니다."
 
 #: .\ZhighWeapons\ZhighGunmods.json
 msgid "40mm conversion kit"
@@ -32360,6 +33275,16 @@ msgstr[0] "가짜 클레이모어"
 msgid "This is a dull, cheaply made replica of a Scottish sword seeing use in the 14th, 15th, and 16th centuries.  The term claymore is an anglicisation of the Gaelic claidheamh-mòr, which means greatsword."
 msgstr "스코틀랜드에서 14세기부터 16세기까지 사용되었다고 알려진 검입니다.  날이 무디고 조잡하게 복제된 복제품입니다.  이름의 어원은 게일어 claidheamh-mòr로써, 큰 칼이라는 의미라고 합니다."
 
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "bone cestus"
+msgid_plural "bone cestuses"
+msgstr[0] "뼈 세스투스"
+
+#. ~ Description for {'str': 'bone cestus', 'str_pl': 'bone cestuses'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This weapon is a series of leather wrappings with a bone plate that has a series of jagged bones attached to it.  For when your punches need more damage."
+msgstr "이 무기는 끝이 갈라진 뼈 조각들을 가죽 조각들로 묶어놓은 것입니다.  당신의 주먹이 더 큰 피해를 필요로 할 때 사용됩니다."
+
 #: .\ZhighWeapons\ZhighRanged.json
 msgid "marble gun"
 msgid_plural "marble guns"
@@ -32420,6 +33345,24 @@ msgid "A single shot pistol that loads 40mm grenades, handcrafted from scrap.  P
 msgstr "40mm 유탄을 사용하는 단발 권총입니다.  고철을 이용해 만든 수제 무기입니다.  주머니 속에 들어가는 콰광입니다!"
 
 #: .\ZhighWeapons\ZhighRanged.json
+msgid ".410 ashot"
+msgid_plural ".410 ashots"
+msgstr[0] ".410 에이샷"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "A single shot pistol that loads .410 shells, handcrafted from scrap."
+msgstr ".410구경 산탄을 사용하는 단발 권총입니다.  고철을 이용해 만든 수제 무기입니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "double barrel .410 ashot"
+msgid_plural "double barrel .410 ashots"
+msgstr[0] "더블 배럴 .410 에이샷"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "A double shot pistol that loads two .410 shells, handcrafted from scrap.  You can fire it one by one, or you can fire both barrels at the same time."
+msgstr ".410구경 산탄을 사용하는 단발 권총입니다.  고철을 이용해 만든 수제 무기입니다.  한 발씩 쏘거나, 양쪽 총열에서 두 발을 동시에 쏠 수 있습니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
 msgid "spotlight - wide"
 msgid_plural "spotlight - wides"
 msgstr[0] "스포트라이트 - 연사형"
@@ -32427,14 +33370,6 @@ msgstr[0] "스포트라이트 - 연사형"
 #: .\ZhighWeapons\ZhighRanged.json
 msgid "A crappy laser machine gun, made with duct tape, lots of circuts, a steel drum, and hope."
 msgstr "영 좋지 않은 레이저 기관총으로, 덕트 테이프와 여러 회로, 그리고 희망을 섞어 만들었습니다."
-
-#: .\ZhighWeapons\ZhighRanged.json
-msgid "low auto"
-msgstr "저연사"
-
-#: .\ZhighWeapons\ZhighRanged.json
-msgid "high auto"
-msgstr "고연사"
 
 #: .\ZhighWeapons\ZhighRanged.json
 msgid "spotlight - beam"
@@ -33494,11 +34429,6 @@ msgid ""
 msgstr ""
 "수제인 화학약품 분사기로써, 이 개조된 스프레이캔은 아마도 다른 누구 못지않게 사용자에게 위험할 것입니다.  노즐은 약품을 살포하기 위해서 조잡하게 개조되었고, 측면에 부착된 작은 펌프가 재가압을 허용하지만 이 과정은 몇 분 정도 "
 "걸립니다."
-
-#: .\ZhighWeapons\ZhighRanged.json
-msgid "spraycan flamethrower"
-msgid_plural "spraycan flamethrowers"
-msgstr[0] "스프레이캔 화염방사기"
 
 #: .\ZhighWeapons\ZhighRanged.json
 msgid ""
@@ -34977,8 +35907,8 @@ msgid_plural "PP-19-01 Vityazs"
 msgstr[0] "PP-19-01 비탸지"
 
 #: .\ZhighWeapons\ZhighRanged.json
-msgid "The PP-19-01 Vityaz is a Russian submachine gun from the 1950s, chambered in 9x18mm Makarov."
-msgstr "PP-19-01 비탸지는 1950년대에 개발된 러시아제 기관단총으로, 9x18mm 마카로프 탄을 사용합니다."
+msgid "The PP-19-01 Vityaz is a Russian submachine gun/pistol caliber carbine from the 1950s, chambered in 9x18mm Makarov."
+msgstr "PP-19-01 비탸지는 1950년대에 개발된 러시아제 기관단총/권총구경 카빈으로, 9x18mm 마카로프 탄을 사용합니다."
 
 #: .\ZhighWeapons\ZhighRanged.json
 msgid "PP-19-01 Vityaz magazine"
@@ -35007,6 +35937,131 @@ msgstr[0] "리볼버 산탄총"
 #: .\ZhighWeapons\ZhighRanged.json
 msgid "A revolver modified to accept shotgun ammo, it can hold 3 cartridges."
 msgstr "3발을 수용할 수 있는, 산탄을 장전 및 사격이 가능한 리볼버입니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "bombardment radio"
+msgid_plural "bombardment radio"
+msgstr[0] "지역 폭격 무전기"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "A radio, which can give off a radio wave to a certain area for a loud bombardment.  For some reason, the people on the other side of the walkie-talkie don't seem to care whoever you are."
+msgstr "특정 지역에다 요란하게 폭격을 하기 위한 무전기입니다.  모종의 이유로, 무전 너머의 사람들은 무전기에서 누가 명령을 내리든 신경쓰지 않는 듯 합니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Ithaca Deerslayer"
+msgid_plural "Ithaca Deerslayer"
+msgstr[0] "이사카 디어슬레이어"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "The Ithaca Deerslayer is a slug gun which is designed for long range while using a shotshell.  Unlike an average shotgun, this model have a rifled barrel."
+msgstr "이사카 디어슬레이어는 장거리 사격을 위해 제작된, 산탄을 사용하는 슬러그 건입니다.  일반적인 산탄총과는 다르게, 이 모델은 강선이 파인 총열을 장비하고 있습니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Browning A-Bolt"
+msgid_plural "Browning A-Bolt"
+msgstr[0] "브라우닝 A-볼트"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "The A-Bolt is a bolt-action slug gun which loads and shoots .410 caliber shotshells.  Was used for hunting animals, and can be used for hunting undead."
+msgstr "A-볼트는 볼트 액션식 슬러그 건으로, .410구경의 산탄을 장전 및 사격할 수 있습니다.  동물 사냥을 할 때 주로 쓰였으며, 언데드를 사냥할 때 사용할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Taurus Lightning"
+msgid_plural "Taurus Lightning"
+msgstr[0] "타우루스 라이트닝"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "The Taurus Lightning is a 5-shot revolver chambered in .308.  It has impressive stopping power."
+msgstr "타우루스 라이트닝은 308구경의 5연발 리볼버입니다.  인상적인 저지력을 자랑합니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Taurus Dragoon"
+msgid_plural "Taurus Dragoon"
+msgstr[0] "타우루스 드라군"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "The Taurus Dragoon is a 5-shot revolver chambered in 7.62x39mm and 7.62x54mm.  It has impressive stopping power."
+msgstr "타우루스 드라군은 7.62x39mm와 7.62x54mm구경의 5연발 리볼버입니다.  인상적인 저지력을 자랑합니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Rossi 20x66mm shotgun pistol"
+msgid_plural "Rossi 20x66mm shotgun pistols"
+msgstr[0] "로시 20x66mm 산탄 권총"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "A single shot pistol that loads 20x66mm shotgun shells.  Handy sidearm in the apocalypse."
+msgstr "20x66mm 산탄을 사용하는 단발 권총입니다.  세기말에 쓸만한 부무장입니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Taurus 550 samaritan"
+msgid_plural "Taurus 550 samaritans"
+msgstr[0] "타우루스 550 사마리아인"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Considered overkill by many, the Taurus 550 samaritan remains an ultimate powerful sidearm to the arsenal of anybody."
+msgstr "화력이 과도하다는 평을 자주 듣는 타우루스 550 사마리아인 리볼버는 어떤 사수가 사용하더라도 강력한 화력을 보장합니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Udar"
+msgid_plural "Udar"
+msgstr[0] "우다르"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "A police weapon designed and developed in Russia.  Accepts 9x18mm cartridges."
+msgstr "러시아에서 디자인되고 제작된 경찰용 무기입니다.  9x18mm구경의 총알들을 장전 및 사격할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "S&W M&P 410"
+msgid_plural "S&W M&P 410"
+msgstr[0] "S&W M&P 410"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A bullpup pump-action shotgun, the S&W M&P 410 uses a pair of magazine tubes to increase its capacity.  Each tube has to be loaded separately, but this offers the option of loading different ammunition for different "
+"situations.  An integral top rail is provided for mounting sights, without which it will perform poorly."
+msgstr ""
+"S&W M&P 410는 장탄량을 늘리기 위해 이중 튜브 탄창을 채용한 불펍식 펌프액션 산탄총입니다.  각 튜브 탄창을 따로 장전해줘야 하지만, 다양한 상황에 대처할 수 있도록 여러 탄창을 장전하는 것도 가능합니다.  조준경을 장착할 수 있도록 "
+"상단부 레일이 달려있지만, 조준경 없이는 제대로 써먹기 어렵습니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "M&P 410 second magazine"
+msgid_plural "M&P 410 second magazines"
+msgstr[0] "M&P 410 2차 탄창"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "The integrated second shotgun magazine of the S&W M&P 410 which holds 7 shots.  It's irremovable."
+msgstr "S&W M&P 410용 7발들이 일체형 이차 탄창입니다.  제거할 수 없습니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "crude double barrel rocket launcher"
+msgid_plural "crude double barrel rocket launchers"
+msgstr[0] "조잡한 이중총열 로켓발사기"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"An improvised, direct ignition launcher for home-made rockets.  Essentially, two thick-walled steel pipes, equipped with a pilot light each, several batteries and a simple circuit board.  Effective only at medium range, "
+"barely."
+msgstr "수제 로켓을 발사하는데 쓰이는 직접연소식 간이 발사기입니다.  두 개의 굵은 강철 파이프와 점화기, 배터리 몇 개와 간단한 회로기판을 조립한 것에 불과합니다.  그나마 중거리에서만 유용할 것입니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "crude quad barrel rocket launcher"
+msgid_plural "crude quad barrel rocket launchers"
+msgstr[0] "조잡한 4중총열 로켓발사기"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"An improvised, direct ignition launcher for home-made rockets.  Essentially, four thick-walled steel pipes, equipped with a pilot light each, several batteries and a simple circuit board.  Effective only at medium range, "
+"barely."
+msgstr "수제 로켓을 발사하는데 쓰이는 직접연소식 간이 발사기입니다.  네 개의 굵은 강철 파이프와 점화기, 배터리 몇 개와 간단한 회로기판을 조립한 것에 불과합니다.  그나마 중거리에서만 유용할 것입니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Buntline Special"
+msgid_plural "Buntline Special"
+msgstr[0] "번트라인 스페셜"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "This is a long-barreled variant of the Uberti Cattleman, also with a stock.  Fast is fine, but accuracy is final."
+msgstr "이 총기는 우베르티 캐틀맨의 긴 총열 모델로, 개머리판도 달려 있습니다.  빠른 것은 최선이지만, 정확한 것은 최고입니다."
 
 #: .\ZhighWeapons\ZhighSpells.json
 msgid "Summon Survivors"
@@ -35221,6 +36276,15 @@ msgid "Melts the target."
 msgstr "적을 녹입니다."
 
 #: .\ZhighWeapons\ZhighSpells.json
+msgid "Bleed"
+msgstr "출혈"
+
+#. ~ Description for {'str': 'Bleed'}
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "Bleed the target."
+msgstr "적을 출혈시킵니다."
+
+#: .\ZhighWeapons\ZhighSpells.json
 msgid "Critical"
 msgstr "치명타"
 
@@ -35246,6 +36310,15 @@ msgstr "멍함"
 #: .\ZhighWeapons\ZhighSpells.json
 msgid "Dazes the target."
 msgstr "적을 멍하게 합니다."
+
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "Push"
+msgstr "밀침"
+
+#. ~ Description for {'str': 'Push'}
+#: .\ZhighWeapons\ZhighSpells.json
+msgid "Pushes the target."
+msgstr "적을 밀칩니다."
 
 #.
 #. ~ Description for the sound of spell '{'str': 'engine noise'}'
@@ -36412,7 +37485,7 @@ msgid "This landmine-looking trap is attached to the trigger of a battery.  When
 msgstr "지뢰처럼 생긴 이 함정은 배터리 방아쇠에 부착되어 있습니다.  작동되면 전극이 활성화되어 공중에서 화염을 방출합니다."
 
 #: .\ZhighWeapons\ZhighTraps.json
-msgid "Flame trapp Trigger"
+msgid "Flame trap Trigger"
 msgstr "화염 함정 트리거"
 
 #: .\ZhighWeapons\ZhighTraps.json
@@ -37752,6 +38825,9 @@ msgstr[0] "베테랑 생존자 좀비"
 #: .\ZhighZeds\zed_survivor.json
 msgid "This zombie once was a survivor like you, and a pretty good one at that.  Unfortunately they didn't make it, despite the custom-made, heavy armor pieces they wear and the gear that they are still lugging around."
 msgstr "한때 당신과 같은 생존자였으며 꽤 잘 살아온 것 같습니다.  불행히도, 수제작한 무거운 갑옷 쪼가리와 여전히 짊어지고 다니는 풍족한 장비에도 불구하고 안일사 당한 것 같습니다."
+
+#~ msgid "A 26-round steel box magazine for use with the CZ 75.  Now comes in two."
+#~ msgstr "아킴보 CZ 75에 사용되는 26발들이 철제 박스 탄창입니다.  이제 두 자루를 들고 있습니다."
 
 #~ msgid "A .10mm subcompact pistol.  Designed for concealed carry and built from high-quality, durable materials.  Now comes in two."
 #~ msgstr "  이제 두 자루를 들고 있습니다."
