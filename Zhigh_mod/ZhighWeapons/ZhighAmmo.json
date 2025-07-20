@@ -14,7 +14,7 @@
     "//2": "Base damage of 544, rounded down to 450 to be close to 25% that of round shot, balanced as FMJ.",
     "damage": { "damage_type": "bullet", "amount": 500, "armor_penetration": 315 },
     "dispersion": 500,
-    "range": 70,
+    "range": 50,
     "recoil": 52500,
     "extend": { "effects": [ "MININUKE_MOD", "FRAG" ] }
   },
@@ -32,9 +32,9 @@
     "drop": "pirateBombZhigh_act",
     "looks_like": "cannon_round_ball",
     "//2": "Base damage of 544, rounded down to 450 to be close to 25% that of round shot, balanced as FMJ.",
-    "damage": { "damage_type": "bullet", "amount": 450, "armor_penetration": 355 },
+    "damage": { "damage_type": "bullet", "amount": 150, "armor_penetration": 35 },
     "dispersion": 500,
-    "range": 70,
+    "range": 50,
     "recoil": 52500
   },
   {
@@ -50,7 +50,7 @@
     "price_postapoc": "20 USD",
     "looks_like": "cannon_round_ball",
     "range": 0,
-    "damage": { "damage_type": "bullet", "amount": 150, "armor_penetration": 100 },
+    "damage": { "damage_type": "bullet", "amount": 150, "armor_penetration": 10 },
     "proportional": { "recoil": 0.6, "loudness": 0.8, "dispersion": 1.2 },
     "shape": [ "cone", { "half_angle": 15, "length": 35 } ],
     "extend": { "effects": [ "BLACKPOWDER" ] }
@@ -1645,10 +1645,9 @@
 	"copy-from": "bombard_flare",
 	"name": "active aerial bombardment signal flare",
 	"description": "This unique flare currently is activated, thus sending some signal to bring some firepower.",
-	"emits": [ "emit_smoke_stream" ],
     "initial_charges": 20,
     "max_charges": 20,
-    "turns_per_charge": 20,
+    "turns_per_charge": 30,
     "use_action": {
       "type": "explosion",
       "fields_type": "fd_smoke",
@@ -1677,6 +1676,30 @@
     "recoil": 150,
     "extend": { "effects": [ "SMOKE" ] },
     "drop": "bombard_flare_act"
+  },
+  {
+    "id": "signal_bombard_flare2",
+	"looks_like": "signal_survivor_flare",
+    "type": "AMMO",
+    "name": { "str": "aerial bombardment signal flare" },
+    "description": "A signal.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "price": "5 USD",
+    "price_postapoc": "5 USD",
+    "material": [ "plastic", "powder" ],
+    "symbol": "=",
+    "color": "red",
+    "count": 100,
+    "stack_size": 100,
+    "ammo_type": "slug_zhigh2",
+    "range": 50,
+    "damage": { "damage_type": "heat", "amount": 1 },
+    "dispersion": 1,
+    "recoil": 1,
+    "loudness": 1,
+    "drop": "bombard_flare_act",
+    "effects": [ "NEVER_MISFIRES", "NO_EMBED", "SPOTLIGHTZHIGH" ]
   },
   {
     "type": "AMMO",
@@ -1823,5 +1846,131 @@
       [ [ "40x46mm_m118_casing", 1 ] ],
       [ [ "smpistol_primer", 1 ] ]
     ]
+  },
+  {
+    "id": "410shot_beanbag",
+    "copy-from": "410shot_000",
+    "type": "AMMO",
+    "name": { "str": ".410 beanbag" },
+    "description": "A beanbag round for .410 shell firearms, not deadly but designed to disable.",
+    "price": "5 USD",
+    "price_postapoc": "2 USD",
+    "//": "currently can't be crafted",
+    "count": 10,
+    "damage": { "damage_type": "bash", "amount": 5 },
+    "proportional": { "recoil": 0.4, "loudness": 0.6 },
+    "extend": { "effects": [ "BEANBAG", "NOGIB" ] }
+  },
+  {
+    "id": "410shot_dragon",
+    "copy-from": "410shot_000",
+    "type": "AMMO",
+    "name": { "str": ".410 dragon's breath shell" },
+    "description": "A .410 shell filled with magnesium pellets or shards, used mostly as a distress flare or pyrotechnics tool.  When the round is fired, high temperature sparks and flames shoot out of the barrel, igniting everything in their path.",
+    "price": "10 USD",
+    "price_postapoc": "16 USD",
+    "damage": { "damage_type": "heat", "amount": 20 },
+    "proportional": { "recoil": 0.6, "loudness": 0.8, "dispersion": 1.2 },
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 15, "length": 6 } ],
+    "extend": { "effects": [ "INCENDIARY", "STREAM", "NOGIB" ] }
+  },
+  {
+    "id": "bp_410shot_dragon",
+    "copy-from": "410shot_dragon",
+	"looks_like": "410shot_dragon",
+    "type": "AMMO",
+    "name": { "str": ".410 dragon's breath shell, black powder" },
+    "proportional": {
+      "price": 0.5,
+      "price_postapoc": 0.5,
+      "damage": { "damage_type": "heat", "amount": 0.8 },
+      "recoil": 0.76,
+      "dispersion": 1.2
+    },
+    "extend": { "effects": [ "RECYCLED", "MUZZLE_SMOKE", "BLACKPOWDER" ] }
+  },
+  {
+    "id": "410shot_flechette",
+    "copy-from": "410shot_000",
+    "type": "AMMO",
+    "name": { "str": "flechette .410 shell" },
+    "description": "A .410 shell filled with tiny steel darts.  Extremely damaging, plus the spread makes it very accurate at short range.  Slices through most forms of armor with ease.",
+    "price": "20 USD",
+    "price_postapoc": "8 USD",
+    "count": 10,
+    "relative": { "damage": { "damage_type": "bullet", "amount": -20, "armor_penetration": 15, "armor_multiplier": -1.5 } }
+  },
+  {
+    "id": "bp_410shot_flechette",
+    "copy-from": "410shot_flechette",
+	"looks_like": "410shot_flechette",
+    "type": "AMMO",
+    "name": { "str": "flechette .410 shell, black powder" },
+    "proportional": {
+      "price": 0.5,
+      "price_postapoc": 0.5,
+      "damage": { "damage_type": "bullet", "amount": 0.8, "armor_penetration": 0.5 },
+      "recoil": 0.76,
+      "dispersion": 1.2
+    },
+    "extend": { "effects": [ "RECYCLED", "MUZZLE_SMOKE", "BLACKPOWDER" ] }
+  },
+  {
+    "id": "410shot_slug",
+    "type": "AMMO",
+    "name": { "str": ".410 slug" },
+    "description": "A heavy metal slug used with .410 shell firearms to give them the range capabilities of a rifle.  Extremely damaging but rather inaccurate.",
+    "dispersion": 80,
+    "weight": "16 g",
+    "volume": "250 ml",
+    "price": "175 cent",
+    "price_postapoc": "8 USD",
+    "material": [ "plastic", "powder" ],
+    "symbol": "=",
+    "color": "red",
+    "count": 25,
+    "stack_size": 25,
+    "ammo_type": "410shot",
+    "casing": "410shot_hull",
+    "range": 12,
+    "damage": { "damage_type": "bullet", "amount": 15, "armor_multiplier": 18 },
+    "recoil": 1890,
+    "loudness": 90,
+    "effects": [ "COOKOFF" ]
+  },
+  {
+    "id": "bp_410shot_slug",
+    "copy-from": "410shot_slug",
+	"looks_like": "410shot_slug",
+    "type": "AMMO",
+    "name": { "str": ".410 slug, black powder" },
+    "proportional": {
+      "price": 0.5,
+      "damage": { "damage_type": "bullet", "amount": 0.8, "armor_penetration": 0.5 },
+      "recoil": 0.76,
+      "dispersion": 1.2
+    },
+    "extend": { "effects": [ "RECYCLED", "MUZZLE_SMOKE", "BLACKPOWDER" ] }
+  },
+  {
+    "type": "AMMO",
+    "id": "shot_hm_rocket",
+    "price": "20 USD",
+    "price_postapoc": "1 USD",
+    "name": { "str": "shotcanister homemade rocket" },
+    "symbol": ",",
+    "color": "dark_gray",
+    "description": "A hand built rocket, consisting of a handfull of scraps as a warhead attached onto a pipe, filled with improvised rocket fuel.  Not very powerful, but can be made from scratch.",
+    "material": [ "steel", "powder" ],
+    "volume": "1250 ml",
+    "weight": "990 g",
+    "ammo_type": "homebrew_rocket",
+    "damage": { "damage_type": "stab", "amount": 150, "armor_penetration": 65 },
+    "dispersion": 170,
+    "recoil": 130,
+    "loudness": 60,
+    "shape": [ "cone", { "half_angle": 25, "length": 26 } ],
+    "effects": [ "COOKOFF", "TRAIL", "SHOT" ]
   }
 ]

@@ -149,7 +149,6 @@
     "name": { "str": "akimbo paintball revolver" },
     "description": "A fairly harmless revolver that shoots small paintballs.  Now comes in two.",
     "skill": "akimbo_Zhigh",
-    "clip_size": 12,
     "valid_mod_locations": [
       [ "accessories", 8 ],
       [ "grip", 2 ],
@@ -158,7 +157,7 @@
       [ "underbarrel", 2 ]
     ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "clip_size": 2.0 }
   },
   {
     "type": "recipe",
@@ -179,8 +178,6 @@
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "name": { "str": "akimbo heavy paintball revolver" },
     "description": "A harmless revolver that shoots small paintballs.  Now comes in two.",
-    "skill": "akimbo_Zhigh",
-    "clip_size": 12,
     "valid_mod_locations": [
       [ "accessories", 8 ],
       [ "grip", 2 ],
@@ -189,7 +186,7 @@
       [ "underbarrel", 2 ]
     ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "clip_size": 2.0 }
   },
   {
     "type": "recipe",
@@ -1830,6 +1827,70 @@
     "components": [ [ [ "ashot_40", 2 ] ] ]
   },
   {
+    "id": "ashot410Akim",
+    "copy-from": "ashot410",
+    "looks_like": "ashotAkim",
+    "weapon_category": [ "PISTOLS", "AKIMBOZHIGH", "1SHOT" ],
+    "type": "GUN",
+    "name": { "str": "akimbo .410 ashot" },
+    "description": "A single shot pistol that loads .410 shells, handcrafted from scrap.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "grip", 2 ],
+      [ "stock", 2 ],
+      [ "mechanism", 8 ],
+      [ "sights", 2 ],
+      [ "rail", 2 ],
+      [ "underbarrel", 2 ]
+    ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "clip_size": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "ashot410Akim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "ashot410", 2 ] ] ]
+  },
+  {
+    "id": "ashot410_dbAkim",
+    "copy-from": "ashot410_db",
+    "looks_like": "ashotAkim",
+    "weapon_category": [ "PISTOLS", "AKIMBOZHIGH", "1SHOT" ],
+    "type": "GUN",
+    "name": { "str": "akimbo double barrel .410 ashot" },
+    "description": "A double shot pistol that loads two .410 shells, handcrafted from scrap.  You can fire it one by one, or you can fire both barrels at the same time.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "grip", 2 ],
+      [ "stock", 2 ],
+      [ "mechanism", 8 ],
+      [ "sights", 2 ],
+      [ "rail", 2 ],
+      [ "underbarrel", 2 ]
+    ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "clip_size": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "ashot410_dbAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "ashot410_db", 2 ] ] ]
+  },
+  {
     "id": "model_10_revolverAkim",
     "copy-from": "model_10_revolver",
     "looks_like": "paintballgun_revolverAkimZhigh",
@@ -2460,9 +2521,9 @@
     "looks_like": "pistol_flintlockAkim",
     "weapon_category": [ "MANUAL_ACTION", "AKIMBOZHIGH", "REVOLVERS" ],
     "type": "GUN",
-    "name": { "str": "akimbo homemade hand cannon" },
-    "description": "A large and heavy revolver evidently welded from scrap.  It's not pretty, but the .45 it's chambered with packs a serious punch.  Just watch out for the kick.  Now comes in two.",
-    "clip_size": 10,
+    "name": { "str": "akimbo \"revolver\"" },
+    "description": "A large and heavy revolver evidently welded from scrap.  It's not pretty, but the .45 and .44 it's chambered with packs a serious punch.  Just watch out for the kick.  This one is especially made so that the suppressor is avilable to use.  Now comes in two.",
+    "clip_size": 12,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
     "valid_mod_locations": [
@@ -2472,7 +2533,9 @@
       [ "grip", 2 ],
       [ "mechanism", 8 ],
       [ "sights", 2 ],
+      [ "muzzle", 2 ],
       [ "stock", 2 ],
+      [ "rail", 2 ],
       [ "underbarrel", 2 ]
     ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
@@ -2521,6 +2584,39 @@
     "reversible": true,
     "autolearn": true,
     "components": [ [ [ "surv_six_shooter", 2 ] ] ]
+  },
+  {
+    "id": "bfrAkim",
+    "copy-from": "bfr",
+    "looks_like": "pistol_flintlockAkim",
+    "weapon_category": [ "MANUAL_ACTION", "AKIMBOZHIGH", "REVOLVERS" ],
+    "type": "GUN",
+    "name": { "str": "akimbo Magnum Research BFR" },
+    "description": "A massive single-action revolver.  While the .45-70 rifle round loses significant velocity in its short pistol barrel, it still competes with other large magnum handguns in terms of power.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 2 ],
+      [ "bore", 2 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "underbarrel", 2 ]
+    ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "clip_size": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "bfrAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "bfr", 2 ] ] ]
   },
   {
     "id": "rossiPocketPistolZhighAkim",
@@ -2591,6 +2687,245 @@
     "reversible": true,
     "autolearn": true,
     "components": [ [ [ "shotGunRevolverZhigh", 2 ] ] ]
+  },
+  {
+    "id": "TaurusLightningZhighAkim",
+    "copy-from": "TaurusLightningZhigh",
+    "looks_like": "pistol_flintlockAkim",
+    "weapon_category": [ "MANUAL_ACTION", "AKIMBOZHIGH", "REVOLVERS" ],
+    "type": "GUN",
+    "name": { "str": "akimbo Taurus Lightning" },
+    "description": "The Taurus Lightning is a 5-shot revolver chambered in .308.  It has impressive stopping power.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 2 ],
+      [ "bore", 2 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "underbarrel", 2 ]
+    ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "clip_size": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "TaurusLightningZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "TaurusLightningZhigh", 2 ] ] ]
+  },
+  {
+    "id": "TaurusDragoonZhighAkim",
+    "copy-from": "TaurusDragoonZhigh",
+    "looks_like": "TaurusLightningZhighAkim",
+    "weapon_category": [ "MANUAL_ACTION", "AKIMBOZHIGH", "REVOLVERS" ],
+    "type": "GUN",
+    "name": { "str": "akimbo Taurus Dragoon" },
+    "description": "The Taurus Dragoon is a 5-shot revolver chambered in 7.62x39mm and 7.62x54mm.  It has impressive stopping power.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 2 ],
+      [ "bore", 2 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "underbarrel", 2 ]
+    ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "clip_size": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "TaurusDragoonZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "TaurusDragoonZhigh", 2 ] ] ]
+  },
+  {
+    "id": "tatZhighAkim",
+    "copy-from": "tatZhigh",
+    "looks_like": "ashotAkim",
+    "weapon_category": [ "MANUAL_ACTION", "AKIMBOZHIGH", "REVOLVERS" ],
+    "type": "GUN",
+    "name": { "str": "akimbo Triple Action Thunder" },
+    "description": "A Breech-loading, single shot handgun designed to fire the .50 BMG cartridge.  Reconstruct the word \"Hand Cannon\".  Now comes in two.",
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 2 ],
+      [ "bore", 2 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "underbarrel", 2 ]
+    ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "clip_size": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "tatZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "tatZhigh", 2 ] ] ]
+  },
+  {
+    "id": "rossiPocketPistol2066ZhighAkim",
+    "copy-from": "rossiPocketPistol2066Zhigh",
+    "looks_like": "paintballgun_revolverAkimZhigh",
+    "weapon_category": [ "1SHOT", "AKIMBOZHIGH", "MANUAL_ACTION" ],
+    "type": "GUN",
+    "name": { "str": "akimbo Rossi 20x66mm shotgun pistol" },
+    "description": "A single shot pistol that loads 20x66mm shotgun shells.  Handy sidearm in the apocalypse.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [
+	  [ "accessories", 2 ],
+	  [ "barrel", 2 ],
+	  [ "bore", 2 ],
+	  [ "grip", 2 ],
+	  [ "mechanism", 8 ],
+	  [ "sights", 2 ],
+	  [ "stock", 2 ],
+	  [ "sling", 2 ],
+	  [ "rail", 2 ],
+	  [ "underbarrel", 2 ]
+	],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "rossiPocketPistol2066ZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "rossiPocketPistol2066Zhigh", 2 ] ] ]
+  },
+  {
+    "id": "needleRevolverZhighAkim",
+    "copy-from": "needleRevolverZhigh",
+    "looks_like": "paintballgun_revolverAkimZhigh",
+    "weapon_category": [ "1SHOT", "AKIMBOZHIGH", "MANUAL_ACTION" ],
+    "type": "GUN",
+    "name": { "str": "akimbo Taurus 550 samaritan" },
+    "description": "Considered overkill by many, the Taurus 550 samaritan remains an ultimate powerful sidearm to the arsenal of anybody.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [
+	  [ "accessories", 2 ],
+	  [ "barrel", 2 ],
+	  [ "bore", 2 ],
+	  [ "grip", 2 ],
+	  [ "mechanism", 8 ],
+	  [ "sights", 2 ],
+	  [ "stock", 2 ],
+	  [ "sling", 2 ],
+	  [ "rail", 2 ],
+	  [ "underbarrel", 2 ]
+	],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "needleRevolverZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "needleRevolverZhigh", 2 ] ] ]
+  },
+  {
+    "id": "revolver9x18ZhighAkim",
+    "copy-from": "revolver9x18Zhigh",
+    "looks_like": "ashotAkim",
+    "weapon_category": [ "REVOLVERS", "AKIMBOZHIGH", "MANUAL_ACTION" ],
+    "type": "GUN",
+    "name": { "str": "akimbo Udar" },
+    "description": "A police weapon designed and developed in Russia.  Accepts 9x18mm cartridges.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [
+	  [ "accessories", 2 ],
+	  [ "barrel", 2 ],
+	  [ "bore", 2 ],
+	  [ "grip", 2 ],
+	  [ "mechanism", 8 ],
+	  [ "sights", 2 ],
+	  [ "stock", 2 ],
+	  [ "sling", 2 ],
+	  [ "rail", 2 ],
+	  [ "underbarrel", 2 ]
+	],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "revolver9x18ZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "revolver9x18Zhigh", 2 ] ] ]
+  },
+  {
+    "id": "1911DartZhighAkim",
+    "copy-from": "1911DartZhigh",
+    "looks_like": "ashotAkim",
+    "weapon_category": [ "1SHOT", "AKIMBOZHIGH", "MANUAL_ACTION" ],
+    "type": "GUN",
+    "name": { "str": "akimbo 1911 dart" },
+    "description": "A M1911 that loads and shoots metal rails, for special operators during special missions.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [
+	  [ "accessories", 2 ],
+	  [ "barrel", 2 ],
+	  [ "bore", 2 ],
+	  [ "grip", 2 ],
+	  [ "mechanism", 8 ],
+	  [ "sights", 2 ],
+	  [ "stock", 2 ],
+	  [ "sling", 2 ],
+	  [ "rail", 2 ],
+	  [ "underbarrel", 2 ]
+	],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "1911DartZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "1911DartZhigh", 2 ] ] ]
   },
   {
     "id": "kp3atAkim",
@@ -2873,7 +3208,7 @@
     "copy-from": "taurus_spectrum_mag",
     "type": "MAGAZINE",
     "name": { "str": "akimbo Taurus Spectrum magazine" },
-    "description": "A compact, 6-round steel box magazine for use with the Taurus Spectrum.  Now comes in two.",
+    "description": "A compact, 6-round steel box magazine for use with the akimbo Taurus Spectrum.  Now comes in two.",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "reload": 2.0, "capacity": 2.0 }
   },
   {
@@ -3900,7 +4235,7 @@
     "copy-from": "sig40mag",
     "type": "MAGAZINE",
     "name": { "str": "akimbo SIG Pro .40 magazine" },
-    "description": "A compact and reliable magazine for use with the SIG Pro .40 pistol.  Now comes in two.",
+    "description": "A compact and reliable magazine for use with the akimbo SIG Pro .40 pistol.  Now comes in two.",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "reload": 2.0, "capacity": 2.0 }
   },
   {
@@ -4286,6 +4621,156 @@
     "reversible": true,
     "autolearn": true,
     "components": [ [ [ "m1911_MEU", 2 ] ] ]
+  },
+  {
+    "id": "silverballer47Akim",
+    "copy-from": "silverballer47",
+    "looks_like": "paintballgun_revolverAkimZhigh",
+    "type": "GUN",
+	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "name": { "str": "akimbo Silverballer" },
+    "description": "The AMT Hardballer is a stainless steel clone of the Colt M1911A1 made by Arcadia Machine & Tool.  Reliable, almost like the original.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
+	"skill": "akimbo_Zhigh",
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 2 ],
+      [ "brass catcher", 2 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "magazine", 2 ],
+      [ "muzzle", 2 ],
+      [ "rail", 2 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "underbarrel", 2 ]
+    ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "magazines": [ [ "45", [ "m1911magAkim", "m1911bigmagAkim" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "silverballer47Akim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "silverballer47", 2 ] ] ]
+  },
+  {
+    "id": "coonanZhighAkim",
+    "copy-from": "coonanZhigh",
+    "looks_like": "paintballgun_revolverAkimZhigh",
+    "type": "GUN",
+	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "name": { "str": "akimbo M1911" },
+    "description": "The M1911 was the US Military standard-issue sidearm for most of the 20th Century.  It remains one of the most popular .45 pistols today.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
+	"skill": "akimbo_Zhigh",
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 2 ],
+      [ "brass catcher", 2 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "magazine", 2 ],
+      [ "muzzle", 2 ],
+      [ "rail", 2 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "underbarrel", 2 ]
+    ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "magazines": [ [ "357mag", [ "coonanZhighmagAkim", "coonanZhighbigmagAkim" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "coonanZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "coonanZhigh", 2 ] ] ]
+  },
+  {
+    "id": "coonanZhighmagAkim",
+    "looks_like": "coonanZhighmag",
+    "copy-from": "coonanZhighmag",
+    "type": "MAGAZINE",
+    "name": { "str": "akimbo M1911 magazine" },
+    "description": "A military issue 7-round magazine for use with the akimbo M1911 handgun.  Now comes in two.",
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "reload": 2.0, "capacity": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "coonanZhighmagAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MAGAZINES",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "coonanZhighmag", 2 ] ] ]
+  },
+  {
+    "id": "coonanZhighbigmagAkim",
+    "looks_like": "coonanZhighbigmag",
+    "copy-from": "coonanZhighbigmag",
+    "type": "MAGAZINE",
+    "name": { "str": "akimbo M1911 extended magazine" },
+    "description": "An extended 10-round magazine for use with the akimbo M1911 handgun.  Now comes in two.",
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "reload": 2.0, "capacity": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "coonanZhighbigmagAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MAGAZINES",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "coonanZhighbigmag", 2 ] ] ]
+  },
+  {
+    "id": "m1911_mpZhighAkim",
+    "copy-from": "m1911_mpZhigh",
+    "looks_like": "paintballgun_revolverAkimZhigh",
+    "type": "GUN",
+	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "name": { "str": "akimbo M1911 machine pistol" },
+    "description": "Modified 1911, which shoots .45 bullet in full auto.  Also have a built-in foregrip.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
+	"skill": "akimbo_Zhigh",
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 2 ],
+      [ "brass catcher", 2 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "magazine", 2 ],
+      [ "muzzle", 2 ],
+      [ "rail", 2 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "underbarrel", 2 ]
+    ],
+    "built_in_mods": [ "grip", "grip_mod" ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "magazines": [ [ "45", [ "m1911magAkim", "m1911bigmagAkim" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "m1911_mpZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "m1911_mpZhigh", 2 ] ] ]
   },
   {
     "id": "usp_45Akim",
@@ -5613,6 +6098,43 @@
     "components": [ [ [ "usp_9mm", 2 ] ] ]
   },
   {
+    "id": "P30LAkim",
+    "copy-from": "P30L",
+    "looks_like": "usp_45Akim",
+    "type": "GUN",
+	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "name": { "str": "akimbo P30L" },
+    "description": "A popular pistol, widely used among law enforcement.  Extensively tested for durability, it has been found to stay accurate even after being subjected to extreme abuse.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
+	"skill": "akimbo_Zhigh",
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 2 ],
+      [ "brass catcher", 2 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "magazine", 2 ],
+      [ "muzzle", 2 ],
+      [ "rail", 2 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "underbarrel", 2 ]
+    ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "magazines": [ [ "9mm", [ "usp9magAkim" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "P30LAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "P30L", 2 ] ] ]
+  },
+  {
     "id": "usp9magAkim",
     "looks_like": "usp9mag",
     "copy-from": "usp9mag",
@@ -6143,7 +6665,7 @@
     "copy-from": "cz75mag_26rd",
     "type": "MAGAZINE",
     "name": { "str": "akimbo CZ 75 26-round magazine" },
-    "description": "A 26-round steel box magazine for use with the CZ 75.  Now comes in two.",
+    "description": "A 26-round steel box magazine for use with the akimbo CZ 75.  Now comes in two.",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "reload": 2.0, "capacity": 2.0 }
   },
   {
@@ -6316,6 +6838,63 @@
     "components": [ [ [ "makarovmag", 2 ] ] ]
   },
   {
+    "id": "makarov_mpZhighAkim",
+    "copy-from": "makarov_mpZhigh",
+    "looks_like": "glock_20Akim",
+    "type": "GUN",
+	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "name": { "str": "akimbo RARAN Prototype 1130" },
+    "description": "Modified Makarov PM, which shoots 9x18mm cartridge in full auto.  Also have a built-in foregrip.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ], [ "AUTO1", "low auto", 6 ], [ "AUTO2", "high auto", 12 ] ],
+	"skill": "akimbo_Zhigh",
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 2 ],
+      [ "brass catcher", 2 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "magazine", 2 ],
+      [ "muzzle", 2 ],
+      [ "rail", 2 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "underbarrel", 2 ]
+    ],
+    "built_in_mods": [ "grip", "grip_mod" ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "magazines": [ [ "9x18", [ "makarovmagAkim", "ppshdrum_makarovmagZhighAkim" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "makarov_mpZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "makarov_mpZhigh", 2 ] ] ]
+  },
+  {
+    "id": "ppshdrum_makarovmagZhighAkim",
+    "looks_like": "ppshdrum_makarovmagZhigh",
+    "copy-from": "ppshdrum_makarovmagZhigh",
+    "type": "MAGAZINE",
+    "name": { "str": "akimbo RARAN 71-round drum magazine" },
+    "description": "A high-capacity drum magazine for the RARAN Prototype 1130, modified from PPSh-41 drum magazine.  Now comes in two.",
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "reload": 2.0, "capacity": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "ppshdrum_makarovmagZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MAGAZINES",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "ppshdrum_makarovmagZhigh", 2 ] ] ]
+  },
+  {
     "id": "APSZhighAkim",
     "copy-from": "APSZhigh",
     "looks_like": "glock_20Akim",
@@ -6323,7 +6902,7 @@
 	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Stechkin APS" },
     "description": "A pistol made for use by artillery and mortar crews, tank crews and aircraft personnel.  Uses 9x18mm ammo.  Now comes in two.",
-    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ], [ "AUTO1", "low auto", 4 ], [ "AUTO2", "high auto", 8 ] ],
 	"skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [

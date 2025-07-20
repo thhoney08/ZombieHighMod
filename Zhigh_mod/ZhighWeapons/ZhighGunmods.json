@@ -257,7 +257,7 @@
     "price": "250 USD",
     "price_postapoc": "40 USD",
     "to_hit": 2,
-    "bashing": 10,
+    "bashing": 8,
     "cutting": 19,
     "material": [ "steel" ],
     "symbol": "/",
@@ -277,7 +277,75 @@
     },
     "techniques": [ "WBLOCK_1", "RAPID" ],
     "qualities": [ [ "CUT", 1 ], [ "COOK", 1 ], [ "BUTCHER", 7 ] ],
-    "flags": [ "DURABLE_MELEE", "SHEATH_AXE" ]
+    "flags": [ "DURABLE_MELEE", "SHEATH_AXE", "MELEE_GUNMOD", "PUMP_RAIL_COMPATIBLE" ]
+  },
+  {
+    "id": "maceHeadZhigh",
+    "looks_like": "mace",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "MACES" ],
+    "name": { "str": "mace barrel" },
+    "description": "This is a mace barrel gunmod.  It is heavy, and could be deadly in either the right hands or when attached on a gun.",
+    "weight": "558 g",
+    "volume": "500 ml",
+    "price": "100 USD",
+    "price_postapoc": "1250 cent",
+    "to_hit": 1,
+    "bashing": 20,
+    "material": [ "steel", "plastic" ],
+    "symbol": ";",
+    "color": "dark_gray",
+    "gunmod_data": {
+      "location": "underbarrel",
+	  "dispersion_modifier": 15,
+      "mod_target_category": [
+        [ "RIFLES" ],
+        [ "MACHINE_GUNS" ],
+        [ "GATLING_GUNS" ],
+        [ "SHOTGUNS" ],
+        [ "M_XBOWS" ],
+        [ "GRENADE_LAUNCHERS" ],
+        [ "ROCKET_LAUNCHERS" ],
+        [ "FLAMETHROWERS" ]
+      ]
+    },
+    "techniques": [ "SWEEP" ],
+    "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 19 ] ],
+    "thrown_damage": [ { "damage_type": "bash", "amount": 18 } ],
+    "flags": [ "NONCONDUCTIVE", "DURABLE_MELEE", "BELT_CLIP", "PUMP_RAIL_COMPATIBLE", "MELEE_GUNMOD" ]
+  },
+  {
+    "id": "maceHead2Zhigh",
+    "looks_like": "mace",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "MACES" ],
+    "name": { "str": "mace grip" },
+    "description": "This is a mace grip gunmod.  It is heavy, and could be deadly in either the right hands or when attached on a pistol-sized gun.",
+    "weight": "558 g",
+    "volume": "500 ml",
+    "price": "100 USD",
+    "price_postapoc": "1250 cent",
+    "to_hit": 1,
+    "bashing": 18,
+    "material": [ "steel", "plastic" ],
+    "symbol": ";",
+    "color": "dark_gray",
+    "gunmod_data": {
+      "location": "grip",
+	  "dispersion_modifier": 10,
+      "mod_target_category": [
+        [ "PISTOLS" ],
+		[ "REVOLVERS" ],
+		[ "S_XBOWS" ],
+		[ "SUBMACHINE_GUNS" ]
+      ]
+    },
+    "techniques": [ "SWEEP" ],
+    "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 19 ] ],
+    "thrown_damage": [ { "damage_type": "bash", "amount": 16 } ],
+    "flags": [ "NONCONDUCTIVE", "DURABLE_MELEE", "BELT_CLIP", "MELEE_GUNMOD" ]
   },
   {
     "id": "retool_40mm",

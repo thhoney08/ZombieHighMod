@@ -42,7 +42,7 @@
           "condition": "ALWAYS",
           "hit_you_effect": [
             {
-              "id": "pushZhigh_3",
+              "id": "Push_001Zhigh",
               "message": "You push your target.",
               "npc_message": "%1$s pushes their target."
             }
@@ -5596,5 +5596,15 @@
     "relative": { "to_hit": -1 },
     "extend": { "flags": [ "FRAGILE_MELEE" ] },
     "delete": { "flags": [ "DURABLE_MELEE" ] }
+  },
+  {
+    "id": "cestus_bone",
+    "type": "GENERIC",
+    "copy-from": "cestus",
+    "name": { "str": "bone cestus", "str_pl": "bone cestuses" },
+    "description": "This weapon is a series of leather wrappings with a bone plate that has a series of jagged bones attached to it.  For when your punches need more damage.",
+    "material": [ "bone", "leather" ],
+    "cutting": 4,
+    "extend": { "flags": [ "STAB" ] }
   }
 ]
