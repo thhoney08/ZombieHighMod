@@ -85,5 +85,228 @@
     "broken_color": "cyan",
     "breaks_into": [ { "item": "scrap", "count": 24 }, { "item": "steel_chunk", "count": 10 }, { "item": "steel_lump", "count": 6 } ],
     "requirements": { "install": { "skills": [ [ "mechanics", 2 ], [ "rifle", 1 ] ] }, "removal": { "skills": [ [ "mechanics", 1 ] ] } }
+  },
+  {
+    "type": "vehicle_part",
+    "id": "fridge",
+    "name": { "str": "fridge" },
+    "symbol": "H",
+    "looks_like": "f_fridge",
+    "color": "light_blue",
+    "broken_symbol": "#",
+    "broken_color": "light_blue",
+    "damage_modifier": 80,
+    "durability": 100,
+    "description": "A small fridge.  When turned on, it will cool the food inside, extended the time until the food spoils.",
+    "epower": -45,
+    "size": "200 L",
+    "item": "fridge",
+    "location": "center",
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 3 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "repair": {
+        "skills": [ [ "mechanics", 4 ] ],
+        "time": "60 m",
+        "using": [ [ "welding_standard", 5 ], [ "vehicle_repair_electronics", 2 ] ]
+      }
+    },
+    "flags": [ "CARGO", "OBSTACLE", "FRIDGE", "COVERED", "ENABLED_DRAINS_EPOWER" ],
+    "breaks_into": [
+		{ "item": "sheet_metal", "count": [ 1, 3 ] },
+		{ "item": "sheet_metal_small", "count": [ 6, 9 ] },
+		{ "item": "steel_chunk", "count": [ 0, 3 ] },
+		{ "item": "scrap", "count": [ 2, 8 ] },
+		{ "item": "cable", "charges": [ 1, 3 ] },
+		{ "item": "hose", "count": 1 },
+		{ "item": "cu_pipe", "count": [ 1, 4 ] },
+		{ "item": "scrap_copper", "count": [ 0, 2 ] },
+		{ "item": "glass_shard", "count": [ 2, 4 ] },
+		{ "item": "motor_tiny", "prob": 25 }
+    ],
+    "damage_reduction": { "all": 32 }
+  },
+  {
+    "type": "vehicle_part",
+    "id": "freezer",
+    "name": { "str": "freezer" },
+    "symbol": "H",
+    "color": "light_blue",
+    "broken_symbol": "#",
+    "broken_color": "blue",
+    "looks_like": "fridge",
+    "damage_modifier": 80,
+    "durability": 100,
+    "epower": -60,
+    "size": "200 L",
+    "item": "freezer",
+    "location": "center",
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 3 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "repair": {
+        "skills": [ [ "mechanics", 4 ] ],
+        "time": "60 m",
+        "using": [ [ "welding_standard", 5 ], [ "vehicle_repair_electronics", 2 ] ]
+      }
+    },
+    "flags": [ "CARGO", "OBSTACLE", "FREEZER", "COVERED", "ENABLED_DRAINS_EPOWER" ],
+    "breaks_into": [
+		{ "item": "sheet_metal", "count": [ 1, 3 ] },
+		{ "item": "sheet_metal_small", "count": [ 6, 9 ] },
+		{ "item": "steel_chunk", "count": [ 0, 3 ] },
+		{ "item": "scrap", "count": [ 2, 8 ] },
+		{ "item": "cable", "charges": [ 1, 3 ] },
+		{ "item": "hose", "count": 1 },
+		{ "item": "cu_pipe", "count": [ 1, 4 ] },
+		{ "item": "scrap_copper", "count": [ 0, 2 ] },
+		{ "item": "glass_shard", "count": [ 2, 4 ] },
+		{ "item": "motor_tiny", "prob": 25 }
+    ],
+    "damage_reduction": { "all": 32 }
+  },
+  {
+    "type": "vehicle_part",
+    "id": "glass_freezer",
+    "name": { "str": "glass freezer" },
+    "symbol": "H",
+    "color": "light_blue",
+    "broken_symbol": "#",
+    "broken_color": "blue",
+    "looks_like": "f_glass_freezer",
+    "damage_modifier": 80,
+    "durability": 100,
+    "epower": -60,
+    "size": "200 L",
+    "item": "glass_freezer",
+    "location": "center",
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 3 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "repair": {
+        "skills": [ [ "mechanics", 4 ] ],
+        "time": "60 m",
+        "using": [ [ "welding_standard", 5 ], [ "vehicle_repair_electronics", 2 ] ]
+      }
+    },
+    "flags": [ "CARGO", "OBSTACLE", "FREEZER", "COVERED", "ENABLED_DRAINS_EPOWER" ],
+    "breaks_into": [
+		{ "item": "sheet_metal", "count": [ 1, 3 ] },
+		{ "item": "sheet_metal_small", "count": [ 6, 9 ] },
+		{ "item": "steel_chunk", "count": [ 0, 3 ] },
+		{ "item": "scrap", "count": [ 2, 8 ] },
+		{ "item": "cable", "charges": [ 1, 3 ] },
+		{ "item": "hose", "count": 1 },
+		{ "item": "cu_pipe", "count": [ 1, 4 ] },
+		{ "item": "scrap_copper", "count": [ 0, 2 ] },
+		{ "item": "glass_shard", "count": [ 2, 4 ] },
+		{ "item": "motor_tiny", "prob": 25 }
+    ],
+    "damage_reduction": { "all": 32 }
+  },
+  {
+    "copy-from": "trunk_abstract",
+    "id": "cargo_spaceZhigh",
+    "type": "vehicle_part",
+    "name": { "str": "huge cargo space" },
+    "symbol": "=",
+    "looks_like": "cargo_space",
+    "color": "light_gray",
+    "broken_symbol": "#",
+    "broken_color": "dark_gray",
+    "size": "2000 L",
+    "item": "cargo_rackZhigh",
+    "flags": [ "BOARDABLE", "CARGO", "COVERED" ],
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 6, 8 ] },
+      { "item": "steel_chunk", "count": [ 6, 8 ] },
+      { "item": "scrap", "count": [ 6, 8 ] }
+    ]
+  },
+  {
+    "copy-from": "cargo_spaceZhigh",
+    "id": "cargo_spaceZhigh_external",
+    "type": "vehicle_part",
+    "name": { "str": "external huge cargo rack" },
+    "location": "structure",
+    "description": "Storage space, mounted outside your vehicle's armor and vulnerable to damage.",
+    "size": "1000 L",
+    "flags": [ "UNMOUNT_ON_DAMAGE", "CARGO", "PROTRUSION", "COVERED", "BOARDABLE" ]
+  },
+  {
+    "copy-from": "cargo_spaceZhigh",
+    "id": "cargo_spaceZhigh_carbon",
+    "type": "vehicle_part",
+    "name": { "str": "huge carbon cargo space" },
+    "size": "2400 L",
+    "item": "cargo_rackZhigh_carbon",
+    "breaks_into": [  ]
+  },
+  {
+    "copy-from": "cargo_spaceZhigh_carbon",
+    "id": "cargo_spaceZhigh_carbon_external",
+    "type": "vehicle_part",
+    "name": { "str": "external huge carbon cargo rack" },
+    "location": "structure",
+    "description": "Storage space, mounted outside your vehicle's armor and vulnerable to damage.",
+    "size": "1200 L",
+    "flags": [ "UNMOUNT_ON_DAMAGE", "CARGO", "PROTRUSION", "COVERED", "BOARDABLE" ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "cargo_rackZhigh",
+    "name": { "str": "huge cargo carrier" },
+    "description": "A heavy frame outfitted with tie-downs and attachment points for carrying cargo.",
+    "weight": "80000 g",
+    "to_hit": -4,
+    "color": "cyan",
+    "symbol": "]",
+    "material": "steel",
+    "volume": "100 L",
+    "bashing": 2,
+    "category": "veh_parts",
+    "price": "1600 USD",
+    "price_postapoc": "20 USD"
+  },
+  {
+    "copy-from": "cargo_rack",
+    "id": "cargo_rackZhigh_carbon",
+    "type": "GENERIC",
+    "name": { "str": "carbon huge cargo carrier" },
+    "description": "A sturdy, yet lightweight carbon structure outfitted with tie-downs and attachment points for carrying cargo.",
+    "weight": "10000 g",
+    "to_hit": -3,
+    "material": [ "carbon_fiber" ],
+    "price": "2000 USD",
+    "price_postapoc": "20 USD"
+  },
+  {
+    "type": "recipe",
+    "result": "cargo_rackZhigh",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_VEHICLE",
+    "skill_used": "fabrication",
+    "skills_required": [ "mechanics", 2 ],
+    "difficulty": 4,
+    "time": "6 h",
+    "autolearn": true,
+    "using": [ [ "rope_natural", 4 ], [ "welding_standard", 10 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "SAW_M", "level": 1 }, { "id": "WRENCH", "level": 1 } ],
+    "byproducts": [ [ "steel_lump", 20 ] ],
+    "components": [ [ [ "hdframe", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "cargo_rackZhigh_carbon",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_VEHICLE",
+    "skill_used": "computer",
+    "difficulty": 3,
+    "skills_required": [ "mechanics", 2 ],
+    "autolearn": true,
+    "time": "120 m",
+    "batch_time_factors": [ 60, 1 ],
+    "using": [ [ "3d_printing_standard", 20 ], [ "rope_natural", 4 ] ],
+    "components": [ [ [ "carbon_fiber_filament", 800 ], [ "frame_carbon", 4 ] ] ]
   }
 ]

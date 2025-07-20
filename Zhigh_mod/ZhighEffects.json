@@ -89,8 +89,56 @@
   },
   {
     "type": "effect_type",
+    "id": "antiblind",
+    "removes_effects": [
+      "blind"
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "antiSightError",
+    "removes_effects": [
+      "blind",
+	  "glare",
+	  "no_sight",
+	  "snow_glare",
+	  "darkness"
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "antizapped",
+    "removes_effects": [
+      "zapped"
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "anticold_zhigh",
+    "removes_effects": [
+      "frostbite",
+      "cold",
+      "cold_zhigh"
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "antiParasite",
+    "removes_effects": [
+      "bloodworms",
+      "tapeworm",
+      "brainworms",
+      "paincysts",
+      "dermatik"
+    ]
+  },
+  {
+    "type": "effect_type",
     "id": "antionfire",
     "removes_effects": [
+      "hot",
+      "hot_speed",
+      "blisters",
       "onfire"
     ]
   },

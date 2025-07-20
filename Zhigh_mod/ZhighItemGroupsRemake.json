@@ -1,5 +1,60 @@
 [
   {
+    "type": "item_group",
+    "id": "ammo_shotgun_blackpowder_handloads",
+    "//": "Blackpowder rifle ammo balanced according to rarity, additional weight for calibers that have common, manual-action firearms available in that chambering.",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "bp_410shot_000", "prob": 30, "charges": [ 1, 100 ] },
+      { "item": "bp_410shot_dragon", "prob": 10, "charges": [ 1, 100 ] },
+      { "item": "bp_410shot_flechette", "prob": 10, "charges": [ 1, 100 ] },
+      { "item": "bp_410shot_slug", "prob": 10, "charges": [ 1, 100 ] },
+      { "item": "bp_shot_00", "prob": 100, "charges": [ 1, 100 ] },
+      { "item": "bp_shot_bird", "prob": 60, "charges": [ 1, 100 ] },
+      { "item": "bp_shot_dragon", "prob": 10, "charges": [ 1, 100 ] },
+      { "item": "bp_shot_flechette", "prob": 20, "charges": [ 1, 100 ] },
+      { "item": "bp_shot_scrap", "prob": 10, "charges": [ 1, 100 ] },
+      { "item": "bp_shot_slug", "prob": 50, "charges": [ 1, 100 ] },
+      { "item": "shot_paper_00", "prob": 5, "charges": [ 1, 100 ] },
+      { "item": "shot_paper_bird", "prob": 3, "charges": [ 1, 100 ] },
+      { "item": "shot_paper_slug", "prob": 2, "charges": [ 1, 100 ] }
+    ]
+  },
+  {
+    "id": "musicstore_showpiece",
+    "type": "item_group",
+    "//": "for music store",
+    "items": [
+      {
+        "distribution": [
+          { "item": "acoustic_guitar", "prob": 100 },
+          { "item": "bagpipes", "prob": 25 },
+          { "item": "banjo", "prob": 60 },
+          { "item": "bone_flute", "prob": 20 },
+          { "item": "wood_flute", "prob": 50 },
+          { "item": "clarinet", "prob": 50 },
+          { "item": "flute", "prob": 50 },
+          { "item": "harmonica_holder", "prob": 70 },
+          { "item": "jug_clay", "prob": 20 },
+          { "item": "saw", "prob": 20 },
+          { "item": "luteZhigh", "prob": 20 },
+          { "item": "keytarZhigh", "prob": 20 },
+          { "item": "saxophone", "prob": 50 },
+          { "item": "trumpet", "prob": 50 },
+          { "item": "tuba", "prob": 25 },
+          { "item": "ukulele", "prob": 50 },
+          { "item": "violin", "prob": 90 },
+          { "item": "guitar_electric", "prob": 90 },
+          {
+            "collection": [ { "item": "case_violin" }, { "item": "tommygun" }, { "item": "grip" }, { "item": "thompson_drum" } ],
+            "prob": 15
+          },
+          { "collection": [ { "item": "case_violin" }, { "item": "violin_golden" } ], "prob": 50 }
+        ]
+      }
+    ]
+  },
+  {
     "id": "rare_martial_arts_books",
     "type": "item_group",
     "//": "These are exceptionally rare martial arts books that should only spawn very rarely.",
@@ -301,6 +356,9 @@
       {
         "distribution": [
           { "item": "tricorne", "prob": 5 },
+          { "item": "boater", "prob": 5 },
+          { "item": "helmet_pith", "prob": 5 },
+          { "item": "helmet_pumpkinZhigh", "prob": 1 },
           { "item": "hat_furKingsGuardZhigh", "prob": 1 },
           { "item": "10gal_hat", "prob": 30 },
           { "item": "tophat", "prob": 10 },
@@ -739,6 +797,9 @@
       [ "capotainZhigh", 5 ],
       [ "cavalierHatZhigh", 5 ],
       [ "campaignHatZhigh", 5 ],
+      [ "helmet_pumpkinZhigh", 5 ],
+      [ "helmet_pith", 5 ],
+      [ "boater", 5 ],
       [ "kungLaoHatZhigh", 1 ],
       [ "10gal_hat", 100 ],
       [ "kufi", 30 ],
@@ -766,6 +827,7 @@
       { "item": "medkit2", "prob": 15 },
       { "item": "medkit3", "prob": 10 },
       { "item": "medkit4", "prob": 3 },
+      { "item": "defibrillatorZhigh", "prob": 10 },
       { "item": "saline", "prob": 10 },
       { "item": "con_milk", "prob": 10 },
       { "item": "milk_UHT", "prob": 25 },
@@ -1066,6 +1128,7 @@
     "items": [
       [ "extinguisher", 10 ],
       [ "sm_extinguisher", 20 ],
+      [ "defibrillatorZhigh", 20 ],
       [ "fire_ax", 60 ],
       [ "fire_ax_1", 30 ],
       [ "halligan", 50 ],
@@ -1329,9 +1392,51 @@
       { "item": "shot_web", "prob": 5 },
       { "item": "shot_dragon", "prob": 5 },
       { "item": "410shot_000", "prob": 50 },
+      { "item": "410shot_slug", "prob": 15 },
+      { "item": "410shot_flechette", "prob": 15 },
+      { "item": "410shot_dragon", "prob": 15 },
+      { "item": "410shot_beanbag", "prob": 15 },
       { "item": "shot_paper_00", "prob": 30 },
       { "item": "shot_paper_bird", "prob": 30 },
       { "item": "shot_paper_slug", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_shotgun_common_full",
+    "//": "Shotgun ammo commonly owned by citizens and found in many locations, for vending machines.",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "410shot_000", "prob": 30 },
+      { "item": "410shot_slug", "prob": 10 },
+      { "item": "410shot_flechette", "prob": 10 },
+      { "item": "410shot_dragon", "prob": 10 },
+      { "item": "410shot_beanbag", "prob": 10 },
+      { "item": "shot_00", "prob": 110 },
+      { "item": "shot_bird", "prob": 70 },
+      { "item": "shot_slug", "prob": 70 },
+      { "item": "shot_slug_ap", "prob": 50 },
+      { "item": "shot_coin", "prob": 5 },
+      { "item": "shot_flame", "prob": 5 },
+      { "item": "signal_supply_flare", "prob": 1 },
+      { "item": "shot_toxic", "prob": 5 },
+      { "item": "shot_fungi", "prob": 5 },
+      { "item": "shot_insecticidal", "prob": 5 },
+      { "item": "shot_acid", "prob": 5 },
+      { "item": "shot_lightning", "prob": 5 },
+      { "item": "shot_emp_ins", "prob": 5 },
+      { "item": "shot_flash_ins", "prob": 5 },
+      { "item": "shot_toxic_blast", "prob": 5 },
+      { "item": "shot_flare", "prob": 5 },
+      { "item": "shot_smoke", "prob": 5 },
+      { "item": "shot_scrambler", "prob": 5 },
+      { "item": "shot_bola", "prob": 5 },
+      { "item": "shot_web", "prob": 5 },
+      { "item": "shot_dragon", "prob": 5 },
+      { "item": "shot_paper_00", "prob": 5 },
+      { "item": "shot_paper_bird", "prob": 3 },
+      { "item": "shot_paper_slug", "prob": 2 },
+      { "item": "shot_slug", "prob": 40 }
     ]
   },
   {
@@ -1414,6 +1519,8 @@
       { "group": "nested_ar57Zhigh", "prob": 10 },
       { "group": "nested_colt9mmZhigh", "prob": 10 },
       { "group": "nested_vek32Zhigh", "prob": 15 },
+      { "group": "nested_DeerslayerZhigh", "prob": 15 },
+      { "group": "nested_aBoltZhigh", "prob": 15 },
       { "group": "nested_cmmg46Zhigh", "prob": 15 },
       { "group": "nested_cmmg57Zhigh", "prob": 15 }
     ]
@@ -1428,6 +1535,8 @@
       { "group": "everyday_ar57Zhigh", "prob": 10 },
       { "group": "everyday_colt9mmZhigh", "prob": 10 },
       { "group": "everyday_vek32Zhigh", "prob": 15 },
+      { "group": "everyday_DeerslayerZhigh", "prob": 15 },
+      { "group": "everyday_aBoltZhigh", "prob": 15 },
       { "group": "everyday_cmmg46Zhigh", "prob": 15 },
       { "group": "everyday_cmmg57Zhigh", "prob": 15 }
     ]
@@ -1546,6 +1655,8 @@
       { "group": "nested_hkucpZhigh", "prob": 10 },
       { "group": "nested_ots62", "prob": 30 },
       { "group": "nested_rhinoRevolverZhigh", "prob": 30 },
+      { "group": "nested_TaurusLightningZhigh", "prob": 30 },
+      { "group": "nested_TaurusDragoonZhigh", "prob": 30 },
       { "group": "nested_Lp500Zhigh", "prob": 30 },
       { "group": "nested_tatZhigh", "prob": 10 },
       { "group": "nested_thor308Zhigh", "prob": 10 },
@@ -1561,6 +1672,8 @@
       { "group": "nested_m53Medusa", "prob": 35 },
       { "group": "nested_dbx57Zhigh", "prob": 35 },
       { "group": "nested_contender_zhigh", "prob": 5 },
+      { "group": "nested_rossiPocketPistol2066Zhigh", "prob": 5 },
+      { "group": "nested_needleRevolverZhigh", "prob": 5 },
       { "group": "nested_pkdBlaster", "prob": 5 }
     ]
   },
@@ -1576,6 +1689,8 @@
       { "group": "everyday_hkucpZhigh", "prob": 10 },
       { "group": "everyday_ots62", "prob": 30 },
       { "group": "everyday_rhinoRevolverZhigh", "prob": 30 },
+      { "group": "everyday_TaurusLightningZhigh", "prob": 30 },
+      { "group": "everyday_TaurusDragoonZhigh", "prob": 30 },
       { "group": "nested_Lp500Zhigh", "prob": 30 },
       { "group": "everyday_pkdBlaster", "prob": 30 },
       { "group": "nested_thor308Zhigh", "prob": 10 },
@@ -1591,6 +1706,8 @@
       { "group": "nested_m53Medusa", "prob": 35 },
       { "group": "everyday_dbx57Zhigh", "prob": 35 },
       { "group": "nested_contender_zhigh", "prob": 5 },
+      { "group": "everyday_rossiPocketPistol2066Zhigh", "prob": 5 },
+      { "group": "everyday_needleRevolverZhigh", "prob": 5 },
       { "group": "nested_pkdBlaster", "prob": 1 }
     ]
   },
@@ -1631,6 +1748,7 @@
       { "group": "nested_thor308Zhigh", "prob": 10 },
       { "group": "everyday_revolver46Zhigh", "prob": 10 },
       { "group": "everyday_revolver57Zhigh", "prob": 10 },
+      { "group": "everyday_revolver9x18Zhigh", "prob": 10 },
       { "group": "everyday_colt_saaChainZhigh", "prob": 1 },
       { "group": "everyday_volcanicHandgunZhigh", "prob": 3 },
       { "group": "everyday_m231Zhigh", "prob": 3 }
@@ -1657,6 +1775,7 @@
       { "group": "nested_thor308Zhigh", "prob": 10 },
       { "group": "everyday_revolver46Zhigh", "prob": 10 },
       { "group": "everyday_revolver57Zhigh", "prob": 10 },
+      { "group": "nested_revolver9x18Zhigh", "prob": 10 },
       { "group": "nested_colt_saaChainZhigh", "prob": 1 },
       { "group": "nested_volcanicHandgunZhigh", "prob": 3 },
       { "group": "nested_m231Zhigh", "prob": 3 }
@@ -1712,6 +1831,7 @@
       { "item": "medkit4", "prob": 1 },
       { "item": "EmtGearZhigh", "prob": 5 },
       { "item": "medkitRecharge", "prob": 5 },
+      { "item": "defibrillatorZhigh", "prob": 10 },
       { "item": "medcase", "prob": 20 },
       { "item": "antibiotics", "prob": 20 },
       { "item": "bandages", "prob": 100 },
@@ -2311,6 +2431,7 @@
       { "group": "ZhighStimUnkown3", "prob": 25 },
       [ "1st_aid", 30 ],
       [ "armor_riot", 20 ],
+      [ "defibrillatorZhigh", 5 ],
       [ "medcase", 5 ],
       [ "airhorn", 5 ],
       [ "bandages", 20 ],
@@ -2741,6 +2862,8 @@
       [ "bipodgrip", 10 ],
       [ "fanning", 10 ],
       [ "axe_bayonet", 10 ],
+      [ "maceHeadZhigh", 10 ],
+      [ "maceHead2Zhigh", 5 ],
       [ "underbarrelFlameZhigh", 10 ],
       [ "underbarrelShotgunZhigh", 10 ],
       [ "underbarrelFlaregunZhigh", 10 ],
@@ -3040,6 +3163,7 @@
       { "item": "peaked_capZhigh_black", "prob": 5 },
       { "item": "plasmaSaberZhigh", "prob": 1 },
       { "item": "manual_mcmap", "prob": 1 },
+      { "item": "bombRadioZhigh", "prob": 1 },
       { "item": "m107a1", "prob": 1 },
       { "item": "bipod", "prob": 1 },
       { "item": "50bmg", "prob": 3 },

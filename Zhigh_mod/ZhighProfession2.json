@@ -1056,6 +1056,7 @@
       { "level": 3, "name": "melee" },
       { "level": 5, "name": "gun" },
       { "level": 3, "name": "pistol" },
+      { "level": 3, "name": "akimbo_Zhigh" },
       { "level": 5, "name": "rifle" }
     ],
     "items": {
@@ -1070,8 +1071,11 @@
         "entries": [
           { "item": "WA2000Zhigh", "ammo-item": "300_winmag", "charges": 6, "custom-flags": [ "auto_wield" ], "contents-item": [ "shoulder_strap" ] },
           { "group": "nested_WA2000Zhigh47" },
+          { "group": "army_mags_1911" },
+          { "group": "army_mags_1911" },
           { "item": "knife_combat", "container-item": "bootsheath" },
           { "item": "bandolier_rifle", "contents-group": "bandolier_rifle_47" },
+          { "item": "silverballer47", "ammo-item": "45_acp", "charges": 7, "container-item": "holster" },
           { "item": "silverballer47", "ammo-item": "45_acp", "charges": 7, "container-item": "holster" },
           { "item": "legpouch_large", "contents-group": "army_mags_1911" }
         ]
@@ -2212,5 +2216,36 @@
       "male": [ "boxer_briefs" ],
       "female": [ "bra", "panties" ]
     }
+  },
+  {
+    "type": "profession",
+    "id": "brawlerAssassin",
+    "name": "Brawler",
+    "description": "You were an assassin who erased your targets by your fists.  Time to punch another target again.",
+    "points": 1,
+    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "unarmed" }, { "level": 2, "name": "dodge" } ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt",
+          "trenchcoat_leather",
+          "smart_phone",
+          "socks",
+          "sneakers",
+          "fedora_whiteZhigh",
+          "dynamite",
+          "dynamite",
+          "matches",
+          "knuckle_brass",
+          "wristwatch"
+        ],
+        "entries": [
+			{ "item": "glass_punch_daggerHandwrap", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
   }
 ]

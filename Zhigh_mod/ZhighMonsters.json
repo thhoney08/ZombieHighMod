@@ -1683,7 +1683,7 @@
         "target_moving_vehicles": true,
         "gun_type": "fakeBBgunV2_zhigh",
         "fake_skills": [ [ "gun", 8 ], [ "rifle", 8 ] ],
-        "ranges": [ [ 0, 12, "DEFAULT" ] ],
+        "ranges": [ [ 0, 10, "DEFAULT" ] ],
         "require_sunlight": false,
         "no_crits": false
       }
@@ -1746,13 +1746,13 @@
     "special_attacks": [
       {
         "type": "gun",
-        "cooldown": 1,
+        "cooldown": 5,
         "require_targeting_npc": true,
         "require_targeting_monster": true,
         "target_moving_vehicles": true,
         "gun_type": "fakeBBgunV3_zhigh",
         "fake_skills": [ [ "gun", 8 ], [ "rifle", 8 ] ],
-        "ranges": [ [ 0, 35, "DEFAULT" ] ],
+        "ranges": [ [ 0, 32, "DEFAULT" ] ],
         "require_sunlight": false,
         "no_crits": false
       }
@@ -1855,8 +1855,8 @@
     "range": 10,
     "dispersion": 100,
     "ranged_damage": [
-		{ "damage_type": "acid", "amount": 4, "armor_penetration": 30 },
-		{ "damage_type": "stab", "amount": 2, "armor_multiplier": 0.8 }
+		{ "damage_type": "acid", "amount": 6, "armor_penetration": 30 },
+		{ "damage_type": "stab", "amount": 4, "armor_multiplier": 0.8 }
 	]
   },
   {
@@ -1887,7 +1887,7 @@
     "special_attacks": [
       {
         "type": "gun",
-        "cooldown": 1,
+        "cooldown": 5,
         "require_targeting_npc": true,
         "require_targeting_monster": true,
         "target_moving_vehicles": true,
@@ -1924,8 +1924,8 @@
     "skill": "rifle",
     "durability": 10,
     "range": 10,
-    "dispersion": 100,
-    "modes": [ [ "DEFAULT", "auto", 3 ] ],
+    "dispersion": 200,
+    "modes": [ [ "DEFAULT", "auto", 5 ] ],
     "ranged_damage": { "damage_type": "heat", "amount": 6, "armor_penetration": 30 }
   },
   {
@@ -1994,8 +1994,8 @@
     "durability": 10,
     "range": 6,
     "dispersion": 100,
-    "modes": [ [ "DEFAULT", "auto", 3 ] ],
-    "ranged_damage": { "damage_type": "electric", "amount": 3, "armor_penetration": 30 }
+    "modes": [ [ "DEFAULT", "auto", 2 ] ],
+    "ranged_damage": { "damage_type": "electric", "amount": 3, "armor_penetration": 15 }
   },
   {
     "id": "mon_RockTurret",
@@ -2025,7 +2025,7 @@
     "special_attacks": [
       {
         "type": "gun",
-        "cooldown": 1,
+        "cooldown": 2,
         "move_cost": 80,
 		"laser_lock": true,
 		"targeting_cost": 200,
@@ -2065,7 +2065,7 @@
     "dispersion": 10,
     "durability": 10,
     "skill": "launcher",
-    "loudness": 60,
+    "loudness": 80,
     "modes": [ [ "DEFAULT", "single", 1 ] ],
     "ammo_effects": [ "BEANBAG", "NOGIB", "NEVER_MISFIRES", "NO_DAMAGE_SCALING" ],
     "flags": [ "NEVER_JAMS" ]
@@ -2111,7 +2111,7 @@
         "require_targeting_npc": true,
         "require_targeting_monster": true,
         "description": "Heal turret launches a hail of BBs!",
-        "ranges": [ [ 0, 10, "DEFAULT" ] ],
+        "ranges": [ [ 0, 6, "DEFAULT" ] ],
         "no_ammo_sound": "a chk!"
       },
       { 
@@ -2657,5 +2657,128 @@
     "death_function": [ "DISAPPEAR" ],
     "extend": { "anger_triggers": [ "HURT", "FIRE" ], "flags": [ "ATTACKMON", "BASHES" ] },
     "delete": { "fear_triggers": [ "HURT", "FIRE" ] }
+  },
+  {
+    "type": "recipe",
+    "result": "bot_goliathZhigh",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 5 ], [ "computer", 6 ] ],
+    "reversible": true,
+    "decomp_learn": 8,
+    "difficulty": 6,
+    "time": "50 m",
+    "using": [ [ "soldering_standard", 20 ], [ "welding_standard", 5 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "components": [
+      [ [ "ai_module", 1 ] ],
+      [ [ "self_monitoring_module", 1 ] ],
+      [ [ "sensor_module", 1 ] ],
+      [ [ "memory_module", 1 ] ],
+      [ [ "pathfinding_module", 1 ] ],
+      [ [ "targeting_module", 1 ] ],
+      [ [ "identification_module", 1 ] ],
+      [ [ "omni_wheel", 1 ] ],
+      [ [ "copbot_chassis", 1 ] ],
+      [ [ "android_arms", 1 ] ],
+      [ [ "power_supply", 4 ] ],
+      [ [ "solar_cell", 2 ] ]
+    ]
+  },
+  {
+    "id": "bot_goliathZhigh",
+    "looks_like": "broken_goliathZhigh",
+    "type": "TOOL",
+    "name": { "str": "inactive remote vehicle" },
+    "description": "This is an inactive police robot.  Using this item involves placing it on the ground and turning it on.  If reprogrammed and rewired successfully the remote vehicle will then identify you as law enforcement, roam around or follow you, and attempt to detain lawbreakers.",
+    "volume": "500 L",
+    "weight": "750 kg",
+    "price": "1 kUSD",
+    "price_postapoc": "5 USD",
+    "to_hit": -3,
+    "bashing": 8,
+    "material": [ "steel" ],
+    "symbol": ";",
+    "color": "light_green",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_goliathZhigh",
+      "friendly_msg": "The remote vehicle rolls into action ready to pursue.",
+      "hostile_msg": "A siren howls and lights flash as the remote vehicle looks at you weird!",
+      "//": "Modified copbot",
+      "difficulty": 3,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    },
+    "flags": [ "ALLOWS_REMOTE_USE" ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "broken_goliathZhigh",
+    "symbol": ",",
+    "color": "green",
+    "name": { "str": "broken remote vehicle" },
+    "category": "scrap_electronics",
+    "description": "A broken remote vehicle.  Much less threatening now that it's quiet and still.  Could be gutted for parts.",
+    "price": "300 USD",
+    "price_postapoc": "10 cent",
+    "material": [ "steel", "plastic" ],
+    "weight": "140000 g",
+    "volume": "1000 L",
+    "bashing": 6,
+    "cutting": 6,
+    "to_hit": -3,
+    "flags": [ "TRADER_AVOID", "NO_REPAIR" ]
+  },
+  {
+    "id": "mon_goliathZhigh",
+    "type": "MONSTER",
+    "name": { "str": "remote vehicle" },
+    "description": "One of the many models of armored law enforcement robots employed shortly before the collapse of civilization.  Solar powered like many other robots, it maintains its programmed pursuit of law and order, propelled on a trio of omni wheels.",
+    "default_faction": "cop_bot",
+	"bodytype": "quadruped",
+    "species": [ "ROBOT" ],
+    "diff": 10,
+    "volume": "500 L",
+    "weight": "750 kg",
+    "hp": 80,
+    "speed": 100,
+    "material": [ "steel" ],
+    "symbol": "R",
+    "color": "light_blue",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 2,
+    "melee_cut": 0,
+    "dodge": 8,
+    "armor_bash": 16,
+    "armor_cut": 16,
+    "armor_bullet": 16,
+    "armor_fire": 16,
+    "vision_day": 50,
+    "vision_night": 50,
+    "revert_to_itype": "bot_goliathZhigh",
+    "death_drops": { "groups": [ [ "robots", 16 ] ] },
+    "death_function": [ "BROKEN" ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "BASHES",
+      "ELECTRONIC",
+      "COLDPROOF",
+      "NO_BREATHE",
+      "PRIORITIZE_TARGETS",
+      "PATH_AVOID_DANGER_1",
+      "PET_MOUNTABLE",
+      "BIOPROOF"
+    ]
   }
 ]

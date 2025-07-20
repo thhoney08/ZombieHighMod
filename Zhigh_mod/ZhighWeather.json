@@ -14,10 +14,28 @@
     "precip": "heavy",
     "rains": true,
     "acidic": true,
-    "effects": [ { "name": "thunder", "intensity": 999 }, { "name": "lightning", "intensity": 999 }, { "name": "acid", "intensity": 999 } ],
+    "effects": [ { "name": "thunder", "intensity": 999 }, { "name": "lightning", "intensity": 999 } ],
     "animation": { "factor": 0.4, "color": "c_white", "glyph": "*", "tile": "weather_acid_drop" },
     "sound_category": "thunder",
     "sun_intensity": "none",
-    "requirements": { }
+    "requirements": {
+		"required_weathers": [
+			"clear",
+			"sunny",
+			"cloudy",
+			"light_drizzle",
+			"drizzle",
+			"rain",
+			"heavy_rain",
+			"thunder",
+			"lightning",
+			"light_flurries",
+			"flurries",
+			"snowing",
+			"snowstorm",
+			"acid_drizzle",
+			"acid_rain"
+		]
+    }
   }
 ]

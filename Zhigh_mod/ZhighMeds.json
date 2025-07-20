@@ -798,6 +798,210 @@
 	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
   },
   {
+    "id": "stimAntiHeatZhigh",
+    "type": "COMESTIBLE",
+	"comestible_type": "MED",
+	"name": "injectable Pyrostatin",
+	"description": "Emergency anti-thermal stimulant used by soldiers, doctors, and PMCs operating in heat-intensive zones.  Prevents burn damage, blisters, and heat-induced slowdown for a limited time.  \n <color_yellow> Presented by Phoenix corp.</color>",
+	"weight": "40 g",
+    "volume": "10 ml",
+    "price": "7500 USD",
+    "price_postapoc": "30 USD",
+	"material": "plastic",
+    "symbol": "/",
+    "color": "cyan",
+	"use_action": {
+		"type": "consume_drug",
+		"activation_message": "You shoot up.",
+		"effects": [
+			{ "id": "antionfire", "duration": "1 m" }
+		]
+	},
+	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
+  },
+  {
+    "id": "stimAntiColdZhigh",
+    "type": "COMESTIBLE",
+	"comestible_type": "MED",
+	"name": "injectable Cryonix",
+	"description": "Military-grade thermal regulator used in arctic operations.  Prevents frostbite, cold-induced slowdown, and internal freezing for a short duration.  \n <color_yellow> Presented by Phoenix corp.</color>",
+	"weight": "40 g",
+    "volume": "10 ml",
+    "price": "7500 USD",
+    "price_postapoc": "30 USD",
+	"material": "plastic",
+    "symbol": "/",
+    "color": "cyan",
+	"use_action": {
+		"type": "consume_drug",
+		"activation_message": "You shoot up.",
+		"effects": [
+			{ "id": "anticold_zhigh", "duration": "1 m" }
+		]
+	},
+	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
+  },
+  {
+    "id": "stimAntiAcidZhigh",
+    "type": "COMESTIBLE",
+	"comestible_type": "MED",
+	"name": "injectable Acidgarde",
+	"description": "A specialized anti-corrosive agent developed for contact with industrial acids and toxic spills.  Shields tissue from acid burns and neutralizes corrosive effects on contact.  \n <color_yellow> Presented by Phoenix corp.</color>",
+	"weight": "40 g",
+    "volume": "10 ml",
+    "price": "7500 USD",
+    "price_postapoc": "30 USD",
+	"material": "plastic",
+    "symbol": "/",
+    "color": "cyan",
+	"use_action": {
+		"type": "consume_drug",
+		"activation_message": "You shoot up.",
+		"effects": [
+			{ "id": "anticorroding", "duration": "1 m" }
+		]
+	},
+	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
+  },
+  {
+    "id": "stimAntiZapZhigh",
+    "type": "COMESTIBLE",
+	"comestible_type": "MED",
+	"name": "injectable Voltbloc",
+	"description": "Electro-insulative stimulant designed for high-voltage environments.  Dampens nerve disruption, muscle spasms, and prevents damage from electrical shocks.  \n <color_yellow> Presented by Phoenix corp.</color>",
+	"weight": "40 g",
+    "volume": "10 ml",
+    "price": "7500 USD",
+    "price_postapoc": "30 USD",
+	"material": "plastic",
+    "symbol": "/",
+    "color": "cyan",
+	"use_action": {
+		"type": "consume_drug",
+		"activation_message": "You shoot up.",
+		"effects": [
+			{ "id": "antizapped", "duration": "1 m" }
+		]
+	},
+	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
+  },
+  {
+    "id": "stimAntiBlindZhigh",
+    "type": "COMESTIBLE",
+	"comestible_type": "MED",
+	"name": "injectable Luxstat",
+	"description": "Ocular stabilizer used by breaching units and tunnel operators.  Prevents flashbang-induced blindness and reduces sensitivity to sudden light exposure.  \n <color_yellow> Presented by Phoenix corp.</color>",
+	"weight": "40 g",
+    "volume": "10 ml",
+    "price": "7500 USD",
+    "price_postapoc": "30 USD",
+	"material": "plastic",
+    "symbol": "/",
+    "color": "cyan",
+	"use_action": {
+		"type": "consume_drug",
+		"activation_message": "You shoot up.",
+		"effects": [
+			{ "id": "antiblind", "duration": "1 m" }
+		]
+	},
+	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
+  },
+  {
+    "id": "stimAntiSightErrZhigh",
+    "type": "COMESTIBLE",
+	"comestible_type": "MED",
+	"name": "injectable Noctivex",
+	"description": "Advanced Luxstat stim for full-spectrum vision stability.  Counters flash glare, darkness, snow blindness, and temporary vision loss across all environments.  \n <color_yellow> Presented by Phoenix corp.</color>",
+	"weight": "40 g",
+    "volume": "10 ml",
+    "price": "7500 USD",
+    "price_postapoc": "30 USD",
+	"material": "plastic",
+    "symbol": "/",
+    "color": "cyan",
+	"use_action": {
+		"type": "consume_drug",
+		"activation_message": "You shoot up.",
+		"effects": [
+			{ "id": "antiSightError", "duration": "1 m" }
+		]
+	},
+	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
+  },
+  {
+    "id": "stimAntiParasiteZhigh",
+    "type": "COMESTIBLE",
+	"comestible_type": "MED",
+	"name": "injectable Vermacline",
+	"description": "Anti-parasitic stimulant used in biohazard containment zones.  Temporarily fortifies the body against infestation, incubation, and parasitic infiltration.  \n <color_yellow> Presented by Phoenix corp.</color>",
+	"weight": "40 g",
+    "volume": "10 ml",
+    "price": "7500 USD",
+    "price_postapoc": "30 USD",
+	"material": "plastic",
+    "symbol": "/",
+    "color": "cyan",
+	"use_action": {
+		"type": "consume_drug",
+		"activation_message": "You shoot up.",
+		"effects": [
+			{ "id": "antiParasite", "duration": "1 m" }
+		]
+	},
+	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
+  },
+  {
+    "id": "stimTestZhigh",
+    "type": "COMESTIBLE",
+	"comestible_type": "MED",
+	"name": "injectable test stim",
+	"description": "A debug stim.  \n <color_yellow> Presented by Phoenix corp.</color>",
+	"weight": "40 g",
+    "volume": "10 ml",
+    "price": "7500 USD",
+    "price_postapoc": "30 USD",
+	"material": "plastic",
+    "symbol": "/",
+    "color": "cyan",
+	"use_action": {
+		"type": "consume_drug",
+		"activation_message": "You shoot up.",
+		"effects": [
+			{ "id": "dermatik", "duration": "1 m" }
+		]
+	},
+	"flags": [ "NPC_SAFE", "BELT_CLIP" ]
+  },
+  {
+    "id": "stimSuperZhigh",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": "injectable Reactor+ stimulant",
+    "description": "Next-gen performance enhancer originally developed for special forces.  Temporarily boosts all physical and cognitive stats to peak efficiency.  \n <color_yellow> Presented by Phoenix corp.</color>",
+    "weight": "40 g",
+    "volume": "10 ml",
+    "price": "7500 USD",
+    "price_postapoc": "30 USD",
+	"material": "plastic",
+    "symbol": "/",
+    "color": "cyan",
+    "flags": [ "NO_INGEST", "BELT_CLIP" ],
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You shoot up.",
+      "effects": [ 
+		{ "id": "panacea", "duration": "120 m" },
+		{ "id": "speedup", "duration": "120 m" },
+		{ "id": "intelligenceup", "duration": "120 m" },
+		{ "id": "perceptionup", "duration": "120 m" },
+		{ "id": "dexterityup", "duration": "120 m" },
+		{ "id": "staminaup", "duration": "120 m" },
+		{ "id": "strengthup", "duration": "120 m" }
+	  ]
+    }
+  },
+  {
     "id": "stimInj_calciumZhigh",
     "type": "COMESTIBLE",
     "comestible_type": "MED",
@@ -1412,5 +1616,79 @@
     "use_action": [
 		{ "type": "cast_spell", "spell_id": "zhigh2_healing_dart", "no_fail": true, "level": 0 }
 	]
+  },
+  {
+    "id": "defibrillatorZhigh",
+    "type": "TOOL",
+	"name": "defibrillator",
+	"description": "A defibrillator is a medical device that delivers an electrical shock to the heart to restore a normal heartbeat in cases of cardiac arrest or certain life-threatening arrhythmias.  Using this on other body parts, like your head, arms, and legs, won't be as effective compared to the usage on one's torso.  Needs batteries to use.  Could be used as a melee weapon, although it is not recommended.  \n <color_yellow> Presented by Phoenix corp.</color>",
+	"weight": "1300 g",
+    "volume": "800 ml",
+	"price": "7500 USD",
+    "price_postapoc": "30 USD",
+	"material": "plastic",
+	"symbol": "+",
+	"color": "red",
+	"ammo": "battery",
+	"bashing": 9,
+	"to_hit": 1,
+    "charges_per_use": 50,
+	"use_action": [
+		{
+		   "type": "heal",
+		   "move_cost": 900,
+		   "bleed": 0.50,
+		   "bite": 0.50,
+		   "infect": 0.50,
+		   "limb_power": 5,
+		   "head_power": 5,
+		   "torso_power": 45,
+		   "effects": [ { "id": "zapped", "duration": 100 } ]
+		},
+		{
+		   "type": "transform",
+		   "msg": "You press a button and the defibrillator crackles with electricity.",
+		   "active": true,
+		   "need_charges": 1,
+		   "need_charges_msg": "The %s's batteries are dead.",
+		   "target": "defibrillatorZhigh_on"
+		},
+		"TAZER"
+	],
+	"flags": [ "UNARMED_WEAPON", "WATER_FRIENDLY", "ALLOWS_REMOTE_USE", "NPC_SAFE" ],
+    "magazines": [
+      [
+        "battery",
+        [
+          "light_disposable_cell",
+          "light_minus_disposable_cell",
+          "light_battery_cell",
+          "light_plus_battery_cell",
+          "light_minus_battery_cell",
+          "light_atomic_battery_cell",
+          "light_minus_atomic_battery_cell",
+          "medium_battery_cell",
+          "medium_plus_battery_cell",
+          "medium_atomic_battery_cell",
+          "medium_disposable_cell"
+        ]
+      ]
+    ],
+    "magazine_well": "250 ml"
+  },
+  {
+    "id": "defibrillatorZhigh_on",
+    "looks_like": "defibrillatorZhigh",
+    "copy-from": "defibrillatorZhigh",
+    "type": "TOOL",
+    "name": { "str": "defibrillator (on)", "str_pl": "defibrillator (on)" },
+	"description": "A defibrillator is a medical device that delivers an electrical shock to the heart to restore a normal heartbeat in cases of cardiac arrest or certain life-threatening arrhythmias.  Needs batteries to use.  Could be used as a melee weapon, although it is not recommended.  \n <color_yellow> Presented by Phoenix corp.</color>  \nIt is currently turned on, crackling with electricity.  Charge...  Clear!",
+    "revert_to": "defibrillatorZhigh",
+    "revert_msg": "The %s's batteries run dry.",
+    "use_action": { "type": "transform", "msg": "You press a button and the defibrillator turns off.", "target": "defibrillatorZhigh" },
+    "extend": { "flags": [ "TRADER_AVOID", "SHOCKING" ] },
+    "power_draw": 50000,
+	"color": "blue",
+    "magazine_well": "500 ml"
   }
 ]

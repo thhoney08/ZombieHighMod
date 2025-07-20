@@ -1336,6 +1336,22 @@
   },
   {
     "type": "mutation",
+    "id": "PREP_CARDZHIGH",
+    "name": { "str": "Pocket items: cash card" },
+    "points": 6,
+    "description": "You happened to born with a silver spoon before this whole thing happened.",
+    "valid": false,
+    "starting_trait": true,
+    "purifiable": false,
+    "profession": false
+  },
+  {
+    "type": "profession_item_substitutions",
+    "item": "cash_cardZhighInfinite",
+    "bonus": { "present": [ "PREP_CARDZHIGH" ] }
+  },
+  {
+    "type": "mutation",
     "id": "MARTIAL_ARTS_MCMAP",
     "name": { "str": "Complete Combat Training" },
     "points": 14,
