@@ -85,6 +85,10 @@
         { "chance": 35, "item": "trash_cart", "x": 8, "y": 5 },
         { "chance": 75, "item": "trash", "x": [ 17, 18 ], "y": 2 }
       ],
+      "place_vehicles": [ 
+            { "vehicle": "turret_mounted_paintballG_M60", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 80, "rotation": 0 },
+            { "vehicle": "turret_mounted_paintballG_M60", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 80, "rotation": 180 }
+		],
       "rows": [
         ".bbbbbbbbbcc...........!",
         ".bCCCClFFbcc..cccccccc..",
@@ -254,9 +258,13 @@
       "items": {
         "d": [ { "item": "paintball_items", "chance": 75 } ],
         "t": [ { "item": "paintball_items", "chance": 60, "repeat": [ 2, 5 ] } ],
-        "T": [ { "item": "snacks", "chance": 65 }, { "item": "paintball_items", "chance": 83, "repeat": [ 5, 10 ] } ],
+        "T": [ { "item": "snacks", "chance": 65 }, { "item": "paintball_items", "chance": 63, "repeat": [ 5, 10 ] } ],
         "{": [ { "item": "paintball_items", "repeat": [ 2, 5 ] } ]
       },
+      "place_vehicles": [ 
+            { "vehicle": "turret_mounted_paintballG_M60", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 80, "rotation": 0 },
+            { "vehicle": "turret_mounted_paintballG_M60", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 80, "rotation": 180 }
+		],
       "terrain": {
         "#": "t_underbrush",
         "&": "t_sidewalk",
@@ -369,7 +377,7 @@
         "{": "f_washer"
       },
       "place_items": [
-        { "chance": 10, "item": "bags", "x": 20, "y": 2 },
+        { "chance": 8, "item": "bags", "x": 20, "y": 2 },
         { "chance": 15, "item": "shoes", "x": 15, "y": 2 },
         { "chance": 25, "item": "field", "x": 21, "y": 22 },
         { "chance": 25, "item": "field", "x": 1, "y": 19 },
