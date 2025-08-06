@@ -136,7 +136,6 @@
     "items": [
       { "item": "boxer_briefs" },
       { "group": "ZhighNpc_underwear_feet_male" },
-      { "item": "dress_shirt_zhigh" },
       { "item": "pants_armyZhigh" },
       { "item": "jacket_armyZhigh" },
       { "item": "modularvesthardSpecops" },
@@ -300,13 +299,13 @@
     "responses": [
       { "text": "Nevermind.", "topic": "TALK_DONE" },
       {
-        "text": "[10$]  I'll buy some bandagess.",
+        "text": "[10$]  I'll buy some bandages.",
         "effect": [ { "u_buy_item": "bandages", "cost": 1000, "container": "bag_plastic", "count": 20 } ],
         "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
       },
       {
         "text": "[40$]  I'll buy some aspirin.",
-        "effect": [ { "u_buy_item": "aspirin", "container": "bottle_plastic_pill_prescription", "cost": 4000, "count": 20 } ],
+        "effect": [ { "u_buy_item": "aspirin", "container": "bottle_plastic_small", "cost": 4000, "count": 20 } ],
         "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
       },
       {
@@ -392,13 +391,13 @@
     "responses": [
       { "text": "Nevermind.", "topic": "TALK_DONE" },
       {
-        "text": "[10$]  I'll buy some bandagess.",
+        "text": "[10$]  I'll buy some bandages.",
         "effect": [ { "u_buy_item": "bandages", "cost": 1000, "container": "bag_plastic", "count": 20 } ],
         "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
       },
       {
         "text": "[40$]  I'll buy some aspirin.",
-        "effect": [ { "u_buy_item": "aspirin", "container": "bottle_plastic_pill_prescription", "cost": 4000, "count": 20 } ],
+        "effect": [ { "u_buy_item": "aspirin", "container": "bottle_plastic_small", "cost": 4000, "count": 20 } ],
         "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
       },
       {
@@ -476,5 +475,122 @@
         "topic": "TALK_Zhigh_SoldierMedic_STIMDEAL_END"
       }
     ]
+  },
+  {
+    "type": "npc",
+    "id": "Zhigh_cult",
+    "class": "NC_ZHIGHCULTIST",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_ZHIGH_CULTIST",
+    "faction": "gods_community"
+  },
+  {
+    "type": "npc",
+    "id": "Zhigh_cult2",
+    "class": "NC_ZHIGHCULTIST",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_GODCO_cook_1",
+    "mission_offered": "MISSION_GODCO_COOK_FOOD_1",
+    "faction": "gods_community"
+  },
+  {
+    "type": "npc",
+    "id": "Zhigh_cult3",
+    "class": "NC_ZHIGHCULTIST",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_GODCO_food_guard_1",
+    "mission_offered": "MISSION_GODCO_FOOD_GUARD_BOOK",
+    "faction": "gods_community"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_ZHIGHCULTIST",
+    "name": { "str": "Member" },
+    "job_description": "I'm protecting my area.",
+    "traits": [ 
+      { "group": "BG_survival_story_RURAL" }, 
+      { "group": "NPC_starting_traits" }, 
+      { "group": "Appearance_Mixed" } ],
+    "bonus_str": { "rng": [ 4, 7 ] },
+    "bonus_dex": { "rng": [ 4, 7 ] },
+    "bonus_int": { "rng": [ 4, 7 ] },
+    "bonus_per": { "rng": [ 4, 7 ] },
+    "worn_override": "NC_ZhighCULTIST_worn",
+    "carry_override": "ZhighNpc_misc",
+    "weapon_override": "NC_ZhighCULTIST_wield",
+    "shopkeeper_item_group": "ZhighNpc_misc",
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "melee", "bonus": { "rng": [ 2, 5 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "stabbing", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "throw", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 2, 5 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ZhighCULTIST_wield",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "knife_baselard" },
+      { "item": "knife_trench" },
+      { "item": "knife_rm42" },
+      { "item": "knife_rambo" },
+      { "item": "knife_hunting" },
+      { "item": "knife_combat" },
+      { "item": "knife_tooth" },
+      { "item": "knife_carbon" },
+      { "item": "knife_chef" },
+      { "item": "knife_triffid" },
+      { "item": "knife_stinger" },
+      { "item": "cultDaggerZhigh1" },
+      { "item": "cultDaggerZhigh2" },
+      { "item": "cultDaggerZhigh3" },
+      { "item": "cultDaggerZhigh4" },
+      { "item": "cultDaggerZhigh5" },
+      { "item": "cultDaggerZhigh6" },
+      { "item": "knife_hitmanZhigh" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ZhighCULTIST_worn",
+    "subtype": "collection",
+    "items": [
+      { "item": "boxer_briefs" },
+      { "item": "dress_shirt_zhigh" },
+      { "item": "pants_zhigh" },
+      { "group": "npc_gloves" },
+      { "group": "npc_shoes_male" },
+      { "group": "npc_extra" },
+      { "group": "npc_wrist" },
+      { "item": "bead_necklace" },
+      { "item": "bead_bracelet" },
+      { "item": "badge_lightV2" },
+      { "item": "jedi_cloak" },
+      { "item": "mask_dust" },
+      { "group": "ZhighNpc_underwear_feet_male" }
+    ]
+  },
+  {
+    "id": "TALK_ZHIGH_CULTIST",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "...",
+      "[Unknown mumbling]",
+      "[Unknown praying]",
+      {
+        "u_male": [ "Hey.", "Rough out there, isn't it?" ],
+        "no": [ "Hey.", "Hey, you really shouldn't be traveling out there." ]
+      }
+    ],
+    "responses": [ { "text": "Don't mind me…", "topic": "TALK_DONE" } ]
   }
 ]

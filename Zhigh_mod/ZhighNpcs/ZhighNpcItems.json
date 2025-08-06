@@ -18,6 +18,7 @@
       [ "impact_knuckle", 5 ],
       [ "jangdoZhigh", 1 ],
       [ "hwandoZhigh_fake", 1 ],
+      [ "colorGuardRifle", 5 ],
       [ "pipeMaceZhigh", 5 ],
       [ "spearPipeZhigh", 5 ],
       [ "knife_messerZhigh", 5 ],
@@ -215,170 +216,16 @@
       [ "tomahawk_copper", 5 ],
       [ "indiTomahawk", 5 ],
       [ "cestus_bone", 5 ],
+      [ "ladleZhigh", 5 ],
+      [ "hammer_toyZhigh", 5 ],
+      [ "spring_coshExtended", 5 ],
+      [ "shinKalZhigh", 1 ],
       [ "pipe", 20 ],
 	  { "group": "ZhighNpc_stabbing", "prob": 15 },
 	  { "group": "NC_THUG_bashing", "prob": 15 },
 	  { "group": "NC_THUG_cutting", "prob": 15 },
 	  { "group": "NC_THUG_stabbing", "prob": 15 },
 	  { "group": "NC_THUG_unarmed", "prob": 15 }
-    ]
-  },
-  {
-    "type": "item_group",
-    "id": "Zhigh2NpcRange_coat",
-    "items": [
-      { "group": "museum_armor_torso", "prob": 20 },
-      { "group": "coats_unisex", "prob": 80 }
-    ]
-  },
-  {
-    "type": "item_group",
-    "id": "Zhigh2NpcMelee_hat",
-    "items": [
-      { "group": "hats_unisex", "prob": 20 },
-      { "group": "museum_armor_head", "prob": 60 },
-      { "group": "hatstore_hats", "prob": 20 }
-    ]
-  },
-  {
-    "type": "item_group",
-    "id": "Zhigh2NpcRange_hat",
-    "items": [
-      { "group": "museum_armor_head", "prob": 30 },
-      { "group": "hats_unisex", "prob": 20 },
-      { "group": "hatstore_hats", "prob": 50 }
-    ]
-  },
-  {
-    "type": "item_group",
-    "id": "ZhighNpc_underwear_feet_male",
-    "items": [ 
-      [ "socks", 80 ], 
-      [ "socks_ankle", 60 ], 
-      [ "socks_bowling", 5 ],
-      [ "socks_wool", 20 ]
-     ]
-  },
-  {
-    "type": "item_group",
-    "id": "ZhighNpc_underwear_feet_female",
-    "items": [
-      [ "socks", 50 ],
-      [ "socks_ankle", 30 ],
-      [ "socks_wool", 10 ],
-      [ "stockings", 25 ],
-      [ "socks_bowling", 5 ],
-      [ "tights", 20 ]
-    ]
-  },
-  {
-    "type": "item_group",
-    "id": "ZhighNpc_suit_pants_male",
-    "items": [
-      [ "pants_zhigh", 100 ]
-    ]
-  },
-  {
-    "type": "item_group",
-    "id": "ZhighNpc_suit_pants_female",
-    "items": [
-      [ "pants_zhigh", 20 ],
-      [ "skirt_zhigh", 90 ]
-    ]
-  },
-  {
-    "type": "item_group",
-    "id": "ZhighNpc_Tie",
-    "items": [
-      [ "tie_necktie_zhigh", 50 ],
-      [ "tie_bow_zhigh", 50 ]
-    ]
-  },
-  {
-    "type": "item_group",
-    "id": "ZhighNpc_workout_pants_male",
-    "items": [
-      [ "shorts_tracksuit_zhigh", 60 ],
-      [ "pants_tracksuit_zhigh", 40 ]
-    ]
-  },
-  {
-    "type": "item_group",
-    "id": "ZhighNpc_workout_pants_female",
-    "items": [
-      [ "shorts_tracksuit_zhigh", 60 ],
-      [ "pants_tracksuit_zhigh", 40 ]
-    ]
-  },
-  {
-    "type": "item_group",
-    "id": "ZhighNpc_shirt_male",
-    "items": [
-      [ "dress_shirt_zhigh", 100 ]
-    ]
-  },
-  {
-    "type": "item_group",
-    "id": "ZhighNpc_shirt_female",
-    "items": [
-      [ "dress_shirt_zhigh", 100 ]
-    ]
-  },
-  {
-    "type": "item_group",
-    "id": "ZhighNpc_gloves",
-    "items": [
-      [ "null", 60 ],
-      [ "gloves_leather", 20 ],
-      [ "gloves_fingerless", 10 ],
-      [ "gloves_light_fingerless", 5 ],
-      [ "gloves_wool_fingerless", 5 ],
-      [ "fire_gauntlets", 20 ],
-      [ "gloves_work", 10 ],
-      [ "gloves_fingerless_mod", 5 ],
-      [ "gloves_medical", 10 ],
-      [ "gloves_winter", 5 ],
-      [ "gloves_wool", 20 ],
-      [ "gloves_light", 20 ],
-      [ "gloves_tactical", 5 ]
-    ]
-  },
-  {
-    "type": "item_group",
-    "id": "ZhighNpc_coat",
-    "items": [
-      [ "null", 5 ],
-      [ "blazer_zhigh", 95 ],
-      [ "jacket_baseball", 5 ],
-      [ "jacket_baseball_2", 15 ]
-    ]
-  },
-  {
-    "type": "item_group",
-    "id": "ZhighNpc_shoes_male",
-    "items": [
-      { "group": "shoes_unisex", "prob": 80 },
-      [ "mocassins", 10 ],
-      [ "roller_shoes_off", 10 ],
-      [ "shoes_bowling", 20 ],
-      [ "golf_shoes", 10 ],
-      [ "dress_shoes", 80 ],
-      [ "sneakers", 60 ],
-      [ "lowtops", 40 ]
-    ]
-  },
-  {
-    "type": "item_group",
-    "id": "ZhighNpc_shoes_female",
-    "items": [
-      { "group": "shoes_unisex", "prob": 80 },
-      [ "mocassins", 10 ],
-      [ "roller_shoes_off", 10 ],
-      [ "shoes_bowling", 20 ],
-      [ "golf_shoes", 20 ],
-      [ "dress_shoes", 80 ],
-      [ "sneakers", 80 ],
-      [ "lowtops", 40 ]
     ]
   },
   {
@@ -668,17 +515,202 @@
       [ "arrowHairbandZhigh", 5 ],
       [ "appleHairbandZhigh", 5 ],
       [ "nailHairbandZhigh", 5 ],
+      [ "knifeHairbandZhigh", 5 ],
       [ "helmet_pith", 5 ],
       [ "boater", 5 ],
       [ "mask_cavalry_chitin", 5 ],
       [ "mask_cavalry_acidchitin", 5 ],
       [ "hat_visorZhigh", 5 ],
+      [ "helmet_heliZhigh", 5 ],
+      [ "beekeepingMedievalZhigh", 5 ],
       [ "scouter", 1 ],
       [ "knee_pads", 5 ],
       [ "elbow_pads", 5 ],
       [ "bookplate", 5 ],
       [ "legguard_paper", 5 ],
       [ "armguard_paper", 5 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "Zhigh2NpcRange_coat",
+    "items": [
+      { "group": "museum_armor_torso", "prob": 20 },
+      { "group": "coats_unisex", "prob": 80 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "Zhigh2NpcMelee_hat",
+    "items": [
+      { "group": "hats_unisex", "prob": 20 },
+      { "group": "museum_armor_head", "prob": 60 },
+      { "group": "hatstore_hats", "prob": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "Zhigh2NpcRange_hat",
+    "items": [
+      { "group": "museum_armor_head", "prob": 30 },
+      { "group": "hats_unisex", "prob": 20 },
+      { "group": "hatstore_hats", "prob": 50 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ZhighNpc_underwear_feet_male",
+    "items": [ 
+      [ "socks", 80 ], 
+      [ "socks_ankle", 60 ], 
+      [ "socks_bowling", 5 ],
+      [ "socks_wool", 20 ]
+     ]
+  },
+  {
+    "type": "item_group",
+    "id": "ZhighNpc_underwear_feet_female",
+    "items": [
+      [ "socks", 50 ],
+      [ "socks_ankle", 30 ],
+      [ "socks_wool", 10 ],
+      [ "stockings", 25 ],
+      [ "socks_bowling", 5 ],
+      [ "tights", 20 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ZhighNpc_suit_pants_male",
+    "items": [
+      [ "pants_zhigh", 100 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ZhighNpc_suit_pants_female",
+    "items": [
+      [ "pants_zhigh", 20 ],
+      [ "skirt_zhigh", 90 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ZhighNpc_Tie",
+    "items": [
+      [ "tie_necktie_zhigh", 50 ],
+      [ "tie_bow_zhigh", 50 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ZhighNpc_workout_pants_male",
+    "items": [
+      [ "shorts_tracksuit_zhigh", 60 ],
+      [ "pants_tracksuit_zhigh", 40 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ZhighNpc_workout_pants_female",
+    "items": [
+      [ "shorts_tracksuit_zhigh", 60 ],
+      [ "pants_tracksuit_zhigh", 40 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ZhighNpc_shirt_male",
+    "items": [
+      [ "dress_shirt_zhigh", 100 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ZhighNpc_shirt_female",
+    "items": [
+      [ "dress_shirt_zhigh", 100 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ZhighNpc_gloves",
+    "items": [
+      [ "null", 60 ],
+      [ "gloves_leather", 20 ],
+      [ "gloves_fingerless", 10 ],
+      [ "gloves_light_fingerless", 5 ],
+      [ "gloves_wool_fingerless", 5 ],
+      [ "fire_gauntlets", 20 ],
+      [ "gloves_work", 10 ],
+      [ "gloves_fingerless_mod", 5 ],
+      [ "gloves_medical", 10 ],
+      [ "gloves_winter", 5 ],
+      [ "gloves_wool", 20 ],
+      [ "gloves_light", 20 ],
+      [ "gloves_tactical", 5 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ZhighNpc_coat",
+    "items": [
+      [ "null", 5 ],
+      [ "blazer_zhigh", 95 ],
+      [ "jacket_baseball", 5 ],
+      [ "jacket_baseball_2", 15 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ZhighNpc_shoes_male",
+    "items": [
+      { "group": "shoes_unisex", "prob": 80 },
+      [ "mocassins", 10 ],
+      [ "roller_shoes_off", 10 ],
+      [ "shoes_bowling", 20 ],
+      [ "golf_shoes", 10 ],
+      [ "dress_shoes", 80 ],
+      [ "sneakers", 60 ],
+      [ "lowtops", 40 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ZhighNpc_shoes_female",
+    "items": [
+      { "group": "shoes_unisex", "prob": 80 },
+      [ "mocassins", 10 ],
+      [ "roller_shoes_off", 10 ],
+      [ "shoes_bowling", 20 ],
+      [ "golf_shoes", 20 ],
+      [ "dress_shoes", 80 ],
+      [ "sneakers", 80 ],
+      [ "lowtops", 40 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ZhighNpc_shoesAll",
+    "items": [
+      { "group": "shoes_unisex", "prob": 80 },
+      { "group": "shoestore_shoes", "prob": 20 },
+      [ "flip_flops", 10 ],
+      [ "boots", 10 ],
+      [ "boots_steel", 10 ],
+      [ "boots_hiking", 10 ],
+      [ "dress_shoes", 10 ],
+      [ "roller_shoes_off", 10 ],
+      [ "clogs", 10 ],
+      [ "boots_western", 10 ],
+      [ "dance_shoes", 10 ],
+      [ "boots_rubber", 10 ],
+      [ "roller_shoes_off", 10 ],
+      [ "shoes_bowling", 20 ],
+      [ "golf_shoes", 20 ],
+      [ "dress_shoes", 80 ],
+      [ "sneakers", 80 ],
+      [ "lowtops", 40 ]
     ]
   },
   {

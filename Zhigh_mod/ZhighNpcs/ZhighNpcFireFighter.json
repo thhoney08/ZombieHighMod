@@ -1,0 +1,436 @@
+[
+  {
+    "type": "npc",
+    "id": "Zhigh_FIREFIGHTERZHIGH_guard",
+    "name_suffix": "Firefighter",
+    "class": "NC_ZHIGHFIREFIGHTERZHIGH",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_GUARD",
+    "faction": "free_merchants"
+  },
+  {
+    "type": "npc",
+    "id": "Zhigh_FIREFIGHTERZHIGH",
+    "name_suffix": "Firefighter Chief",
+    "class": "NC_ZHIGHFIREFIGHTERZHIGH",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_Zhigh_FIREFIGHTERZHIGH",
+    "faction": "free_merchants"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_ZHIGHFIREFIGHTERZHIGH",
+    "name": { "str": "Firefighter" },
+    "job_description": "I'm protecting my station.",
+    "common": false,
+    "traits": [ 
+      { "group": "BG_survival_story_RURAL" }, 
+      { "group": "NPC_starting_traits" }, 
+      { "group": "Appearance_Mixed" },
+      { "trait": "REGEN_zhigh" } ],
+    "bonus_str": { "rng": [ 6, 8 ] },
+    "bonus_dex": { "rng": [ 3, 4 ] },
+    "bonus_per": { "rng": [ 4, 6 ] },
+    "worn_override": "NC_FIREFIGHTERZHIGH_worn",
+    "carry_override": "NC_FIREFIGHTERZHIGH_misc",
+    "weapon_override": "NC_FIREFIGHTERZHIGH_wield",
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
+      { "skill": "melee", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "stabbing", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "throw", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "launcher", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "shotgun", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "smg", "bonus": { "rng": [ 3, 5 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FIREFIGHTERZHIGH_worn",
+    "subtype": "collection",
+    "items": [
+      { "item": "boxer_briefs" },
+      { "item": "bunker_pants" },
+      { "item": "bunker_coat" },
+      { "item": "nomex_socks" },
+      { "item": "nomex_gloves" },
+      { "item": "boots_bunker" },
+      { "item": "backpack" },
+      { "group": "NC_FIREFIGHTERZHIGH_head" },
+      { "group": "npc_extra" },
+      { "group": "npc_wrist" },
+      { "group": "npc_storage" },
+      { "item": "fireman_belt" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FIREFIGHTERZHIGH_head",
+    "items": [
+      { "item": "nomex_hood", "prob": 10 },
+      { "item": "firehelmet", "prob": 10 },
+      { "item": "mask_gas", "prob": 10 },
+      { "item": "mask_bunker", "prob": 10 },
+      { "item": "tac_helmet", "prob": 10 },
+      { "item": "helmet_skid", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FIREFIGHTERZHIGH_misc",
+    "subtype": "collection",
+    "entries": [
+      { "group": "npc_misc" },
+      { "group": "fireman_gear" },
+      { "group": "ZhighNpc_throw", "count": [ 1, 2 ], "prob": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FIREFIGHTERZHIGH_wield",
+    "subtype": "distribution",
+    "items": [
+      { "item": "fire_ax", "prob": 10 },
+      { "item": "halligan", "prob": 10 },
+      { "item": "hammer_sledge", "prob": 10 },
+      { "item": "hammer_sledge_short", "prob": 10 },
+      { "item": "hammer_sledge_engineer", "prob": 10 },
+      { "item": "hammer_sledge_heavy", "prob": 10 },
+      { "item": "shovel", "prob": 10 },
+      { "item": "pike_pole", "prob": 10 },
+      { "item": "ny_hook", "prob": 10 },
+      { "item": "crowbar", "prob": 10 },
+      { "item": "crash_axe", "prob": 10 }
+     ]
+  },
+  {
+    "id": "TALK_Zhigh_FIREFIGHTERZHIGH",
+    "type": "talk_topic",
+    "dynamic_line": [
+	    "Welcome...", 
+		"Oi <name_g>!", 
+		"Welcome.",
+		"Good to see you again, <name_g>.",
+		"Hey <name_g>!",
+		"Here to trade stuff, I hope?",
+		"Safe travels, <name_g>."
+    ],
+    "responses": [
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_Zhigh_FIREFIGHTERZHIGH" },
+      { "text": "What are you doing here?", "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DOING" },
+      { "text": "I'd like to buy some items.", "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL" },
+      { "text": "Well, bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_Zhigh_FIREFIGHTERZHIGH_DOING",
+    "type": "talk_topic",
+    "dynamic_line": [
+		"We have been supplying people help.  The roads are though and dangerous, but there is no other way.  And do not ask about where did these chems from, I've got my own ways."
+    ],
+    "responses": [ { "text": "Okay then.  Keep safe, Firefighter.", "topic": "TALK_Zhigh_FIREFIGHTERZHIGH" } ]
+  },
+  {
+    "id": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "npc_has_effect": "currently_busy",
+      "yes": "Not now, <name_g>.  It takes a while to get the meds - but I'm working hard to replace it.  What can I get you in the meantime?",
+      "no": "I'll see what I've got around here for you.  I've gotta warn you: it ain't cheap.  Hard to stay supplied in the apocalypse, you know.  What do you need?"
+    },
+    "responses": [
+      { "text": "Nevermind.", "topic": "TALK_DONE" },
+      {
+        "text": "[10$]  I'll buy some bandages.",
+        "effect": [ { "u_buy_item": "bandages", "cost": 1000, "container": "bag_plastic", "count": 20 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      },
+      {
+        "text": "[40$]  I'll buy some aspirin.",
+        "effect": [ { "u_buy_item": "aspirin", "container": "bottle_plastic_small", "cost": 4000, "count": 20 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      },
+      {
+        "text": "[750$]  I'll buy three basic medkits.",
+        "effect": [ { "u_buy_item": "medkit1", "cost": 75000, "count": 3 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      },
+      {
+        "text": "[20$]  I'll buy some dragon's breath shells.",
+        "effect": [ { "u_buy_item": "shot_dragon", "cost": 6000, "count": 20 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      },
+      {
+        "text": "[200$]  I'll buy a fireaxe.",
+        "effect": [ { "u_buy_item": "fire_ax", "cost": 20000, "count": 1 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      },
+      {
+        "text": "[30$]  I'll buy a crash axe.",
+        "effect": [ { "u_buy_item": "crash_axe", "cost": 3000, "count": 1 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      },
+      {
+        "text": "[60$]  I'll buy a fire extinguisher.",
+        "effect": [ { "u_buy_item": "extinguisher", "cost": 6000, "count": 1 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      },
+      {
+        "text": "[120$]  I'll buy a scorch shot.",
+        "effect": [ { "u_buy_item": "scorchShotZhigh", "cost": 12000, "count": 1 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      },
+      {
+        "text": "[120$]  I'll buy a detonator.",
+        "effect": [ { "u_buy_item": "DetonatorZhigh", "cost": 12000, "count": 1 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      },
+      {
+        "text": "[120$]  I'll buy a manmelter.",
+        "effect": [ { "u_buy_item": "ManmelterZhigh", "cost": 12000, "count": 1 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      },
+      {
+        "text": "[120$]  I'll buy a blaze blast.",
+        "effect": [ { "u_buy_item": "blazeBlastZhigh", "cost": 12000, "count": 1 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      },
+      {
+        "text": "[120$]  I'll buy a spitfire.",
+        "effect": [ { "u_buy_item": "spitfireZhigh", "cost": 12000, "count": 1 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      }
+    ]
+  },
+  {
+    "id": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END",
+    "type": "talk_topic",
+    "dynamic_line": [ "Is there anything else you need?" ],
+    "responses": [
+      { "text": "Nevermind.", "topic": "TALK_DONE" },
+      {
+        "text": "[10$]  I'll buy some bandagess.",
+        "effect": [ { "u_buy_item": "bandages", "cost": 1000, "container": "bag_plastic", "count": 20 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      },
+      {
+        "text": "[40$]  I'll buy some aspirin.",
+        "effect": [ { "u_buy_item": "aspirin", "container": "bottle_plastic_small", "cost": 4000, "count": 20 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      },
+      {
+        "text": "[750$]  I'll buy three basic medkits.",
+        "effect": [ { "u_buy_item": "medkit1", "cost": 75000, "count": 3 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      },
+      {
+        "text": "[20$]  I'll buy some dragon's breath shells.",
+        "effect": [ { "u_buy_item": "shot_dragon", "cost": 6000, "count": 20 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      },
+      {
+        "text": "[200$]  I'll buy a fireaxe.",
+        "effect": [ { "u_buy_item": "fire_ax", "cost": 20000, "count": 1 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      },
+      {
+        "text": "[30$]  I'll buy a crash axe.",
+        "effect": [ { "u_buy_item": "crash_axe", "cost": 3000, "count": 1 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      },
+      {
+        "text": "[60$]  I'll buy a fire extinguisher.",
+        "effect": [ { "u_buy_item": "extinguisher", "cost": 6000, "count": 1 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      },
+      {
+        "text": "[120$]  I'll buy a scorch shot.",
+        "effect": [ { "u_buy_item": "scorchShotZhigh", "cost": 12000, "count": 1 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      },
+      {
+        "text": "[120$]  I'll buy a detonator.",
+        "effect": [ { "u_buy_item": "DetonatorZhigh", "cost": 12000, "count": 1 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      },
+      {
+        "text": "[120$]  I'll buy a manmelter.",
+        "effect": [ { "u_buy_item": "ManmelterZhigh", "cost": 12000, "count": 1 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      },
+      {
+        "text": "[120$]  I'll buy a blaze blast.",
+        "effect": [ { "u_buy_item": "blazeBlastZhigh", "cost": 12000, "count": 1 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      },
+      {
+        "text": "[120$]  I'll buy a spitfire.",
+        "effect": [ { "u_buy_item": "spitfireZhigh", "cost": 12000, "count": 1 } ],
+        "topic": "TALK_Zhigh_FIREFIGHTERZHIGH_DEAL_END"
+      }
+    ]
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "fire_station" ],
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "ssssssppppppppppppppppp'",
+        "--O--sPpppppppPpppppppPs",
+        "|Acx|sPpppppppPpppppppPs",
+        "| cjOsPpppppppPpppppppPs",
+        "| jj|sPpppppppPpppppppPs",
+        "|r  LsPpppppppPpppppppPs",
+        "|r  |sPpppppppPpppppppPI",
+        "|  ^|sPpppppppPpppppppPs",
+        "|-D----MMMMMMM-MMMMMMM--",
+        "|    |w.......t.......w|",
+        "|    Dt.......t.......t|",
+        "|c#c |t.......t.......t|",
+        "|c#c |t.......t.......t|",
+        "|c#c |t.......t.......t|",
+        "|    |t.......t.......t|",
+        "|-+--|t.......t.......t|",
+        "|F @@|t.......t.......t|",
+        "|#  g|t.......t.......t|",
+        "|c @@|t.......t.......t|",
+        "|   g|t.......t.......t|",
+        "|+|  |ttttttttttttttttt|",
+        "|T|o&|ttltltltttltltltt|",
+        "|----------------------|",
+        "_____________________4__"
+      ],
+      "palettes": [ "fire_station" ],
+      "terrain": { "'": "t_sidewalk", "O": "t_window", "T": "t_thconc_floor", "L": "t_door_locked" },
+      "place_npcs": [
+        { "class": "Zhigh_FIREFIGHTERZHIGH_guard", "x": [ 10, 20 ], "y": [ 10, 20 ] },
+        { "class": "Zhigh_FIREFIGHTERZHIGH_guard", "x": [ 10, 20 ], "y": [ 10, 20 ] },
+        { "class": "Zhigh_FIREFIGHTERZHIGH_guard", "x": [ 10, 20 ], "y": [ 10, 20 ] },
+        { "class": "Zhigh_FIREFIGHTERZHIGH", "x": [ 10, 20 ], "y": [ 10, 20 ] }
+      ],
+      "place_items": [
+        { "item": "bed", "x": [ 3, 4 ], "y": [ 16, 16 ], "chance": 80 },
+        { "item": "bed", "x": [ 3, 4 ], "y": [ 18, 18 ], "chance": 80 },
+        { "item": "fireman_doc", "x": [ 1, 1 ], "y": [ 2, 2 ], "chance": 70 },
+        { "item": "fireman_gear", "x": [ 1, 1 ], "y": [ 5, 5 ], "chance": 70 },
+        { "item": "fireman_gear", "x": [ 1, 1 ], "y": [ 6, 6 ], "chance": 70 },
+        { "item": "fridgesnacks", "x": [ 1, 1 ], "y": [ 16, 16 ], "chance": 70 },
+        { "item": "novels", "x": [ 1, 1 ], "y": [ 17, 17 ], "chance": 70 },
+        { "item": "fireman_pants", "x": [ 4, 4 ], "y": [ 17, 17 ], "chance": 70 },
+        { "item": "fireman_boots", "x": [ 4, 4 ], "y": [ 19, 19 ], "chance": 70 },
+        { "item": "oven", "x": [ 3, 3 ], "y": [ 21, 21 ], "chance": 70 },
+        { "item": "fireman_gear", "x": [ 8, 8 ], "y": [ 21, 21 ], "chance": 70 },
+        { "item": "fireman_torso", "x": [ 10, 10 ], "y": [ 21, 21 ], "chance": 70 },
+        { "item": "fireman_head", "x": [ 12, 12 ], "y": [ 21, 21 ], "chance": 70 },
+        { "item": "fireman_gloves", "x": [ 16, 16 ], "y": [ 21, 21 ], "chance": 70 },
+        { "item": "fireman_mask", "x": [ 18, 18 ], "y": [ 21, 21 ], "chance": 70 },
+        { "item": "fireman_gear", "x": [ 20, 20 ], "y": [ 21, 21 ], "chance": 70 }
+      ],
+      "place_monsters": [ { "monster": "GROUP_FIRE", "x": [ 2, 21 ], "y": [ 9, 21 ], "chance": 1 } ],
+      "place_vehicles": [ { "vehicle": "fire_engine", "x": 10, "y": 12, "chance": 80, "rotation": 270 } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "fire_station_1" ],
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "__PpppppppPpppppppP__s_'",
+        "_||MMMMMMM|MMMMMMM||_s__",
+        "_|w.......t.......w|_s__",
+        "_|t.......t.......t|_s_S",
+        "_|t.......t.......t|ss__",
+        "_|t.......t.......t|Is_a",
+        "_|t.......t.......t|ss__",
+        "_|t.......t.......t|_s_S",
+        "_|t.......t.......t|_s__",
+        "_|t.......t.......t|_s_a",
+        "_|t.......t.......t|_s_4",
+        "_|t.......t.......t||D||",
+        "_|t.......t.......t|  ^|",
+        "_|tttttttttttttttttD   |",
+        "_|rtrtrttt11rr11ttt| #xW",
+        "_||||||||D||||||D||| #c|",
+        "_ss|ee|HH AAAAAA   + #c|",
+        "_s<|tt|H#          +   W",
+        "_ss||+|H#        |||||||",
+        "_ss|&     c#c    |@@g@@|",
+        "___||+|F  c#c    +     h",
+        "___|Tt|&ojc#c E5B|@@g@@|",
+        "___|||||WW|W|WW|||||||||",
+        "________________________"
+      ],
+      "palettes": [ "fire_station" ],
+      "terrain": {
+        "S": "t_shrub_rose",
+        "a": "t_shrub_lilac",
+        "1": "t_thconc_floor",
+        "e": "t_thconc_floor",
+        "i": "t_thconc_floor",
+        "r": "t_thconc_floor",
+        "'": "t_region_groundcover_urban",
+        "W": "t_window_domestic",
+        "h": "t_curtains",
+        "<": "t_ladder_up",
+        "T": "t_thconc_floor"
+      },
+      "place_npcs": [
+        { "class": "Zhigh_FIREFIGHTERZHIGH_guard", "x": [ 10, 20 ], "y": [ 10, 20 ] },
+        { "class": "Zhigh_FIREFIGHTERZHIGH_guard", "x": [ 10, 20 ], "y": [ 10, 20 ] },
+        { "class": "Zhigh_FIREFIGHTERZHIGH_guard", "x": [ 10, 20 ], "y": [ 10, 20 ] },
+        { "class": "Zhigh_FIREFIGHTERZHIGH", "x": [ 10, 20 ], "y": [ 10, 20 ] }
+      ],
+      "furniture": { "1": "f_table", "5": "f_ergometer", "B": "f_bookcase", "E": "f_exercise", "H": "f_sofa", "e": "f_shower" },
+      "place_items": [
+        { "item": "mechanics", "x": 15, "y": 14, "chance": 25 },
+        { "item": "mechanics", "x": [ 10, 11 ], "y": 14, "chance": 25 },
+        { "item": "fireman_pants", "x": 11, "y": 16, "chance": 70 },
+        { "item": "fireman_doc", "x": 16, "y": 21, "chance": 70 },
+        { "item": "fireman_head", "x": 14, "y": 16, "chance": 70 },
+        { "item": "fireman_torso", "x": 10, "y": 16, "chance": 70 },
+        { "item": "tools_mechanic", "x": 12, "y": 14, "chance": 25 },
+        { "item": "tools_mechanic", "x": 6, "y": 14, "chance": 25 },
+        { "item": "tools_mechanic", "x": 2, "y": 14, "chance": 25 },
+        { "item": "SUS_fridge", "x": 7, "y": 20, "chance": 70 },
+        { "item": "home_hw", "x": 14, "y": 14, "chance": 70 },
+        { "item": "fireman_mask", "x": 15, "y": 16, "chance": 70 },
+        { "item": "gym", "x": 15, "y": 21, "chance": 70 },
+        { "item": "dining", "x": 11, "y": [ 19, 21 ], "chance": 70 },
+        { "item": "fireman_gloves", "x": 13, "y": 16, "chance": 70 },
+        { "item": "clutter_bathroom", "x": [ 4, 5 ], "y": 16, "chance": 70 },
+        { "item": "snacks", "x": 8, "y": 17, "chance": 70 },
+        { "item": "fireman_gear", "x": 13, "y": 14, "chance": 70 },
+        { "item": "fireman_boots", "x": 12, "y": 16, "chance": 70 },
+        { "item": "dresser", "x": 20, "y": 21, "chance": 70 },
+        { "item": "dresser", "x": 20, "y": 19, "chance": 70 },
+        { "item": "kitchen", "x": [ 8, 9 ], "y": 21, "chance": 70 },
+        { "item": "fireman_gear", "x": 4, "y": 14, "chance": 70 },
+        { "item": "bed", "x": 22, "y": 21, "chance": 70 },
+        { "item": "bed", "x": 18, "y": 21, "chance": 70 },
+        { "item": "bed", "x": 21, "y": 19, "chance": 70 },
+        { "item": "bed", "x": 19, "y": 19, "chance": 70 }
+      ],
+      "place_monsters": [ { "monster": "GROUP_FIRE", "x": 10, "y": 16, "chance": 1 } ],
+      "place_vehicles": [
+        { "vehicle": "fire_truck", "x": 5, "y": 5, "rotation": 270, "chance": 20 },
+        { "vehicle": "fire_engine", "x": 14, "y": 5, "rotation": 270, "chance": 20 }
+      ]
+    }
+  }
+]
