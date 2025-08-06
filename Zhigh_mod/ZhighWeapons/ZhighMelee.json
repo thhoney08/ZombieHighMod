@@ -433,6 +433,18 @@
     "flags": [ "STAB", "SHEATH_KNIFE", "NONCONDUCTIVE", "DURABLE_MELEE" ]
   },
   {
+    "id": "karambit_tooth",
+    "type": "GENERIC",
+    "copy-from": "karambit",
+    "looks_like": "bone_knife",
+    "name": { "str": "bone karambit" },
+    "description": "A karambit made from a wooden handle with razor-sharp bone.",
+    "material": [ "bone" ],
+    "proportional": { "weight": 0.8, "cutting": 0.9 },
+    "//": "Same qualities as all the other daggers but gains fine cutting",
+    "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 20 ] ]
+  },
+  {
     "id": "baton_light",
     "type": "TOOL",
     "copy-from": "cudgel",
@@ -5606,5 +5618,142 @@
     "material": [ "bone", "leather" ],
     "cutting": 4,
     "extend": { "flags": [ "STAB" ] }
+  },
+  {
+    "id": "colorGuardRifle",
+    "looks_like": "sharps",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "CLUBS", "RIFLES", "BATONS" ],
+    "name": { "str": "color guard rifle" },
+    "description": "A fake rifle painted in white.  Could be used as a cudgel.  Could damage things.  Hard.  Also with a strap that you can wear.",
+    "to_hit": 2,
+    "price_postapoc": "50 cent",
+    "color": "brown",
+    "symbol": "/",
+    "material": [ "wood" ],
+    "techniques": [ "WBLOCK_2", "RAPID" ],
+    "armor_data": { "covers": [ "torso" ], "coverage": 10, "encumbrance": 5, "material_thickness": 2 },
+    "flags": [ "OVERSIZE", "BELT_CLIP", "BELTED", "RESTRICT_HANDS" ],
+    "weight": "4200 g",
+    "volume": "2600 ml",
+    "bashing": 13,
+    "price": "10 USD"
+  },
+  {
+    "id": "shinKalZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "SHORT_SWORDS" ],
+    "name": { "str_sp": "sibyl sword" },
+    "description": "A sword which is used by a sibyl during a ceremony.  It was not used for actual melee, but the weight packs a punch.",
+    "weight": "850 g",
+    "volume": "1750 ml",
+    "price": "125 USD",
+    "price_postapoc": "35 USD",
+    "bashing": 38,
+    "material": "aluminum",
+    "symbol": "/",
+    "color": "yellow",
+    "techniques": [ "WBLOCK_2" ],
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 8 ] ],
+    "flags": [ "SHEATH_SWORD" ]
+  },
+  {
+    "type": "GENERIC",
+    "category": "other",
+    "id": "ladleZhigh",
+    "name": { "str": "ladle" },
+    "description": "When you need to scoop some soup, this is the utensil for you.",
+    "looks_like": "spoon",
+    "bashing": 12,
+    "to_hit": 1,
+    "qualities": [ [ "DIG", 2 ], [ "COOK", 1 ] ],
+    "copy-from": "base_utensil"
+  },
+  {
+    "id": "hammer_toyZhigh",
+    "type": "GENERIC",
+    "copy-from": "hammer_sledge",
+    "name": { "str": "toy hammer" },
+    "description": "A toy hammer, used when playing.  Not that damaging, but can knock someone off.",
+    "weight": "200 g",
+    "looks_like": "hammer_sledge",
+    "flags": [ "NONCONDUCTIVE", "BELT_CLIP" ],
+    "volume": "600 ml",
+    "bashing": 8,
+    "to_hit": 1,
+    "price": "10 USD",
+    "price_postapoc": "20 cent",
+    "qualities": [  ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "stunnedZhigh",
+              "message": "The hammer stuns your target.",
+              "npc_message": "%1$s stuns their target."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "chinaChefKnife",
+    "looks_like": "knife_meat_cleaver",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "1H_AXES" ],
+    "name": { "str": "Chinese chef's knife" },
+    "description": "This huge steel knife makes an excellent tool for cutting down large vegetation or other 'obstacles.'  Also incorrectly referred to as a \"Chinese cleaver\", due its similar rectangular shape.",
+    "weight": "538 g",
+    "volume": "280 ml",
+    "price": "28 USD",
+    "price_postapoc": "15 USD",
+    "to_hit": 1,
+    "bashing": 1,
+    "cutting": 15,
+    "material": "steel",
+    "symbol": "/",
+    "color": "dark_gray",
+    "techniques": [ "WBLOCK_2" ],
+    "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 10 ] ],
+    "flags": [ "DURABLE_MELEE", "SHEATH_KNIFE", "NONCONDUCTIVE" ]
+  },
+  {
+    "id": "spring_cosh",
+    "looks_like": "baton",
+    "type": "GENERIC",
+    "category": "weapons",
+    "name": { "str": "spring cosh" },
+    "description": "A telescoping spring cosh that collapses for easy storage.  Makes an excellent melee weapon.  Activate to expand.",
+    "weight": "785 g",
+    "color": "dark_gray",
+    "price_postapoc": "750 cent",
+    "symbol": "/",
+    "material": [ "steel" ],
+    "flags": [ "DURABLE_MELEE", "BELT_CLIP" ],
+    "use_action": { "menu_text": "Expand", "type": "transform", "target": "spring_coshExtended", "msg": "You snap open your spring cosh." },
+    "volume": "250 ml",
+    "bashing": 4,
+    "price": "175 USD"
+  },
+  {
+    "id": "spring_coshExtended",
+    "type": "GENERIC",
+    "copy-from": "baton",
+    "looks_like": "baton-extended",
+    "weapon_category": [ "BATONS" ],
+    "name": { "str": "spring cosh (extended)", "str_pl": "spring coshes (extended)" },
+    "description": "A telescoping spring cosh that collapses for easy storage.  Makes an excellent melee weapon.  Activate to collapse.",
+    "to_hit": 2,
+    "techniques": [ "WBLOCK_1", "RAPID" ],
+    "use_action": { "menu_text": "Collapse", "type": "transform", "target": "spring_cosh", "msg": "You collapse your spring cosh." },
+    "volume": "750 ml",
+    "bashing": 24
   }
 ]

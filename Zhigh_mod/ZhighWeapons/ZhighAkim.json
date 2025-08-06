@@ -172,7 +172,7 @@
   {
     "id": "paintballgun_revolverV2AkimZhigh",
     "copy-from": "paintballgun_revolverV2",
-    "looks_like": "paintballgun_revolverAkimZhigh",
+    "looks_like": "bfrAkim",
     "type": "GUN",
     "weapon_category": [ "REVOLVERS", "AKIMBOZHIGH", "MANUAL_ACTION", "PNEUMATIC" ],
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
@@ -1715,11 +1715,10 @@
     "modes": [ [ "DEFAULT", "beam", 10 ], [ "BURST", "beam", 20 ] ],
     "skill": "akimbo_Zhigh",
     "valid_mod_locations": [
-      [ "accessories", 4 ],
-      [ "barrel", 2 ],
-      [ "bore", 2 ],
+      [ "accessories", 8 ],
+      [ "sling", 2 ],
       [ "grip", 2 ],
-      [ "mechanism", 8 ],
+      [ "rail", 2 ],
       [ "sights", 2 ],
       [ "stock", 2 ],
       [ "underbarrel", 2 ]
@@ -2926,6 +2925,173 @@
     "reversible": true,
     "autolearn": true,
     "components": [ [ [ "1911DartZhigh", 2 ] ] ]
+  },
+  {
+    "id": "scorchShotZhighAkim",
+    "copy-from": "scorchShotZhigh",
+    "weapon_category": [ "PISTOLS", "AKIMBOZHIGH", "1SHOT" ],
+    "type": "GUN",
+    "name": { "str": "akimbo scorch shot" },
+    "description": "A flaregun which bounces off from and to several enemies.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [
+		[ "accessories", 8 ],
+		[ "grip", 2 ],
+		[ "stock", 2 ],
+		[ "rail", 2 ],
+		[ "sights", 2 ],
+		[ "underbarrel", 2 ]
+	  ],
+	"extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "scorchShotZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "scorchShotZhigh", 2 ] ] ]
+  },
+  {
+    "id": "DetonatorZhighAkim",
+    "copy-from": "DetonatorZhigh",
+    "weapon_category": [ "PISTOLS", "AKIMBOZHIGH", "1SHOT" ],
+    "type": "GUN",
+    "name": { "str": "akimbo detonator" },
+    "description": "A flaregun which blows up when shot, damaging several enemies.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [
+		[ "accessories", 8 ],
+		[ "grip", 2 ],
+		[ "stock", 2 ],
+		[ "rail", 2 ],
+		[ "sights", 2 ],
+		[ "underbarrel", 2 ]
+	  ],
+	"extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "DetonatorZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "DetonatorZhigh", 2 ] ] ]
+  },
+  {
+    "id": "ManmelterZhighAkim",
+    "copy-from": "ManmelterZhigh",
+    "weapon_category": [ "PISTOLS", "AKIMBOZHIGH", "1SHOT" ],
+    "type": "GUN",
+    "name": { "str": "akimbo manmelter" },
+    "description": "A flaregun which could charge up by absorbing fires and heat nearby, then making them as an ammo.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [
+		[ "accessories", 8 ],
+		[ "grip", 2 ],
+		[ "stock", 2 ],
+		[ "rail", 2 ],
+		[ "sights", 2 ],
+		[ "underbarrel", 2 ]
+	  ],
+	"extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 },
+    "relic_data": {
+      "recharge_scheme": [
+		{ "type": "time", "req": "none", "interval": "5 m", "rate": 2, "message": "Your manmelter charges up!" },
+        { "type": "field", "interval": "1 s", "rate": 6, "field": "fd_smoke_vent", "int_min": 1, "int_max": 22, "message": "Your manmelter charges up!" },
+        { "type": "field", "interval": "1 s", "rate": 6, "field": "fd_fire_vent", "int_min": 1, "int_max": 22, "message": "Your manmelter charges up!" },
+        { "type": "field", "interval": "1 s", "rate": 6, "field": "fd_flame_burst", "int_min": 1, "int_max": 22, "message": "Your manmelter charges up!" },
+        { "type": "field", "interval": "1 s", "rate": 6, "field": "fd_incendiary", "int_min": 1, "int_max": 22, "message": "Your manmelter charges up!" },
+        { "type": "field", "interval": "1 s", "rate": 4, "field": "fd_fire", "int_min": 1, "int_max": 22, "message": "Your manmelter charges up!" },
+		{ "type": "field", "interval": "1 s", "rate": 4, "field": "fd_smoke", "int_min": 1, "int_max": 22, "message": "Your manmelter charges up!" },
+		{ "type": "field", "interval": "1 s", "rate": 4, "field": "fd_migo_atmosphere", "int_min": 1, "int_max": 22, "message": "Your manmelter charges up!" },
+		{ "type": "field", "interval": "1 s", "rate": 4, "field": "fd_hot_air1", "int_min": 1, "int_max": 22, "message": "Your manmelter charges up!" },
+		{ "type": "field", "interval": "1 s", "rate": 4, "field": "fd_hot_air2", "int_min": 1, "int_max": 22, "message": "Your manmelter charges up!" },
+		{ "type": "field", "interval": "1 s", "rate": 4, "field": "fd_hot_air3", "int_min": 1, "int_max": 22, "message": "Your manmelter charges up!" },
+		{ "type": "field", "interval": "1 s", "rate": 4, "field": "fd_hot_air4", "int_min": 1, "int_max": 22, "message": "Your manmelter charges up!" },
+		{ "type": "field", "interval": "1 s", "rate": 4, "field": "fd_hot_air_sauna", "int_min": 1, "int_max": 22 }
+      ]
+	}
+  },
+  {
+    "type": "recipe",
+    "result": "ManmelterZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "ManmelterZhigh", 2 ] ] ]
+  },
+  {
+    "id": "blazeBlastZhighAkim",
+    "copy-from": "blazeBlastZhigh",
+    "weapon_category": [ "PISTOLS", "AKIMBOZHIGH", "1SHOT" ],
+    "type": "GUN",
+    "name": { "str": "akimbo blaze blast" },
+    "description": "A flaregun which hits enemies harder than an average one.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [
+		[ "accessories", 8 ],
+		[ "grip", 2 ],
+		[ "stock", 2 ],
+		[ "rail", 2 ],
+		[ "sights", 2 ],
+		[ "underbarrel", 2 ]
+	  ],
+	"extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "blazeBlastZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "blazeBlastZhigh", 2 ] ] ]
+  },
+  {
+    "id": "spitfireZhighAkim",
+    "copy-from": "spitfireZhigh",
+    "weapon_category": [ "PISTOLS", "AKIMBOZHIGH", "1SHOT" ],
+    "type": "GUN",
+    "name": { "str": "akimbo spitfire" },
+    "description": "A flaregun which shoots bursts of ammo, and igniting them.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 3 ], [ "AUTO", "auto", 6 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [
+		[ "accessories", 8 ],
+		[ "grip", 2 ],
+		[ "stock", 2 ],
+		[ "rail", 2 ],
+		[ "sights", 2 ],
+		[ "underbarrel", 2 ]
+	  ],
+	"extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "spitfireZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "spitfireZhigh", 2 ] ] ]
   },
   {
     "id": "kp3atAkim",
