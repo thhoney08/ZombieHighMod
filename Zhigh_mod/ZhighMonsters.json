@@ -518,7 +518,7 @@
     "name": "Healing dart discharge",
     "description": "Heal dart go pew pew.",
     "flags": [ "RANDOM_DURATION", "SILENT" ],
-    "valid_targets": [ "ally", "hostile", "ground", "self" ],
+    "valid_targets": [ "hostile", "self" ],
     "effect": "line_attack",
     "extra_effects": [ { "id": "docZhighHeal_healing" } ],
     "sprite": "fd_healeffect",
@@ -537,7 +537,7 @@
     "name": "Healing dart discharge",
     "description": "Heal dart go pew pew.",
     "flags": [ "RANDOM_DAMAGE", "SILENT", "NO_EXPLOSION_VFX" ],
-    "valid_targets": [ "ally", "hostile", "ground", "self" ],
+    "valid_targets": [ "hostile", "self" ],
     "effect": "target_attack",
     "sprite": "fd_healeffect",
     "min_damage": -10,
@@ -1095,7 +1095,7 @@
     "copy-from": "mon_zombie_machine",
     "name": { "str": "unknown machine" },
     "default_faction": "zombie",
-    "emit_fields": [ { "emit_id": "emit_zombie2_burst", "delay": "1 s" } ],
+    "emit_fields": [ { "emit_id": "emit_zombie2_burst", "delay": "20 s" } ],
     "hp": 150,
     "armor_bash": 1,
     "armor_cut": 1,
@@ -2457,10 +2457,11 @@
     "description": "Modified G36 with internal magazine.  Good for machines.",
     "weight": "3930 g",
     "volume": "3100 ml",
-    "dispersion": 75,
+    "dispersion": 475,
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "AUTO", "auto", 6 ] ],
     "clip_size": 600,
-    "magazines": [  ]
+    "magazines": [  ],
+    "ammo_effects": [ "LASER", "BOUNCE", "INCENDIARY" ]
   },
   {
     "id": "mon_V10Zhigh",
@@ -2780,5 +2781,50 @@
       "PET_MOUNTABLE",
       "BIOPROOF"
     ]
+  },
+  {
+    "id": "mon_feral_human_agitator",
+    "type": "MONSTER",
+    "copy-from": "mon_feral_human_pipe",
+    "name": { "str": "feral agitator" },
+    "description": "Their pupils are dilated and what remains to be seen of the iris and sclera are bloodshot.  This maniac still breathes, but the zombies treat them like one of their own.  For some reason, these ferals can call more of his friends.",
+    "special_attacks": [
+	  { "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh" }, "cooldown": 45 }
+    ]
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_summon_mon_feral_human_pipe",
+    "name": "Backup call",
+    "description": "Summons several permanent feral human.",
+    "flags": [ "HOSTILE_SUMMON", "PERMANENT", "NO_EXPLOSION_VFX" ],
+    "valid_targets": [ "ground" ],
+    "min_damage": 5,
+    "max_damage": 8,
+    "min_range": 15,
+    "max_range": 20,
+    "min_aoe": 1,
+    "max_aoe": 19,
+    "base_casting_time": 10,
+    "effect": "summon",
+    "effect_str": "mon_feral_human_pipe"
+  },
+  {
+    "id": "mon_zombie_flashHead",
+    "type": "MONSTER",
+    "name": { "str": "spotlight zombie" },
+    "description": "This zombie has a spotlight as it's upper head somehow.",
+    "special_attacks": [ [ "SEARCHLIGHT", 1 ] ],
+    "copy-from": "mon_zombie",
+    "looks_like": "mon_zombie"
+  },
+  {
+    "id": "mon_zombie_child_flashHead",
+    "type": "MONSTER",
+    "name": { "str": "spotlight child zombie" },
+    "description": "This child zombie has a spotlight as it's upper head somehow.  At least this one flashes lesser compared to the larger one.",
+    "special_attacks": [ [ "SEARCHLIGHT", 8 ] ],
+    "copy-from": "mon_zombie_child",
+    "looks_like": "mon_zombie_child"
   }
 ]

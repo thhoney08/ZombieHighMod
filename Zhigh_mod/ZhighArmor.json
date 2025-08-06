@@ -1885,10 +1885,33 @@
     "covers": [ "torso", "legs", "arms" ],
     "coverage": 15,
     "encumbrance": 50,
-    "warmth": 20,
+    "warmth": 2,
     "material_thickness": 4,
-    "flags": [ "STURDY", "OUTER", "HEAVY_WEAPON_SUPPORT", "STURDY" ],
-    "weight_capacity_bonus": "35 kg"
+    "flags": [ "ONLY_ONE", "STURDY", "OUTER", "HEAVY_WEAPON_SUPPORT", "STURDY" ],
+    "weight_capacity_bonus": "25 kg"
+  },
+  {
+    "id": "survExoframeAdv",
+    "type": "ARMOR",
+    "name": { "str": "survivor's exoskelton - advanced" },
+    "description": "Based on some commercial weight lifting devices, this crappy looking exoskeleton was created.  Every spring helps the user to loft and carry stuff better, and one could also fire a heavy mounted gun from one's hip.  The drawback is that it is highly encumbering.  At least this one have some protection.",
+    "weight": "17000 g",
+    "volume": "28500 ml",
+    "price": "650 USD",
+    "price_postapoc": "180 USD",
+    "to_hit": -5,
+    "bashing": 36,
+    "material": [ "steel", "leather", "kevlar" ],
+    "symbol": "[",
+    "looks_like": "depowered_armor",
+    "color": "light_gray",
+    "covers": [ "torso", "legs", "arms" ],
+    "coverage": 85,
+    "encumbrance": 50,
+    "warmth": 20,
+    "material_thickness": 8,
+    "flags": [ "ONLY_ONE", "STURDY", "OUTER", "HEAVY_WEAPON_SUPPORT", "STURDY" ],
+    "weight_capacity_bonus": "15 kg"
   },
   {
     "id": "ammoBag",
@@ -5113,6 +5136,20 @@
     "flags": [ "FANCY" ]
   },
   {
+    "id": "halo2Zhigh",
+    "type": "ARMOR",
+    "name": { "str": "halo" },
+    "description": "A shiny blue ring which is a symbol for many fantasy creatures.  You can wear it if you like, but it won't provide any effects.",
+    "weight": "26 g",
+    "volume": "1 ml",
+    "price": "900 USD",
+    "price_postapoc": "25 cent",
+    "material": [ "plastic" ],
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "FANCY" ]
+  },
+  {
     "id": "mitreHatZHigh",
     "repairs_like": "balclava",
     "type": "ARMOR",
@@ -5792,6 +5829,20 @@
     "flags": [ "FANCY" ]
   },
   {
+    "id": "knifeHairbandZhigh",
+    "type": "ARMOR",
+    "name": { "str": "knife headband" },
+    "description": "A headband with a long knife is added on it.  An item which was used for silly jokes.",
+    "weight": "20 g",
+    "volume": "250 ml",
+    "price": "15 USD",
+    "price_postapoc": "10 cent",
+    "material": [ "plastic" ],
+    "symbol": "^",
+    "color": "brown",
+    "flags": [ "FANCY" ]
+  },
+  {
     "id": "zhighSwatArmor_lightplate",
     "type": "ARMOR",
     "name": { "str": "cosplay leather body armor" },
@@ -5937,5 +5988,120 @@
     "material_thickness": 1,
     "environmental_protection": 2,
     "flags": [ "OVERSIZE", "BELTED", "ALLOWS_NATURAL_ATTACKS", "SUN_GLASSES" ]
+  },
+  {
+    "id": "tie_boloZhigh",
+    "type": "ARMOR",
+    "name": { "str": "bolo tie" },
+    "description": "A skinny black bolo tie.",
+    "weight": "12 g",
+    "volume": "50 ml",
+    "price": "750 cent",
+    "price_postapoc": "10 cent",
+    "material": [ "cotton", "gemstone" ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [ "FANCY" ]
+  },
+  {
+    "id": "helmet_heliZhigh",
+    "looks_like": "helmet_army",
+    "repairs_like": "helmet_army",
+    "type": "ARMOR",
+    "name": { "str": "helicoper pilot helmet" },
+    "description": "A heavy helmet that provides excellent protection from all sorts of damage.  It is labeled as the advanced pilot helmet.  Also includes an internal headset which provides noise protection and two-way radio.",
+    "weight": "1383 g",
+    "volume": "1750 ml",
+    "price": "150 USD",
+    "price_postapoc": "15 USD",
+    "to_hit": -1,
+    "bashing": 10,
+    "material": [ "kevlar_rigid", "plastic", "leather" ],
+    "symbol": "[",
+    "color": "green",
+    "covers": [ "head" ],
+    "coverage": 85,
+    "encumbrance": 20,
+    "warmth": 20,
+    "material_thickness": 6,
+    "techniques": [ "WBLOCK_1" ],
+    "flags": [ "VARSIZE", "WATERPROOF", "STURDY", "TWO_WAY_RADIO", "PARTIAL_DEAF" ],
+    "magazines": [
+      [
+        "battery",
+        [
+          "light_disposable_cell",
+          "light_minus_disposable_cell",
+          "light_battery_cell",
+          "light_plus_battery_cell",
+          "light_minus_battery_cell",
+          "light_atomic_battery_cell",
+          "light_minus_atomic_battery_cell"
+        ]
+      ]
+    ],
+    "magazine_well": "250 ml"
+  },
+  {
+    "id": "sailorOutfit",
+    "type": "ARMOR",
+    "name": { "str": "sailor uniform outfit" },
+    "description": "A sailor outfit which was also used as a female school uniform in Asian countires.",
+    "weight": "190 g",
+    "volume": "750 ml",
+    "price": "8 USD",
+    "price_postapoc": "50 cent",
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "looks_like": "camisole",
+    "color": "white",
+    "armor_portion_data": [ 
+	  { "covers": [ "torso" ], "coverage": 90 },
+	  { "covers": [ "arms" ], "coverage": 30 },
+	  { "covers": [ "legs" ], "coverage": 50 }
+	],
+    "warmth": 5,
+    "material_thickness": 1,
+    "flags": [ "VARSIZE" ]
+  },
+  {
+    "id": "beekeepingMedievalZhigh",
+    "repairs_like": "mask_dust",
+    "type": "ARMOR",
+    "name": { "str": "medieval beekeeping mask" },
+    "description": "A tough hood made of cotton and plant matter used by medieval beekeepers.  Looks like a bottom of a basket.",
+    "weight": "520 g",
+    "volume": "1250 ml",
+    "price": "35 USD",
+    "price_postapoc": "250 cent",
+    "material": [ "cotton", "dry_plant" ],
+    "symbol": "[",
+    "looks_like": "balclava",
+    "color": "dark_gray",
+    "covers": [ "head", "mouth", "eyes" ],
+    "coverage": 90,
+    "encumbrance": 10,
+    "warmth": 20,
+    "material_thickness": 2,
+    "valid_mods": [ "resized_large" ]
+  },
+  {
+    "id": "flag420Zhigh",
+    "copy-from": "american_flag",
+    "type": "ARMOR",
+    "name": { "str": "420 flag" },
+    "description": "A flag which symbolize a plant.",
+    "looks_like": "plastic_sheet",
+    "color": "dark_gray"
+  },
+  {
+    "id": "flightJacketZhigh",
+    "copy-from": "jacket_leather",
+    "type": "ARMOR",
+    "name": { "str": "flight jacket" },
+    "description": "A jacket made from thick leather and fur.  Cumbersome, but offers excellent protection from cuts and cold.",
+    "looks_like": "jacket_leather",
+    "warmth": 33,
+    "color": "dark_gray"
   }
 ]

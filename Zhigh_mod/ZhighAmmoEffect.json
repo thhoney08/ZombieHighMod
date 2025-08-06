@@ -86,7 +86,7 @@
   {
     "id": "FLAMESMOL",
     "type": "ammo_effect",
-    "aoe": { "field_type": "fd_fire", "intensity_min": 1, "intensity_max": 3 }
+    "aoe": { "field_type": "fd_fire", "intensity_min": 1, "intensity_max": 3, "size": 1 }
   },
   {
     "id": "GOOAMMO1",
@@ -169,6 +169,31 @@
     "aoe": { "field_type": "fd_acid", "intensity_min": 3, "intensity_max": 3, "radius": 6 }
   },
   {
+    "id": "LIGHTNINGBIG",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_electricity", "intensity_min": 3, "intensity_max": 3, "radius": 6 }
+  },
+  {
+    "id": "FLAMEBIG",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_fire", "intensity_min": 3, "intensity_max": 3, "radius": 6 }
+  },
+  {
+    "id": "GAS_FUNGICIDALBIG",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_fungicidal_gas", "intensity_min": 3, "intensity_max": 3, "radius": 6 }
+  },
+  {
+    "id": "TOXICGASBIG",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_toxic_gas", "intensity_min": 3, "intensity_max": 3, "radius": 6 }
+  },
+  {
+    "id": "GAS_INSECTICIDALBIG",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_insecticidal_gas", "intensity_min": 3, "intensity_max": 3, "radius": 6 }
+  },
+  {
     "id": "NUKEGAS",
     "type": "ammo_effect",
     "aoe": { "field_type": "fd_nuke_gas", "intensity_min": 3, "intensity_max": 3 }
@@ -207,5 +232,20 @@
     "id": "STREAM_GAS_TOXIC",
     "type": "ammo_effect",
     "trail": { "field_type": "fd_toxic_gas", "intensity_min": 1, "intensity_max": 2, "chance": 66 }
+  },
+  {
+    "id": "HEATFRAGZHIGH_BIG",
+    "type": "ammo_effect",
+    "explosion": { "fragment": { "impact": { "damage_type": "heat", "amount": 30, "armor_multiplier": 8 }, "range": 6 } }
+  },
+  {
+    "id": "HEATFRAGZHIGH",
+    "type": "ammo_effect",
+    "explosion": { "fragment": { "impact": { "damage_type": "heat", "amount": 15, "armor_multiplier": 6 }, "range": 4 } }
+  },
+  {
+    "id": "HEATFRAGZHIGH_SMALL",
+    "type": "ammo_effect",
+    "explosion": { "fragment": { "impact": { "damage_type": "heat", "amount": 10, "armor_multiplier": 4.5 }, "range": 2 } }
   }
 ]

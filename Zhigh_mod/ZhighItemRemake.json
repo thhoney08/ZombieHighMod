@@ -924,8 +924,9 @@
     "copy-from": "boxing_gloves",
     "type": "ARMOR",
     "name": { "str": "pair of boxing gloves", "str_pl": "pairs of boxing gloves" },
-    "bashing": 3,
+    "bashing": 6,
     "encumbrance": 18,
+    "to_hit": 2,
     "relic_data": {
       "passive_effects": [
         {
@@ -937,13 +938,54 @@
               "once_in": 2,
               "message": "You punch your target.",
               "npc_message": "%1$s punches their target."
+            },
+            {
+              "id": "stunnedZhigh",
+              "message": "The hammer stuns your target.",
+              "npc_message": "%1$s stuns their target."
             }
 		  ],
           "hit_you_effect": [
             {
               "id": "HitZhigh",
+              "once_in": 2,
               "message": "You punch your target.",
               "npc_message": "%1$s punches their target."
+            },
+            {
+              "id": "stunnedZhigh",
+              "message": "The hammer stuns your target.",
+              "npc_message": "%1$s stuns their target."
+            }
+          ]
+        },
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_me_effect": [
+            {
+              "id": "HitZhigh",
+              "once_in": 2,
+              "message": "You punch your target.",
+              "npc_message": "%1$s punches their target."
+            },
+            {
+              "id": "stunnedZhigh",
+              "message": "The hammer stuns your target.",
+              "npc_message": "%1$s stuns their target."
+            }
+		  ],
+          "hit_you_effect": [
+            {
+              "id": "HitZhigh",
+              "once_in": 2,
+              "message": "You punch your target.",
+              "npc_message": "%1$s punches their target."
+            },
+            {
+              "id": "stunnedZhigh",
+              "message": "The hammer stuns your target.",
+              "npc_message": "%1$s stuns their target."
             }
           ]
         }
@@ -3314,5 +3356,13 @@
     "ranged_damage": { "damage_type": "heat", "amount": 5 },
 	"ammo_to_fire": 1,
     "range": 3
+  },
+  {
+	"id": "flaregun",
+    "type": "GUN",
+    "copy-from": "flaregun",
+    "name": { "str": "flaregun" },
+    "ranged_damage": { "damage_type": "heat", "amount": 8, "armor_penetration": 2 },
+    "range": 13
   }
 ]

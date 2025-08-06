@@ -108,6 +108,21 @@
     ]
   },
   {
+    "id": "bastion_fort_vehicles",
+    "type": "vehicle_group",
+    "vehicles": [ [ "cannon_3in", 80 ], [ "gatling_carriage", 10 ], [ "ballistaVehZhigh", 10 ] ]
+  },
+  {
+    "id": "museum_vehicles",
+    "type": "vehicle_group",
+    "vehicles": [ [ "cannon_3in", 30 ], [ "gatling_carriage", 30 ], [ "ballistaVehZhigh", 30 ] ]
+  },
+  {
+    "id": "military_display_vehicles",
+    "type": "vehicle_group",
+    "vehicles": [ [ "whillys_mb_display", 65 ], [ "cannon_3in", 20 ], [ "gatling_carriage", 10 ], [ "ballistaVehZhigh", 10 ] ]
+  },
+  {
     "id": "car_escape",
     "type": "vehicle",
     "name": "Escape Car",
@@ -743,7 +758,7 @@
     ],
     "items": [
       { "x": 0, "y": 0, "chance": 6, "items": [ "id_military" ] },
-      { "x": 0, "y": 0, "chance": 5, "items": [ "mil_gps_device" ] },
+      { "x": 0, "y": 0, "chance": 15, "items": [ "mil_gps_device" ] },
       { "x": 0, "y": 1, "chance": 3, "item_groups": [ "mil_food_nodrugs" ] },
       { "x": 0, "y": 1, "chance": 2, "item_groups": [ "mil_accessories" ] },
       { "x": 0, "y": 2, "chance": 2, "item_groups": [ "mil_accessories" ] },
@@ -765,6 +780,22 @@
         "x": 0,
         "parts": [ "turret_mount", { "ammo_types": [ "paintball" ], "part": "mounted_paintballG_M60", "ammo": 100, "ammo_qty": [ 10, 100 ] } ]
       }
+    ]
+  },
+  {
+    "id": "ballistaVehZhigh",
+    "type": "vehicle",
+    "name": "ballista",
+    "blueprint": [
+      [ " H" ],
+      [ "-U" ],
+      [ " H" ]
+    ],
+    "parts": [
+      { "x": 0, "y": 0, "parts": [ "frame_wood_cross", "turret_mount_manual_wood", { "ammo_types": [ "fishspear" ], "part": "mounted_ballistaZhigh", "ammo": 100, "ammo_qty": [ 1, 1 ] } ] },
+      { "x": 0, "y": -1, "parts": [ "frame_wood_horizontal", "wheel_wood_b" ] },
+      { "x": 0, "y": 1, "parts": [ "frame_wood_horizontal", "wheel_wood_b" ] },
+      { "x": -1, "y": 0, "parts": [ "frame_wood_handle" ] }
     ]
   }
 ]

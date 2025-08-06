@@ -87,6 +87,36 @@
     "requirements": { "install": { "skills": [ [ "mechanics", 2 ], [ "rifle", 1 ] ] }, "removal": { "skills": [ [ "mechanics", 1 ] ] } }
   },
   {
+    "id": "mounted_ballistaZhigh",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": { "str": "mounted ballista" },
+    "item": "ballistaZhigh",
+    "looks_like": "mounted_huge_crossbow",
+    "color": "green",
+    "broken_color": "green",
+    "breaks_into": [
+      { "item": "scrap", "count": [ 6, 12 ] },
+      { "item": "splinter", "count": [ 8, 16 ] },
+      { "item": "string_36", "count": [ 3, 6 ] }
+    ],
+    "requirements": { "install": { "skills": [ [ "mechanics", 6 ] ] }, "removal": { "skills": [ [ "mechanics", 3 ] ] } },
+    "delete": { "flags": [ "FOLDABLE" ] }
+  },
+  {
+    "id": "mounted_tiharBigZhigh",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": { "str": "mounted beshuma" },
+    "item": "tiharBigZhigh",
+    "folded_volume": "2750 ml",
+    "looks_like": "mounted_tihar",
+    "color": "dark_gray",
+    "broken_color": "dark_gray",
+    "breaks_into": [ { "item": "scrap", "count": [ 25, 50 ] }, { "item": "splinter", "count": [ 6, 12 ] } ],
+    "requirements": { "install": { "skills": [ [ "mechanics", 3 ], [ "rifle", 1 ] ] }, "removal": { "skills": [ [ "mechanics", 1 ] ] } }
+  },
+  {
     "type": "vehicle_part",
     "id": "fridge",
     "name": { "str": "fridge" },
@@ -308,5 +338,57 @@
     "batch_time_factors": [ 60, 1 ],
     "using": [ [ "3d_printing_standard", 20 ], [ "rope_natural", 4 ] ],
     "components": [ [ [ "carbon_fiber_filament", 800 ], [ "frame_carbon", 4 ] ] ]
+  },
+  {
+    "breaks_into": [
+      { "count": [ 4, 7 ], "item": "steel_lump" },
+      { "count": [ 4, 7 ], "item": "steel_chunk" },
+      { "count": [ 4, 7 ], "item": "scrap" },
+      { "charges": 0, "item": "toolwatch", "prob": 5 },
+      { "charges": 0, "item": "water_purifier", "prob": 50 },
+      { "charges": 0, "item": "vac_sealer", "prob": 50 },
+      { "charges": 0, "item": "dehydrator", "prob": 50 },
+      { "charges": 0, "item": "food_processor", "prob": 50 },
+      { "charges": 0, "item": "press", "prob": 50 },
+      { "charges": 0, "item": "chemistry_set", "prob": 50 },
+      { "charges": 0, "item": "hotplate", "prob": 50 }
+    ],
+    "broken_color": "light_gray",
+    "broken_symbol": "x",
+    "color": "light_green",
+    "damage_modifier": 10,
+    "damage_reduction": { "all": 20 },
+    "description": "A multi-function crafting station, everything AND a kitchen sink.  'e'xamine the tile with the tool rig to access the water faucet, to repair items, to heat up food, to craft an item that needs a forge, to butcher, to harden bricks or clay, or to purify water in a vehicle tank or in a container in your inventory.  If you attempt to craft an item that needs one of the tool watch's functions, it will automatically be selected as a tool.",
+    "durability": 80,
+    "flags": [
+		"CARGO",
+		"OBSTACLE",
+		"CRAFTRIG",
+		"WATER_PURIFIER",
+		"CHEMLAB",
+		"FAUCET",
+		"FORGE",
+		"BUTCHER_EQ",
+		"KILN",
+		"WELDRIG",
+		"COVERED"
+	],
+    "item": "toolwatch",
+    "location": "center",
+    "looks_like": "craft_rig",
+    "name": { "str": "mounted tool watch" },
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 3 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "repair": {
+        "skills": [ [ "mechanics", 4 ] ],
+        "time": "60 m",
+        "using": [ [ "welding_standard", 5 ], [ "vehicle_repair_electronics", 2 ] ]
+      }
+    },
+    "size": "50 L",
+    "id": "craft_toolwatch",
+    "symbol": "&",
+    "type": "vehicle_part"
   }
 ]

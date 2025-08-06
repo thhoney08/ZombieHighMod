@@ -387,7 +387,7 @@
       }
     ],
     "priority": 9,
-    "half_life": "5 minutes",
+    "half_life": "2 minutes",
     "accelerated_decay": false,
     "wandering_field": "fd_supplydrop_gas",
     "gas_absorption_factor": 15,
@@ -407,10 +407,10 @@
     ],
     "decay_amount_factor": 5,
     "percent_spread": 40,
-    "outdoor_age_speedup": "6 minutes",
+    "outdoor_age_speedup": "2 minutes",
     "dirty_transparency_cache": false,
     "priority": 8,
-    "half_life": "10 minutes",
+    "half_life": "5 minutes",
     "phase": "gas",
     "display_field": false,
     "looks_like": "fd_tear_gas"
@@ -517,7 +517,8 @@
     "decay_amount_factor": 20,
     "percent_spread": 40,
     "priority": 2,
-    "half_life": "8 minutes",
+    "outdoor_age_speedup": "2 minutes",
+    "half_life": "4 minutes",
     "phase": "gas",
     "display_field": true,
     "looks_like": "fd_fog"

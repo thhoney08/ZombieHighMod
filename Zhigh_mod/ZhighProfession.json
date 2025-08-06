@@ -1,5 +1,65 @@
 [
   {
+    "type": "profession_item_substitutions",
+    "item": "blazer_zhigh",
+    "sub": [
+      { "present": [ "LARGE" ], "new": [ "blazer_zhighXL" ] },
+      { "present": [ "LARGE_OK" ], "new": [ "blazer_zhighXL" ] },
+      { "present": [ "HUGE" ], "new": [ "blazer_zhighXL" ] },
+      { "present": [ "HUGE_OK" ], "new": [ "blazer_zhighXL" ] }
+    ]
+  },
+  {
+    "type": "profession_item_substitutions",
+    "item": "dress_shirt_zhigh",
+    "sub": [
+      { "present": [ "LARGE" ], "new": [ "dress_shirt_zhighXL" ] },
+      { "present": [ "LARGE_OK" ], "new": [ "dress_shirt_zhighXL" ] },
+      { "present": [ "HUGE" ], "new": [ "dress_shirt_zhighXL" ] },
+      { "present": [ "HUGE_OK" ], "new": [ "dress_shirt_zhighXL" ] }
+    ]
+  },
+  {
+    "type": "profession_item_substitutions",
+    "item": "skirt_zhigh",
+    "sub": [
+      { "present": [ "LARGE" ], "new": [ "skirt_zhighXL" ] },
+      { "present": [ "LARGE_OK" ], "new": [ "skirt_zhighXL" ] },
+      { "present": [ "HUGE" ], "new": [ "skirt_zhighXL" ] },
+      { "present": [ "HUGE_OK" ], "new": [ "skirt_zhighXL" ] }
+    ]
+  },
+  {
+    "type": "profession_item_substitutions",
+    "item": "pants_zhigh",
+    "sub": [
+      { "present": [ "LARGE" ], "new": [ "pants_zhighXL" ] },
+      { "present": [ "LARGE_OK" ], "new": [ "pants_zhighXL" ] },
+      { "present": [ "HUGE" ], "new": [ "pants_zhighXL" ] },
+      { "present": [ "HUGE_OK" ], "new": [ "pants_zhighXL" ] }
+    ]
+  },
+  {
+    "type": "profession_item_substitutions",
+    "item": "jacket_baseball",
+    "sub": [
+      { "present": [ "LARGE" ], "new": [ "jacket_baseballXL" ] },
+      { "present": [ "LARGE_OK" ], "new": [ "jacket_baseballXL" ] },
+      { "present": [ "HUGE" ], "new": [ "jacket_baseballXL" ] },
+      { "present": [ "HUGE_OK" ], "new": [ "jacket_baseballXL" ] }
+    ]
+  },
+  {
+    "type": "profession_item_substitutions",
+    "item": "jacket_baseball_2",
+    "sub": [
+      { "present": [ "LARGE" ], "new": [ "jacket_baseball_2XL" ] },
+      { "present": [ "LARGE_OK" ], "new": [ "jacket_baseball_2XL" ] },
+      { "present": [ "HUGE" ], "new": [ "jacket_baseball_2XL" ] },
+      { "present": [ "HUGE_OK" ], "new": [ "jacket_baseball_2XL" ] }
+    ]
+  },
+  {
     "type": "profession",
     "id": "zhighStudent",
     "name": "Student",
@@ -13,13 +73,13 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "pockknife",
           "water_clean",
           "matches",
           "wristwatch"
         ],
         "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_masks" },
 			{ "group": "ZhighNpc_coat" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
@@ -50,12 +110,13 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "wristwatch"
         ],
         "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-			{ "item": "camp_chair_zhigh", "custom-flags": [ "auto_wield" ] } ]
+			{ "item": "camp_chair_zhigh", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -78,7 +139,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "gloves_medical",
           "medkitRecharge",
           "medium_atomic_battery_cell",
@@ -89,12 +149,15 @@
           "bandages",
           "aspirin",
           "1st_aid",
-          "stethoscope",
+          "nail",
           "mbag",
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "nailsmg", "ammo-item": "nail", "charges": 100, "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -121,12 +184,13 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "wristwatch"
         ], 
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "fireEx_zhigh", "ammo-item": "powderFire", "charges": 100, "custom-flags": [ "auto_wield" ] }]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "fireEx_zhigh", "ammo-item": "powderFire", "charges": 100, "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
       "female": [ "bra", "panties", "skirt_zhigh" ]
@@ -152,13 +216,13 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "wristwatch"
         ], 
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "hand_crossbow", "ammo-item": "bolt_metal", "charges": 1, "custom-flags": [ "auto_wield" ] },
-                { "item": "quiver", "contents-group": "quiver_crossbow_hunter" }
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "hand_crossbow", "ammo-item": "bolt_metal", "charges": 1, "custom-flags": [ "auto_wield" ] },
+			{ "item": "quiver", "contents-group": "quiver_crossbow_hunter" }
         ]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
@@ -183,13 +247,14 @@
           "medkitRechargeV3",
           "socks",
           "mbag",
-          "sneakers",
           "paint_brush",
           "chipper",
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -209,7 +274,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "tshirt",
           "jacket_tracksuit_zhigh",
           "shorts_tracksuit_zhigh",
@@ -226,7 +290,9 @@
           "improvised_colabomb"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
       },
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "panties" ]
@@ -254,8 +320,9 @@
 		  "medkitRechargeV3"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "hammer", "custom-flags": [ "auto_wield" ] }
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "hammer_toyZhigh", "custom-flags": [ "auto_wield" ] }
 		]
       },
       "male": [ "briefs" ],
@@ -291,9 +358,11 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "broom", "custom-flags": [ "auto_wield" ] },
-                { "item": "dagger_medieval", "container-item": "sheath" } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "broom", "custom-flags": [ "auto_wield" ] },
+			{ "item": "dagger_medieval", "container-item": "sheath" }
+		]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
       "female": [ "bra", "panties", "skirt_zhigh" ]
@@ -329,9 +398,11 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "swordsmanSword", "custom-flags": [ "auto_wield" ] },
-                { "item": "dagger_medieval", "container-item": "sheath" } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "swordsmanSword", "custom-flags": [ "auto_wield" ] },
+			{ "item": "dagger_medieval", "container-item": "sheath" }
+		]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
       "female": [ "bra", "panties", "skirt_zhigh" ]
@@ -366,9 +437,11 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "beardedAxeZhigh_inferior", "custom-flags": [ "auto_wield" ] },
-                { "item": "knife_saex", "container-item": "sheath" } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "beardedAxeZhigh_inferior", "custom-flags": [ "auto_wield" ] },
+			{ "item": "knife_saex", "container-item": "sheath" }
+		]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
       "female": [ "bra", "panties", "skirt_zhigh" ]
@@ -403,9 +476,11 @@
           "straw_hat_Asia"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "katana_inferior", "custom-flags": [ "auto_wield" ] },
-                { "item": "tanto_fake", "container-item": "sheath" } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "katana_inferior", "custom-flags": [ "auto_wield" ] },
+			{ "item": "tanto_fake", "container-item": "sheath" }
+		]
       },
       "male": [ "pants_zhigh" ],
       "female": [ "chestwrap", "skirt_zhigh" ]
@@ -433,13 +508,14 @@
           "adrenaline_injector",
           "helmet_skull",
           "boots",
-          "sneakers",
           "greaves_bone",
           "armguard_bone"
         ],
         "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-			{ "item": "daneAxeZhigh_inferior", "custom-flags": [ "auto_wield" ] } ]
+			{ "item": "daneAxeZhigh_inferior", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -474,8 +550,10 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "tenderizerZhigh", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "tenderizerZhigh", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
       "female": [ "bra", "panties", "skirt_zhigh" ]
@@ -501,7 +579,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "mbag",
           "megaphone_zhigh",
           "shout_tp1",
@@ -511,7 +588,9 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
       },
       "male": [ "boxer_shorts", "shorts_tracksuit_zhigh" ],
       "female": [ "hairpin", "panties", "skirt_zhigh_cheer" ]
@@ -536,15 +615,16 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "sports_drink",
           "jacket_leather",
           "gloves_wraps",
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "bat_metal", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "bat_metal", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
       "female": [ "bra", "panties", "skirt_zhigh" ]
@@ -570,15 +650,16 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "arrow_exploding",
           "ZhighArrow_electric",
           "vambrace_larmor"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "compositebow", "custom-flags": [ "auto_wield" ], "contents-item": [ "bow_scope", "bow_stabilizer_set" ] },
-				{ "item": "quiver", "contents-group": "quiver_RangerZhigh" } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "compositebow", "custom-flags": [ "auto_wield" ], "contents-item": [ "bow_scope", "bow_stabilizer_set" ] },
+			{ "item": "quiver", "contents-group": "quiver_RangerZhigh" }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -603,13 +684,14 @@
           "blazer_zhigh",
           "zhigh_smart_phone",
           "medkitRechargeV3",
-          "socks",
-          "sneakers"
+          "socks"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "vodka", "container-item": "flask_hip" },
-                { "item": "acoustic_guitar", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "vodka", "container-item": "flask_hip" },
+			{ "item": "acoustic_guitar", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -638,15 +720,15 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "cash_cardZhighInfinite",
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "cash_gunAkim", "ammo-item": "ammo_cash", "charges": 180, "container-item": "holsterAkimZhigh" },
-                { "item": "ammo_cash", "charges": 140 },
-                { "item": "cash_blaster", "ammo-item": "ammo_cash", "charges": 67, "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "cash_gunAkim", "ammo-item": "ammo_cash", "charges": 180, "container-item": "holsterAkimZhigh" },
+			{ "item": "ammo_cash", "charges": 140 },
+			{ "item": "cash_blaster", "ammo-item": "ammo_cash", "charges": 67, "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -667,16 +749,17 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "dress_shoes",
           "suitSuperstarZhigh",
           "fancy_sunglassesStars",
           "wristwatch"
         ],
         "entries": [
-          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-          { "group": "charged_noiseEmitter" },
-          { "group": "charged_noiseEmitter" },
-          { "item": "micZhigh", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "charged_noiseEmitter" },
+			{ "group": "charged_noiseEmitter" },
+			{ "item": "micZhigh", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "panties" ]
@@ -702,13 +785,13 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "wristwatch",
           "blade_trap",
           "backpack_leather",
           "apron_cyan"
         ],
         "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "group": "ZhighTraps" },
 			{ "group": "ZhighTraps" },
@@ -742,13 +825,13 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "pencil",
           "water_clean",
           "armband_zhigh_halmon",
           "wristwatch"
         ],
         "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "handcuff_knuckle", "custom-flags": [ "auto_wield" ] }
 		]
@@ -771,7 +854,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "dress_shoes",
           "tophatZhigh",
           "throwing_card_spade", "throwing_card_club", "throwing_card_diam", "throwing_card_hear",
           "throwing_card_spade", "throwing_card_club", "throwing_card_diam", "throwing_card_hear",
@@ -788,7 +870,9 @@
           "throwing_card_spade", "throwing_card_club", "throwing_card_diam", "throwing_card_hear"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
       },
       "male": [ "boxer_shorts", "tux" ],
       "female": [ "bra", "panties", "gown", "barrette", "jade_brooch" ]
@@ -810,14 +894,14 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "magnifying_glass",
           "coat_rain_froggo",
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "frog_umbrella_close", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "frog_umbrella_close", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -959,8 +1043,10 @@
           "wristwatch"
         ],
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "spi_hairpin", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "spi_hairpin", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "boxer_shorts", "spot_hanboktop_zhigh", "spot_strap_zhigh", "spot_hanbokpants_zhigh" ],
       "female": [ "bra", "panties", "hanbok_fl_top", "hanbok_fl_skirt", "spi_hairpin" ]
@@ -985,9 +1071,11 @@
           "wristwatch"
         ],
         "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "item": "heavy_plus_battery_cell", "charges": 1500, "container-item": "UPS_off" },
             { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-            { "item": "laser_spotlight", "custom-flags": [ "auto_wield" ] } ]
+            { "item": "laser_spotlight", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "boxer_shorts", "spot_hanboktop_zhigh", "spot_strap_zhigh", "spot_hanbokpants_zhigh" ],
       "female": [ "bra", "panties", "hanbok_fl_top", "hanbok_fl_skirt", "spi_hairpin" ]
@@ -1012,9 +1100,11 @@
           "wristwatch"
         ],
         "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "item": "heavy_plus_battery_cell", "charges": 1500, "container-item": "UPS_off" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-			{ "item": "laser_beamlight", "custom-flags": [ "auto_wield" ] } ]
+			{ "item": "laser_beamlight", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "boxer_shorts", "spot_hanboktop_zhigh", "spot_strap_zhigh", "spot_hanbokpants_zhigh" ],
       "female": [ "bra", "panties", "hanbok_fl_top", "hanbok_fl_skirt", "spi_hairpin" ]
@@ -1038,13 +1128,14 @@
           "medkitRechargeV3",
           "wetsuit_booties",
           "wetsuit_gloves",
-          "lowtops",
           "wetsuit",
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "surfboard", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "surfboard", "custom-flags": [ "auto_wield" ] }
+		]
       }
     },
     "flags": [ "SCEN_ONLY" ]
@@ -1069,13 +1160,14 @@
           "medkitRechargeV3",
           "wetsuit_booties",
           "wetsuit_gloves",
-          "lowtops",
           "jacket_windbreaker",
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "tubeSwim", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "tubeSwim", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "trunks", "pants_zhigh" ],
       "female": [ "wetsuit_spring", "skirt_zhigh" ]
@@ -1101,7 +1193,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "jacket_light",
           "mbag",
           "molotov",
@@ -1116,7 +1207,9 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
       },
       "male": [ "trunks", "pants_zhigh" ],
       "female": [ "bikini_top", "bikini_bottom", "skirt_zhigh" ]
@@ -1141,15 +1234,16 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "jacket_light",
           "coolerCase",
           "matches",
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "group": "ZhighGuardWeaponGroups", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "ZhighGuardWeaponGroups", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "trunks", "pants_zhigh" ],
       "female": [ "bikini_top", "bikini_bottom", "skirt_zhigh" ]
@@ -1172,7 +1266,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "fedora_whiteZhigh",
           "dynamite",
           "dynamite_bundle",
@@ -1181,8 +1274,9 @@
           "wristwatch"
         ],
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "glass_punch_daggerHandwrap", "custom-flags": [ "auto_wield" ] }
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "glass_punch_daggerHandwrap", "custom-flags": [ "auto_wield" ] }
         ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
@@ -1214,8 +1308,8 @@
           "boots"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "towel", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "towel", "custom-flags": [ "no_auto_equip" ] } ]
       },
       "female": [ "sports_bra" ]
     },
@@ -1242,8 +1336,8 @@
           "boots"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "towel", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "towel", "custom-flags": [ "no_auto_equip" ] } ]
       },
       "female": [ "sports_bra" ]
     },
@@ -1258,9 +1352,24 @@
     "skills": [ { "level": 3, "name": "dodge" } ],
     "traits": [ "REGEN_zhigh", "PARKOUR" ],
     "items": {
-      "both": { "items": [ "tshirt", "jacket_light", "water_mineral", "medkit1", "medkit1", "shorts_tracksuit_zhigh", "zhigh_smart_phone", "medkitRechargeV3", "socks_ankle", "sneakers", "runner_bag", "wristwatch" ],
+      "both": {
+		  "items":
+	    [
+			"tshirt",
+			"jacket_light",
+			"water_mineral",
+			"medkit1",
+			"medkit1",
+			"shorts_tracksuit_zhigh",
+			"zhigh_smart_phone",
+			"medkitRechargeV3",
+			"socks_ankle",
+			"sneakers",
+			"runner_bag",
+			"wristwatch"
+		],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
       },
       "male": [ "briefs" ],
       "female": [ "sports_bra", "boy_shorts" ]
@@ -1284,12 +1393,12 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "tourist_table", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "tourist_table", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "boxer_shorts", "straw_fedora", "tux" ],
       "female": [ "bra", "panties", "straw_hat", "sundress_white" ]
@@ -1317,7 +1426,8 @@
           "shorts_tracksuit_zhigh"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
       },
       "male": [ "briefs" ],
       "female": [ "sports_bra", "boy_shorts" ]
@@ -1342,14 +1452,14 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "cash_card",
           "gasdiscount_platinum",
           "sf_watch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "mop", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "mop", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -1370,14 +1480,14 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "lowtops",
           "light_atomic_battery_cell",
           "light_atomic_battery_cell",
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "camera", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "camera", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
       "female": [ "bra", "panties", "skirt_zhigh" ]
@@ -1398,7 +1508,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "mbag",
           "caffeine",
           "electrohack",
@@ -1408,8 +1517,9 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "bot_attack_drone", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "bot_attack_drone", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
       "female": [ "bra", "panties", "skirt_zhigh" ]
@@ -1422,14 +1532,13 @@
     "id": "zhighSmoker",
     "name": "Teacher - Smoker",
     "description": "You've been teaching kids for some years of your life, and they've mostly listened to your teachings.  However, the dead won't write out lines for eating you alive.  How did you got some smoke bombs, you do not know.",
-    "points": -1,
+    "points": -2,
     "skills": [ { "level": 1, "name": "throw" }, { "level": 2, "name": "speech" } ],
     "items": {
       "both": {
         "items": [
           "jeans",
           "socks",
-          "dress_shoes",
           "smokebomb",
           "smokebomb",
           "smokebomb",
@@ -1438,15 +1547,57 @@
           "tool_rocket_candy",
           "tool_rocket_candy",
           "tool_rocket_candy",
+          "tool_rocket_candy",
+          "tool_rocket_candy",
+          "matches",
           "mbag",
           "wristwatch"
         ],
         "entries": [
-          { "item": "respirator", "custom-flags": [ "no_auto_equip" ] }
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "item": "respirator", "custom-flags": [ "no_auto_equip" ] }
         ]
       },
       "male": [ "briefs", "jacket_light" ],
       "female": [ "bra", "panties", "sweater" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighSmoker2",
+    "name": "Student - Smoker",
+    "description": "You've been living your average high school life.  However, the world won't leave you alone.  How did you got some smoke bombs, you do not know.",
+    "points": 1,
+    "skills": [ { "level": 1, "name": "throw" }, { "level": 2, "name": "speech" } ],
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "socks",
+          "smokebomb",
+          "smokebomb",
+          "smokebomb",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "tool_rocket_candy",
+          "tool_rocket_candy",
+          "tool_rocket_candy",
+          "tool_rocket_candy",
+          "tool_rocket_candy",
+          "matches",
+          "mbag",
+          "wristwatch"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_shoesAll" },	
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "respirator", "custom-flags": [ "no_auto_equip" ] }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
     },
     "flags": [ "SCEN_ONLY" ]
   },
@@ -1465,14 +1616,15 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "pockknife",
           "candy3",
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "rideBookerZhigh", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "rideBookerZhigh", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -1496,14 +1648,14 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "g_shovel",
           "badge_plant",
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "plant_zhigh", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "plant_zhigh", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
       "female": [ "bra", "panties", "skirt_zhigh" ]
@@ -1528,13 +1680,13 @@
           "jacket_leather_red_march",
           "zhigh_smart_phone",
           "medkitRechargeV3",
-          "dress_shoes",
           "shako_zhigh",
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "stick_swag", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "stick_swag", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "boxer_shorts", "socks", "pants_zhigh_march" ],
       "female": [ "bra", "panties", "stockings", "skirt_zhigh_march" ]
@@ -1555,13 +1707,13 @@
           "zeonJacketZhigh",
           "zhigh_smart_phone",
           "medkitRechargeV3",
-          "dress_shoes",
           "beret",
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "bannerZhigh", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "bannerZhigh", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "boxer_shorts", "socks", "pants_zhigh_march" ],
       "female": [ "bra", "panties", "stockings", "skirt_zhigh_march" ]
@@ -1595,8 +1747,9 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "bokken", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "bokken", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "briefs" ],
       "female": [ "sports_bra", "boy_shorts" ]
@@ -1623,7 +1776,6 @@
           "medkitRechargeV3",
           "hat_ball2",
           "socks",
-          "sneakers",
           "pants_tracksuit_zhigh",
           "wristwatch",
           "sling_rubberball",
@@ -1632,8 +1784,9 @@
           "sling_rubberball"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "BBallglove", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "BBallglove", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "briefs" ],
       "female": [ "sports_bra", "boy_shorts" ]
@@ -1677,8 +1830,8 @@
           "wristwatch"
         ],
         "entries": [ 
-		  { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-          { "item": "sjambokZhigh", "custom-flags": [ "auto_wield" ] }
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "sjambokZhigh", "custom-flags": [ "auto_wield" ] }
 	    ]
       },
       "male": [ "boxer_shorts" ],
@@ -1706,13 +1859,14 @@
           "medkitRechargeV3",
           "socks",
           "water_clean",
-          "sneakers",
           "cryo_grenade",
           "cryo_grenade",
           "wristwatch"
         ],
         "entries": [ 
-          { "item": "ice_gun", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "item": "ice_gun", "custom-flags": [ "auto_wield" ] }
+	    ]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
       "female": [ "bra", "panties", "skirt_zhigh" ]
@@ -1740,8 +1894,9 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "KorGong", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "KorGong", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "panties" ]
@@ -1767,7 +1922,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "dress_shoes",
           "gold_ear",
           "fancy_sunglassesStars",
           "light_atomic_battery_cell",
@@ -1775,8 +1929,10 @@
           "gold_watch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "selfie_stick_extended", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "selfie_stick_extended", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
       "female": [ "bra", "panties", "skirt_zhigh" ]
@@ -1798,7 +1954,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "paper",
           "pen",
           "pencil",
@@ -1806,7 +1961,9 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
       "female": [ "bra", "panties", "skirt_zhigh" ]
@@ -1835,7 +1992,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "survival_kit",
           "water_clean",
           "water_clean",
@@ -1844,8 +2000,10 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "water_gun", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "water_gun", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "panties" ]
@@ -1873,7 +2031,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "survival_kit",
           "water_clean",
           "water_clean",
@@ -1882,8 +2039,9 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "water_sniper", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "water_sniper", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "panties" ]
@@ -1904,12 +2062,12 @@
           "blazer_zhigh",
           "zhigh_smart_phone",
           "medkitRechargeV3",
-          "socks",
-          "sneakers"
+          "socks"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "boxsnake", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "boxsnake", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -1932,7 +2090,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "firecracker",
           "firecracker",
           "firecracker",
@@ -1944,7 +2101,9 @@
           "balloon_trapZhigh"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -1968,13 +2127,13 @@
           "medkitRechargeV3",
           "socks",
           "cloak_mj",
-          "sneakers",
           "light_atomic_battery_cell",
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "micZhigh2", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "micZhigh2", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -1995,12 +2154,13 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "dress_shoes",
           "permanent_marker",
           "wristwatch"
         ],
         "entries": [ 
-                { "item": "conductingBatonSpeedZhigh", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "item": "conductingBatonSpeedZhigh", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "panties" ]
@@ -2023,7 +2183,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "circsaw_blade",
           "frisbee",
           "frisbee",
@@ -2032,8 +2191,9 @@
           "frisbee"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "discShooter", "ammo-item": "frisbee", "charges": 5, "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "discShooter", "ammo-item": "frisbee", "charges": 5, "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -2059,13 +2219,15 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "hat_visorZhigh",
           "vambrace_larmor"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "compositebow", "custom-flags": [ "auto_wield" ], "contents-item": [ "bow_scope", "bow_stabilizer_set" ] }, { "item": "quiver", "contents-group": "quiver_DeadeyeZhigh" } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "compositebow", "custom-flags": [ "auto_wield" ], "contents-item": [ "bow_scope", "bow_stabilizer_set" ] },
+			{ "item": "quiver", "contents-group": "quiver_DeadeyeZhigh" }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -2094,12 +2256,12 @@
           "hoodie",
           "lighter",
           "wristwatch",
-          "sneakers",
           "folding_skateboard",
           "zhigh_smart_phone",
 		  "medkitRechargeV3"
         ],
         "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
             { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "group": "ZhighNadeGroups" },
 			{ "item": "hammer_sledge", "custom-flags": [ "auto_wield" ] }
@@ -2126,7 +2288,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "medkit3",
           "medkit3",
           "XmasHat",
@@ -2135,6 +2296,7 @@
           "runner_bag"
         ],
         "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "gas_chloramine", "container-item": "bottle_plastic_small" },
 			{ "item": "gas_fungicidal", "container-item": "bottle_plastic_small" },
@@ -2170,7 +2332,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "signal_flare",
           "signal_flare",
           "signalMarker0",
@@ -2182,6 +2343,7 @@
           "wristwatch"
         ],
         "entries": [
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "group": "charged_two_way_radio" },
 			{ "item": "sling_bullet", "charges": 50 },
@@ -2213,6 +2375,9 @@
 			"sneakers",
 			"runner_bag",
 			"wristwatch"
+		],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" }
 		]
       },
       "male": [ "briefs" ],
@@ -2233,7 +2398,6 @@
           "blazer",
           "pants",
           "socks",
-          "dress_shoes",
           "tie_skinny",
           "tieclip",
           "poetry_book",
@@ -2241,7 +2405,10 @@
           "medkitRechargeV3",
           "permanent_marker",
           "wristwatch"
-        ]
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" }
+		]
       },
       "male": [ "briefs" ],
       "female": [ "bra", "panties" ]
@@ -2264,7 +2431,6 @@
           "medkitRechargeV3",
 		  "switchblade",
           "socks",
-		  "sneakers",
 		  "gloves_light_fingerless",
           "slingpack",
 		  "matches",
@@ -2277,8 +2443,10 @@
 		  "slingshot"
         ],
         "entries": [ 
-			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
-       },
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
     },
@@ -2313,7 +2481,8 @@
         ],
         "entries": [ 
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-			{ "group": "charged_flashlight" } ]
+			{ "group": "charged_flashlight" }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -2335,7 +2504,7 @@
             "blazer_zhigh",
             "zhigh_smart_phone",
 			"medkitRechargeV3",
-            "socks", "dress_shoes",
+            "socks",
 			"tieclip",
             "fancy_sunglasses",
 			"knit_scarf",
@@ -2345,8 +2514,10 @@
 			"money_bundle"
           ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
-        },
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+	  },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
     },
@@ -2402,7 +2573,9 @@
 		  "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -2421,7 +2594,6 @@
       "both": {
         "items": [
           "socks",
-          "sneakers",
           "sewing_kit",
           "mbag",
           "fur_cat_ears",
@@ -2434,7 +2606,9 @@
           "cheeseburger"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ] 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		] 
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -2545,13 +2719,13 @@
           "medkitRechargeV3",
           "socks",
           "mask_hockey",
-          "sneakers",
           "wristwatch"
         ],
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "katana_hm", "custom-flags": [ "auto_wield" ] },
-                { "item": "sheath", "contents-item": "knife_hunting" } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "katana_hm", "custom-flags": [ "auto_wield" ] },
+			{ "item": "sheath", "contents-item": "knife_hunting" } ]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
       "female": [ "bra", "panties", "skirt_zhigh" ]
@@ -2578,13 +2752,13 @@
           "medkitRechargeV3",
           "socks",
           "mask_hockey",
-          "sneakers",
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "katana_hm", "custom-flags": [ "auto_wield" ] },
-                { "item": "sheath", "contents-item": "knife_hunting" } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "katana_hm", "custom-flags": [ "auto_wield" ] },
+			{ "item": "sheath", "contents-item": "knife_hunting" } ]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
       "female": [ "bra", "panties", "skirt_zhigh" ]
@@ -2606,7 +2780,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "pockknife",
           "holybook_bible1",
           "holy_symbol",
@@ -2614,8 +2787,9 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "candlestick", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "candlestick", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -2637,7 +2811,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "bead_bracelet",
           "bead_necklace",
           "holybook_tripitaka",
@@ -2645,8 +2818,9 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "holy_staffZhigh", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "holy_staffZhigh", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -2704,7 +2878,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "fedora",
           "bb",
           "bb",
@@ -2712,9 +2885,10 @@
           "wristwatch"
         ],
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "bbpistol", "ammo-item": "bb", "charges": [ 200, 250 ], "container-item": "sholster" },
-                { "item": "bbsmg", "ammo-item": "bb", "charges": [ 1, 300 ], "contents-item": [ "shoulder_strap" ], "custom-flags": [ "auto_wield" ] }
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "bbpistol", "ammo-item": "bb", "charges": [ 200, 250 ], "container-item": "sholster" },
+			{ "item": "bbsmg", "ammo-item": "bb", "charges": [ 1, 300 ], "contents-item": [ "shoulder_strap" ], "custom-flags": [ "auto_wield" ] }
         ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
@@ -2748,7 +2922,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "gloves_tactical",
           "hat_boonie",
           "acidbomb",
@@ -2757,10 +2930,11 @@
           "wristwatch"
         ],
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-				{ "item": "bbpistol", "ammo-item": "bb", "charges": [ 200, 250 ], "container-item": "sholster" },
-				{ "item": "kukri", "container-item": "sheath" },
-                { "item": "bbSnip", "ammo-item": "bb", "charges": 5, "contents-item": "shoulder_strap" } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "bbpistol", "ammo-item": "bb", "charges": [ 200, 250 ], "container-item": "sholster" },
+			{ "item": "kukri", "container-item": "sheath" },
+			{ "item": "bbSnip", "ammo-item": "bb", "charges": 5, "contents-item": "shoulder_strap" } ]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
       "female": [ "bra", "panties", "skirt_zhigh" ]
@@ -2790,7 +2964,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "gloves_tactical",
           "tacvest",
           "nail",
@@ -2803,8 +2976,9 @@
           "wristwatch"
         ],
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "marble_gun", "ammo-item": "nail", "charges": 2, "contents-item": "shoulder_strap" } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "marble_gun", "ammo-item": "nail", "charges": 2, "contents-item": "shoulder_strap" } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -2884,7 +3058,7 @@
 			"sneakers"
 		],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ] 
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ] 
         },
       "male": [ "boxer_shorts" ],
       "female": [ "sports_bra", "boy_shorts" ]
@@ -2907,10 +3081,12 @@
 			"zhigh_smart_phone",
 			"medkitRechargeV3",
 			"mouthpiece",
-			"geta"
+			"geta",
+			"socks_ankle",
+			"sneakers"
 		],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ] 
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ] 
         },
       "male": [ "boxer_shorts" ],
       "female": [ "sports_bra", "boy_shorts" ]
@@ -2938,8 +3114,11 @@
 			"ref_lighter"
 		],
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "cash_gun", "ammo-item": "ammo_cash", "charges": 89 } ] },
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "cash_gun", "ammo-item": "ammo_cash", "charges": 89 }
+		]
+	  },
       "male": [ "boxer_shorts", "pants_zhigh", "dress_shoes", "polo_shirt", "socks" ],
       "female": [ "tank_top", "bra", "panties", "skirt_zhigh", "heels", "jacket_leather", "stockings" ]
     },
@@ -2956,7 +3135,6 @@
       "both": {
         "items": [
           "socks",
-          "sneakers",
           "pants_zhigh",
           "dress_shirt_zhigh",
           "gloves_light",
@@ -2972,7 +3150,9 @@
           "picklocks"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
       },
       "male": [ "briefs" ],
       "female": [ "bra", "panties" ]
@@ -3005,8 +3185,8 @@
           "doom_fullhelmet"
         ],
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "pneumatic_shotgun", "ammo-item": "shotcanister_bearing", "charges": 2, "contents-item": "shoulder_strap", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "pneumatic_shotgun", "ammo-item": "shotcanister_bearing", "charges": 2, "contents-item": "shoulder_strap", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -3080,7 +3260,7 @@
 		    { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "paintballG_M60",
 			  "ammo-item": "paintball",
-			  "charges": 10,
+			  "charges": 250,
 			  "contents-item": [ "shoulder_strap", "charm_hglass", "charm_eyeball", "charm_comp" ],
 			  "custom-flags": [ "auto_wield" ]
 			}
@@ -3145,7 +3325,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "cowboy_hat_zhigh",
           "bullwhip",
           "canteen",
@@ -3153,8 +3332,9 @@
           "wristwatch"
         ],
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "kukri", "container-item": "sheath" }
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "kukri", "container-item": "sheath" }
         ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
@@ -3180,14 +3360,14 @@
           "medkitRechargeV3",
           "wetsuit_gloves",
           "socks",
-          "sneakers",
           "dive_bag",
           "rebreather",
           "diving_watch"
         ],
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "diveknife", "container-item": "sheath" }
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "diveknife", "container-item": "sheath" }
         ]
       },
       "male": [ "pants_zhigh", "tie_necktie_zhigh" ],
@@ -3212,13 +3392,13 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "fencing_mask",
           "gauntlet_fencing"
         ],
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "fencing_epee", "container-item": "scabbard" }
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "fencing_epee", "container-item": "scabbard" }
         ]
       },
       "male": [ "pants_zhigh", "tie_necktie_zhigh" ],
@@ -3245,7 +3425,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "boots_scrap",
           "gloves_tactical",
           "depowered_armor",
           "bb",
@@ -3255,10 +3434,10 @@
           "depowered_helmet"
         ],
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "BBbelt_500", "ammo-item": "bb", "charges": [ 1100, 1190 ] },
-                { "item": "BBbelt_500", "ammo-item": "bbincen", "charges": [ 1100, 1190 ] },
-                { "item": "bbM134", "ammo-item": "bb", "charges": [ 900, 1190 ], "custom-flags": [ "auto_wield" ] }
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "BBbelt_500", "ammo-item": "bb", "charges": [ 1100, 1190 ] },
+			{ "item": "BBbelt_500", "ammo-item": "bbincen", "charges": [ 1100, 1190 ] },
+			{ "item": "bbM134", "ammo-item": "bb", "charges": [ 900, 1190 ], "custom-flags": [ "auto_wield" ] }
         ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
@@ -3284,7 +3463,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "gloves_tactical",
           "armor_scrapsuit",
           "bb",
@@ -3293,10 +3471,11 @@
           "bb"
         ],
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "BBbelt_500", "ammo-item": "bb", "charges": [ 900, 1190 ] },
-                { "item": "BBbelt_500", "ammo-item": "bb", "charges": [ 900, 1190 ] },
-                { "item": "bbM60", "ammo-item": "bb", "charges": [ 900, 1190 ], "contents-item": [ "shoulder_strap" ], "custom-flags": [ "auto_wield" ] }
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "BBbelt_500", "ammo-item": "bb", "charges": [ 900, 1190 ] },
+			{ "item": "BBbelt_500", "ammo-item": "bb", "charges": [ 900, 1190 ] },
+			{ "item": "bbM60", "ammo-item": "bb", "charges": [ 900, 1190 ], "contents-item": [ "shoulder_strap" ], "custom-flags": [ "auto_wield" ] }
         ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
@@ -3320,13 +3499,13 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "helmet_bike",
           "folding_bicycle",
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -3347,12 +3526,12 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "snow_suit_head",
           "snow_suit_body"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
       "female": [ "bra", "panties", "skirt_zhigh" ]
@@ -3375,13 +3554,13 @@
           "medkitRechargeV3",
           "socks",
           "Rc_Packed",
-          "sneakers",
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "Rc_Packed", "custom-flags": [ "auto_wield" ] },
-                { "item": "golf_bag", "contents-group": "golfbag_AggressorZhigh" } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "Rc_Packed", "custom-flags": [ "auto_wield" ] },
+			{ "item": "golf_bag", "contents-group": "golfbag_AggressorZhigh" } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -3407,7 +3586,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "combatnail",
           "UPS_off",
           "watch_conan",
@@ -3416,13 +3594,15 @@
           "clip_wrist"
         ],
         "entries": [ 
-                { "group": "spy_pen_collections" },
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "napalm", "container-item": "test_tube" },
-                { "item": "gas_chloramine", "container-item": "test_tube" },
-                { "item": "ZhighGas_smoke", "container-item": "test_tube" },
-                { "item": "gas_fungicidal", "container-item": "test_tube" },
-                { "item": "gas_insecticidal", "container-item": "test_tube" } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "spy_pen_collections" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "napalm", "container-item": "test_tube" },
+			{ "item": "gas_chloramine", "container-item": "test_tube" },
+			{ "item": "ZhighGas_smoke", "container-item": "test_tube" },
+			{ "item": "gas_fungicidal", "container-item": "test_tube" },
+			{ "item": "gas_insecticidal", "container-item": "test_tube" }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -3444,12 +3624,12 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "contents-group": [ "manuals_school", "textbooks_school", "light_reading" ], "item": "box_small" } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "contents-group": [ "manuals_school", "textbooks_school", "light_reading" ], "item": "box_small" } ]
       },
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "boy_shorts" ]
@@ -3479,9 +3659,9 @@
           "wristwatch"
         ],
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "group": "zhighTrooper_wield", "ammo-item": "bb", "charges": 300, "custom-flags": [ "auto_wield" ] },
-                { "item": "chestrig", "contents-group": "army_mags_bb" } ]
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "zhighTrooper_wield", "ammo-item": "bb", "charges": 300, "custom-flags": [ "auto_wield" ] },
+			{ "item": "chestrig", "contents-group": "army_mags_bb" } ]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
       "female": [ "bra", "panties", "skirt_zhigh" ]
@@ -3504,13 +3684,13 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "gloves_tactical",
           "bandana_skull",
           "bb",
           "wristwatch"
         ],
         "entries": [
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "bbmachinepistol", "ammo-item": "bbPlastic", "charges": 300, "container-item": "holster" },
 			{ "item": "bbDMR", "ammo-item": "bb", "charges": 50, "contents-item": [ "shoulder_strap", "charm_comp" ], "custom-flags": [ "auto_wield" ] }
@@ -3545,9 +3725,9 @@
           "doom_fullhelmet"
         ],
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "paintballgun_pistol", "ammo-item": "paintball", "container-item": "holster", "charges": 17 },
-                { "item": "paintballgun", "ammo-item": "paintball", "charges": 75, "contents-item": "shoulder_strap", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "paintballgun_pistol", "ammo-item": "paintball", "container-item": "holster", "charges": 17 },
+			{ "item": "paintballgun", "ammo-item": "paintball", "charges": 75, "contents-item": "shoulder_strap", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -3568,7 +3748,6 @@
           "dress_shirt_zhigh",
           "blazer_zhigh",
           "socks",
-          "sneakers",
           "mbag",
           "pizza_cheese",
           "cola",
@@ -3581,7 +3760,8 @@
           "RPG_die"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -3613,15 +3793,15 @@
           "medkitRechargeV3",
           "dress_shirt_zhigh",
           "blazer_zhigh",
-          "socks", 
-          "dress_shoes", 
+          "socks",  
           "mbag", 
           "caffeine", 
           "coin_quarter",
           "wristwatch" 
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -3642,12 +3822,12 @@
           "blazer_zhigh",
           "zhigh_smart_phone",
           "medkitRechargeV3",
-          "socks",
-          "sneakers"
+          "socks"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "premium_survival_kit", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "premium_survival_kit", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -3675,14 +3855,14 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "switchblade",
           "wristwatch",
           "picklocks"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "lighter", "charges": 100 } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "lighter", "charges": 100 } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -3707,13 +3887,13 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "mbag",
           "wristwatch"
         ],
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "combatsaw_off", "ammo-item": "gasoline", "charges": [ 400, 450 ], "custom-flags": [ "auto_wield" ] }
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "combatsaw_off", "ammo-item": "gasoline", "charges": [ 400, 450 ], "custom-flags": [ "auto_wield" ] }
         ]
       },
       "male": [ "boxer_shorts", "shorts_tracksuit_zhigh" ],
@@ -3736,7 +3916,6 @@
           "tshirt_mint",
           "gloves_medical",
           "stockings",
-          "dress_shoes",
           "coat_lab",
           "wristwatch",
           "water_clean",
@@ -3746,7 +3925,10 @@
           "medkitRechargeV3",
           "1st_aid",
           "stethoscope"
-        ]
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_shoesAll" }
+		]
       },
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "panties" ]
@@ -3782,9 +3964,10 @@
           "pickelhaube"
         ],
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "shotgun_pump_paint", "ammo-item": "paintball_shot", "charges": 10, "contents-item": [ "shoulder_strap", "sword_bayonet" ], "custom-flags": [ "auto_wield" ] },
-                { "item": "knife_trench", "container-item": "sheath" } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "shotgun_pump_paint", "ammo-item": "paintball_shot", "charges": 10, "contents-item": [ "shoulder_strap", "sword_bayonet" ], "custom-flags": [ "auto_wield" ] },
+			{ "item": "knife_trench", "container-item": "sheath" } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -3813,15 +3996,15 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "lowtops",
           "balclava_skull",
           "tie_bow_zhigh",
           "mp3",
           "matches"
         ],
         "entries": [
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "medium_atomic_battery_cell", "ammo-item": "battery", "charges": 5000, "container-item": "dj_mask" }
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "medium_atomic_battery_cell", "ammo-item": "battery", "charges": 5000, "container-item": "dj_mask" }
         ]
       },
       "male": [ "boxer_shorts" ],
@@ -3858,11 +4041,11 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
       "female": [ "bra", "panties", "skirt_zhigh" ]
@@ -3887,8 +4070,9 @@
           "slippers"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "cane", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "cane", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -3911,13 +4095,13 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "net",
           "helmet_football"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "spear_forked", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "spear_forked", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -3947,7 +4131,8 @@
 			"wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -3968,13 +4153,13 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "jacket_baseball",
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "group": "ZhighMusicItems", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "ZhighMusicItems", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
       "female": [ "bra", "panties", "skirt_zhigh" ]
@@ -3995,13 +4180,13 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "dress_shoes",
           "jacket_leather_red_march",
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "group": "ZhighMusicItems", "custom-flags": [ "auto_wield" ] } ]
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "ZhighMusicItems", "custom-flags": [ "auto_wield" ] } ]
       },
       "male": [ "boxer_shorts", "pants_zhigh_march" ],
       "female": [ "bra", "panties", "skirt_zhigh_march" ]
@@ -4027,13 +4212,13 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "pockknife",
           "tricorne",
           "matches",
           "pipe_cleaner"
         ],
         "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "rifle_flintlock", "ammo-item": "flintlock_ammo", "charges": 1, "contents-item": [ "shoulder_strap", "makeshift_bayonet" ] },
 			{ "item": "flintlock_pouch", "contents-group": "flintlock_pouch_reenactor" },
@@ -4070,12 +4255,12 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "kilt",
           "tricorne",
           "bagpipes"
         ],
         "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
             { "item": "longbow", "custom-flags": [ "auto_wield" ], "contents-item": [ "bow_scope", "bow_stabilizer_set" ] },
 			{ "item": "quiver", "contents-group": "quiver_RangerZhigh" },
@@ -4105,13 +4290,13 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "coffee_raw",
           "water_clean",
           "mbag",
           "wristwatch"
         ],
         "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "coffeemaker", "custom-flags": [ "auto_wield" ] }
 		]
@@ -4137,13 +4322,15 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "cufflinks",
           "tieclip",
           "cardmultitool",
           "gold_watch"
         ],
-        "entries": [ { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -4166,7 +4353,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "pockknife",
           "cattlefodder",
           "cattlefodder",
@@ -4177,6 +4363,7 @@
           "wristwatch"
         ],
         "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "horse_tack", "custom-flags": [ "auto_wield" ] }
 		]
@@ -4203,7 +4390,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "wetsuit_booties",
-          "lowtops",
           "m_fishspear",
           "m_fishspear",
           "m_fishspear",
@@ -4214,6 +4400,7 @@
           "diving_watch"
         ],
         "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "swim_fins", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "scuba_tank", "custom-flags": [ "no_auto_equip" ] },
@@ -4262,11 +4449,11 @@
         "items": [
           "zhigh_smart_phone",
           "medkitRechargeV3",
-          "dress_shoes",
           "maid_dress",
           "maid_hat"
         ],
         "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "item": "knife_steak", "custom-flags": [ "auto_wield" ] },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
 		]
@@ -4323,12 +4510,12 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "legguard_hard",
           "armguard_hard",
           "wristwatch"
         ],
         "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "item": "BBclip300release", "ammo-item": "bbincen", "charges": 300 },
 			{ "item": "bbmachinepistol", "ammo-item": "bbPlastic", "charges": 300, "container-item": "holster" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
@@ -4397,6 +4584,7 @@
 			"wristwatch"
 		],
         "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "item": "golf_club", "custom-flags": [ "auto_wield" ] },
 			{ "item": "golf_club", "container-item": "golf_bag" }
         ]
@@ -4422,10 +4610,10 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "wristwatch"
         ],
         "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "item": "medium_disposable_cell", "ammo-item": "battery", "charges": 1500, "container-item": "knuckle_elec", "custom-flags": [ "auto_wield" ] },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "group": "charged_tazer" }
@@ -4455,7 +4643,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "bandana",
           "utility_belt",
           "gauntlets_larmor",
@@ -4463,6 +4650,7 @@
           "wristwatch"
         ],
         "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "item": "axe_ring", "contents-item": "axe_combat" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "grapnel", "custom-flags": [ "auto_wield" ] }
@@ -4488,7 +4676,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "improvised_demolition_charge",
           "flamecanZhigh",
           "conTool",
@@ -4500,6 +4687,7 @@
           "wristwatch"
         ],
         "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_coat" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "hammer_sledge_engineer", "custom-flags": [ "auto_wield" ] }
@@ -4524,11 +4712,11 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "lighter",
           "wristwatch"
         ],
         "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_coat" },
 			{ "group": "ZhighNadeGroups" },
 			{ "group": "ZhighTraps" },
@@ -4566,7 +4754,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "utility_belt",
           "ninjaCowlFakeZhigh",
           "gloves_fingerless",
@@ -4576,6 +4763,7 @@
           "tool_ninjaBomb"
         ],
         "entries": [
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "tanto", "container-item": "sheath" },
 			{ "item": "nunchunkZhigh", "custom-flags": [ "auto_wield" ] }
@@ -4600,7 +4788,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "backpack_leather",
           "bot_LMGturretZhigh",
           "bot_sniperturretZhigh",
@@ -4610,6 +4797,7 @@
           "wristwatch"
         ],
         "entries": [
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_coat" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "popGunPistol_zhigh", "custom-flags": [ "auto_wield" ] }
@@ -4666,11 +4854,11 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "mystery_cloakZhigh",
           "wristwatch"
         ],
         "entries": [
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "kirpan_cheap", "container-item": "sheath" }
 		]
@@ -4801,11 +4989,11 @@
           "medkitRechargeV3",
           "socks",
           "pants_zhigh",
-          "dress_shoes",
           "trenchcoat_jojoZhigh",
           "hat_jojoZhigh"
         ],
         "entries": [
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "impact_knuckle", "custom-flags": [ "auto_wield" ] }
 		]
@@ -4834,11 +5022,11 @@
           "medkitRechargeV3",
           "socks",
           "pants_zhigh",
-          "dress_shoes",
           "sleeveless_trenchcoat",
           "mask_kabalZhigh"
         ],
         "entries": [
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "hookswordZhigh_inferior", "custom-flags": [ "auto_wield" ] }
 		]
@@ -4868,10 +5056,10 @@
           "medkitRechargeV3",
           "socks",
           "pants_zhigh",
-          "dress_shoes",
           "costumePowerArmorHelmZhigh"
         ],
         "entries": [
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "group": "ZhighPowerArmor" },
 			{ "item": "swordsmanSword", "custom-flags": [ "auto_wield" ] }
@@ -4902,12 +5090,12 @@
           "medkitRechargeV3",
           "socks",
           "pants_zhigh",
-          "dress_shoes",
           "trenchcoat_leather",
           "mask_rioter",
           "survivor_goggles"
         ],
         "entries": [
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
 		]
       },
@@ -4936,12 +5124,12 @@
           "medkitRechargeV3",
           "socks",
           "pants_zhigh",
-          "dress_shoes",
           "trenchcoat_leather",
           "baton",
           "hat_ball"
         ],
         "entries": [
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
 		]
       },
@@ -5206,13 +5394,13 @@
           "medkitRechargeV3",
           "socks",
           "jacket_tracksuitSquidPnk_zhigh",
-          "lowtops",
           "balclava_skull",
           "mask_SquidCirZhigh",
           "bb"
         ],
         "entries": [
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "item": "bbpistol", "ammo-item": "bb", "charges": [ 200, 250 ], "container-item": "holster" }
 		]
       },
@@ -5240,13 +5428,13 @@
           "medkitRechargeV3",
           "socks",
           "jacket_tracksuitSquidPnk_zhigh",
-          "lowtops",
           "balclava_skull",
           "mask_SquidTriZhigh",
           "bb"
         ],
         "entries": [
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "item": "bbMp5", "ammo-item": "bb", "charges": [ 250, 300 ], "contents-item": [ "shoulder_strap" ], "custom-flags": [ "auto_wield" ] }
 		]
       },
@@ -5274,13 +5462,13 @@
           "medkitRechargeV3",
           "socks",
           "jacket_tracksuitSquidPnk_zhigh",
-          "lowtops",
           "balclava_skull",
           "mask_SquidSqaZhigh",
           "bb"
         ],
         "entries": [
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "item": "bbM4", "ammo-item": "bb", "charges": [ 250, 300 ], "contents-item": [ "shoulder_strap" ], "custom-flags": [ "auto_wield" ] }
 		]
       },
@@ -5309,10 +5497,10 @@
           "medkitRechargeV3",
           "socks",
           "jacket_tracksuitSquidPnk_zhigh",
-          "lowtops",
           "marble"
         ],
         "entries": [
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "glass_shiv", "custom-flags": [ "auto_wield" ] }
 		]
@@ -5604,11 +5792,11 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "wristwatch"
         ],
         "entries": [ 
 			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "22_lr", "charges": 12 },
 			{ "item": "marlin_9a", "ammo-item": "22_lr", "charges": 19, "contents-item": "shoulder_strap", "custom-flags": [ "auto_wield" ] }
@@ -5634,11 +5822,11 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "wristwatch"
         ],
         "entries": [ 
 			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "22_lr", "charges": 12 },
 			{ "item": "ruger_lcr_22", "ammo-item": "22_lr", "charges": 8, "custom-flags": [ "auto_wield" ] }
@@ -5731,7 +5919,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "mask_skull",
           "knife_chef",
           "water_clean",
@@ -5743,6 +5930,7 @@
         ],
         "entries": [ 
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "item": "bearing", "charges": 32 },
 			{ "item": "pebble_rubber", "charges": 10 },
 			{ "item": "pebble_triffid", "charges": 10 },
@@ -5826,9 +6014,10 @@
           "wristwatch"
         ],
         "entries": [ 
-                { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-                { "item": "holyGrailSword_zhigh", "custom-flags": [ "auto_wield" ] },
-                { "item": "dagger_medieval", "container-item": "sheath" } ]
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "item": "holyGrailSword_zhigh", "custom-flags": [ "auto_wield" ] },
+			{ "item": "dagger_medieval", "container-item": "sheath" } ]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
       "female": [ "bra", "panties", "skirt_zhigh" ]
@@ -5863,6 +6052,7 @@
         ],
         "entries": [ 
 			{ "item": "flintlock_ammo", "charges": 16 },
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "item": "jezail_flintlock", "ammo-item": "flintlock_ammo", "charges": 1, "custom-flags": [ "auto_wield" ] }
 		]
       },
@@ -5890,12 +6080,12 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "pizza_cheese"
         ],
         "entries": [ 
 			{ "group": "ninjaWeaponsZhigh" },
 			{ "group": "ninjaWeaponsZhigh" },
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "wakizashi_inferior", "custom-flags": [ "auto_wield" ] }
 		]
@@ -5927,11 +6117,11 @@
           "improvised_colabomb",
           "bolas",
           "socks",
-          "briefcase",
-          "sneakers"
+          "briefcase"
         ],
         "entries": [ 
 			{ "group": "ZhighTraps" },
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "item": "bbsmg", "ammo-item": "bb", "charges": [ 230, 300 ], "contents-item": "shoulder_strap" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "hammer_sledge_heavy", "custom-flags": [ "auto_wield" ] }
@@ -5960,6 +6150,7 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
+          "dress_shoes",
           "balclava",
           "stimInv",
           "stimUdR513",
@@ -6027,7 +6218,7 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
+          "dress_shoes",
           "badge_detective",
           "tie_bow_zhigh",
           "paintball",
@@ -6053,7 +6244,7 @@
     "id": "zhighNader",
     "name": "Student - Nader",
     "description": "You rain chaos from behind cover, lobbing fire, smoke, and shrapnel with a grin and perfect aim.  In the world’s end, you don’t need a plan—just the right grenade for the job.",
-    "points": 3,
+    "points": 2,
     "skills": [
 		{ "level": 1, "name": "fabrication" },
 		{ "level": 2, "name": "throw" }
@@ -6066,7 +6257,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "fakeFlashBangZhigh",
           "matches",
           "runner_bag",
@@ -6077,6 +6267,7 @@
 			{ "group": "ZhighNadeGroups" },
 			{ "group": "ZhighNadeGroups" },
 			{ "group": "ZhighNadeGroups" },
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "grenadebandolier", "contents-item": [ "fakeFlashBangZhigh", "tool_ninjaBomb", "grenade_goo" ] }
 		]
@@ -6105,7 +6296,6 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "jacket_tracksuit_zhigh_black",
           "balclava",
           "vodka",
@@ -6114,6 +6304,7 @@
         ],
         "entries": [ 
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "item": "shovel", "custom-flags": [ "auto_wield" ] }
 		]
       },
@@ -6138,11 +6329,11 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "wristwatch"
         ],
         "entries": [
 			{ "item": "ID_1st", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "item": "personal_gobag", "custom-flags": [ "FIT" ] }
 		]
       },
@@ -6170,12 +6361,12 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "sneakers",
           "cig",
           "wristwatch"
         ],
         "entries": [
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "ZhighNpc_shoesAll" },
 			{ "item": "lighter", "charges": 100 }
 		]
       },
@@ -6184,6 +6375,1623 @@
     },
     "flags": [ "SCEN_ONLY" ],
     "addictions": [ { "intensity": 10, "type": "nicotine" } ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighCorpsman",
+    "name": "Student - Corpsman",
+    "description": "Before the world ended, you had steady hands and a sharp eye—once used for healing, now repurposed for hurting.  The kindness is gone; now you carve your way through the dead with the same precision you once saved lives.",
+    "points": -2,
+    "skills": [ { "level": 2, "name": "firstaid" } ],
+    "traits": [ "REGEN_zhigh", "PROF_MED" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "blazer_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "gloves_medical",
+          "medkitRecharge",
+          "medium_atomic_battery_cell",
+          "syringe",
+          "syringe",
+          "syringe",
+          "1st_aid",
+          "mbag",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "ZhighNpc_shoesAll" },
+			{
+				"item": "medium_atomic_battery_cell",
+				"ammo-item": "battery",
+				"charges": [ 4500, 5000 ],
+				"container-item": "defibrillatorZhigh",
+				"custom-flags": [ "auto_wield" ]
+			}
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighBulwark",
+    "name": "Student - Bulwark",
+    "description": "You were just a student once, now you're the frontline—shield raised, baton swinging, holding the line between chaos and what's left of hope.  Books taught you theory; the streets taught you survival.",
+    "points": -1,
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "shield_banded_large",
+          "helmet_skid",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "cudgel_metalZhigh", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighDazzler",
+    "name": "Student - Dazzler",
+    "description": "You've been living your average high school life.  But no, you could not live a good bright life.  How did you got some flash bombs, you do not know.",
+    "points": 1,
+    "skills": [ { "level": 1, "name": "throw" }, { "level": 2, "name": "speech" } ],
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "socks",
+          "flashbang",
+          "flashbang",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "fakeFlashBangZhigh",
+          "fakeFlashBangZhigh",
+          "fakeFlashBangZhigh",
+          "matches",
+          "mbag",
+          "wristwatch"
+        ],
+        "entries": [
+		  { "group": "ZhighNpc_shoesAll" },
+		  { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighRocketeer",
+    "name": "Student - Rocketeer",
+    "description": "You were a student of science, now you're a student of destruction—shouldering rocket launchers built from scrap and fury.  Every blast is your answer to a world that failed the final test.  If fighting is sure to result in victory, then you must fight!",
+    "points": 1,
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "airsoftHelm_zhigh",
+          "bearingBig",
+          "bearingBig",
+          "bearingBig"
+        ],
+        "entries": [ 
+          { "item": "e_tool", "container-item": "webbing_belt" },
+		  { "group": "ZhighNpc_shoesAll" },
+		  { "group": "ZhighNpc_coat" },
+		  { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+		  { "item": "surv_rocket_launcher", "ammo-item": "bearingBig", "contents-item": [ "charm_hglass", "charm_grenade" ], "charges": 1, "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighFumer",
+    "name": "Student - Fumer",
+    "description": "You stalk the dead zones with a gas mask and a belt full of toxic grenades, turning the air itself into your weapon.  Where you walk, the rot thickens—and the undead choke on your vengeance.",
+    "points": 1,
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "socks",
+          "gasbomb_makeshift",
+          "gasbomb_makeshift",
+          "gasbomb_makeshift",
+          "gasbomb_makeshift",
+          "gasbomb_makeshift",
+          "gasbomb_makeshift",
+          "gasbomb_makeshift",
+          "gasbomb_makeshift",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "matches",
+          "mbag",
+          "mask_plagueZhighWte",
+          "jedi_cloak",
+          "wristwatch"
+        ],
+        "entries": [
+		  { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+		  { "group": "ZhighNpc_shoesAll" },
+          { "item": "mask_gas", "custom-flags": [ "no_auto_equip" ] },
+		  { "item": "scythe", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighPumpKing",
+    "name": "Student - PumpKing",
+    "description": "You cosplayed as a pumpkin king when the world ended.",
+    "points": -6,
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [
+      { "level": 3, "name": "dodge" },
+      { "level": 2, "name": "throw" },
+      { "level": 2, "name": "melee" },
+      { "level": 2, "name": "bashing" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "ragpouch",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "zentai",
+          "candle",
+          "lighter",
+          "helmet_pumpkinZhigh"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "ZhighGuardWeaponGroups", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighBlinder",
+    "name": "Student - Blinder",
+    "description": "You wield light like a weapon, searing through shadows and blinding foes with surgical beams.  In a world drowned in darkness, you are the flash before the fall.",
+    "points": -3,
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "pockknife",
+          "sports_drink",
+          "matches",
+          "penDazzler"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_masks" },
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "item": "penFlash", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighArtillery",
+    "name": "Student - Artillery",
+    "description": "You don’t fight up close—you level city blocks from miles away, thunder in your wake.  When your cannons roar, the dead don’t rise—they vanish.",
+    "points": 2,
+    "skills": [ 
+        { "level": 1, "name": "speech" }, 
+        { "level": 2, "name": "pistol" }, 
+        { "level": 1, "name": "gun" } ],
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "sweatshirt",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "signal_flare",
+          "signal_flashZhigh",
+          "trenchcoat_faux_fur",
+          "bombRadioZhigh",
+          "wristwatch"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "charged_two_way_radio" },
+			{ "item": "flaregun", "ammo-item": "signal_flare", "container-item": "holster", "charges": 1 }
+        ]
+      },
+      "male": [ "boxer_shorts", "pants_zhigh" ],
+      "female": [ "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighTracker",
+    "name": "Student - Tracker",
+    "description": "You loved shooting, and shooting precisely.  High risk is a high reward.  Let's get this done.",
+    "points": -1,
+    "skills": [ { "level": 1, "name": "gun" }, { "level": 1, "name": "rifle" } ],
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "tacvest",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "paintball",
+          "paintball",
+          "mbag",
+          "gloves_fingerless",
+          "binoculars"
+        ],
+        "entries": [
+		    { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "item": "paintballG_Sniper",
+			  "ammo-item": "paintball",
+			  "charges": 1,
+			  "contents-item": [ "shoulder_strap", "charm_hglass", "acog_scope", "charm_comp" ],
+			  "custom-flags": [ "auto_wield" ]
+			}
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighCook",
+    "name": "Student - Cook",
+    "description": "You used to work at a school mess hall a week ago, but now you show the meaning of \"fast\" food by running for your life.",
+    "points": -2,
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [ { "level": 2, "name": "cooking" }, { "level": 1, "name": "dodge" } ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "pockknife",
+          "water_clean",
+          "matches",
+          "apron_green",
+          "hat_chef",
+          "wristwatch"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "item": "ladleZhigh", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighKampfer",
+    "name": "Student - Renegade",
+    "description": "You fight for no one but yourself.  In a world of ruins and rules long dead, you carve your own law with blood and steel.",
+    "points": 1,
+    "skills": [ { "level": 1, "name": "gun" }, { "level": 1, "name": "shotgun" } ],
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "jacket_baseball",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "roller_shoes_off",
+          "socks",
+          "gloves_fingerless",
+          "mask_CombatFake"
+        ],
+        "entries": [
+		    { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+			{ "group": "ZhighNadeGroups" },
+			{ "group": "ZhighTraps" },
+			{ "item": "sheath", "contents-item": "knife_YakutZhigh" },
+			{ "item": "suicidesoda", "container-item": "flask_hip" },
+			{ "item": "shotgun_pump_paint",
+			  "ammo-item": "paintball_shot",
+			  "charges": 15,
+			  "contents-item": [ "shoulder_strap", "charm_cut", "charm_spike", "charm_magnet" ],
+			  "custom-flags": [ "auto_wield" ]
+			},
+			{ "item": "paintball_shot", "charges": 15 }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighAlpha",
+    "name": "Student - Mutated Alpha",
+    "description": "You're the perfect candidate to tidy this mess.",
+    "points": 4,
+    "traits": [ 
+		"GOODHEARING",
+		"WAKEFUL",
+		"ROBUST",
+		"PER_ALPHA",
+		"INT_ALPHA",
+		"DEX_ALPHA",
+		"STR_ALPHA",
+		"WEAKSCENT",
+		"PRETTY",
+		"ANTIJUNK",
+		"WAKEFUL2",
+		"NAUSEA",
+		"HUNGER",
+		"ROT3",
+		"THRESH_ALPHA",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighBeast",
+    "name": "Student - Mutated Beast",
+    "description": "It's about time you grew out.  Now that you've matured, it is time to make something of yourself.",
+    "points": 4,
+    "traits": [ 
+		"DEFT",
+		"ANIMALEMPATH",
+		"TERRIFYING",
+		"ADRENALINE",
+		"MYOPIC",
+		"SLEEPY",
+		"ANTIJUNK",
+		"NIGHTVISION2",
+		"FEL_EYE",
+		"FUR",
+		"FELINE_FUR",
+		"PAWS_LARGE",
+		"PHEROMONE_MAMMAL",
+		"PADDED_FEET",
+		"TAIL_FLUFFY",
+		"MUT_TOUGH",
+		"PRED4",
+		"SAPIOVORE",
+		"CANINE_EARS",
+		"STR_UP_4",
+		"SMELLY2",
+		"DEFORMED2",
+		"MUZZLE",
+		"HUNGER2",
+		"HEAVYSLEEPER2",
+		"TROGLO",
+		"CARNIVORE",
+		"SNARL",
+		"SHOUT2",
+		"THRESH_BEAST",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighBird",
+    "name": "Student - Mutated Bird",
+    "description": "You're sure you'll fly someday.  In the meantime, there are still nests to build.",
+    "points": 4,
+    "traits": [ 
+		"QUICK",
+		"GIZZARD",
+		"NIGHTVISION",
+		"DEFT",
+		"LIGHTSTEP",
+		"BADBACK",
+		"GLASSJAW",
+		"BIRD_EYE",
+		"FEATHERS",
+		"DOWN",
+		"TALONS",
+		"FLEET2",
+		"WINGS_BIRD",
+		"DEX_UP_3",
+		"PER_UP_4",
+		"HOLLOW_BONES",
+		"BEAK",
+		"THRESH_BIRD",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighBovine",
+    "name": "Student - Mutated Cattle",
+    "description": "Civilization collapsed?  Great!  You and your kin will never have to worry about a slaughterhouse again.",
+    "points": 4,
+    "traits": [ 
+		"NIGHTVISION",
+		"THICKSKIN",
+		"DISRESISTANT",
+		"FUR",
+		"HOOVES",
+		"PHEROMONE_MAMMAL",
+		"GRAZER",
+		"HORNS",
+		"TAIL_CATTLE",
+		"MUT_TOUGH3",
+		"CANINE_EARS",
+		"HUGE_OK",
+		"STR_UP_2",
+		"DEFORMED",
+		"MINOTAUR",
+		"PONDEROUS2",
+		"THRESH_CATTLE",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighCephalopod",
+    "name": "Student - Mutated Cephalopod",
+    "description": "Strange aeons, true, but Death seems to be slacking, and you are doing just fine.",
+    "points": 4,
+    "traits": [ 
+		"CEPH_EYES",
+		"NIGHTVISION3",
+		"GILLS_CEPH",
+		"CLAWS_TENTACLE",
+		"MOUTH_TENTACLES",
+		"DEX_UP_4",
+		"INT_UP_4",
+		"SLIT_NOSTRILS",
+		"DEFORMED",
+		"THIRST2",
+		"BEAK",
+		"SLIMY",
+		"COLDBLOOD",
+		"ARM_TENTACLES_8",
+		"SHELL2",
+		"LEG_TENTACLES",
+		"LEG_TENT_BRACE",
+		"THRESH_CEPHALOPOD",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighChimera",
+    "name": "Student - Mutated Chimera",
+    "description": "You can't tell what you are anymore.  Everything and yet nothing, like you weren't meant to exist.  But you do, and you're a force, no matter what happens.",
+    "points": 4,
+    "traits": [ 
+		"QUICK",
+		"THICKSKIN",
+		"TERRIFYING",
+		"ADRENALINE",
+		"SLEEPY",
+		"BADTEMPER",
+		"CHEMIMBALANCE",
+		"NIGHTVISION2",
+		"FANGS",
+		"SCALES",
+		"LIGHTFUR",
+		"TALONS",
+		"PARAIMMUNE",
+		"HOOVES",
+		"SAPROVORE",
+		"EATDEAD",
+		"SABER_TEETH",
+		"EATHEALTH",
+		"HORNS_CURLED",
+		"TAIL_CLUB",
+		"MUT_TOUGH2",
+		"PRED4",
+		"SAPIOVORE",
+		"CANINE_EARS",
+		"STR_UP_3",
+		"DEX_UP_2",
+		"PER_UP_2",
+		"MUT_JUNKIE",
+		"MOUTH_FLAPS",
+		"SMELLY2",
+		"DEFORMED3",
+		"HUNGER3",
+		"THIRST",
+		"ROT2",
+		"CHAOTIC",
+		"CARNIVORE",
+		"SNARL",
+		"SHOUT3",
+		"ACIDPROOF",
+		"ACIDBLOOD",
+		"THRESH_CHIMERA",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighElfa",
+    "name": "Student - Mutated Fey",
+    "description": "You are the tree under which humankind will shelter during these dark times.",
+    "points": 4,
+    "traits": [ 
+		"WAKEFUL3",
+		"LIGHTSTEP",
+		"BADBACK",
+		"CHEMIMBALANCE",
+		"ELFAEYES",
+		"NIGHTVISION3",
+		"PLANTSKIN",
+		"LEAVES",
+		"PARAIMMUNE",
+		"BENDY1",
+		"ELFA_EARS",
+		"STR_UP",
+		"DEX_UP_3",
+		"INT_UP_3",
+		"PER_UP_3",
+		"BEAUTIFUL3",
+		"HOLLOW_BONES",
+		"VOMITOUS",
+		"HUNGER",
+		"THIRST",
+		"ROT1",
+		"RADIOACTIVE2",
+		"THRESH_ELFA",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighFeline",
+    "name": "Student - Mutated Cat",
+    "description": "Stalking prey, eating well, and lying in the sun.  Mmm, all you could ever desire.",
+    "points": 4,
+    "traits": [ 
+		"LIGHTSTEP",
+		"PRETTY",
+		"SMELLY",
+		"FEL_EYE",
+		"NIGHTVISION",
+		"FELINE_FUR",
+		"SABER_TEETH",
+		"LYNX_FUR",
+		"CLAWS_RETRACT",
+		"PADDED_FEET",
+		"TAIL_LONG",
+		"PRED3",
+		"FELINE_EARS",
+		"WHISKERS",
+		"DEX_UP_3",
+		"SNOUT",
+		"SLEEPY2",
+		"PAWS",
+		"CARNIVORE",
+		"SNARL",
+		"THRESH_FELINE",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighAquatic",
+    "name": "Student - Mutated Fish",
+    "description": "Ninety percent of the planet, and it's yours to explore.  And colonize.  And enjoy.  What was that about a surface?",
+    "points": 4,
+    "traits": [ 
+		"GOODCARDIO",
+		"QUICK",
+		"LIGHTEATER",
+		"ROBUST",
+		"NIGHTVISION3",
+		"MEMBRANE",
+		"GILLS",
+		"SLEEK_SCALES",
+		"TAIL_FIN",
+		"DEX_UP_4",
+		"SMELLY2",
+		"DEFORMED",
+		"THIRST2",
+		"WEBBED",
+		"SLIMY",
+		"COLDBLOOD",
+		"THRESH_FISH",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighInsect",
+    "name": "Student - Mutated Insect",
+    "description": "It would be good to be a Queen, having workers constantly servicing your every need… but how would you keep them in line?",
+    "points": 4,
+    "traits": [ 
+		"QUICK",
+		"LIGHTEATER",
+		"NIGHTVISION2",
+		"POISRESIST",
+		"TERRIFYING",
+		"HEAVYSLEEPER",
+		"INFRARED",
+		"CHITIN2",
+		"PHEROMONE_INSECT",
+		"COMPOUND_EYES",
+		"ANTENNAE",
+		"TAIL_STING",
+		"WINGS_INSECT",
+		"PROBOSCIS",
+		"STR_UP",
+		"DEX_UP",
+		"DEFORMED",
+		"TROGLO",
+		"COLDBLOOD3",
+		"INSECT_ARMS_OK",
+		"ACIDPROOF",
+		"ACIDBLOOD",
+		"THRESH_INSECT",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighLizard",
+    "name": "Student - Mutated Lizard",
+    "description": "You sometimes look back on your days before your tail came in.  But you're better now.",
+    "points": 4,
+    "traits": [ 
+		"THICK_SCALES",
+		"BADTEMPER",
+		"LIZ_EYE",
+		"LIZ_IR",
+		"REGEN_LIZ",
+		"FANGS",
+		"MEMBRANE",
+		"TALONS",
+		"TAIL_THICK",
+		"MUT_TOUGH",
+		"PRED3",
+		"SAPIOVORE",
+		"LARGE_OK",
+		"STR_UP_2",
+		"DEX_UP_2",
+		"SLIT_NOSTRILS",
+		"FORKED_TONGUE",
+		"MUZZLE_LONG",
+		"TROGLO",
+		"WEBBED",
+		"CARNIVORE",
+		"COLDBLOOD4",
+		"HISS",
+		"THRESH_LIZARD",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighWolf",
+    "name": "Student - Mutated Wolf",
+    "description": "You're the perfect candidate to lead a pack.",
+    "points": 4,
+    "traits": [ 
+		"PRETTY",
+		"BEAUTIFUL",
+		"SMELLY",
+		"ANIMALDISCORD",
+		"NIGHTVISION2",
+		"FANGS",
+		"LUPINE_FUR",
+		"PADDED_FEET",
+		"TAIL_FLUFFY",
+		"PRED3",
+		"LUPINE_EARS",
+		"STR_UP_3",
+		"KILLER",
+		"PALE",
+		"MUZZLE",
+		"HEAVYSLEEPER2",
+		"PAWS",
+		"GROWL",
+		"SHOUT3",
+		"PERSISTENCE_HUNTER2",
+		"THRESH_LUPINE",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighMarloss",
+    "name": "Student - Mutated Marloss Carrier",
+    "description": "Ever since you ate that Marloss berry, you can't get its scent out of your nose, and you have a strong desire to try some seeds and… sap?",
+    "points": 4,
+    "traits": [ 
+		"MARLOSS",
+		"MARLOSS_BLUE",
+		"MARLOSS_YELLOW",
+		"THRESH_MARLOSS",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighMedical",
+    "name": "Student - Mutated Medical",
+    "description": "After all those experiments, what's a few more, hmm?",
+    "points": 4,
+    "traits": [ 
+		"FASTHEALER",
+		"PAINRESIST",
+		"POISRESIST",
+		"DISIMMUNE",
+		"SELFAWARE",
+		"ROBUST",
+		"HEAVYSLEEPER",
+		"INSOMNIA",
+		"LIGHTWEIGHT",
+		"ADDICTIVE",
+		"CHEMIMBALANCE",
+		"SCHIZOPHRENIC",
+		"JITTERY",
+		"MOODSWINGS",
+		"RADIOGENIC",
+		"INFRESIST",
+		"PARAIMMUNE",
+		"MUT_TOUGH2",
+		"PAINREC3",
+		"CENOBITE",
+		"NOPAIN",
+		"MUT_JUNKIE",
+		"VOMITOUS",
+		"HUNGER",
+		"UNSTABLE",
+		"ACIDPROOF",
+		"ACIDBLOOD",
+		"THRESH_MEDICAL",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighMouse",
+    "name": "Student - Mutated Mouse",
+    "description": "So much food, everywhere!  And nobody's even guarding it anymore!  These are good times.",
+    "points": 4,
+    "traits": [ 
+		"GOODHEARING",
+		"GOODCARDIO2",
+		"QUICK",
+		"EASYSLEEPER2",
+		"DEFT",
+		"GOURMAND",
+		"EAGLEEYED",
+		"SLEEPY",
+		"PROJUNK2",
+		"ADDICTIVE",
+		"SMELLY",
+		"ANIMALDISCORD2",
+		"JITTERY",
+		"ALBINO",
+		"FLIMSY",
+		"NIGHTVISION2",
+		"LIGHT_BONES",
+		"FELINE_FUR",
+		"EATDEAD",
+		"TAIL_RAT",
+		"MOUSE_EARS",
+		"WHISKERS_RAT",
+		"DEX_UP_2",
+		"SMALL",
+		"SMALL_OK",
+		"SMALL2",
+		"SMALL2_OK",
+		"CRAFTY",
+		"HUNGER",
+		"MET_RAT",
+		"NO_THIRST",
+		"THRESH_MOUSE",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighMycus",
+    "name": "Student - Mutated Mycus",
+    "description": "We are the Mycus.",
+    "points": 4,
+    "traits": [ 
+		"M_SKIN",
+		"M_SKIN2",
+		"M_SKIN3",
+		"M_SPORES",
+		"M_FERTILE",
+		"M_BLOSSOMS",
+		"M_BLOOM",
+		"M_PROVENANCE",
+		"M_IMMUNE",
+		"M_DEPENDENT",
+		"M_DEFENDER",
+		"THRESH_MARLOSS",
+		"THRESH_MYCUS",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighPlantMut",
+    "name": "Student - Mutated Plant",
+    "description": "Well, you still have those other walking flowers-and the mushrooms too-to deal with.  But you'll manage.",
+    "points": 4,
+    "traits": [ 
+		"HEAVYSLEEPER",
+		"BADHEARING",
+		"BARK",
+		"THORNS",
+		"LEAVES",
+		"FLOWERS",
+		"DISIMMUNE",
+		"SAPROPHAGE",
+		"STR_UP_2",
+		"DEFORMED2",
+		"PONDEROUS3",
+		"SUNLIGHT_DEPENDENT",
+		"VINES3",
+		"ROOTS3",
+		"CHLOROMORPH",
+		"THRESH_PLANT",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighRabbit",
+    "name": "Student - Mutated Rabbit",
+    "description": "You really want to eat some carrots.  Welcome to the Lagomorpha family.",
+    "points": 4,
+    "traits": [ 
+		"FLEET",
+		"GOODHEARING",
+		"GOODCARDIO2",
+		"QUICK",
+		"EASYSLEEPER2",
+		"DEFT",
+		"PRETTY",
+		"ANTIJUNK",
+		"ADDICTIVE",
+		"ANIMALDISCORD2",
+		"JITTERY",
+		"ALBINO",
+		"FLIMSY",
+		"INCISORS",
+		"LIGHT_BONES",
+		"GRAZER",
+		"BURROW",
+		"WHISKERS",
+		"DEX_UP_2",
+		"SMALL",
+		"SMALL_OK",
+		"BEAUTIFUL",
+		"BEAUTIFUL2",
+		"HUNGER",
+		"MET_RAT",
+		"SLEEPY2",
+		"RABBIT_EARS",
+		"TAIL_RABBIT",
+		"RABBIT_FUR",
+		"RABBIT_FEET",
+		"RABBIT_NOSE",
+		"PAWS_LITTLE",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighRaptor",
+    "name": "Student - Mutated Raptor",
+    "description": "The chance to undo not one but TWO extinction events.  You're confident you'll do fine.",
+    "points": 4,
+    "traits": [ 
+		"QUICK",
+		"DEFT",
+		"ANTIJUNK",
+		"GLASSJAW",
+		"ANIMALDISCORD",
+		"UGLY",
+		"LIZ_EYE",
+		"LIZ_IR",
+		"SCALES",
+		"NAILS",
+		"RAP_TALONS",
+		"EATPOISON",
+		"TAIL_RAPTOR",
+		"PRED4",
+		"SAPIOVORE",
+		"STR_UP",
+		"DEX_UP_2",
+		"PER_UP_3",
+		"SLIT_NOSTRILS",
+		"FORKED_TONGUE",
+		"HUNGER2",
+		"CARNIVORE",
+		"COLDBLOOD2",
+		"HISS",
+		"THICKSKIN",
+		"SHOUT1",
+		"ARM_FEATHERS",
+		"THRESH_RAPTOR",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighRat",
+    "name": "Student - Mutated Rat",
+    "description": "Hey.  Civilization fell.  You're still around.  'Rat' just isn't respectful.",
+    "points": 4,
+    "traits": [ 
+		"DISRESISTANT",
+		"NIGHTVISION2",
+		"INCISORS",
+		"FUR",
+		"CLAWS_ST",
+		"INFRESIST",
+		"EATDEAD",
+		"BURROW",
+		"TAIL_RAT",
+		"WHISKERS_RAT",
+		"DEFORMED3",
+		"MUZZLE_RAT",
+		"VOMITOUS",
+		"MET_RAT",
+		"TROGLO2",
+		"GROWL",
+		"THRESH_RAT",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighSlime",
+    "name": "Student - Mutated Slime",
+    "description": "What was that old advertisement?  'Paint the planet'?  That might be a good long-term goal, but for now…",
+    "points": 4,
+    "traits": [ 
+		"POISRESIST",
+		"ROBUST",
+		"CHEMIMBALANCE",
+		"REGEN",
+		"RADIOGENIC",
+		"DISIMMUNE",
+		"PARAIMMUNE",
+		"POISONOUS",
+		"SLIME_HANDS",
+		"BENDY3",
+		"DEX_UP",
+		"INT_SLIME",
+		"PER_SLIME_OK",
+		"SMELLY2",
+		"DEFORMED3",
+		"HOLLOW_BONES",
+		"VOMITOUS",
+		"HUNGER2",
+		"THIRST2",
+		"POISONOUS",
+		"SORES",
+		"TROGLO",
+		"WEBBED",
+		"UNSTABLE",
+		"RADIOACTIVE1",
+		"VISCOUS",
+		"AMORPHOUS",
+		"SLIMESPAWNER",
+		"ACIDPROOF",
+		"ACIDBLOOD",
+		"THRESH_SLIME",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighSpider",
+    "name": "Student - Mutated Spider",
+    "description": "Well, maybe you'll just have to make your own worldwide web.",
+    "points": 4,
+    "traits": [ 
+		"FLEET",
+		"POISRESIST",
+		"NIGHTVISION3",
+		"INFRARED",
+		"CHITIN_FUR3",
+		"CF_HAIR",
+		"POISONOUS2",
+		"PRED3",
+		"SAPIOVORE",
+		"MANDIBLES",
+		"FANGS_SPIDER",
+		"WEB_WALKER",
+		"WEB_WEAVER",
+		"WEB_RAPPEL",
+		"WEB_ROPE",
+		"DEX_UP_2",
+		"TROGLO",
+		"CARNIVORE",
+		"COLDBLOOD",
+		"ARACHNID_ARMS_OK",
+		"THRESH_SPIDER",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighSubterranean",
+    "name": "Student - Mutated Subterranean",
+    "description": "Not much point to rebuilding up in that horribly bright roofless wasteland.  Now that you've become accustomed to your new digs, there's the beginning of a great empire right here, underground.",
+    "points": 4,
+    "traits": [ 
+		"QUICK",
+		"LIGHTEATER",
+		"MYOPIC",
+		"SUNBURN",
+		"NIGHTVISION3",
+		"INFRARED",
+		"REGEN",
+		"DISIMMUNE",
+		"INFRESIST",
+		"POISONOUS",
+		"ALCMET",
+		"PAINRESIST_TROGLO",
+		"STOCKY_TROGLO",
+		"SAPROVORE",
+		"EATPOISON",
+		"STR_UP_3",
+		"TROGLO3",
+		"SLIMY",
+		"THRESH_TROGLOBITE",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighBear",
+    "name": "Student - Mutated Bear",
+    "description": "So the humans died; what's the worry?  Now they won't ruin the woods.",
+    "points": 4,
+    "traits": [ 
+		"BADTEMPER",
+		"NIGHTVISION",
+		"URSINE_FUR",
+		"PAWS_LARGE",
+		"PADDED_FEET",
+		"TAIL_STUB",
+		"HIBERNATE",
+		"MUT_TOUGH3",
+		"PRED4",
+		"SAPIOVORE",
+		"URSINE_EARS",
+		"FAT",
+		"HUGE_OK",
+		"STR_UP_4",
+		"SMELLY2",
+		"DEFORMED2",
+		"MUZZLE_BEAR",
+		"PONDEROUS1",
+		"GROWL",
+		"THRESH_URSINE",
+		"REGEN_zhigh"
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "wristwatch"
+        ],
+        "entries": [ 
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_coat" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
   },
   {
     "type": "profession",
@@ -6206,7 +8014,6 @@
           "medkitRechargeV3",
           "socks",
           "scabbard",
-          "sneakers",
           "wristwatch"
         ],
         "entries": [ 

@@ -12618,5 +12618,382 @@
       ],
       [ [ "cordage", 2, "LIST" ], [ "duct_tape", 100 ] ]
     ]
+  },
+  {
+    "type": "recipe",
+    "result": "ballistaZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "difficulty": 8,
+    "time": "2 h",
+    "reversible": true,
+    "decomp_learn": 5,
+    "book_learn": [ [ "recipe_bows", 6 ], [ "textbook_weapwest", 6 ] ],
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "HAMMER", "level": 1 },
+      { "id": "SCREW", "level": 1 },
+      { "id": "WRENCH", "level": 1 },
+      { "id": "SAW_M", "level": 1 },
+      { "id": "SAW_W", "level": 1 },
+      { "id": "SANDING", "level": 1 }
+    ],
+    "components": [
+      [ [ "2x4", 12 ], [ "stick", 24 ] ],
+      [ [ "rope_superior_short", 3, "LIST" ] ],
+      [ [ "foot_crank", 1 ] ],
+      [ [ "spring", 6 ] ],
+      [ [ "steel_chunk", 6 ], [ "scrap", 18 ] ],
+      [ [ "nail_glue", 90, "LIST" ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "colorGuardRifle",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "skills_required": [ "dodge", 3 ],
+    "time": "20 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+		[
+		  [ "stick", 1 ],
+		  [ "2x4", 1 ],
+		  [ "pool_cue", 1 ]
+		],
+		[
+		  [ "shoulder_strap", 1 ],
+		  [ "rope_natural_short", 1, "LIST" ],
+		  [ "fabric_standard", 3, "LIST" ],
+		  [ "cordage", 6, "LIST" ]
+	    ]
+	]
+  },
+  {
+    "result": "survExoframe",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "fabrication",
+    "difficulty": 6,
+    "skills_required": [ "electronics", 4 ],
+    "time": "3 h 40 m",
+    "reversible": true,
+    "decomp_learn": 7,
+    "book_learn": [ [ "advanced_electronics", 8 ], [ "recipe_lab_elec", 8 ], [ "textbook_anarch", 8 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "tools": [ [ [ "soldering_standard", 200, "LIST" ] ], [ [ "welding_standard", 200, "LIST" ] ] ],
+    "components": [
+      [ [ "steel_armor", 6 ] ],
+      [ [ "steel_tiny", 10, "LIST" ] ],
+      [ [ "duct_tape", 600 ] ],
+      [ [ "hose", 4 ], [ "makeshift_hose", 4 ] ],
+      [ [ "foldframe", 2 ] ],
+      [ [ "cable", 100 ] ]
+    ]
+  },
+  {
+    "result": "survExoframeAdv",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "fabrication",
+    "difficulty": 6,
+    "skills_required": [ "electronics", 4 ],
+    "time": "3 h 40 m",
+    "reversible": true,
+    "decomp_learn": 7,
+    "book_learn": [ [ "advanced_electronics", 8 ], [ "recipe_lab_elec", 8 ], [ "textbook_anarch", 8 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "tools": [ [ [ "soldering_standard", 230, "LIST" ] ], [ [ "welding_standard", 230, "LIST" ] ] ],
+    "components": [
+      [ [ "steel_armor", 6 ] ],
+      [ [ "kevlar", 1 ], [ "modularvest", 1 ], [ "swat_armor", 1 ], [ "kevlar_plate", 24 ] ],
+      [ [ "steel_tiny", 10, "LIST" ] ],
+      [ [ "duct_tape", 600 ] ],
+      [ [ "hose", 4 ], [ "makeshift_hose", 4 ] ],
+      [ [ "foldframe", 2 ] ],
+      [ [ "cable", 100 ] ]
+    ]
+  },
+  {
+    "result": "survExoframeAdv",
+    "id_suffix": "from_survExoframe",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": "40 m",
+    "reversible": true,
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "tools": [ [ [ "soldering_standard", 30, "LIST" ] ], [ [ "welding_standard", 30, "LIST" ] ] ],
+    "components": [
+      [ [ "survExoframe", 1 ] ],
+      [ [ "kevlar", 1 ], [ "modularvest", 1 ], [ "swat_armor", 1 ], [ "kevlar_plate", 24 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "fishspearZhighAcid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "15 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "components": [
+		[ [ "stick", 1 ], [ "broom", 1 ], [ "2x4", 1 ], [ "bee_sting", 1 ] ],
+		[ [ "acidbomb", 1 ] ]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "fishspearZhighElec",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "15 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "components": [
+		[ [ "stick", 1 ], [ "broom", 1 ], [ "2x4", 1 ], [ "bee_sting", 1 ] ],
+		[ [ "zap_grenade", 1 ] ]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "fishspearZhighFire",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "15 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "components": [
+		[ [ "stick", 1 ], [ "broom", 1 ], [ "2x4", 1 ], [ "bee_sting", 1 ] ],
+		[ [ "molotov", 1 ], [ "grenade_inc", 1 ], [ "grenade_nap", 1 ] ]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "fishspearZhighFlash",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "15 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "components": [
+		[ [ "stick", 1 ], [ "broom", 1 ], [ "2x4", 1 ], [ "bee_sting", 1 ] ],
+		[ [ "flashbang", 1 ], [ "fakeFlashBangZhigh", 1 ] ]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "fishspearZhighFungal",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "15 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "components": [
+		[ [ "stick", 1 ], [ "broom", 1 ], [ "2x4", 1 ], [ "bee_sting", 1 ] ],
+		[ [ "fungicidalbomb", 1 ] ]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "fishspearZhighGoo",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "15 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "components": [
+		[ [ "stick", 1 ], [ "broom", 1 ], [ "2x4", 1 ], [ "bee_sting", 1 ] ],
+		[ [ "grenade_goo", 1 ], [ "grenade_goo_imp", 1 ] ]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "fishspearZhighCold",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "15 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "components": [
+		[ [ "stick", 1 ], [ "broom", 1 ], [ "2x4", 1 ], [ "bee_sting", 1 ] ],
+		[ [ "cryo_grenade", 1 ] ]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "fishspearZhighIns",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "15 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "components": [
+		[ [ "stick", 1 ], [ "broom", 1 ], [ "2x4", 1 ], [ "bee_sting", 1 ] ],
+		[ [ "insecticidalbomb", 1 ], [ "insecticidalbomb_makeshift", 1 ] ]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "fishspearZhighSmoke",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "15 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "components": [
+		[ [ "stick", 1 ], [ "broom", 1 ], [ "2x4", 1 ], [ "bee_sting", 1 ] ],
+		[ [ "smokebomb", 1 ], [ "smokebomb_makeshift", 1 ] ]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "fishspearZhighTear",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "15 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "components": [
+		[ [ "stick", 1 ], [ "broom", 1 ], [ "2x4", 1 ], [ "bee_sting", 1 ] ],
+		[ [ "gasbomb", 1 ] ]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "fishspearZhighToxicGas",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "15 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "components": [
+		[ [ "stick", 1 ], [ "broom", 1 ], [ "2x4", 1 ], [ "bee_sting", 1 ] ],
+		[ [ "gasbomb_makeshift", 1 ] ]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "fishspearZhighPois",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "15 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "components": [
+		[ [ "stick", 1 ], [ "broom", 1 ], [ "2x4", 1 ], [ "bee_sting", 1 ] ],
+		[ [ "bee_sting", 2 ], [ "wasp_sting", 2 ] ]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "fishspearZhighPara",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "15 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "components": [
+		[ [ "stick", 1 ], [ "broom", 1 ], [ "2x4", 1 ], [ "bee_sting", 1 ] ],
+		[ [ "fighter_sting", 2 ] ]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "fishspear_wood",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "2 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "stick", 1 ], [ "broom", 1 ], [ "2x4", 1 ], [ "bee_sting", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "fishspear_trident",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": "10 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "components": [
+		[ [ "stick", 1 ], [ "broom", 1 ], [ "2x4", 1 ], [ "bee_sting", 1 ] ],
+		[ [ "scrap", 12 ] ]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "vinChaud",
+    "result_mult": 2,
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_DRINKS",
+    "skill_used": "cooking",
+    "tools": [ [ [ "water_boiling_heat", 3, "LIST" ] ] ],
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "COOK", "level": 1 },
+      { "id": "BOIL", "level": 1 }
+    ],
+    "difficulty": 2,
+    "time": "15m",
+    "batch_time_factors": [ 80, 5 ],
+    "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
+    "components": [
+	  [ [ "sweet_fruit", 1, "LIST" ] ],
+	  [ [ "sugar", 3 ] ],
+      [
+        [ "cheap_wine", 7, "LIST" ],
+        [ "worthy_wine", 5, "LIST" ]
+      ],
+      [
+        [ "seasoning_italian", 2 ],
+        [ "wild_herbs", 2 ],
+        [ "pepper", 2 ],
+        [ "cinnamon", 2 ],
+        [ "chilly-p", 2 ],
+        [ "curry_powder", 2 ],
+        [ "mustard_powder", 2 ]
+      ]
+	]
   }
 ]

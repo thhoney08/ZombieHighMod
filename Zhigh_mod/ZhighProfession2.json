@@ -1,6 +1,37 @@
 [
   {
     "type": "profession",
+    "id": "ShanghaiJoe",
+    "name": { "male": "Classic Hitman", "female": "Classic Hitwoman" },
+    "description": "You walk the wasteland in silence, pistol always within reach, your aim as cold and precise as your heart.  Fast hands, faster judgment, and no second chances.",
+    "points": 5,
+    "skills": [
+      { "level": 3, "name": "dodge" },
+      { "level": 4, "name": "gun" },
+      { "level": 3, "name": "pistol" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+			"socks",
+			"dress_shoes",
+			"fedora",
+			"suit",
+			"fancy_sunglasses",
+			"platinum_watch",
+			"cufflinks_intricate"
+		],
+        "entries": [
+          { "item": "shoulder_holster", "contents-group": "ShanghaiJoe_pistol" },
+          { "item": "legpouch_large", "contents-group": "ShanghaiJoe_mags_ppq" }
+        ]
+      },
+      "male": [ "boxer_briefs" ],
+      "female": [ "panties", "bra" ]
+    }
+  },
+  {
+    "type": "profession",
     "id": "detectivePersonalZhigh",
     "name": "Private Investigator",
     "description": "You were searching for some clues that the client asked for when the Cataclysm struck.  Now that client is dead.  Everyone's dead.",

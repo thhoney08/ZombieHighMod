@@ -1866,5 +1866,31 @@
     "vitamins": [ [ "calcium", 1 ], [ "iron", 2 ], [ "milk_allergen", 1 ], [ "junk_allergen", 1 ] ],
     "flags": [ "MAG_COMPACT" ],
     "fun": 55
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "vinChaud",
+    "name": "vin chaud",
+    "weight": "260 g",
+    "color": "magenta",
+    "stim": 1,
+    "container": "can_drink",
+    "comestible_type": "DRINK",
+    "looks_like": "purple_drink",
+    "symbol": "~",
+    "quench": 22,
+    "healthy": 1,
+    "calories": 33,
+    "description": "A warm wine, with some spice and sugar added.  Good way to warm oneself up during the winter.",
+    "price": "85 cent",
+    "price_postapoc": "50 cent",
+    "material": [ "fruit" ],
+    "primary_material": "water",
+    "volume": "250 ml",
+    "phase": "liquid",
+    "flags": [ "EATEN_COLD", "EATEN_HOT" ],
+	"charges": 2,
+    "vitamins": [ [ "vitC", 40 ], [ "calcium", 3 ], [ "fruit_allergen", 1 ] ],
+    "fun": 6
   }
 ]
