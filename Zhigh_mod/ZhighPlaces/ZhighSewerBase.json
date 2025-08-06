@@ -1,0 +1,92 @@
+[
+  {
+    "type": "overmap_special",
+    "id": "zhighSewerBase01",
+    "locations": [ "subterranean" ],
+    "occurrences": [ 2, 13 ],
+    "city_distance": [ 8, 40 ],
+    "city_sizes": [ 1, -1 ],
+    "overmaps": [
+      { "point": [ 0, 0, -1 ], "overmap": "zhighSewerBase01_field_south" }
+    ],
+    "connections": [
+      { "point": [ 0, -1, -1 ], "connection": "sewer_tunnel", "from": [ 0, 0, -1 ] },
+      { "point": [ 0, 1, -1 ], "connection": "sewer_tunnel", "from": [ 0, 0, -1 ] },
+      { "point": [ 1, 0, -1 ], "connection": "sewer_tunnel", "from": [ 0, 0, -1 ] },
+      { "point": [ -1, 0, -1 ], "connection": "sewer_tunnel", "from": [ 0, 0, -1 ] }
+    ],
+    "flags": [ "CLASSIC", "URBAN", "ELECTRIC_GRID" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "zhighSewerBase01_field" ],
+    "copy-from": "generic_city_building",
+    "name": "Sewer base",
+    "sym": "p",
+    "looks_like": "paintball_field",
+    "color": "red"
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "zhighSewerBase01_field",
+    "object": {
+      "fill_ter": "t_junk_floor",
+      "rows": [
+        "              o         ",
+        "              o         ",
+        "              o         ",
+        "              o         ",
+        "              oooo   ooo",
+        "       ---~~~~-p-      o",
+        " oooop-~~~~~~~~~~-     o",
+        " o   -~~~~~~~~~~~~-    o",
+        " o   -~~~~~~~~~~~~-    o",
+        "oo   -~~~~----~~~~-    o",
+        "     ~~~~--||--~~~~    o",
+        "     ~~~~-||||-~~~~     ",
+        "     ~~~~-||||-~~~~     ",
+        "o    ~~~~--||--~~~~    o",
+        "o    -~~~~----~~~~-ooooo",
+        "o    -~~~~~~~~~~~~-     ",
+        "ooooop~~~~~~~~~~~~-     ",
+        "    o -~~~~~~~~~~-      ",
+        "    oooooo~~~~---       ",
+        "         o              ",
+        "                        ",
+        "         o              ",
+        "         o              ",
+        "         o              "
+      ],
+      "place_npcs": [
+        { "class": "Zhigh_cult2", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+        { "class": "Zhigh_cult3", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+        { "class": "Zhigh_cult", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+        { "class": "Zhigh_cult", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+        { "class": "Zhigh_cult", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+        { "class": "Zhigh_cult", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+      ],
+      "place_items": [
+        { "chance": 35, "item": "trash_cart", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+        { "chance": 35, "item": "trash_cart", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+        { "chance": 35, "item": "trash_cart", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+        { "chance": 35, "item": "trash_cart", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+        { "chance": 35, "item": "trash_cart", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+        { "chance": 35, "item": "trash_cart", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+        { "chance": 35, "item": "trash_cart", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+        { "chance": 20, "item": "bbZhigh_items", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+        { "chance": 20, "item": "bbZhigh_items", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+        { "chance": 20, "item": "trash", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+        { "chance": 20, "item": "trash", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+        { "chance": 20, "item": "bbZhigh_items", "x": [ 1, 23 ], "y": [ 1, 23 ] },
+        { "chance": 20, "item": "bbZhigh_items", "x": [ 1, 23 ], "y": [ 1, 23 ] },
+        { "chance": 20, "item": "bbZhigh_items", "x": [ 1, 23 ], "y": [ 1, 23 ] },
+        { "chance": 20, "item": "bbZhigh_items", "x": [ 1, 23 ], "y": [ 1, 23 ] },
+        { "chance": 20, "item": "bbZhigh_items", "x": [ 1, 23 ], "y": [ 1, 23 ] },
+        { "chance": 20, "item": "bbZhigh_items", "x": [ 1, 23 ], "y": [ 1, 23 ] },
+        { "chance": 20, "item": "bbZhigh_items", "x": [ 1, 23 ], "y": [ 1, 23 ] }
+      ],
+      "palettes": [ "sewers" ]
+    }
+  }
+]
