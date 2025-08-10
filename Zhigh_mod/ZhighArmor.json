@@ -1603,7 +1603,7 @@
     "warmth": 30
   },
   {
-    "id": "armpouch",
+    "id": "armpouchZhigh",
     "type": "ARMOR",
     "name": { "str": "arm pouch", "str_pl": "arm pouches" },
     "description": "A makeshift bag, cobbled together from rags.  Provides a decent amount of storage.",
@@ -1624,7 +1624,7 @@
     "flags": [ "WAIST", "OVERSIZE", "WATER_FRIENDLY" ]
   },
   {
-    "id": "legpouch",
+    "id": "legpouchZhigh",
     "type": "ARMOR",
     "name": { "str": "leg pouch", "str_pl": "leg pouches" },
     "description": "A makeshift bag, cobbled together from rags. Provides a decent amount of storage.",
@@ -6103,5 +6103,32 @@
     "looks_like": "jacket_leather",
     "warmth": 33,
     "color": "dark_gray"
+  },
+  {
+    "id": "baldric_holsterAkimZhigh",
+    "looks_like": "baldric_holster",
+    "type": "ARMOR",
+    "name": { "str": "akimbo baldric holster" },
+    "description": "A leather harness which can hold up to three akimbo firearms in total, available for quick drawing.  Historically, similar harnesses were used by pirates to carry multiple loaded flintlock pistols at once, as reloading them is a lengthy process.  Activate to holster/draw a gun.",
+    "weight": "1320 g",
+    "volume": "3 L",
+    "price": "200 USD",
+    "price_postapoc": "20 USD",
+    "material": [ "leather" ],
+    "symbol": "[",
+    "color": "light_gray",
+    "covers": [ "torso" ],
+    "coverage": 15,
+    "encumbrance": 1,
+    "max_encumbrance": 6,
+    "material_thickness": 1,
+    "use_action": {
+      "type": "holster",
+      "max_volume": "1000 ml",
+      "min_volume": "100 ml",
+      "multi": 3,
+      "skills": [ "akimbo_Zhigh" ]
+    },
+    "flags": [ "BELTED", "COMPACT" ]
   }
 ]

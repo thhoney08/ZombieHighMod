@@ -2450,7 +2450,7 @@
     "components": [ [ [ "stick", 1 ], [ "2x4", 1 ] ], [ [ "superglue", 1 ], [ "duct_tape", 10 ] ] ]
   },
   {
-    "result": "armpouch",
+    "result": "armpouchZhigh",
     "type": "recipe",
     "category": "CC_ARMOR",
     "subcategory": "CSC_ARMOR_STORAGE",
@@ -2461,7 +2461,7 @@
     "components": [ [ [ "rag", 4 ] ], [ [ "filament", 6, "LIST" ] ] ]
   },
   {
-    "result": "legpouch",
+    "result": "legpouchZhigh",
     "type": "recipe",
     "category": "CC_ARMOR",
     "subcategory": "CSC_ARMOR_STORAGE",
@@ -12995,5 +12995,49 @@
         [ "mustard_powder", 2 ]
       ]
 	]
+  },
+  {
+    "result": "baldric_holsterAkimZhigh",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "time": "1 h 15 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 15 ] ],
+    "components": [ [ [ "leather", 12 ] ] ]
+  },
+  {
+    "result": "1PryBarZhigh",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "time": "1 m",
+    "autolearn": true,
+    "components": [
+	  [ [ "scrap", 1 ] ],
+      [
+        [ "fabric_standard", 1, "LIST" ],
+        [ "fabric_hides_any", 1, "LIST" ],
+        [ "duct_tape", 5 ],
+        [ "medical_tape", 10 ],
+        [ "cordage", 1, "LIST" ]
+      ]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "2x4",
+    "id_suffix": "from_logs",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_PARTS",
+    "skill_used": "fabrication",
+    "time": "1 h",
+    "autolearn": true,
+    "byproducts": [ [ "splinter", 4 ], [ "2x4", 5 ] ],
+    "qualities": [ { "id": "SAW_W", "level": 2 } ],
+    "components": [ [ [ "log", 1 ] ] ]
   }
 ]

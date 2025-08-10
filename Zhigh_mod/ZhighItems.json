@@ -37,7 +37,8 @@
         "target": "frog_umbrella_close",
         "msg": "You closed your umbrella, ready to use it as an improvised weapon."
       },
-     "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "STAB", "RAIN_PROTECT" ]
+	"techniques": [ "WBLOCK_3" ],
+    "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "STAB", "RAIN_PROTECT" ]
   },
   {
     "id": "selfie_stick",
@@ -155,36 +156,6 @@
       "type": "transform"
     },
     "flags": [ "WATCH", "BELT_CLIP", "LIGHT_240", "TRADER_AVOID", "ALARMCLOCK", "TWO_WAY_RADIO", "NO_UNLOAD", "NO_RELOAD" ]
-  },
-  {
-    "id": "KorGong",
-    "type": "TOOL",
-    "category": "tools",
-    "name": { "str": "korean gong" },
-    "description": "A simple brass plated gong, this one emits a high noise.",
-    "weight": "300 g",
-    "volume": "350 ml",
-    "price": "5000 USD",
-    "price_postapoc": "150 USD",
-    "bashing": 2,
-    "material": [ "iron", "brass" ],
-    "symbol": "-",
-    "color": "light_gray",
-    "initial_charges": 1,
-    "max_charges": 1,
-    "use_action": {
-      "type": "musical_instrument",
-      "volume": 30,
-      "fun": -7,
-      "fun_bonus": 1,
-      "speed_penalty": 10,
-      "description_frequency": 25,
-      "player_descriptions": [
-        "You play a little beat on your korean gong.",
-        "You play a beautiful rythm on your korean gong.",
-        "You play a piece on your korean gong that would sound harmonious with drums."
-      ]
-    }
   },
   {
     "id": "flashlight_hk",
@@ -1783,37 +1754,6 @@
     "to_hit": 3
   },
   {
-    "id": "luteZhigh",
-    "type": "TOOL",
-    "category": "tools",
-    "name": { "str": "lute" },
-    "description": "A standard factory-made lute.  Looks to be in working condition.",
-    "weight": "2000 g",
-    "volume": "3 L",
-    "price": "75 USD",
-    "price_postapoc": "5 USD",
-    "to_hit": 2,
-    "bashing": 7,
-    "material": [ "wood", "iron" ],
-    "symbol": "|",
-    "color": "white",
-    "initial_charges": 1,
-    "max_charges": 1,
-    "use_action": {
-      "type": "musical_instrument",
-      "volume": 18,
-      "fun": -3,
-      "fun_bonus": 2,
-      "speed_penalty": 18,
-      "description_frequency": 30,
-      "player_descriptions": [
-        "You play a little tune on your lute.",
-        "You play a bluegrass tune on your lute.",
-        "You play a quick, Southern ditty on your lute."
-      ]
-    }
-  },
-  {
     "id": "lockpickKitHitmanZhigh",
 	"looks_like": "knife_swissarmy",
     "type": "GENERIC",
@@ -1892,6 +1832,22 @@
     "symbol": "!",
     "color": "green",
     "use_action": { "type": "unpack", "group": "coinPackZhigh", "items_fit": true },
+    "flags": [ "NO_REPAIR", "NO_SALVAGE" ]
+  },
+  {
+    "id": "cbmBoxZhigh",
+	"looks_like": "clothesBoxZhigh",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "unknown CBM pack" },
+    "description": "A box with random CBM inside.  Unpack and enjoy.",
+    "weight": "120 g",
+    "volume": "200 ml",
+    "price": "10 USD",
+    "material": "aluminum",
+    "symbol": "!",
+    "color": "green",
+    "use_action": { "type": "unpack", "group": "bionics", "items_fit": true },
     "flags": [ "NO_REPAIR", "NO_SALVAGE" ]
   },
   {
@@ -2245,41 +2201,24 @@
     "category": "valuables"
   },
   {
-    "id": "keytarZhigh",
-    "type": "TOOL_ARMOR",
-    "name": { "str": "keytar" },
-    "category": "tools",
-    "weight": "2500 g",
-    "color": "brown",
-    "covers": [ "torso" ],
-    "to_hit": 2,
-    "max_charges": 1,
+    "id": "1PryBarZhigh",
+    "looks_like": "scrap",
+    "type": "TOOL",
+    "category": "tools_entry",
+    "name": { "str": "improvised prybar" },
+    "description": "This is a steel scrap wrapped with stuff.  You could use this to open doors, but only once.",
+    "weight": "23 g",
+    "volume": "5 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "material": "steel",
+    "symbol": ";",
+    "color": "light_gray",
     "initial_charges": 1,
-    "use_action": {
-      "type": "musical_instrument",
-      "speed_penalty": 15,
-      "volume": 20,
-      "fun": 2,
-      "fun_bonus": 2,
-      "description_frequency": 20,
-      "player_descriptions": [
-        "You strum a few chords on the keytar.",
-        "You pluck a few notes on the keytar.",
-        "You play a slow blues-y tune on the keytar."
-      ],
-      "npc_descriptions": [ "strum a few chords on the keytar.", "pluck a few notes on the keytar.", "play a slow blues-y tune on the keytar." ]
-    },
-    "symbol": "-",
-    "description": "A keyboard instrument with a strap so you can wear it around, even when not playing.",
-    "price": "10 USD",
-    "price_postapoc": "250 cent",
-    "material": [ "wood" ],
-    "volume": "6750 ml",
-    "warmth": 2,
-    "encumbrance": 27,
-    "bashing": 8,
-    "flags": [ "BELTED", "OVERSIZE", "COMPACT", "SLEEP_IGNORE" ],
-    "coverage": 10,
-    "material_thickness": 2
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "qualities": [ [ "PRY", 2 ] ],
+    "use_action": [ "CROWBAR" ],
+    "flags": [ "DESTROY_ON_DECHARGE" ]
   }
 ]

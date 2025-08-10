@@ -1,0 +1,218 @@
+[
+  {
+    "id": "KorGong",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "korean gong" },
+    "description": "A simple brass plated gong, this one emits a high noise.",
+    "weight": "300 g",
+    "volume": "350 ml",
+    "price": "5000 USD",
+    "price_postapoc": "150 USD",
+    "bashing": 6,
+    "material": [ "iron", "brass" ],
+    "symbol": "-",
+    "color": "light_gray",
+    "initial_charges": 1,
+    "max_charges": 1,
+    "use_action": {
+      "type": "musical_instrument",
+      "volume": 40,
+      "fun": -7,
+      "fun_bonus": 1,
+      "speed_penalty": 10,
+      "description_frequency": 25,
+      "player_descriptions": [
+        "You play a little beat on your korean gong.",
+        "You play a beautiful rythm on your korean gong.",
+        "You play a piece on your korean gong that would sound harmonious with drums."
+      ]
+    },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ACTIVE",
+          "intermittent_activation": { "effects": [ { "frequency": "3 seconds", "spell_effects": [ { "id": "zhighDamageAoe2" } ] } ] }
+        }
+      ]
+    }
+  },
+  {
+    "id": "luteZhigh",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "lute" },
+    "description": "A standard factory-made lute.  Looks to be in working condition.",
+    "weight": "2000 g",
+    "volume": "3 L",
+    "price": "75 USD",
+    "price_postapoc": "5 USD",
+    "to_hit": 2,
+    "bashing": 7,
+    "material": [ "wood", "iron" ],
+    "symbol": "|",
+    "color": "white",
+    "initial_charges": 1,
+    "max_charges": 1,
+    "use_action": {
+      "type": "musical_instrument",
+      "volume": 18,
+      "fun": -3,
+      "fun_bonus": 2,
+      "speed_penalty": 18,
+      "description_frequency": 30,
+      "player_descriptions": [
+        "You play a little tune on your lute.",
+        "You play a bluegrass tune on your lute.",
+        "You play a quick, Southern ditty on your lute."
+      ]
+    },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ACTIVE",
+          "intermittent_activation": { "effects": [ { "frequency": "3 seconds", "spell_effects": [ { "id": "zhighDamageAoe2" } ] } ] }
+        }
+      ]
+    }
+  },
+  {
+    "id": "keytarZhigh",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "keytar" },
+    "category": "tools",
+    "weight": "2500 g",
+    "color": "brown",
+    "covers": [ "torso" ],
+    "to_hit": 2,
+    "max_charges": 1,
+    "initial_charges": 1,
+    "use_action": {
+      "type": "musical_instrument",
+      "speed_penalty": 15,
+      "volume": 20,
+      "fun": 2,
+      "fun_bonus": 2,
+      "description_frequency": 20,
+      "player_descriptions": [
+        "You strum a few chords on the keytar.",
+        "You pluck a few notes on the keytar.",
+        "You play a slow blues-y tune on the keytar."
+      ],
+      "npc_descriptions": [ "strum a few chords on the keytar.", "pluck a few notes on the keytar.", "play a slow blues-y tune on the keytar." ]
+    },
+    "symbol": "-",
+    "description": "A keyboard instrument with a strap so you can wear it around, even when not playing.",
+    "price": "10 USD",
+    "price_postapoc": "250 cent",
+    "material": [ "wood" ],
+    "volume": "6750 ml",
+    "warmth": 2,
+    "encumbrance": 27,
+    "bashing": 8,
+    "flags": [ "BELTED", "OVERSIZE", "COMPACT", "SLEEP_IGNORE" ],
+    "coverage": 10,
+    "material_thickness": 2,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ACTIVE",
+          "intermittent_activation": { "effects": [ { "frequency": "3 seconds", "spell_effects": [ { "id": "zhighDamageAoe2" } ] } ] }
+        }
+      ]
+    }
+  },
+  {
+    "id": "harmonica_holder",
+    "type": "TOOL_ARMOR",
+    "copy-from": "harmonica_holder",
+    "name": { "str_pl": "harmonicas with holders", "str": "harmonica with a holder" },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ACTIVE",
+          "intermittent_activation": { "effects": [ { "frequency": "3 seconds", "spell_effects": [ { "id": "zhighDamageAoe2" } ] } ] }
+        }
+      ]
+    }
+  },
+  {
+    "id": "acoustic_guitar",
+    "type": "TOOL_ARMOR",
+    "copy-from": "acoustic_guitar",
+    "name": { "str": "acoustic guitar" },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ACTIVE",
+          "intermittent_activation": { "effects": [ { "frequency": "3 seconds", "spell_effects": [ { "id": "zhighDamageAoe2" } ] } ] }
+        }
+      ]
+    }
+  },
+  {
+    "id": "guitar_electric",
+    "type": "TOOL_ARMOR",
+    "copy-from": "guitar_electric",
+    "name": { "str": "electric guitar" },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ACTIVE",
+          "intermittent_activation": { "effects": [ { "frequency": "3 seconds", "spell_effects": [ { "id": "zhighDamageAoe2" } ] } ] }
+        }
+      ]
+    }
+  },
+  {
+    "id": "bagpipes",
+    "type": "TOOL_ARMOR",
+    "copy-from": "bagpipes",
+    "name": { "str_sp": "bagpipes" },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ACTIVE",
+          "intermittent_activation": { "effects": [ { "frequency": "3 seconds", "spell_effects": [ { "id": "zhighDamageAoe2" } ] } ] }
+        }
+      ]
+    }
+  },
+  {
+    "id": "tuba",
+    "type": "TOOL_ARMOR",
+    "copy-from": "tuba",
+    "name": { "str_sp": "tuba" },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ACTIVE",
+          "intermittent_activation": { "effects": [ { "frequency": "1 seconds", "spell_effects": [ { "id": "zhighDamageAoe2" } ] } ] }
+        }
+      ]
+    }
+  },
+  {
+    "id": "saxophone",
+    "type": "TOOL_ARMOR",
+    "copy-from": "saxophone",
+    "name": { "str_sp": "saxophone" },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ACTIVE",
+          "intermittent_activation": { "effects": [ { "frequency": "3 seconds", "spell_effects": [ { "id": "zhighDamageAoe2" } ] } ] }
+        }
+      ]
+    }
+  }
+]
