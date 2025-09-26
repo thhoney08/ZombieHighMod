@@ -34,8 +34,8 @@
     "initial_charges": 10,
     "relic_data":
 	{
-		"charges_per_activation": 1,
-		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "30 s", "rate": 1 } ],
+	  "charges_per_activation": 1,
+	  "recharge_scheme": [ { "type": "time", "req": "none", "interval": "30 s", "rate": 1 } ],
       "passive_effects": [
         {
           "has": "WIELD",
@@ -1183,7 +1183,7 @@
     "category": "weapons",
     "weapon_category": [ "2H_SWORDS", "MEDIEVAL_SWORDS" ],
     "name": { "str": "flamberge" },
-    "description": "This is a huge two-handed sword from medieval era.  It packs a real wallop.",
+    "description": "This is a huge two-handed sword from medieval era, with a unique wavy shape.  It packs a real wallop.",
     "weight": "3176 g",
     "volume": "3250 ml",
     "price": "1600 USD",
@@ -1196,14 +1196,30 @@
     "color": "light_gray",
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP" ],
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 4 ] ],
-    "flags": [ "MESSY", "DURABLE_MELEE", "SHEATH_SWORD", "ALWAYS_TWOHAND", "NONCONDUCTIVE" ]
+    "flags": [ "MESSY", "DURABLE_MELEE", "SHEATH_SWORD", "ALWAYS_TWOHAND", "NONCONDUCTIVE" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "BleedZhigh",
+              "once_in": 2,
+              "message": "The sword bleeds your target.",
+              "npc_message": "%1$s bleeds their target."
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "flambergeZhigh_inferior",
     "type": "GENERIC",
     "copy-from": "flambergeZhigh",
     "name": { "str": "flamberge replica" },
-    "description": "This is a huge two-handed sword from medieval era.  You're not quite sure it's supposed to be that bendy.",
+    "description": "This is a huge two-handed sword from medieval era, with a unique wavy shape.  You're not quite sure it's supposed to be that bendy.",
     "price_postapoc": "750 cent",
     "material": "budget_steel",
     "flags": [ "MESSY", "SHEATH_SWORD", "ALWAYS_TWOHAND" ],
@@ -1215,7 +1231,7 @@
     "type": "GENERIC",
     "copy-from": "flambergeZhigh",
     "name": { "str": "flamberge fake" },
-    "description": "This is a dull, cheaply made replica of a huge two-handed sword from medieval era.  It still packs a wallop.",
+    "description": "This is a dull, cheaply made replica of a huge two-handed sword from medieval era, with a unique wavy shape.  It still packs a wallop.",
     "price": "80 USD",
     "price_postapoc": "50 cent",
     "material": "aluminum",
@@ -2295,7 +2311,7 @@
     "id": "fire_ax_1",
     "copy-from": "fire_ax",
     "type": "GENERIC",
-    "category": "tools",
+    "category": "tools_entry",
     "weapon_category": [ "2H_AXES" ],
     "name": { "str": "fire axe" },
     "description": "This is a large, two-handed pickhead axe normally used by firefighters.  It makes a powerful melee weapon, but is a bit slow to recover between swings.  Better than the original, with rubber ergonomic grips and balanced handle.",
@@ -2816,7 +2832,7 @@
     "name": { "str": "carbon fiber knuckles" },
     "description": "A custom 3D-printed knuckles made out of carbon fiber.  It is more lightweight than a normal weapon thanks to its method of manufacturing, but it can only be repaired using a 3D printer.",
     "material": [ "carbon_fiber" ],
-    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 }
+    "proportional": { "weight": 0.6, "price": 1.5, "price_postapoc": 1.5 }
   },
   {
     "id": "handPickZhigh",
@@ -3650,7 +3666,7 @@
     "name": { "str": "carbon fiber warbrand" },
     "description": "A custom 3D-printed single-bladed arming sword made out of carbon fiber.  It is more lightweight than a normal sword thanks to its method of manufacturing, but it can only be repaired using a 3D printer.",
     "material": [ "carbon_fiber" ],
-    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 }
+    "proportional": { "weight": 0.6, "price": 1.5, "price_postapoc": 1.5 }
   },
   {
     "id": "puppetZhigh_hook",
@@ -5755,5 +5771,409 @@
     "use_action": { "menu_text": "Collapse", "type": "transform", "target": "spring_cosh", "msg": "You collapse your spring cosh." },
     "volume": "750 ml",
     "bashing": 24
+  },
+  {
+    "id": "paintbrushZhigh",
+    "type": "GENERIC",
+    "copy-from": "bat",
+    "name": { "str": "large paintbrush" },
+    "description": "A comically large paintbrush.  You can beat enemies with it.",
+    "weight": "525 g",
+    "bashing": 18,
+    "to_hit": 2,
+    "color": "yellow",
+    "price_postapoc": "50 cent",
+    "material": [ "plastic" ],
+    "techniques": [ "tec_sojutsu_shove", "RAPID" ],
+    "volume": "2250 ml",
+    "price": "25 USD",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "BlindZhigh",
+              "once_in": 2,
+              "message": "The brush blinds your target.",
+              "npc_message": "%1$s blinds their target."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "halberdCanadaZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "SPEARS", "GLAIVES" ],
+    "name": { "str": "Canadian halberd" },
+    "description": "A modified hockey stick with three blades and decent grip.  It's specialized for cutting your enemies.",
+    "weight": "1650 g",
+    "price_postapoc": "750 cent",
+    "color": "brown",
+    "symbol": "/",
+    "material": [ "wood", "steel" ],
+    "techniques": [ "WBLOCK_1", "WIDE" ],
+    "volume": "1750 ml",
+    "bashing": 6,
+    "cutting": 20,
+    "flags": [ "SPEAR", "REACH_ATTACK", "NONCONDUCTIVE", "SHEATH_SPEAR" ],
+    "price": "49 USD",
+    "qualities": [ [ "COOK", 1 ] ]
+  },
+  {
+    "id": "railboardZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "HAND_AXES" ],
+    "name": { "str": "railboard" },
+    "description": "A long piece of wood with a spike through one end; essentially a simple axe.  Makes an acceptable melee weapon.",
+    "weight": "1424 g",
+    "to_hit": 1,
+    "color": "brown",
+    "symbol": "/",
+    "material": [ "wood" ],
+    "techniques": [ "WBLOCK_1" ],
+    "volume": "1250 ml",
+    "bashing": 8,
+    "cutting": 5,
+    "flags": [ "STAB" ],
+    "price": "80 USD",
+    "price_postapoc": "50 cent"
+  },
+  {
+    "id": "axFlameZhigh",
+    "type": "GENERIC",
+    "category": "tools_farming",
+    "weapon_category": [ "2H_AXES" ],
+    "name": { "str": "sharpened volcano fragment" },
+    "description": "This is an unnatrual axe, which burns up your foes.",
+    "weight": "2267 g",
+    "volume": "2500 ml",
+    "price": "105 USD",
+    "price_postapoc": "750 cent",
+    "to_hit": 1,
+    "bashing": 18,
+    "cutting": 25,
+    "material": [ "wood", "steel" ],
+    "symbol": "/",
+    "color": "light_gray",
+    "qualities": [ [ "AXE", 2 ], [ "BUTCHER", -36 ] ],
+    "techniques": [ "WBLOCK_1", "BRUTAL", "SWEEP" ],
+    "flags": [ "NONCONDUCTIVE", "SHEATH_AXE", "PYROMANIAC_WEAPON" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "BurnSpellZhigh",
+              "message": "The axe burns your target.",
+              "npc_message": "%1$s burns their target."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "axIceZhigh",
+    "type": "GENERIC",
+    "category": "tools_farming",
+    "weapon_category": [ "2H_AXES" ],
+    "name": { "str": "sharpened iceberg fragment" },
+    "description": "This is an unnatrual axe, which freezes up your foes.",
+    "weight": "2267 g",
+    "volume": "2500 ml",
+    "price": "105 USD",
+    "price_postapoc": "750 cent",
+    "to_hit": 1,
+    "bashing": 18,
+    "cutting": 25,
+    "material": [ "wood", "steel" ],
+    "symbol": "/",
+    "color": "light_gray",
+    "qualities": [ [ "AXE", 2 ], [ "BUTCHER", -36 ] ],
+    "techniques": [ "WBLOCK_1", "BRUTAL", "SWEEP" ],
+    "flags": [ "NONCONDUCTIVE", "SHEATH_AXE" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "FreezeSpellZhigh",
+              "message": "The axe freezes your target.",
+              "npc_message": "%1$s freezes their target."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "knifeListonZhigh",
+    "type": "GENERIC",
+    "category": "tools_chemistry",
+    "weapon_category": [ "KNIVES" ],
+    "name": { "str": "liston knife" },
+    "description": "This is a type of knife used in surgical amputation.  Its small, sharp blade allows for precision strikes in the hands of the skilled.  Also used by a mysterious serial killer.",
+    "weight": "43 g",
+    "volume": "35 ml",
+    "price": "10 USD",
+    "price_postapoc": "250 cent",
+    "to_hit": 1,
+    "cutting": 9,
+    "material": "steel",
+    "symbol": ",",
+    "color": "light_gray",
+    "techniques": [ "BRUTAL", "PRECISE" ],
+    "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 2 ] ],
+    "flags": [ "STAB", "SHEATH_KNIFE" ]
+  },
+  {
+    "id": "cestusBeltZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "looks_like": "cestus",
+    "weapon_category": [ "FIST_WEAPONS" ],
+    "symbol": "3",
+    "color": "light_gray",
+    "name": { "str": "belt cestus", "str_pl": "belt cestuses" },
+    "description": "A leather belt wrapped over the knuckles to improve punching power and defence.\n\n\"You should get some beatdown.  If you think you're about to die, ring the bell I'll let you off.\"",
+    "material": [ "leather", "steel" ],
+    "volume": "100 ml",
+    "weight": "300 g",
+    "bashing": 9,
+    "price_postapoc": "250 cent",
+    "flags": [ "UNARMED_WEAPON", "FRAGILE_MELEE", "NONCONDUCTIVE", "BELT_CLIP" ]
+  },
+  {
+    "id": "knifePickZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "1H_AXES" ],
+    "symbol": ";",
+    "color": "light_gray",
+    "looks_like": "mattock",
+    "name": { "str": "knife pickaxe" },
+    "description": "A one-handed homemade pesudo-pickaxe.  Makes an average melee weapon, and is useful for picking things, like earth, ground, and zombie brains.",
+    "price": "25 USD",
+    "price_postapoc": "5 USD",
+    "material": [ "steel", "wood" ],
+    "techniques": [ "WBLOCK_1" ],
+    "weight": "707 g",
+    "volume": "800 ml",
+    "bashing": 6,
+    "cutting": 15,
+    "to_hit": 1,
+    "use_action": "PICKAXE",
+    "flags": [ "BELT_CLIP", "NONCONDUCTIVE", "SHEATH_AXE", "STAB" ],
+    "qualities": [ [ "CUT", 1 ], [ "COOK", 1 ], [ "DIG", 1 ] ]
+  },
+  {
+    "id": "battleaxe_Furry",
+    "type": "GENERIC",
+    "copy-from": "battleaxe",
+    "name": { "str": "battle axe" },
+    "repairs_like": "battleaxe",
+    "proportional": { "weight": 1.2, "cutting": 2.85 },
+    "extend": { "flags": [ "ACIDIC", "SHOCKING", "FLAMING", "NO_UNWIELD", "NO_DROP" ] }
+  },
+  {
+    "id": "bat_carbon",
+    "looks_like": "bat_metal_zhigh",
+    "type": "GENERIC",
+    "copy-from": "bat",
+    "name": { "str": "carbon fiber bat" },
+    "description": "A custom 3D-printed baseball bat made out of carbon fiber.  It is lighter, more damaging than a wooden bat and a little easier to swing as a result.",
+    "weight": "765 g",
+    "color": "light_gray",
+    "bashing": 28,
+    "material": [ "carbon_fiber" ],
+    "proportional": { "price": 1.5, "price_postapoc": 1.5 }
+  },
+  {
+    "id": "chainbat",
+    "looks_like": "bwirebat",
+    "type": "GENERIC",
+    "copy-from": "bat",
+    "name": { "str": "chain bat" },
+    "description": "A baseball bat with a chain wrapped around it, an excellent melee weapon.",
+    "weight": "1459 g",
+    "bashing": 34,
+    "price_postapoc": "1750 cent"
+  },
+  {
+    "id": "knuckle_steelSpike",
+    "looks_like": "knuckle_steel",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "FIST_WEAPONS" ],
+    "symbol": "3",
+    "color": "dark_gray",
+    "name": { "str": "pair of spiked steel knuckles", "str_pl": "pairs of spiked steel knuckles" },
+    "description": "A mass of scrap metal crudely beat into shape, attached couple of spikes on them, with folded rags underneath to protect the wearers knuckles.  A good, quick weapon - but you have to get within punching range to use it.",
+    "material": "steel",
+    "volume": "290 ml",
+    "weight": "450 g",
+    "bashing": 8,
+    "cutting": 6,
+    "price_postapoc": "50 cent",
+    "flags": [ "STAB", "UNARMED_WEAPON", "BELT_CLIP" ]
+  },
+  {
+    "id": "cestus_skull",
+    "looks_like": "helmet_skull",
+    "type": "GENERIC",
+    "copy-from": "cestus_bone",
+    "name": { "str": "skull knuckle" },
+    "description": "This weapon is a series of leather wrappings with an animal skull.  For when your punches need more damage.",
+    "material": [ "bone" ],
+    "bashing": 10,
+    "cutting": 6,
+    "extend": { "flags": [ "STAB" ] }
+  },
+  {
+    "id": "crossZhigh",
+    "type": "GENERIC",
+    "weapon_category": [ "1H_HAMMERS" ],
+    "name": { "str": "cross" },
+    "description": "This is a wooden cross.  Useful for warding off evil, both spiritually and physically.",
+    "weight": "566 g",
+    "volume": "350 ml",
+    "price": 700,
+    "price_postapoc": 100,
+    "to_hit": 1,
+    "bashing": 9,
+    "material": [ "wood" ],
+    "symbol": ";",
+    "color": "brown",
+    "flags": [ "BELT_CLIP", "NONCONDUCTIVE" ],
+	"use_action": "MEDITATE"
+  },
+  {
+    "id": "yoyo_toyZhigh",
+    "name": { "str": "toy yoyo" },
+    "type": "GENERIC",
+    "copy-from": "bullwhip",
+    "description": "The classic yoyo.  For kids, this could be used as a weak weapon.",
+    "weight": "500 g",
+    "volume": "250 ml",
+    "price": "8 USD",
+    "price_postapoc": "2 USD",
+    "to_hit": 2,
+    "//": "There's no way you can swing this thing without hitting SOMETHING.",
+    "bashing": 8,
+    "cutting": 1,
+    "material": [ "leather", "steel" ],
+    "flags": [ "REACH_ATTACK", "WHIP", "NONCONDUCTIVE", "BELT_CLIP", "FRAGILE_MELEE" ]
+  },
+  {
+    "id": "yoyo_proZhigh",
+    "name": { "str": "professional yoyo" },
+    "type": "GENERIC",
+    "copy-from": "bullwhip",
+    "description": "The classic yoyo.  For adults and professionals, this could be used as a weak weapon.  Have longer thread than its toy variations.",
+    "weight": "500 g",
+    "volume": "250 ml",
+    "price": "480 USD",
+    "price_postapoc": "52 USD",
+    "to_hit": 2,
+    "//": "There's no way you can swing this thing without hitting SOMETHING.",
+    "bashing": 10,
+    "cutting": 1,
+    "material": [ "cotton", "superalloy" ],
+    "flags": [ "REACH_ATTACK", "REACH3", "WHIP", "NONCONDUCTIVE", "BELT_CLIP" ]
+  },
+  {
+    "id": "icePickZhigh",
+    "looks_like": "screwdriver",
+    "type": "GENERIC",
+    "category": "tools_cooking",
+    "weapon_category": [ "STILETTOS" ],
+    "name": { "str": "ice pick" },
+    "description": "This is an ice pick, which was used to break ice.  It can be used as an awl, but it is more useful as a weapon.",
+    "weight": "170 g",
+    "volume": "40 ml",
+    "price": "450 cent",
+    "price_postapoc": "50 cent",
+    "to_hit": 1,
+    "cutting": 9,
+    "material": [ "steel", "plastic" ],
+    "symbol": ";",
+    "color": "yellow",
+    "qualities": [ [ "LEATHER_AWL", 1 ] ],
+    "flags": [ "STAB", "BELT_CLIP" ]
+  },
+  {
+    "id": "knife_combat_superalloy",
+    "type": "GENERIC",
+    "copy-from": "knife_combat",
+    "looks_like": "knife_combat",
+    "name": { "str": "superalloy combat knife", "str_pl": "superalloy combat knives" },
+    "description": "This is a military combat knife.  It is light and extremely sharp, and could be deadly in either the right hands or when attached as a bayonet.  This one is forged in superalloy, which was planned for the use of special operators.",
+    "price": "200 USD",
+    "price_postapoc": "3250 cent",
+    "gunmod_data": {
+      "location": "underbarrel",
+      "mod_target_category": [
+        [ "SUBMACHINE_GUNS" ],
+        [ "RIFLES" ],
+        [ "MACHINE_GUNS" ],
+        [ "GATLING_GUNS" ],
+        [ "SHOTGUNS" ],
+        [ "M_XBOWS" ],
+        [ "GRENADE_LAUNCHERS" ],
+        [ "ROCKET_LAUNCHERS" ],
+        [ "FLAMETHROWERS" ]
+      ],
+      "mode_modifier": [ [ "REACH", "bayonet", 2, [ "MELEE", "REACH_ATTACK" ] ] ]
+    },
+    "material": [ "superalloy" ],
+    "proportional": { "weight": 1.2, "cutting": 1.85 }
+  },
+  {
+    "id": "jambiya",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "KNIVES" ],
+    "name": { "str": "jambiya" },
+    "description": "A type of dagger with a short curved blade with a medial ridge that originated from the middle east.  This one is dull and could be an average weapon.",
+    "looks_like": "kirpan",
+    "weight": "374 g",
+    "volume": "500 ml",
+    "price": "18 USD",
+    "to_hit": 1,
+    "price_postapoc": "250 cent",
+    "bashing": 10,
+    "cutting": 6,
+    "material": "steel",
+    "symbol": "/",
+    "color": "dark_gray",
+    "techniques": [ "RAPID" ],
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 8 ] ],
+    "flags": [ "STAB", "SHEATH_KNIFE", "DURABLE_MELEE" ]
+  },
+  {
+    "id": "jambiya_cheap",
+    "type": "GENERIC",
+    "copy-from": "jambiya",
+    "name": { "str": "jambiya replica" },
+    "description": "A type of dagger with a short curved blade with a medial ridge that originated from the middle east.  This one is not particularly well-made.",
+    "looks_like": "jambiya",
+    "price": "9 USD",
+    "price_postapoc": "50 cent",
+    "material": "budget_steel",
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 4 ] ],
+    "repairs_like": "jambiya",
+    "proportional": { "weight": 1.2, "cutting": 0.85 },
+    "relative": { "to_hit": -1 },
+    "delete": { "flags": [ "DURABLE_MELEE" ] }
   }
 ]

@@ -3,7 +3,7 @@
     "id": "cannon_nuke_shell",
     "copy-from": "cannon_round_ball",
     "type": "AMMO",
-    "name": { "str": "mininuke cannon shell" },
+    "name": { "str": "cannon mininuke shell" },
     "description": "A bundle of wadding, black gunpowder, a tightly-packed explosive shell with a percussion fuse, and a mininuke.  A non-Civil War era \"mininuke shell\" for cannons of 3-inch bore, whatever it hits probably won't live to regret it.  Especially when they are showered with radiation.",
     "//": "Exact weight of component items.",
     "weight": "5051 g",
@@ -22,7 +22,7 @@
     "id": "cannon_donk_shell",
     "copy-from": "cannon_round_ball",
     "type": "AMMO",
-    "name": { "str": "bombard cannon shell" },
+    "name": { "str": "cannon bombard shell" },
     "description": "A bundle of wadding, black gunpowder, and a tightly-packed explosive shell with a percussion fuse.  A Civil War era \"explosive shell\" for cannons of 3-inch bore, whatever it hits probably won't live to regret it.  Leaves an active bomb at the target, which explodes later.",
     "//": "Exact weight of component items.",
     "weight": "5051 g",
@@ -41,7 +41,7 @@
     "id": "cannon_scrap_shot",
     "copy-from": "cannon_scrap_shot",
     "type": "AMMO",
-    "name": { "str": "grapeshot cannon shell" },
+    "name": { "str": "cannon grapeshot shell" },
     "description": "A bundle of wadding, black gunpowder, and a bundle of rock-sized iron balls.  A Civil War era \"grapeshot shell\" for cannons of 3-inch bore, whatever it hits probably won't live to regret it.",
     "//": "Exact weight of component items.",
     "weight": "5051 g",
@@ -59,7 +59,7 @@
     "id": "cannon_dragon_shell",
     "copy-from": "cannon_round_ball",
     "type": "AMMO",
-    "name": { "str": "dragon's breath cannon shell" },
+    "name": { "str": "cannon dragon's breath shell" },
     "description": "A bundle of wadding, black gunpowder, and some powder to set things on fire.  A Civil War era \"common shell\" for cannons of 3-inch bore, whatever it hits will stay warm for the rest of it's life.",
     "//": "Exact weight of component items.",
     "weight": "5051 g",
@@ -71,7 +71,7 @@
     "damage": { "damage_type": "bullet", "amount": 50, "armor_penetration": 150 },
     "proportional": { "recoil": 0.6, "loudness": 0.8, "dispersion": 1.2 },
     "shape": [ "cone", { "half_angle": 10, "length": 40 } ],
-    "extend": { "effects": [ "INCENDIARY", "BLACKPOWDER", "STREAM", "NOGIB" ] }
+    "extend": { "effects": [ "INCENDIARY", "BLACKPOWDER", "NOGIB" ] }
   },
   {
     "type": "AMMO",
@@ -788,7 +788,7 @@
     "price": "3500 USD",
     "count": 10,
     "flags": [  ],
-    "proportional": { "damage": { "damage_type": "stab", "amount": 0.3, "armor_penetration": 0.1 }, "recoil": 0.6, "loudness": 0.8 },
+    "proportional": { "damage": { "damage_type": "heat", "amount": 0.3, "armor_penetration": 0.1 }, "recoil": 0.6, "loudness": 0.8 },
     "effects": [ "FLAME", "STREAM", "INCENDIARY", "NEVER_MISFIRES" ]
   },
   {
@@ -947,6 +947,17 @@
     "relative": { "range": 14, "damage": { "damage_type": "bullet", "amount": -18 } },
     "proportional": { "recoil": 0.8 },
     "extend": { "effects": [ "TANGLE", "WEBAMMO" ] }
+  },
+  {
+    "id": "shot_hev_beanbag",
+    "copy-from": "shot_slug",
+    "looks_like": "bp_shot_flechette",
+    "type": "AMMO",
+    "name": { "str": "shotgun heavy beanbag" },
+    "description": "A heavy rubber slug used with shotguns to give them the range capabilities of a rifle.  Pretty damaging and accurate.",
+    "relative": { "range": 14, "damage": { "damage_type": "bullet", "amount": -1 } },
+    "proportional": { "recoil": 0.8 },
+    "extend": { "effects": [ "LARGE_BEANBAG" ] }
   },
   {
     "id": "powderFire",
@@ -1647,7 +1658,7 @@
 	"description": "This unique flare currently is activated, thus sending some signal to bring some firepower.",
     "initial_charges": 20,
     "max_charges": 20,
-    "turns_per_charge": 30,
+    "turns_per_charge": 1,
     "use_action": {
       "type": "explosion",
       "fields_type": "fd_smoke",
@@ -2303,5 +2314,45 @@
     "loudness": 0,
     "count": 4,
     "dont_recover_one_in": 5
+  },
+  {
+    "id": "signalFlare_heZhigh",
+    "copy-from": "shot_slug",
+    "type": "AMMO",
+    "name": { "str": "explosive signal flare" },
+    "//": "$30/shot thanks to tight regulation, one way or another.",
+    "description": "A shotgun shell shooting a small explosive.  Damaging, but rather inaccurate and short ranged.  Banned in several states.  Based on an explosive slug, this prototype was made for personal defence.",
+    "price": "30 USD",
+    "price_postapoc": "16 USD",
+    "//2": "currently can't be crafted",
+    "count": 5,
+    "ammo_type": "signal_flare",
+    "damage": { "damage_type": "bullet", "amount": 30, "armor_penetration": 10 },
+    "extend": { "effects": [ "EXPLOSIVE", "NO_PENETRATE_OBSTACLES" ] }
+  },
+  {
+    "id": "flechette_railZhigh",
+    "looks_like": "rebar_rail",
+    "type": "AMMO",
+    "name": { "str": "nail cluster" },
+    "description": "A cluster of nails in a plastic tube.  Could be used as a projectile by a sufficiently powerful electromagnetic weapon.",
+    "weight": "25 g",
+    "volume": "250 ml",
+    "price": "10 USD",
+    "price_postapoc": "250 cent",
+    "to_hit": -1,
+    "bashing": 5,
+    "cutting": 1,
+    "material": [ "iron" ],
+    "symbol": "=",
+    "color": "dark_gray",
+    "count": 10,
+    "ammo_type": "metal_rail",
+    "range": 0,
+    "damage": { "damage_type": "stab", "amount": 15, "armor_penetration": 20 },
+    "dispersion": 200,
+    "loudness": 0,
+    "shape": [ "cone", { "half_angle": 15, "length": 20 } ],
+    "effects": [ "RECYCLED", "NON_FOULING" ]
   }
 ]
