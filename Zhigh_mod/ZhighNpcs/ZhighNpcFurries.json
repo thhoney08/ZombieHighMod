@@ -1,0 +1,611 @@
+[
+  {
+    "type": "npc",
+    "id": "furriesZhighGrunt",
+    "gender": "female",
+    "name_suffix": "Werebeasts",
+    "class": "NC_WEREBEAST",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_ZHIGH_GUARD",
+    "faction": "WerebeastsZhigh"
+  },
+  {
+    "type": "npc",
+    "id": "furriesZhighRange",
+    "gender": "female",
+    "name_suffix": "Werebeasts",
+    "class": "NC_WEREBEAST01",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_ZHIGH_GUARD",
+    "faction": "WerebeastsZhigh"
+  },
+  {
+    "type": "npc",
+    "id": "furriesZhighLeader",
+    "gender": "female",
+    "name_suffix": "Werebeasts",
+    "class": "NC_WEREBEAST02",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_NC_WEREBEAST02",
+    "mission_offered": "MISSION_NC_WEREBEAST02_1",
+    "faction": "WerebeastsZhigh"
+  },
+  {
+    "type": "npc",
+    "id": "furriesZhighButter",
+    "gender": "female",
+    "name_unique": "Butters",
+    "name_suffix": "Werebeasts",
+    "class": "NC_WEREBEAST03",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_ZHIGH_GUARD",
+    "faction": "WerebeastsZhigh"
+  },
+  {
+    "type": "faction",
+    "id": "WerebeastsZhigh",
+    "name": "Werebeasts",
+    "likes_u": 15,
+    "respects_u": 20,
+    "known_by_u": false,
+    "size": 15,
+    "power": 15,
+    "food_supply": 172800,
+    "wealth": 25000,
+    "relations": {
+      "WerebeastsZhigh": {
+        "kill on sight": false,
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "old_guard": {
+        "kill on sight": false,
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "free_merchants": {
+        "kill on sight": false,
+        "watch your back": true,
+        "share my stuff": false,
+        "guard your stuff": true,
+        "lets you in": false,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "hells_raiders": { "kill on sight": true }
+    },
+    "description": "Diverse bands, congregations and organizations with the common goal of survival."
+  },
+  {
+    "//": "This group picks out one of the excluding traits.",
+    "type": "trait_group",
+    "id": "trait_group_NC_WEREBEAST",
+    "subtype": "collection",
+    "traits": [
+		{ "trait": "STR_UP" },
+		{ "trait": "DEX_UP" },
+		{ "trait": "PER_UP" },
+		{ "trait": "INT_UP" },
+		{ "trait": "QUICK" },
+		{ "trait": "FASTHEALER" },
+		{ "trait": "GOODCARDIO" },
+		{ "trait": "WHISKERS_RAT", "prob": 15 }
+	]
+  },
+  {
+    "//": "This group picks out one of the excluding traits.",
+    "type": "trait_group",
+    "id": "trait_group_NC_WEREBEAST02",
+    "subtype": "collection",
+    "traits": [
+		{ "trait": "STR_UP_4" },
+		{ "trait": "DEX_UP_4" },
+		{ "trait": "PER_UP_4" },
+		{ "trait": "INT_UP_4" },
+		{ "trait": "QUICK" },
+		{ "trait": "FASTHEALER" },
+		{ "trait": "GOODCARDIO" },
+		{ "trait": "WHISKERS_RAT", "prob": 15 }
+	]
+  },
+  {
+    "//": "This group picks out one of the excluding traits.",
+    "type": "trait_group",
+    "id": "trait_group_ZHIGHEARS",
+    "subtype": "distribution",
+    "traits": [
+		{ "trait": "HORNS_CURLED", "prob": 15 },
+		{ "trait": "ANTLERS", "prob": 15 },
+		{ "trait": "HORNS", "prob": 15 },
+		{ "trait": "CANINE_EARS", "prob": 25 },
+		{ "trait": "LUPINE_EARS", "prob": 25 },
+		{ "trait": "FELINE_EARS", "prob": 25 },
+		{ "trait": "URSINE_EARS", "prob": 25 },
+		{ "trait": "MOUSE_EARS", "prob": 25 }
+	]
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_WEREBEAST",
+    "name": { "str": "Werebeast" },
+    "job_description": "I'm in it for the loot and fresh meat.",
+    "traits": [
+      { "group": "BG_survival_story_CRIMINAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "trait_group_NC_WEREBEAST" },
+	  { "group": "trait_group_ZHIGHEARS" },
+      { "group": "Appearance_demographics" }
+    ],
+    "common": false,
+    "bonus_dex": { "rng": [ 8, 12 ] },
+    "bonus_str": { "rng": [ 8, 12 ] },
+    "bonus_int": { "rng": [ 8, 12 ] },
+    "bonus_per": { "rng": [ 8, 12 ] },
+    "worn_override": "NC_WEREBEAST_worn",
+    "carry_override": "NC_WEREBEAST_items01",
+    "weapon_override": "NC_WEREBEAST_wield",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": 4 } ] } },
+      { "skill": "gun", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "launcher", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "smg", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 1, 5 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 5 ] } },
+      { "skill": "shotgun", "bonus": { "rng": [ 1, 5 ] } }
+    ]
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_WEREBEAST01",
+    "name": { "str": "Werebeast" },
+    "job_description": "I'm in it for the loot and fresh meat.",
+    "traits": [
+      { "group": "BG_survival_story_CRIMINAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "trait_group_NC_WEREBEAST" },
+	  { "group": "trait_group_ZHIGHEARS" },
+      { "group": "Appearance_demographics" }
+    ],
+    "common": false,
+    "bonus_dex": { "rng": [ 8, 12 ] },
+    "bonus_str": { "rng": [ 8, 12 ] },
+    "bonus_int": { "rng": [ 8, 12 ] },
+    "bonus_per": { "rng": [ 8, 12 ] },
+    "worn_override": "NC_WEREBEAST_worn",
+    "carry_override": "NC_WEREBEAST_items02",
+    "weapon_override": "NC_WEREBEAST01_wield",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": 4 } ] } },
+      { "skill": "gun", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "archery", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "smg", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 1, 5 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 5 ] } },
+      { "skill": "shotgun", "bonus": { "rng": [ 1, 5 ] } }
+    ]
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_WEREBEAST02",
+    "name": { "str": "Werebeast" },
+    "job_description": "I'm protecting my village.",
+    "traits": [
+      { "group": "BG_survival_story_CRIMINAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "trait_group_NC_WEREBEAST02" },
+	  { "trait": "ANTLERSV2" },
+      { "trait": "SKIN_LIGHT" },
+      { "trait": "hair_brown_long" },
+      { "trait": "eye_red" }
+    ],
+    "common": false,
+    "bonus_dex": { "rng": [ 18, 22 ] },
+    "bonus_str": { "rng": [ 18, 22 ] },
+    "bonus_int": { "rng": [ 18, 22 ] },
+    "bonus_per": { "rng": [ 18, 22 ] },
+    "worn_override": "NC_WEREBEAST02_worn",
+    "carry_override": "NC_WEREBEAST_items02",
+    "weapon_override": "NC_WEREBEAST02_wield",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": 4 } ] } },
+      { "skill": "gun", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "archery", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "smg", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 1, 5 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 5 ] } },
+      { "skill": "shotgun", "bonus": { "rng": [ 1, 5 ] } }
+    ]
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_WEREBEAST03",
+    "name": { "str": "Werebeast" },
+    "job_description": "I'm in it for the loot and fresh meat.",
+    "traits": [
+      { "group": "BG_survival_story_CRIMINAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "trait_group_NC_WEREBEAST" },
+	  { "trait": "CANINE_EARS" },
+	  { "trait": "hair_brown_medium" },
+	  { "trait": "SKIN_LIGHT" },
+	  { "trait": "eye_blue" }
+    ],
+    "common": false,
+    "bonus_dex": { "rng": [ 8, 12 ] },
+    "bonus_str": { "rng": [ 8, 12 ] },
+    "bonus_int": { "rng": [ 8, 12 ] },
+    "bonus_per": { "rng": [ 8, 12 ] },
+    "worn_override": "NC_WEREBEAST03_worn",
+    "carry_override": "NC_WEREBEAST_items02",
+    "weapon_override": "NC_WEREBEAST03_wield",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": 4 } ] } },
+      { "skill": "gun", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "archery", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "smg", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 1, 5 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 5 ] } },
+      { "skill": "shotgun", "bonus": { "rng": [ 1, 5 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WEREBEAST_wield",
+    "subtype": "distribution",
+    "items": [
+	  { "group": "weapons", "prob": 5 },
+      [ "rock_sock", 5 ],
+      [ "spear_stone", 5 ],
+      [ "primitive_hammer", 5 ],
+      [ "primitive_axe", 5 ],
+      [ "primitive_knife", 5 ],
+      [ "primitive_shovel", 5 ],
+      [ "tomahawk_primitive", 5 ],
+      [ "mace_bone", 5 ],
+      [ "sword_bone", 5 ],
+      [ "cestus_tooth", 5 ],
+      [ "bone_knife", 5 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WEREBEAST01_wield",
+    "subtype": "distribution",
+    "items": [
+      [ "shortbow", 5 ],
+      [ "compbow", 5 ],
+      [ "compbow_high", 5 ],
+      [ "compbow_low", 5 ],
+      [ "compositebow", 5 ],
+      [ "compositebow_short", 5 ],
+      [ "longbow", 5 ],
+      [ "woodgreatbow", 5 ],
+      [ "compgreatbow", 5 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WEREBEAST02_wield",
+    "subtype": "distribution",
+    "items": [
+      [ "battleaxe_Furry", 5 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WEREBEAST03_wield",
+    "subtype": "distribution",
+    "items": [
+      [ "cocoZhigh", 5 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WEREBEAST_worn",
+    "subtype": "collection",
+    "items": [
+      { "group": "ZhighNpc_underwear_feet_male" },
+      { "item": "badge_lightV2" },
+      { "item": "bra" },
+      { "item": "panties" },
+      { "group": "npc_wrist" },
+      { "group": "NC_BANDIT_coat", "prob": 55 },
+      { "group": "NC_BANDIT_pants_female" },
+      { "group": "NC_BANDIT_shirt_female" },
+      { "group": "NC_BANDIT_shoes_female" },
+      { "group": "NC_BANDIT_extra", "prob": 55 },
+      { "group": "NC_SOLDIER_storage" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WEREBEAST02_worn",
+    "subtype": "collection",
+    "items": [
+      { "group": "ZhighNpc_underwear_feet_male" },
+      { "item": "badge_lightV2" },
+      { "item": "bra" },
+      { "item": "panties" },
+      { "group": "npc_wrist" },
+      { "item": "coat_fur_sf", "prob": 55 },
+      { "item": "pants_fur" },
+      { "item": "chestwrap_fur" },
+      { "group": "NC_BANDIT_shoes_female" },
+      { "group": "NC_BANDIT_extra", "prob": 55 },
+      { "group": "NC_SOLDIER_storage" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WEREBEAST03_worn",
+    "subtype": "collection",
+    "items": [
+      { "group": "ZhighNpc_underwear_feet_male" },
+      { "item": "badge_lightV2" },
+      { "item": "undershirt" },
+      { "item": "panties" },
+      { "group": "npc_wrist" },
+      { "item": "overallsZhighTan" },
+      { "item": "sneakers" },
+      { "item": "mbag" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WEREBEAST_items01",
+    "subtype": "collection",
+    "items": [
+      { "group": "ZhighNpc_misc" },
+      { "item": "dogfood" },
+      { "item": "birdfood" },
+      { "item": "cattlefodder" },
+      { "item": "catfood" },
+      { "group": "ZhighNpc_throw" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WEREBEAST_items02",
+    "subtype": "collection",
+    "items": [
+      { "group": "ZhighNpc_misc" },
+      { "item": "arrow_metal" },
+      { "item": "arrow_metal" },
+      { "item": "arrow_wood" },
+      { "item": "arrow_wood" },
+      { "item": "dogfood" },
+      { "item": "birdfood" },
+      { "item": "cattlefodder" },
+      { "item": "catfood" },
+      { "group": "ZhighNpc_throw" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WEREBEAST_items03",
+    "subtype": "collection",
+    "items": [
+      { "group": "ZhighNpc_misc" },
+      { "group": "ammo_pistol_common" },
+      { "group": "ammo_pistol_common" },
+      { "group": "ammo_pistol_rare" },
+      { "item": "dogfood" },
+      { "item": "birdfood" },
+      { "item": "cattlefodder" },
+      { "item": "catfood" },
+      { "group": "ZhighNpc_throw" }
+    ]
+  },
+  {
+    "id": "TALK_NC_WEREBEAST02",
+    "type": "talk_topic",
+    "dynamic_line": { "u_has_any_trait": [ "PROF_FED" ], "yes": "Marshal…", "no": "Citizen…" },
+    "responses": [
+      { "text": "Who are you?", "topic": "TALK_NC_WEREBEAST02_NEW" },
+      { "text": "Heard anything about the outside world?", "topic": "TALK_NC_WEREBEAST02_WORLD" },
+      { "text": "Do you gals need anything?", "topic": "TALK_MISSION_LIST" },
+      { "text": "Well, bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_NC_WEREBEAST02_NEW",
+    "type": "talk_topic",
+    "dynamic_line": "I'm this village's elder.  Most people here call us the 'furries' and we do not mind... much.  Got mutations somehow, and people were not quite fond of them.",
+    "responses": [
+      { "text": "So what are you actually doing here?", "topic": "TALK_NC_WEREBEAST02_NEW_DOING" },
+      { "text": "Never mind…", "topic": "TALK_NC_WEREBEAST02" }
+    ]
+  },
+  {
+    "id": "TALK_NC_WEREBEAST02_NEW_DOING",
+    "type": "talk_topic",
+    "dynamic_line": "I ensure that the citizens here have what they need to survive and protect themselves from raiders.  Keeping some form of law is going to be the most important element in rebuilding the world.  We do what we can to keep the 'Free Merchants' here prospering and in return they have provided us with spare men and supplies when they can.",
+    "responses": [
+      { "text": "Is there a catch?", "topic": "TALK_NC_WEREBEAST02_NEW_DOWNSIDE" },
+      { "text": "Anything more to it?", "topic": "TALK_NC_WEREBEAST02_NEW_DOWNSIDE" },
+      { "text": "Never mind…", "topic": "TALK_NC_WEREBEAST02" }
+    ]
+  },
+  {
+    "id": "TALK_NC_WEREBEAST02_NEW_DOWNSIDE",
+    "type": "talk_topic",
+    "dynamic_line": "Well… I was like any other civilian till they conscripted me so I'll tell it to you straight.  They're the best hope we got right now.  They are stretched impossibly thin but are willing to do what is needed to maintain order.  They don't care much about looters since they understand most everyone is dead, but if you have something they need… you WILL give it to them.  Since most survivors here have nothing they want, they are welcomed as champions.",
+    "responses": [ { "text": "Hmmm…", "topic": "TALK_NC_WEREBEAST02" } ]
+  },
+  {
+    "id": "TALK_NC_WEREBEAST02_WORLD",
+    "type": "talk_topic",
+    "dynamic_line": "Honestly, we don't know.  Phones, radios, any kind of communication is almost gone.  My people are working on it, but with no advancements.",
+    "responses": [
+      { "text": "Never mind…", "topic": "TALK_NC_WEREBEAST02" }
+    ]
+  },
+  {
+    "id": "MISSION_NC_WEREBEAST02_1",
+    "type": "mission_definition",
+    "name": { "str": "Kill Bandits" },
+    "description": "A pair of bandits have been preying on locals, based out of a nearby cabin.  Ensure they meet a bitter end along with any associates, but watch out for traps around their hideout.",
+    "goal": "MGOAL_ASSASSINATE",
+    "difficulty": 5,
+    "value": 50000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "bandit_cabin", "om_special": "bandit_cabin", "reveal_radius": 1 },
+      "update_mapgen": {
+        "set": [
+          { "point": "trap", "id": "tr_landmine_buried", "x": 7, "y": 6 },
+          { "point": "trap", "id": "tr_landmine_buried", "x": 5, "y": 5 },
+          { "point": "trap", "id": "tr_landmine_buried", "x": 8, "y": 5 },
+          { "point": "trap", "id": "tr_landmine_buried", "x": 0, "y": 11 }
+        ],
+        "place_npcs": [ { "class": "bandit", "x": 12, "y": 12, "target": true } ]
+      }
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_NC_WEREBEAST02_2",
+    "dialogue": {
+      "describe": "We need help…",
+      "offer": "I don't like sending untested men into the field but if you have stayed alive so far you might have some skills.  There are at least a pair of bandits squatting in a local cabin, anyone who preys upon civilians meets a quick end… execute both of them for their crimes.  Complete this and the we will consider you an asset in the region.",
+      "accepted": "Contractor, I welcome you aboard.",
+      "rejected": "The States will remain a wasteland unless good men choose to save it.",
+      "advice": "They might suspect you are coming, keep an eye out for traps.",
+      "inquire": "Have you completed your mission?",
+      "success": "Werebeasts thanks you for eliminating the criminals.  You won't be forgotten.",
+      "success_lie": "What good does this do us?",
+      "failure": "It was a lost cause anyways…"
+    }
+  },
+  {
+    "id": "MISSION_NC_WEREBEAST02_2",
+    "type": "mission_definition",
+    "name": { "str": "Assassinate Raider Leader" },
+    "description": "The Werebeasts have located a Hell's Raiders encampment that is coordinating attacks on the Free Merchants.  Pay them a visit and execute the area leadership.",
+    "goal": "MGOAL_ASSASSINATE",
+    "difficulty": 10,
+    "value": 300000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "bandit_camp_1", "om_special": "bandit_camp", "reveal_radius": 1, "min_distance": 10 },
+      "update_mapgen": { "place_npcs": [ { "class": "RangedDudeBoss", "x": 17, "y": 9, "target": true } ] },
+      "effect": [
+        { "u_buy_item": "ruger_redhawk" },
+        { "u_buy_item": "44magnum", "count": 47 },
+        { "u_buy_item": "holster" }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_NC_WEREBEAST02_5",
+    "dialogue": {
+      "describe": "We need help…",
+      "offer": "I've located a Hell's Raiders encampment in the region that appears to be coordinating operations against the Free Merchants.  We know almost nothing about the command structure in the 'gang' so I need to send someone in to decapitate the leadership.  We cannot give you much, but at least there is a revolver for you.",
+      "accepted": "Good.  Now go and teach them a lesson.",
+      "rejected": "Come back when you get a chance, we could use a few good men.",
+      "advice": "I'd recommend having two deputies… it would be a death trap if a single man got surrounded.",
+      "inquire": "Has the leadership been dealt with?",
+      "success": "You continue to impress us.  With their leadership broken it will be easier to establish a foothold in the area, secure resources for rebuilding.  I've been keeping Command informed and while there is certainly a lot you could do to help here, they might have missions for me to offer you that will take you farther afield.  In any case, thank you once again marshal.",
+      "success_lie": "What good does this do us?",
+      "failure": "It was a lost cause anyways…"
+    }
+  },
+  {
+    "id": "MISSION_NC_WEREBEAST02_3",
+    "type": "mission_definition",
+    "name": { "str": "Secure Trade Route" },
+    "description": "One of the Free Merchants silently disappeared while escorting a trade caravan.  Whoever or whatever is responsible must be quick and quiet - investigate the trade route and eliminate the threat.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 5,
+    "value": 100000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "field", "reveal_radius": 5, "random": true, "search_range": 30 },
+      "update_mapgen": {
+        "place_monster": [
+          { "monster": "mon_graboid", "name": "Little Guy", "x": 12, "y": 12, "target": true },
+          { "monster": "mon_graboid", "x": [ 9, 15 ], "y": [ 9, 15 ] }
+        ]
+      }
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_NC_WEREBEAST02_4",
+    "dialogue": {
+      "describe": "We need help…",
+      "offer": "There is another monster troubling the merchants but this time it isn't human… at least I don't think.  Guy just disappeared while walking behind a packed caravan.  They didn't hear any shots but I suppose some raider may have been real sneaky.  Check out the area and report anything you find.",
+      "accepted": "Thanks, keeping the people safe is what we try and do.",
+      "rejected": "Come back when you get a chance, we really need to start reclaiming the region.",
+      "advice": "Search the bushes for any trace?  I'm not an expert tracker but you should be able to find something.",
+      "inquire": "How is the search going?",
+      "success": "Great work, wasn't sure what I was sending you after.",
+      "success_lie": "What good does this do us?",
+      "failure": "It was a lost cause anyways…"
+    }
+  },
+  {
+    "id": "MISSION_NC_WEREBEAST02_4",
+    "type": "mission_definition",
+    "name": { "str": "Assassinate Raider Leader" },
+    "description": "The Werebeasts have located a Hell's Raiders encampment that is coordinating attacks on the Free Merchants.  Pay them a visit and execute the area leadership.",
+    "goal": "MGOAL_ASSASSINATE",
+    "difficulty": 10,
+    "value": 300000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "bandit_camp_1", "om_special": "bandit_camp", "reveal_radius": 1, "min_distance": 10 },
+      "update_mapgen": { "place_npcs": [ { "class": "RangedDudeBoss", "x": 17, "y": 9, "target": true } ] },
+      "effect": [
+        { "u_buy_item": "44magnum", "count": 67 },
+        { "u_buy_item": "medkit2", "count": 2 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_NC_WEREBEAST02_5",
+    "dialogue": {
+      "describe": "We need help…",
+      "offer": "I've located a Hell's Raiders encampment in the region that appears to be coordinating operations against the Free Merchants.  We know almost nothing about the command structure in the 'gang' so I need to send someone in to decapitate the leadership.  We cannot give you much, but at least there is a revolver for you.",
+      "accepted": "Good.  Now go and teach them a lesson.",
+      "rejected": "Come back when you get a chance, we could use a few good men.",
+      "advice": "I'd recommend having two deputies… it would be a death trap if a single man got surrounded.",
+      "inquire": "Has the leadership been dealt with?",
+      "success": "You continue to impress us.  With their leadership broken it will be easier to establish a foothold in the area, secure resources for rebuilding.  I've been keeping Command informed and while there is certainly a lot you could do to help here, they might have missions for me to offer you that will take you farther afield.  In any case, thank you once again marshal.",
+      "success_lie": "What good does this do us?",
+      "failure": "It was a lost cause anyways…"
+    }
+  },
+  {
+    "id": "MISSION_NC_WEREBEAST02_5",
+    "type": "mission_definition",
+    "name": { "str": "Assassinate Raider Leader" },
+    "description": "The Werebeasts have located a Hell's Raiders encampment that is coordinating attacks on the Free Merchants.  Pay them a visit and execute the area leadership.",
+    "goal": "MGOAL_ASSASSINATE",
+    "difficulty": 10,
+    "value": 300000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "bandit_camp_1", "om_special": "bandit_camp", "reveal_radius": 1, "min_distance": 10 },
+      "update_mapgen": { "place_npcs": [ { "class": "RangedDudeBoss", "x": 17, "y": 9, "target": true } ] },
+      "effect": [
+        { "u_buy_item": "44magnum", "count": 57 },
+        { "u_buy_item": "medkit2", "count": 2 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_NC_WEREBEAST02_5",
+    "dialogue": {
+      "describe": "We need help…",
+      "offer": "I've located a Hell's Raiders encampment in the region that appears to be coordinating operations against the Free Merchants.  We know almost nothing about the command structure in the 'gang' so I need to send someone in to decapitate the leadership.  We cannot give you much, but at least there is a revolver for you.",
+      "accepted": "Good.  Now go and teach them a lesson.",
+      "rejected": "Come back when you get a chance, we could use a few good men.",
+      "advice": "I'd recommend having two deputies… it would be a death trap if a single man got surrounded.",
+      "inquire": "Has the leadership been dealt with?",
+      "success": "You continue to impress us.  With their leadership broken it will be easier to establish a foothold in the area, secure resources for rebuilding.  I've been keeping Command informed and while there is certainly a lot you could do to help here, they might have missions for me to offer you that will take you farther afield.  In any case, thank you once again marshal.",
+      "success_lie": "What good does this do us?",
+      "failure": "It was a lost cause anyways…"
+    }
+  }
+]

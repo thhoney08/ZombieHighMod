@@ -2,7 +2,7 @@
   {
     "type": "npc",
     "id": "NAILGUNNER_GUARD",
-    "//": "Appears in the school as a partner for hire.",
+    "//": "Appears in the school as a guard.",
     "name_suffix": "student",
     "class": "NC_NAILGUNNER_GUARD",
     "attitude": 0,
@@ -78,6 +78,9 @@
     "type": "item_group",
     "id": "NC_NAILGUNNER_GUARD_wield",
     "items": [
+      { "item": "laspistolToyZhigh", "prob": 15 },
+      { "item": "laspistolToyZhighAkim", "prob": 10 },
+      { "item": "lasgunToyZhigh", "prob": 15 },
       { "item": "popGun_zhigh", "prob": 10 },
       { "item": "popGunShotgun_zhigh", "prob": 10 },
       { "item": "popGunPistol_zhigh", "prob": 10 },
@@ -105,5 +108,150 @@
       }
     ],
     "responses": [ { "text": "Don't mind me…", "topic": "TALK_DONE" } ]
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_PROF_GRAFFITIZHIGH",
+    "name": { "str": "Street Artist" },
+    "job_description": "I'm just looking for a good spot to tag.",
+    "traits": [
+      { "group": "BG_survival_story_UNIVERSAL" },
+      { "trait": "REGEN_zhigh" },
+      { "group": "NPC_starting_traits" },
+      { "group": "NC_PROF_GRAFFITIZHIGH" },
+      { "group": "Appearance_Mixed" }
+    ],
+    "common": false,
+    "worn_override": "NC_PROF_GRAFFITIZHIGH_worn",
+    "carry_override": "NC_PROF_GRAFFITIZHIGH_carry",
+    "weapon_override": "NC_PROF_GRAFFITIZHIGH_melee",
+    "bonus_str": { "rng": [ -2, 2 ] },
+    "bonus_dex": { "rng": [ 2, 4 ] },
+    "bonus_int": { "rng": [ -2, 2 ] },
+    "bonus_per": { "rng": [ 0, 2 ] },
+    "skills": [
+      { "skill": "survival", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "swimming", "bonus": { "rng": [ 2, 4 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_PROF_GRAFFITIZHIGH_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "wristwatch" },
+      { "item": "slingpack" },
+      { "item": "medkitRechargeV3" },
+      { "item": "dress_shirt_zhigh" },
+      { "item": "hoodie" },
+      { "item": "pants_zhigh" },
+      { "item": "socks" },
+      { "item": "sneakers" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_PROF_GRAFFITIZHIGH_carry",
+    "subtype": "collection",
+    "entries": [ { "item": "spray_can" }, { "item": "zhigh_smart_phone" }, { "item": "permanent_marker" }, { "item": "switchblade" } ]
+  },
+  {
+    "id": "NC_PROF_GRAFFITIZHIGH_melee",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [ { "item": "null" } ]
+  },
+  {
+    "type": "trait_group",
+    "id": "NC_PROF_GRAFFITIZHIGH",
+    "subtype": "collection",
+    "traits": [ { "group": "trait_group_PARKOUR", "prob": 100 }, { "group": "trait_group_GOODCARDIO", "prob": 100 } ]
+  },
+  {
+    "type": "npc",
+    "id": "GRUNT_NC_PROF_GMANZHIGH",
+    "//": "Appears in the school as a partner for hire.",
+    "name_suffix": "student",
+    "class": "NC_PROF_GMANZHIGH",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_GRUNT_BASEBALL_MERC",
+    "faction": "Zhigh_Survivors"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_PROF_GMANZHIGH",
+    "name": { "str": "Guardsman" },
+    "job_description": "I'm just looking for zeds to shoot.",
+    "traits": [
+      { "group": "BG_survival_story_UNIVERSAL" },
+      { "trait": "REGEN_zhigh" },
+      { "group": "NPC_starting_traits" },
+      { "group": "NC_PROF_GMANZHIGH" },
+      { "group": "Appearance_Mixed" }
+    ],
+    "common": false,
+    "worn_override": "NC_PROF_GMANZHIGH_worn",
+    "carry_override": "NC_PROF_GMANZHIGH_carry",
+    "weapon_override": "NC_PROF_GMANZHIGH_melee",
+    "bonus_str": { "rng": [ -2, 2 ] },
+    "bonus_dex": { "rng": [ 2, 4 ] },
+    "bonus_int": { "rng": [ -2, 2 ] },
+    "bonus_per": { "rng": [ 0, 2 ] },
+    "skills": [
+      { "skill": "gun", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "smg", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 2, 4 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_PROF_GMANZHIGH_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "wristwatch" },
+      { "item": "helmet_2byZhigh" },
+      { "item": "medkitRechargeV3" },
+      { "item": "dress_shirt_zhigh" },
+      { "item": "2byplate" },
+      { "item": "pants_zhigh" },
+      { "item": "2byfoot_guard" },
+      { "item": "2byhand_guard" },
+      { "item": "2byarm_guard" },
+      { "item": "2byshin_guard" },
+      { "item": "socks" },
+      { "item": "mocassins" },
+      { "item": "goggles_ski" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_PROF_GMANZHIGH_carry",
+    "subtype": "collection",
+    "entries": [
+		{ "item": "signalMarker0Guardsman" },
+		{ "item": "protein_bar_evac" },
+		{ "item": "zhigh_smart_phone_flashlight" },
+		{ "item": "protein_bar_evac" },
+		{ "item": "medkit2" }
+	]
+  },
+  {
+    "id": "NC_PROF_GMANZHIGH_melee",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [ { "item": "lascarbineToyZhigh" } ]
+  },
+  {
+    "type": "trait_group",
+    "id": "NC_PROF_GMANZHIGH",
+    "subtype": "collection",
+    "traits": [
+		{ "trait": "GLASSJAW", "prob": 100 },
+		{ "trait": "FLIMSY3", "prob": 100 },
+		{ "group": "trait_group_PARKOUR", "prob": 100 },
+		{ "group": "trait_group_GOODCARDIO", "prob": 100 }
+	]
   }
 ]
