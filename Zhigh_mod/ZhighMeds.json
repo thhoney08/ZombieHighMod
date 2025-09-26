@@ -1179,9 +1179,9 @@
     "flags": [ "NO_INGEST" ],
     "use_action": {
         "type": "heal",
-    	"limb_power": 4,
-        "head_power": 4,
-        "torso_power": 4,
+    	"limb_power": 2,
+        "head_power": 2,
+        "torso_power": 2,
         "move_cost": 250 
     }
   },
@@ -1229,7 +1229,7 @@
     	"limb_power": 8,
         "head_power": 8,
         "torso_power": 8,
-        "move_cost": 250 
+        "move_cost": 500 
     }
   },
   {
@@ -1254,7 +1254,7 @@
     	"limb_power": 12,
         "head_power": 12,
         "torso_power": 12,
-        "move_cost": 250 
+        "move_cost": 500 
     }
   },
   {
@@ -1278,7 +1278,7 @@
     	"limb_power": 16,
         "head_power": 16,
         "torso_power": 16,
-        "move_cost": 250 
+        "move_cost": 500 
     }
   },
   {
@@ -1302,7 +1302,7 @@
     	"limb_power": 16,
         "head_power": 16,
         "torso_power": 16,
-        "move_cost": 100 
+        "move_cost": 300 
     }
   },
   {
@@ -1328,7 +1328,7 @@
         "torso_power": 6,
         "disinfectant_power": 3,
         "bite": 0.70,
-        "move_cost": 250
+        "move_cost": 500
     }
   },
   {
@@ -1354,7 +1354,7 @@
         "torso_power": 8,
         "disinfectant_power": 3,
         "bite": 0.70,
-        "move_cost": 250
+        "move_cost": 500
     }
   },
   {
@@ -1380,7 +1380,7 @@
         "torso_power": 14,
         "disinfectant_power": 3,
         "bite": 0.70,
-        "move_cost": 250
+        "move_cost": 500
     }
   },
   {
@@ -1517,7 +1517,6 @@
   },
   {
     "id": "medkitRechargeV3",
-    "looks_like": "ammo_pouch",
     "type": "TOOL",
 	"name": "rechargeable medkit",
 	"description": "A modification of a medium medkit, released to civilians with some high costs.  Although it is not the best option and more expensive than the basic one, the healing activates instantly.  This one has been modified to use batteries, and some toolkits to make some medications.  \n <color_yellow> Presented by Phoenix corp.</color>",
@@ -1690,5 +1689,21 @@
     "power_draw": 50000,
 	"color": "blue",
     "magazine_well": "500 ml"
+  },
+  {
+    "id": "mutagen_horse",
+    "copy-from": "mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": { "str": "horse mutagen" },
+    "use_action": { "type": "mutagen", "mutation_category": "HORSE" }
+  },
+  {
+    "id": "iv_mutagen_horse",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": { "str": "horse serum" },
+    "description": "A super-concentrated mutagen the color of the pre-Cataclysmish earth.  You need a syringe to inject it… if you really want to?",
+    "color": "cyan",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "HORSE" }
   }
 ]

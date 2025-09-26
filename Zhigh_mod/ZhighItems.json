@@ -136,6 +136,12 @@
         "type": "transform"
       },
 	  { "type": "gps_device", "radius": 120 },
+      {
+        "type": "music_player",
+        "target": "zhigh_smart_phone_music",
+        "msg": "You put in the earbuds and start listening to music.",
+        "moves": 200
+      },
       "CAMERA",
       "PORTABLE_GAME",
 	  "WEATHER_TOOL",
@@ -156,6 +162,15 @@
       "type": "transform"
     },
     "flags": [ "WATCH", "BELT_CLIP", "LIGHT_240", "TRADER_AVOID", "ALARMCLOCK", "TWO_WAY_RADIO", "NO_UNLOAD", "NO_RELOAD" ]
+  },
+  {
+    "id": "zhigh_smart_phone_music",
+    "copy-from": "zhigh_smart_phone",
+    "type": "TOOL",
+    "name": { "str": "school smartphone - music", "str_pl": "school smartphones - music" },
+    "description": "This school smartphone is turned on and playing some great tunes, raising your morale steadily while on your person.  You can turn it off by using it.  It also obscures your hearing.",
+    "revert_to": "zhigh_smart_phone",
+    "use_action": "MP3_ON"
   },
   {
     "id": "flashlight_hk",
@@ -1257,7 +1272,7 @@
   },
   {
     "id": "bot_iceturret",
-    "looks_like": "toolbox",
+    "looks_like": "bot_waterturret",
     "type": "TOOL",
     "name": { "str": "inactive ice turret" },
     "description": "This is an inactive ice turret.  Using this item involves turning it on and placing it on the ground, where it will attach itself.  If reprogrammed and rewired successfully the turret will identify you as a friendly, and attack all enemies with its revolving ice cannons.",
@@ -1291,7 +1306,7 @@
   },
   {
     "id": "bot_LMGturretZhigh",
-    "looks_like": "toolbox",
+    "looks_like": "bot_waterturret",
     "type": "TOOL",
     "name": { "str": "inactive LMG BB turret" },
     "description": "This is an inactive LMG BB turret.  Using this item involves turning it on and placing it on the ground, where it will attach itself.  If reprogrammed and rewired successfully the turret will identify you as a friendly, and attack all enemies with its revolving LMG cannons.",
@@ -1325,7 +1340,7 @@
   },
   {
     "id": "bot_sniperturretZhigh",
-    "looks_like": "toolbox",
+    "looks_like": "bot_waterturret",
     "type": "TOOL",
     "name": { "str": "inactive sniper BB turret" },
     "description": "This is an inactive sniper BB turret.  Using this item involves turning it on and placing it on the ground, where it will attach itself.  If reprogrammed and rewired successfully the turret will identify you as a friendly, and attack all enemies with its revolving sniper cannons.",
@@ -1359,7 +1374,7 @@
   },
   {
     "id": "bot_acidturretZhigh",
-    "looks_like": "toolbox",
+    "looks_like": "bot_waterturret",
     "type": "TOOL",
     "name": { "str": "inactive acid turret" },
     "description": "This is an inactive acid turret.  Using this item involves turning it on and placing it on the ground, where it will attach itself.  If reprogrammed and rewired successfully the turret will identify you as a friendly, and attack all enemies with its revolving acid cannons.",
@@ -1393,7 +1408,7 @@
   },
   {
     "id": "bot_flameturretZhigh",
-    "looks_like": "toolbox",
+    "looks_like": "bot_waterturret",
     "type": "TOOL",
     "name": { "str": "inactive flame turret" },
     "description": "This is an inactive flame turret.  Using this item involves turning it on and placing it on the ground, where it will attach itself.  If reprogrammed and rewired successfully the turret will identify you as a friendly, and attack all enemies with its revolving flame cannons.",
@@ -1427,7 +1442,7 @@
   },
   {
     "id": "bot_electricturretZhigh",
-    "looks_like": "toolbox",
+    "looks_like": "bot_waterturret",
     "type": "TOOL",
     "name": { "str": "inactive electric turret" },
     "description": "This is an inactive electric turret.  Using this item involves turning it on and placing it on the ground, where it will attach itself.  If reprogrammed and rewired successfully the turret will identify you as a friendly, and attack all enemies with its revolving electric cannons.",
@@ -1461,7 +1476,7 @@
   },
   {
     "id": "bot_RockTurretZhigh",
-    "looks_like": "toolbox",
+    "looks_like": "bot_waterturret",
     "type": "TOOL",
     "name": { "str": "inactive rock thrower turret" },
     "description": "This is an inactive rock thrower turret.  Using this item involves turning it on and placing it on the ground, where it will attach itself.  If reprogrammed and rewired successfully the turret will identify you as a friendly, and attack all enemies with its revolving LMG cannons.",
@@ -1495,7 +1510,7 @@
   },
   {
     "id": "bot_healturret",
-    "looks_like": "toolbox",
+    "looks_like": "bot_waterturret",
     "type": "TOOL",
     "name": { "str": "inactive heal turret" },
     "description": "This is an inactive heal turret.  Using this item involves turning it on and placing it on the ground, where it will attach itself.  If reprogrammed and rewired successfully the turret will identify you as a friendly, and attack all enemies with its revolving heal cannons.",
@@ -1529,7 +1544,7 @@
   },
   {
     "id": "bot_chemicalturretZhigh",
-    "looks_like": "toolbox",
+    "looks_like": "bot_waterturret",
     "type": "TOOL",
     "name": { "str": "inactive chemical turret" },
     "description": "This is an inactive chemical turret.  Using this item involves turning it on and placing it on the ground, where it will attach itself.  If reprogrammed and rewired successfully the turret will identify you as a friendly, and attack all enemies with its revolving chemical cannons.",
@@ -2201,24 +2216,44 @@
     "category": "valuables"
   },
   {
-    "id": "1PryBarZhigh",
-    "looks_like": "scrap",
-    "type": "TOOL",
-    "category": "tools_entry",
-    "name": { "str": "improvised prybar" },
-    "description": "This is a steel scrap wrapped with stuff.  You could use this to open doors, but only once.",
-    "weight": "23 g",
-    "volume": "5 ml",
-    "price": "0 cent",
-    "price_postapoc": "0 cent",
-    "material": "steel",
-    "symbol": ";",
-    "color": "light_gray",
-    "initial_charges": 1,
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "qualities": [ [ "PRY", 2 ] ],
-    "use_action": [ "CROWBAR" ],
-    "flags": [ "DESTROY_ON_DECHARGE" ]
+	"id": "pirateMap",
+	"copy-from": "abstractmap",
+	"type": "GENERIC",
+	"name": "buccaneer's map",
+	"looks_like": "roadmap",
+	"description": "This is a map of sunken ships.  Using it will add various ships' locations to your map.",
+	"color": "light_blue",
+	"use_action": {
+	  "type": "reveal_map",
+	  "radius": 180,
+	  "terrain": [
+		"Alcatraz Prison",
+		"s_dive_shop",
+		"Island Cove",
+		"lake_shore_dock_small",
+		"Shipwreck",
+		"sunken_ship_wood",
+		"sunken_cargo_ship",
+		"museum",
+		"Island",
+		"Island Forest",
+		"Sandy Island",
+		"Island_1",
+		"Island_2",
+		"Island_3",
+		"Island_4",
+		"Island_5_swamp",
+		"Island_5_forest",
+		"Island_5_forest_thick",
+		"Island_5_field",
+		"Lighthouse Island",
+		"Lake Cabin",
+		"marina",
+		"Freshwater Research Station",
+		"Boat Rental",
+		"Bastion Fort"
+	  ],
+	  "message": "You add sunken ships to your map."
+	}
   }
 ]

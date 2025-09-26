@@ -390,5 +390,32 @@
     "id": "craft_toolwatch",
     "symbol": "&",
     "type": "vehicle_part"
+  },
+  {
+    "id": "hoverBike_rotors",
+    "copy-from": "helicopter_rotors",
+    "type": "vehicle_part",
+    "name": "hoverbike rotors",
+    "item": "homebuilt_gyrocopter_rotor",
+    "looks_like": "gyrocopter_rotors",
+    "rotor_diameter": 5,
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 5 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 5 ] ], "time": "30 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "repair": {
+        "skills": [ [ "mechanics", 6 ] ],
+        "time": "60 m",
+        "using": [ [ "nail_any_adhesive", 2 ], [ "wood_structural_small", 1 ] ]
+      }
+    },
+    "durability": 50,
+    "description": "A pair of rotor blades powered by a propeller, for light vehicles.",
+    "damage_modifier": 80,
+    "breaks_into": [
+      { "item": "scrap", "count": [ 4, 8 ] },
+      { "item": "steel_chunk", "count": [ 1, 4 ] },
+      { "item": "splinter", "count": [ 15, 30 ] }
+    ],
+    "damage_reduction": { "all": 10 }
   }
 ]

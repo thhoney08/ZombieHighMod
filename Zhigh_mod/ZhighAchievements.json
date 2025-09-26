@@ -1,14 +1,5 @@
 [
   {
-    "id": "achievement_kill_monsters_1000000Zhigh",
-    "type": "achievement",
-    "name": { "str": "[Combat] Statistics" },
-    "hidden_by": [ "achievement_kill_monsters_100" ],
-    "kill_requirements": [ { "is": ">=", "count": 1000000 } ],
-    "description": "The death of one zed is a comedy; the death of millions is a statistic.",
-    "requirements": [ { "event_statistic": "num_avatar_kills", "is": "anything" } ]
-  },
-  {
     "id": "num_avatar_bots_kills",
     "type": "event_statistic",
     "stat_type": "count",
@@ -33,6 +24,28 @@
     "type": "event_transformation",
     "event_transformation": "avatar_species_kills",
     "value_constraints": { "species": { "equals": "INSECT" } }
+  },
+  {
+    "id": "num_avatar_mutation_threshold_horse",
+    "type": "event_statistic",
+    "stat_type": "count",
+    "event_transformation": "avatar_mutation_threshold_horse"
+  },
+  {
+    "id": "avatar_mutation_threshold_horse",
+    "type": "event_transformation",
+    "event_type": "crosses_mutation_threshold",
+    "value_constraints": { "category": { "equals": "HORSE" } },
+    "drop_fields": [ "category" ]
+  },
+  {
+    "id": "achievement_kill_monsters_1000000Zhigh",
+    "type": "achievement",
+    "name": { "str": "[Combat] Statistics" },
+    "hidden_by": [ "achievement_kill_monsters_100" ],
+    "kill_requirements": [ { "is": ">=", "count": 1000000 } ],
+    "description": "The death of one zed is a comedy; the death of millions is a statistic.",
+    "requirements": [ { "event_statistic": "num_avatar_kills", "is": "anything" } ]
   },
   {
     "id": "achievement_kill_bots",
@@ -98,6 +111,14 @@
     "skill_requirements": [ { "skill": "akimbo_Zhigh", "is": ">=", "level": 10 } ],
     "requirements": [ { "event_statistic": "num_gains_akimbo_Zhigh", "is": "anything" } ],
     "hidden_by": [ "achievement_lvl_5_akimbo_Zhigh" ]
+  },
+  {
+    "id": "achievement_mutation_threshold_horse",
+    "type": "achievement",
+    "name": { "str": "[Mutation] You Feel Limber" },
+    "description": "No person can follow your running speed.  You are now a post-threshold Horse mutant.",
+    "hidden_by": [ "achievement_mutation_threshold_horse" ],
+    "requirements": [ { "event_statistic": "num_avatar_mutation_threshold_horse", "is": ">=", "target": 1 } ]
   },
   {
     "type": "weapon_category",

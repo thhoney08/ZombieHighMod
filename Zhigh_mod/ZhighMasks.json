@@ -522,6 +522,13 @@
     "copy-from": "mask_paper_base"
   },
   {
+    "id": "mask_Terminator",
+    "name": { "str": "robot skull mask" },
+    "type": "ARMOR",
+    "description": "This is a mask, based on a killer robot.",
+    "copy-from": "mask_paper_base"
+  },
+  {
     "id": "mask_SquidTriZhigh",
     "type": "ARMOR",
     "copy-from": "mask_hockey",
@@ -618,6 +625,19 @@
     "price": "500 USD",
     "material": [ "acidchitin" ],
     "color": "yellow"
+  },
+  {
+    "id": "mask_menpo_steel",
+    "copy-from": "mask_menpo",
+    "looks_like": "mask_menpo",
+    "type": "ARMOR",
+    "name": { "str": "iron jaw" },
+    "description": "A 'jaw' mask made from made of modern iron.  Wearing it blocks you from some harm.",
+    "material": [ "iron" ],
+    "color": "light_cyan",
+    "encumbrance": 17,
+    "material_thickness": 4,
+    "proportional": { "price": 2, "price_postapoc": 3 }
   },
   {
     "id": "mask_paintball",
@@ -769,7 +789,7 @@
     "price": "40 USD",
     "price_postapoc": "15 USD",
     "material": [ "veggy" ],
-    "flags": [ "FANCY", "DURABLE_MELEE", "OVERSIZE", "BELTED", "ALLOWS_NATURAL_ATTACKS" ],
+    "flags": [ "FANCY", "FRAGILE", "OVERSIZE", "BELTED", "ALLOWS_NATURAL_ATTACKS" ],
     "weight": "228 g",
     "volume": "750 ml",
     "bashing": 2,

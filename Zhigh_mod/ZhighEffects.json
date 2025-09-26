@@ -212,6 +212,14 @@
   },
   {
     "type": "effect_type",
+    "id": "wearing_climbingIron",
+    "removes_effects": [
+      "downed",
+      "bouldering"
+    ]
+  },
+  {
+    "type": "effect_type",
     "//": "not workin",
     "id": "regenhealth",
     "name": [ "Regeneration" ],
@@ -472,6 +480,13 @@
       "h_mod_min": [ -20 ],
       "stamina_min": [ -2 ]
     }
+  },
+  {
+    "type": "effect_type",
+    "id": "babyFaceSpeedUp",
+    "name": [ "Wielding baby face's blaster" ],
+    "desc": [ "You've holding a baby face's blaster." ],
+    "base_mods": { "speed_mod": [ 20 ] }
   },
   {
     "//": "Got this line of code from pk's rebalancing mod. Not original.",

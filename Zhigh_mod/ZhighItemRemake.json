@@ -665,21 +665,6 @@
     "flags": [ "BELT_CLIP", "FIRESTARTER" ]
   },
   {
-    "id": "smart_phone",
-    "copy-from": "smart_phone",
-    "type": "TOOL",
-    "category": "tools",
-    "name": { "str": "smartphone" },
-    "flags": [ "BELT_CLIP", "WATCH", "ALARMCLOCK", "USE_UPS", "NO_UNLOAD", "NO_RELOAD" ]
-  },
-  {
-    "id": "smartphone_music",
-    "copy-from": "smartphone_music",
-    "type": "TOOL",
-    "name": { "str": "smartphone - music", "str_pl": "smartphones - music" },
-    "flags": [ "BELT_CLIP", "WATCH", "TRADER_AVOID", "ALARMCLOCK", "USE_UPS", "NO_UNLOAD", "NO_RELOAD" ]
-  },
-  {
     "id": "electrohack",
     "copy-from": "electrohack",
     "type": "TOOL",
@@ -1466,7 +1451,9 @@
     "name": { "str": "compact suppressor" },
     "weight": "200 g",
     "volume": "150 ml",
-    "loudness_modifier": -40
+    "loudness_modifier": -40,
+    "damage_modifier": { "damage_type": "bullet", "amount": 2 },
+    "range_modifier": -2
   },
   {
     "id": "sten",
@@ -1658,10 +1645,144 @@
     }
   },
   {
+    "id": "ammo_pouch",
+    "type": "ARMOR",
+    "name": { "str": "ammo satchel" },
+    "copy-from": "ammo_pouch",
+    "use_action": {
+      "type": "bandolier",
+      "capacity": 120,
+      "ammo": [
+        "pebble",
+        "nail",
+        "700nx",
+        "50",
+        "4570",
+        "BB",
+        "410shot",
+        "22",
+        "shot",
+        "9mm",
+        "357sig",
+        "357mag",
+        "9x18",
+        "380",
+        "38",
+        "38super",
+        "40",
+        "10mm",
+        "44",
+        "45",
+        "460",
+        "454",
+        "45colt",
+        "500",
+        "57",
+        "46",
+        "762",
+        "545x39",
+        "223",
+        "3006",
+        "270win",
+        "308",
+        "12mm",
+        "8x40mm",
+        "20x66mm",
+        "5x50",
+        "metal_rail",
+        "stimpack_ammo",
+        "ampoule",
+        "300",
+        "32",
+        "762x25",
+        "flintlock",
+        "flintlockshot",
+        "36paper",
+        "44paper",
+        "762R",
+        "paintball"
+      ],
+      "draw_cost": 35
+    }
+  },
+  {
+    "id": "ammo_satchel_leg",
+    "type": "ARMOR",
+    "name": { "str": "leg ammo satchel" },
+    "copy-from": "ammo_satchel_leg",
+    "use_action": {
+      "type": "bandolier",
+      "capacity": 60,
+      "ammo": [
+        "pebble",
+        "nail",
+        "700nx",
+        "50",
+        "4570",
+        "BB",
+        "410shot",
+        "22",
+        "shot",
+        "9mm",
+        "357sig",
+        "357mag",
+        "9x18",
+        "380",
+        "38",
+        "38super",
+        "40",
+        "10mm",
+        "44",
+        "45",
+        "460",
+        "454",
+        "45colt",
+        "500",
+        "57",
+        "46",
+        "762",
+        "545x39",
+        "223",
+        "3006",
+        "270win",
+        "308",
+        "12mm",
+        "8x40mm",
+        "20x66mm",
+        "5x50",
+        "metal_rail",
+        "stimpack_ammo",
+        "ampoule",
+        "300",
+        "32",
+        "762x25",
+        "flintlock",
+        "flintlockshot",
+        "36paper",
+        "44paper",
+        "762R",
+        "paintball"
+      ],
+      "draw_cost": 35
+    }
+  },
+  {
     "id": "bandolier_rifle",
-    "copy-from": "bandolier_rifle",
     "type": "ARMOR",
     "name": { "str": "rifle bandolier" },
+    "description": "A leather bandolier for keeping rifle cartridges close to hand.",
+    "weight": "140 g",
+    "volume": "250 ml",
+    "price": "19 USD",
+    "price_postapoc": "15 USD",
+    "material": [ "leather" ],
+    "symbol": "[",
+    "looks_like": "leather_belt",
+    "color": "dark_gray",
+    "covers": [ "torso" ],
+    "coverage": 10,
+    "encumbrance": 1,
+    "material_thickness": 1,
     "use_action": {
       "type": "bandolier",
       "capacity": 50,
@@ -1686,7 +1807,53 @@
         "700nx"
       ],
       "draw_cost": 20
-    }
+    },
+    "flags": [ "WATER_FRIENDLY", "WAIST", "COMPACT", "OVERSIZE" ]
+  },
+  {
+    "id": "bandolier_wrist",
+    "type": "ARMOR",
+    "name": { "str": "wrist bandolier" },
+    "description": "A small fabric bandolier for rifle cartridges designed to be worn around the wrist.",
+    "weight": "30 g",
+    "volume": "250 ml",
+    "price": "29 USD",
+    "price_postapoc": "5 USD",
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "looks_like": "leather_belt",
+    "color": "dark_gray",
+    "covers": [ "hand_either" ],
+    "coverage": 5,
+    "encumbrance": 1,
+    "material_thickness": 1,
+    "use_action": {
+      "type": "bandolier",
+      "capacity": 12,
+      "ammo": [
+        "paintball",
+        "nail",
+        "pebble",
+        "22",
+        "223",
+        "270win",
+        "300blk",
+        "5x50",
+        "545x39",
+        "3006",
+        "308",
+        "300",
+        "762",
+        "762R",
+        "8x40mm",
+        "4570",
+        "50",
+        "700nx"
+      ],
+      "draw_cost": 20
+    },
+    "valid_mods": [ "resized_large" ],
+    "flags": [ "WATER_FRIENDLY", "BELTED", "ALLOWS_NATURAL_ATTACKS" ]
   },
   {
     "id": "bandolier_shotgun",
@@ -1711,37 +1878,6 @@
       "type": "bandolier",
       "capacity": 40,
       "ammo": [ "flintlock", "flintlockshot", "36paper", "44paper", "blunderbuss", "shotcanister", "shotpaper" ],
-      "draw_cost": 20
-    }
-  },
-  {
-    "id": "bandolier_wrist",
-    "copy-from": "bandolier_wrist",
-    "type": "ARMOR",
-    "name": { "str": "wrist bandolier" },
-    "use_action": {
-      "type": "bandolier",
-      "capacity": 12,
-      "ammo": [
-        "paintball",
-        "nail",
-        "pebble",
-        "22",
-        "223",
-        "270win",
-        "300blk",
-        "5x50",
-        "545x39",
-        "3006",
-        "308",
-        "300",
-        "762",
-        "762R",
-        "8x40mm",
-        "4570",
-        "50",
-        "700nx"
-      ],
       "draw_cost": 20
     }
   },
@@ -1953,6 +2089,13 @@
     "type": "MAGAZINE",
     "name": { "str": "7.62x51mm ammo belt" },
     "capacity": 1000
+  },
+  {
+    "id": "shotbelt_20",
+    "copy-from": "shotbelt_20",
+    "type": "MAGAZINE",
+    "name": { "str": "shotshell belt" },
+    "capacity": 120
   },
   {
     "type": "GENERIC",
@@ -2337,7 +2480,8 @@
     "range": 8,
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
     "ranged_damage": { "damage_type": "stab", "amount": 10, "armor_penetration": 10 },
-    "clip_size": 20
+    "clip_size": 20,
+    "extend": { "ammo_effects": [ "NO_OVERSHOOT" ] }
   },
   {
     "id": "nailrifle",
@@ -2877,10 +3021,12 @@
     "copy-from": "pneumatic_shotgun",
     "type": "GUN",
     "name": { "str": "pneumatic shotgun" },
-    "ranged_damage": { "damage_type": "bullet", "amount": 20, "armor_penetration": 10 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 30, "armor_penetration": 10 },
     "range": 8,
     "dispersion": 150,
     "clip_size": 2,
+    "ammo": [ "shotcanister", "paintball", "pebble" ],
+    "flags": [ "RELOAD_ONE", "NON_FOULING", "NEEDS_NO_LUBE" ],
     "reload": 300
   },
   {
@@ -2889,7 +3035,7 @@
     "name": { "str": "scrap shotcanister" },
     "copy-from": "shotcanister_scrap",
     "range": 0,
-    "shape": [ "cone", { "half_angle": 35, "length": 4 } ]
+    "shape": [ "cone", { "half_angle": 35, "length": 7 } ]
   },
   {
     "id": "shotcanister_pebble",
@@ -2897,7 +3043,7 @@
     "name": { "str": "pebble shotcanister" },
     "copy-from": "shotcanister_pebble",
     "range": 0,
-    "shape": [ "cone", { "half_angle": 25, "length": 6 } ]
+    "shape": [ "cone", { "half_angle": 25, "length": 9 } ]
   },
   {
     "id": "shotcanister_flechette",
@@ -2905,14 +3051,14 @@
     "name": { "str": "flechette shotcanister" },
     "copy-from": "shotcanister_flechette",
     "range": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 9 } ]
+    "shape": [ "cone", { "half_angle": 15, "length": 15 } ]
   },
   {
     "id": "shotcanister_bearing",
     "type": "AMMO",
     "name": { "str": "bearing shotcanister" },
     "copy-from": "shotcanister_bearing",
-    "range": 3
+    "range": 12
   },
   {
     "id": "cs_lajatang_off",
@@ -3363,6 +3509,110 @@
     "copy-from": "flaregun",
     "name": { "str": "flaregun" },
     "ranged_damage": { "damage_type": "heat", "amount": 8, "armor_penetration": 2 },
-    "range": 13
+    "range": 13,
+    "extend": { "ammo_effects": [ "NO_OVERSHOOT" ] }
+  },
+  {
+	"id": "tommygun",
+    "type": "GUN",
+    "copy-from": "tommygun",
+    "name": { "str": "Thompson submachine gun" },
+    "ranged_damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 2 },
+    "range": -2,
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "AUTO", "auto", 6 ] ]
+  },
+  {
+	"id": "crash_axe",
+    "type": "GENERIC",
+    "copy-from": "crash_axe",
+    "name": { "str": "crash axe" },
+    "to_hit": 1
+  },
+  {
+	"id": "hammer",
+    "type": "GENERIC",
+    "copy-from": "hammer",
+    "name": { "str": "hammer" },
+    "bashing": 10,
+    "to_hit": 1
+  },
+  {
+	"id": "hammer_bronze",
+    "type": "GENERIC",
+    "copy-from": "hammer_bronze",
+    "name": { "str": "bronze hammer" },
+    "to_hit": 1
+  },
+  {
+	"id": "hammer_sledge",
+    "type": "GENERIC",
+    "copy-from": "hammer_sledge",
+    "name": { "str": "sledge hammer" },
+    "to_hit": 2
+  },
+  {
+	"id": "hammer_sledge_short",
+    "type": "GENERIC",
+    "copy-from": "hammer_sledge_short",
+    "name": { "str": "short sledge hammer" },
+    "to_hit": 1
+  },
+  {
+	"id": "hammer_sledge_heavy",
+    "type": "GENERIC",
+    "copy-from": "hammer_sledge_heavy",
+    "name": { "str": "heavy sledge hammer" },
+    "bashing": 100,
+    "to_hit": -1
+  },
+  {
+	"id": "hammer_sledge_engineer",
+    "type": "GENERIC",
+    "copy-from": "hammer_sledge_engineer",
+    "name": { "str": "engineer's hammer" },
+    "to_hit": 1
+  },
+  {
+	"id": "kris",
+    "type": "GENERIC",
+    "category": "weapons",
+    "copy-from": "kris",
+    "name": { "str": "kris", "str_pl": "krises" },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "BleedZhigh",
+              "once_in": 2,
+              "message": "The sword bleeds your target.",
+              "npc_message": "%1$s bleeds their target."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+	"id": "scythe",
+    "type": "GENERIC",
+    "category": "tools_farming",
+    "weapon_category": [ "HOOKED_POLES" ],
+    "copy-from": "scythe",
+    "name": { "str": "scythe" },
+    "to_hit": -1,
+    "bashing": 2,
+    "cutting": 16
+  },
+  {
+	"id": "sickle",
+    "type": "GENERIC",
+    "category": "tools_farming",
+    "weapon_category": [ "1H_HOOKED" ],
+    "copy-from": "sickle",
+    "name": { "str": "sickle" },
+    "to_hit": 0
   }
 ]

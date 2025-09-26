@@ -767,6 +767,110 @@
     "types": [ "hair_style" ]
   },
   {
+    "id": "hair_blue_mediumJp",
+    "type": "mutation",
+    "name": { "str": "Hair: blue, medium-length" },
+    "description": "Medium-length blue hair style.",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "flags": [ "hair_blue", "hair_medium" ],
+    "types": [ "hair_style" ]
+  },
+  {
+    "id": "hair_violet_mediumJp",
+    "type": "mutation",
+    "name": { "str": "Hair: violet, medium-length" },
+    "description": "Medium-length violet hair style.",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "flags": [ "hair_blue", "hair_medium" ],
+    "types": [ "hair_style" ]
+  },
+  {
+    "id": "hair_pink_mediumJp",
+    "type": "mutation",
+    "name": { "str": "Hair: pink, medium-length" },
+    "description": "Medium-length pink hair style.",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "flags": [ "hair_pink", "hair_medium" ],
+    "types": [ "hair_style" ]
+  },
+  {
+    "id": "hair_green_mediumJp",
+    "type": "mutation",
+    "name": { "str": "Hair: green, medium-length" },
+    "description": "Medium-length green hair style.",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "flags": [ "hair_green", "hair_medium" ],
+    "types": [ "hair_style" ]
+  },
+  {
+    "id": "hair_orange_mediumJp",
+    "type": "mutation",
+    "name": { "str": "Hair: orange, medium-length" },
+    "description": "Medium-length orange hair style.",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "flags": [ "hair_orange", "hair_medium" ],
+    "types": [ "hair_style" ]
+  },
+  {
+    "id": "hair_black_mediumJp",
+    "type": "mutation",
+    "name": { "str": "Hair: black, medium-length" },
+    "description": "Medium-length black hair style.",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "flags": [ "hair_black", "hair_medium" ],
+    "types": [ "hair_style" ]
+  },
+  {
+    "id": "hair_brown_mediumJp",
+    "type": "mutation",
+    "name": { "str": "Hair: brown, medium-length" },
+    "description": "Medium-length brown hair style.",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "flags": [ "hair_brown", "hair_medium" ],
+    "types": [ "hair_style" ]
+  },
+  {
+    "id": "hair_lgreen_mediumJp",
+    "type": "mutation",
+    "name": { "str": "Hair: light green, medium-length" },
+    "description": "Medium-length light green hair style.",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "flags": [ "hair_green", "hair_medium" ],
+    "types": [ "hair_style" ]
+  },
+  {
     "id": "eye_red",
     "type": "mutation",
     "name": { "str": "Eye color: red" },
@@ -1363,6 +1467,7 @@
   {
     "type": "mutation",
     "id": "ARACHNID_ARMS_OK",
+    "copy-from": "ARACHNID_ARMS_OK",
     "name": { "str": "Arachnid Arms" },
     "points": 0,
     "visibility": 6,
@@ -1401,17 +1506,22 @@
   },
   {
     "type": "mutation",
-    "id": "FRESHWATEROSMOSIS",
-    "name": { "str": "Freshwater Osmosis" },
-    "points": 4,
-    "description": "Your gills and skin are highly permeable to moisture, and you can hydrate your body through osmosis.  While submerged in fresh water, any thirst you might have will be slaked.  Plus, you got some special organs under your gills which makes you shoot a wave of electricity.",
+    "id": "ELECTROCYTESZHIGH",
+    "name": { "str": "Electrocytes" },
+    "points": 2,
+    "description": "A network of jelly-filled electrocytes, like that of an eel, have grown throughout your hands.  You can fire electricity with them.",
     "active": true,
-    "cost": 10,
+    "cost": 40,
     "hunger": true,
     "ranged_mutation": { "type": "fleshTorpedoZhigh", "message": "You fire off electric waves from your arms." },
-    "prereqs": [ "GILLS" ],
-    "category": [ "FISH" ],
-    "threshreq": [ "THRESH_FISH" ]
+    "threshreq": [ "THRESH_FISH" ],
+    "attacks": {
+      "attack_text_u": "You shock %s with your hands",
+      "attack_text_npc": "%1$s shocks into %2$s with their hands",
+      "chance": 20,
+      "base_damage": { "damage_type": "electric", "amount": 35 }
+    },
+    "purifiable": false
   },
   {
     "id": "fleshTorpedoZhigh",
@@ -1434,6 +1544,215 @@
   },
   {
     "type": "mutation",
+    "id": "THRESH_HORSE",
+    "name": { "str": "Equidae" },
+    "points": 1,
+    "description": "Who cares about civilization when you can run like the wind?  Time to rush B, but you gotta get a P90.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true,
+    "mutagen_target_modifier": 10
+  },
+  {
+    "type": "mutation",
+    "id": "HORSEMOUTH",
+    "name": { "str": "Equidae Snout" },
+    "points": -4,
+    "visibility": 5,
+    "ugliness": 6,
+    "mixed_effect": true,
+    "description": "Your face resembles that of a horse, with a significant snout.  It looks fearsome but prevents wearing mouthgear.",
+    "types": [ "MUZZLE" ],
+    "prereqs": [ "SNOUT" ],
+    "category": [ "HORSE" ],
+    "restricts_gear": [ "mouth" ],
+    "social_modifiers": { "intimidate": 15 }
+  },
+  {
+    "type": "mutation",
+    "id": "HORSE_EARS",
+    "name": { "str": "Equidae Ears" },
+    "points": 1,
+    "visibility": 4,
+    "ugliness": -2,
+    "description": "You've grown an extra pair of horse ears.  They enhance your hearing, allowing you to hear at greater distances.",
+    "types": [ "EARS" ],
+    "category": [ "HORSE" ],
+    "hearing_modifier": 1.7
+  },
+  {
+    "type": "mutation",
+    "id": "FLEET",
+    "copy-from": "FLEET",
+    "extend": { "category": [ "HORSE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "NIGHTVISION",
+    "copy-from": "NIGHTVISION",
+    "extend": { "category": [ "HORSE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "THICKSKIN",
+    "copy-from": "THICKSKIN",
+    "extend": { "category": [ "HORSE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "DISRESISTANT",
+    "copy-from": "DISRESISTANT",
+    "extend": { "category": [ "HORSE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "FUR",
+    "copy-from": "FUR",
+    "extend": { "category": [ "HORSE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "HOOVES",
+    "copy-from": "HOOVES",
+    "extend": { "category": [ "HORSE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "PHEROMONE_MAMMAL",
+    "copy-from": "PHEROMONE_MAMMAL",
+    "extend": { "category": [ "HORSE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "GRAZER",
+    "copy-from": "GRAZER",
+    "extend": { "category": [ "HORSE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "TAIL_CATTLE",
+    "copy-from": "TAIL_CATTLE",
+    "extend": { "category": [ "HORSE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "ALCMET",
+    "copy-from": "ALCMET",
+    "extend": { "category": [ "HORSE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "HUGE_OK",
+    "copy-from": "HUGE_OK",
+    "extend": { "category": [ "HORSE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "FLEET2",
+    "copy-from": "FLEET2",
+    "extend": { "category": [ "HORSE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "DEFORMED",
+    "copy-from": "DEFORMED",
+    "extend": { "category": [ "HORSE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "STRONG_LEGS",
+    "copy-from": "STRONG_LEGS",
+    "extend": { "category": [ "HORSE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "FLEET",
+    "copy-from": "FLEET",
+    "extend": { "category": [ "HORSE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "ANTLERSV2",
+    "name": { "str": "Huge Antlers" },
+    "points": -2,
+    "visibility": 20,
+    "ugliness": 3,
+    "mixed_effect": true,
+    "description": "You have a huge rack of antlers, like those of a moose.  They allow you to make a strong headbutt attack, but prevent wearing headwear that is not made of fabric.",
+    "types": [ "HORNS" ],
+    "prereqs": [ "HORNS" ],
+    "restricts_gear": [ "head" ],
+    "allow_soft_gear": true,
+    "attacks": {
+      "attack_text_u": "You butt %s with your antlers",
+      "attack_text_npc": "%1$s butts %2$s with their antlers",
+      "chance": 60,
+      "base_damage": { "damage_type": "bash", "amount": 80 },
+      "strength_damage": { "damage_type": "bash", "amount": 6 }
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "ENCH_ZHIGH_CLOAK_EFFECT",
+    "name": { "str": "." },
+    "points": 0,
+    "valid": false,
+    "description": "You're shrowded within the shadows.",
+    "dodge_modifier": 2.7,
+    "player_display": false
+  },
+  {
+    "type": "mutation",
+    "id": "ENCH_ZHIGH_CLOAK2_EFFECT",
+    "name": { "str": "." },
+    "points": 0,
+    "valid": false,
+    "description": "You're shrowded within the shadows.",
+    "dodge_modifier": 1.2,
+    "player_display": false
+  },
+  {
+    "type": "mutation",
+    "id": "ENCH_NINJAZHIGH_DODGE_EFFECT",
+    "name": { "str": "Ninja Dodge" },
+    "points": 0,
+    "valid": false,
+    "description": "You're shrowded within the shadows.",
+    "dodge_modifier": 1.7,
+    "player_display": false
+  },
+  {
+    "type": "mutation",
+    "id": "ENCH_ZOLDAZHIGH_HIDE_EFFECT01",
+    "name": { "str": "Hiding" },
+    "points": 0,
+    "valid": false,
+    "description": "You're hiding with your uniform.",
+    "stealth_modifier": 1.2,
+    "player_display": false
+  },
+  {
+    "type": "mutation",
+    "id": "ENCH_ZOLDAZHIGH_HIDE_EFFECT02",
+    "name": { "str": "Hiding" },
+    "points": 0,
+    "valid": false,
+    "description": "You're hiding with your uniform.",
+    "stealth_modifier": 1.5,
+    "player_display": false
+  },
+  {
+    "type": "mutation",
+    "id": "ENCH_ZOLDAZHIGH_HIDE_EFFECT03",
+    "name": { "str": "Hiding" },
+    "points": 0,
+    "valid": false,
+    "description": "You're hiding with your uniform.",
+    "stealth_modifier": 1.8,
+    "player_display": false
+  },
+  {
+    "type": "mutation",
     "id": "REGEN_zhigh",
     "name": { "str": "Weirdly healthy" },
     "points": 0,
@@ -1441,11 +1760,11 @@
     "description": "You are healthy, due to some weird reason.",
     "types": [ "HEALING", "RUNNING" ],
     "stamina_regen_modifier": 1.6,
-    "healing_awake": 4.8,
-    "healing_resting": 5.2,
-    "mending_modifier": 6.4,
+    "healing_awake": 3.8,
+    "healing_resting": 4.2,
+    "mending_modifier": 5.4,
     "fatigue_modifier": -2.0,
-    "fatigue_regen_modifier": 1.0,
+    "fatigue_regen_modifier": 1.2,
     "max_stamina_modifier": 0.35
   },
   {

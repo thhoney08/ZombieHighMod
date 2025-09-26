@@ -21,6 +21,8 @@
     "id": "speedway_bike",
     "vehicles": [
       [ "goKartZhigh", 30 ],
+      [ "hoverBikeZhigh", 10 ],
+      [ "hoverQuadZhigh", 10 ],
 	  [ "motorcycle", 690 ],
 	  [ "superbike", 200 ],
 	  [ "motorcycle_sidecart", 100 ],
@@ -33,6 +35,8 @@
     "id": "dirtlot",
     "vehicles": [
       [ "goKartZhigh", 100 ],
+      [ "hoverBikeZhigh", 10 ],
+      [ "hoverQuadZhigh", 10 ],
       [ "quad_bike", 100 ],
       [ "pickup", 240 ],
       [ "pickup_diesel", 60 ],
@@ -57,6 +61,8 @@
       [ "scooter_electric", 50 ],
       [ "tandem", 300 ],
       [ "tricycle", 20 ],
+      [ "hoverBikeZhigh", 5 ],
+      [ "hoverQuadZhigh", 5 ],
       [ "motorcycle", 200 ],
       [ "motorcycle_cross", 150 ],
       [ "motorcycle_enduro", 100 ],
@@ -86,6 +92,7 @@
       [ "quad_bike_chassis", 20 ],
       [ "car_racing_electric", 5 ],
       [ "superbike", 5 ],
+      [ "hoverBikeZhigh", 5 ],
       [ "welding_cart", 20 ],
       [ "whillys_mb", 50 ]
     ]
@@ -797,5 +804,42 @@
       { "x": 0, "y": 1, "parts": [ "frame_wood_horizontal", "wheel_wood_b" ] },
       { "x": -1, "y": 0, "parts": [ "frame_wood_handle" ] }
     ]
+  },
+  {
+    "id": "hoverBikeZhigh",
+    "type": "vehicle",
+    "name": "Hoverbike",
+    "blueprint": [ "o#>o" ],
+    "parts": [
+      { "x": 0, "y": 0, "parts": [ "frame_vertical_2", "saddle_motor", "motorcycle_kickstand" ] },
+      { "x": 1, "y": 0, "parts": [ "frame_handle", { "part": "tank_small", "fuel": "gasoline" } ] },
+      { "x": -1, "y": 0, "parts": [ "frame_vertical", "hoverBike_rotors" ] },
+      { "x": 2, "y": 0, "parts": [ "frame_vertical", "hoverBike_rotors" ] },
+      { "x": 0, "y": 0, "parts": [ "controls", "controls_electronic", "vehicle_alarm" ] },
+      { "x": 0, "y": 0, "parts": [ "horn_car", "engine_inline4", "alternator_motorbike" ] },
+      { "x": 1, "y": 0, "parts": [ "headlight", "battery_motorbike" ] },
+      { "x": -1, "y": 0, "parts": [ "muffler", "box" ] }
+    ]
+  },
+  {
+    "id": "hoverQuadZhigh",
+    "type": "vehicle",
+    "name": "hover quad",
+    "blueprint": [
+      [ "O O" ],
+      [ "=#>" ],
+      [ "O O" ]
+    ],
+    "parts": [
+      { "x": 0, "y": 0, "parts": [ "frame_vertical_2", "saddle_motor", "controls", "controls_electronic", "horn_car" ] },
+      { "x": 1, "y": 0, "parts": [ "frame_cover", "engine_v6", "alternator_motorbike", "battery_motorbike" ] },
+      { "x": 1, "y": 0, "parts": [ "headlight", { "part": "tank_small", "fuel": "gasoline" }, "plating_steel" ] },
+      { "x": -1, "y": 0, "parts": [ "frame_horizontal", "muffler", "trunk" ] },
+      { "x": 1, "y": 1, "parts": [ "frame_horizontal", "hoverBike_rotors" ] },
+      { "x": 1, "y": -1, "parts": [ "frame_horizontal", "hoverBike_rotors" ] },
+      { "x": -1, "y": -1, "parts": [ "frame_horizontal", "hoverBike_rotors" ] },
+      { "x": -1, "y": 1, "parts": [ "frame_horizontal", "hoverBike_rotors" ] }
+    ],
+    "items": [ { "x": -1, "y": 0, "chance": 10, "items": [ "helmet_motor" ] } ]
   }
 ]
