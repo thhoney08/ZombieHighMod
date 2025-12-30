@@ -16,7 +16,7 @@
     "storage": "800 ml",
     "warmth": 20,
     "material_thickness": 3,
-    "flags": [ "STURDY", "VARSIZE", "OUTER", "POCKETS" ]
+    "flags": [ "STURDY", "VARSIZE", "OUTER", "POCKETS", "ALLOWS_WINGS" ]
   },
   {
     "id": "blazer_zhighXL",
@@ -29,7 +29,7 @@
     "volume": "5600 ml",
     "price": "160 USD",
     "price_postapoc": "120 USD",
-    "flags": [ "STURDY", "OVERSIZE", "OUTER", "POCKETS" ]
+    "flags": [ "STURDY", "OVERSIZE", "OUTER", "POCKETS", "ALLOWS_WINGS" ]
   },
   {
     "id": "dress_shirt_zhigh",
@@ -45,7 +45,7 @@
     "encumbrance": 3,
     "storage": "200 ml",
     "warmth": 8,
-    "flags": [ "STURDY", "VARSIZE" ]
+    "flags": [ "STURDY", "VARSIZE", "ALLOWS_WINGS" ]
   },
   {
     "id": "dress_shirt_zhighXL",
@@ -58,7 +58,7 @@
     "price": "110 USD",
     "price_postapoc": "35 USD",
     "encumbrance": 8,
-    "flags": [ "STURDY", "OVERSIZE" ]
+    "flags": [ "STURDY", "OVERSIZE", "ALLOWS_WINGS" ]
   },
   {
     "id": "skirt_zhigh",
@@ -158,7 +158,7 @@
     "warmth": 15,
     "material_thickness": 3,
     "environmental_protection": 4,
-    "flags": [ "VARSIZE", "COLLAR", "POCKETS", "WATERPROOF", "RAINPROOF", "HOOD", "OUTER", "FANCY" ]
+    "flags": [ "VARSIZE", "COLLAR", "POCKETS", "WATERPROOF", "RAINPROOF", "HOOD", "OUTER", "FANCY", "ALLOWS_WINGS" ]
   },
   {
     "id": "armband_zhigh_halmon",
@@ -244,7 +244,7 @@
     "encumbrance": 10,
     "material_thickness": 4,
     "environmental_protection": 2,
-    "flags": [ "VARSIZE", "POCKETS", "OUTER", "COLLAR" ]
+    "flags": [ "VARSIZE", "POCKETS", "OUTER", "COLLAR", "ALLOWS_WINGS" ]
   },
   {
     "id": "jacket_baseball_2",
@@ -257,14 +257,14 @@
     "copy-from": "jacket_baseball",
     "type": "ARMOR",
     "name": { "str": "XL varsity jacket" },
-    "flags": [ "OVERSIZE", "POCKETS", "OUTER", "COLLAR" ]
+    "flags": [ "OVERSIZE", "POCKETS", "OUTER", "COLLAR", "ALLOWS_WINGS" ]
   },
   {
     "id": "jacket_baseball_2XL",
     "copy-from": "jacket_baseball_2",
     "type": "ARMOR",
     "name": { "str": "XL varsity jacket" },
-    "flags": [ "OVERSIZE", "POCKETS", "OUTER", "COLLAR" ]
+    "flags": [ "OVERSIZE", "POCKETS", "OUTER", "COLLAR", "ALLOWS_WINGS" ]
   },
   {
     "id": "hoodie_ora",
@@ -273,12 +273,12 @@
     "name": { "str": "orange hoodie" },
     "description": "A sweatshirt with a hood and a \"kangaroo pocket\" in the front for storage.  This one have an actual hood for you to put on.",
     "color": "light_red",
-     "use_action": {
-        "menu_text": "Put on hood",
-        "type": "transform",
-        "target": "hoodie_ora_on",
-        "msg": "You took out your hood and covered your head with it."
-      }
+    "use_action": {
+      "menu_text": "Put on hood",
+      "type": "transform",
+      "target": "hoodie_ora_on",
+      "msg": "You took out your hood and covered your head with it."
+    }
   },
   {
     "id": "hoodie_ora_on",
@@ -287,15 +287,15 @@
     "looks_like": "hoodie_ora",
     "name": { "str": "orange hoodie" },
     "description": "A sweatshirt with a hood and a \"kangaroo pocket\" in the front for storage.  This one have an actual hood for you to put on... and you did!",
-     "use_action": {
-        "menu_text": "Take off hood",
-        "type": "transform",
-        "target": "hoodie_ora",
-        "msg": "You took off your hood from your head."
-      },
+    "use_action": {
+      "menu_text": "Take off hood",
+      "type": "transform",
+      "target": "hoodie_ora",
+      "msg": "You took off your hood from your head."
+    },
     "color": "light_red",
     "covers": [ "torso", "arms", "head" ],
-    "flags": [ "VARSIZE", "OUTER", "POCKETS", "HELMET_COMPAT" ]
+    "flags": [ "VARSIZE", "OUTER", "POCKETS", "HELMET_COMPAT", "ALLOWS_WINGS" ]
   },
   {
     "id": "king_robe_zhigh",
@@ -319,7 +319,7 @@
     "warmth": 35,
     "material_thickness": 4,
     "environmental_protection": 1,
-    "flags": [ "VARSIZE", "SUPER_FANCY" ]
+    "flags": [ "VARSIZE", "SUPER_FANCY", "ALLOWS_WINGS" ]
   },
   {
     "id": "queen_robe_zhigh",
@@ -343,7 +343,7 @@
     "warmth": 35,
     "material_thickness": 4,
     "environmental_protection": 1,
-    "flags": [ "VARSIZE", "SUPER_FANCY" ]
+    "flags": [ "VARSIZE", "SUPER_FANCY", "ALLOWS_WINGS" ]
   },
   {
     "id": "rich_robe_zhigh",
@@ -367,7 +367,7 @@
     "warmth": 25,
     "material_thickness": 4,
     "environmental_protection": 1,
-    "flags": [ "VARSIZE", "FANCY" ]
+    "flags": [ "VARSIZE", "FANCY", "ALLOWS_WINGS" ]
   },
   {
     "id": "normal_robe_zhigh",
@@ -391,7 +391,7 @@
     "warmth": 5,
     "material_thickness": 4,
     "environmental_protection": 1,
-    "flags": [ "VARSIZE", "FANCY" ]
+    "flags": [ "VARSIZE", "FANCY", "ALLOWS_WINGS" ]
   },
   {
     "id": "shako_zhigh",
@@ -409,7 +409,7 @@
     "type": "ARMOR",
     "name": { "str": "marching band dress shirt" },
     "description": "A white button-down shirt with long sleeves, for marching band members.  It also has several golden buttons and ropes.",
-    "flags": [ "VARSIZE", "FANCY" ]
+    "flags": [ "VARSIZE", "FANCY", "ALLOWS_WINGS" ]
   },
   {
     "id": "skirt_zhigh_march",
@@ -469,12 +469,12 @@
     "encumbrance": 4,
     "storage": "3 L",
     "material_thickness": 1,
-    "use_action": { 
-            "type": "holster", 
-            "multi": 4, 
-            "max_volume": "1000 ml", 
-            "min_volume": "150 ml", 
-            "skills": [ "pistol", "launcher", "smg", "rifle", "shotgun" ] 
+    "use_action": {
+      "type": "holster",
+      "multi": 4,
+      "max_volume": "1000 ml",
+      "min_volume": "150 ml",
+      "skills": [ "pistol", "launcher", "smg", "rifle", "shotgun" ]
     },
     "flags": [ "WAIST", "WATER_FRIENDLY", "ALLOWS_NATURAL_ATTACKS", "OVERSIZE" ]
   },
@@ -505,7 +505,7 @@
     "encumbrance": 10,
     "warmth": 15,
     "material_thickness": 2,
-    "flags": [ "VARSIZE", "FANCY" ]
+    "flags": [ "VARSIZE", "FANCY", "ALLOWS_WINGS" ]
   },
   {
     "id": "hanbok_fl_skirt",
@@ -535,7 +535,7 @@
     "coverage": 95,
     "name": { "str": "tracksuit jacket" },
     "description": "A purple cotton jacket.  Good for brisk weather and light workout.",
-    "flags": [ "VARSIZE", "POCKETS", "OUTER" ]
+    "flags": [ "VARSIZE", "POCKETS", "OUTER", "ALLOWS_WINGS" ]
   },
   {
     "id": "pants_tracksuit_zhigh",
@@ -581,7 +581,8 @@
     "warmth": 35,
     "material_thickness": 4,
     "environmental_protection": 1,
-    "flags": [ "VARSIZE", "FANCY" ]
+    "storage": "6 L",
+    "flags": [ "VARSIZE", "FANCY", "ALLOWS_WINGS" ]
   },
   {
     "id": "hat_pungmul",
@@ -686,7 +687,7 @@
     "type": "ARMOR",
     "name": { "str": "hanbok shirt" },
     "description": "A white traditonal Korean shirt with blue vest as a decoration.",
-    "flags": [ "VARSIZE", "FANCY" ]
+    "flags": [ "VARSIZE", "FANCY", "ALLOWS_WINGS" ]
   },
   {
     "id": "spot_hanbokpants_zhigh",
@@ -713,134 +714,209 @@
     "color": "dark_gray",
     "covers": [ "arm_either" ],
     "qualities": [
-      [ "ANVIL", 8 ], [ "ANESTHESIA", 8 ], [ "AXE", 8 ], [ "BUTCHER", 8 ], [ "BOIL", 8 ], [ "CHEM", 8 ],
-	  [ "CHISEL", 8 ], [ "CHURN", 8 ], [ "CUT", 8 ], [ "CUT_FINE", 8 ], [ "CUT_M", 8 ], [ "COOK", 8 ],
-      [ "DRILL", 8 ], [ "DIG", 8 ], [ "DISTILL", 8 ], [ "EXTRACT", 8 ], [ "FISHING", 8 ],
-	  [ "FILE", 8 ], [ "FILTER", 8 ], [ "GRIND", 8 ], [ "HAMMER", 8 ], [ "HAMMER_FINE", 8 ],
-	  [ "HOSE", 8 ], [ "KNIT", 5 ], [ "LEATHER_AWL", 5 ], [ "LIFT", 5 ], [ "LOCKPICK", 8 ],
-	  [ "PRY", 8 ], [ "PULL", 8 ], [ "REAM", 8 ], [ "SANDING", 8 ], [ "SAW_M", 8 ],
-      [ "SAW_M_FINE", 8 ], [ "SAW_W", 8 ], [ "SEW_CURVED", 8 ], [ "SEW", 8 ],
-      [ "SCREW", 8 ], [ "SCREW_FINE", 8 ], [ "SMOKE_PIPE", 8 ], [ "SMOOTH", 8 ], [ "SHEAR", 8 ],
-	  [ "SWAGING", 8 ], [ "PRESSURIZATION", 8 ], [ "PULL_FINE", 8 ], [ "WELD", 8 ], [ "WRENCH", 8 ],
-      [ "WRENCH_FINE", 8 ], [ "VISE", 8 ], [ "VOLT_MEASURE", 8 ]
+      [ "ANVIL", 8 ],
+      [ "ANESTHESIA", 8 ],
+      [ "AXE", 8 ],
+      [ "BUTCHER", 8 ],
+      [ "BOIL", 8 ],
+      [ "CHEM", 8 ],
+      [ "CHISEL", 8 ],
+      [ "CHURN", 8 ],
+      [ "CUT", 8 ],
+      [ "CUT_FINE", 8 ],
+      [ "CUT_M", 8 ],
+      [ "COOK", 8 ],
+      [ "DRILL", 8 ],
+      [ "DIG", 8 ],
+      [ "DISTILL", 8 ],
+      [ "EXTRACT", 8 ],
+      [ "FISHING", 8 ],
+      [ "FILE", 8 ],
+      [ "FILTER", 8 ],
+      [ "GRIND", 8 ],
+      [ "HAMMER", 8 ],
+      [ "HAMMER_FINE", 8 ],
+      [ "HOSE", 8 ],
+      [ "KNIT", 5 ],
+      [ "LEATHER_AWL", 5 ],
+      [ "LIFT", 5 ],
+      [ "LOCKPICK", 8 ],
+      [ "PRY", 8 ],
+      [ "PULL", 8 ],
+      [ "REAM", 8 ],
+      [ "SANDING", 8 ],
+      [ "SAW_M", 8 ],
+      [ "SAW_M_FINE", 8 ],
+      [ "SAW_W", 8 ],
+      [ "SEW_CURVED", 8 ],
+      [ "SEW", 8 ],
+      [ "SCREW", 8 ],
+      [ "SCREW_FINE", 8 ],
+      [ "SMOKE_PIPE", 8 ],
+      [ "SMOOTH", 8 ],
+      [ "SHEAR", 8 ],
+      [ "SWAGING", 8 ],
+      [ "PRESSURIZATION", 8 ],
+      [ "PULL_FINE", 8 ],
+      [ "WELD", 8 ],
+      [ "WRENCH", 8 ],
+      [ "WRENCH_FINE", 8 ],
+      [ "VISE", 8 ],
+      [ "VOLT_MEASURE", 8 ]
     ],
     "use_action": [
-		"GUN_CLEAN", "GUN_REPAIR", "PICKAXE",
-		"HAMMER", "CROWBAR", "BOLTCUTTERS",
-		"OXYTORCH", "WATER_PURIFIER", "BURROW",
-		"EINKTABLETPC", "PORTABLE_GAME", "JACKHAMMER",
-		"WEATHER_TOOL", "SIPHON", "MEDITATE",
-		{
-			"type": "repair_item",
-			"item_action_type": "repair_fabric",
-			"materials": [ "cotton", "leather", "nylon", "wool", "fur", "faux_fur", "nomex", "kevlar", "neoprene", "gutskin" ],
-			"skill": "tailor",
-			"tool_quality": 10,
-			"cost_scaling": 0.1,
-			"move_cost": 50
-		},
-		{
-			"type": "sew_advanced",
-			"materials": [
-			"cotton", "leather", "nylon", "wool", "fur", "faux_fur", "nomex", "kevlar", "neoprene",	"gutskin", "plastic", "kevlar_rigid"
-			],
-			"skill": "tailor",
-			"clothing_mods": [ "leather_padded", "steel_padded", "alloy_padded", "kevlar_padded", "furred", "wooled" ]
-		},
-		{
-			"type": "repair_item",
-			"item_action_type": "repair_metal",
-			"materials": [ "kevlar", "bone", "bone_heavy", "chitin", "acidchitin", "paper", "dry_plant", "cardboard", "wood", "kevlar_rigid", "plastic", "iron", "steel", "hardsteel", "aluminum", "copper", "silver", "gold", "glass" ],
-			"skill": "mechanics",
-			"tool_quality": 10,
-			"cost_scaling": 0.1,
-			"move_cost": 50
-		},
-		{ "type": "gps_device", "radius": 400, "additional_charges_per_tile": 0.1 },
-		{
-			"type": "heal",
-			"move_cost": 550,
-			"bleed": 0.80,
-			"bite": 0.80,
-			"infect": 0.80,
-			"limb_power": 25,
-			"head_power": 25,
-			"torso_power": 25,
-			"effects": [ { "id": "healing_medkit", "duration": 150 }, { "id": "pkill3", "duration": 100 } ]
-		},
-		{
-			"type": "manualnoise",
-			"no_charges_message": "Seeing this is an error.",
-			"use_message": "You blow the whistle.",
-			"//": "Use of %s not currently supported.",
-			"noise_message": "FWEEEET!",
-			"noise_id": "misc",
-			"noise_variant": "whistle",
-			"noise": 58,
-			"moves": 100
-		},
-		{ "type": "firestarter", "moves": 100, "moves_slow": 500, "need_sunlight": false },
-		{ "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": true, "material_restricted": false },
-		{ "flame": true, "type": "cauterize" }
+      "GUN_CLEAN",
+      "GUN_REPAIR",
+      "PICKAXE",
+      "HAMMER",
+      "CROWBAR",
+      "BOLTCUTTERS",
+      "OXYTORCH",
+      "WATER_PURIFIER",
+      "BURROW",
+      "EINKTABLETPC",
+      "PORTABLE_GAME",
+      "JACKHAMMER",
+      "WEATHER_TOOL",
+      "SIPHON",
+      "MEDITATE",
+      {
+        "type": "repair_item",
+        "item_action_type": "repair_fabric",
+        "materials": [ "cotton", "leather", "nylon", "wool", "fur", "faux_fur", "nomex", "kevlar", "neoprene", "gutskin" ],
+        "skill": "tailor",
+        "tool_quality": 10,
+        "cost_scaling": 0.1,
+        "move_cost": 50
+      },
+      {
+        "type": "sew_advanced",
+        "materials": [
+          "cotton",
+          "leather",
+          "nylon",
+          "wool",
+          "fur",
+          "faux_fur",
+          "nomex",
+          "kevlar",
+          "neoprene",
+          "gutskin",
+          "plastic",
+          "kevlar_rigid"
+        ],
+        "skill": "tailor",
+        "clothing_mods": [ "leather_padded", "steel_padded", "alloy_padded", "kevlar_padded", "furred", "wooled" ]
+      },
+      {
+        "type": "repair_item",
+        "item_action_type": "repair_metal",
+        "materials": [
+          "lead",
+          "tin",
+          "zinc",
+          "carbon_fiber",
+          "kevlar",
+          "bone",
+          "bone_heavy",
+          "scute",
+          "chitin",
+          "acidchitin",
+          "paper",
+          "dry_plant",
+          "cardboard",
+          "wood",
+          "kevlar_rigid",
+          "plastic",
+          "iron",
+          "steel",
+          "hardsteel",
+          "aluminum",
+          "superalloy",
+          "copper",
+          "bronze",
+          "silver",
+          "gold",
+          "glass"
+        ],
+        "skill": "mechanics",
+        "tool_quality": 10,
+        "cost_scaling": 0.1,
+        "move_cost": 50
+      },
+      { "type": "gps_device", "radius": 400, "additional_charges_per_tile": 0.1 },
+      {
+        "type": "heal",
+        "move_cost": 550,
+        "bleed": 0.8,
+        "bite": 0.8,
+        "infect": 0.8,
+        "limb_power": 25,
+        "head_power": 25,
+        "torso_power": 25,
+        "effects": [ { "id": "healing_medkit", "duration": 150 }, { "id": "pkill3", "duration": 100 } ]
+      },
+      {
+        "type": "manualnoise",
+        "no_charges_message": "Seeing this is an error.",
+        "use_message": "You blow the whistle.",
+        "//": "Use of %s not currently supported.",
+        "noise_message": "FWEEEET!",
+        "noise_id": "misc",
+        "noise_variant": "whistle",
+        "noise": 58,
+        "moves": 100
+      },
+      { "type": "firestarter", "moves": 100, "moves_slow": 500, "need_sunlight": false },
+      { "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": true, "material_restricted": false },
+      { "flame": true, "type": "cauterize" }
     ],
     "encumbrance": 20,
     "coverage": 3,
     "flags": [
-        "WATCH",
-        "PERFECT_LOCKPICK",
-  	    "POWERARMOR_COMPATIBLE",
-  	    "TWO_WAY_RADIO",
-        "FIRE",
-        "STAB",
-        "ONLY_ONE",
-        "DURABLE_MELEE",
-        "DIG_TOOL",
-        "BAROMETER",
-        "HYGROMETER",
-        "THERMOMETER",
-        "WINDMETER",
-        "SLEEP_AID",
-        "WEATHER_FORECAST",
-        "SAFECRACK",
-        "ALARMCLOCK",
-		"FISH_GOOD",
-		"HEATS_FOOD",
-        "AURA",
-        "FRAGILE",
-        "ALLOWS_NATURAL_ATTACKS",
-        "WATER_FRIENDLY",
-        "ALLOWS_REMOTE_USE",
-		"DISCOUNT_VALUE_3",
-        "WRITE_MESSAGE",
-        "COMPACT",
-        "OVERSIZE"
-	],
+      "WATCH",
+      "PERFECT_LOCKPICK",
+      "POWERARMOR_COMPATIBLE",
+      "TWO_WAY_RADIO",
+      "FIRE",
+      "STAB",
+      "ONLY_ONE",
+      "DURABLE_MELEE",
+      "DIG_TOOL",
+      "BAROMETER",
+      "HYGROMETER",
+      "THERMOMETER",
+      "WINDMETER",
+      "SLEEP_AID",
+      "WEATHER_FORECAST",
+      "SAFECRACK",
+      "ALARMCLOCK",
+      "FISH_GOOD",
+      "HEATS_FOOD",
+      "AURA",
+      "FRAGILE",
+      "ALLOWS_NATURAL_ATTACKS",
+      "WATER_FRIENDLY",
+      "ALLOWS_REMOTE_USE",
+      "DISCOUNT_VALUE_3",
+      "WRITE_MESSAGE",
+      "COMPACT",
+      "OVERSIZE"
+    ],
     "charges_per_use": 1,
     "max_charges": 300,
     "initial_charges": 0,
-    "relic_data":
-	{
-		"charges_per_activation": 1,
-		"recharge_scheme": [
-			{
-				"type": "time", "req": "none", "interval": "5 s", "rate": 10
-			}
-		],
-		"passive_effects": [
-			{
-				"has": "WORN",
-				"condition": "ALWAYS",
-				"intermittent_activation": {
-					"effects": [
-						{
-							"frequency": "1 seconds",
-							"spell_effects": [ { "id": "AEA_MAP" } ]
-						}
-					]
-				}
-			}
-		]
-	}
+    "relic_data": {
+      "charges_per_activation": 1,
+      "recharge_scheme": [ { "type": "time", "req": "none", "interval": "5 s", "rate": 10 } ],
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "intermittent_activation": { "effects": [ { "frequency": "1 seconds", "spell_effects": [ { "id": "AEA_MAP" } ] } ] }
+        }
+      ]
+    }
   },
   {
     "id": "skateboardZhigh",
@@ -862,21 +938,16 @@
     "coverage": 10,
     "encumbrance": 1,
     "techniques": [ "WBLOCK_3", "WIDE", "SWEEP" ],
-    "use_action": [
-		{ "type": "cast_spell", "spell_id": "backattackerRushZhigh", "no_fail": true, "level": 0 }
-	],
+    "use_action": [ { "type": "cast_spell", "spell_id": "backattackerRushZhigh", "no_fail": true, "level": 0 } ],
     "charges_per_use": 1,
     "max_charges": 6,
     "initial_charges": 0,
     "flags": [ "ONLY_ONE", "AURA", "WATERPROOF", "ROLLER_INLINE", "REQUIRES_BALANCE" ],
-    "relic_data":
-	{
-		"charges_per_activation": 1,
-		"passive_effects": [
-			{ "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "MOVE_COST", "add": -2 } ] }
-		],
-		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 m", "rate": 3 } ]
-	}
+    "relic_data": {
+      "charges_per_activation": 1,
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "MOVE_COST", "add": -2 } ] } ],
+      "recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 m", "rate": 3 } ]
+    }
   },
   {
     "id": "skateboard_conan",
@@ -898,22 +969,19 @@
     "coverage": 10,
     "encumbrance": 1,
     "techniques": [ "WBLOCK_3", "WIDE", "SWEEP" ],
-    "use_action": [
-		{ "type": "cast_spell", "spell_id": "backattackerRushZhigh", "no_fail": true, "level": 0 }
-	],
+    "use_action": [ { "type": "cast_spell", "spell_id": "backattackerRushZhigh", "no_fail": true, "level": 0 } ],
     "charges_per_use": 1,
     "max_charges": 60,
     "initial_charges": 6,
     "flags": [ "ONLY_ONE", "AURA", "WATERPROOF", "ROLLER_INLINE" ],
-    "relic_data":
-	{
-		"charges_per_activation": 1,
-		"passive_effects": [
-			{ "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "MOVE_COST", "add": -4 } ] },
-			{ "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "SPEED", "add": 4 } ] }
-		],
-		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 m", "rate": 8 } ]
-	}
+    "relic_data": {
+      "charges_per_activation": 1,
+      "passive_effects": [
+        { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "MOVE_COST", "add": -4 } ] },
+        { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "SPEED", "add": 4 } ] }
+      ],
+      "recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 m", "rate": 8 } ]
+    }
   },
   {
     "id": "surfboard",
@@ -933,19 +1001,16 @@
     "coverage": 10,
     "encumbrance": 1,
     "techniques": [ "WBLOCK_3", "WIDE", "SWEEP" ],
-    "use_action": [
-		{ "type": "cast_spell", "spell_id": "waveStrikeZhigh", "no_fail": true, "level": 0 }
-	],
+    "use_action": [ { "type": "cast_spell", "spell_id": "waveStrikeZhigh", "no_fail": true, "level": 0 } ],
     "charges_per_use": 1,
     "max_charges": 4,
     "initial_charges": 4,
     "flags": [ "ONLY_ONE", "AURA", "FIN", "WATER_FRIENDLY" ],
-    "relic_data":
-	{
-		"charges_per_activation": 1,
-		"passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "SPEED", "add": 1 } ] } ],
-		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 m", "rate": 2 } ]
-	}
+    "relic_data": {
+      "charges_per_activation": 1,
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "SPEED", "add": 1 } ] } ],
+      "recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 m", "rate": 2 } ]
+    }
   },
   {
     "id": "tubeSwim",
@@ -1080,7 +1145,7 @@
     "name": { "str": "tracksuit jacket" },
     "description": "A black cotton jacket.  Good for brisk weather and light workout.",
     "color": "dark_gray",
-    "flags": [ "VARSIZE", "POCKETS", "OUTER" ]
+    "flags": [ "VARSIZE", "POCKETS", "OUTER", "ALLOWS_WINGS" ]
   },
   {
     "id": "pants_tracksuit_zhigh_black",
@@ -1109,57 +1174,69 @@
     "covers": [ "torso", "arms" ],
     "coverage": 60,
     "encumbrance": 2,
-    "flags": [ "OVERSIZE", "HOOD", "OUTER", "FANCY" ]
+    "flags": [ "OVERSIZE", "HOOD", "OUTER", "FANCY", "ALLOWS_WINGS" ]
   },
   {
-    "type" : "ARMOR",
+    "type": "ARMOR",
     "//": "Got this line of code and modified it from PK's rebalancing mod.",
-    "id" : "swat_shield",
-    "name" : "tactical shield",
-    "description" : "A ballistic shield designed to protect the approach of its holder and anybody standing behind them.  It is heavy and somewhat cumbersome, but its protection cannot be denied.  When activated it will be held close and in front of you.",
-    "weight" :  "6600 g",
-    "volume": "5700 ml",
-    "color" : "dark_gray",
-    "covers" : [ "hand_either" ],
-    "material" : [ "steel", "plastic", "kevlar", "ceramic", "kevlar_rigid" ],
-    "to_hit" : -1,
-    "encumbrance" : 12,
-    "environmental_protection": 2,
-    "bashing" : 8,
-    "symbol" : "{",
-    "flags" : [ "OVERSIZE", "RESTRICT_HANDS", "BELTED", "ALLOWS_NATURAL_ATTACKS", "BLOCK_WHILE_WORN", "ONLY_ONE", "SLOWS_MOVEMENT" ],
-    "techniques" : [ "WBLOCK_3" ],
-    "coverage" : 45,
-    "material_thickness" : 10,
-    "use_action": {
-        "type": "transform",
-        "msg": "The tactical shield is pulled to a defensive posture!",
-        "target": "swat_shield_act"
-    }
-  },
-  {
-    "type" : "ARMOR",
-    "id" : "swat_shield_act",
-    "name" : "tactical shield (def)",
-    "description" : "A ballistic shield designed to protect the approach of its holder and anybody standing behind them.  It is heavy and really cumbersome, but its protection cannot be denied.  It is currently being used, and slowing you down.",
+    "id": "swat_shield",
+    "name": "tactical shield",
+    "description": "A ballistic shield designed to protect the approach of its holder and anybody standing behind them.  It is heavy and somewhat cumbersome, but its protection cannot be denied.  When activated it will be held close and in front of you.",
     "weight": "6600 g",
     "volume": "5700 ml",
-    "color" : "dark_gray",
-    "covers": [ "head", "torso", "arms", "hands", "legs", "feet" ],
-    "material" : [ "steel", "plastic", "kevlar", "ceramic", "kevlar_rigid" ],
-    "to_hit" : -1,
-    "encumbrance" : 70,
-    "symbol" : "{",
-    "flags" : [ "OVERSIZE", "RESTRICT_HANDS", "BELTED", "ALLOWS_NATURAL_ATTACKS", "BLOCK_WHILE_WORN", "ONLY_ONE", "POWERARMOR_COMPATIBLE", "SLOWS_MOVEMENT" ],
-    "techniques" : [ "WBLOCK_3" ],
-    "coverage" : 100,
-    "material_thickness" : 10,
+    "color": "dark_gray",
+    "covers": [ "hand_either" ],
+    "material": [ "steel", "plastic", "kevlar", "ceramic", "kevlar_rigid" ],
+    "to_hit": -1,
+    "encumbrance": 12,
     "environmental_protection": 2,
-    "use_action": {
-        "type": "transform",
-        "msg": "The tactical shield is lowered.",
-        "target": "swat_shield"
-    }
+    "bashing": 8,
+    "symbol": "{",
+    "flags": [
+      "OVERSIZE",
+      "RESTRICT_HANDS",
+      "BELTED",
+      "ALLOWS_NATURAL_ATTACKS",
+      "BLOCK_WHILE_WORN",
+      "ONLY_ONE",
+      "POWERARMOR_COMPATIBLE",
+      "SLOWS_MOVEMENT",
+      "ALLOWS_WINGS"
+    ],
+    "techniques": [ "WBLOCK_3" ],
+    "coverage": 45,
+    "material_thickness": 10,
+    "use_action": { "type": "transform", "msg": "The tactical shield is pulled to a defensive posture!", "target": "swat_shield_act" }
+  },
+  {
+    "type": "ARMOR",
+    "id": "swat_shield_act",
+    "name": "tactical shield (def)",
+    "description": "A ballistic shield designed to protect the approach of its holder and anybody standing behind them.  It is heavy and really cumbersome, but its protection cannot be denied.  It is currently being used, and slowing you down.",
+    "weight": "6600 g",
+    "volume": "5700 ml",
+    "color": "dark_gray",
+    "covers": [ "head", "torso", "arms", "hands", "legs", "feet" ],
+    "material": [ "steel", "plastic", "kevlar", "ceramic", "kevlar_rigid" ],
+    "to_hit": -1,
+    "encumbrance": 70,
+    "symbol": "{",
+    "flags": [
+      "OVERSIZE",
+      "RESTRICT_HANDS",
+      "BELTED",
+      "ALLOWS_NATURAL_ATTACKS",
+      "BLOCK_WHILE_WORN",
+      "ONLY_ONE",
+      "POWERARMOR_COMPATIBLE",
+      "SLOWS_MOVEMENT",
+      "ALLOWS_WINGS"
+    ],
+    "techniques": [ "WBLOCK_3" ],
+    "coverage": 100,
+    "material_thickness": 10,
+    "environmental_protection": 2,
+    "use_action": { "type": "transform", "msg": "The tactical shield is lowered.", "target": "swat_shield" }
   },
   {
     "id": "apron_green",
@@ -1191,14 +1268,14 @@
     "weight": "10 g",
     "price_postapoc": "10 USD",
     "flags": [
-       "WATER_FRIENDLY",
-	   "ALLOWS_NATURAL_ATTACKS",
-	   "OUTER",
-	   "OVERSIZE",
-	   "WATER_FRIENDLY",
-       "FIX_NEARSIGHT",
-       "FIX_FARSIGHT",
-       "FRAGILE"
+      "WATER_FRIENDLY",
+      "ALLOWS_NATURAL_ATTACKS",
+      "OUTER",
+      "OVERSIZE",
+      "WATER_FRIENDLY",
+      "FIX_NEARSIGHT",
+      "FIX_FARSIGHT",
+      "FRAGILE"
     ],
     "description": "A plastic ham-looking item, marking the wearer as some kind of a gamer."
   },
@@ -1275,7 +1352,17 @@
     "environmental_protection": 1,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
     "techniques": [ "WBLOCK_3" ],
-    "flags": [ "OVERSIZE", "OUTER", "SLOWS_MOVEMENT", "BLOCK_WHILE_WORN", "ONLY_ONE", "FRAGILE" ],
+    "flags": [
+      "OVERSIZE",
+      "OUTER",
+      "SLOWS_MOVEMENT",
+      "BLOCK_WHILE_WORN",
+      "ONLY_ONE",
+      "FRAGILE",
+      "ALLOWS_WINGS",
+      "ALLOWS_TAIL_SNAKE",
+      "ALLOWS_TAIL"
+    ],
     "relic_data": {
       "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "ench_effects": [ { "effect": "invisibility", "intensity": 1 } ] } ]
     }
@@ -1304,7 +1391,7 @@
     "environmental_protection": 1,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
     "techniques": [ "WBLOCK_3" ],
-    "flags": [ "OVERSIZE", "OUTER", "BLOCK_WHILE_WORN", "ONLY_ONE", "FRAGILE" ]
+    "flags": [ "OVERSIZE", "OUTER", "BLOCK_WHILE_WORN", "ONLY_ONE", "FRAGILE", "ALLOWS_WINGS", "ALLOWS_TAIL_SNAKE", "ALLOWS_TAIL" ]
   },
   {
     "id": "hat_sailor",
@@ -1320,7 +1407,7 @@
     "name": { "str": "sea cadet corps shirt" },
     "description": "A white shirt with short sleeves and a black scarf, for sea cadet corps.",
     "covers": [ "torso" ],
-    "flags": [ "VARSIZE" ]
+    "flags": [ "VARSIZE", "ALLOWS_WINGS" ]
   },
   {
     "id": "shorts_zhigh_marine",
@@ -1370,17 +1457,20 @@
     "flags": [ "WATER_FRIENDLY" ],
     "coverage": 1,
     "symbol": "[",
-    "use_action": [ {
-      "type": "manualnoise",
-      "no_charges_message": "Seeing this is an error.",
-      "use_message": "You blow the whistle.",
-      "//": "Use of %s not currently supported.",
-      "noise_message": "FWEEEET!",
-      "noise_id": "misc",
-      "noise_variant": "whistle",
-      "noise": 50,
-      "moves": 80
-    }, "DOG_WHISTLE" ]
+    "use_action": [
+      {
+        "type": "manualnoise",
+        "no_charges_message": "Seeing this is an error.",
+        "use_message": "You blow the whistle.",
+        "//": "Use of %s not currently supported.",
+        "noise_message": "FWEEEET!",
+        "noise_id": "misc",
+        "noise_variant": "whistle",
+        "noise": 50,
+        "moves": 80
+      },
+      "DOG_WHISTLE"
+    ]
   },
   {
     "id": "redhairpin",
@@ -1447,7 +1537,7 @@
     "coverage": 95,
     "name": { "str": "tracksuit jacket" },
     "description": "A green cotton jacket.  Good for brisk weather and light workout.",
-    "flags": [ "VARSIZE", "POCKETS", "OUTER" ]
+    "flags": [ "VARSIZE", "POCKETS", "OUTER", "ALLOWS_WINGS" ]
   },
   {
     "id": "pants_tracksuitSquidGrn_zhigh",
@@ -1470,7 +1560,7 @@
     "coverage": 95,
     "name": { "str": "tracksuit jacket" },
     "description": "A pink cotton jacket.  Good for brisk weather and light workout.",
-    "flags": [ "VARSIZE", "POCKETS", "OUTER" ]
+    "flags": [ "VARSIZE", "POCKETS", "OUTER", "ALLOWS_WINGS" ]
   },
   {
     "id": "pants_tracksuitSquidPnk_zhigh",
@@ -1533,7 +1623,7 @@
     "material_thickness": 5,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
     "environmental_protection": 3,
-    "flags": [ "POCKETS", "HOOD", "OUTER", "WATERPROOF", "RAINPROOF", "COLLAR" ]
+    "flags": [ "POCKETS", "HOOD", "OUTER", "WATERPROOF", "RAINPROOF", "COLLAR", "ALLOWS_WINGS" ]
   },
   {
     "id": "bigback_bodybag",
@@ -1556,7 +1646,7 @@
     "storage": "75 L",
     "warmth": 10,
     "material_thickness": 2,
-    "flags": [ "BELTED", "WATERPROOF", "ONLY_ONE", "OVERSIZE" ]
+    "flags": [ "BELTED", "WATERPROOF", "ONLY_ONE", "OVERSIZE", "ALLOWS_WINGS" ]
   },
   {
     "id": "shortsGreen",
@@ -1665,7 +1755,7 @@
     "warmth": 30,
     "material_thickness": 5,
     "environmental_protection": 1,
-    "flags": [ "VARSIZE", "STURDY", "POCKETS", "OUTER" ]
+    "flags": [ "VARSIZE", "STURDY", "POCKETS", "OUTER", "ALLOWS_WINGS" ]
   },
   {
     "id": "tshirtKev",
@@ -1683,7 +1773,7 @@
     "armor_portion_data": [ { "covers": [ "torso" ], "coverage": 90 }, { "covers": [ "arms" ], "coverage": 40 } ],
     "warmth": 5,
     "material_thickness": 5,
-    "flags": [ "VARSIZE" ]
+    "flags": [ "VARSIZE", "ALLOWS_WINGS" ]
   },
   {
     "id": "hat_witch_purp",
@@ -1865,7 +1955,7 @@
       "draw_cost": 60,
       "flags": [ "MAG_COMPACT", "SPEEDLOADER" ]
     },
-    "flags": [ "STURDY", "OUTER" ]
+    "flags": [ "STURDY", "OUTER", "ALLOWS_WINGS" ]
   },
   {
     "id": "survExoframe",
@@ -1887,7 +1977,7 @@
     "encumbrance": 50,
     "warmth": 2,
     "material_thickness": 4,
-    "flags": [ "ONLY_ONE", "STURDY", "OUTER", "HEAVY_WEAPON_SUPPORT", "STURDY" ],
+    "flags": [ "ONLY_ONE", "STURDY", "OUTER", "HEAVY_WEAPON_SUPPORT", "STURDY", "ALLOWS_WINGS" ],
     "weight_capacity_bonus": "25 kg"
   },
   {
@@ -1910,7 +2000,7 @@
     "encumbrance": 50,
     "warmth": 20,
     "material_thickness": 12,
-    "flags": [ "ONLY_ONE", "STURDY", "OUTER", "HEAVY_WEAPON_SUPPORT", "STURDY" ],
+    "flags": [ "ONLY_ONE", "STURDY", "OUTER", "HEAVY_WEAPON_SUPPORT", "STURDY", "ALLOWS_WINGS" ],
     "weight_capacity_bonus": "15 kg"
   },
   {
@@ -2045,42 +2135,44 @@
     "encumbrance": 6,
     "warmth": 10,
     "material_thickness": 2,
-    "use_action": [ {
-      "type": "holster",
-      "holster_prompt": "Stash ammo",
-      "holster_msg": "You stash your %s.",
-      "multi": 4,
-      "min_volume": "250 ml",
-      "max_volume": "750 ml",
-      "draw_cost": 80,
-      "flags": [ "MAG_COMPACT", "SPEEDLOADER" ]
-    },
-    {
-      "type": "bandolier",
-      "capacity": 12,
-      "ammo": [
-        "paintball",
-        "nail",
-        "pebble",
-        "22",
-        "223",
-        "270win",
-        "300blk",
-        "5x50",
-        "545x39",
-        "3006",
-        "308",
-        "300",
-        "762",
-        "762R",
-        "8x40mm",
-        "4570",
-        "50",
-        "700nx"
-      ],
-      "draw_cost": 20
-    } ],
-    "flags": [ "STURDY", "OUTER" ]
+    "use_action": [
+      {
+        "type": "holster",
+        "holster_prompt": "Stash ammo",
+        "holster_msg": "You stash your %s.",
+        "multi": 4,
+        "min_volume": "250 ml",
+        "max_volume": "750 ml",
+        "draw_cost": 80,
+        "flags": [ "MAG_COMPACT", "SPEEDLOADER" ]
+      },
+      {
+        "type": "bandolier",
+        "capacity": 12,
+        "ammo": [
+          "paintball",
+          "nail",
+          "pebble",
+          "22",
+          "223",
+          "270win",
+          "300blk",
+          "5x50",
+          "545x39",
+          "3006",
+          "308",
+          "300",
+          "762",
+          "762R",
+          "8x40mm",
+          "4570",
+          "50",
+          "700nx"
+        ],
+        "draw_cost": 20
+      }
+    ],
+    "flags": [ "STURDY", "OUTER", "ALLOWS_WINGS" ]
   },
   {
     "id": "utility_belt",
@@ -2316,7 +2408,7 @@
     "coverage": 99,
     "encumbrance": 25,
     "material_thickness": 3,
-    "flags": [ "STURDY", "VARSIZE", "POCKETS", "SUPER_FANCY" ]
+    "flags": [ "STURDY", "VARSIZE", "POCKETS", "SUPER_FANCY", "ALLOWS_WINGS" ]
   },
   {
     "id": "hat_ball2",
@@ -2369,6 +2461,19 @@
     "material_thickness": 1,
     "environmental_protection": 2,
     "flags": [ "WATERPROOF", "FANCY", "SUN_GLASSES" ]
+  },
+  {
+    "id": "straw_hat_Asia_superalloy",
+    "copy-from": "straw_hat_Asia",
+    "looks_like": "straw_hat_Asia",
+    "type": "ARMOR",
+    "name": { "str": "Asian superalloy hat" },
+    "description": "Hat that is woven out of modern superalloy.  Its brim helps keep the sun out of your eyes, and stops the rain too.  Could wear it in order to consult with the elder gods or something.  Could be used as a cooking tool if needed.  \n\nYoung master, do not roast bacon on it.",
+    "material": [ "superalloy", "leather" ],
+    "color": "light_cyan",
+    "encumbrance": 25,
+    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 },
+    "qualities": [ [ "COOK", 3 ], [ "BOIL", 2 ], [ "CONTAIN", 1 ], [ "CHEM", 1 ] ]
   },
   {
     "id": "shield_targe",
@@ -2492,7 +2597,7 @@
     "material_thickness": 2,
     "environmental_protection": 1,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
-    "flags": [ "VARSIZE", "POCKETS", "OUTER", "FANCY" ]
+    "flags": [ "VARSIZE", "POCKETS", "OUTER", "FANCY", "ALLOWS_WINGS" ]
   },
   {
     "id": "blazer_black",
@@ -2541,7 +2646,7 @@
     "material_thickness": 2,
     "environmental_protection": 3,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
-    "flags": [ "OVERSIZE", "OUTER", "SLOWS_MOVEMENT", "BLOCK_WHILE_WORN", "ONLY_ONE", "HOOD" ],
+    "flags": [ "OVERSIZE", "OUTER", "SLOWS_MOVEMENT", "BLOCK_WHILE_WORN", "ONLY_ONE", "HOOD", "ALLOWS_WINGS" ],
     "relic_data": {
       "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "ench_effects": [ { "effect": "invisibility", "intensity": 1 } ] } ]
     }
@@ -2569,7 +2674,7 @@
     "material_thickness": 2,
     "environmental_protection": 3,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
-    "flags": [ "OVERSIZE", "OUTER", "ONLY_ONE", "HOOD" ]
+    "flags": [ "OVERSIZE", "OUTER", "ONLY_ONE", "HOOD", "ALLOWS_WINGS" ]
   },
   {
     "id": "sheath_multi",
@@ -2588,7 +2693,7 @@
       "min_volume": "5 ml",
       "max_weight": "1200 g",
       "draw_cost": 12,
-	  "multi": 3, 
+      "multi": 3,
       "flags": [ "SHEATH_KNIFE" ]
     }
   },
@@ -2600,15 +2705,7 @@
     "description": "A large American flag cape made to fly in even the worst conditions.  Wearing this does not give you the ability to fly, shoot lasers from your eyes, or run really fast.  At least you can have an obsession of drinking milk.",
     "covers": [ "torso", "arms", "legs" ],
     "coverage": 30,
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ALWAYS",
-          "mutations": [ "ENCH_ZHIGH_CLOAK2_EFFECT" ]
-        }
-      ]
-    },
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "ENCH_ZHIGH_CLOAK2_EFFECT" ] } ] },
     "encumbrance": 10
   },
   {
@@ -2701,10 +2798,10 @@
     "name": { "str": "Holtzman Shield (on)", "str_pl": "Holtzman Shields (on)" },
     "description": "Internally powered by a plutonium fuel cell, this small sized energy shield represents the pinnacle of Rivtech's energy shield technology.  It is turned on, and continually draining power.  Use it to turn it off.",
     "flags": [
-	  "AURA",
-	  "OVERSIZE",
-	  "ALLOWS_NATURAL_ATTACKS",
-	  "COMPACT",
+      "AURA",
+      "OVERSIZE",
+      "ALLOWS_NATURAL_ATTACKS",
+      "COMPACT",
       "VARSIZE",
       "STURDY",
       "GAS_PROOF",
@@ -2720,13 +2817,19 @@
       "RAINPROOF",
       "RAD_PROOF",
       "ELECTRIC_IMMUNE",
-      "CLIMATE_CONTROL"
+      "CLIMATE_CONTROL",
+      "ALLOWS_WINGS"
     ],
     "material": [ "superalloy", "carbide", "kevlar" ],
     "turns_per_charge": 1,
     "coverage": 100,
     "revert_to": "holtzmanShieldZhigh",
-    "use_action": { "type": "transform", "menu_text": "Turn off", "msg": "Your Holtzman Shield turns off.", "target": "holtzmanShieldZhigh" },
+    "use_action": {
+      "type": "transform",
+      "menu_text": "Turn off",
+      "msg": "Your Holtzman Shield turns off.",
+      "target": "holtzmanShieldZhigh"
+    },
     "environmental_protection": 10,
     "encumbrance": 1,
     "covers": [ "head", "mouth", "eyes", "torso", "arms", "hands", "legs", "feet" ],
@@ -2792,7 +2895,7 @@
     "warmth": 20,
     "material_thickness": 4,
     "environmental_protection": 1,
-    "flags": [ "VARSIZE", "STURDY" , "COMPACT" , "AURA" ]
+    "flags": [ "VARSIZE", "STURDY", "COMPACT", "AURA" ]
   },
   {
     "id": "bscabbardDouZhigh",
@@ -2823,7 +2926,7 @@
       "multi": 2,
       "flags": [ "SHEATH_SWORD" ]
     },
-    "flags": [ "BELTED", "COMPACT", "OVERSIZE", "WATER_FRIENDLY" ]
+    "flags": [ "BELTED", "COMPACT", "OVERSIZE", "WATER_FRIENDLY", "ALLOWS_WINGS" ]
   },
   {
     "id": "suitSuperstarZhigh",
@@ -2832,7 +2935,7 @@
     "name": { "str": "suit" },
     "type": "ARMOR",
     "color": "yellow",
-    "flags": [ "VARSIZE", "SUPER_FANCY", "POCKETS" ]
+    "flags": [ "VARSIZE", "SUPER_FANCY", "POCKETS", "ALLOWS_WINGS" ]
   },
   {
     "id": "fancy_sunglassesStars",
@@ -2841,8 +2944,22 @@
     "name": { "str": "pair of super stylish sunglasses", "str_pl": "pairs of super stylish sunglasses" },
     "type": "ARMOR",
     "description": "A pair of super stylish sunglasses.  Look good while keeping the glare out of your eyes.  You could throw this as an irregular attack, just like that crotch-punching American actor who fought a four armed giant.",
-	"price": "500 USD",
-	"price_postapoc": "500 USD",
+    "price": "500 USD",
+    "price_postapoc": "500 USD",
+    "flags": [ "POWERARMOR_COMPATIBLE", "FIX_NEARSIGHT", "FIX_FARSIGHT", "SUPER_FANCY", "WATER_FRIENDLY", "SUN_GLASSES" ],
+    "material": [ "superalloy", "kevlar", "plastic" ],
+    "use_action": { "type": "firestarter", "moves": 1000, "moves_slow": 25000, "need_sunlight": true },
+    "thrown_damage": [ { "damage_type": "electric", "amount": 80 } ]
+  },
+  {
+    "id": "trickal_sunglasses",
+    "repairs_like": "mold_plastic",
+    "copy-from": "fancy_sunglasses",
+    "name": { "str": "pair of super stylish sunglasses", "str_pl": "pairs of super stylish sunglasses" },
+    "type": "ARMOR",
+    "description": "A pair of super stylish sunglasses.  Look good while keeping the glare out of your eyes.  You could throw this as an irregular attack, just like that crotch-punching American actor who fought a four armed giant.",
+    "price": "500 USD",
+    "price_postapoc": "500 USD",
     "flags": [ "POWERARMOR_COMPATIBLE", "FIX_NEARSIGHT", "FIX_FARSIGHT", "SUPER_FANCY", "WATER_FRIENDLY", "SUN_GLASSES" ],
     "material": [ "superalloy", "kevlar", "plastic" ],
     "use_action": { "type": "firestarter", "moves": 1000, "moves_slow": 25000, "need_sunlight": true },
@@ -2878,8 +2995,8 @@
     "name": { "str": "pair of orange tinted sunglasses", "str_pl": "pairs of orange tinted sunglasses" },
     "type": "ARMOR",
     "description": "A pair of orange tinted stylish sunglasses.  Look good while keeping the glare out of your eyes.  You could throw this as an irregular attack, just like that crotch-punching American actor who fought a four armed giant.",
-	"price": "500 USD",
-	"price_postapoc": "500 USD",
+    "price": "500 USD",
+    "price_postapoc": "500 USD",
     "flags": [ "POWERARMOR_COMPATIBLE", "FIX_NEARSIGHT", "FIX_FARSIGHT", "SUPER_FANCY", "WATER_FRIENDLY", "SUN_GLASSES" ],
     "material": [ "superalloy", "kevlar", "plastic" ],
     "use_action": { "type": "firestarter", "moves": 1000, "moves_slow": 25000, "need_sunlight": true },
@@ -2891,7 +3008,7 @@
     "copy-from": "suit",
     "name": { "str": "suit" },
     "type": "ARMOR",
-    "flags": [ "VARSIZE", "POCKETS" ]
+    "flags": [ "VARSIZE", "POCKETS", "ALLOWS_WINGS" ]
   },
   {
     "id": "suitRedMafiaZhigh",
@@ -2899,7 +3016,7 @@
     "copy-from": "suit",
     "name": { "str": "suit" },
     "type": "ARMOR",
-    "flags": [ "VARSIZE", "POCKETS" ]
+    "flags": [ "VARSIZE", "POCKETS", "ALLOWS_WINGS" ]
   },
   {
     "id": "suitDukeZhigh",
@@ -2907,7 +3024,7 @@
     "copy-from": "suit",
     "name": { "str": "suit" },
     "type": "ARMOR",
-    "flags": [ "VARSIZE", "POCKETS" ]
+    "flags": [ "VARSIZE", "POCKETS", "ALLOWS_WINGS" ]
   },
   {
     "id": "suitOfficerZhigh",
@@ -2916,7 +3033,7 @@
     "name": { "str": "officer uniform" },
     "description": "A sleek navy/green black suit for general officers in the army or the navy.  A symbol of a bygone world.",
     "type": "ARMOR",
-    "flags": [ "VARSIZE", "POCKETS", "FANCY" ]
+    "flags": [ "VARSIZE", "POCKETS", "FANCY", "ALLOWS_WINGS" ]
   },
   {
     "id": "helmet_motorBikerZhigh",
@@ -2974,7 +3091,7 @@
     "warmth": 20,
     "storage": "1 L",
     "material_thickness": 2,
-    "flags": [ "VARSIZE", "POWERARMOR_COMPATIBLE", "WATER_FRIENDLY" ]
+    "flags": [ "VARSIZE", "POWERARMOR_COMPATIBLE", "WATER_FRIENDLY", "ALLOWS_WINGS" ]
   },
   {
     "id": "tophatZhigh",
@@ -2997,34 +3114,30 @@
     "material_thickness": 2,
     "environmental_protection": 1,
     "use_action": [
-		{
-			"type": "heal",
-			"move_cost": 700,
-			"bleed": 0.8,
-			"bite": 0.8,
-			"infect": 0.8,
-			"limb_power": 8,
-			"head_power": 8,
-			"torso_power": 8,
-			"effects": [ { "id": "healing_medkit", "duration": 100 }, { "id": "pkill1", "duration": 50 } ]
-		},
-		{
-			"type": "cast_spell",
-			"spell_id": "entertainerTeleportZhigh",
-			"no_fail": true,
-			"level": 0,
-			"need_wielding": false
-		}
-	],
+      {
+        "type": "heal",
+        "move_cost": 700,
+        "bleed": 0.8,
+        "bite": 0.8,
+        "infect": 0.8,
+        "limb_power": 8,
+        "head_power": 8,
+        "torso_power": 8,
+        "effects": [ { "id": "healing_medkit", "duration": 100 }, { "id": "pkill1", "duration": 50 } ]
+      },
+      {
+        "type": "cast_spell",
+        "spell_id": "entertainerTeleportZhigh",
+        "no_fail": true,
+        "level": 0,
+        "need_wielding": false
+      }
+    ],
     "charges_per_use": 4,
     "max_charges": 20,
     "initial_charges": 20,
     "flags": [ "VARSIZE", "SUPER_FANCY", "SUN_GLASSES" ],
-    "relic_data":
-	{
-		"charges_per_activation": 1,
-		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "2 m", "rate": 1 } ]
-    }
+    "relic_data": { "charges_per_activation": 1, "recharge_scheme": [ { "type": "time", "req": "none", "interval": "2 m", "rate": 1 } ] }
   },
   {
     "id": "coolerCase",
@@ -3048,19 +3161,13 @@
     "storage": "5 L",
     "material_thickness": 2,
     "techniques": [ "WBLOCK_3" ],
-    "use_action": [
-		{ "type": "cast_spell", "spell_id": "vacancerHealZhigh", "no_fail": true, "level": 0 }
-	],
-	"emits": [ "emit_cold_air2_stream" ],
+    "use_action": [ { "type": "cast_spell", "spell_id": "vacancerHealZhigh", "no_fail": true, "level": 0 } ],
+    "emits": [ "emit_cold_air2_stream" ],
     "charges_per_use": 1,
     "max_charges": 8,
     "initial_charges": 1,
     "flags": [ "FANCY", "OVERSIZE", "BELTED", "RESTRICT_HANDS", "WATER_FRIENDLY", "POWERARMOR_COMPATIBLE" ],
-    "relic_data":
-	{
-		"charges_per_activation": 1,
-		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "15 s", "rate": 1 } ]
-	}
+    "relic_data": { "charges_per_activation": 1, "recharge_scheme": [ { "type": "time", "req": "none", "interval": "15 s", "rate": 1 } ] }
   },
   {
     "id": "mystery_cloakZhigh",
@@ -3069,7 +3176,12 @@
     "name": { "str": "mystery cloak" },
     "description": "Long, flowing robes.  Simple and comfortable to wear.  The uniform of the school mystery club!  The hood is on, which draws a mysterious shade on your face.",
     "covers": [ "torso", "head", "arms", "legs" ],
-    "use_action": { "menu_text": "Take off hood", "type": "transform", "target": "mystery_cloakHoodOffZhigh", "msg": "You take the hood off from your cloak." },
+    "use_action": {
+      "menu_text": "Take off hood",
+      "type": "transform",
+      "target": "mystery_cloakHoodOffZhigh",
+      "msg": "You take the hood off from your cloak."
+    },
     "coverage": 75,
     "encumbrance": 8
   },
@@ -3080,7 +3192,12 @@
     "name": { "str": "mystery cloak" },
     "description": "Long, flowing robes.  Simple and comfortable to wear.  The uniform of the school mystery club!  The hood is off, which shows your face.",
     "covers": [ "torso", "arms", "legs" ],
-    "use_action": { "menu_text": "Put on hood", "type": "transform", "target": "mystery_cloakZhigh", "msg": "You put your hood over your head." },
+    "use_action": {
+      "menu_text": "Put on hood",
+      "type": "transform",
+      "target": "mystery_cloakZhigh",
+      "msg": "You put your hood over your head."
+    },
     "coverage": 75,
     "encumbrance": 8
   },
@@ -3096,7 +3213,7 @@
     "price_postapoc": "80 USD",
     "material": [ "leather", "iron", "cotton" ],
     "covers": [ "torso", "arms", "legs" ],
-    "flags": [ "VARSIZE", "POCKETS", "OUTER", "FANCY", "STURDY" ],
+    "flags": [ "VARSIZE", "POCKETS", "OUTER", "FANCY", "STURDY", "ALLOWS_WINGS" ],
     "storage": "1 L",
     "encumbrance": 18,
     "coverage": 80,
@@ -3152,7 +3269,7 @@
     "price_postapoc": "80 USD",
     "material": [ "kevlar", "leather", "steel", "cotton" ],
     "covers": [ "torso", "arms", "legs" ],
-    "flags": [ "VARSIZE", "POCKETS", "OUTER", "FANCY", "STURDY" ],
+    "flags": [ "VARSIZE", "POCKETS", "OUTER", "FANCY", "STURDY", "ALLOWS_WINGS" ],
     "storage": "1 L",
     "encumbrance": 18,
     "coverage": 80,
@@ -3202,7 +3319,19 @@
     "turns_per_charge": 440,
     "revert_to": "paperLantern",
     "use_action": { "target": "paperLantern", "msg": "The lantern is extinguished.", "menu_text": "Turn off", "type": "transform" },
-    "flags": [ "OVERSIZE", "BELTED", "RESTRICT_HANDS", "FANCY", "FRAGILE", "WATER_FRIENDLY", "POWERARMOR_COMPATIBLE", "LIGHT_20", "TRADER_AVOID", "FIRE", "ALLOWS_REMOTE_USE" ]
+    "flags": [
+      "OVERSIZE",
+      "BELTED",
+      "RESTRICT_HANDS",
+      "FANCY",
+      "FRAGILE",
+      "WATER_FRIENDLY",
+      "POWERARMOR_COMPATIBLE",
+      "LIGHT_20",
+      "TRADER_AVOID",
+      "FIRE",
+      "ALLOWS_REMOTE_USE"
+    ]
   },
   {
     "id": "trenchcoat_jojoZhigh",
@@ -3213,7 +3342,7 @@
     "material": [ "steel", "cotton", "gold" ],
     "covers": [ "torso", "arms", "legs" ],
     "encumbrance": 10,
-    "flags": [ "VARSIZE", "POCKETS", "OUTER", "FANCY" ]
+    "flags": [ "VARSIZE", "POCKETS", "OUTER", "FANCY", "ALLOWS_WINGS" ]
   },
   {
     "id": "hat_jojoZhigh",
@@ -3374,7 +3503,12 @@
     "weight": "160 g",
     "volume": "1250 ml",
     "to_hit": -3,
-    "use_action": { "type": "transform", "msg": "You wrap your scarf tighter.", "target": "scarf_longRedZhigh", "menu_text": "Wrap tighter" },
+    "use_action": {
+      "type": "transform",
+      "msg": "You wrap your scarf tighter.",
+      "target": "scarf_longRedZhigh",
+      "menu_text": "Wrap tighter"
+    },
     "revert_to": "scarf_longRedZhigh",
     "covers": [ "mouth" ],
     "flags": [ "OVERSIZE", "POCKETS", "OUTER", "ALLOWS_NATURAL_ATTACKS" ],
@@ -3391,78 +3525,78 @@
     "name": { "str": "briefcase" },
     "type": "ARMOR",
     "color": "dark_gray",
-	"storage": "2 L",
+    "storage": "2 L",
     "use_action": [
-		{
-			"type": "bandolier",
-			"capacity": 25,
-			"ammo": [
-				"arrow",
-				"blunderbuss",
-				"bolt",
-				"flintlock",
-				"flintlockshot", 
-				"nail",
-				"paintball",
-				"pebble",
-				"rock",
-				"signal_flare",
-				"shot",
-				"shotcanister",
-				"shotpaper",
-				"10mm",
-				"36paper",
-				"44paper",
-				"20x66mm",
-				"22",
-				"223",
-				"270win",
-				"300blk",
-				"32",
-				"357mag",
-				"357sig",
-				"38",
-				"380",
-				"38super",
-				"40",
-				"40x46mm",
-				"40x53mm",
-				"410shot",
-				"5x50",
-				"545x39",
-				"3006",
-				"308",
-				"300",
-				"44",
-				"45",
-				"45colt",
-				"454",
-				"4570",
-				"46",
-				"460",
-				"50",
-				"500",
-				"57",
-				"700nx",
-				"762",
-				"762R",
-				"762x25",
-				"8x40mm",
-				"9mm",
-				"9x18"
-			],
-			"draw_cost": 20
-		},
-		{
-			"type": "holster",
-			"max_volume": "15 L",
-			"min_volume": "150 ml",
-			"draw_cost": 200,
-			"multi": 4,
-			"skills": [ "archery", "pistol", "smg", "shotgun", "rifle", "launcher" ],
-			"flags": [ "MAG_COMPACT", "SPEEDLOADER", "GRENADE", "SHEATH_KNIFE", "SHEATH_SPEAR", "SHEATH_SWORD", "BELT_CLIP", "SHEATH_AXE" ]
-		}
-	]
+      {
+        "type": "bandolier",
+        "capacity": 25,
+        "ammo": [
+          "arrow",
+          "blunderbuss",
+          "bolt",
+          "flintlock",
+          "flintlockshot",
+          "nail",
+          "paintball",
+          "pebble",
+          "rock",
+          "signal_flare",
+          "shot",
+          "shotcanister",
+          "shotpaper",
+          "10mm",
+          "36paper",
+          "44paper",
+          "20x66mm",
+          "22",
+          "223",
+          "270win",
+          "300blk",
+          "32",
+          "357mag",
+          "357sig",
+          "38",
+          "380",
+          "38super",
+          "40",
+          "40x46mm",
+          "40x53mm",
+          "410shot",
+          "5x50",
+          "545x39",
+          "3006",
+          "308",
+          "300",
+          "44",
+          "45",
+          "45colt",
+          "454",
+          "4570",
+          "46",
+          "460",
+          "50",
+          "500",
+          "57",
+          "700nx",
+          "762",
+          "762R",
+          "762x25",
+          "8x40mm",
+          "9mm",
+          "9x18"
+        ],
+        "draw_cost": 20
+      },
+      {
+        "type": "holster",
+        "max_volume": "15 L",
+        "min_volume": "150 ml",
+        "draw_cost": 200,
+        "multi": 4,
+        "skills": [ "archery", "pistol", "smg", "shotgun", "rifle", "launcher" ],
+        "flags": [ "MAG_COMPACT", "SPEEDLOADER", "GRENADE", "SHEATH_KNIFE", "SHEATH_SPEAR", "SHEATH_SWORD", "BELT_CLIP", "SHEATH_AXE" ]
+      }
+    ]
   },
   {
     "id": "costumePowerArmorZhigh",
@@ -3483,7 +3617,7 @@
     "encumbrance": 20,
     "warmth": 10,
     "material_thickness": 12,
-    "flags": [ "BELTED", "OVERSIZE" ]
+    "flags": [ "BELTED", "OVERSIZE", "ALLOWS_WINGS" ]
   },
   {
     "id": "costumePowerArmorZhigh2",
@@ -3504,7 +3638,7 @@
     "encumbrance": 20,
     "warmth": 10,
     "material_thickness": 12,
-    "flags": [ "BELTED", "OVERSIZE" ]
+    "flags": [ "BELTED", "OVERSIZE", "ALLOWS_WINGS" ]
   },
   {
     "id": "costumePowerArmorHelmZhigh",
@@ -3572,7 +3706,7 @@
     "warmth": 15,
     "material_thickness": 6,
     "environmental_protection": 3,
-    "flags": [ "OVERSIZE", "WATERPROOF", "POCKETS", "HOOD", "RAINPROOF", "STURDY" ]
+    "flags": [ "OVERSIZE", "WATERPROOF", "POCKETS", "HOOD", "RAINPROOF", "STURDY", "ALLOWS_WINGS" ]
   },
   {
     "id": "zhighXLsasurvivor_suit",
@@ -3620,7 +3754,7 @@
     "material_thickness": 4,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
     "environmental_protection": 3,
-    "flags": [ "OVERSIZE", "WATERPROOF", "POCKETS", "HOOD", "RAINPROOF", "STURDY" ]
+    "flags": [ "OVERSIZE", "WATERPROOF", "POCKETS", "HOOD", "RAINPROOF", "STURDY", "ALLOWS_WINGS" ]
   },
   {
     "id": "zhighXLfsurvivor_suit",
@@ -3645,7 +3779,7 @@
     "material_thickness": 4,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
     "environmental_protection": 10,
-    "flags": [ "OVERSIZE", "WATERPROOF", "POCKETS", "RAINPROOF", "STURDY" ]
+    "flags": [ "OVERSIZE", "WATERPROOF", "POCKETS", "RAINPROOF", "STURDY", "ALLOWS_WINGS" ]
   },
   {
     "id": "zhighXLgambeson",
@@ -3667,7 +3801,7 @@
     "warmth": 30,
     "material_thickness": 5,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
-    "flags": [ "OVERSIZE", "STURDY" ]
+    "flags": [ "OVERSIZE", "STURDY", "ALLOWS_WINGS" ]
   },
   {
     "id": "zhighXLarmor_scavenger",
@@ -3691,7 +3825,7 @@
     "material_thickness": 5,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
     "environmental_protection": 2,
-    "flags": [ "OVERSIZE", "POCKETS", "STURDY", "WATERPROOF" ]
+    "flags": [ "OVERSIZE", "POCKETS", "STURDY", "WATERPROOF", "ALLOWS_WINGS" ]
   },
   {
     "id": "zhighXLarmor_scrapsuit",
@@ -3714,7 +3848,7 @@
     "encumbrance": 18,
     "warmth": 20,
     "material_thickness": 2,
-    "flags": [ "OVERSIZE", "OUTER" ]
+    "flags": [ "OVERSIZE", "OUTER", "ALLOWS_WINGS" ]
   },
   {
     "id": "zhighXLarmor_plarmor",
@@ -3738,7 +3872,7 @@
     "warmth": 25,
     "material_thickness": 4,
     "environmental_protection": 1,
-    "flags": [ "OVERSIZE", "POCKETS", "STURDY" ]
+    "flags": [ "OVERSIZE", "POCKETS", "STURDY", "ALLOWS_WINGS" ]
   },
   {
     "id": "zhighXLarmor_plate",
@@ -3760,7 +3894,7 @@
     "encumbrance": 45,
     "warmth": 20,
     "material_thickness": 5,
-    "flags": [ "OVERSIZE", "OUTER", "FANCY" ]
+    "flags": [ "OVERSIZE", "OUTER", "FANCY", "ALLOWS_WINGS" ]
   },
   {
     "id": "zhighXLarmor_plate_superalloy",
@@ -3773,7 +3907,7 @@
     "color": "light_cyan",
     "encumbrance": 40,
     "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 },
-    "flags": [ "OVERSIZE", "OUTER", "FANCY" ]
+    "flags": [ "OVERSIZE", "OUTER", "FANCY", "ALLOWS_WINGS" ]
   },
   {
     "id": "zhighXLarmor_lightplate",
@@ -3795,7 +3929,7 @@
     "encumbrance": 20,
     "warmth": 20,
     "material_thickness": 4,
-    "flags": [ "OVERSIZE", "OUTER", "STURDY" ]
+    "flags": [ "OVERSIZE", "OUTER", "STURDY", "ALLOWS_WINGS" ]
   },
   {
     "id": "zhighXLarmor_lightplate_superalloy",
@@ -3808,7 +3942,7 @@
     "color": "light_cyan",
     "encumbrance": 15,
     "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 },
-    "flags": [ "OVERSIZE", "OUTER", "FANCY" ]
+    "flags": [ "OVERSIZE", "OUTER", "FANCY", "ALLOWS_WINGS" ]
   },
   {
     "id": "zhighXLarmor_nomad",
@@ -3832,7 +3966,7 @@
     "material_thickness": 5,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
     "environmental_protection": 1,
-    "flags": [ "OVERSIZE", "POCKETS" ]
+    "flags": [ "OVERSIZE", "POCKETS", "ALLOWS_WINGS" ]
   },
   {
     "id": "zhighXLarmor_nomad_light",
@@ -3856,7 +3990,7 @@
     "material_thickness": 4,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
     "environmental_protection": 1,
-    "flags": [ "OVERSIZE", "POCKETS" ]
+    "flags": [ "OVERSIZE", "POCKETS", "ALLOWS_WINGS" ]
   },
   {
     "id": "zhighXLh20survivor_suit",
@@ -3880,7 +4014,7 @@
     "warmth": 15,
     "material_thickness": 2,
     "environmental_protection": 10,
-    "flags": [ "OVERSIZE", "WATER_FRIENDLY", "POCKETS", "HOOD", "RAINPROOF", "STURDY" ]
+    "flags": [ "OVERSIZE", "WATER_FRIENDLY", "POCKETS", "HOOD", "RAINPROOF", "STURDY", "ALLOWS_WINGS" ]
   },
   {
     "id": "swimKickboardZhigh",
@@ -3934,7 +4068,7 @@
     "warmth": 20,
     "material_thickness": 2,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
-    "flags": [ "VARSIZE", "POCKETS", "OUTER" ]
+    "flags": [ "VARSIZE", "POCKETS", "OUTER", "ALLOWS_WINGS" ]
   },
   {
     "id": "pants_armyZhigh",
@@ -3980,7 +4114,7 @@
     "warmth": 20,
     "material_thickness": 2,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
-    "flags": [ "VARSIZE", "POCKETS", "OUTER" ]
+    "flags": [ "VARSIZE", "POCKETS", "OUTER", "ALLOWS_WINGS" ]
   },
   {
     "id": "pants_armyZhigh2",
@@ -4036,7 +4170,7 @@
       "draw_cost": 80,
       "flags": [ "MAG_COMPACT" ]
     },
-    "flags": [ "FLOTATION", "STURDY", "OUTER" ]
+    "flags": [ "FLOTATION", "STURDY", "OUTER", "ALLOWS_WINGS" ]
   },
   {
     "id": "bunny_tailZhigh",
@@ -4240,7 +4374,7 @@
       "multi": 2,
       "flags": [ "SHEATH_SWORD" ]
     },
-    "flags": [ "VARSIZE", "POCKETS", "STURDY", "FANCY" ]
+    "flags": [ "VARSIZE", "POCKETS", "STURDY", "FANCY", "ALLOWS_WINGS" ]
   },
   {
     "id": "helmet_MarineZhigh",
@@ -4286,18 +4420,19 @@
     "encumbrance": 6,
     "warmth": 10,
     "material_thickness": 3,
-    "use_action": [ {
-      "type": "holster",
-      "holster_prompt": "Stash ammo",
-      "holster_msg": "You stash your %s.",
-      "multi": 4,
-      "min_volume": "250 ml",
-      "max_volume": "750 ml",
-      "draw_cost": 80,
-      "flags": [ "MAG_COMPACT", "SPEEDLOADER" ]
+    "use_action": [
+      {
+        "type": "holster",
+        "holster_prompt": "Stash ammo",
+        "holster_msg": "You stash your %s.",
+        "multi": 4,
+        "min_volume": "250 ml",
+        "max_volume": "750 ml",
+        "draw_cost": 80,
+        "flags": [ "MAG_COMPACT", "SPEEDLOADER" ]
       }
-	],
-    "flags": [ "STURDY", "OUTER" ]
+    ],
+    "flags": [ "STURDY", "OUTER", "ALLOWS_WINGS" ]
   },
   {
     "id": "HalfLifeHevZhigh_suit",
@@ -4328,7 +4463,7 @@
       "flags": [ "BELT_CLIP" ]
     },
     "environmental_protection": 4,
-    "flags": [ "VARSIZE", "STURDY" ]
+    "flags": [ "VARSIZE", "STURDY", "ALLOWS_WINGS" ]
   },
   {
     "id": "HalfLifeHevZhigh_mask",
@@ -4384,7 +4519,7 @@
       "flags": [ "BELT_CLIP" ]
     },
     "environmental_protection": 4,
-    "flags": [ "VARSIZE", "STURDY" ]
+    "flags": [ "VARSIZE", "STURDY", "ALLOWS_WINGS" ]
   },
   {
     "id": "haloMasChiZhigh_helm",
@@ -4428,7 +4563,7 @@
       "flags": [ "BELT_CLIP" ]
     },
     "environmental_protection": 4,
-    "flags": [ "VARSIZE", "STURDY", "SUN_GLASSES" ]
+    "flags": [ "VARSIZE", "STURDY", "SUN_GLASSES", "ALLOWS_WINGS" ]
   },
   {
     "id": "jammerPackZhigh",
@@ -4454,10 +4589,10 @@
     "storage": "10 L",
     "ammo": "battery",
     "use_action": {
-	  "menu_text": "Turn off",
-	  "type": "transform",
-	  "msg": "You turn the jammer pack on.",
-	  "target": "jammerPackZhigh_on",
+      "menu_text": "Turn off",
+      "type": "transform",
+      "msg": "You turn the jammer pack on.",
+      "target": "jammerPackZhigh_on",
       "transform_charges": 1,
       "active": true,
       "need_charges": 1,
@@ -4474,19 +4609,19 @@
           "light_minus_battery_cell",
           "light_atomic_battery_cell",
           "light_minus_atomic_battery_cell",
-		  "medium_battery_cell",
-		  "medium_plus_battery_cell",
-		  "medium_atomic_battery_cell",
-		  "medium_disposable_cell",
-		  "heavy_battery_cell",
-		  "heavy_plus_battery_cell",
-		  "heavy_atomic_battery_cell",
-		  "heavy_disposable_cell"
+          "medium_battery_cell",
+          "medium_plus_battery_cell",
+          "medium_atomic_battery_cell",
+          "medium_disposable_cell",
+          "heavy_battery_cell",
+          "heavy_plus_battery_cell",
+          "heavy_atomic_battery_cell",
+          "heavy_disposable_cell"
         ]
       ]
     ],
     "valid_mods": [ "resized_large" ],
-    "flags": [ "BELTED", "ONLY_ONE" ]
+    "flags": [ "BELTED", "ONLY_ONE", "ALLOWS_WINGS" ]
   },
   {
     "id": "jammerPackZhigh_on",
@@ -4499,7 +4634,7 @@
     "use_action": { "menu_text": "Turn off", "type": "transform", "msg": "You turn the jammer pack off.", "target": "jammerPackZhigh" },
     "power_draw": 10000,
     "revert_to": "jammerPackZhigh",
-    "flags": [ "BELTED", "ONLY_ONE", "ELECTRIC_IMMUNE" ]
+    "flags": [ "BELTED", "ONLY_ONE", "ELECTRIC_IMMUNE", "ALLOWS_WINGS" ]
   },
   {
     "id": "shock_glovesZhigh",
@@ -4599,33 +4734,27 @@
     "proportional": { "weight": 2, "price": 0.6, "price_postapoc": 0.6 }
   },
   {
-	"id": "nguniShieldZhigh",
+    "id": "nguniShieldZhigh",
     "looks_like": "shield_leather_large",
-	"type": "ARMOR",
-	"name": { "str": "nguni shield" },
-	"description": "A large leather shield from Africa.  Light, less encumbering and covers a lot of areas, but not that sturdy compard to the wooden ones.",
-	"weight": "4200 g",
-	"volume": "5 L",
-	"price": "80 USD",
-	"price_postapoc": "10 USD",
-	"to_hit": -1,
-	"bashing": 8,
-	"material": [ "bone", "leather" ],
-	"symbol": "[",
-	"color": "blue",
-	"covers": [	"arm_either", "hand_either", "leg_either" ],
-	"coverage": 95,
-	"encumbrance": 16,
-	"material_thickness": 4,
-	"techniques": [	"WBLOCK_3" ],
-	"flags": [
-	  "OVERSIZE",
-	  "BELTED",
-	  "RESTRICT_HANDS",
-	  "BLOCK_WHILE_WORN",
-	  "POWERARMOR_COMPATIBLE"
-	],
-	"copy-from": "shield_leather"
+    "type": "ARMOR",
+    "name": { "str": "nguni shield" },
+    "description": "A large leather shield from Africa.  Light, less encumbering and covers a lot of areas, but not that sturdy compard to the wooden ones.",
+    "weight": "4200 g",
+    "volume": "5 L",
+    "price": "80 USD",
+    "price_postapoc": "10 USD",
+    "to_hit": -1,
+    "bashing": 8,
+    "material": [ "bone", "leather" ],
+    "symbol": "[",
+    "color": "blue",
+    "covers": [ "arm_either", "hand_either", "leg_either" ],
+    "coverage": 95,
+    "encumbrance": 16,
+    "material_thickness": 4,
+    "techniques": [ "WBLOCK_3" ],
+    "flags": [ "OVERSIZE", "BELTED", "RESTRICT_HANDS", "BLOCK_WHILE_WORN", "POWERARMOR_COMPATIBLE" ],
+    "copy-from": "shield_leather"
   },
   {
     "id": "nazarZhigh",
@@ -4684,7 +4813,7 @@
     "storage": "3 L",
     "warmth": 20,
     "material_thickness": 2,
-    "flags": [ "VARSIZE" ]
+    "flags": [ "VARSIZE", "ALLOWS_WINGS" ]
   },
   {
     "id": "trenchcoat_merchantZhigh",
@@ -4713,12 +4842,7 @@
           "condition": "ALWAYS",
           "values": [ { "value": "SPEED", "add": 10 } ],
           "mutations": [ "ENCH_NINJAZHIGH_DODGE_EFFECT" ],
-          "hit_me_effect": [
-            {
-              "id": "spell_ninjaVanishZhigh",
-              "once_in": 3
-            }
-          ]
+          "hit_me_effect": [ { "id": "spell_ninjaVanishZhigh", "once_in": 3 } ]
         }
       ]
     }
@@ -4739,12 +4863,7 @@
           "condition": "ALWAYS",
           "values": [ { "value": "SPEED", "add": 10 } ],
           "mutations": [ "ENCH_NINJAZHIGH_DODGE_EFFECT" ],
-          "hit_me_effect": [
-            {
-              "id": "spell_ninjaVanishZhigh",
-              "once_in": 3
-            }
-          ]
+          "hit_me_effect": [ { "id": "spell_ninjaVanishZhigh", "once_in": 3 } ]
         }
       ]
     }
@@ -4870,7 +4989,7 @@
       "flags": [ "GRENADE", "MAG_COMPACT", "MAG_BULKY", "MAG_BELT", "SPEEDLOADER" ]
     },
     "valid_mods": [ "resized_large" ],
-    "flags": [ "WATER_FRIENDLY", "WAIST", "COMPACT" ]
+    "flags": [ "WATER_FRIENDLY", "WAIST", "COMPACT", "ALLOWS_WINGS" ]
   },
   {
     "id": "holsterAkimZhigh",
@@ -5049,16 +5168,8 @@
     "warmth": 20,
     "material_thickness": 2,
     "environmental_protection": 3,
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ALWAYS",
-          "mutations": [ "ENCH_ZHIGH_CLOAK_EFFECT" ]
-        }
-      ]
-    },
-    "flags": [ "OVERSIZE", "HOOD", "OUTER", "FANCY", "ONLY_ONE" ]
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "ENCH_ZHIGH_CLOAK_EFFECT" ] } ] },
+    "flags": [ "OVERSIZE", "HOOD", "OUTER", "FANCY", "ONLY_ONE", "ALLOWS_WINGS" ]
   },
   {
     "id": "cape2Zhigh",
@@ -5080,16 +5191,8 @@
     "warmth": 20,
     "material_thickness": 2,
     "environmental_protection": 3,
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ALWAYS",
-          "mutations": [ "ENCH_ZHIGH_CLOAK2_EFFECT" ]
-        }
-      ]
-    },
-    "flags": [ "OVERSIZE", "HOOD", "OUTER", "FANCY", "ONLY_ONE" ]
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "ENCH_ZHIGH_CLOAK2_EFFECT" ] } ] },
+    "flags": [ "OVERSIZE", "HOOD", "OUTER", "FANCY", "ONLY_ONE", "ALLOWS_WINGS" ]
   },
   {
     "id": "haloZhigh",
@@ -5347,14 +5450,14 @@
   {
     "id": "hachiganeZhigh",
     "type": "ARMOR",
-	"name": { "str": "hachigane" },
+    "name": { "str": "hachigane" },
     "description": "One of traditional japanese armors, this is a strip of cloth with a metal plate to protect one's forhead.",
     "weight": "184 g",
     "volume": "250 ml",
     "price": "75 USD",
     "price_postapoc": "5 USD",
     "to_hit": -2,
-	"material": [ "steel", "cotton" ],
+    "material": [ "steel", "cotton" ],
     "symbol": "[",
     "looks_like": "spot_strap_zhigh",
     "color": "dark_gray",
@@ -5401,7 +5504,7 @@
     "id": "agentEarpiece",
     "copy-from": "badge_abstract",
     "type": "TOOL_ARMOR",
-	"category": "clothing",
+    "category": "clothing",
     "name": { "str": "radio earpiece" },
     "material": [ "plastic", "aluminum" ],
     "weight": "10 g",
@@ -5410,16 +5513,7 @@
     "ammo": "battery",
     "charges_per_use": 1,
     "flags": [ "TWO_WAY_RADIO" ],
-    "magazines": [
-      [
-        "battery",
-        [
-          "light_minus_disposable_cell",
-          "light_minus_battery_cell",
-          "light_minus_atomic_battery_cell"
-        ]
-      ]
-    ],
+    "magazines": [ [ "battery", [ "light_minus_disposable_cell", "light_minus_battery_cell", "light_minus_atomic_battery_cell" ] ] ],
     "magazine_well": "250 ml"
   },
   {
@@ -5841,7 +5935,7 @@
     "warmth": 25,
     "material_thickness": 3,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
-    "flags": [ "VARSIZE", "POCKETS", "STURDY", "FANCY" ]
+    "flags": [ "VARSIZE", "POCKETS", "STURDY", "FANCY", "ALLOWS_WINGS" ]
   },
   {
     "id": "zhighRiotArmor_lightplate",
@@ -5865,7 +5959,7 @@
     "warmth": 25,
     "material_thickness": 3,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
-    "flags": [ "VARSIZE", "POCKETS", "STURDY", "FANCY" ]
+    "flags": [ "VARSIZE", "POCKETS", "STURDY", "FANCY", "ALLOWS_WINGS" ]
   },
   {
     "id": "zhighHazardArmor_lightplate",
@@ -5889,7 +5983,7 @@
     "warmth": 25,
     "material_thickness": 3,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
-    "flags": [ "VARSIZE", "POCKETS", "STURDY", "FANCY" ]
+    "flags": [ "VARSIZE", "POCKETS", "STURDY", "FANCY", "ALLOWS_WINGS" ]
   },
   {
     "id": "helmet_GignZhigh",
@@ -6032,14 +6126,14 @@
     "symbol": "[",
     "looks_like": "camisole",
     "color": "white",
-    "armor_portion_data": [ 
-	  { "covers": [ "torso" ], "coverage": 90 },
-	  { "covers": [ "arms" ], "coverage": 30 },
-	  { "covers": [ "legs" ], "coverage": 50 }
-	],
+    "armor_portion_data": [
+      { "covers": [ "torso" ], "coverage": 90 },
+      { "covers": [ "arms" ], "coverage": 30 },
+      { "covers": [ "legs" ], "coverage": 50 }
+    ],
     "warmth": 5,
     "material_thickness": 1,
-    "flags": [ "VARSIZE" ]
+    "flags": [ "VARSIZE", "ALLOWS_WINGS" ]
   },
   {
     "id": "beekeepingMedievalZhigh",
@@ -6099,14 +6193,8 @@
     "encumbrance": 1,
     "max_encumbrance": 6,
     "material_thickness": 1,
-    "use_action": {
-      "type": "holster",
-      "max_volume": "1000 ml",
-      "min_volume": "100 ml",
-      "multi": 3,
-      "skills": [ "akimbo_Zhigh" ]
-    },
-    "flags": [ "BELTED", "COMPACT" ]
+    "use_action": { "type": "holster", "max_volume": "1000 ml", "min_volume": "100 ml", "multi": 3, "skills": [ "akimbo_Zhigh" ] },
+    "flags": [ "BELTED", "COMPACT", "ALLOWS_WINGS" ]
   },
   {
     "id": "jetPackZhigh",
@@ -6128,7 +6216,16 @@
     "max_charges": 60,
     "ammo": "flammable",
     "covers": [ "torso" ],
-    "flags": [ "POWERARMOR_COMPATIBLE", "WATER_FRIENDLY", "BELTED", "ONLY_ONE", "STURDY", "NO_UNLOAD", "EFFECT_FEATHER_FALL" ],
+    "flags": [
+      "POWERARMOR_COMPATIBLE",
+      "WATER_FRIENDLY",
+      "BELTED",
+      "ONLY_ONE",
+      "STURDY",
+      "NO_UNLOAD",
+      "EFFECT_FEATHER_FALL",
+      "ALLOWS_WINGS"
+    ],
     "encumbrance": 10,
     "coverage": 25,
     "material_thickness": 4,
@@ -6164,7 +6261,7 @@
     "turns_per_charge": 6,
     "ammo": "flammable",
     "covers": [ "torso" ],
-    "flags": [ "WATER_FRIENDLY", "BELTED", "ONLY_ONE", "STURDY", "NO_UNLOAD", "ALWAYS_ALLOWS_FLIGHT" ],
+    "flags": [ "WATER_FRIENDLY", "BELTED", "ONLY_ONE", "STURDY", "NO_UNLOAD", "ALWAYS_ALLOWS_FLIGHT", "ALLOWS_WINGS" ],
     "encumbrance": 10,
     "coverage": 25,
     "material_thickness": 4,
@@ -6238,7 +6335,12 @@
     "warmth": 15,
     "material_thickness": 3,
     "environmental_protection": 1,
-    "use_action": { "type": "transform", "msg": "You change your %s to the other sice.", "target": "hook_handZhigh_l", "menu_text": "Change side" },
+    "use_action": {
+      "type": "transform",
+      "msg": "You change your %s to the other sice.",
+      "target": "hook_handZhigh_l",
+      "menu_text": "Change side"
+    },
     "flags": [ "STURDY", "BELTED", "ONLY_ONE" ]
   },
   {
@@ -6262,7 +6364,12 @@
     "warmth": 15,
     "material_thickness": 3,
     "environmental_protection": 1,
-    "use_action": { "type": "transform", "msg": "You change your %s to the other sice.", "target": "hook_handZhigh_r", "menu_text": "Change side" },
+    "use_action": {
+      "type": "transform",
+      "msg": "You change your %s to the other sice.",
+      "target": "hook_handZhigh_r",
+      "menu_text": "Change side"
+    },
     "flags": [ "STURDY", "BELTED", "ONLY_ONE" ]
   },
   {
@@ -6285,7 +6392,12 @@
     "warmth": 15,
     "material_thickness": 3,
     "environmental_protection": 1,
-    "use_action": { "type": "transform", "msg": "You change your %s to the other sice.", "target": "pegLegZhigh_l", "menu_text": "Change side" },
+    "use_action": {
+      "type": "transform",
+      "msg": "You change your %s to the other sice.",
+      "target": "pegLegZhigh_l",
+      "menu_text": "Change side"
+    },
     "flags": [ "STURDY", "BELTED", "ONLY_ONE" ]
   },
   {
@@ -6309,7 +6421,12 @@
     "warmth": 15,
     "material_thickness": 3,
     "environmental_protection": 1,
-    "use_action": { "type": "transform", "msg": "You change your %s to the other sice.", "target": "pegLegZhigh_r", "menu_text": "Change side" },
+    "use_action": {
+      "type": "transform",
+      "msg": "You change your %s to the other sice.",
+      "target": "pegLegZhigh_r",
+      "menu_text": "Change side"
+    },
     "flags": [ "STURDY", "BELTED", "ONLY_ONE" ]
   },
   {
@@ -6356,8 +6473,8 @@
     "name": { "str_pl": "pairs of toy night vision goggles (on)", "str": "pair of toy night vision goggles (on)" },
     "description": "A pair of battery-powered toy night vision goggles with an infrared illuminator, allowing you to see in the dark during an airsoft game.  It is turned on, and continually draining batteries.  Use it to turn them off.",
     "flags": [ "GNV_EFFECT", "FRAGILE", "TRADER_AVOID" ],
-	"turns_per_charge": 10,
-	"revert_to": "toyZhigh_goggles_nv",
+    "turns_per_charge": 10,
+    "revert_to": "toyZhigh_goggles_nv",
     "use_action": {
       "type": "transform",
       "menu_text": "Turn off",
@@ -6544,7 +6661,7 @@
     "warmth": 10,
     "material_thickness": 3,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
-    "flags": [ "VARSIZE", "POCKETS" ]
+    "flags": [ "VARSIZE", "POCKETS", "ALLOWS_WINGS" ]
   },
   {
     "id": "overallsZhighTan",
@@ -6565,7 +6682,7 @@
     "warmth": 10,
     "material_thickness": 3,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
-    "flags": [ "VARSIZE", "POCKETS" ]
+    "flags": [ "VARSIZE", "POCKETS", "ALLOWS_WINGS" ]
   },
   {
     "id": "overallsZhighRed",
@@ -6586,7 +6703,7 @@
     "warmth": 10,
     "material_thickness": 3,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
-    "flags": [ "VARSIZE", "POCKETS" ]
+    "flags": [ "VARSIZE", "POCKETS", "ALLOWS_WINGS" ]
   },
   {
     "id": "scabbard2Zhigh",
@@ -6616,7 +6733,7 @@
       "multi": 2,
       "flags": [ "SHEATH_SWORD" ]
     },
-    "flags": [ "WAIST", "COMPACT", "OVERSIZE", "WATER_FRIENDLY" ]
+    "flags": [ "WAIST", "COMPACT", "OVERSIZE", "WATER_FRIENDLY", "ALLOWS_WINGS" ]
   },
   {
     "id": "power_armor_jetpack",
@@ -6637,7 +6754,16 @@
     "max_charges": 120,
     "ammo": "flammable",
     "covers": [ "torso" ],
-    "flags": [ "POWERARMOR_COMPATIBLE", "WATER_FRIENDLY", "BELTED", "ONLY_ONE", "STURDY", "NO_UNLOAD", "EFFECT_FEATHER_FALL" ],
+    "flags": [
+      "POWERARMOR_COMPATIBLE",
+      "WATER_FRIENDLY",
+      "BELTED",
+      "ONLY_ONE",
+      "STURDY",
+      "NO_UNLOAD",
+      "EFFECT_FEATHER_FALL",
+      "ALLOWS_WINGS"
+    ],
     "encumbrance": 10,
     "coverage": 25,
     "material_thickness": 4,
@@ -6672,7 +6798,16 @@
     "turns_per_charge": 4,
     "ammo": "flammable",
     "covers": [ "torso", "mouth" ],
-    "flags": [ "POWERARMOR_COMPATIBLE", "WATER_FRIENDLY", "BELTED", "ONLY_ONE", "STURDY", "NO_UNLOAD", "ALWAYS_ALLOWS_FLIGHT" ],
+    "flags": [
+      "POWERARMOR_COMPATIBLE",
+      "WATER_FRIENDLY",
+      "BELTED",
+      "ONLY_ONE",
+      "STURDY",
+      "NO_UNLOAD",
+      "ALWAYS_ALLOWS_FLIGHT",
+      "ALLOWS_WINGS"
+    ],
     "encumbrance": 10,
     "coverage": 25,
     "material_thickness": 4,
@@ -6726,7 +6861,16 @@
     "environmental_protection": 1,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
     "techniques": [ "WBLOCK_3" ],
-    "flags": [ "OVERSIZE", "OUTER", "SLOWS_MOVEMENT", "BLOCK_WHILE_WORN", "ONLY_ONE" ],
+    "flags": [
+      "OVERSIZE",
+      "OUTER",
+      "SLOWS_MOVEMENT",
+      "BLOCK_WHILE_WORN",
+      "ONLY_ONE",
+      "ALLOWS_WINGS",
+      "ALLOWS_TAIL_SNAKE",
+      "ALLOWS_TAIL"
+    ],
     "relic_data": {
       "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "ench_effects": [ { "effect": "invisibility", "intensity": 1 } ] } ]
     }
@@ -6755,7 +6899,7 @@
     "environmental_protection": 1,
     "valid_mods": [ "steel_padded", "alloy_padded" ],
     "techniques": [ "WBLOCK_3" ],
-    "flags": [ "OVERSIZE", "OUTER", "BLOCK_WHILE_WORN", "ONLY_ONE" ]
+    "flags": [ "OVERSIZE", "OUTER", "BLOCK_WHILE_WORN", "ONLY_ONE", "ALLOWS_WINGS", "ALLOWS_TAIL_SNAKE", "ALLOWS_TAIL" ]
   },
   {
     "id": "legbandolier_shotgunZhigh",
@@ -6798,7 +6942,7 @@
     "storage": "1 L",
     "warmth": 30,
     "material_thickness": 1,
-    "flags": [ "VARSIZE", "POCKETS", "OUTER" ]
+    "flags": [ "VARSIZE", "POCKETS", "OUTER", "ALLOWS_WINGS" ]
   },
   {
     "id": "boots_rubberCBRNZhigh",
@@ -6931,7 +7075,7 @@
     "encumbrance": 20,
     "warmth": 10,
     "material_thickness": 12,
-    "flags": [ "BELTED", "OVERSIZE" ]
+    "flags": [ "BELTED", "OVERSIZE", "ALLOWS_WINGS" ]
   },
   {
     "id": "bandolier_cannon",
@@ -6951,7 +7095,7 @@
     "encumbrance": 1,
     "material_thickness": 1,
     "use_action": { "type": "bandolier", "capacity": 6, "ammo": [ "cannon" ], "draw_cost": 30 },
-    "flags": [ "WATER_FRIENDLY", "WAIST", "COMPACT", "OVERSIZE" ]
+    "flags": [ "WATER_FRIENDLY", "WAIST", "COMPACT", "OVERSIZE", "ALLOWS_WINGS" ]
   },
   {
     "id": "tac_fullhelmet_skullZhigh",
@@ -6994,5 +7138,285 @@
     "color": "light_cyan",
     "encumbrance": 25,
     "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 }
+  },
+  {
+    "id": "gold_ring_nose",
+    "looks_like": "gold_ring",
+    "type": "ARMOR",
+    "name": { "str": "gold nose ring" },
+    "description": "A flashy gold nose ring.  You can wear it if you like, but it won't provide any effects.",
+    "weight": "10 g",
+    "volume": "5 ml",
+    "price": "300 USD",
+    "price_postapoc": "50 cent",
+    "material": [ "gold" ],
+    "symbol": "[",
+    "color": "yellow"
+  },
+  {
+    "id": "silver_ring_nose",
+    "looks_like": "silver_ring",
+    "type": "ARMOR",
+    "name": { "str": "silver nose ring" },
+    "description": "A simple, silver nose ring.  You can wear it if you like, but it won't provide any effects.",
+    "weight": "6 g",
+    "volume": "5 ml",
+    "price": "50 USD",
+    "price_postapoc": "10 cent",
+    "material": [ "silver" ],
+    "symbol": "[",
+    "color": "light_gray",
+    "flags": [ "FANCY" ]
+  },
+  {
+    "id": "copper_ring_nose",
+    "looks_like": "copper_ring",
+    "type": "ARMOR",
+    "name": { "str": "copper nose ring" },
+    "description": "A plain, copper nose ring.  Not very shiny, and not very popular.  You can wear it if you like, but it won't provide any effects.",
+    "weight": "50 g",
+    "volume": "2 ml",
+    "price": "20 USD",
+    "price_postapoc": "10 cent",
+    "material": [ "copper" ],
+    "symbol": "[",
+    "color": "brown"
+  },
+  {
+    "id": "platinum_ring_nose",
+    "looks_like": "platinum_ring",
+    "type": "ARMOR",
+    "name": { "str": "platinum nose ring" },
+    "description": "A platinum nose ring, engraved with all manner of swirls and spirals.  You can wear it if you like, but it won't provide any effects.",
+    "weight": "13 g",
+    "volume": "5 ml",
+    "price": "240 USD",
+    "price_postapoc": "50 cent",
+    "material": [ "platinum" ],
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "FANCY" ]
+  },
+  {
+    "id": "jacket_leather_buff",
+    "looks_like": "tunic",
+    "type": "ARMOR",
+    "name": { "str": "buff coat" },
+    "description": "A coat made from thick leather.  Super cumbersome, but offers excellent protection from cuts.",
+    "weight": "1450 g",
+    "volume": "4500 ml",
+    "price": "179 USD",
+    "price_postapoc": "5 USD",
+    "to_hit": 1,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "covers": [ "torso", "arms" ],
+    "coverage": 90,
+    "encumbrance": 20,
+    "storage": "1 L",
+    "warmth": 30,
+    "material_thickness": 4,
+    "environmental_protection": 1,
+    "valid_mods": [ "steel_padded", "hard_steel_padded", "alloy_padded" ],
+    "flags": [ "VARSIZE", "POCKETS", "OUTER", "ALLOWS_WINGS" ]
+  },
+  {
+    "id": "aframeBaseZhigh",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "basic A-frame" },
+    "description": "A wooden A-shaped frame backpack, which is used for carrying various items.  Need an acutal sack or a drum to carry more.",
+    "weight": "6400 g",
+    "volume": "12 L",
+    "price": "10 kUSD",
+    "price_postapoc": "100 USD",
+    "to_hit": 1,
+    "bashing": 1,
+    "material": [ "steel" ],
+    "symbol": "[",
+    "looks_like": "backpack_tactical_large",
+    "color": "light_gray",
+    "covers": [ "torso" ],
+    "coverage": 30,
+    "encumbrance": 5,
+    "storage": "4 L",
+    "material_thickness": 5,
+    "flags": [ "COMPACT", "BELTED", "ONLY_ONE" ],
+    "weight_capacity_bonus": "3500 g"
+  },
+  {
+    "id": "aframeBagZhigh",
+    "looks_like": "aframeBaseZhigh",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "bagged A-frame" },
+    "description": "A wooden A-shaped frame backpack, which is used for carrying various items.  An acutal sack is added to the frame in order to carry more.",
+    "weight": "6400 g",
+    "volume": "12 L",
+    "price": "10 kUSD",
+    "price_postapoc": "100 USD",
+    "to_hit": 1,
+    "bashing": 1,
+    "material": [ "steel" ],
+    "symbol": "[",
+    "color": "light_gray",
+    "covers": [ "torso" ],
+    "coverage": 30,
+    "encumbrance": 5,
+    "storage": "16 L",
+    "material_thickness": 5,
+    "flags": [ "COMPACT", "BELTED", "ONLY_ONE" ],
+    "weight_capacity_bonus": "3500 g"
+  },
+  {
+    "id": "aframeDrumZhigh",
+    "looks_like": "aframeBaseZhigh",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "drum A-frame" },
+    "description": "A wooden A-shaped frame backpack, which is used for carrying various items.  A 200L drum or two 100L drums are added, to carry liquid.",
+    "weight": "6400 g",
+    "volume": "12 L",
+    "price": "10 kUSD",
+    "price_postapoc": "100 USD",
+    "to_hit": 1,
+    "bashing": 1,
+    "material": [ "steel" ],
+    "symbol": "[",
+    "color": "light_gray",
+    "covers": [ "torso" ],
+    "coverage": 30,
+    "encumbrance": 5,
+    "material_thickness": 5,
+    "flags": [ "COMPACT", "BELTED", "ONLY_ONE" ],
+    "weight_capacity_bonus": "3500 g"
+  },
+  {
+    "id": "cloakBlackZhigh",
+    "type": "ARMOR",
+    "name": { "str": "cloak" },
+    "description": "A heavy cloak meant to be thrown over your body.",
+    "weight": "1175 g",
+    "volume": "3 L",
+    "price": "107 USD",
+    "price_postapoc": "5 USD",
+    "to_hit": -1,
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "looks_like": "coat_rain",
+    "color": "green",
+    "covers": [ "torso", "arms", "legs" ],
+    "coverage": 65,
+    "encumbrance": 4,
+    "warmth": 30,
+    "material_thickness": 2,
+    "environmental_protection": 3,
+    "flags": [ "OVERSIZE", "HOOD", "OUTER", "ALLOWS_TAIL_SNAKE" ]
+  },
+  {
+    "id": "shield_boneZhigh",
+    "type": "ARMOR",
+    "name": { "str": "bone shield" },
+    "description": "A crude bone shield lacking any metal or leather reinforcement.  Tolerable weight but not very tough.",
+    "weight": "3 kg",
+    "volume": "3 L",
+    "price": "50 USD",
+    "price_postapoc": "5 USD",
+    "to_hit": -1,
+    "bashing": 8,
+    "material": [ "bone_heavy" ],
+    "symbol": "[",
+    "color": "brown",
+    "covers": [ "arm_either", "hand_either" ],
+    "coverage": 90,
+    "encumbrance": 15,
+    "material_thickness": 3,
+    "techniques": [ "WBLOCK_2" ],
+    "flags": [ "OVERSIZE", "BELTED", "RESTRICT_HANDS", "BLOCK_WHILE_WORN", "POWERARMOR_COMPATIBLE" ]
+  },
+  {
+    "id": "shield_boneZhigh_large",
+    "type": "ARMOR",
+    "name": { "str": "large bone shield" },
+    "description": "A crude bone tower shield lacking any metal or leather reinforcement.  Bulky, but offers a decent amount of protection.",
+    "weight": "5 kg",
+    "volume": "5 L",
+    "price": "60 USD",
+    "price_postapoc": "750 cent",
+    "to_hit": -2,
+    "bashing": 10,
+    "material": [ "bone_heavy" ],
+    "symbol": "[",
+    "color": "brown",
+    "covers": [ "arm_either", "hand_either" ],
+    "coverage": 90,
+    "encumbrance": 25,
+    "material_thickness": 3,
+    "techniques": [ "WBLOCK_3" ],
+    "flags": [ "OVERSIZE", "BELTED", "RESTRICT_HANDS", "BLOCK_WHILE_WORN", "POWERARMOR_COMPATIBLE" ]
+  },
+  {
+    "id": "nemesZhigh",
+    "type": "ARMOR",
+    "copy-from": "headscarf",
+    "looks_like": "headscarf",
+    "name": { "str": "nemes" },
+    "description": "A loose cloth worn over the head and around the neck.  A common headdress of the ancient egypt.",
+    "color": "cyan",
+    "extend": { "flags": [ "FANCY" ] }
+  },
+  {
+    "id": "helmet_custodianZhigh",
+    "repairs_like": "helmet_barbute",
+    "type": "ARMOR",
+    "name": { "str": "custodian helmet" },
+    "description": "A small helmet that was worn by British police officers.",
+    "weight": "1315 g",
+    "volume": "1250 ml",
+    "price": "45 USD",
+    "price_postapoc": "750 cent",
+    "bashing": 8,
+    "material": [ "iron" ],
+    "symbol": "[",
+    "looks_like": "helmet_bike",
+    "color": "dark_gray",
+    "covers": [ "head" ],
+    "coverage": 65,
+    "encumbrance": 20,
+    "warmth": 10,
+    "material_thickness": 6,
+    "techniques": [ "WBLOCK_1" ]
+  },
+  {
+    "id": "canteen_bambooZhigh",
+    "type": "CONTAINER",
+    "category": "container",
+    "name": { "str": "bamboo canteen" },
+    "description": "A water canteen made from bamboo, sealed with wax or pitch.  Holds a liter and has a simple carry strap.",
+    "weight": "232 g",
+    "volume": "1150 ml",
+    "price": "8 USD",
+    "price_postapoc": "10 cent",
+    "to_hit": 1,
+    "material": "wood",
+    "symbol": ")",
+    "color": "green",
+    "contains": "1000 ml",
+    "seals": true,
+    "watertight": true,
+    "armor_data": { "covers": [ "leg_either" ], "coverage": 5, "encumbrance": 5, "material_thickness": 2 },
+    "flags": [ "FRAGILE", "WAIST", "COMPACT", "WATER_FRIENDLY", "ALLOWS_TAIL_SNAKE" ]
+  },
+  {
+    "id": "capNbellsZhigh",
+    "type": "ARMOR",
+    "copy-from": "hat_cotton",
+    "looks_like": "hat_cotton",
+    "name": { "str": "cap and bells" },
+    "description": "Also called the jester's hat, this was worn by jesters in order to mock their king.  Could be worn, and is quite warm.",
+    "weight": "232 g",
+    "volume": "1150 ml",
+	"warmth": 30,
+    "color": "cyan",
+    "extend": { "flags": [ "FANCY" ] },
+    "delete": { "flags": [ "HELMET_COMPAT" ] }
   }
 ]

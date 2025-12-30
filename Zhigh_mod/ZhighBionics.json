@@ -458,5 +458,46 @@
     "reload": 130,
     "flags": [ "NEVER_JAMS", "NO_DROP", "NO_UNWIELD", "TRADER_AVOID" ],
     "magazines": [ [ "9mm", [ "mp5mag", "mp5bigmag" ] ] ]
+  },
+  {
+    "id": "bio_bowZhigh",
+    "copy-from": "bionic_general",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "mecha bow CBM" },
+    "looks_like": "bio_int_enhancer",
+    "description": "A concealed bow that is implanted inside the right forearm.  Perfect in a pinch.",
+    "price": "2200 USD",
+    "difficulty": 3,
+    "installation_data": "AID_bio_bowZhigh"
+  },
+  {
+    "id": "bio_bowZhigh",
+    "type": "bionic",
+    "name": { "str": "mecha bow" },
+    "description": "Concealed in your right arm is a bow.  Activate the bionic to fire the bow.",
+    "occupied_bodyparts": [ [ "arm_r", 2 ] ],
+    "act_cost": "5 J",
+    "fake_item": "bio_bowZhigh_gun",
+    "flags": [ "BIONIC_TOGGLED", "BIONIC_WEAPON", "BIONIC_NPC_USABLE" ]
+  },
+  {
+    "id": "bio_bowZhigh_gun",
+    "copy-from": "longbow",
+    "type": "GUN",
+    "name": { "str": "mecha bow" },
+    "description": "A six-foot carbon fiber bow that takes a fair amount of strength to draw.  It can be used effectively by those of average strength.  Used mainly in medieval England in wartime, now returned with advancements.",
+    "price": "500 USD",
+    "material": [ "carbon_fiber", "steel" ],
+    "extend": { "flags": [ "NO_DROP", "NO_UNWIELD", "WATER_FRIENDLY", "STR_DRAW", "TRADER_AVOID", "UNBREAKABLE_MELEE" ] },
+    "min_strength": 3,
+    "weight": "680 g",
+    "volume": "3500 ml",
+    "price_postapoc": "30 USD",
+    "bashing": 10,
+    "loudness": 8,
+    "ranged_damage": { "damage_type": "stab", "amount": 35 },
+    "range": 22,
+    "dispersion": 800,
+    "durability": 6
   }
 ]

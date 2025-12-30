@@ -7,8 +7,8 @@
     "map_color": "c_white",
     "glyph": "@",
     "ranged_penalty": 8,
-    "sight_penalty": 9.0,
-    "light_modifier": -90,
+    "sight_penalty": 1.0,
+    "light_modifier": -10,
     "sound_attn": 9,
     "dangerous": true,
     "precip": "heavy",
@@ -20,20 +20,13 @@
     "sun_intensity": "none",
     "requirements": {
 		"required_weathers": [
-			"clear",
-			"sunny",
-			"cloudy",
-			"light_drizzle",
 			"drizzle",
-			"rain",
 			"heavy_rain",
 			"thunder",
 			"lightning",
-			"light_flurries",
 			"flurries",
 			"snowing",
 			"snowstorm",
-			"acid_drizzle",
 			"acid_rain"
 		]
     }

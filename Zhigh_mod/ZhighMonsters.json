@@ -372,6 +372,7 @@
     "description": "Their pupils are dilated and what remains to be seen of the iris and sclera are bloodshot.  This light baton-wielding maniac still breathes, but the zombies treat them like one of their own.  For some reason, these ferals can call more of his friends.",
     "hp": 35,
     "luminance": 10,
+    "on_death": { "death_function": [  ], "spawn_mon": "mon_feral_human_zhigh" },
     "special_attacks": [
 	  [ "PARROT", 3 ],
 	  { "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh" }, "cooldown": 45 }
@@ -381,10 +382,11 @@
     "id": "mon_feral_human_SchoolWatchzhighBoss",
     "type": "MONSTER",
     "copy-from": "mon_feral_human_SchoolWatchzhigh",
-    "name": { "str": "feral hall monitor" },
+    "name": { "str": "feral hall manager" },
     "looks_like": "mon_feral_human_SchoolWatchzhigh",
     "hp": 95,
     "luminance": 120,
+    "on_death": { "death_function": [  ], "spawn_mon": "mon_feral_human_SchoolWatchzhigh" },
     "special_attacks": [
 	  [ "PARROT", 3 ],
 	  { "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh" }, "cooldown": 5 },
@@ -1086,7 +1088,7 @@
     "regenerates": 20,
     "special_attacks": [ [ "SEARCHLIGHT", 1 ] ],
     "death_drops": { "groups": [ [ "robots", 1 ], [ "turret_searchlight", 1 ] ] },
-    "death_function": [ "FOCUSEDBEAM" ],
+    "on_death": { "death_function": [ "FOCUSEDBEAM" ], "spawn_mon": "mon_zombie_guardZhigh" },
     "flags": [ "BIOPROOF", "IMMOBILE", "NOHEAD", "COLDPROOF", "ACIDPROOF", "IMMOBILE", "SEES" ]
   },
   {
@@ -1305,7 +1307,7 @@
 		{ "type": "leap", "cooldown": 20, "max_range": 2 },
 		{ "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 8, "armor_multiplier": 2 } ] }
     ],
-    "death_function": [ "DISAPPEAR" ],
+    "on_death": { "death_function": [ "DISAPPEAR" ], "spawn_mon": "mon_Zhigh_finalboss3" },
     "flags": [
       "SEES",
       "HEARS",
@@ -2829,6 +2831,7 @@
   },
   {
     "id": "mon_zombie_thornyZhigh",
+    "looks_like": "mon_zombie_thorny",
     "type": "MONSTER",
     "name": { "str": "thorny gunner" },
     "description": "A shambling undead humanoid, body overgrown with a tangled mass of otherworldly vegetation.  Hunched over and looking around, the immovable bramble utterly enveloping its upper half twitches and moves with a life of its own, multiple tendrils tipped with a paralytic sting.",
@@ -2854,7 +2857,7 @@
     "vision_night": 5,
     "harvest": "zombie_thorny",
     "attack_effs": [ { "id": "paralyzepoison", "duration": 53 } ],
-    "special_attacks": [ [ "GRAB", 7 ], [ "scratch", 20 ], [ "PARA_STING", 3 ] ],
+    "special_attacks": [ [ "GRAB", 7 ], [ "scratch", 20 ], [ "PARA_STING", 1 ] ],
     "death_drops": "mon_zombie_thorny_death_drops",
     "death_function": [ "NORMAL" ],
     "burn_into": "mon_zombie_scorched",
@@ -2873,5 +2876,80 @@
       "PUSH_MON",
       "PARALYZEVENOM"
     ]
+  },
+  {
+    "id": "mon_fireballFoxZhigh",
+    "type": "MONSTER",
+    "copy-from": "base_drone",
+    "default_faction": "factionless",
+    "species": [ "UNKNOWN" ],
+    "name": { "str": "fireball" },
+    "description": "A pink fireball.",
+    "diff": 2,
+    "speed": 220,
+    "color": "light_green",
+    "melee_skill": 10,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 12,
+    "armor_bash": 2,
+    "armor_cut": 8,
+    "armor_bullet": 6,
+    "armor_fire": 3,
+    "death_drops": { "groups": [ ] },
+    "special_attacks": [ [ "DISAPPEAR", 50 ] ],
+    "death_function": [ "DISAPPEAR" ],
+    "extend": { "flags": [ "HIT_AND_RUN" ] }
+  },
+  {
+    "id": "mon_zombie_guardZhigh",
+    "copy-from": "mon_zombie_kevlar_2",
+    "type": "MONSTER",
+    "name": { "str": "guarding hulk zombie" },
+    "special_attacks": [
+      { "id": "slam", "cooldown": 12, "damage_max_instance": [ { "damage_type": "bash", "amount": 35 } ] },
+      [ "SMASH", 20 ],
+      [ "STRETCH_ATTACK", 20 ],
+      [ "LONGSWIPE", 20 ],
+      { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 23, "armor_multiplier": 0.8 } ] }
+    ]
+  },
+  {
+    "id": "mon_pandaZhigh",
+    "type": "MONSTER",
+    "name": { "str": "panda" },
+    "description": "The Chinese panda.  A large omnivorous scavenger, it has powerful claws and jaws, and is an effective ambush hunter.  Most individuals are shy around humans, but they're fiercely protective of their cubs.",
+    "default_faction": "bear",
+    "bodytype": "bear",
+    "categories": [ "WILDLIFE" ],
+    "species": [ "MAMMAL" ],
+    "volume": "154250 ml",
+    "weight": "154250 g",
+    "hp": 100,
+    "speed": 140,
+    "material": [ "flesh" ],
+    "symbol": "B",
+    "color": "dark_gray",
+    "aggro_character": false,
+    "aggression": -10,
+    "morale": 60,
+    "melee_skill": 6,
+    "melee_dice": 4,
+    "melee_dice_sides": 6,
+    "melee_cut": 4,
+    "dodge": 3,
+    "armor_bash": 2,
+    "vision_day": 30,
+    "vision_night": 10,
+    "zombify_into": "mon_zombear",
+    "path_settings": { "max_dist": 10 },
+    "anger_triggers": [ "HURT", "PLAYER_NEAR_BABY" ],
+    "fear_triggers": [ "SOUND" ],
+    "placate_triggers": [ "MEAT" ],
+    "death_function": [ "NORMAL" ],
+    "harvest": "mammal_large_fur",
+    "special_attacks": [ [ "EAT_FOOD", 20 ] ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "ANIMAL", "PATH_AVOID_DANGER_1", "WARM", "BLEED", "BASHES", "ATTACKMON" ],
+    "upgrades": { "half_life": 42, "into": "mon_bear_armored" }
   }
 ]

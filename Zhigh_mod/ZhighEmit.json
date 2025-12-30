@@ -999,5 +999,17 @@
     "field": "fd_fire",
     "qty": 1,
     "chance": 30
+  },
+  {
+    "type": "clothing_mod",
+    "id": "pocketed",
+    "flag": "pocketed",
+    "item": "rag",
+    "implement_prompt": "Add pockets",
+    "destroy_prompt": "Remove pockets",
+    "mod_value": [
+      { "type": "encumbrance", "value": 1, "round_up": true, "proportion": [ "volume", "coverage" ] },
+      { "type": "storage", "value": 3, "round_up": true, "proportion": [ "volume" ] }
+    ]
   }
 ]

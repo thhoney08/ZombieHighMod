@@ -2356,7 +2356,8 @@
     "flags": [ "NEVER_JAMS", "NON_FOULING" ],
     "magazines": [
 		[ "acid", [ "pressurized_tank_chem" ] ],
-		[ "chemical_spray", [ "pressurized_tank_chem" ] ] ]
+		[ "chemical_spray", [ "pressurized_tank_chem" ] ]
+	]
   },
   {
     "id": "pressurized_tank_chem",
@@ -2364,6 +2365,25 @@
     "type": "MAGAZINE",
     "name": { "str": "pressurized chemical tank" },
     "ammo_type": [ "chemical_spray", "acid" ]
+  },
+  {
+    "id": "professional_chemical_thrower",
+    "copy-from": "professional_chemical_thrower",
+	"looks_like": "chemical_thrower",
+    "type": "GUN",
+    "name": { "str": "chemical thrower" },
+    "range": 25,
+    "handling": 1,
+    "durability": 8,
+    "modes": [ [ "DEFAULT", "spray", 10 ] ],
+    "ranged_damage": { "damage_type": "acid", "amount": 3, "armor_penetration": 3, "armor_multiplier": -1  },
+	"ammo_to_fire": 1,
+	"ammo": [ "chemical_spray", "acid" ],
+    "loudness": 1,
+    "magazines": [
+		[ "acid", [ "pressurized_tank_chem" ] ],
+		[ "chemical_spray", [ "pressurized_tank_chem" ] ]
+	]
   },
   {
     "type": "AMMO",
@@ -3548,14 +3568,14 @@
     "type": "GENERIC",
     "copy-from": "hammer_sledge",
     "name": { "str": "sledge hammer" },
-    "to_hit": 2
+    "to_hit": 1
   },
   {
 	"id": "hammer_sledge_short",
     "type": "GENERIC",
     "copy-from": "hammer_sledge_short",
     "name": { "str": "short sledge hammer" },
-    "to_hit": 1
+    "to_hit": 2
   },
   {
 	"id": "hammer_sledge_heavy",
@@ -3570,7 +3590,7 @@
     "type": "GENERIC",
     "copy-from": "hammer_sledge_engineer",
     "name": { "str": "engineer's hammer" },
-    "to_hit": 1
+    "to_hit": 2
   },
   {
 	"id": "kris",
@@ -3603,7 +3623,7 @@
     "copy-from": "scythe",
     "name": { "str": "scythe" },
     "to_hit": -1,
-    "bashing": 2,
+    "bashing": 6,
     "cutting": 16
   },
   {
@@ -3614,5 +3634,107 @@
     "copy-from": "sickle",
     "name": { "str": "sickle" },
     "to_hit": 0
+  },
+  {
+	"id": "bat_nerf",
+    "type": "GENERIC",
+    "weapon_category": [ "CLUBS" ],
+    "copy-from": "bat_nerf",
+    "name": { "str": "foam rubber bat" },
+    "volume": "600 ml",
+    "bashing": 8,
+    "price": "10 USD",
+    "price_postapoc": "20 cent",
+    "qualities": [  ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "stunnedZhigh",
+              "message": "The bat stuns your target.",
+              "npc_message": "%1$s stuns their target."
+            }
+          ]
+        }
+      ]
+    },
+    "delete": { "flags": [ "FRAGILE_MELEE" ] }
+  },
+  {
+	"id": "iwi_tavor_x95_300blk",
+    "type": "GUN",
+    "copy-from": "iwi_tavor_x95_300blk",
+    "name": { "str": "IWI Tavor X95 .300BLK" },
+    "range": 4,
+    "ranged_damage": { "damage_type": "bullet", "amount": 2 }
+  },
+  {
+	"id": "broken_dissector",
+    "type": "GENERIC",
+    "copy-from": "broken_dissector",
+    "category": "scrap_electronics",
+    "name": { "str": "broken dissector" },
+    "weight": "3 kg",
+    "volume": "2 L",
+    "bashing": 8,
+    "to_hit": 0
+  },
+  {
+	"id": "arrow_exploding",
+    "type": "AMMO",
+    "copy-from": "arrow_exploding",
+    "name": { "str": "explosive arrow" },
+    "effects": [ "NO_OVERSHOOT", "COOKOFF", "EXPLOSIVE_SMALL" ]
+  },
+  {
+	"id": "hose",
+    "type": "GENERIC",
+    "copy-from": "hose",
+    "name": { "str": "rubber hose" },
+    "armor_data": { "covers": [ "torso" ], "coverage": 10, "encumbrance": 12, "material_thickness": 6 }
+  },
+  {
+	"id": "makeshift_hose",
+    "type": "GENERIC",
+    "copy-from": "makeshift_hose",
+    "name": { "str": "leather hose" },
+    "armor_data": { "covers": [ "torso" ], "coverage": 10, "encumbrance": 18, "material_thickness": 6 }
+  },
+  {
+    "id": "spike",
+    "type": "GENERIC",
+    "name": { "str": "spike" },
+    "description": "A large and slightly misshapen spike, could do some damage mounted on a vehicle.  Or also could be used as a throwing weapon.",
+    "category": "scrap_metal",
+    "weight": "550 g",
+    "to_hit": -2,
+    "color": "light_gray",
+    "symbol": ";",
+    "material": [ "steel" ],
+    "volume": "250 ml",
+    "bashing": 2,
+    "cutting": 6,
+    "flags": [ "STAB" ],
+    "qualities": [ [ "BUTCHER", -42 ] ],
+    "thrown_damage": [ { "damage_type": "stab", "amount": 9 } ],
+    "price_postapoc": "10 cent"
+  },
+  {
+	"id": "launcher_ballista",
+    "type": "GUN",
+    "copy-from": "launcher_ballista",
+    "name": { "str": "ballista" },
+    "durability": 9,
+    "ammo": [ "bolt_heavy", "fishspear", "rock" ]
+  },
+  {
+	"id": "selfbow",
+    "type": "GUN",
+    "copy-from": "selfbow",
+    "name": { "str": "self bow" },
+    "ammo": [ "arrow", "bolt" ]
   }
 ]

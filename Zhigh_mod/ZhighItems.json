@@ -137,6 +137,16 @@
       },
 	  { "type": "gps_device", "radius": 120 },
       {
+        "type": "train_skill",
+        "training_msg": "You fiddle with your phone’s settings and apps, picking up some basic computer knowledge.",
+        "training_skill": "computer",
+        "training_skill_min_level": 0,
+        "training_skill_xp": 8,
+        "training_skill_max_level": 2,
+        "training_skill_xp_chance": 90,
+        "training_skill_interval": 12
+      },
+      {
         "type": "music_player",
         "target": "zhigh_smart_phone_music",
         "msg": "You put in the earbuds and start listening to music.",
@@ -2255,5 +2265,23 @@
 	  ],
 	  "message": "You add sunken ships to your map."
 	}
+  },
+  {
+    "id": "bundle_bambooZhigh",
+    "type": "GENERIC",
+	"copy-from": "bambooStaffZhigh",
+    "name": { "str": "bundle of bamboos", "str_pl": "bundles of bamboos" },
+    "description": "Bamboo stickss, bundled tightly together for storage.  Activate or disassemble to unpack.",
+    "weight": "10000 g",
+    "volume": "17500 ml",
+    "price": "0 cent",
+    "price_postapoc": "5 cent",
+    "material": "cotton",
+    "symbol": ",",
+    "to_hit": -3,
+    "bashing": 26,
+    "color": "white",
+    "use_action": "DISASSEMBLE",
+    "flags": [ "NO_REPAIR", "NO_SALVAGE" ]
   }
 ]
