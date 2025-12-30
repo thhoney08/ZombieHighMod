@@ -1858,5 +1858,35 @@
 		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "80 s", "rate": 1 } ]
     },
     "color": "light_gray"
+  },
+  {
+    "id": "fireballZhigh",
+    "type": "TOOL",
+    "category": "weapons",
+    "looks_like": "crystalBallZhigh",
+    "symbol": "/",
+    "color": "dark_gray",
+    "name": { "str": "crystal ball" },
+    "description": "This is a crystal ball.  May be useful for starting fires during sunny skies.  Could be thrown and hurt others.  Or could be used to do some magic.",
+    "price": "50 USD",
+    "material": [ "gemstone" ],
+    "flags": [ "FANCY", "OVERSIZE", "BELTED", "RESTRICT_HANDS", "WATER_FRIENDLY", "POWERARMOR_COMPATIBLE" ],
+    "weight": "800 g",
+    "volume": "250 ml",
+    "bashing": 10,
+    "to_hit": -1,
+    "use_action": [
+		{ "type": "cast_spell", "spell_id": "mon_summon_mon_fireballFoxZhigh", "no_fail": true, "level": 0, "need_wielding": false }
+	],
+    "charges_per_use": 5,
+    "max_charges": 40,
+    "initial_charges": 20,
+    "armor_data": { "covers": [ ], "coverage": 10, "encumbrance": 3, "material_thickness": 2 },
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "20 seconds", "rate": 1 } ]
+    },
+    "price_postapoc": "50 cent"
   }
 ]

@@ -1,6 +1,23 @@
 [
   {
     "type": "SPELL",
+    "id": "mon_summon_mon_fireballFoxZhigh",
+    "name": { "str": "Summon fireball" },
+    "description": "Summons fireballs.",
+    "flags": [ "NO_LEGS", "NO_HANDS", "NO_FAIL", "SOMATIC", "PERMANENT", "NO_EXPLOSION_VFX" ],
+    "valid_targets": [ "ground", "self" ],
+    "min_damage": 38,
+    "max_damage": 40,
+    "min_range": 6,
+    "max_range": 20,
+    "min_aoe": 2,
+    "max_aoe": 10,
+    "effect": "summon",
+    "field_id": "fd_spotlight",
+    "effect_str": "mon_fireballFoxZhigh"
+  },
+  {
+    "type": "SPELL",
     "id": "mon_summon_survivor_legionZhigh",
     "name": { "str": "Summon Survivors" },
     "description": "Summons survivors.",

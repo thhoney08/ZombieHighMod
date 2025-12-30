@@ -1303,6 +1303,23 @@
     }
   },
   {
+    "id": "cardZhigh_dissector_trap",
+	"looks_like": "cardZhigh_glassMagnify",
+    "copy-from": "cardZhigh_abstract",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "Collectible Card - dissector" },
+    "description": "This is a unique card, which has a picture of a dissector.  If you use it, you could set a dissector.",
+    "use_action": {
+      "type": "place_trap",
+      "allow_underwater": true,
+      "trap": "tr_dissector",
+      "moves": 2,
+      "practice": 1,
+      "done_message": "You set the dissector."
+    }
+  },
+  {
     "id": "cardZhigh_teleportAciveZhigh",
 	"looks_like": "cardZhigh_glassMagnify",
     "copy-from": "cardZhigh_abstract",

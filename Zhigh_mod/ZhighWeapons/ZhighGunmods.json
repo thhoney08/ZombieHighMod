@@ -1339,6 +1339,22 @@
     "flags": [ "IRREMOVABLE" ]
   },
   {
+    "id": "barrelZhigh_suppressor",
+    "copy-from": "suppressor",
+    "type": "GUNMOD",
+    "name": { "str": "integral suppressor" },
+    "description": "This is the integrated suppressor for some suppressed guns.  Its large expansion chamber decelerates ammunition via several ports in the barrel, rendering most ammo subsonic at the cost of terminal performance.  It is pretty useful unlike it's design.",
+    "damage_modifier": { "damage_type": "bullet", "amount": 2 },
+    "weight": "450 g",
+    "integral_volume": "0 ml",
+    "//": "weight is accounted for in gun item",
+    "integral_weight": "0 g",
+    "loudness_modifier": -60,
+    "range_modifier": -6,
+    "location": "barrel",
+    "flags": [ "IRREMOVABLE" ]
+  },
+  {
     "id": "barrel_rifledMusketZhigh",
     "looks_like": "barrel_rifled",
     "type": "GUNMOD",
@@ -1373,5 +1389,26 @@
     "dispersion_modifier": -200,
     "min_skills": [ [ "weapon", 3 ] ],
     "flags": [ "IRREMOVABLE" ]
+  },
+  {
+    "id": "antique_scope",
+    "looks_like": "survivor_scope",
+    "type": "GUNMOD",
+    "name": { "str": "antique scope" },
+    "description": "A classic-style telescope which is only for classic firearms.",
+    "weight": "280 g",
+    "volume": "112 ml",
+    "integral_volume": "50 ml",
+    "price": "680 USD",
+    "price_postapoc": "750 cent",
+    "material": [ "wood", "glass" ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "sights",
+    "mod_targets": [ "rifle_flintlock", "longrifle_flintlock", "carbine_flintlock", "carbine_flintlock_double", "jezail_flintlock" ],
+    "install_time": "30 m",
+    "sight_dispersion": 0,
+    "aim_speed": 2,
+    "flags": [ "DISABLE_SIGHTS", "ZOOM" ]
   }
 ]

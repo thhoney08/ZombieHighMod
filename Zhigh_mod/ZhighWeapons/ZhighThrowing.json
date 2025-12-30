@@ -1651,6 +1651,62 @@
     "flags": [ "BOMB", "TRADER_AVOID" ]
   },
   {
+    "id": "grenadeSapZhigh",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "sap grenade" },
+    "description": "This is a handmade sap grenade.  Use this item to pull the pin and activate the veggie mixture.  You will then have five turns before it detonates in a searing overpressure blast; throwing it would be a very good idea.",
+    "weight": "397 g",
+    "volume": "250 ml",
+    "price": "15 USD",
+    "price_postapoc": "10 USD",
+    "to_hit": -1,
+    "bashing": 6,
+    "material": [ "steel" ],
+    "symbol": "*",
+    "color": "green",
+    "use_action": {
+      "target": "grenadeSapZhigh_act",
+      "msg": "You pull the pin on the grenade.",
+      "target_charges": 5,
+      "active": true,
+      "menu_text": "Pull pin",
+      "type": "transform"
+    },
+    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "grenadeSapZhigh_act",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "active sap grenade" },
+    "description": "This is an active sap grenade, and will explode any second now.  Better throw it!",
+    "weight": "397 g",
+    "volume": "250 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "to_hit": -1,
+    "bashing": 6,
+    "material": [ "steel" ],
+    "symbol": "*",
+    "color": "green",
+    "initial_charges": 5,
+    "max_charges": 5,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_sap",
+      "fields_radius": 5,
+      "fields_min_intensity": 5,
+      "fields_max_intensity": 5,
+      "sound_volume": 10,
+      "sound_msg": "Ssssh.",
+      "no_deactivate_msg": "You've already lit the fuse - get rid of it immediately!",
+      "explosion": { "damage": 5 }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
     "id": "dynamite_bundle",
     "looks_like": "dynamite_bomb",
     "type": "TOOL",
@@ -1706,5 +1762,131 @@
       "explosion": { "damage": 700, "radius": 6 }
     },
     "flags": [ "TRADER_AVOID", "BOMB" ]
+  },
+  {
+	"id": "lawn_dartElecZhigh",
+    "type": "AMMO",
+    "copy-from": "lawn_dart",
+    "name": { "str": "shock dart" },
+    "ammo_type": "thrown",
+    "effects": [ "LIGHTNING" ],
+    "thrown_damage": [ { "damage_type": "electric", "amount": 20 } ],
+    "count": 3,
+    "stack_size": 3,
+    "extend": { "flags": [ "SHOCKING" ] }
+  },
+  {
+	"id": "lawn_dartHeatZhigh",
+    "type": "AMMO",
+    "copy-from": "lawn_dart",
+    "name": { "str": "thermo dart" },
+    "ammo_type": "thrown",
+    "effects": [ "INCENDIARY", "FLAMESMOL" ],
+    "thrown_damage": [ { "damage_type": "heat", "amount": 20 } ],
+    "count": 3,
+    "stack_size": 3,
+    "extend": { "flags": [ "FLAMING" ] }
+  },
+  {
+	"id": "lawn_dartPoisZhigh",
+    "type": "AMMO",
+    "copy-from": "lawn_dart",
+    "name": { "str": "stinger dart" },
+    "ammo_type": "thrown",
+    "effects": [ "POISON" ],
+    "thrown_damage": [ { "damage_type": "stab", "amount": 20 } ],
+    "count": 3,
+    "stack_size": 3,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "poison",
+              "message": "The stinger injects a small amount of poison into your target.",
+              "npc_message": "%1$s stings their target."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+	"id": "lawn_dartTrifZhigh",
+    "type": "AMMO",
+    "copy-from": "lawn_dart",
+    "name": { "str": "triffid dart" },
+    "ammo_type": "thrown",
+    "effects": [ "PARALYZEPOISON" ],
+    "thrown_damage": [ { "damage_type": "stab", "amount": 20 } ],
+    "count": 3,
+    "stack_size": 3,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "poison",
+              "message": "The stinger injects a small amount of poison into your target.",
+              "npc_message": "%1$s stings their target."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+	"id": "lawn_dartAcidZhigh",
+    "type": "AMMO",
+    "copy-from": "lawn_dart",
+    "name": { "str": "acidic dart" },
+    "ammo_type": "thrown",
+    "effects": [ "ACIDBOMB" ],
+    "thrown_damage": [ { "damage_type": "acid", "amount": 20 } ],
+    "count": 3,
+    "stack_size": 3,
+    "extend": { "flags": [ "ACIDIC" ] }
+  },
+  {
+    "type": "GENERIC",
+    "id": "hurlBatZhigh",
+    "category": "weapons",
+    "price": "124 USD",
+    "price_postapoc": "10 USD",
+    "name": { "str": "hurlbat" },
+    "symbol": ";",
+    "color": "light_gray",
+    "description": "A lightweight hatchet made for throwing in 15th century.  It got several points and blades on it, making it a good weapon and a miniature halberd in design.",
+    "material": [ "steel", "wood" ],
+    "volume": "750 ml",
+    "weight": "792 g",
+    "to_hit": 2,
+    "bashing": 10,
+    "cutting": 17,
+    "thrown_damage": [ { "damage_type": "stab", "amount": 8 }, { "damage_type": "bash", "amount": 8 }, { "damage_type": "cut", "amount": 16 } ],
+    "flags": [ "SHEATH_AXE", "BELT_CLIP" ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "throwing_axe_boneZhigh",
+    "category": "weapons",
+    "price": "124 USD",
+    "price_postapoc": "10 USD",
+    "name": { "str": "bone throwing axe" },
+    "symbol": ";",
+    "color": "light_gray",
+    "description": "A lightweight, jagged shaped hatchet made out of bone and for throwing.  Its ineffective spiky edge and light weight makes it unsuitable for use as a tool.",
+    "material": [ "bone_heavy", "wood" ],
+    "volume": "550 ml",
+    "weight": "792 g",
+    "to_hit": -1,
+    "bashing": 10,
+    "cutting": 15,
+    "thrown_damage": [ { "damage_type": "bash", "amount": 6 }, { "damage_type": "stab", "amount": 14 } ],
+    "flags": [ "SHEATH_AXE", "BELT_CLIP" ]
   }
 ]

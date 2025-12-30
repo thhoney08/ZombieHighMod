@@ -32,21 +32,14 @@
     "charges_per_use": 1,
     "max_charges": 10,
     "initial_charges": 10,
-    "relic_data":
-	{
-	  "charges_per_activation": 1,
-	  "recharge_scheme": [ { "type": "time", "req": "none", "interval": "30 s", "rate": 1 } ],
+    "relic_data": {
+      "charges_per_activation": 1,
+      "recharge_scheme": [ { "type": "time", "req": "none", "interval": "30 s", "rate": 1 } ],
       "passive_effects": [
         {
           "has": "WIELD",
           "condition": "ALWAYS",
-          "hit_you_effect": [
-            {
-              "id": "Push_001Zhigh",
-              "message": "You push your target.",
-              "npc_message": "%1$s pushes their target."
-            }
-          ]
+          "hit_you_effect": [ { "id": "Push_001Zhigh", "message": "You push your target.", "npc_message": "%1$s pushes their target." } ]
         }
       ]
     },
@@ -60,9 +53,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "ruby staff" },
-    "use_action": [
-		{ "type": "cast_spell", "spell_id": "dragonBreathZhigh", "no_fail": true, "level": 0 }
-	],
+    "use_action": [ { "type": "cast_spell", "spell_id": "dragonBreathZhigh", "no_fail": true, "level": 0 } ],
     "charges_per_use": 10
   },
   {
@@ -78,9 +69,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "magical ruby staff" },
-    "use_action": [
-		{ "type": "cast_spell", "spell_id": "entertainerTeleportZhigh", "no_fail": true, "level": 0, "need_wielding": true }
-	],
+    "use_action": [ { "type": "cast_spell", "spell_id": "entertainerTeleportZhigh", "no_fail": true, "level": 0, "need_wielding": true } ],
     "charges_per_use": 5
   },
   {
@@ -96,9 +85,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "bone staff" },
-    "use_action": [
-		{ "type": "cast_spell", "spell_id": "maestroStamiZhigh", "no_fail": true, "level": 0, "need_wielding": true }
-	],
+    "use_action": [ { "type": "cast_spell", "spell_id": "maestroStamiZhigh", "no_fail": true, "level": 0, "need_wielding": true } ],
     "charges_per_use": 10
   },
   {
@@ -107,9 +94,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "brass staff" },
-    "use_action": [
-		{ "type": "cast_spell", "spell_id": "maestroStrengZhigh", "no_fail": true, "level": 0, "need_wielding": true }
-	],
+    "use_action": [ { "type": "cast_spell", "spell_id": "maestroStrengZhigh", "no_fail": true, "level": 0, "need_wielding": true } ],
     "charges_per_use": 10
   },
   {
@@ -118,9 +103,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "bronze staff" },
-    "use_action": [
-		{ "type": "cast_spell", "spell_id": "maestroSpeedZhigh", "no_fail": true, "level": 0, "need_wielding": true }
-	],
+    "use_action": [ { "type": "cast_spell", "spell_id": "maestroSpeedZhigh", "no_fail": true, "level": 0, "need_wielding": true } ],
     "charges_per_use": 10
   },
   {
@@ -139,16 +122,16 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "glass staff" },
-	"use_action": {
+    "use_action": {
       "type": "heal",
-	  "move_cost": 100,
-	  "bleed": 0.7,
-	  "bite": 0.7,
-	  "infect": 0.7,
-	  "limb_power": 10,
-	  "head_power": 10,
-	  "torso_power": 10,
-	  "effects": [ { "id": "healing_medkit", "duration": 100 }, { "id": "pkill2", "duration": 50 } ]
+      "move_cost": 100,
+      "bleed": 0.7,
+      "bite": 0.7,
+      "infect": 0.7,
+      "limb_power": 10,
+      "head_power": 10,
+      "torso_power": 10,
+      "effects": [ { "id": "healing_medkit", "duration": 100 }, { "id": "pkill2", "duration": 50 } ]
     },
     "charges_per_use": 5
   },
@@ -183,9 +166,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "lead staff" },
-    "use_action": [
-		{ "type": "cast_spell", "spell_id": "vacancerHealZhigh", "no_fail": true, "level": 0 }
-	],
+    "use_action": [ { "type": "cast_spell", "spell_id": "vacancerHealZhigh", "no_fail": true, "level": 0 } ],
     "charges_per_use": 10
   },
   {
@@ -194,9 +175,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "plastic staff" },
-    "use_action": [
-		{ "type": "cast_spell", "spell_id": "camFlashZhigh", "no_fail": true, "level": 0 }
-	],
+    "use_action": [ { "type": "cast_spell", "spell_id": "camFlashZhigh", "no_fail": true, "level": 0 } ],
     "charges_per_use": 10
   },
   {
@@ -205,9 +184,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "silver staff" },
-    "use_action": [
-		{ "type": "cast_spell", "spell_id": "waveStrikeZhigh", "no_fail": true, "level": 0 }
-	],
+    "use_action": [ { "type": "cast_spell", "spell_id": "waveStrikeZhigh", "no_fail": true, "level": 0 } ],
     "charges_per_use": 10
   },
   {
@@ -216,9 +193,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "wood staff" },
-    "use_action": [
-		{ "type": "cast_spell", "spell_id": "backattackerRushZhigh", "no_fail": true, "level": 0 }
-	],
+    "use_action": [ { "type": "cast_spell", "spell_id": "backattackerRushZhigh", "no_fail": true, "level": 0 } ],
     "charges_per_use": 10
   },
   {
@@ -290,6 +265,13 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "grey staff" }
+  },
+  {
+    "id": "stick_staffEagle",
+    "copy-from": "stick_swag",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "eagle staff" }
   },
   {
     "id": "staff_fancy_zhigh",
@@ -372,17 +354,17 @@
     "price_postapoc": "50 USD",
     "qualities": [ [ "HAMMER", 1 ] ],
     "use_action": [
-		{
-		"type": "transform",
-		"msg": "You turn the shock knuckles on.",
-		"target": "knuckle_elec_on",
-		"transform_charges": 1,
-		"active": true,
-		"need_charges": 1,
-			"need_charges_msg": "The shock knuckles' batteries are dead."
-		},
-		"TAZER"
-	],
+      {
+        "type": "transform",
+        "msg": "You turn the shock knuckles on.",
+        "target": "knuckle_elec_on",
+        "transform_charges": 1,
+        "active": true,
+        "need_charges": 1,
+        "need_charges_msg": "The shock knuckles' batteries are dead."
+      },
+      "TAZER"
+    ],
     "flags": [ "UNARMED_WEAPON", "NONCONDUCTIVE", "BELT_CLIP" ]
   },
   {
@@ -481,7 +463,7 @@
         ]
       ]
     ],
-   "magazine_well": "100 ml"
+    "magazine_well": "100 ml"
   },
   {
     "id": "baton_light_on",
@@ -530,7 +512,7 @@
     "bashing": 1,
     "cutting": 12,
     "use_action": {
-	  "menu_text": "Change grip",
+      "menu_text": "Change grip",
       "type": "transform",
       "msg": "You re-grab your scrap trench knife, to use it as a knuckleduster.",
       "target": "knife_trench_bashScrap"
@@ -547,7 +529,7 @@
     "cutting": 1,
     "flags": [ "DURABLE_MELEE", "UNARMED_WEAPON", "SHEATH_KNIFE" ],
     "use_action": {
-	  "menu_text": "Change grip",
+      "menu_text": "Change grip",
       "type": "transform",
       "msg": "You re-grab your scrap trench knife, to use it as a knife.",
       "target": "knife_trenchScrap"
@@ -793,17 +775,17 @@
     "ammo": "battery",
     "charges_per_use": 25,
     "use_action": [
-		{
-		"type": "transform",
-		"msg": "You turn the cattle prod on.",
-		"target": "stunrod_on",
-		"transform_charges": 1,
-		"active": true,
-		"need_charges": 1,
-			"need_charges_msg": "The cattle prod's batteries are dead."
-		},
-		"TAZER"
-	],
+      {
+        "type": "transform",
+        "msg": "You turn the cattle prod on.",
+        "target": "stunrod_on",
+        "transform_charges": 1,
+        "active": true,
+        "need_charges": 1,
+        "need_charges_msg": "The cattle prod's batteries are dead."
+      },
+      "TAZER"
+    ],
     "magazines": [
       [
         "battery",
@@ -939,10 +921,10 @@
     "type": "GENERIC",
     "copy-from": "katana",
     "name": { "str": "Shinsakuto Katana" },
-	"weight": "1333 g",
+    "weight": "1333 g",
     "to_hit": 3,
-	"cutting": 35,
-	"bashing": 7,
+    "cutting": 35,
+    "bashing": 7,
     "flags": [ "UNBREAKABLE_MELEE", "SHEATH_SWORD", "NONCONDUCTIVE" ]
   },
   {
@@ -951,10 +933,10 @@
     "type": "GENERIC",
     "copy-from": "survivor_machete",
     "name": { "str": "machete knife" },
-	"weight": "1333 g",
+    "weight": "1333 g",
     "to_hit": 3,
-	"cutting": 25,
-	"bashing": 7,
+    "cutting": 25,
+    "bashing": 7,
     "flags": [ "UNBREAKABLE_MELEE", "SHEATH_SWORD", "NONCONDUCTIVE" ]
   },
   {
@@ -973,14 +955,14 @@
     "ammo": "plutonium",
     "flags": [ "DURABLE_MELEE", "BELT_CLIP" ],
     "use_action": {
-		"menu_text": "Activate",
-		"type": "transform",
-		"target": "plasmaSaberZhighOn",
-		"active": true,
-		"need_charges": 1,
-		"need_charges_msg": "The plasma sword's batteries are dead.",
-		"msg": "Your plasma sword activates."
-	},
+      "menu_text": "Activate",
+      "type": "transform",
+      "target": "plasmaSaberZhighOn",
+      "active": true,
+      "need_charges": 1,
+      "need_charges_msg": "The plasma sword's batteries are dead.",
+      "msg": "Your plasma sword activates."
+    },
     "volume": "250 ml",
     "bashing": 4,
     "price": "175 USD"
@@ -995,14 +977,19 @@
     "description": "A handle that collapses for easy storage, is now emitting a blade of plasma.  Makes an excellent melee weapon.  Activate to collapse.",
     "to_hit": 3,
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP", "RAPID" ],
-    "use_action": { "menu_text": "Deactivate", "type": "transform", "target": "plasmaSaberZhigh", "msg": "Your plasma sword deactivates." },
+    "use_action": {
+      "menu_text": "Deactivate",
+      "type": "transform",
+      "target": "plasmaSaberZhigh",
+      "msg": "Your plasma sword deactivates."
+    },
     "turns_per_charge": 8,
     "power_draw": 2000000,
     "charges_per_use": 1,
     "max_charges": 10000,
     "ammo": "plutonium",
     "volume": "850 ml",
-	"revert_to": "plasmaSaberZhigh",
+    "revert_to": "plasmaSaberZhigh",
     "revert_msg": "The %s's batteries run dry.",
     "material": [ "steel", "aluminum" ],
     "flags": [ "DURABLE_MELEE", "REACH_ATTACK", "LIGHT_240", "TRADER_AVOID", "FLAMING", "SHOCKING", "NONCONDUCTIVE" ],
@@ -1026,14 +1013,14 @@
     "ammo": "plutonium",
     "flags": [ "UNARMED_WEAPON", "DURABLE_MELEE", "BELT_CLIP" ],
     "use_action": {
-		"menu_text": "Activate",
-		"type": "transform",
-		"target": "PsybladeZhighOn",
-		"active": true,
-		"need_charges": 1,
-		"need_charges_msg": "The plasma piercer's batteries are dead.",
-		"msg": "Your plasma piercer activates."
-	},
+      "menu_text": "Activate",
+      "type": "transform",
+      "target": "PsybladeZhighOn",
+      "active": true,
+      "need_charges": 1,
+      "need_charges_msg": "The plasma piercer's batteries are dead.",
+      "msg": "Your plasma piercer activates."
+    },
     "volume": "150 ml",
     "bashing": 4,
     "price": "175 USD"
@@ -1055,7 +1042,7 @@
     "max_charges": 10000,
     "ammo": "plutonium",
     "volume": "850 ml",
-	"revert_to": "PsybladeZhigh",
+    "revert_to": "PsybladeZhigh",
     "revert_msg": "The %s's batteries run dry.",
     "material": [ "steel", "aluminum" ],
     "flags": [ "UNARMED_WEAPON", "DURABLE_MELEE", "LIGHT_240", "TRADER_AVOID", "FLAMING", "SHOCKING", "NONCONDUCTIVE" ],
@@ -1289,22 +1276,10 @@
     "name": { "str": "anime katana" },
     "description": "This is a rare sword from Japan.  While it's got the right edge and weight, the pommel just snaps off, and you could study the blade with it from some anime.",
     "snippet_category": [
-      {
-        "id": "tanjiroKimetsu",
-        "text": "An average looking katana with a black blade."
-      },
-      {
-        "id": "zenitsuKimetsu",
-        "text": "An average looking katana with a unique thunder like yellow stripes."
-      },
-      {
-        "id": "inosukeKimetsu",
-        "text": "A saw shaped katana, as if someone broke the blade with a rock."
-      },
-      {
-        "id": "giyuKimetsu",
-        "text": "An average looking katana with a black body with a blue blade."
-      },
+      { "id": "tanjiroKimetsu", "text": "An average looking katana with a black blade." },
+      { "id": "zenitsuKimetsu", "text": "An average looking katana with a unique thunder like yellow stripes." },
+      { "id": "inosukeKimetsu", "text": "A saw shaped katana, as if someone broke the blade with a rock." },
+      { "id": "giyuKimetsu", "text": "An average looking katana with a black body with a blue blade." },
       {
         "id": "rengokuKimetsu",
         "text": "An average looking katana with a flaming red blade with a flame looking handguard."
@@ -1313,18 +1288,9 @@
         "id": "shinobuKimetsu",
         "text": "A skinny katana with an extremly thin blade with a butterfly looking handguard."
       },
-      {
-        "id": "uzuiKimetsu",
-        "text": "A big, machete looking katana with a hole in the midddle of the orange blade."
-      },
-      {
-        "id": "mitsuiKimetsu",
-        "text": "A thin katana with a pink wobbly blade and a flower looking handguard."
-      },
-      {
-        "id": "iguroKimetsu",
-        "text": "A weird shaped katana with a white wavy blade like a snake."
-      },
+      { "id": "uzuiKimetsu", "text": "A big, machete looking katana with a hole in the midddle of the orange blade." },
+      { "id": "mitsuiKimetsu", "text": "A thin katana with a pink wobbly blade and a flower looking handguard." },
+      { "id": "iguroKimetsu", "text": "A weird shaped katana with a white wavy blade like a snake." },
       {
         "id": "reverseBlade",
         "text": "A weird shaped katana with a reversed blade, so the blade part is actually dull and the dull part is a blade."
@@ -1640,7 +1606,12 @@
     "material": [ "wood", "steel" ],
     "techniques": [ "WBLOCK_1" ],
     "flags": [ "FRAGILE_MELEE", "NONCONDUCTIVE", "BELT_CLIP" ],
-    "use_action": { "menu_text": "Pull out", "type": "transform", "target": "ninjatoSwordZhigh", "msg": "You pull the ninjato out from the scabbard." },
+    "use_action": {
+      "menu_text": "Pull out",
+      "type": "transform",
+      "target": "ninjatoSwordZhigh",
+      "msg": "You pull the ninjato out from the scabbard."
+    },
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 13 ] ],
     "bashing": 12
   },
@@ -1663,7 +1634,12 @@
     "symbol": "/",
     "color": "light_gray",
     "techniques": [ "RAPID", "WBLOCK_2" ],
-    "use_action": { "menu_text": "Put in", "type": "transform", "target": "ninjatoStikZhigh", "msg": "You put the ninjato in the scabbard." },
+    "use_action": {
+      "menu_text": "Put in",
+      "type": "transform",
+      "target": "ninjatoStikZhigh",
+      "msg": "You put the ninjato in the scabbard."
+    },
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 13 ] ],
     "flags": [ "FRAGILE_MELEE", "NONCONDUCTIVE", "ALWAYS_TWOHAND" ]
   },
@@ -1787,7 +1763,12 @@
     "material": [ "wood", "steel" ],
     "techniques": [ "WBLOCK_1" ],
     "flags": [ "NONCONDUCTIVE", "BELT_CLIP" ],
-    "use_action": { "menu_text": "Pull out", "type": "transform", "target": "changpoSwordZhigh", "msg": "You pull the changpo out from the scabbard." },
+    "use_action": {
+      "menu_text": "Pull out",
+      "type": "transform",
+      "target": "changpoSwordZhigh",
+      "msg": "You pull the changpo out from the scabbard."
+    },
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 13 ] ],
     "bashing": 18
   },
@@ -1810,7 +1791,12 @@
     "symbol": "/",
     "color": "light_gray",
     "techniques": [ "RAPID", "WBLOCK_2" ],
-    "use_action": { "menu_text": "Put in", "type": "transform", "target": "changpoStikZhigh", "msg": "You put the changpo in the scabbard." },
+    "use_action": {
+      "menu_text": "Put in",
+      "type": "transform",
+      "target": "changpoStikZhigh",
+      "msg": "You put the changpo in the scabbard."
+    },
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 13 ] ],
     "flags": [ "STAB", "DURABLE_MELEE", "NONCONDUCTIVE", "ALWAYS_TWOHAND" ]
   },
@@ -1848,7 +1834,7 @@
     "to_hit": 1,
     "bashing": 32,
     "cutting": 30,
-    "material": [ "steel", "wood" ],
+    "material": [ "bronze", "wood" ],
     "symbol": "/",
     "color": "light_gray",
     "techniques": [ "WBLOCK_1", "BRUTAL", "SWEEP" ],
@@ -2013,7 +1999,7 @@
     "color": "light_gray",
     "name": { "str": "war fan (opened)" },
     "description": "This is a Japanese hand fan used as a weapon or for signalling.  Since this is opened, you could use this as an unarmed weapon or as an improvised shield.  Activate this to fold it up.",
-	"price": "50 USD",
+    "price": "50 USD",
     "material": [ "steel" ],
     "volume": "800 ml",
     "weight": "350 g",
@@ -2106,7 +2092,7 @@
     "price": "25 USD",
     "price_postapoc": "3 USD",
     "bashing": 22,
-	"to_hit": 2,
+    "to_hit": 2,
     "material": [ "steel" ],
     "symbol": "/",
     "color": "dark_gray",
@@ -2125,7 +2111,7 @@
     "price": "25 USD",
     "price_postapoc": "3 USD",
     "bashing": 28,
-	"to_hit": 1,
+    "to_hit": 1,
     "material": [ "steel" ],
     "symbol": "/",
     "color": "dark_gray",
@@ -2203,10 +2189,7 @@
               "message": "The knife shocks your target.",
               "npc_message": "%1$s shocks their target."
             },
-            {
-              "id": "spell_mothman_ninja_vanish_teleport",
-              "once_in": 2
-            }
+            { "id": "spell_mothman_ninja_vanish_teleport", "once_in": 2 }
           ]
         }
       ]
@@ -2355,13 +2338,13 @@
     "category": "weapons",
     "name": { "str": "kusarigama (sickle)", "str_pl": "kusarigamas (sickle)" },
     "description": "This is a traditional Japanese weapon that consists of a sickle on a metal chain with a heavy iron weight at the end.  You are grabbing the sickle's handle, to use it as a sickle.",
-	"weight": "3432 g",
+    "weight": "3432 g",
     "volume": "3850 ml",
     "material": [ "wood", "leather", "steel" ],
     "flags": [ "CONDUCTIVE", "BELT_CLIP" ],
     "to_hit": 1,
     "use_action": {
-	  "menu_text": "Change grip",
+      "menu_text": "Change grip",
       "type": "transform",
       "msg": "You re-grab your kusarigama, to use it as a flail.",
       "target": "kusarigamaFlail"
@@ -2375,15 +2358,15 @@
     "category": "weapons",
     "name": { "str": "kusarigama (flail)", "str_pl": "kusarigamas (flail)" },
     "description": "This is a traditional Japanese weapon that consists of a sickle on a metal chain with a heavy iron weight at the end.  You are grabbing the chain, to use it as a whip with a metal end.",
-	"weight": "3432 g",
+    "weight": "3432 g",
     "volume": "3850 ml",
     "material": [ "wood", "leather", "steel" ],
     "flags": [ "CONDUCTIVE", "REACH_ATTACK", "REACH3", "WHIP", "BELT_CLIP" ],
     "bashing": 16,
     "cutting": 0,
-	"to_hit": -2,
+    "to_hit": -2,
     "use_action": {
-	  "menu_text": "Change grip",
+      "menu_text": "Change grip",
       "type": "transform",
       "msg": "You re-grab your kusarigama, to use it as a sickle.",
       "target": "kusarigamaSickle"
@@ -2436,17 +2419,11 @@
     "volume": "550 ml",
     "bashing": 12,
     "to_hit": 2,
-    "use_action": [
-		{ "type": "cast_spell", "spell_id": "entertainerTeleportZhigh", "no_fail": true, "level": 0, "need_wielding": true }
-	],
+    "use_action": [ { "type": "cast_spell", "spell_id": "entertainerTeleportZhigh", "no_fail": true, "level": 0, "need_wielding": true } ],
     "charges_per_use": 3,
     "max_charges": 30,
     "initial_charges": 30,
-    "relic_data":
-	{
-		"charges_per_activation": 1,
-		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 m", "rate": 2 } ]
-    },
+    "relic_data": { "charges_per_activation": 1, "recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 m", "rate": 2 } ] },
     "price_postapoc": "50 cent"
   },
   {
@@ -2468,27 +2445,24 @@
     "bashing": 4,
     "to_hit": 2,
     "use_action": [
-		{ "menu_text": "Change Posture", "type": "transform", "target": "conductingBatonStamiZhigh", "msg": "You change the position of the concducting baton." }
-	],
+      {
+        "menu_text": "Change Posture",
+        "type": "transform",
+        "target": "conductingBatonStamiZhigh",
+        "msg": "You change the position of the concducting baton."
+      }
+    ],
     "charges_per_use": 1,
     "max_charges": 10,
     "initial_charges": 10,
-    "relic_data":
-	{
-		"passive_effects": [
-			{
-				"has": "WIELD",
-				"condition": "ALWAYS",
-				"intermittent_activation": {
-					"effects": [
-						{
-							"frequency": "1 seconds",
-							"spell_effects": [ { "id": "maestroSpeedZhigh" } ]
-						}
-					]
-				}
-			}
-		]
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "intermittent_activation": { "effects": [ { "frequency": "1 seconds", "spell_effects": [ { "id": "maestroSpeedZhigh" } ] } ] }
+        }
+      ]
     },
     "price_postapoc": "50 cent"
   },
@@ -2512,27 +2486,24 @@
     "bashing": 4,
     "to_hit": 2,
     "use_action": [
-		{ "menu_text": "Change Posture", "type": "transform", "target": "conductingBatonStrengZhigh", "msg": "You change the position of the concducting baton." }
-	],
+      {
+        "menu_text": "Change Posture",
+        "type": "transform",
+        "target": "conductingBatonStrengZhigh",
+        "msg": "You change the position of the concducting baton."
+      }
+    ],
     "charges_per_use": 10,
     "max_charges": 10,
     "initial_charges": 10,
-    "relic_data":
-	{
-		"passive_effects": [
-			{
-				"has": "WIELD",
-				"condition": "ALWAYS",
-				"intermittent_activation": {
-					"effects": [
-						{
-							"frequency": "1 seconds",
-							"spell_effects": [ { "id": "maestroStamiZhigh" } ]
-						}
-					]
-				}
-			}
-		]
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "intermittent_activation": { "effects": [ { "frequency": "1 seconds", "spell_effects": [ { "id": "maestroStamiZhigh" } ] } ] }
+        }
+      ]
     },
     "price_postapoc": "50 cent"
   },
@@ -2556,27 +2527,24 @@
     "bashing": 4,
     "to_hit": 2,
     "use_action": [
-		{ "menu_text": "Change Posture", "type": "transform", "target": "conductingBatonSpeedZhigh", "msg": "You change the position of the concducting baton." }
-	],
+      {
+        "menu_text": "Change Posture",
+        "type": "transform",
+        "target": "conductingBatonSpeedZhigh",
+        "msg": "You change the position of the concducting baton."
+      }
+    ],
     "charges_per_use": 1,
     "max_charges": 10,
     "initial_charges": 10,
-    "relic_data":
-	{
-		"passive_effects": [
-			{
-				"has": "WIELD",
-				"condition": "ALWAYS",
-				"intermittent_activation": {
-					"effects": [
-						{
-							"frequency": "1 seconds",
-							"spell_effects": [ { "id": "maestroStrengZhigh" } ]
-						}
-					]
-				}
-			}
-		]
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "intermittent_activation": { "effects": [ { "frequency": "1 seconds", "spell_effects": [ { "id": "maestroStrengZhigh" } ] } ] }
+        }
+      ]
     },
     "price_postapoc": "50 cent"
   },
@@ -2763,16 +2731,7 @@
     "color": "brown",
     "techniques": [ "IMPALE", "WBLOCK_1" ],
     "qualities": [ [ "COOK", 1 ] ],
-    "flags": [
-      "DURABLE_MELEE",
-      "POLEARM",
-      "SPEAR",
-      "REACH_ATTACK",
-      "REACH3",
-      "NONCONDUCTIVE",
-      "SHEATH_SPEAR",
-      "ALWAYS_TWOHAND"
-    ]
+    "flags": [ "DURABLE_MELEE", "POLEARM", "SPEAR", "REACH_ATTACK", "REACH3", "NONCONDUCTIVE", "SHEATH_SPEAR", "ALWAYS_TWOHAND" ]
   },
   {
     "id": "swordstaffZhigh_inferior",
@@ -2954,16 +2913,7 @@
     "color": "brown",
     "techniques": [ "WIDE", "SWEEP", "WBLOCK_1" ],
     "qualities": [ [ "AXE", 1 ], [ "COOK", 1 ], [ "BUTCHER", -70 ] ],
-    "flags": [
-      "DURABLE_MELEE",
-      "POLEARM",
-      "SPEAR",
-      "REACH_ATTACK",
-      "REACH3",
-      "NONCONDUCTIVE",
-      "SHEATH_SPEAR",
-      "ALWAYS_TWOHAND"
-    ]
+    "flags": [ "DURABLE_MELEE", "POLEARM", "SPEAR", "REACH_ATTACK", "REACH3", "NONCONDUCTIVE", "SHEATH_SPEAR", "ALWAYS_TWOHAND" ]
   },
   {
     "id": "voulgeZhigh_inferior",
@@ -3058,7 +3008,7 @@
     "material": [ "steel" ],
     "volume": "250 ml",
     "bashing": 2,
-    "cutting": 14,
+    "cutting": 10,
     "flags": [ "UNARMED_WEAPON", "DURABLE_MELEE", "BELT_CLIP" ],
     "price": "100 USD",
     "qualities": [ [ "CUT", 5 ], [ "BUTCHER", 14 ] ]
@@ -3341,11 +3291,7 @@
       {
         "id": "STAB",
         "to_hit": 2,
-        "damage": {
-          "values": [
-            { "damage_type": "stab", "amount": 10, "armor_penetration": 5, "armor_multiplier": 0.2 }
-          ]
-        }
+        "damage": { "values": [ { "damage_type": "stab", "amount": 10, "armor_penetration": 5, "armor_multiplier": 0.2 } ] }
       }
     ],
     "techniques": [ "WBLOCK_2", "RAPID" ]
@@ -3377,12 +3323,12 @@
     "weapon_category": [ "FIST_WEAPONS" ],
     "name": { "str": "tiger's eye" },
     "description": "A short and sharp axe-blade like knife made to be used as a cutting tool, when a knife won't work at all.  Also could block some attacks, like a shield.",
-    "weight": "168 g",
+    "weight": "268 g",
     "price_postapoc": "50 cent",
     "color": "dark_gray",
     "symbol": "{",
     "material": [ "steel" ],
-    "volume": "250 ml",
+    "volume": "450 ml",
     "bashing": 6,
     "cutting": 20,
     "flags": [ "UNARMED_WEAPON", "DURABLE_MELEE", "BELT_CLIP", "NONCONDUCTIVE" ],
@@ -3456,12 +3402,7 @@
     "magazines": [
       [
         "battery",
-        [
-			"medium_battery_cell",
-			"medium_plus_battery_cell",
-			"medium_atomic_battery_cell",
-			"medium_disposable_cell"
-		]
+        [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ]
       ]
     ],
     "magazine_well": "500 ml",
@@ -3479,11 +3420,11 @@
     "color": "light_cyan",
     "revert_msg": "The %s's batteries run dry.",
     "use_action": {
-		"menu_text": "Turn off",
-		"type": "transform",
-		"msg": "You press a button and the bat turns off.",
-		"target": "elecBatZhigh"
-	},
+      "menu_text": "Turn off",
+      "type": "transform",
+      "msg": "You press a button and the bat turns off.",
+      "target": "elecBatZhigh"
+    },
     "power_draw": 500000,
     "flags": [ "SHOCKING", "DURABLE_MELEE", "TRADER_AVOID" ]
   },
@@ -4097,7 +4038,7 @@
     "name": { "str": "stinger punch dagger" },
     "description": "This is a punch dagger with a poisoned blade.  It's only natural that the Cataclysm would advent new, creative forms of old weapons.",
     "price_postapoc": "550 cent",
-	"material": [ "chitin" ],
+    "material": [ "chitin" ],
     "proportional": { "weight": 0.8, "cutting": 0.9 },
     "relic_data": {
       "passive_effects": [
@@ -4122,7 +4063,7 @@
     "copy-from": "punch_dagger_stingerZhigh",
     "name": { "str": "triffid punch dagger" },
     "description": "This is a punch dagger with a paralyzing poisoned blade.  It's only natural that the Cataclysm would advent new, creative forms of old weapons.",
-	"material": [ "wood" ],
+    "material": [ "wood" ],
     "relic_data": {
       "passive_effects": [
         {
@@ -4177,22 +4118,10 @@
           "has": "WIELD",
           "condition": "ALWAYS",
           "hit_you_effect": [
-            {
-              "id": "CritZhigh",
-              "once_in": 8
-            },
-            {
-              "id": "stunnedZhigh",
-              "once_in": 3
-            },
-            {
-              "id": "dazedZhigh",
-              "once_in": 3
-            },
-            {
-              "id": "pushZhigh_3",
-              "once_in": 3
-            }
+            { "id": "CritZhigh", "once_in": 8 },
+            { "id": "stunnedZhigh", "once_in": 3 },
+            { "id": "dazedZhigh", "once_in": 3 },
+            { "id": "pushZhigh_3", "once_in": 3 }
           ]
         }
       ]
@@ -4637,31 +4566,14 @@
     "cutting": 18,
     "price": "500 USD",
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 8 ] ],
-    "armor_data": {
-		"covers": [ "hand_either", "arm_either" ],
-		"coverage": 60, 
-		"encumbrance": 10, 
-		"material_thickness": 2
-	},
+    "armor_data": { "covers": [ "hand_either", "arm_either" ], "coverage": 60, "encumbrance": 10, "material_thickness": 2 },
     "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "hit_you_effect": [
-            {
-              "id": "PierceZhigh",
-              "message": "You pierce your target.",
-              "npc_message": "%1$s pierces their target."
-            }
-		  ],
-          "hit_me_effect": [
-            {
-              "id": "PierceZhigh",
-              "message": "You pierce your target.",
-              "npc_message": "%1$s pierces their target."
-            }
-          ]
+          "hit_you_effect": [ { "id": "PierceZhigh", "message": "You pierce your target.", "npc_message": "%1$s pierces their target." } ],
+          "hit_me_effect": [ { "id": "PierceZhigh", "message": "You pierce your target.", "npc_message": "%1$s pierces their target." } ]
         }
       ]
     },
@@ -5008,16 +4920,12 @@
     "price": "50 USD",
     "symbol": "?",
     "color": "light_red",
-	"bashing": 10,
-	"to_hit": 2,
+    "bashing": 10,
+    "to_hit": 2,
     "max_charges": 20,
     "initial_charges": 20,
-    "relic_data":
-	{
-		"charges_per_activation": 1,
-		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "3 m", "rate": 1 } ]
-    },
-	"material": [ "steel", "leather", "gold" ],
+    "relic_data": { "charges_per_activation": 1, "recharge_scheme": [ { "type": "time", "req": "none", "interval": "3 m", "rate": 1 } ] },
+    "material": [ "steel", "leather", "gold" ],
     "use_action": { "type": "cast_spell", "spell_id": "spellMixZhigh", "no_fail": true, "level": 0, "need_wielding": true },
     "flags": [ "DURABLE_MELEE" ]
   },
@@ -5043,20 +4951,20 @@
   {
     "type": "GENERIC",
     "id": "knife_acidZhigh",
-	"category": "weapons",
+    "category": "weapons",
     "copy-from": "dagger_medieval",
-	"looks_like": "bone_knife",
+    "looks_like": "bone_knife",
     "name": { "str": "regianblade" },
     "description": "A dagger made from a sharpened mutant acidic chitin.  It's only natural that the Cataclysm would advent new, creative forms of old weapons.",
     "material": [ "acidchitin" ],
-	"proportional": { "weight": 0.8, "cutting": 0.9 },
+    "proportional": { "weight": 0.8, "cutting": 0.9 },
     "flags": [ "STAB", "SHEATH_KNIFE", "ACIDIC" ]
   },
   {
     "id": "spear_acidZhigh",
     "type": "GENERIC",
     "copy-from": "spear_steel",
-	"category": "weapons",
+    "category": "weapons",
     "name": { "str": "regian spear" },
     "description": "A stout wooden pole with a sharpened mutant acidic chitin for a spearhead, to add an acidic touch to a classic weapon.",
     "material": [ "acidchitin", "wood" ],
@@ -5167,7 +5075,7 @@
     "price": "950 cent",
     "price_postapoc": "3 USD",
     "material": [ "aluminum", "wood" ],
-    "qualities": [ ],
+    "qualities": [  ],
     "repairs_like": "masakariZhigh",
     "proportional": { "weight": 0.5, "bashing": 0.6, "cutting": 0.2 },
     "relative": { "to_hit": -2 },
@@ -5205,7 +5113,12 @@
     "symbol": "\\",
     "color": "light_gray",
     "techniques": [ "WRAP", "SPIN" ],
-    "use_action": { "menu_text": "Regrab", "type": "transform", "target": "nunchunk3stickZhigh", "msg": "You regrab your three-section-staff." },
+    "use_action": {
+      "menu_text": "Regrab",
+      "type": "transform",
+      "target": "nunchunk3stickZhigh",
+      "msg": "You regrab your three-section-staff."
+    },
     "flags": [ "BELT_CLIP", "REACH_ATTACK", "REACH3", "NONCONDUCTIVE" ]
   },
   {
@@ -5225,7 +5138,12 @@
     "symbol": "\\",
     "color": "light_gray",
     "techniques": [ "WBLOCK_2", "RAPID", "WIDE", "SWEEP" ],
-    "use_action": { "menu_text": "Regrab", "type": "transform", "target": "nunchunk3flailZhigh", "msg": "You regrab your three-section-staff." },
+    "use_action": {
+      "menu_text": "Regrab",
+      "type": "transform",
+      "target": "nunchunk3flailZhigh",
+      "msg": "You regrab your three-section-staff."
+    },
     "flags": [ "BELT_CLIP", "DURABLE_MELEE", "ALWAYS_TWOHAND", "NONCONDUCTIVE" ]
   },
   {
@@ -5245,12 +5163,7 @@
     "symbol": "/",
     "color": "dark_gray",
     "techniques": [ "WBLOCK_2" ],
-    "qualities": [
-		[ "SAW_M", 1 ],
-		[ "SAW_W", 1 ],
-		[ "SAW_M_FINE", 1 ],
-		[ "BUTCHER", -68 ]
-	],
+    "qualities": [ [ "SAW_M", 1 ], [ "SAW_W", 1 ], [ "SAW_M_FINE", 1 ], [ "BUTCHER", -68 ] ],
     "flags": [ "MESSY", "BELT_CLIP" ]
   },
   {
@@ -5444,7 +5357,7 @@
     "material": [ "cotton" ],
     "volume": "50 ml",
     "cutting": 12,
-	"bashing": 9,
+    "bashing": 9,
     "price": "50 cent",
     "price_postapoc": "50 cent",
     "qualities": [ [ "CUT", -1 ], [ "BUTCHER", -20 ] ],
@@ -5707,13 +5620,7 @@
         {
           "has": "WIELD",
           "condition": "ALWAYS",
-          "hit_you_effect": [
-            {
-              "id": "stunnedZhigh",
-              "message": "The hammer stuns your target.",
-              "npc_message": "%1$s stuns their target."
-            }
-          ]
+          "hit_you_effect": [ { "id": "stunnedZhigh", "message": "The hammer stuns your target.", "npc_message": "%1$s stuns their target." } ]
         }
       ]
     }
@@ -5753,7 +5660,12 @@
     "symbol": "/",
     "material": [ "steel" ],
     "flags": [ "DURABLE_MELEE", "BELT_CLIP" ],
-    "use_action": { "menu_text": "Expand", "type": "transform", "target": "spring_coshExtended", "msg": "You snap open your spring cosh." },
+    "use_action": {
+      "menu_text": "Expand",
+      "type": "transform",
+      "target": "spring_coshExtended",
+      "msg": "You snap open your spring cosh."
+    },
     "volume": "250 ml",
     "bashing": 4,
     "price": "175 USD"
@@ -5869,13 +5781,7 @@
         {
           "has": "WIELD",
           "condition": "ALWAYS",
-          "hit_you_effect": [
-            {
-              "id": "BurnSpellZhigh",
-              "message": "The axe burns your target.",
-              "npc_message": "%1$s burns their target."
-            }
-          ]
+          "hit_you_effect": [ { "id": "BurnSpellZhigh", "message": "The axe burns your target.", "npc_message": "%1$s burns their target." } ]
         }
       ]
     }
@@ -5905,13 +5811,7 @@
         {
           "has": "WIELD",
           "condition": "ALWAYS",
-          "hit_you_effect": [
-            {
-              "id": "FreezeSpellZhigh",
-              "message": "The axe freezes your target.",
-              "npc_message": "%1$s freezes their target."
-            }
-          ]
+          "hit_you_effect": [ { "id": "FreezeSpellZhigh", "message": "The axe freezes your target.", "npc_message": "%1$s freezes their target." } ]
         }
       ]
     }
@@ -5999,6 +5899,18 @@
     "proportional": { "price": 1.5, "price_postapoc": 1.5 }
   },
   {
+    "id": "bat_superalloy",
+    "looks_like": "bat_metal",
+    "type": "GENERIC",
+    "copy-from": "bat",
+    "name": { "str": "superalloy bat" },
+    "description": "This bat is made of modern superalloy instead of original wood or aluminum.  It was a novelty item, or a defence weapon.  It was not good for actual baseball game, though.",
+    "color": "light_gray",
+    "bashing": 32,
+    "material": [ "superalloy" ],
+    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 }
+  },
+  {
     "id": "chainbat",
     "looks_like": "bwirebat",
     "type": "GENERIC",
@@ -6055,7 +5967,7 @@
     "symbol": ";",
     "color": "brown",
     "flags": [ "BELT_CLIP", "NONCONDUCTIVE" ],
-	"use_action": "MEDITATE"
+    "use_action": "MEDITATE"
   },
   {
     "id": "yoyo_toyZhigh",
@@ -6136,7 +6048,7 @@
       "mode_modifier": [ [ "REACH", "bayonet", 2, [ "MELEE", "REACH_ATTACK" ] ] ]
     },
     "material": [ "superalloy" ],
-    "proportional": { "weight": 1.2, "cutting": 1.85 }
+    "proportional": { "weight": 0.6, "cutting": 1.25 }
   },
   {
     "id": "jambiya",
@@ -6166,7 +6078,7 @@
     "copy-from": "jambiya",
     "name": { "str": "jambiya replica" },
     "description": "A type of dagger with a short curved blade with a medial ridge that originated from the middle east.  This one is not particularly well-made.",
-    "looks_like": "jambiya",
+    "looks_like": "kirpan_cheap",
     "price": "9 USD",
     "price_postapoc": "50 cent",
     "material": "budget_steel",
@@ -6175,5 +6087,441 @@
     "proportional": { "weight": 1.2, "cutting": 0.85 },
     "relative": { "to_hit": -1 },
     "delete": { "flags": [ "DURABLE_MELEE" ] }
+  },
+  {
+    "id": "knife_sewerZhigh",
+    "type": "GENERIC",
+    "copy-from": "dagger_medieval",
+    "looks_like": "bone_knife",
+    "name": { "str": "sewer dagger" },
+    "description": "A dagger made from a sewer.  It's only natural that the Cataclysm would advent new, creative forms of old weapons.",
+    "material": [ "chitin" ],
+    "proportional": { "weight": 0.8, "cutting": 0.9 },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "poison",
+              "message": "The stinger injects a small amount of poison into your target.",
+              "npc_message": "%1$s stings their target."
+            },
+            {
+              "id": "poison_paralyze",
+              "message": "The stinger injects a small amount of poison into your target.",
+              "npc_message": "%1$s stings their target."
+            }
+          ]
+        }
+      ]
+    },
+    "extend": { "flags": [ "ACIDIC" ] }
+  },
+  {
+    "id": "shovelSharp",
+    "type": "GENERIC",
+    "category": "tools_farming",
+    "weapon_category": [ "CLUBS" ],
+    "name": { "str": "sharp shovel" },
+    "description": "This is a digging tool.  Use it to dig pits adjacent to your location.  Compared to normal shovels, this one is sharper that it can dig better.",
+    "weight": "1315 g",
+    "volume": "3500 ml",
+    "price": "20 USD",
+    "price_postapoc": "250 cent",
+    "to_hit": 3,
+    "bashing": 10,
+    "cutting": 30,
+    "material": [ "steel", "wood" ],
+    "symbol": "/",
+    "color": "brown",
+    "qualities": [ [ "DIG", 4 ], [ "COOK", 1 ], [ "BUTCHER", -70 ] ],
+    "techniques": [ "WBLOCK_1" ],
+    "flags": [ "NONCONDUCTIVE", "STAB" ]
+  },
+  {
+    "id": "UruZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "FIST_WEAPONS" ],
+    "name": { "str": "uru" },
+    "description": "A short and sharp axe-blade like punch dagger made to be used as a weapon.",
+    "weight": "168 g",
+    "price_postapoc": "50 cent",
+    "color": "dark_gray",
+    "symbol": "{",
+    "material": [ "steel" ],
+    "volume": "250 ml",
+    "bashing": 2,
+    "cutting": 14,
+    "flags": [ "UNARMED_WEAPON", "DURABLE_MELEE", "BELT_CLIP" ],
+    "price": "100 USD",
+    "qualities": [ [ "CUT", 5 ], [ "BUTCHER", 4 ] ]
+  },
+  {
+    "id": "mace_rock",
+    "type": "GENERIC",
+    "copy-from": "mace",
+    "looks_like": "homewrecker",
+    "name": { "str": "rock club" },
+    "description": "This hefty bludgeon is carved from sturdy stone mounted on a wooden haft, capable of bashing faces in with swiftness and efficiency.",
+    "material": [ "stone", "wood" ],
+    "proportional": { "weight": 1.1 }
+  },
+  {
+    "id": "fanAxeZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "1H_AXES" ],
+    "symbol": ";",
+    "color": "light_gray",
+    "name": { "str": "fan axe" },
+    "description": "A one-handed fan axe, originally made in Egypt.  Makes a great melee weapon, and is useful both for chopping things and for use as a short shovel.",
+    "price": "25 USD",
+    "price_postapoc": "5 USD",
+    "material": [ "bronze", "wood" ],
+    "techniques": [ "WBLOCK_1" ],
+    "weight": "707 g",
+    "volume": "1 L",
+    "bashing": 8,
+    "cutting": 18,
+    "to_hit": 1,
+    "flags": [ "DURABLE_MELEE", "BELT_CLIP", "NONCONDUCTIVE", "SHEATH_AXE", "STAB" ],
+    "qualities": [ [ "DIG", 1 ], [ "AXE", 2 ], [ "CUT", 1 ], [ "BUTCHER", 16 ] ]
+  },
+  {
+    "id": "cricket_bat",
+    "looks_like": "bat",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "CLUBS" ],
+    "name": { "str": "cricket bat" },
+    "description": "A flat, broad willow bat — longer and heavier than a baseball bat.  Great for heavy, controlled strikes across a wide surface.",
+    "weight": "1250 g",
+    "to_hit": 2,
+    "color": "brown",
+    "symbol": "/",
+    "material": [ "wood" ],
+    "techniques": [ "WBLOCK_1" ],
+    "flags": [ "DURABLE_MELEE" ],
+    "volume": "2200 ml",
+    "bashing": 32,
+    "price": "190 USD",
+    "price_postapoc": "900 cent"
+  },
+  {
+    "id": "hatchet_carbon",
+    "looks_like": "hatchet",
+    "type": "GENERIC",
+    "copy-from": "hatchet",
+    "name": { "str": "carbon fiber hatchet" },
+    "description": "A custom 3D-printed combat hatchet made out of carbon fiber.  It is more lightweight than a normal hatchet thanks to its method of manufacturing, but it can only be repaired using a 3D printer.",
+    "weight": "560 g",
+    "material": [ "carbon_fiber" ]
+  },
+  {
+    "id": "signHatchetZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "1H_AXES" ],
+    "symbol": ";",
+    "color": "light_gray",
+    "name": { "str": "sign" },
+    "description": "A wooden sign.  Could be used as a weapon.",
+    "price": "25 USD",
+    "price_postapoc": "5 USD",
+    "material": [ "wood" ],
+    "techniques": [ "WBLOCK_1" ],
+    "weight": "907 g",
+    "volume": "1 L",
+    "bashing": 32,
+    "to_hit": 1,
+    "flags": [ "BELT_CLIP", "NONCONDUCTIVE", "SHEATH_AXE" ]
+  },
+  {
+    "id": "glaivePipeZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "SPEARS" ],
+    "name": { "str": "makeshift pipe glaive" },
+    "description": "A stout metal pole with a sharp edge.",
+    "weight": "1398 g",
+    "volume": "1750 ml",
+    "price": "80 USD",
+    "price_postapoc": "50 cent",
+    "symbol": "/",
+    "color": "light_gray",
+    "material": [ "steel" ],
+    "techniques": [ "WBLOCK_1", "WIDE" ],
+    "to_hit": 2,
+    "cutting": 25,
+    "flags": [ "SPEAR", "REACH_ATTACK", "SHEATH_SPEAR", "FRAGILE_MELEE" ],
+    "qualities": [ [ "COOK", 1 ] ]
+  },
+  {
+    "id": "dussackZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "1H_SWORDS", "MEDIEVAL_SWORDS", "DUELING_SWORDS" ],
+    "name": { "str": "dussack" },
+    "description": "This dull sword, looking like a saber, was used as a practice weapon for actual duel.  Still usable as a blunt weapon.",
+    "weight": "538 g",
+    "volume": "1 L",
+    "price": "28 USD",
+    "price_postapoc": "15 USD",
+    "to_hit": 1,
+    "bashing": 25,
+    "material": "steel",
+    "symbol": "/",
+    "color": "dark_gray",
+    "techniques": [ "WBLOCK_2", "RAPID" ],
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NONCONDUCTIVE" ]
+  },
+  {
+    "id": "kendoStick",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "1H_SWORDS", "JAPANESE_SWORDS" ],
+    "symbol": "/",
+    "color": "brown",
+    "name": { "str": "kendo stick" },
+    "description": "This is a solid wood 'training' katana, crafted to train the basic use before using the real thing.  Despite its lack of a sharp metal edge, it's still pack a punch.",
+    "price": "550 USD",
+    "price_postapoc": "25 USD",
+    "material": [ "leather", "wood" ],
+    "techniques": [ "RAPID", "WBLOCK_2", "SWEEP" ],
+    "flags": [ "SHEATH_SWORD" ],
+    "weight": "933 g",
+    "volume": "2 L",
+    "bashing": 10,
+    "cutting": 1,
+    "to_hit": 2,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "stunnedZhigh", "message": "The stick stuns your target.", "npc_message": "%1$s stuns their target." } ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "nguluZhigh",
+    "name": { "str": "ngulu" },
+    "type": "TOOL",
+    "category": "weapons",
+    "weapon_category": [ "SHORT_SWORDS" ],
+    "description": "A thin, unique shaped steel blade with hooklike shaped blade at one end.  Was used as an executioner sword, but now is used as a symbol of authority.",
+    "symbol": "/",
+    "color": "green",
+    "weight": "722 g",
+    "volume": "1 L",
+    "price": "23 USD",
+    "price_postapoc": "18 USD",
+    "to_hit": 1,
+    "bashing": 12,
+    "cutting": 18,
+    "material": "steel",
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 8 ], [ "DIG", 1 ] ],
+    "flags": [ "SHEATH_SWORD" ]
+  },
+  {
+    "id": "ramDaoZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "1H_SWORDS", "SHORT_SWORDS" ],
+    "name": { "str": "ram-dao" },
+    "description": "This sword is depicted in Hindu religion, and also used for rituals.",
+    "weight": "538 g",
+    "volume": "1 L",
+    "price": "28 USD",
+    "price_postapoc": "15 USD",
+    "to_hit": 1,
+    "bashing": 12,
+    "cutting": 15,
+    "material": "steel",
+    "symbol": "/",
+    "color": "dark_gray",
+    "techniques": [ "WBLOCK_1", "SWEEP" ],
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 8 ] ],
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NONCONDUCTIVE" ]
+  },
+  {
+    "id": "bhujAxeZhigh",
+    "type": "GENERIC",
+    "copy-from": "spear_pipe",
+    "weapon_category": [ "1H_AXES", "GLAIVES" ],
+    "name": { "str": "bhuj axe" },
+    "description": "Also called an axe-knife, this glaive-like weapon was used in India.",
+    "weight": "1298 g",
+    "volume": "1750 ml",
+    "price": "160 USD",
+    "price_postapoc": "55 USD",
+    "material": [ "steel", "wood" ],
+    "bashing": 16,
+    "cutting": 20,
+    "qualities": [ [ "AXE", 2 ], [ "BUTCHER", -20 ] ],
+    "techniques": [ "WBLOCK_1", "BRUTAL", "SWEEP" ],
+    "flags": [ "DURABLE_MELEE", "SPEAR", "REACH_ATTACK", "NONCONDUCTIVE", "SHEATH_SPEAR" ]
+  },
+  {
+    "id": "ikakalakaZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "MEDIEVAL_SWORDS", "2H_SWORDS" ],
+    "symbol": "/",
+    "color": "light_gray",
+    "name": { "str": "ikakalaka" },
+    "description": "This is an African sword designed specifically for various events, including executions, rituals, and celebrations.  Also known for it's unique, axe-shaped head.",
+    "price": "930 USD",
+    "price_postapoc": "35 USD",
+    "material": "iron",
+    "techniques": [ "WBLOCK_2" ],
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NONCONDUCTIVE", "STAB" ],
+    "weight": "5500 g",
+    "volume": "2 L",
+    "bashing": 26,
+    "cutting": 30,
+    "to_hit": -1,
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 8 ] ]
+  },
+  {
+    "id": "bambooStaffZhigh",
+	"copy-from": "q_staff",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "QUARTERSTAVES" ],
+    "name": { "str": "bamboo staff", "str_pl": "bamboo staff" },
+    "description": "A smooth and sturdy staff that was freshly harvested.  Light and well-balanced, it is surprisingly easy to handle, but not that damaging.  Also sometimes referred to as a bō in Japan and Okinawan martial arts.",
+    "price": "10 USD",
+    "price_postapoc": "2 USD",
+    "flags": [ "DURABLE_MELEE", "SHEATH_SPEAR", "REACH_ATTACK" ],
+    "weight": "1000 g",
+    "bashing": 18
+  },
+  {
+    "id": "bambooSpearZhigh",
+	"copy-from": "q_staff",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "SPEARS" ],
+    "name": { "str": "bamboo spear", "str_pl": "bamboo spear" },
+    "description": "A smooth and sturdy spear that was freshly harvested and modified to stab things.  Light and well-balanced, it is surprisingly easy to handle and pretty damaging, but fragile.",
+    "price": "10 USD",
+    "price_postapoc": "2 USD",
+    "flags": [ "DURABLE_MELEE", "SHEATH_SPEAR", "REACH_ATTACK", "NPC_THROWN", "STAB", "FRAGILE_MELEE" ],
+    "weight": "1000 g",
+    "cutting": 15,
+    "bashing": 8
+  },
+  {
+    "id": "marlinspikeZhigh",
+    "copy-from": "awl_bone",
+    "type": "GENERIC",
+    "name": { "str": "marlinspike" },
+    "description": "This XXXL sized needle shaped item is a tool used in marine ropework.  It can also serve as an improvised stabbing weapon, if needed.",
+    "weight": "170 g",
+    "price": "450 cent",
+    "price_postapoc": "1 USD",
+    "cutting": 10,
+    "material": [ "steel" ],
+    "to_hit": 1,
+    "delete": { "qualities": [ [ "LEATHER_AWL", 1 ] ] },
+    "extend": { "qualities": [ [ "LEATHER_AWL", 2 ] ] },
+    "flags": [ "STAB", "BELT_CLIP", "DURABLE_MELEE" ]
+  },
+  {
+    "id": "flySwatterZhigh",
+    "type": "TOOL",
+    "category": "electronics",
+    "weapon_category": [ "BATONS" ],
+    "name": { "str": "fly swatter (off)", "str_pl": "fly swatters (off)" },
+    "description": "This is a fly swatter for killing mosquitos.  Makes for a flimsy melee weapon.  Using this fly swatter will turn it on and provide electricity shock, assuming it is charged with batteries.",
+    "weight": "500 g",
+    "volume": "1 L",
+    "price": "950 cent",
+    "price_postapoc": "2 USD",
+    "bashing": 8,
+    "material": [ "aluminum" ],
+    "symbol": ";",
+    "color": "blue",
+    "ammo": "battery",
+    "flags": [ "BELT_CLIP", "FRAGILE_MELEE" ],
+    "use_action": {
+      "type": "transform",
+      "msg": "You turn the fly swatter on.",
+      "target": "flySwatterZhigh_on",
+      "active": true,
+      "transform_charges": 1,
+      "need_charges": 1,
+      "need_charges_msg": "The fly swatter's batteries are dead."
+    },
+    "magazines": [
+      [
+        "battery",
+        [
+          "light_disposable_cell",
+          "light_minus_disposable_cell",
+          "light_plus_battery_cell",
+          "light_battery_cell",
+          "light_minus_battery_cell",
+          "light_atomic_battery_cell",
+          "light_minus_atomic_battery_cell"
+        ]
+      ]
+    ],
+    "magazine_well": "250 ml"
+  },
+  {
+    "id": "flySwatterZhigh_on",
+    "copy-from": "flySwatterZhigh",
+    "type": "TOOL",
+    "name": { "str": "fly swatter (on)", "str_pl": "fly swatters (on)" },
+    "power_draw": 15000,
+    "revert_to": "flySwatterZhigh",
+    "use_action": {
+      "menu_text": "Turn off",
+      "type": "transform",
+      "msg": "You turn the fly swatter off.",
+      "target": "flySwatterZhigh"
+    },
+    "flags": [ "SHOCKING", "FRAGILE_MELEE", "BELT_CLIP" ]
+  },
+  {
+    "id": "vajraMustiZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "FIST_WEAPONS" ],
+    "symbol": "3",
+    "color": "yellow",
+    "name": { "str": "pair of vajra-musti", "str_pl": "pairs of vajra-musti" },
+    "description": "Also called the thunder fist, this is knuckleduster-like device often with spikes and blades, used by warrior-wrestlers for brutal, close-quarters combat.  Was used in India, this can be still used by you.",
+    "material": "bone_heavy",
+    "weight": "520 g",
+	"volume": "688 ml",
+    "bashing": 9,
+	"cutting": 14,
+    "price_postapoc": "250 cent",
+    "flags": [ "UNARMED_WEAPON", "DURABLE_MELEE", "BELT_CLIP" ]
+  },
+  {
+    "id": "knife_pirahZhigh",
+    "type": "TOOL",
+    "category": "tools_workshop",
+    "weapon_category": [ "KNIVES" ],
+    "name": { "str": "pirah knife", "str_pl": "pirah knives" },
+    "description": "Commonly used by Philippine people, this single-edge sheath knife is designed for combat rather than cutting and skinning game.",
+    "weight": "450 g",
+    "volume": "300 ml",
+    "price": "40 USD",
+    "price_postapoc": "750 cent",
+    "cutting": 18,
+    "material": [ "steel", "wood" ],
+    "symbol": "/",
+    "color": "dark_gray",
+    "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 10 ] ],
+    "flags": [ "SHEATH_KNIFE", "STAB" ]
   }
 ]

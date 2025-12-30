@@ -1734,94 +1734,6 @@
     "effects": [ "BEANBAG", "LARGE_BEANBAG", "HEAVY_HIT", "NEVER_MISFIRES", "HEAVY_HIT", "NON_FOULING" ]
   },
   {
-	"id": "lawn_dartElecZhigh",
-    "type": "AMMO",
-    "copy-from": "lawn_dart",
-    "name": { "str": "shock dart" },
-    "ammo_type": "thrown",
-    "effects": [ "LIGHTNING" ],
-    "thrown_damage": [ { "damage_type": "electric", "amount": 20 } ],
-    "count": 3,
-    "stack_size": 3,
-    "extend": { "flags": [ "SHOCKING" ] }
-  },
-  {
-	"id": "lawn_dartHeatZhigh",
-    "type": "AMMO",
-    "copy-from": "lawn_dart",
-    "name": { "str": "thermo dart" },
-    "ammo_type": "thrown",
-    "effects": [ "INCENDIARY", "FLAMESMOL" ],
-    "thrown_damage": [ { "damage_type": "heat", "amount": 20 } ],
-    "count": 3,
-    "stack_size": 3,
-    "extend": { "flags": [ "FLAMING" ] }
-  },
-  {
-	"id": "lawn_dartPoisZhigh",
-    "type": "AMMO",
-    "copy-from": "lawn_dart",
-    "name": { "str": "stinger dart" },
-    "ammo_type": "thrown",
-    "effects": [ "POISON" ],
-    "thrown_damage": [ { "damage_type": "stab", "amount": 20 } ],
-    "count": 3,
-    "stack_size": 3,
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WIELD",
-          "condition": "ALWAYS",
-          "hit_you_effect": [
-            {
-              "id": "poison",
-              "message": "The stinger injects a small amount of poison into your target.",
-              "npc_message": "%1$s stings their target."
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-	"id": "lawn_dartTrifZhigh",
-    "type": "AMMO",
-    "copy-from": "lawn_dart",
-    "name": { "str": "triffid dart" },
-    "ammo_type": "thrown",
-    "effects": [ "PARALYZEPOISON" ],
-    "thrown_damage": [ { "damage_type": "stab", "amount": 20 } ],
-    "count": 3,
-    "stack_size": 3,
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WIELD",
-          "condition": "ALWAYS",
-          "hit_you_effect": [
-            {
-              "id": "poison",
-              "message": "The stinger injects a small amount of poison into your target.",
-              "npc_message": "%1$s stings their target."
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-	"id": "lawn_dartAcidZhigh",
-    "type": "AMMO",
-    "copy-from": "lawn_dart",
-    "name": { "str": "triffid dart" },
-    "ammo_type": "thrown",
-    "effects": [ "ACIDBOMB" ],
-    "thrown_damage": [ { "damage_type": "acid", "amount": 20 } ],
-    "count": 3,
-    "stack_size": 3,
-    "extend": { "flags": [ "ACIDIC" ] }
-  },
-  {
     "id": "40x46mm_antiFungi",
     "copy-from": "40x46mm_grenade",
     "type": "AMMO",
@@ -2354,5 +2266,82 @@
     "loudness": 0,
     "shape": [ "cone", { "half_angle": 15, "length": 20 } ],
     "effects": [ "RECYCLED", "NON_FOULING" ]
+  },
+  {
+    "id": "buck_railZhigh",
+    "looks_like": "scrap",
+    "type": "AMMO",
+    "name": { "str": "scrap cluster" },
+    "description": "A cluster of metal scraps in a plastic tube.  Could be used as a projectile by a sufficiently powerful electromagnetic weapon.",
+    "weight": "25 g",
+    "volume": "250 ml",
+    "price": "10 USD",
+    "price_postapoc": "250 cent",
+    "to_hit": -1,
+    "bashing": 5,
+    "cutting": 1,
+    "material": [ "iron" ],
+    "symbol": "=",
+    "color": "dark_gray",
+    "count": 10,
+    "ammo_type": "metal_rail",
+    "range": 0,
+    "damage": { "damage_type": "stab", "amount": 25, "armor_penetration": 10 },
+    "dispersion": 200,
+    "loudness": 0,
+    "shape": [ "cone", { "half_angle": 25, "length": 10 } ],
+    "effects": [ "RECYCLED", "NON_FOULING" ]
+  },
+  {
+    "id": "700nxShotZhigh",
+    "type": "AMMO",
+    "name": { "str": ".700 SB" },
+    "description": "The .700 Shotshell Boomer is a very powerful shotshell-turned rifle round designed for short-ranged use.  Its stupendous damage and armor piercing capabilities make it one of the most deadly rounds available, offset only by its drastic recoil and noise.",
+    "weight": "80 g",
+    "volume": "250 ml",
+    "price": "57 USD",
+    "price_postapoc": "20 USD",
+    "material": [ "brass", "powder" ],
+    "symbol": "=",
+    "color": "dark_gray",
+    "count": 10,
+    "stack_size": 5,
+    "ammo_type": "700nx",
+    "casing": "700nx_casing",
+    "range": 0,
+    "damage": { "damage_type": "bullet", "amount": 100, "armor_penetration": 39 },
+    "shape": [ "cone", { "half_angle": 18, "length": 22 } ],
+    "dispersion": 15,
+    "recoil": 12100,
+    "effects": [ "COOKOFF" ]
+  },
+  {
+    "id": "bp_700nxShotZhigh",
+    "copy-from": "700nxShotZhigh",
+    "looks_like": "700nxShotZhigh",
+    "type": "AMMO",
+    "name": { "str": ".700 SB, black powder" },
+    "description": "The .700 Shotshell Boomer is a very powerful shotshell-turned rifle round designed for short-range use.  The \"Nitro\" in the name isn't very applicable to this blackpowder load, but it still has plenty of Express.",
+    "proportional": {
+      "price": 0.5,
+      "price_postapoc": 0.5,
+      "damage": { "damage_type": "bullet", "amount": 0.8, "armor_penetration": 0.5 },
+      "recoil": 0.76,
+      "dispersion": 1.2
+    },
+    "extend": { "effects": [ "RECYCLED", "BLACKPOWDER", "MUZZLE_SMOKE" ] }
+  },
+  {
+    "type": "AMMO",
+    "id": "ashRockZhigh",
+    "copy-from": "rock",
+    "price": "450 USD",
+    "price_postapoc": "120 USD",
+    "name": { "str": "lump of ash" },
+    "description": "A handful of lumped ash.  When thrown with a ranged weapon, this makes a small amount of smoke.",
+    "range": 11,
+    "dispersion": 30,
+	"dont_recover_one_in": 0,
+    "extend": { "effects": [ "SMOKE", "SHATTER_SELF", "NO_PENETRATE_OBSTACLES" ] }
   }
 ]

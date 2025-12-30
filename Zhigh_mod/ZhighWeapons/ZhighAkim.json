@@ -3,7 +3,7 @@
     "id": "YakTenM9",
     "copy-from": "m9",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "AUTOLOADING" ],
     "name": { "str_sp": "Redemption & Absolution" },
     "description": "An iconic 9x19mm pistol, for a crazed yakuza.",
     "ranged_damage": { "damage_type": "bullet", "amount": 3 },
@@ -11,7 +11,7 @@
     "proportional": { "weight": 2, "volume": 2, "price": 2.4, "reload": 2.1 },
     "range": 4,
     "durability": 9,
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "min_cycle_recoil": 450,
     "dispersion": 640,
     "magazine_well": "500 ml",
@@ -28,11 +28,7 @@
       [ "stock", 2 ],
       [ "underbarrel", 2 ]
     ],
-    "flags": [
-      "DURABLE_MELEE",
-      "NONCONDUCTIVE",
-      "ALWAYS_TWOHAND"
-    ],
+    "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "ALWAYS_TWOHAND" ],
     "magazines": [ [ "9mm", [ "YakTenM9mag", "YakTenM9bigmag" ] ] ]
   },
   {
@@ -121,13 +117,7 @@
     "description": "A fairly harmless pistol that shoots small paintballs.  Now comes in two.",
     "skill": "akimbo_Zhigh",
     "clip_size": 40,
-    "valid_mod_locations": [
-      [ "accessories", 8 ],
-      [ "grip", 2 ],
-      [ "rail", 2 ],
-      [ "sights", 2 ],
-      [ "underbarrel", 2 ]
-    ],
+    "valid_mod_locations": [ [ "accessories", 8 ], [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 }
   },
@@ -152,13 +142,7 @@
     "name": { "str": "akimbo paintball revolver" },
     "description": "A fairly harmless revolver that shoots small paintballs.  Now comes in two.",
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-      [ "accessories", 8 ],
-      [ "grip", 2 ],
-      [ "rail", 2 ],
-      [ "sights", 2 ],
-      [ "underbarrel", 2 ]
-    ],
+    "valid_mod_locations": [ [ "accessories", 8 ], [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "clip_size": 2.0 }
   },
@@ -182,13 +166,7 @@
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "name": { "str": "akimbo heavy paintball revolver" },
     "description": "A harmless revolver that shoots small paintballs.  Now comes in two.",
-    "valid_mod_locations": [
-      [ "accessories", 8 ],
-      [ "grip", 2 ],
-      [ "rail", 2 ],
-      [ "sights", 2 ],
-      [ "underbarrel", 2 ]
-    ],
+    "valid_mod_locations": [ [ "accessories", 8 ], [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "clip_size": 2.0 }
   },
@@ -393,10 +371,7 @@
       [ "rail", 2 ],
       [ "underbarrel", 2 ]
     ],
-    "relic_data":
-	{
-		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 seconds", "rate": 10 } ]
-    },
+    "relic_data": { "recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 seconds", "rate": 10 } ] },
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -421,14 +396,7 @@
     "clip_size": 2,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-		[ "accessories", 2 ],
-		[ "grip", 2 ],
-		[ "rail", 2 ],
-		[ "sights", 2 ],
-		[ "stock", 2 ],
-		[ "underbarrel", 2 ]
-	],
+    "valid_mod_locations": [ [ "accessories", 2 ], [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "stock", 2 ], [ "underbarrel", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -454,14 +422,7 @@
     "clip_size": 4,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ], [ "AUTO", "auto", 4 ] ],
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-	  [ "accessories", 2 ],
-	  [ "grip", 2 ],
-	  [ "rail", 2 ],
-	  [ "sights", 2 ],
-	  [ "stock", 2 ],
-	  [ "underbarrel", 2 ]
-	],
+    "valid_mod_locations": [ [ "accessories", 2 ], [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "stock", 2 ], [ "underbarrel", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -487,14 +448,7 @@
     "clip_size": 2,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-	  [ "accessories", 2 ],
-	  [ "grip", 2 ],
-	  [ "rail", 2 ],
-	  [ "sights", 2 ],
-	  [ "stock", 2 ],
-	  [ "underbarrel", 2 ]
-	],
+    "valid_mod_locations": [ [ "accessories", 2 ], [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "stock", 2 ], [ "underbarrel", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -520,14 +474,7 @@
     "clip_size": 4,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ], [ "AUTO", "auto", 4 ] ],
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-	  [ "accessories", 2 ],
-	  [ "grip", 2 ],
-	  [ "rail", 2 ],
-	  [ "sights", 2 ],
-	  [ "stock", 2 ],
-	  [ "underbarrel", 2 ]
-	],
+    "valid_mod_locations": [ [ "accessories", 2 ], [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "stock", 2 ], [ "underbarrel", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -548,19 +495,12 @@
     "looks_like": "pistol_flintlockAkim",
     "weapon_category": [ "PISTOLS", "AKIMBOZHIGH", "1SHOT" ],
     "type": "GUN",
-    "name": { "str": "akimbo pistol blunderbuss" },
+    "name": { "str": "akimbo dragoon pistol" },
     "description": "A beautifully decorated blunderbuss pistol.  Good old version of a 12 guage pistol.  Now comes in two.",
     "clip_size": 2,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-	  [ "accessories", 2 ],
-	  [ "grip", 2 ],
-	  [ "rail", 2 ],
-	  [ "sights", 2 ],
-	  [ "stock", 2 ],
-	  [ "underbarrel", 2 ]
-	],
+    "valid_mod_locations": [ [ "accessories", 2 ], [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "stock", 2 ], [ "underbarrel", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -581,19 +521,12 @@
     "looks_like": "pistol_flintlockAkim",
     "weapon_category": [ "PISTOLS", "AKIMBOZHIGH", "1SHOT" ],
     "type": "GUN",
-    "name": { "str": "akimbo double-barrel pistol blunderbuss" },
+    "name": { "str": "akimbo double-barrel dragoon pistol" },
     "description": "A beautifully decorated blunderbuss pistol.  Good old version of a 12 guage pistol.  Now comes in two.",
     "clip_size": 4,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ], [ "AUTO", "auto", 4 ] ],
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-	  [ "accessories", 2 ],
-	  [ "grip", 2 ],
-	  [ "rail", 2 ],
-	  [ "sights", 2 ],
-	  [ "stock", 2 ],
-	  [ "underbarrel", 2 ]
-	],
+    "valid_mod_locations": [ [ "accessories", 2 ], [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "stock", 2 ], [ "underbarrel", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -619,14 +552,7 @@
     "clip_size": 12,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-	  [ "accessories", 2 ],
-	  [ "grip", 2 ],
-	  [ "rail", 2 ],
-	  [ "sights", 2 ],
-	  [ "stock", 2 ],
-	  [ "underbarrel", 2 ]
-	],
+    "valid_mod_locations": [ [ "accessories", 2 ], [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "stock", 2 ], [ "underbarrel", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -652,14 +578,7 @@
     "clip_size": 2,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-	  [ "accessories", 2 ],
-	  [ "grip", 2 ],
-	  [ "rail", 2 ],
-	  [ "sights", 2 ],
-	  [ "stock", 2 ],
-	  [ "underbarrel", 2 ]
-	],
+    "valid_mod_locations": [ [ "accessories", 2 ], [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "stock", 2 ], [ "underbarrel", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -685,14 +604,7 @@
     "clip_size": 8,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ], [ "AUTO", "auto", 4 ] ],
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-	  [ "accessories", 2 ],
-	  [ "grip", 2 ],
-	  [ "rail", 2 ],
-	  [ "sights", 2 ],
-	  [ "stock", 2 ],
-	  [ "underbarrel", 2 ]
-	],
+    "valid_mod_locations": [ [ "accessories", 2 ], [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "stock", 2 ], [ "underbarrel", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -718,15 +630,15 @@
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
     "valid_mod_locations": [
-	  [ "accessories", 4 ],
-	  [ "grip", 2 ],
-	  [ "mechanism", 8 ],
-	  [ "rail", 2 ],
-	  [ "sights", 2 ],
-	  [ "stock", 2 ],
-	  [ "underbarrel", 2 ],
-	  [ "dampening", 2 ]
-	],
+      [ "accessories", 4 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "rail", 2 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "underbarrel", 2 ],
+      [ "dampening", 2 ]
+    ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -753,15 +665,15 @@
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
     "valid_mod_locations": [
-	  [ "accessories", 4 ],
-	  [ "grip", 2 ],
-	  [ "mechanism", 8 ],
-	  [ "rail", 2 ],
-	  [ "sights", 2 ],
-	  [ "stock", 2 ],
-	  [ "underbarrel", 2 ],
-	  [ "dampening", 2 ]
-	],
+      [ "accessories", 4 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "rail", 2 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "underbarrel", 2 ],
+      [ "dampening", 2 ]
+    ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -787,15 +699,15 @@
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
     "valid_mod_locations": [
-	  [ "accessories", 4 ],
-	  [ "grip", 2 ],
-	  [ "mechanism", 8 ],
-	  [ "rail", 2 ],
-	  [ "sights", 2 ],
-	  [ "stock", 2 ],
-	  [ "underbarrel", 2 ],
-	  [ "dampening", 2 ]
-	],
+      [ "accessories", 4 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "rail", 2 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "underbarrel", 2 ],
+      [ "dampening", 2 ]
+    ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -821,15 +733,15 @@
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
     "valid_mod_locations": [
-	  [ "accessories", 4 ],
-	  [ "grip", 2 ],
-	  [ "mechanism", 8 ],
-	  [ "rail", 2 ],
-	  [ "sights", 2 ],
-	  [ "stock", 2 ],
-	  [ "underbarrel", 2 ],
-	  [ "dampening", 2 ]
-	],
+      [ "accessories", 4 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "rail", 2 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "underbarrel", 2 ],
+      [ "dampening", 2 ]
+    ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -855,15 +767,15 @@
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
     "valid_mod_locations": [
-	  [ "accessories", 4 ],
-	  [ "grip", 2 ],
-	  [ "mechanism", 8 ],
-	  [ "rail", 2 ],
-	  [ "sights", 2 ],
-	  [ "stock", 2 ],
-	  [ "underbarrel", 2 ],
-	  [ "dampening", 2 ]
-	],
+      [ "accessories", 4 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "rail", 2 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "underbarrel", 2 ],
+      [ "dampening", 2 ]
+    ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -888,15 +800,8 @@
     "clip_size": 2,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-		[ "accessories", 8 ],
-		[ "grip", 2 ],
-		[ "stock", 2 ],
-		[ "rail", 2 ],
-		[ "sights", 2 ],
-		[ "underbarrel", 2 ]
-	  ],
-	"extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "valid_mod_locations": [ [ "accessories", 8 ], [ "grip", 2 ], [ "stock", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
   {
@@ -919,7 +824,7 @@
     "description": "This V29 laser pistol was one of the first handheld laser weapons.  It is larger than most traditional handguns, but displays no recoil whatsoever.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-	"extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
   {
@@ -944,15 +849,7 @@
     "clip_size": 12,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-	  [ "accessories", 4 ],
-	  [ "barrel", 2 ],
-	  [ "bore", 2 ],
-	  [ "grip", 2 ],
-	  [ "stock", 2 ],
-	  [ "rail", 2 ],
-	  [ "sights", 2 ]
-	],
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 2 ], [ "bore", 2 ], [ "grip", 2 ], [ "stock", 2 ], [ "rail", 2 ], [ "sights", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -978,15 +875,7 @@
     "clip_size": 12,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-	  [ "accessories", 4 ],
-	  [ "barrel", 2 ],
-	  [ "bore", 2 ],
-	  [ "grip", 2 ],
-	  [ "stock", 2 ],
-	  [ "rail", 2 ],
-	  [ "sights", 2 ]
-	],
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 2 ], [ "bore", 2 ], [ "grip", 2 ], [ "stock", 2 ], [ "rail", 2 ], [ "sights", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -1013,17 +902,17 @@
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
     "valid_mod_locations": [
-	  [ "accessories", 2 ],
-	  [ "barrel", 2 ],
-	  [ "bore", 2 ],
-	  [ "grip", 2 ],
-	  [ "mechanism", 8 ],
-	  [ "sights", 2 ],
-	  [ "stock", 2 ],
-	  [ "sling", 2 ],
-	  [ "rail", 2 ],
-	  [ "underbarrel", 2 ]
-	],
+      [ "accessories", 2 ],
+      [ "barrel", 2 ],
+      [ "bore", 2 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "sling", 2 ],
+      [ "rail", 2 ],
+      [ "underbarrel", 2 ]
+    ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -1118,13 +1007,7 @@
     "name": { "str": "akimbo M53 Medusa" },
     "description": "As the descendant and the better reproduction of Medusa Model 47, this revolver is specially made for most types of ammunition.  Due to some up-to-date tech, there are no problems in order to load and shoot various types of ammo.  Now comes in two.",
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-      [ "accessories", 8 ],
-      [ "grip", 2 ],
-      [ "rail", 2 ],
-      [ "sights", 2 ],
-      [ "underbarrel", 2 ]
-    ],
+    "valid_mod_locations": [ [ "accessories", 8 ], [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "clip_size": 2.0, "dispersion": 2.0 }
   },
@@ -1149,13 +1032,7 @@
     "name": { "str": "akimbo Sharps pistol" },
     "description": "A single shot pistol made from 1874 Sharps rifle.  Now comes in two.",
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-      [ "accessories", 8 ],
-      [ "grip", 2 ],
-      [ "rail", 2 ],
-      [ "sights", 2 ],
-      [ "underbarrel", 2 ]
-    ],
+    "valid_mod_locations": [ [ "accessories", 8 ], [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "clip_size": 2.0, "dispersion": 2.0 }
   },
@@ -1180,13 +1057,7 @@
     "name": { "str": "akimbo S&W 1917-M46" },
     "description": "The S&W 1917-M46 is the compact revolver counterpart to the S&W 1917-R46 rifle, both chambered in 4.6x30mm.  With a reinforced frame and extended cylinder, it brings the rifle’s precision and punch to a sidearm format.  Now comes in two.",
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-      [ "accessories", 8 ],
-      [ "grip", 2 ],
-      [ "rail", 2 ],
-      [ "sights", 2 ],
-      [ "underbarrel", 2 ]
-    ],
+    "valid_mod_locations": [ [ "accessories", 8 ], [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "clip_size": 2.0, "dispersion": 2.0 }
   },
@@ -1211,13 +1082,7 @@
     "name": { "str": "akimbo S&W 1917-M57" },
     "description": "The S&W 1917-M57 is the compact revolver counterpart to the S&W 1917-R57 rifle, both chambered in 5.7x28mm.  With a reinforced frame and extended cylinder, it brings the rifle’s precision and punch to a sidearm format.  Now comes in two.",
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-      [ "accessories", 8 ],
-      [ "grip", 2 ],
-      [ "rail", 2 ],
-      [ "sights", 2 ],
-      [ "underbarrel", 2 ]
-    ],
+    "valid_mod_locations": [ [ "accessories", 8 ], [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "clip_size": 2.0, "dispersion": 2.0 }
   },
@@ -1272,18 +1137,12 @@
     "copy-from": "acidgun",
     "looks_like": "acidgun",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "SPRAY_GUNS", "PNEUMATIC" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "SPRAY_GUNS", "PNEUMATIC" ],
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "name": { "str": "akimbo acid gun" },
     "description": "A plastic single shot pistol, modified from a flaregun, that can be loaded with acids.  Now comes in two.",
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-      [ "accessories", 8 ],
-      [ "grip", 2 ],
-      [ "rail", 2 ],
-      [ "sights", 2 ],
-      [ "underbarrel", 2 ]
-    ],
+    "valid_mod_locations": [ [ "accessories", 8 ], [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "clip_size": 2.0, "dispersion": 2.0 }
   },
@@ -1303,17 +1162,12 @@
     "copy-from": "water_pistol",
     "looks_like": "water_pistol",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "SPRAY_GUNS", "PNEUMATIC" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "SPRAY_GUNS", "PNEUMATIC" ],
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "name": { "str": "akimbo squirt pistol" },
     "description": "Made to spray some liquid, especially water, this thing is just a toy.  What did you expect?  You are not gonna use this... right?  Now comes in two.",
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-		[ "grip", 2 ],
-		[ "rail", 2 ],
-		[ "sights", 2 ],
-		[ "underbarrel", 2 ]
-	],
+    "valid_mod_locations": [ [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "clip_size": 2.0, "dispersion": 2.0 }
   },
@@ -1333,17 +1187,12 @@
     "copy-from": "mauserC96Zhigh",
     "looks_like": "mauserC96Zhigh",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "SPRAY_GUNS", "PNEUMATIC" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "SPRAY_GUNS", "PNEUMATIC" ],
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "name": { "str": "akimbo Mauser C96" },
     "description": "The Mauser C96, or broomhandle, is a semi-automatic pistol that was originally produced by Germany.  It was pretty good, but it was the unique shape that kept the gun famous untill now.  Now comes in two.",
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-		[ "grip", 2 ],
-		[ "rail", 2 ],
-		[ "sights", 2 ],
-		[ "underbarrel", 2 ]
-	],
+    "valid_mod_locations": [ [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "clip_size": 2.0, "dispersion": 2.0 },
     "magazines": [ [ "762x25", [ "762x25mauserClipZhighAkim" ] ] ]
@@ -1389,13 +1238,7 @@
     "name": { "str": "akimbo Thompson/Center Contender" },
     "description": "A break-action single-shot pistol which was introduced in 1967 by Thompson/Center Arms.  It can be chambered in various cartridges.  Now comes in two.",
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-      [ "accessories", 8 ],
-      [ "grip", 2 ],
-      [ "rail", 2 ],
-      [ "sights", 2 ],
-      [ "underbarrel", 2 ]
-    ],
+    "valid_mod_locations": [ [ "accessories", 8 ], [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "clip_size": 2.0, "dispersion": 2.0 }
   },
@@ -1455,13 +1298,7 @@
     "name": { "str": "akimbo Uberti Stormchaser" },
     "description": "This 7.5\" barreled Uberti Cattleman was modified to have a special ammo effect, which makes the user to hit multiple targets at once at the cost of shorter range.  \n\"You're Pretty Good.\"  Now comes in two.",
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-      [ "accessories", 8 ],
-      [ "grip", 2 ],
-      [ "rail", 2 ],
-      [ "sights", 2 ],
-      [ "underbarrel", 2 ]
-    ],
+    "valid_mod_locations": [ [ "accessories", 8 ], [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "clip_size": 2.0, "dispersion": 2.0 }
   },
@@ -1486,13 +1323,7 @@
     "name": { "str": "akimbo PKD Detective Special" },
     "description": "This is a type of blaster that was a standard-issue handgun for the New England Police Department Blob Ruinner Unit.  Looks like it was constructed from parts of a revolver and a rifle.  Now comes in two.",
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-      [ "accessories", 8 ],
-      [ "grip", 2 ],
-      [ "rail", 2 ],
-      [ "sights", 2 ],
-      [ "underbarrel", 2 ]
-    ],
+    "valid_mod_locations": [ [ "accessories", 8 ], [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "clip_size": 2.0, "dispersion": 2.0 }
   },
@@ -1517,13 +1348,7 @@
     "name": { "str": "akimbo .223 revolver" },
     "description": "A .223 revolver, custom made.  This is a one-of-a-kind firearm, obviously made with love and skill.  Now comes in two.",
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-      [ "accessories", 8 ],
-      [ "grip", 2 ],
-      [ "rail", 2 ],
-      [ "sights", 2 ],
-      [ "underbarrel", 2 ]
-    ],
+    "valid_mod_locations": [ [ "accessories", 8 ], [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "clip_size": 2.0, "dispersion": 2.0 }
   },
@@ -2729,17 +2554,17 @@
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
     "valid_mod_locations": [
-	  [ "accessories", 2 ],
-	  [ "barrel", 2 ],
-	  [ "bore", 2 ],
-	  [ "grip", 2 ],
-	  [ "mechanism", 8 ],
-	  [ "sights", 2 ],
-	  [ "stock", 2 ],
-	  [ "sling", 2 ],
-	  [ "rail", 2 ],
-	  [ "underbarrel", 2 ]
-	],
+      [ "accessories", 2 ],
+      [ "barrel", 2 ],
+      [ "bore", 2 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "sling", 2 ],
+      [ "rail", 2 ],
+      [ "underbarrel", 2 ]
+    ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -2765,17 +2590,17 @@
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
     "valid_mod_locations": [
-	  [ "accessories", 2 ],
-	  [ "barrel", 2 ],
-	  [ "bore", 2 ],
-	  [ "grip", 2 ],
-	  [ "mechanism", 8 ],
-	  [ "sights", 2 ],
-	  [ "stock", 2 ],
-	  [ "sling", 2 ],
-	  [ "rail", 2 ],
-	  [ "underbarrel", 2 ]
-	],
+      [ "accessories", 2 ],
+      [ "barrel", 2 ],
+      [ "bore", 2 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "sling", 2 ],
+      [ "rail", 2 ],
+      [ "underbarrel", 2 ]
+    ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -2903,17 +2728,17 @@
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
     "valid_mod_locations": [
-	  [ "accessories", 2 ],
-	  [ "barrel", 2 ],
-	  [ "bore", 2 ],
-	  [ "grip", 2 ],
-	  [ "mechanism", 8 ],
-	  [ "sights", 2 ],
-	  [ "stock", 2 ],
-	  [ "sling", 2 ],
-	  [ "rail", 2 ],
-	  [ "underbarrel", 2 ]
-	],
+      [ "accessories", 2 ],
+      [ "barrel", 2 ],
+      [ "bore", 2 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "sling", 2 ],
+      [ "rail", 2 ],
+      [ "underbarrel", 2 ]
+    ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -2939,17 +2764,17 @@
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
     "valid_mod_locations": [
-	  [ "accessories", 2 ],
-	  [ "barrel", 2 ],
-	  [ "bore", 2 ],
-	  [ "grip", 2 ],
-	  [ "mechanism", 8 ],
-	  [ "sights", 2 ],
-	  [ "stock", 2 ],
-	  [ "sling", 2 ],
-	  [ "rail", 2 ],
-	  [ "underbarrel", 2 ]
-	],
+      [ "accessories", 2 ],
+      [ "barrel", 2 ],
+      [ "bore", 2 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "sling", 2 ],
+      [ "rail", 2 ],
+      [ "underbarrel", 2 ]
+    ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -2975,17 +2800,17 @@
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
     "valid_mod_locations": [
-	  [ "accessories", 2 ],
-	  [ "barrel", 2 ],
-	  [ "bore", 2 ],
-	  [ "grip", 2 ],
-	  [ "mechanism", 8 ],
-	  [ "sights", 2 ],
-	  [ "stock", 2 ],
-	  [ "sling", 2 ],
-	  [ "rail", 2 ],
-	  [ "underbarrel", 2 ]
-	],
+      [ "accessories", 2 ],
+      [ "barrel", 2 ],
+      [ "bore", 2 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "sling", 2 ],
+      [ "rail", 2 ],
+      [ "underbarrel", 2 ]
+    ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -3011,17 +2836,17 @@
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
     "valid_mod_locations": [
-	  [ "accessories", 2 ],
-	  [ "barrel", 2 ],
-	  [ "bore", 2 ],
-	  [ "grip", 2 ],
-	  [ "mechanism", 8 ],
-	  [ "sights", 2 ],
-	  [ "stock", 2 ],
-	  [ "sling", 2 ],
-	  [ "rail", 2 ],
-	  [ "underbarrel", 2 ]
-	],
+      [ "accessories", 2 ],
+      [ "barrel", 2 ],
+      [ "bore", 2 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "sling", 2 ],
+      [ "rail", 2 ],
+      [ "underbarrel", 2 ]
+    ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
@@ -3045,15 +2870,8 @@
     "description": "A flaregun which bounces off from and to several enemies.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-		[ "accessories", 8 ],
-		[ "grip", 2 ],
-		[ "stock", 2 ],
-		[ "rail", 2 ],
-		[ "sights", 2 ],
-		[ "underbarrel", 2 ]
-	  ],
-	"extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "valid_mod_locations": [ [ "accessories", 8 ], [ "grip", 2 ], [ "stock", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
   {
@@ -3076,15 +2894,8 @@
     "description": "A flaregun which blows up when shot, damaging several enemies.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-		[ "accessories", 8 ],
-		[ "grip", 2 ],
-		[ "stock", 2 ],
-		[ "rail", 2 ],
-		[ "sights", 2 ],
-		[ "underbarrel", 2 ]
-	  ],
-	"extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "valid_mod_locations": [ [ "accessories", 8 ], [ "grip", 2 ], [ "stock", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
   {
@@ -3107,33 +2918,114 @@
     "description": "A flaregun which could charge up by absorbing fires and heat nearby, then making them as an ammo.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-		[ "accessories", 8 ],
-		[ "grip", 2 ],
-		[ "stock", 2 ],
-		[ "rail", 2 ],
-		[ "sights", 2 ],
-		[ "underbarrel", 2 ]
-	  ],
-	"extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "valid_mod_locations": [ [ "accessories", 8 ], [ "grip", 2 ], [ "stock", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 },
     "relic_data": {
       "recharge_scheme": [
-		{ "type": "time", "req": "none", "interval": "5 m", "rate": 2, "message": "Your manmelter charges up!" },
-        { "type": "field", "interval": "1 s", "rate": 6, "field": "fd_smoke_vent", "int_min": 1, "int_max": 22, "message": "Your manmelter charges up!" },
-        { "type": "field", "interval": "1 s", "rate": 6, "field": "fd_fire_vent", "int_min": 1, "int_max": 22, "message": "Your manmelter charges up!" },
-        { "type": "field", "interval": "1 s", "rate": 6, "field": "fd_flame_burst", "int_min": 1, "int_max": 22, "message": "Your manmelter charges up!" },
-        { "type": "field", "interval": "1 s", "rate": 6, "field": "fd_incendiary", "int_min": 1, "int_max": 22, "message": "Your manmelter charges up!" },
-        { "type": "field", "interval": "1 s", "rate": 4, "field": "fd_fire", "int_min": 1, "int_max": 22, "message": "Your manmelter charges up!" },
-		{ "type": "field", "interval": "1 s", "rate": 4, "field": "fd_smoke", "int_min": 1, "int_max": 22, "message": "Your manmelter charges up!" },
-		{ "type": "field", "interval": "1 s", "rate": 4, "field": "fd_migo_atmosphere", "int_min": 1, "int_max": 22, "message": "Your manmelter charges up!" },
-		{ "type": "field", "interval": "1 s", "rate": 4, "field": "fd_hot_air1", "int_min": 1, "int_max": 22, "message": "Your manmelter charges up!" },
-		{ "type": "field", "interval": "1 s", "rate": 4, "field": "fd_hot_air2", "int_min": 1, "int_max": 22, "message": "Your manmelter charges up!" },
-		{ "type": "field", "interval": "1 s", "rate": 4, "field": "fd_hot_air3", "int_min": 1, "int_max": 22, "message": "Your manmelter charges up!" },
-		{ "type": "field", "interval": "1 s", "rate": 4, "field": "fd_hot_air4", "int_min": 1, "int_max": 22, "message": "Your manmelter charges up!" },
-		{ "type": "field", "interval": "1 s", "rate": 4, "field": "fd_hot_air_sauna", "int_min": 1, "int_max": 22 }
+        { "type": "time", "req": "none", "interval": "5 m", "rate": 2, "message": "Your manmelter charges up!" },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 6,
+          "field": "fd_smoke_vent",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your manmelter charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 6,
+          "field": "fd_fire_vent",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your manmelter charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 6,
+          "field": "fd_flame_burst",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your manmelter charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 6,
+          "field": "fd_incendiary",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your manmelter charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 4,
+          "field": "fd_fire",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your manmelter charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 4,
+          "field": "fd_smoke",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your manmelter charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 4,
+          "field": "fd_migo_atmosphere",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your manmelter charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 4,
+          "field": "fd_hot_air1",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your manmelter charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 4,
+          "field": "fd_hot_air2",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your manmelter charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 4,
+          "field": "fd_hot_air3",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your manmelter charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 4,
+          "field": "fd_hot_air4",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your manmelter charges up!"
+        },
+        { "type": "field", "interval": "1 s", "rate": 4, "field": "fd_hot_air_sauna", "int_min": 1, "int_max": 22 }
       ]
-	}
+    }
   },
   {
     "type": "recipe",
@@ -3155,15 +3047,8 @@
     "description": "A flaregun which hits enemies harder than an average one.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-		[ "accessories", 8 ],
-		[ "grip", 2 ],
-		[ "stock", 2 ],
-		[ "rail", 2 ],
-		[ "sights", 2 ],
-		[ "underbarrel", 2 ]
-	  ],
-	"extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "valid_mod_locations": [ [ "accessories", 8 ], [ "grip", 2 ], [ "stock", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
   {
@@ -3186,15 +3071,8 @@
     "description": "A flaregun which shoots bursts of ammo, and igniting them.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 3 ], [ "AUTO", "auto", 6 ] ],
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-		[ "accessories", 8 ],
-		[ "grip", 2 ],
-		[ "stock", 2 ],
-		[ "rail", 2 ],
-		[ "sights", 2 ],
-		[ "underbarrel", 2 ]
-	  ],
-	"extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "valid_mod_locations": [ [ "accessories", 8 ], [ "grip", 2 ], [ "stock", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
   {
@@ -3218,15 +3096,8 @@
     "description": "A compact shotgun derringer built for speed and quick handling.  Its short barrel favors mobility over long-range accuracy, allowing rapid follow-up shots in tight spaces.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-		[ "accessories", 8 ],
-		[ "grip", 2 ],
-		[ "stock", 2 ],
-		[ "rail", 2 ],
-		[ "sights", 2 ],
-		[ "underbarrel", 2 ]
-	  ],
-	"extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "valid_mod_locations": [ [ "accessories", 8 ], [ "grip", 2 ], [ "stock", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
   {
@@ -3250,15 +3121,8 @@
     "description": "A bizarre, jury-rigged shotgun modified with pressurized canisters and a spray mechanism.  Instead of relying purely on shells, it can unleash bursts of messy, stinging payloads that disorient more than destroy.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-		[ "accessories", 8 ],
-		[ "grip", 2 ],
-		[ "stock", 2 ],
-		[ "rail", 2 ],
-		[ "sights", 2 ],
-		[ "underbarrel", 2 ]
-	  ],
-	"extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "valid_mod_locations": [ [ "accessories", 8 ], [ "grip", 2 ], [ "stock", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
   {
@@ -3282,15 +3146,8 @@
     "description": "A modified S&W 629, AAI Quiet Special Purpose Revolver, is a rare variant.  This was used in the Vietnam war, for the \"Tunnel Rat\" branch.  Gives off more damage than an average revolver, but have a shorter range due to it's barral has been sawn-off.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-		[ "accessories", 8 ],
-		[ "grip", 2 ],
-		[ "stock", 2 ],
-		[ "rail", 2 ],
-		[ "sights", 2 ],
-		[ "underbarrel", 2 ]
-	  ],
-	"extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "valid_mod_locations": [ [ "accessories", 8 ], [ "grip", 2 ], [ "stock", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
   {
@@ -3314,15 +3171,8 @@
     "description": "This revolver was made using a 3D printer, resulting in a very lightweight weapon.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "valid_mod_locations": [
-		[ "accessories", 8 ],
-		[ "grip", 2 ],
-		[ "stock", 2 ],
-		[ "rail", 2 ],
-		[ "sights", 2 ],
-		[ "underbarrel", 2 ]
-	  ],
-	"extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "valid_mod_locations": [ [ "accessories", 8 ], [ "grip", 2 ], [ "stock", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "underbarrel", 2 ] ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
   {
@@ -3356,7 +3206,7 @@
       [ "stock", 2 ],
       [ "underbarrel", 2 ]
     ],
-	"extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
   {
@@ -3371,6 +3221,160 @@
     "components": [ [ [ "rebar_pistolZhigh", 2 ] ] ]
   },
   {
+    "id": "danWessonPpcZhighAkim",
+    "copy-from": "danWessonPpcZhigh",
+    "looks_like": "v29Akim",
+    "weapon_category": [ "PISTOLS", "AKIMBOZHIGH", "REVOLVERS", "MANUAL_ACTION" ],
+    "type": "GUN",
+    "name": { "str": "akimbo Dan Wesson PPC Blackout revolver" },
+    "description": "The Dan Wesson PPC is a heavy-frame revolver chambered in .300 Blackout, bringing rifle-like ballistics into a handgun form.  Its elongated cylinder and precision barrel deliver consistent accuracy with both supersonic and subsonic loads.  Built for shooters seeking compact rifle performance paired with revolver reliability.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [
+      [ "accessories", 8 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "rail", 2 ],
+      [ "sights", 2 ],
+      [ "sling", 2 ],
+      [ "stock", 2 ],
+      [ "underbarrel", 2 ]
+    ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "danWessonPpcZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "flags": [ "BLIND_EASY" ],
+    "components": [ [ [ "danWessonPpcZhigh", 2 ] ] ]
+  },
+  {
+    "id": "rsh12ZhighAkim",
+    "copy-from": "rsh12Zhigh",
+    "looks_like": "v29Akim",
+    "weapon_category": [ "PISTOLS", "AKIMBOZHIGH", "REVOLVERS", "MANUAL_ACTION" ],
+    "type": "GUN",
+    "name": { "str": "akimbo RSH-300 revolver" },
+    "description": "The RSH-300 is a robust revolver chambered in .300, built to bring potent rifle-caliber ballistics into a handgun package.  Its reinforced frame and elongated cylinder tame recoil while delivering accurate, high-energy shots.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [
+      [ "accessories", 8 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "rail", 2 ],
+      [ "sights", 2 ],
+      [ "sling", 2 ],
+      [ "stock", 2 ],
+      [ "underbarrel", 2 ]
+    ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "rsh12ZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "flags": [ "BLIND_EASY" ],
+    "components": [ [ [ "rsh12Zhigh", 2 ] ] ]
+  },
+  {
+    "id": "mp545ZhighAkim",
+    "copy-from": "mp545Zhigh",
+    "looks_like": "v29Akim",
+    "weapon_category": [ "PISTOLS", "AKIMBOZHIGH", "REVOLVERS", "MANUAL_ACTION" ],
+    "type": "GUN",
+    "name": { "str": "akimbo RSH-300 revolver" },
+    "description": "The RSH-300 is a robust revolver chambered in .300, built to bring potent rifle-caliber ballistics into a handgun package.  Its reinforced frame and elongated cylinder tame recoil while delivering accurate, high-energy shots.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [
+      [ "accessories", 8 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "rail", 2 ],
+      [ "sights", 2 ],
+      [ "sling", 2 ],
+      [ "stock", 2 ],
+      [ "underbarrel", 2 ]
+    ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "clip_size": 2.0, "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "mp545ZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "flags": [ "BLIND_EASY" ],
+    "components": [ [ [ "mp545Zhigh", 2 ] ] ]
+  },
+  {
+    "id": "pistol_flintlock_36ZhighAkim",
+    "looks_like": "pistol_flintlockAkim",
+    "copy-from": "pistol_flintlock_36Zhigh",
+    "weapon_category": [ "PISTOLS", "AKIMBOZHIGH", "1SHOT" ],
+    "type": "GUN",
+    "name": { "str": "akimbo .36-caliber flintlock pistol" },
+    "description": "A beautifully decorated flintlock pistol.  If using this doesn't make you feel a pirate, nothing will.  This one is chambered for .36 navy round.  Now comes in two.",
+    "clip_size": 2,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [ [ "accessories", 2 ], [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "stock", 2 ], [ "underbarrel", 2 ] ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "pistol_flintlock_36ZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "flags": [ "BLIND_EASY" ],
+    "components": [ [ [ "pistol_flintlock_36Zhigh", 2 ] ] ]
+  },
+  {
+    "id": "pistol_flintlock_44ZhighAkim",
+    "looks_like": "pistol_flintlockAkim",
+    "copy-from": "pistol_flintlock_44Zhigh",
+    "weapon_category": [ "PISTOLS", "AKIMBOZHIGH", "1SHOT" ],
+    "type": "GUN",
+    "name": { "str": "akimbo .44-caliber flintlock pistol" },
+    "description": "A beautifully decorated flintlock pistol.  If using this doesn't make you feel a pirate, nothing will.  This one is chambered for .44 army round.  Now comes in two.",
+    "clip_size": 2,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [ [ "accessories", 2 ], [ "grip", 2 ], [ "rail", 2 ], [ "sights", 2 ], [ "stock", 2 ], [ "underbarrel", 2 ] ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "pistol_flintlock_44ZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "flags": [ "BLIND_EASY" ],
+    "components": [ [ [ "pistol_flintlock_44Zhigh", 2 ] ] ]
+  },
+  {
     "id": "laspistolToyZhighAkim",
     "copy-from": "laspistolToyZhigh",
     "looks_like": "sw629Akim",
@@ -3380,13 +3384,8 @@
     "description": "A pistol shaped laser gun, it isn't hard to use, and is very accurate but weak.  Now comes in two.",
     "modes": [ [ "DEFAULT", "beam", 5 ], [ "BURST", "burst", 10 ] ],
     "skill": "akimbo_Zhigh",
-	"extend": { "flags": [ "ALWAYS_TWOHAND" ] },
-    "valid_mod_locations": [
-      [ "sights", 2 ],
-      [ "accessories", 2 ],
-      [ "rail", 2 ],
-      [ "lens", 2 ]
-    ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "valid_mod_locations": [ [ "sights", 2 ], [ "accessories", 2 ], [ "rail", 2 ], [ "lens", 2 ] ],
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
   },
   {
@@ -3401,14 +3400,39 @@
     "components": [ [ [ "laspistolToyZhigh", 2 ] ] ]
   },
   {
+    "id": "tazerUpsZhighAkim",
+    "copy-from": "tazerUpsZhigh",
+    "looks_like": "tazerUpsZhigh",
+    "weapon_category": [ "PISTOLS", "ENERGY_WEAPONS", "AKIMBOZHIGH" ],
+    "type": "GUN",
+    "name": { "str": "akimbo UPS tazer" },
+    "description": "This is a high-powered stun gun.  Use this item to attempt to electrocute an adjacent enemy, damaging and temporarily paralyzing them.  Because the shock can actually jump through the air, it is difficult to miss.  This one needs a UPS for its power and cannot stun in close distance, but more damaging and uses less power than an average tazer.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "single", 1 ], [ "BURST", "burst", 2 ] ],
+    "skill": "akimbo_Zhigh",
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "valid_mod_locations": [ [ "sights", 2 ], [ "accessories", 2 ], [ "rail", 2 ], [ "lens", 2 ] ],
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "tazerUpsZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "flags": [ "BLIND_EASY" ],
+    "components": [ [ [ "tazerUpsZhigh", 2 ] ] ]
+  },
+  {
     "id": "kp3atAkim",
     "copy-from": "kp3at",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Kel-Tec P3AT" },
     "description": "Essentially a slightly scaled up Kel-tec P32 in .380 ACP, the ever popular P3AT offers better ballistics in a small, concealable lightweight package.  Handling leaves something to be desired due to snappier recoil and diminuitive controls.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -3461,11 +3485,11 @@
     "id": "fn1910Akim",
     "copy-from": "fn1910",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo FN 1910 .380" },
     "description": "Made infamous in Sarajevo in 1914, the FN1910 was a popular pocket pistol, albeit in .32 ACP.  Collectors value the .380 model for its notoriety and more modern terminal performance.  If such a humble firearm could start a world war, could it perhaps protect you from the undead?  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -3518,11 +3542,11 @@
     "id": "rugerlcpAkim",
     "copy-from": "rugerlcp",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Ruger LCP" },
     "description": "One of the best-selling modern day 'pocket pistol's, the LCP is an affordable, polymer framed pistol chambered in .380 ACP.  Despite the round's relatively low power, the pistol's low weight and short sight radius make for a moderately poor handling pistol.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -3575,11 +3599,11 @@
     "id": "hptcf380Akim",
     "copy-from": "hptcf380",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Hi-Point CF-380" },
     "description": "The Hi-Point CF-380 is a blowback operated semi-automatic pistol designed by Hi-Point Firearms.  Hi-Points have slides made with a zinc pot-metal.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -3652,11 +3676,11 @@
     "id": "taurus_spectrumAkim",
     "copy-from": "taurus_spectrum",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Taurus Spectrum" },
     "description": "A .380 subcompact pistol.  Designed for concealed carry and built from high-quality, durable materials.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -3709,11 +3733,11 @@
     "id": "glock_20Akim",
     "copy-from": "glock_20",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Glock 20" },
     "description": "A full-sized version of the highly successful Glock, chambered in hard-hitting 10mm Auto.  The third model of Glock designed, all other full-sized, large framed Glocks are adaptations of this one.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -3807,11 +3831,11 @@
     "copy-from": "sig_mosquito",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo SIG Mosquito" },
     "description": "A popular, small .22 LR pistol.  One of the many polymer frame pistols produced during the latter 20th-early 21st centuries; it has an underbarrel rail.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -3865,11 +3889,11 @@
     "copy-from": "sw_22",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo S&W 22A" },
     "description": "A popular .22 pistol.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -3923,11 +3947,11 @@
     "copy-from": "j22",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Jimenez JA-22" },
     "description": "One of the quintessential 'saturday night specials', the Jimenez JA-22 was very affordably priced with its injection molded zinc slide and frame.  Intended to fill the void left after small pocket pistols were banned from import, these were more commonly used by criminals unfazed by their glaring safety issues.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -3981,11 +4005,11 @@
     "copy-from": "walther_p22",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Walther P22" },
     "description": "The Walther P22 is a blowback operated semi-automatic pistol.  It is about half the size of most Walthers.  It is made mostly with plastic, with the slide and key components being made of die-cast zinc alloy.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -4039,11 +4063,11 @@
     "copy-from": "sig_p230",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo SIG Sauer P230" },
     "description": "The SIG Sauer P230 is a small, semi-automatic handgun chambered in .32 ACP.  Due to its small dimensions, it was often carried as a backup weapon.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -4097,11 +4121,11 @@
     "copy-from": "walther_ppk",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Walther PPK" },
     "description": "One of the most famous handguns of the 20th century.  Your name is not Bond, but you might find this little gun still useful.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -4155,11 +4179,11 @@
     "copy-from": "kp32",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Kel-Tec P32" },
     "description": "One of Kel-tec's oldest designs, the P32 is a popular option for deep concealment and backup usage.  Despite its extreme light weight and small size, its .32 ACP chambering makes for good handling and recoil control.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -4213,11 +4237,11 @@
     "copy-from": "p226_357sig",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo SIG P226" },
     "description": "A SIG Sauer P226 chambered for .357 SIG.  The P226 is a DA/SA, short-recoil operated semi-automatic pistol.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -4271,11 +4295,11 @@
     "copy-from": "glock_31",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Glock 31" },
     "description": "A full size .357 SIG Glock pistol.  It is extremely similar to the Glock 22, and could be converted to fire .40 S&W by switching the barrel.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -4389,11 +4413,11 @@
     "copy-from": "p320_357sig",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo SIG P320 Compact" },
     "description": "The P320 Compact is a semi-automatic, short recoil operated pistol.  This one is chambered for .357 SIG.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -4447,11 +4471,11 @@
     "copy-from": "af2011a1_38super",
     "looks_like": "paintballgun_revolverAkimZhigh",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo AF2011A1 .38 Super" },
     "description": "A double-barrel semi-automatic pistol of Italian origin, firing two bullets per shot, a derivative of the M1911 pistol.  Now comes in two.",
     "modes": [ [ "DEFAULT", "double", 2 ], [ "BURST", "burst", 4 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -4505,11 +4529,11 @@
     "copy-from": "m1911a1_38super",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo M1911A1" },
     "description": "The M1911A1 is an extremely popular pistol known for its reliability.  This one is chambered for .38 Super.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -4563,11 +4587,11 @@
     "copy-from": "90two40",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Beretta 90-two .40 S&W" },
     "description": "A more modern version of Beretta's popular 92 series of handguns, the 90-two performs largely the same.  The main difference is a sleeker, almost futuristic-looking design owed in large parts to the polymer underbarrel rail cover.  This one is chambered in .40 S&W.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -4621,11 +4645,11 @@
     "copy-from": "glock_22",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Glock 22" },
     "description": "A .40 S&W variant of the popular Glock 17 pistol.  The standard-issue firearm of the FBI and of countless other law enforcement agencies worldwide.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -4659,11 +4683,11 @@
     "copy-from": "px4_40",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Beretta Px4 Storm .40 S&W" },
     "description": "Lighter than Beretta's iconic 92 series of guns, the Px4 Storm was built by utilizing light-weight polymer construction with steel inserts.  Its shape was also optimized for concealed carry.  This one is chambered in .40 S&W.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -4717,11 +4741,11 @@
     "copy-from": "sig_40",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo SIG Pro .40" },
     "description": "Originally marketed as a lightweight and compact alternative to older SIG handguns, the Pro .40 is popular among European police forces.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -4775,11 +4799,11 @@
     "copy-from": "hi_power_40",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Browning Hi-Power .40 S&W" },
     "description": "The Browning Hi-Power is a semi-automatic handgun developed shortly before the second world war.  Widely issued since then, it remains in use by India, Canada and Australia.  This is a commercial variant produced by Browning Arms in .40 S&W.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -4833,11 +4857,11 @@
     "copy-from": "walther_ppq_40",
     "looks_like": "walther_ppq_45Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Walther PPQ .40 S&W" },
     "description": "The Walther PPQ is a semi-automatic pistol originating from the Walther P99QA, and maintains compatibility with some of its predecessor's accessories.  This model is chambered in .40 S&W.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -4931,11 +4955,11 @@
     "copy-from": "hptjcp",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Hi-Point Model JCP" },
     "description": "The Hi-Point Model JCP is a blowback operated semi-automatic pistol designed by Hi-Point Firearms, which is known for making inexpensive firearms, and for making said firearms bulky and uncomfortable.  Hi-Points have slides made with a zinc pot-metal which is relatively fragile compared to steel slides.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -4989,11 +5013,11 @@
     "copy-from": "deagle_44",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Desert Eagle .44" },
     "description": "One of the most recognizable handguns due to its popularity in movies and video games, the Desert Eagle is better known for its menacing appearance than its performance.  It's a large pistol, but its heavy weight reduces recoil.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -5047,11 +5071,11 @@
     "copy-from": "m1911",
     "looks_like": "paintballgun_revolverAkimZhigh",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo M1911" },
     "description": "The M1911 was the US Military standard-issue sidearm for most of the 20th Century.  It remains one of the most popular .45 pistols today.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -5125,11 +5149,11 @@
     "copy-from": "m1911_MEU",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo M45A1" },
     "description": "The M45A1 supplanted earlier M45 MEUSOC pistols in use by Force Recon elements of Marine Expeditionary Units.  Where the original M45 pistols were gutted M1911A1's hand-fitted by USMC armorers, the updated M45A1's are hardly different from any other commercial 1911 design save for their dual recoil springs.  Most were replaced in 2016 with Glock 19's due to logistics issues.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -5163,11 +5187,11 @@
     "copy-from": "silverballer47",
     "looks_like": "paintballgun_revolverAkimZhigh",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Silverballer" },
     "description": "The AMT Hardballer is a stainless steel clone of the Colt M1911A1 made by Arcadia Machine & Tool.  Reliable, almost like the original.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -5201,11 +5225,11 @@
     "copy-from": "coonanZhigh",
     "looks_like": "paintballgun_revolverAkimZhigh",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo M1911" },
     "description": "The M1911 was the US Military standard-issue sidearm for most of the 20th Century.  It remains one of the most popular .45 pistols today.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -5279,11 +5303,11 @@
     "copy-from": "m1911_mpZhigh",
     "looks_like": "paintballgun_revolverAkimZhigh",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo M1911 machine pistol" },
     "description": "Modified 1911, which shoots .45 bullet in full auto.  Also have a built-in foregrip.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -5318,11 +5342,11 @@
     "copy-from": "usp_45",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo USP .45" },
     "description": "A popular pistol, widely used among law enforcement.  Extensively tested for durability, it has been found to stay accurate even after being subjected to extreme abuse.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -5376,7 +5400,7 @@
     "copy-from": "usp_45Akim",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo MK 23 MOD 0" },
     "default_mods": [ "suppressor", "laser_sight" ],
     "description": "Jokingly referred to as \"The World's Only Crew-Served Pistol\", this massive pistol was designed as a primary weapon for select \"special operators\".  Its cumbersome nature, the introduction of the derivative HK USP series and the logistics of getting .45 ACP ammunition in theater doomed this behemoth to US SOCOM armories.  Like the USP, the Mk 23 is a remarkably reliable gun; someone could probably take out a nuclear equipped walking tank with this in their holster.  Now comes in two."
@@ -5397,11 +5421,11 @@
     "copy-from": "walther_ppq_45",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Walther PPQ .45 ACP" },
     "description": "The Walther PPQ is a semi-automatic pistol originating from the Walther P99QA, and maintains compatibility with some of its predecessor's accessories.  This model is chambered in .45 ACP.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -5455,11 +5479,11 @@
     "copy-from": "hptjhp",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Hi-Point Model JHP" },
     "description": "The Hi-Point Model JHP is a blowback operated semi-automatic pistol designed by Hi-Point Firearms, which is known for making inexpensive firearms, and for making said firearms bulky and uncomfortable.  Hi-Points have slides made with a zinc pot-metal which is relatively fragile compared to steel slides.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -5513,11 +5537,11 @@
     "copy-from": "glock_21",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Glock 21" },
     "description": "A full-sized version of the highly successful Glock.  This model is chambered in .45 ACP.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -5611,11 +5635,11 @@
     "copy-from": "canik_tp454Zhigh",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Canik TP454" },
     "description": "Unlike the previous model, this Canik TP454 is huge, but gives a stable recoil for a .454 round pistol.  A hand cannon suits for the apocalypse.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -5669,11 +5693,11 @@
     "copy-from": "springfieldXd45ColtZhigh",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Springfield Xd-45C" },
     "description": "The Springfield XD-45C is an imaginary variant of the XD line, chambered in classic .45 Colt for a blend of old-world stopping power and modern ergonomics.  Its polymer frame tames recoil while preserving the round’s heavy impact.  A fusion of tradition and tactical reliability, it stands out as a unique sidearm choice.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -5727,11 +5751,11 @@
     "copy-from": "hkucpZhigh",
     "looks_like": "fn57Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo H&K UCP" },
     "description": "Short for Universal Combat Pistol, that was developed as a competitor of FN Five-Seven.  Only accepts small magazines.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -5785,11 +5809,11 @@
     "copy-from": "m1911-460",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo H&K UCP" },
     "description": "Short for Universal Combat Pistol, that was developed as a competitor of FN Five-Seven.  Only accepts small magazines.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -5823,11 +5847,11 @@
     "copy-from": "fn57",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo FN Five-Seven" },
     "description": "Designed to work with FN's proprietary 5.7x28mm round, the Five-Seven is a lightweight pistol with a very high capacity, best used against armored opponents.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -5881,11 +5905,11 @@
     "copy-from": "p50Zhigh",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo FN Five-Seven" },
     "description": "Designed to work with FN's proprietary 5.7x28mm round, the Five-Seven is a lightweight pistol with a very high capacity, best used against armored opponents.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -5939,11 +5963,11 @@
     "copy-from": "dbx57Zhigh",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo FN Five-Seven" },
     "description": "Designed to work with FN's proprietary 5.7x28mm round, the Five-Seven is a lightweight pistol with a very high capacity, best used against armored opponents.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -5977,11 +6001,11 @@
     "copy-from": "needlepistol",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo RM232 IDW" },
     "description": "This lightweight machine pistol fires 5x50mm armor-piercing flechette cartridges.  Classified as an individual defense weapon, this advanced firearm was developed by Rivtech for the US military shortly before the end of the world.  Designed to be fired in bursts, it excels in close combat.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -6055,11 +6079,11 @@
     "copy-from": "tokarev",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Tokarev TT-33" },
     "description": "The Tokarev TT-33 is an antique Russian semiautomatic pistol, famous for its durability, accuracy, and uncomfortable grip angle.  It was chambered for the 7.62x25mm due to the popularity of the C96 pistol among Russian revolutionaries.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -6113,11 +6137,11 @@
     "copy-from": "rm103a_pistol",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo RM103A automagnum" },
     "description": "Considered overkill by many, the Rivtech M103A remains one of the most powerful sidearms ever developed.  Accepts stick magazines.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -6191,11 +6215,11 @@
     "copy-from": "90two",
     "looks_like": "90two40Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Beretta 90-two" },
     "description": "A more modern version of Beretta's popular 92 series of handguns, the 90-two performs largely the same.  The main difference is a sleeker, almost futuristic-looking design owed in large parts to the polymer underbarrel rail cover.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -6269,11 +6293,11 @@
     "copy-from": "glock_19",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Glock 19" },
     "description": "Possibly the most popular pistol in existence.  The Glock 19 is often derided for its plastic construction, but it is easy to shoot.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -6289,17 +6313,20 @@
       [ "underbarrel", 2 ]
     ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
-    "magazines": [ [ "9mm", [
-		"glockmagAkim",
-		"glock17_17Akim",
-		"glock17_22Akim",
-		"glockbigmagAkim",
-		"glock_drum_50rdAkim",
-		"glock_drum_100rdAkim",
-		"kriss_vector_9mm_magAkim"
-		]
-	  ]
-	]
+    "magazines": [
+      [
+        "9mm",
+        [
+          "glockmagAkim",
+          "glock17_17Akim",
+          "glock17_22Akim",
+          "glockbigmagAkim",
+          "glock_drum_50rdAkim",
+          "glock_drum_100rdAkim",
+          "kriss_vector_9mm_magAkim"
+        ]
+      ]
+    ]
   },
   {
     "type": "recipe",
@@ -6317,19 +6344,22 @@
     "copy-from": "glock_19Akim",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Glock 17" },
     "description": "Designed for all shooters, the Glock 17 is marketed towards law-enforcement and military.  Now comes in two.",
-    "magazines": [ [ "9mm", [
-		"glock17_17Akim",
-		"glock17_22Akim",
-		"glockbigmagAkim",
-		"glock_drum_50rdAkim",
-		"glock_drum_100rdAkim",
-		"kriss_vector_9mm_magAkim"
-		]
-	  ]
-	]
+    "magazines": [
+      [
+        "9mm",
+        [
+          "glock17_17Akim",
+          "glock17_22Akim",
+          "glockbigmagAkim",
+          "glock_drum_50rdAkim",
+          "glock_drum_100rdAkim",
+          "kriss_vector_9mm_magAkim"
+        ]
+      ]
+    ]
   },
   {
     "type": "recipe",
@@ -6347,20 +6377,23 @@
     "copy-from": "glock_19Akim",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Glock 18C" },
     "description": "A selective fire variation on the Glock 17, originally designed for Austria's EKO Cobra unit.  It has compensator cuts along its barrel to make recoil more manageable.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 6 ], [ "AUTO", "auto", 12 ] ],
-    "magazines": [ [ "9mm", [
-		"glock17_17Akim",
-		"glock17_22Akim",
-		"glockbigmagAkim",
-		"glock_drum_50rdAkim",
-		"glock_drum_100rdAkim",
-		"kriss_vector_9mm_magAkim"
-		]
-	  ]
-	],
+    "magazines": [
+      [
+        "9mm",
+        [
+          "glock17_17Akim",
+          "glock17_22Akim",
+          "glockbigmagAkim",
+          "glock_drum_50rdAkim",
+          "glock_drum_100rdAkim",
+          "kriss_vector_9mm_magAkim"
+        ]
+      ]
+    ],
     "built_in_mods": [ "barrel_ported" ]
   },
   {
@@ -6519,11 +6552,11 @@
     "copy-from": "m9",
     "looks_like": "paintballgun_pistolAkimZhigh",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Beretta M9A1" },
     "description": "An iconic 9x19mm pistol, the M9 was the standard issue sidearm of US armed force from 1985 only until recently.  It was formerly popular amongst law enforcement before the advent of commercially available polymer-framed handguns and the FBI's adoption of .40S&W.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -6557,11 +6590,11 @@
     "copy-from": "93rZhigh",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Beretta 93R" },
     "description": "A pistol which used some parts of M9, this burst-fire machine pistol is one of the most scucessful machine pistols in history.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 2 ], [ "BURST", "burst", 3 ], [ "AUTO", "full auto", 6 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 8 ],
@@ -6596,11 +6629,11 @@
     "copy-from": "px4",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Beretta Px4 Storm" },
     "description": "Lighter than Beretta's iconic 92 series of guns, the Px4 Storm was built by utilizing light-weight polymer construction with steel inserts.  Its shape was also optimized for concealed carry, while maintaining the reliability the 92 series is known for.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -6654,11 +6687,11 @@
     "copy-from": "usp_9mm",
     "looks_like": "usp_45Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo USP 9mm" },
     "description": "A popular pistol, widely used among law enforcement.  Extensively tested for durability, it has been found to stay accurate even after being subjected to extreme abuse.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -6692,11 +6725,11 @@
     "copy-from": "P30L",
     "looks_like": "usp_45Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo P30L" },
     "description": "A popular pistol, widely used among law enforcement.  Extensively tested for durability, it has been found to stay accurate even after being subjected to extreme abuse.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -6750,11 +6783,11 @@
     "copy-from": "kpf9",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Kel-Tec PF-9" },
     "description": "The Kel-Tec PF-9 remains one of the most popular backup pistols due to its history of reliability, affordability, and concealability.  Chambered in 9x19mm, recoil is best described as unpleasant, and follow-up shots are difficult to place quickly.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -6808,11 +6841,11 @@
     "copy-from": "m17",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo M17" },
     "description": "The M17 is a semi-automatic, short recoil operated pistol derived from the SIG Sauer P320.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -6866,11 +6899,11 @@
     "copy-from": "hi_power_9mm",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Browning Hi-Power 9x19mm" },
     "description": "The Browning Hi-Power is a semi-automatic handgun developed shortly before the second world war.  Widely issued since then, it remains in use by India, Canada and Australia.  This is a commercial variant produced by Browning Arms in 9x19mm Parabellum.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -6944,11 +6977,11 @@
     "copy-from": "walther_p38",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Walther P38" },
     "description": "The Walther P38 is a semi-automatic handgun adopted shortly before the second world war.  Developed due to the high production costs of its predecessor, the Luger P08, the P38 is also chambered in 9mm Parabellum.  This early DA/SA locked-breech design would introduce features later seen on more modern firearms such as the Beretta 92 series, and served Germany until 2004.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -7002,11 +7035,11 @@
     "copy-from": "walther_ppq_9mm",
     "looks_like": "walther_ppq_45Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Walther PPQ 9mm" },
     "description": "The Walther PPQ is a semi-automatic pistol originating from the Walther P99QA, and maintains compatibility with some of its predecessor's accessories.  This model is chambered in 9x19mm Parabellum.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -7100,11 +7133,11 @@
     "copy-from": "hptc9",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Hi-Point C-9" },
     "description": "The Hi-Point C-9 is a blowback operated semi-automatic pistol designed by Hi-Point Firearms, which is known for making inexpensive firearms, and for making said firearms bulky and uncomfortable.  Hi-Points have slides made with a zinc pot-metal which is relatively fragile compared to steel slides.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -7198,11 +7231,11 @@
     "copy-from": "cz75",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo CZ-75" },
     "description": "The CZ-75 is a semi-automatic pistol developed in Czechoslovakia, and is one of the original wonder nines.  Though designed for export to western countries, it was declared a state secret; lack of international patent protection meant that many clones and variants were produced and distributed around the world, with Česká zbrojovka only joining in the 90's.  This pistol remains wildly popular among competition shooters.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -7296,11 +7329,11 @@
     "copy-from": "walther_ccp",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Walther CCP" },
     "description": "The Walther CCP is a gas-delayed blowback semi-automatic pistol intended for the concealed carry consumer market.  Internally, it is nearly identical to the cult classic H&K P7.  Its fixed barrel design makes it potentially more accurate than many other pistols, though this may difficult to realize with its average trigger and short sight radius.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -7354,11 +7387,11 @@
     "copy-from": "carbon_pistol",
     "looks_like": "90twoAkim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo carbon fiber machine pistol" },
     "description": "This 3D printed machine pistol is made completely without any metal parts.  As a result, it is very lightweight.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 3 ], [ "AUTO", "auto", 6 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -7374,17 +7407,20 @@
       [ "underbarrel", 2 ]
     ],
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
-    "magazines": [ [ "9mm", [
-		"glockmagAkim",
-		"glock17_17Akim",
-		"glock17_22Akim",
-		"glockbigmagAkim",
-		"glock_drum_50rdAkim",
-		"glock_drum_100rdAkim",
-		"kriss_vector_9mm_magAkim"
-		]
-	  ]
-	]
+    "magazines": [
+      [
+        "9mm",
+        [
+          "glockmagAkim",
+          "glock17_17Akim",
+          "glock17_22Akim",
+          "glockbigmagAkim",
+          "glock_drum_50rdAkim",
+          "glock_drum_100rdAkim",
+          "kriss_vector_9mm_magAkim"
+        ]
+      ]
+    ]
   },
   {
     "type": "recipe",
@@ -7402,11 +7438,11 @@
     "copy-from": "makarov",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Makarov PM" },
     "description": "The Pistolet Makarova was developed by the Soviet Union to replace the WWII-era TT-33 pistol.  It uses the 9x18mm cartridge, which remains in use among various former Soviet countries.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -7460,11 +7496,11 @@
     "copy-from": "makarov_mpZhigh",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo RARAN Prototype 1130" },
     "description": "Modified Makarov PM, which shoots 9x18mm cartridge in full auto.  Also have a built-in foregrip.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ], [ "AUTO1", "low auto", 6 ], [ "AUTO2", "high auto", 12 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -7519,11 +7555,11 @@
     "copy-from": "APSZhigh",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Stechkin APS" },
     "description": "A pistol made for use by artillery and mortar crews, tank crews and aircraft personnel.  Uses 9x18mm ammo.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ], [ "AUTO1", "low auto", 4 ], [ "AUTO2", "high auto", 8 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -7577,11 +7613,11 @@
     "copy-from": "automag",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo AMT AutoMag" },
     "description": "Not as famous as the Desert Eagle, but this firearm is also famous as 'No. 2 of the heavy handguns.'  Is visible from various games, movies, and anime.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -7635,11 +7671,11 @@
     "copy-from": "PMR30Zhigh",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo PMR-30" },
     "description": "A pistol perfect for backpacking, camping and range day plinking.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -7693,11 +7729,11 @@
     "copy-from": "calicoPistolZhigh",
     "looks_like": "glock_20Akim",
     "type": "GUN",
-	"weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
     "name": { "str": "akimbo Calico M950" },
     "description": "The Calico M950 is an automatic pistol with a unique circular magazine that allows for high capacities and reduced recoil.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
-	"skill": "akimbo_Zhigh",
+    "skill": "akimbo_Zhigh",
     "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -7745,5 +7781,13 @@
     "autolearn": true,
     "flags": [ "BLIND_EASY" ],
     "components": [ [ [ "calicomag", 2 ] ] ]
+  },
+  {
+    "id": "swordCutlass",
+    "copy-from": "90twoAkim",
+    "type": "GUN",
+    "name": { "str": "Sword Cutlass" },
+    "ranged_damage": { "damage_type": "bullet", "amount": 3 },
+    "description": "A modified version of 90-two, this one only comes in two.  Presented by Praiyachat."
   }
 ]
