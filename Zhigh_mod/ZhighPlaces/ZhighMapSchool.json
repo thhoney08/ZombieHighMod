@@ -8,11 +8,23 @@
   },
   {
     "type": "overmap_terrain",
-    "id": [ "ZhighSchool_1_1", "ZhighSchool_1_3", "ZhighSchool_1_4", "ZhighSchool_1_5", "ZhighSchool_1_6", "ZhighSchool_1_7", "ZhighSchool_1_8", "ZhighSchool_1_9" ],
+    "id": [ "ZhighSchool_1_1", "ZhighSchool_1_3", "ZhighSchool_1_4", "ZhighSchool_1_6", "ZhighSchool_1_7", "ZhighSchool_1_8", "ZhighSchool_1_9" ],
     "name": "high school",
     "sym": "s",
     "color": "light_blue",
     "looks_like": "school_1_3",
+    "see_cost": 5,
+    "mondensity": 3,
+    "flags": [ "SOURCE_PEOPLE", "SOURCE_BOOKS", "SOURCE_SAFETY", "RISK_LOW" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "ZhighSchool_1_5" ],
+    "name": "high school",
+    "sym": "s",
+    "color": "light_blue",
+    "looks_like": "school_1_3",
+    "map_label": "high school",
     "see_cost": 5,
     "mondensity": 3,
     "flags": [ "SOURCE_PEOPLE", "SOURCE_BOOKS", "SOURCE_SAFETY", "RISK_LOW" ]
