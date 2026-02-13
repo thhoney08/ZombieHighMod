@@ -20,7 +20,8 @@
     "warmth": 1,
     "material_thickness": 1,
     "environmental_protection": 1,
-    "valid_mods": [ "steel_padded", "alloy_padded" ]
+    "valid_mods": [  ],
+    "flags": [ "FRAGILE" ]
   },
   {
     "id": "mask_CrewChief",
@@ -33,7 +34,7 @@
     "id": "mask_Armorer",
     "name": { "str": "Wolf mask" },
     "type": "ARMOR",
-    "description": "This is a mask, suitable for the techie.  And make you go one on one with a hulk zombie. Don't.",
+    "description": "This is a mask, suitable for the techie.  And make you go one on one with a hulk zombie with a drill.  Don't.",
     "copy-from": "mask_paper_base"
   },
   {
@@ -583,6 +584,18 @@
     "color": "white"
   },
   {
+    "id": "mask_cavalry_boneZhigh2",
+	"looks_like": "mask_cavalry_boneZhigh",
+    "copy-from": "mask_cavalry_iron",
+    "type": "ARMOR",
+    "name": { "str": "bone battle mask" },
+    "description": "A full-face mask made of bone, in the vein of Roman cavalry masks.  Provides decent protection and gives an imposing post-apocalyptic look.",
+    "weight": "950 g",
+    "price": "500 USD",
+    "material": [ "bone" ],
+    "color": "white"
+  },
+  {
 	"id": "mask_cavalry_chainmailZhigh",
 	"repairs_like": "mask_cavalry_iron",
 	"type": "ARMOR",
@@ -709,6 +722,16 @@
     "material_thickness": 3,
     "techniques": [ "WBLOCK_2" ],
     "flags": [ "OVERSIZE", "BELTED", "BLOCK_WHILE_WORN", "POWERARMOR_COMPATIBLE" ]
+  },
+  {
+    "id": "mask_wooden_tiki",
+    "copy-from": "mask_wooden",
+    "looks_like": "mask_wooden",
+    "type": "ARMOR",
+    "name": { "str": "tiki mask" },
+    "description": "This is a mask made from wood.  Pretty fancy, and it will help the user from one's face being eaten.  Wearing it dosen't have any special effects.",
+    "material_thickness": 4,
+    "proportional": { "price": 2, "price_postapoc": 2 }
   },
   {
     "id": "mask_tenguZhigh",

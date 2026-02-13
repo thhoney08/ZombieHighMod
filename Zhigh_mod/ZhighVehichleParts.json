@@ -90,7 +90,7 @@
     "id": "mounted_ballistaZhigh",
     "copy-from": "turret",
     "type": "vehicle_part",
-    "name": { "str": "mounted ballista" },
+    "name": { "str": "mounted fishspear ballista" },
     "item": "ballistaZhigh",
     "looks_like": "mounted_huge_crossbow",
     "color": "green",
@@ -115,6 +115,22 @@
     "broken_color": "dark_gray",
     "breaks_into": [ { "item": "scrap", "count": [ 25, 50 ] }, { "item": "splinter", "count": [ 6, 12 ] } ],
     "requirements": { "install": { "skills": [ [ "mechanics", 3 ], [ "rifle", 1 ] ] }, "removal": { "skills": [ [ "mechanics", 1 ] ] } }
+  },
+  {
+    "id": "mounted_polybolosZhigh",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": { "str": "mounted polybolos" },
+    "item": "polybolosZhigh",
+    "looks_like": "mounted_huge_crossbow",
+    "color": "green",
+    "broken_color": "green",
+    "breaks_into": [
+      { "item": "scrap", "count": [ 10, 20 ] },
+      { "item": "splinter", "count": [ 12, 24 ] },
+      { "item": "string_36", "count": [ 5, 10 ] }
+    ],
+    "requirements": { "install": { "skills": [ [ "mechanics", 3 ], [ "launcher", 1 ] ] }, "removal": { "skills": [ [ "mechanics", 1 ] ] } }
   },
   {
     "type": "vehicle_part",

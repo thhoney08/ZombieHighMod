@@ -1107,6 +1107,27 @@
     }
   },
   {
+    "id": "sleepSyringeZhigh",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": "injectable sedative stim",
+    "description": "Small syringes of dark grey liquid containing sedative for injection.  \n <color_yellow> Presented by Phoenix corp.</color>",
+    "weight": "40 g",
+    "volume": "250 ml",
+    "price": "20 USD",
+    "price_postapoc": "750 cent",
+    "charges": 2,
+    "stack_size": 10,
+    "symbol": "!",
+    "color": "magenta",
+    "flags": [ "NO_INGEST" ],
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You inject some sedative.",
+      "effects": [ { "id": "sleep", "duration": 300 } ]
+    }
+  },
+  {
     "id": "stim_pack1",
     "type": "GENERIC",
     "category": "tools",

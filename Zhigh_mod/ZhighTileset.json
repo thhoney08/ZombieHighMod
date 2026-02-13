@@ -2776,7 +2776,12 @@
           { "id": "banner2Zhigh", "fg": 252 },
           { "id": "scabbard2Zhigh", "fg": 253 },
           { "id": "overlay_worn_scabbard2Zhigh", "fg": 254 },
-          { "id": "hoverBike_rotors", "fg": 255, "rotates": true, "multitile": true }
+          {
+            "id": "hoverBike_rotors",
+            "fg": 255,
+            "rotates": true,
+            "multitile": true
+          }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,
@@ -2988,7 +2993,6 @@
           { "id": "tr_gas02Zhigh", "fg": 178 },
           { "id": "tr_gas01Zhigh", "fg": 179 },
           { "id": "tr_acidZhigh", "fg": 180 },
-          { "id": "gas01_trapZhigh", "fg": 181 },
           { "id": "acid_trapZhigh", "fg": 181 },
           { "id": "baseballBase_trapZhigh", "fg": 182 },
           { "id": "overlay_wielded_baseballBase_trapZhigh", "fg": 182 },
@@ -3000,7 +3004,70 @@
           { "id": "sap_trapZhigh", "fg": 185 },
           { "id": "overlay_wielded_sap_trapZhigh", "fg": 185 },
           { "id": "rebar_rivetGunZhigh", "fg": 187 },
-          { "id": "overlay_wielded_rebar_rivetGunZhigh", "fg": 186 }
+          { "id": "overlay_wielded_rebar_rivetGunZhigh", "fg": 186 },
+          { "id": "hat_ballAsseiZhigh", "fg": 188 },
+          { "id": "overlay_wielded_hat_ballAsseiZhigh", "fg": 189 },
+          { "id": "overlay_worn_hat_ballAsseiZhigh", "fg": 189 },
+          { "id": "overlay_wielded_mask_cavalry_boneZhigh2", "fg": 190 },
+          { "id": "overlay_worn_mask_cavalry_boneZhigh2", "fg": 190 },
+          { "id": "helmet_mysterioZhigh", "fg": 191 },
+          { "id": "overlay_wielded_helmet_mysterioZhigh", "fg": 191 },
+          { "id": "caltropsPoison_trapZhigh", "fg": 192 },
+          { "id": "overlay_wielded_caltropsPoison_trapZhigh", "fg": 192 },
+          { "id": "tr_caltropsPoison_Zhigh", "fg": 193 },
+          { "id": "caltropsParalyzePoison_trapZhigh", "fg": 194 },
+          { "id": "overlay_wielded_caltropsParalyzePoison_trapZhigh", "fg": 194 },
+          { "id": "tr_caltropsParalyzePoison_Zhigh", "fg": 195 },
+          { "id": "paintballMagS", "fg": 196 },
+          { "id": "overlay_wielded_paintballMagS", "fg": 196 },
+          { "id": "paintballMagL", "fg": 197 },
+          { "id": "overlay_wielded_paintballMagL", "fg": 197 },
+          { "id": "axe_toothZhigh", "fg": 198 },
+          { "id": "overlay_wielded_axe_toothZhigh", "fg": 199 },
+          { "id": "L85A1Zhigh", "fg": 200 },
+          { "id": "overlay_wielded_L85A1Zhigh", "fg": 201 },
+          { "id": "fang_necklaceZhigh", "fg": 202 },
+          { "id": "overlay_wielded_fang_necklaceZhigh", "fg": 202 }
+        ],
+        "//": "range 1 to 128",
+        "sprite_width": 32,
+        "sprite_height": 32,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": 0
+      }
+    ]
+  },
+  {
+    "type": "mod_tileset",
+    "compatibility": [
+      "Chibi_Ultica",
+      "UltimateCataclysm",
+      "MshockXottoplus",
+      "UNDEAD_PEOPLE",
+      "UNDEAD_PEOPLE_BASE",
+      "UNDEAD_PEOPLE_LEGACY",
+      "UlticaShell",
+      "MshockXottoplus12",
+      "MSX++DEAD_PEOPLE",
+      "MXplus12_for_cosmetics",
+      "MSXotto+"
+    ],
+    "tiles-new": [
+      {
+        "file": "Zhigh_items11.png",
+        "tiles": [
+          { "id": "maceBarZhigh", "fg": 4 },
+          { "id": "overlay_wielded_maceBarZhigh", "fg": 5 },
+          { "id": "overlay_wielded_bomblauncherZhigh", "fg": 12 },
+          { "id": "waterstickZhigh", "fg": 13 },
+          { "id": "overlay_wielded_waterstickZhigh", "fg": 14 },
+          { "id": "pipe_pneumaticZhigh", "fg": 15 },
+          { "id": "overlay_wielded_pipe_pneumaticZhigh", "fg": 15 },
+          { "id": "mask_wooden_tiki", "fg": 16 },
+          { "id": "overlay_wielded_mask_wooden_tiki", "fg": 17 },
+          { "id": "overlay_worn_mask_wooden_tiki", "fg": 17 },
+          { "id": "wood_stockZhigh", "fg": 20 },
+          { "id": "overlay_wielded_wood_stockZhigh", "fg": 20 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,
@@ -3940,7 +4007,8 @@
           { "id": "overlay_female_mutation_ANTLERSV2", "fg": 79 },
           { "id": "overlay_worn_helmet_morion", "fg": 80 },
           { "id": "overlay_worn_helmet_custodianZhigh", "fg": 81 },
-          { "id": "overlay_worn_capNbellsZhigh", "fg": 82 }
+          { "id": "overlay_worn_capNbellsZhigh", "fg": 82 },
+          { "id": "overlay_worn_helmet_mysterioZhigh", "fg": 83 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,
@@ -4202,6 +4270,7 @@
           { "id": "overlay_worn_glasses_monocle", "fg": 195 },
           { "id": "overlay_wielded_rapier", "fg": 196 },
           { "id": "overlay_wielded_rapier_fake", "fg": 196 },
+          { "id": "overlay_wielded_bio_hand_crossbowZhigh", "fg": 197 },
           { "id": "overlay_wielded_sword_cane", "fg": 198 },
           { "id": "overlay_wielded_scimitar", "fg": 199 },
           { "id": "overlay_wielded_scimitar_inferior", "fg": 199 },
@@ -4324,7 +4393,8 @@
           { "id": "stimAntiHeatZhigh", "fg": 51 },
           { "id": "stimAntiZapZhigh", "fg": 52 },
           { "id": "stimAntiBlindZhigh", "fg": 53 },
-          { "id": "stimAntiSightErrZhigh", "fg": 541 }
+          { "id": "stimAntiSightErrZhigh", "fg": 54 },
+          { "id": "sleepSyringeZhigh", "fg": 55 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,

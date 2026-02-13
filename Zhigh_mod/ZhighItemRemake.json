@@ -493,7 +493,7 @@
     "copy-from": "shot_00",
     "range": 0,
     "damage": { "damage_type": "bullet", "amount": 85, "armor_multiplier": 2 },
-    "shape": [ "cone", { "half_angle": 10, "length": 15 } ]
+    "shape": [ "cone", { "half_angle": 10, "length": 16 } ]
   },
   {
     "id": "shot_beanbag",
@@ -810,11 +810,11 @@
     "flags": [ "NEEDS_UNFOLD", "BELT_CLIP", "SHEATH_AXE" ]
   },
   {
-    "id": "toolset_extended",
-    "copy-from": "toolset_extended",
+    "id": "toolset",
+    "copy-from": "toolset",
     "type": "TOOL",
     "category": "tools",
-    "name": { "str": "extended toolset" },
+    "name": { "str": "integrated toolset" },
     "use_action": [
 	"HAMMER",
 	"CROWBAR",
@@ -898,7 +898,6 @@
 		"THERMOMETER",
 		"USES_BIONIC_POWER",
 		"TRADER_AVOID",
-		"NO_UNWIELD",
 		"SAFECRACK",
 		"HEATS_FOOD",
 		"UNBREAKABLE_MELEE"
@@ -1042,11 +1041,13 @@
   {
     "id": "grapnel",
     "copy-from": "grapnel",
+    "looks_like": "rope_30",
     "type": "GENERIC",
     "category": "tools",
     "name": { "str": "grappling hook" },
     "armor_data": { "covers": [ "torso" ], "coverage": 10, "encumbrance": 16, "material_thickness": 6 },
-    "flags": [ "DURABLE_MELEE", "REACH_ATTACK", "NONCONDUCTIVE", "OVERSIZE" ]
+	"to_hit": 1,
+    "flags": [ "DURABLE_MELEE", "REACH_ATTACK", "NONCONDUCTIVE", "OVERSIZE", "WHIP" ]
   },
   {
     "id": "q_staff",
@@ -1280,15 +1281,15 @@
     "type": "GUN",
     "name": { "str": "pneumatic speargun" },
     "ranged_damage": { "damage_type": "stab", "amount": 14 },
-    "dispersion": 20,
-    "range": 6
+    "dispersion": 0,
+    "range": 8
   },
   {
     "id": "minispeargun",
     "copy-from": "minispeargun",
     "type": "GUN",
     "name": { "str": "mini speargun" },
-    "dispersion": 20,
+    "dispersion": 40,
     "range": 4
   },
   {
@@ -1610,6 +1611,13 @@
     "ranged_damage": { "damage_type": "bullet", "amount": 5, "armor_penetration": 5 }
   },
   {
+    "id": "shotgun_410",
+    "copy-from": "shotgun_410",
+    "type": "GUN",
+    "name": { "str": "Winchester M37 .410" },
+    "ranged_damage": { "damage_type": "bullet", "amount": 6, "armor_penetration": 6 }
+  },
+  {
     "id": "bandolier_pistol",
     "copy-from": "bandolier_pistol",
     "type": "ARMOR",
@@ -1860,14 +1868,14 @@
     "copy-from": "bandolier_shotgun",
     "type": "ARMOR",
     "name": { "str": "waist shotgun bandolier" },
-    "use_action": { "type": "bandolier", "capacity": 50, "ammo": [ "410shot", "shot", "20x66mm", "signal_flare" ], "draw_cost": 15 }
+    "use_action": { "type": "bandolier", "capacity": 50, "ammo": [ "410shot", "shot", "20x66mm", "signal_flare", "shotcanister" ], "draw_cost": 15 }
   },
   {
     "id": "torso_bandolier_shotgun",
     "copy-from": "torso_bandolier_shotgun",
     "type": "ARMOR",
     "name": { "str": "torso shotgun bandolier" },
-    "use_action": { "type": "bandolier", "capacity": 100, "ammo": [ "410shot", "shot", "20x66mm", "signal_flare" ], "draw_cost": 15 }
+    "use_action": { "type": "bandolier", "capacity": 100, "ammo": [ "410shot", "shot", "20x66mm", "signal_flare", "shotcanister" ], "draw_cost": 15 }
   },
   {
     "id": "flintlock_pouch",
@@ -1893,7 +1901,7 @@
     "copy-from": "stone_pouch",
     "type": "ARMOR",
     "name": { "str": "stone pouch", "str_pl": "stone pouches" },
-    "use_action": { "type": "bandolier", "capacity": 20, "ammo": [ "pebble", "rock" ], "draw_cost": 20 }
+    "use_action": { "type": "bandolier", "capacity": 30, "ammo": [ "pebble", "rock" ], "draw_cost": 20 }
   },
   {
     "id": "grenadebandolier",
@@ -2475,7 +2483,19 @@
     "volume": "100 ml",
     "covers": [  ],
     "ammo": "battery",
-    "use_action": "HAND_CRANK",
+    "use_action": {
+      "type": "HAND_CRANK",
+      "charge_interval": "216 seconds",
+      "charge_amount": 2,
+      "fatigue_per_interval": 1,
+      "ammo_type": "battery",
+      "start_message": "You start cranking the %s to charge its %s.",
+      "already_charged_message": "You could use the %s to charge its %s, but it's already charged.",
+      "need_battery_message": "You need a rechargeable battery cell to charge.",
+      "underwater_message": "It's not waterproof enough to work underwater.",
+      "exhausted_message": "You're too exhausted to keep cranking.",
+      "fully_charged_message": "You've charged the battery completely."
+    },
     "magazines": [
       [
         "battery",
@@ -3568,7 +3588,7 @@
     "type": "GENERIC",
     "copy-from": "hammer_sledge",
     "name": { "str": "sledge hammer" },
-    "to_hit": 1
+    "to_hit": 0
   },
   {
 	"id": "hammer_sledge_short",
@@ -3583,7 +3603,7 @@
     "copy-from": "hammer_sledge_heavy",
     "name": { "str": "heavy sledge hammer" },
     "bashing": 100,
-    "to_hit": -1
+    "to_hit": -2
   },
   {
 	"id": "hammer_sledge_engineer",
@@ -3736,5 +3756,108 @@
     "copy-from": "selfbow",
     "name": { "str": "self bow" },
     "ammo": [ "arrow", "bolt" ]
+  },
+  {
+	"id": "ammo_ballista_wood",
+    "type": "AMMO",
+    "copy-from": "ammo_ballista_wood",
+    "name": { "str": "wooden ballista bolt" },
+    "damage": { "damage_type": "stab", "amount": 20, "armor_penetration": 10, "armor_multiplier": 4 }
+  },
+  {
+	"id": "ammo_ballista_iron",
+    "type": "AMMO",
+    "copy-from": "ammo_ballista_iron",
+    "name": { "str": "iron ballista bolt" },
+    "damage": { "damage_type": "stab", "amount": 40, "armor_penetration": 20 }
+  },
+  {
+	"id": "ammo_ballista_carbon",
+    "type": "AMMO",
+    "copy-from": "ammo_ballista_iron",
+    "looks_like": "spear_carbon",
+    "name": { "str": "carbon ballista bolt" },
+    "damage": { "damage_type": "stab", "amount": 40, "armor_penetration": 30 },
+    "description": "A thick wooden projectile not much longer than an arrow, tipped with a heavy iron point.  Stands a bad chance of remaining intact once fired.",
+    "dont_recover_one_in": 7
+  },
+  {
+	"id": "ammo_ballista_copper",
+    "type": "AMMO",
+    "copy-from": "ammo_ballista_copper",
+    "name": { "str": "copper ballista bolt" },
+    "damage": { "damage_type": "stab", "amount": 30, "armor_penetration": 16 }
+  },
+  {
+	"id": "arrow_flamming",
+    "type": "AMMO",
+    "copy-from": "arrow_flamming",
+    "name": { "str": "flaming arrow" },
+    "effects": [ "IGNITE", "FLAMESMOL" ]
+  },
+  {
+	"id": "hair_dryer",
+    "type": "GUN",
+    "copy-from": "hair_dryer",
+    "name": { "str": "hair dryer" },
+    "description": "This tool dries your hair by pushing air through a coil of hot wires.  With a battery, you could use this as a terrible pistol.",
+    "ammo": "battery",
+    "range": 4,
+    "ranged_damage": { "damage_type": "heat", "amount": 2, "armor_penetration": 20 },
+    "modes": [ [ "DEFAULT", "low auto", 9 ], [ "AUTO", "high auto", 18 ] ],
+    "ammo_effects": [ "INCENDIARY" ],
+    "dispersion": 800,
+    "loudness": 30,
+	"skill": "pistol",
+    "magazines": [
+      [
+        "battery",
+        [
+          "light_disposable_cell",
+          "light_minus_disposable_cell",
+          "light_battery_cell",
+          "light_plus_battery_cell",
+          "light_minus_battery_cell",
+          "light_atomic_battery_cell",
+          "light_minus_atomic_battery_cell"
+        ]
+      ]
+    ],
+    "magazine_well": "250 ml"
+  },
+  {
+	"id": "teleporter",
+    "type": "TOOL",
+    "copy-from": "teleporter",
+    "name": { "str": "teleporter" },
+    "weight": "400 g",
+    "volume": "500 ml",
+    "flags": [ "BELT_CLIP", "NONCONDUCTIVE" ],
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "5 m", "rate": 1 } ]
+    }
+  },
+  {
+	"id": "hand_crank_charger",
+    "type": "TOOL",
+    "copy-from": "hand_crank_charger",
+    "name": { "str": "hand-crank charger" },
+    "weight": "400 g",
+    "volume": "500 ml",
+    "use_action": {
+      "type": "HAND_CRANK",
+      "charge_interval": "72 seconds",
+      "charge_amount": 4,
+      "fatigue_per_interval": 1,
+      "ammo_type": "battery",
+      "start_message": "You start cranking the %s to charge its %s.",
+      "already_charged_message": "You could use the %s to charge its %s, but it's already charged.",
+      "need_battery_message": "You need a rechargeable battery cell to charge.",
+      "underwater_message": "It's not waterproof enough to work underwater.",
+      "exhausted_message": "You're too exhausted to keep cranking.",
+      "fully_charged_message": "You've charged the battery completely."
+    }
   }
 ]

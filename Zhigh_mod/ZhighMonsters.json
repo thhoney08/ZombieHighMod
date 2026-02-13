@@ -520,7 +520,7 @@
     "name": "Healing dart discharge",
     "description": "Heal dart go pew pew.",
     "flags": [ "RANDOM_DURATION", "SILENT" ],
-    "valid_targets": [ "hostile", "self" ],
+    "valid_targets": [ "ally", "self" ],
     "effect": "line_attack",
     "extra_effects": [ { "id": "docZhighHeal_healing" } ],
     "sprite": "fd_healeffect",
@@ -539,7 +539,7 @@
     "name": "Healing dart discharge",
     "description": "Heal dart go pew pew.",
     "flags": [ "RANDOM_DAMAGE", "SILENT", "NO_EXPLOSION_VFX" ],
-    "valid_targets": [ "hostile", "self" ],
+    "valid_targets": [ "ally", "self" ],
     "effect": "target_attack",
     "sprite": "fd_healeffect",
     "min_damage": -10,
@@ -749,7 +749,7 @@
     "special_attacks": [
       {
         "type": "gun",
-        "cooldown": 3,
+        "cooldown": 15,
         "move_cost": 30,
         "gun_type": "fakeMedBBgun_zhigh",
         "fake_skills": [ [ "gun", 8 ], [ "smg", 8 ] ],
@@ -769,7 +769,7 @@
       { 
         "type": "spell",
         "spell_data": { "id": "zhigh_healing_dart" },
-        "cooldown": 30
+        "cooldown": 60
 	  }
     ],
     "special_when_hit": [ "RETURN_FIRE", 100 ],
@@ -820,7 +820,7 @@
     "special_attacks": [
       {
         "type": "gun",
-        "cooldown": 3,
+        "cooldown": 9,
         "move_cost": 30,
         "gun_type": "fakeAdvBBgun_zhigh",
         "fake_skills": [ [ "gun", 8 ], [ "smg", 8 ] ],
@@ -881,7 +881,7 @@
     "special_attacks": [
       {
         "type": "gun",
-        "cooldown": 3,
+        "cooldown": 9,
         "move_cost": 3,
         "gun_type": "fakeBBgun_zhigh",
         "fake_skills": [ [ "gun", 8 ], [ "smg", 8 ] ],
@@ -917,7 +917,7 @@
     "skill": "smg",
     "loudness": 5,
     "ammo_effects": [ "LASER", "NEVER_MISFIRES" ],
-    "modes": [ [ "DEFAULT", "full auto", 9 ] ],
+    "modes": [ [ "DEFAULT", "full auto", 6 ] ],
     "flags": [ "NEVER_JAMS" ]
   },
   {

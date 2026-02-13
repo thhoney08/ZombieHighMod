@@ -2267,6 +2267,29 @@
 	}
   },
   {
+    "id": "minemapZhigh",
+    "copy-from": "abstractmap",
+    "type": "GENERIC",
+    "name": "mine map",
+    "looks_like": "roadmap",
+    "description": "This is a printed map of actual mines.  There's probably bigger worries than digging resources now, though.",
+    "color": "light_blue",
+    "use_action": {
+      "type": "reveal_map",
+      "radius": 400,
+      "terrain": [
+        "mine_entrance",
+        "mine_entrance_roof",
+        "mine_shaft_middle",
+        "mine_shaft_lower",
+        "mine",
+        "mine_down",
+        "mine_finale"
+      ],
+      "message": "You mark potential entry points and underground routes in the margins of your map."
+    }
+  },
+  {
     "id": "bundle_bambooZhigh",
     "type": "GENERIC",
 	"copy-from": "bambooStaffZhigh",
