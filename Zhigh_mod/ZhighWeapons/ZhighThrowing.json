@@ -1888,5 +1888,61 @@
     "cutting": 15,
     "thrown_damage": [ { "damage_type": "bash", "amount": 6 }, { "damage_type": "stab", "amount": 14 } ],
     "flags": [ "SHEATH_AXE", "BELT_CLIP" ]
+  },
+  {
+    "id": "grenade40mm",
+	"looks_like": "40x46mm_m433",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "modified 40mm grenade" },
+    "description": "This is a military-grade 40mm grenade, modified with a fuse.  Use this item to pull the pin and light the fuse.  You will then have five turns before it explodes; throwing it would be a good idea.",
+    "weight": "397 g",
+    "volume": "250 ml",
+    "price": "15 USD",
+    "price_postapoc": "10 USD",
+    "to_hit": -1,
+    "bashing": 6,
+    "material": [ "steel" ],
+    "symbol": "*",
+    "color": "green",
+    "use_action": {
+      "target": "grenade40mm_act",
+      "msg": "You pull the pin on the grenade.",
+      "target_charges": 3,
+      "active": true,
+      "menu_text": "Pull pin",
+      "type": "transform"
+    },
+    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "grenade40mm_act",
+	"looks_like": "40x46mm_m433",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "active modified 40mm grenade" },
+    "description": "This is a military-grade 40mm grenade, modified with a fuse, and will explode any second now.  Better throw it!",
+    "weight": "397 g",
+    "volume": "250 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "to_hit": -1,
+    "bashing": 6,
+    "material": [ "steel" ],
+    "symbol": "*",
+    "color": "green",
+    "initial_charges": 3,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "sound_volume": 0,
+      "sound_msg": "Tick.",
+      "no_deactivate_msg": "You've already pulled the %s's pin; try throwing it instead.",
+      "explosion": {
+        "fragment": { "impact": { "damage_type": "bullet", "amount": 50, "armor_multiplier": 2 }, "range": 5 }
+      }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
   }
 ]

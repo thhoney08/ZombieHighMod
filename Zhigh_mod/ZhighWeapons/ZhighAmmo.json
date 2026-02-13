@@ -129,12 +129,12 @@
     "weight": "200 g",
     "volume": "250 ml",
     "bashing": 5,
-    "damage": { "damage_type": "bash", "amount": 3, "armor_penetration": 1 },
+    "damage": { "damage_type": "bash", "amount": 8, "armor_penetration": 1 },
     "range": 0,
     "dispersion": 14,
     "loudness": 0,
     "to_hit": -1,
-    "shape": [ "cone", { "half_angle": 15, "length": 6 } ],
+    "shape": [ "cone", { "half_angle": 15, "length": 15 } ],
     "effects": [ "NEVER_MISFIRES", "NON_FOULING" ]
   },
   {
@@ -156,7 +156,7 @@
     "loudness": 0,
     "to_hit": -1,
     "drop": "grenade_act",
-    "effects": [ "NOGIB", "NEVER_MISFIRES" ]
+    "effects": [ "NO_OVERSHOOT", "NOGIB", "NEVER_MISFIRES" ]
   },
   {
     "type": "AMMO",
@@ -447,6 +447,15 @@
     "name": { "str": "shootable ninja bomb" },
     "description": "A ninja bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
     "drop": "tool_ninjaBomb_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_grenadeSapZhigh",
+    "copy-from": "sling_grenade",
+    "looks_like": "grenadeSapZhigh",
+    "name": { "str": "shootable sap grenade" },
+    "description": "A sap grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "grenadeSapZhigh_act"
   },
   {
     "type": "AMMO",
@@ -1145,7 +1154,7 @@
     "dispersion": 0,
     "range": 0,
     "damage": { "damage_type": "heat", "amount": 6 },
-    "shape": [ "cone", { "half_angle": 45, "length": 5 } ],
+    "shape": [ "cone", { "half_angle": 35, "length": 5 } ],
     "extend": { "effects": [ "SHOT", "BLINDS_EYES", "NOGIB", "INCENDIARY" ] }
   },
   {

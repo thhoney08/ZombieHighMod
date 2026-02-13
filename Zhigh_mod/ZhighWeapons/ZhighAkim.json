@@ -1,74 +1,5 @@
 [
   {
-    "id": "YakTenM9",
-    "copy-from": "m9",
-    "type": "GUN",
-    "weapon_category": [ "AKIMBOZHIGH", "AUTOLOADING" ],
-    "name": { "str_sp": "Redemption & Absolution" },
-    "description": "An iconic 9x19mm pistol, for a crazed yakuza.",
-    "ranged_damage": { "damage_type": "bullet", "amount": 3 },
-    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ], [ "AUTO", "auto", 4 ] ],
-    "proportional": { "weight": 2, "volume": 2, "price": 2.4, "reload": 2.1 },
-    "range": 4,
-    "durability": 9,
-    "skill": "akimbo_Zhigh",
-    "min_cycle_recoil": 450,
-    "dispersion": 640,
-    "magazine_well": "500 ml",
-    "valid_mod_locations": [
-      [ "accessories", 4 ],
-      [ "barrel", 2 ],
-      [ "brass catcher", 2 ],
-      [ "grip", 2 ],
-      [ "mechanism", 8 ],
-      [ "magazine", 2 ],
-      [ "muzzle", 2 ],
-      [ "rail", 2 ],
-      [ "sights", 2 ],
-      [ "stock", 2 ],
-      [ "underbarrel", 2 ]
-    ],
-    "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "ALWAYS_TWOHAND" ],
-    "magazines": [ [ "9mm", [ "YakTenM9mag", "YakTenM9bigmag" ] ] ]
-  },
-  {
-    "id": "YakTenM9bigmag",
-    "looks_like": "m9bigmag",
-    "type": "MAGAZINE",
-    "name": { "str": "akimbo M9 extended magazine" },
-    "description": "A pair of 60-round extended magazines compatible with Redemption & Absolution.",
-    "weight": "540 g",
-    "volume": "1000 ml",
-    "price": "35 USD",
-    "price_postapoc": "5 USD",
-    "material": "steel",
-    "symbol": "#",
-    "color": "light_gray",
-    "ammo_type": "9mm",
-    "capacity": 60,
-    "reliability": 7,
-    "reload_time": 140,
-    "flags": [ "MAG_COMPACT" ]
-  },
-  {
-    "id": "YakTenM9mag",
-    "looks_like": "m9mag",
-    "type": "MAGAZINE",
-    "name": { "str": "akimbo M9 magazine" },
-    "description": "A pair of military issue 30-round box magazines originally intended for use with Redemption & Absolution.",
-    "weight": "270 g",
-    "volume": "500 ml",
-    "price": "23 USD",
-    "price_postapoc": "1 USD",
-    "material": "steel",
-    "symbol": "#",
-    "color": "light_gray",
-    "ammo_type": "9mm",
-    "capacity": 30,
-    "reliability": 8,
-    "flags": [ "MAG_COMPACT" ]
-  },
-  {
     "id": "nailgunAkimZhigh",
     "copy-from": "nailgun",
     "weapon_category": [ "AKIMBOZHIGH", "PNEUMATIC" ],
@@ -1504,80 +1435,6 @@
     "components": [ [ [ "thor308Zhigh", 8 ] ] ]
   },
   {
-    "id": "bbpistolAkim",
-    "copy-from": "bbpistol",
-    "type": "GUN",
-    "name": { "str": "akimbo BB pistol" },
-    "description": "Popular among children.  Good for plinking, and easliy modifiable, but BBs deal nearly no damage.  Now comes in two.",
-    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "PNEUMATIC" ],
-    "magazines": [ [ "BB", [ "BBclip600" ] ] ],
-    "valid_mod_locations": [
-      [ "accessories", 8 ],
-      [ "barrel", 2 ],
-      [ "sights", 2 ],
-      [ "stock", 2 ],
-      [ "grip", 2 ],
-      [ "rail", 2 ],
-      [ "underbarrel", 2 ]
-    ],
-    "modes": [ [ "DEFAULT", "double tap", 2 ], [ "BURST", "burst", 4 ] ],
-    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 }
-  },
-  {
-    "type": "recipe",
-    "result": "bbpistolAkim",
-    "category": "CC_WEAPON",
-    "subcategory": "CSC_WEAPON_RANGED",
-    "time": "2 s",
-    "reversible": true,
-    "autolearn": true,
-    "flags": [ "BLIND_EASY" ],
-    "components": [ [ [ "bbpistol", 2 ] ] ]
-  },
-  {
-    "id": "BBclip600",
-    "copy-from": "BBclip300",
-    "looks_like": "stanag30",
-    "type": "MAGAZINE",
-    "name": { "str": "twin BB magazine" },
-    "description": "These magazines can hold 600 BBs.  Good for special weapons.",
-    "capacity": 600,
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "reload_time": 2.0 }
-  },
-  {
-    "type": "recipe",
-    "result": "BBclip600",
-    "category": "CC_WEAPON",
-    "subcategory": "CSC_WEAPON_MAGAZINES",
-    "time": "2 s",
-    "reversible": true,
-    "autolearn": true,
-    "flags": [ "BLIND_EASY" ],
-    "components": [ [ [ "BBclip300", 2 ] ] ]
-  },
-  {
-    "id": "bbmachinepistolAkim",
-    "copy-from": "bbmachinepistol",
-    "type": "GUN",
-    "name": { "str": "akimbo BB machine pistol" },
-    "description": "Popular among children.  Good for plinking, and easliy modifiable, but BBs deal nearly no damage.  Now comes in two.",
-    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "PNEUMATIC" ],
-    "magazines": [ [ "BB", [ "BBclip600" ] ] ],
-    "valid_mod_locations": [
-      [ "accessories", 8 ],
-      [ "barrel", 2 ],
-      [ "sights", 2 ],
-      [ "stock", 2 ],
-      [ "grip", 2 ],
-      [ "rail", 2 ],
-      [ "underbarrel", 2 ]
-    ],
-    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
-    "modes": [ [ "DEFAULT", "full auto", 8 ], [ "BURST", "burst", 16 ] ],
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 }
-  },
-  {
     "id": "shortStopZhighAkim",
     "copy-from": "shortStopZhigh",
     "looks_like": "cop_38Akim",
@@ -2261,6 +2118,42 @@
     "autolearn": true,
     "flags": [ "BLIND_EASY" ],
     "components": [ [ [ "22_speedloader8", 2 ] ] ]
+  },
+  {
+    "id": "s333ThunderstruckZhighAkim",
+    "copy-from": "s333ThunderstruckZhigh",
+    "looks_like": "paintballgun_revolverAkimZhigh",
+    "weapon_category": [ "REVOLVERS", "AKIMBOZHIGH", "MANUAL_ACTION" ],
+    "type": "GUN",
+    "name": { "str": "akimbo S333 Thunderstruck" },
+    "description": "A compact, double-action-only revolver designed for easy concealment, with a stainless steel cylinder and aluminum frame.  Now comes in two.",
+    "clip_size": 16,
+    "modes": [ [ "DEFAULT", "semi-auto", 2 ], [ "BURST", "burst", 4 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 2 ],
+      [ "bore", 2 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "underbarrel", 2 ]
+    ],
+    "magazines": [ [ "22", [ "22_speedloader16" ] ] ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "s333ThunderstruckZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "flags": [ "BLIND_EASY" ],
+    "components": [ [ [ "s333ThunderstruckZhigh", 2 ] ] ]
   },
   {
     "id": "moss_brownieAkim",
@@ -3425,7 +3318,42 @@
     "components": [ [ [ "tazerUpsZhigh", 2 ] ] ]
   },
   {
+    "id": "ashot_700nxZhighAkim",
+    "copy-from": "ashot_700nxZhigh",
+    "looks_like": "paintballgun_revolverAkimZhigh",
+    "weapon_category": [ "PISTOLS", "AKIMBOZHIGH", "1SHOT" ],
+    "type": "GUN",
+    "name": { "str": "akimbo Nitro Express pistol" },
+    "description": "A single shot pistol that loads .700 Nitro Express shells, handcrafted from scrap.  Now comes in two.",
+    "clip_size": 2,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "grip", 2 ],
+      [ "stock", 2 ],
+      [ "mechanism", 8 ],
+      [ "sights", 2 ],
+      [ "rail", 2 ],
+      [ "underbarrel", 2 ]
+    ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "ashot_700nxZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "flags": [ "BLIND_EASY" ],
+    "components": [ [ [ "ashot_700nxZhigh", 2 ] ] ]
+  },
+  {
     "id": "kp3atAkim",
+	"//": "Akimbo pistol [handguns with magazines] starts here.",
     "copy-from": "kp3at",
     "type": "GUN",
     "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
@@ -3433,7 +3361,7 @@
     "description": "Essentially a slightly scaled up Kel-tec P32 in .380 ACP, the ever popular P3AT offers better ballistics in a small, concealable lightweight package.  Handling leaves something to be desired due to snappier recoil and diminuitive controls.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -3482,6 +3410,148 @@
     "components": [ [ [ "kp3atmag", 2 ] ] ]
   },
   {
+    "id": "YakTenM9",
+    "copy-from": "m9",
+    "type": "GUN",
+    "weapon_category": [ "AKIMBOZHIGH", "AUTOLOADING" ],
+    "name": { "str_sp": "Redemption & Absolution" },
+    "description": "An iconic 9x19mm pistol, for a crazed yakuza.",
+    "ranged_damage": { "damage_type": "bullet", "amount": 3 },
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ], [ "AUTO", "auto", 4 ] ],
+    "proportional": { "weight": 2, "volume": 2, "price": 2.4, "reload": 2.1, "magazine_well": 2.0 },
+    "range": 4,
+    "durability": 9,
+    "skill": "akimbo_Zhigh",
+    "min_cycle_recoil": 450,
+    "dispersion": 640,
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 2 ],
+      [ "brass catcher", 2 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "magazine", 2 ],
+      [ "muzzle", 2 ],
+      [ "rail", 2 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "underbarrel", 2 ]
+    ],
+    "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "ALWAYS_TWOHAND" ],
+    "magazines": [ [ "9mm", [ "YakTenM9mag", "YakTenM9bigmag" ] ] ]
+  },
+  {
+    "id": "YakTenM9bigmag",
+    "looks_like": "m9bigmag",
+    "type": "MAGAZINE",
+    "name": { "str": "akimbo M9 extended magazine" },
+    "description": "A pair of 60-round extended magazines compatible with Redemption & Absolution.",
+    "weight": "540 g",
+    "volume": "1000 ml",
+    "price": "35 USD",
+    "price_postapoc": "5 USD",
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "9mm",
+    "capacity": 60,
+    "reliability": 7,
+    "reload_time": 140,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  {
+    "id": "YakTenM9mag",
+    "looks_like": "m9mag",
+    "type": "MAGAZINE",
+    "name": { "str": "akimbo M9 magazine" },
+    "description": "A pair of military issue 30-round box magazines originally intended for use with Redemption & Absolution.",
+    "weight": "270 g",
+    "volume": "500 ml",
+    "price": "23 USD",
+    "price_postapoc": "1 USD",
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "9mm",
+    "capacity": 30,
+    "reliability": 8,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  {
+    "id": "bbpistolAkim",
+    "copy-from": "bbpistol",
+    "type": "GUN",
+    "name": { "str": "akimbo BB pistol" },
+    "description": "Popular among children.  Good for plinking, and easliy modifiable, but BBs deal nearly no damage.  Now comes in two.",
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "PNEUMATIC" ],
+    "magazines": [ [ "BB", [ "BBclip600" ] ] ],
+    "valid_mod_locations": [
+      [ "accessories", 8 ],
+      [ "barrel", 2 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "grip", 2 ],
+      [ "rail", 2 ],
+      [ "underbarrel", 2 ]
+    ],
+    "modes": [ [ "DEFAULT", "double tap", 2 ], [ "BURST", "burst", 4 ] ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "bbpistolAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "flags": [ "BLIND_EASY" ],
+    "components": [ [ [ "bbpistol", 2 ] ] ]
+  },
+  {
+    "id": "BBclip600",
+    "copy-from": "BBclip300",
+    "looks_like": "stanag30",
+    "type": "MAGAZINE",
+    "name": { "str": "twin BB magazine" },
+    "description": "These magazines can hold 600 BBs.  Good for special weapons.",
+    "capacity": 600,
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "reload_time": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "BBclip600",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MAGAZINES",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "flags": [ "BLIND_EASY" ],
+    "components": [ [ [ "BBclip300", 2 ] ] ]
+  },
+  {
+    "id": "bbmachinepistolAkim",
+    "copy-from": "bbmachinepistol",
+    "type": "GUN",
+    "name": { "str": "akimbo BB machine pistol" },
+    "description": "Popular among children.  Good for plinking, and easliy modifiable, but BBs deal nearly no damage.  Now comes in two.",
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "PNEUMATIC" ],
+    "magazines": [ [ "BB", [ "BBclip600" ] ] ],
+    "valid_mod_locations": [
+      [ "accessories", 8 ],
+      [ "barrel", 2 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "grip", 2 ],
+      [ "rail", 2 ],
+      [ "underbarrel", 2 ]
+    ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "modes": [ [ "DEFAULT", "full auto", 8 ], [ "BURST", "burst", 16 ] ],
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 }
+  },
+  {
     "id": "fn1910Akim",
     "copy-from": "fn1910",
     "type": "GUN",
@@ -3490,7 +3560,7 @@
     "description": "Made infamous in Sarajevo in 1914, the FN1910 was a popular pocket pistol, albeit in .32 ACP.  Collectors value the .380 model for its notoriety and more modern terminal performance.  If such a humble firearm could start a world war, could it perhaps protect you from the undead?  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -3547,7 +3617,7 @@
     "description": "One of the best-selling modern day 'pocket pistol's, the LCP is an affordable, polymer framed pistol chambered in .380 ACP.  Despite the round's relatively low power, the pistol's low weight and short sight radius make for a moderately poor handling pistol.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -3604,7 +3674,7 @@
     "description": "The Hi-Point CF-380 is a blowback operated semi-automatic pistol designed by Hi-Point Firearms.  Hi-Points have slides made with a zinc pot-metal.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -3681,7 +3751,7 @@
     "description": "A .380 subcompact pistol.  Designed for concealed carry and built from high-quality, durable materials.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -3738,7 +3808,7 @@
     "description": "A full-sized version of the highly successful Glock, chambered in hard-hitting 10mm Auto.  The third model of Glock designed, all other full-sized, large framed Glocks are adaptations of this one.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -3836,7 +3906,7 @@
     "description": "A popular, small .22 LR pistol.  One of the many polymer frame pistols produced during the latter 20th-early 21st centuries; it has an underbarrel rail.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -3894,7 +3964,7 @@
     "description": "A popular .22 pistol.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -3952,7 +4022,7 @@
     "description": "One of the quintessential 'saturday night specials', the Jimenez JA-22 was very affordably priced with its injection molded zinc slide and frame.  Intended to fill the void left after small pocket pistols were banned from import, these were more commonly used by criminals unfazed by their glaring safety issues.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -4010,7 +4080,7 @@
     "description": "The Walther P22 is a blowback operated semi-automatic pistol.  It is about half the size of most Walthers.  It is made mostly with plastic, with the slide and key components being made of die-cast zinc alloy.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -4068,7 +4138,7 @@
     "description": "The SIG Sauer P230 is a small, semi-automatic handgun chambered in .32 ACP.  Due to its small dimensions, it was often carried as a backup weapon.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -4126,7 +4196,7 @@
     "description": "One of the most famous handguns of the 20th century.  Your name is not Bond, but you might find this little gun still useful.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -4184,7 +4254,7 @@
     "description": "One of Kel-tec's oldest designs, the P32 is a popular option for deep concealment and backup usage.  Despite its extreme light weight and small size, its .32 ACP chambering makes for good handling and recoil control.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -4242,7 +4312,7 @@
     "description": "A SIG Sauer P226 chambered for .357 SIG.  The P226 is a DA/SA, short-recoil operated semi-automatic pistol.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -4300,7 +4370,7 @@
     "description": "A full size .357 SIG Glock pistol.  It is extremely similar to the Glock 22, and could be converted to fire .40 S&W by switching the barrel.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -4418,7 +4488,7 @@
     "description": "The P320 Compact is a semi-automatic, short recoil operated pistol.  This one is chambered for .357 SIG.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -4476,7 +4546,7 @@
     "description": "A double-barrel semi-automatic pistol of Italian origin, firing two bullets per shot, a derivative of the M1911 pistol.  Now comes in two.",
     "modes": [ [ "DEFAULT", "double", 2 ], [ "BURST", "burst", 4 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -4534,7 +4604,7 @@
     "description": "The M1911A1 is an extremely popular pistol known for its reliability.  This one is chambered for .38 Super.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -4592,7 +4662,7 @@
     "description": "A more modern version of Beretta's popular 92 series of handguns, the 90-two performs largely the same.  The main difference is a sleeker, almost futuristic-looking design owed in large parts to the polymer underbarrel rail cover.  This one is chambered in .40 S&W.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -4650,7 +4720,7 @@
     "description": "A .40 S&W variant of the popular Glock 17 pistol.  The standard-issue firearm of the FBI and of countless other law enforcement agencies worldwide.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -4688,7 +4758,7 @@
     "description": "Lighter than Beretta's iconic 92 series of guns, the Px4 Storm was built by utilizing light-weight polymer construction with steel inserts.  Its shape was also optimized for concealed carry.  This one is chambered in .40 S&W.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -4746,7 +4816,7 @@
     "description": "Originally marketed as a lightweight and compact alternative to older SIG handguns, the Pro .40 is popular among European police forces.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -4804,7 +4874,7 @@
     "description": "The Browning Hi-Power is a semi-automatic handgun developed shortly before the second world war.  Widely issued since then, it remains in use by India, Canada and Australia.  This is a commercial variant produced by Browning Arms in .40 S&W.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -4862,7 +4932,7 @@
     "description": "The Walther PPQ is a semi-automatic pistol originating from the Walther P99QA, and maintains compatibility with some of its predecessor's accessories.  This model is chambered in .40 S&W.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -4960,7 +5030,7 @@
     "description": "The Hi-Point Model JCP is a blowback operated semi-automatic pistol designed by Hi-Point Firearms, which is known for making inexpensive firearms, and for making said firearms bulky and uncomfortable.  Hi-Points have slides made with a zinc pot-metal which is relatively fragile compared to steel slides.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -5018,7 +5088,7 @@
     "description": "One of the most recognizable handguns due to its popularity in movies and video games, the Desert Eagle is better known for its menacing appearance than its performance.  It's a large pistol, but its heavy weight reduces recoil.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -5076,7 +5146,7 @@
     "description": "The M1911 was the US Military standard-issue sidearm for most of the 20th Century.  It remains one of the most popular .45 pistols today.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -5154,7 +5224,7 @@
     "description": "The M45A1 supplanted earlier M45 MEUSOC pistols in use by Force Recon elements of Marine Expeditionary Units.  Where the original M45 pistols were gutted M1911A1's hand-fitted by USMC armorers, the updated M45A1's are hardly different from any other commercial 1911 design save for their dual recoil springs.  Most were replaced in 2016 with Glock 19's due to logistics issues.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -5192,7 +5262,7 @@
     "description": "The AMT Hardballer is a stainless steel clone of the Colt M1911A1 made by Arcadia Machine & Tool.  Reliable, almost like the original.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -5230,7 +5300,7 @@
     "description": "The M1911 was the US Military standard-issue sidearm for most of the 20th Century.  It remains one of the most popular .45 pistols today.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -5308,7 +5378,7 @@
     "description": "Modified 1911, which shoots .45 bullet in full auto.  Also have a built-in foregrip.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -5347,7 +5417,7 @@
     "description": "A popular pistol, widely used among law enforcement.  Extensively tested for durability, it has been found to stay accurate even after being subjected to extreme abuse.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -5426,7 +5496,7 @@
     "description": "The Walther PPQ is a semi-automatic pistol originating from the Walther P99QA, and maintains compatibility with some of its predecessor's accessories.  This model is chambered in .45 ACP.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -5484,7 +5554,7 @@
     "description": "The Hi-Point Model JHP is a blowback operated semi-automatic pistol designed by Hi-Point Firearms, which is known for making inexpensive firearms, and for making said firearms bulky and uncomfortable.  Hi-Points have slides made with a zinc pot-metal which is relatively fragile compared to steel slides.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -5542,7 +5612,7 @@
     "description": "A full-sized version of the highly successful Glock.  This model is chambered in .45 ACP.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -5640,7 +5710,7 @@
     "description": "Unlike the previous model, this Canik TP454 is huge, but gives a stable recoil for a .454 round pistol.  A hand cannon suits for the apocalypse.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -5698,7 +5768,7 @@
     "description": "The Springfield XD-45C is an imaginary variant of the XD line, chambered in classic .45 Colt for a blend of old-world stopping power and modern ergonomics.  Its polymer frame tames recoil while preserving the round’s heavy impact.  A fusion of tradition and tactical reliability, it stands out as a unique sidearm choice.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -5756,7 +5826,7 @@
     "description": "Short for Universal Combat Pistol, that was developed as a competitor of FN Five-Seven.  Only accepts small magazines.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -5810,11 +5880,11 @@
     "looks_like": "glock_20Akim",
     "type": "GUN",
     "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "AUTOLOADING" ],
-    "name": { "str": "akimbo H&K UCP" },
-    "description": "Short for Universal Combat Pistol, that was developed as a competitor of FN Five-Seven.  Only accepts small magazines.  Now comes in two.",
+    "name": { "str": "akimbo 1911-460" },
+    "description": "This 1911 has been customized to chamber powerful .460 Rowland ammunition.  It now sports a large, integral compensator to aid in taming recoil and reducing slide velocity.  Notably, normal .45ACP can also be fired through the weapon.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -5852,7 +5922,7 @@
     "description": "Designed to work with FN's proprietary 5.7x28mm round, the Five-Seven is a lightweight pistol with a very high capacity, best used against armored opponents.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -5910,7 +5980,7 @@
     "description": "Designed to work with FN's proprietary 5.7x28mm round, the Five-Seven is a lightweight pistol with a very high capacity, best used against armored opponents.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -5968,7 +6038,7 @@
     "description": "Designed to work with FN's proprietary 5.7x28mm round, the Five-Seven is a lightweight pistol with a very high capacity, best used against armored opponents.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -6006,7 +6076,7 @@
     "description": "This lightweight machine pistol fires 5x50mm armor-piercing flechette cartridges.  Classified as an individual defense weapon, this advanced firearm was developed by Rivtech for the US military shortly before the end of the world.  Designed to be fired in bursts, it excels in close combat.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -6084,7 +6154,7 @@
     "description": "The Tokarev TT-33 is an antique Russian semiautomatic pistol, famous for its durability, accuracy, and uncomfortable grip angle.  It was chambered for the 7.62x25mm due to the popularity of the C96 pistol among Russian revolutionaries.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 , "magazine_well": 2.0},
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -6142,7 +6212,7 @@
     "description": "Considered overkill by many, the Rivtech M103A remains one of the most powerful sidearms ever developed.  Accepts stick magazines.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -6220,7 +6290,7 @@
     "description": "A more modern version of Beretta's popular 92 series of handguns, the 90-two performs largely the same.  The main difference is a sleeker, almost futuristic-looking design owed in large parts to the polymer underbarrel rail cover.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -6298,7 +6368,7 @@
     "description": "Possibly the most popular pistol in existence.  The Glock 19 is often derided for its plastic construction, but it is easy to shoot.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -6557,7 +6627,7 @@
     "description": "An iconic 9x19mm pistol, the M9 was the standard issue sidearm of US armed force from 1985 only until recently.  It was formerly popular amongst law enforcement before the advent of commercially available polymer-framed handguns and the FBI's adoption of .40S&W.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -6595,7 +6665,7 @@
     "description": "A pistol which used some parts of M9, this burst-fire machine pistol is one of the most scucessful machine pistols in history.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 2 ], [ "BURST", "burst", 3 ], [ "AUTO", "full auto", 6 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 8 ],
       [ "barrel", 2 ],
@@ -6634,7 +6704,7 @@
     "description": "Lighter than Beretta's iconic 92 series of guns, the Px4 Storm was built by utilizing light-weight polymer construction with steel inserts.  Its shape was also optimized for concealed carry, while maintaining the reliability the 92 series is known for.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -6692,7 +6762,7 @@
     "description": "A popular pistol, widely used among law enforcement.  Extensively tested for durability, it has been found to stay accurate even after being subjected to extreme abuse.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -6730,7 +6800,7 @@
     "description": "A popular pistol, widely used among law enforcement.  Extensively tested for durability, it has been found to stay accurate even after being subjected to extreme abuse.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -6788,7 +6858,7 @@
     "description": "The Kel-Tec PF-9 remains one of the most popular backup pistols due to its history of reliability, affordability, and concealability.  Chambered in 9x19mm, recoil is best described as unpleasant, and follow-up shots are difficult to place quickly.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -6846,7 +6916,7 @@
     "description": "The M17 is a semi-automatic, short recoil operated pistol derived from the SIG Sauer P320.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -6904,7 +6974,7 @@
     "description": "The Browning Hi-Power is a semi-automatic handgun developed shortly before the second world war.  Widely issued since then, it remains in use by India, Canada and Australia.  This is a commercial variant produced by Browning Arms in 9x19mm Parabellum.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -6982,7 +7052,7 @@
     "description": "The Walther P38 is a semi-automatic handgun adopted shortly before the second world war.  Developed due to the high production costs of its predecessor, the Luger P08, the P38 is also chambered in 9mm Parabellum.  This early DA/SA locked-breech design would introduce features later seen on more modern firearms such as the Beretta 92 series, and served Germany until 2004.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -7040,7 +7110,7 @@
     "description": "The Walther PPQ is a semi-automatic pistol originating from the Walther P99QA, and maintains compatibility with some of its predecessor's accessories.  This model is chambered in 9x19mm Parabellum.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -7138,7 +7208,7 @@
     "description": "The Hi-Point C-9 is a blowback operated semi-automatic pistol designed by Hi-Point Firearms, which is known for making inexpensive firearms, and for making said firearms bulky and uncomfortable.  Hi-Points have slides made with a zinc pot-metal which is relatively fragile compared to steel slides.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -7236,7 +7306,7 @@
     "description": "The CZ-75 is a semi-automatic pistol developed in Czechoslovakia, and is one of the original wonder nines.  Though designed for export to western countries, it was declared a state secret; lack of international patent protection meant that many clones and variants were produced and distributed around the world, with Česká zbrojovka only joining in the 90's.  This pistol remains wildly popular among competition shooters.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -7334,7 +7404,7 @@
     "description": "The Walther CCP is a gas-delayed blowback semi-automatic pistol intended for the concealed carry consumer market.  Internally, it is nearly identical to the cult classic H&K P7.  Its fixed barrel design makes it potentially more accurate than many other pistols, though this may difficult to realize with its average trigger and short sight radius.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -7392,7 +7462,7 @@
     "description": "This 3D printed machine pistol is made completely without any metal parts.  As a result, it is very lightweight.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 3 ], [ "AUTO", "auto", 6 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -7443,7 +7513,7 @@
     "description": "The Pistolet Makarova was developed by the Soviet Union to replace the WWII-era TT-33 pistol.  It uses the 9x18mm cartridge, which remains in use among various former Soviet countries.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -7501,7 +7571,7 @@
     "description": "Modified Makarov PM, which shoots 9x18mm cartridge in full auto.  Also have a built-in foregrip.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ], [ "AUTO1", "low auto", 6 ], [ "AUTO2", "high auto", 12 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -7560,7 +7630,7 @@
     "description": "A pistol made for use by artillery and mortar crews, tank crews and aircraft personnel.  Uses 9x18mm ammo.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ], [ "AUTO1", "low auto", 4 ], [ "AUTO2", "high auto", 8 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -7618,7 +7688,7 @@
     "description": "Not as famous as the Desert Eagle, but this firearm is also famous as 'No. 2 of the heavy handguns.'  Is visible from various games, movies, and anime.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -7676,7 +7746,7 @@
     "description": "A pistol perfect for backpacking, camping and range day plinking.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],
@@ -7734,7 +7804,7 @@
     "description": "The Calico M950 is an automatic pistol with a unique circular magazine that allows for high capacities and reduced recoil.  Now comes in two.",
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0 },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 },
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 2 ],

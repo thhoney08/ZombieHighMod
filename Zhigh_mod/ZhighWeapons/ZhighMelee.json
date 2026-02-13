@@ -548,7 +548,7 @@
     "volume": "1200 ml",
     "price": "100 USD",
     "price_postapoc": "15 USD",
-    "to_hit": -2,
+    "to_hit": 1,
     "bashing": 10,
     "cutting": 24,
     "use_action": "PICKAXE",
@@ -4540,7 +4540,7 @@
     "category": "weapons",
     "weapon_category": [ "SPEARS", "HOOKED_POLES" ],
     "name": { "str": "classic sasumata" },
-    "description": "A wooden pole with two bladed \"claws\" on a frame and decent grip.  It's good for catching weapons and criminals.  Used often by midieval Japanese soldiers.",
+    "description": "A wooden pole with two bladed \"claws\" on a frame and decent grip.  It's good for catching weapons and criminals.  Used often by medieval Japanese soldiers.",
     "weight": "1950 g",
     "color": "brown",
     "symbol": "/",
@@ -4552,6 +4552,26 @@
     "cutting": 20,
     "to_hit": 2,
     "flags": [ "SPEAR", "REACH_ATTACK", "NONCONDUCTIVE", "SHEATH_SPEAR" ]
+  },
+  {
+    "id": "sodegaramiZhigh",
+    "looks_like": "sasumataOldZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "SPEARS", "HOOKED_POLES" ],
+    "name": { "str": "sodegarami" },
+    "description": "A wooden pole with two spikes on a frame and decent grip.  It's good for catching weapons and criminals.  Used often by medieval Japanese soldiers.",
+    "weight": "1950 g",
+    "color": "brown",
+    "symbol": "/",
+    "price": "29 USD",
+    "price_postapoc": "750 cent",
+    "material": [ "aluminum" ],
+    "techniques": [ "WBLOCK_1", "DEF_DISARM" ],
+    "volume": "1750 ml",
+    "cutting": 20,
+    "to_hit": 2,
+    "flags": [ "STAB", "SPEAR", "REACH_ATTACK", "NONCONDUCTIVE", "SHEATH_SPEAR" ]
   },
   {
     "id": "gauntletBladeZhigh",
@@ -6523,5 +6543,139 @@
     "color": "dark_gray",
     "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 10 ] ],
     "flags": [ "SHEATH_KNIFE", "STAB" ]
+  },
+  {
+    "id": "maceBarZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "MACES" ],
+    "name": { "str": "bar mace" },
+    "description": "A medieval weapon consisting of a four metal plates welded together in a cross with a handle.  It is heavy and slow, but its crushing damage is devastating.",
+    "weight": "1500 g",
+    "to_hit": 1,
+    "color": "dark_gray",
+    "symbol": "/",
+    "material": [ "iron", "wood" ],
+    "techniques": [ "SWEEP" ],
+    "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "BELT_CLIP" ],
+    "volume": "1250 ml",
+    "bashing": 20,
+    "cutting": 18,
+    "price": "1 kUSD",
+    "price_postapoc": "60 USD",
+    "qualities": [ [ "HAMMER", 1 ] ]
+  },
+  {
+    "id": "maceBarZhigh_inferior",
+    "type": "GENERIC",
+    "copy-from": "maceBarZhigh",
+    "name": { "str": "bar mace replica" },
+    "description": "A medieval weapon consisting of a four metal plates welded together in a cross with a handle.  That iron end feels a bit loose.",
+    "looks_like": "maceBarZhigh",
+    "material": [ "budget_steel", "wood" ],
+    "repairs_like": "maceBarZhigh",
+    "proportional": { "weight": 0.8, "bashing": 0.85, "cutting": 0.85 },
+    "relative": { "to_hit": -1 },
+    "delete": { "flags": [ "DURABLE_MELEE" ] },
+    "price": "100 USD",
+    "price_postapoc": "10 USD"
+  },
+  {
+    "id": "maceBarZhigh_fake",
+    "type": "GENERIC",
+    "copy-from": "maceBarZhigh",
+    "name": { "str": "bar mace fake" },
+    "description": "A light, cheaply made replica of a medieval weapon that would normally consist of a four metal plates welded together in a cross with a handle.",
+    "looks_like": "maceBarZhigh",
+    "material": [ "aluminum", "wood" ],
+    "price": "100 USD",
+    "price_postapoc": "5 USD",
+    "qualities": [  ],
+    "repairs_like": "maceBarZhigh",
+    "proportional": { "weight": 0.6, "bashing": 0.5, "cutting": 0.5 },
+    "relative": { "to_hit": -1 },
+    "extend": { "flags": [ "FRAGILE_MELEE" ] },
+    "delete": { "flags": [ "DURABLE_MELEE" ] }
+  },
+  {
+    "id": "axe_toothZhigh",
+    "type": "GENERIC",
+    "copy-from": "ax",
+    "category": "weapons",
+    "weapon_category": [ "2H_AXES" ],
+    "name": { "str": "sharktooth axe" },
+    "description": "A stout wooden pole with several razor-sharp teeth set into the edges of its axehead.",
+    "material": [ "bone_heavy", "wood" ],
+    "proportional": { "weight": 0.8 },
+    "qualities": [ [ "AXE", 1 ], [ "BUTCHER", -36 ] ]
+  },
+  {
+    "id": "daystickZhigh",
+    "type": "GENERIC",
+    "copy-from": "cudgel",
+    "name": { "str": "daystick" },
+    "description": "A superalloy stick covered in rubber, this is used in military as a cudgel.",
+    "weight": "765 g",
+    "color": "light_gray",
+    "price": "1 kUSD",
+    "price_postapoc": "60 USD",
+    "bashing": 14,
+    "material": [ "superalloy", "rubber" ]
+  },
+  {
+    "id": "waterstickZhigh",
+    "type": "GENERIC",
+    "copy-from": "cudgel",
+    "name": { "str": "water stick" },
+    "description": "A rubber hose filled with water then bound with tape, this could be used as a cudgel.  Less damaging than an average cudgel but can easliy stun an enemy.",
+    "weight": "765 g",
+    "color": "light_gray",
+    "bashing": 9,
+    "material": [ "rubber" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "stunnedZhigh",
+              "message": "The water stick stuns your target.",
+              "npc_message": "%1$s stuns their target."
+            }
+          ]
+        }
+      ]
+    },
+    "extend": { "flags": [ "FRAGILE_MELEE" ] }
+  },
+  {
+    "id": "javelin_carbon",
+    "looks_like": "spear_carbon",
+    "type": "GENERIC",
+    "copy-from": "javelin_iron",
+    "name": { "str": "carbon fiber javelin" },
+    "description": "A custom 3D-printed throwing spear made out of carbon fiber.  It is more lightweight than a normal spear thanks to its method of manufacturing, but it can only be repaired using a 3D printer.",
+    "material": [ "carbon_fiber" ],
+    "thrown_damage": [ { "damage_type": "bash", "amount": 5 }, { "damage_type": "stab", "amount": 17 } ],
+    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 }
+  },
+  {
+    "id": "knuckle_chainZhigh",
+    "looks_like": "knuckle_steel",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "FIST_WEAPONS" ],
+    "symbol": "3",
+    "color": "dark_gray",
+    "name": { "str": "pair of chain knuckles", "str_pl": "pairs of chain knuckles" },
+    "description": "A pair of cut-down chain link for unarmed combat.  A good, quick weapon - but you have to get within punching range to use it.",
+    "material": "steel",
+    "volume": "250 ml",
+    "weight": "400 g",
+    "bashing": 8,
+    "price_postapoc": "50 cent",
+    "qualities": [  ],
+    "flags": [ "UNARMED_WEAPON", "BELT_CLIP" ]
   }
 ]
