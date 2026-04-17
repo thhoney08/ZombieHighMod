@@ -1541,7 +1541,7 @@
     "type": "AMMO",
     "name": { "str": "paper flechette cartridge" },
     "description": "A paper cartridge containing black powder and nails.  Historically used to reload muzzleloaders in a more reasonable time.",
-    "relative": { "damage": { "damage_type": "bullet", "amount": -20, "armor_penetration": 30, "armor_multiplier": -1 } },
+    "damage": { "damage_type": "bullet", "amount": 6, "armor_penetration": 36, "armor_multiplier": 0 },
     "shape": [ "cone", { "half_angle": 10, "length": 12 } ]
   },
   {
@@ -1831,7 +1831,7 @@
     "price": "20 USD",
     "price_postapoc": "8 USD",
     "count": 10,
-    "relative": { "damage": { "damage_type": "bullet", "amount": -20, "armor_penetration": 15, "armor_multiplier": -1.5 } }
+    "damage": { "damage_type": "bullet", "amount": 6, "armor_penetration": 18, "armor_multiplier": 0 }
   },
   {
     "id": "bp_410shot_flechette",
