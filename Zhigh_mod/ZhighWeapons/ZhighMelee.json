@@ -2549,37 +2549,6 @@
     "price_postapoc": "50 cent"
   },
   {
-    "id": "cordless_drill_onZhigh",
-    "looks_like": "cordless_drill",
-    "type": "TOOL",
-    "category": "tools",
-    "symbol": ";",
-    "color": "yellow",
-    "name": { "str": "cordless drill (on)" },
-    "power_draw": 10000,
-    "description": "This is a cordless battery-powered drill with a selection of drill bits.  It is turned on, so it could be used as a weapon if needed.",
-    "price": "20 USD",
-    "price_postapoc": "250 cent",
-    "material": [ "plastic", "steel" ],
-    "techniques": [ "PRECISE" ],
-    "flags": [ "STAB", "MESSY", "TRADER_AVOID", "NONCONDUCTIVE" ],
-    "weight": "2721 g",
-    "volume": "750 ml",
-    "bashing": 3,
-    "cutting": 45,
-    "to_hit": 2,
-    "revert_to": "cordless_drill",
-    "use_action": { "menu_text": "Turn off", "type": "transform", "msg": "You turn the drill off.", "target": "cordless_drill" },
-    "ammo": "battery",
-    "magazines": [
-      [
-        "battery",
-        [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ]
-      ]
-    ],
-    "magazine_well": "500 ml"
-  },
-  {
     "id": "hwandoZhigh",
     "type": "GENERIC",
     "category": "weapons",
@@ -6662,7 +6631,7 @@
   },
   {
     "id": "knuckle_chainZhigh",
-    "looks_like": "knuckle_steel",
+    "looks_like": "chain",
     "type": "GENERIC",
     "category": "weapons",
     "weapon_category": [ "FIST_WEAPONS" ],
@@ -6677,5 +6646,44 @@
     "price_postapoc": "50 cent",
     "qualities": [  ],
     "flags": [ "UNARMED_WEAPON", "BELT_CLIP" ]
+  },
+  {
+    "id": "hammerWrenchZhigh",
+    "looks_like": "hammer",
+    "type": "GENERIC",
+    "category": "tools_workshop",
+    "weapon_category": [ "1H_HAMMERS" ],
+    "name": { "str": "hammer-wrench" },
+    "description": "This is a demagnetized steel claw hammer with a steel grip.  With a hammer, nails, and two by fours in your inventory, you could board up adjacent doors and windows.  It has myriad other uses as well, just like a wrench.",
+    "weight": "656 g",
+    "volume": "450 ml",
+    "price": 700,
+    "price_postapoc": 100,
+    "bashing": 9,
+    "material": [ "steel" ],
+    "symbol": ";",
+    "color": "brown",
+    "qualities": [ [ "HAMMER", 3 ], [ "PRY", 1 ], [ "HAMMER_FINE", 1 ], [ "WRENCH", 2 ], [ "WRENCH_FINE", 1 ] ],
+    "use_action": [ "HAMMER", "CROWBAR" ],
+    "flags": [ "BELT_CLIP" ]
+  },
+  {
+    "id": "hogSplitterZhigh",
+    "weapon_category": [ "1H_AXES" ],
+    "name": { "str": "hog splitter" },
+    "type": "TOOL",
+    "description": "A massive, heavy-duty cleaver built for the singular purpose of splitting carcasses with a single strike.  Its immense weight and broad blade make it as terrifying in a fight as it is efficient on the butchering block.",
+    "copy-from": "hatchet",
+    "looks_like": "knife_butcher",
+    "proportional": {
+		"weight": 1.6,
+		"volume": 1.5,
+		"cutting": 1.8,
+		"bashing": 0.7,
+		"price": 1.6,
+		"price_postapoc": 1.6
+	},
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 25 ] ],
+    "flags": [ "SHEATH_AXE", "BELT_CLIP" ]
   }
 ]

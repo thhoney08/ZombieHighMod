@@ -19,6 +19,75 @@
     "extend": { "effects": [ "MININUKE_MOD", "FRAG" ] }
   },
   {
+    "id": "pirateBombZhigh",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "pirate bomb" },
+    "looks_like": "pipebomb",
+    "description": "This is a classic bomb which is used by pirates, by emptying the cannonball and filling it with gunpowder.  Light it up and it will give doom to it's victims.",
+    "weight": "1200 g",
+    "volume": "200 ml",
+    "price": "15 USD",
+    "to_hit": 1,
+    "bashing": 5,
+    "material": "steel",
+    "symbol": "*",
+    "color": "light_gray",
+    "explode_in_fire": true,
+    "explosion": {
+      "damage": 30,
+      "radius": 5,
+      "fragment": { "impact": { "damage_type": "bullet", "amount": 70, "armor_multiplier": 4 }, "range": 5 }
+    },
+    "use_action": {
+      "target": "pirateBombZhigh_act",
+      "msg": "You light the fuse on the pipe bomb.",
+      "target_charges": 3,
+      "active": true,
+      "need_fire": 1,
+      "menu_text": "Light fuse",
+      "type": "transform"
+    },
+    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "NPC_ACTIVATE", "GRENADE" ]
+  },
+  {
+    "id": "pirateBombZhigh_act",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "active pirate bomb" },
+    "looks_like": "pipebomb_act",
+    "description": "This pirate bomb's fuse is lit, and it will explode any second now.  Throw it immediately!",
+    "weight": "1200 g",
+    "volume": "200 ml",
+    "price": "0 cent",
+    "to_hit": 1,
+    "bashing": 5,
+    "material": "steel",
+    "symbol": "*",
+    "color": "light_gray",
+    "initial_charges": 3,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "explode_in_fire": true,
+    "explosion": {
+      "damage": 30,
+      "radius": 5,
+      "fragment": { "impact": { "damage_type": "bullet", "amount": 70, "armor_multiplier": 4 }, "range": 5 }
+    },
+    "use_action": {
+      "type": "explosion",
+      "sound_volume": 0,
+      "sound_msg": "ssss...",
+      "no_deactivate_msg": "You've already lit the %s, try throwing it instead.",
+      "explosion": {
+        "damage": 30,
+        "radius": 5,
+        "fragment": { "impact": { "damage_type": "bullet", "amount": 70, "armor_multiplier": 4 }, "range": 5 }
+      }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID", "DANGEROUS" ]
+  },
+  {
     "id": "cannon_donk_shell",
     "copy-from": "cannon_round_ball",
     "type": "AMMO",
@@ -39,7 +108,7 @@
   },
   {
     "id": "cannon_scrap_shot",
-    "copy-from": "cannon_scrap_shot",
+    "copy-from": "cannon_round_ball",
     "type": "AMMO",
     "name": { "str": "cannon grapeshot shell" },
     "description": "A bundle of wadding, black gunpowder, and a bundle of rock-sized iron balls.  A Civil War era \"grapeshot shell\" for cannons of 3-inch bore, whatever it hits probably won't live to regret it.",
@@ -49,10 +118,9 @@
     "price": "200 USD",
     "price_postapoc": "20 USD",
     "looks_like": "cannon_round_ball",
-    "range": 0,
-    "damage": { "damage_type": "bullet", "amount": 150, "armor_penetration": 10 },
+    "damage": { "damage_type": "bullet", "amount": 30, "armor_penetration": 10 },
     "proportional": { "recoil": 0.6, "loudness": 0.8, "dispersion": 1.2 },
-    "shape": [ "cone", { "half_angle": 15, "length": 35 } ],
+    "shot": { "count": 35, "half_angle": 15 },
     "extend": { "effects": [ "BLACKPOWDER" ] }
   },
   {
@@ -130,332 +198,11 @@
     "volume": "250 ml",
     "bashing": 5,
     "damage": { "damage_type": "bash", "amount": 8, "armor_penetration": 1 },
-    "range": 0,
     "dispersion": 14,
     "loudness": 0,
     "to_hit": -1,
-    "shape": [ "cone", { "half_angle": 15, "length": 15 } ],
+    "shot": { "count": 15, "half_angle": 15 },
     "effects": [ "NEVER_MISFIRES", "NON_FOULING" ]
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_grenade",
-    "looks_like": "grenade",
-    "symbol": "*",
-    "color": "light_gray",
-    "name": { "str": "shootable grenade" },
-    "description": "A grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "material": [ "steel", "plastic" ],
-    "ammo_type": "rock",
-    "weight": "400 g",
-    "volume": "250 ml",
-    "bashing": 5,
-    "damage": { "damage_type": "bash", "amount": 5 },
-    "range": 70,
-    "dispersion": 14,
-    "loudness": 0,
-    "to_hit": -1,
-    "drop": "grenade_act",
-    "effects": [ "NO_OVERSHOOT", "NOGIB", "NEVER_MISFIRES" ]
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_improvised_grenade",
-    "copy-from": "sling_grenade",
-    "looks_like": "improvised_grenade",
-    "name": { "str": "shootable improvised grenade" },
-    "description": "An improvised grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "improvised_grenade_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_emp_grenade",
-    "copy-from": "sling_grenade",
-    "looks_like": "grenade_emp",
-    "name": { "str": "shootable emp grenade" },
-    "description": "An emp grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "grenade_emp_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_inc_grenade",
-    "copy-from": "sling_grenade",
-    "looks_like": "grenade_inc",
-    "name": { "str": "shootable incendiary grenade" },
-    "description": "An incendiary grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "grenade_inc_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_scrambler_grenade",
-    "copy-from": "sling_grenade",
-    "looks_like": "scrambler",
-    "name": { "str": "shootable scrambler grenade" },
-    "description": "A scrambler grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "scrambler_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_gasbomb",
-    "copy-from": "sling_grenade",
-    "looks_like": "gasbomb",
-    "name": { "str": "shootable tear gas canister" },
-    "description": "An tear gas canister modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "gasbomb_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_insecticidalbomb",
-    "copy-from": "sling_grenade",
-    "looks_like": "insecticidalbomb",
-    "name": { "str": "shootable insecticidal gas canister" },
-    "description": "An insecticidal gas canister modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "insecticidalbomb_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_pipebomb",
-    "copy-from": "sling_grenade",
-    "looks_like": "improvised_pipebomb",
-    "name": { "str": "shootable pipe bomb" },
-    "description": "A pipe bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "improvised_pipebomb_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_smokebomb",
-    "copy-from": "sling_grenade",
-    "looks_like": "smokebomb",
-    "name": { "str": "shootable smoke bomb" },
-    "description": "A smoke bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "smokebomb_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_acidbomb",
-    "copy-from": "sling_grenade",
-    "looks_like": "acidbomb",
-    "name": { "str": "shootable acid bomb" },
-    "description": "A acid bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "effects": [ "NOGIB", "ACIDBOMB", "NEVER_MISFIRES" ]
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_flashbang",
-    "copy-from": "sling_grenade",
-    "looks_like": "flashbang",
-    "name": { "str": "shootable flashbang" },
-    "description": "A flashbang modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "flashbang_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_dynamite",
-    "copy-from": "sling_grenade",
-    "looks_like": "dynamite",
-    "name": { "str": "shootable dynamite" },
-    "description": "A dynamite modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "dynamite_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_fungicidalbomb",
-    "copy-from": "sling_grenade",
-    "looks_like": "fungicidalbomb",
-    "name": { "str": "shootable fungicidal gas grenade" },
-    "description": "A fungicidal gas grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "fungicidalbomb_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_zap_grenade",
-    "copy-from": "sling_grenade",
-    "looks_like": "zap_grenade",
-    "name": { "str": "shootable zapper grenade" },
-    "description": "A zapper grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "zap_grenade_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_rad_grenade",
-    "copy-from": "sling_grenade",
-    "looks_like": "rad_grenade",
-    "name": { "str": "shootable radioactive grenade" },
-    "description": "A radioactive grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "rad_grenade_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_cryo_grenade",
-    "copy-from": "sling_grenade",
-    "looks_like": "cryo_grenade",
-    "name": { "str": "shootable cryo grenade" },
-    "description": "A cryo grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "cryo_grenade_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_improvised_colabomb",
-    "copy-from": "sling_grenade",
-    "looks_like": "improvised_colabomb",
-    "name": { "str": "shootable cola bomb" },
-    "description": "An cola bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "improvised_colabomb_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_improvised_colabombV2",
-    "copy-from": "sling_grenade",
-    "looks_like": "improvised_colabomb",
-    "name": { "str": "shootable frag cola bomb" },
-    "description": "A frag cola bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "improvised_colabombV2_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_grenadeKrak",
-    "copy-from": "sling_grenade",
-    "looks_like": "grenadeKrak",
-    "name": { "str": "shootable anti-tank grenade" },
-    "description": "An improvised anti-tank grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "grenadeKrak_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_grenadeHiEx",
-    "copy-from": "sling_grenade",
-    "looks_like": "grenadeHiEx",
-    "name": { "str": "shootable high explosive grenade" },
-    "description": "An improvised high explosive grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "grenadeHiEx_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_grenade_nap",
-    "copy-from": "sling_grenade",
-    "looks_like": "grenade_nap",
-    "name": { "str": "shootable napalm grenade" },
-    "description": "An improvised napalm grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "grenade_nap_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_grenade_goo",
-    "copy-from": "sling_grenade",
-    "looks_like": "grenade_goo",
-    "name": { "str": "shootable goo grenade" },
-    "description": "An improvised goo grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "grenade_goo_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_rubberball",
-    "looks_like": "baseball",
-    "copy-from": "rock",
-    "name": { "str": "shootable rubber ball" },
-    "description": "An improvised rubber ball, which makes you to throw this (using a staff sling) at a longer range.",
-    "damage": { "damage_type": "bash", "amount": 8 },
-    "dont_recover_one_in": 40,
-    "effects": [ "BOUNCE", "BEANBAG", "NEVER_MISFIRES" ]
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_dynamite_long",
-    "copy-from": "sling_grenade",
-    "looks_like": "dynamite",
-    "name": { "str": "shootable long fuse dynamite" },
-    "description": "A long fuse dynamite modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "dynamite_long_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_zhighNailBomb",
-    "copy-from": "sling_grenade",
-    "looks_like": "zhighNailBomb",
-    "name": { "str": "shootable nail bomb" },
-    "description": "A nail bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "zhighNailBomb_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_grenade_web",
-    "copy-from": "sling_grenade",
-    "looks_like": "grenade_web",
-    "name": { "str": "shootable web grenade" },
-    "description": "A web grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "grenade_web_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_grenadeMiniZhigh",
-    "copy-from": "sling_grenade",
-    "looks_like": "grenadeMiniZhigh",
-    "name": { "str": "shootable mini grenade" },
-    "description": "A mini grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "grenadeMiniZhigh_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_improvised_pipebombZhigh",
-    "copy-from": "sling_grenade",
-    "looks_like": "improvised_pipebombZhigh",
-    "name": { "str": "shootable improvised pipe bomb, long fuse" },
-    "description": "A long fuse improvised pipe bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "improvised_pipebombZhigh_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_feralStudentNadeZhigh",
-    "copy-from": "sling_grenade",
-    "looks_like": "feralStudentNadeZhigh",
-    "name": { "str": "shootable undead signal bomb" },
-    "description": "An undead signal bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "feralStudentNadeZhigh_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_corrosiveGasNadeZhigh",
-    "copy-from": "sling_grenade",
-    "looks_like": "corrosiveGasNadeZhigh",
-    "name": { "str": "shootable corrosive gas grenade" },
-    "description": "A corrosive gas grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "corrosiveGasNadeZhigh_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_ConcertinaBombZhigh",
-    "copy-from": "sling_grenade",
-    "looks_like": "ConcertinaBombZhigh",
-    "name": { "str": "shootable concertina bomb" },
-    "description": "A concertina bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "ConcertinaBombZhigh_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_fakeFlashBangZhigh",
-    "copy-from": "sling_grenade",
-    "looks_like": "fakeFlashBangZhigh",
-    "name": { "str": "shootable flash bomb" },
-    "description": "A flash bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "fakeFlashBangZhigh_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_tool_ninjaBomb",
-    "copy-from": "sling_grenade",
-    "looks_like": "tool_ninjaBomb",
-    "name": { "str": "shootable ninja bomb" },
-    "description": "A ninja bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "tool_ninjaBomb_act"
-  },
-  {
-    "type": "AMMO",
-    "id": "sling_grenadeSapZhigh",
-    "copy-from": "sling_grenade",
-    "looks_like": "grenadeSapZhigh",
-    "name": { "str": "shootable sap grenade" },
-    "description": "A sap grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
-    "drop": "grenadeSapZhigh_act"
   },
   {
     "type": "AMMO",
@@ -484,9 +231,8 @@
     "name": { "str": "shot paintball" },
     "description": "A tube of small paintballs.  They deal virtually no damage, but can hit multiple targets.",
     "damage": { "damage_type": "bullet", "amount": 6 },
-    "range": 0,
     "stack_size": 50,
-    "shape": [ "cone", { "half_angle": 25, "length": 7 } ]
+    "shot": { "count": 7, "half_angle": 25 }
   },
   {
     "type": "AMMO",
@@ -701,8 +447,8 @@
     "stack_size": 200,
     "ammo_type": "NOISE_zhigh",
     "damage": { "damage_type": "bullet", "amount": 3 },
+    "shot": { "count": 7, "half_angle": 30 },
     "loudness": 50,
-    "shape": [ "cone", { "half_angle": 30, "length": 7 } ],
     "effects": [ "NEVER_MISFIRES", "NON_FOULING", "SHOT" ]
   },
   {
@@ -767,7 +513,8 @@
     "range": 2,
     "damage": { "damage_type": "bullet", "amount": 5, "armor_penetration": 9 },
     "loudness": 2,
-    "effects": [ "NEVER_MISFIRES", "NON_FOULING", "NOGIB" ]
+    "effects": [ "NEVER_MISFIRES", "NON_FOULING", "NOGIB" ],
+    "dont_recover_one_in": 10
   },
   {
     "id": "shot_coin",
@@ -775,9 +522,8 @@
     "type": "AMMO",
     "name": { "str": "coin shot" },
     "description": "A shell filled with coins.  Extremely damaging, but does not penetrate any armor.",
-    "damage": { "damage_type": "bullet", "amount": 90, "armor_multiplier": 0 },
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 10, "length": 8 } ]
+	"range": 1,
+    "damage": { "damage_type": "bullet", "amount": 60, "armor_penetration": 0 }
   },
   {
     "id": "shot_slug_ap",
@@ -785,7 +531,8 @@
     "type": "AMMO",
     "name": { "str": "shotgun slug, armor piercing" },
     "description": "A heavy and sharp metal slug used with shotguns to give them the range capabilities of a rifle.  Not that damaging, but pretty accurate.",
-    "relative": { "range": 18, "damage": { "damage_type": "bullet", "amount": -18, "armor_penetration": 30, "armor_multiplier": -1 } },
+    "relative": { "range": 18 },
+    "damage": { "damage_type": "bullet", "amount": 35, "armor_penetration": 38, "armor_multiplier": 3 },
     "proportional": { "recoil": 1.4 }
   },
    {
@@ -797,7 +544,11 @@
     "price": "3500 USD",
     "count": 10,
     "flags": [  ],
-    "proportional": { "damage": { "damage_type": "heat", "amount": 0.3, "armor_penetration": 0.1 }, "recoil": 0.6, "loudness": 0.8 },
+    "proportional": {
+		"damage": 0.2,
+		"recoil": 0.2,
+		"loudness": 0.3
+	},
     "effects": [ "FLAME", "STREAM", "INCENDIARY", "NEVER_MISFIRES" ]
   },
   {
@@ -809,7 +560,11 @@
     "price": "3500 USD",
     "count": 10,
     "flags": [  ],
-    "proportional": { "damage": { "damage_type": "stab", "amount": 0.2 }, "recoil": 0.6, "loudness": 0.1 },
+    "proportional": {
+		"damage": 0.2,
+		"recoil": 0.2,
+		"loudness": 0.3
+	},
     "effects" : [ "TOXICGAS", "NEVER_MISFIRES", "JET" ]
   },
   {
@@ -821,7 +576,11 @@
     "price": "3500 USD",
     "count": 10,
     "flags": [  ],
-    "proportional": { "damage": { "damage_type": "stab", "amount": 0.8 }, "recoil": 0.4, "loudness": 0.2 },
+    "proportional": {
+		"damage": 0.2,
+		"recoil": 0.2,
+		"loudness": 0.3
+	},
     "effects" : [ "GAS_FUNGICIDAL", "STREAM_GAS_FUNGICIDAL", "NEVER_MISFIRES", "JET" ]
   },
   {
@@ -833,7 +592,11 @@
     "price": "3500 USD",
     "count": 10,
     "flags": [  ],
-    "proportional": { "damage": { "damage_type": "stab", "amount": 0.4 }, "recoil": 0.2, "loudness": 0.3 },
+    "proportional": {
+		"damage": 0.2,
+		"recoil": 0.2,
+		"loudness": 0.3
+	},
     "effects" : [ "GAS_INSECTICIDAL", "STREAM_GAS_INSECTICIDAL", "NEVER_MISFIRES", "JET" ]
   },
   {
@@ -845,7 +608,11 @@
     "price": "3500 USD",
     "count": 10,
     "flags": [  ],
-    "proportional": { "damage": { "damage_type": "acid", "amount": 0.3, "armor_penetration": 0.1 }, "recoil": 0.6, "loudness": 0.8 },
+    "proportional": {
+		"damage": 0.2,
+		"recoil": 0.6,
+		"loudness": 0.8
+	},
     "effects": [ "ACIDBOMB", "NEVER_MISFIRES" ]
   },
   {
@@ -857,7 +624,11 @@
     "price": "3500 USD",
     "count": 10,
     "flags": [  ],
-    "proportional": { "damage": { "damage_type": "stab", "amount": 0.8, "armor_penetration": 0.1 }, "recoil": 0.6, "loudness": 0.8 },
+    "proportional": {
+		"damage": 0.2,
+		"recoil": 0.6,
+		"loudness": 0.8
+	},
     "effects": [ "LIGHTNING", "NEVER_MISFIRES" ]
   },
   {
@@ -869,7 +640,11 @@
     "price": "3500 USD",
     "count": 10,
     "flags": [  ],
-    "proportional": { "damage": { "damage_type": "stab", "amount": 0.2, "armor_penetration": 0.1 }, "recoil": 0.6, "loudness": 0.8 },
+    "proportional": {
+		"damage": 0.2,
+		"recoil": 0.6,
+		"loudness": 0.8
+	},
     "effects": [ "EMP", "DRAW_LASER_BEAM", "NEVER_MISFIRES" ]
   },
   {
@@ -881,7 +656,11 @@
     "price": "3500 USD",
     "count": 10,
     "flags": [  ],
-    "proportional": { "damage": { "damage_type": "stab", "amount": 0.3, "armor_penetration": 0.1 }, "recoil": 0.6, "loudness": 0.8 },
+    "proportional": {
+		"damage": 0.3,
+		"recoil": 0.6,
+		"loudness": 0.8
+	},
     "effects": [ "FLASHBANG", "NEVER_MISFIRES" ]
   },
   {
@@ -893,7 +672,11 @@
     "price": "3500 USD",
     "count": 10,
     "flags": [  ],
-    "proportional": { "damage": { "damage_type": "stab", "amount": 0.2 }, "recoil": 0.6, "loudness": 0.8 },
+    "proportional": {
+		"damage": 0.2,
+		"recoil": 0.6,
+		"loudness": 0.8
+	},
     "drop": "gasbomb_act",
     "extend": { "effects": [ "TRAIL", "NO_EMBED" ] }
   },
@@ -906,7 +689,11 @@
     "price": "3500 USD",
     "count": 10,
     "flags": [  ],
-    "proportional": { "damage": { "damage_type": "stab", "amount": 0.2 }, "recoil": 0.6, "loudness": 0.8 },
+    "proportional": {
+		"damage": 0.2,
+		"recoil": 0.6,
+		"loudness": 0.8
+	},
     "extend": { "effects": [ "TRAIL", "NO_EMBED", "SMOKE" ] }
   },
   {
@@ -920,7 +707,11 @@
     "count": 10,
 	"range": 22,
     "flags": [  ],
-    "proportional": { "damage": { "damage_type": "stab", "amount": 0.2 }, "recoil": 1.6, "loudness": 3.8 },
+    "proportional": {
+		"damage": 0.2,
+		"recoil": 0.6,
+		"loudness": 3.8
+	},
     "drop": "handflare_lit",
     "extend": { "effects": "NO_EMBED" }
   },
@@ -933,7 +724,11 @@
     "price": "3500 USD",
     "count": 10,
     "flags": [  ],
-    "proportional": { "damage": { "damage_type": "stab", "amount": 0.2 }, "recoil": 0.6, "loudness": 0.8 },
+    "proportional": {
+		"damage": 0.2,
+		"recoil": 0.6,
+		"loudness": 0.8
+	},
     "drop": "scrambler_act",
     "extend": { "effects": "NO_EMBED" }
   },
@@ -943,8 +738,8 @@
     "type": "AMMO",
     "name": { "str": "bola shot" },
     "description": "Two pieces of heavy metal slug, tied with steel wires used with shotguns to give them the range capabilities of a rifle.  Not that damaging, but tangles enemies.",
-    "relative": { "range": 18, "damage": { "damage_type": "bullet", "amount": -18 } },
-    "proportional": { "recoil": 0.8 },
+    "relative": { "range": 18 },
+    "proportional": { "recoil": 0.8, "damage": 0.8 },
     "extend": { "effects": [ "TANGLE" ] }
   },
   {
@@ -953,8 +748,8 @@
     "type": "AMMO",
     "name": { "str": "web shot" },
     "description": "A slug-like pack, includes sticky web shot with shotguns to give them the range capabilities of a rifle.  Not that damaging, but tangles and webs enemies.",
-    "relative": { "range": 14, "damage": { "damage_type": "bullet", "amount": -18 } },
-    "proportional": { "recoil": 0.8 },
+    "relative": { "range": 14 },
+    "proportional": { "recoil": 0.8, "damage": 0.8 },
     "extend": { "effects": [ "TANGLE", "WEBAMMO" ] }
   },
   {
@@ -964,8 +759,8 @@
     "type": "AMMO",
     "name": { "str": "shotgun heavy beanbag" },
     "description": "A heavy rubber slug used with shotguns to give them the range capabilities of a rifle.  Pretty damaging and accurate.",
-    "relative": { "range": 14, "damage": { "damage_type": "bullet", "amount": -1 } },
-    "proportional": { "recoil": 0.8 },
+    "relative": { "range": 14 },
+    "proportional": { "recoil": 0.8, "damage": 0.6 },
     "extend": { "effects": [ "LARGE_BEANBAG" ] }
   },
   {
@@ -986,8 +781,7 @@
     "ammo_type": "powder_zhigh",
     "damage": { "damage_type": "bullet", "amount": 5 },
     "loudness": 1,
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 20, "length": 7 } ],
+    "shot": { "count": 7, "half_angle": 20 },
     "effects": [ "NEVER_MISFIRES", "BLINDS_EYES", "MUZZLE_SMOKE", "TRAILZHIGH", "SMOKE_BIG", "SMOKE", "TANGLE" ]
   },
   {
@@ -1008,8 +802,7 @@
     "ammo_type": "pellet_zhigh",
     "damage": { "damage_type": "bullet", "amount": 4 },
     "loudness": 1,
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 8 } ],
+    "shot": { "count": 8, "half_angle": 15 },
     "effects": [ "NEVER_MISFIRES", "TANGLE" ]
   },
   {
@@ -1034,7 +827,7 @@
     "type": "AMMO",
     "name": { "str_sp": "sprayable electric shock" },
     "description": "Water enhanced with chemicals to create sprayable electric shock ammo for the chemical thrower.  Best be used with some kind of mask or mouth protection.",
-    "weight": "3 g",
+    "weight": "1 g",
     "volume": "250 ml",
     "price": "6 USD",
     "price_postapoc": "5 USD",
@@ -1054,7 +847,7 @@
     "type": "AMMO",
     "name": { "str_sp": "sprayable smoke" },
     "description": "Water enhanced with chemicals to create sprayable smoke ammo for the chemical thrower.  Best be used with some kind of mask or mouth protection.",
-    "weight": "3 g",
+    "weight": "1 g",
     "volume": "250 ml",
     "price": "6 USD",
     "price_postapoc": "5 USD",
@@ -1066,7 +859,7 @@
     "ammo_type": "chemical_spray",
     "looks_like": "chem_chloroform",
     "count": 100,
-    "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 99 },
+    "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 50 },
     "effects": [ "SMOKE", "TRAIL", "NEVER_MISFIRES", "JET" ]
   },
   {
@@ -1074,7 +867,7 @@
     "type": "AMMO",
     "name": { "str_sp": "sprayable teargas" },
     "description": "Water enhanced with chemicals to create sprayable teargas ammo for the chemical thrower.  Best be used with some kind of mask or mouth protection.",
-    "weight": "3 g",
+    "weight": "1 g",
     "volume": "250 ml",
     "price": "6 USD",
     "price_postapoc": "5 USD",
@@ -1086,7 +879,7 @@
     "ammo_type": "chemical_spray",
     "looks_like": "chem_agar",
     "count": 100,
-    "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 99 },
+    "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 50 },
     "effects": [ "TEARGAS", "TRAIL", "NEVER_MISFIRES", "JET" ]
   },
   {
@@ -1094,7 +887,7 @@
     "type": "AMMO",
     "name": { "str_sp": "sprayable corrosive gas" },
     "description": "Water enhanced with acid to create sprayable corrosive ammo for the chemical thrower.  Best be used with some kind of mask or mouth protection.",
-    "weight": "3 g",
+    "weight": "1 g",
     "volume": "250 ml",
     "price": "6 USD",
     "price_postapoc": "5 USD",
@@ -1116,7 +909,7 @@
     "type": "AMMO",
     "name": { "str_sp": "sprayable flash powder" },
     "description": "Water enhanced with chemicals to create sprayable, flammable flash powder ammo for the chemical thrower.  Best be used with some kind of mask or mouth protection.",
-    "weight": "3 g",
+    "weight": "1 g",
     "volume": "250 ml",
     "price": "6 USD",
     "price_postapoc": "5 USD",
@@ -1126,11 +919,31 @@
     "container": "bottle_plastic",
     "phase": "liquid",
     "ammo_type": "chemical_spray",
-    "range": 0,
     "damage": { "damage_type": "heat", "amount": 3, "armor_penetration": 1 },
-    "shape": [ "cone", { "half_angle": 30, "length": 8 } ],
+    "shot": { "count": 8, "half_angle": 30 },
     "count": 100,
     "effects": [ "BLINDS_EYES", "NEVER_MISFIRES" ]
+  },
+  {
+    "id": "ZhighGas_triffidgas",
+    "type": "AMMO",
+    "name": { "str_sp": "sprayable triffid gas" },
+    "description": "Water enhanced with acid to create sprayable triffid gas ammo for the chemical thrower.  Best be used with some kind of mask or mouth protection.",
+    "weight": "1 g",
+    "volume": "250 ml",
+    "price": "6 USD",
+    "price_postapoc": "5 USD",
+    "material": "water",
+    "symbol": "=",
+    "color": "yellow",
+    "container": "bottle_plastic",
+    "phase": "liquid",
+    "ammo_type": "chemical_spray",
+    "range": 4,
+    "count": 100,
+    "looks_like": "nicotine_liquid",
+    "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 1 },
+    "effects": [ "TRIFFIDAMMO", "NEVER_MISFIRES", "JET" ]
   },
   {
     "type": "AMMO",
@@ -1152,9 +965,8 @@
     "name": { "str": "bb hot shot" },
     "description": "A tiny bb-sized ammo, which kinda acts like a flamethrower when shot.  The short range makes it a useless weapon, but could blind some when hit.",
     "dispersion": 0,
-    "range": 0,
     "damage": { "damage_type": "heat", "amount": 6 },
-    "shape": [ "cone", { "half_angle": 35, "length": 5 } ],
+    "shot": { "count": 5, "half_angle": 35 },
     "extend": { "effects": [ "SHOT", "BLINDS_EYES", "NOGIB", "INCENDIARY" ] }
   },
   {
@@ -1489,8 +1301,7 @@
     "ammo_type": "meltaammo_zhigh",
     "damage": { "damage_type": "heat", "amount": 29 },
     "loudness": 1,
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 10, "length": 25 } ],
+    "shot": { "count": 10, "half_angle": 25 },
     "effects": [ "NEVER_MISFIRES", "INCENDIARY" ]
   },
   {
@@ -1541,8 +1352,9 @@
     "type": "AMMO",
     "name": { "str": "paper flechette cartridge" },
     "description": "A paper cartridge containing black powder and nails.  Historically used to reload muzzleloaders in a more reasonable time.",
-    "relative": { "damage": { "damage_type": "bullet", "amount": -20, "armor_penetration": 30, "armor_multiplier": -1 } },
-    "shape": [ "cone", { "half_angle": 10, "length": 12 } ]
+    "proportional": { "recoil": 0.8 },
+    "damage": { "damage_type": "bullet", "amount": 4, "armor_penetration": 24, "armor_multiplier": 1.5 },
+    "shot": { "count": 12, "half_angle": 10 }
   },
   {
 	"id": "survivor_flare",
@@ -1552,7 +1364,7 @@
     "material": [ "plastic", "powder" ],
     "color": "green",
     "symbol": ";",
-	"copy-from": "grenade_canister",
+	"copy-from": "smokebomb",
 	"looks_like": "handflare",
 	"name": "survivor's flare",
     "flags": [ "ACT_ON_RANGED_HIT" ],
@@ -1589,7 +1401,7 @@
     "material": [ "plastic", "powder" ],
     "color": "green",
     "symbol": ";",
-	"copy-from": "grenade_canister",
+	"copy-from": "smokebomb",
 	"name": "supply drop flare",
     "flags": [ "ACT_ON_RANGED_HIT" ],
 	"description": "This flare is unique, and when activated, sends some signal to bring some supplies.",
@@ -1651,7 +1463,7 @@
     "material": [ "plastic", "powder" ],
     "color": "green",
     "symbol": ";",
-	"copy-from": "grenade_canister",
+	"copy-from": "smokebomb",
 	"name": "aerial bombardment flare",
     "flags": [ "ACT_ON_RANGED_HIT" ],
 	"description": "This flare is unique, and when activated, sends some signal to bring some firepower.",
@@ -1678,9 +1490,9 @@
       "sound_msg": "Tick.",
       "no_deactivate_msg": "You've already pulled the %s's pin; try throwing it instead.",
       "explosion": {
-        "damage": 240,
+        "damage": 180,
         "radius": 6,
-        "fragment": { "impact": { "damage_type": "bullet", "amount": 130, "armor_multiplier": 8 }, "range": 10 }
+        "fragment": { "impact": { "damage_type": "bullet", "amount": 130, "armor_penetration": 8 }, "range": 10 }
       }
     },
 	"flags": [ "TRADER_AVOID", "SLEEP_IGNORE", "LIGHT_8" ]
@@ -1734,7 +1546,7 @@
     "weight": "2576 g",
     "volume": "500 ml",
     "bashing": 15,
-    "damage": { "damage_type": "bash", "amount": 300, "armor_penetration": 50 },
+    "damage": { "damage_type": "bash", "amount": 180, "armor_penetration": 50 },
 	"stack_size": 2,
     "dispersion": 14,
     "loudness": 0,
@@ -1801,10 +1613,9 @@
     "description": "A .410 shell filled with magnesium pellets or shards, used mostly as a distress flare or pyrotechnics tool.  When the round is fired, high temperature sparks and flames shoot out of the barrel, igniting everything in their path.",
     "price": "10 USD",
     "price_postapoc": "16 USD",
-    "damage": { "damage_type": "heat", "amount": 20 },
+    "damage": { "damage_type": "heat", "amount": 5 },
     "proportional": { "recoil": 0.6, "loudness": 0.8, "dispersion": 1.2 },
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 6 } ],
+    "shot": { "count": 6, "half_angle": 15 },
     "extend": { "effects": [ "INCENDIARY", "STREAM", "NOGIB" ] }
   },
   {
@@ -1831,7 +1642,7 @@
     "price": "20 USD",
     "price_postapoc": "8 USD",
     "count": 10,
-    "relative": { "damage": { "damage_type": "bullet", "amount": -20, "armor_penetration": 15, "armor_multiplier": -1.5 } }
+    "damage": { "damage_type": "bullet", "amount": 2, "armor_penetration": 5, "armor_multiplier": 1 }
   },
   {
     "id": "bp_410shot_flechette",
@@ -1866,7 +1677,7 @@
     "ammo_type": "410shot",
     "casing": "410shot_hull",
     "range": 12,
-    "damage": { "damage_type": "bullet", "amount": 15, "armor_multiplier": 18 },
+    "damage": { "damage_type": "bullet", "amount": 15, "armor_penetration": 2 },
     "recoil": 1890,
     "loudness": 90,
     "effects": [ "COOKOFF" ]
@@ -1898,11 +1709,11 @@
     "volume": "1250 ml",
     "weight": "990 g",
     "ammo_type": "homebrew_rocket",
-    "damage": { "damage_type": "stab", "amount": 150, "armor_penetration": 65 },
+    "damage": { "damage_type": "stab", "amount": 26, "armor_penetration": 65 },
     "dispersion": 170,
     "recoil": 130,
     "loudness": 60,
-    "shape": [ "cone", { "half_angle": 25, "length": 26 } ],
+    "shot": { "count": 26, "half_angle": 25 },
     "effects": [ "COOKOFF", "TRAIL", "SHOT" ]
   },
   {
@@ -2269,11 +2080,10 @@
     "color": "dark_gray",
     "count": 10,
     "ammo_type": "metal_rail",
-    "range": 0,
     "damage": { "damage_type": "stab", "amount": 15, "armor_penetration": 20 },
     "dispersion": 200,
     "loudness": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 20 } ],
+    "shot": { "count": 20, "half_angle": 15 },
     "effects": [ "RECYCLED", "NON_FOULING" ]
   },
   {
@@ -2294,11 +2104,10 @@
     "color": "dark_gray",
     "count": 10,
     "ammo_type": "metal_rail",
-    "range": 0,
     "damage": { "damage_type": "stab", "amount": 25, "armor_penetration": 10 },
     "dispersion": 200,
     "loudness": 0,
-    "shape": [ "cone", { "half_angle": 25, "length": 10 } ],
+    "shot": { "count": 10, "half_angle": 25 },
     "effects": [ "RECYCLED", "NON_FOULING" ]
   },
   {
@@ -2317,9 +2126,8 @@
     "stack_size": 5,
     "ammo_type": "700nx",
     "casing": "700nx_casing",
-    "range": 0,
-    "damage": { "damage_type": "bullet", "amount": 100, "armor_penetration": 39 },
-    "shape": [ "cone", { "half_angle": 18, "length": 22 } ],
+    "damage": { "damage_type": "bullet", "amount": 20, "armor_penetration": 39 },
+    "shot": { "count": 22, "half_angle": 18 },
     "dispersion": 15,
     "recoil": 12100,
     "effects": [ "COOKOFF" ]
@@ -2352,5 +2160,78 @@
     "dispersion": 30,
 	"dont_recover_one_in": 0,
     "extend": { "effects": [ "SMOKE", "SHATTER_SELF", "NO_PENETRATE_OBSTACLES" ] }
+  },
+  {
+    "id": "shot_00GlassZhigh",
+    "type": "AMMO",
+    "name": { "str": "glass shot" },
+    "copy-from": "shot_00",
+    "looks_like": "shot_00",
+    "damage": { "damage_type": "cut", "amount": 20, "armor_penetration": 3 },
+    "description": "A shell filled with glass shards.  Extremely damaging, plus the spread makes it very accurate at short range.  Handmade, so it is rarer than an average 00 shot."
+  },
+  {
+    "id": "bp_shot_00GlassZhigh",
+    "type": "AMMO",
+    "name": { "str": "glass shot, black powder" },
+    "copy-from": "shot_00GlassZhigh",
+    "looks_like": "shot_00GlassZhigh",
+    "proportional": {
+      "damage": { "damage_type": "cut", "amount": 0.8 }
+    }
+  },
+  {
+    "id": "handflareHeavyZhigh",
+    "looks_like": "handflare",
+    "type": "TOOL",
+    "category": "tools_farming",
+    "name": { "str": "40mm flare" },
+    "description": "This is a slow-burning magnesium flare.  Use it to strike the striker and light it.  It will produce a bright light for about a half hour.",
+    "material": [ "plastic", "powder" ],
+    "symbol": ";",
+    "color": "light_red",
+    "weight": "128 g",
+    "volume": "250 ml",
+    "price": "4 USD",
+    "price_postapoc": "1 USD",
+    "max_charges": 600,
+    "initial_charges": 600,
+    "use_action": {
+      "menu_text": "Strike the striker",
+      "type": "transform",
+      "target": "handflareHeavyZhigh_lit",
+      "active": true,
+      "msg": "You strike your flare and light it."
+    }
+  },
+  {
+    "id": "handflareHeavyZhigh_lit",
+    "copy-from": "handflareHeavyZhigh",
+    "looks_like": "handflare_lit",
+    "type": "TOOL",
+    "name": { "str": "active 40mm flare" },
+    "description": "This burning magnesium flare is producing light.  It will last for more than a half hour before burning out.",
+    "color": "white",
+    "turns_per_charge": 20,
+    "revert_to": "handflare_dead",
+    "revert_msg": "The flare sputters out",
+    "use_action": { "type": "firestarter", "moves": 50 },
+    "thrown_damage": [ { "damage_type": "heat", "amount": 8 } ],
+    "attacks": [ { "id": "BASH", "to_hit": 0, "damage": { "values": [ { "damage_type": "heat", "amount": 4 } ] } } ],
+    "flags": [ "FIRE", "LIGHT_840", "CHARGEDIM", "TRADER_AVOID", "FIRESTARTER" ]
+  },
+  {
+    "id": "40x46mm_m583Zhigh",
+    "looks_like": "40x46mm_slug_m118",
+    "copy-from": "40x46mm_grenade",
+    "type": "AMMO",
+    "name": { "str": "40x46mm M583A1 illumination" },
+    "description": "A 40mm white star parachute flare.  It is designed to illuminate a large area for night operations and can be used for signaling or marking targets.",
+    "weight": "250 g",
+    "damage": { "damage_type": "heat", "amount": 10 },
+    "drop": "handflareHeavyZhigh_lit",
+    "casing": "40x46mm_m195_casing",
+    "loudness": 80,
+    "extend": { "effects": [ "NO_EMBED", "NO_PENETRATE_OBSTACLES", "DAZZLEAOEFLAREZHIGH" ] }
   }
 ]

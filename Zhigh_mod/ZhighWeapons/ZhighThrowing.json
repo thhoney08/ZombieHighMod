@@ -1526,75 +1526,6 @@
     "flags": [ "TRADER_AVOID" ]
   },
   {
-    "id": "pirateBombZhigh",
-    "type": "TOOL",
-    "category": "weapons",
-    "name": { "str": "pirate bomb" },
-    "looks_like": "pipebomb",
-    "description": "This is a classic bomb which is used by pirates, by emptying the cannonball and filling it with gunpowder.  Light it up and it will give doom to it's victims.",
-    "weight": "1200 g1200 g",
-    "volume": "200 ml",
-    "price": "15 USD",
-    "to_hit": 1,
-    "bashing": 5,
-    "material": "steel",
-    "symbol": "*",
-    "color": "light_gray",
-    "explode_in_fire": true,
-    "explosion": {
-      "damage": 30,
-      "radius": 5,
-      "fragment": { "impact": { "damage_type": "bullet", "amount": 70, "armor_multiplier": 4 }, "range": 5 }
-    },
-    "use_action": {
-      "target": "pirateBombZhigh_act",
-      "msg": "You light the fuse on the pipe bomb.",
-      "target_charges": 3,
-      "active": true,
-      "need_fire": 1,
-      "menu_text": "Light fuse",
-      "type": "transform"
-    },
-    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "NPC_ACTIVATE", "GRENADE" ]
-  },
-  {
-    "id": "pirateBombZhigh_act",
-    "type": "TOOL",
-    "category": "weapons",
-    "name": { "str": "active pirate bomb" },
-    "looks_like": "pipebomb_act",
-    "description": "This pirate bomb's fuse is lit, and it will explode any second now.  Throw it immediately!",
-    "weight": "1200 g",
-    "volume": "200 ml",
-    "price": "0 cent",
-    "to_hit": 1,
-    "bashing": 5,
-    "material": "steel",
-    "symbol": "*",
-    "color": "light_gray",
-    "initial_charges": 3,
-    "max_charges": 3,
-    "turns_per_charge": 1,
-    "explode_in_fire": true,
-    "explosion": {
-      "damage": 30,
-      "radius": 5,
-      "fragment": { "impact": { "damage_type": "bullet", "amount": 70, "armor_multiplier": 4 }, "range": 5 }
-    },
-    "use_action": {
-      "type": "explosion",
-      "sound_volume": 0,
-      "sound_msg": "ssss...",
-      "no_deactivate_msg": "You've already lit the %s, try throwing it instead.",
-      "explosion": {
-        "damage": 30,
-        "radius": 5,
-        "fragment": { "impact": { "damage_type": "bullet", "amount": 70, "armor_multiplier": 4 }, "range": 5 }
-      }
-    },
-    "flags": [ "BOMB", "TRADER_AVOID", "DANGEROUS" ]
-  },
-  {
     "id": "grenadeThermoZhigh",
     "type": "TOOL",
     "category": "weapons",
@@ -1944,5 +1875,358 @@
       }
     },
     "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
+    "id": "triffGasBomb_zhigh",
+	"looks_like": "gasbomb_makeshift",
+    "copy-from": "grenade_canister",
+    "type": "GENERIC",
+    "name": { "str": "triffid gas bomb" },
+    "description": "This is a canister grenade filled with a variety of pyrotechnic chemicals and chemicals from triffid.  Use this item to pull the pin and light the fuse, turning it into an active triffid gas bomb.  Five turns after you do that, it will begin to expel a thick black smoke.  This triffid gas will slow those who enter it, as well as obscuring vision and scent.",
+    "price": "18 USD",
+    "price_postapoc": "0 cent",
+    "weight": "569 g",
+    "countdown_action": { "type": "transform", "target": "triffGasBomb_zhigh_act" }
+  },
+  {
+    "id": "triffGasBomb_zhigh_act",
+	"looks_like": "gasbomb_makeshift_act",
+    "copy-from": "triffGasBomb_zhigh",
+    "type": "GENERIC",
+    "name": { "str": "armed triffid gas bomb" },
+    "description": "This triffid gas bomb has had its pin removed and is expelling thick smoke.",
+    "emits": [ "emit_triffid_gas_stream" ],
+    "countdown_interval": 100,
+    "countdown_action": { "type": "transform", "target": "canister_empty" },
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_grenade",
+    "looks_like": "grenade",
+    "symbol": "*",
+    "color": "light_gray",
+    "name": { "str": "shootable grenade" },
+    "description": "A grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "material": [ "steel", "plastic" ],
+    "ammo_type": "rock",
+    "weight": "400 g",
+    "volume": "250 ml",
+    "bashing": 5,
+    "damage": { "damage_type": "bash", "amount": 5 },
+    "range": 70,
+    "dispersion": 14,
+    "loudness": 0,
+    "to_hit": -1,
+    "drop": "grenade_act",
+    "effects": [ "NO_OVERSHOOT", "NOGIB", "NEVER_MISFIRES" ]
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_improvised_grenade",
+    "copy-from": "sling_grenade",
+    "looks_like": "improvised_grenade",
+    "name": { "str": "shootable improvised grenade" },
+    "description": "An improvised grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "improvised_grenade_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_emp_grenade",
+    "copy-from": "sling_grenade",
+    "looks_like": "grenade_emp",
+    "name": { "str": "shootable emp grenade" },
+    "description": "An emp grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "grenade_emp_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_inc_grenade",
+    "copy-from": "sling_grenade",
+    "looks_like": "grenade_inc",
+    "name": { "str": "shootable incendiary grenade" },
+    "description": "An incendiary grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "grenade_inc_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_scrambler_grenade",
+    "copy-from": "sling_grenade",
+    "looks_like": "scrambler",
+    "name": { "str": "shootable scrambler grenade" },
+    "description": "A scrambler grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "scrambler_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_gasbomb",
+    "copy-from": "sling_grenade",
+    "looks_like": "gasbomb",
+    "name": { "str": "shootable tear gas canister" },
+    "description": "An tear gas canister modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "gasbomb_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_insecticidalbomb",
+    "copy-from": "sling_grenade",
+    "looks_like": "insecticidalbomb",
+    "name": { "str": "shootable insecticidal gas canister" },
+    "description": "An insecticidal gas canister modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "insecticidalbomb_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_pipebomb",
+    "copy-from": "sling_grenade",
+    "looks_like": "improvised_pipebomb",
+    "name": { "str": "shootable pipe bomb" },
+    "description": "A pipe bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "improvised_pipebomb_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_smokebomb",
+    "copy-from": "sling_grenade",
+    "looks_like": "smokebomb",
+    "name": { "str": "shootable smoke bomb" },
+    "description": "A smoke bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "smokebomb_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_acidbomb",
+    "copy-from": "sling_grenade",
+    "looks_like": "acidbomb",
+    "name": { "str": "shootable acid bomb" },
+    "description": "A acid bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "effects": [ "NOGIB", "ACIDBOMB", "NEVER_MISFIRES" ]
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_flashbang",
+    "copy-from": "sling_grenade",
+    "looks_like": "flashbang",
+    "name": { "str": "shootable flashbang" },
+    "description": "A flashbang modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "flashbang_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_dynamite",
+    "copy-from": "sling_grenade",
+    "looks_like": "dynamite",
+    "name": { "str": "shootable dynamite" },
+    "description": "A dynamite modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "dynamite_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_fungicidalbomb",
+    "copy-from": "sling_grenade",
+    "looks_like": "fungicidalbomb",
+    "name": { "str": "shootable fungicidal gas grenade" },
+    "description": "A fungicidal gas grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "fungicidalbomb_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_zap_grenade",
+    "copy-from": "sling_grenade",
+    "looks_like": "zap_grenade",
+    "name": { "str": "shootable zapper grenade" },
+    "description": "A zapper grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "zap_grenade_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_rad_grenade",
+    "copy-from": "sling_grenade",
+    "looks_like": "rad_grenade",
+    "name": { "str": "shootable radioactive grenade" },
+    "description": "A radioactive grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "rad_grenade_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_cryo_grenade",
+    "copy-from": "sling_grenade",
+    "looks_like": "cryo_grenade",
+    "name": { "str": "shootable cryo grenade" },
+    "description": "A cryo grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "cryo_grenade_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_improvised_colabomb",
+    "copy-from": "sling_grenade",
+    "looks_like": "improvised_colabomb",
+    "name": { "str": "shootable cola bomb" },
+    "description": "An cola bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "improvised_colabomb_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_improvised_colabombV2",
+    "copy-from": "sling_grenade",
+    "looks_like": "improvised_colabomb",
+    "name": { "str": "shootable frag cola bomb" },
+    "description": "A frag cola bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "improvised_colabombV2_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_grenadeKrak",
+    "copy-from": "sling_grenade",
+    "looks_like": "grenadeKrak",
+    "name": { "str": "shootable anti-tank grenade" },
+    "description": "An improvised anti-tank grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "grenadeKrak_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_grenadeHiEx",
+    "copy-from": "sling_grenade",
+    "looks_like": "grenadeHiEx",
+    "name": { "str": "shootable high explosive grenade" },
+    "description": "An improvised high explosive grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "grenadeHiEx_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_grenade_nap",
+    "copy-from": "sling_grenade",
+    "looks_like": "grenade_nap",
+    "name": { "str": "shootable napalm grenade" },
+    "description": "An improvised napalm grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "grenade_nap_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_grenade_goo",
+    "copy-from": "sling_grenade",
+    "looks_like": "grenade_goo",
+    "name": { "str": "shootable goo grenade" },
+    "description": "An improvised goo grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "grenade_goo_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_rubberball",
+    "looks_like": "baseball",
+    "copy-from": "rock",
+    "name": { "str": "shootable rubber ball" },
+    "description": "An improvised rubber ball, which makes you to throw this (using a staff sling) at a longer range.",
+    "damage": { "damage_type": "bash", "amount": 8 },
+    "dont_recover_one_in": 40,
+    "effects": [ "BOUNCE", "BEANBAG", "NEVER_MISFIRES" ]
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_dynamite_long",
+    "copy-from": "sling_grenade",
+    "looks_like": "dynamite",
+    "name": { "str": "shootable long fuse dynamite" },
+    "description": "A long fuse dynamite modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "dynamite_long_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_zhighNailBomb",
+    "copy-from": "sling_grenade",
+    "looks_like": "zhighNailBomb",
+    "name": { "str": "shootable nail bomb" },
+    "description": "A nail bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "zhighNailBomb_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_grenade_web",
+    "copy-from": "sling_grenade",
+    "looks_like": "grenade_web",
+    "name": { "str": "shootable web grenade" },
+    "description": "A web grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "grenade_web_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_grenadeMiniZhigh",
+    "copy-from": "sling_grenade",
+    "looks_like": "grenadeMiniZhigh",
+    "name": { "str": "shootable mini grenade" },
+    "description": "A mini grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "grenadeMiniZhigh_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_improvised_pipebombZhigh",
+    "copy-from": "sling_grenade",
+    "looks_like": "improvised_pipebombZhigh",
+    "name": { "str": "shootable improvised pipe bomb, long fuse" },
+    "description": "A long fuse improvised pipe bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "improvised_pipebombZhigh_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_feralStudentNadeZhigh",
+    "copy-from": "sling_grenade",
+    "looks_like": "feralStudentNadeZhigh",
+    "name": { "str": "shootable undead signal bomb" },
+    "description": "An undead signal bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "feralStudentNadeZhigh_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_corrosiveGasNadeZhigh",
+    "copy-from": "sling_grenade",
+    "looks_like": "corrosiveGasNadeZhigh",
+    "name": { "str": "shootable corrosive gas grenade" },
+    "description": "A corrosive gas grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "corrosiveGasNadeZhigh_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_ConcertinaBombZhigh",
+    "copy-from": "sling_grenade",
+    "looks_like": "ConcertinaBombZhigh",
+    "name": { "str": "shootable concertina bomb" },
+    "description": "A concertina bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "ConcertinaBombZhigh_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_fakeFlashBangZhigh",
+    "copy-from": "sling_grenade",
+    "looks_like": "fakeFlashBangZhigh",
+    "name": { "str": "shootable flash bomb" },
+    "description": "A flash bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "fakeFlashBangZhigh_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_tool_ninjaBomb",
+    "copy-from": "sling_grenade",
+    "looks_like": "tool_ninjaBomb",
+    "name": { "str": "shootable ninja bomb" },
+    "description": "A ninja bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "tool_ninjaBomb_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_grenadeSapZhigh",
+    "copy-from": "sling_grenade",
+    "looks_like": "grenadeSapZhigh",
+    "name": { "str": "shootable sap grenade" },
+    "description": "A sap grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "grenadeSapZhigh_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_triffGasBomb_zhigh",
+    "copy-from": "sling_grenade",
+    "looks_like": "triffGasBomb_zhigh",
+    "name": { "str": "shootable triffid gas bomb" },
+    "description": "A triffid gas bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "triffGasBomb_zhigh_act"
   }
 ]
