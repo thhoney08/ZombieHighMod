@@ -133,7 +133,7 @@
       { "id": "WRENCH_FINE", "level": 1 }
     ],
     "components": [
-      [ [ "goggles_nv", 1 ] ],
+      [ [ "goggles_nv", 2 ], [ "toyZhigh_goggles_nv", 3 ], [ "goggles_atomic_nv", 2 ], [ "goggles_nv_enhanced", 1 ] ],
       [ [ "goggles_swim", 1 ] ],
       [ [ "rebreather", 1 ] ],
       [ [ "fabric_standard", 3, "LIST" ] ],
@@ -224,6 +224,20 @@
     "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "SCREW", "level": 1 }, { "id": "WRENCH", "level": 1 } ],
     "tools": [ [ [ "oxy_torch", 20 ], [ "welder", 100 ], [ "welder_crude", 150 ], [ "toolset", 150 ] ] ],
     "components": [ [ [ "pipe", 2 ] ], [ [ "2x4", 1 ], [ "stick", 1 ] ], [ [ "scrap", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "ashot_db",
+    "id_suffix": "sawn_off",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "45 m",
+    "autolearn": true,
+    "byproducts": [ [ "splinter", 14 ] ],
+    "qualities": [ { "id": "SAW_W", "level": 1 } ],
+    "components": [ [ [ "shotgun_d", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -15301,5 +15315,87 @@
     "autolearn": true,
     "qualities": [ { "id": "SAW_M", "level": 2 } ],
     "components": [ [ [ "chain", 1 ] ] ]
+  },
+  {
+    "result": "shot_00GlassZhigh",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_SHOT",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "skills_required": [ "gun", 1 ],
+    "time": "2 m",
+    "batch_time_factors": [ 60, 5 ],
+    "book_learn": [ [ "recipe_bullets", 2 ], [ "manual_shotgun", 2 ] ],
+    "charges": 1,
+    "using": [ [ "shot_forming", 1 ], [ "ammo_shot", 1 ] ],
+    "components": [ [ [ "gunpowder", 6 ] ], [ [ "glass_shard", 5 ] ] ]
+  },
+  {
+    "result": "bp_shot_00GlassZhigh",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_SHOT",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "skills_required": [ "gun", 1 ],
+    "time": "2 m",
+    "batch_time_factors": [ 60, 5 ],
+    "book_learn": [ [ "recipe_bullets", 2 ], [ "manual_shotgun", 2 ] ],
+    "charges": 1,
+    "using": [ [ "shot_forming", 1 ], [ "ammo_shot", 1 ] ],
+    "components": [ [ [ "chem_black_powder", 6 ] ], [ [ "glass_shard", 5 ] ] ]
+  },
+  {
+    "result": "bandolier_westernZhigh",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "time": "1 h 20 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 10 ] ],
+    "components": [ [ [ "leather", 8 ] ] ]
+  },
+  {
+    "result": "triffGasBomb_zhigh",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "cooking",
+    "skills_required": [ "mechanics", 1 ],
+    "difficulty": 4,
+    "time": "8 m",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_gaswarfare", 3 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "bleach", 2 ], [ "oxy_powder", 200 ] ],
+      [ [ "fighter_sting", 2 ] ],
+      [ [ "water", 2 ], [ "water_clean", 2 ] ],
+      [ [ "canister_empty", 1 ], [ "can_food_unsealed", 1 ], [ "can_drink_unsealed", 1 ] ],
+      [ [ "adhesive", 1, "LIST" ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "topSling",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "skills_required": [ "throw", 1 ],
+    "time": "10 m",
+    "reversible": true,
+    "autolearn": true,
+    "qualities": [ { "id": "SAW_W", "level": 1 }, { "id": "CUT", "level": 1 } ],
+    "components": [
+		[ [ "stick", 1 ],
+		  [ "2x4", 1 ],
+		  [ "pool_cue", 1 ],
+		  [ "cudgel", 1 ] ],
+		[ [ "sling", 1 ] ]
+	]
   }
 ]

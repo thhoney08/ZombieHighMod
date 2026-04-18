@@ -3470,6 +3470,31 @@
     ]
   },
   {
+    "id": "everyday_MSG90Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "MSG90Zhigh", "ammo-group": "on_hand_308", "charges": [ 0, 20 ] },
+      { "group": "nested_hk_g3_mag", "charges-min": 0, "prob": 80 },
+      { "group": "nested_hk_g3_mag", "charges-min": 0, "prob": 50 },
+      { "group": "on_hand_308", "prob": 25, "charges": [ 10, 20 ], "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "nested_MSG90Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "MSG90Zhigh", "ammo-group": "on_hand_308", "charges": [ 0, 20 ] },
+      { "group": "nested_hk_g3_mag" },
+      { "group": "nested_hk_g3_mag", "prob": 50 },
+      { "group": "on_hand_308" }
+    ]
+  },
+  {
     "type": "item_group",
     "subtype": "collection",
     "id": "bandolier_rifle_47",
@@ -3640,6 +3665,8 @@
       { "item": "ZhighCoin", "prob": 80, "count": [ 5, 10 ] },
       { "item": "box_medium", "prob": 80, "count": [ 1, 3 ] },
       { "group": "ZhighPlayPropGroups", "prob": 10, "count": [ 5, 10 ] },
+      { "group": "drugs_heal_simple", "prob": 40, "count": [ 2, 3 ] },
+      { "group": "drugs_heal_simple", "prob": 40, "count": [ 2, 3 ] },
       { "group": "ear_protection", "prob": 90 },
       { "group": "accessory_weaponcarry", "prob": 25, "count": [ 1, 2 ] },
       { "item": "binoculars", "prob": 20 },
@@ -3699,6 +3726,7 @@
       { "item": "ZhighCoin", "prob": 90, "count": [ 5, 10 ] },
       { "group": "everyday_gear", "prob": 60, "count": [ 2, 3 ] },
       { "group": "dresser", "prob": 100, "count": [ 4, 7 ] },
+      { "group": "drugs_heal_simple", "prob": 30, "count": [ 0, 2 ] },
       { "group": "toy_box", "prob": 30, "count": [ 0, 2 ] },
       { "group": "drugs_heal_simple", "prob": 30, "count": [ 1, 4 ] },
       { "group": "ear_protection", "prob": 90 },
@@ -4657,6 +4685,8 @@
       [ "popGunPistol_zhigh", 20 ],
       [ "compositebow", 10 ],
       [ "airbow", 10 ],
+      [ "acid_gunZhigh", 10 ],
+      [ "chem_gunZhigh", 10 ],
       [ "discShooter", 30 ],
       [ "discShooterBig", 10 ],
       [ "shortbow", 30 ],
@@ -4780,6 +4810,7 @@
       [ "insecticidalbomb", 10 ],
       [ "insecticidalbomb_makeshift", 10 ],
       [ "grenadeSapZhigh", 10 ],
+      [ "triffGasBomb_zhigh", 10 ],
       [ "smokebombBigZhigh", 5 ],
       [ "ConcertinaBombZhigh", 5 ],
       [ "improvised_pipebomb", 5 ],

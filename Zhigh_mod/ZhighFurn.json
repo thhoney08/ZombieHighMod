@@ -1955,6 +1955,36 @@
     ]
   },
   {
+    "id": "rubber_padded",
+    "type": "json_flag",
+    "context": [ "ARMOR", "TOOL_ARMOR" ],
+    "info": "This gear has certain parts padded with rubber to <good>increase acid protection</good> with some <bad>increase to encumbrance</bad>."
+  },
+  {
+    "type": "clothing_mod",
+    "id": "rubber_padded",
+    "flag": "rubber_padded",
+    "item": "chunk_rubber",
+    "implement_prompt": "Pad with Rubber",
+    "destroy_prompt": "Destroy Rubber padding",
+    "mod_value": [
+      { "type": "acid", "value": 3, "proportion": [ "thickness" ] },
+      { "type": "encumbrance", "value": 0.5, "round_up": true, "proportion": [ "thickness", "coverage" ] }
+    ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "pocketed",
+    "flag": "pocketed",
+    "item": "rag",
+    "implement_prompt": "Add pockets",
+    "destroy_prompt": "Remove pockets",
+    "mod_value": [
+      { "type": "encumbrance", "value": 1, "round_up": true, "proportion": [ "volume", "coverage" ] },
+      { "type": "storage", "value": 3, "round_up": true, "proportion": [ "volume" ] }
+    ]
+  },
+  {
     "type": "terrain",
     "id": "t_tree_bambooZhigh",
     "name": "bamboo tree",

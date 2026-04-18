@@ -113,6 +113,7 @@
       [ "hand_crank_charger", 20 ],
       [ "flySwatterZhigh", 10 ],
       [ "e_tool", 10 ],
+      [ "hammerWrenchZhigh", 10 ],
       [ "mess_kit", 20 ],
       [ "noodles_fast", 20 ],
       [ "premium_survival_kit", 10 ],
@@ -221,7 +222,6 @@
       [ "jar_glass", 50 ],
       [ "jar_3l_glass", 40 ],
       [ "bowl_pewter", 25 ],
-      [ "knife_butcher", 20 ],
       [ "tongs", 15 ],
       [ "brush", 15 ],
       [ "icePickZhigh", 15 ],
@@ -231,6 +231,7 @@
       [ "knife_butcher", 10 ],
       [ "knife_meat_cleaver", 10 ],
       [ "knife_vegetable_cleaver", 10 ],
+      [ "hogSplitterZhigh", 5 ],
       [ "tenderizerZhigh", 5 ],
       [ "knife_chef_superalloyZhigh", 5 ],
       [ "knife_meat_cleaver_superalloyZhigh", 5 ]
@@ -841,7 +842,8 @@
       [ "knife_YakutZhigh", 10 ],
       [ "knife_puukkoZhigh", 10 ],
       [ "knife_arkansasToothpickZhigh", 15 ],
-      [ "knife_messerZhigh", 4 ]
+      [ "knife_messerZhigh", 4 ],
+      [ "hammerWrenchZhigh", 4 ]
     ]
   },
   {
@@ -1403,6 +1405,7 @@
       [ "permanent_marker", 10 ],
       [ "flySwatterZhigh", 5 ],
       [ "dog_whistle", 5 ],
+      [ "hammerWrenchZhigh", 5 ],
       [ "multitool", 1 ],
       [ "stick_swag_blue", 25 ],
       [ "stick_swag_red", 25 ],
@@ -1556,6 +1559,7 @@
       { "item": "shot_slug_ap", "prob": 50 },
       { "item": "shot_coin", "prob": 5 },
       { "item": "shot_flame", "prob": 5 },
+      { "item": "shot_00GlassZhigh", "prob": 5 },
       { "item": "signal_supply_flare", "prob": 1 },
       { "item": "shot_toxic", "prob": 5 },
       { "item": "shot_fungi", "prob": 5 },
@@ -2028,7 +2032,8 @@
     "//": "Mostly imported or otherwise very obscure rifles.",
     "items": [
       { "group": "nested_ak47GoldZhigh", "prob": 1 },
-      { "group": "nested_PP1901Zhigh", "prob": 20 }
+      { "group": "nested_PP1901Zhigh", "prob": 20 },
+      { "group": "nested_MSG90Zhigh", "prob": 20 }
     ]
   },
   {
@@ -2037,7 +2042,8 @@
     "//": "Imported or otherwise very obscure rifles. Comes with mags or loose ammo.",
     "items": [
       { "group": "everyday_ak47GoldZhigh", "prob": 1 },
-      { "group": "everyday_PP1901Zhigh", "prob": 20 }
+      { "group": "everyday_PP1901Zhigh", "prob": 20 },
+      { "group": "everyday_MSG90Zhigh", "prob": 20 }
     ]
   },
   {
@@ -2654,6 +2660,7 @@
       { "group": "nested_pkdBlaster", "prob": 10 },
       [ "40x46mm_m433", 10 ],
       [ "40x46mm_m651", 20 ],
+      [ "40x46mm_m583Zhigh", 20 ],
       [ "ammo_satchel", 10 ],
       [ "bootstrap", 10 ],
       [ "chestpouch", 10 ],
@@ -3107,6 +3114,7 @@
       [ "macheteSpetzZhigh", 4 ],
       [ "flySwatterZhigh", 4 ],
       [ "cardmultitool", 4 ],
+      [ "hammerWrenchZhigh", 4 ],
       [ "knife_hunting", 18 ],
       [ "knife_YakutZhigh", 8 ],
       [ "knife_puukkoZhigh", 8 ],
@@ -3171,6 +3179,7 @@
     "items": [
       { "group": "charms_guns", "prob": 80 },
       [ "muzzle_weightZhigh", 20 ],
+      [ "carry_handleZhigh", 10 ],
       [ "pistol_gripLaserZhigh", 10 ],
       [ "barrel_heavyZhigh", 30 ],
       [ "wood_stockZhigh", 30 ],
@@ -3196,6 +3205,7 @@
       [ "tuned_mechanism", 20 ],
       [ "beltfeed", 20 ],
       [ "revolverCylinderExp", 25 ],
+      [ "carry_handleZhigh", 5 ],
       [ "goldPlate_gunmodZhigh", 5 ],
       [ "silverPlate_gunmodZhigh", 10 ],
       [ "pistol_gripLaserZhigh", 10 ],
@@ -3553,6 +3563,7 @@
       { "item": "762_51_incendiary", "prob": 6 },
       { "item": "40x46mm_m433", "prob": 10 },
       { "item": "40x46mm_m433", "prob": 8 },
+      { "item": "40x46mm_m583Zhigh", "prob": 5 },
       { "item": "40x46mm_m651", "prob": 5 },
       { "item": "40x46mm_m576", "prob": 12 },
       { "item": "40x53mm_m1001", "prob": 6 },
@@ -3652,6 +3663,7 @@
       { "item": "5x50dart", "prob": 8 },
       { "item": "5x50heavy", "prob": 4 },
       { "item": "hazmat_suit", "prob": 5 },
+      { "item": "hammerWrenchZhigh", "prob": 5 },
       { "item": "e_tool", "prob": 20 },
       { "item": "handPickZhigh", "prob": 20 },
       { "item": "shovelTacticalZHigh", "prob": 10 },
@@ -3906,6 +3918,7 @@
       [ "pickaxe", 2 ],
       [ "bucket", 20 ],
       [ "rock", 40 ],
+      [ "hammerWrenchZhigh", 5 ],
       [ "toolbox", 5 ],
       [ "coal_lump", 20 ],
       [ "material_shrd_limestone", 40 ],
@@ -3925,6 +3938,7 @@
       [ "shovel", 50 ],
       [ "shovelSharp", 50 ],
       [ "shovel_short", 10 ],
+      [ "hammerWrenchZhigh", 10 ],
       [ "g_shovel", 60 ],
       [ "trimmer_off", 60 ],
       [ "boots", 60 ],

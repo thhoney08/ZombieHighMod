@@ -119,21 +119,5 @@
     "description": "No person can follow your running speed.  You are now a post-threshold Horse mutant.",
     "hidden_by": [ "achievement_mutation_threshold_horse" ],
     "requirements": [ { "event_statistic": "num_avatar_mutation_threshold_horse", "is": ">=", "target": 1 } ]
-  },
-  {
-    "type": "weapon_category",
-    "id": "AKIMBOZHIGH",
-    "name": "Akimbo Pistols",
-    "//": "Handgun/revolvers/SMGs, but two."
-  },
-  {
-    "type": "skill",
-    "id": "akimbo_Zhigh",
-    "name": { "str": "Akimbo Firearms" },
-    "description": "Hard to aim, not that bad for close combat, good for firepower.",
-    "tags": [ "combat_skill", "weapon_skill" ],
-    "time_to_attack": { "min_time": 10, "base_time": 80, "time_reduction_per_level": 7 },
-    "display_category": "display_ranged",
-    "companion_skill_practice": [ { "skill": "hunting", "weight": 15 } ]
   }
 ]

@@ -459,15 +459,13 @@
     "type": "AMMO",
     "name": { "str": "birdshot, black powder" },
     "copy-from": "bp_shot_bird",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 14 } ]
+    "shot": { "count": 14, "half_angle": 15 }
   },
   {
     "id": "bp_shot_dragon",
     "type": "AMMO",
     "name": { "str": "dragon's breath shell, black powder" },
     "copy-from": "bp_shot_dragon",
-    "range": 0,
     "shape": [ "cone", { "half_angle": 15, "length": 8 } ]
   },
   {
@@ -475,48 +473,42 @@
     "type": "AMMO",
     "name": { "str": "00 shot, black powder" },
     "copy-from": "bp_shot_00",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 10, "length": 10 } ]
+    "shot": { "count": 10, "half_angle": 10 }
   },
   {
     "id": "bp_shot_flechette",
     "type": "AMMO",
     "name": { "str": "flechette shell, black powder" },
     "copy-from": "bp_shot_flechette",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 10, "length": 12 } ]
+    "shot": { "count": 12, "half_angle": 10 }
   },
   {
     "id": "shot_00",
     "type": "AMMO",
     "name": { "str": "00 shot" },
     "copy-from": "shot_00",
-    "range": 0,
     "damage": { "damage_type": "bullet", "amount": 85, "armor_multiplier": 2 },
-    "shape": [ "cone", { "half_angle": 10, "length": 16 } ]
+    "shot": { "count": 16, "half_angle": 10 }
   },
   {
     "id": "shot_beanbag",
     "type": "AMMO",
     "name": { "str": "shotgun beanbag" },
     "copy-from": "shot_beanbag",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 10, "length": 12 } ]
+    "shot": { "count": 12, "half_angle": 10 }
   },
   {
     "id": "shot_bird",
     "type": "AMMO",
     "name": { "str": "birdshot" },
     "copy-from": "shot_bird",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 20, "length": 14 } ]
+    "shot": { "count": 14, "half_angle": 20 }
   },
   {
     "id": "shot_dragon",
     "type": "AMMO",
     "name": { "str": "dragon's breath shell" },
     "copy-from": "shot_dragon",
-    "range": 0,
     "shape": [ "cone", { "half_angle": 15, "length": 10 } ]
   },
   {
@@ -524,120 +516,105 @@
     "type": "AMMO",
     "name": { "str": "flechette shell" },
     "copy-from": "shot_flechette",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 10, "length": 20 } ]
+    "shot": { "count": 20, "half_angle": 10 }
   },
   {
     "id": "shot_scrap",
     "type": "AMMO",
     "name": { "str": "00 shot, scrap loaded" },
     "copy-from": "shot_scrap",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 10, "length": 12 } ]
+    "shot": { "count": 12, "half_angle": 10 }
   },
   {
     "id": "bp_shot_scrap",
     "type": "AMMO",
     "name": { "str": "00 shot, black powder, scrap loaded" },
     "copy-from": "bp_shot_scrap",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 10, "length": 12 } ]
+    "shot": { "count": 12, "half_angle": 10 }
   },
   {
     "id": "shot_paper_bird",
     "type": "AMMO",
     "name": { "str": "birdshot paper cartridge" },
     "copy-from": "shot_paper_bird",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 8 } ]
+    "shot": { "count": 8, "half_angle": 15 }
   },
   {
     "id": "shot_paper_00",
     "type": "AMMO",
     "name": { "str": "buckshot paper cartridge" },
     "copy-from": "shot_paper_00",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 10, "length": 12 } ]
+    "shot": { "count": 12, "half_angle": 10 }
   },
   {
     "id": "20x66_beanbag",
     "type": "AMMO",
     "name": { "str": "20x66mm beanbag" },
     "copy-from": "20x66_beanbag",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 12 } ]
+    "shot": { "count": 12, "half_angle": 15 }
   },
   {
     "id": "20x66_flechette",
     "type": "AMMO",
     "name": { "str": "20x66mm flechette" },
     "copy-from": "20x66_flechette",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 12 } ]
+    "shot": { "count": 12, "half_angle": 15 }
   },
   {
     "id": "20x66_inc",
     "type": "AMMO",
     "name": { "str": "20x66mm incendiary", "str_pl": "20x66mm incendiaries" },
     "copy-from": "20x66_inc",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 12 } ]
+    "shot": { "count": 12, "half_angle": 15 }
   },
   {
     "id": "20x66_shot",
     "type": "AMMO",
     "name": { "str": "20x66mm buckshot" },
     "copy-from": "20x66_shot",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 12 } ]
+    "shot": { "count": 12, "half_angle": 15 }
   },
   {
     "id": "40x46mm_m576",
     "type": "AMMO",
     "name": { "str": "40x46mm M576 buckshot" },
     "copy-from": "40x46mm_m576",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 12 } ]
+    "shot": { "count": 12, "half_angle": 15 }
   },
   {
     "id": "40x46mm_buckshot_m118",
     "type": "AMMO",
     "name": { "str": "improvised 40x46mm buckshot" },
     "copy-from": "40x46mm_buckshot_m118",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 12 } ]
+    "shot": { "count": 12, "half_angle": 15 }
   },
   {
     "id": "40x46mm_flechette_m118",
     "type": "AMMO",
     "name": { "str": "improvised 40x46mm flechette" },
     "copy-from": "40x46mm_flechette_m118",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 12 } ]
+    "shot": { "count": 12, "half_angle": 15 }
   },
   {
     "id": "40x46mm_flechette_m199",
     "type": "AMMO",
     "name": { "str": "improvised 40x46mm flechette" },
     "copy-from": "40x46mm_flechette_m199",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 12 } ]
+    "shot": { "count": 12, "half_angle": 15 }
   },
   {
     "id": "40x53mm_m1001",
     "type": "AMMO",
     "name": { "str": "40x53mm M1001 flechette" },
     "copy-from": "40x53mm_m1001",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 10 } ]
+    "shot": { "count": 10, "half_angle": 15 }
   },
   {
     "id": "40x53mm_buckshot_m169",
     "type": "AMMO",
     "name": { "str": "improvised 40x53mm buckshot" },
     "copy-from": "40x53mm_buckshot_m169",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 10 } ]
+    "shot": { "count": 10, "half_angle": 15 }
   },
   {
     "id": "crude_firestarter",
@@ -653,7 +630,6 @@
     "type": "TOOL",
     "category": "tools",
     "name": { "str": "lighter" },
-    "rand_charges": [ 22, 44, 50, 67, 75, 82, 100 ],
     "flags": [ "BELT_CLIP", "FIRESTARTER" ]
   },
   {
@@ -817,11 +793,9 @@
     "name": { "str": "integrated toolset" },
     "use_action": [
 	"HAMMER",
-	"CROWBAR",
 	"BOLTCUTTERS",
   	"CROWBAR",
   	"FISH_ROD",
-  	"OXYTORCH",
   	"WATER_PURIFIER",
   	"WEATHER_TOOL",
   	"GUN_REPAIR",
@@ -839,7 +813,7 @@
   	{
 		"type": "repair_item",
 		"item_action_type": "repair_fabric",
-		"materials": [ "cotton", "acidchitin", "bone", "chitin", "paper", "cardboard", "wood", "kevlar_rigid", "lycra", "nylon", "ceramic", "neoprene", "leather", "wool", "fur", "faux_fur", "nomex", "gutskin" ],
+		"materials": [ "cotton", "acidchitin", "bone", "chitin", "paper", "cardboard", "wood", "kevlar_rigid", "nylon", "ceramic", "neoprene", "leather", "wool", "fur", "faux_fur", "nomex", "gutskin" ],
 		"skill": "tailor",
 		"tool_quality": 5,
 		"cost_scaling": 0.1,
@@ -1601,6 +1575,7 @@
     "copy-from": "shotgun_s",
     "type": "GUN",
     "name": { "str": "single barrel shotgun" },
+    "range": 2,
     "ranged_damage": { "damage_type": "bullet", "amount": 6, "armor_penetration": 6 }
   },
   {
@@ -1608,6 +1583,7 @@
     "copy-from": "shotgun_d",
     "type": "GUN",
     "name": { "str": "double barrel shotgun" },
+    "range": 2,
     "ranged_damage": { "damage_type": "bullet", "amount": 5, "armor_penetration": 5 }
   },
   {
@@ -1615,6 +1591,7 @@
     "copy-from": "shotgun_410",
     "type": "GUN",
     "name": { "str": "Winchester M37 .410" },
+    "range": 2,
     "ranged_damage": { "damage_type": "bullet", "amount": 6, "armor_penetration": 6 }
   },
   {
@@ -1894,14 +1871,14 @@
     "copy-from": "grenade_pouch",
     "type": "ARMOR",
     "name": { "str": "grenade pouch", "str_pl": "grenade pouches" },
-    "use_action": { "type": "bandolier", "capacity": 8, "ammo": [ "40x46mm", "40x53mm" ], "draw_cost": 20 }
+    "use_action": { "type": "bandolier", "capacity": 8, "ammo": [ "bola_launcher", "40x46mm", "40x53mm" ], "draw_cost": 20 }
   },
   {
     "id": "stone_pouch",
     "copy-from": "stone_pouch",
     "type": "ARMOR",
     "name": { "str": "stone pouch", "str_pl": "stone pouches" },
-    "use_action": { "type": "bandolier", "capacity": 30, "ammo": [ "pebble", "rock" ], "draw_cost": 20 }
+    "use_action": { "type": "bandolier", "capacity": 30, "ammo": [ "bola_launcher", "pebble", "rock" ], "draw_cost": 20 }
   },
   {
     "id": "grenadebandolier",
@@ -2258,7 +2235,8 @@
     "volume": "225 ml",
     "cutting": 6,
     "ammo_type": "glass_shard",
-    "flags": [ "HURT_WHEN_WIELDED", "TRADER_AVOID" ],
+	"effects": [ "BLINDS_EYES" ],
+    "flags": [ "HURT_WHEN_WIELDED", "TRADER_AVOID", "BLINDS_EYES_ON_HIT" ],
     "to_hit": -1,
     "stack_size": 15,
     "thrown_damage": [ { "damage_type": "stab", "amount": 8 } ]
@@ -2271,6 +2249,7 @@
     "weight": "700 g",
     "volume": "650 ml",
     "ammo": [
+        "22",
         "32",
         "36paper",
         "762x25",
@@ -2408,8 +2387,7 @@
     "name": { "str": "blunderbuss shot" },
     "count": 30,
     "stack_size": 30,
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 10 } ]
+    "shot": { "count": 10, "half_angle": 15 }
   },
   {
     "type": "AMMO",
@@ -2418,8 +2396,7 @@
     "name": { "str": "blunderbuss flechette" },
     "count": 30,
     "stack_size": 30,
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 20, "length": 12 } ]
+    "shot": { "count": 12, "half_angle": 20 }
   },
   {
     "id": "signal_flare",
@@ -2651,6 +2628,37 @@
       "need_charges": 1,
       "need_charges_msg": "The drill's batteries are dead."
     }
+  },
+  {
+    "id": "cordless_drill_onZhigh",
+    "looks_like": "cordless_drill",
+    "type": "TOOL",
+    "category": "tools",
+    "symbol": ";",
+    "color": "yellow",
+    "name": { "str": "cordless drill (on)" },
+    "power_draw": 10000,
+    "description": "This is a cordless battery-powered drill with a selection of drill bits.  It is turned on, so it could be used as a weapon if needed.",
+    "price": "20 USD",
+    "price_postapoc": "250 cent",
+    "material": [ "plastic", "steel" ],
+    "techniques": [ "PRECISE" ],
+    "flags": [ "STAB", "MESSY", "TRADER_AVOID", "NONCONDUCTIVE" ],
+    "weight": "2721 g",
+    "volume": "750 ml",
+    "bashing": 3,
+    "cutting": 45,
+    "to_hit": 2,
+    "revert_to": "cordless_drill",
+    "use_action": { "menu_text": "Turn off", "type": "transform", "msg": "You turn the drill off.", "target": "cordless_drill" },
+    "ammo": "battery",
+    "magazines": [
+      [
+        "battery",
+        [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ]
+      ]
+    ],
+    "magazine_well": "500 ml"
   },
   {
     "id": "cash_card",
@@ -3074,24 +3082,21 @@
     "type": "AMMO",
     "name": { "str": "scrap shotcanister" },
     "copy-from": "shotcanister_scrap",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 35, "length": 7 } ]
+    "shot": { "count": 7, "half_angle": 35 }
   },
   {
     "id": "shotcanister_pebble",
     "type": "AMMO",
     "name": { "str": "pebble shotcanister" },
     "copy-from": "shotcanister_pebble",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 25, "length": 9 } ]
+    "shot": { "count": 9, "half_angle": 25 }
   },
   {
     "id": "shotcanister_flechette",
     "type": "AMMO",
     "name": { "str": "flechette shotcanister" },
     "copy-from": "shotcanister_flechette",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 15 } ]
+    "shot": { "count": 15, "half_angle": 15 }
   },
   {
     "id": "shotcanister_bearing",
@@ -3156,8 +3161,7 @@
     "type": "AMMO",
     "copy-from": "flintlock_shot",
     "name": { "str": "paper shot cartridge" },
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 8 } ]
+    "shot": { "count": 8, "half_angle": 15 }
   },
   {
 	"id": "spear_forked",
@@ -3248,16 +3252,14 @@
     "type": "AMMO",
     "copy-from": "410shot_000",
     "name": { "str": ".410 000 shot" },
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 10, "length": 13 } ]
+    "shot": { "count": 13, "half_angle": 10 }
   },
   {
 	"id": "bp_410shot_000",
     "type": "AMMO",
     "copy-from": "bp_410shot_000",
     "name": { "str": ".410 000 shot, black powder" },
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 10, "length": 12 } ]
+    "shot": { "count": 12, "half_angle": 10 }
   },
   {
     "type": "SPELL",
@@ -3858,6 +3860,101 @@
       "underwater_message": "It's not waterproof enough to work underwater.",
       "exhausted_message": "You're too exhausted to keep cranking.",
       "fully_charged_message": "You've charged the battery completely."
+    }
+  },
+  {
+	"id": "EMPbomb_act",
+    "type": "TOOL",
+    "copy-from": "EMPbomb_act",
+    "category": "weapons",
+    "name": { "str": "active EMP bomb" },
+    "description": "This EMP bomb is active, and will shortly detonate, creating a large EMP field that damages robots and drains bionic energy.  You may not want to be holding it much longer.  It will also create an explosion, which may hurt you.  If you dropped this at a nearby place and cannot run, you could use a radio control to move it away from you.",
+    "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "RADIO_CONTROLLED" ]
+  },
+  {
+	"id": "bola_net_launcher",
+    "looks_like": "launcher_simple",
+    "type": "GUN",
+    "copy-from": "bola_net_launcher",
+    "category": "weapons",
+    "name": { "str": "restraint launcher" },
+    "range": 26,
+    "ammo": [ "bola_launcher", "rock", "shotcanister" ],
+    "reload": 100
+  },
+  {
+	"id": "oil_lamp_on",
+    "type": "TOOL",
+    "copy-from": "oil_lamp_on",
+    "name": { "str": "oil lamp" },
+    "flags": [ "LIGHT_80", "TRADER_AVOID", "FIRE", "ALLOWS_REMOTE_USE", "WATER_EXTINGUISH" ]
+  },
+  {
+	"id": "oxylamp_on",
+    "type": "TOOL",
+    "copy-from": "oxylamp_on",
+    "name": { "str": "acetylene lamp (on)", "str_pl": "acetylene lamps (on)" },
+    "flags": [ "LIGHT_120", "TRADER_AVOID", "FIRE", "ALLOWS_REMOTE_USE" ]
+  },
+  {
+	"id": "gas_chloramine",
+    "type": "AMMO",
+    "copy-from": "gas_chloramine",
+    "name": { "str_sp": "sprayable toxic gas" },
+	"weight": "1 g"
+  },
+  {
+	"id": "gas_fungicidal",
+    "type": "AMMO",
+    "copy-from": "gas_fungicidal",
+    "name": { "str_sp": "sprayable fungicide" },
+	"weight": "1 g"
+  },
+  {
+	"id": "gas_insecticidal",
+    "type": "AMMO",
+    "copy-from": "gas_insecticidal",
+    "name": { "str_sp": "sprayable insecticide" },
+	"weight": "1 g"
+  },
+  {
+	"id": "kukri",
+    "type": "GENERIC",
+    "copy-from": "kukri",
+    "name": { "str": "kukri" },
+    "bashing": 18,
+    "volume": "1250 ml",
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD" ]
+  },
+  {
+	"id": "cowboy_hat",
+    "type": "ARMOR",
+    "copy-from": "cowboy_hat",
+    "name": { "str": "cowboy hat" },
+    "use_action": {
+      "type": "bandolier",
+      "capacity": 8,
+      "ammo": [
+        "paintball",
+        "nail",
+        "pebble",
+        "22",
+        "223",
+        "270win",
+        "300blk",
+        "5x50",
+        "545x39",
+        "3006",
+        "308",
+        "300",
+        "762",
+        "762R",
+        "8x40mm",
+        "4570",
+        "50",
+        "700nx"
+      ],
+      "draw_cost": 20
     }
   }
 ]

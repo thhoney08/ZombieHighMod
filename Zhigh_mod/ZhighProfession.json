@@ -70,6 +70,7 @@
     "name": "Student",
     "description": "Some would say that there's nothing particularly notable about you.  But you've survived, and that's more than most could say right now.",
     "points": -4,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -102,11 +103,19 @@
     "name": "Student - Chairman",
     "description": "When this disaster happened, you grabbed the best weapon - a chair - and started to fight.  How long will you survive, in this wave of chaos?",
     "points": -1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "bashing" } ],
     "items": {
       "both": {
-        "items": [ "dress_shirt_zhigh", "blazer_zhigh", "zhigh_smart_phone", "medkitRechargeV3", "socks", "wristwatch" ],
+        "items": [
+			"dress_shirt_zhigh",
+			"blazer_zhigh",
+			"zhigh_smart_phone",
+			"medkitRechargeV3",
+			"socks",
+			"wristwatch"
+		],
         "entries": [
           { "group": "ZhighNpc_shoesAll" },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
@@ -125,6 +134,7 @@
     "description": "Before the world ended, you had a kind heart and loved to help other people, both in speaking and healing.  Now that the world has gone to ashes, you need to survive using your skills.",
     "points": -2,
     "skills": [ { "level": 2, "name": "firstaid" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "PROF_MED" ],
     "items": {
       "both": {
@@ -165,6 +175,7 @@
     "name": "Student - Fireman",
     "description": "Some teachers would say that you were a bad student.  You always skipped class, and slept when you did not.  But still, you did survived with your thick coat and a modified fire extinguisher.",
     "points": -2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 1, "name": "melee" }, { "level": 1, "name": "bashing" }, { "level": 1, "name": "gun" } ],
     "items": {
@@ -187,6 +198,7 @@
     "name": "Student - Archer",
     "description": "There is nothing better than a bolt pierced through an undead's head.  However, you should also know that they can pierce your head too.",
     "points": -2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 1, "name": "pistol" }, { "level": 1, "name": "gun" } ],
     "items": {
@@ -211,6 +223,7 @@
     "description": "You always liked to paint, and it was your dream job to become an artist.  What painting will you draw, in this canvas which is called the world?",
     "points": -2,
     "skills": [ { "level": 2, "name": "barter" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -242,6 +255,7 @@
     "name": "Student - Bomber",
     "description": "You love sweets!  As the world ended, you made your own explosive using snacks and soft drinks.",
     "points": -2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -257,14 +271,16 @@
           "tool_rocket_candy",
           "tool_rocket_candy",
           "tool_rocket_candy",
-          "tool_rocket_candy",
-          "tool_rocket_candy",
+          "improvised_colabomb",
           "improvised_colabomb",
           "improvised_colabomb",
           "improvised_colabomb",
           "improvised_colabomb"
         ],
-        "entries": [ { "group": "ZhighNpc_shoesAll" }, { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+        "entries": [
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
       },
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "panties" ]
@@ -278,6 +294,7 @@
     "description": "You were hell on wheels prior to the apocalypse.  Now the rest of your team is dead, and you probably wouldn't have lived this long if not for your penchant for high-speed violence.  Things are looking grim; how long can you race laps around the undead before you get blocked for good?",
     "points": -1,
     "skills": [ { "level": 1, "name": "melee" }, { "level": 1, "name": "swimming" }, { "level": 1, "name": "dodge" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "PROF_SKATER", "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -314,6 +331,7 @@
       { "level": 2, "name": "dodge" },
       { "level": 1, "name": "bashing" }
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "PROF_KNIGHT", "PROF_CHURL" ],
     "items": {
       "both": {
@@ -353,6 +371,7 @@
       { "level": 2, "name": "dodge" },
       { "level": 1, "name": "bashing" }
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "PROF_KNIGHT", "PROF_CHURL" ],
     "items": {
       "both": {
@@ -393,6 +412,7 @@
       { "level": 1, "name": "dodge" },
       { "level": 2, "name": "bashing" }
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "PROF_CHURL" ],
     "items": {
       "both": {
@@ -411,8 +431,7 @@
         "entries": [
           { "group": "ZhighNpc_shoesAll" },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-          { "item": "beardedAxeZhigh_inferior", "custom-flags": [ "auto_wield" ] },
-          { "item": "knife_saex", "container-item": "sheath" }
+          { "item": "beardedAxeZhigh_inferior", "custom-flags": [ "auto_wield" ] }
         ]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
@@ -432,6 +451,7 @@
       { "level": 2, "name": "dodge" },
       { "level": 1, "name": "bashing" }
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "PROF_CHURL" ],
     "items": {
       "both": {
@@ -464,6 +484,7 @@
     "name": "Student - Berserker",
     "description": "Drenched in fake blood that soon turned real, you charge into hordes with foam weapons reforged in steel, howling like the character you once played.  In a world gone mad, your madness makes you king.",
     "points": 0,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "bashing" } ],
     "items": {
@@ -502,6 +523,7 @@
       { "level": 1, "name": "dodge" },
       { "level": 3, "name": "bashing" }
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "PROF_CHURL" ],
     "items": {
       "both": {
@@ -540,6 +562,7 @@
       { "level": 2, "name": "gun" },
       { "level": 2, "name": "dodge" }
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -570,6 +593,7 @@
     "description": "As a baseball player, you were a semi-pro hitter.  Dang, guess you have to hit more than a baseball to survive this game.",
     "points": -1,
     "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "bashing" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -601,6 +625,7 @@
     "description": "Ever since you were a child you loved shooting bows, and you soon took a liking to the challenge of shooting with a bow.  The world ended?  Who cares?  You have your bow and your skills.",
     "points": 4,
     "skills": [ { "level": 3, "name": "gun" }, { "level": 5, "name": "archery" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -642,6 +667,7 @@
     "description": "You wrote songs, and sang them.  Too bad that there are no more people to listen to the pieces that you've made.  At least you could give undeads a piece, whether they want it or not.",
     "points": -2,
     "skills": [ { "level": 1, "name": "melee" }, { "level": 1, "name": "bashing" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -672,6 +698,7 @@
       { "level": 1, "name": "rifle" },
       { "level": 1, "name": "akimbo_Zhigh" }
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -704,6 +731,7 @@
     "description": "You were preparing for an idol contest, had the skills, the looks, and the attitudes.  The contest was going to happen tomorrow and this apocalypse canceled it.  Forever.",
     "points": -2,
     "skills": [ { "level": 1, "name": "melee" }, { "level": 2, "name": "dodge" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "STYLISH", "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -728,6 +756,7 @@
     "description": "You had the school lunch lady type of job in school.  The job sucked, plus no one heard your whining about rats, so you tried to take the matters in your hands.  Now that the world has ended, the thing that you now have are some traps which you were going to catch some mice.",
     "points": -1,
     "skills": [ { "level": 1, "name": "firstaid" }, { "level": 1, "name": "mechanics" }, { "level": 3, "name": "traps" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -763,6 +792,7 @@
     "description": "Once a strict enforcer of hallway rules, you now patrol bloodstained corridors with a handcuff instead of a clipboard.  You know every shortcut, every blind spot—and use them to keep the few remaining students alive.  Discipline didn’t die with the world.",
     "points": 0,
     "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "unarmed" }, { "level": 2, "name": "barter" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "PROF_SW" ],
     "items": {
       "both": {
@@ -794,6 +824,7 @@
     "name": "Student - Magician",
     "description": "With tricks and magic, you could survive this whole disaster.  Or not.  At least you got some cards to throw at your enemies.",
     "points": -2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -801,64 +832,18 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "tophatZhigh",
-          "throwing_card_spade",
-          "throwing_card_club",
-          "throwing_card_diam",
-          "throwing_card_hear",
-          "throwing_card_spade",
-          "throwing_card_club",
-          "throwing_card_diam",
-          "throwing_card_hear",
-          "throwing_card_spade",
-          "throwing_card_club",
-          "throwing_card_diam",
-          "throwing_card_hear",
-          "throwing_card_spade",
-          "throwing_card_club",
-          "throwing_card_diam",
-          "throwing_card_hear",
-          "throwing_card_spade",
-          "throwing_card_club",
-          "throwing_card_diam",
-          "throwing_card_hear",
-          "throwing_card_spade",
-          "throwing_card_club",
-          "throwing_card_diam",
-          "throwing_card_hear",
-          "throwing_card_spade",
-          "throwing_card_club",
-          "throwing_card_diam",
-          "throwing_card_hear",
-          "throwing_card_spade",
-          "throwing_card_club",
-          "throwing_card_diam",
-          "throwing_card_hear",
-          "throwing_card_spade",
-          "throwing_card_club",
-          "throwing_card_diam",
-          "throwing_card_hear",
-          "throwing_card_spade",
-          "throwing_card_club",
-          "throwing_card_diam",
-          "throwing_card_hear",
-          "throwing_card_spade",
-          "throwing_card_club",
-          "throwing_card_diam",
-          "throwing_card_hear",
-          "throwing_card_spade",
-          "throwing_card_club",
-          "throwing_card_diam",
-          "throwing_card_hear",
-          "throwing_card_spade",
-          "throwing_card_club",
-          "throwing_card_diam",
-          "throwing_card_hear"
+          "tophatZhigh"
         ],
-        "entries": [ { "group": "ZhighNpc_shoesAll" }, { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+        "entries": [
+          { "item": "throwing_card_spade", "charges": 18 },
+          { "item": "throwing_card_club", "charges": 18 },
+          { "item": "throwing_card_diam", "charges": 18 },
+          { "item": "throwing_card_hear", "charges": 18 },
+		  { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
       },
-      "male": [ "boxer_shorts", "tux" ],
-      "female": [ "bra", "panties", "gown", "barrette", "jade_brooch" ]
+      "male": [ "boxer_shorts", "tux", "dress_shoes" ],
+      "female": [ "bra", "panties", "gown", "barrette", "jade_brooch", "heels" ]
     },
     "flags": [ "SCEN_ONLY" ]
   },
@@ -870,6 +855,7 @@
     "points": -2,
     "skills": [ { "level": 1, "name": "melee" }, { "level": 1, "name": "bashing" } ],
     "pets": [ { "name": "mon_frog_giant", "amount": 1 } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -899,6 +885,7 @@
     "name": "Student - Shooter",
     "description": "As a basketball player, it was going to be your first major game, but then the Cataclysm struck.  Thanks to your quick feet, you were among the lucky few to survive and escape from the creatures.",
     "points": 0,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "GOODCARDIO" ],
     "skills": [ { "level": 2, "name": "dodge" }, { "level": 3, "name": "throw" } ],
     "items": {
@@ -945,6 +932,7 @@
       { "level": 1, "name": "unarmed" },
       { "level": 1, "name": "akimbo_Zhigh" }
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -966,6 +954,7 @@
     "description": "By being an actor brought some weird events, such as learning how to throw.  You are pretty good at throwing, and have some cool stimulants to hide from some unwanted guests.",
     "points": -2,
     "skills": [ { "level": 2, "name": "throw" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -996,6 +985,7 @@
     "name": { "male": "Student - Hunter", "female": "Student - Huntress" },
     "description": "As you were preparing for your next school play, an outbreak happened and you had to escape.  Too bad you could not perform the show, but at least the show called your life got a new chapter to begin.",
     "points": -2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1026,6 +1016,7 @@
     "name": "Student - Spotlight",
     "description": "As you were preparing for your next school play, an outbreak happened and you had to escape with a modified spotlight as a weapon.  Too bad you could not perform the show, but at least the show called your life got a new chapter to begin.",
     "points": 2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1048,6 +1039,7 @@
     "name": "Student - Operator",
     "description": "As you were preparing some advanced tech for your next school play, an outbreak happened and you had to escape with a modified spotlight as a weapon.  Too bad you could not perform the show, but at least the show called your life got a new chapter to begin.",
     "points": 2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1071,6 +1063,7 @@
     "description": "You were on your way to enjoy surfing and the world has ended.",
     "points": -2,
     "skills": [ { "level": 3, "name": "swimming" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1096,6 +1089,7 @@
       { "level": 1, "name": "melee" },
       { "level": 1, "name": "bashing" }
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1118,6 +1112,7 @@
     "description": "You were on your way to give swimmers some nice drinks and the world has ended.",
     "points": 0,
     "skills": [ { "level": 1, "name": "cooking" }, { "level": 2, "name": "barter" }, { "level": 2, "name": "throw" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1153,6 +1148,7 @@
     "description": "You were on your way to enjoy some swimming and the world has ended.",
     "points": -2,
     "skills": [ { "level": 1, "name": "melee" }, { "level": 1, "name": "bashing" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1183,6 +1179,7 @@
     "name": "Student - Boxer",
     "description": "You were training for the fight of your life before the Cataclysm struck.  Now you fight just to keep yourself alive.",
     "points": 2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "PROF_BOXER", "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "unarmed" }, { "level": 2, "name": "dodge" } ],
     "items": {
@@ -1215,6 +1212,7 @@
     "name": "Student - Brawler",
     "description": "You always liked the Korean gangster dramas - suit, tie, and fisticuffs.  As you bought your fedora, the world ended and the zombies got loose.  The age of wild men has started.",
     "points": 3,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "unarmed" }, { "level": 2, "name": "dodge" } ],
     "items": {
@@ -1249,6 +1247,7 @@
     "name": { "male": "Student - Luchador", "female": "Student - Luchadora" },
     "description": "You were training for the fight of your life before the Cataclysm struck.  Now you fight just to keep yourself alive.",
     "points": 1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "PROF_BOXER", "REGEN_zhigh" ],
     "skills": [ { "level": 3, "name": "melee" }, { "level": 2, "name": "unarmed" }, { "level": 2, "name": "dodge" } ],
     "items": {
@@ -1279,6 +1278,7 @@
     "description": "You were that kind of sportsman who couldn't get off the track.  You love running, and you enhanced your body to do it even better.  Now there is plenty to run from, but this is your kind of game.",
     "points": -1,
     "skills": [ { "level": 3, "name": "dodge" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "PARKOUR" ],
     "items": {
       "both": {
@@ -1310,6 +1310,7 @@
     "description": "When this disaster happened, you grabbed the best weapon - a desk - and started to fight.  How long will you survive, in this wave of chaos?",
     "points": 0,
     "skills": [ { "level": 3, "name": "melee" }, { "level": 3, "name": "bashing" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "PRETTY" ],
     "items": {
       "both": {
@@ -1332,6 +1333,7 @@
     "description": "As a semi-pro scoccer player, you were practicing till SHTF happened.  Guess you do need to run more than a lot in order to survive.",
     "points": -3,
     "skills": [ { "level": 1, "name": "melee" }, { "level": 2, "name": "unarmed" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "GOODCARDIO" ],
     "items": {
       "both": {
@@ -1351,6 +1353,7 @@
     "points": -1,
     "starting_cash": 2147483647,
     "skills": [ { "level": 1, "name": "melee" }, { "level": 1, "name": "bashing" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1380,6 +1383,7 @@
     "name": "Student - Shutter",
     "description": "You always liked to take pictures, whether it was a picture of a human or a landscape.  Guess you got another category in your album, if you do survive this.",
     "points": -2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1409,6 +1413,8 @@
     "name": "Student - Hacker",
     "description": "You always liked electrical stuff - drones, computers, pc, tablets, and so on.  As SHTF you brought your own army of drones, and started to fight back against the undead.",
     "points": 3,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 4, "name": "computer" } ],
     "items": {
       "both": {
@@ -1477,6 +1483,7 @@
     "description": "You've been living your average high school life.  However, the world won't leave you alone.  How did you got some smoke bombs, you do not know.",
     "points": 1,
     "skills": [ { "level": 1, "name": "throw" }, { "level": 2, "name": "speech" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1515,6 +1522,7 @@
     "description": "As a student and a semi-libarian, you always loved books.  Will your knowledge be useful, when the whole world is doomed?",
     "points": -2,
     "skills": [ { "level": 2, "name": "dodge" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "LOVES_BOOKS", "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1537,6 +1545,7 @@
     "description": "The school garden was almost your area.  The world has ended, but who cares - you still can make your own garden, much bigger than the one you had before.",
     "points": -2,
     "skills": [ { "level": 2, "name": "fabrication" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1569,6 +1578,7 @@
     "description": "As the leader of a marching band, you swung your swagger stick to give your members a good beat.  As there are no bands for you to lead, you could only swing the stick in order to protect yourself.",
     "points": -1,
     "skills": [ { "level": 1, "name": "melee" }, { "level": 1, "name": "bashing" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1597,6 +1607,7 @@
     "name": "Student - Bannerman",
     "description": "You carry the tattered banner of a fallen world, not for kings or nations, but to rally the last sparks of hope.  Amidst ruin and rot, your colors still fly—defiant, unbroken, and seen from miles around.",
     "points": 3,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1618,6 +1629,7 @@
     "name": "Student - Standard Bearer",
     "description": "You carry the tattered banner of a fallen world, not for kings or nations, but to rally the last sparks of hope.  Amidst ruin and rot, your colors still fly—defiant, unbroken, and seen from miles around.",
     "points": 3,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1645,6 +1657,7 @@
       { "level": 1, "name": "cutting" },
       { "level": 1, "name": "dodge" }
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1676,6 +1689,7 @@
     "description": "You were always a good pitcher in your baseball team.  As everyone else has falllen, how long will you take those undead bastards 'out?'",
     "points": 1,
     "skills": [ { "level": 1, "name": "dodge" }, { "level": 3, "name": "throw" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1712,6 +1726,7 @@
     "description": "You crouch behind the shattered plate, mask cracked, mitt worn to the bone.  The stadium is silent now—no cheers, only the wind dragging dust through the stands.  You still wait for the pitch, out of habit more than hope.",
     "points": 2,
     "skills": [ { "level": 3, "name": "throw" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1756,6 +1771,7 @@
       { "name": "mon_eagleZhigh", "amount": 1 }
     ],
     "skills": [ { "level": 1, "name": "firstaid" }, { "level": 5, "name": "survival" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "ANIMALEMPATH", "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1795,6 +1811,7 @@
     "description": "By the studies that you took back in university, you could make some freeze guns and grenades.  You cannot kill them directly, but these are still better than nothing!",
     "points": -2,
     "skills": [ { "level": 1, "name": "throw" }, { "level": 1, "name": "gun" }, { "level": 1, "name": "pistol" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "BEAK_PECK", "FLEET2", "GIZZARD", "WINGS_BIRD", "DEX_UP_3", "FEATHERS" ],
     "items": {
       "both": {
@@ -1823,6 +1840,7 @@
     "description": "All you ever wanted was to make people excited.  Now the damn world had ended.  Wow.  Just wow.",
     "points": -2,
     "skills": [ { "level": 1, "name": "dodge" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1844,6 +1862,7 @@
     "description": "You were preparing for an idol contest, had the skills, the looks, everything but the attitudes, although you did believed in yourself.  The contest was going to happen tomorrow and this apocalypse canceled it.  Forever.  Guess you need to believe yourself more longer.",
     "points": -2,
     "skills": [ { "level": 1, "name": "melee" }, { "level": 1, "name": "bashing" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "STYLISH", "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1876,6 +1895,7 @@
     "name": "Student - Animator",
     "description": "You did not lose your hope about drawing comics, even after the apocalypse happened.  Unfortunately, hope does not ensure your life.",
     "points": 1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1911,6 +1931,7 @@
       { "level": 1, "name": "swimming" },
       { "level": 1, "name": "gun" }
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1950,6 +1971,7 @@
       { "level": 1, "name": "swimming" },
       { "level": 1, "name": "gun" }
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -1983,6 +2005,7 @@
     "name": "Student - Outsider",
     "description": "You were the 'lone wolf' type of person.  After the apocalypse, that did not changed at all.  It just became worse, since the people around you are now going to eat you up.  Hiding in a box sounds nice, just like the japanese game with lots of cardboard boxes.",
     "points": -2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -2005,6 +2028,7 @@
     "description": "You love parties!  Unfortunately for you, a big event called the apocalypse ended the world that you lived in.  Guess you have to party in a different way, or else, right?",
     "points": -2,
     "skills": [ { "level": 2, "name": "speech" }, { "level": 2, "name": "barter" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -2038,6 +2062,7 @@
     "description": "You were the queen bee of the school - you always were the Master of Ceremonies, always made the show flow easliy like a river.  Now, you have bigger problems than a guy falling down during a show.",
     "points": -1,
     "skills": [ { "level": 3, "name": "speech" }, { "level": 1, "name": "barter" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -2086,6 +2111,7 @@
     "description": "As a half - rapper and a half - frisbee player, you grabbed the best weapon in your hand - a frisbee - and dived into the apocalypse.  Some tunes in your pocket, weapon in your hand, and now you are ready to go.",
     "points": -2,
     "skills": [ { "level": 2, "name": "throw" }, { "level": 2, "name": "speech" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -2120,6 +2146,7 @@
     "description": "Ever since you were a child you loved shooting bows, and you soon took a liking to the challenge of shooting with a bow.  There was a person better than you, and winning that person was the only thing that you've cared about.  The world ended? Who cares? You have your bow, your skills, and the will to win this disaster.  Wait, that competitor should be dead now, right?",
     "points": -1,
     "skills": [ { "level": 1, "name": "gun" }, { "level": 3, "name": "archery" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -2160,6 +2187,7 @@
       { "level": 1, "name": "driving" },
       { "level": 1, "name": "dodge" }
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "PROF_SKATER", "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -2193,6 +2221,7 @@
     "description": "When chaos came, you helped people by healing them.  Unfortunately the undead overwhelmed, and you fled to a school that you were attending before.",
     "points": 0,
     "skills": [ { "level": 1, "name": "pistol" }, { "level": 2, "name": "firstaid" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -2235,6 +2264,7 @@
     "description": "As you were the leader of an amatuer baseball team, you always led your people to do something; running, practicing, baseball, and cleaning things up.  Since all of your teammates are dead, you wonder how your commanding skills will help you.  At least you got a flare gun from a dead man's hand.",
     "points": 2,
     "skills": [ { "level": 2, "name": "speech" }, { "level": 1, "name": "throw" }, { "level": 1, "name": "bashing" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -2327,6 +2357,7 @@
     "name": "Student - Juvenile",
     "description": "You never cared for grown-ups telling you what to do, and that's how you ended up spending most of your days in the principal's office.  Now, not needing grown-ups to tell you what to do is the only reason you're alive.  Man, you really should've played hooky today.",
     "points": -2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 1, "name": "gun" }, { "level": 1, "name": "dodge" }, { "level": 1, "name": "melee" } ],
     "items": {
@@ -2362,6 +2393,7 @@
     "name": "Student - Survivalist",
     "description": "Your parents were crazy preppers who thought some \"Cataclysm\" was coming, and insisted on preparing you for it.  Turns out they were right.  You didn't get a chance to thank them.  The only thing you can do for them now is what they always hoped you would do in the dark days ahead: survive.",
     "points": -1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 1, "name": "survival" }, { "level": 1, "name": "fabrication" }, { "level": 1, "name": "firstaid" } ],
     "items": {
@@ -2396,6 +2428,7 @@
     "name": "Student - Cyborg",
     "description": "Your parents were so obsessed with making sure you aced every test that they had you outfitted with bionics to make you smarter and never forget anything.  And now, you are facing the most dire test yet, and once again you had better succeed, or else.",
     "points": -1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "CBMs": [ "bio_batteries", "bio_power_storage", "bio_int_enhancer", "bio_memory" ],
     "items": {
@@ -2427,6 +2460,7 @@
     "name": "Student - Dodgeball Player",
     "description": "You liked to play dodgeball, where failing to dodge the ball meant you were out.  Now failing to dodge threatens your life.  Don't slip up.",
     "points": -1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "GOODCARDIO" ],
     "skills": [ { "level": 1, "name": "dodge" }, { "level": 1, "name": "throw" } ],
     "items": {
@@ -2454,6 +2488,7 @@
     "name": "Student - Science Club Member",
     "description": "You were a member of the school science club, and right now you're as upset as you've ever been that the school wouldn't let you play with the really fun chemicals that make things go boom.  At least now no one's around to tell you that you can't.",
     "points": -2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 1, "name": "cooking" }, { "level": 1, "name": "mechanics" } ],
     "items": {
@@ -2483,6 +2518,7 @@
     "name": "Student - Otaku",
     "description": "Late nights with friends watching anime and eating snacks has prepared you for the premier anime convention in the Northeast.  It just had to be the day of the apocalypse.  At least you were ready in case your costume tore.",
     "points": -1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 1, "name": "tailor" } ],
     "items": {
@@ -2513,6 +2549,7 @@
     "name": "Student - Gunslinger (six shooter)",
     "description": "You always liked Wild West related stuff, impressing friends and others with your displays of marksmanship.  But that world has ended, so you took your trusty 6-shooter flintlock and ready to shoot some ruffians with it.",
     "points": 2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "gun" }, { "level": 3, "name": "akimbo_Zhigh" }, { "level": 1, "name": "survival" } ],
     "items": {
@@ -2555,6 +2592,7 @@
     "name": "Student - Gunslinger (rider)",
     "description": "You always liked Wild West related stuff, impressing friends and others with your displays of marksmanship.  But that world has ended, so you took your trusty flintlock pistol and ready to shoot some ruffians with it.",
     "points": 2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "gun" }, { "level": 3, "name": "pistol" }, { "level": 1, "name": "survival" } ],
     "pets": [ { "name": "mon_haulerbot", "amount": 1 } ],
@@ -2603,11 +2641,20 @@
     "name": "Student - Slasher",
     "description": "You always liked slasher and zombie movies.  As this event happened, you grab your mask and your weapon - a machete, and got ready to slash those zombies.  Do you like hurting other zombies?  Cause you should.",
     "points": 2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" } ],
     "items": {
       "both": {
-        "items": [ "tank_top", "jacket_leather", "zhigh_smart_phone", "medkitRechargeV3", "socks", "mask_hockey", "wristwatch" ],
+        "items": [
+			"tank_top",
+			"jacket_leather",
+			"zhigh_smart_phone",
+			"medkitRechargeV3",
+			"socks",
+			"mask_hockey",
+			"wristwatch"
+		],
         "entries": [
           { "group": "ZhighNpc_shoesAll" },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
@@ -2626,11 +2673,20 @@
     "name": "Student - Slasher?",
     "description": "Kill.  Rip.  Burn.  Tear.",
     "points": -1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "PSYCHOPATH", "SCHIZOPHRENIC", "CARNIVORE", "KILLER", "REGEN_zhigh", "PROF_FERAL" ],
     "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" } ],
     "items": {
       "both": {
-        "items": [ "tank_top", "jacket_leather", "zhigh_smart_phone", "medkitRechargeV3", "socks", "mask_hockey", "wristwatch" ],
+        "items": [
+			"tank_top",
+			"jacket_leather_bone",
+			"zhigh_smart_phone",
+			"medkitRechargeV3",
+			"socks",
+			"mask_hockey",
+			"wristwatch"
+		],
         "entries": [
           { "group": "ZhighNpc_shoesAll" },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
@@ -2649,6 +2705,7 @@
     "name": "Student - Priest",
     "description": "Holy mother of god.  Something - something bad happened, and you are chased by a group of undeads.  You could meditate to a god, but this is another challange that the god gave you to face.",
     "points": -2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -2681,6 +2738,7 @@
     "name": "Student - Monk",
     "description": "Something - something bad happened, and you are chased by a group of undeads.  You could meditate to a god, but this is another challange that the god gave you to face.",
     "points": 1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -2713,6 +2771,7 @@
     "name": "Student - Airsoft Player",
     "description": "People always looked down on your hobby, but you survived due to your training, and they did not.  Time to go another round, which should not end soon.",
     "points": 0,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "gun" }, { "level": 2, "name": "rifle" }, { "level": 2, "name": "pistol" } ],
     "items": {
@@ -2724,7 +2783,6 @@
           "medkitRechargeV3",
           "socks",
           "boots_combat",
-          "pockknife",
           "bb",
           "bb",
           "balclava_skull",
@@ -2754,6 +2812,7 @@
     "name": "Student - Gangster",
     "description": "You always liked the classic Italian gangster movies - suit, tie, and a tommy gun.  As you bought your fedora, the world ended and the zombies got loose.  Well, time to do the hit-and-run thingy.",
     "points": 1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [
       { "level": 2, "name": "gun" },
@@ -2799,6 +2858,7 @@
     "name": "Student - Sleep Victim",
     "description": "What the goddam hell!  You were in the middle of a nice sleep when the Cataclysm struck!  You barely managed to escape with a bathrobe.",
     "points": -6,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": { "both": { "items": [ "house_coat", "flip_flops_exp" ] } },
     "flags": [ "SCEN_ONLY" ]
@@ -2810,6 +2870,7 @@
     "description": "You always liked to shoot guns.  More likely, you liked to shoot guns accurately, and you were good at it.  While you were playing a round shooting BBs, apocalypse happened and it turned your world 180 degrees.  You are nothing like the sniper from a cool movie, but determined enough to survive in this damn hellhole.",
     "points": 2,
     "skills": [ { "level": 3, "name": "gun" }, { "level": 3, "name": "rifle" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -2830,7 +2891,7 @@
           { "group": "ZhighNpc_shoesAll" },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
           { "item": "bbpistol", "ammo-item": "bb", "charges": [ 200, 250 ], "container-item": "sholster" },
-          { "item": "kukri", "container-item": "sheath" },
+          { "item": "kukri", "container-item": "scabbard" },
           { "item": "bbSnip", "ammo-item": "bb", "charges": 5, "contents-item": "shoulder_strap" }
         ]
       },
@@ -2853,6 +2914,7 @@
       { "level": 2, "name": "firstaid" },
       { "level": 2, "name": "rifle" }
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -2917,6 +2979,7 @@
     "name": "Student - Novice Martial Artist",
     "description": "You were on your way to the dojo for your first lesson when the world ended.  And you really wanted to learn how to swim, too.",
     "points": -1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -2934,6 +2997,7 @@
     "name": "Student - Martial Artist",
     "description": "'Drop the martial arts!', they said.  'Learn a skill for the REAL world!', they said.  Well, you're about to show them!  SHOW THEM ALL!",
     "points": 1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "PROF_MA_ORANGE", "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "unarmed" }, { "level": 2, "name": "dodge" } ],
     "items": {
@@ -2952,6 +3016,7 @@
     "name": "Student - Blackbelt",
     "description": "As the world ends, you alone stand against the coming darkness with your fists of steel.",
     "points": 3,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "PROF_MA_BLACK", "REGEN_zhigh" ],
     "skills": [ { "level": 8, "name": "melee" }, { "level": 8, "name": "unarmed" }, { "level": 8, "name": "dodge" } ],
     "items": {
@@ -2979,6 +3044,7 @@
     "name": { "male": "Student - Rich Boy", "female": "Student - Rich Girl" },
     "description": "You were living the high life, spending your parents money without a care in the world.  You were at one of your usual crazy parties when the guests became hungry for more than your drugs.  You still have a chance to use the last symbol of your luxurious life - your sports car - and get far away.",
     "points": 1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 1, "name": "speech" }, { "level": 2, "name": "driving" } ],
     "starting_cash": 2147483647,
@@ -3011,6 +3077,7 @@
     "name": "Student - Burglar",
     "description": "You thought this would be your lucky break.  Does it count as breaking and entering if everyone is undead?",
     "points": 1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3044,6 +3111,7 @@
     "description": "Ever since you were a child you loved shooting, and you soon took a liking to the challenge of shooting with a shotgun.  Why, if the world ended there's nothing you'd want at your side more than your trusty shotgun.  So when it did, you made sure to bring it along.",
     "points": -1,
     "skills": [ { "level": 1, "name": "gun" }, { "level": 1, "name": "shotgun" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3085,6 +3153,7 @@
     "description": "Ever since you were a child you loved shooting, and you soon took a liking to the challenge of shooting with a shotgun.  Why, if the world ended there's nothing you'd want at your side more than your trusty shotgun.  So when it did, you made sure to bring it along.",
     "points": -1,
     "skills": [ { "level": 1, "name": "gun" }, { "level": 1, "name": "shotgun" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3125,6 +3194,7 @@
     "description": "You loved shooting, and a lot of it.  And the end of the world cannot stop it.",
     "points": 2,
     "skills": [ { "level": 1, "name": "gun" }, { "level": 1, "name": "rifle" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3164,6 +3234,7 @@
     "name": "Student - Pyromaniac",
     "description": "You always liked fires.  Well, a little too much to be honest.  Now that the world has ended, there is nobody to stop you from burning.  Let the world BURN!",
     "points": 2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "PYROMANIA", "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3209,6 +3280,7 @@
       { "level": 1, "name": "swimming" },
       { "level": 1, "name": "survival" }
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3226,7 +3298,7 @@
         "entries": [
           { "group": "ZhighNpc_shoesAll" },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-          { "item": "kukri", "container-item": "sheath" }
+          { "item": "kukri", "container-item": "scabbard" }
         ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
@@ -3241,6 +3313,7 @@
     "description": "You loved both diving and swimming.  And now, the water became more dangerous than you expected.  You are gonna need a bigger boat.",
     "points": -2,
     "skills": [ { "level": 1, "name": "swimming" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3274,6 +3347,7 @@
     "description": "You were an avid sport fencer, always practicing at local clubs and competing in tournaments.  You were on your way to have a few bouts at the club when the world ended.  Now you're in your most important tournament, the refs are all dead, and none of your opponents follow the rules.",
     "points": -2,
     "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "dodge" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "MARTIAL_FENCING", "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3305,6 +3379,7 @@
     "description": "You were called 'heavy' or 'heavy gunner' in your airsoft group, due to your body size and the guns that you use.  There is no one calling you heavy now, but the game goes on, whether you like it or not.",
     "points": 3,
     "skills": [ { "level": 2, "name": "gun" }, { "level": 3, "name": "rifle" }, { "level": 1, "name": "dodge" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3340,6 +3415,7 @@
     "description": "Compared to the 'heavy gunner' guy in your airsoft group, you were the smaller person.  There is no one calling you by that name now, but the game goes on, whether you like it or not.",
     "points": 1,
     "skills": [ { "level": 2, "name": "gun" }, { "level": 2, "name": "rifle" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3382,6 +3458,7 @@
     "description": "You've always liked riding bikes.  When the end of the world has knocked on your door, you did what you best - running, or riding away, using your bike.  Although you do think that there is no escape, you always try to get away from your doom.",
     "points": 0,
     "skills": [ { "level": 4, "name": "driving" }, { "level": 1, "name": "mechanics" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3408,6 +3485,7 @@
     "name": "Student - Mascot",
     "description": "You were the school mascot, before the world ended.  At least you have your cute snowman costume on you.",
     "points": -3,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3425,6 +3503,7 @@
     "name": "Student - Agressor",
     "description": "You loved fireworks, and you still love them.  You love it sooo much that you even want to enjoy it with the undead!",
     "points": -2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3448,6 +3527,7 @@
     "description": "As a 007 wannabe, you grabbed your gear and got ready for the apocalypse.  You do have some simple tools, but you are not so sure about your skills.",
     "points": 1,
     "skills": [ { "level": 2, "name": "pistol" }, { "level": 2, "name": "gun" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3486,6 +3566,7 @@
     "name": "Student - Library Nerd",
     "description": "They say reading is food for the brain, but those corpses seem to see your brain as food.  In your haste to escape, you grabbed the library's return box, but is there anything in there that might help you?",
     "points": -1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "LOVES_BOOKS" ],
     "items": {
       "both": {
@@ -3508,6 +3589,7 @@
     "description": "You've always liked military-related stuff; guns, uniform, helmets, etc.  As you were on your way to a military related club, a story of war changed into a story of survival.",
     "points": -1,
     "skills": [ { "level": 2, "name": "gun" }, { "level": 1, "name": "rifle" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3541,6 +3623,7 @@
     "description": "You always liked to shoot guns. More likely, you liked to shoot guns quite accurately, and you were pretty good at it.  While you were playing a round shooting BBs, apocalypse happened and it turned your world 180 degrees.  You are nothing like the sniper from a cool movie, but determined enough to survive in this damn hellhole.",
     "points": 1,
     "skills": [ { "level": 2, "name": "gun" }, { "level": 2, "name": "rifle" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3580,6 +3663,7 @@
     "description": "Ever since you were a child you loved shooting, and you soon took a liking to the challenge of shooting with a paintball.  No full auto in the buildings?  Who cares, the world is doomed anyways.",
     "points": -1,
     "skills": [ { "level": 1, "name": "gun" }, { "level": 2, "name": "smg" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3619,6 +3703,7 @@
     "name": "Student - Game Master",
     "description": "Trying to herd cats into getting into one place every week has taught you something: it's usually better to cut your losses and trust your gut.  For that reason, when you had two no-shows and the other two tried to eat you, you ditched.  Maybe you can find some new players in the ruins of the world.",
     "points": -2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "PROF_DICEMASTER" ],
     "skills": [ { "level": 2, "name": "speech" }, { "level": 1, "name": "survival" } ],
     "items": {
@@ -3652,6 +3737,7 @@
     "name": "Student - Bionic Game Master",
     "description": "You came into a large fortune, through luck or will, and hosted games for people that most of the world knew on a first-name basis.  You could afford to spoil your players, and so you did.  You invested in bionics to make you smarter, and memorized the entire handbook.  Let's hope that knowledge helps you now.",
     "points": 2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "PROF_DICEMASTER" ],
     "CBMs": [ "bio_batteries", "bio_power_storage", "bio_memory", "bio_int_enhancer" ],
     "skills": [
@@ -3691,6 +3777,7 @@
     "name": "Student - Kitted Survivor",
     "description": "At the internet, you saw a sign advertising a discount on survival kits.  You bought one, more for show than for actual use.  Now, it's all you have.",
     "points": -1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3712,6 +3799,8 @@
     "name": "Student - Scoundrel",
     "description": "Your flexible outlook on the rules, the scuffles you've been in (and avoided) at the school, and your impressive ability to weasel your way out of the consequences of your actions - all these skills have helped ensure your survival.  But how much longer will they hold out?",
     "points": 0,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
     "skills": [
       { "level": 1, "name": "melee" },
       { "level": 1, "name": "stabbing" },
@@ -3749,6 +3838,7 @@
     "description": "You were not the best cheerleader, but when this whole world end happened, you knew that you were good at using a chainsaw.",
     "points": 2,
     "skills": [ { "level": 1, "name": "barter" }, { "level": 2, "name": "melee" }, { "level": 2, "name": "dodge" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3776,6 +3866,7 @@
     "description": "As the school nurse, you always helped other students by giving them a bed to rest and an aspirin to lower their headaches.  Guess you need more than some aspirin and a bed to survive <the_cataclysm>.",
     "points": -4,
     "skills": [ { "level": 2, "name": "barter" }, { "level": 4, "name": "firstaid" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "PROF_AUTODOC", "PROF_MED" ],
     "items": {
       "both": {
@@ -3807,6 +3898,7 @@
     "description": "You were a maniac in WW1 - but never expected a trench warfare to happen right in front of your face.  No officers to hide secrets from you, but you know that you are screwed up.",
     "points": 1,
     "skills": [ { "level": 1, "name": "gun" }, { "level": 1, "name": "survival" }, { "level": 1, "name": "shotgun" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3852,6 +3944,7 @@
     "points": 2,
     "CBMs": [ "bio_ups", "bio_torsionratchet", "bio_power_storage_mkII", "bio_power_storage_mkII" ],
     "skills": [ { "level": 1, "name": "dodge" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3902,6 +3995,7 @@
       "bio_power_storage_mkII",
       "bio_power_storage_mkII"
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3919,6 +4013,7 @@
     "name": "Student - Wanderer",
     "description": "Your school has been demolished and your planet destroyed, but at least you still have your guidebook.",
     "points": -3,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3941,6 +4036,7 @@
     "description": "The day when the world ends came, and you grabbed whatever you could get your hands on - some nets and a forked spear.  Ave Imperator, Morituri te salutant.",
     "points": -1,
     "skills": [ { "level": 1, "name": "dodge" }, { "level": 2, "name": "melee" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -3962,6 +4058,7 @@
     "name": "Student - A/V Club Member",
     "description": "You were a member of the school A/V club.  You're sure there's some way you can use your technical skills to help stay alive.  You just haven't figured out how to make an awesome death ray yet.",
     "points": -2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 1, "name": "electronics" }, { "level": 1, "name": "computer" } ],
     "items": {
@@ -3991,6 +4088,7 @@
     "name": "Student - Musician",
     "description": "You were just about to hit the stage when the Cataclysm struck.  You weren't able to grab much during the panic, but at least you have your instrument on your back.",
     "points": -2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -4012,6 +4110,7 @@
     "name": "Student - Band Musician",
     "description": "You were just about to hit the stage when the Cataclysm struck.  You weren't able to grab much during the panic, but at least you have your instrument on your back.",
     "points": -1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -4041,6 +4140,7 @@
     "description": "You were on your way to the History exhibition when the end of the world permanently derailed your plans.",
     "points": 4,
     "skills": [ { "level": 2, "name": "gun" }, { "level": 1, "name": "mechanics" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -4053,7 +4153,7 @@
           "medkitRechargeV3",
           "socks",
           "pockknife",
-          "tricorne",
+          "10gal_hatZhigh",
           "matches",
           "pipe_cleaner"
         ],
@@ -4090,6 +4190,7 @@
       { "level": 1, "name": "gun" },
       { "level": 1, "name": "pistol" }
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -4130,6 +4231,7 @@
     "description": "You used to learn how to make coffee as best as you could, but now you are wondering whether it is worth anymore.",
     "points": -1,
     "skills": [ { "level": 1, "name": "cooking" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -4162,6 +4264,7 @@
     "description": "You used to be a dancer before the Cataclysm, and now you use your skills to save your life.",
     "points": -1,
     "skills": [ { "level": 2, "name": "dodge" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -4189,6 +4292,7 @@
     "name": "Student - Jockey",
     "description": "You were born with a silver spoon, and loved riding horses.  Now that you only have the last one left, you aren't quite sure whether your riding skills will save you or not.",
     "points": -1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "ANIMALEMPATH", "REGEN_zhigh" ],
     "skills": [ { "level": 1, "name": "survival" } ],
     "pets": [ { "name": "mon_haulerbot", "amount": 1 } ],
@@ -4227,6 +4331,7 @@
     "description": "Underwater was just a mystery to you before - now, it is just a danger.",
     "points": 2,
     "skills": [ { "level": 2, "name": "rifle" }, { "level": 3, "name": "swimming" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -4273,6 +4378,7 @@
     "description": "The world ended, and you are guessing that you need more than just some swimming skills in order to survive.",
     "points": -3,
     "skills": [ { "level": 2, "name": "swimming" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -4291,6 +4397,7 @@
     "description": "You were cosplaying as a maid when the end of the world was knocking at your door.  Would be cool if you could stop time and throw some knives against a thief witch, but no.",
     "points": 0,
     "skills": [ { "level": 2, "name": "cooking" }, { "level": 1, "name": "driving" }, { "level": 2, "name": "tailor" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -4313,6 +4420,7 @@
     "description": "You were cosplaying as a butler when the end of the world was knocking at your door.  Would be cool if you could use some mono filaments as weapons and fight a badass vampire, but no.",
     "points": 0,
     "skills": [ { "level": 2, "name": "cooking" }, { "level": 1, "name": "driving" }, { "level": 2, "name": "tailor" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -4334,6 +4442,7 @@
     "description": "As a bodyguard wannabe, you grabbed your gear and...  Well, guess you have to protect yourself in this situation.",
     "points": 1,
     "skills": [ { "level": 1, "name": "melee" }, { "level": 1, "name": "bashing" }, { "level": 1, "name": "dodge" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -4366,6 +4475,7 @@
     "description": "As a vigilantine wannabe, you grabbed your gear and...  Well, you don't care.  Doomsday clock strike twelve.",
     "points": 1,
     "skills": [ { "level": 1, "name": "pistol" }, { "level": 2, "name": "dodge" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -4399,6 +4509,7 @@
     "name": "Student - Golfer",
     "description": "You decided to get away from school for the day to do a little golfing by yourself.",
     "points": -1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "bashing" }, { "level": 1, "name": "melee" } ],
     "items": {
@@ -4431,6 +4542,7 @@
     "description": "You studied electronics as your hobby, and when the apocalypse happened, you grabbed your modified gear and started to fight the undead.",
     "points": -1,
     "skills": [ { "level": 2, "name": "electronics" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -4459,6 +4571,7 @@
     "name": "Student - Bounty hunter",
     "description": "The thrill of the hunt… the promise of payment.  Well, you cosplayed as one, but without skills.  At least you do have better gear than others.",
     "points": 1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 1, "name": "melee" }, { "level": 1, "name": "bashing" } ],
     "items": {
@@ -4494,6 +4607,7 @@
     "description": "You literally grabbed anything and now you are the one who builds things and destroys things.",
     "points": 0,
     "skills": [ { "level": 2, "name": "fabrication" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -4530,6 +4644,7 @@
     "name": "Student - Guerilla",
     "description": "Crap hits the fan, you hit the zeds.  Damn, hit and run sounds real good this time.",
     "points": 0,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -4563,6 +4678,7 @@
     "name": { "male": "Student - Ninja", "female": "Student - Kunoichi" },
     "description": "After you read a couple of ninja-related books, you became obsessed with them and practiced some tools of them.  Guess now is the right time to use those tips, gears, and tricks.  Death to the ninja.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [
       { "level": 2, "name": "dodge" },
@@ -4606,6 +4722,7 @@
     "description": "You loved making simple AIs and turrets, like that hard hat wearing Texan from a good old shooter game.  Sentry going up!",
     "points": 2,
     "skills": [ { "level": 3, "name": "mechanics" }, { "level": 2, "name": "fabrication" }, { "level": 2, "name": "computer" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -4641,6 +4758,7 @@
     "description": "Some made fun of you, others bullied you when you were in a suit.  Now is the time to pay them back.",
     "points": 1,
     "skills": [ { "level": 1, "name": "melee" }, { "level": 1, "name": "tailor" }, { "level": 2, "name": "dodge" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -4658,6 +4776,7 @@
     "name": "Student - Mystery Club Member",
     "description": "You were preparing for your mystery club when the world ended.  Damn, who cares about mysteries when an undead is trying to eat your face?",
     "points": -3,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -4679,6 +4798,7 @@
     "name": "Student - Honour Guard Leader",
     "description": "You were supposed to act as a honour guard at a historical exhibition, which was canceled forever.  Lucky you, at least you have your armor and your fake sword.",
     "points": 2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "melee" }, { "level": 1, "name": "cutting" } ],
     "items": {
@@ -4709,6 +4829,7 @@
     "name": "Student - Honour Guard Henchmen",
     "description": "You were supposed to act as a honour guard at a historical exhibition, which was canceled forever.  Lucky you, at least you have your armor and your spear.",
     "points": 2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "melee" }, { "level": 1, "name": "stabbing" } ],
     "items": {
@@ -4740,6 +4861,7 @@
     "description": "You cosplayed as a 'Masked Biker' when the world ended.  The world is doomed, but why do you need to stop helping other people?",
     "points": 4,
     "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "unarmed" }, { "level": 2, "name": "dodge" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -4769,6 +4891,7 @@
     "name": "Student - Cosplayer",
     "description": "You cosplayed as a 'Ghost User' when the world ended.  The world is doomed, but you grabbed your fist and stand proud.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 3, "name": "melee" }, { "level": 3, "name": "unarmed" } ],
     "items": {
@@ -4791,6 +4914,7 @@
     "name": "Student - Cosplayer",
     "description": "You cosplayed as a 'speedster' when the world ended.  The world is doomed, but you’re ready for some pre-emptive vengeance.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 3, "name": "melee" }, { "level": 3, "name": "cutting" } ],
     "items": {
@@ -4821,6 +4945,7 @@
     "name": "Student - Cosplayer",
     "description": "You cosplayed as a 'space soldier' when the world ended.  The world is doomed, but you still try to find the holy globules.  Praise the space king!",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 1, "name": "melee" }, { "level": 1, "name": "dodge" }, { "level": 1, "name": "cutting" } ],
     "items": {
@@ -4844,6 +4969,7 @@
     "name": "Student - Cosplayer",
     "description": "You cosplayed as a 'mad protagonist' when the world ended.  The world is doomed, but you still try survive.  Somewhere in Nevada...",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "dodge" }, { "level": 2, "name": "gun" } ],
     "items": {
@@ -4871,6 +4997,7 @@
     "name": "Student - Cosplayer",
     "description": "You cosplayed as a 'middle-aged hacker' when the world ended.  The world is doomed, but you still try to control the damn thing.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "bashing" }, { "level": 2, "name": "computer" } ],
     "items": {
@@ -4898,6 +5025,7 @@
     "name": "Student - Cosplayer",
     "description": "You cosplayed as a 'spectre' when the world ended.  The world is doomed, but you get dirty and the world stays clean.  That's the mission.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 3, "name": "gun" }, { "level": 3, "name": "rifle" } ],
     "items": {
@@ -4938,6 +5066,7 @@
     "name": "Student - Cosplayer",
     "description": "You cosplayed as a 'spec ops' from 'Full Strife' series when the world ended.  The world is doomed, FOXTROT UNIFORM.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 3, "name": "gun" }, { "level": 3, "name": "smg" } ],
     "items": {
@@ -4979,6 +5108,7 @@
     "name": "Student - Cosplayer",
     "description": "You cosplayed as a 'researcher' from 'Full Strife' series when the world ended.  The world is doomed, but the right man in the wrong place can make all the difference in the world.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [
       { "level": 2, "name": "electronics" },
@@ -5005,6 +5135,7 @@
     "name": "Student - Cosplayer",
     "description": "You cosplayed as an 'engineer' from 'Dread Spruce' series when the world ended.  The world is doomed, but who cares, you quit trying to make sense of it all back on the day 1.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [
       { "level": 1, "name": "unarmed" },
@@ -5031,6 +5162,7 @@
     "name": "Student - Cosplayer",
     "description": "You cosplayed as a 'master chief' from 'Starbind' series when the world ended.  As the original character did, you gotta finish this fight.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 3, "name": "gun" }, { "level": 2, "name": "rifle" } ],
     "items": {
@@ -5058,6 +5190,7 @@
     "name": "Student - Cosplayer",
     "description": "You cosplayed as a 'scavenger' from 'Mortal Syndicate' series when the world ended.  The world is doomed, but make yourself at home.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 1, "name": "bashing" }, { "level": 2, "name": "dodge" } ],
     "items": {
@@ -5089,6 +5222,7 @@
     "name": "Student - Cosplayer",
     "description": "You cosplayed as a 'sensei' from 'galactic warfare' series when the world ended.  May the force be with you.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 1, "name": "bashing" }, { "level": 1, "name": "melee" }, { "level": 2, "name": "dodge" } ],
     "items": {
@@ -5116,6 +5250,7 @@
     "name": "Student - Cosplayer",
     "description": "You cosplayed as a 'staff' from 'Cephalopoda recreation' when the world ended.  Do you still trust people?",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 4, "name": "gun" }, { "level": 3, "name": "pistol" } ],
     "items": {
@@ -5147,6 +5282,7 @@
     "name": "Student - Cosplayer",
     "description": "You cosplayed as a 'medium staff' from 'Cephalopoda recreation' when the world ended.  Living is no fun, is it?",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 4, "name": "gun" }, { "level": 3, "name": "smg" } ],
     "items": {
@@ -5184,6 +5320,7 @@
     "name": "Student - Cosplayer",
     "description": "You cosplayed as a 'top staff' from 'Cephalopoda recreation' when the world ended.  Life is short.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 4, "name": "gun" }, { "level": 3, "name": "rifle" } ],
     "items": {
@@ -5221,6 +5358,7 @@
     "name": "Student - Cosplayer",
     "description": "You cosplayed as a 'player' from 'Cephalopoda recreation' when the world ended.  Is our world any better than this?",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "stabbing" }, { "level": 2, "name": "cutting" } ],
     "items": {
@@ -5250,6 +5388,7 @@
     "name": { "male": "Bunny Boy", "female": "Bunny Girl" },
     "description": "You used to be a person wearing a bunny outfit before the Cataclysm, and now that is the only thing you've got.",
     "points": -4,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -5265,6 +5404,7 @@
     "name": "Student - Javelin Thrower",
     "description": "You hurled that javelin like your life depended on it, piercing the undead straight through the skull.  In this moment, you aren’t just a thrower—you are a survivor.",
     "points": 1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "GOODCARDIO" ],
     "skills": [ { "level": 1, "name": "dodge" }, { "level": 2, "name": "throw" } ],
     "items": {
@@ -5291,6 +5431,7 @@
     "name": "Student - Shot Put Thrower",
     "description": "You hurled that shot put like it was your last chance, launching it with every ounce of strength as the zombies closed in.  That throw was more than just power—it was pure survival.",
     "points": 0,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "GOODCARDIO" ],
     "skills": [ { "level": 1, "name": "dodge" }, { "level": 2, "name": "throw" } ],
     "items": {
@@ -5317,6 +5458,7 @@
     "name": "Student - Lacrosse Player",
     "description": "You played like a warrior on the lacrosse field, but in the zombie apocalypse, your speed and agility became survival skills.  You dodged and weaved through the hordes, as if every zombie was an opponent you had to outmaneuver to stay alive.",
     "points": 3,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "GOODCARDIO" ],
     "skills": [ { "level": 1, "name": "dodge" }, { "level": 1, "name": "bashing" }, { "level": 1, "name": "throw" } ],
     "items": {
@@ -5346,7 +5488,9 @@
     "name": "Student - Biker",
     "description": "You spent most of your life on a minibike, out on the open road with your club.  Now they're all dead.  Time to ride or die.",
     "points": 1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
+    "vehicle": "scooter",
     "skills": [ { "level": 1, "name": "mechanics" }, { "level": 2, "name": "driving" }, { "level": 1, "name": "melee" } ],
     "items": {
       "both": {
@@ -5373,7 +5517,6 @@
       "male": [ "tie_necktie_zhigh", "boxer_shorts" ],
       "female": [ "tie_bow_zhigh", "bra", "panties" ]
     },
-    "vehicle": "miniBikeZhigh",
     "flags": [ "SCEN_ONLY" ]
   },
   {
@@ -5382,6 +5525,8 @@
     "name": "Student - Pirate",
     "description": "Arr!  Your costume may be shipshape, but the end of the world's scuppered all your plans.  Strike up your Jolly Roger and hoist the Bloody Red, for no quarter shall be given.",
     "points": 3,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
     "skills": [
       { "level": 2, "name": "swimming" },
       { "level": 2, "name": "gun" },
@@ -5421,6 +5566,8 @@
     "name": "Student - Swashbuckler",
     "description": "You dance through chaos with a rusted saber and a crooked grin, turning every fight into theater and every escape into legend.  In a dead world, flair is your armor—and panache, your weapon.",
     "points": 3,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
     "skills": [
       { "level": 1, "name": "gun" },
       { "level": 1, "name": "melee" },
@@ -5464,6 +5611,7 @@
     "description": "Galloping across the overgrown ruins, mallet in hand, you strike not a ball but the skulls of the undead, a polo player adapting to a new kind of match—one where survival is the only prize.",
     "points": 1,
     "skills": [ { "level": 2, "name": "bashing" }, { "level": 2, "name": "melee" }, { "level": 1, "name": "dodge" }, { "level": 1, "name": "survival" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "pets": [ { "name": "mon_haulerbot", "amount": 1 } ],
     "items": {
@@ -5499,6 +5647,7 @@
     "description": "Steady breath, firm grip—You once aimed for bullseyes in competition, but now your targets shamble in the dark, each precise shot the difference between life and death.",
     "points": 2,
     "skills": [ { "level": 2, "name": "gun" }, { "level": 2, "name": "rifle" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -5529,6 +5678,7 @@
     "description": "Steady breath, firm grip—You once aimed for bullseyes in competition, but now your targets shamble in the dark, each precise shot the difference between life and death.",
     "points": 1,
     "skills": [ { "level": 2, "name": "gun" }, { "level": 2, "name": "pistol" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -5552,6 +5702,7 @@
     "name": "Student - Native American",
     "description": "You move like a shadow through the land of your ancestors, reading the earth and sky as you track both game and the undead.  The old ways guide your survival—silent, swift, and unseen, a hunter in a world that has forgotten how to live.",
     "points": -1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -5584,6 +5735,7 @@
     "description": "Once a hall monitor, now you geared up to protect yourself... and a bit more.  Let's make the world a better place.",
     "points": 2,
     "skills": [ { "level": 2, "name": "gun" }, { "level": 2, "name": "rifle" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "PROF_SW" ],
     "items": {
       "both": {
@@ -5626,6 +5778,7 @@
     "description": "Once a hall monitor, now you just grabbed a bullet bow and some paintballs.  You are not sure that you can fight them off, but at least you can run from them.",
     "points": 1,
     "skills": [ { "level": 2, "name": "gun" }, { "level": 2, "name": "archery" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "PROF_SW" ],
     "items": {
       "both": {
@@ -5680,6 +5833,7 @@
     "description": "You are a Royal Division cosplayer, red coat soaked in gore, bayonet raised.  The dead swarm, but you hold the line like the palace still stands.",
     "points": 2,
     "skills": [ { "level": 1, "name": "gun" }, { "level": 1, "name": "melee" }, { "level": 2, "name": "rifle" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -5721,6 +5875,7 @@
       { "level": 2, "name": "dodge" },
       { "level": 1, "name": "bashing" }
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "PROF_KNIGHT", "PROF_CHURL" ],
     "items": {
       "both": {
@@ -5756,6 +5911,7 @@
     "description": "You stalk the wasteland wrapped in rags and silence, a creature of grit and tradition shaped by sand and survival.  Your cries echo through the dead dunes, warning all—this land remembers its defenders.",
     "points": 2,
     "skills": [ { "level": 1, "name": "gun" }, { "level": 1, "name": "melee" }, { "level": 2, "name": "rifle" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -5793,6 +5949,7 @@
     "name": "Student - Turtle Mutant",
     "description": "In the ruins above, you move through shadow and sewer alike, shell scarred, blades ready.  Cowabunga!",
     "points": 3,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "SHELL2", "THICK_SCALES" ],
     "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" }, { "level": 2, "name": "bashing" } ],
     "items": {
@@ -5817,6 +5974,7 @@
     "name": "Student - Trickster",
     "description": "Quick-witted and louder than life, you survive the apocalypse not just with muscle, but with every trick, trap, and gadget you can grab.  Outsmarting the undead with flair, you're always one step ahead—and yelling about it the whole way.",
     "points": 3,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [
       { "level": 2, "name": "melee" },
@@ -5847,6 +6005,7 @@
     "description": "You are a puzzle, wrapped in an enigma, shrouded in riddles, lovingly sprinkled with intrigue.  And now you walk alone on the wastelands, ready to backstab anyone who goes against you.",
     "points": 3,
     "skills": [ { "level": 2, "name": "gun" }, { "level": 2, "name": "pistol" }, { "level": 1, "name": "throw" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -5886,6 +6045,7 @@
     "name": "Student - Beekeeper",
     "description": "You used to be a semi-professional beekeeper.  The world has ended, but at least you managed to grab some utensils and honey.",
     "points": 1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "name": "survival", "level": 1 }, { "name": "fabrication", "level": 1 } ],
     "items": {
@@ -5917,6 +6077,7 @@
     "description": "As a genius young detective, you were on the brink of a major breakthrough in your last homicide case when the Cataclysm struck.  Now that suspect is dead.  Everyone's dead.  There is always only one truth - the world has ended.",
     "points": 2,
     "skills": [ { "level": 3, "name": "gun" }, { "level": 3, "name": "pistol" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "PROF_PD_DET" ],
     "items": {
       "both": {
@@ -5927,23 +6088,23 @@
           "socks",
           "dress_shoes",
           "badge_detective",
-          "tie_bow_zhigh",
-          "paintball",
+          "paintball_beanb",
           "watch_conan",
           "glasses_bifocal",
-          "wristwatch"
+          "sholster",
+          "blazer",
+          "tie_bow_zhigh"
         ],
         "entries": [
           { "item": "super_nailZhigh", "charges": 6 },
           { "group": "charged_two_way_radio" },
           {
             "item": "paintballgun_revolverV2",
-            "ammo-item": "paintball",
-            "contents-item": [ "charm_hglass", "charm_grenade" ],
-            "charges": 3,
+            "ammo-item": "paintball_beanb",
+            "contents-item": [ "charm_hglass", "charm_comp" ],
+            "charges": 5,
             "custom-flags": [ "auto_wield" ]
           },
-          { "group": "ZhighNpc_coat" },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
         ]
       },
@@ -5959,6 +6120,7 @@
     "description": "You rain chaos from behind cover, lobbing fire, smoke, and shrapnel with a grin and perfect aim.  In the world’s end, you don’t need a plan—just the right grenade for the job.",
     "points": 2,
     "skills": [ { "level": 1, "name": "fabrication" }, { "level": 2, "name": "throw" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -5994,6 +6156,7 @@
     "description": "Squatting by the ruins in your trusty track suit, you cook canned meat on a tire fire and laugh like it's just another Tuesday.  With a shovel in one hand and slav spirit in the other, you survive hardbass-style-cyka, blyat, and unstoppable.",
     "points": -3,
     "skills": [ { "level": 1, "name": "melee" }, { "level": 1, "name": "bashing" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -6026,7 +6189,8 @@
     "id": "zhigh1stDay",
     "name": "Student - First Day",
     "description": "This is not how you imagined your first day of high school.  At least you have your stuff with you.  Yippee.",
-    "points": -4,
+    "points": 0,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -6049,6 +6213,7 @@
     "description": "You always smoked as much as possible, hiding from teachers.  Now nobody will scold you for smoking, but at what cost?",
     "points": -4,
     "skills": [ { "level": 1, "name": "melee" }, { "level": 1, "name": "bashing" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -6072,6 +6237,7 @@
     "description": "Before the world ended, you had steady hands and a sharp eye—once used for healing, now repurposed for hurting.  The kindness is gone; now you carve your way through the dead with the same precision you once saved lives.",
     "points": -2,
     "skills": [ { "level": 2, "name": "firstaid" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "PROF_MED" ],
     "items": {
       "both": {
@@ -6115,6 +6281,7 @@
     "description": "You were just a student once, now you're the frontline—shield raised, baton swinging, holding the line between chaos and what's left of hope.  Books taught you theory; the streets taught you survival.",
     "points": -1,
     "skills": [ { "level": 1, "name": "melee" }, { "level": 1, "name": "bashing" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -6147,6 +6314,7 @@
     "description": "You've been living your average high school life.  But no, you could not live a good bright life.  How did you got some flash bombs, you do not know.",
     "points": 1,
     "skills": [ { "level": 1, "name": "throw" }, { "level": 2, "name": "speech" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -6178,6 +6346,7 @@
     "description": "You were a student of science, now you're a student of destruction—shouldering rocket launchers built from scrap and fury.  Every blast is your answer to a world that failed the final test.  If fighting is sure to result in victory, then you must fight!",
     "points": 2,
     "skills": [ { "level": 2, "name": "gun" }, { "level": 2, "name": "melee" }, { "level": 2, "name": "launcher" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -6216,12 +6385,15 @@
     "name": "Student - Fumer",
     "description": "You stalk the dead zones with a gas mask and a belt full of toxic grenades, turning the air itself into your weapon.  Where you walk, the rot thickens—and the undead choke on your vengeance.",
     "points": 1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
         "items": [
           "dress_shirt_zhigh",
           "socks",
+          "gasbomb_makeshift",
+          "gasbomb_makeshift",
           "gasbomb_makeshift",
           "gasbomb_makeshift",
           "gasbomb_makeshift",
@@ -6256,6 +6428,7 @@
     "name": "Student - PumpKing",
     "description": "You cosplayed as a pumpkin king when the world ended.",
     "points": -4,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [
       { "level": 2, "name": "dodge" },
@@ -6291,6 +6464,7 @@
     "name": "Student - Blinder",
     "description": "You wield light like a weapon, searing through shadows and blinding foes with surgical beams.  In a world drowned in darkness, you are the flash before the fall.",
     "points": -3,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -6324,6 +6498,7 @@
     "description": "You don’t fight up close—you level city blocks from miles away, thunder in your wake.  When your cannons roar, the dead don’t rise—they vanish.",
     "points": 2,
     "skills": [ { "level": 1, "name": "speech" }, { "level": 2, "name": "pistol" }, { "level": 1, "name": "gun" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -6357,6 +6532,7 @@
     "description": "You loved shooting, and shooting precisely.  High risk is a high reward.  Let's get this done.",
     "points": -1,
     "skills": [ { "level": 1, "name": "gun" }, { "level": 1, "name": "rifle" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -6395,6 +6571,7 @@
     "name": "Student - Cook",
     "description": "You used to work at a school mess hall a week ago, but now you show the meaning of \"fast\" food by running for your life.",
     "points": -2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "cooking" }, { "level": 1, "name": "dodge" } ],
     "items": {
@@ -6429,6 +6606,7 @@
     "description": "You fight for no one but yourself.  In a world of ruins and rules long dead, you carve your own law with blood and steel.",
     "points": 1,
     "skills": [ { "level": 1, "name": "gun" }, { "level": 1, "name": "shotgun" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -6472,6 +6650,7 @@
     "name": "Student - Mutated Alpha",
     "description": "You're the perfect candidate to tidy this mess.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "GOODHEARING",
       "WAKEFUL",
@@ -6510,6 +6689,7 @@
     "name": "Student - Mutated Beast",
     "description": "It's about time you grew out.  Now that you've matured, it is time to make something of yourself.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "DEFT",
       "ANIMALEMPATH",
@@ -6563,6 +6743,7 @@
     "name": "Student - Mutated Bird",
     "description": "You're sure you'll fly someday.  In the meantime, there are still nests to build.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "QUICK",
       "GIZZARD",
@@ -6604,6 +6785,7 @@
     "name": "Student - Mutated Cattle",
     "description": "Civilization collapsed?  Great!  You and your kin will never have to worry about a slaughterhouse again.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "NIGHTVISION",
       "THICKSKIN",
@@ -6644,6 +6826,7 @@
     "name": "Student - Mutated Cephalopod",
     "description": "Strange aeons, true, but Death seems to be slacking, and you are doing just fine.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "CEPH_EYES",
       "NIGHTVISION3",
@@ -6685,6 +6868,7 @@
     "name": "Student - Mutated Chimera",
     "description": "You can't tell what you are anymore.  Everything and yet nothing, like you weren't meant to exist.  But you do, and you're a force, no matter what happens.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "QUICK",
       "THICKSKIN",
@@ -6749,6 +6933,7 @@
     "name": "Student - Mutated Fey",
     "description": "You are the tree under which humankind will shelter during these dark times.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "WAKEFUL3",
       "LIGHTSTEP",
@@ -6795,6 +6980,7 @@
     "name": "Student - Mutated Cat",
     "description": "Stalking prey, eating well, and lying in the sun.  Mmm, all you could ever desire.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "LIGHTSTEP",
       "PRETTY",
@@ -6839,6 +7025,7 @@
     "name": "Student - Mutated Fish",
     "description": "Ninety percent of the planet, and it's yours to explore.  And colonize.  And enjoy.  What was that about a surface?",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "FRESHWATEROSMOSIS",
       "AMPHIBIAN",
@@ -6887,6 +7074,7 @@
     "name": "Student - Mutated Insect",
     "description": "It would be good to be a Queen, having workers constantly servicing your every need… but how would you keep them in line?",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "QUICK",
       "LIGHTEATER",
@@ -6933,6 +7121,7 @@
     "name": "Student - Mutated Lizard",
     "description": "You sometimes look back on your days before your tail came in.  But you're better now.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "THICK_SCALES",
       "BADTEMPER",
@@ -6980,6 +7169,7 @@
     "name": "Student - Mutated Wolf",
     "description": "You're the perfect candidate to lead a pack.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "PRETTY",
       "BEAUTIFUL",
@@ -7024,6 +7214,7 @@
     "name": "Student - Mutated Marloss Carrier",
     "description": "Ever since you ate that Marloss berry, you can't get its scent out of your nose, and you have a strong desire to try some seeds and… sap?",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "MARLOSS", "MARLOSS_BLUE", "MARLOSS_YELLOW", "THRESH_MARLOSS", "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -7045,6 +7236,7 @@
     "name": "Student - Mutated Medical",
     "description": "After all those experiments, what's a few more, hmm?",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "FASTHEALER",
       "PAINRESIST",
@@ -7096,6 +7288,7 @@
     "name": "Student - Mutated Mouse",
     "description": "So much food, everywhere!  And nobody's even guarding it anymore!  These are good times.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "GOODHEARING",
       "GOODCARDIO2",
@@ -7151,6 +7344,7 @@
     "name": "Student - Mutated Mycus",
     "description": "We are the Mycus.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "M_SKIN",
       "M_SKIN2",
@@ -7187,6 +7381,7 @@
     "name": "Student - Mutated Plant",
     "description": "Well, you still have those other walking flowers-and the mushrooms too-to deal with.  But you'll manage.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "HEAVYSLEEPER",
       "BADHEARING",
@@ -7226,6 +7421,7 @@
     "name": "Student - Mutated Rabbit",
     "description": "You really want to eat some carrots.  Welcome to the Lagomorpha family.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "FLEET",
       "GOODHEARING",
@@ -7281,6 +7477,7 @@
     "name": "Student - Mutated Raptor",
     "description": "The chance to undo not one but TWO extinction events.  You're confident you'll do fine.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "QUICK",
       "DEFT",
@@ -7332,6 +7529,7 @@
     "name": "Student - Mutated Rat",
     "description": "Hey.  Civilization fell.  You're still around.  'Rat' just isn't respectful.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "DISRESISTANT",
       "NIGHTVISION2",
@@ -7372,6 +7570,7 @@
     "name": "Student - Mutated Slime",
     "description": "What was that old advertisement?  'Paint the planet'?  That might be a good long-term goal, but for now…",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "POISRESIST",
       "ROBUST",
@@ -7426,6 +7625,7 @@
     "name": "Student - Mutated Spider",
     "description": "Well, maybe you'll just have to make your own worldwide web.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "FLEET",
       "POISRESIST",
@@ -7470,6 +7670,7 @@
     "name": "Student - Mutated Subterranean",
     "description": "Not much point to rebuilding up in that horribly bright roofless wasteland.  Now that you've become accustomed to your new digs, there's the beginning of a great empire right here, underground.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "QUICK",
       "LIGHTEATER",
@@ -7512,6 +7713,7 @@
     "name": "Student - Mutated Bear",
     "description": "So the humans died; what's the worry?  Now they won't ruin the woods.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "BADTEMPER",
       "NIGHTVISION",
@@ -7555,6 +7757,7 @@
     "name": "Student - Mutated Equus",
     "description": "Who cares about civilization when you can run like the wind?  Time to rush B, but you gotta get a P90.",
     "points": 4,
+    "age": { "min": 14, "max": 18 },
     "traits": [
       "NIGHTVISION",
       "THICKSKIN",
@@ -7602,6 +7805,7 @@
       { "level": 1, "name": "archery" },
 	  { "level": 1, "name": "survival" }
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "pets": [ { "name": "mon_haulerbot", "amount": 1 } ],
     "items": {
@@ -7644,6 +7848,7 @@
       { "level": 2, "name": "pistol" },
       { "level": 2, "name": "gun" }
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -7684,6 +7889,7 @@
     "//": "An SAS guy.",
     "description": "Your costume became your armor, your play-acting turned to war—boots scuffed, gear patched, but will unbroken.  In the apocalypse, you’re no longer pretending; you are the spec ops.  Who Dares Wins.",
     "points": 1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [
       { "level": 2, "name": "gun" },
@@ -7729,6 +7935,7 @@
     "name": "Student - Inquisitor",
     "description": "You roam the wasteland as judge, jury, and executioner, hunting heresy in the form of the undead and the corrupt alike.  With fire and steel, you purge what little remains unclean.",
     "points": 0,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "gun" }, { "level": 2, "name": "melee" }, { "level": 2, "name": "rifle" } ],
     "items": {
@@ -7770,6 +7977,7 @@
     "name": "Student - Bionic Gunslinger",
     "description": "You always liked Wild West related stuff, and sci-fi stuff at the same time.  But that world has ended, so you took all of your gears to survive.",
     "points": 8,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "pets": [ { "name": "mon_haulerbot", "amount": 1 } ],
     "CBMs": [ "bio_targeting", "bn_bio_solar", "bio_night_vision", "bio_ups", "bio_power_storage_mkII", "bio_dex_enhancer" ],
@@ -7817,6 +8025,7 @@
     "name": "Student - Bionic Ranger",
     "description": "You wanted to recreate ancient Korea in a sci-fi-ish way, so you installed various bionics at your body.  But damn, you never expected you would actually use it in real life.",
     "points": 8,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "pets": [ { "name": "mon_haulerbot", "amount": 1 } ],
     "CBMs": [ "bio_targeting", "bn_bio_solar", "bio_infrared", "bio_bowZhigh", "bio_power_storage_mkII", "bio_dex_enhancer" ],
@@ -7861,6 +8070,8 @@
     "name": "Student - Urban Explorer",
     "description": "You've always admired the beauty of urban desolation, and were ready for your next trip into town when the end of the world made your hobby much more relevant.",
     "points": 0,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "swimming" }, { "level": 1, "name": "traps" } ],
     "items": {
       "both": {
@@ -7900,6 +8111,7 @@
     "name": "Student - Interemptor",
     "description": "You wander the ruins with a carved grin and bloodstained blade, chasing the thrill of fear more than survival.  In a world already dead, you make it scream again.  Don't go to sleep.",
     "points": -2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 1, "name": "dodge" }, { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" } ],
     "items": {
@@ -7922,6 +8134,7 @@
     "name": "Student - Graffiti Crew",
     "description": "You and your fellow street artists have survived the initial chaos by sticking together.  Now there's much more pressing matters than being caught by the police.",
     "points": 8,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "survival" }, { "level": 3, "name": "dodge" }, { "level": 3, "name": "swimming" } ],
     "items": {
@@ -7951,6 +8164,7 @@
     "name": "Student - Buccaneer",
     "description": "You sail broken rivers and flooded streets, cannon(which needs more than strength 14) at your side and plunder on your mind.  In the apocalypse, every raid is treasure, and every fight a boarding.",
     "points": 2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [
       { "level": 1, "name": "swimming" },
@@ -7991,6 +8205,7 @@
     "name": "Student - Legionary",
     "description": "Lascarbine in hand and discipline drilled into your bones, you hold the line no matter how many corpses shamble forward.  You are a legionary—one soldier against the endless tide, and still you do not break.",
     "points": 2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "FLIMSY3", "GLASSJAW", "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -8016,7 +8231,7 @@
         ],
         "entries": [
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-          { "item": "lascarbineToyZhigh", "custom-flags": [ "auto_wield" ] }
+          { "item": "lasrifleToyZhigh", "custom-flags": [ "auto_wield" ] }
         ]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
@@ -8031,6 +8246,7 @@
     "name": "Student - Foodperson",
     "description": "You are the true Foodperson, some might think Foodperson is just a mascot, but you know better.  You are Foodperson, the mask has become your face, you are real and the only thing standing between this world and oblivion is you.",
     "points": -1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "PROF_FOODP" ],
     "skills": [ { "level": 2, "name": "speech" } ],
     "items": {
@@ -8066,6 +8282,7 @@
     "name": "Student - Hoplite",
     "description": "Shield locked, spear ready, you advance step by step, an unbroken wall against the dead.  In the ashes of the world, you fight as the ancients did—unyielding, disciplined, and proud.",
     "points": 1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "stabbing" }, { "level": 1, "name": "dodge" } ],
     "items": {
@@ -8098,6 +8315,7 @@
     "name": "Student - Goth",
     "description": "Draped in black and shadow, you walk through the ruins like they were always meant to be this way.  Among death and decay, your style is no costume—it’s survival, and the world finally matches your soul.",
     "points": -2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -8131,6 +8349,7 @@
     "name": "Student - Slayer",
     "description": "You wander the ruins wrapped in tattered leather and steel, your weapon slick with the memory of what once was human.  The air reeks of rot and moonlight, and each step echoes with a prayer you no longer believe in.  You are the last rhythm in a city that has forgotten how to breathe.",
     "points": 0,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "cutting" }, { "level": 2, "name": "dodge" }, { "level": 2, "name": "melee" } ],
     "items": {
@@ -8178,6 +8397,7 @@
       { "level": 2, "name": "dodge" },
       { "level": 1, "name": "bashing" }
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -8206,7 +8426,8 @@
     "id": "zhighSaboteur",
     "name": "Student - Saboteur",
     "description": "As the world ended, you try to sabotage the ultimate enemy - the zombies.  Time to kick their ass.",
-    "points": -2,
+    "points": -1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -8246,6 +8467,7 @@
     "name": "Student - Arsonist",
     "description": "You always liked fires.  Well, a little too much to be honest.  Now that the world has ended, there is nobody to stop you from burning.  Let the world BURN!",
     "points": 2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "PYROMANIA", "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -8286,6 +8508,7 @@
       { "level": 1, "name": "cutting" },
       { "level": 1, "name": "dodge" }
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -8322,6 +8545,7 @@
       { "level": 1, "name": "cutting" },
       { "level": 1, "name": "dodge" }
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -8352,6 +8576,7 @@
     "name": "Student - Militant",
     "description": "There is nothing better than an exploding arrow pierced through an undead's head.  However, you should also know that they can pierce your head too.",
     "points": 0,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 1, "name": "archery" }, { "level": 1, "name": "gun" } ],
     "items": {
@@ -8377,6 +8602,7 @@
     "name": "Student - Triggerman",
     "description": "You move through the ruins with a steady grip and colder instincts, finger never far from the trigger.  The world ended, but contracts didn’t—only the currency changed to ammo and favors.  You survive because hesitation died before mercy did.",
     "points": 2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 3, "name": "gun" }, { "level": 2, "name": "rifle" } ],
     "items": {
@@ -8419,6 +8645,7 @@
       { "level": 2, "name": "cutting" },
       { "level": 2, "name": "dodge" }
     ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "PROF_KNIGHT", "PROF_CHURL" ],
     "items": {
       "both": {
@@ -8455,6 +8682,7 @@
     "description": "As a baseball player, you were a semi-pro hitter.  Dang, guess you have to hit more than a baseball to survive this game.",
     "points": -1,
     "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "bashing" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -8472,7 +8700,7 @@
         "entries": [
           { "group": "ZhighNpc_shoesAll" },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-          { "item": "chainbat", "custom-flags": [ "auto_wield" ] }
+          { "item": "bat_metal_bolted", "custom-flags": [ "auto_wield" ] }
         ]
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
@@ -8487,6 +8715,7 @@
     "description": "You walk the broken roads with defiance in your stride, a weathered coat and a battered weapon carried for freedom rather than glory.  Empires have collapsed and cities lie in ruin, but you still fight so others might stand unchained.  Even at the end of the world, you refuse to kneel.",
     "points": 0,
     "skills": [ { "level": 1, "name": "dodge" }, { "level": 1, "name": "melee" }, { "level": 1, "name": "bashing" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -8520,6 +8749,7 @@
     "name": "Student - Summoner",
     "description": "You cosplayed as a fox summoner, with some leftover accessories.  Never thought you would use them.  This crystal ball is also glowing quite funny...",
     "points": -1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "dodge" }, { "level": 2, "name": "bashing" } ],
     "items": {
@@ -8553,6 +8783,7 @@
     "description": "Your friends are all dead.  Good luck, and try to avenge them.  At least there are a lot of enemies for you to hit with.",
     "points": 2,
     "skills": [ { "level": 2, "name": "gun" }, { "level": 3, "name": "launcher" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -8599,6 +8830,7 @@
     "name": "Student - Lasher",
     "description": "You were a professional yo-yo player.  Never realized that you might had to use this for an acutal weapon in some way.",
     "points": -1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 3, "name": "dodge" }, { "level": 1, "name": "bashing" } ],
     "items": {
@@ -8631,6 +8863,7 @@
     "description": "You love to skate!  At least now the grown-ups aren't telling you where you can't roll.",
     "points": -2,
     "skills": [ { "level": 1, "name": "dodge" }, { "level": 2, "name": "swimming" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "PROF_SKATER" ],
     "items": {
       "both": {
@@ -8660,6 +8893,7 @@
     "name": "Student - Stalker",
     "description": "Is stalker!  This is going to be nothing, since you were in the Zone.  At least there is no emission here, right?",
     "points": 1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -8712,6 +8946,7 @@
 		{ "level": 1, "name": "cutting" },
 		{ "level": 1, "name": "survival" }
 	],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -8754,6 +8989,7 @@
     "description": "You were just a student once, now you're the frontline—shield raised, shotgun and shield ready, pushing and breaching line and lines of zombies.",
     "points": -1,
     "skills": [ { "level": 1, "name": "gun" }, { "level": 1, "name": "shotgun" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -8790,6 +9026,7 @@
     "name": "Student - Extractor",
     "description": "You were trained to retrieve life from the most unreachable depths, using your ice axe and grappling gear to conquer any vertical shadow.  Now, those same tools tear through the undead as you extract survival from the wreckage of a fallen world.  No peak is too high, and no horde is too thick to keep you from your objective.",
     "points": 1,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 1, "name": "melee" }, { "level": 1, "name": "bashing" } ],
     "items": {
@@ -8824,6 +9061,8 @@
     "name": "Student - Invader",
     "description": "You don’t need to be on the front lines when your drones can do the killing for you.  Armed with a fleet of attack bots, you invade the territory of the dead from the safety of your screen.",
     "points": 3,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 4, "name": "computer" } ],
     "items": {
       "both": {
@@ -8858,6 +9097,8 @@
     "name": "Student - Saver",
 	"description": "Survival isn't just about fighting; it's about keeping the last of us alive.  Your medical drones are the angels of the battlefield, stitching wounds that should have been fatal.",
     "points": 3,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 4, "name": "computer" } ],
     "items": {
       "both": {
@@ -8893,6 +9134,7 @@
     "description": "You traded a comfortable life for a makeshift grenade launcher, mimicking a legendary mercenary with more enthusiasm than skill.  Your gear is mostly scrap and your aim is questionable, but in this dying world, a loud costume and a big bang are often enough to stay alive.",
     "points": 2,
     "skills": [ { "level": 2, "name": "gun" }, { "level": 2, "name": "launcher" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -8940,6 +9182,7 @@
     "name": "Student - Spelunker",
     "description": "Beneath the surface, silence is your only companion and darkness your only cover.  Armed with climbing ropes and a pickaxe, you treat the apocalypse like one long descent into an uncharted abyss.",
     "points": -2,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "PARKOUR" ],
     "items": {
       "both": {
@@ -8977,6 +9220,7 @@
     "description": "One strike is all you need to turn a sprinting threat into a stationary target.  Your triffid elixirs seize the muscles and dull the senses, leaving the undead to rot where they stand.",
     "points": -1,
     "skills": [ { "level": 1, "name": "gun" }, { "level": 3, "name": "archery" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -9012,6 +9256,7 @@
     "description": "You treat every arrow as a needle, injecting high-grade rot into the veins of the world.  Silence is your shroud, and the slow, agonizing decay of your targets is the only proof that you were ever there.",
     "points": -1,
     "skills": [ { "level": 1, "name": "gun" }, { "level": 3, "name": "archery" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -9047,6 +9292,7 @@
     "description": "Nature's deadliest tools are your ammunition, using jagged teeth to rip through armor and flesh alike.  You don't just kill; you leave behind the savage bite of the wild in every wound you inflict.  By tooth and claw, you clam this land.",
     "points": -1,
     "skills": [ { "level": 1, "name": "gun" }, { "level": 3, "name": "archery" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -9082,6 +9328,7 @@
     "description": "You are the navigator of the wasteland, transforming chaotic ruins into a clear trail for others to follow.  With your eyes on the horizon and a machete in your hand, you carve hope out of the uncharted unknown.",
     "points": 0,
     "skills": [ { "level": 1, "name": "melee" }, { "level": 1, "name": "swimming" }, { "level": 1, "name": "dodge" } ],
+    "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
@@ -9118,10 +9365,490 @@
   },
   {
     "type": "profession",
+    "id": "zhighImmobilizer",
+    "name": "Student - Immobilizer",
+    "description": "You specialize in tactical restraint, using specialized launchers and precise strikes to halt any threat in its tracks.  With a cold focus on neutralizing mobility, you ensure that the monsters of this world stay exactly where you want them.",
+    "points": 1,
+    "skills": [ { "level": 1, "name": "gun" }, { "level": 2, "name": "launcher" } ],
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "ANIMALEMPATH", "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "cowboy_hat_zhigh",
+          "shorts_cargo",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "boots",
+          "sheriffshirt",
+          "grenade_pouch",
+          "pockknife",
+          "whistlemulti",
+          "wristwatch"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "net_cartridge", "charges": 8 },
+          {
+            "item": "bola_net_launcher",
+            "ammo-item": "net_cartridge",
+            "charges": 1,
+            "contents-item": "shoulder_strap",
+            "custom-flags": [ "auto_wield" ]
+          }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighBouncer",
+    "name": "Student - Bouncer",
+    "description": "You were the undisputed master of the velvet rope, trained to spot trouble before it even started.  Now that the party has ended in blood, you use your massive frame and iron grip to physically eject the undead from your personal space.",
+    "points": -1,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "bashing" } ],
+    "items": {
+      "both": {
+        "items": [
+			"dress_shirt_zhigh",
+			"coat_lab",
+			"zhigh_smart_phone",
+			"medkitRechargeV3",
+			"socks",
+			"knuckle_chainZhigh",
+			"wristwatch"
+		],
+        "entries": [
+          { "group": "ZhighNpc_shoesAll" },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "chainbat", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighRampager",
+    "name": "Student - Rampager",
+    "description": "Driven by the cinematic fantasy of a one-man army, you wrapped a red headband tight and traded your textbooks for high-capacity magazines.  You aren't just surviving the apocalypse; you are starring in your own explosive sequel where the only script is the deafening roar of your weapons.",
+    "points": 1,
+    "skills": [ { "level": 2, "name": "gun" }, { "level": 1, "name": "rifle" }, { "level": 1, "name": "melee" } ],
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "tank_top",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "shortbow",
+          "runner_bag",
+          "bandana_head",
+          "socks"
+        ],
+        "entries": [
+          { "item": "knife_rambo", "container-item": "sheath" },
+          { "group": "ZhighNpc_shoesAll" },
+          { "item": "arrow_exploding", "charges": 4 },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          {
+            "item": "bbM60",
+            "ammo-item": "bb",
+            "charges": 1200,
+            "contents-item": [ "shoulder_strap" ],
+            "custom-flags": [ "auto_wield" ]
+          }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighWheelman",
+    "name": "Student - Wheelman",
+    "description": "You were always a ghost in the hallways, but on the open road, you finally found a place to belong.  With a blade in your boot and the wind at your back, you move through the ruins of civilization without leaving a single footprint behind.",
+    "points": 1,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "vehicle": "miniBikeZhigh",
+    "skills": [ { "level": 2, "name": "mechanics" }, { "level": 2, "name": "driving" } ],
+    "items": {
+      "both": {
+        "items": [
+          "tshirt_tour",
+          "pants_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "boots_hiking",
+          "jacket_leather_mod",
+          "wristwatch"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "xacto", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighShooterShotgun",
+    "name": "Student - Shotgun Shooter",
+    "description": "Steady breath, firm grip—You once aimed for bullseyes in competition, but now your targets shamble in the dark, each precise shot the difference between life and death.",
+    "points": 2,
+    "skills": [ { "level": 2, "name": "gun" }, { "level": 2, "name": "shotgun" } ],
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [ "dress_shirt_zhigh", "zhigh_smart_phone", "medkitRechargeV3", "socks", "wristwatch" ],
+        "entries": [
+          { "group": "ZhighNpc_coat" },
+          { "group": "ZhighNpc_shoesAll" },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "shot_00", "charges": 6 },
+          {
+            "item": "shotgun_d",
+            "ammo-item": "shot_00",
+            "charges": 2,
+            "contents-item": "shoulder_strap",
+            "custom-flags": [ "auto_wield" ]
+          }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighGurkha",
+    "name": "Student - Gurkha",
+    "description": "Better to die than be a coward—a motto you live by as you navigate the bloodstained streets.  With your trusty kukri and iron discipline, you turn the apocalypse into your own personal proving ground.",
+    "points": 2,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [
+      { "level": 1, "name": "gun" },
+      { "level": 2, "name": "melee" },
+      { "level": 2, "name": "cutting" },
+      { "level": 1, "name": "smg" },
+      { "level": 1, "name": "pistol" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "boots_hiking",
+          "socks",
+          "hat_boonie",
+          "chestrig",
+          "wristwatch"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "bbpistol", "ammo-item": "bb", "charges": [ 200, 250 ], "container-item": "sholster" },
+          { "item": "kukri", "container-item": "scabbard" }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighPulverizer",
+    "name": "Student - Pulverizer",
+    "description": "You love bombs!  As the world ended, you made your own explosives.  If the world is ending, why not go big?",
+    "points": -2,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "tshirt",
+          "jacket_tracksuit_zhigh",
+          "shorts_tracksuit_zhigh",
+          "attached_ear_plugs_off",
+          "mbag",
+          "improvised_demolition_charge",
+          "improvised_demolition_charge",
+          "improvised_demolition_charge"
+        ],
+        "entries": [
+			{ "group": "ZhighNpc_shoesAll" },
+			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighDesolator",
+    "name": "Student - Desolator",
+    "description": "Fire is too quick and too clean for your taste; you prefer the slow, agonizing hiss of dissolving steel and bone.  With your chemical canisters and spray nozzle, you turn every battlefield into a toxic swamp that no enemy can survive.",
+    "points": 2,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "mask_cavalry_acidchitin",
+          "gloves_rubber",
+          "hood_rain",
+          "coat_rain",
+          "acidbomb",
+          "acidbomb",
+          "boots_rubber"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "acid", "container-item": "jerrypack" },
+          { "item": "acid", "container-item": "canteen" },
+          { "item": "acid", "container-item": "canteen" },
+          {
+            "item": "acid_gunZhigh",
+            "charges": 50,
+            "custom-flags": [ "auto_wield" ]
+          }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighExterminator",
+    "name": "Student - Exterminator",
+    "description": "Before the world fell apart, you were the first line of defense against roaches and worse.  Armed with sprays, traps, and a healthy dose of stubbornness, you knew every trick in the book for clearing infestations.  Now, your skills have never been more relevant - the pests are bigger, meaner, and sometimes hungry for you.",
+    "points": 0,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "mask_gas",
+          "gloves_rubber",
+          "hood_rain",
+          "insecticidalbomb_makeshift",
+          "insecticidalbomb_makeshift",
+          "tacvest",
+          "boots_rubber"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "gas_insecticidal", "container-item": "camelbak" },
+          { "item": "gas_insecticidal", "container-item": "canteen" },
+          {
+            "item": "chem_gunZhigh",
+            "charges": 75,
+            "custom-flags": [ "auto_wield" ]
+          }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighRepressor",
+    "name": "Student - Repressor",
+    "description": "Before the world fell apart, you were the first line of defense against mushrooms and worse.  Armed with sprays, traps, and a healthy dose of stubbornness, you knew every trick in the book for clearing infestations.  Now, your skills have never been more relevant - the pests are bigger, meaner, and sometimes hungry for you.",
+    "points": 0,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "mask_gas",
+          "gloves_rubber",
+          "hood_rain",
+          "fungicidalbomb_makeshift",
+          "fungicidalbomb_makeshift",
+          "vest",
+          "boots_rubber"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "gas_fungicidal", "container-item": "camelbak" },
+          { "item": "gas_fungicidal", "container-item": "canteen" },
+          {
+            "item": "chem_gunZhigh",
+            "charges": 75,
+            "custom-flags": [ "auto_wield" ]
+          }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighPutrifier",
+    "name": "Student - Putrifier",
+    "description": "Before the world fell apart, you were the first line of defense against rats and worse.  Armed with sprays, traps, and a healthy dose of stubbornness, you knew every trick in the book for clearing infestations.  Now, your skills have never been more relevant - the pests are bigger, meaner, and sometimes hungry for you.",
+    "points": 0,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "mask_gas",
+          "gloves_rubber",
+          "hood_rain",
+          "gasbomb_makeshift",
+          "gasbomb_makeshift",
+          "chestrig",
+          "boots_rubber"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "gas_chloramine", "container-item": "camelbak" },
+          { "item": "gas_chloramine", "container-item": "canteen" },
+          {
+            "item": "chem_gunZhigh",
+            "charges": 75,
+            "custom-flags": [ "auto_wield" ]
+          }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighCommissar",
+    "name": "Student - Commissar",
+    "description": "You have stepped out of the grim darkness of fiction to impose iron-clad discipline upon the chaotic reality of the apocalypse.  Clad in a long black greatcoat and a towering peaked cap, you lead from the front with a bolt pistol in one hand and a chainsword in the other, ensuring that no student succumbs to the cowardice of the walking dead.",
+    "points": 2,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "gun" } ],
+    "items": {
+      "both": {
+        "items": [
+			"dress_shirt_zhigh_march",
+			"trenchcoat_commissarZhigh",
+			"postman_hat_commissarZhigh",
+			"zhigh_smart_phone",
+			"medkitRechargeV3",
+			"paintball_exp",
+			"paintball_exp",
+			"paintball_exp",
+			"whistle_multitool",
+			"socks",
+			"boots_hiking",
+			"gloves_liner",
+			"wristwatch"
+		],
+        "entries": [
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "axe_combat", "container-item": "webbing_belt" },
+          { "item": "paintballgun_pistol", "ammo-item": "paintball_exp", "container-item": "holster", "charges": 20 },
+          { "item": "flaregun", "ammo-item": "signal_flare", "container-item": "holster", "charges": 1 }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighPilot",
+    "name": "Student - Pilot",
+    "description": "You were trained to never leave your leader’s side, a loyalty that has only sharpened in the fires of the apocalypse.  Even without an engine's roar, you remain the ultimate eye in the sky, using your tactical insight to guide your squad through the deadliest turbulence on the ground.",
+    "points": 6,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "vehicle": "motorcycle_plane",
+    "skills": [
+		{ "level": 1, "name": "mechanics" },
+		{ "level": 1, "name": "electronics" },
+		{ "level": 1, "name": "driving" }
+	],
+    "items": {
+      "both": {
+        "items": [
+			"dress_shirt_zhigh",
+			"flightJacketZhigh",
+			"zhigh_smart_phone",
+			"medkitRechargeV3",
+			"socks",
+			"signal_flare",
+			"helmet_heliZhigh",
+			"diving_watch"
+		],
+        "entries": [
+          { "item": "knife_combat", "container-item": "sheath" },
+          { "group": "ZhighNpc_shoesAll" },
+          { "item": "bbpistol", "ammo-item": "bb", "charges": [ 200, 250 ], "container-item": "sholster" },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "flaregun", "ammo-item": "signal_flare", "container-item": "holster", "charges": 1 }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
     "id": "zhighMallninja",
     "name": "Student - Mallninja",
     "description": "While they were living their life you studied the blade.  And now that the world is on fire and the zombies are at the gate people have the audacity to come to you for help.  Nevermind, everyone is dead.",
     "points": -12,
+    "age": { "min": 14, "max": 18 },
     "traits": [ "DISORGANIZED", "BRAWLER", "REGEN_zhigh", "CLUMSY" ],
     "skills": [
       { "level": 4, "name": "dodge" },

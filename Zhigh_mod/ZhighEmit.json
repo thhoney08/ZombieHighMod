@@ -1,16 +1,5 @@
 [
   {
-    "type": "effect_type",
-    "id": "goo",
-    "name": [ "Goo-coated" ],
-    "desc": [ "You're coated in goo!" ],
-    "apply_message": "You're coated in goo!",
-    "rating": "bad",
-    "max_duration": "30 m",
-    "miss_messages": [ [ "The goo's too sticky for you to fight effectively.", 3 ] ],
-    "base_mods": { "speed_mod": [ -30 ], "dex_mod": [ -2 ] }
-  },
-  {
     "id": "emit_triffid_gas_stream",
     "type": "emit",
     "//": "Steady stream of triffid gas (example: triffid gas grenade)",
@@ -385,6 +374,17 @@
         ]
       }
     ]
+  },
+  {
+    "type": "effect_type",
+    "id": "goo",
+    "name": [ "Goo-coated" ],
+    "desc": [ "You're coated in goo!" ],
+    "apply_message": "You're coated in goo!",
+    "rating": "bad",
+    "max_duration": "30 m",
+    "miss_messages": [ [ "The goo's too sticky for you to fight effectively.", 3 ] ],
+    "base_mods": { "speed_mod": [ -30 ], "dex_mod": [ -2 ] }
   },
   {
     "id": "fd_goo",
@@ -818,9 +818,9 @@
         "name": "undead fissure",
         "color": "magenta",
         "transparent": true,
-        "monster_spawn_chance": 1,
-        "monster_spawn_count": 1,
-        "monster_spawn_radius": 1,
+        "monster_spawn_chance": 100,
+        "monster_spawn_count": 3,
+        "monster_spawn_radius": 3,
         "monster_spawn_group": "GROUP_ZHIGH"
       }
     ],
@@ -839,16 +839,40 @@
     "id": "fd_zombie3_gas",
     "type": "field_type",
     "intensity_levels": [
-      { "name": "swirl of fog", "translucency": 5 },
-      { "name": "foul fog", "color": "cyan" },
-      { "name": "thick foul fog", "color": "pink" }
+      {
+        "name": "swirl of fog",
+        "color": "cyan",
+        "transparent": true,
+        "monster_spawn_chance": 100,
+        "monster_spawn_count": 1,
+        "monster_spawn_radius": 3,
+        "monster_spawn_group": "GROUP_ZHIGH"
+      },
+      {
+        "name": "foul fog",
+        "color": "cyan",
+        "transparent": true,
+        "monster_spawn_chance": 100,
+        "monster_spawn_count": 3,
+        "monster_spawn_radius": 3,
+        "monster_spawn_group": "GROUP_ZHIGH"
+      },
+      {
+        "name": "thick foul fog",
+        "color": "magenta",
+        "transparent": true,
+        "monster_spawn_chance": 100,
+        "monster_spawn_count": 5,
+        "monster_spawn_radius": 3,
+        "monster_spawn_group": "GROUP_ZHIGH"
+      }
     ],
     "decay_amount_factor": 7,
-    "percent_spread": 30,
+    "percent_spread": 300,
     "outdoor_age_speedup": "10 seconds",
     "dirty_transparency_cache": true,
     "priority": 6,
-    "half_life": "20 seconds",
+    "half_life": "5 minutes",
     "phase": "gas",
     "display_items": true,
     "display_field": false,
@@ -897,7 +921,7 @@
     ],
     "priority": 8,
     "half_life": "5 minutes",
-    "percent_spread": 25,
+    "percent_spread": 250,
     "accelerated_decay": false,
     "wandering_field": "fd_survivor_gas",
     "gas_absorption_factor": 15,
@@ -1091,17 +1115,5 @@
     "field": "fd_fire",
     "qty": 1,
     "chance": 30
-  },
-  {
-    "type": "clothing_mod",
-    "id": "pocketed",
-    "flag": "pocketed",
-    "item": "rag",
-    "implement_prompt": "Add pockets",
-    "destroy_prompt": "Remove pockets",
-    "mod_value": [
-      { "type": "encumbrance", "value": 1, "round_up": true, "proportion": [ "volume", "coverage" ] },
-      { "type": "storage", "value": 3, "round_up": true, "proportion": [ "volume" ] }
-    ]
   }
 ]

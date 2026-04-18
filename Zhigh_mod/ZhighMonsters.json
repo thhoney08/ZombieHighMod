@@ -316,18 +316,18 @@
       {
         "type": "gun",
         "cooldown": 30,
-        "move_cost": 150,
+        "move_cost": 50,
         "gun_type": "feral_human_thrown_rock",
         "ammo_type": "brickZhigh",
-        "no_ammo_sound": "",
-        "fake_skills": [ [ "gun", 2 ], [ "throw", 2 ] ],
-        "fake_dex": 6,
-        "fake_per": 6,
-        "targeting_cost": 50,
+        "no_ammo_sound": "Someone throw a rock!",
+        "fake_skills": [ [ "gun", 1 ], [ "throw", 1 ] ],
+        "fake_dex": 3,
+        "fake_per": 3,
+        "targeting_cost": 10,
         "require_targeting_player": true,
         "require_targeting_npc": true,
         "require_targeting_monster": true,
-        "ranges": [ [ 2, 5, "DEFAULT" ] ],
+        "ranges": [ [ 2, 29, "DEFAULT" ] ],
         "description": "The feral human throws a rock!",
         "no_crits": true
       }
@@ -357,7 +357,7 @@
     "min_damage": 2,
     "max_damage": 3,
     "min_range": 5,
-    "max_range": 5,
+    "max_range": 9,
     "min_aoe": 7,
     "max_aoe": 9,
     "base_casting_time": 10,
@@ -376,6 +376,58 @@
     "special_attacks": [
 	  [ "PARROT", 3 ],
 	  { "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh" }, "cooldown": 45 }
+    ]
+  },
+  {
+    "id": "mon_feral_human_GunnerZhigh",
+    "type": "MONSTER",
+    "copy-from": "mon_feral_human_zhigh",
+    "name": { "str": "feral garrison" },
+    "description": "Their pupils are dilated and what remains to be seen of the iris and sclera are bloodshot.  This gun-wielding maniac still breathes, but the zombies treat them like one of their own.  For some reason, these ferals uses guns.",
+    "hp": 35,
+    "luminance": 20,
+    "on_death": { "death_function": [  ], "spawn_mon": "mon_feral_human_zhigh" },
+    "starting_ammo": { "bb": 20 },
+    "special_attacks": [
+	  [ "PARROT", 1 ],
+      {
+        "type": "gun",
+        "cooldown": 1,
+        "move_cost": 150,
+        "gun_type": "bbMp5",
+        "ammo_type": "bb",
+        "fake_skills": [ [ "gun", 5 ], [ "smg", 5 ] ],
+        "fake_dex": 16,
+        "ranges": [ [ 0, 16, "BURST" ] ],
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "laser_lock": false,
+        "no_crits": true,
+        "targeting_cost": 50,
+        "targeting_timeout_extend": -10,
+        "targeting_sound": "\"Enemy there!\"",
+        "targeting_volume": 80,
+        "no_ammo_sound": "a chk!"
+      }
+    ]
+  },
+  {
+    "id": "mon_feral_human_Shielderzhigh",
+    "type": "MONSTER",
+    "copy-from": "mon_feral_human_zhigh",
+    "name": { "str": "feral tank" },
+    "description": "Their pupils are dilated and what remains to be seen of the iris and sclera are bloodshot.  This shield-wielding maniac still breathes, but the zombies treat them like one of their own.",
+    "hp": 95,
+    "luminance": 10,
+    "on_death": { "death_function": [  ], "spawn_mon": "mon_feral_human_zhigh" },
+    "armor_bash": 10,
+    "armor_cut": 5,
+    "armor_bullet": 5,
+    "death_drops": "ig_vp_sheet_metal",
+    "special_attacks": [
+	  [ "PARROT", 3 ],
+	  [ "SEARCHLIGHT", 1 ],
+	  { "id": "slam" }
     ]
   },
   {
@@ -741,7 +793,7 @@
     "armor_bash": 6,
     "armor_bullet": 8,
     "armor_fire": 3,
-    "hp": 120,
+    "hp": 100,
     "revert_to_itype": "bot_heal_drone",
     "symbol": "+",
     "vision_day": 15,
@@ -1076,17 +1128,20 @@
     "hp": 300,
     "symbol": "D",
     "color": "red",
-    "luminance": 2,
+    "luminance": 200,
     "aggression": 100,
     "morale": 100,
-    "vision_day": 0,
-    "vision_night": 0,
-    "emit_fields": [ { "emit_id": "emit_zombie3_cloud_big", "delay": "1 s" } ],
+    "vision_day": 50,
+    "vision_night": 50,
+    "emit_fields": [ { "emit_id": "emit_zombie3_cloud_big", "delay": "3 s" } ],
     "armor_bash": 10,
     "armor_cut": 10,
     "armor_bullet": 10,
     "regenerates": 20,
-    "special_attacks": [ [ "SEARCHLIGHT", 1 ] ],
+    "special_attacks": [
+		[ "SEARCHLIGHT", 1 ],
+		{ "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh" }, "cooldown": 1 }
+	],
     "death_drops": { "groups": [ [ "robots", 1 ], [ "turret_searchlight", 1 ] ] },
     "on_death": { "death_function": [ "FOCUSEDBEAM" ], "spawn_mon": "mon_zombie_guardZhigh" },
     "flags": [ "BIOPROOF", "IMMOBILE", "NOHEAD", "COLDPROOF", "ACIDPROOF", "IMMOBILE", "SEES" ]
@@ -1097,12 +1152,10 @@
     "copy-from": "mon_zombie_machine",
     "name": { "str": "unknown machine" },
     "default_faction": "zombie",
-    "emit_fields": [ { "emit_id": "emit_zombie2_burst", "delay": "20 s" } ],
     "hp": 150,
     "armor_bash": 1,
     "armor_cut": 1,
     "armor_bullet": 1,
-    "luminance": 8,
     "regenerates": 5
   },
   {
@@ -2082,17 +2135,17 @@
     "diff": 20,
     "volume": "30000 ml",
     "weight": "40750 g",
-    "hp": 30,
+    "hp": 80,
     "speed": 100,
     "material": [ "steel" ],
     "symbol": "2",
     "color": "white",
     "aggression": 100,
     "morale": 100,
-    "armor_bash": 2,
-    "armor_cut": 2,
-    "armor_bullet": 2,
-    "armor_fire": 2,
+    "armor_bash": 3,
+    "armor_cut": 3,
+    "armor_bullet": 3,
+    "armor_fire": 3,
     "vision_day": 50,
     "vision_night": 50,
     "revert_to_itype": "bot_healturret",
@@ -2119,7 +2172,7 @@
       { 
         "type": "spell",
         "spell_data": { "id": "zhigh_healing_dart" },
-        "cooldown": 5
+        "cooldown": 25
 	  }
     ],
     "special_when_hit": [ "RETURN_FIRE", 100 ],
@@ -2715,7 +2768,7 @@
       "friendly_msg": "The remote vehicle rolls into action ready to pursue.",
       "hostile_msg": "A siren howls and lights flash as the remote vehicle looks at you weird!",
       "//": "Modified copbot",
-      "difficulty": 3,
+      "difficulty": 1,
       "moves": 100,
       "skills": [ "electronics", "computer" ]
     },
@@ -2744,12 +2797,13 @@
     "type": "MONSTER",
     "name": { "str": "remote vehicle" },
     "description": "One of the many models of armored law enforcement robots employed shortly before the collapse of civilization.  Solar powered like many other robots, it maintains its programmed pursuit of law and order, propelled on a trio of omni wheels.",
-    "default_faction": "cop_bot",
+    "default_faction": "utility_bot",
 	"bodytype": "quadruped",
     "species": [ "ROBOT" ],
     "diff": 10,
     "volume": "500 L",
     "weight": "750 kg",
+    "mountable_weight_ratio": 1.9,
     "hp": 80,
     "speed": 100,
     "material": [ "steel" ],
@@ -2774,13 +2828,14 @@
     "flags": [
       "SEES",
       "HEARS",
-      "BASHES",
       "ELECTRONIC",
       "COLDPROOF",
       "NO_BREATHE",
-      "PRIORITIZE_TARGETS",
-      "PATH_AVOID_DANGER_1",
+      "PATH_AVOID_DANGER_2",
+      "PACIFIST",
       "PET_MOUNTABLE",
+      "CARD_OVERRIDE",
+      "MILITARY_MECH",
       "BIOPROOF"
     ]
   },
@@ -2951,5 +3006,68 @@
     "special_attacks": [ [ "EAT_FOOD", 20 ] ],
     "flags": [ "SEES", "HEARS", "SMELLS", "ANIMAL", "PATH_AVOID_DANGER_1", "WARM", "BLEED", "BASHES", "ATTACKMON" ],
     "upgrades": { "half_life": 42, "into": "mon_bear_armored" }
+  },
+  {
+    "id": "mon_feral_swimOpsSpearGun",
+    "type": "MONSTER",
+    "copy-from": "mon_feral_soldier",
+    "name": { "str": "feral swimmer-ops" },
+    "description": "Wearing swimming gear and helmet, this feral wields a speargun in its hand.  It's unique three-eyed goggles are searching for its enemies.",
+    "melee_cut": 15,
+    "armor_bullet": 10,
+    "extend": { "flags": [ "SWIMS" ] },
+    "starting_ammo": { "c_fishspear": 8 },
+    "special_attacks": [
+      [ "PARROT_AT_DANGER", 5 ],
+      {
+        "type": "gun",
+        "cooldown": 5,
+        "move_cost": 50,
+        "gun_type": "airspeargun",
+        "ammo_type": "c_fishspear",
+        "fake_skills": [ [ "gun", 2 ], [ "rifle", 2 ] ],
+        "fake_dex": 8,
+        "fake_per": 10,
+        "ranges": [ [ 10, 30, "SINGLE" ], [ 0, 10, "AUTO" ] ],
+        "require_targeting_player": false,
+        "description": "The feral swimmer-ops fires their speargun!",
+        "no_crits": false
+      }
+    ],
+    "death_drops": "mon_feral_soldier_death_drops"
+  },
+  {
+    "id": "mon_feral_swimOpsRifle",
+    "type": "MONSTER",
+    "copy-from": "mon_feral_soldier",
+    "name": { "str": "feral brown water" },
+    "description": "Wearing swimming gear and helmet, this feral wields a speargun in its hand.  It's unique monovisor is searching for its enemies.",
+    "melee_cut": 5,
+    "speed": 210,
+    "armor_bullet": 12,
+    "extend": { "flags": [ "SWIMS" ] },
+    "starting_ammo": { "9mm": 30 },
+    "special_attacks": [
+      [ "PARROT_AT_DANGER", 5 ],
+      {
+        "type": "gun",
+        "cooldown": 55,
+        "move_cost": 150,
+        "gun_type": "hk_mp5sd",
+        "ammo_type": "9mm",
+        "fake_skills": [ [ "gun", 2 ], [ "rifle", 2 ] ],
+        "fake_dex": 8,
+        "fake_per": 10,
+        "ranges": [ [ 10, 30, "SINGLE" ], [ 0, 10, "BURST" ] ],
+        "require_targeting_player": false,
+        "description": "The feral swimmer-ops fires their speargun!",
+        "no_crits": false
+      }
+    ],
+    "on_death": {
+      "death_function": [ "NORMAL" ],
+      "spawn_mon_near": { "distance": 3, "ids": [ "mon_feral_swimOpsSpearGun", "mon_feral_swimOpsSpearGun", "mon_feral_swimOpsSpearGun" ] }
+    },
+    "death_drops": "mon_feral_soldier_death_drops"
   }
 ]

@@ -7,7 +7,7 @@
     "monsters": [
       { "monster": "mon_zombie_child", "freq": 650, "cost_multiplier": 1 },
       { "monster": "mon_zombie_child_flashHead", "freq": 20, "cost_multiplier": 1 },
-      { "monster": "mon_feral_human_zhigh", "freq": 100, "cost_multiplier": 5, "pack_size": [ 2, 3 ] },
+      { "monster": "mon_feral_human_zhigh", "freq": 100, "cost_multiplier": 2, "pack_size": [ 0, 1 ] },
       { "monster": "mon_feral_human_zhigh", "freq": 20, "cost_multiplier": 2, "pack_size": [ 1, 2 ] },
       { "monster": "mon_feral_human_zhigh", "freq": 15, "cost_multiplier": 2, "pack_size": [ 0, 1 ] },
       { "monster": "mon_feral_human_zhigh", "freq": 50, "cost_multiplier": 1 },
@@ -24,6 +24,17 @@
       { "monster": "mon_survivor_human_pipe", "freq": 80, "cost_multiplier": 3, "pack_size": [ 6, 9 ] },
       { "monster": "mon_survivor_human_crowbar", "freq": 50, "cost_multiplier": 2, "pack_size": [ 3, 5 ] },
       { "monster": "mon_survivor_human_m4bb", "freq": 70, "cost_multiplier": 8, "pack_size": [ 2, 3 ] }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_ZOMBIE_SWIMMER_UPGRADE",
+    "default": "mon_zombie_mancroc",
+    "monsters": [
+      { "monster": "mon_feral_swimOpsSpearGun", "freq": 250, "cost_multiplier": 0 },
+      { "monster": "mon_feral_swimOpsRifle", "freq": 250, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_squidman", "freq": 250, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_seaweed", "freq": 250, "cost_multiplier": 0 }
     ]
   },
   {
@@ -157,6 +168,9 @@
         "conditions": [ "DUSK", "NIGHT", "DAWN", "SPRING", "SUMMER", "AUTUMN" ]
       },
       { "monster": "mon_zhark", "freq": 1, "cost_multiplier": 25, "starts": 24, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_zwordfish", "freq": 30, "cost_multiplier": 25, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_feral_swimOpsSpearGun", "freq": 30, "cost_multiplier": 15, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_feral_swimOpsRifle", "freq": 30, "cost_multiplier": 15 },
       { "monster": "mon_zwordfish", "freq": 80, "cost_multiplier": 25, "pack_size": [ 1, 8 ],
         "conditions": [ "DAWN", "DAY", "SPRING", "SUMMER", "AUTUMN" ] },
       { "monster": "mon_zwordfish", "freq": 80, "cost_multiplier": 25, "pack_size": [ 1, 8 ],
@@ -695,9 +709,12 @@
     "type": "monstergroup",
     "default": "mon_feral_human_zhigh",
     "monsters": [ 
-      { "monster": "mon_feral_human_zhigh", "freq": 80, "cost_multiplier": 5 },
-      { "monster": "mon_feral_human_zhigh", "freq": 20, "cost_multiplier": 1, "pack_size": [ 1, 2 ] },
-      { "monster": "mon_feral_human_zhigh", "freq": 15, "cost_multiplier": 2, "pack_size": [ 0, 1 ] },
+      { "monster": "mon_feral_human_zhigh", "freq": 100, "cost_multiplier": 3 },
+      { "monster": "mon_feral_human_zhigh", "freq": 80, "cost_multiplier": 1, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_feral_human_zhigh", "freq": 95, "cost_multiplier": 2, "pack_size": [ 1, 1 ] },
+      { "monster": "mon_feral_human_zhigh", "freq": 100, "cost_multiplier": 2, "pack_size": [ 2, 3 ] },
+      { "monster": "mon_feral_human_GunnerZhigh", "freq": 50, "cost_multiplier": 2, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_feral_human_Shielderzhigh", "freq": 50, "cost_multiplier": 2, "pack_size": [ 1, 2 ] },
       { "monster": "mon_feral_human_zhigh", "freq": 10, "cost_multiplier": 1 },
       { "monster": "mon_feral_human_zhigh", "freq": 10, "cost_multiplier": 1 },
       { "monster": "mon_feral_human_SchoolWatchzhigh", "freq": 20, "cost_multiplier": 3 },

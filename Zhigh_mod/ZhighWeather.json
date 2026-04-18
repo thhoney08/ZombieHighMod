@@ -30,5 +30,21 @@
 			"acid_rain"
 		]
     }
+  },
+  {
+    "type": "weapon_category",
+    "id": "AKIMBOZHIGH",
+    "name": "Dual Wielding",
+    "//": "Handgun/revolvers/SMGs, but two."
+  },
+  {
+    "type": "skill",
+    "id": "akimbo_Zhigh",
+    "name": { "str": "Dual Wielding" },
+    "description": "Hard to aim, not that bad for close combat, good for firepower.",
+    "tags": [ "combat_skill", "weapon_skill" ],
+    "time_to_attack": { "min_time": 10, "base_time": 80, "time_reduction_per_level": 7 },
+    "display_category": "display_ranged",
+    "companion_skill_practice": [ { "skill": "hunting", "weight": 15 } ]
   }
 ]
