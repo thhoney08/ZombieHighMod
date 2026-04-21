@@ -144,14 +144,7 @@
     "symbol": ":",
     "color": "red",
     "location": "accessories",
-    "mod_targets": [ 
-         "glock_17", 
-         "glock_19", 
-         "glock_20", 
-         "glock_21", 
-         "glock_22", 
-         "glock_31"  
-      ],
+    "mod_targets": [ "glock_17", "glock_19", "glock_20", "glock_21", "glock_22", "glock_31" ],
     "install_time": "5 m",
     "dispersion_modifier": 250,
     "mode_modifier": [ [ "BURST", "3 rd.", 3 ], [ "AUTO", "full auto", 4 ] ]
@@ -187,23 +180,17 @@
     "symbol": ":",
     "color": "light_gray",
     "location": "muzzle",
-    "mod_target_category": [
-      [ "SUBMACHINE_GUNS" ],
-      [ "RIFLES" ],
-      [ "MACHINE_GUNS" ],
-      [ "SHOTGUNS" ],
-      [ "PISTOLS" ]
-    ],
+    "mod_target_category": [ [ "SUBMACHINE_GUNS" ], [ "RIFLES" ], [ "MACHINE_GUNS" ], [ "SHOTGUNS" ], [ "PISTOLS" ] ],
     "flags": [ "RELOAD_AND_SHOOT", "DISABLE_SIGHTS", "NEVER_JAMS" ],
-    "gun_data": { 
-          "ammo": "rock", 
-          "skill": "launcher", 
-          "range": 18,
-          "ranged_damage": { "damage_type": "bash", "amount": 10 },
-          "dispersion": 350, 
-          "durability": 10, 
-          "clip_size": 1 
-        }
+    "gun_data": {
+      "ammo": "rock",
+      "skill": "launcher",
+      "range": 18,
+      "ranged_damage": { "damage_type": "bash", "amount": 10 },
+      "dispersion": 350,
+      "durability": 10,
+      "clip_size": 1
+    }
   },
   {
     "id": "xbow_string_flesh",
@@ -298,7 +285,7 @@
     "color": "dark_gray",
     "gunmod_data": {
       "location": "underbarrel",
-	  "dispersion_modifier": 15,
+      "dispersion_modifier": 15,
       "mod_target_category": [
         [ "RIFLES" ],
         [ "MACHINE_GUNS" ],
@@ -334,13 +321,8 @@
     "color": "dark_gray",
     "gunmod_data": {
       "location": "grip",
-	  "dispersion_modifier": 10,
-      "mod_target_category": [
-        [ "PISTOLS" ],
-		[ "REVOLVERS" ],
-		[ "S_XBOWS" ],
-		[ "SUBMACHINE_GUNS" ]
-      ]
+      "dispersion_modifier": 10,
+      "mod_target_category": [ [ "PISTOLS" ], [ "REVOLVERS" ], [ "S_XBOWS" ], [ "SUBMACHINE_GUNS" ] ]
     },
     "techniques": [ "SWEEP" ],
     "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 19 ] ],
@@ -384,18 +366,18 @@
     "location": "accessories",
     "loudness_modifier": 25,
     "range_modifier": 2,
-	"install_time": "20 m",
+    "install_time": "20 m",
     "damage_modifier": { "damage_type": "bullet", "amount": 6, "armor_penetration": 8 },
     "mod_targets": [
-		"helsing",
-		"tihar",
-		"pneumatic_shotgun",
-		"marble_gun",
-		"marble_sniper_gun",
-		"tiharBigZhigh",
-		"popGun_zhigh",
-		"tishuna"
-	]
+      "helsing",
+      "tihar",
+      "pneumatic_shotgun",
+      "marble_gun",
+      "marble_sniper_gun",
+      "tiharBigZhigh",
+      "popGun_zhigh",
+      "tishuna"
+    ]
   },
   {
     "id": "rapidFireMechZhigh",
@@ -463,8 +445,8 @@
     "integral_weight": "800 g",
     "integral_volume": "80 ml",
     "volume": "1 L",
-	"to_hit": 2,
-	"bashing": 5,
+    "to_hit": 2,
+    "bashing": 5,
     "price": "720 USD",
     "price_postapoc": "5 USD",
     "material": [ "steel" ],
@@ -778,7 +760,7 @@
       "skill": "pistol",
       "range": 8,
       "ranged_damage": { "damage_type": "bullet", "amount": 1 },
-	  "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 3 ] ],
+      "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 3 ] ],
       "dispersion": 600,
       "durability": 10,
       "reload": 60,
@@ -818,7 +800,7 @@
       "ammo": [ "acid", "water", "chemical_spray", "reactor_slurry" ],
       "skill": "launcher",
       "ranged_damage": { "damage_type": "bullet", "amount": 12 },
-	  "modes": [ [ "DEFAULT", "blast", 3 ] ],
+      "modes": [ [ "DEFAULT", "blast", 3 ] ],
       "range": 8,
       "dispersion": 425,
       "durability": 7,
@@ -861,26 +843,50 @@
       "ammo": "9mm",
       "skill": "smg",
       "ranged_damage": { "damage_type": "bullet", "amount": 1 },
-	  "modes": [ [ "DEFAULT", "burst", 4 ] ],
+      "modes": [ [ "DEFAULT", "burst", 4 ] ],
       "dispersion": 400,
       "durability": 4,
       "reload": 120
     },
     "magazine_well": "250 ml",
-    "magazines": [ 
-        [ "9mm", [ 
-            "stenmag", "survivor9mm_mag", "survivor9mm_mag_beeg",
-            "calicomag",
-            "glockbigmag", "glockmag", "glock17_17", "glock17_22",
-            "glock_drum_50rd", "glock_drum_100rd",
-            "ccpmag", "m9bigmag", "m9mag", "mp5bigmag", "mp5mag",
-            "px4mag", "tec9mag", "usp9mag", "uzimag", "kpf9mag",
-            "p320mag_17rd_9x19mm", "bhp9mag_15rd", "p38mag",
-            "ppq9mag_10rd", "ppq9mag_15rd", "ppq9mag_17rd",
-            "hptc9mag_8rd", "hptc9mag_10rd", "hptc9mag_15rd",
-            "cz75mag_12rd", "cz75mag_20rd", "cz75mag_26rd"
+    "magazines": [
+      [
+        "9mm",
+        [
+          "stenmag",
+          "survivor9mm_mag",
+          "survivor9mm_mag_beeg",
+          "calicomag",
+          "glockbigmag",
+          "glockmag",
+          "glock17_17",
+          "glock17_22",
+          "glock_drum_50rd",
+          "glock_drum_100rd",
+          "ccpmag",
+          "m9bigmag",
+          "m9mag",
+          "mp5bigmag",
+          "mp5mag",
+          "px4mag",
+          "tec9mag",
+          "usp9mag",
+          "uzimag",
+          "kpf9mag",
+          "p320mag_17rd_9x19mm",
+          "bhp9mag_15rd",
+          "p38mag",
+          "ppq9mag_10rd",
+          "ppq9mag_15rd",
+          "ppq9mag_17rd",
+          "hptc9mag_8rd",
+          "hptc9mag_10rd",
+          "hptc9mag_15rd",
+          "cz75mag_12rd",
+          "cz75mag_20rd",
+          "cz75mag_26rd"
         ]
-	  ]
+      ]
     ]
   },
   {
@@ -915,7 +921,7 @@
       "skill": "pistol",
       "range": 26,
       "ranged_damage": { "damage_type": "bullet", "amount": 1, "armor_penetration": 99 },
-	  "modes": [ [ "DEFAULT", "burst", 4 ] ],
+      "modes": [ [ "DEFAULT", "burst", 4 ] ],
       "dispersion": 600,
       "durability": 10,
       "ammo_effects": [ "INCENDIARY", "LASER", "BLINDS_EYES" ],
@@ -1021,7 +1027,7 @@
     "category": "weapons",
     "name": { "str": "Mosin-Nagant bayonet" },
     "description": "A unique bayonet that fits for a Mosin-Nagant.  When equipped, you could use the rifle as a pike.",
-	"cutting": 14,
+    "cutting": 14,
     "gunmod_data": {
       "location": "muzzle",
       "mod_targets": [ "mosin44", "mosin44_ebr", "mosin91_30", "mosin91_30_ebr" ],
@@ -1371,20 +1377,20 @@
     "color": "light_gray",
     "location": "accessories",
     "mod_targets": [
-		"rifle_flintlock",
-		"longrifle_flintlock",
-		"pistol_flintlock",
-		"carbine_flintlock",
-		"carbine_flintlock_double",
-		"pistol_flintlock_double",
-		"pistol_flintlock_revolver",
-		"lemat_revolver_flintlock",
-		"pistol_flintlock_smol",
-		"pistol_flintlock_duckfoot",
-		"jezail_flintlock",
-		"pistolFlintlockSaberZhigh",
-		"spear_flintlockZhigh"
-	],
+      "rifle_flintlock",
+      "longrifle_flintlock",
+      "pistol_flintlock",
+      "carbine_flintlock",
+      "carbine_flintlock_double",
+      "pistol_flintlock_double",
+      "pistol_flintlock_revolver",
+      "lemat_revolver_flintlock",
+      "pistol_flintlock_smol",
+      "pistol_flintlock_duckfoot",
+      "jezail_flintlock",
+      "pistolFlintlockSaberZhigh",
+      "spear_flintlockZhigh"
+    ],
     "damage_modifier": { "damage_type": "bullet", "amount": -3 },
     "dispersion_modifier": -200,
     "min_skills": [ [ "weapon", 3 ] ],
@@ -1437,14 +1443,14 @@
       [ "FLAMETHROWERS" ]
     ],
     "gun_data": {
-		"ammo": "shotcanister",
-		"skill": "shotgun",
-		"dispersion": 450,
-		"durability": 10,
-		"ranged_damage": { "damage_type": "bullet", "amount": 20, "armor_penetration": 10 },
-		"range": 4,
-		"clip_size": 2
-	}
+      "ammo": "shotcanister",
+      "skill": "shotgun",
+      "dispersion": 450,
+      "durability": 10,
+      "ranged_damage": { "damage_type": "bullet", "amount": 20, "armor_penetration": 10 },
+      "range": 4,
+      "clip_size": 2
+    }
   },
   {
     "id": "revolverCylinderExp",
@@ -1460,9 +1466,7 @@
     "symbol": ":",
     "color": "dark_gray",
     "location": "mechanism",
-    "mod_target_category": [
-      [ "REVOLVERS" ]
-    ],
+    "mod_target_category": [ [ "REVOLVERS" ] ],
     "install_time": "30 m",
     "weight_multiplier": 1.4,
     "capacity_multiplier": 1.4
@@ -1481,10 +1485,7 @@
     "symbol": ":",
     "color": "dark_gray",
     "location": "mechanism",
-    "mod_targets": [
-		"shotgun_s",
-		"shotgun_410"
-	],
+    "mod_targets": [ "shotgun_s", "shotgun_410" ],
     "install_time": "40 m",
     "weight_multiplier": 1.8,
     "reload_modifier": 60,
@@ -1571,5 +1572,23 @@
     "ammo_modifier": "500",
     "min_skills": [ [ "weapon", 3 ], [ "mechanics", 2 ] ],
     "flags": [ "INSTALL_DIFFICULT", "IRREMOVABLE" ]
+  },
+  {
+    "id": "sawnOffGunsMagExpansionZhigh",
+    "looks_like": "rifle_magazine_expansion",
+    "type": "GUNMOD",
+    "name": { "str": "makeshift rifle magazine expansion" },
+    "description": "This is an expansion device for some sawn off firearms.  When used on some specific firearms, it can increase the ammo capacity of the gun, but it also makes the gun more bulky and less accurate.",
+    "weight": "694 g",
+    "volume": "750 ml",
+    "price": "100 USD",
+    "material": [ "steel", "plastic" ],
+    "symbol": ";",
+    "color": "dark_gray",
+    "location": "mechanism",
+    "mod_targets": [ "m2browning_sawn", "25mm_autocannon_sawn", "25mm_cannon_crude" ],
+    "integral_volume": "800 ml",
+    "dispersion_modifier": 15,
+    "capacity_multiplier": 5
   }
 ]
