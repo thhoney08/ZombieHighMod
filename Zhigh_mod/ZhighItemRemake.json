@@ -83,7 +83,7 @@
       "type": "holster",
       "holster_prompt": "Stick what into your belt?",
       "holster_msg": "You tuck your %s into your %s",
-      "multi": 4,
+      "multi": 2,
       "max_volume": "1550 ml",
       "max_weight": "5500 g",
       "min_volume": "3 ml",
@@ -3925,6 +3925,46 @@
     "bashing": 18,
     "volume": "1250 ml",
     "flags": [ "DURABLE_MELEE", "SHEATH_SWORD" ]
+  },
+  {
+	"id": "25mm_autocannon_sawn",
+    "type": "GUN",
+    "copy-from": "25mm_autocannon_sawn",
+    "name": { "str_sp": "stripped-down 25mm cannon" },
+    "bashing": 18,
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "sights", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "underbarrel", 1 ]
+    ]
+  },
+  {
+	"id": "25mm_cannon_crude",
+    "type": "GUN",
+    "copy-from": "25mm_cannon_crude",
+    "name": { "str_sp": "makeshift 25mm cannon" },
+    "bashing": 18,
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "sights", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "underbarrel", 1 ]
+    ]
   },
   {
 	"id": "cowboy_hat",
