@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zhigh_Mod\n"
-"POT-Creation-Date: 2026-04-17 20:55-0500\n"
+"POT-Creation-Date: 2026-04-21 12:29-0500\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -11021,6 +11021,18 @@ msgid_plural "kukris"
 msgstr[0] ""
 msgstr[1] ""
 
+#: .\ZhighItemRemake.json
+msgid "stripped-down 25mm cannon"
+msgid_plural "stripped-down 25mm cannon"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighItemRemake.json
+msgid "makeshift 25mm cannon"
+msgid_plural "makeshift 25mm cannon"
+msgstr[0] ""
+msgstr[1] ""
+
 #: .\ZhighItems.json
 msgid "umbrella, closed"
 msgid_plural "umbrella, closeds"
@@ -19338,6 +19350,7 @@ msgid "Teacher"
 msgstr ""
 
 #. ~ Profession (male Teacher) description
+#. ~ Profession (male Geology Teacher) description
 #: .\ZhighProfession.json
 msgctxt "prof_desc_male"
 msgid ""
@@ -19347,12 +19360,23 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Teacher) description
+#. ~ Profession (female Geology Teacher) description
 #: .\ZhighProfession.json
 msgctxt "prof_desc_female"
 msgid ""
 "You've been teaching kids for the whole of your life, and they've mostly "
 "listened to your teachings.  However, the dead won't write out lines for "
 "eating you alive."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Geology Teacher"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Geology Teacher"
 msgstr ""
 
 #: .\ZhighProfession.json
@@ -41636,6 +41660,34 @@ msgstr ""
 msgid "bore"
 msgstr ""
 
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "makeshift rifle magazine expansion"
+msgid_plural "makeshift rifle magazine expansions"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid ""
+"This is an expansion device for some sawn off firearms.  When used on some "
+"specific firearms, it can increase the ammo capacity of the gun, but it also"
+" makes the gun more bulky and less accurate."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "m2browning_sawn"
+msgstr ""
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "25mm_autocannon_sawn"
+msgstr ""
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "25mm_cannon_crude"
+msgstr ""
+
 #: .\ZhighWeapons\ZhighMelee.json
 msgid "millwall brick"
 msgid_plural "millwall bricks"
@@ -48254,8 +48306,8 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighRanged.json
-msgid "DP-12"
-msgid_plural "DP-12"
+msgid "DP-12 origin"
+msgid_plural "DP-12 origin"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -48263,7 +48315,8 @@ msgstr[1] ""
 msgid ""
 "A bullpup pump-action shotgun, the DP-12 has two barrels and two magazine "
 "tubes.  Unlike the KSG this cannot change the ammo during shooting, but can "
-"shoot twice at one trigger pull."
+"shoot twice at one trigger pull.  Compared to the models of the new "
+"englands, this one is full auto only and accepts one type of ammo at a time."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighRanged.json
