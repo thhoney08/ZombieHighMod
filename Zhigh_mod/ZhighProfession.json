@@ -3408,7 +3408,7 @@
     "id": "zhighHevGunner",
     "name": "Student - Heavy Gunner",
     "description": "You were called 'heavy' or 'heavy gunner' in your airsoft group, due to your body size and the guns that you use.  There is no one calling you heavy now, but the game goes on, whether you like it or not.",
-    "points": 3,
+    "points": 4,
     "skills": [ { "level": 2, "name": "gun" }, { "level": 3, "name": "rifle" }, { "level": 1, "name": "dodge" } ],
     "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
@@ -3421,17 +3421,17 @@
           "socks",
           "gloves_tactical",
           "depowered_armor",
-          "bb",
-          "bb",
-          "bb",
-          "bb",
+          "bbincen",
+          "bbincen",
+          "bbincen",
+          "bbincen",
           "depowered_helmet"
         ],
         "entries": [
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-          { "item": "BBbelt_500", "ammo-item": "bb", "charges": [ 1100, 1190 ] },
           { "item": "BBbelt_500", "ammo-item": "bbincen", "charges": [ 1100, 1190 ] },
-          { "item": "bbM134", "ammo-item": "bb", "charges": [ 900, 1190 ], "custom-flags": [ "auto_wield" ] }
+          { "item": "BBbelt_500", "ammo-item": "bbincen", "charges": [ 1100, 1190 ] },
+          { "item": "bbM134", "ammo-item": "bbincen", "charges": [ 900, 1190 ], "custom-flags": [ "auto_wield" ] }
         ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
@@ -3472,7 +3472,7 @@
             "item": "bbM60",
             "ammo-item": "bb",
             "charges": [ 1000, 1190 ],
-            "contents-item": [ "shoulder_strap" ],
+            "contents-item": [ "shoulder_strap", "charm_skull", "charm_comp" ],
             "custom-flags": [ "auto_wield" ]
           }
         ]
@@ -4485,11 +4485,11 @@
           "socks",
           "legguard_hard",
           "armguard_hard",
-          "wristwatch"
+		  "trickal_sunglasses",
+          "boots_combat"
         ],
         "entries": [
-          { "group": "ZhighNpc_shoesAll" },
-          { "item": "BBclip300release", "ammo-item": "bbincen", "charges": 300 },
+          { "item": "BBclip300release", "ammo-item": "bbPlastic", "charges": 300 },
           { "item": "bbmachinepistol", "ammo-item": "bbPlastic", "charges": 300, "container-item": "holster" },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
         ]
@@ -9870,6 +9870,49 @@
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighVaqueros",
+    "name": "Student - Vaqueros",
+    "description": "Silence and precision are the only laws you follow in this lawless land of ruins.  Every notch on your silver-engraved guns tells a story of survival, a testament to a man who learned to hunt long before the monsters arrived.",
+    "points": -1,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [ { "level": 1, "name": "melee" }, { "level": 1, "name": "cutting" }, { "level": 1, "name": "gun" } ],
+    "items": {
+      "both": {
+        "items": [
+			"dress_shirt_zhigh",
+			"poncho",
+			"zhigh_smart_phone",
+			"medkitRechargeV3",
+			"net",
+			"paintball_shot",
+			"socks",
+			"mask_Sicario",
+			"boots_western",
+			"holsterAkimZhigh",
+			"holy_symbol",
+			"legrig",
+			"hat_sombrero"
+		],
+        "entries": [
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          {
+            "item": "paintballgun_revolverV2AkimZhigh",
+            "ammo-item": "paintball_shot",
+            "contents-item": [ "charm_hglass", "charm_spike" ],
+            "charges": 10,
+            "custom-flags": [ "auto_wield" ]
+          },
+          { "item": "sword_crude", "container-item": "scabbard" }
+        ]
+      },
+      "male": [ "boxer_shorts", "pants_zhigh" ],
+      "female": [ "bra", "panties", "skirt_zhigh" ]
     },
     "flags": [ "SCEN_ONLY" ]
   },

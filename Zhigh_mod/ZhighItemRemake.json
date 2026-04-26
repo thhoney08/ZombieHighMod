@@ -3542,7 +3542,6 @@
     "copy-from": "flamethrower_crude",
     "name": { "str": "spraycan flamethrower" },
     "ranged_damage": { "damage_type": "heat", "amount": 5 },
-	"ammo_to_fire": 1,
     "range": 3
   },
   {
@@ -3996,5 +3995,12 @@
       ],
       "draw_cost": 20
     }
+  },
+  {
+	"id": "gasoline",
+    "type": "AMMO",
+    "copy-from": "gasoline",
+    "name": { "str": "gasoline" },
+    "effects": [ "STREAM", "INCENDIARY", "NEVER_MISFIRES" ]
   }
 ]
