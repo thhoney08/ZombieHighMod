@@ -232,7 +232,7 @@
     "description": "A tube of small paintballs.  They deal virtually no damage, but can hit multiple targets.",
     "damage": { "damage_type": "bullet", "amount": 6 },
     "stack_size": 50,
-    "shot": { "count": 7, "half_angle": 25 }
+    "shot": { "count": 7, "half_angle": 15 }
   },
   {
     "type": "AMMO",
@@ -782,7 +782,7 @@
     "damage": { "damage_type": "bullet", "amount": 5 },
     "loudness": 1,
     "shot": { "count": 7, "half_angle": 20 },
-    "effects": [ "NEVER_MISFIRES", "BLINDS_EYES", "MUZZLE_SMOKE", "TRAILZHIGH", "SMOKE_BIG", "SMOKE", "TANGLE" ]
+    "effects": [ "NEVER_MISFIRES", "BLINDS_EYES", "TRAILZHIGH", "TANGLE" ]
   },
   {
     "id": "pelletZhigh",
@@ -966,7 +966,7 @@
     "description": "A tiny bb-sized ammo, which kinda acts like a flamethrower when shot.  The short range makes it a useless weapon, but could blind some when hit.",
     "dispersion": 0,
     "damage": { "damage_type": "heat", "amount": 6 },
-    "shot": { "count": 5, "half_angle": 35 },
+    "shot": { "count": 6, "half_angle": 15 },
     "extend": { "effects": [ "SHOT", "BLINDS_EYES", "NOGIB", "INCENDIARY" ] }
   },
   {
