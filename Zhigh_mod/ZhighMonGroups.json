@@ -709,7 +709,9 @@
     "type": "monstergroup",
     "default": "mon_feral_human_zhigh",
     "monsters": [ 
-      { "monster": "mon_feral_human_zhigh", "freq": 100, "cost_multiplier": 3 },
+      { "monster": "mon_feral_human_zhigh", "freq": 200, "cost_multiplier": 3 },
+      { "monster": "mon_feral_human_zhigh", "freq": 200, "cost_multiplier": 2, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_feral_human_zhigh", "freq": 100, "cost_multiplier": 2, "pack_size": [ 1, 2 ] },
       { "monster": "mon_feral_human_zhigh", "freq": 80, "cost_multiplier": 1, "pack_size": [ 1, 2 ] },
       { "monster": "mon_feral_human_zhigh", "freq": 95, "cost_multiplier": 2, "pack_size": [ 1, 1 ] },
       { "monster": "mon_feral_human_zhigh", "freq": 100, "cost_multiplier": 2, "pack_size": [ 2, 3 ] },

@@ -148,6 +148,13 @@
     "flags": [ "WATER_FRIENDLY", "BELTED" ]
   },
   {
+    "id": "haori",
+    "copy-from": "haori",
+    "type": "ARMOR",
+    "name": { "str": "haori" },
+    "storage": "1 L"
+  },
+  {
     "id": "survival_kit",
     "copy-from": "survival_kit",
     "type": "GENERIC",
@@ -3749,6 +3756,7 @@
     "copy-from": "launcher_ballista",
     "name": { "str": "ballista" },
     "durability": 9,
+	"skill": "launcher",
     "ammo": [ "bolt_heavy", "fishspear", "rock" ]
   },
   {
@@ -4002,5 +4010,47 @@
     "copy-from": "gasoline",
     "name": { "str": "gasoline" },
     "effects": [ "STREAM", "INCENDIARY", "NEVER_MISFIRES" ]
+  },
+  {
+	"id": "m134",
+    "type": "GUN",
+    "copy-from": "m134",
+    "name": { "str": "M134D-H Minigun" },
+	"skill": "launcher"
+  },
+  {
+	"id": "m1874_gatling",
+    "type": "GUN",
+    "copy-from": "m1874_gatling",
+    "name": { "str": "M1874 Gatling gun" },
+	"skill": "launcher"
+  },
+  {
+	"id": "25mm_autocannon",
+    "type": "GUN",
+    "copy-from": "25mm_autocannon",
+    "name": { "str_sp": "M242 Bushmaster autocannon" },
+	"skill": "launcher"
+  },
+  {
+	"id": "25mm_rotary_cannon",
+    "type": "GUN",
+    "copy-from": "25mm_rotary_cannon",
+    "name": { "str": "GAU-22 rotary cannon" },
+	"skill": "launcher"
+  },
+  {
+	"id": "m2browning",
+    "type": "GUN",
+    "copy-from": "m2browning",
+    "name": { "str_sp": "M2HB Browning HMG" },
+	"skill": "launcher"
+  },
+  {
+	"id": "rm298",
+    "type": "GUN",
+    "copy-from": "rm298",
+    "name": { "str": "RM298 HMG" },
+	"skill": "launcher"
   }
 ]

@@ -3,7 +3,7 @@
     "type": "scenario",
     "id": "InSchool",
     "points": -10,
-    "description": "You were at school when the principal and ate one of the students, and before you knew it the entire campus was overriden by monsters.  Guess school's out forever.",
+    "description": "The high school has announced:\n\nAll campus classes are suspended\nindefinitely.  All instruction will\ncontinue online.  \nStay safe.  Look out for one another.  \n<color_blue>Your friends on this school are kind\nand trustworthy. You've shared meals,\nexchanged numbers, and agreed to help\neach other.</color> \nStill, when you look out the window\nand see smoke rising from the city...\nyour heart can't help but race.  \n<color_green>Breathe in.  Breathe out.  \nYou'll get through this.</color>",
     "allowed_locs": [ "sloc_school" ],
     "start_name": "In School",
     "professions": [
@@ -291,6 +291,10 @@
 	  "zhighPilot",
 	  "zhighTeacherGeology",
 	  "zhighVaqueros",
+	  "zhighGreaser",
+	  "zhighRoamer",
+	  "zhighSnapper",
+	  "zhighInfantry",
       "zhighFrat"
     ],
     "flags": [ "SUM_START" ],
@@ -320,7 +324,7 @@
     "name": "Zombiefied Highschool",
     "points": -4,
     "//": "Easy senario, made on purpose.",
-    "description": "You've attracted the attention of living dead, but you escaped the horde somehow and arrived at a bunker-like school.",
+    "description": "The high school has announced:\n\nAll campus classes are suspended\nindefinitely.  All instruction will\ncontinue online.  \nStay safe.  Look out for one another.  \n<color_blue>Your friends on this school are kind\nand trustworthy. You've shared meals,\nexchanged numbers, and agreed to help\neach other.</color> \nStill, when you look out the window\nand see smoke rising from the city...\nyour heart can't help but race.  \n<color_green>Breathe in.  Breathe out.  \nYou'll get through this.</color>",
     "allowed_locs": [ "sloc_ZhighSchool" ],
     "professions": [
       "zhighStudent",
@@ -607,6 +611,10 @@
 	  "zhighPilot",
 	  "zhighTeacherGeology",
 	  "zhighVaqueros",
+	  "zhighGreaser",
+	  "zhighRoamer",
+	  "zhighSnapper",
+	  "zhighInfantry",
       "zhighFrat"
     ],
     "start_name": "Zombiefied Highschool",
@@ -707,7 +715,7 @@
       "sangresPd2",
       "jiroPd2"
     ],
-    "surround_groups": [ [ "GROUP_POLICE", 70.0 ] ],
+    "surround_groups": [ [ "GROUP_POLICE", 20.0 ] ],
     "flags": [ "LONE_START" ]
   },
   {

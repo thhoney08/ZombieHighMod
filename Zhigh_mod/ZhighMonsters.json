@@ -315,8 +315,8 @@
 	  [ "PARROT", 3 ],
       {
         "type": "gun",
-        "cooldown": 1,
-        "move_cost": 50,
+        "cooldown": 20,
+        "move_cost": 150,
         "gun_type": "feral_human_thrown_rock",
         "ammo_type": "brickZhigh",
         "no_ammo_sound": "Someone throw a rock!",
@@ -1125,9 +1125,10 @@
     "//": "Zombie faction so they don't attack a clear prop",
     "default_faction": "zombie",
     "diff": 50,
+    "speed": 9000,
     "volume": "875000 ml",
     "weight": "1400 kg",
-    "hp": 300,
+    "hp": 1000,
     "symbol": "D",
     "color": "red",
     "luminance": 200,
@@ -1141,8 +1142,10 @@
     "armor_bullet": 10,
     "regenerates": 20,
     "special_attacks": [
-		[ "SEARCHLIGHT", 1 ],
-		{ "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh" }, "cooldown": 1 }
+		[ "SEARCHLIGHT", 0 ],
+		[ "RESURRECT", 0 ],
+		[ "COMMAND_BUFF", 0 ],
+		{ "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh" }, "cooldown": 10 }
 	],
     "death_drops": { "groups": [ [ "robots", 1 ], [ "turret_searchlight", 1 ] ] },
     "on_death": { "death_function": [ "FOCUSEDBEAM" ], "spawn_mon": "mon_zombie_guardZhigh" },
@@ -2963,11 +2966,15 @@
     "copy-from": "mon_zombie_kevlar_2",
     "type": "MONSTER",
     "name": { "str": "guarding hulk zombie" },
+    "death_drops": "mon_feral_blackops_boss_commander_death_drops",
+    "path_settings": { "max_dist": 40, "allow_open_doors": true, "avoid_traps": true, "avoid_sharp": true },
+    "vision_night": 60,
+    "emit_fields": [ { "emit_id": "emit_shadow_field_darkfield", "delay": "1 s" } ],
     "special_attacks": [
       { "id": "slam", "cooldown": 12, "damage_max_instance": [ { "damage_type": "bash", "amount": 35 } ] },
       [ "SMASH", 20 ],
-      [ "STRETCH_ATTACK", 20 ],
-      [ "LONGSWIPE", 20 ],
+      [ "STRETCH_ATTACK", 2 ],
+      [ "LONGSWIPE", 2 ],
       { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 23, "armor_multiplier": 0.8 } ] }
     ]
   },

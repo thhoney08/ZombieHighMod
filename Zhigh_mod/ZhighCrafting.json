@@ -15262,5 +15262,22 @@
     "qualities": [ { "id": "SAW_M_FINE", "level": 1 }, { "id": "SCREW_FINE", "level": 1 }, { "id": "WRENCH_FINE", "level": 1 } ],
     "using": [ [ "welding_standard", 20 ] ],
     "components": [ [ [ "pipe", 2 ] ], [ [ "2x4", 2 ], [ "stick", 2 ] ], [ [ "scrap", 8 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "concreteHammerZhigh",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "time": "4 h 40 m",
+    "autolearn": true,
+    "qualities": [ [ { "id": "HAMMER", "level": 1 } ] ],
+    "tools": [ [ [ "con_mix", 25 ] ] ],
+    "components": [
+		[ [ "rebar", 1 ] ],
+		[ [ "rebar", 1 ] ],
+		[ [ "concrete", 3 ] ],
+		[ [ "water", 2 ], [ "water_clean", 2 ] ]
+	]
   }
 ]

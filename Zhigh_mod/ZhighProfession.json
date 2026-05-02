@@ -3088,11 +3088,11 @@
           "medkitRechargeV3",
           "money_bundle",
           "cig",
-          "cash_cardZhighInfinite",
-          "ref_lighter"
+          "cash_cardZhighInfinite"
         ],
         "entries": [
           { "group": "ZhighNpc_shoesAll" },
+          { "item": "ref_lighter", "charges": 50 },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
           { "item": "cash_gun", "ammo-item": "ammo_cash", "charges": 89 }
         ]
@@ -3287,7 +3287,7 @@
             "contents-item": "shoulder_strap",
             "custom-flags": [ "auto_wield" ]
           },
-          { "item": "ref_lighter", "charges": 100 },
+          { "item": "ref_lighter", "charges": 50 },
           { "item": "crash_axe", "container-item": "fireman_belt" },
           { "item": "flamethrower_fuel", "container-item": "jerrypack" }
         ]
@@ -3409,7 +3409,7 @@
     "name": "Student - Heavy Gunner",
     "description": "You were called 'heavy' or 'heavy gunner' in your airsoft group, due to your body size and the guns that you use.  There is no one calling you heavy now, but the game goes on, whether you like it or not.",
     "points": 4,
-    "skills": [ { "level": 2, "name": "gun" }, { "level": 3, "name": "rifle" }, { "level": 1, "name": "dodge" } ],
+    "skills": [ { "level": 2, "name": "gun" }, { "level": 3, "name": "launcher" } ],
     "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
@@ -3421,10 +3421,6 @@
           "socks",
           "gloves_tactical",
           "depowered_armor",
-          "bbincen",
-          "bbincen",
-          "bbincen",
-          "bbincen",
           "depowered_helmet"
         ],
         "entries": [
@@ -3458,21 +3454,56 @@
           "gloves_tactical",
           "tacvest",
           "airsoftHelm_zhigh",
-          "bb",
-          "bb",
-          "bb",
           "bb"
         ],
         "entries": [
           { "group": "ZhighNpc_shoesAll" },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
           { "item": "BBbelt_500", "ammo-item": "bb", "charges": [ 1000, 1190 ] },
-          { "item": "BBbelt_500", "ammo-item": "bb", "charges": [ 1000, 1190 ] },
           {
             "item": "bbM60",
             "ammo-item": "bb",
             "charges": [ 1000, 1190 ],
-            "contents-item": [ "shoulder_strap", "charm_skull", "charm_comp" ],
+            "contents-item": [ "shoulder_strap", "charm_comp" ],
+            "custom-flags": [ "auto_wield" ]
+          }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighInfantry",
+    "name": "Student - Infantry",
+    "description": "Compared to the 'gunners' in your airsoft group, you were the smallet.  There is no one calling you by this name now, but the game goes on, whether you like it or not.",
+    "points": 1,
+    "skills": [ { "level": 2, "name": "gun" }, { "level": 2, "name": "rifle" } ],
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "gloves_tactical",
+          "tacvest",
+          "pickelhaube",
+          "bb"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_shoesAll" },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "BBbelt_500", "ammo-item": "bb", "charges": [ 1000, 1190 ] },
+          {
+            "item": "bbMG42",
+            "ammo-item": "bb",
+            "charges": [ 1000, 1190 ],
+            "contents-item": [ "charm_runeN", "charm_skull", "charm_comp" ],
             "custom-flags": [ "auto_wield" ]
           }
         ]
@@ -3946,7 +3977,7 @@
           "e_tool",
           "mask_gas",
           "boots_steel",
-          "pickelhaube"
+          "helmet_steel"
         ],
         "entries": [
           { "group": "ZhighNpc_shoesAll" },
@@ -8518,7 +8549,7 @@
         ],
         "entries": [
 			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-			{ "item": "ref_lighter", "charges": 100 },
+          { "item": "ref_lighter", "charges": 50 },
 			{ "item": "fire_ax", "custom-flags": [ "auto_wield" ] }
         ]
       },
@@ -9573,7 +9604,7 @@
     "id": "zhighGurkha",
     "name": "Student - Gurkha",
     "description": "Better to die than be a coward—a motto you live by as you navigate the bloodstained streets.  With your trusty kukri and iron discipline, you turn the apocalypse into your own personal proving ground.",
-    "points": 2,
+    "points": 3,
     "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [
@@ -9913,6 +9944,113 @@
       },
       "male": [ "boxer_shorts", "pants_zhigh" ],
       "female": [ "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighGreaser",
+    "name": "Student - Greaser",
+    "description": "With slicked-back hair and a grease-stained white tee, you are a walking relic of a louder, faster era.  The roar of a tuned engine is the only music you trust, and you navigate the apocalypse with a switchblade in your pocket and enough attitude to stare down a horde without blinking.",
+    "points": -2,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [
+		{ "level": 1, "name": "dodge" },
+		{ "level": 1, "name": "bashing" },
+		{ "level": 1, "name": "melee" },
+		{ "level": 1, "name": "cutting" }
+	],
+    "items": {
+      "both": {
+        "items": [
+			"tshirt",
+			"jacket_leather_mod",
+			"zhigh_smart_phone",
+			"medkitRechargeV3",
+			"socks",
+			"lowtops",
+			"fancy_sunglasses",
+			"wristwatch"
+		],
+        "entries": [
+          { "item": "ref_lighter", "charges": 50 },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "coffee", "container-item": "flask_hip" },
+          { "item": "switchblade", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighRoamer",
+    "name": "Student - Roamer",
+    "description": "You traded the rules of society for the loyalty of the streets long before the world went quiet.  Dressed in a sharp suit stained by the grime of survival, you command the ruins with a cold gaze and a heavy iron, proving that even in the apocalypse, there is always a hierarchy of power.",
+    "points": -2,
+    "skills": [ { "level": 1, "name": "melee" }, { "level": 1, "name": "bashing" }, { "level": 1, "name": "dodge" } ],
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "jacket_leather_red",
+          "ruby_dental_grill",
+          "ruby_gold_earring",
+          "bandana",
+          "bandana_head"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_shoesAll" },
+          { "item": "bbmachinepistol", "ammo-item": "bbPlastic", "charges": 300, "container-item": "holster" },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "pipe", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighSnapper",
+    "name": "Student - Snapper",
+    "description": "You were the iron fist sent to collect what was owed, the shadow that loomed over every rival street corner.  Now that the old bosses are gone, you use those same brutal instincts to squeeze resources out of the ruins and crush anyone foolish enough to claim your new territory.",
+    "points": -2,
+    "skills": [ { "level": 1, "name": "melee" }, { "level": 1, "name": "cutting" }, { "level": 1, "name": "dodge" } ],
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "jacket_jean",
+          "sapphire_dental_grill",
+          "sapphire_gold_earring",
+          "paintball",
+          "hat_newsboyZhigh01",
+          "marloss_scarf"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_shoesAll" },
+          { "item": "paintballgun_pistol", "ammo-item": "paintball", "container-item": "holster", "charges": 20 },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "diveknife", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
     },
     "flags": [ "SCEN_ONLY" ]
   },

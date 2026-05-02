@@ -8454,6 +8454,29 @@
     "type": "ARMOR",
     "name": { "str": "motorcycle helmet" },
     "description": "A helmet with covers for your head and chin, leaving space in-between for you to wear goggles.  Made from sheets of carbon fiber.",
-    "material": [ "carbon_fiber" ]
+    "material": [ "carbon_fiber" ],
+    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 }
+  },
+  {
+    "id": "hat_newsboyZhigh01",
+    "copy-from": "hat_newsboy",
+    "type": "ARMOR",
+    "name": { "str": "work hat" }
+  },
+  {
+    "id": "maduvuZhigh",
+    "copy-from": "shield_wooden",
+    "type": "ARMOR",
+    "name": { "str": "maduvu" },
+    "description": "A pair of spiky horns, with a wooden plate as a shield.  It could be used both in defence and offence.",
+    "weight": "2 kg",
+    "bashing": 6,
+    "cutting": 12,
+    "extend": { "flags": [ "STAB" ] },
+    "material": [ "bone_heavy", "wood" ],
+    "covers": [ "arm_either" ],
+    "coverage": 45,
+    "encumbrance": 10,
+    "delete": { "flags": [ "RESTRICT_HANDS" ] }
   }
 ]
