@@ -533,6 +533,7 @@
     "description": "A heavy and sharp metal slug used with shotguns to give them the range capabilities of a rifle.  Not that damaging, but pretty accurate.",
     "relative": { "range": 18 },
     "damage": { "damage_type": "bullet", "amount": 35, "armor_penetration": 38, "armor_multiplier": 3 },
+    "effects": [ "COOKOFF", "DRAW_AS_LINE" ],
     "proportional": { "recoil": 1.4 }
   },
    {
@@ -967,7 +968,7 @@
     "dispersion": 0,
     "damage": { "damage_type": "heat", "amount": 6 },
     "shot": { "count": 6, "half_angle": 15 },
-    "extend": { "effects": [ "SHOT", "BLINDS_EYES", "NOGIB", "INCENDIARY" ] }
+    "extend": { "effects": [ "SHOT", "BLINDS_EYES", "NOGIB" ] }
   },
   {
     "id": "paralyze_nailZhigh",
