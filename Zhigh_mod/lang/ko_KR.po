@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zhigh_Mod\n"
-"POT-Creation-Date: 2026-05-02 17:16-0500\n"
+"POT-Creation-Date: 2026-05-15 05:13-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -124,6 +124,10 @@ msgstr[0] "잉크"
 #: .\ZhighAmmotypes.json
 msgid "melta ammo"
 msgstr "멜타 탄약"
+
+#: .\ZhighAmmotypes.json
+msgid "components"
+msgstr "재료들"
 
 #: .\ZhighArmor.json
 msgid "high school blazer"
@@ -1252,8 +1256,6 @@ msgstr[0] "원자력 광 증폭 고글 (켜짐)"
 #. (on)'}.
 #. ~ Use action menu_text for {'str_pl': 'pairs of toy night vision goggles
 #. (on)', 'str': 'pair of toy night vision goggles (on)'}.
-#. ~ Use action menu_text for {'str': 'atomic mining helmet (on)', 'str_pl':
-#. 'atomic mining helmets (on)'}.
 #. ~ Use action menu_text for {'str': 'power armor jetpack (on)', 'str_pl':
 #. 'power armor jetpacks (on)'}.
 #. ~ Use action menu_text for {'str': 'fan (on)', 'str_pl': 'fans (on)'}.
@@ -1687,8 +1689,6 @@ msgstr[0] "헬리콥터 조종사의 헤드셋 (켜짐)"
 
 #. ~ Use action msg for {'str_sp': "helicopter pilot's earmuffs (on)"}.
 #. ~ Use action msg for {'str': 'jetpack (on)', 'str_pl': 'jetpacks (on)'}.
-#. ~ Use action msg for {'str': 'atomic mining helmet (on)', 'str_pl': 'atomic
-#. mining helmets (on)'}.
 #. ~ Use action msg for {'str': 'power armor jetpack (on)', 'str_pl': 'power
 #. armor jetpacks (on)'}.
 #: .\ZhighArmor.json
@@ -3690,32 +3690,50 @@ msgid "A shield made out of superalloy armor plating with handles welded on.  It
 msgstr "초합금 장갑판에 손잡이를 용접해 붙인 방패입니다.  평범한 중세 방패에 비해 무겁고 결코 잘 만들어졌다고는 할 수 없지만, 그래도 쓸 수는 있습니다.  큼지막하지만, 준수한 보호도를 제공합니다."
 
 #: .\ZhighArmor.json
-msgid "atomic mining helmet"
-msgid_plural "atomic mining helmets"
-msgstr[0] "원자력 채광용 헬멧"
+msgid "atomic mining helmet (covered)"
+msgid_plural "atomic mining helmet (covered)s"
+msgstr[0] "원자력 채광용 헬멧 (덮개 덮음)"
 
-#. ~ Use action msg for {'str': 'atomic mining helmet'}.
+#. ~ Use action menu_text for {'str': 'atomic mining helmet (covered)'}.
+#. ~ Use action menu_text for {'str': 'panda blindfold (covered)', 'str_pl':
+#. 'panda blindfolds (covered)'}.
+#. ~ Use action menu_text for {'str': 'pig blindfold (covered)', 'str_pl':
+#. 'pig blindfolds (covered)'}.
 #: .\ZhighArmor.json
-msgid "You turn the helmet on."
-msgstr "헬멧의 전원을 켰다."
+msgid "Open cover"
+msgstr "눈 드러내기"
 
-#. ~ Use action need_charges_msg for {'str': 'atomic mining helmet'}.
+#. ~ Use action msg for {'str': 'atomic mining helmet (covered)'}.
 #: .\ZhighArmor.json
-msgid "The helmet's batteries are dead."
-msgstr "헬멧의 배터리가 다 닳았다."
+msgid "You open the helmet's cover."
+msgstr "헬멧 덮개를 열었다."
 
-#. ~ Description for {'str': 'atomic mining helmet'}
+#. ~ Description for {'str': 'atomic mining helmet (covered)'}
 #: .\ZhighArmor.json
 msgid "This is a mining helmet with a heavy-duty LED flashlight powered by the magic of nuclear decay, focused for more usable brightness."
 msgstr "마법의 원자력 힘으로 작동하는 원자력 채광용 헬멧으로, 사용 가능한 밝기를 선보입니다."
 
 #: .\ZhighArmor.json
-msgid "atomic mining helmet (on)"
-msgid_plural "atomic mining helmets (on)"
-msgstr[0] "원자력 채광용 헬멧 (켜짐)"
+msgid "atomic mining helmet"
+msgid_plural "atomic mining helmets"
+msgstr[0] "원자력 채광용 헬멧"
 
-#. ~ Description for {'str': 'atomic mining helmet (on)', 'str_pl': 'atomic
-#. mining helmets (on)'}
+#. ~ Use action menu_text for {'str': 'atomic mining helmet', 'str_pl':
+#. 'atomic mining helmets'}.
+#. ~ Use action menu_text for {'str': 'panda blindfold'}.
+#. ~ Use action menu_text for {'str': 'pig blindfold'}.
+#: .\ZhighArmor.json
+msgid "Close cover"
+msgstr "눈 가리기"
+
+#. ~ Use action msg for {'str': 'atomic mining helmet', 'str_pl': 'atomic
+#. mining helmets'}.
+#: .\ZhighArmor.json
+msgid "You close the helmet's cover."
+msgstr "헬멧 덮개를 닫았다."
+
+#. ~ Description for {'str': 'atomic mining helmet', 'str_pl': 'atomic mining
+#. helmets'}
 #: .\ZhighArmor.json
 msgid "This is a mining helmet with a heavy-duty LED flashlight powered by the magic of nuclear decay, focused for more usable brightness.  The light is turned on.  Use it to turn it off."
 msgstr "마법의 원자력 힘으로 작동하는 원자력 채광용 헬멧으로, 사용 가능한 밝기를 선보입니다.  현재 불이 켜져 있습니다.  다시 사용해서 불을 끌 수 있습니다."
@@ -4626,14 +4644,6 @@ msgid "panda blindfold (covered)"
 msgid_plural "panda blindfolds (covered)"
 msgstr[0] "팬더 수면안대 (눈 가림)"
 
-#. ~ Use action menu_text for {'str': 'panda blindfold (covered)', 'str_pl':
-#. 'panda blindfolds (covered)'}.
-#. ~ Use action menu_text for {'str': 'pig blindfold (covered)', 'str_pl':
-#. 'pig blindfolds (covered)'}.
-#: .\ZhighArmor.json
-msgid "Open cover"
-msgstr "눈 드러내기"
-
 #. ~ Use action msg for {'str': 'panda blindfold (covered)', 'str_pl': 'panda
 #. blindfolds (covered)'}.
 #. ~ Use action msg for {'str': 'pig blindfold (covered)', 'str_pl': 'pig
@@ -4652,12 +4662,6 @@ msgstr "수면안대 안 판다.  사용하면 안대를 내려 눈을 가립니
 msgid "panda blindfold"
 msgid_plural "panda blindfolds"
 msgstr[0] "팬더 수면안대"
-
-#. ~ Use action menu_text for {'str': 'panda blindfold'}.
-#. ~ Use action menu_text for {'str': 'pig blindfold'}.
-#: .\ZhighArmor.json
-msgid "Close cover"
-msgstr "눈 가리기"
 
 #. ~ Use action msg for {'str': 'panda blindfold'}.
 #. ~ Use action msg for {'str': 'pig blindfold'}.
@@ -8689,16 +8693,6 @@ msgid_plural "OA-93s"
 msgstr[0] "OA-93"
 
 #: .\ZhighItemRemake.json
-msgid "bolas"
-msgid_plural "bolases"
-msgstr[0] "볼라"
-
-#: .\ZhighItemRemake.json
-msgid "net"
-msgid_plural "nets"
-msgstr[0] "그물"
-
-#: .\ZhighItemRemake.json
 msgid "shortened barrel"
 msgid_plural "shortened barrels"
 msgstr[0] "단축 총열"
@@ -9147,6 +9141,11 @@ msgstr[0] "플레셰트 탄환용기"
 msgid "bearing shotcanister"
 msgid_plural "bearing shotcanisters"
 msgstr[0] "베어링 탄환용기"
+
+#. ~ Description for {'str': 'bearing shotcanister'}
+#: .\ZhighItemRemake.json
+msgid "This small paper canister resembling a crude shotshell is filled to the brim with a bearing, stabilizing its flight pattern a tiny bit."
+msgstr "산탄을 조잡하게 본따 만들어진 이 작은 종이 용기는 수제 베어링이 들어가 있어 탄도를 조금 더 안정적으로 만듭니다."
 
 #: .\ZhighItemRemake.json
 msgid "chainsaw lajatang (off)"
@@ -15304,6 +15303,15 @@ msgstr "머리색: 민트색"
 #: .\ZhighMutations.json
 msgid "You have mint hair."
 msgstr "당신의 머리카락은 민트색입니다."
+
+#: .\ZhighMutations.json
+msgid "Hair color: clear"
+msgstr "머리 색깔: 투명"
+
+#. ~ Description for {'str': 'Hair color: clear'}
+#: .\ZhighMutations.json
+msgid "You have clear hair... somehow?"
+msgstr "당신의 머리카락은 모종의 이유로... 투명색입니다?"
 
 #: .\ZhighMutations.json
 msgid "Complete Combat Training"
@@ -21930,6 +21938,36 @@ msgid ""
 msgstr ""
 "당신은 빚을 받아오기 위해 파견된 철권이자, 모든 경쟁 구석구석을 위협하던 그림자였습니다.  이제 옛 보스들이 사라진 지금, 당신은 그 잔혹한 본능을 그대로 발휘해 폐허 속에서 자원을 쥐어짜내고, 당신의 새로운 영토를 차지하려 드는 "
 "어리석은 자들을 무자비하게 짓밟습니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Fragger"
+msgstr "학생 - 프래거"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Fragger"
+msgstr "학생 - 프래거"
+
+#. ~ Profession (male Student - Fragger) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"You are a master of high-pressure devastation, turning industrial scrap into a lethal instrument of short-range ruin.  With your custom pneumatic shotgun hissed and ready, you wait for the perfect moment to release a storm "
+"of jagged metal that shreds anything caught in the blast."
+msgstr ""
+"당신은 고압 파괴의 달인으로, 산업 폐기물을 근거리에서 모든 것을 초토화시키는 치명적인 무기로 탈바꿈시킵니다.  쉭쉭 소리를 내며 발사 준비가 완료된 맞춤형 공압 산탄총을 손에 쥔 채, 폭발에 휘말린 모든 것을 산산조각 내는 날카로"
+"운 금속의 폭풍을 퍼부을 완벽한 순간을 기다립니다."
+
+#. ~ Profession (female Student - Fragger) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"You are a master of high-pressure devastation, turning industrial scrap into a lethal instrument of short-range ruin.  With your custom pneumatic shotgun hissed and ready, you wait for the perfect moment to release a storm "
+"of jagged metal that shreds anything caught in the blast."
+msgstr ""
+"당신은 고압 파괴의 달인으로, 산업 폐기물을 근거리에서 모든 것을 초토화시키는 치명적인 무기로 탈바꿈시킵니다.  쉭쉭 소리를 내며 발사 준비가 완료된 맞춤형 공압 산탄총을 손에 쥔 채, 폭발에 휘말린 모든 것을 산산조각 내는 날카로"
+"운 금속의 폭풍을 퍼부을 완벽한 순간을 기다립니다."
 
 #: .\ZhighProfession.json
 msgctxt "profession_male"
@@ -43188,6 +43226,17 @@ msgid "A sinister-looking shotgun retrofitted with reinforced tubing and a corro
 msgstr "강화 튜브와 부식성인 약실로 개조된 불길해 보이는 산탄총입니다.  탄환과 압력이 가해진 산성액이 섞인 부식성 물질을 발사하여 충격 시 살과 천, 심지어 가벼운 갑옷까지 뚫고 들어갑니다."
 
 #: .\ZhighWeapons\ZhighRanged.json
+msgid "cyclops"
+msgid_plural "cyclopss"
+msgstr[0] "사이클롭스"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A crude yet terrifying single-shot pneumatic powerhouse that stares down its prey through a solitary, oversized barrel.  It trades the luxury of a magazine for raw atmospheric pressure, delivering a thunderous blast of "
+"shrapnel that obliterates anything in its singular field of vision."
+msgstr "거칠지만 무시무시한 단발식 공압식 화기로, 거대하게 솟아오른 총열 하나를 통해 사냥감을 노려봅니다.  탄창의 편리함을 포기하고 순수한 기압을 활용하며, 시야에 들어오는 모든 것을 산산조각 내는 천둥 같은 파편을 뿜어냅니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
 msgid "AAI QSPR"
 msgid_plural "AAI QSPR"
 msgstr[0] "AAI QSPR"
@@ -43825,6 +43874,11 @@ msgid ""
 msgstr ""
 "스페인 공학의 걸작이라 할 수 있는 이 경기관총은 전설적인 MG42의 맹렬한 사격 속도와 현대적이고 콤팩트한 디자인을 결합했습니다.  롤러 지연 블로우백 시스템을 통해 놀라운 조준 안정성을 유지하며 빗발치는 총탄을 쏟아내므로, 종말의 "
 "전선이 끊임없이 변동하는 상황에서도 기동성을 유지하며 적 무리를 제압하는 데 이상적인 선택입니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "junk jet"
+msgid_plural "junk jets"
+msgstr[0] "정크 젯"
 
 #: .\ZhighWeapons\ZhighSpells.json
 msgid "Summon fireball"
@@ -47179,6 +47233,20 @@ msgstr[0] "베테랑 생존자 좀비"
 #: .\ZhighZeds\zed_survivor.json
 msgid "This zombie once was a survivor like you, and a pretty good one at that.  Unfortunately they didn't make it, despite the custom-made, heavy armor pieces they wear and the gear that they are still lugging around."
 msgstr "한때 당신과 같은 생존자였으며 꽤 잘 살아온 것 같습니다.  불행히도, 수제작한 무거운 갑옷 쪼가리와 여전히 짊어지고 다니는 풍족한 장비에도 불구하고 안일사 당한 것 같습니다."
+
+#~ msgid "You turn the helmet on."
+#~ msgstr "헬멧의 전원을 켰다."
+
+#~ msgid "The helmet's batteries are dead."
+#~ msgstr "헬멧의 배터리가 다 닳았다."
+
+#~ msgid "bolas"
+#~ msgid_plural "bolases"
+#~ msgstr[0] "볼라"
+
+#~ msgid "net"
+#~ msgid_plural "nets"
+#~ msgstr[0] "그물"
 
 #~ msgctxt "scen_desc_male"
 #~ msgid "You were at school when the principal and ate one of the students, and before you knew it the entire campus was overriden by monsters.  Guess school's out forever."
