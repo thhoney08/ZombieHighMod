@@ -315,7 +315,7 @@
 	  [ "PARROT", 3 ],
       {
         "type": "gun",
-        "cooldown": 20,
+        "cooldown": 10,
         "move_cost": 150,
         "gun_type": "feral_human_thrown_rock",
         "ammo_type": "brickZhigh",
@@ -334,7 +334,8 @@
     ],
     "starting_ammo": { "brickZhigh": 4 },
     "zombify_into": "mon_zombie",
-    "death_function": [ "DISAPPEAR" ],
+    "death_function": [ "MELT" ],
+    "monster_weapon": "ZhighGuardWeaponGroups",
     "death_drops": "mon_feral_human_zhigh_death_drops_pipe",
     "flags": [
       "SEES",
@@ -377,6 +378,16 @@
     "special_attacks": [
 	  [ "PARROT", 3 ],
 	  { "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh" }, "cooldown": 45 }
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "HUMAN",
+      "CAN_OPEN_DOORS"
     ]
   },
   {
@@ -395,12 +406,12 @@
       {
         "type": "gun",
         "cooldown": 10,
-        "move_cost": 150,
+        "move_cost": 30,
         "gun_type": "bbMp5",
         "ammo_type": "bb",
         "fake_skills": [ [ "gun", 5 ], [ "smg", 5 ] ],
         "fake_dex": 10,
-        "ranges": [ [ 0, 16, "BURST" ] ],
+        "ranges": [ [ 0, 16, "DEFAULT" ] ],
         "require_targeting_npc": true,
         "require_targeting_monster": true,
         "laser_lock": false,
@@ -411,6 +422,16 @@
         "targeting_volume": 80,
         "no_ammo_sound": "a chk!"
       }
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "HUMAN",
+      "CAN_OPEN_DOORS"
     ]
   },
   {
@@ -430,6 +451,16 @@
 	  [ "PARROT", 3 ],
 	  [ "SEARCHLIGHT", 1 ],
 	  { "id": "slam" }
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "HUMAN",
+      "CAN_OPEN_DOORS"
     ]
   },
   {
@@ -2969,10 +3000,9 @@
     "death_drops": "mon_feral_blackops_boss_commander_death_drops",
     "path_settings": { "max_dist": 40, "allow_open_doors": true, "avoid_traps": true, "avoid_sharp": true },
     "vision_night": 60,
-    "emit_fields": [ { "emit_id": "emit_shadow_field_darkfield", "delay": "1 s" } ],
     "special_attacks": [
       { "id": "slam", "cooldown": 12, "damage_max_instance": [ { "damage_type": "bash", "amount": 35 } ] },
-      [ "SMASH", 20 ],
+      [ "SMASH", 2 ],
       [ "STRETCH_ATTACK", 2 ],
       [ "LONGSWIPE", 2 ],
       { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 23, "armor_multiplier": 0.8 } ] }

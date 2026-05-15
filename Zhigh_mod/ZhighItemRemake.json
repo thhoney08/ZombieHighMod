@@ -870,6 +870,7 @@
   	[ "BOIL", 5 ],
   	[ "COOK", 5 ],
   	[ "GRIND", 5 ],
+  	[ "HV_INSULATION", 5 ],
   	[ "VISE", 5 ]
     ],
 	"flags": [
@@ -2202,22 +2203,35 @@
     "durability": 8
   },
   {
-    "id": "bolas",
-    "copy-from": "bolas",
-    "type": "AMMO",
-    "category": "weapons",
-    "name": { "str": "bolas", "str_pl": "bolases" },
-    "count": 10,
-    "stack_size": 10
+    "type": "recipe",
+    "result": "bolas",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "survival",
+    "skills_required": [ "fabrication", 2 ],
+    "difficulty": 2,
+    "charges": 10,
+    "time": "10 m",
+    "reversible": false,
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "rope_natural_short", 3, "LIST" ] ], [ [ "rock", 3 ] ] ]
   },
   {
-    "id": "net",
-    "copy-from": "net",
-    "type": "AMMO",
-    "category": "weapons",
-    "name": { "str": "net" },
-    "count": 10,
-    "stack_size": 10
+    "type": "recipe",
+    "result": "net",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "survival",
+    "skills_required": [ "tailor", 2 ],
+    "difficulty": 2,
+    "charges": 10,
+    "time": "35 m",
+    "reversible": false,
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 40 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "cordage", 32, "LIST" ] ], [ [ "rock", 8 ] ] ]
   },
   {
     "id": "barrel_small",
@@ -3089,28 +3103,60 @@
     "type": "AMMO",
     "name": { "str": "scrap shotcanister" },
     "copy-from": "shotcanister_scrap",
-    "shot": { "count": 7, "half_angle": 35 }
+    "count": 20
   },
   {
     "id": "shotcanister_pebble",
     "type": "AMMO",
     "name": { "str": "pebble shotcanister" },
     "copy-from": "shotcanister_pebble",
-    "shot": { "count": 9, "half_angle": 25 }
+    "shot": { "count": 9, "half_angle": 25 },
+    "count": 20
   },
   {
     "id": "shotcanister_flechette",
     "type": "AMMO",
     "name": { "str": "flechette shotcanister" },
     "copy-from": "shotcanister_flechette",
-    "shot": { "count": 15, "half_angle": 15 }
+    "shot": { "count": 15, "half_angle": 15 },
+    "count": 20
   },
   {
-    "id": "shotcanister_bearing",
     "type": "AMMO",
+    "id": "shotcanister_bearing",
+    "price": "10 USD",
+    "price_postapoc": "250 cent",
     "name": { "str": "bearing shotcanister" },
-    "copy-from": "shotcanister_bearing",
-    "range": 12
+    "symbol": "=",
+    "color": "green",
+    "description": "This small paper canister resembling a crude shotshell is filled to the brim with a bearing, stabilizing its flight pattern a tiny bit.",
+    "material": [ "steel" ],
+    "volume": "250 ml",
+    "weight": "55 g",
+    "bashing": 2,
+    "cutting": 1,
+    "ammo_type": "shotcanister",
+    "looks_like": "shotcanister_flechette",
+    "range": 12,
+    "damage": { "damage_type": "bullet", "amount": 16, "armor_penetration": 2, "armor_multiplier": 2 },
+    "dispersion": 100,
+    "loudness": 0,
+    "count": 20
+  },
+  {
+    "type": "recipe",
+    "result": "shotcanister_bearing",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_SHOT",
+    "skill_used": "fabrication",
+    "skills_required": [ "gun", 1 ],
+    "difficulty": 3,
+    "time": "2 m",
+    "autolearn": true,
+    "charges": 1,
+    "reversible": true,
+    "book_learn": [ [ "recipe_bullets", 2 ], [ "manual_shotgun", 2 ] ],
+    "components": [ [ [ "bearing", 20 ] ], [ [ "paper", 2 ] ] ]
   },
   {
     "id": "cs_lajatang_off",

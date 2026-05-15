@@ -600,7 +600,7 @@
     "types": [ "hair_style", "hair_color" ]
   },
   {
-    "id": "hair_dead_eye_green",
+    "id": "hair_dead_eye",
     "type": "mutation",
     "name": { "str": "Hair: green long, ponytail" },
     "description": "Green hair style, with a ponytail.",
@@ -612,7 +612,7 @@
     "types": [ "hair_style", "hair_color" ]
   },
   {
-    "id": "hair_mint_crewcut_white",
+    "id": "hair_mint_crewcut",
     "type": "mutation",
     "name": { "str": "Hair: mint, crew-cut" },
     "description": "Crewcut mint hair style.",
@@ -1583,6 +1583,18 @@
     "type": "mutation",
     "name": { "str": "Hair color: mint" },
     "description": "You have mint hair.",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [ "hair_color" ]
+  },
+  {
+    "id": "hair_clear",
+    "type": "mutation",
+    "name": { "str": "Hair color: clear" },
+    "description": "You have clear hair... somehow?",
     "points": 0,
     "starting_trait": true,
     "valid": false,

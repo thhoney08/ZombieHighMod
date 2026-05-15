@@ -1253,7 +1253,8 @@
     "items": {
       "both": {
         "items": [
-          "shorts",
+          "under_armor_shorts",
+          "b_shorts",
           "gloves_wraps",
           "luchador_maskZhigh",
           "mouthpiece",
@@ -3323,11 +3324,18 @@
           "cowboy_hat_zhigh",
           "bullwhip",
           "canteen",
+          "paintball_beanb",
           "trenchcoat",
           "wristwatch"
         ],
         "entries": [
           { "group": "ZhighNpc_shoesAll" },
+          {
+            "item": "paintballgun_revolver",
+            "ammo-item": "paintball_beanb",
+            "charges": 5,
+			"container-item": "holster"
+          },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
           { "item": "kukri", "container-item": "scabbard" }
         ]
@@ -6304,8 +6312,8 @@
     "items": {
       "both": {
         "items": [
-          "dress_shirt_zhigh",
-          "blazer_zhigh",
+          "technician_shirt_gray",
+          "coat_lab",
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
@@ -6682,6 +6690,7 @@
           "gloves_fingerless",
           "attached_ear_plugs_off",
           "matches",
+          "bondage_mask",
           "mask_CombatFake"
         ],
         "entries": [
@@ -8430,7 +8439,6 @@
           "wristwatch"
         ],
         "entries": [
-          { "group": "ZhighNpc_masks" },
           { "item": "bandolier_pistol", "contents-group": "bandolier_zhigh_gunslinger" },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
           { "item": "machete_gimmick", "custom-flags": [ "auto_wield" ] },
@@ -9509,11 +9517,11 @@
     "items": {
       "both": {
         "items": [
-          "tank_top",
+          "undershirt",
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "shortbow",
-          "runner_bag",
+          "legrig",
           "bandana_head",
           "socks"
         ],
@@ -9531,8 +9539,8 @@
           }
         ]
       },
-      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
-      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+      "male": [ "boxer_shorts", "pants_zhigh" ],
+      "female": [ "bra", "panties", "skirt_zhigh" ]
     },
     "flags": [ "SCEN_ONLY" ]
   },
@@ -10047,6 +10055,47 @@
           { "item": "paintballgun_pistol", "ammo-item": "paintball", "container-item": "holster", "charges": 20 },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
           { "item": "diveknife", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighFragger",
+    "name": "Student - Fragger",
+    "description": "You are a master of high-pressure devastation, turning industrial scrap into a lethal instrument of short-range ruin.  With your custom pneumatic shotgun hissed and ready, you wait for the perfect moment to release a storm of jagged metal that shreds anything caught in the blast.",
+    "points": 2,
+    "skills": [ { "level": 2, "name": "gun" }, { "level": 2, "name": "shotgun" } ],
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+			"dress_shirt_zhigh",
+			"zhigh_smart_phone",
+			"medkitRechargeV3",
+			"jeepcapZhigh",
+			"socks",
+			"shotcanister_bearing",
+			"shotcanister_bearing",
+			"shotcanister_scrap",
+			"shotcanister_scrap",
+			"wristwatch"
+		],
+        "entries": [
+          { "group": "ZhighNpc_coat" },
+          { "group": "ZhighNpc_shoesAll" },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          {
+            "group": "shotcanisterZhigh_items",
+            "ammo-item": "shotcanister_bearing",
+            "charges": 2,
+            "contents-item": "shoulder_strap",
+            "custom-flags": [ "auto_wield" ]
+          }
         ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
