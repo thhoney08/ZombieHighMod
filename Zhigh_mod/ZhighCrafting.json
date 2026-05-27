@@ -15266,6 +15266,37 @@
   },
   {
     "type": "recipe",
+    "result": "bolas",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "survival",
+    "skills_required": [ "fabrication", 2 ],
+    "difficulty": 2,
+    "charges": 10,
+    "time": "10 m",
+    "reversible": false,
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "rope_natural_short", 3, "LIST" ] ], [ [ "rock", 3 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "net",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "survival",
+    "skills_required": [ "tailor", 2 ],
+    "difficulty": 2,
+    "charges": 10,
+    "time": "35 m",
+    "reversible": false,
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 40 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "cordage", 32, "LIST" ] ], [ [ "rock", 8 ] ] ]
+  },
+  {
+    "type": "recipe",
     "result": "concreteHammerZhigh",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_TOOLS",
@@ -15280,5 +15311,18 @@
 		[ [ "concrete", 3 ] ],
 		[ [ "water", 2 ], [ "water_clean", 2 ] ]
 	]
+  },
+  {
+    "type": "recipe",
+    "result": "splittingMaul",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "difficulty": 5,
+    "time": "6 h",
+    "autolearn": true,
+    "using": [ [ "blacksmithing_intermediate", 24 ], [ "steel_standard", 6 ] ],
+    "book_learn": [ [ "textbook_fabrication", 4 ] ],
+    "components": [ [ [ "wood_structural_small", 3, "LIST" ] ] ]
   }
 ]

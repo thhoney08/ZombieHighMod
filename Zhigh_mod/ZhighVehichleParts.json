@@ -433,5 +433,20 @@
       { "item": "splinter", "count": [ 15, 30 ] }
     ],
     "damage_reduction": { "all": 10 }
+  },
+  {
+    "id": "mounted_3in_smoothbore",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": { "str": "mounted 3-inch smoothbore" },
+    "item": "cannon_3in_smoothbore",
+    "looks_like": "mounted_3in_ordnance_rifle",
+    "folded_volume": "0 ml",
+    "color": "dark_gray",
+    "broken_color": "dark_gray",
+    "breaks_into": [ { "item": "scrap", "count": 72 }, { "item": "steel_chunk", "count": 30 }, { "item": "steel_lump", "count": 10 } ],
+    "requirements": { "install": { "skills": [ [ "mechanics", 3 ], [ "launcher", 1 ] ] }, "removal": { "skills": [ [ "mechanics", 2 ] ] } },
+    "description": "A light (by artillery standards) smoothbore cannon widely used in the American Civil War, noted for its reliability.",
+    "delete": { "flags": [ "FOLDABLE" ] }
   }
 ]

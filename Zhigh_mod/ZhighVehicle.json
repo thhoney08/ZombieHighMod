@@ -117,17 +117,39 @@
   {
     "id": "bastion_fort_vehicles",
     "type": "vehicle_group",
-    "vehicles": [ [ "cannon_3in", 80 ], [ "gatling_carriage", 10 ], [ "ballistaVehZhigh", 10 ], [ "ballista_mount", 25 ] ]
+    "vehicles": [
+		[ "cannon_3in", 80 ],
+		[ "cannon_3in_sbZhigh", 80 ],
+		[ "gatling_carriage", 10 ],
+		[ "ballistaVehZhigh", 10 ],
+		[ "ballista_mount", 25 ],
+		[ "polybolos_mount", 25 ]
+	]
   },
   {
     "id": "museum_vehicles",
     "type": "vehicle_group",
-    "vehicles": [ [ "cannon_3in", 30 ], [ "gatling_carriage", 30 ], [ "ballistaVehZhigh", 30 ], [ "ballista_mount", 25 ] ]
+    "vehicles": [
+		[ "cannon_3in", 30 ],
+		[ "cannon_3in_sbZhigh", 30 ],
+		[ "gatling_carriage", 30 ],
+		[ "ballistaVehZhigh", 30 ],
+		[ "ballista_mount", 25 ],
+		[ "polybolos_mount", 25 ]
+	]
   },
   {
     "id": "military_display_vehicles",
     "type": "vehicle_group",
-    "vehicles": [ [ "whillys_mb_display", 65 ], [ "cannon_3in", 20 ], [ "gatling_carriage", 10 ], [ "ballistaVehZhigh", 10 ], [ "ballista_mount", 25 ] ]
+    "vehicles": [
+		[ "whillys_mb_display", 65 ],
+		[ "cannon_3in", 20 ],
+		[ "cannon_3in_sbZhigh", 20 ],
+		[ "gatling_carriage", 10 ],
+		[ "ballistaVehZhigh", 10 ],
+		[ "ballista_mount", 25 ],
+		[ "polybolos_mount", 25 ]
+	]
   },
   {
     "id": "car_escape",
@@ -851,5 +873,21 @@
       { "x": -1, "y": 1, "parts": [ "frame_horizontal", "hoverBike_rotors" ] }
     ],
     "items": [ { "x": -1, "y": 0, "chance": 10, "items": [ "helmet_motor" ] } ]
+  },
+  {
+    "id": "cannon_3in_sbZhigh",
+    "type": "vehicle",
+    "name": "cannon",
+    "blueprint": [
+      [ " H" ],
+      [ "-U" ],
+      [ " H" ]
+    ],
+    "parts": [
+      { "x": 0, "y": 0, "parts": [ "frame_wood_cross", "turret_mount_manual_wood", "mounted_3in_smoothbore" ] },
+      { "x": 0, "y": -1, "parts": [ "frame_wood_horizontal", "wheel_wood_b" ] },
+      { "x": 0, "y": 1, "parts": [ "frame_wood_horizontal", "wheel_wood_b" ] },
+      { "x": -1, "y": 0, "parts": [ "frame_wood_handle" ] }
+    ]
   }
 ]

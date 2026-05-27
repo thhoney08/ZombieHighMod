@@ -2931,13 +2931,14 @@
   {
     "id": "souWesterZhigh",
     "repairs_like": "hood_rain",
-    "copy-from": "hood_rain",
+    "copy-from": "hat_boonie",
     "looks_like": "hat_boonie",
     "type": "ARMOR",
     "name": { "str": "sou'wester" },
     "description": "A waterproof hat made to be worn in bad weather.  Provides extra protection from rain.",
     "weight": "160 g",
     "volume": "550 ml",
+    "covers": [ "head" ],
     "material": [ "gutskin", "plastic", "cotton" ],
     "flags": [ "WATERPROOF", "OVERSIZE", "SUN_GLASSES" ]
   },
@@ -6090,6 +6091,7 @@
   },
   {
     "id": "helmet_GignZhigh_raised",
+    "looks_like": "helmet_riot_raised",
     "type": "TOOL_ARMOR",
     "category": "clothing",
     "repairs_like": "helmet_riot",
@@ -7643,11 +7645,11 @@
     "material_thickness": 1,
     "use_action": {
       "type": "holster",
-      "holster_prompt": "Sheath knife",
+      "holster_prompt": "Sheath axe",
       "holster_msg": "You sheath your %s",
       "multi": 5,
-      "min_volume": "250 ml",
-      "max_volume": "750 ml",
+      "min_volume": "700 ml",
+      "max_volume": "751 ml",
       "draw_cost": 50,
       "flags": [ "SHEATH_AXE", "BELT_CLIP" ]
     },
@@ -8483,5 +8485,19 @@
     "coverage": 45,
     "encumbrance": 10,
     "delete": { "flags": [ "RESTRICT_HANDS" ] }
+  },
+  {
+    "id": "badge_shotcanisterZhigh",
+    "copy-from": "badge_abstract",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "shotcanister ammo belt" },
+    "description": "A mysterious ammo belt which creates ammos of shotcanisters.",
+    "material": [ "gold" ],
+    "price_postapoc": "5 USD",
+    "ammo": "shotcanister",
+    "max_charges": 50,
+    "proportional": { "weight": 2 },
+    "relic_data": { "recharge_scheme": [ { "type": "time", "interval": "1 m", "rate": 10 } ] },
+    "extend": { "flags": [ "ONLY_ONE" ] }
   }
 ]

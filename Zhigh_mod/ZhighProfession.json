@@ -132,7 +132,7 @@
     "id": "zhighMedic",
     "name": "Student - Medic",
     "description": "Before the world ended, you had a kind heart and loved to help other people, both in speaking and healing.  Now that the world has gone to ashes, you need to survive using your skills.",
-    "points": -2,
+    "points": -1,
     "skills": [ { "level": 2, "name": "firstaid" } ],
     "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "PROF_MED" ],
@@ -405,7 +405,7 @@
     "id": "zhighViking",
     "name": "Student - Warrior",
     "description": "You were a LARPer - an actor with a mix of a comedian.  The major problem is that there is no more LARPing anymore.  For the Allfather, for Vahalla.",
-    "points": 3,
+    "points": 1,
     "skills": [
       { "level": 2, "name": "melee" },
       { "level": 2, "name": "cutting" },
@@ -1211,7 +1211,7 @@
     "id": "zhighBrawler",
     "name": "Student - Brawler",
     "description": "You always liked the Korean gangster dramas - suit, tie, and fisticuffs.  As you bought your fedora, the world ended and the zombies got loose.  The age of wild men has started.",
-    "points": 3,
+    "points": 2,
     "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "unarmed" }, { "level": 2, "name": "dodge" } ],
@@ -2672,7 +2672,7 @@
     "id": "zhighSlasher",
     "name": "Student - Slasher",
     "description": "You always liked slasher and zombie movies.  As this event happened, you grab your mask and your weapon - a machete, and got ready to slash those zombies.  Do you like hurting other zombies?  Cause you should.",
-    "points": 2,
+    "points": -1,
     "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" } ],
@@ -2690,7 +2690,7 @@
         "entries": [
           { "group": "ZhighNpc_shoesAll" },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-          { "item": "katana_hm", "custom-flags": [ "auto_wield" ] },
+          { "item": "survivor_machete", "custom-flags": [ "auto_wield" ] },
           { "item": "sheath", "contents-item": "knife_hunting" }
         ]
       },
@@ -3237,8 +3237,6 @@
           "medkitRechargeV3",
           "socks",
           "paintball",
-          "paintball",
-          "paintball",
           "mbag",
           "boots_steel",
           "bandana_head",
@@ -3249,7 +3247,7 @@
           {
             "item": "paintballG_M60",
             "ammo-item": "paintball",
-            "charges": 250,
+            "charges": 150,
             "contents-item": [ "shoulder_strap", "charm_hglass", "charm_eyeball", "charm_comp" ],
             "custom-flags": [ "auto_wield" ]
           }
@@ -3434,7 +3432,6 @@
         "entries": [
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
           { "item": "BBbelt_500", "ammo-item": "bbincen", "charges": [ 1100, 1190 ] },
-          { "item": "BBbelt_500", "ammo-item": "bbincen", "charges": [ 1100, 1190 ] },
           { "item": "bbM134", "ammo-item": "bbincen", "charges": [ 900, 1190 ], "custom-flags": [ "auto_wield" ] }
         ]
       },
@@ -3467,7 +3464,6 @@
         "entries": [
           { "group": "ZhighNpc_shoesAll" },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-          { "item": "BBbelt_500", "ammo-item": "bb", "charges": [ 1000, 1190 ] },
           {
             "item": "bbM60",
             "ammo-item": "bb",
@@ -4676,7 +4672,7 @@
     "name": "Student - Sapper",
     "description": "You literally grabbed anything and now you are the one who builds things and destroys things.",
     "points": 0,
-    "skills": [ { "level": 2, "name": "fabrication" } ],
+    "skills": [ { "level": 2, "name": "fabrication" }, { "level": 1, "name": "throw" } ],
     "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "items": {
@@ -6696,7 +6692,7 @@
         "entries": [
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
           { "group": "ZhighNadeGroups" },
-          { "group": "ZhighTraps" },
+          { "group": "ZhighNadeGroups" },
           { "item": "sheath", "contents-item": "knife_YakutZhigh" },
           { "item": "axe_ring", "contents-item": "axe_combat" },
           { "item": "suicidesoda", "container-item": "flask_hip" },
@@ -8552,13 +8548,13 @@
           "molotov",
           "molotov",
           "molotov",
-          "molotov",
           "boots_bunker"
         ],
         "entries": [
-			{ "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+		  { "group": "flaregunZhigh_items", "ammo-item": "signal_flare", "container-item": "holster", "charges": 1 },
+		  { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
           { "item": "ref_lighter", "charges": 50 },
-			{ "item": "fire_ax", "custom-flags": [ "auto_wield" ] }
+		  { "item": "fire_ax", "custom-flags": [ "auto_wield" ] }
         ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
@@ -10080,9 +10076,9 @@
 			"jeepcapZhigh",
 			"socks",
 			"shotcanister_bearing",
-			"shotcanister_bearing",
 			"shotcanister_scrap",
-			"shotcanister_scrap",
+			"knife_meat_cleaver",
+			"badge_shotcanisterZhigh",
 			"wristwatch"
 		],
         "entries": [
@@ -10096,6 +10092,82 @@
             "contents-item": "shoulder_strap",
             "custom-flags": [ "auto_wield" ]
           }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighSpetznaz",
+    "name": "Student - Pioneer",
+    "description": "You are a ghost of the old country's doctrine, a silent mountain of titanium and sharpened steel.  Without the need for a single bullet, you navigate the ruins using an entrenching tool as a reaper’s scythe, proving that a disciplined mind and a heavy blade are the only true essentials for survival.",
+    "points": 1,
+    "age": { "min": 14, "max": 18 },
+    "skills": [
+      { "level": 2, "name": "melee" },
+      { "level": 3, "name": "cutting" }
+    ],
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "xlkevlar",
+          "army_powered_earmuffs",
+          "glasses_bal",
+          "axe_ring",
+          "matches",
+          "gloves_fingerless_mod"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_shoesAll" },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "shovelTacticalZHigh", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighMortician",
+	"name": "Student - Mortician",
+    "description": "Before the world went to hell, you spent your after-school hours helping your family embalm and prepare bodies for their final rest.  Now that the graves are walking, you've traded the cemetery for the bloodstained hallways, using your tools to ensure the dead stay buried this time.",
+    "points": -1,
+	"age": { "min": 14, "max": 18 },
+    "skills": [
+      { "level": 1, "name": "swimming" },
+      { "level": 1, "name": "firstaid" }
+    ],
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "blazer_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "mask_plagueZhighBlk",
+          "tophat",
+          "wristwatch",
+          "axe_ring",
+          "syringe",
+          "knifeListonZhigh",
+          "scalpel"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_shoesAll" },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "lobotomizer", "custom-flags": [ "auto_wield" ] }
         ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],

@@ -203,7 +203,23 @@
       [ "shotgunSharpChopperZhigh", 15 ], 
       [ "condimentGunZhigh", 15 ],
       [ "corkscrewZhigh", 15 ],
-      [ "cyclopsZhigh", 15 ]
+      [ "cyclopsZhigh", 15 ],
+      [ "riotShottieZhigh", 15 ],
+      [ "shellShockZhigh", 15 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "flaregunZhigh_items",
+    "ammo": 100,
+    "magazine": 100,
+    "items": [ 
+      [ "flaregun", 5 ], 
+      [ "scorchShotZhigh", 15 ], 
+      [ "DetonatorZhigh", 15 ], 
+      [ "ManmelterZhigh", 15 ], 
+      [ "blazeBlastZhigh", 15 ], 
+      [ "spitfireZhigh", 15 ]
     ]
   },
   {
@@ -605,8 +621,9 @@
     "subtype": "collection",
     "id": "mon_feral_human_zhigh_death_drops_pipe",
     "entries": [
-      { "group": "ZhighNpc_masks", "prob": 30, "damage": [ 0, 2 ] },
-      { "group": "ZhighClothingGroups", "prob": 50, "damage": [ 0, 2 ], "count": [ 0, 3 ] }
+      { "group": "drugs_heal_simple", "prob": 70, "damage": [ 1, 2 ] },
+      { "group": "ZhighNpc_masks", "prob": 30, "damage": [ 1, 3 ] },
+      { "group": "ZhighClothingGroups", "prob": 50, "damage": [ 1, 4 ], "count": [ 0, 3 ] }
     ]
   },
   {
@@ -925,8 +942,8 @@
     "subtype": "distribution",
     "ammo": 100,
     "entries": [
-      { "item": "fn57mag", "ammo-group": "on_hand_57", "prob": 100 },
-      { "item": "fn57mag", "ammo-group": "on_hand_57", "prob": 5 }
+      { "item": "fnp90mag", "ammo-group": "on_hand_57", "prob": 100 },
+      { "item": "fnp90mag", "ammo-group": "on_hand_57", "prob": 5 }
     ]
   },
   {
@@ -4757,6 +4774,7 @@
       [ "vajraMustiZhigh", 1 ],
       [ "stethoscope", 3 ],
       [ "ax", 15 ],
+      [ "splittingMaul", 15 ],
       [ "colorGuardRifle", 10 ],
       [ "axe_combat", 10 ],
       [ "handPickZhigh", 10 ],
