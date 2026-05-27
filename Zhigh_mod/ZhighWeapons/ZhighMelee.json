@@ -6698,5 +6698,52 @@
     "price_postapoc": "55 USD",
     "material": [ "steel", "stone" ],
     "bashing": 45
+  },
+  {
+    "id": "rubberKnife",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "KNIVES" ],
+    "name": { "str": "wooden knife" },
+    "description": "A model knife, made out of rubber.  Still a good weapon if needed, but will not last for long.",
+    "weight": "558 g",
+    "volume": "500 ml",
+    "to_hit": 2,
+    "bashing": 10,
+    "material": "rubber",
+    "symbol": "/",
+    "color": "dark_gray",
+    "techniques": "RAPID",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "stunnedZhigh",
+              "message": "The water stick stuns your target.",
+              "npc_message": "%1$s stuns their target."
+            }
+          ]
+        }
+      ]
+    },
+    "flags": [ "FRAGILE_MELEE", "SHEATH_KNIFE", "NONCONDUCTIVE" ],
+    "thrown_damage": [ { "damage_type": "bash", "amount": 18 } ]
+  },
+  {
+    "id": "splittingMaul",
+    "type": "GENERIC",
+    "copy-from": "hammer_sledge",
+    "name": { "str": "splitting maul" },
+    "looks_like": "hammer_sledge",
+    "description": "This is a large, two-handed wood axe with a hammer on the other side.  It makes a good melee weapon, but is a bit slow to recover between swings.",
+    "bashing": 45,
+    "cutting": 30,
+    "to_hit": 0,
+    "volume": "1450 ml",
+    "qualities": [ [ "HAMMER", 2 ], [ "AXE", 3 ], [ "BUTCHER", -36 ] ],
+    "price_postapoc": "250 cent"
   }
 ]

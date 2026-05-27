@@ -3510,6 +3510,38 @@
     "components": [ [ [ "bbpistol", 2 ] ] ]
   },
   {
+    "id": "bbpistolV2Akim",
+    "copy-from": "bbpistolV2",
+    "type": "GUN",
+    "name": { "str": "akimbo modified BB pistol" },
+    "description": "Popular among children.  Good for plinking, and easliy modifiable, but BBs deal nearly no damage.  Now comes in two.",
+    "weapon_category": [ "AKIMBOZHIGH", "PISTOLS", "PNEUMATIC" ],
+    "magazines": [ [ "BB", [ "BBclip600" ] ] ],
+    "valid_mod_locations": [
+      [ "accessories", 8 ],
+      [ "barrel", 2 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "grip", 2 ],
+      [ "rail", 2 ],
+      [ "underbarrel", 2 ]
+    ],
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 2 ] ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0, "reload": 2.0, "magazine_well": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "bbpistolV2Akim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "flags": [ "BLIND_EASY" ],
+    "components": [ [ [ "bbpistolV2", 2 ] ] ]
+  },
+  {
     "id": "BBclip600",
     "copy-from": "BBclip300",
     "looks_like": "stanag30",
