@@ -241,7 +241,7 @@
       [ "UruZhigh", 5 ],
       [ "mace_rock", 5 ],
       [ "fanAxeZhigh", 5 ],
-      [ "signHatchetZhigh", 10 ],
+      [ "signHatchetZhigh", 5 ],
       [ "glaivePipeZhigh", 5 ],
       [ "hurlBatZhigh", 5 ],
       [ "bambooStaffZhigh", 5 ],
@@ -249,6 +249,7 @@
       [ "marlinspikeZhigh", 5 ],
       [ "waterstickZhigh", 5 ],
       [ "concreteHammerZhigh", 5 ],
+      [ "rebar", 10 ],
       [ "2x4", 20 ],
       [ "pipe", 20 ],
 	  { "group": "ZhighNpc_stabbing", "prob": 15 },
@@ -262,7 +263,7 @@
     "type": "item_group",
     "id": "ZhighNpc_masks",
     "items": [
-      [ "null", 35 ],
+      [ "null", 45 ],
       [ "binoculars", 10 ],
       [ "mask_catcherZhigh", 5 ],
       [ "ammobandZhigh", 5 ],
@@ -635,7 +636,10 @@
       [ "helmet_motorZhigh", 5 ],
       [ "hat_newsboyZhigh01", 5 ],
       [ "postman_hat_commissarZhigh", 5 ],
+      [ "veilCamoZhigh", 5 ],
       [ "makeshift_headwrap", 5 ],
+      [ "bucket_helmet", 5 ],
+      [ "gradCapZhigh", 5 ],
       [ "scouter", 1 ],
       [ "knee_pads", 5 ],
       [ "elbow_pads", 5 ],
@@ -747,6 +751,7 @@
   },
   {
     "type": "item_group",
+    "subtype": "distribution",
     "id": "ZhighNpc_gloves",
     "items": [
       [ "null", 60 ],
@@ -766,6 +771,7 @@
   },
   {
     "type": "item_group",
+    "subtype": "distribution",
     "id": "ZhighNpc_coat",
     "items": [
       [ "null", 5 ],
@@ -776,6 +782,7 @@
   },
   {
     "type": "item_group",
+    "subtype": "distribution",
     "id": "ZhighNpc_shoes_male",
     "items": [
       [ "roller_shoes_off", 10 ],
@@ -790,6 +797,7 @@
   },
   {
     "type": "item_group",
+    "subtype": "distribution",
     "id": "ZhighNpc_shoes_female",
     "items": [
       [ "roller_shoes_off", 10 ],
@@ -804,6 +812,7 @@
   },
   {
     "type": "item_group",
+    "subtype": "distribution",
     "id": "ZhighNpc_shoesAll",
     "items": [
       { "group": "shoes_unisex", "prob": 80 },
@@ -926,9 +935,6 @@
 	  [ "tanto_fake", 5 ],
 	  [ "kirpan", 5 ],
 	  [ "kirpan_cheap", 5 ],
-	  [ "kris", 5 ],
-	  [ "kris_fake", 5 ],
-	  [ "sword_bayonet", 5 ],
 	  [ "dagger_medieval", 5 ],
 	  [ "dagger_bronze", 5 ],
 	  [ "knife_heat", 5 ],
@@ -947,14 +953,10 @@
 	  [ "knife_hunting", 5 ],
 	  [ "kunaiZhigh", 5 ],
 	  [ "knife_hitmanZhigh", 5 ],
-	  [ "macheteSpetzZhigh", 5 ],
 	  [ "knife_saex", 5 ],
 	  [ "diveknife", 5 ],
-	  [ "knife_rambo", 5 ],
-	  [ "balisongZhigh", 5 ],
 	  [ "stilettoZhigh", 5 ],
-	  [ "knifeListonZhigh", 5 ],
-	  { "group": "survivor_knife", "prob": 5 }
+	  [ "knifeListonZhigh", 5 ]
 	]
   },
   {

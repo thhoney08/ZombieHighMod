@@ -225,9 +225,27 @@
     "message": "You successfully teleport with an 'audience'!",
     "valid_targets": [ "hostile", "ally" ],
     "effect": "target_attack",
-    "flags": [ "SWAP_POS", "SOMATIC", "SILENT", "NO_EXPLOSION_VFX", "NO_FAIL" ],
+    "flags": [ "SWAP_POS", "SILENT", "NO_EXPLOSION_VFX", "NO_FAIL", "NO_HANDS", "NO_LEGS" ],
     "min_range": 10,
     "max_range": 12,
+    "range_increment": 1.0
+  },
+  {
+    "id": "magicianeleportZhigh",
+    "type": "SPELL",
+    "name": "Magnetic love",
+    "description": "You teleports with an ally and heals them!",
+    "message": "You successfully teleport with an ally!",
+    "valid_targets": [ "ally" ],
+    "effect": "target_attack",
+    "flags": [ "SWAP_POS", "SILENT", "NO_EXPLOSION_VFX", "NO_FAIL", "NO_HANDS", "NO_LEGS" ],
+    "field_id": "fd_laser",
+    "min_range": 20,
+    "max_range": 24,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "min_damage": -29,
+    "max_damage": -30,
     "range_increment": 1.0
   },
   {

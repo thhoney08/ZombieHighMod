@@ -4104,7 +4104,7 @@
     "looks_like": "jian",
     "name": { "str": "shocksword" },
     "description": "This is an ancient Chinese doubled-edged straight sword, with an ornate guard and a tassel attached to the pommel.  Though it was lethal before, it is now more lethal, yet still familiar to an experienced warrior.  Unlike the average shock-weapons, this one does not irradiate the wielder when the weapon is damaged.",
-    "relative": { "weight": -35 },
+    "proportional": { "weight": 0.6 },
     "cutting": 35,
     "extend": { "flags": [ "SHOCKING" ] }
   },
@@ -4118,9 +4118,9 @@
     "looks_like": "knife_bread",
     "weight": "250 g",
     "volume": "180 ml",
-    "cutting": 10,
+    "cutting": 12,
     "to_hit": 1,
-    "extend": { "flags": [ "STAB" ] }
+    "extend": { "flags": [ "STAB", "FRAGILE_MELEE" ] }
   },
   {
     "id": "heatHawkZhigh_off",
@@ -5948,8 +5948,8 @@
     "description": "This is a wooden cross.  Useful for warding off evil, both spiritually and physically.",
     "weight": "566 g",
     "volume": "350 ml",
-    "price": 700,
-    "price_postapoc": 100,
+    "price": "700 USD",
+    "price_postapoc": "100 USD",
     "to_hit": 1,
     "bashing": 9,
     "material": [ "wood" ],
@@ -6657,8 +6657,8 @@
     "description": "This is a demagnetized steel claw hammer with a steel grip.  With a hammer, nails, and two by fours in your inventory, you could board up adjacent doors and windows.  It has myriad other uses as well, just like a wrench.",
     "weight": "656 g",
     "volume": "450 ml",
-    "price": 700,
-    "price_postapoc": 100,
+    "price": "700 USD",
+    "price_postapoc": "100 USD",
     "bashing": 9,
     "material": [ "steel" ],
     "symbol": ";",
@@ -6745,5 +6745,19 @@
     "volume": "1450 ml",
     "qualities": [ [ "HAMMER", 2 ], [ "AXE", 3 ], [ "BUTCHER", -36 ] ],
     "price_postapoc": "250 cent"
+  },
+  {
+    "id": "golf_clubModZhigh",
+    "type": "GENERIC",
+    "copy-from": "golf_club",
+    "name": { "str": "modified golf club" },
+    "description": "A long handle with a big metal head, flat on one side, for driving golf balls.  This one is modified to give more damage.",
+    "weight": "9500 g",
+    "looks_like": "golf_club",
+    "techniques": [ "WIDE" ],
+    "volume": "1300 ml",
+    "bashing": 26,
+    "price": "240 USD",
+    "price_postapoc": "750 cent"
   }
 ]

@@ -839,7 +839,7 @@
     "phase": "liquid",
     "ammo_type": "chemical_spray",
     "looks_like": "marloss_gel",
-    "count": 100,
+    "count": 800,
     "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 3 },
     "effects": [ "LIGHTNING", "SHOT", "NEVER_MISFIRES" ]
   },
@@ -859,7 +859,7 @@
     "phase": "liquid",
     "ammo_type": "chemical_spray",
     "looks_like": "chem_chloroform",
-    "count": 100,
+    "count": 800,
     "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 50 },
     "effects": [ "SMOKE", "TRAIL", "NEVER_MISFIRES", "JET" ]
   },
@@ -879,7 +879,7 @@
     "phase": "liquid",
     "ammo_type": "chemical_spray",
     "looks_like": "chem_agar",
-    "count": 100,
+    "count": 800,
     "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 50 },
     "effects": [ "TEARGAS", "TRAIL", "NEVER_MISFIRES", "JET" ]
   },
@@ -899,7 +899,7 @@
     "phase": "liquid",
     "ammo_type": "chemical_spray",
     "range": 4,
-    "count": 100,
+    "count": 800,
     "looks_like": "nicotine_liquid",
     "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 1 },
     "effects": [ "CORROSIONGAS", "NEVER_MISFIRES", "JET" ]
@@ -922,7 +922,7 @@
     "ammo_type": "chemical_spray",
     "damage": { "damage_type": "heat", "amount": 3, "armor_penetration": 1 },
     "shot": { "count": 8, "half_angle": 30 },
-    "count": 100,
+    "count": 800,
     "effects": [ "BLINDS_EYES", "NEVER_MISFIRES" ]
   },
   {
@@ -941,7 +941,7 @@
     "phase": "liquid",
     "ammo_type": "chemical_spray",
     "range": 4,
-    "count": 100,
+    "count": 800,
     "looks_like": "nicotine_liquid",
     "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 1 },
     "effects": [ "TRIFFIDAMMO", "NEVER_MISFIRES", "JET" ]
@@ -979,7 +979,8 @@
     "material": "steel",
     "symbol": "=",
     "color": "dark_gray",
-    "effects": [ "NON_FOULING", "PARALYZEPOISON" ],
+    "effects": [ "NON_FOULING", "PARALYZEPOISON", "BURST" ],
+    "dont_recover_one_in": 0,
     "proportional": { "price": 3, "damage": { "damage_type": "stab", "amount": 2 } }
   },
   {
@@ -991,7 +992,8 @@
     "material": "steel",
     "symbol": "=",
     "color": "dark_gray",
-    "effects": [ "NON_FOULING", "POISON" ],
+    "effects": [ "NON_FOULING", "POISON", "BURST" ],
+    "dont_recover_one_in": 0,
     "proportional": { "price": 3, "damage": { "damage_type": "stab", "amount": 2 } }
   },
   {
@@ -1564,7 +1566,6 @@
     "weight": "290 g",
     "damage": { "damage_type": "bullet", "amount": 15 },
     "drop": "fungicidalbomb_act",
-    "casing": "40x46mm_m195_casing",
     "loudness": 60,
     "extend": { "effects": [ "NO_EMBED" ] }
   },
@@ -2231,8 +2232,19 @@
     "weight": "250 g",
     "damage": { "damage_type": "heat", "amount": 10 },
     "drop": "handflareHeavyZhigh_lit",
-    "casing": "40x46mm_m195_casing",
     "loudness": 80,
     "extend": { "effects": [ "NO_EMBED", "NO_PENETRATE_OBSTACLES", "DAZZLEAOEFLAREZHIGH" ] }
+  },
+  {
+    "id": "40x46mm_acidZhigh",
+    "copy-from": "40x46mm_grenade",
+    "type": "AMMO",
+    "name": { "str": "40x46mm M462 'HZ-KO'" },
+    "description": "An experimental less-lethal 40x46mm grenade packed with highly concentrated chemical acid.  Upon impact, the fragile canister ruptures, splashing a devastating wave of corrosive fluid that melts away flesh and armor alike.",
+    "price_postapoc": "3 USD",
+    "weight": "85 g",
+    "damage": { "damage_type": "acid", "amount": 15, "armor_penetration": 10 },
+    "loudness": 65,
+    "extend": { "effects": [ "ACID_TRAIL", "ACIDBIG" ] }
   }
 ]

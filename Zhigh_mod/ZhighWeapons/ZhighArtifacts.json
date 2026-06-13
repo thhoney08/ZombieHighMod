@@ -109,8 +109,8 @@
     "description": "A sword, with a dark outline.",
     "weight": "3176 g",
     "volume": "3250 ml",
-    "price": 20000,
-    "price_postapoc": 200,
+    "price": "20000 USD",
+    "price_postapoc": "200 USD",
     "material": [ "steel", "leather", "aluminum" ],
     "symbol": ";",
     "to_hit": 2,
@@ -1933,5 +1933,97 @@
       ]
     },
     "flags": [ "NO_TAKEOFF", "BLIND", "OVERSIZE" ]
+  },
+  {
+    "id": "tophatZhigh",
+    "repairs_like": "balclava",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "magician's top hat" },
+    "description": "The only hat for a magician.  Look exquisite while showing a magic trick in the face of danger!",
+    "weight": "233 g",
+    "volume": "2500 ml",
+    "price": "195 USD",
+    "price_postapoc": "95 USD",
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "looks_like": "tophat",
+    "color": "dark_gray",
+    "covers": [ "head" ],
+    "coverage": 50,
+    "encumbrance": 20,
+    "warmth": 5,
+    "material_thickness": 2,
+    "environmental_protection": 1,
+    "use_action": [
+      {
+        "type": "heal",
+        "move_cost": 700,
+        "bleed": 0.8,
+        "bite": 0.8,
+        "infect": 0.8,
+        "limb_power": 28,
+        "head_power": 28,
+        "torso_power": 28,
+        "effects": [ { "id": "healing_medkit", "duration": 100 }, { "id": "pkill1", "duration": 50 } ]
+      },
+      {
+        "type": "cast_spell",
+        "spell_id": "magicianeleportZhigh",
+        "no_fail": true,
+        "level": 0,
+        "need_wielding": false
+      }
+    ],
+    "charges_per_use": 4,
+    "max_charges": 20,
+    "initial_charges": 20,
+    "flags": [ "VARSIZE", "SUPER_FANCY", "SUN_GLASSES" ],
+    "relic_data": { "charges_per_activation": 1, "recharge_scheme": [ { "type": "time", "req": "none", "interval": "2 m", "rate": 1 } ] }
+  },
+  {
+    "id": "tophatZhighV2",
+    "repairs_like": "balclava",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "magician's top hat" },
+    "description": "The only hat for a magician.  Look exquisite while showing a magic trick in the face of danger!",
+    "weight": "233 g",
+    "volume": "2500 ml",
+    "price": "195 USD",
+    "price_postapoc": "95 USD",
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "looks_like": "tophat",
+    "color": "dark_gray",
+    "covers": [ "head" ],
+    "coverage": 50,
+    "encumbrance": 20,
+    "warmth": 5,
+    "material_thickness": 2,
+    "environmental_protection": 1,
+    "use_action": [
+      {
+        "type": "heal",
+        "move_cost": 700,
+        "bleed": 0.8,
+        "bite": 0.8,
+        "infect": 0.8,
+        "limb_power": 28,
+        "head_power": 28,
+        "torso_power": 28,
+        "effects": [ { "id": "healing_medkit", "duration": 100 }, { "id": "pkill1", "duration": 50 } ]
+      },
+      {
+        "type": "cast_spell",
+        "spell_id": "spell_mothman_ninja_vanish",
+        "no_fail": true,
+        "level": 0,
+        "need_wielding": false
+      }
+    ],
+    "charges_per_use": 4,
+    "max_charges": 20,
+    "initial_charges": 20,
+    "flags": [ "VARSIZE", "SUPER_FANCY", "SUN_GLASSES" ],
+    "relic_data": { "charges_per_activation": 1, "recharge_scheme": [ { "type": "time", "req": "none", "interval": "2 m", "rate": 1 } ] }
   }
 ]

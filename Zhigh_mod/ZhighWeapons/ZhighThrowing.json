@@ -14,6 +14,7 @@
     "weight": "12 g",
     "cutting": 6,
     "count": 12,
+    "loudness": 0,
     "stack_size": 12,
     "ammo_type": "thrown",
     "flags": [ "FRAGILE_MELEE", "CARDZHIGH", "NOGIB", "NPC_THROWN", "SHATTERS" ],
@@ -744,7 +745,7 @@
     "bashing": 2,
     "cutting": 4,
     "to_hit": -1,
-    "thrown_damage": [ { "damage_type": "cut", "amount": 48 } ],
+    "thrown_damage": [ { "damage_type": "cut", "amount": 36 } ],
     "flags": [ "HURT_WHEN_WIELDED" ]
   },
   {
@@ -763,7 +764,7 @@
     "bashing": 4,
     "cutting": 6,
     "to_hit": -1,
-    "thrown_damage": [ { "damage_type": "stab", "amount": 20 }, { "damage_type": "bash", "amount": 12 }, { "damage_type": "cut", "amount": 14 } ]
+    "thrown_damage": [ { "damage_type": "stab", "amount": 10 }, { "damage_type": "bash", "amount": 10 }, { "damage_type": "cut", "amount": 12 } ]
   },
   {
     "id": "dynamiteBig",
@@ -1424,8 +1425,8 @@
     "category": "weapons",
     "name": { "str": "ninja bomb", "str_pl": "ninja bombs" },
     "description": "A black round item, which releases an area of darkness when activated.",
-    "weight": "50 g",
-    "volume": "50 ml",
+    "weight": "80 g",
+    "volume": "80 ml",
     "price": "1 USD",
     "price_postapoc": "1 USD",
     "to_hit": -2,
