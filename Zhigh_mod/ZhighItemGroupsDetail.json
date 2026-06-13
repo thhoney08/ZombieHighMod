@@ -10,6 +10,7 @@
   },
   {
     "type": "item_group",
+    "subtype": "distribution",
     "id": "ninjaWeaponsZhigh",
     "ammo": 100,
     "magazine": 100,
@@ -181,6 +182,7 @@
   },
   {
     "type": "item_group",
+    "subtype": "distribution",
     "id": "shotcanisterZhigh_items",
     "ammo": 100,
     "magazine": 100,
@@ -205,11 +207,14 @@
       [ "corkscrewZhigh", 15 ],
       [ "cyclopsZhigh", 15 ],
       [ "riotShottieZhigh", 15 ],
-      [ "shellShockZhigh", 15 ]
+      [ "shellShockZhigh", 15 ],
+      [ "smokeStackZhigh", 15 ],
+      [ "subSandvichZhigh", 15 ]
     ]
   },
   {
     "type": "item_group",
+    "subtype": "distribution",
     "id": "flaregunZhigh_items",
     "ammo": 100,
     "magazine": 100,
@@ -3709,6 +3714,7 @@
     "entries": [
       { "item": "ZhighCoin", "prob": 80, "count": [ 5, 10 ] },
       { "item": "box_medium", "prob": 80, "count": [ 1, 3 ] },
+      { "group": "ZhighUniformGroups", "prob": 90, "count": [ 2, 6 ] },
       { "group": "ZhighPlayPropGroups", "prob": 10, "count": [ 5, 10 ] },
       { "group": "drugs_heal_simple", "prob": 40, "count": [ 2, 3 ] },
       { "group": "drugs_heal_simple", "prob": 40, "count": [ 2, 3 ] },
@@ -3757,8 +3763,7 @@
       { "group": "ZhighTraps", "prob": 70, "count": [ 1, 2 ] },
       { "group": "ZhighTracksuitGroups", "prob": 30, "count": [ 1, 3 ] },
       { "group": "ZhighClothingGroups", "prob": 30, "count": [ 1, 2 ] },
-      { "group": "turretBoxZhighGroups", "prob": 25, "count": [ 1, 2 ] },
-      { "group": "ZhighUniformGroups", "prob": 30, "count": [ 1, 2 ] }
+      { "group": "turretBoxZhighGroups", "prob": 25, "count": [ 1, 2 ] }
     ]
   },
   {
@@ -4456,13 +4461,7 @@
         "charges-min": 10,
         "charges-max": 20
       },
-      {
-        "item": "water_paint",
-        "prob": 45,
-        "container-item": "bottle_plastic",
-        "charges-min": 10,
-        "charges-max": 20
-      },
+      [ "water_paint", 45 ],
       [ "bearingBig", 25 ],
       [ "sling_bullet", 50 ],
       [ "sling_bulletSpikeZhigh", 50 ],
@@ -4577,7 +4576,7 @@
         "prob": 30,
         "container-item": "bottle_plastic",
         "charges-min": 1,
-        "charges-max": 2
+        "charges-max": 1
       },
       [ "roasted_coffee_bean", 5 ],
       [ "tea_raw", 5 ]

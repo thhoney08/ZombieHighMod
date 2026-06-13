@@ -1243,6 +1243,45 @@
   },
   {
     "type": "profession",
+    "id": "zhighHenchmen",
+    "name": "Student - Henchmen",
+    "description": "You always liked the Korean gangster dramas - suit, tie, and tricks using knives.  As you bought your fedora, the world ended and the zombies got loose.  The age of wild men has started.",
+    "points": 2,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "stabbing" }, { "level": 2, "name": "dodge" } ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "trenchcoat_fur",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "straw_fedora",
+          "dynamite",
+          "dynamite",
+          "matches",
+          "bandolier_knife",
+          "wristwatch"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_shoesAll" },
+          { "item": "sheath", "contents-group": [ "ZhighNpc_stabbing" ] },
+          { "item": "sheath", "contents-group": [ "ZhighNpc_stabbing" ] },
+          { "item": "sheath_multi", "contents-group": [ "ZhighNpc_stabbing", "ZhighNpc_stabbing", "ZhighNpc_stabbing" ] },
+          { "item": "sheath_multi", "contents-group": [ "ZhighNpc_stabbing", "ZhighNpc_stabbing", "ZhighNpc_stabbing" ] },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "group": "ZhighNpc_stabbing", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
     "id": "zhighLuchador",
     "name": { "male": "Student - Luchador", "female": "Student - Luchadora" },
     "description": "You were training for the fight of your life before the Cataclysm struck.  Now you fight just to keep yourself alive.",
@@ -2369,9 +2408,9 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "chunk_sulfur",
-          "chunk_sulfur",
-          "chunk_sulfur",
-          "chunk_sulfur",
+          "material_rhodonite",
+          "material_zincite",
+          "material_limestone",
           "wristwatch"
         ],
         "entries": [
@@ -2923,7 +2962,7 @@
           { "group": "ZhighNpc_shoesAll" },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
           { "item": "bbpistol", "ammo-item": "bb", "charges": [ 200, 250 ], "container-item": "sholster" },
-          { "item": "kukri", "container-item": "scabbard" },
+          { "item": "kukri", "container-item": "sheath" },
           { "item": "bbSnip", "ammo-item": "bb", "charges": 5, "contents-item": "shoulder_strap" }
         ]
       },
@@ -3275,15 +3314,14 @@
           "medkitRechargeV3",
           "socks",
           "fire_gauntlets",
-          "firehelmet",
-          "boots_bunker"
+          "firehelmet"
         ],
         "entries": [
+          { "group": "fireman_boots" },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
           {
             "item": "flamethrower_simple",
             "charges": 100,
-            "contents-item": "shoulder_strap",
             "custom-flags": [ "auto_wield" ]
           },
           { "item": "ref_lighter", "charges": 50 },
@@ -3335,7 +3373,7 @@
 			"container-item": "holster"
           },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-          { "item": "kukri", "container-item": "scabbard" }
+          { "item": "kukri", "container-item": "sheath" }
         ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
@@ -3538,7 +3576,10 @@
           "folding_bicycle",
           "wristwatch"
         ],
-        "entries": [ { "group": "ZhighNpc_shoesAll" }, { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+        "entries": [
+		  { "group": "ZhighNpc_shoesAll" },
+		  { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -3640,7 +3681,7 @@
         "entries": [
           { "group": "ZhighNpc_shoesAll" },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-          { "contents-group": [ "manuals_school", "textbooks_school", "light_reading" ], "item": "box_small" }
+          { "contents-group": [ "manuals_school", "textbooks_school", "light_reading" ], "item": "box_medium" }
         ]
       },
       "male": [ "boxer_shorts" ],
@@ -8441,8 +8482,8 @@
           {
             "item": "pistol_flintlock_revolver",
             "ammo-item": "flintlock_ammo",
-            "charges": 1,
-            "container-item": "sholster"
+            "charges": 6,
+            "container-item": "holster"
           }
         ]
       },
@@ -8544,13 +8585,13 @@
           "medkitRechargeV3",
           "socks",
           "fire_gauntlets",
-          "firehelmet",
+          "firehelmetZhigh",
           "molotov",
           "molotov",
-          "molotov",
-          "boots_bunker"
+          "molotov"
         ],
         "entries": [
+          { "group": "fireman_boots" },
 		  { "group": "flaregunZhigh_items", "ammo-item": "signal_flare", "container-item": "holster", "charges": 1 },
 		  { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
           { "item": "ref_lighter", "charges": 50 },
@@ -9522,7 +9563,7 @@
           "socks"
         ],
         "entries": [
-          { "item": "knife_rambo", "container-item": "sheath" },
+          { "item": "knife_rambo", "container-item": "scabbard" },
           { "group": "ZhighNpc_shoesAll" },
           { "item": "arrow_exploding", "charges": 4 },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
@@ -9633,7 +9674,7 @@
         "entries": [
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
           { "item": "bbpistol", "ammo-item": "bb", "charges": [ 200, 250 ], "container-item": "sholster" },
-          { "item": "kukri", "container-item": "scabbard" }
+          { "item": "kukri", "container-item": "sheath" }
         ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
@@ -10126,7 +10167,7 @@
           "gloves_fingerless_mod"
         ],
         "entries": [
-          { "group": "ZhighNpc_shoesAll" },
+          { "group": "clothing_outdoor_shoes" },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
           { "item": "shovelTacticalZHigh", "custom-flags": [ "auto_wield" ] }
         ]
@@ -10172,6 +10213,260 @@
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighDeliverer",
+    "name": "Student - Deliverer",
+    "description": "When the gates locked, you were near the dormitory delivery depot.  Wrapped in padded thermal delivery bags as makeshift flak jackets and wielding a heavy, dented aluminum food delivery case, you turn a symbol of daily convenience into a blunt instrument of survival.",
+    "points": -1,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh", "FLEET" ],
+    "vehicle": "scooter_electric",
+    "skills": [ { "level": 1, "name": "melee" }, { "level": 1, "name": "bashing" }, { "level": 2, "name": "driving" } ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "jacket_windbreaker",
+          "backpack_leather",
+          "water_clean",
+          "wristwatch"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_shoesAll" },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "delivery_case_metalZhigh", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "boxer_shorts", "pants_zhigh" ],
+      "female": [ "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighWorlds_greatest",
+    "name": "Student - World's Greatest Athlete",
+    "description": "Your name reverberated across the world as you set record after record in the Olympics, becoming the greatest of all time. Alas, even with your face plastered across billboards and cereals, the zombies are still more interested in turning you into gold medalist goulash.",
+    "points": 6,
+    "traits": [ "REGEN_zhigh", "GOODCARDIO" ],
+    "skills": [
+      { "level": 10, "name": "swimming" },
+      { "level": 2, "name": "dodge" },
+      { "level": 2, "name": "melee" },
+      { "level": 2, "name": "throw" }
+    ],
+    "items": {
+      "both": [ "tshirt", "sneakers", "jacket_light" ],
+      "male": [ "briefs", "socks", "pants" ],
+      "female": [ "bra", "panties", "stockings", "skirt" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighRioter",
+    "name": "Student - Rioter",
+    "description": "The first protest you were at started peaceful, until the school hosed the crowd down with machinegun fire instead of water cannons.  You escaped, and came prepared for a fight next time.  You weren't prepared for the cops and protesters to tear themselves apart in a cannibalistic frenzy.",
+    "points": 0,
+    "items": {
+      "both": {
+        "items": [
+          "jeans",
+          "longshirt",
+          "socks",
+          "sneakers",
+          "mbag",
+          "mask_rioter",
+          "helmet_bike",
+          "sunglasses",
+          "pockknife",
+          "wristwatch"
+        ],
+        "entries": [ { "item": "molotov", "count": 5 }, { "item": "lighter", "charges": 25 } ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighFixer",
+    "name": "Student - Fixer",
+    "description": "Armed with a heavy claw hammer and a nail gun from the maintenance basement, you treat the apocalypse as a structural failure.  With a can of industrial penetrant and a lighter in your pocket, you are ready to patch defenses or purge hostiles.",
+    "points": 2,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [ { "level": 2, "name": "fabrication" }, { "level": 1, "name": "mechanics" }, { "level": 1, "name": "gun" } ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "gloves_work",
+          "rebar_rail",
+          "hat_hard_hooded",
+          "spray_can",
+          "boots_rubber"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "rebar_rivetGunZhigh", "custom-flags": [ "auto_wield" ], "charges": 20 },
+		  { "item": "lighter", "charges": 25 },
+          { "item": "hammer", "container-item": "tool_belt" }
+        ]
+      },
+      "male": [ "boxer_shorts", "pants_zhigh" ],
+      "female": [ "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighGardener",
+    "name": "Student - Gardener",
+    "description": "You managed the school's rooftop green room and received a bulk shipment of botanical tools just before the collapse.  With a heavy pair of steel pruning shears capable of snapping thick branches and a pressurized tank of weed killer, you prune the infected like invasive weeds.",
+    "points": -1,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [ { "level": 2, "name": "survival" }, { "level": 2, "name": "cutting" } ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "apron_green",
+          "mask_dust",
+          "shears",
+          "fertilizer",
+          "wristwatch"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_shoesAll" },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "g_shovel", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "boxer_shorts", "pants_zhigh" ],
+      "female": [ "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighPacker",
+    "name": "Student - Packer",
+    "description": "You hoarded protective supplies from the mailroom.  By layering high-tensile packing tape and heavy cardboard sheets over your uniform, you created a bite-resistant ballistic armor clone.  Wielding a heavy-duty industrial box cutter, you unwrap the horde with mechanical precision.",
+    "points": 0,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh", "TOUGH" ],
+    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" }, { "level": 1, "name": "tailor" } ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "armguard_hard",
+          "legguard_hard",
+          "bookplate",
+          "bucket_helmet",
+          "duct_tape",
+          "duct_tape",
+          "backpack_leather",
+          "wristwatch"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_shoesAll" },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "xacto", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "boxer_shorts", "pants_zhigh" ],
+      "female": [ "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighGraduation",
+	"name": { "male": "Graduate - Senior Boy", "female": "Graduate - Senior Girl" },
+    "description": "The Cataclysm struck right as you were about to receive your diploma.  Your bright future vanished in a flash of gore, but three years of survival instincts and senior stubbornness didn't.  Although you have almost nothing with you right now, you are still ready to ace the final exam of survival.",
+    "points": -4,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "pockknife",
+          "water_clean",
+          "cloakBlackZhigh",
+          "gradCapZhigh",
+          "wristwatch"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_shoesAll" },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "group": "ZhighGuardWeaponGroups", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighChauffeur",
+    "name": "Student - Chauffeur",
+    "description": "As the gates slammed shut, you didn't run—you drove.  Snatched the keys to the school's premium electric golf cart right under the dean's nose.  With a sturdy driver's cap on your head and a heavy iron golf club in your hand, you're transforming this campus utility vehicle into a motorized chariot of apocalyptic survival.",
+    "points": 2,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "vehicle": "golf_cart_4seat",
+    "skills": [
+      { "level": 3, "name": "driving" },
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "bashing" },
+      { "level": 1, "name": "mechanics" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "vest_leather_mod",
+          "hat_golf",
+          "gloves_golf",
+          "multitool",
+          "wristwatch"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_shoesAll" },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "shillelagh", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "boxer_shorts", "pants_zhigh" ],
+      "female": [ "bra", "panties", "skirt_zhigh" ]
     },
     "flags": [ "SCEN_ONLY" ]
   },

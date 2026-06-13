@@ -5,8 +5,8 @@
     "name": { "str": "multi-tool" },
     "type": "GENERIC",
     "category": "tools",
-    "price": 3500,
-    "price_postapoc": 1000,
+    "price": "30 USD",
+    "price_postapoc": "5 USD",
     "to_hit": -2,
     "qualities": [ 
             [ "CUT", 3 ], 
@@ -121,31 +121,9 @@
       "holster_msg": "You sheath your %s.",
       "max_volume": "1300 ml",
       "min_volume": "5 ml",
-      "max_weight": "1200 g",
       "draw_cost": 3,
       "flags": [ "SHEATH_KNIFE" ]
     }
-  },
-  {
-    "id": "legrig",
-    "copy-from": "legrig",
-    "type": "ARMOR",
-    "name": { "str": "pair of drop leg pouches", "str_pl": "pairs of drop leg pouches" },
-    "rigid": false,
-    "encumbrance": 3,
-    "storage": "3 L",
-    "use_action": {
-      "type": "holster",
-      "holster_prompt": "Stick what into your drop leg pouch?",
-      "holster_msg": "You tuck your %s into your %s",
-      "multi": 4,
-      "max_volume": "1000 ml",
-      "max_weight": "4500 g",
-      "min_volume": "5 ml",
-      "draw_cost": 60,
-      "flags": [ "BELT_CLIP" ]
-    },
-    "flags": [ "WATER_FRIENDLY", "BELTED" ]
   },
   {
     "id": "haori",
@@ -582,48 +560,6 @@
     "shot": { "count": 12, "half_angle": 15 }
   },
   {
-    "id": "40x46mm_m576",
-    "type": "AMMO",
-    "name": { "str": "40x46mm M576 buckshot" },
-    "copy-from": "40x46mm_m576",
-    "shot": { "count": 12, "half_angle": 15 }
-  },
-  {
-    "id": "40x46mm_buckshot_m118",
-    "type": "AMMO",
-    "name": { "str": "improvised 40x46mm buckshot" },
-    "copy-from": "40x46mm_buckshot_m118",
-    "shot": { "count": 12, "half_angle": 15 }
-  },
-  {
-    "id": "40x46mm_flechette_m118",
-    "type": "AMMO",
-    "name": { "str": "improvised 40x46mm flechette" },
-    "copy-from": "40x46mm_flechette_m118",
-    "shot": { "count": 12, "half_angle": 15 }
-  },
-  {
-    "id": "40x46mm_flechette_m199",
-    "type": "AMMO",
-    "name": { "str": "improvised 40x46mm flechette" },
-    "copy-from": "40x46mm_flechette_m199",
-    "shot": { "count": 12, "half_angle": 15 }
-  },
-  {
-    "id": "40x53mm_m1001",
-    "type": "AMMO",
-    "name": { "str": "40x53mm M1001 flechette" },
-    "copy-from": "40x53mm_m1001",
-    "shot": { "count": 10, "half_angle": 15 }
-  },
-  {
-    "id": "40x53mm_buckshot_m169",
-    "type": "AMMO",
-    "name": { "str": "improvised 40x53mm buckshot" },
-    "copy-from": "40x53mm_buckshot_m169",
-    "shot": { "count": 10, "half_angle": 15 }
-  },
-  {
     "id": "crude_firestarter",
     "copy-from": "crude_firestarter",
     "type": "TOOL",
@@ -690,7 +626,17 @@
     "volume": "750 ml",
     "flags": [ "NO_REPAIR", "NO_SALVAGE", "BELT_CLIP" ]
   },
- {
+  {
+    "id": "1st_aid_deluxe",
+    "copy-from": "1st_aid_deluxe",
+    "type": "GENERIC",
+    "category": "drugs",
+    "name": { "str": "deluxe first aid kit" },
+    "weight": "1500 g",
+    "volume": "1000 ml",
+    "flags": [ "NO_REPAIR", "NO_SALVAGE", "BELT_CLIP" ]
+  },
+  {
     "id": "landmine",
     "copy-from": "landmine",
     "type": "GENERIC",
@@ -704,7 +650,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "C-4 explosive" },
-    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB" ]
+    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
   },
   {
     "id": "knife_trench",
@@ -1612,6 +1558,8 @@
       "capacity": 80,
       "ammo": [
         "paintball",
+        "flintlock",
+        "flintlockshot",
         "nail",
         "pebble",
         "32",
@@ -1899,7 +1847,8 @@
       "holster_prompt": "Stash grenades",
       "holster_msg": "You stash your %s.",
       "multi": 8,
-      "max_volume": "750 ml",
+	  "min_volume": "60 ml",
+      "max_volume": "1250 ml",
       "draw_cost": 30,
       "flags": [ "GRENADE" ]
     }
@@ -1944,7 +1893,17 @@
     "durability": 9,
     "reload": 1440,
     "loudness": 16,
-    "ammo": [ "arrow", "bolt" ]
+    "ammo": [ "arrow", "bolt" ],
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "underbarrel", 1 ]
+    ]
   },
   {
     "id": "tihar",
@@ -1956,7 +1915,17 @@
     "durability": 9,
     "recoil": 100,
     "clip_size": 21,
-    "ammo": [ "pebble", "paintball", "nail" ]
+    "ammo": [ "pebble", "paintball", "nail" ],
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "underbarrel", 1 ]
+    ]
   },
   {
     "id": "triple_launcher_simple",
@@ -2081,6 +2050,13 @@
     "copy-from": "belt308",
     "type": "MAGAZINE",
     "name": { "str": "7.62x51mm ammo belt" },
+    "capacity": 1000
+  },
+  {
+    "id": "belt277",
+    "copy-from": "belt277",
+    "type": "MAGAZINE",
+    "name": { "str": "6.8x51mm 'Fury' ammo belt" },
     "capacity": 1000
   },
   {
@@ -2328,20 +2304,7 @@
     "handling": 1,
     "modes": [ [ "DEFAULT", "spray", 10 ] ],
     "ranged_damage": { "damage_type": "acid", "amount": 2, "armor_penetration": 1, "armor_multiplier": -1  },
-	"ammo_to_fire": 1,
-	"ammo": [ "chemical_spray", "acid" ],
-    "flags": [ "NEVER_JAMS", "NON_FOULING" ],
-    "magazines": [
-		[ "acid", [ "pressurized_tank_chem" ] ],
-		[ "chemical_spray", [ "pressurized_tank_chem" ] ]
-	]
-  },
-  {
-    "id": "pressurized_tank_chem",
-    "copy-from": "pressurized_tank_chem",
-    "type": "MAGAZINE",
-    "name": { "str": "pressurized chemical tank" },
-    "ammo_type": [ "chemical_spray", "acid" ]
+	"ammo_to_fire": 10
   },
   {
     "id": "professional_chemical_thrower",
@@ -2354,13 +2317,7 @@
     "durability": 8,
     "modes": [ [ "DEFAULT", "spray", 10 ] ],
     "ranged_damage": { "damage_type": "acid", "amount": 3, "armor_penetration": 3, "armor_multiplier": -1  },
-	"ammo_to_fire": 1,
-	"ammo": [ "chemical_spray", "acid" ],
-    "loudness": 1,
-    "magazines": [
-		[ "acid", [ "pressurized_tank_chem" ] ],
-		[ "chemical_spray", [ "pressurized_tank_chem" ] ]
-	]
+	"ammo_to_fire": 10
   },
   {
     "type": "AMMO",
@@ -2821,7 +2778,7 @@
     "description": "This is sturdy wood bat, wrapped in gasoline-soaked rags and flame-resistant Nomex fabric.  Light it, and the ball game will REALLY heat up.  You'll need a lighter or matches to light it.",
     "weight": "1485 g",
     "volume": "2 L",
-    "price": 16000,
+    "price": "180 USD",
     "to_hit": 3,
     "bashing": 18,
     "material": [ "wood", "nomex" ],
@@ -2849,7 +2806,6 @@
     "description": "This is a sturdy wood bat, wrapped in gasoline-soaked rags and flame-resistant Nomex fabric.  It is burning brightly, and makes it much easier to see the baselines at night games (It also makes the umpire FAR more likely to call a ball instead of a strike).",
     "weight": "1485 g",
     "volume": "2 L",
-    "price": 16000,
     "to_hit": 3,
     "bashing": 18,
     "material": [ "wood", "nomex" ],
@@ -2880,7 +2836,7 @@
     "description": "This huge steel knife has been modified with a fuel tank, insulated handguard, and ignition system.  When filled with gasoline, a system of torches heats the blade, burning your target.",
     "weight": "1038 g",
     "volume": "1500 ml",
-    "price": 28000,
+	"price": "280 USD",
     "to_hit": 1,
     "bashing": 6,
     "cutting": 20,
@@ -2912,7 +2868,6 @@
     "description": "This huge steel knife has been modified with a fuel tank, insulated handguard, and ignition system.  The blade is glowing with heat, making it a great plant scorcher and nightlight.",
     "weight": "1038 g",
     "volume": "1500 ml",
-    "price": 28000,
     "to_hit": 1,
     "bashing": 6,
     "cutting": 20,
@@ -2948,7 +2903,8 @@
     "description": "This is a large blade with a fuel pipe on the side, and a small tank and igniter built into the insulated hilt.  When filled with gasoline, the blade can be made scorching hot to singe enemies and light your way.  Use to ignite.",
     "weight": "1081 g",
     "volume": "2500 ml",
-    "price": 10000,
+	"price": "35 USD",
+	"price_postapoc": "19 USD",
     "bashing": 4,
     "cutting": 14,
     "material": [ "steel", "plastic" ],
@@ -3458,6 +3414,7 @@
     "name": { "str": "lawn dart" },
     "ammo_type": "thrown",
     "thrown_damage": [ { "damage_type": "stab", "amount": 20 } ],
+    "loudness": 0,
     "count": 3,
     "stack_size": 3
   },
@@ -3590,7 +3547,8 @@
     "type": "GENERIC",
     "copy-from": "crash_axe",
     "name": { "str": "crash axe" },
-    "to_hit": 1
+    "to_hit": 1,
+    "use_action": "CROWBAR"
   },
   {
 	"id": "hammer",
@@ -3934,15 +3892,6 @@
 	"weight": "1 g"
   },
   {
-	"id": "kukri",
-    "type": "GENERIC",
-    "copy-from": "kukri",
-    "name": { "str": "kukri" },
-    "bashing": 18,
-    "volume": "1250 ml",
-    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD" ]
-  },
-  {
 	"id": "25mm_autocannon_sawn",
     "type": "GUN",
     "copy-from": "25mm_autocannon_sawn",
@@ -4075,5 +4024,21 @@
     "copy-from": "greatclub_iron",
     "name": { "str": "ironshod greatclub" },
     "bashing": 80
+  },
+  {
+	"id": "box_cigarette",
+    "type": "CONTAINER",
+    "copy-from": "box_cigarette",
+    "name": { "str": "pack" },
+    "flags": [ "BELT_CLIP" ]
+  },
+  {
+	"id": "spray_can",
+    "type": "TOOL",
+    "copy-from": "spray_can",
+    "name": { "str": "spray can" },
+    "initial_charges": 20,
+    "max_charges": 20,
+    "flags": [ "WRITE_MESSAGE", "NO_UNLOAD", "NO_PAINT", "BELT_CLIP" ]
   }
 ]

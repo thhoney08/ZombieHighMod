@@ -15324,5 +15324,25 @@
     "using": [ [ "blacksmithing_intermediate", 24 ], [ "steel_standard", 6 ] ],
     "book_learn": [ [ "textbook_fabrication", 4 ] ],
     "components": [ [ [ "wood_structural_small", 3, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "golf_clubModZhigh",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "time": "2 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ 
+      [
+		[ "fabric_standard", 1, "LIST" ],
+		[ "medical_gauze", 1 ],
+		[ "cordage", 1, "LIST" ],
+		[ "duct_tape", 50 ],
+		[ "medical_tape", 25 ]
+	  ],
+	  [ [ "golf_club", 2 ] ]
+	]
   }
 ]

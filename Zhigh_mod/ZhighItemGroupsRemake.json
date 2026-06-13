@@ -724,7 +724,6 @@
     "items": [
 		[ "powered_earmuffs", 10 ],
 		[ "powered_earmuffs_heli", 5 ],
-		[ "hat_noise_cancelling", 30 ],
 		[ "attached_ear_plugs_off", 30 ],
 		[ "ear_plugs", 50 ]
 	]
@@ -2670,6 +2669,7 @@
       [ "40x46mm_m433", 10 ],
       [ "40x46mm_m651", 20 ],
       [ "40x46mm_m583Zhigh", 20 ],
+      [ "40x46mm_acidZhigh", 10 ],
       [ "ammo_satchel", 10 ],
       [ "bootstrap", 10 ],
       [ "chestpouch", 10 ],
@@ -3574,6 +3574,7 @@
       { "item": "40x46mm_m433", "prob": 10 },
       { "item": "40x46mm_m433", "prob": 8 },
       { "item": "40x46mm_m583Zhigh", "prob": 5 },
+      { "item": "40x46mm_acidZhigh", "prob": 5 },
       { "item": "40x46mm_m651", "prob": 5 },
       { "item": "40x46mm_m576", "prob": 12 },
       { "item": "40x53mm_m1001", "prob": 6 },
@@ -3980,6 +3981,23 @@
       [ "v_reaper_item_advanced", 8 ],
       [ "v_planter_item_advanced", 8 ],
       [ "beehive_empty", 10 ]
+    ]
+  },
+  {
+    "id": "pocket_first_aid_kit",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [
+      { "item": "medkit1", "charges": 3 }
+    ]
+  },
+  {
+    "id": "deluxe_first_aid_kit",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [
+      { "item": "medkit1", "charges": 3 },
+      { "item": "medkit2", "charges": 1 }
     ]
   }
 ]

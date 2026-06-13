@@ -2571,7 +2571,7 @@
     "color": "blue",
     "name": { "str_sp": "helicopter pilot's earmuffs" },
     "description": "A pair of earmuffs favored by helicopter pilots.  Without batteries or when turned off they function like normal earmuffs and block all sound.  They will block sounds over a certain decibel amount when turned on.  The earmuffs are currently off.",
-    "flags": [ "DEAF", "OVERSIZE", "BELTED", "ALLOWS_NATURAL_ATTACKS" ],
+    "flags": [ "OVERSIZE", "BELTED", "ALLOWS_NATURAL_ATTACKS" ],
     "price": "125 USD",
     "price_postapoc": "750 cent",
     "material": [ "plastic" ],
@@ -2592,6 +2592,7 @@
     "encumbrance": 5,
     "coverage": 10,
     "material_thickness": 2,
+    "hearing_protection": 12,
     "magazines": [
       [
         "battery",
@@ -2618,7 +2619,7 @@
     "color": "blue",
     "name": { "str_sp": "helicopter pilot's earmuffs (on)" },
     "description": "A pair of earmuffs favored by helicopter pilots.  The earmuffs are turned on.  They will block sounds over a certain decibel amount and also can handle radio signals, assuming it is charged with batteries.",
-    "flags": [ "OVERSIZE", "BELTED", "ALLOWS_NATURAL_ATTACKS", "PARTIAL_DEAF", "TWO_WAY_RADIO" ],
+    "flags": [ "OVERSIZE", "BELTED", "ALLOWS_NATURAL_ATTACKS", "TWO_WAY_RADIO" ],
     "price": "125 USD",
     "price_postapoc": "750 cent",
     "material": [ "plastic" ],
@@ -2635,6 +2636,7 @@
     "encumbrance": 5,
     "coverage": 10,
     "material_thickness": 2,
+    "adv_hearing_protection": 24,
     "magazines": [
       [
         "battery",
@@ -3169,52 +3171,6 @@
     "storage": "1 L",
     "material_thickness": 2,
     "flags": [ "VARSIZE", "POWERARMOR_COMPATIBLE", "WATER_FRIENDLY", "ALLOWS_WINGS" ]
-  },
-  {
-    "id": "tophatZhigh",
-    "repairs_like": "balclava",
-    "type": "TOOL_ARMOR",
-    "name": { "str": "magician's top hat" },
-    "description": "The only hat for a magician.  Look exquisite while showing a magic trick in the face of danger!",
-    "weight": "233 g",
-    "volume": "2500 ml",
-    "price": "195 USD",
-    "price_postapoc": "95 USD",
-    "material": [ "cotton" ],
-    "symbol": "[",
-    "looks_like": "tophat",
-    "color": "dark_gray",
-    "covers": [ "head" ],
-    "coverage": 50,
-    "encumbrance": 20,
-    "warmth": 5,
-    "material_thickness": 2,
-    "environmental_protection": 1,
-    "use_action": [
-      {
-        "type": "heal",
-        "move_cost": 700,
-        "bleed": 0.8,
-        "bite": 0.8,
-        "infect": 0.8,
-        "limb_power": 8,
-        "head_power": 8,
-        "torso_power": 8,
-        "effects": [ { "id": "healing_medkit", "duration": 100 }, { "id": "pkill1", "duration": 50 } ]
-      },
-      {
-        "type": "cast_spell",
-        "spell_id": "entertainerTeleportZhigh",
-        "no_fail": true,
-        "level": 0,
-        "need_wielding": false
-      }
-    ],
-    "charges_per_use": 4,
-    "max_charges": 20,
-    "initial_charges": 20,
-    "flags": [ "VARSIZE", "SUPER_FANCY", "SUN_GLASSES" ],
-    "relic_data": { "charges_per_activation": 1, "recharge_scheme": [ { "type": "time", "req": "none", "interval": "2 m", "rate": 1 } ] }
   },
   {
     "id": "coolerCase",
@@ -4384,7 +4340,7 @@
     "warmth": 5,
     "environmental_protection": 2,
     "material_thickness": 3,
-    "flags": [ "PARTIAL_DEAF" ],
+    "adv_hearing_protection": 24,
     "valid_mods": [ "resized_large" ],
     "use_action": {
       "type": "manualnoise",
@@ -6174,7 +6130,8 @@
     "warmth": 20,
     "material_thickness": 6,
     "techniques": [ "WBLOCK_1" ],
-    "flags": [ "VARSIZE", "WATERPROOF", "STURDY", "TWO_WAY_RADIO", "PARTIAL_DEAF" ],
+    "flags": [ "VARSIZE", "WATERPROOF", "STURDY", "TWO_WAY_RADIO" ],
+    "adv_hearing_protection": 24,
     "magazines": [
       [
         "battery",
@@ -7840,7 +7797,8 @@
     "power_draw": 60,
     "revert_to": "headsetMp3Zhigh",
     "use_action": "MP3_ON",
-    "extend": { "flags": [ "PARTIAL_DEAF", "COMBAT_NPC_ON" ] }
+    "adv_hearing_protection": 24,
+    "extend": { "flags": [ "COMBAT_NPC_ON" ] }
   },
   {
     "id": "medicCallZhigh",
@@ -8499,5 +8457,45 @@
     "proportional": { "weight": 2 },
     "relic_data": { "recharge_scheme": [ { "type": "time", "interval": "1 m", "rate": 10 } ] },
     "extend": { "flags": [ "ONLY_ONE" ] }
+  },
+  {
+    "id": "delivery_case_metalZhigh",
+    "repairs_like": "backpack_hiking",
+    "type": "ARMOR",
+    "name": { "str": "delivery case" },
+    "description": "Useful for carrying foods.  Made out of metal, this thing could carry more than just foods in the apocalypse.",
+    "weight": "1700 g",
+    "volume": "15 L",
+    "price": "240 USD",
+    "price_postapoc": "50 cent",
+    "to_hit": -2,
+    "bashing": 5,
+    "material": [ "steel" ],
+    "symbol": "[",
+    "looks_like": "hk_briefcase",
+    "color": "light_gray",
+    "covers": [ "arm_either", "hand_either" ],
+    "coverage": 10,
+    "encumbrance": 30,
+    "storage": "25 L",
+    "material_thickness": 2,
+    "flags": [ "FRAGILE", "FANCY", "OVERSIZE", "BELTED", "RESTRICT_HANDS", "WATER_FRIENDLY", "POWERARMOR_COMPATIBLE" ]
+  },
+  {
+    "id": "veilCamoZhigh",
+    "type": "ARMOR",
+    "name": { "str": "camo veil" },
+    "copy-from": "veil_wedding",
+    "material": [ "cotton" ],
+    "covers": [ "head", "eyes", "mouth" ],
+    "description": "A veil covering that protects the head and face from the cold.",
+    "flags": [ "VARSIZE", "OUTER", "HELMET_COMPAT" ]
+  },
+  {
+    "id": "gradCapZhigh",
+    "type": "ARMOR",
+    "name": { "str": "graduation cap" },
+    "copy-from": "pickelhaube",
+    "description": "A graduation cap covering that protects the head.  A symbol of a bygone world."
   }
 ]

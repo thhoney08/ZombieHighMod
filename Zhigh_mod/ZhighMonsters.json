@@ -315,8 +315,8 @@
 	  [ "PARROT", 3 ],
       {
         "type": "gun",
-        "cooldown": 10,
-        "move_cost": 50,
+        "cooldown": 3,
+        "move_cost": 150,
         "gun_type": "feral_human_thrown_rock",
         "ammo_type": "brickZhigh",
         "no_ammo_sound": "Someone throw a rock!",
@@ -405,8 +405,8 @@
 	  [ "PARROT", 1 ],
       {
         "type": "gun",
-        "cooldown": 30,
-        "move_cost": 3,
+        "cooldown": 1,
+        "move_cost": 80,
         "gun_type": "bbMp5",
         "ammo_type": "bb",
         "fake_skills": [ [ "gun", 5 ], [ "smg", 5 ] ],
@@ -478,7 +478,7 @@
       {
         "type": "gun",
         "cooldown": 3,
-        "move_cost": 30,
+        "move_cost": 150,
         "gun_type": "fakeMedBBgun_zhigh",
         "fake_skills": [ [ "gun", 8 ], [ "smg", 8 ] ],
         "fake_dex": 12,
@@ -1180,7 +1180,7 @@
 	],
     "death_drops": { "groups": [ [ "robots", 1 ], [ "turret_searchlight", 1 ] ] },
     "on_death": { "death_function": [ "FOCUSEDBEAM" ], "spawn_mon": "mon_zombie_guardZhigh" },
-    "flags": [ "BIOPROOF", "IMMOBILE", "NOHEAD", "COLDPROOF", "ACIDPROOF", "IMMOBILE", "SEES" ]
+    "flags": [ "BIOPROOF", "ELECTRONIC", "NOHEAD", "COLDPROOF", "ACIDPROOF", "IMMOBILE", "SEES" ]
   },
   {
     "id": "mon_zombie_machine_Basic",
@@ -1227,7 +1227,7 @@
 	],
     "death_drops": { "groups": [ [ "robots", 1 ], [ "turret_searchlight", 1 ] ] },
     "death_function": [ "FOCUSEDBEAM" ],
-    "flags": [ "BIOPROOF", "IMMOBILE", "NOHEAD", "COLDPROOF", "ACIDPROOF", "IMMOBILE", "SEES" ]
+    "flags": [ "BIOPROOF", "ELECTRONIC", "NOHEAD", "COLDPROOF", "ACIDPROOF", "IMMOBILE", "SEES" ]
   },
   {
     "id": "mon_Zhigh_finalboss1",
@@ -3039,6 +3039,7 @@
       { "id": "slam", "cooldown": 12, "damage_max_instance": [ { "damage_type": "bash", "amount": 35 } ] },
       [ "SMASH", 2 ],
       [ "STRETCH_ATTACK", 2 ],
+      [ "RANGED_PULL", 2 ],
       [ "LONGSWIPE", 2 ],
       { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 23, "armor_multiplier": 0.8 } ] }
     ]
