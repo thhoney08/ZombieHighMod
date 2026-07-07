@@ -394,5 +394,27 @@
     "count": 10,
     "dont_recover_one_in": 25,
     "effects": [ "NO_EMBED", "NOISEZHIGH" ]
+  },
+  {
+    "type": "AMMO",
+    "id": "ZhighArrow_sap",
+    "price": "50 USD",
+    "name": { "str": "sap arrow" },
+    "symbol": "=",
+    "color": "green",
+    "looks_like": "arrow_fire_hardened_fletched",
+    "description": "This arrow has been dipped in a special chemical, intoxicating one's enemies.",
+    "material": [ "steel", "wood" ],
+    "volume": "250 ml",
+    "price_postapoc": "20 USD",
+    "weight": "33 g",
+    "bashing": 2,
+    "ammo_type": "arrow",
+    "damage": { "damage_type": "stab", "amount": 5 },
+    "dispersion": 285,
+    "loudness": 0,
+    "count": 10,
+    "effects": [ "APPLY_SAP" ],
+    "dont_recover_one_in": 25
   }
 ]

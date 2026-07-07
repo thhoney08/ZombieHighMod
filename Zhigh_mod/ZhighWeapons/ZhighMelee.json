@@ -564,7 +564,7 @@
     "id": "kanabo",
     "type": "GENERIC",
     "copy-from": "nailbat",
-    "name": { "str": "kanabo" },
+    "name": { "str": "kanabō" },
     "description": "A baseball bat with several spikes driven through it, an excellent melee weapon.",
     "weight": "1500 g",
     "bashing": 30,
@@ -891,6 +891,7 @@
   {
     "id": "breachingRam",
     "type": "GENERIC",
+    "category": "weapons",
     "copy-from": "hammer_sledge",
     "name": { "str": "breaching ram" },
     "description": "A heavy beam, used in breaching fortifications.  This unwieldy tool is meant to break concrete, rock, brick, anything really.  The only drawback is that it is unwieldy and very, very heavy!",
@@ -902,6 +903,15 @@
     "to_hit": -8,
     "price": "240 USD",
     "price_postapoc": "750 cent"
+  },
+  {
+    "id": "breachingRamCheap",
+    "type": "GENERIC",
+    "category": "weapons",
+    "copy-from": "breachingRam",
+    "name": { "str": "improvised breaching ram" },
+    "weight": "18500 g",
+    "extend": { "flags": [ "FRAGILE_MELEE" ] }
   },
   {
     "id": "tonfa_rebar",
@@ -5469,7 +5479,7 @@
     "price": "250 USD",
     "price_postapoc": "30 USD",
     "material": "steel",
-    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NONCONDUCTIVE" ],
+    "flags": [ "DURABLE_MELEE", "SHEATH_KNIFE", "NONCONDUCTIVE" ],
     "techniques": [ "WBLOCK_1" ],
     "weight": "883 g",
     "volume": "7500 ml",
@@ -5560,6 +5570,7 @@
   },
   {
     "id": "shinKalZhigh",
+    "looks_like": "dao",
     "type": "GENERIC",
     "category": "weapons",
     "weapon_category": [ "SHORT_SWORDS" ],
@@ -6749,6 +6760,7 @@
   {
     "id": "golf_clubModZhigh",
     "type": "GENERIC",
+    "category": "weapons",
     "copy-from": "golf_club",
     "name": { "str": "modified golf club" },
     "description": "A long handle with a big metal head, flat on one side, for driving golf balls.  This one is modified to give more damage.",
@@ -6759,5 +6771,95 @@
     "bashing": 26,
     "price": "240 USD",
     "price_postapoc": "750 cent"
+  },
+  {
+    "id": "poleAxeZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "PIKES" ],
+    "name": { "ctxt": "weapon", "str": "pole axe" },
+    "description": "This is a medieval weapon consisting of a wood shaft tipped with an iron spearhead.",
+    "weight": "2500 g",
+    "volume": "3500 ml",
+    "price": "400 USD",
+    "price_postapoc": "50 USD",
+    "bashing": 9,
+    "cutting": 32,
+    "material": [ "iron", "wood" ],
+    "symbol": "/",
+    "color": "brown",
+    "techniques": [ "IMPALE", "WBLOCK_1" ],
+    "qualities": [ [ "AXE", 1 ], [ "BUTCHER", -36 ] ],
+    "flags": [
+      "DURABLE_MELEE",
+      "POLEARM",
+      "SPEAR",
+      "REACH_ATTACK",
+      "REACH3",
+      "NONCONDUCTIVE",
+      "SHEATH_SPEAR",
+      "ALWAYS_TWOHAND"
+    ]
+  },
+  {
+    "id": "poleAxeZhigh_inferior",
+    "type": "GENERIC",
+    "name": { "ctxt": "weapon", "str": "pole axe replica" },
+    "description": "This is a medieval weapon consisting of a wood shaft tipped with an iron spearhead.  The head seems to be pretty dull, and the whole thing feels poorly made.",
+    "price_postapoc": "1250 cent",
+    "material": [ "budget_steel", "wood" ],
+    "copy-from": "poleAxeZhigh",
+    "proportional": { "weight": 1.2, "cutting": 0.85 },
+    "relative": { "to_hit": -1 },
+    "delete": { "flags": [ "DURABLE_MELEE" ] }
+  },
+  {
+    "id": "poleAxeZhigh_fake",
+    "type": "GENERIC",
+    "name": { "ctxt": "weapon", "str": "pole axe fake" },
+    "description": "This is a dull, cheaply made replica of a medieval weapon consisting of a wood shaft tipped with an iron spearhead.",
+    "price": "40 USD",
+    "price_postapoc": "5 USD",
+    "material": [ "aluminum", "wood" ],
+    "copy-from": "poleAxeZhigh",
+    "proportional": { "weight": 0.6, "bashing": 0.75, "cutting": 0.1 },
+    "relative": { "to_hit": -1 },
+    "extend": { "flags": [ "FRAGILE_MELEE" ] },
+    "delete": { "flags": [ "DURABLE_MELEE" ] }
+  },
+  {
+    "id": "fire_ax_1_carbon",
+    "type": "GENERIC",
+    "copy-from": "fire_ax_1",
+    "name": { "str": "carbon fiber fire axe" },
+    "description": "A custom 3D-printed double-bladed fire axe made out of carbon fiber.  It is more lightweight than a normal fire axe thanks to its method of manufacturing, but it can only be repaired using a 3D printer.  However, lighter weight means it's bashing damage is lowered.",
+    "material": [ "carbon_fiber" ],
+    "proportional": { "bashing": 0.6, "weight": 0.6, "price": 2, "price_postapoc": 2 }
+  },
+  {
+    "id": "greatclub_metalZhigh",
+    "copy-from": "greatclub_wood",
+    "type": "GENERIC",
+    "name": { "str": "steel greatclub" },
+    "description": "A massive two-handed club, created with steel that give it even more heft.  This weapon embodies the phrase \"like giving a kanabō to an oni\" as anyone capable of using it effectively could likely tear their enemies apart with their bare hands.",
+    "weight": "3000 g",
+    "price_postapoc": "20 USD",
+    "bashing": 90,
+    "material": [ "steel" ],
+    "color": "light_gray",
+    "looks_like": "bat_metal"
+  },
+  {
+    "id": "greatclub_metal_spikeZhigh",
+    "copy-from": "greatclub_metalZhigh",
+    "type": "GENERIC",
+    "name": { "str": "spiked steel greatclub" },
+    "description": "A massive two-handed club, created with steel and added metal shards that give it even more heft.  This weapon embodies the phrase \"like giving a kanabō to an oni\" as anyone capable of using it effectively could likely tear their enemies apart with their bare hands.",
+    "weight": "3200 g",
+    "price_postapoc": "20 USD",
+    "cutting": 8,
+    "material": [ "wood", "iron" ],
+    "color": "light_gray",
+    "looks_like": "bat_metal_bolted"
   }
 ]

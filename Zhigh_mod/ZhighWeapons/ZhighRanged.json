@@ -270,7 +270,7 @@
     "range": 2,
     "dispersion": 855,
     "durability": 3,
-    "loudness": 200,
+    "loudness": 0,
     "clip_size": 1,
     "reload": 300,
     "barrel_volume": "50 ml"
@@ -562,8 +562,8 @@
     ],
     "ammo": [ "pebble", "paintball" ],
     "flags": [ "NEVER_JAMS", "RELOAD_ONE", "NON_FOULING" ],
-    "ranged_damage": { "damage_type": "bullet", "amount": 21, "armor_penetration": 20 },
-    "range": 9
+    "ranged_damage": { "damage_type": "bullet", "amount": 18, "armor_penetration": 6 },
+    "range": 14
   },
   {
     "id": "shotgun_pump_paint",
@@ -594,8 +594,8 @@
       [ "underbarrel", 1 ]
     ],
     "flags": [ "RELOAD_ONE", "NEVER_JAMS", "NON_FOULING" ],
-    "ranged_damage": { "damage_type": "bullet", "amount": 13, "armor_penetration": 6 },
-    "range": 14
+    "ranged_damage": { "damage_type": "bullet", "amount": 25, "armor_penetration": 10 },
+    "range": 9
   },
   {
     "id": "paintballG_AR15",
@@ -1228,7 +1228,7 @@
     "copy-from": "crossbow",
     "type": "GUN",
     "weapon_category": [ "M_XBOWS", "ELASTIC", "MAGNETIC" ],
-    "reload_noise_volume": 5,
+    "reload_noise_volume": "24 dB",
     "flags": [ "CROSSBOW", "RELOAD_ONE" ],
     "name": { "str": "rail crossbow" },
     "description": "A slow-loading hand weapon that launches bolts.  Stronger people can reload it much faster.  Bolts fired from this weapon have a good chance of remaining intact for re-use.  This one had been modified to give some extra heat damage.",
@@ -2962,7 +2962,7 @@
     "id": "crossbow_dartZhigh",
     "copy-from": "xbow_base",
     "type": "GUN",
-    "reload_noise_volume": 5,
+    "reload_noise_volume": "24 dB",
     "reload": 80,
     "name": { "str": "dart crossbow" },
     "description": "A slow-loading hand weapon that launches nails.  Stronger people can reload it much faster.  Nails fired from this weapon have a good chance of remaining intact for re-use.",
@@ -3109,7 +3109,7 @@
     "price": "135 USD",
     "price_postapoc": "65 USD",
     "material": [ "wood", "plastic" ],
-    "ammo": [ "bombelanceAmmoType_zhigh", "paintball", "pebble" ],
+    "ammo": [ "bombelanceAmmoType_zhigh", "paintball", "pebble", "shotcanister" ],
     "weight": "1800 g",
     "volume": "1750 ml",
     "to_hit": -1,
@@ -3234,7 +3234,7 @@
     "looks_like": "mark19",
     "copy-from": "rifle_pneumatic",
     "type": "GUN",
-    "reload_noise_volume": 8,
+    "reload_noise_volume": "24 dB",
     "color": "light_gray",
     "//": "The name means noiseless. At least that's what the translator told me.",
     "name": { "str": "beshuma" },
@@ -3352,10 +3352,10 @@
     "loudness": 75,
     "to_hit": 1,
     "bashing": 14,
-    "flags": [ "NO_UNLOAD", "NO_RELOAD", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "flags": [ "NO_UNLOAD", "NO_RELOAD", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "FIRE_20" ],
     "ammo_effects": [ "BEANBAG", "BLINDS_EYES" ],
     "ammo": "slug_zhigh",
-    "clip_size": 80,
+    "clip_size": 120,
     "relic_data": { "recharge_scheme": [ { "type": "time", "req": "none", "interval": "4 seconds", "rate": 40 } ] },
     "valid_mod_locations": [
       [ "accessories", 8 ],
@@ -3391,10 +3391,10 @@
     "loudness": 85,
     "to_hit": 1,
     "bashing": 8,
-    "flags": [ "NO_UNLOAD", "NO_RELOAD", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "flags": [ "NO_UNLOAD", "NO_RELOAD", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "FIRE_20" ],
     "ammo_effects": [ "BEANBAG", "HEAVY_HIT", "BLINDS_EYES" ],
     "ammo": "slug_zhigh",
-    "clip_size": 20,
+    "clip_size": 100,
     "relic_data": { "recharge_scheme": [ { "type": "time", "req": "none", "interval": "2 seconds", "rate": 10 } ] },
     "valid_mod_locations": [
       [ "accessories", 8 ],
@@ -3452,7 +3452,7 @@
     "copy-from": "rifle_pneumatic",
     "weapon_category": [ "PISTOLS", "PNEUMATIC" ],
     "type": "GUN",
-    "reload_noise_volume": 8,
+    "reload_noise_volume": "24 dB",
     "handling": 15,
     "color": "light_gray",
     "//": "The name means silence. At least that's what the translator told me.",
@@ -3480,7 +3480,7 @@
     "copy-from": "rifle_pneumatic",
     "weapon_category": [ "PISTOLS", "PNEUMATIC" ],
     "type": "GUN",
-    "reload_noise_volume": 8,
+    "reload_noise_volume": "24 dB",
     "handling": 15,
     "color": "light_gray",
     "name": { "str": "LP500" },
@@ -3700,7 +3700,7 @@
     "copy-from": "xbow_base",
     "looks_like": "ar15",
     "type": "GUN",
-    "reload_noise_volume": 5,
+    "reload_noise_volume": "24 dB",
     "name": { "str": "TAC-15 crossbow" },
     "description": "A slow-loading hand weapon that launches bolts.  Stronger people can reload it much faster.  Bolts fired from this weapon have a good chance of remaining intact for re-use.  Modified from an AR-15, this crossbow is bit faster to reload.",
     "price": "60 USD",
@@ -4861,7 +4861,7 @@
     "id": "puppetZhigh_tommy",
     "copy-from": "rifle_pneumatic",
     "type": "GUN",
-    "reload_noise_volume": 8,
+    "reload_noise_volume": "24 dB",
     "color": "light_gray",
     "name": { "str": "mafia hand puppet" },
     "description": "A hand puppet, which looks like a mafia with a tommy gun in it's hands.  Somehow you could fire the tiny tommy gun that the doll has.",
@@ -7773,7 +7773,7 @@
     "type": "GUN",
     "name": { "str": "pneumatic pump shotgun" },
     "description": "A rugged, pump-action shotgun built for close-quarters survival.  Its short barrel and wide spread make it devastating against swarming threats, though accuracy drops sharply at range.",
-    "ranged_damage": { "damage_type": "bullet", "amount": 30, "armor_penetration": 10 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 15, "armor_penetration": 5 },
     "weight": "3400 g",
     "volume": "2487 ml",
     "range": 6,
@@ -7783,7 +7783,7 @@
     "flags": [ "RELOAD_ONE", "NON_FOULING", "NEEDS_NO_LUBE" ],
     "reload": 150,
     "modes": [ [ "DEFAULT", "single", 1 ] ],
-    "loudness": 70
+    "loudness": 35
   },
   {
     "id": "familyBusinessZhigh",
@@ -7791,7 +7791,7 @@
     "type": "GUN",
     "name": { "str": "family business" },
     "description": "A reinforced pump-action shotgun fitted with an extended magazine tube, allowing far more shells to be carried before reloading.  Heavier and bulkier than standard models, it demands strength to handle effectively, but rewards the user with sustained firepower in prolonged fights.",
-    "ranged_damage": { "damage_type": "bullet", "amount": 25, "armor_penetration": 10 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 13, "armor_penetration": 5 },
     "weight": "3900 g",
     "volume": "2900 ml",
     "range": 8,
@@ -7802,7 +7802,7 @@
     "skill": "rifle",
     "reload": 200,
     "modes": [ [ "DEFAULT", "single", 1 ] ],
-    "loudness": 70
+    "loudness": 35
   },
   {
     "id": "reserveShooterZhigh",
@@ -7811,7 +7811,7 @@
     "type": "GUN",
     "name": { "str": "reserve shooter" },
     "description": "A short, lightweight pump shotgun designed for quick handling and fast response.  Its reduced size makes it easy to carry alongside heavier weapons, ready to be brought up in an instant.",
-    "ranged_damage": { "damage_type": "bullet", "amount": 35, "armor_penetration": 10 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 17, "armor_penetration": 5 },
     "weight": "2812 g",
     "volume": "2084 ml",
     "range": 8,
@@ -7822,7 +7822,7 @@
     "flags": [ "RELOAD_ONE", "NON_FOULING", "NEEDS_NO_LUBE" ],
     "reload": 250,
     "modes": [ [ "DEFAULT", "single", 1 ] ],
-    "loudness": 70
+    "loudness": 35
   },
   {
     "id": "panicAttackZhigh",
@@ -7830,10 +7830,10 @@
     "type": "GUN",
     "name": { "str": "panic attack" },
     "description": "A compact shotgun fitted with a wide, drum magazine that allows for rapid loading one shell at a time.  Its design favors quick reflexes over steady aim, encouraging snap shots in chaotic close-quarters encounters.",
-    "ranged_damage": { "damage_type": "bullet", "amount": 35, "armor_penetration": 10 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 17, "armor_penetration": 5 },
     "weight": "3812 g",
     "volume": "2984 ml",
-    "range": 4,
+    "range": 6,
     "dispersion": 150,
     "clip_size": 6,
     "handling": 5,
@@ -7841,7 +7841,7 @@
     "flags": [ "RELOAD_ONE", "NON_FOULING", "NEEDS_NO_LUBE" ],
     "reload": 50,
     "modes": [ [ "DEFAULT", "double", 2 ] ],
-    "loudness": 70
+    "loudness": 35
   },
   {
     "id": "scatterGunZhigh",
@@ -7849,14 +7849,14 @@
     "type": "GUN",
     "name": { "str": "scattergun" },
     "description": "A compact, twin-barreled lever-action shotgun designed for speed and mobility.  It sacrifices long-range precision for rapid follow-up shots and a brutal spread up close.",
-    "ranged_damage": { "damage_type": "bullet", "amount": 40, "armor_penetration": 10 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 20, "armor_penetration": 5 },
     "range": 8,
     "dispersion": 150,
     "clip_size": 6,
     "ammo": [ "shotcanister" ],
     "flags": [ "RELOAD_ONE", "NON_FOULING", "NEEDS_NO_LUBE" ],
     "reload": 200,
-    "loudness": 70
+    "loudness": 35
   },
   {
     "id": "ForceANatureZhigh",
@@ -7864,7 +7864,7 @@
     "type": "GUN",
     "name": { "str": "force-a-nature" },
     "description": "A rugged, double-barreled shotgun cut down for speed and raw impact.  Each trigger pull unleashes a fierce blast with enough recoil to stagger the unprepared, but in capable hands it can shove back threats as well as shred them.",
-    "ranged_damage": { "damage_type": "bullet", "amount": 40, "armor_penetration": 10 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 20, "armor_penetration": 5 },
     "range": 10,
     "dispersion": 125,
     "clip_size": 2,
@@ -7880,7 +7880,7 @@
         }
       ]
     },
-    "loudness": 70
+    "loudness": 35
   },
   {
     "id": "SodaPopperZhigh",
@@ -7888,7 +7888,7 @@
     "type": "GUN",
     "name": { "str": "soda popper" },
     "description": "A lightweight, double-barreled shotgun with a stripped-down frame and fast cycling action, with a cylinder below it's barrels.  Its design emphasizes speed over durability, letting the user fire and fall safe on higher places.",
-    "ranged_damage": { "damage_type": "bullet", "amount": 30, "armor_penetration": 10 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 15, "armor_penetration": 5 },
     "range": 8,
     "dispersion": 125,
     "clip_size": 2,
@@ -7898,7 +7898,7 @@
     "relic_data": {
       "passive_effects": [ { "has": "HELD", "condition": "ALWAYS", "ench_effects": [ { "effect": "ignore_fall_damage", "intensity": 1 } ] } ]
     },
-    "loudness": 70
+    "loudness": 35
   },
   {
     "id": "BabyFaceZhigh",
@@ -7906,7 +7906,7 @@
     "type": "GUN",
     "name": { "str": "baby face's blaster" },
     "description": "A compact, lever action shotgun with a sleek frame and shortened barrel, clearly designed for mobility.  Its lighter construction makes it easy to carry and fire on the move, but the reduced weight comes at the cost of stability and range.",
-    "ranged_damage": { "damage_type": "bullet", "amount": 25, "armor_penetration": 10 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 14, "armor_penetration": 5 },
     "range": 8,
     "dispersion": 125,
     "clip_size": 4,
@@ -7917,7 +7917,7 @@
       "passive_effects": [ { "has": "HELD", "condition": "ALWAYS", "ench_effects": [ { "effect": "babyFaceSpeedUp", "intensity": 2 } ] } ]
     },
     "modes": [ [ "DEFAULT", "single", 1 ] ],
-    "loudness": 70
+    "loudness": 35
   },
   {
     "id": "BackScatterZhigh",
@@ -7925,7 +7925,7 @@
     "type": "GUN",
     "name": { "str": "back scatter" },
     "description": "A sawed-off, lever action shotgun with a double drum magazine designed for ambushes and close-range encounters.  Its short barrels and narrow sight make it unwieldy at a distance, but up close it delivers devastating, wide-spread bursts.",
-    "ranged_damage": { "damage_type": "bullet", "amount": 35, "armor_penetration": 15 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 17, "armor_penetration": 7 },
     "range": 8,
     "dispersion": 125,
     "clip_size": 4,
@@ -7933,7 +7933,7 @@
     "reload": 200,
     "ammo": [ "shotcanister" ],
     "modes": [ [ "DEFAULT", "single", 1 ], [ "BURST", "double", 2 ] ],
-    "loudness": 70
+    "loudness": 35
   },
   {
     "id": "shortStopShotCanZhigh",
@@ -7942,10 +7942,10 @@
     "weapon_category": [ "PISTOLS", "PNEUMATIC", "SHOTGUNS" ],
     "name": { "str": "shortstop" },
     "description": "A compact shotgun derringer built for speed and quick handling.  Its short barrel favors mobility over long-range accuracy, allowing rapid follow-up shots in tight spaces.",
-    "ranged_damage": { "damage_type": "bullet", "amount": 50, "armor_penetration": 15 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 12, "armor_penetration": 7 },
     "range": 8,
     "dispersion": 100,
-    "clip_size": 1,
+    "clip_size": 4,
     "weight": "800 g",
     "volume": "399 ml",
     "skill": "pistol",
@@ -7954,7 +7954,7 @@
     "handling": 45,
     "ammo": [ "shotcanister" ],
     "modes": [ [ "DEFAULT", "single", 1 ] ],
-    "loudness": 70
+    "loudness": 35
   },
   {
     "id": "rescueRangerZhigh",
@@ -7962,7 +7962,7 @@
     "type": "GUN",
     "name": { "str": "rescue ranger" },
     "description": "A reinforced, mid-range shotgun equipped with a custom parts for carrying and retrieving supplies.  Easy to stun enemies, and also gives an ability to shock enemies with a melee strike.",
-    "ranged_damage": { "damage_type": "electric", "amount": 35, "armor_penetration": 15 },
+    "ranged_damage": { "damage_type": "electric", "amount": 17, "armor_penetration": 7 },
     "weight": "3200 g",
     "volume": "2187 ml",
     "range": 8,
@@ -7973,15 +7973,15 @@
     "extend": { "ammo_effects": [ "BLINDS_EYES" ] },
     "reload": 250,
     "modes": [ [ "DEFAULT", "single", 1 ] ],
-    "loudness": 70
+    "loudness": 35
   },
   {
     "id": "widowmakerZhigh",
     "copy-from": "pneumatic_shotgun",
     "type": "GUN",
     "name": { "str": "widowmaker" },
-    "description": "A sleek, lever-action shotgun fitted with a reinforced stock and an integrated thick tubular magazine which cannot be unloaded.  The gun recovers it's ammo, encouraging aggressive close-range tactics.",
-    "ranged_damage": { "damage_type": "bullet", "amount": 15, "armor_penetration": 15 },
+    "description": "A sleek, pump-action shotgun fitted with a reinforced stock and an integrated thick tubular magazine which cannot be unloaded.  The gun recovers it's ammo, encouraging aggressive close-range tactics.",
+    "ranged_damage": { "damage_type": "bullet", "amount": 8, "armor_penetration": 7 },
     "weight": "3600 g",
     "volume": "2987 ml",
     "range": 6,
@@ -7991,8 +7991,57 @@
     "flags": [ "RELOAD_ONE", "NON_FOULING", "NEEDS_NO_LUBE", "NO_UNLOAD" ],
     "reload": 100,
     "modes": [ [ "DEFAULT", "single", 1 ] ],
-    "relic_data": { "recharge_scheme": [ { "type": "time", "req": "none", "interval": "7 s", "rate": 1 } ] },
-    "loudness": 70
+    "relic_data": {
+	  "recharge_scheme": [
+		{ "type": "time", "req": "none", "interval": "7 s", "rate": 1 },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 1,
+          "field": "fd_blood",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your widowmaker charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 1,
+          "field": "fd_bile",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your widowmaker charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 1,
+          "field": "fd_gibs_flesh",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your widowmaker charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 1,
+          "field": "fd_gibs_veggy",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your widowmaker charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 1,
+          "field": "fd_slime",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your widowmaker charges up!"
+        }
+	  ]
+	},
+    "loudness": 35
   },
   {
     "id": "frontierJusticeZhigh",
@@ -8000,7 +8049,7 @@
     "type": "GUN",
     "name": { "str": "frontier justice" },
     "description": "A rugged, old-fashioned pump shotgun with a reinforced barrel and short tubular magazine.  Its design rewards careful timing, delivering powerful shots that hit harder after observing(or not) the fall of nearby threats.",
-    "ranged_damage": { "damage_type": "bullet", "amount": 35, "armor_penetration": 10 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 17, "armor_penetration": 5 },
     "weight": "3200 g",
     "volume": "2187 ml",
     "range": 9,
@@ -8011,7 +8060,7 @@
     "flags": [ "RELOAD_ONE", "NON_FOULING", "NEEDS_NO_LUBE" ],
     "reload": 250,
     "modes": [ [ "DEFAULT", "single", 1 ] ],
-    "loudness": 70
+    "loudness": 35
   },
   {
     "id": "calefactorZhigh",
@@ -8019,7 +8068,7 @@
     "type": "GUN",
     "name": { "str": "calefactor" },
     "description": "A heavy, experimental shotgun fitted with an insulated frame and specialized chambering to handle volatile shells.  When fired, it releases intense bursts of heat alongside its payload, scorching targets at close range.",
-    "ranged_damage": { "damage_type": "heat", "amount": 35, "armor_penetration": 15 },
+    "ranged_damage": { "damage_type": "heat", "amount": 17, "armor_penetration": 7 },
     "weight": "3200 g",
     "volume": "2187 ml",
     "range": 8,
@@ -8030,7 +8079,7 @@
     "reload": 250,
     "extend": { "ammo_effects": [ "INCENDIARY" ] },
     "modes": [ [ "DEFAULT", "single", 1 ] ],
-    "loudness": 70
+    "loudness": 35
   },
   {
     "id": "shotgunSharpChopperZhigh",
@@ -8039,7 +8088,7 @@
     "weapon_category": [ "2H_AXES", "PNEUMATIC", "SHOTGUNS" ],
     "name": { "str": "sharp chopper" },
     "description": "A hybrid weapon that merges a pump-action shotgun with a heavy axe head fixed to the barrel.  It offers brutal versatility in close combat, able to blast foes at point-blank range or cleave through them with a swing.",
-    "ranged_damage": { "damage_type": "bullet", "amount": 30, "armor_penetration": 10 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 15, "armor_penetration": 5 },
     "weight": "3400 g",
     "volume": "2487 ml",
     "range": 6,
@@ -8053,7 +8102,7 @@
     "to_hit": 1,
     "modes": [ [ "DEFAULT", "single", 1 ] ],
     "qualities": [ [ "AXE", 3 ], [ "BUTCHER", -36 ] ],
-    "loudness": 70
+    "loudness": 35
   },
   {
     "id": "condimentGunZhigh",
@@ -8063,12 +8112,12 @@
     "name": { "str": "condiment gun" },
     "description": "A bizarre, jury-rigged shotgun modified with pressurized canisters and a spray mechanism.  Instead of relying purely on shells, it can unleash bursts of messy, stinging payloads that disorient more than destroy.",
     "ranged_damage": [
-      { "damage_type": "electric", "amount": 2, "armor_penetration": 15 },
-      { "damage_type": "bullet", "amount": 2, "armor_multiplier": 0.8 },
-      { "damage_type": "heat", "amount": 2, "armor_penetration": 15 },
-      { "damage_type": "acid", "amount": 2, "armor_penetration": 15 },
-      { "damage_type": "bash", "amount": 2, "armor_multiplier": 0.8 },
-      { "damage_type": "stab", "amount": 2, "armor_multiplier": 0.8 }
+      { "damage_type": "electric", "amount": 1, "armor_penetration": 7 },
+      { "damage_type": "bullet", "amount": 1, "armor_multiplier": 0.8 },
+      { "damage_type": "heat", "amount": 1, "armor_penetration": 7 },
+      { "damage_type": "acid", "amount": 1, "armor_penetration": 7 },
+      { "damage_type": "bash", "amount": 1, "armor_multiplier": 0.8 },
+      { "damage_type": "stab", "amount": 1, "armor_multiplier": 0.8 }
     ],
     "range": 8,
     "dispersion": 100,
@@ -8084,7 +8133,7 @@
       "ammo_effects": [ "INCENDIARY", "SHOT", "HEAVY_HIT", "APPLY_SAP", "BLINDS_EYES", "POISON", "PARALYZEPOISON", "TANGLE" ]
     },
     "modes": [ [ "DEFAULT", "single", 1 ] ],
-    "loudness": 70
+    "loudness": 35
   },
   {
     "id": "corkscrewZhigh",
@@ -8092,7 +8141,7 @@
     "type": "GUN",
     "name": { "str": "corkscrew" },
     "description": "A sinister-looking shotgun retrofitted with reinforced tubing and a corrosive reservoir.  Each shell discharges a volatile mix of shot and pressurized acid, eating through flesh, fabric, and even light armor on impact.",
-    "ranged_damage": { "damage_type": "acid", "amount": 30, "armor_penetration": 10 },
+    "ranged_damage": { "damage_type": "acid", "amount": 15, "armor_penetration": 5 },
     "weight": "3200 g",
     "volume": "2187 ml",
     "range": 8,
@@ -8103,7 +8152,7 @@
     "flags": [ "RELOAD_ONE", "NON_FOULING", "NEEDS_NO_LUBE", "ACIDIC" ],
     "reload": 250,
     "modes": [ [ "DEFAULT", "single", 1 ] ],
-    "loudness": 70
+    "loudness": 35
   },
   {
     "id": "cyclopsZhigh",
@@ -8112,7 +8161,7 @@
     "type": "GUN",
     "name": { "str": "cyclops" },
     "description": "A crude yet terrifying single-shot pneumatic powerhouse that stares down its prey through a solitary, oversized barrel.  It trades the luxury of a magazine for raw atmospheric pressure, delivering a thunderous blast of shrapnel that obliterates anything in its singular field of vision.",
-    "ranged_damage": { "damage_type": "bullet", "amount": 40, "armor_penetration": 10 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 20, "armor_penetration": 5 },
     "weight": "3200 g",
     "volume": "2187 ml",
     "range": 13,
@@ -8123,7 +8172,7 @@
     "reload": 450,
     "modes": [ [ "DEFAULT", "single", 1 ] ],
     "extend": { "ammo_effects": [ "LARGE_BEANBAG" ] },
-    "loudness": 70
+    "loudness": 35
   },
   {
     "id": "riotShottieZhigh",
@@ -8131,7 +8180,7 @@
     "type": "GUN",
     "name": { "str": "zed brutality" },
     "description": "This six-shot pneumatic meat grinder unleashes a rapid, merciless barrage of pressurized death upon the undead horde.  With half a dozen barrels loaded with jagged metal and a hiss of high-pressure air, it turns the chaotic front lines into a beautiful, bloody testament to raw apocalyptic engineering.",
-    "ranged_damage": { "damage_type": "bullet", "amount": 15, "armor_penetration": 20 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 8, "armor_penetration": 10 },
     "weight": "3200 g",
     "volume": "2187 ml",
     "range": 12,
@@ -8142,7 +8191,7 @@
     "flags": [ "RELOAD_ONE", "NON_FOULING", "NEEDS_NO_LUBE", "ACIDIC" ],
     "reload": 150,
     "modes": [ [ "DEFAULT", "single", 1 ] ],
-    "loudness": 70,
+    "loudness": 35,
     "handling": 30,
     "relic_data": {
       "passive_effects": [
@@ -8166,7 +8215,7 @@
     "type": "GUN",
     "name": { "str": "frontal lobe" },
     "description": "A bizarre, psycho-reactive shotgun fitted with an insulated frame and a living cerebral core pulsing above its trigger grip.  When fired, it releases intense bursts of raw electrical energy alongside its payload, frying targets at close range while channeling a surge of static fury through its metallic chassis.",
-    "ranged_damage": { "damage_type": "electric", "amount": 35, "armor_penetration": 15 },
+    "ranged_damage": { "damage_type": "electric", "amount": 17, "armor_penetration": 7 },
     "weight": "3200 g",
     "volume": "2187 ml",
     "range": 8,
@@ -8177,7 +8226,7 @@
     "reload": 250,
     "extend": { "ammo_effects": [ "LIGHTNING" ] },
     "modes": [ [ "DEFAULT", "single", 1 ] ],
-    "loudness": 70
+    "loudness": 35
   },
   {
     "id": "shellShockZhigh",
@@ -8186,18 +8235,18 @@
     "type": "GUN",
     "name": { "str": "shell shock" },
     "description": "This fully automatic pneumatic shotgun trades raw kinetic impact for an overwhelming, high-velocity storm of light shrapnel.  While its individual pellets barely scratch hardened hides, the sheer volume of pressurized scrap it unloads can lock down a corridor and shred an entire horde in seconds.",
-    "ranged_damage": { "damage_type": "bullet", "amount": 10, "armor_penetration": 20 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 10, "armor_penetration": 10 },
     "weight": "3400 g",
     "volume": "2487 ml",
-    "range": 8,
-    "dispersion": 250,
+    "range": 9,
+    "dispersion": 2,
     "clip_size": 36,
     "ammo": [ "shotcanister" ],
     "flags": [ "NON_FOULING", "NEEDS_NO_LUBE" ],
     "reload": 50,
     "modes": [ [ "DEFAULT", "burst", 4 ] ],
     "extend": { "ammo_effects": [ "BOUNCE" ] },
-    "loudness": 70
+    "loudness": 35
   },
   {
     "id": "smokeStackZhigh",
@@ -8206,7 +8255,7 @@
     "type": "GUN",
     "name": { "str": "smoke stack" },
     "description": "A customized pneumatic shotgun designed to deploy heavy tactical smoke screen.  While its physical payload is less-lethal, it fires high-pressure chemical canisters that burst into a thick cloud of suffocating smoke, completely blinding target's vision.",
-    "ranged_damage": { "damage_type": "bullet", "amount": 5, "armor_penetration": 10 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 5, "armor_penetration": 5 },
     "range": 8,
     "dispersion": 900,
     "clip_size": 3,
@@ -8215,7 +8264,7 @@
     "reload": 200,
     "extend": { "ammo_effects": [ "SMOKE", "TEARGAS", "GAS_FUNGICIDAL", "GAS_INSECTICIDAL" ] },
     "modes": [ [ "DEFAULT", "single", 3 ] ],
-    "loudness": 45
+    "loudness": 20
   },
   {
     "id": "subSandvichZhigh",
@@ -8223,7 +8272,7 @@
     "type": "GUN",
     "name": { "str": "sub-sandvich" },
     "description": "A life-saving pneumatic shotgun modified with an inverted barrel and an automated Phoenix Corp medical dispenser.  Pulling the trigger discharges a shotcanister directly inward, delivering an instant, high-pressure surge of healing nanites and painkillers to your own body.",
-    "ranged_damage": { "damage_type": "bullet", "amount": 20, "armor_penetration": 10 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 10, "armor_penetration": 5 },
     "range": 8,
     "dispersion": 0,
     "clip_size": 8,
@@ -8244,6 +8293,85 @@
     }
   },
   {
+    "id": "teslaCoilZhigh",
+    "looks_like": "m3_carlgustav",
+    "copy-from": "pneumatic_shotgun",
+    "type": "GUN",
+    "name": { "str": "tesla coil" },
+    "description": "This specialized pneumatic shotgun converts high-pressure air into a devastating, localized electromagnetic pulse upon firing.  While its physical shrapnel causes minimal structural damage, the cascading electrical discharge instantly fries circuitry, leaving robotic threats and electronic security completely paralyzed.",
+    "ranged_damage": { "damage_type": "bullet", "amount": 8, "armor_penetration": 10 },
+    "range": 8,
+    "dispersion": 900,
+    "clip_size": 3,
+    "ammo": [ "shotcanister" ],
+    "flags": [ "RELOAD_ONE", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "reload": 200,
+    "extend": { "ammo_effects": [ "EMP" ] },
+    "modes": [ [ "DEFAULT", "single", 1 ] ],
+    "loudness": 20
+  },
+  {
+    "id": "shotcanisterChigurhZhigh",
+    "copy-from": "pneumatic_shotgun",
+    "type": "GUN",
+    "name": { "str": "Chigurh's whisper" },
+    "description": "Equipped with an oversized, custom-built baffling sleeve, this pneumatic shotgun releases its pressurized payload with a hushed, ghostly hiss rather than a thunderous blast. It allows you to eliminate targets in absolute secrecy, leaving only the soft rattle of scattered shrapnel to echo in the quiet corridors.",
+    "ranged_damage": { "damage_type": "bullet", "amount": 20, "armor_penetration": 10 },
+    "weight": "4200 g",
+    "volume": "3287 ml",
+    "range": 4,
+    "dispersion": 100,
+    "clip_size": 5,
+    "ammo": [ "shotcanister" ],
+    "flags": [ "RELOAD_ONE", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "reload": 55,
+    "modes": [ [ "DEFAULT", "single", 1 ] ],
+    "loudness": 0
+  },
+  {
+    "id": "shotcanisterPunchZhigh",
+    "copy-from": "pneumatic_shotgun",
+    "type": "GUN",
+    "name": { "str": "knuckle blaster" },
+    "description": "A brutal fusion of a reinforced iron gauntlet and a cut-down pneumatic air system strapped directly over your knuckles.  Punching a target triggers an immediate, point-blank blast of pressurized shrapnel, turning a simple melee strike into a devastating explosive rupture.",
+    "ranged_damage": { "damage_type": "bullet", "amount": 26, "armor_penetration": 17 },
+    "weight": "2200 g",
+    "volume": "1287 ml",
+    "range": 3,
+    "dispersion": 30,
+    "ammo": [ "shotcanister" ],
+    "flags": [ "RELOAD_ONE", "NON_FOULING", "NEEDS_NO_LUBE", "UNARMED_WEAPON", "WORN_GUN" ],
+    "reload": 55,
+    "handling": 55,
+    "armor_data": { "covers": [ "arms" ], "coverage": 10, "encumbrance": 10, "material_thickness": 2 },
+    "to_hit": 2,
+	"bashing": 10,
+    "modes": [ [ "DEFAULT", "single", 1 ], [ "DOUBLE", "double", 2 ] ],
+    "loudness": 10
+  },
+  {
+    "id": "shotcanisterSpearZhigh",
+    "looks_like": "glaive",
+    "copy-from": "pneumatic_shotgun",
+    "type": "GUN",
+    "name": { "str": "vortex halberd" },
+    "description": "A long-reach steel glaive integrated with a single-shot pneumatic chamber along its heavy pole.  Thrusting the blade into a foe triggers a localized, high-pressure air burst through the tip to violently rupture the target from the inside out.",
+    "ranged_damage": { "damage_type": "bullet", "amount": 15, "armor_penetration": 10 },
+    "weight": "2750 g",
+    "volume": "3287 ml",
+    "range": 4,
+    "dispersion": 80,
+    "cutting": 40,
+    "clip_size": 1,
+    "ammo": [ "shotcanister" ],
+    "flags": [ "RELOAD_ONE", "NON_FOULING", "NEEDS_NO_LUBE", "STAB", "POLEARM", "REACH_ATTACK", "SHEATH_SPEAR", "SPEAR", "DURABLE_MELEE" ],
+    "reload": 55,
+    "modes": [ [ "DEFAULT", "single", 1 ] ],
+    "to_hit": 1,
+    "loudness": 30,
+    "qualities": [ [ "COOK", 1 ], [ "CUT", 1 ], [ "BUTCHER", -24 ] ]
+  },
+  {
     "id": "AaiQsprZhigh",
     "copy-from": "sw629",
     "type": "GUN",
@@ -8255,7 +8383,7 @@
     "dispersion": 380,
     "range": -3,
     "ranged_damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 2 },
-    "handling": 5,
+    "handling": 55,
     "valid_mod_locations": [
       [ "accessories", 2 ],
       [ "barrel", 1 ],
@@ -8288,14 +8416,14 @@
     "ranged_damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 20 },
     "dispersion": 10,
     "durability": 10,
-    "loudness": 55,
+    "loudness": 75,
     "to_hit": 1,
     "bashing": 16,
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
-    "modes": [ [ "DEFAULT", "beam", 5 ] ],
+    "modes": [ [ "DEFAULT", "beam", 3 ] ],
     "handling": 18,
     "valid_mod_locations": [ [ "sights", 1 ], [ "sling", 1 ], [ "accessories", 4 ], [ "underbarrel", 1 ], [ "rail", 1 ], [ "lens", 1 ] ],
-    "ammo_effects": [ "NEVER_MISFIRES", "LASER", "BLINDS_EYES", "INCENDIARY" ]
+    "ammo_effects": [ "NEVER_MISFIRES", "LASER", "BLINDS_EYES", "INCENDIARY", "NO_OVERSHOOT", "NO_CRIT", "NO_ITEM_DAMAGE", "NO_PENETRATE_OBSTACLES" ]
   },
   {
     "id": "lasrifleToyZhigh",
@@ -8316,14 +8444,14 @@
     "ranged_damage": { "damage_type": "bullet", "amount": 13, "armor_penetration": 30 },
     "dispersion": 10,
     "durability": 10,
-    "loudness": 55,
+    "loudness": 75,
     "to_hit": 1,
     "bashing": 16,
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
     "modes": [ [ "DEFAULT", "beam", 1 ] ],
     "handling": 10,
     "valid_mod_locations": [ [ "sights", 1 ], [ "sling", 1 ], [ "accessories", 4 ], [ "underbarrel", 1 ], [ "rail", 1 ], [ "lens", 1 ] ],
-    "ammo_effects": [ "NEVER_MISFIRES", "LASER", "BLINDS_EYES", "INCENDIARY" ]
+    "ammo_effects": [ "NEVER_MISFIRES", "LASER", "BLINDS_EYES", "INCENDIARY", "NO_OVERSHOOT", "NO_CRIT", "NO_ITEM_DAMAGE", "NO_PENETRATE_OBSTACLES" ]
   },
   {
     "id": "lascarbineToyZhigh",
@@ -8344,14 +8472,14 @@
     "ranged_damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 20 },
     "dispersion": 10,
     "durability": 10,
-    "loudness": 65,
+    "loudness": 85,
     "to_hit": 3,
     "bashing": 16,
     "flags": [ "NONCONDUCTIVE", "UNBREAKABLE_MELEE", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "NO_UNWIELD", "NO_DROP", "COMBAT_NPC_USE" ],
-    "modes": [ [ "DEFAULT", "beam", 8 ] ],
+    "modes": [ [ "DEFAULT", "beam", 4 ] ],
     "handling": 25,
     "valid_mod_locations": [ [ "sights", 1 ], [ "sling", 1 ], [ "accessories", 4 ], [ "underbarrel", 2 ], [ "rail", 1 ], [ "lens", 1 ] ],
-    "ammo_effects": [ "NEVER_MISFIRES", "LASER", "BLINDS_EYES", "INCENDIARY" ],
+    "ammo_effects": [ "NEVER_MISFIRES", "LASER", "BLINDS_EYES", "INCENDIARY", "NO_OVERSHOOT", "NO_CRIT", "NO_ITEM_DAMAGE", "NO_PENETRATE_OBSTACLES" ],
     "built_in_mods": [ "underbarrelPaintballgunZhigh", "rail_laser_sight" ]
   },
   {
@@ -8373,14 +8501,14 @@
     "ranged_damage": { "damage_type": "bullet", "amount": 2, "armor_penetration": 20 },
     "dispersion": 80,
     "durability": 10,
-    "loudness": 45,
+    "loudness": 65,
     "to_hit": 1,
     "bashing": 8,
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
-    "modes": [ [ "DEFAULT", "beam", 5 ] ],
+    "modes": [ [ "DEFAULT", "beam", 1 ] ],
     "handling": 5,
     "valid_mod_locations": [ [ "sights", 1 ], [ "sling", 1 ], [ "accessories", 4 ], [ "rail", 1 ], [ "lens", 1 ] ],
-    "ammo_effects": [ "NEVER_MISFIRES", "LASER", "BLINDS_EYES", "INCENDIARY" ]
+    "ammo_effects": [ "NEVER_MISFIRES", "LASER", "BLINDS_EYES", "INCENDIARY", "NO_OVERSHOOT", "NO_CRIT", "NO_ITEM_DAMAGE", "NO_PENETRATE_OBSTACLES" ]
   },
   {
     "id": "pepperShaker",
@@ -8637,17 +8765,17 @@
     "looks_like": "cannon_3in_ordnance",
     "type": "GUN",
     "name": { "str": "makeshift hand mortar" },
-    "description": "A muzzleloading blackpowder cannon made from pipes made for 3-inch shells, reinforced with iron bands.  While much lighter and easier to produce, it's not as effective, needs enough strength to handle, and less durable than the real deal.  It is portable, just like your bottom.",
+    "description": "A muzzleloading blackpowder cannon made from pipes made for 3-inch shells, reinforced with iron bands.  While much lighter and easier to produce, it's not as effective, needs enough strength[at least 10] to handle, and less durable than the real deal.  It is portable, just like your bottom.",
     "weight": "8 kg",
     "volume": "20 L",
     "material": [ "wood", "iron" ],
     "color": "brown",
     "ranged_damage": { "damage_type": "bullet", "damage_multiplier": 0.7 },
     "dispersion": 390,
+    "min_strength": 10,
     "relative": { "durability": -4 },
     "proportional": { "bashing": 0.3, "reload": 5.5 },
     "range": -15,
-    "min_strength": 11,
     "extend": { "flags": [ "NO_REPAIR" ] },
     "delete": { "flags": [ "MOUNTED_GUN" ] }
   },
@@ -9221,8 +9349,8 @@
     "loudness": 8,
     "ranged_damage": { "damage_type": "stab", "amount": 10 },
     "range": 20,
-    "ammo": [ "fishspear", "bolt_heavy" ],
-    "dispersion": 800,
+    "ammo": [ "fishspear", "atlatl" ],
+    "dispersion": 80,
     "durability": 6
   },
   {
@@ -9854,5 +9982,35 @@
     "range": 10,
     "dispersion": 650,
     "durability": 3
+  },
+  {
+    "id": "colt6520Zhigh",
+    "copy-from": "pistol_revolver",
+    "type": "GUN",
+    "name": { "str_sp": "Colt 6520" },
+    "description": "The Colt 6520 is a sci-fi-ish five-shooter revolver chambered for 10mm rounds, or for S&W's own .40 round.",
+    "weight": "1620 g",
+    "volume": "954 ml",
+    "price": "740 USD",
+    "price_postapoc": "2250 cent",
+    "bashing": 10,
+    "ascii_picture": "sw_610",
+	"clip_size": 5,
+    "material": [ "steel", "wood" ],
+    "color": "dark_gray",
+    "ammo": [ "10mm", "40" ],
+    "ranged_damage": { "damage_type": "bullet", "amount": 5 },
+    "range": 6,
+    "dispersion": 230,
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ]
   }
 ]

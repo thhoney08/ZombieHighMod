@@ -1591,5 +1591,28 @@
     "integral_volume": "800 ml",
     "dispersion_modifier": 15,
     "capacity_multiplier": 5
+  },
+  {
+    "id": "filter_spraycanZhigh",
+    "type": "GUNMOD",
+    "name": { "str": "'concrete bunny' suppressor" },
+    "description": "This is a spraycan crudely adapted to mate up with a firearm's barrel, generating an illegal, unregistered suppressor.  Good thing there don't seem to be any ATF agents around to arrest you.  While close in design to a real suppressor, it was not designed for high pressures involved and will eventually lose effectiveness.  The installed filter is large and, when attached, will interfere with your ability to aim down the base sights of the gun.",
+    "weight": "480 g",
+    "volume": "350 ml",
+    "price": "480 cent",
+    "price_postapoc": "250 cent",
+    "to_hit": 1,
+    "bashing": 3,
+    "material": [ "steel" ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "muzzle",
+    "install_time": "10 m",
+    "mod_target_category": [ [ "PISTOLS" ], [ "SUBMACHINE_GUNS" ], [ "RIFLES" ], [ "MACHINE_GUNS" ], [ "GATLING_GUNS" ] ],
+    "consume_chance": 150,
+    "consume_divisor": 60,
+    "dispersion_modifier": -10,
+    "loudness_modifier": -40,
+    "flags": [ "DISABLE_SIGHTS", "CONSUMABLE" ]
   }
 ]

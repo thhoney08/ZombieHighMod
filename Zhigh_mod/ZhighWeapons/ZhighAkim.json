@@ -1949,6 +1949,41 @@
     "components": [ [ [ "40_speedloader6", 2 ] ] ]
   },
   {
+    "id": "colt6520ZhighAkim",
+    "copy-from": "colt6520Zhigh",
+    "looks_like": "paintballgun_revolverAkimZhigh",
+    "weapon_category": [ "REVOLVERS", "AKIMBOZHIGH", "MANUAL_ACTION" ],
+    "type": "GUN",
+    "name": { "str": "akimbo Colt 6520" },
+    "description": "The Colt 6520 is a sci-fi-ish five-shooter revolver chambered for 10mm rounds, or for S&W's own .40 round.  Now comes in two.",
+    "clip_size": 10,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 2 ],
+      [ "bore", 2 ],
+      [ "grip", 2 ],
+      [ "mechanism", 8 ],
+      [ "sights", 2 ],
+      [ "stock", 2 ],
+      [ "underbarrel", 2 ]
+    ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "colt6520ZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "flags": [ "BLIND_EASY" ],
+    "components": [ [ [ "colt6520Zhigh", 2 ] ] ]
+  },
+  {
     "id": "sw_619Akim",
     "copy-from": "sw_619",
     "looks_like": "paintballgun_revolverAkimZhigh",
@@ -3275,7 +3310,7 @@
     "type": "GUN",
     "name": { "str": "akimbo laspistol" },
     "description": "A pistol shaped laser gun, it isn't hard to use, and is very accurate but weak.  Now comes in two.",
-    "modes": [ [ "DEFAULT", "beam", 5 ], [ "BURST", "burst", 10 ] ],
+    "modes": [ [ "DEFAULT", "beam", 1 ], [ "BURST", "burst", 2 ] ],
     "skill": "akimbo_Zhigh",
     "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
     "valid_mod_locations": [ [ "sights", 2 ], [ "accessories", 2 ], [ "rail", 2 ], [ "lens", 2 ] ],

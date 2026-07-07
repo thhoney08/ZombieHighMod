@@ -76,7 +76,7 @@
     },
     "use_action": {
       "type": "explosion",
-      "sound_volume": 0,
+      "sound_volume": "14 dB",
       "sound_msg": "ssss...",
       "no_deactivate_msg": "You've already lit the %s, try throwing it instead.",
       "explosion": {
@@ -396,6 +396,7 @@
     "thrown_damage": [ { "damage_type": "bash", "amount": 8 } ],
     "bashing": 1,
     "dont_recover_one_in": 25,
+    "speed": 200,
     "flags": [ "NOGIB", "NPC_THROWN" ]
   },
   {
@@ -411,6 +412,7 @@
     "thrown_damage": [ { "damage_type": "bash", "amount": 6 } ],
     "cutting": 2,
     "dont_recover_one_in": 25,
+    "speed": 200,
     "flags": [ "NOGIB", "NPC_THROWN" ]
   },
   {
@@ -427,6 +429,7 @@
     "damage": { "damage_type": "bullet", "amount": 16 },
     "thrown_damage": [ { "damage_type": "bash", "amount": 16 } ],
     "dont_recover_one_in": 15,
+    "speed": 200,
     "extend": { "effects": [ "LARGE_BEANBAG", "NO_EMBED" ] }
   },
   {
@@ -449,6 +452,7 @@
     "damage": { "damage_type": "bullet", "amount": 3 },
     "shot": { "count": 7, "half_angle": 30 },
     "loudness": 50,
+    "speed": 200,
     "effects": [ "NEVER_MISFIRES", "NON_FOULING", "SHOT" ]
   },
   {
@@ -469,6 +473,7 @@
     "loudness": 50,
     "damage": { "damage_type": "bullet", "amount": 8 },
     "range": 12,
+    "speed": 200,
     "effects": [ "NEVER_MISFIRES", "NON_FOULING", "JET" ]
   },
   {
@@ -491,6 +496,7 @@
     "range": 5,
     "damage": { "damage_type": "bullet", "amount": 1 },
     "loudness": 2,
+    "speed": 200,
     "effects": [ "NEVER_MISFIRES", "NON_FOULING", "NOGIB" ]
   },
   {
@@ -513,6 +519,7 @@
     "range": 2,
     "damage": { "damage_type": "bullet", "amount": 5, "armor_penetration": 9 },
     "loudness": 2,
+    "speed": 200,
     "effects": [ "NEVER_MISFIRES", "NON_FOULING", "NOGIB" ],
     "dont_recover_one_in": 10
   },
@@ -710,8 +717,7 @@
     "flags": [  ],
     "proportional": {
 		"damage": 0.2,
-		"recoil": 0.6,
-		"loudness": 3.8
+		"recoil": 0.6
 	},
     "drop": "handflare_lit",
     "extend": { "effects": "NO_EMBED" }
@@ -740,7 +746,7 @@
     "name": { "str": "bola shot" },
     "description": "Two pieces of heavy metal slug, tied with steel wires used with shotguns to give them the range capabilities of a rifle.  Not that damaging, but tangles enemies.",
     "relative": { "range": 18 },
-    "proportional": { "recoil": 0.8, "damage": 0.8 },
+    "proportional": { "recoil": 0.8, "damage": 0.5 },
     "extend": { "effects": [ "TANGLE" ] }
   },
   {
@@ -750,7 +756,7 @@
     "name": { "str": "web shot" },
     "description": "A slug-like pack, includes sticky web shot with shotguns to give them the range capabilities of a rifle.  Not that damaging, but tangles and webs enemies.",
     "relative": { "range": 14 },
-    "proportional": { "recoil": 0.8, "damage": 0.8 },
+    "proportional": { "recoil": 0.8, "damage": 0.5 },
     "extend": { "effects": [ "TANGLE", "WEBAMMO" ] }
   },
   {
@@ -783,6 +789,7 @@
     "damage": { "damage_type": "bullet", "amount": 5 },
     "loudness": 1,
     "shot": { "count": 7, "half_angle": 10 },
+    "speed": 200,
     "effects": [ "NEVER_MISFIRES", "BLINDS_EYES", "TRAILZHIGH", "TANGLE", "DRAW_AS_LINE", "NO_OVERSHOOT" ]
   },
   {
@@ -804,6 +811,7 @@
     "damage": { "damage_type": "bullet", "amount": 4 },
     "loudness": 1,
     "shot": { "count": 8, "half_angle": 15 },
+    "speed": 200,
     "effects": [ "NEVER_MISFIRES", "TANGLE" ]
   },
   {
@@ -821,6 +829,7 @@
     "effects": [ "COOKOFF" ],
     "volume": "100 ml",
     "ammo_type": "slug_zhigh",
+    "speed": 200,
     "count": 100
   },
   {
@@ -839,6 +848,7 @@
     "phase": "liquid",
     "ammo_type": "chemical_spray",
     "looks_like": "marloss_gel",
+    "range": 8,
     "count": 800,
     "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 3 },
     "effects": [ "LIGHTNING", "SHOT", "NEVER_MISFIRES" ]
@@ -859,6 +869,7 @@
     "phase": "liquid",
     "ammo_type": "chemical_spray",
     "looks_like": "chem_chloroform",
+    "range": 8,
     "count": 800,
     "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 50 },
     "effects": [ "SMOKE", "TRAIL", "NEVER_MISFIRES", "JET" ]
@@ -879,9 +890,10 @@
     "phase": "liquid",
     "ammo_type": "chemical_spray",
     "looks_like": "chem_agar",
+    "range": 8,
     "count": 800,
     "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 50 },
-    "effects": [ "TEARGAS", "TRAIL", "NEVER_MISFIRES", "JET" ]
+    "effects": [ "TEARGAS", "NEVER_MISFIRES", "JET" ]
   },
   {
     "id": "ZhighGas_corrosivegas",
@@ -898,7 +910,7 @@
     "container": "bottle_plastic",
     "phase": "liquid",
     "ammo_type": "chemical_spray",
-    "range": 4,
+    "range": 8,
     "count": 800,
     "looks_like": "nicotine_liquid",
     "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 1 },
@@ -940,7 +952,7 @@
     "container": "bottle_plastic",
     "phase": "liquid",
     "ammo_type": "chemical_spray",
-    "range": 4,
+    "range": 8,
     "count": 800,
     "looks_like": "nicotine_liquid",
     "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 1 },
@@ -1284,6 +1296,7 @@
 	"range": 30,
     "explode_in_fire": true,
     "damage": { "damage_type": "bullet", "amount": 36, "armor_penetration": 42 },
+    "speed": 200,
     "explosion": { "damage": 40, "radius": 2 }
   },
   {
@@ -1305,6 +1318,7 @@
     "damage": { "damage_type": "heat", "amount": 29 },
     "loudness": 1,
     "shot": { "count": 10, "half_angle": 25 },
+    "speed": 200,
     "effects": [ "NEVER_MISFIRES", "INCENDIARY" ]
   },
   {
@@ -1325,6 +1339,7 @@
     "ammo_type": "inkAmmoZhigh",
     "container": "bottle_plastic_small",
     "effects": [ "BLINDS_EYES", "NEVER_MISFIRES" ],
+    "speed": 200,
     "count": 50
   },
   {
@@ -1489,7 +1504,7 @@
       "fields_radius": 10,
       "fields_min_intensity": 3,
       "fields_max_intensity": 3,
-      "sound_volume": 20,
+      "sound_volume": "54 dB",
       "sound_msg": "Tick.",
       "no_deactivate_msg": "You've already pulled the %s's pin; try throwing it instead.",
       "explosion": {
@@ -1534,6 +1549,7 @@
     "recoil": 1,
     "loudness": 1,
     "drop": "bombard_flare_act",
+    "speed": 200,
     "effects": [ "NEVER_MISFIRES", "NO_EMBED", "SPOTLIGHTZHIGH" ]
   },
   {

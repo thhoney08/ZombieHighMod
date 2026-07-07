@@ -480,7 +480,7 @@
     "type": "npc",
     "id": "Zhigh_cult",
     "class": "NC_ZHIGHCULTIST",
-    "attitude": 0,
+    "attitude": 9,
     "mission": 8,
     "chat": "TALK_ZHIGH_CULTIST",
     "name_suffix": "Member",
@@ -490,7 +490,7 @@
     "type": "npc",
     "id": "Zhigh_cult2",
     "class": "NC_ZHIGHCULTIST",
-    "attitude": 0,
+    "attitude": 9,
     "mission": 8,
     "chat": "TALK_GODCO_cook_1",
     "name_suffix": "Member",
@@ -501,7 +501,7 @@
     "type": "npc",
     "id": "Zhigh_cult3",
     "class": "NC_ZHIGHCULTIST",
-    "attitude": 0,
+    "attitude": 9,
     "mission": 8,
     "chat": "TALK_GODCO_food_guard_1",
     "name_suffix": "Member",
@@ -522,9 +522,9 @@
     "bonus_int": { "rng": [ 4, 7 ] },
     "bonus_per": { "rng": [ 4, 7 ] },
     "worn_override": "NC_ZhighCULTIST_worn",
-    "carry_override": "ZhighNpc_misc",
-    "weapon_override": "NC_ZhighCULTIST_wield",
-    "shopkeeper_item_group": "ZhighNpc_misc",
+    "carry_override": "NC_ZhighCULTIST_misc",
+    "weapon_override": "shotcanisterZhigh_items",
+    "shopkeeper_item_group": "NC_ZhighCULTIST_misc",
     "skills": [
       { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
       { "skill": "melee", "bonus": { "rng": [ 2, 5 ] } },
@@ -545,7 +545,6 @@
       { "item": "knife_baselard" },
       { "item": "knife_trench" },
       { "item": "knife_rm42" },
-      { "item": "knife_rambo" },
       { "item": "knife_hunting" },
       { "item": "knife_combat" },
       { "item": "knife_tooth" },
@@ -579,7 +578,17 @@
       { "item": "badge_lightV2" },
       { "item": "jedi_cloak" },
       { "item": "mask_dust" },
+      { "group": "NC_ZhighCULTIST_wield", "container-item": "sheath" },
       { "group": "ZhighNpc_underwear_feet_male" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ZhighCULTIST_misc",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "shotcanister_scrap" },
+      { "group": "ZhighNadeGroups" }
     ]
   },
   {

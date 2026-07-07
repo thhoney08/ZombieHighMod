@@ -16,7 +16,7 @@
         {
           "has": "WIELD",
           "condition": "ALWAYS",
-          "values": [ { "value": "ARMOR_ELEC", "multiply": -1.0 }, { "value": "SPEED", "add": 30 } ],
+          "values": [ { "value": "ARMOR_ELECTRIC", "multiply": -1.0 }, { "value": "SPEED", "add": 30 } ],
           "hit_you_effect": [
             {
               "id": "zhigh_regen",
@@ -82,7 +82,7 @@
         {
           "has": "WIELD",
           "condition": "ALWAYS",
-          "values": [ { "value": "ARMOR_ELEC", "multiply": -1.0 }, { "value": "SPEED", "add": 30 } ],
+          "values": [ { "value": "ARMOR_ELECTRIC", "multiply": -1.0 }, { "value": "SPEED", "add": 30 } ],
           "hit_you_effect": [
             {
               "id": "zhigh_regenV2",
@@ -160,7 +160,7 @@
         {
           "has": "WIELD",
           "condition": "ALWAYS",
-          "values": [ { "value": "ARMOR_ELEC", "multiply": 1.0 }, { "value": "SPEED", "add": 40 } ],
+          "values": [ { "value": "ARMOR_ELECTRIC", "multiply": 1.0 }, { "value": "SPEED", "add": 40 } ],
           "hit_you_effect": [
             {
               "id": "zhigh_regen",
@@ -630,7 +630,7 @@
         {
 			"has": "WIELD",
 			"condition": "ALWAYS",
-			"values": [ { "value": "ARMOR_ELEC", "multiply": 5.0 }, { "value": "SPEED", "add": 90 } ],
+			"values": [ { "value": "ARMOR_ELECTRIC", "multiply": 5.0 }, { "value": "SPEED", "add": 90 } ],
 			"ench_effects": [
 				{ "effect": "debug_clairvoyance", "intensity": 1 },
 				{ "effect": "ignore_fall_damage", "intensity": 3 }
@@ -721,7 +721,7 @@
         {
 			"has": "WIELD",
 			"condition": "ALWAYS",
-			"values": [ { "value": "ARMOR_ELEC", "multiply": 5.0 }, { "value": "SPEED", "add": 90 } ],
+			"values": [ { "value": "ARMOR_ELECTRIC", "multiply": 5.0 }, { "value": "SPEED", "add": 90 } ],
 			"ench_effects": [
 				{ "effect": "ignore_fall_damage", "intensity": 3 }
 			],
@@ -1555,7 +1555,7 @@
         "passive_effects": [
           {
 			"values": [
-				{ "value": "ARMOR_ELEC", "multiply": -1.0 },
+				{ "value": "ARMOR_ELECTRIC", "multiply": -1.0 },
 				{ "value": "SPEED", "add": 10 }
 			],
             "condition": "ALWAYS",
@@ -1935,6 +1935,20 @@
     "flags": [ "NO_TAKEOFF", "BLIND", "OVERSIZE" ]
   },
   {
+    "id": "badge_shotcanisterZhigh",
+    "copy-from": "badge_abstract",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "shotcanister ammo belt" },
+    "description": "A mysterious ammo belt which creates ammos of shotcanisters.",
+    "material": [ "gold" ],
+    "price_postapoc": "5 USD",
+    "ammo": "shotcanister",
+    "max_charges": 30,
+    "proportional": { "weight": 2 },
+    "relic_data": { "recharge_scheme": [ { "type": "time", "interval": "10 seconds", "rate": 3 } ] },
+    "extend": { "flags": [ "ONLY_ONE" ] }
+  },
+  {
     "id": "tophatZhigh",
     "repairs_like": "balclava",
     "type": "TOOL_ARMOR",
@@ -2023,7 +2037,7 @@
     "charges_per_use": 4,
     "max_charges": 20,
     "initial_charges": 20,
-    "flags": [ "VARSIZE", "SUPER_FANCY", "SUN_GLASSES" ],
+    "flags": [ "VARSIZE", "SUPER_FANCY", "SUN_GLASSES", "EFFECT_FEATHER_FALL" ],
     "relic_data": { "charges_per_activation": 1, "recharge_scheme": [ { "type": "time", "req": "none", "interval": "2 m", "rate": 1 } ] }
   }
 ]

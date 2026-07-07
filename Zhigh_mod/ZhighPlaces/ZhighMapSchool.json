@@ -360,7 +360,7 @@
       { "point": [ 8, 16, 0 ], "overmap": "empty_rock" },
       { "point": [ 9, -2, 0 ], "overmap": "empty_rock" },
       { "point": [ 9, 0, 0 ], "overmap": "empty_rock" },
-      { "point": [ 9, 4, 0 ], "overmap": "orchard_north" },
+      { "point": [ 9, 4, 0 ], "overmap": "orchard_south" },
       { "point": [ 9, 5, 0 ], "overmap": "road_sw" },
       { "point": [ 9, 6, 0 ], "overmap": "road_nes" },
       { "point": [ 9, 7, 0 ], "overmap": "road_ns" },
@@ -641,7 +641,14 @@
         { "monster": "GROUP_ZHIGH", "x": [ 24, 47 ], "y": [ 48, 71 ] },
         { "monster": "GROUP_ZHIGH", "x": [ 48, 71 ], "y": [ 0, 23 ] },
         { "monster": "GROUP_ZHIGH", "x": [ 48, 71 ], "y": [ 48, 71 ] }
-      ]
+      ],
+      "place_monster": [
+		{ "monster": "mon_feral_human_SchoolWatchzhigh2", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+		{ "monster": "mon_feral_human_SchoolWatchzhigh2", "x": [ 0, 23 ], "y": [ 48, 71 ] },
+		{ "monster": "mon_feral_human_SchoolWatchzhigh2", "x": [ 24, 47 ], "y": [ 24, 47 ] },
+		{ "monster": "mon_feral_human_SchoolWatchzhigh2", "x": [ 48, 71 ], "y": [ 0, 23 ] },
+		{ "monster": "mon_feral_human_SchoolWatchzhigh2", "x": [ 48, 71 ], "y": [ 48, 71 ] }
+	  ]
     }
   },
   {
