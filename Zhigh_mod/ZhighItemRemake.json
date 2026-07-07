@@ -9,18 +9,21 @@
     "price_postapoc": "5 USD",
     "to_hit": -2,
     "qualities": [ 
-            [ "CUT", 3 ], 
-            [ "SAW_W", 2 ], 
-            [ "SAW_M", 2 ], 
-            [ "DRILL", 3 ], 
-            [ "WRENCH", 2 ], 
-            [ "PRY", 2 ], 
-            [ "WRENCH_FINE", 2 ], 
-            [ "SCREW", 2 ], 
-            [ "SCREW_FINE", 2 ], 
-            [ "BUTCHER", 8 ] 
-          ],
-    "use_action": { "type": "firestarter", "moves": 1000, "moves_slow": 25000, "need_sunlight": true },
+        [ "CUT", 3 ], 
+        [ "SAW_W", 2 ], 
+        [ "SAW_M", 2 ], 
+        [ "DRILL", 3 ], 
+        [ "WRENCH", 2 ], 
+        [ "PRY", 2 ], 
+        [ "WRENCH_FINE", 2 ], 
+        [ "SCREW", 2 ], 
+        [ "SCREW_FINE", 2 ], 
+        [ "BUTCHER", 8 ] 
+      ],
+    "use_action": [
+	  { "type": "firestarter", "moves": 1000, "moves_slow": 25000, "need_sunlight": true },
+	  "CROWBAR"
+	],
     "flags": [ "STAB", "FIRESTARTER", "SHEATH_KNIFE", "BELT_CLIP" ]
   },
   {
@@ -621,17 +624,18 @@
     "copy-from": "1st_aid",
     "type": "GENERIC",
     "category": "drugs",
-    "name": { "str": "first aid kit" },
+    "name": { "str": "compact first aid kit" },
     "weight": "1000 g",
     "volume": "750 ml",
     "flags": [ "NO_REPAIR", "NO_SALVAGE", "BELT_CLIP" ]
   },
   {
     "id": "1st_aid_deluxe",
+    "looks_like": "1st_aid",
     "copy-from": "1st_aid_deluxe",
     "type": "GENERIC",
     "category": "drugs",
-    "name": { "str": "deluxe first aid kit" },
+    "name": { "str": "first aid kit" },
     "weight": "1500 g",
     "volume": "1000 ml",
     "flags": [ "NO_REPAIR", "NO_SALVAGE", "BELT_CLIP" ]
@@ -910,14 +914,7 @@
     "copy-from": "blazer",
     "type": "ARMOR",
     "name": { "str": "blazer" },
-    "flags": [ "VARSIZE", "FANCY", "OUTER" ]
-  },
-  {
-    "id": "jacket_army",
-    "copy-from": "jacket_army",
-    "type": "ARMOR",
-    "name": { "str_sp": "army jacket" },
-    "flags": [ "VARSIZE", "POCKETS" ]
+    "flags": [ "VARSIZE", "FANCY", "OUTER", "ALLOWS_WINGS" ]
   },
   {
     "id": "survival_marker",
@@ -2109,7 +2106,6 @@
     "id": "paintballgun",
     "copy-from": "paintballgun",
     "type": "GUN",
-    "reload_noise_volume": 6,
     "name": { "str": "Paintball gun" },
     "flags": [ "NEVER_JAMS", "NON_FOULING" ],
     "range": 9,
@@ -2134,7 +2130,7 @@
     "type": "GUN",
     "name": { "str": "water cannon" },
     "flags": [ "NEVER_JAMS", "MOUNTED_GUN", "NON_FOULING" ],
-    "ammo": [ "water", "chemical_spray", "acid" ],
+    "ammo": [ "water", "acid" ],
     "ranged_damage": { "damage_type": "bullet", "amount": 40, "armor_penetration": 10 },
     "modes": [ [ "DEFAULT", "burst", 4 ], [ "SINGLE", "single", 1 ] ],
     "clip_size": 500,
@@ -2302,8 +2298,9 @@
     "name": { "str": "makeshift chemical thrower" },
     "range": 18,
     "handling": 1,
-    "modes": [ [ "DEFAULT", "spray", 10 ] ],
-    "ranged_damage": { "damage_type": "acid", "amount": 2, "armor_penetration": 1, "armor_multiplier": -1  },
+    "modes": [ [ "DEFAULT", "spray", 3 ] ],
+    "ranged_damage": { "damage_type": "acid", "amount": 1, "armor_penetration": 1, "armor_multiplier": -1  },
+	"loudness": -30,
 	"ammo_to_fire": 10
   },
   {
@@ -2315,8 +2312,9 @@
     "range": 25,
     "handling": 1,
     "durability": 8,
-    "modes": [ [ "DEFAULT", "spray", 10 ] ],
+    "modes": [ [ "DEFAULT", "spray", 3 ] ],
     "ranged_damage": { "damage_type": "acid", "amount": 3, "armor_penetration": 3, "armor_multiplier": -1  },
+	"loudness": -40,
 	"ammo_to_fire": 10
   },
   {
@@ -2489,6 +2487,7 @@
     "dispersion": 40,
     "count": 200,
     "stack_size": 200,
+	"loudness": 0,
     "effects": [ "NOGIB", "BLINDS_EYES", "NEVER_MISFIRES" ]
   },
   {
@@ -2736,6 +2735,7 @@
     "thrown_damage": [ { "damage_type": "bash", "amount": 3 } ],
     "extend": { "effects": [ "HEAVY_HIT", "BOUNCE", "NO_EMBED" ] },
     "dont_recover_one_in": 45,
+    "speed": 200,
     "flags": [ "NOGIB", "NPC_THROWN" ]
   },
   {
@@ -2752,6 +2752,7 @@
     "damage": { "damage_type": "bullet", "amount": 6 },
     "thrown_damage": [ { "damage_type": "bash", "amount": 6 } ],
     "dont_recover_one_in": 45,
+    "speed": 200,
     "flags": [ "NOGIB", "NPC_THROWN" ]
   },
   {
@@ -2768,6 +2769,7 @@
     "damage": { "damage_type": "bullet", "amount": 11, "armor_penetration": 9 },
     "thrown_damage": [ { "damage_type": "bullet", "amount": 9, "armor_penetration": 9 } ],
     "dont_recover_one_in": 25,
+    "speed": 200,
     "flags": [ "HURT_WHEN_WIELDED", "MESSY", "NPC_THROWN" ]
   },
   {
@@ -4040,5 +4042,43 @@
     "initial_charges": 20,
     "max_charges": 20,
     "flags": [ "WRITE_MESSAGE", "NO_UNLOAD", "NO_PAINT", "BELT_CLIP" ]
+  },
+  {
+	"id": "pool_ball",
+    "type": "AMMO",
+    "copy-from": "pool_ball",
+    "name": { "str": "pool ball" },
+    "damage": [ { "damage_type": "bash", "amount": 20 } ],
+    "ammo_type": "rock",
+    "bashing": 10
+  },
+  {
+	"id": "hand_paddles",
+    "type": "GENERIC",
+    "copy-from": "hand_paddles",
+    "name": { "str_sp": "oars" },
+    "weight": "3 kg",
+    "to_hit": 1,
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] }
+  },
+  {
+	"id": "feral_human_thrown_rock",
+    "type": "GUN",
+    "copy-from": "feral_human_thrown_rock",
+    "name": { "str": "hurled rubble" },
+    "loudness": 0
+  },
+  {
+	"id": "XL_holster",
+    "type": "ARMOR",
+    "copy-from": "XL_holster",
+    "name": { "str": "XL holster" },
+    "use_action": {
+      "type": "holster",
+      "min_volume": "200 ml",
+      "max_volume": "1500 ml",
+      "skills": [ "pistol", "smg", "shotgun", "rifle", "launcher" ],
+      "flags": [ "HOLSTER_PISTOL" ]
+    }
   }
 ]

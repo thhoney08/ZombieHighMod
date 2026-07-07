@@ -583,6 +583,8 @@
     "city": {
       "shop_radius": 30,
       "shop_sigma": 50,
+      "apartment_radius": 110,
+      "apartment_sigma": 0,
       "park_radius": 20,
       "park_sigma": 80,
       "houses": {
@@ -1757,7 +1759,7 @@
       "str_max": 400,
       "sound": "crash!",
       "sound_fail": "thump!",
-      "sound_vol": 8,
+      "sound_vol": "50 dB",
       "collapse_radius": 5,
       "items": [ { "item": "plastic_chunk", "count": [ 32, 54 ] } ],
       "ranged": { "reduction": [ 60, 120 ], "destroy_threshold": 120, "block_unaimed_chance": "50%" }
@@ -1782,7 +1784,7 @@
       "str_max": 400,
       "sound": "crash!",
       "sound_fail": "thump!",
-      "sound_vol": 8,
+      "sound_vol": "50 dB",
       "collapse_radius": 5,
       "items": [ { "item": "plastic_chunk", "count": 0 } ],
       "ranged": { "reduction": [ 60, 120 ], "destroy_threshold": 120, "block_unaimed_chance": "90%" }
@@ -2376,7 +2378,7 @@
     "name": "street light",
     "symbol": "Y",
     "color": "light_gray",
-    "light_emitted": 280
+    "light_emitted": 20
   },
   {
     "type": "terrain",

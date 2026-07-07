@@ -448,5 +448,18 @@
     "requirements": { "install": { "skills": [ [ "mechanics", 3 ], [ "launcher", 1 ] ] }, "removal": { "skills": [ [ "mechanics", 2 ] ] } },
     "description": "A light (by artillery standards) smoothbore cannon widely used in the American Civil War, noted for its reliability.",
     "delete": { "flags": [ "FOLDABLE" ] }
+  },
+  {
+    "id": "mounted_professional_chemical_thrower",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": { "str": "mounted chemical thrower" },
+    "item": "professional_chemical_thrower",
+    "folded_volume": "4250 ml",
+    "color": "dark_gray",
+    "broken_color": "dark_gray",
+    "breaks_into": [ { "item": "scrap", "count": 10 }, { "item": "steel_chunk", "count": 6 }, { "item": "steel_lump", "count": 2 } ],
+    "//": "doesn't work correctly if using ammo from vehicle tanks at the moment, so uses the usual magazines",
+    "requirements": { "install": { "skills": [ [ "mechanics", 5 ], [ "launcher", 1 ] ] }, "removal": { "skills": [ [ "mechanics", 3 ] ] } }
   }
 ]

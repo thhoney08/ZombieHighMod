@@ -97,7 +97,7 @@
     "//": "Steady stream of thick corrosive gas (example: corrosive gas grenade)",
     "field": "fd_acidGasZhigh",
     "intensity": 3,
-    "qty": 24
+    "qty": 36
   },
   {
     "id": "fd_acidGasZhigh",
@@ -268,8 +268,8 @@
     "bash": {
       "str_min": 5,
       "str_max": 12,
-      "sound_vol": 2,
-      "sound_fail_vol": 2,
+      "sound_vol": "50 dB",
+      "sound_fail_vol": "50 dB",
       "sound": "clang!",
 	  "sound_fail": "clang!",
       "msg_success": "You brush aside some barbed wire."
@@ -530,7 +530,7 @@
     "//": "medium cloud of nuke",
     "field": "fd_nuke_gas",
     "intensity": 3,
-    "qty": 20
+    "qty": 38
   },
   {
     "id": "emit_nuke_cloud_big",
@@ -538,7 +538,7 @@
     "//": "big cloud of nuke",
     "field": "fd_nuke_gas",
     "intensity": 3,
-    "qty": 40
+    "qty": 60
   },
   {
     "id": "fd_freeze",
@@ -630,7 +630,7 @@
     "//": "freeze gas",
     "field": "fd_freeze",
     "intensity": 3,
-    "qty": 20
+    "qty": 36
   },
   {
     "id": "emit_freeze_cloud_big",
@@ -638,7 +638,7 @@
     "//": "thicc freeze gas",
     "field": "fd_freeze",
     "intensity": 3,
-    "qty": 40
+    "qty": 60
   },
   {
     "id": "emit_cold_burst",
@@ -655,7 +655,7 @@
     "//": "cold gas",
     "field": "fd_cold_air3",
     "intensity": 3,
-    "qty": 20
+    "qty": 36
   },
   {
     "id": "emit_cold_cloud_big",
@@ -663,7 +663,7 @@
     "//": "thicc cold gas",
     "field": "fd_cold_air4",
     "intensity": 3,
-    "qty": 40
+    "qty": 60
   },
   {
     "id": "fd_zombie_rift",
@@ -727,7 +727,7 @@
     "//": "zombie gas",
     "field": "fd_zombie_gas",
     "intensity": 3,
-    "qty": 20
+    "qty": 36
   },
   {
     "id": "emit_zombie_cloud_big",
@@ -735,7 +735,7 @@
     "//": "thicc zombie gas",
     "field": "fd_zombie_rift",
     "intensity": 3,
-    "qty": 40
+    "qty": 60
   },
   {
     "id": "fd_zombie2_rift",
@@ -798,7 +798,7 @@
     "//": "zombie gas",
     "field": "fd_zombie2_gas",
     "intensity": 3,
-    "qty": 6
+    "qty": 36
   },
   {
     "id": "emit_zombie2_cloud_big",
@@ -806,7 +806,7 @@
     "//": "thicc zombie gas",
     "field": "fd_zombie2_rift",
     "intensity": 3,
-    "qty": 9
+    "qty": 60
   },
   {
     "id": "fd_zombie3_rift",
@@ -884,7 +884,6 @@
     "//": "thin zombie gas",
     "field": "fd_zombie3_gas",
     "intensity": 3,
-    "chance": 1,
     "qty": 3
   },
   {
@@ -893,7 +892,7 @@
     "//": "zombie gas",
     "field": "fd_zombie3_gas",
     "intensity": 3,
-    "qty": 6
+    "qty": 36
   },
   {
     "id": "emit_zombie3_cloud_big",
@@ -901,7 +900,7 @@
     "//": "thicc zombie gas",
     "field": "fd_zombie3_rift",
     "intensity": 3,
-    "qty": 9
+    "qty": 60
   },
   {
     "id": "fd_survivor_rift",
@@ -953,7 +952,6 @@
     "//": "thin survivor gas",
     "field": "fd_survivor_rift",
     "intensity": 3,
-    "chance": 1,
     "qty": 3
   },
   {
@@ -962,7 +960,7 @@
     "//": "survivor gas",
     "field": "fd_survivor_rift",
     "intensity": 3,
-    "qty": 6
+    "qty": 36
   },
   {
     "id": "emit_survivor_cloud_big",
@@ -970,7 +968,7 @@
     "//": "thicc survivor gas",
     "field": "fd_survivor_rift",
     "intensity": 3,
-    "qty": 9
+    "qty": 60
   },
   {
     "id": "fd_heal",
@@ -1054,7 +1052,7 @@
     "//": "heal gas",
     "field": "fd_heal",
     "intensity": 3,
-    "qty": 20
+    "qty": 36
   },
   {
     "id": "emit_heal_cloud_big",
@@ -1062,7 +1060,7 @@
     "//": "thicc heal gas",
     "field": "fd_heal",
     "intensity": 3,
-    "qty": 40
+    "qty": 60
   },
   {
     "id": "fd_healeffect",
@@ -1115,5 +1113,57 @@
     "field": "fd_fire",
     "qty": 1,
     "chance": 30
+  },
+  {
+    "id": "emit_fungicidal_stream",
+    "type": "emit",
+    "field": "fd_fungicidal_gas",
+    "intensity": 3,
+    "qty": 36
+  },
+  {
+    "id": "emit_insecticidal_stream",
+    "type": "emit",
+    "field": "fd_insecticidal_gas",
+    "intensity": 3,
+    "qty": 36
+  },
+  {
+    "id": "emit_small_fungicidal_stream",
+    "type": "emit",
+    "field": "fd_fungicidal_gas",
+    "intensity": 2,
+    "qty": 20
+  },
+  {
+    "id": "emit_small_insecticidal_stream",
+    "type": "emit",
+    "field": "fd_insecticidal_gas",
+    "intensity": 2,
+    "qty": 20
+  },
+  {
+    "id": "emit_tear_gas_stream",
+    "type": "emit",
+    "//": "Steady stream of tear gas (example: tear gas canister)",
+    "field": "fd_tear_gas",
+    "intensity": 3,
+    "qty": 36
+  },
+  {
+    "id": "emit_smoke_stream",
+    "type": "emit",
+    "//": "Steady stream of thick smoke (example: smoke bomb)",
+    "field": "fd_smoke",
+    "intensity": 3,
+    "qty": 36
+  },
+  {
+    "id": "emit_toxic_stream",
+    "type": "emit",
+    "//": "Steady stream of toxic gas",
+    "field": "fd_toxic_gas",
+    "intensity": 3,
+    "qty": 36
   }
 ]

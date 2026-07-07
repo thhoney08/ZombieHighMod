@@ -274,6 +274,7 @@
       { "item": "10gal_hat", "prob": 10 },
       { "item": "hat_ball", "prob": 10 },
       { "item": "hat_hard", "prob": 10 },
+      { "item": "carbon_hat_hardZhigh", "prob": 10 },
       { "item": "helmet_bike", "prob": 10 },
       { "item": "null", "prob": 10 },
       { "item": "helmet_motor", "prob": 10 },
@@ -969,6 +970,7 @@
       [ "kippah", 30 ],
       [ "eboshi", 30 ],
       [ "balclava", 20 ],
+      [ "balclava_leatherZhigh", 20 ],
       [ "porkpie", 30 ]
     ]
   },
@@ -1475,31 +1477,31 @@
     "type": "item_group",
     "subtype": "collection",
     "id": "quiver_crossbow_hunter",
-    "entries": [ { "item": "bolt_metal", "charges": 30 } ]
+    "entries": [ { "item": "bolt_metal", "charges": 20 } ]
   },
   {
     "type": "item_group",
     "subtype": "collection",
     "id": "quiver_bionic_prepper",
-    "entries": [ { "item": "bolt_steel", "charges": 30 } ]
+    "entries": [ { "item": "bolt_steel", "charges": 20 } ]
   },
   {
     "type": "item_group",
     "subtype": "collection",
     "id": "quiver_naturalist",
-    "entries": [ { "item": "arrow_wood", "charges": 30 } ]
+    "entries": [ { "item": "arrow_wood", "charges": 20 } ]
   },
   {
     "type": "item_group",
     "subtype": "collection",
     "id": "quiver_hardened_survivor",
-    "entries": [ { "item": "bolt_wood", "charges": 80 } ]
+    "entries": [ { "item": "bolt_wood", "charges": 60 } ]
   },
   {
     "type": "item_group",
     "subtype": "collection",
     "id": "quiver_player_bandit",
-    "entries": [ { "item": "bolt_wood", "charges": 30 } ]
+    "entries": [ { "item": "bolt_wood", "charges": 20 } ]
   },
   {
     "type": "item_group",
@@ -2707,6 +2709,7 @@
       [ "baton_light", 30 ],
       [ "spring_cosh", 15 ],
       [ "shield_riot", 40 ],
+      [ "shield_riot_bucklerZhigh", 40 ],
       [ "shield_ballistic", 30 ],
       [ "shield_riotTazer", 30 ],
       [ "shield_ballisticMagpouch", 20 ],
@@ -2730,6 +2733,7 @@
       { "group": "guns_swat", "prob": 20 },
       { "group": "mags_swat", "prob": 20 },
       { "item": "shield_riot", "prob": 20 },
+      { "item": "shield_riot_bucklerZhigh", "prob": 20 },
       { "item": "breachingRam", "prob": 20 },
       { "item": "shield_riotTazer", "prob": 30 },
       { "item": "shield_ballisticMagpouch", "prob": 30 },
@@ -2771,6 +2775,7 @@
       [ "lockpickKitHitmanZhigh", 10 ],
       [ "rope_30", 5 ],
       [ "shield_riot", 4 ],
+      [ "shield_riot_bucklerZhigh", 4 ],
       [ "shield_ballistic", 3 ],
       [ "shield_riotTazer", 3 ],
       [ "shield_ballisticMagpouch", 2 ],
@@ -3107,6 +3112,15 @@
       [ "mask_paintball", 20 ],
       [ "doom_fullhelmet", 15 ],
       [ "doom_vest", 20 ], 
+      [ "holster", 20 ], 
+      [ "XL_holster", 10 ], 
+      [ "baldric_holster", 5 ], 
+      [ "shoulder_holster", 10 ], 
+      [ "sholster", 10 ], 
+      [ "bootstrap", 10 ], 
+      [ "wristholster", 10 ], 
+      [ "legrig", 20 ], 
+      [ "chestrig", 20 ], 
       [ "HalfLifePcvZhigh_vest", 20 ], 
       [ "goggles_ski", 15 ], 
       [ "goggles_swim", 15 ] 

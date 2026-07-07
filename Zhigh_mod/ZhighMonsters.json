@@ -291,7 +291,7 @@
     "bashing": 7,
     "damage": { "damage_type": "bash", "amount": 7, "armor_penetration": 30 },
     "range": 10,
-    "dispersion": 14,
+    "dispersion": 4000,
     "loudness": 0,
     "to_hit": -1,
     "qualities": [ [ "HAMMER", 1 ] ],
@@ -304,7 +304,7 @@
     "name": { "str": "feral student" },
     "description": "Their pupils are dilated and what remains to be seen of the iris and sclera are bloodshot.  This weapon-wielding maniac still breathes, but the zombies treat them like one of their own.",
     "hp": 25,
-    "luminance": 1,
+    "luminance": 10,
 	"aggression": 80,
     "species": [ "ZOMBIE", "HUMAN" ],
 	"speed": 70,
@@ -316,7 +316,7 @@
       {
         "type": "gun",
         "cooldown": 3,
-        "move_cost": 150,
+        "move_cost": 250,
         "gun_type": "feral_human_thrown_rock",
         "ammo_type": "brickZhigh",
         "no_ammo_sound": "Someone throw a rock!",
@@ -332,7 +332,7 @@
         "no_crits": true
       }
     ],
-    "starting_ammo": { "brickZhigh": 4 },
+    "starting_ammo": { "brickZhigh": 2 },
     "zombify_into": "mon_zombie",
     "death_function": [ "MELT" ],
     "monster_weapon": "ZhighGuardWeaponGroups",
@@ -354,14 +354,14 @@
     "name": "Backup call",
     "description": "Summons several permanent feral students.",
     "flags": [ "HOSTILE_SUMMON", "PERMANENT", "NO_EXPLOSION_VFX" ],
-    "valid_targets": [ "ground" ],
+    "valid_targets": [ "ground", "self" ],
     "min_damage": 2,
     "max_damage": 3,
-    "min_range": 5,
-    "max_range": 9,
-    "min_aoe": 7,
-    "max_aoe": 9,
-    "base_casting_time": 10,
+    "min_range": 9,
+    "max_range": 20,
+    "min_aoe": 9,
+    "max_aoe": 14,
+    "base_casting_time": 1,
     "effect": "summon",
     "effect_str": "mon_feral_human_zhigh"
   },
@@ -377,7 +377,7 @@
     "death_drops": "ZhighGuardWeaponGroups",
     "special_attacks": [
 	  [ "PARROT", 3 ],
-	  { "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh" }, "cooldown": 45 }
+	  { "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh", "hit_self": true }, "cooldown": 45 }
     ],
     "flags": [
       "SEES",
@@ -388,6 +388,63 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS"
+    ]
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_summon_feral_human_SchoolWatchzhigh",
+    "name": "Backup call",
+    "description": "Summons several permanent feral students.",
+    "flags": [ "HOSTILE_SUMMON", "PERMANENT", "NO_EXPLOSION_VFX" ],
+    "valid_targets": [ "ground", "self" ],
+    "min_damage": 1,
+    "max_damage": 8,
+    "min_range": 9,
+    "max_range": 20,
+    "min_aoe": 9,
+    "max_aoe": 14,
+    "base_casting_time": 1,
+    "effect": "summon",
+    "effect_str": "mon_feral_human_SchoolWatchzhigh"
+  },
+  {
+    "id": "mon_feral_human_SchoolWatchzhigh2",
+    "looks_like": "mon_feral_human_SchoolWatchzhigh",
+    "type": "MONSTER",
+    "copy-from": "mon_feral_human_SchoolWatchzhigh",
+    "name": { "str": "feral hall monitor" },
+	"vision_day": 4,
+    "vision_night": 4,
+    "hp": 10,
+	"speed": 70,
+    "luminance": 1000,
+    "on_death": {
+	  "death_function": [  ],
+      "spawn_mon_near": {
+		"distance": 5,
+		"ids": [
+			"mon_feral_human_SchoolWatchzhigh",
+			"mon_feral_human_SchoolWatchzhigh",
+			"mon_feral_human_SchoolWatchzhigh",
+			"mon_feral_human_SchoolWatchzhigh",
+			"mon_feral_human_SchoolWatchzhigh"
+		  ]
+		}
+	},
+    "death_drops": "ZhighGuardWeaponGroups",
+    "special_attacks": [
+	  { "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh", "hit_self": true }, "cooldown": 1 }
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "HUMAN",
+      "CAN_OPEN_DOORS",
+      "IMMOBILE"
     ]
   },
   {
@@ -409,17 +466,17 @@
         "move_cost": 80,
         "gun_type": "bbMp5",
         "ammo_type": "bb",
-        "fake_skills": [ [ "gun", 5 ], [ "smg", 5 ] ],
-        "fake_dex": 10,
+        "fake_skills": [ [ "gun", 2 ], [ "smg", 2 ] ],
+        "fake_dex": 5,
         "ranges": [ [ 0, 16, "DEFAULT" ] ],
         "require_targeting_npc": true,
         "require_targeting_monster": true,
         "laser_lock": false,
         "no_crits": true,
-        "targeting_cost": 50,
+        "targeting_cost": 15,
         "targeting_timeout_extend": -10,
         "targeting_sound": "\"Enemy there!\"",
-        "targeting_volume": 80,
+        "targeting_volume": "44 dB",
         "no_ammo_sound": "a chk!"
       }
     ],
@@ -486,7 +543,7 @@
         "laser_lock": true,
         "targeting_cost": 75,
         "targeting_sound": "\"Enemy in sight!\"",
-        "targeting_volume": 30,
+        "targeting_volume": "54 dB",
         "require_targeting_player": false,
         "require_targeting_npc": true,
         "require_targeting_monster": true,
@@ -843,7 +900,7 @@
         "laser_lock": true,
         "targeting_cost": 75,
         "targeting_sound": "\"Tango Locked, Engaging.\"",
-        "targeting_volume": 30,
+        "targeting_volume": "54 dB",
         "require_targeting_player": false,
         "require_targeting_npc": true,
         "require_targeting_monster": true,
@@ -975,7 +1032,7 @@
         "laser_lock": false,
         "targeting_cost": 35,
         "targeting_sound": "\"Tango locked, engaging light support.\"",
-        "targeting_volume": 30,
+        "targeting_volume": "54 dB",
         "require_targeting_player": false,
         "require_targeting_npc": false,
         "require_targeting_monster": false,
@@ -1176,7 +1233,7 @@
 		[ "SEARCHLIGHT", 0 ],
 		[ "RESURRECT", 0 ],
 		[ "COMMAND_BUFF", 0 ],
-		{ "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh" }, "cooldown": 1 }
+		{ "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh", "hit_self": true }, "cooldown": 1 }
 	],
     "death_drops": { "groups": [ [ "robots", 1 ], [ "turret_searchlight", 1 ] ] },
     "on_death": { "death_function": [ "FOCUSEDBEAM" ], "spawn_mon": "mon_zombie_guardZhigh" },
@@ -1223,7 +1280,7 @@
 		[ "SEARCHLIGHT", 0 ],
 		[ "RESURRECT", 0 ],
 		[ "COMMAND_BUFF", 0 ],
-		{ "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh" }, "cooldown": 1 }
+		{ "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh", "hit_self": true }, "cooldown": 1 }
 	],
     "death_drops": { "groups": [ [ "robots", 1 ], [ "turret_searchlight", 1 ] ] },
     "death_function": [ "FOCUSEDBEAM" ],
@@ -1839,7 +1896,7 @@
     "dispersion": 10,
     "durability": 10,
     "skill": "rifle",
-    "loudness": 60,
+    "loudness": 10,
     "ammo_effects": [ "NOGIB", "NEVER_MISFIRES", "NO_DAMAGE_SCALING" ],
     "modes": [ [ "DEFAULT", "burst", 6 ] ],
     "flags": [ "NEVER_JAMS" ]
@@ -2232,7 +2289,7 @@
         "laser_lock": true,
         "targeting_cost": 75,
         "targeting_sound": "\"Tango Locked, Engaging.\"",
-        "targeting_volume": 30,
+        "targeting_volume": "54 dB",
         "require_targeting_player": false,
         "require_targeting_npc": true,
         "require_targeting_monster": true,
@@ -2632,7 +2689,7 @@
         "targeting_cost": 200,
         "targeting_timeout_extend": -10,
         "targeting_sound": "\"Hostile detected.\"",
-        "targeting_volume": 50,
+        "targeting_volume": "74 dB",
         "no_ammo_sound": "a chk!"
       }
     ],
@@ -2732,7 +2789,7 @@
         "targeting_cost": 20,
         "targeting_timeout_extend": -10,
         "targeting_sound": "\"Hostile detected.\"",
-        "targeting_volume": 70
+        "targeting_volume": "94 dB"
       }
     ],
     "path_settings": { "max_dist": 30 },

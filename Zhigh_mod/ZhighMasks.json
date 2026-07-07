@@ -530,6 +530,13 @@
     "copy-from": "mask_paper_base"
   },
   {
+    "id": "mask_ZombieZhigh",
+    "name": { "str": "zombie mask" },
+    "type": "ARMOR",
+    "description": "This is a mask, based on a zombie.",
+    "copy-from": "mask_paper_base"
+  },
+  {
     "id": "mask_SquidTriZhigh",
     "type": "ARMOR",
     "copy-from": "mask_hockey",
@@ -898,6 +905,7 @@
     "name": { "str": "combat mask" },
     "description": "A mask worn over your mouth and eyes, which protects you from all kinds of environmental harm.  Plus, a little bit of night vison, flashlight, and thermal vision too!  Powered by some nuclear-related battery, so you can use it as long as you want!",
     "flags": [ 
+	  "RECON_VISION", 
 	  "WATER_FRIENDLY", 
 	  "REBREATHER", 
 	  "OVERSIZE", 
@@ -953,6 +961,7 @@
         "msg": "Activating flashlight."
       },
      "flags": [ 
+	  "RECON_VISION", 
 	  "WATER_FRIENDLY", 
 	  "REBREATHER", 
 	  "OVERSIZE", 
@@ -996,6 +1005,7 @@
         "msg": "Shutting down."
       },
     "flags": [ 
+	  "RECON_VISION", 
 	  "WATER_FRIENDLY", 
 	  "REBREATHER", 
 	  "OVERSIZE", 

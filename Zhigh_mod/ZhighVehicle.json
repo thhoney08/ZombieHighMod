@@ -464,6 +464,7 @@
       [ "'#######.'H" ],
       [ "''O'''''+'O" ]
     ],
+    "color_palette": "bus_standard",
     "parts": [
       { "x": 0, "y": 1, "part": "hdframe_vertical_2" },
       { "x": 0, "y": 1, "part": "aisle_vertical" },
@@ -888,6 +889,181 @@
       { "x": 0, "y": -1, "parts": [ "frame_wood_horizontal", "wheel_wood_b" ] },
       { "x": 0, "y": 1, "parts": [ "frame_wood_horizontal", "wheel_wood_b" ] },
       { "x": -1, "y": 0, "parts": [ "frame_wood_handle" ] }
+    ]
+  },
+  {
+    "id": "pepperFoggerZhigh",
+    "type": "vehicle",
+    "name": "Pepper Fogger",
+    "blueprint": [
+      [ "        o" ],
+      [ "|+++-+-+-" ],
+      [ "|===|#*#*" ],
+      [ "+===|=*H|" ],
+      [ "|===|#*#*" ],
+      [ "|+++-+-+-" ],
+      [ "        o" ]
+    ],
+    "color_palette": "swat_standard",
+    "parts": [
+      {
+        "x": -5,
+        "y": -2,
+        "parts": [ "frame_horizontal", "roof", "floodlight", "wheel_mount_medium", "wheel_wide", "board_vertical" ]
+      },
+      {
+        "x": -4,
+        "y": -2,
+        "parts": [ "frame_horizontal", "roof", "wheel_mount_medium", "wheel_wide", "board_vertical" ]
+      },
+      { "x": -3, "y": -2, "parts": [ "frame_horizontal", "roof", "board_vertical" ] },
+      { "x": -2, "y": -2, "parts": [ "frame_horizontal", "roof", "floodlight", "board_vertical" ] },
+      { "x": -1, "y": -2, "parts": [ "frame_horizontal", "roof", "door", { "part": "tank", "fuel": "gasoline" } ] },
+      {
+        "x": 0,
+        "y": -2,
+        "parts": [ "frame_horizontal", "roof", "wheel_mount_medium_steerable", "wheel_wide", "door" ]
+      },
+      { "x": 1, "y": -2, "parts": [ "frame_horizontal", "roof", "windshield", "turret_mount", { "part": "mounted_professional_chemical_thrower", "ammo": 100, "ammo_types": [ "ZhighGas_teargas" ], "ammo_qty": [ 500, 800 ] } ] },
+      { "x": -5, "y": -1, "parts": [ "frame_horizontal", "roof", "door_trunk", "storage_battery" ] },
+      {
+        "x": -4,
+        "y": -1,
+        "parts": [ "frame_horizontal", "roof", "light_red", { "part": "tank", "fuel": "water" }, "trunk" ]
+      },
+      {
+        "x": -3,
+        "y": -1,
+        "parts": [ "frame_horizontal", "roof", "board_horizontal", { "part": "tank", "fuel": "water" } ]
+      },
+      { "x": -2, "y": -1, "parts": [ "frame_horizontal", "roof", { "part": "tank", "fuel": "water" }, "trunk" ] },
+      { "x": -1, "y": -1, "parts": [ "frame_horizontal", "roof", "seat", "seatbelt" ] },
+      { "x": 0, "y": -1, "parts": [ "frame_horizontal", "roof", "seat", "seatbelt" ] },
+      { "x": 1, "y": -1, "parts": [ "frame_horizontal", "roof", "windshield", "headlight", "floodlight" ] },
+      { "x": -5, "y": 0, "parts": [ "frame_horizontal", "roof", "door_trunk", "storage_battery" ] },
+      { "x": -4, "y": 0, "parts": [ "frame_horizontal", "roof", { "part": "tank", "fuel": "water" }, "trunk" ] },
+      {
+        "x": -3,
+        "y": 0,
+        "parts": [ "frame_horizontal", "roof", "board_horizontal", { "part": "tank", "fuel": "water" } ]
+      },
+      { "x": -2, "y": 0, "parts": [ "frame_horizontal", "roof", { "part": "tank", "fuel": "water" }, "trunk" ] },
+      { "x": -1, "y": 0, "parts": [ "frame_horizontal", "roof", "seat", "seatbelt" ] },
+      {
+        "x": 0,
+        "y": 0,
+        "parts": [ "frame_horizontal", "roof", "light_red", "seat", "seatbelt", "controls", "dashboard" ]
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "parts": [ "frame_horizontal", "roof", "windshield", "engine_v8", "alternator_truck", "horn_big" ]
+      },
+      { "x": -5, "y": 1, "parts": [ "frame_horizontal", "roof", "door_trunk", "storage_battery" ] },
+      {
+        "x": -4,
+        "y": 1,
+        "parts": [ "frame_horizontal", "roof", "light_red", { "part": "tank", "fuel": "water" }, "trunk" ]
+      },
+      {
+        "x": -3,
+        "y": 1,
+        "parts": [ "frame_horizontal", "roof", "board_horizontal", { "part": "tank", "fuel": "water" } ]
+      },
+      { "x": -2, "y": 1, "parts": [ "frame_horizontal", "roof", { "part": "tank", "fuel": "water" }, "trunk" ] },
+      { "x": -1, "y": 1, "parts": [ "frame_horizontal", "roof", "seat", "seatbelt" ] },
+      { "x": 0, "y": 1, "parts": [ "frame_horizontal", "roof", "seat", "seatbelt" ] },
+      { "x": 1, "y": 1, "parts": [ "frame_horizontal", "roof", "windshield", "headlight", "floodlight" ] },
+      {
+        "x": -5,
+        "y": 2,
+        "parts": [ "frame_horizontal", "roof", "floodlight", "wheel_mount_medium", "wheel_wide", "board_vertical" ]
+      },
+      {
+        "x": -4,
+        "y": 2,
+        "parts": [ "frame_horizontal", "roof", "wheel_mount_medium", "wheel_wide", "board_vertical" ]
+      },
+      { "x": -3, "y": 2, "parts": [ "frame_horizontal", "roof", "board_vertical", "beeper" ] },
+      { "x": -2, "y": 2, "parts": [ "frame_horizontal", "roof", "floodlight", "board_vertical" ] },
+      { "x": -1, "y": 2, "parts": [ "frame_horizontal", "roof", "door", { "part": "tank", "fuel": "gasoline" } ] },
+      {
+        "x": 0,
+        "y": 2,
+        "parts": [ "frame_horizontal", "roof", "wheel_mount_medium_steerable", "wheel_wide", "door" ]
+      },
+      { "x": 1, "y": 2, "parts": [ "frame_horizontal", "roof", "windshield", "turret_mount", { "part": "mounted_professional_chemical_thrower", "ammo": 100, "ammo_types": [ "ZhighGas_teargas" ], "ammo_qty": [ 500, 800 ] } ] }
+    ],
+    "items": [
+      { "x": -4, "y": -1, "chance": 40, "item_groups": [ "toxic_dump_equipment" ] },
+      { "x": -4, "y": -1, "chance": 20, "item_groups": [ "prison_armor" ] },
+      { "x": -4, "y": -1, "chance": 100, "item_groups": [ "teargasCanisterZhigh" ] },
+      { "x": -4, "y": -1, "chance": 100, "item_groups": [ "teargasCanisterZhigh" ] },
+      { "x": -4, "y": -1, "chance": 100, "item_groups": [ "teargasCanisterZhigh" ] },
+      { "x": -4, "y": -1, "chance": 40, "item_groups": [ "prison_armor" ] },
+      { "x": -4, "y": -1, "chance": 40, "item_groups": [ "prison_armor" ] },
+      { "x": -4, "y": -1, "chance": 40, "item_groups": [ "toxic_dump_equipment" ] },
+      { "x": -4, "y": -1, "chance": 40, "item_groups": [ "prison_armor" ] },
+      { "x": -4, "y": -1, "chance": 20, "item_groups": [ "toxic_dump_equipment" ] },
+      { "x": -4, "y": -1, "chance": 20, "item_groups": [ "toxic_dump_equipment" ] },
+      { "x": -4, "y": -1, "chance": 40, "item_groups": [ "prison_armor" ] },
+      { "x": -4, "y": 0, "chance": 40, "item_groups": [ "toxic_dump_equipment" ] },
+      { "x": -4, "y": 0, "chance": 40, "item_groups": [ "prison_armor" ] },
+      { "x": -4, "y": 0, "chance": 40, "item_groups": [ "prison_armor" ] },
+      { "x": -4, "y": 0, "chance": 100, "item_groups": [ "teargasCanisterZhigh" ] },
+      { "x": -4, "y": 0, "chance": 100, "item_groups": [ "teargasCanisterZhigh" ] },
+      { "x": -4, "y": 0, "chance": 100, "item_groups": [ "teargasCanisterZhigh" ] },
+      { "x": -4, "y": 0, "chance": 40, "item_groups": [ "toxic_dump_equipment" ] },
+      { "x": -4, "y": 0, "chance": 40, "item_groups": [ "prison_armor" ] },
+      { "x": -4, "y": 0, "chance": 20, "item_groups": [ "toxic_dump_equipment" ] },
+      { "x": -4, "y": 0, "chance": 20, "item_groups": [ "toxic_dump_equipment" ] },
+      { "x": -4, "y": 0, "chance": 40, "item_groups": [ "prison_armor" ] },
+      { "x": -4, "y": 1, "chance": 40, "item_groups": [ "toxic_dump_equipment" ] },
+      { "x": -4, "y": 1, "chance": 20, "item_groups": [ "prison_armor" ] },
+      { "x": -4, "y": 1, "chance": 40, "item_groups": [ "prison_armor" ] },
+      { "x": -4, "y": 1, "chance": 100, "item_groups": [ "teargasCanisterZhigh" ] },
+      { "x": -4, "y": 1, "chance": 100, "item_groups": [ "teargasCanisterZhigh" ] },
+      { "x": -4, "y": 1, "chance": 100, "item_groups": [ "teargasCanisterZhigh" ] },
+      { "x": -4, "y": 1, "chance": 40, "item_groups": [ "prison_armor" ] },
+      { "x": -4, "y": 1, "chance": 40, "item_groups": [ "toxic_dump_equipment" ] },
+      { "x": -4, "y": 1, "chance": 40, "item_groups": [ "prison_armor" ] },
+      { "x": -4, "y": 1, "chance": 20, "item_groups": [ "toxic_dump_equipment" ] },
+      { "x": -4, "y": 1, "chance": 20, "item_groups": [ "toxic_dump_equipment" ] },
+      { "x": -4, "y": 1, "chance": 40, "item_groups": [ "prison_armor" ] },
+      { "x": -2, "y": -1, "chance": 100, "item_groups": [ "teargasCanisterZhigh" ] },
+      { "x": -2, "y": -1, "chance": 100, "item_groups": [ "teargasCanisterZhigh" ] },
+      { "x": -2, "y": -1, "chance": 100, "item_groups": [ "teargasCanisterZhigh" ] },
+      { "x": -2, "y": -1, "chance": 40, "item_groups": [ "toxic_dump_equipment" ] },
+      { "x": -2, "y": -1, "chance": 20, "item_groups": [ "fireman_gear" ] },
+      { "x": -2, "y": -1, "chance": 40, "item_groups": [ "prison_armor" ] },
+      { "x": -2, "y": -1, "chance": 40, "item_groups": [ "prison_armor" ] },
+      { "x": -2, "y": -1, "chance": 40, "item_groups": [ "toxic_dump_equipment" ] },
+      { "x": -2, "y": -1, "chance": 40, "item_groups": [ "prison_armor" ] },
+      { "x": -2, "y": -1, "chance": 20, "item_groups": [ "toxic_dump_equipment" ] },
+      { "x": -2, "y": -1, "chance": 20, "item_groups": [ "toxic_dump_equipment" ] },
+      { "x": -2, "y": -1, "chance": 40, "item_groups": [ "prison_armor" ] },
+      { "x": -2, "y": 0, "chance": 40, "item_groups": [ "toxic_dump_equipment" ] },
+      { "x": -2, "y": 0, "chance": 40, "item_groups": [ "prison_armor" ] },
+      { "x": -2, "y": 0, "chance": 40, "item_groups": [ "prison_armor" ] },
+      { "x": -2, "y": 0, "chance": 40, "item_groups": [ "toxic_dump_equipment" ] },
+      { "x": -2, "y": 0, "chance": 100, "item_groups": [ "teargasCanisterZhigh" ] },
+      { "x": -2, "y": 0, "chance": 100, "item_groups": [ "teargasCanisterZhigh" ] },
+      { "x": -2, "y": 0, "chance": 100, "item_groups": [ "teargasCanisterZhigh" ] },
+      { "x": -2, "y": 0, "chance": 40, "item_groups": [ "prison_armor" ] },
+      { "x": -2, "y": 0, "chance": 20, "item_groups": [ "toxic_dump_equipment" ] },
+      { "x": -2, "y": 0, "chance": 20, "item_groups": [ "toxic_dump_equipment" ] },
+      { "x": -2, "y": 0, "chance": 40, "item_groups": [ "prison_armor" ] },
+      { "x": -2, "y": 1, "chance": 100, "item_groups": [ "teargasCanisterZhigh" ] },
+      { "x": -2, "y": 1, "chance": 100, "item_groups": [ "teargasCanisterZhigh" ] },
+      { "x": -2, "y": 1, "chance": 100, "item_groups": [ "teargasCanisterZhigh" ] },
+      { "x": -2, "y": 1, "chance": 40, "item_groups": [ "toxic_dump_equipment" ] },
+      { "x": -2, "y": 1, "chance": 40, "item_groups": [ "prison_armor" ] },
+      { "x": -2, "y": 1, "chance": 40, "item_groups": [ "toxic_dump_equipment" ] },
+      { "x": -2, "y": 1, "chance": 40, "item_groups": [ "prison_armor" ] },
+      { "x": -2, "y": 1, "chance": 40, "item_groups": [ "prison_armor" ] },
+      { "x": -2, "y": 1, "chance": 20, "item_groups": [ "prison_armor" ] },
+      { "x": -2, "y": 1, "chance": 20, "item_groups": [ "prison_armor" ] },
+      { "x": -2, "y": 1, "chance": 40, "item_groups": [ "prison_armor" ] }
     ]
   }
 ]

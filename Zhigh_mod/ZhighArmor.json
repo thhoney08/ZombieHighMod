@@ -809,6 +809,7 @@
         "item_action_type": "repair_fabric",
         "materials": [
           "cotton",
+          "scute",
           "leather",
           "nylon",
           "wool",
@@ -830,6 +831,7 @@
         "type": "sew_advanced",
         "materials": [
           "cotton",
+          "scute",
           "leather",
           "nylon",
           "wool",
@@ -843,7 +845,19 @@
           "kevlar_rigid"
         ],
         "skill": "tailor",
-        "clothing_mods": [ "leather_padded", "steel_padded", "alloy_padded", "kevlar_padded", "furred", "wooled" ]
+        "clothing_mods": [
+          "leather_padded",
+          "steel_padded",
+          "hard_steel_padded",
+          "alloy_padded",
+          "kevlar_padded",
+          "nomex_padded",
+          "furred",
+          "wooled",
+          "resized_large",
+          "resized_small",
+          "pocketed"
+        ]
       },
       {
         "type": "repair_item",
@@ -902,11 +916,13 @@
         "noise_message": "FWEEEET!",
         "noise_id": "misc",
         "noise_variant": "whistle",
-        "noise": 58,
+        "noise": 85,
         "moves": 100
       },
       { "type": "firestarter", "moves": 100, "moves_slow": 500, "need_sunlight": false },
       { "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": true, "material_restricted": false },
+	  { "type": "paint_stuff", "charge_cost": 1 },
+	  { "type": "paint_stuff_cfg", "color_swap": true },
       { "flame": true, "type": "cauterize" }
     ],
     "encumbrance": 20,
@@ -931,6 +947,7 @@
       "ALARMCLOCK",
       "FISH_GOOD",
       "HEATS_FOOD",
+      "BUTCHER_EQ",
       "AURA",
       "FRAGILE",
       "ALLOWS_NATURAL_ATTACKS",
@@ -939,6 +956,7 @@
       "DISCOUNT_VALUE_3",
       "WRITE_MESSAGE",
       "COMPACT",
+      "NO_PAINT",
       "OVERSIZE"
     ],
     "charges_per_use": 1,
@@ -2222,6 +2240,7 @@
     "coverage": 25,
     "encumbrance": 6,
     "warmth": 10,
+	"storage": "1500 ml",
     "material_thickness": 2,
     "use_action": [
       {
@@ -2295,7 +2314,7 @@
     "price_postapoc": "500 USD",
     "artifact_data": { "effects_worn": [ "AEP_CARRY_MORE" ] },
     "storage": "5 L",
-    "volume": "4 L",
+    "volume": "1 L",
     "weight": "1100 g",
     "flags": [ "ONLY_ONE", "ALLOWS_NATURAL_ATTACKS", "OUTER", "OVERSIZE", "WATER_FRIENDLY" ]
   },
@@ -2592,7 +2611,7 @@
     "encumbrance": 5,
     "coverage": 10,
     "material_thickness": 2,
-    "hearing_protection": 12,
+    "hearing_protection": 20,
     "magazines": [
       [
         "battery",
@@ -2636,7 +2655,7 @@
     "encumbrance": 5,
     "coverage": 10,
     "material_thickness": 2,
-    "adv_hearing_protection": 24,
+    "adv_hearing_protection": 48,
     "magazines": [
       [
         "battery",
@@ -2894,7 +2913,6 @@
       "WATERPROOF",
       "RAINPROOF",
       "RAD_PROOF",
-      "ELECTRIC_IMMUNE",
       "CLIMATE_CONTROL",
       "ALLOWS_WINGS"
     ],
@@ -4340,7 +4358,7 @@
     "warmth": 5,
     "environmental_protection": 2,
     "material_thickness": 3,
-    "adv_hearing_protection": 24,
+    "adv_hearing_protection": 48,
     "valid_mods": [ "resized_large" ],
     "use_action": {
       "type": "manualnoise",
@@ -5678,7 +5696,18 @@
     "type": "ARMOR",
     "name": { "str": "shotshell ammo band" },
     "description": "A simple fabric covering tied over the eyes to keep your sweat from your eyes.  Useful for protection against some unwanted liquids from outside.  Also useful to keep some shotgun ammo at your hand.",
-    "use_action": { "type": "bandolier", "capacity": 12, "ammo": [ "410shot", "shot", "20x66mm", "signal_flare" ], "draw_cost": 20 }
+    "use_action": {
+		"type": "bandolier",
+		"capacity": 12,
+		"ammo": [
+			"shotcanister",
+			"410shot",
+			"shot",
+			"20x66mm",
+			"signal_flare"
+		],
+		"draw_cost": 20
+	}
   },
   {
     "id": "peaked_capZhigh_black",
@@ -6131,7 +6160,7 @@
     "material_thickness": 6,
     "techniques": [ "WBLOCK_1" ],
     "flags": [ "VARSIZE", "WATERPROOF", "STURDY", "TWO_WAY_RADIO" ],
-    "adv_hearing_protection": 24,
+    "adv_hearing_protection": 48,
     "magazines": [
       [
         "battery",
@@ -6307,7 +6336,7 @@
     "id": "visor_glassesZhigh",
     "type": "ARMOR",
     "name": { "str": "pair of visor glasses", "str_pl": "pairs of visor glasses" },
-    "description": "A pair of special sunglasses, good for keeping the glare out of your eyes.  Nothing is special except the shape, though.",
+    "description": "A pair of special sunglasses, good for keeping the glare out of your eyes.  And worse flashes, too.",
     "weight": "35 g",
     "volume": "250 ml",
     "price": "50 USD",
@@ -6322,8 +6351,8 @@
     "encumbrance": 1,
     "material_thickness": 1,
     "environmental_protection": 1,
-    "qualities": [ [ "GLARE", 1 ] ],
-    "flags": [ "WATER_FRIENDLY", "SUN_GLASSES" ]
+    "qualities": [ [ "GLARE", 2 ] ],
+    "flags": [ "WATER_FRIENDLY", "SUN_GLASSES", "FLASH_PROTECTION" ]
   },
   {
     "id": "visor_helmetZhigh",
@@ -7679,9 +7708,9 @@
     "color": "red"
   },
   {
-    "id": "ailenAntenneZhigh",
+    "id": "alienAntenneZhigh",
     "type": "ARMOR",
-    "name": { "str": "pair of ailen antennae", "str_pl": "pairs of ailen antennae" },
+    "name": { "str": "pair of alien antennae", "str_pl": "pairs of alien antennae" },
     "description": "If you touch someone, you can feel that person's feelings.  Nah you cannot.",
     "weight": "20 g",
     "volume": "250 ml",
@@ -7797,7 +7826,7 @@
     "power_draw": 60,
     "revert_to": "headsetMp3Zhigh",
     "use_action": "MP3_ON",
-    "adv_hearing_protection": 24,
+    "adv_hearing_protection": 48,
     "extend": { "flags": [ "COMBAT_NPC_ON" ] }
   },
   {
@@ -8445,20 +8474,6 @@
     "delete": { "flags": [ "RESTRICT_HANDS" ] }
   },
   {
-    "id": "badge_shotcanisterZhigh",
-    "copy-from": "badge_abstract",
-    "type": "TOOL_ARMOR",
-    "name": { "str": "shotcanister ammo belt" },
-    "description": "A mysterious ammo belt which creates ammos of shotcanisters.",
-    "material": [ "gold" ],
-    "price_postapoc": "5 USD",
-    "ammo": "shotcanister",
-    "max_charges": 50,
-    "proportional": { "weight": 2 },
-    "relic_data": { "recharge_scheme": [ { "type": "time", "interval": "1 m", "rate": 10 } ] },
-    "extend": { "flags": [ "ONLY_ONE" ] }
-  },
-  {
     "id": "delivery_case_metalZhigh",
     "repairs_like": "backpack_hiking",
     "type": "ARMOR",
@@ -8497,5 +8512,56 @@
     "name": { "str": "graduation cap" },
     "copy-from": "pickelhaube",
     "description": "A graduation cap covering that protects the head.  A symbol of a bygone world."
+  },
+  {
+    "id": "shield_riot_bucklerZhigh",
+    "type": "ARMOR",
+    "name": { "str": "riot buckler", "str_pl": "riot bucklers" },
+    "description": "A compact, circular version of the standard polycarbonate riot shield, deployed by agile rapid-response units.  While too small to protect the user from a full barrage of projectiles, its lightweight design allows excellent deflection in close-quarters brawls without hindering the use of your hands.",
+    "weight": "1150 g",
+    "volume": "2 L",
+    "price": "140 USD",
+    "price_postapoc": "15 USD",
+    "to_hit": 0,
+    "bashing": 4,
+    "material": [ "plastic" ],
+    "looks_like": "shield_buckler",
+    "symbol": "[",
+    "color": "cyan",
+    "covers": [ "arm_either" ],
+    "coverage": 65,
+    "encumbrance": 5,
+    "material_thickness": 4,
+    "environmental_protection": 1,
+    "techniques": [ "WBLOCK_3" ],
+    "flags": [ "OVERSIZE", "BELTED", "BLOCK_WHILE_WORN", "STURDY", "POWERARMOR_COMPATIBLE" ]
+  },
+  {
+    "id": "carbon_hat_hardZhigh",
+    "type": "ARMOR",
+    "name": { "str": "carbon hard hat" },
+    "description": "A custom helmet of layered carbon fiber armor made using a 3D printer.  Its rigid plates are more comparable to a suit of armor than kevlar, but it's very protective and lightweight.",
+    "copy-from": "hat_hard",
+    "material": [ "carbon_fiber" ],
+    "looks_like": "helmet_skid",
+    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 }
+  },
+  {
+    "id": "carbon_hat_hard_hoodedZhigh",
+    "type": "ARMOR",
+    "name": { "str": "carbon hooded hard hat" },
+    "description": "A custom helmet of layered carbon fiber armor made using a 3D printer.  Its rigid plates are more comparable to a suit of armor than kevlar, but it's very protective and lightweight.  This one has a cloth tucked in under it to serve as a makeshift hood.",
+    "copy-from": "hat_hard_hooded",
+    "material": [ "carbon_fiber" ],
+    "looks_like": "helmet_skid",
+    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 }
+  },
+  {
+    "id": "balclava_leatherZhigh",
+    "copy-from": "balclava",
+    "type": "ARMOR",
+    "name": { "str": "leather balclava" },
+    "material": [ "leather" ],
+    "looks_like": "bondage_mask"
   }
 ]

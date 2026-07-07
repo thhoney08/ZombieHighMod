@@ -832,6 +832,8 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
+          "tux",
+          "dress_shoes",
           "tophatZhigh"
         ],
         "entries": [
@@ -842,8 +844,55 @@
 		  { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
 		]
       },
-      "male": [ "boxer_shorts", "tux", "dress_shoes" ],
-      "female": [ "bra", "panties", "gown", "barrette", "jade_brooch", "heels" ]
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighConjurer",
+    "name": "Student - Conjurer",
+    "description": "A stage magician who traded flashy knife tricks for lethal combat illusions when the school gates slammed shut.  Utilizing smoke pellets and hidden tricks, you turn the entire campus into your personal, blood-stained theater of survival.",
+    "points": -2,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "suitRedMafiaZhigh",
+          "coat_lab",
+          "glasses_monocle",
+          "dress_shoes",
+          "tophatZhighV2"
+        ],
+        "entries": [
+          {
+            "item": "bandolier_knife",
+            "contents-item": [
+				"knifeListonZhigh",
+				"throwing_knife",
+				"throwing_knife",
+				"throwing_knife",
+				"throwing_knife",
+				"throwing_knife",
+				"throwing_knife",
+				"throwing_knife",
+				"throwing_knife",
+				"throwing_knife",
+				"throwing_knife",
+				"throwing_knife"
+			]
+          },
+		  { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "cane", "custom-flags": [ "auto_wield" ] }
+		]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
     },
     "flags": [ "SCEN_ONLY" ]
   },
@@ -2361,7 +2410,8 @@
       },
       "male": [ "briefs" ],
       "female": [ "sports_bra", "boy_shorts" ]
-    }
+    },
+    "flags": [ "SCEN_ONLY" ]
   },
   {
     "type": "profession",
@@ -2389,7 +2439,8 @@
       },
       "male": [ "briefs" ],
       "female": [ "bra", "panties" ]
-    }
+    },
+    "flags": [ "SCEN_ONLY" ]
   },
   {
     "type": "profession",
@@ -2420,7 +2471,8 @@
       },
       "male": [ "briefs" ],
       "female": [ "bra", "panties" ]
-    }
+    },
+    "flags": [ "SCEN_ONLY" ]
   },
   {
     "type": "profession",
@@ -6727,7 +6779,7 @@
           "gloves_fingerless",
           "attached_ear_plugs_off",
           "matches",
-          "bondage_mask",
+          "balclava_leatherZhigh",
           "mask_CombatFake"
         ],
         "entries": [
@@ -8992,7 +9044,8 @@
       },
       "male": [ "briefs" ],
       "female": [ "boy_shorts" ]
-    }
+    },
+    "flags": [ "SCEN_ONLY" ]
   },
   {
     "type": "profession",
@@ -9629,7 +9682,7 @@
           { "group": "ZhighNpc_coat" },
           { "group": "ZhighNpc_shoesAll" },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-          { "item": "shot_00", "charges": 6 },
+          { "item": "shot_00", "charges": 16 },
           {
             "item": "shotgun_d",
             "ammo-item": "shot_00",
@@ -9889,9 +9942,11 @@
 			"postman_hat_commissarZhigh",
 			"zhigh_smart_phone",
 			"medkitRechargeV3",
-			"paintball_exp",
-			"paintball_exp",
-			"paintball_exp",
+			"shotcanister_scrap",
+			"shotcanister_scrap",
+			"shotcanister_scrap",
+			"signal_flare",
+			"signal_flare",
 			"whistle_multitool",
 			"socks",
 			"boots_hiking",
@@ -9901,8 +9956,8 @@
         "entries": [
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
           { "item": "axe_combat", "container-item": "webbing_belt" },
-          { "item": "paintballgun_pistol", "ammo-item": "paintball_exp", "container-item": "holster", "charges": 20 },
-          { "item": "flaregun", "ammo-item": "signal_flare", "container-item": "holster", "charges": 1 }
+          { "item": "shortStopShotCanZhigh", "ammo-item": "shotcanister_scrap", "container-item": "holster", "charges": 1 },
+          { "group": "flaregunZhigh_items", "ammo-item": "signal_flare", "container-item": "holster", "charges": 1 }
         ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
@@ -10120,6 +10175,7 @@
 			"shotcanister_scrap",
 			"knife_meat_cleaver",
 			"badge_shotcanisterZhigh",
+			"ammobandShotZhigh",
 			"wristwatch"
 		],
         "entries": [
@@ -10128,8 +10184,7 @@
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
           {
             "group": "shotcanisterZhigh_items",
-            "ammo-item": "shotcanister_bearing",
-            "charges": 2,
+            "ammo-item": "shotcanister_scrap",
             "contents-item": "shoulder_strap",
             "custom-flags": [ "auto_wield" ]
           }
@@ -10159,7 +10214,7 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "xlkevlar",
+          "tacvest",
           "army_powered_earmuffs",
           "glasses_bal",
           "axe_ring",
@@ -10316,6 +10371,8 @@
           "rebar_rail",
           "hat_hard_hooded",
           "spray_can",
+          "spray_can",
+          "spray_can",
           "boots_rubber"
         ],
         "entries": [
@@ -10371,6 +10428,7 @@
     "points": 0,
     "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh", "TOUGH" ],
+    "vehicle": "wheelbarrow",
     "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" }, { "level": 1, "name": "tailor" } ],
     "items": {
       "both": {
@@ -10469,6 +10527,170 @@
       "female": [ "bra", "panties", "skirt_zhigh" ]
     },
     "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighDogsledder",
+    "name": "Student - Dogsledder",
+    "description": "Fresh to the long northern trails, you began your first season guiding a small team through snowbound silence and bitter wind. You expected hard lessons, frozen fingers, and the slow rhythm of life on the ice—nothing more. But one night, a burst of impossible light swallowed the horizon, and the world you knew vanished beneath it. Now you stand in a future shattered by the Cataclysm, your dogs restless at your side, your skills untested, and the cold no longer the only danger you face.",
+    "points": 3,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "OUTDOORSMAN", "STRONGSTOMACH", "REGEN_zhigh" ],
+    "skills": [
+      { "level": 1, "name": "swimming" },
+      { "level": 2, "name": "survival" },
+      { "level": 3, "name": "traps" },
+      { "level": 2, "name": "fabrication" },
+      { "level": 1, "name": "cooking" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "oil_lamp",
+          "canteen",
+          "pemmican",
+          "hardtack",
+          "jacket_flannel",
+          "meat_smoked",
+          "fire_drill",
+          "hatchet",
+          "socks_wool",
+          "mocassins",
+          "shelter_kit",
+          "hat_fur",
+          "pants_fur",
+          "cloak_fur",
+          "fur_rollmat",
+          "scarf_fur",
+          "dog_whistle",
+          "knife_hunting",
+          "dogfood",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "boxpack"
+        ]
+      }
+    },
+    "vehicle": "dogsled",
+    "pets": [ { "name": "mon_dog", "amount": 4 } ],
+    "flags": [ "SCEN_ONLY", "VEH_GROUNDED" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighFirstDay",
+    "name": "Student - First day",
+    "description": "This is not how you've imagined your first day...",
+    "points": -4,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "personal_gobag",
+          "wristwatch"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_shoesAll" },
+          { "group": "ZhighNpc_coat" },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighTroublemaker",
+    "name": "Student - Troublemaker",
+	"description": "Yesterday, you were just a miserable guy trying to get your paycheck signed.  Today, the world has gone mad, and frankly, it's the best thing that ever happened to your sanity.  Armed with a trenchcoat, a shotgun, and zero regrets, you're about to make everyone regret surviving the infection.",
+    "points": 2,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh", "PSYCHOPATH", "CHEMIMBALANCE", "SCHIZOPHRENIC" ],
+	"skills": [
+      { "level": 3, "name": "gun" },
+      { "level": 3, "name": "shotgun" },
+      { "level": 2, "name": "melee" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "shorts_tracksuit_zhigh",
+          "pockknife",
+          "trenchcoat_survivor",
+          "shotcanister_scrap",
+          "shotcanister_scrap",
+          "matches",
+          "fancy_sunglasses"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_shoesAll" },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          {
+            "group": "shotcanisterZhigh_items",
+            "ammo-item": "shotcanister_scrap",
+            "contents-item": "shoulder_strap"
+          },
+          { "item": "shovel", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighIntercepter",
+    "name": "Student - Intercepter",
+    "description": "A brilliant tech-saboteur who weaponized the academy's closed-circuit smart grid the moment the lockdown began.  Utilizing a high-voltage stun baton for close-quarters subdual and a custom-wired pneumatic coil to fry biological and electronic threats alike, you transform the entire campus infrastructure into your private hunting ground.",
+    "points": 3,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+	"skills": [
+      { "level": 3, "name": "computer" },
+      { "level": 2, "name": "melee" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "linuxtshirt",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "trenchcoat_leather",
+          "caffeine",
+          "electrohack",
+          "hat_ball",
+          "light_minus_atomic_battery_cell",
+          "control_laptop",
+          "holster",
+          "grenade_emp",
+          "grenade_emp",
+          "bandana"
+        ],
+        "entries": [
+          { "item": "nailgun", "ammo-item": "combatnail", "charges": 20 },
+          { "item": "combatnail", "charges": 180 },
+          { "group": "ZhighNpc_shoesAll" },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "PR24-extended", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "boxer_shorts", "pants_zhigh" ],
+      "female": [ "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ],
+    "addictions": [ { "intensity": 10, "type": "caffeine" } ]
   },
   {
     "type": "profession",

@@ -1295,6 +1295,8 @@
       [ [ "whistle_multitool", 1 ] ],
       [ [ "medkitRecharge", 1 ] ],
       [ [ "3d_printer_advanced", 1 ] ],
+      [ [ "super_spray_can", 1 ] ],
+      [ [ "sample_t_substrate", 1 ] ],
       [ [ "plut_cell", 6 ] ],
       [ [ "cable", 30 ] ]
     ]
@@ -15298,8 +15300,8 @@
   {
     "type": "recipe",
     "result": "concreteHammerZhigh",
-    "category": "CC_OTHER",
-    "subcategory": "CSC_OTHER_TOOLS",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
     "skill_used": "fabrication",
     "time": "4 h 40 m",
     "autolearn": true,
@@ -15328,8 +15330,8 @@
   {
     "type": "recipe",
     "result": "golf_clubModZhigh",
-    "category": "CC_OTHER",
-    "subcategory": "CSC_OTHER_TOOLS",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
     "skill_used": "fabrication",
     "time": "2 m",
     "autolearn": true,
@@ -15344,5 +15346,159 @@
 	  ],
 	  [ [ "golf_club", 2 ] ]
 	]
+  },
+  {
+    "type": "recipe",
+    "result": "poleAxeZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "fabrication",
+    "difficulty": 7,
+    "time": "6 h",
+    "book_learn": [ [ "textbook_weapwest", 6 ] ],
+    "using": [ [ "blacksmithing_advanced", 8 ], [ "steel_standard", 2 ] ],
+    "components": [ [ [ "long_pole", 1 ] ], [ [ "fabric_hides_any", 2, "LIST" ] ] ]
+  },
+  {
+    "result": "carbon_hat_hardZhigh",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "computer",
+    "difficulty": 1,
+    "skills_required": [ [ "fabrication", 2 ] ],
+    "time": "9 m",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_computer", 1 ], [ "advanced_electronics", 1 ], [ "reference_fabrication1", 1 ] ],
+    "using": [ [ "3d_printing_standard", 9 ] ],
+    "components": [ [ [ "carbon_fiber_filament", 88 ] ] ]
+  },
+  {
+    "result": "carbon_hat_hard_hoodedZhigh",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "time": "2 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "rag", 2 ], [ "bandana", 1 ] ], [ [ "carbon_hat_hardZhigh", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "filter_spraycanZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MODS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "mechanics", 2 ] ],
+    "difficulty": 2,
+    "time": "22 m 36 s",
+    "autolearn": true,
+    "qualities": [ { "id": "SAW_M_FINE", "level": 1 } ],
+    "components": [ [ [ "spray_can", 1 ], [ "super_spray_can", 1 ] ], [ [ "pipe", 2 ] ], [ [ "scrap", 2 ] ] ]
+  },
+  {
+    "result": "fire_ax_1_carbon",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "computer",
+    "difficulty": 6,
+    "skills_required": [ [ "fabrication", 2 ] ],
+    "//": "Increased time since some forging incorporated into material for the edge",
+    "time": "60 m",
+    "book_learn": [ [ "textbook_computer", 3 ], [ "advanced_electronics", 3 ], [ "reference_fabrication1", 3 ] ],
+    "using": [ [ "3d_printing_standard", 15 ], [ "steel_standard", 2 ], [ "blacksmithing_standard", 4 ] ],
+    "components": [ [ [ "carbon_fiber_filament", 100 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "breachingRamCheap",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "time": "1 h 10 m",
+    "autolearn": true,
+    "qualities": [ { "id": "HAMMER", "level": 1 } ],
+    "components": [ 
+      [
+		[ "fabric_standard", 3, "LIST" ],
+		[ "medical_gauze", 3 ],
+		[ "cordage", 3, "LIST" ],
+		[ "duct_tape", 150 ],
+		[ "medical_tape", 75 ]
+	  ],
+	  [ [ "rebar", 8 ] ]
+	]
+  },
+  {
+    "result": "balclava_leatherZhigh",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "time": "10 m",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_tailor", 1 ], [ "manual_tailor", 1 ], [ "tailor_portfolio", 1 ] ],
+    "using": [ [ "sewing_standard", 3 ] ],
+    "components": [ [ [ "leather", 4 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "greatclub_metalZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "difficulty": 6,
+    "time": "2 h 45 m",
+    "autolearn": true,
+    "using": [ [ "blacksmithing_standard", 12 ], [ "steel_standard", 3 ] ],
+    "components": [ 
+      [
+		[ "fabric_standard", 1, "LIST" ],
+		[ "medical_gauze", 1 ],
+		[ "cordage", 1, "LIST" ],
+		[ "duct_tape", 50 ],
+		[ "medical_tape", 25 ]
+	  ]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "greatclub_metal_spikeZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": "45 m",
+    "autolearn": true,
+    "using": [ [ "blacksmithing_standard", 4 ], [ "steel_standard", 1 ] ],
+    "components": [ [ [ "greatclub_metalZhigh", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "ZhighArrow_sap",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "5 s",
+    "charges": 1,
+    "autolearn": true,
+    "reversible": false,
+    "components": [
+      [ [ "plant_sac", 2 ], [ "dry_veggy_tainted", 2 ], [ "veggy_tainted", 2 ] ],
+      [
+        [ "arrow_field_point_fletched", 1 ],
+        [ "arrow_fire_hardened_fletched", 1 ],
+        [ "arrow_wood", 1 ],
+        [ "arrow_heavy_fire_hardened_fletched", 1 ],
+        [ "arrow_heavy_field_point_fletched", 1 ],
+        [ "arrow_wood_heavy", 1 ],
+        [ "arrow_metal", 1 ]
+      ]
+    ],
+    "flags": [ "BLIND_EASY" ]
   }
 ]
