@@ -628,22 +628,22 @@
     "relic_data": {
       "passive_effects": [
         {
-			"has": "WIELD",
-			"condition": "ALWAYS",
-			"values": [ { "value": "ARMOR_ELECTRIC", "multiply": 5.0 }, { "value": "SPEED", "add": 90 } ],
-			"ench_effects": [
-				{ "effect": "debug_clairvoyance", "intensity": 1 },
-				{ "effect": "ignore_fall_damage", "intensity": 3 }
-			],
-			"intermittent_activation": {
-				"effects": [
-					{
-						"frequency": "5 seconds",
-						"spell_effects": [ { "id": "AEA_HEAL" }, { "id": "AEA_DIM" } ]
-					}
-				]
-			},
-			"hit_you_effect": [
+		  "has": "WIELD",
+		  "condition": "ALWAYS",
+		  "values": [ { "value": "ARMOR_ELECTRIC", "multiply": 5.0 }, { "value": "SPEED", "add": 90 } ],
+		  "ench_effects": [
+		  	{ "effect": "debug_clairvoyance", "intensity": 1 },
+		  	{ "effect": "ignore_fall_damage", "intensity": 3 }
+		  ],
+		  "intermittent_activation": {
+		  	"effects": [
+		  		{
+		  			"frequency": "5 seconds",
+		  			"spell_effects": [ { "id": "AEA_HEAL" }, { "id": "AEA_DIM" } ]
+		  		}
+		  	]
+		  },
+		  "hit_you_effect": [
             {
               "id": "zhigh_regen"
             }
@@ -1074,7 +1074,6 @@
     "relic_data": {
       "passive_effects": [
         {
-          "has": "WORN",
           "condition": "ALWAYS",
           "values": [
             { "value": "ITEM_ATTACK_COST", "add": -5 }
@@ -1127,8 +1126,8 @@
     "copy-from": "ringBaseZhigh",
     "relic_data": {
       "passive_effects": [
-        { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "STAMINA_CAP", "multiply": 0.2 } ] },
-        { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "STAMINA_REGEN", "multiply": 0.2 } ] }
+        { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "STAMINA_CAP", "multiply": 1.2 } ] },
+        { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "STAMINA_REGEN", "multiply": 1.2 } ] }
       ]
     }
   },
@@ -1196,7 +1195,6 @@
     "relic_data": {
       "passive_effects": [
         {
-          "has": "WORN",
           "condition": "ALWAYS",
           "values": [
             { "value": "ITEM_DAMAGE_CUT", "multiply": -0.5, "add": 1 }
@@ -1214,7 +1212,6 @@
     "relic_data": {
       "passive_effects": [
         {
-          "has": "WORN",
           "condition": "ALWAYS",
           "values": [
             { "value": "ITEM_DAMAGE_STAB", "multiply": -5, "add": 200 }
@@ -1232,7 +1229,6 @@
     "relic_data": {
       "passive_effects": [
         {
-          "has": "WORN",
           "condition": "ALWAYS",
           "values": [
             { "value": "ITEM_DAMAGE_BASH", "multiply": -0.5, "add": 1 }

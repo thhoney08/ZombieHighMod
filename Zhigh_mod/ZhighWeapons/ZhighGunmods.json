@@ -1609,10 +1609,30 @@
     "location": "muzzle",
     "install_time": "10 m",
     "mod_target_category": [ [ "PISTOLS" ], [ "SUBMACHINE_GUNS" ], [ "RIFLES" ], [ "MACHINE_GUNS" ], [ "GATLING_GUNS" ] ],
-    "consume_chance": 150,
+    "consume_chance": 100,
     "consume_divisor": 60,
     "dispersion_modifier": -10,
-    "loudness_modifier": -40,
+    "loudness_modifier": -70,
     "flags": [ "DISABLE_SIGHTS", "CONSUMABLE" ]
+  },
+  {
+    "id": "pipeGunRevolvoGummod",
+    "type": "GUNMOD",
+    "name": { "str": "pipe firearm revolver chamber" },
+    "description": "A round ammo clip, which is added into the pipe firearms, increases the ammo capacity of pipe firearms.  But as a drawback, the reloading time is increased.",
+    "weight": "120 g",
+    "volume": "250 ml",
+    "integral_volume": "150 ml",
+    "price": "15 USD",
+    "price_postapoc": "5 USD",
+    "material": [ "steel", "superalloy" ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "accessories",
+    "mod_targets": [ "pipe_pistol", "pipe_rifle" ],
+    "install_time": "80 m",
+    "weight_multiplier": 1.1,
+    "reload_modifier": 60,
+    "capacity_multiplier": 8.0
   }
 ]

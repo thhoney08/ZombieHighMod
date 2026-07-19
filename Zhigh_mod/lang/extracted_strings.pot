@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zhigh_Mod\n"
-"POT-Creation-Date: 2026-07-07 04:45-0500\n"
+"POT-Creation-Date: 2026-07-18 20:35-0500\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -5903,6 +5903,102 @@ msgid_plural "leather balclavas"
 msgstr[0] ""
 msgstr[1] ""
 
+#: .\ZhighArmor.json
+msgid "chrono-implant"
+msgid_plural "chrono-implants"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action menu_text for chrono-implant.
+#. ~ Use action menu_text for {'str': 'Collectible Card - glow'}.
+#. ~ Use action menu_text for {'str': 'Plasma Sword (off)'}.
+#. ~ Use action menu_text for {'str': 'Plasma Piercer (off)'}.
+#. ~ Use action menu_text for {'str': 'meltagun'}.
+#. ~ Use action menu_text for {'str': 'cola bomb'}.
+#. ~ Use action menu_text for {'str': 'frag cola bomb'}.
+#: .\ZhighArmor.json .\ZhighWeapons\ZhighCards.json
+#: .\ZhighWeapons\ZhighMelee.json .\ZhighWeapons\ZhighRanged.json
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "Activate"
+msgstr ""
+
+#. ~ Use action msg for chrono-implant.
+#: .\ZhighArmor.json
+msgid "You pull the activating lever, making chrono-implant alive."
+msgstr ""
+
+#. ~ Description for chrono-implant
+#. ~ Description of effect 'blind Clairvoyance'.
+#. 
+#. ~ Description for {'str': '.'}
+#. ~ Description for target
+#. ~ Description for {'str': 'ring base'}
+#. ~ Description for {'str': 'amulet base'}
+#. ~ Description for pulling
+#. ~ Description for pulling II
+#. ~ Description for pushing
+#. ~ Description for .
+#. ~ Description for heal gas grenade
+#. ~ Description for armed heal gas grenade
+#. ~ Description for {'str': 'Flare trap Trigger'}
+#. ~ Description for {'str': 'Flare trap Effect'}
+#. ~ Description for pushing II
+#. ~ Description for {'str': 'Shock trap Trigger'}
+#. ~ Description for {'str': 'Shock trap Effect'}
+#. ~ Description for {'str': 'LESION mine Trigger'}
+#. ~ Description for {'str': 'LESION mine Effect'}
+#. ~ Description for {'str': 'poison caltrops mine Trigger'}
+#. ~ Description for {'str': 'poison caltrops mine Effect'}
+#. ~ Description for {'str': 'triffid caltrops mine Trigger'}
+#. ~ Description for {'str': 'triffid caltrops mine Effect'}
+#. ~ Description for {'str': 'Light trap Trigger'}
+#. ~ Description for {'str': 'Light trap Effect'}
+#. ~ Description for {'str': 'Freeze trap Trigger'}
+#. ~ Description for {'str': 'Freeze trap Effect'}
+#. ~ Description for {'str': 'Balloon trap Trigger'}
+#. ~ Description for {'str': 'Balloon trap Effect'}
+#. ~ Description for {'str': 'Flame trap Trigger'}
+#. ~ Description for {'str': 'Flame trapp Effect'}
+#. ~ Description for {'str': 'Acid trap Trigger'}
+#. ~ Description for {'str': 'Acid trap Effect'}
+#. ~ Description for {'str': 'Toxic trap Trigger'}
+#. ~ Description for {'str': 'Toxic trap Effect'}
+#. ~ Description for {'str': 'Tear trap Trigger'}
+#. ~ Description for {'str': 'Tear trap Effect'}
+#. ~ Description for {'str': 'Antifungi trap Trigger'}
+#. ~ Description for {'str': 'Antifungi trap Effect'}
+#. ~ Description for {'str': 'Insecticidal trap Trigger'}
+#. ~ Description for {'str': 'Insecticidal trap Effect'}
+#. ~ Description for {'str': 'Smoke trap Trigger'}
+#. ~ Description for {'str': 'Smoke trap Effect'}
+#. ~ Description for {'str': 'Sap trap Trigger'}
+#. ~ Description for {'str': 'Sap trap Effect'}
+#. ~ Description for {'str': 'Barbed wire trap Trigger'}
+#. ~ Description for {'str': 'Barbed wire trap Effect'}
+#. ~ Description for {'str': 'baseball base Trigger'}
+#. ~ Description for {'str': 'baseball base Effect'}
+#. ~ Description for {'str': 'baseball home Trigger'}
+#. ~ Description for {'str': 'baseball home Effect'}
+#: .\ZhighArmor.json .\ZhighEffects.json .\ZhighFurn.json .\ZhighMonsters.json
+#: .\ZhighMutations.json .\ZhighWeapons\ZhighArtifacts.json
+#: .\ZhighWeapons\ZhighRanged.json .\ZhighWeapons\ZhighSpells.json
+#: .\ZhighWeapons\ZhighThrowing.json .\ZhighWeapons\ZhighTraps.json
+msgid "."
+msgid_plural ".s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Relic recharge message for TOOL_ARMOR 'chrono-implant'
+#: .\ZhighArmor.json
+msgid "Your chrono-implant charges up!"
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "deactivated chrono-implant"
+msgid_plural "deactivated chrono-implants"
+msgstr[0] ""
+msgstr[1] ""
+
 #: .\ZhighBionics.json
 msgid "bionic knuckle"
 msgid_plural "bionic knuckles"
@@ -6990,11 +7086,6 @@ msgstr ""
 msgid "The weird smell is gone."
 msgstr ""
 
-#. ~ Decay message for effect(s) 'Healing Gas'.
-#: .\ZhighEffects.json
-msgid "The healing effect is fading with it's smell."
-msgstr ""
-
 #: .\ZhighEffects.json
 msgid "Adrenaline Rush"
 msgstr ""
@@ -7026,6 +7117,7 @@ msgid "Clock Over"
 msgstr ""
 
 #. ~ Description of effect 'Clock Over'.
+#. ~ Description of effect 'Adrenaline Comedown'.
 #: .\ZhighEffects.json
 msgid "You feel completely drained."
 msgstr ""
@@ -7037,6 +7129,7 @@ msgid "Your clock up effect wears off.  You feel AWFUL!"
 msgstr ""
 
 #. ~ Miss message for effect(s) 'Clock Over'.
+#. ~ Miss message for effect(s) 'Adrenaline Comedown'.
 #: .\ZhighEffects.json
 msgid "Your comedown throws you off."
 msgstr ""
@@ -7054,65 +7147,38 @@ msgstr ""
 msgid "blind Clairvoyance"
 msgstr ""
 
-#. ~ Description of effect 'blind Clairvoyance'.
-#. 
-#. ~ Description for {'str': '.'}
-#. ~ Description for target
-#. ~ Description for {'str': 'ring base'}
-#. ~ Description for {'str': 'amulet base'}
-#. ~ Description for pulling
-#. ~ Description for pulling II
-#. ~ Description for pushing
-#. ~ Description for .
-#. ~ Description for heal gas grenade
-#. ~ Description for armed heal gas grenade
-#. ~ Description for {'str': 'Flare trap Trigger'}
-#. ~ Description for {'str': 'Flare trap Effect'}
-#. ~ Description for pushing II
-#. ~ Description for {'str': 'Shock trap Trigger'}
-#. ~ Description for {'str': 'Shock trap Effect'}
-#. ~ Description for {'str': 'LESION mine Trigger'}
-#. ~ Description for {'str': 'LESION mine Effect'}
-#. ~ Description for {'str': 'poison caltrops mine Trigger'}
-#. ~ Description for {'str': 'poison caltrops mine Effect'}
-#. ~ Description for {'str': 'triffid caltrops mine Trigger'}
-#. ~ Description for {'str': 'triffid caltrops mine Effect'}
-#. ~ Description for {'str': 'Light trap Trigger'}
-#. ~ Description for {'str': 'Light trap Effect'}
-#. ~ Description for {'str': 'Freeze trap Trigger'}
-#. ~ Description for {'str': 'Freeze trap Effect'}
-#. ~ Description for {'str': 'Balloon trap Trigger'}
-#. ~ Description for {'str': 'Balloon trap Effect'}
-#. ~ Description for {'str': 'Flame trap Trigger'}
-#. ~ Description for {'str': 'Flame trapp Effect'}
-#. ~ Description for {'str': 'Acid trap Trigger'}
-#. ~ Description for {'str': 'Acid trap Effect'}
-#. ~ Description for {'str': 'Toxic trap Trigger'}
-#. ~ Description for {'str': 'Toxic trap Effect'}
-#. ~ Description for {'str': 'Tear trap Trigger'}
-#. ~ Description for {'str': 'Tear trap Effect'}
-#. ~ Description for {'str': 'Antifungi trap Trigger'}
-#. ~ Description for {'str': 'Antifungi trap Effect'}
-#. ~ Description for {'str': 'Insecticidal trap Trigger'}
-#. ~ Description for {'str': 'Insecticidal trap Effect'}
-#. ~ Description for {'str': 'Smoke trap Trigger'}
-#. ~ Description for {'str': 'Smoke trap Effect'}
-#. ~ Description for {'str': 'Sap trap Trigger'}
-#. ~ Description for {'str': 'Sap trap Effect'}
-#. ~ Description for {'str': 'Barbed wire trap Trigger'}
-#. ~ Description for {'str': 'Barbed wire trap Effect'}
-#. ~ Description for {'str': 'baseball base Trigger'}
-#. ~ Description for {'str': 'baseball base Effect'}
-#. ~ Description for {'str': 'baseball home Trigger'}
-#. ~ Description for {'str': 'baseball home Effect'}
-#: .\ZhighEffects.json .\ZhighFurn.json .\ZhighMonsters.json
-#: .\ZhighMutations.json .\ZhighWeapons\ZhighArtifacts.json
-#: .\ZhighWeapons\ZhighRanged.json .\ZhighWeapons\ZhighSpells.json
-#: .\ZhighWeapons\ZhighThrowing.json .\ZhighWeapons\ZhighTraps.json
-msgid "."
-msgid_plural ".s"
+#: .\ZhighEffects.json
+msgid "aspirin"
+msgid_plural "aspirins"
 msgstr[0] ""
 msgstr[1] ""
+
+#. ~ Use action activation_message for {'str': 'aspirin'}.
+#: .\ZhighEffects.json
+msgid "You take some aspirin."
+msgstr ""
+
+#. ~ Description for {'str': 'aspirin'}
+#: .\ZhighEffects.json
+msgid ""
+"Acetylsalicylic acid, a mild anti-inflammatory.  Take to relieve pain and "
+"swelling."
+msgstr ""
+
+#. ~ Description of effect 'Adrenaline Rush'.
+#: .\ZhighEffects.json
+msgid "You feel the rush of adrenaline in your body!"
+msgstr ""
+
+#: .\ZhighEffects.json
+msgid "Adrenaline Comedown"
+msgstr ""
+
+#. ~ Apply message for effect(s) 'Adrenaline Comedown'.
+#. ~ Decay message for effect(s) 'Adrenaline Comedown'.
+#: .\ZhighEffects.json
+msgid "Your adrenaline rush wears off.  You feel AWFUL!"
+msgstr ""
 
 #: .\ZhighEmit.json
 msgid "hazy cloud"
@@ -11234,6 +11300,12 @@ msgid_plural "XL holsters"
 msgstr[0] ""
 msgstr[1] ""
 
+#: .\ZhighItemRemake.json
+msgid "PPSh-41"
+msgid_plural "PPSh-41s"
+msgstr[0] ""
+msgstr[1] ""
+
 #: .\ZhighItems.json
 msgid "umbrella, closed"
 msgid_plural "umbrella, closeds"
@@ -11964,6 +12036,7 @@ msgstr[1] ""
 #. ~ Use action menu_text for {'str': 'thermobaric grenade'}.
 #. ~ Use action menu_text for {'str': 'sap grenade'}.
 #. ~ Use action menu_text for {'str': 'modified 40mm grenade'}.
+#. ~ Use action menu_text for {'str': 'GLI-F4', 'str_pl': 'GLI-F4s'}.
 #: .\ZhighItems.json .\ZhighWeapons\ZhighThrowing.json
 msgid "Pull pin"
 msgstr ""
@@ -15484,6 +15557,40 @@ msgid ""
 msgstr ""
 
 #: .\ZhighMonsters.json
+msgid "feral nader"
+msgid_plural "feral naders"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'feral nader'}
+#: .\ZhighMonsters.json
+msgid ""
+"Their pupils are dilated and what remains to be seen of the iris and sclera "
+"are bloodshot.  This launcher-wielding maniac still breathes, but the "
+"zombies treat them like one of their own.  For some reason, these ferals can"
+" shoot rocks."
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "The feral nader shoots a rock!"
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "feral ribbiteer"
+msgid_plural "feral ribbiteers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'feral ribbiteer'}
+#: .\ZhighMonsters.json
+msgid ""
+"Their pupils are dilated and what remains to be seen of the iris and sclera "
+"are bloodshot.  This tongue dripping maniac still breathes, but the zombies "
+"treat them like one of their own.  For some reason, these ferals can call "
+"more of his friends."
+msgstr ""
+
+#: .\ZhighMonsters.json
 msgid "feral hall manager"
 msgid_plural "feral hall managers"
 msgstr[0] ""
@@ -16287,6 +16394,62 @@ msgid ""
 "before the collapse of civilization.  Solar powered like many other robots, "
 "it maintains its programmed pursuit of law and order, propelled on a trio of"
 " omni wheels."
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "inactive spy camera"
+msgid_plural "inactive spy cameras"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action friendly_msg for {'str': 'inactive spy camera'}.
+#: .\ZhighMonsters.json
+msgid "The spy camera hums and takes to the sky."
+msgstr ""
+
+#. ~ Use action hostile_msg for {'str': 'inactive spy camera'}.
+#: .\ZhighMonsters.json
+msgid ""
+"The spy camera beeps disapprovingly and focuses its camera on your face. Say"
+" cheese!"
+msgstr ""
+
+#. ~ Description for {'str': 'inactive spy camera'}
+#: .\ZhighMonsters.json
+msgid ""
+"This is an inactive spy camera.  Using this item involves turning it on and "
+"launching the UAV.  If programmed successfully the spy camera will then keep"
+" watch for intruders, marking targets that can be tracked if you possess a "
+"control laptop, military scouter, or similar equipment; or have a bionic "
+"infolink installed.  A user could also deploy it remotely by throwing it."
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "broken spy camera"
+msgid_plural "broken spy cameras"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'broken spy camera'}
+#: .\ZhighMonsters.json
+msgid ""
+"A broken spy camera.  Much less threatening now.  Could be gutted for parts."
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "spy camera"
+msgid_plural "spy cameras"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'spy camera'}
+#: .\ZhighMonsters.json
+msgid ""
+"A quadcopter drone largely comprised of a high-resolution camera lens, this "
+"robot stays on te ground, documenting the carnage and mayhem around it.  "
+"While it is no longer able to report to a central authority, it's likely "
+"that some of its automated alert systems are still functional, given that "
+"the thing seems to have an operational charging station somewhere."
 msgstr ""
 
 #: .\ZhighMonsters.json
@@ -17593,31 +17756,34 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. ~ Mutation class name
-#. 
 #: .\ZhighMutations.json
-msgid "Equidae"
+msgid "Horse"
 msgstr ""
 
-#. ~ Mutation class: Equidae mutagen_message
+#. ~ Mutation class: Horse mutagen_message
 #: .\ZhighMutations.json
 msgid "Your body speeds up.  You gotta go fast."
 msgstr ""
 
-#. ~ Mutation class: Equidae iv_message
+#. ~ Mutation class: Horse iv_message
 #: .\ZhighMutations.json
-msgid "You feels like the game with horse eared girls..."
+msgid "La victoire est à vous."
 msgstr ""
 
-#. ~ Mutation class: Equidae Male memorial messsage
+#. ~ Mutation class: Horse Male memorial messsage
 #: .\ZhighMutations.json
 msgctxt "memorial_male"
-msgid "La victoire est à vous."
+msgid "Stopped worrying and learned to run like the wind.  Rush B rush B."
 msgstr ""
 
-#. ~ Mutation class: Equidae Female memorial messsage
+#. ~ Mutation class: Horse Female memorial messsage
 #: .\ZhighMutations.json
 msgctxt "memorial_female"
-msgid "La victoire est à vous."
+msgid "Stopped worrying and learned to run like the wind.  Rush B rush B."
+msgstr ""
+
+#: .\ZhighMutations.json
+msgid "Equidae"
 msgstr ""
 
 #. ~ Description for {'str': 'Equidae'}
@@ -25612,7 +25778,8 @@ msgid "Student - Dogsledder"
 msgstr ""
 
 #. ~ Profession (male Student - Dogsledder) description
-#: .\ZhighProfession.json
+#. ~ Profession (male Dog Sled Patrol) description
+#: .\ZhighProfession.json .\ZhighProfession2.json
 msgctxt "prof_desc_male"
 msgid ""
 "Fresh to the long northern trails, you began your first season guiding a "
@@ -25625,7 +25792,8 @@ msgid ""
 msgstr ""
 
 #. ~ Profession (female Student - Dogsledder) description
-#: .\ZhighProfession.json
+#. ~ Profession (female Dog Sled Patrol) description
+#: .\ZhighProfession.json .\ZhighProfession2.json
 msgctxt "prof_desc_female"
 msgid ""
 "Fresh to the long northern trails, you began your first season guiding a "
@@ -25719,6 +25887,36 @@ msgid ""
 " close-quarters subdual and a custom-wired pneumatic coil to fry biological "
 "and electronic threats alike, you transform the entire campus infrastructure"
 " into your private hunting ground."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Executioner"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Executioner"
+msgstr ""
+
+#. ~ Profession (male Student - Executioner) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"You patrol the blood-soaked campus wielding a heavy, industrial-grade "
+"chopping blade to deliver absolute terminal justice to the infected.  "
+"Capitalizing on pure brute strength, you ruthlessly decapitate high-threat "
+"targets at close range to permanently end the cycle of mutation."
+msgstr ""
+
+#. ~ Profession (female Student - Executioner) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"You patrol the blood-soaked campus wielding a heavy, industrial-grade "
+"chopping blade to deliver absolute terminal justice to the infected.  "
+"Capitalizing on pure brute strength, you ruthlessly decapitate high-threat "
+"targets at close range to permanently end the cycle of mutation."
 msgstr ""
 
 #: .\ZhighProfession.json
@@ -27173,6 +27371,94 @@ msgstr ""
 
 #: .\ZhighProfession2.json
 msgctxt "profession_male"
+msgid "Dog Sled Patrol"
+msgstr ""
+
+#: .\ZhighProfession2.json
+msgctxt "profession_female"
+msgid "Dog Sled Patrol"
+msgstr ""
+
+#: .\ZhighProfession2.json
+msgctxt "profession_male"
+msgid "Coroner"
+msgstr ""
+
+#: .\ZhighProfession2.json
+msgctxt "profession_female"
+msgid "Coroner"
+msgstr ""
+
+#. ~ Profession (male Coroner) description
+#: .\ZhighProfession2.json
+msgctxt "prof_desc_male"
+msgid ""
+"You were the quiet assistant assigned to the campus medical morgue and "
+"biology lab.  When the infection broke out, your job shifted from "
+"identifying causes of death to putting the unquiet dead back into the "
+"ground.  Armed with professional autopsy shears and chemical disinfectants, "
+"you look at the zombie horde not with fear, but as clinical work that needs "
+"to be finished."
+msgstr ""
+
+#. ~ Profession (female Coroner) description
+#: .\ZhighProfession2.json
+msgctxt "prof_desc_female"
+msgid ""
+"You were the quiet assistant assigned to the campus medical morgue and "
+"biology lab.  When the infection broke out, your job shifted from "
+"identifying causes of death to putting the unquiet dead back into the "
+"ground.  Armed with professional autopsy shears and chemical disinfectants, "
+"you look at the zombie horde not with fear, but as clinical work that needs "
+"to be finished."
+msgstr ""
+
+#: .\ZhighProfession2.json
+msgctxt "profession_male"
+msgid "Army Infantry"
+msgstr ""
+
+#: .\ZhighProfession2.json
+msgctxt "profession_female"
+msgid "Army Infantry"
+msgstr ""
+
+#. ~ Profession (male Army Infantry) description
+#. ~ Profession (male Army Rocketeer) description
+#: .\ZhighProfession2.json
+msgctxt "prof_desc_male"
+msgid ""
+"One moment you were scrambling for cover in a shell crater, on some burnt-"
+"out island in the Pacific.  Then a bright flash, and next thing you know "
+"you're stateside again.  Except the cities don't look anything like how you "
+"remember them, and the smell of death hangs in the air like it followed you "
+"home."
+msgstr ""
+
+#. ~ Profession (female Army Infantry) description
+#. ~ Profession (female Army Rocketeer) description
+#: .\ZhighProfession2.json
+msgctxt "prof_desc_female"
+msgid ""
+"One moment you were scrambling for cover in a shell crater, on some burnt-"
+"out island in the Pacific.  Then a bright flash, and next thing you know "
+"you're stateside again.  Except the cities don't look anything like how you "
+"remember them, and the smell of death hangs in the air like it followed you "
+"home."
+msgstr ""
+
+#: .\ZhighProfession2.json
+msgctxt "profession_male"
+msgid "Army Rocketeer"
+msgstr ""
+
+#: .\ZhighProfession2.json
+msgctxt "profession_female"
+msgid "Army Rocketeer"
+msgstr ""
+
+#: .\ZhighProfession2.json
+msgctxt "profession_male"
 msgid "Mouse Assassin"
 msgstr ""
 
@@ -28472,6 +28758,14 @@ msgstr ""
 
 #: .\ZhighVehichleParts.json
 msgid "mounted chemical thrower"
+msgstr ""
+
+#: .\ZhighVehichleParts.json
+msgid "mounted heavy chemical gun"
+msgstr ""
+
+#: .\ZhighVehichleParts.json
+msgid "mounted heavy acid gun"
 msgstr ""
 
 #: .\ZhighVehicle.json
@@ -39306,17 +39600,6 @@ msgid_plural "Collectible Card - glows"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Use action menu_text for {'str': 'Collectible Card - glow'}.
-#. ~ Use action menu_text for {'str': 'Plasma Sword (off)'}.
-#. ~ Use action menu_text for {'str': 'Plasma Piercer (off)'}.
-#. ~ Use action menu_text for {'str': 'meltagun'}.
-#. ~ Use action menu_text for {'str': 'cola bomb'}.
-#. ~ Use action menu_text for {'str': 'frag cola bomb'}.
-#: .\ZhighWeapons\ZhighCards.json .\ZhighWeapons\ZhighMelee.json
-#: .\ZhighWeapons\ZhighRanged.json .\ZhighWeapons\ZhighThrowing.json
-msgid "Activate"
-msgstr ""
-
 #. ~ Use action msg for {'str': 'Collectible Card - glow'}.
 #: .\ZhighWeapons\ZhighCards.json
 msgid "You activate the card, making it glow up."
@@ -39674,6 +39957,8 @@ msgstr ""
 #. 'active concertina bombs'}.
 #. ~ Use action sound_msg for {'str': 'active ninja bomb', 'str_pl': 'active
 #. ninja bombs'}.
+#. ~ Use action sound_msg for {'str': 'active GLI-F4', 'str_pl': 'active
+#. GLI-F4s'}.
 #: .\ZhighWeapons\ZhighCards.json .\ZhighWeapons\ZhighThrowing.json
 msgid "Hsssss."
 msgstr ""
@@ -42776,6 +43061,29 @@ msgid ""
 "eventually lose effectiveness.  The installed filter is large and, when "
 "attached, will interfere with your ability to aim down the base sights of "
 "the gun."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid "pipe firearm revolver chamber"
+msgid_plural "pipe firearm revolver chambers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgid ""
+"A round ammo clip, which is added into the pipe firearms, increases the ammo"
+" capacity of pipe firearms.  But as a drawback, the reloading time is "
+"increased."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "pipe_pistol"
+msgstr ""
+
+#: .\ZhighWeapons\ZhighGunmods.json
+msgctxt "gun_type_type"
+msgid "pipe_rifle"
 msgstr ""
 
 #: .\ZhighWeapons\ZhighMelee.json
@@ -52781,6 +53089,49 @@ msgid ""
 "rounds, or for S&W's own .40 round."
 msgstr ""
 
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ".300 Blackout Carbine"
+msgid_plural ".300 Blackout Carbines"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A high-performance tactical rifle chambered in the versatile .300 AAC "
+"Blackout cartridge.  Its unique barrel configuration optimizes powder burn "
+"for sub-sonic ammunition, delivering immense stopping power through a "
+"suppressed muzzle while remaining incredibly quiet."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "power armor MGL"
+msgid_plural "power armor MGLs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "power armor head vulcan"
+msgid_plural "power armor head vulcans"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "medusan carapace"
+msgid_plural "medusan carapaces"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"This is a hard-sided briefcase with a trigger in the handle and a concealed "
+"hole in the side.  To fire the internally mounted MP5K-PDW, one braces the "
+"briefcase at the waist, ensures the briefcase is pointed at the enemy, and "
+"squeezes the trigger.  Precision and handling are severely hampered all "
+"around, however if you need to 'hand over the goods' or look low profile "
+"while bodyguarding, this is your gun.  When the briefcase is open the MP5 "
+"may be reloaded or dismounted."
+msgstr ""
+
 #: .\ZhighWeapons\ZhighSpells.json
 msgid "Summon fireball"
 msgstr ""
@@ -53238,6 +53589,8 @@ msgstr[1] ""
 #. ~ Use action no_deactivate_msg for {'str': 'active ninja bomb', 'str_pl':
 #. 'active ninja bombs'}.
 #. ~ Use action no_deactivate_msg for {'str': 'active sap grenade'}.
+#. ~ Use action no_deactivate_msg for {'str': 'active GLI-F4', 'str_pl':
+#. 'active GLI-F4s'}.
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "You've already lit the fuse - get rid of it immediately!"
 msgstr ""
@@ -54340,6 +54693,39 @@ msgstr[1] ""
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid ""
 "This triffid gas bomb has had its pin removed and is expelling thick smoke."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "GLI-F4"
+msgid_plural "GLI-F4s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action msg for {'str': 'GLI-F4', 'str_pl': 'GLI-F4s'}.
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "You light the GLI-F4 on fire.  Throw it!"
+msgstr ""
+
+#. ~ Description for {'str': 'GLI-F4', 'str_pl': 'GLI-F4s'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid ""
+"A notorious French riot control grenade that combines a powerful tear gas "
+"release with a high-explosive stun blast.  Constructed with a thin plastic "
+"body, it is uniquely designed to scatter CS gas instantly while unleashing a"
+" deafening 165-decibel shockwave capable of causing severe blast injuries."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "active GLI-F4"
+msgid_plural "active GLI-F4s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'active GLI-F4', 'str_pl': 'active GLI-F4s'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid ""
+"This is a notorious French riot control grenade that has been activated and "
+"burns with a loud hiss, spewing forth large amounts of sparks."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighThrowing.json
@@ -56733,6 +57119,21 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. ~ Description for {'str': 'Kevlar zombie'}
+#: .\ZhighZeds\zed_soldiers.json
+msgid ""
+"This zombie is wearing some kind of uniform with heavy, bulletproof "
+"materials sewn in.  However, the monster's skin has begun to grown over the "
+"fabric, splitting and tearing it to shreds, seemingly integrating the mess "
+"of Kevlar and ceramic into part of its hide."
+msgstr ""
+
+#: .\ZhighZeds\zed_soldiers.json
+msgid "Kevlar brute"
+msgid_plural "Kevlar brutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Kevlar brute'}
 #: .\ZhighZeds\zed_soldiers.json
 msgid ""
 "This zombie was once wearing some kind of uniform with heavy, bulletproof "

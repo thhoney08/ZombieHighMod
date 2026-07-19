@@ -1295,7 +1295,7 @@
     "ups_charges": 5,
     "valid_mod_locations": [ [ "emitter", 1 ], [ "lens", 1 ] ],
     "handling": 51,
-    "ammo_effects": [ "LASER", "BLINDS_EYES", "INCENDIARY" ]
+    "ammo_effects": [ "LASER", "BLINDS_EYES", "INCENDIARY", "NO_DAMAGE" ]
   },
   {
     "id": "penDazzler",
@@ -1318,7 +1318,7 @@
     "loudness": 115,
     "to_hit": 1,
     "bashing": 4,
-    "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "NO_DAMAGE" ],
     "modes": [ [ "DEFAULT", "beam", 5 ] ],
     "handling": 51,
     "ammo_effects": [ "LASER", "BLINDS_EYES" ]
@@ -1344,7 +1344,7 @@
     "loudness": 115,
     "to_hit": 1,
     "bashing": 4,
-    "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "NO_DAMAGE" ],
     "modes": [ [ "DEFAULT", "beam", 5 ] ],
     "handling": 51,
     "ammo_effects": [ "DAZZLETRAILZHIGH", "BLINDS_EYES" ]
@@ -1361,7 +1361,7 @@
     "symbol": "|",
     "reload": 40,
     "clip_size": 3,
-    "ammo_effects": [ "NEVER_MISFIRES", "BEANBAG" ],
+    "ammo_effects": [ "NEVER_MISFIRES", "BEANBAG", "NO_DAMAGE" ],
     "material": "steel",
     "weapon_category": [ "PNEUMATIC" ],
     "flags": [ "DURABLE_MELEE", "NEVER_JAMS", "NON_FOULING", "WATERPROOF_GUN", "BELT_CLIP" ],
@@ -1370,7 +1370,7 @@
     "volume": "40 ml",
     "price_postapoc": "50 USD",
     "to_hit": 3,
-    "ranged_damage": { "damage_type": "bash", "amount": 10 },
+    "ranged_damage": { "damage_type": "bash", "amount": 1, "armor_penetration": 9 },
     "modes": [ [ "DEFAULT", "single", 1 ] ],
     "range": 9,
     "loudness": 1,
@@ -1404,7 +1404,7 @@
     "dispersion": 20,
     "durability": 9,
     "handling": 51,
-    "ammo_effects": [ "NEVER_MISFIRES", "FLAMEZHIGH", "INCENDIARY" ]
+    "ammo_effects": [ "NEVER_MISFIRES", "FLAMEZHIGH", "INCENDIARY", "NO_DAMAGE" ]
   },
   {
     "id": "penChem",
@@ -1431,7 +1431,7 @@
     "dispersion": 20,
     "durability": 9,
     "handling": 51,
-    "ammo_effects": [ "JET", "BEANBAG", "NEVER_MISFIRES" ]
+    "ammo_effects": [ "JET", "BEANBAG", "NEVER_MISFIRES", "NO_DAMAGE" ]
   },
   {
     "id": "nuralizerzhigh",
@@ -1674,7 +1674,7 @@
     "durability": 9,
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 3 ], [ "AUTO", "auto", 5 ] ],
     "ammo": "8x40mm",
-    "ammo_effects": [ "FRAGBOMBLANCE", "BEANBAG" ],
+    "ammo_effects": [ "FRAGBOMBLANCE", "BEANBAG", "NO_OVERSHOOT" ],
     "barrel_volume": "500 ml",
     "magazine_well": "500 ml",
     "valid_mod_locations": [
@@ -3391,7 +3391,8 @@
     "loudness": 85,
     "to_hit": 1,
     "bashing": 8,
-    "flags": [ "NO_UNLOAD", "NO_RELOAD", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "FIRE_20" ],
+    "ammo_to_fire": 10,
+    "flags": [ "NO_UNLOAD", "NO_RELOAD", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
     "ammo_effects": [ "BEANBAG", "HEAVY_HIT", "BLINDS_EYES" ],
     "ammo": "slug_zhigh",
     "clip_size": 100,
@@ -3621,12 +3622,39 @@
     "bashing": 11,
     "material": [ "steel", "wood" ],
     "color": "brown",
-    "ammo": [ "545x39" ],
+    "ammo": [ "223", "545x39" ],
     "dispersion": 500,
     "handling": 20,
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "3 rd.", 3 ], [ "AUTO", "auto", 4 ] ],
     "barrel_volume": "50 ml",
-    "magazines": [ [ "545x39", [ "ak74mag", "rpk74mag" ] ] ],
+    "magazines": [ 
+      [
+        "223",
+        [
+          "stanag30",
+          "stanag5",
+          "stanag10",
+          "stanag20",
+          "stanag40",
+          "stanag50",
+          "stanag60",
+          "stanag60drum",
+          "stanag90",
+          "stanag100",
+          "stanag100drum",
+          "stanag150",
+          "carbonmag_223",
+          "survivor223mag"
+        ]
+      ],
+	  [
+		"545x39",
+		[
+		  "ak74mag",
+		  "rpk74mag"
+		]
+	  ]
+	],
     "flags": [ "NEVER_JAMS" ],
     "relative": { "ranged_damage": { "damage_type": "bullet", "amount": 3 }, "durability": 1 }
   },
@@ -4008,8 +4036,12 @@
     "dispersion": 395,
     "clip_size": 3,
     "built_in_mods": [ "grip" ],
-    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
-    "ranged_damage": { "damage_type": "bullet", "amount": -1 }
+    "extend": {
+	  "flags": [ "ALWAYS_TWOHAND" ],
+	  "ammo_effects": [ "NO_OVERSHOOT" ]
+	},
+    "range": -10,
+    "ranged_damage": { "damage_type": "bullet", "amount": 8 }
   },
   {
     "id": "rhinoRevolverZhigh",
@@ -10012,5 +10044,136 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ]
+  },
+  {
+    "id": "blkout300smgZhigh",
+    "//": "Tileset whitelist for SMGs",
+    "copy-from": "smg_base",
+    "type": "GUN",
+    "name": { "str": ".300 Blackout Carbine" },
+    "description": "A high-performance tactical rifle chambered in the versatile .300 AAC Blackout cartridge.  Its unique barrel configuration optimizes powder burn for sub-sonic ammunition, delivering immense stopping power through a suppressed muzzle while remaining incredibly quiet.",
+    "weight": "3230 g",
+    "volume": "1250 ml",
+    "price": "2800 USD",
+    "price_postapoc": "35 USD",
+    "to_hit": -2,
+    "material": [ "steel", "plastic" ],
+    "color": "dark_gray",
+    "ammo": "300blk",
+    "ranged_damage": { "damage_type": "bullet", "amount": 1 },
+    "dispersion": 240,
+    "min_cycle_recoil": 450,
+    "blackpowder_tolerance": 24,
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 3 ], [ "AUTO", "auto", 4 ] ],
+    "valid_mod_locations": [
+      [ "accessories", 3 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "brass catcher", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "underbarrel", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ]
+    ],
+    "magazine_well": "150 ml",
+    "magazines": [
+      [
+        "300blk",
+        [
+          "stanag30",
+          "stanag5",
+          "stanag10",
+          "stanag20",
+          "stanag40",
+          "stanag50",
+          "stanag60",
+          "stanag60drum",
+          "stanag90",
+          "stanag100",
+          "stanag100drum",
+          "stanag150",
+          "carbonmag_223",
+          "survivor223mag"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "powerArmorMgl",
+    "copy-from": "mgl",
+    "type": "GUN",
+    "name": { "str": "power armor MGL" },
+    "clip_size": 4,
+    "dispersion": 120,
+    "armor_data": { "covers": [  ], "coverage": 10, "encumbrance": 30, "material_thickness": 2 },
+    "extend": { "flags": [ "WORN_GUN", "POWERARMOR_MOD" ] }
+  },
+  {
+    "id": "powerArmorSten",
+    "copy-from": "sten",
+    "type": "GUN",
+    "name": { "str": "power armor head vulcan" },
+    "magazines": [ [ "9mm", [ "stenmag", "survivor9mm_mag" ] ] ],
+    "dispersion": 60,
+    "handling": 50,
+    "range": -8,
+    "modes": [ [ "DEFAULT", "burst", 8 ] ],
+	"durability": 8,
+    "armor_data": { "covers": [  ], "coverage": 10, "encumbrance": 30, "material_thickness": 2 },
+    "extend": { "flags": [ "WORN_GUN", "POWERARMOR_MOD" ] }
+  },
+  {
+    "id": "powerArmorPlasma_rifle",
+    "copy-from": "plasma_rifle",
+    "type": "GUN",
+    "name": { "str": "power armor Boeing XM-P plasma rifle" },
+    "clip_size": 20,
+    "dispersion": 40,
+    "armor_data": { "covers": [  ], "coverage": 10, "encumbrance": 30, "material_thickness": 2 },
+    "extend": { "flags": [ "WORN_GUN", "POWERARMOR_MOD" ] }
+  },
+  {
+    "id": "powerArmorLaser_cannon",
+    "copy-from": "laser_cannon",
+    "type": "GUN",
+    "name": { "str": "power armor handheld laser cannon" },
+    "dispersion": 60,
+    "armor_data": { "covers": [  ], "coverage": 10, "encumbrance": 30, "material_thickness": 2 },
+    "extend": { "flags": [ "WORN_GUN", "POWERARMOR_MOD" ] }
+  },
+  {
+    "id": "briefcase_smg2",
+    "copy-from": "hk_mp5k",
+    "type": "GUN",
+    "name": { "str": "medusan carapace" },
+    "description": "This is a hard-sided briefcase with a trigger in the handle and a concealed hole in the side.  To fire the internally mounted MP5K-PDW, one braces the briefcase at the waist, ensures the briefcase is pointed at the enemy, and squeezes the trigger.  Precision and handling are severely hampered all around, however if you need to 'hand over the goods' or look low profile while bodyguarding, this is your gun.  When the briefcase is open the MP5 may be reloaded or dismounted.",
+    "weight": "3570 g",
+    "volume": "15 L",
+    "price": "4800 USD",
+    "price_postapoc": "50 USD",
+    "bashing": 15,
+    "handling": 5,
+    "dispersion": 520,
+    "sight_dispersion": 520,
+    "armor_data": { "covers": [ "arm_either", "hand_either" ], "coverage": 10, "encumbrance": 30, "material_thickness": 2 },
+    "flags": [ "OVERSIZE", "RELOAD_EJECT", "BELTED", "RESTRICT_HANDS", "WORN_GUN" ],
+    "valid_mod_locations": [
+      [ "rail", 1 ],
+	  [ "underbarrel", 5 ]
+	],
+    "built_in_mods": [
+	  "gun_crossbow",
+	  "pipe_launcher40mm",
+	  "ts12_aux_shotgun",
+	  "ts12_aux_shotgun2",
+	  "m320_mod_mod",
+	  "ksg25_aux_shotgun"
+	],
+    "magazine_well": "500 ml",
+    "magazines": [ [ "9mm", [ "mp5mag" ] ] ]
   }
 ]
