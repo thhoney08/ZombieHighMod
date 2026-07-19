@@ -1518,7 +1518,7 @@
           "light_minus_atomic_battery_cell",
           "control_laptop",
           "bot_heal_drone",
-          "wristwatch"
+          "wrist_comp_control"
         ],
         "entries": [
           { "group": "ZhighNpc_shoesAll" },
@@ -2436,6 +2436,41 @@
           "wristwatch"
         ],
         "entries": [ { "group": "ZhighNpc_shoesAll" } ]
+      },
+      "male": [ "briefs" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighTeacher2",
+    "name": "Teacher",
+    "description": "You've been teaching kids for the whole of your life, and they've mostly listened to your teachings.  However, the dead won't write out lines for eating you alive.",
+    "points": -4,
+    "skills": [
+	  { "level": 2, "name": "speech" },
+	  { "level": 2, "name": "barter" },
+	  { "level": 1, "name": "dodge" },
+	  { "level": 1, "name": "melee" }
+	],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt",
+          "trenchcoat",
+          "pants",
+          "socks",
+          "dress_shoes",
+          "plays_book",
+          "mask_hare2",
+          "medkitRechargeV3",
+          "permanent_marker",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "cane", "custom-flags": [ "auto_wield" ] }
+        ]
       },
       "male": [ "briefs" ],
       "female": [ "bra", "panties" ]
@@ -6763,7 +6798,7 @@
     "id": "zhighKampfer",
     "name": "Student - Renegade",
     "description": "You fight for no one but yourself.  In a world of ruins and rules long dead, you carve your own law with blood and steel.",
-    "points": 1,
+    "points": 2,
     "skills": [ { "level": 1, "name": "gun" }, { "level": 1, "name": "shotgun" } ],
     "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
@@ -6772,6 +6807,7 @@
         "items": [
           "dress_shirt_zhigh",
           "jacket_baseball",
+          "mask_CombatFake",
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "roller_shoes_off",
@@ -6780,7 +6816,8 @@
           "attached_ear_plugs_off",
           "matches",
           "balclava_leatherZhigh",
-          "mask_CombatFake"
+          "helmet_skid",
+          "legrig"
         ],
         "entries": [
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
@@ -6790,13 +6827,13 @@
           { "item": "axe_ring", "contents-item": "axe_combat" },
           { "item": "suicidesoda", "container-item": "flask_hip" },
           {
-            "item": "shotgun_pump_paint",
+            "item": "marble_pump_gun",
             "ammo-item": "paintball_shot",
-            "charges": 15,
+            "charges": 10,
             "contents-item": [ "shoulder_strap", "charm_cut", "charm_spike", "charm_magnet" ],
             "custom-flags": [ "auto_wield" ]
           },
-          { "item": "paintball_shot", "charges": 45 }
+          { "item": "paintball_shot", "charges": 20 }
         ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
@@ -9237,7 +9274,7 @@
           "light_minus_atomic_battery_cell",
           "control_laptop",
           "bot_attack_drone",
-          "wristwatch"
+          "wrist_comp_control"
         ],
         "entries": [
           { "group": "ZhighNpc_shoesAll" },
@@ -9273,7 +9310,7 @@
           "light_minus_atomic_battery_cell",
           "control_laptop",
           "bot_heal_drone",
-          "wristwatch"
+          "wrist_comp_control"
         ],
         "entries": [
           { "group": "ZhighNpc_shoesAll" },
@@ -10676,6 +10713,7 @@
           "holster",
           "grenade_emp",
           "grenade_emp",
+          "wrist_comp_control",
           "bandana"
         ],
         "entries": [
@@ -10691,6 +10729,37 @@
     },
     "flags": [ "SCEN_ONLY" ],
     "addictions": [ { "intensity": 10, "type": "caffeine" } ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighExecutioner",
+    "name": "Student - Executioner",
+    "description": "You patrol the blood-soaked campus wielding a heavy, industrial-grade chopping blade to deliver absolute terminal justice to the infected.  Capitalizing on pure brute strength, you ruthlessly decapitate high-threat targets at close range to permanently end the cycle of mutation.",
+    "points": -1,
+    "age": { "min": 14, "max": 18 },
+    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" } ],
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "pockknife",
+          "water_clean",
+          "balclava_hoodZhigh",
+          "wristwatch"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_shoesAll" },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "battleaxe", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "chestwrap", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
   },
   {
     "type": "profession",

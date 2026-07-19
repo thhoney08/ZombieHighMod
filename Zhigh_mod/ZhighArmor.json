@@ -467,7 +467,6 @@
     "covers": [ "legs" ],
     "coverage": 2,
     "encumbrance": 4,
-    "storage": "3 L",
     "material_thickness": 1,
     "use_action": {
       "type": "holster",
@@ -2023,7 +2022,7 @@
     "type": "TOOL_ARMOR",
     "name": { "str": "pair of atomic multi-visor goggles (on)", "str_pl": "pairs of atomic multi-visor goggles (on)" },
     "description": "A pair of atomic battery-powered goggles that grant multi-vison, allowing you to see in the dark and see warm-blooded creatures in the dark.  Use it to turn them off.  This model has an integrated atomic cell, which allows infinite power usage.",
-    "flags": [ "GNV_EFFECT", "IR_EFFECT", "FRAGILE", "TRADER_AVOID" ],
+    "flags": [ "GNVE_EFFECT", "IR_EFFECT", "FRAGILE", "TRADER_AVOID" ],
     "revert_to": "goggles_atomic_multi",
     "use_action": { "type": "transform", "menu_text": "Turn off", "msg": "Your %s deactivates.", "target": "goggles_atomic_multi" },
     "covers": [ "eyes" ],
@@ -4471,6 +4470,7 @@
     "coverage": 95,
     "encumbrance": 6,
     "warmth": 10,
+	"storage": "1500 ml",
     "material_thickness": 3,
     "use_action": [
       {
@@ -6803,6 +6803,7 @@
   },
   {
     "id": "power_armor_jetpack",
+	"looks_like": "heavy_power_armor_frame",
     "type": "TOOL_ARMOR",
     "category": "tool",
     "name": { "str": "power armor jetpack" },
@@ -6821,7 +6822,7 @@
     "ammo": "flammable",
     "covers": [ "torso" ],
     "flags": [
-      "POWERARMOR_COMPATIBLE",
+      "POWERARMOR_MOD",
       "WATER_FRIENDLY",
       "BELTED",
       "ONLY_ONE",
@@ -6845,6 +6846,7 @@
   },
   {
     "id": "power_armor_jetpack_on",
+	"looks_like": "heavy_power_armor_frame",
     "type": "TOOL_ARMOR",
     "repairs_like": "power_armor_jetpack",
     "category": "tools",
@@ -6865,7 +6867,7 @@
     "ammo": "flammable",
     "covers": [ "torso", "mouth" ],
     "flags": [
-      "POWERARMOR_COMPATIBLE",
+      "POWERARMOR_MOD",
       "WATER_FRIENDLY",
       "BELTED",
       "ONLY_ONE",
@@ -8563,5 +8565,205 @@
     "name": { "str": "leather balclava" },
     "material": [ "leather" ],
     "looks_like": "bondage_mask"
+  },
+  {
+    "id": "butcherNailZhigh1",
+    "type": "TOOL_ARMOR",
+    "name": "chrono-implant",
+    "description": ".",
+    "weight": "500 g",
+    "volume": "0 ml",
+    "price": "250 kUSD",
+    "price_postapoc": "250 USD",
+    "to_hit": -3,
+    "material": [ "plastic", "steel" ],
+    "symbol": "[",
+    "color": "light_green",
+    "coverage": 0,
+    "encumbrance": 0,
+    "warmth": 0,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "STRENGTH", "add": -2 },
+            { "value": "DEXTERITY", "add": -2 },
+            { "value": "INTELLIGENCE", "add": -2 },
+            { "value": "PERCEPTION", "add": -2 }
+          ]
+        }
+      ]
+    },
+    "material_thickness": 10,
+    "environmental_protection": 0,
+    "use_action": {
+      "target": "butcherNailZhigh2",
+      "msg": "You pull the activating lever, making chrono-implant alive.",
+      "target_charges": 2000,
+	  "active": true,
+      "menu_text": "Activate",
+      "type": "transform"
+    },
+    "flags": [ "ONLY_ONE", "TRADER_AVOID", "BELTED", "NO_TAKEOFF" ]
+  },
+  {
+    "id": "butcherNailZhigh2",
+    "copy-from": "butcherNailZhigh1",
+    "type": "TOOL_ARMOR",
+    "name": "chrono-implant",
+    "charges_per_use": 0,
+    "max_charges": 3000,
+    "initial_charges": 2000,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+		  "mutations": [ "CRAFTY", "WAKEFUL3", "BRAWLER", "PSYCHOPATH", "KILLER" ],
+          "values": [
+            { "value": "STRENGTH", "add": 4 },
+            { "value": "DEXTERITY", "add": 4 },
+            { "value": "INTELLIGENCE", "add": 4 },
+            { "value": "PERCEPTION", "add": 4 }
+          ],
+		  "ench_effects": [
+		  	{ "effect": "cureall", "intensity": 3 },
+		  	{ "effect": "adrenaline666", "intensity": 3 }
+		  ]
+        },
+        { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "STAMINA_CAP", "multiply": 99.2 } ] },
+        { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "STAMINA_REGEN", "multiply": 99.2 } ] }
+      ],
+      "recharge_scheme": [
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 10,
+          "field": "fd_gibs_invertebrate",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your chrono-implant charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 10,
+          "field": "fd_gibs_insect",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your chrono-implant charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 10,
+          "field": "fd_sludge",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your chrono-implant charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 10,
+          "field": "fd_blood_invertebrate",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your chrono-implant charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 10,
+          "field": "fd_blood_insect",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your chrono-implant charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 10,
+          "field": "fd_blood_veggy",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your chrono-implant charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 10,
+          "field": "fd_slime",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your chrono-implant charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 10,
+          "field": "fd_gibs_veggy",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your chrono-implant charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 10,
+          "field": "fd_gibs_flesh",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your chrono-implant charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 10,
+          "field": "fd_bile",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your chrono-implant charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 10,
+          "field": "fd_blood",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your chrono-implant charges up!"
+        }
+      ]
+    },
+    "use_action": [ ],
+	"turns_per_charge": 10000,
+	"revert_to": "butcherNailZhigh3"
+  },
+  {
+    "id": "butcherNailZhigh3",
+    "copy-from": "butcherNailZhigh1",
+    "type": "TOOL_ARMOR",
+    "name": "deactivated chrono-implant",
+    "charges_per_use": 0,
+    "max_charges": 3000,
+    "initial_charges": 3000,
+    "use_action": [ ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "STRENGTH", "add": -2 },
+            { "value": "DEXTERITY", "add": -2 },
+            { "value": "INTELLIGENCE", "add": -2 },
+            { "value": "PERCEPTION", "add": -2 }
+          ]
+        }
+      ]
+    }
   }
 ]

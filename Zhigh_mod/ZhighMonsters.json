@@ -289,10 +289,10 @@
     "weight": "500 g",
     "volume": "250 ml",
     "bashing": 7,
-    "damage": { "damage_type": "bash", "amount": 7, "armor_penetration": 30 },
+    "damage": { "damage_type": "bash", "amount": 7 },
     "range": 10,
-    "dispersion": 4000,
-    "loudness": 0,
+    "dispersion": 40000,
+    "loudness": 10,
     "to_hit": -1,
     "qualities": [ [ "HAMMER", 1 ] ],
     "effects": [ "NEVER_MISFIRES", "NON_FOULING", "NOGIB" ]
@@ -508,6 +508,76 @@
 	  [ "PARROT", 3 ],
 	  [ "SEARCHLIGHT", 1 ],
 	  { "id": "slam" }
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "HUMAN",
+      "CAN_OPEN_DOORS"
+    ]
+  },
+  {
+    "id": "mon_feral_human_launcherZhigh",
+    "type": "MONSTER",
+    "copy-from": "mon_feral_human_zhigh",
+    "name": { "str": "feral nader" },
+    "description": "Their pupils are dilated and what remains to be seen of the iris and sclera are bloodshot.  This launcher-wielding maniac still breathes, but the zombies treat them like one of their own.  For some reason, these ferals can shoot rocks.",
+    "hp": 35,
+    "luminance": 10,
+    "on_death": { "death_function": [  ], "spawn_mon": "mon_feral_human_zhigh" },
+    "death_drops": "ZhighGuardWeaponGroups",
+    "starting_ammo": { "brickZhigh": 20 },
+    "special_attacks": [
+	  [ "PARROT", 3 ],
+      {
+        "type": "gun",
+        "cooldown": 1,
+        "move_cost": 2,
+        "gun_type": "naderGauntletZhigh",
+        "ammo_type": "brickZhigh",
+        "no_ammo_sound": "a chk!",
+        "fake_skills": [ [ "gun", 3 ], [ "launcher", 5 ] ],
+        "fake_dex": 1,
+        "fake_per": 1,
+        "targeting_cost": 30,
+        "require_targeting_player": true,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "ranges": [ [ 1, 29, "DEFAULT" ] ],
+        "description": "The feral nader shoots a rock!",
+        "no_crits": true
+      }
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "HUMAN",
+      "CAN_OPEN_DOORS"
+    ]
+  },
+  {
+    "id": "mon_feral_human_Frogman",
+    "type": "MONSTER",
+    "copy-from": "mon_feral_human_zhigh",
+    "name": { "str": "feral ribbiteer" },
+    "description": "Their pupils are dilated and what remains to be seen of the iris and sclera are bloodshot.  This tongue dripping maniac still breathes, but the zombies treat them like one of their own.  For some reason, these ferals can call more of his friends.",
+    "hp": 15,
+    "luminance": 10,
+    "on_death": { "death_function": [  ], "spawn_mon": "mon_feral_human_zhigh" },
+    "death_drops": "ZhighGuardWeaponGroups",
+    "special_attacks": [
+      { "type": "leap", "cooldown": 10, "max_range": 20, "min_consider_range": 3, "max_consider_range": 18 },
+	  [ "PARROT", 3 ],
+      [ "LONGSWIPE", 1 ],
+      [ "RANGED_PULL", 1 ]
     ],
     "flags": [
       "SEES",
@@ -2427,7 +2497,8 @@
     "vision_night": 50,
     "revert_to_itype": "inactive_marusaur",
     "special_attacks": [
-      {
+      [ "PHOTOGRAPH", 1 ],
+	  {
         "type": "gun",
         "cooldown": 1,
         "move_cost": 5,
@@ -2511,21 +2582,22 @@
     "vision_night": 50,
     "revert_to_itype": "inactive_marusaurV2",
     "special_attacks": [
-		[ "ACID_BARF", 5 ],
-		{
-          "type": "gun",
-          "cooldown": 1,
-          "move_cost": 5,
-          "gun_type": "acid_bio_mouth_gun",
-          "fake_skills": [ [ "gun", 4 ], [ "rifle", 4 ] ],
-          "fake_dex": 8,
-          "fake_per": 8,
-          "require_targeting_npc": true,
-          "require_targeting_monster": true,
-          "target_moving_vehicles": true,
-          "description": "The acid dinosaur launches a spray of acid!",
-          "ranges": [ [ 1, 11, "DEFAULT" ] ]
-        }
+	  [ "ACID_BARF", 5 ],
+	  [ "PHOTOGRAPH", 1 ],
+	  {
+        "type": "gun",
+        "cooldown": 1,
+        "move_cost": 5,
+        "gun_type": "acid_bio_mouth_gun",
+        "fake_skills": [ [ "gun", 4 ], [ "rifle", 4 ] ],
+        "fake_dex": 8,
+        "fake_per": 8,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "target_moving_vehicles": true,
+        "description": "The acid dinosaur launches a spray of acid!",
+        "ranges": [ [ 1, 11, "DEFAULT" ] ]
+      }
 	],
     "special_when_hit": [ "RETURN_FIRE", 100 ],
     "death_drops": "mon_marusaurV2_drops",
@@ -2671,7 +2743,8 @@
     "revert_to_itype": "bot_V10Zhigh",
     "starting_ammo": { "556": 600 },
     "special_attacks": [
-      {
+      [ "PHOTOGRAPH", 1 ],
+	  {
         "type": "gun",
         "cooldown": 3,
         "move_cost": 150,
@@ -2772,6 +2845,7 @@
     "death_function": [ "DISAPPEAR" ],
     "death_drops": "mon_hologramAlibaiZhigh_drops",
     "special_attacks": [
+	  [ "PHOTOGRAPH", 1 ],
       {
         "type": "gun",
         "cooldown": 3,
@@ -2951,6 +3025,7 @@
     "vision_day": 50,
     "vision_night": 50,
     "revert_to_itype": "bot_goliathZhigh",
+    "special_attacks": [ [ "PHOTOGRAPH", 1 ] ],
     "death_drops": { "groups": [ [ "robots", 16 ] ] },
     "death_function": [ "BROKEN" ],
     "flags": [
@@ -2964,6 +3039,92 @@
       "PET_MOUNTABLE",
       "CARD_OVERRIDE",
       "MILITARY_MECH",
+      "BIOPROOF"
+    ]
+  },
+  {
+    "id": "bot_ValkCamZhigh",
+    "looks_like": "broken_ValkCamZhigh",
+    "type": "TOOL",
+    "name": { "str": "inactive spy camera" },
+    "description": "This is an inactive spy camera.  Using this item involves turning it on and launching the UAV.  If programmed successfully the spy camera will then keep watch for intruders, marking targets that can be tracked if you possess a control laptop, military scouter, or similar equipment; or have a bionic infolink installed.  A user could also deploy it remotely by throwing it.",
+    "weight": "200 g",
+    "volume": "150 ml",
+    "price": "100 USD",
+    "price_postapoc": "5 USD",
+    "to_hit": -3,
+    "bashing": 8,
+    "material": [ "steel" ],
+    "symbol": ";",
+    "color": "light_green",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_ValkCamZhigh",
+      "friendly_msg": "The spy camera hums and takes to the sky.",
+      "hostile_msg": "The spy camera beeps disapprovingly and focuses its camera on your face. Say cheese!",
+      "//": "Like most surveillance tech these likely have poor security. Secure the wifi!",
+      "moves": 1,
+      "place_randomly": true,
+      "skills": [ "electronics", "computer" ]
+    },
+    "//": "Few character will have the strength for this, but allow trying it anyway",
+    "flags": [ "ACT_ON_RANGED_HIT", "ALLOWS_REMOTE_USE", "GRENADE" ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "broken_ValkCamZhigh",
+    "symbol": ",",
+    "color": "green",
+    "name": { "str": "broken spy camera" },
+    "category": "scrap_electronics",
+    "description": "A broken spy camera.  Much less threatening now.  Could be gutted for parts.",
+    "price": "10 USD",
+    "price_postapoc": "10 cent",
+    "material": [ "steel", "plastic" ],
+    "weight": "200 g",
+    "volume": "150 ml",
+    "bashing": 6,
+    "cutting": 6,
+    "to_hit": -3,
+    "flags": [ "TRADER_AVOID", "NO_REPAIR" ]
+  },
+  {
+    "id": "mon_ValkCamZhigh",
+    "type": "MONSTER",
+    "name": { "str": "spy camera" },
+    "description": "A quadcopter drone largely comprised of a high-resolution camera lens, this robot stays on te ground, documenting the carnage and mayhem around it.  While it is no longer able to report to a central authority, it's likely that some of its automated alert systems are still functional, given that the thing seems to have an operational charging station somewhere.",
+    "default_faction": "cop_bot",
+    "species": [ "ROBOT_FLYING" ],
+    "diff": 2,
+    "weight": "200 g",
+    "volume": "150 ml",
+    "hp": 20,
+    "speed": 120,
+    "vision_day": 30,
+    "vision_night": 30,
+    "material": [ "steel" ],
+    "symbol": "e",
+    "color": "light_gray",
+    "morale": 100,
+    "melee_cut": 0,
+    "dodge": 300,
+    "armor_bash": 1,
+    "armor_cut": 1,
+    "armor_bullet": 1,
+    "armor_fire": 1,
+    "emit_fields": [ { "emit_id": "emit_shadow_field", "delay": "1 s" } ],
+    "revert_to_itype": "bot_ValkCamZhigh",
+    "special_attacks": [ [ "PHOTOGRAPH", 1 ] ],
+    "death_drops": { "groups": [ [ "robots", 4 ], [ "eyebot", 1 ] ] },
+    "death_function": [ "BROKEN" ],
+    "flags": [
+      "SEES",
+      "ELECTRONIC",
+      "COLDPROOF",
+      "NO_BREATHE",
+      "NOHEAD",
+      "PRIORITIZE_TARGETS",
+      "NIGHT_INVISIBILITY",
       "BIOPROOF"
     ]
   },
@@ -3089,9 +3250,14 @@
     "copy-from": "mon_zombie_kevlar_2",
     "type": "MONSTER",
     "name": { "str": "guarding hulk zombie" },
-    "death_drops": "mon_feral_blackops_boss_commander_death_drops",
-    "path_settings": { "max_dist": 40, "allow_open_doors": true, "avoid_traps": true, "avoid_sharp": true },
+    "death_drops": "feral_security_monster_weapon_flashlight",
+	"hp": 600,
+	"luminance": 500,
+    "path_settings": { "max_dist": 40, "allow_open_doors": true, "avoid_traps": false, "avoid_sharp": false },
     "vision_night": 60,
+    "armor_bash": 3,
+    "armor_cut": 4,
+    "armor_bullet": 3,
     "special_attacks": [
       { "id": "slam", "cooldown": 12, "damage_max_instance": [ { "damage_type": "bash", "amount": 35 } ] },
       [ "SMASH", 2 ],

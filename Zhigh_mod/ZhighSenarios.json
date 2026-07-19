@@ -312,6 +312,8 @@
 	  "zhighTroublemaker",
 	  "zhighConjurer",
 	  "zhighIntercepter",
+	  "zhighExecutioner",
+	  "zhighTeacher2",
       "zhighFrat"
     ],
     "flags": [ "SUM_START" ],
@@ -650,6 +652,8 @@
 	  "zhighTroublemaker",
 	  "zhighConjurer",
 	  "zhighIntercepter",
+	  "zhighExecutioner",
+	  "zhighTeacher2",
       "zhighFrat"
     ],
     "start_name": "Zombiefied Highschool",
@@ -936,8 +940,20 @@
     "id": "isolationist",
     "copy-from": "isolationist",
     "extend": {
-        "allowed_locs": [ "sloc_ZhighSafehouse", "sloc_ZhighFireLookouthouse" ]
-      }
+      "allowed_locs": [ "sloc_ZhighSafehouse", "sloc_ZhighFireLookouthouse" ]
+	}
+  },
+  {
+    "type": "scenario",
+    "id": "medieval",
+    "copy-from": "medieval",
+    "extend": {
+      "professions": [
+		"soldier_wwiismgZhigh",
+		"soldier_wwiirocketZhigh",
+		"soldier_wwiiShotZhigh"
+	  ]
+	}
   },
   {
     "type": "scenario",

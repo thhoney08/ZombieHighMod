@@ -247,7 +247,7 @@
   {
     "type": "item_group",
     "id": "bbZhigh_items",
-    "ammo": 60,
+    "ammo": 100,
     "magazine": 100,
     "items": [ 
       [ "bbgun", 3 ],
@@ -283,7 +283,7 @@
       [ "shoulder_holster", 2 ], 
       [ "sholster", 2 ], 
       [ "bootstrap", 2 ], 
-      [ "wristholster", 2 ], 
+      [ "wristholster", 2 ],
       [ "HalfLifePcvZhigh_vest", 2 ], 
       [ "goggles_ski", 15 ], 
       [ "goggles_swim", 15 ]
@@ -704,6 +704,15 @@
     ]
   },
   {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "sheltered_DogSledPatrol",
+    "entries": [
+      { "item": "3006_clip", "ammo-item": "3006fmj", "charges": 5 },
+      { "item": "3006_clip", "ammo-item": "3006fmj", "charges": 5 }
+    ]
+  },
+  {
     "id": "nested_mauserC96Zhigh",
     "type": "item_group",
     "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
@@ -756,7 +765,12 @@
     "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
     "subtype": "collection",
     "ammo": 100,
-    "entries": [ { "item": "pkdBlaster", "charges-min": 0, "charges-max": 5 }, { "group": "on_hand_223" }, { "group": "on_hand_223" } ]
+    "entries": [
+	  { "item": "pkdBlaster", "charges-min": 0, "charges-max": 5 },
+	  { "group": "charged_UPS" },
+	  { "group": "on_hand_223" },
+	  { "group": "on_hand_223" }
+	]
   },
   {
     "id": "everyday_pkdBlaster",
@@ -764,7 +778,12 @@
     "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
     "subtype": "collection",
     "ammo": 100,
-    "entries": [ { "item": "pkdBlaster", "charges-min": 0, "charges-max": 5 }, { "group": "on_hand_223" } ]
+    "entries": [
+	  { "item": "pkdBlaster", "charges-min": 0, "charges-max": 5 },
+	  { "group": "charged_UPS" },
+	  { "group": "on_hand_223" },
+	  { "group": "on_hand_223" }
+	]
   },
   {
     "id": "nested_mts255",
@@ -3580,6 +3599,31 @@
     ]
   },
   {
+    "id": "everyday_blkout300smgZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "blkout300smgZhigh", "charges": [ 0, 30 ] },
+      { "group": "nested_stanag_mag_300", "charges-min": 0, "prob": 80 },
+      { "group": "nested_stanag_mag_300", "charges-min": 0, "prob": 50 },
+      { "group": "on_hand_300BLK", "prob": 25, "charges": [ 10, 20 ], "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "nested_blkout300smgZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "blkout300smgZhigh", "ammo-group": "on_hand_300BLK", "charges": [ 0, 30 ] },
+      { "group": "nested_stanag_mag_300" },
+      { "group": "nested_stanag_mag_300", "prob": 50 },
+      { "group": "on_hand_300BLK" }
+    ]
+  },
+  {
     "type": "item_group",
     "subtype": "collection",
     "id": "bandolier_rifle_47",
@@ -3610,6 +3654,17 @@
       { "item": "hailStormV1Zhigh", "ammo-item": "super_nailZhigh", "charges": 150 },
       { "item": "nailmag", "ammo-item": "super_nailZhigh", "charges": 150 },
       { "item": "nailmag", "ammo-item": "super_nailZhigh", "charges": 150 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "temporal_soldier_tommygun",
+    "entries": [
+      { "item": "thompson_bigmag", "ammo-group": "on_hand_45", "charges": 30 },
+      { "item": "thompson_bigmag", "ammo-group": "on_hand_45", "charges": 30 },
+      { "item": "thompson_bigmag", "ammo-group": "on_hand_45", "charges": 30 },
+      { "item": "thompson_bigmag", "ammo-group": "on_hand_45", "charges": 30 }
     ]
   },
   {
@@ -3798,6 +3853,8 @@
       { "group": "ZhighTraps", "prob": 70, "count": [ 1, 2 ] },
       { "group": "ZhighTracksuitGroups", "prob": 30, "count": [ 1, 3 ] },
       { "group": "ZhighClothingGroups", "prob": 30, "count": [ 1, 2 ] },
+      { "group": "bbZhigh_items", "prob": 45, "count": [ 1, 2 ] },
+      { "group": "paintball_items", "prob": 45, "count": [ 1, 2 ] },
       { "group": "turretBoxZhighGroups", "prob": 25, "count": [ 1, 2 ] },
       { "group": "trash", "prob": 65, "count": [ 0, 5 ] }
     ]
@@ -3854,6 +3911,8 @@
       { "group": "school", "prob": 50, "count": [ 1, 4 ] },
       { "group": "camping", "prob": 15, "count": [ 1, 2 ] },
       { "item": "coinBoxZhigh", "prob": 15, "count": [ 1, 2 ] },
+      { "group": "bbZhigh_items", "prob": 45, "count": [ 1, 2 ] },
+      { "group": "paintball_items", "prob": 45, "count": [ 1, 2 ] },
       { "group": "turretBoxZhighGroups", "prob": 45, "count": [ 1, 3 ] },
       { "group": "tools_lighting", "prob": 90 },
       { "group": "foodsZhigh_items", "prob": 15, "count": [ 1, 2 ] },

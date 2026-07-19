@@ -716,7 +716,7 @@
     "copy-from": "surv_rocket_launcher",
     "type": "GUN",
     "name": { "str": "crude rocket launcher" },
-    "ammo": [ "cannon", "homebrew_rocket", "m235", "40x46mm", "RPG-7", "atgm", "84x246mm" ]
+    "ammo": [ "homebrew_rocket", "m235", "40x46mm", "RPG-7", "atgm", "84x246mm" ]
   },
   {
     "id": "case_violin",
@@ -1314,8 +1314,7 @@
     "copy-from": "crafted_suppressor",
     "type": "GUNMOD",
     "name": { "str": "homemade suppressor" },
-    "handling_modifier": 6,
-    "loudness_modifier": -40
+    "handling_modifier": 6
   },
   {
     "id": "filter_suppressor",
@@ -1339,8 +1338,7 @@
     "copy-from": "riv_suppressor",
     "type": "GUNMOD",
     "name": { "str": "RK6S34 suppressor" },
-    "handling_modifier": 3,
-    "proportional": { "loudness_modifier": 6 }
+    "handling_modifier": 3
   },
   {
     "id": "shot_suppressor",
@@ -1350,8 +1348,7 @@
     "weight": "900 g",
     "volume": "1086 ml",
     "damage_modifier": { "damage_type": "bullet", "amount": -3 },
-    "handling_modifier": 12,
-    "loudness_modifier": -40
+    "handling_modifier": 12
   },
   {
     "id": "suppressor",
@@ -1360,8 +1357,7 @@
     "name": { "str": "suppressor" },
     "weight": "400 g",
     "volume": "200 ml",
-    "handling_modifier": 8,
-    "loudness_modifier": -60
+    "handling_modifier": 8
   },
   {
     "id": "mp5sd_suppressor",
@@ -2225,14 +2221,11 @@
         "44",
         "44paper",
         "45",
-        "45colt",
         "46",
         "57",
         "9x18",
         "9mm",
-        "454",
-        "460",
-        "500"
+        "460"
     ],
     "dispersion": 620,
     "durability": 2,
@@ -4080,5 +4073,13 @@
       "skills": [ "pistol", "smg", "shotgun", "rifle", "launcher" ],
       "flags": [ "HOLSTER_PISTOL" ]
     }
+  },
+  {
+	"id": "ppsh",
+    "type": "GUN",
+    "copy-from": "ppsh",
+    "name": { "str": "PPSh-41" },
+    "dispersion": 80,
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 3 ], [ "AUTO", "auto", 6 ] ]
   }
 ]

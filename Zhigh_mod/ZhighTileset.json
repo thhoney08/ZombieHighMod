@@ -3215,6 +3215,8 @@
           { "id": "overlay_wielded_pistol_blunderbuss", "fg": 161 },
           { "id": "smokeStackZhigh", "fg": 162 },
           { "id": "overlay_wielded_smokeStackZhigh", "fg": 163 },
+          { "id": "overlay_worn_powerArmorMgl", "fg": 165 },
+          { "id": "overlay_wielded_powerArmorMgl", "fg": 165 },
           { "id": "gradCapZhigh", "fg": 167 },
           { "id": "tophatZhighV2", "fg": 171 },
           { "id": "teslaCoilZhigh", "fg": 172 },
@@ -3244,9 +3246,27 @@
           { "id": "toyZhigh_goggles_nv_on", "fg": 199 },
           { "id": "overlay_wielded_toyZhigh_goggles_nv_on", "fg": 200 },
           { "id": "airsoftHelm_zhigh", "fg": 201 },
-          { "id": "overlay_wielded_airsoftHelm_zhigh", "fg": 202 },
+          { "id": "overlay_wielded_airsoftHelm_zhigh", "fg": 201 },
+          { "id": "overlay_worn_airsoftHelm_zhigh", "fg": 202 },
+          { "id": "ZhighArrow_sap", "fg": 205 },
+          { "id": "overlay_wielded_ZhighArrow_sap", "fg": 205 },
+          { "id": "GliF4Zhigh", "fg": 206 },
+          { "id": "overlay_wielded_GliF4Zhigh", "fg": 207 },
+          { "id": "GliF4Zhigh_act", "fg": 208 },
+          { "id": "overlay_wielded_GliF4Zhigh_act", "fg": 209 },
           { "id": "colt6520Zhigh", "fg": 222 },
-          { "id": "overlay_wielded_colt6520Zhigh", "fg": 223 }
+          { "id": "overlay_wielded_colt6520Zhigh", "fg": 223 },
+          { "id": "broken_ValkCamZhigh", "fg": 224 },
+          { "id": "overlay_wielded_broken_ValkCamZhigh", "fg": 225 },
+          {
+            "id": "mounted_acid_gunBigZhigh",
+            "fg": 226,
+            "rotates": true,
+            "multitile": true,
+            "additional_tiles": [ { "id": "broken", "fg": 227 } ]
+          },
+          { "id": "overlay_worn_powerArmorSten", "fg": 228 },
+          { "id": "overlay_wielded_powerArmorSten", "fg": 228 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,
@@ -3812,7 +3832,31 @@
             ],
             "rotates": false,
             "animated": false
-          }
+          },
+          {
+            "id": "mon_feral_human_launcherZhigh",
+            "fg": [
+              { "weight": 10, "sprite": 208 },
+              { "weight": 10, "sprite": 209 },
+              { "weight": 10, "sprite": 210 },
+              { "weight": 10, "sprite": 211 }
+            ],
+            "rotates": false,
+            "animated": false
+          },
+          {
+            "id": "mon_feral_human_Frogman",
+            "fg": [
+              { "weight": 10, "sprite": 212 },
+              { "weight": 10, "sprite": 213 },
+              { "weight": 10, "sprite": 214 },
+              { "weight": 10, "sprite": 215 },
+              { "weight": 10, "sprite": 216 }
+            ],
+            "rotates": false,
+            "animated": false
+          },
+          { "id": "mon_ValkCamZhigh", "fg": 221 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,

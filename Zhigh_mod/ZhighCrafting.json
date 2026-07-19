@@ -15500,5 +15500,23 @@
       ]
     ],
     "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "type": "recipe",
+    "result": "pipeGunRevolvoGummod",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MODS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "rifle", 1 ] ],
+    "difficulty": 1,
+    "time": "1 h 20 m",
+    "autolearn": true,
+    "reversible": false,
+    "qualities": [ { "id": "HAMMER", "level": 1 }, { "id": "SAW_M_FINE", "level": 1 }, { "id": "DRILL", "level": 1 } ],
+    "tools": [
+      [ [ "pipe_pistol", -1 ], [ "pipe_rifle", -1 ] ],
+      [ [ "small_repairkit", 10 ], [ "large_repairkit", 10 ] ]
+    ],
+    "components": [ [ [ "steel_plate", 1 ], [ "steel_lump", 2 ] ], [ [ "pipe", 1 ], [ "sheet_metal_small", 1 ] ], [ [ "scrap", 1 ] ] ]
   }
 ]

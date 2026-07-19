@@ -152,6 +152,18 @@
 	]
   },
   {
+    "type": "vehicle_group",
+    "id": "police_pileup",
+    "vehicles": [
+	  [ "policecar", 400 ], 
+	  [ "policesuv", 400 ],
+	  [ "pepperFoggerZhigh", 20 ],
+	  [ "policecar_k9", 2 ],
+	  [ "policesuv_k9", 3 ],
+	  [ "police_k9tpt", 1 ]
+	]
+  },
+  {
     "id": "car_escape",
     "type": "vehicle",
     "name": "Escape Car",
@@ -924,7 +936,7 @@
         "y": -2,
         "parts": [ "frame_horizontal", "roof", "wheel_mount_medium_steerable", "wheel_wide", "door" ]
       },
-      { "x": 1, "y": -2, "parts": [ "frame_horizontal", "roof", "windshield", "turret_mount", { "part": "mounted_professional_chemical_thrower", "ammo": 100, "ammo_types": [ "ZhighGas_teargas" ], "ammo_qty": [ 500, 800 ] } ] },
+      { "x": 1, "y": -2, "parts": [ "frame_horizontal", "roof", "windshield", "turret_mount", { "part": "mounted_chem_gunBigZhigh", "ammo": 100, "ammo_types": [ "ZhighGas_teargas" ], "ammo_qty": [ 500, 800 ] } ] },
       { "x": -5, "y": -1, "parts": [ "frame_horizontal", "roof", "door_trunk", "storage_battery" ] },
       {
         "x": -4,
@@ -992,7 +1004,7 @@
         "y": 2,
         "parts": [ "frame_horizontal", "roof", "wheel_mount_medium_steerable", "wheel_wide", "door" ]
       },
-      { "x": 1, "y": 2, "parts": [ "frame_horizontal", "roof", "windshield", "turret_mount", { "part": "mounted_professional_chemical_thrower", "ammo": 100, "ammo_types": [ "ZhighGas_teargas" ], "ammo_qty": [ 500, 800 ] } ] }
+      { "x": 1, "y": 2, "parts": [ "frame_horizontal", "roof", "windshield", "turret_mount", { "part": "mounted_chem_gunBigZhigh", "ammo": 100, "ammo_types": [ "ZhighGas_teargas" ], "ammo_qty": [ 500, 800 ] } ] }
     ],
     "items": [
       { "x": -4, "y": -1, "chance": 40, "item_groups": [ "toxic_dump_equipment" ] },

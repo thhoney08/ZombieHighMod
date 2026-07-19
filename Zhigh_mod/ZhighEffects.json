@@ -419,13 +419,12 @@
     "desc": [ "Smells weird, but good for your body." ],
     "remove_message": "The weird smell is gone.",
     "removes_effects": [ "poison", "infected", "fungus", "bleed", "common_cold", "flu", "tetanus" ],
-    "decay_messages": [ [ "The healing effect is fading with it's smell.", "bad" ] ],
     "rating": "good",
     "max_duration": "3 m",
     "max_intensity": 30,
     "int_dur_factor": "3 m",
     "base_mods": {
-		"healing_rate": [ 50 ],
+		"healing_rate": [ 1 ],
 		"healing_head": [ 50 ],
 		"healing_torso": [ 150 ],
 		"health_min": [ 50 ],
@@ -462,8 +461,8 @@
     "removes_effects": [ "winded" ],
     "max_duration": "5 m",
     "base_mods": { "speed_mod": [ 300 ] },
-    "blood_analysis_description": "Adrenaline Spike",
-    "effects_on_remove": [ { "allow_on_remove": true, "effect_type": "adrenaline_comedown", "duration": "1 m" } ]
+    "blood_analysis_description": "Tachyon Rush",
+    "effects_on_remove": [ { "allow_on_remove": true, "effect_type": "clockUpZhigh_comedown", "duration": "1 m" } ]
   },
   {
     "type": "effect_type",
@@ -495,6 +494,66 @@
     "name": [ "blind Clairvoyance" ],
     "desc": [ "." ],
     "flags": [ "EFFECT_CLAIRVOYANCE" ]
+  },
+  {
+    "id": "aspirin666",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "aspirin" },
+    "description": "Acetylsalicylic acid, a mild anti-inflammatory.  Take to relieve pain and swelling.",
+    "weight": "1 g",
+    "volume": "250 ml",
+    "price": "5 USD",
+    "price_postapoc": "50 USD",
+    "charges": 20,
+    "stack_size": 200,
+    "material": "powder",
+    "symbol": "!",
+    "color": "white",
+    "healthy": -1,
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You take some aspirin.",
+      "effects": [ { "id": "adrenaline666", "duration": 720 } ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "adrenaline666",
+    "name": [ "Adrenaline Rush" ],
+    "desc": [ "You feel the rush of adrenaline in your body!" ],
+    "apply_message": "You feel a surge of adrenaline!",
+    "rating": "good",
+    "removes_effects": [ "winded", "adrenaline666_comedown" ],
+    "max_duration": "5 m",
+    "base_mods": { "speed_mod": [ 90 ], "str_mod": [ 8 ], "dex_mod": [ 8 ], "int_mod": [ 8 ], "per_mod": [ 8 ], "stamina_min": [ 8 ] },
+    "blood_analysis_description": "Adrenaline Spike",
+    "effects_on_remove": [ { "allow_on_remove": true, "effect_type": "adrenaline666_comedown", "duration": "1 m" } ]
+  },
+  {
+    "type": "effect_type",
+    "id": "adrenaline666_comedown",
+    "name": [ "Adrenaline Comedown" ],
+    "desc": [ "You feel completely drained." ],
+    "apply_message": "Your adrenaline rush wears off.  You feel AWFUL!",
+    "rating": "bad",
+    "decay_messages": [ [ "Your adrenaline rush wears off.  You feel AWFUL!", "bad" ] ],
+    "miss_messages": [ [ "Your comedown throws you off.", 1 ] ],
+    "max_duration": "5 m",
+    "base_mods": {
+      "health_min": [ -19 ],
+      "health_tick": [ 720 ],
+      "h_mod_min": [ -19 ],
+      "h_mod_min_val": [ -19 ],
+      "h_mod_tick": [ 19 ],
+      "speed_mod": [ -10 ],
+      "str_mod": [ -2 ],
+      "dex_mod": [ -2 ],
+      "int_mod": [ -1 ],
+      "per_mod": [ -1 ],
+      "stamina_min": [ -2 ],
+	  "hurt_min": [ 19 ]
+    }
   },
   {
     "//": "Got this line of code from pk's rebalancing mod. Not original.",

@@ -1507,49 +1507,49 @@
     "type": "item_group",
     "subtype": "collection",
     "id": "bandolier_grenadier",
-    "entries": [ { "item": "40x46mm_m433", "charges": 8 } ]
+    "entries": [ { "item": "40x46mm_m433", "charges": 4 } ]
   },
   {
     "type": "item_group",
     "subtype": "collection",
     "id": "bandolier_shotgun_hunter",
-    "entries": [ { "item": "shot_00", "charges": 40 } ]
+    "entries": [ { "item": "shot_00", "charges": 20 } ]
   },
   {
     "type": "item_group",
     "subtype": "collection",
     "id": "bandolier_rifle_hunter",
-    "entries": [ { "item": "270win_jsp", "charges": 30 } ]
+    "entries": [ { "item": "270win_jsp", "charges": 15 } ]
   },
   {
     "type": "item_group",
     "subtype": "collection",
     "id": "bandolier_swat_cqc1",
-    "entries": [ { "item": "shot_00", "charges": 40 } ]
+    "entries": [ { "item": "shot_00", "charges": 20 } ]
   },
   {
     "type": "item_group",
     "subtype": "collection",
     "id": "bandolier_swat_cqc2",
-    "entries": [ { "item": "shot_slug", "charges": 40 } ]
+    "entries": [ { "item": "shot_slug", "charges": 20 } ]
   },
   {
     "type": "item_group",
     "subtype": "collection",
     "id": "flintlock_pouch_reenactor",
-    "entries": [ { "item": "flintlock_ammo", "charges": 40 } ]
+    "entries": [ { "item": "flintlock_ammo", "charges": 20 } ]
   },
   {
     "type": "item_group",
     "subtype": "collection",
     "id": "bandolier_ww_gunslinger",
-    "entries": [ { "item": "45colt_jhp", "charges": 70 } ]
+    "entries": [ { "item": "45colt_jhp", "charges": 35 } ]
   },
   {
     "type": "item_group",
     "subtype": "collection",
     "id": "bandolier_roadwarrior",
-    "entries": [ { "item": "shot_00", "charges": 50 } ]
+    "entries": [ { "item": "shot_00", "charges": 25 } ]
   },
   {
     "type": "item_group",
@@ -1819,6 +1819,7 @@
       { "group": "nested_mdr500Zhigh", "prob": 20 },
       { "group": "nested_TORsmg", "prob": 20 },
       { "group": "nested_Viper38SuperZhigh", "prob": 30 },
+      { "group": "nested_blkout300smgZhigh", "prob": 30 },
       { "group": "nested_udp10Zhigh", "prob": 30 },
       { "group": "nested_mx4Zhigh", "prob": 10 },
       { "group": "nested_hk_ump40", "prob": 10 },
@@ -1835,6 +1836,7 @@
       { "group": "everyday_mdr500Zhigh", "prob": 20 },
       { "group": "everyday_TORsmg", "prob": 20 },
       { "group": "everyday_Viper38SuperZhigh", "prob": 30 },
+      { "group": "everyday_blkout300smgZhigh", "prob": 30 },
       { "group": "everyday_udp10Zhigh", "prob": 30 },
       { "group": "everyday_mx4Zhigh", "prob": 10 },
       { "group": "everyday_hk_ump40", "prob": 10 },
@@ -1939,6 +1941,7 @@
     "//": "Pistols commonly owned by citizens and found in many locations.",
     "items": [
       { "group": "nested_uziMiniZhigh", "prob": 5 },
+      { "group": "nested_colt6520Zhigh", "prob": 15 },
       { "group": "nested_s333ThunderstruckZhigh", "prob": 15 },
       { "group": "nested_PMR30Zhigh", "prob": 15 }
     ]
@@ -1949,6 +1952,7 @@
     "//": "Pistols commonly owned by citizens and carried by them. If a gun has mags, it has no loose ammo. If it has no mags, it has loose ammo.",
     "items": [
       { "group": "everyday_uziMiniZhigh", "prob": 5 },
+      { "group": "everyday_colt6520Zhigh", "prob": 15 },
       { "group": "everyday_s333ThunderstruckZhigh", "prob": 15 },
       { "group": "everyday_PMR30Zhigh", "prob": 15 }
     ]
@@ -3083,7 +3087,7 @@
     "type": "item_group",
     "id": "paintball_items",
     "//": "For paintball_field.json",
-    "ammo": 40,
+    "ammo": 100,
     "magazine": 100,
     "items": [ 
       { "group": "charms_guns", "prob": 15 },
@@ -3357,6 +3361,7 @@
       [ "cryo_grenade", 15 ],
       [ "grenade_nap", 15 ],
       [ "grenade_goo", 15 ],
+      [ "GliF4Zhigh", 15 ],
       [ "canister_goo", 15 ]
     ]
   },
@@ -3399,7 +3404,6 @@
       [ "knife_puukkoZhigh", 10 ],
       [ "kunaiZhigh", 10 ],
       [ "ninjatoStikZhigh", 10 ],
-      [ "knife_hitmanZhigh", 1 ],
       [ "macheteSpetzZhigh", 5 ],
       [ "knife_saex", 7 ],
       [ "mambele", 5 ],

@@ -2472,6 +2472,240 @@
   },
   {
     "type": "profession",
+    "id": "SiriusDogSledPatrolZhigh",
+    "name": "Dog Sled Patrol",
+    "description": "Fresh to the long northern trails, you began your first season guiding a small team through snowbound silence and bitter wind. You expected hard lessons, frozen fingers, and the slow rhythm of life on the ice—nothing more. But one night, a burst of impossible light swallowed the horizon, and the world you knew vanished beneath it. Now you stand in a future shattered by the Cataclysm, your dogs restless at your side, your skills untested, and the cold no longer the only danger you face.",
+    "points": 8,
+    "items": {
+      "both": {
+        "items": [
+          "canteen",
+          "pemmican",
+          "hardtack",
+          "ski_jacket",
+          "meat_smoked",
+          "socks_wool",
+          "boots_winter",
+          "shelter_kit",
+          "hat_fur",
+          "winter_pants_army",
+          "balclava",
+          "scarf_fur",
+          "dog_whistle",
+          "dogfood",
+          "1st_aid_deluxe",
+          "legpouch_large",
+          "backpack"
+        ],
+        "entries": [ 
+		  { "item": "glock_20", "ammo-item": "10mm_fmj", "charges": 15, "container-item": "bholster" },
+		  { "group": "charged_flashlight" },
+          { "item": "hatchet", "container-item": "axe_ring" },
+          { "item": "3006fmj", "charges": 20 },
+		  { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+		  { "item": "sheath", "contents-item": "knife_hunting" },
+		  { "item": "shoulder_pouch", "contents-group": "sheltered_DogSledPatrol" },
+          { "item": "glock20mag", "ammo-item": "10mm_fmj", "charges": 15 },
+          { "item": "glock20mag", "ammo-item": "10mm_fmj", "charges": 15 },
+          { "item": "m1903", "ammo-item": "3006fmj", "charges": 5, "contents-item": "shoulder_strap" }
+		]
+      }
+    },
+    "vehicle": "dogsled",
+    "pets": [ { "name": "mon_dog", "amount": 4 } ],
+    "skills": [
+      { "level": 2, "name": "driving" },
+      { "level": 2, "name": "survival" },
+      { "level": 1, "name": "fabrication" },
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "rifle" }
+    ],
+    "traits": [ "OUTDOORSMAN", "ANTIJUNK", "STRONGSTOMACH", "UNSTYLISH" ],
+    "//2": "Technically they might be recent enough to have a recognizable modern carry permit but it wouldn't be most of the guns in the default selection.",
+    "forbidden_traits": [ "CARRY_PERMIT" ],
+    "flags": [ "VEH_GROUNDED" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighCoroner",
+    "name": "Coroner",
+    "description": "You were the quiet assistant assigned to the campus medical morgue and biology lab.  When the infection broke out, your job shifted from identifying causes of death to putting the unquiet dead back into the ground.  Armed with professional autopsy shears and chemical disinfectants, you look at the zombie horde not with fear, but as clinical work that needs to be finished.",
+    "points": 2,
+    "skills": [
+      { "level": 3, "name": "firstaid" },
+      { "level": 2, "name": "cutting" },
+      { "level": 1, "name": "survival" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "smart_phone",
+          "socks",
+          "apron_leather",
+          "gloves_medical",
+          "mask_filter",
+          "disinfectant",
+          "bandages",
+          "scalpel",
+          "hazmat_suit",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "scalpel", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "soldier_wwiismgZhigh",
+    "copy-from": "soldier",
+    "name": "Army Infantry",
+    "description": "One moment you were scrambling for cover in a shell crater, on some burnt-out island in the Pacific.  Then a bright flash, and next thing you know you're stateside again.  Except the cities don't look anything like how you remember them, and the smell of death hangs in the air like it followed you home.",
+    "traits": [ "PROF_MILITARY" ],
+    "//": "About as close as we can get with current existing items.",
+    "skills": [
+      { "level": 1, "name": "swimming" },
+      { "level": 1, "name": "firstaid" },
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "smg" },
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "stabbing" },
+      { "level": 1, "name": "dodge" },
+      { "level": 1, "name": "throw" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "pants",
+          "undershirt",
+          "jacket_army",
+          "helmet_liner",
+          "helmet_steel",
+          "socks",
+          "boots",
+          "wristwatch",
+          "canteen",
+          "mess_tin",
+          "e_tool",
+          "rucksack"
+        ],
+        "entries": [
+          { "item": "chestrig", "contents-group": "temporal_soldier_tommygun" },
+          { "item": "knife_combat", "container-item": "sheath" },
+          { "item": "grenadebandolier", "contents-item": [ "grenade", "grenade" ] },
+          { "item": "tommygun", "ammo-group": "on_hand_45", "charges": 50, "contents-item": [ "shoulder_strap" ] }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "boy_shorts", "sports_bra" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "soldier_wwiirocketZhigh",
+    "copy-from": "soldier",
+    "name": "Army Rocketeer",
+    "description": "One moment you were scrambling for cover in a shell crater, on some burnt-out island in the Pacific.  Then a bright flash, and next thing you know you're stateside again.  Except the cities don't look anything like how you remember them, and the smell of death hangs in the air like it followed you home.",
+    "traits": [ "PROF_MILITARY" ],
+    "//": "About as close as we can get with current existing items.",
+    "skills": [
+      { "level": 1, "name": "swimming" },
+      { "level": 1, "name": "firstaid" },
+      { "level": 2, "name": "gun" },
+      { "level": 1, "name": "smg" },
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "stabbing" },
+      { "level": 1, "name": "dodge" },
+      { "level": 2, "name": "launcher" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "pants",
+          "undershirt",
+          "jacket_army",
+          "helmet_liner",
+          "helmet_steel",
+          "socks",
+          "boots",
+          "wristwatch",
+          "canteen",
+          "mess_tin",
+          "e_tool",
+          "LAW_Packed",
+          "attached_ear_plugs_off",
+          "coat_fur",
+          "rucksack"
+        ],
+        "entries": [
+          { "item": "knife_combat", "container-item": "sheath" },
+		  { "item": "ppshdrum", "charges": 71, "ammo-group": "on_hand_762x25" },
+		  { "item": "ppshdrum", "charges": 71, "ammo-group": "on_hand_762x25" },
+          { "item": "ppsh", "ammo-group": "on_hand_762x25", "charges": 71, "contents-item": [ "shoulder_strap" ] }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "boy_shorts", "sports_bra" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "soldier_wwiiShotZhigh",
+    "copy-from": "soldier",
+    "name": "Army Infantry",
+    "description": "One moment you were scrambling for cover in a shell crater, on some burnt-out island in the Pacific.  Then a bright flash, and next thing you know you're stateside again.  Except the cities don't look anything like how you remember them, and the smell of death hangs in the air like it followed you home.",
+    "traits": [ "PROF_MILITARY" ],
+    "//": "About as close as we can get with current existing items.",
+    "skills": [
+      { "level": 1, "name": "swimming" },
+      { "level": 1, "name": "firstaid" },
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "shotgun" },
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "stabbing" },
+      { "level": 1, "name": "dodge" },
+      { "level": 1, "name": "throw" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "pants",
+          "undershirt",
+          "jacket_army",
+          "helmet_liner",
+          "helmet_steel",
+          "socks",
+          "boots",
+          "wristwatch",
+          "canteen",
+          "mess_tin",
+          "e_tool",
+          "rucksack"
+        ],
+        "entries": [
+          { "item": "bandolier_shotgun", "contents-group": "bandolier_swat_cqc1" },
+          { "item": "bandolier_shotgun", "contents-group": "bandolier_shotgun_hunter" },
+          { "item": "knife_combat", "container-item": "sheath" },
+          { "item": "m1911", "ammo-item": "45_acp", "charges": 7, "container-item": "holster" },
+          { "item": "45_acp", "charges": 9 },
+          { "item": "shot_00", "charges": 6 },
+          { "item": "legpouch_large", "contents-group": "sheltered_militia_1911" },
+          { "item": "winchester_1897", "ammo-item": "shot_00", "charges": 6, "contents-item": "shoulder_strap" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "boy_shorts", "sports_bra" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
     "id": "zhighMouseAssassin",
     "name": "Mouse Assassin",
     "description": "So much food-meal, everywhere!  And nobody's even guarding it anymore!  Yes-yes, these are good times.",
