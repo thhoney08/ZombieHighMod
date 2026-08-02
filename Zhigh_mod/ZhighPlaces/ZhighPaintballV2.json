@@ -74,8 +74,6 @@
         { "chance": 60, "item": "paintball_items", "x": [ 1, 23 ], "y": [ 1, 23 ] },
         { "chance": 60, "item": "paintball_items", "x": [ 1, 23 ], "y": [ 1, 23 ] },
         { "chance": 60, "item": "paintball_items", "x": [ 1, 23 ], "y": [ 1, 23 ] },
-        { "chance": 60, "item": "paintball_items", "x": [ 1, 23 ], "y": [ 1, 23 ] },
-        { "chance": 60, "item": "paintball_items", "x": [ 1, 23 ], "y": [ 1, 23 ] },
         { "chance": 35, "item": "mil_armor_pants", "x": 5, "y": 1 },
         { "chance": 35, "item": "trash_cart", "x": 14, "y": 22 },
         { "chance": 35, "item": "trash_cart", "x": 13, "y": 19 },
@@ -118,8 +116,8 @@
       "items": {
         "F": [ { "item": "paintball_items", "chance": 75 } ],
         "B": [ { "item": "paintball_items", "chance": 60, "repeat": [ 2, 5 ] } ],
-        "l": [ { "item": "snacks", "chance": 65 }, { "item": "paintball_items", "chance": 83, "repeat": [ 5, 10 ] } ],
-        "{": [ { "item": "paintball_items", "repeat": [ 8, 13 ] } ]
+        "l": [ { "item": "snacks", "chance": 65 }, { "item": "paintball_items", "chance": 83, "repeat": [ 2, 4 ] } ],
+        "{": [ { "item": "paintball_items", "repeat": [ 3, 6 ] } ]
       },
       "terrain": {
         "#": "t_underbrush",
@@ -140,7 +138,7 @@
         "f": "t_fence_h",
         "s": "t_shrub",
         "{": "t_dirt",
-        "|": "t_scrap_wall"
+        "|": "t_privacy_fence"
       }
     },
     "om_terrain": "zhighPaintball_field",
@@ -225,8 +223,6 @@
         { "chance": 60, "item": "paintball_items", "x": [ 1, 23 ], "y": [ 1, 23 ] },
         { "chance": 60, "item": "paintball_items", "x": [ 1, 23 ], "y": [ 1, 23 ] },
         { "chance": 60, "item": "paintball_items", "x": [ 1, 23 ], "y": [ 1, 23 ] },
-        { "chance": 60, "item": "paintball_items", "x": [ 1, 23 ], "y": [ 1, 23 ] },
-        { "chance": 60, "item": "paintball_items", "x": [ 1, 23 ], "y": [ 1, 23 ] },
         { "chance": 60, "item": "paintball_items", "x": [ 1, 23 ], "y": [ 1, 23 ] }
       ],
       "rows": [
@@ -270,7 +266,7 @@
         "&": "t_sidewalk",
         "'": "t_window_no_curtains_open",
         "+": "t_door_locked",
-        "-": "t_scrap_wall",
+        "-": "t_privacy_fence",
         ".": "t_dirt",
         "4": "t_tree_pine",
         "7": "t_tree",
@@ -460,7 +456,7 @@
         "f": "t_fence_h",
         "s": "t_shrub",
         "{": "t_dirt",
-        "|": "t_scrap_wall"
+        "|": "t_privacy_fence"
       }
     },
     "om_terrain": "zhighBB_field",
@@ -555,7 +551,7 @@
         "&": "t_sidewalk",
         "'": "t_window_no_curtains_open",
         "+": "t_door_locked",
-        "-": "t_scrap_wall",
+        "-": "t_privacy_fence",
         ".": "t_dirt",
         "4": "t_tree_pine",
         "7": "t_tree",

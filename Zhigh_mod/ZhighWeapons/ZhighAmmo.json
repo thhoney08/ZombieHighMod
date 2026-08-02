@@ -2262,5 +2262,27 @@
     "damage": { "damage_type": "acid", "amount": 15, "armor_penetration": 10 },
     "loudness": 65,
     "extend": { "effects": [ "ACID_TRAIL", "ACIDBIG" ] }
+  },
+  {
+    "type": "AMMO",
+    "id": "cluster_rocketZhigh",
+    "price": "10 USD",
+    "price_postapoc": "1 USD",
+    "name": { "str": "cluster homemade rocket" },
+    "symbol": ",",
+    "color": "dark_gray",
+    "description": "A hand built rocket, consisting of several bombs welded onto a pipe that was filled with improvised rocket fuel.  Horribly inaccurate, as can be expected of this grade of weapon, but packs a fierce punch… if it does not hit.",
+    "material": [ "steel", "powder" ],
+    "volume": "1500 ml",
+    "weight": "1510 g",
+    "ammo_type": "homebrew_rocket",
+    "damage": { "damage_type": "stab", "amount": 10, "armor_penetration": 80 },
+    "range": 19,
+    "dispersion": 180,
+    "recoil": 130,
+    "loudness": 60,
+    "speed": 250,
+    "effects": [ "COOKOFF", "EXPLOSIVE_PLUS_FRAG" ],
+    "shot": { "count": 8, "half_angle": 15 }
   }
 ]

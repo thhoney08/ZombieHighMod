@@ -25,7 +25,7 @@
     "bonus_per": { "rng": [ 4, 7 ] },
     "worn_override": "NC_ZhighGUARD_worn",
     "carry_override": "ZhighNpc_misc",
-    "weapon_override": "NC_ZhighGUARD_wield",
+    "weapon_override": "ZhighGuardWeaponGroups",
     "shopkeeper_item_group": "ZhighNpc_misc",
     "skills": [
       { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
@@ -59,14 +59,6 @@
       { "item": "badge_lightV2" },
       { "group": "ZhighNpc_stabbing", "container-item": "sheath" },
       { "group": "ZhighNpc_underwear_feet_male" }
-    ]
-  },
-  {
-    "type": "item_group",
-    "id": "NC_ZhighGUARD_wield",
-    "subtype": "distribution",
-    "entries": [
-      { "group": "ZhighGuardWeaponGroups" }
     ]
   },
   {

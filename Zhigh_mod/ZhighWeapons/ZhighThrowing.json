@@ -352,7 +352,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "anti-tank grenade" },
-    "description": "This is a military-grade anti-tank hand grenade.  Short explosive range but high damage. Use this item to pull the pin and light the fuse.  You will then have five turns before it explodes; throwing it would be a good idea.",
+    "description": "This is a military-grade anti-tank hand grenade.  Short explosive range but high damage.  Use this item to pull the pin and light the fuse.  You will then have five turns before it explodes; throwing it would be a good idea.",
     "weight": "397 g",
     "volume": "250 ml",
     "price": "15 USD",
@@ -957,7 +957,6 @@
     "use_action": {
       "target": "grenadeImpactZhigh",
       "msg": "You pull the pin on the grenade.",
-      "target_charges": 6,
       "active": true,
       "menu_text": "Pull pin",
       "type": "transform"
@@ -979,17 +978,22 @@
     "bashing": 6,
     "symbol": "*",
     "color": "green",
-    "initial_charges": 6,
-    "max_charges": 6,
-    "turns_per_charge": 1,
-    "material": [ "glass" ],
-    "countdown_action": { "type": "explosion", "explosion": { "damage": 4, "radius": 3 } },
+    "material": [ "steel" ],
     "explosion": {
 		"damage": 40,
 		"radius": 2,
 		"fragment": { "impact": { "damage_type": "bullet", "amount": 60, "armor_multiplier": 1 }, "range": 3 }
 	},
-    "flags": [ "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION", "BOMB", "GRENADE", "SHATTERS", "FRAGILE", "FRAGILE_MELEE" ]
+    "use_action": { "target": "grenadeImpactZhighOff", "msg": "You carefully disarm the bomb.", "menu_text": "Disarm bomb", "type": "transform" },
+    "drop_action": {
+      "type": "explosion",
+      "explosion": {
+		"damage": 40,
+		"radius": 2,
+		"fragment": { "impact": { "damage_type": "bullet", "amount": 60, "armor_multiplier": 1 }, "range": 3 }
+      }
+    },
+    "flags": [ "CUSTOM_EXPLOSION", "BOMB", "GRENADE" ]
   },
   {
     "id": "grenadeMiniZhigh",
@@ -1963,6 +1967,66 @@
     "flags": [ "BOMB", "TRADER_AVOID" ]
   },
   {
+    "id": "stunNadeZhigh",
+    "looks_like": "flashbang",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "stun grenade", "str_pl": "stun grenades" },
+    "description": "A shockwave bomb which emits shockwaves for a short time.  This could blind your enemies and you for a short time, if you were inside the effected area.",
+    "weight": "250 g",
+    "volume": "250 ml",
+    "price": "1 USD",
+    "price_postapoc": "1 USD",
+    "to_hit": 2,
+    "bashing": 6,
+    "material": [ "steel", "plastic" ],
+    "symbol": "*",
+    "color": "green",
+    "use_action": {
+      "target": "stunNadeZhigh_act",
+      "msg": "You active the stun grenade on.  Throw it!",
+      "target_charges": 5,
+      "active": true,
+      "menu_text": "Activate stun grenade",
+      "type": "transform"
+    },
+    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "stunNadeZhigh_act",
+    "looks_like": "flashbang_act",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "active stun grenade", "str_pl": "active stun grenades" },
+    "description": "A shockwave bomb which emits shockwaves for a short time.  Throw it quickly before it blows up.",
+    "weight": "250 g",
+    "volume": "250 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "to_hit": 2,
+    "bashing": 8,
+    "material": [ "steel", "plastic" ],
+    "symbol": "*",
+    "color": "green",
+    "initial_charges": 5,
+    "max_charges": 5,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_stunZhigh",
+      "fields_radius": 3,
+      "fields_min_intensity": 3,
+      "fields_max_intensity": 3,
+      "sound_volume": "64 dB",
+      "sound_msg": "Tick.",
+      "no_deactivate_msg": "You've already lit the fuse - get rid of it immediately!",
+      "explosion": {
+		"damage": 1
+	  }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
     "type": "AMMO",
     "id": "sling_grenade",
     "looks_like": "grenade",
@@ -2290,5 +2354,23 @@
     "name": { "str": "shootable triffid gas bomb" },
     "description": "A triffid gas bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
     "drop": "triffGasBomb_zhigh_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_GliF4Zhigh",
+    "copy-from": "sling_grenade",
+    "looks_like": "GliF4Zhigh",
+    "name": { "str": "shootable GLI-F4" },
+    "description": "A GLI-F4 grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "GliF4Zhigh_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_stunNadeZhigh",
+    "copy-from": "sling_grenade",
+    "looks_like": "stunNadeZhigh",
+    "name": { "str": "shootable stun grenade" },
+    "description": "A stun grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "stunNadeZhigh_act"
   }
 ]

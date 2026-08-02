@@ -2026,13 +2026,13 @@
     "description": "Popular among children.  More accurate than the original one, and easliy modifiable, but BBs deal nearly no damage.",
     "range": 40,
     "material": [ "aluminum", "plastic" ],
-    "modes": [ [ "DEFAULT", "semi", 1 ] ],
+    "modes": [ [ "DEFAULT", "semi", 2 ] ],
     "ranged_damage": { "damage_type": "bullet", "amount": 14, "armor_penetration": 20 },
     "dispersion": 100,
     "ammo": "BB",
-    "clip_size": 10,
+    "clip_size": 20,
     "reload": 20,
-    "handling": 20,
+    "handling": 30,
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 1 ],
@@ -7383,7 +7383,7 @@
     "name": { "str": "crude quad barrel rocket launcher" },
     "description": "An improvised, direct ignition launcher for home-made rockets.  Essentially, four thick-walled steel pipes, equipped with a pilot light each, several batteries and a simple circuit board.  Effective only at medium range, barely.",
     "clip_size": 4,
-    "modes": [ [ "DEFAULT", "single", 1 ], [ "DOUBLE", "double", 2 ] ],
+    "modes": [ [ "DEFAULT", "single", 1 ], [ "DOUBLE", "double", 2 ], [ "BURST", "all barrels", 4, "NPC_AVOID" ] ],
     "weight": "16402 g",
     "volume": "8946 ml",
     "price": "100 USD",
@@ -8530,7 +8530,7 @@
     "material": [ "steel" ],
     "weight": "220 g",
     "volume": "440 ml",
-    "ranged_damage": { "damage_type": "bullet", "amount": 2, "armor_penetration": 20 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 4, "armor_penetration": 20 },
     "dispersion": 80,
     "durability": 10,
     "loudness": 65,
@@ -9690,7 +9690,7 @@
     "copy-from": "rifle_auto",
     "looks_like": "sig552",
     "type": "GUN",
-    "name": { "str": "SIG MCX" },
+    "name": { "str": "SIG MCX 5.56 CQBR" },
     "description": "A modular weapon system, designed for elite special operations.  Though highly versatile, suppressed, and modern, it is noted for its mechanical complexity and weight when fully configured.",
     "weight": "2660 g",
     "volume": "1450 ml",
@@ -9863,14 +9863,14 @@
     "armor_data": { "covers": [ "arm_either", "hand_either" ], "coverage": 50, "encumbrance": 20, "material_thickness": 2 },
     "techniques": [ "WBLOCK_2" ],
     "extend": {
-		"flags": [
-			"OVERSIZE",
-			"WORN_GUN",
-			"BELTED",
-			"BLOCK_WHILE_WORN",
-			"POWERARMOR_COMPATIBLE",
-			"BELTED"
-		]
+	  "flags": [
+	  	"OVERSIZE",
+	  	"WORN_GUN",
+	  	"BELTED",
+	  	"BLOCK_WHILE_WORN",
+	  	"POWERARMOR_COMPATIBLE",
+	  	"BELTED"
+	  ]
 	},
     "reload": 30,
     "handling": 35,

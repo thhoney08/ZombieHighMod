@@ -68,9 +68,8 @@
       { "group": "ZhighNpc_misc" },
       { "group": "charged_UPS" },
       { "group": "ZhighNpc_stabbing" },
-      { "item": "nail" },
-      { "item": "nail" },
-      { "item": "nail" },
+      { "group": "archery_ammo" },
+      { "group": "archery_ammo" },
       { "item": "protein_bar_evac" }
     ]
   },
@@ -78,6 +77,7 @@
     "type": "item_group",
     "id": "NC_NAILGUNNER_GUARD_wield",
     "items": [
+      { "group": "ZhighGuardWeaponGroups", "prob": 15 },
       { "item": "laspistolToyZhigh", "prob": 5 },
       { "item": "laspistolToyZhighAkim", "prob": 1 },
       { "item": "lasrifleToyZhigh", "prob": 3 },
@@ -86,14 +86,20 @@
       { "item": "popGunShotgun_zhigh", "prob": 3 },
       { "item": "popGunPistol_zhigh", "prob": 3 },
       { "item": "popGunPistol_zhighAkim", "prob": 1 },
-      { "item": "marble_sniper_gun", "ammo-item": "nail", "charges": 1, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 10 },
-      { "item": "crossbow_dartZhigh", "ammo-item": "nail", "charges": 1, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 10 },
-      { "item": "hand_crossbow_dartZhigh", "ammo-item": "nail", "charges": 1, "prob": 5 },
-      { "item": "marble_gun", "ammo-item": "nail", "charges": 5, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 10 },
-      { "item": "nailrifle", "ammo-item": "nail", "charges": 150, "contents-item": [ "shoulder_strap", "knife_combat" ], "prob": 35 },
-      { "item": "nailsmg", "ammo-item": "nail", "charges": 100, "prob": 25 },
-      { "item": "nailgunAkimZhigh", "ammo-item": "nail", "charges": 40, "prob": 25 },
-      { "item": "nailgun", "ammo-item": "nail", "charges": 25, "prob": 10 }
+      { "item": "selfbow", "ammo-item": "arrow_cf", "charges": 1, "contents-item": [ "retool_bolt" ], "prob": 35 },
+      { "item": "shortbow", "ammo-item": "arrow_cf", "charges": 1, "contents-item": [ "retool_bolt" ], "prob": 10 },
+      { "item": "compbow", "ammo-item": "arrow_cf", "charges": 1, "contents-item": [ "retool_bolt" ], "prob": 10 },
+      { "item": "compbow_low", "ammo-item": "arrow_cf", "charges": 1, "contents-item": [ "retool_bolt" ], "prob": 10 },
+      { "item": "compositebow_short", "ammo-item": "arrow_cf", "charges": 1, "contents-item": [ "retool_bolt" ], "prob": 25 },
+      { "item": "slingshot_bow", "ammo-item": "arrow_cf", "charges": 1, "prob": 10 },
+      { "item": "wristrocket_bow", "ammo-item": "arrow_cf", "charges": 1, "prob": 10 },
+      { "item": "airbow", "ammo-item": "arrow_cf", "charges": 1, "prob": 10 },
+      { "item": "crossbow", "ammo-item": "bolt_cf", "charges": 1, "contents-item": [ "retool_arrow" ], "prob": 10 },
+      { "item": "hand_crossbow", "ammo-item": "bolt_cf", "charges": 1, "contents-item": [ "retool_arrow" ], "prob": 10 },
+      { "item": "crossbow_makeshift", "ammo-item": "bolt_cf", "charges": 1, "contents-item": [ "retool_arrow" ], "prob": 25 },
+      { "item": "compositecrossbow", "ammo-item": "bolt_cf", "charges": 1, "contents-item": [ "retool_arrow" ], "prob": 10 },
+      { "item": "crossbow_carbon", "ammo-item": "bolt_cf", "charges": 1, "contents-item": [ "retool_arrow" ], "prob": 10 },
+      { "item": "crossbowTac15Zhigh", "ammo-item": "bolt_cf", "charges": 1, "contents-item": [ "retool_arrow" ], "prob": 10 }
     ]
   },
   {
