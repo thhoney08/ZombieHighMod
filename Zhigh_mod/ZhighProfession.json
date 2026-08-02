@@ -1298,7 +1298,12 @@
     "points": 2,
     "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
-    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "stabbing" }, { "level": 2, "name": "dodge" } ],
+    "skills": [
+	  { "level": 2, "name": "melee" },
+	  { "level": 2, "name": "stabbing" },
+	  { "level": 2, "name": "throw" },
+	  { "level": 2, "name": "dodge" }
+	],
     "items": {
       "both": {
         "items": [
@@ -1308,8 +1313,6 @@
           "medkitRechargeV3",
           "socks",
           "straw_fedora",
-          "dynamite",
-          "dynamite",
           "matches",
           "bandolier_knife",
           "wristwatch"
@@ -6473,7 +6476,7 @@
     "id": "zhighBulwark",
     "name": "Student - Bulwark",
     "description": "You were just a student once, now you're the frontline—shield raised, baton swinging, holding the line between chaos and what's left of hope.  Books taught you theory; the streets taught you survival.",
-    "points": -1,
+    "points": 0,
     "skills": [ { "level": 1, "name": "melee" }, { "level": 1, "name": "bashing" } ],
     "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
@@ -6484,9 +6487,9 @@
           "zhigh_smart_phone",
           "medkitRechargeV3",
           "socks",
-          "helmet_skid",
+          "helmet_riot",
+          "police_belt",
           "shield_welded",
-          "helmet_skid",
           "wristwatch"
         ],
         "entries": [
@@ -8931,7 +8934,7 @@
         "entries": [
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
           { "item": "herbal_tea", "container-item": "flask_hip" },
-          { "item": "shillelagh", "custom-flags": [ "auto_wield" ] }
+          { "item": "shillelagh_weighted", "custom-flags": [ "auto_wield" ] }
         ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
@@ -9197,11 +9200,12 @@
           "socks",
           "shield_targe_wooden",
           "paintball_shot",
-          "paintball_shot",
+          "motorbike_armor",
+          "helmet_skid",
+          "visor_glassesZhigh",
           "wristwatch"
         ],
         "entries": [
-          { "group": "ZhighNpc_coat" },
           { "group": "ZhighNpc_shoesAll" },
           { "item": "shotgun_d_paint",
 		    "ammo-item": "paintball_shot",
@@ -10758,6 +10762,99 @@
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "chestwrap", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighBlacksmith",
+    "name": "Student - Blacksmith",
+    "description": "You were going through your high school's metalsmithing program when the world ended.  You ran into trouble coming out of class - but managed to keep ahold of the equipment you were carrying at the time.",
+    "points": -1,
+    "age": { "min": 14, "max": 18 },
+    "skills": [
+	  { "level": 1, "name": "swimming" },
+	  { "level": 4, "name": "fabrication" }
+	],
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+		  "socks",
+		  "boots",
+		  "smart_phone",
+		  "tshirt",
+		  "apron_leather",
+		  "fire_gauntlets",
+          "ref_lighter",
+		  "wristwatch",
+		  "hammer"
+		]
+      },
+      "male": [ "boxer_shorts", "pants_zhigh" ],
+      "female": [ "bra", "panties", "skirt_zhigh" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "zhighJoiner",
+    "name": "Student - Joiner",
+    "description": "You were going through your high school's woodworking program when the world ended.  You ran into trouble coming out of class - but managed to keep ahold of the equipment you were carrying at the time.",
+    "points": -1,
+    "age": { "min": 14, "max": 18 },
+    "skills": [
+	  { "level": 1, "name": "swimming" },
+	  { "level": 4, "name": "fabrication" }
+	],
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+		  "socks",
+		  "boots",
+		  "smart_phone",
+		  "tshirt",
+		  "apron_leather",
+		  "2x4",
+		  "2x4",
+          "nail",
+		  "saw",
+		  "hammer"
+		]
+      },
+      "male": [ "boxer_shorts", "pants_zhigh" ],
+      "female": [ "bra", "panties", "skirt_zhigh" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "zhighDueler",
+    "name": "Student - Dueler",
+    "description": "You step onto the blood-spattered campus wielding a reinforced deck of weighted, razor-edged cards built for high-speed lethal throwing.  Blending sleight-of-hand agility with deadly precision, you slice through infected soft tissue at range before finishing off survivors in a high-stakes duel of reflexes.",
+    "points": -1,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "alohashirt",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "coat_lab",
+          "ammo_card",
+          "ammo_card",
+          "ammo_card"
+        ],
+        "entries": [
+          { "item": "bond_410", "ammo-item": "45colt_jhp", "charges": 2, "container-item": "bholster" },
+          { "item": "duelDiskZhigh", "ammo-item": "ammo_card", "charges": 120 },
+          { "group": "ZhighNpc_shoesAll" },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+        ]
+      },
+      "male": [ "boxer_shorts", "pants_zhigh" ],
+      "female": [ "bra", "panties", "skirt_zhigh" ]
     },
     "flags": [ "SCEN_ONLY" ]
   },

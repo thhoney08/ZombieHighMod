@@ -827,6 +827,7 @@
     "id": "army_mags_power_armor",
     "entries": [
       { "item": "heavy_plus_battery_cell", "ammo-item": "battery", "charges": 1500 },
+      { "item": "heavy_plus_battery_cell", "ammo-item": "battery", "charges": 1500 },
       { "item": "boltermag", "ammo-item": "8mm_hvp", "charges": 80 }
     ]
   },
@@ -2554,6 +2555,7 @@
       [ "slingshot", 10 ],
       [ "rock", 10 ],
       [ "bat", 10 ],
+      [ "duelDiskZhigh", 10 ],
       [ "creepy_doll", 3 ],
       [ "portable_game", 5 ],
       [ "bot_waterturret", 5 ],
@@ -3196,6 +3198,7 @@
       [ "flightJacketZhigh", 10 ],
       [ "luchador_maskZhigh", 10 ],
       [ "swimKickboardZhigh", 30 ],
+      [ "kendoStick", 20 ],
       [ "souWesterZhigh", 10 ],
       [ "tamoshanterZhigh", 10 ]
     ]
@@ -3347,6 +3350,17 @@
     "type": "item_group",
     "id": "grenades",
     "items": [
+      [ "grenade", 30 ],
+      [ "grenade_inc", 30 ],
+      [ "flashbang", 30 ],
+      [ "EMPbomb", 20 ],
+      [ "grenade_emp", 5 ],
+      [ "gasbomb", 15 ],
+      [ "gasbomb_makeshift", 15 ],
+      [ "smokebomb", 50 ],
+      [ "dynamite", 50 ],
+      [ "mininuke", 5 ],
+      [ "c4", 50 ],
       [ "grenadeHiEx", 30 ],
       [ "grenadeMiniZhigh", 30 ],
       [ "fakeFlashBangZhigh", 30 ],
@@ -3362,6 +3376,11 @@
       [ "grenade_nap", 15 ],
       [ "grenade_goo", 15 ],
       [ "GliF4Zhigh", 15 ],
+      [ "triffGasBomb_zhigh", 15 ],
+      [ "grenade40mm", 15 ],
+      [ "grenadeSapZhigh", 15 ],
+      [ "tool_ninjaBomb", 15 ],
+      [ "stunNadeZhigh", 15 ],
       [ "canister_goo", 15 ]
     ]
   },
@@ -3615,6 +3634,7 @@
       { "item": "m240", "prob": 1 },
       { "item": "m27iar", "prob": 1 },
       { "item": "plasma_gun", "prob": 1 },
+      { "item": "eglmZhigh", "prob": 3 },
       { "item": "m320", "prob": 5 },
       { "item": "m320_mod", "prob": 10 },
       { "item": "ugl_buttstock", "prob": 10 },

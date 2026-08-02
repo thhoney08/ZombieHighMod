@@ -366,6 +366,28 @@
     "effect_str": "mon_feral_human_zhigh"
   },
   {
+    "type": "SPELL",
+    "id": "spellStudentFeralZhigh",
+    "name": { "str": "Summon Student Ferals" },
+    "description": "Summon some feral students.",
+    "valid_targets": [ "ground", "self" ],
+    "effect": "none",
+    "//": "This is a shell for the spell that actually gets cast.",
+    "base_casting_time": 100,
+    "flags": [ "WONDER" ],
+    "min_damage": 1,
+    "max_damage": 2,
+    "message": "",
+    "extra_effects": [
+      { "id": "mon_summon_feral_human_zhigh" },
+      { "id": "mon_summon_feral_human_SchoolWatchzhigh" },
+      { "id": "mon_summon_feral_human_GunnerZhigh" },
+      { "id": "mon_summon_feral_human_Shielderzhigh" },
+      { "id": "mon_summon_feral_human_launcherZhigh" },
+      { "id": "mon_summon_feral_human_Frogman" }
+    ]
+  },
+  {
     "id": "mon_feral_human_SchoolWatchzhigh",
     "type": "MONSTER",
     "copy-from": "mon_feral_human_zhigh",
@@ -492,6 +514,23 @@
     ]
   },
   {
+    "type": "SPELL",
+    "id": "mon_summon_feral_human_GunnerZhigh",
+    "name": "Backup call",
+    "description": "Summons several permanent feral students.",
+    "flags": [ "HOSTILE_SUMMON", "PERMANENT", "NO_EXPLOSION_VFX" ],
+    "valid_targets": [ "ground", "self" ],
+    "min_damage": 1,
+    "max_damage": 8,
+    "min_range": 9,
+    "max_range": 20,
+    "min_aoe": 9,
+    "max_aoe": 14,
+    "base_casting_time": 1,
+    "effect": "summon",
+    "effect_str": "mon_feral_human_GunnerZhigh"
+  },
+  {
     "id": "mon_feral_human_Shielderzhigh",
     "type": "MONSTER",
     "copy-from": "mon_feral_human_zhigh",
@@ -519,6 +558,23 @@
       "HUMAN",
       "CAN_OPEN_DOORS"
     ]
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_summon_feral_human_Shielderzhigh",
+    "name": "Backup call",
+    "description": "Summons several permanent feral students.",
+    "flags": [ "HOSTILE_SUMMON", "PERMANENT", "NO_EXPLOSION_VFX" ],
+    "valid_targets": [ "ground", "self" ],
+    "min_damage": 1,
+    "max_damage": 8,
+    "min_range": 9,
+    "max_range": 20,
+    "min_aoe": 9,
+    "max_aoe": 14,
+    "base_casting_time": 1,
+    "effect": "summon",
+    "effect_str": "mon_feral_human_Shielderzhigh"
   },
   {
     "id": "mon_feral_human_launcherZhigh",
@@ -564,6 +620,23 @@
     ]
   },
   {
+    "type": "SPELL",
+    "id": "mon_summon_feral_human_launcherZhigh",
+    "name": "Backup call",
+    "description": "Summons several permanent feral students.",
+    "flags": [ "HOSTILE_SUMMON", "PERMANENT", "NO_EXPLOSION_VFX" ],
+    "valid_targets": [ "ground", "self" ],
+    "min_damage": 1,
+    "max_damage": 8,
+    "min_range": 9,
+    "max_range": 20,
+    "min_aoe": 9,
+    "max_aoe": 14,
+    "base_casting_time": 1,
+    "effect": "summon",
+    "effect_str": "mon_feral_human_launcherZhigh"
+  },
+  {
     "id": "mon_feral_human_Frogman",
     "type": "MONSTER",
     "copy-from": "mon_feral_human_zhigh",
@@ -589,6 +662,23 @@
       "HUMAN",
       "CAN_OPEN_DOORS"
     ]
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_summon_feral_human_Frogman",
+    "name": "Backup call",
+    "description": "Summons several permanent feral students.",
+    "flags": [ "HOSTILE_SUMMON", "PERMANENT", "NO_EXPLOSION_VFX" ],
+    "valid_targets": [ "ground", "self" ],
+    "min_damage": 1,
+    "max_damage": 8,
+    "min_range": 9,
+    "max_range": 20,
+    "min_aoe": 9,
+    "max_aoe": 14,
+    "base_casting_time": 1,
+    "effect": "summon",
+    "effect_str": "mon_feral_human_Frogman"
   },
   {
     "id": "mon_feral_human_SchoolWatchzhighBoss",
@@ -1290,7 +1380,7 @@
     "symbol": "D",
     "color": "red",
     "luminance": 200,
-    "aggression": 90,
+    "aggression": 100,
     "morale": 100,
     "vision_day": 20,
     "vision_night": 20,
@@ -1303,7 +1393,7 @@
 		[ "SEARCHLIGHT", 0 ],
 		[ "RESURRECT", 0 ],
 		[ "COMMAND_BUFF", 0 ],
-		{ "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh", "hit_self": true }, "cooldown": 1 }
+		{ "type": "spell", "spell_data": { "id": "spellStudentFeralZhigh", "hit_self": true }, "cooldown": 1 }
 	],
     "death_drops": { "groups": [ [ "robots", 1 ], [ "turret_searchlight", 1 ] ] },
     "on_death": { "death_function": [ "FOCUSEDBEAM" ], "spawn_mon": "mon_zombie_guardZhigh" },
@@ -3067,7 +3157,6 @@
       "place_randomly": true,
       "skills": [ "electronics", "computer" ]
     },
-    "//": "Few character will have the strength for this, but allow trying it anyway",
     "flags": [ "ACT_ON_RANGED_HIT", "ALLOWS_REMOTE_USE", "GRENADE" ]
   },
   {

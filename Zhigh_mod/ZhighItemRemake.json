@@ -1495,6 +1495,7 @@
     "durability": 9,
     "valid_mod_locations": [
       [ "accessories", 1 ],
+      [ "bore", 1 ],
       [ "grip", 1 ],
       [ "stock", 1 ],
       [ "mechanism", 4 ],
@@ -1515,7 +1516,19 @@
     "copy-from": "pipe_double_shotgun",
     "type": "GUN",
     "name": { "str": "double-barrel pipe shotgun" },
-    "ranged_damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 3 }
+    "ranged_damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 3 },
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "bore", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "barrel", 1 ],
+      [ "muzzle", 1 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "underbarrel", 1 ]
+    ]
   },
   {
     "id": "shotgun_s",
@@ -1531,7 +1544,18 @@
     "type": "GUN",
     "name": { "str": "double barrel shotgun" },
     "range": 2,
-    "ranged_damage": { "damage_type": "bullet", "amount": 5, "armor_penetration": 5 }
+    "ranged_damage": { "damage_type": "bullet", "amount": 5, "armor_penetration": 5 },
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "bore", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "underbarrel", 1 ]
+    ]
   },
   {
     "id": "shotgun_410",
@@ -2397,34 +2421,7 @@
     "weight": "100 g",
     "volume": "100 ml",
     "covers": [  ],
-    "ammo": "battery",
-    "use_action": {
-      "type": "HAND_CRANK",
-      "charge_interval": "216 seconds",
-      "charge_amount": 2,
-      "fatigue_per_interval": 1,
-      "ammo_type": "battery",
-      "start_message": "You start cranking the %s to charge its %s.",
-      "already_charged_message": "You could use the %s to charge its %s, but it's already charged.",
-      "need_battery_message": "You need a rechargeable battery cell to charge.",
-      "underwater_message": "It's not waterproof enough to work underwater.",
-      "exhausted_message": "You're too exhausted to keep cranking.",
-      "fully_charged_message": "You've charged the battery completely."
-    },
-    "magazines": [
-      [
-        "battery",
-        [
-          "heavy_battery_cell",
-          "heavy_plus_battery_cell",
-          "medium_battery_cell",
-          "medium_plus_battery_cell",
-          "light_battery_cell",
-          "light_plus_battery_cell",
-          "light_minus_battery_cell"
-        ]
-      ]
-    ]
+    "relic_data": { "recharge_scheme": [ { "type": "time", "interval": "2 m", "rate": 40 } ] }
   },
   {
     "id": "nailgun",
@@ -4081,5 +4078,53 @@
     "name": { "str": "PPSh-41" },
     "dispersion": 80,
     "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "burst", 3 ], [ "AUTO", "auto", 6 ] ]
+  },
+  {
+	"id": "selfbow",
+    "type": "GUN",
+    "copy-from": "selfbow",
+    "name": { "str": "self bow" },
+    "valid_mod_locations": [ [ "dampening", 1 ], [ "accessories", 2 ] ]
+  },
+  {
+	"id": "crossbow_carbon",
+    "type": "GUN",
+    "copy-from": "crossbow_carbon",
+    "name": { "str": "carbon fiber repeating crossbow" },
+    "valid_mod_locations": [
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ],
+      [ "accessories", 2 ],
+      [ "dampening", 1 ]
+    ]
+  },
+  {
+	"id": "huge_crossbow",
+    "type": "GUN",
+    "copy-from": "huge_crossbow",
+    "name": { "str": "heavy crossbow" },
+    "valid_mod_locations": [
+	  [ "sling", 1 ],
+	  [ "accessories", 2 ],
+	  [ "dampening", 1 ]
+	]
+  },
+  {
+	"id": "rep_crossbow",
+    "type": "GUN",
+    "copy-from": "rep_crossbow",
+    "name": { "str": "repeating crossbow" },
+    "valid_mod_locations": [
+	  [ "sling", 1 ],
+	  [ "dampening", 1 ],
+	  [ "grip", 1 ],
+	  [ "mechanism", 1 ],
+	  [ "accessories", 2 ]
+	]
   }
 ]
