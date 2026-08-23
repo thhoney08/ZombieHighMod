@@ -3328,6 +3328,31 @@
     "components": [ [ [ "laspistolToyZhigh", 2 ] ] ]
   },
   {
+    "id": "laspistolToy2ZhighAkim",
+    "copy-from": "laspistolToyZhigh",
+    "looks_like": "sw629Akim",
+    "weapon_category": [ "PISTOLS", "ENERGY_WEAPONS", "AKIMBOZHIGH" ],
+    "type": "GUN",
+    "name": { "str": "akimbo institute pistol" },
+    "description": "A pistol shaped laser gun, it isn't hard to use, and is very accurate but weak.  Now comes in two.",
+    "modes": [ [ "DEFAULT", "beam", 4 ], [ "BURST", "burst", 8 ] ],
+    "skill": "akimbo_Zhigh",
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "valid_mod_locations": [ [ "sights", 2 ], [ "accessories", 2 ], [ "rail", 2 ], [ "lens", 2 ] ],
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "laspistolToy2ZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "flags": [ "BLIND_EASY" ],
+    "components": [ [ [ "laspistolToyZhigh", 2 ] ] ]
+  },
+  {
     "id": "tazerUpsZhighAkim",
     "copy-from": "tazerUpsZhigh",
     "looks_like": "tazerUpsZhigh",

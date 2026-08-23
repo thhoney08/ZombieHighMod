@@ -5092,8 +5092,8 @@
     "techniques": [ "WBLOCK_1", "BRUTAL" ],
     "volume": "2600 ml",
     "bashing": 100,
-    "to_hit": -4,
-    "price": "240 USD",
+    "to_hit": -3,
+    "price": "24 USD",
     "price_postapoc": "750 cent"
   },
   {
@@ -6861,5 +6861,40 @@
     "material": [ "wood", "iron" ],
     "color": "light_gray",
     "looks_like": "bat_metal_bolted"
+  },
+  {
+    "id": "machete_superalloyZhigh",
+    "type": "GENERIC",
+    "copy-from": "machete",
+    "name": { "str": "superalloy machete" },
+    "description": "This common gardening tool was recreated to improve its performance as a weapon.",
+    "price_postapoc": "25 USD",
+    "weight": "525 g",
+	"material": [ "superalloy" ],
+    "color": "light_cyan",
+    "cutting": 25,
+    "techniques": [ "WBLOCK_2", "RAPID" ],
+    "qualities": [ [ "CUT", 2 ], [ "BUTCHER", 10 ] ]
+  },
+  {
+    "id": "circSawAxeZhigh",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "1H_AXES" ],
+    "symbol": ";",
+    "color": "light_gray",
+    "name": { "str": "circular saw hatchet" },
+    "description": "A one-handed hatchet.  Makes a great melee weapon, and is useful for chopping things.",
+    "price": "25 USD",
+    "price_postapoc": "5 USD",
+    "material": [ "steel", "wood" ],
+    "techniques": [ "WBLOCK_1" ],
+    "weight": "907 g",
+    "volume": "1 L",
+    "bashing": 3,
+    "cutting": 18,
+    "to_hit": 1,
+    "flags": [ "FRAGILE_MELEE", "BELT_CLIP", "NONCONDUCTIVE", "SHEATH_AXE" ],
+    "qualities": [ [ "AXE", 2 ], [ "CUT", 1 ], [ "BUTCHER", 16 ] ]
   }
 ]

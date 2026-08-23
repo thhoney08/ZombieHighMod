@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zhigh_Mod\n"
-"POT-Creation-Date: 2026-08-01 15:36-0500\n"
+"POT-Creation-Date: 2026-08-23 06:22-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -1227,6 +1227,7 @@ msgstr "당신은 당신의 %s를 작동시켰다."
 #. 'str_pl': 'pairs of brawler gloves'}.
 #. ~ Use action need_charges_msg for {'str': 'pair of toy night vision
 #. goggles', 'str_pl': 'pairs of toy night vision goggles'}.
+#. ~ Use action need_charges_msg for {'str': 'aimframe'}.
 #. ~ Use action need_charges_msg for defibrillator.
 #. ~ Use action need_charges_msg for {'str': 'shock club'}.
 #. ~ Use action need_charges_msg for {'str': 'heat hawk (off)', 'str_pl':
@@ -1268,6 +1269,8 @@ msgstr[0] "원자력 광 증폭 고글 (켜짐)"
 #. (on)', 'str': 'pair of toy night vision goggles (on)'}.
 #. ~ Use action menu_text for {'str': 'power armor jetpack (on)', 'str_pl':
 #. 'power armor jetpacks (on)'}.
+#. ~ Use action menu_text for {'str': 'aimframe (aiming Mode)', 'str_pl':
+#. 'aimframes (aiming Mode)'}.
 #. ~ Use action menu_text for {'str': 'fan (on)', 'str_pl': 'fans (on)'}.
 #. ~ Use action menu_text for {'str': 'cordless drill (on)'}.
 #. ~ Use action menu_text for {'str': 'gps pinpointer (on)'}.
@@ -1294,6 +1297,8 @@ msgstr "전원 끄기"
 #. 'str_pl': 'pairs of atomic multi-visor goggles (on)'}.
 #. ~ Use action msg for {'str': 'pair of brawler gloves (on)', 'str_pl':
 #. 'pairs of brawler gloves (on)'}.
+#. ~ Use action msg for {'str': 'aimframe (aiming Mode)', 'str_pl': 'aimframes
+#. (aiming Mode)'}.
 #: .\ZhighArmor.json
 msgid "Your %s deactivates."
 msgstr "당신의 %s가 꺼졌다."
@@ -3907,16 +3912,6 @@ msgid "A pair of chem boots, often used in operations during an MOPP situation. 
 msgstr "화생방 작전에 사용하기 위한 한 쌍의 화생방용 장화.  일반적인 장화 위에 덧신으라고 제작되었습니다."
 
 #: .\ZhighArmor.json
-msgid "kevlar face mask"
-msgid_plural "kevlar face masks"
-msgstr[0] "케블라 얼굴 가면"
-
-#. ~ Description for {'str': 'kevlar face mask'}
-#: .\ZhighArmor.json
-msgid "A simple piece of kevlar that straps over the mouth.  Provides a small amount of protection from low caliber bullets."
-msgstr "입에 걸치는 간단한 케블라 조각입니다.  소구경 총알로부터의 보호 기능을 약간 제공합니다."
-
-#: .\ZhighArmor.json
 msgid "2-by-helmet"
 msgid_plural "2-by-helmets"
 msgstr[0] "목제 헬멧"
@@ -5019,6 +5014,46 @@ msgstr "크로노-임플란트가 충전 중입니다!"
 msgid "deactivated chrono-implant"
 msgid_plural "deactivated chrono-implants"
 msgstr[0] "비활성화된 크로노-임플란트"
+
+#: .\ZhighArmor.json
+msgid "aimframe"
+msgid_plural "aimframes"
+msgstr[0] "에임프레임"
+
+#. ~ Use action msg for {'str': 'aimframe'}.
+#: .\ZhighArmor.json
+msgid "You activate your %s's night vision mode."
+msgstr "당신은 당신이 지닌 %s의 야간 투시 모드를 켭니다."
+
+#. ~ Description for {'str': 'aimframe'}
+#: .\ZhighArmor.json
+msgid ""
+"This device is a head-mounted, UPS-powered, augmented reality electronic tool used by tech enthusiasts before the Cataclysm struck, projecting a HUD onto a transparent screen that goes over your eye.  When turned on, it "
+"helps you to aim better."
+msgstr "이 장치는 대재앙이 닥치기 전 기술 애호가들이 사용하던, 머리에 착용하는 UPS 전원 방식의 증강 현실 전자 기기로, 눈 위에 씌우는 투명 스크린에 HUD를 투사합니다. 전원을 켜면 조준을 더 정확하게 할 수 있게 도와줍니다."
+
+#: .\ZhighArmor.json
+msgid "aimframe (aiming Mode)"
+msgid_plural "aimframes (aiming Mode)"
+msgstr[0] "에임프레임 (조준 모드)"
+
+#. ~ Description for {'str': 'aimframe (aiming Mode)', 'str_pl': 'aimframes
+#. (aiming Mode)'}
+#: .\ZhighArmor.json
+msgid ""
+"This device is a head-mounted, UPS-powered, augmented reality scanning tool used by tech enthusiasts before the Cataclysm struck, projecting a HUD onto a transparent screen that goes over your eye.  The night vision mode is "
+"currently on, draining power."
+msgstr "이 장치는 대재앙이 닥치기 전 기술 애호가들이 사용하던, 머리에 착용하는 UPS 전원 방식의 증강 현실 스캐닝 도구로, 눈 위에 씌우는 투명 스크린에 HUD를 투사합니다. 현재 야간 투시 모드가 켜져 있어 전력이 소모되고 있습니다."
+
+#: .\ZhighArmor.json
+msgid "orange mushroom cap"
+msgid_plural "orange mushroom caps"
+msgstr[0] "주황색 버섯 갓"
+
+#. ~ Description for {'str': 'orange mushroom cap'}
+#: .\ZhighArmor.json
+msgid "An orange mushroom cap.  It provides a little bit of warmth.  Perfect for monkeys demanding rice."
+msgstr "주황색 버섯 모자로, 약간의 따뜻함을 전해줍니다.  쌀을 달라고 조르는 원숭이들에게 안성맞춤입니다."
 
 #: .\ZhighBionics.json
 msgid "bionic knuckle"
@@ -9754,11 +9789,6 @@ msgid_plural "spray cans"
 msgstr[0] "스프레이 캔"
 
 #: .\ZhighItemRemake.json
-msgid "pool ball"
-msgid_plural "pool balls"
-msgstr[0] "당구공"
-
-#: .\ZhighItemRemake.json
 msgid "oars"
 msgid_plural "oars"
 msgstr[0] "노"
@@ -10423,6 +10453,7 @@ msgstr[0] "펜 수류탄"
 #. ~ Use action menu_text for {'str': 'sap grenade'}.
 #. ~ Use action menu_text for {'str': 'modified 40mm grenade'}.
 #. ~ Use action menu_text for {'str': 'GLI-F4', 'str_pl': 'GLI-F4s'}.
+#. ~ Use action menu_text for {'str': 'heal grenade'}.
 #: .\ZhighItems.json .\ZhighWeapons\ZhighThrowing.json
 msgid "Pull pin"
 msgstr "핀 당기기"
@@ -11417,6 +11448,26 @@ msgstr "%s는 남의 엉덩이를 걷어찰 준비를 합니다."
 msgid "generic paper mask"
 msgid_plural "generic paper masks"
 msgstr[0] "기본 종이가면"
+
+#: .\ZhighMasks.json
+msgid "advanced gas mask"
+msgid_plural "advanced gas masks"
+msgstr[0] "고성능 방독면"
+
+#. ~ Description for {'str': 'advanced gas mask'}
+#: .\ZhighMasks.json
+msgid "A full gas mask that covers the face and eyes.  Provides excellent protection from smoke, teargas, and other contaminants.  It must be prepared before use."
+msgstr "얼굴과 눈을 모두 가리는 전면형 방독면입니다.  연기, 최루가스 및 기타 유해 물질로부터 탁월한 보호 기능을 제공합니다.  사용 전에 반드시 준비해야 합니다."
+
+#: .\ZhighMasks.json
+msgid "kevlar face mask"
+msgid_plural "kevlar face masks"
+msgstr[0] "케블라 얼굴 가면"
+
+#. ~ Description for {'str': 'kevlar face mask'}
+#: .\ZhighMasks.json
+msgid "A simple piece of kevlar that straps over the mouth.  Provides a small amount of protection from low caliber bullets."
+msgstr "입에 걸치는 간단한 케블라 조각입니다.  소구경 총알로부터의 보호 기능을 약간 제공합니다."
 
 #: .\ZhighMasks.json
 msgid "dallas mask"
@@ -15178,6 +15229,24 @@ msgstr "머리: 짧은 양갈래 머리"
 #: .\ZhighMutations.json
 msgid "Short pigtails, suitable for a teenager assassin."
 msgstr "짧은 양갈래 머리로, 십 대 암살자에게 딱 어울리는 스타일이다."
+
+#: .\ZhighMutations.json
+msgid "Hair style: mullet"
+msgstr "머리: 멀릿"
+
+#. ~ Description for {'str': 'Hair style: mullet'}
+#: .\ZhighMutations.json
+msgid "Mullet, for a guy with a swiss army knife, a cyberpunk moderator, or a guy wearing a cardboard box."
+msgstr "스위스 아미 나이프를 지닌 사람이나, 사이버펑크 주딱, 혹은 골판지 상자를 두른 사람들을 위한 멀릿형 헤어스타일입니다."
+
+#: .\ZhighMutations.json
+msgid "Hair style: high pigtails"
+msgstr "머리: 높은 양갈래머리"
+
+#. ~ Description for {'str': 'Hair style: high pigtails'}
+#: .\ZhighMutations.json
+msgid "High pigtails, just like those undead children."
+msgstr "어린이 좀비들의 그것과 비슷한 높은 양갈래머리입니다."
 
 #: .\ZhighMutations.json
 msgid "Eye color: red"
@@ -22799,6 +22868,146 @@ msgid ""
 msgstr ""
 "피로 물든 캠퍼스에 발을 들여놓으며, 고속으로 던져 치명적인 타격을 입힐 수 있도록 제작된, 무게가 실리고 면도날처럼 날카로운 카드가 담긴 강화된 카드 덱을 손에 쥡니다.  손재주와 민첩성을 치명적인 정확성과 결합하여, 원거리에서 감"
 "염된 연조직을 가르고 난 뒤, 반사 신경을 겨루는 목숨 건 결투에서 생존자들을 처치합니다.  어이, 듀얼이다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Crusher"
+msgstr "학생 - 크러셔"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Crusher"
+msgstr "학생 - 크러셔"
+
+#. ~ Profession (male Student - Crusher) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"You rely on raw muscle and brutal momentum to pulverize bone and armor alike in close-quarters chaos.  Wielding a mass-heavy blunt instrument, your swinging strikes crush infected skulls instantly, leaving behind nothing but "
+"broken corpses and cleared pathways."
+msgstr ""
+"당신은 근력과 맹렬한 기세를 바탕으로 근접전의 혼란 속에서 뼈와 갑옷을 가리지 않고 산산조각 냅니다.  무게감 있는 둔기를 휘두르는 당신의 강타는 감염된 자들의 두개골을 순식간에 부수며, 부서진 시체와 뚫린 통로만을 남깁니다."
+
+#. ~ Profession (female Student - Crusher) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"You rely on raw muscle and brutal momentum to pulverize bone and armor alike in close-quarters chaos.  Wielding a mass-heavy blunt instrument, your swinging strikes crush infected skulls instantly, leaving behind nothing but "
+"broken corpses and cleared pathways."
+msgstr ""
+"당신은 근력과 맹렬한 기세를 바탕으로 근접전의 혼란 속에서 뼈와 갑옷을 가리지 않고 산산조각 냅니다.  무게감 있는 둔기를 휘두르는 당신의 강타는 감염된 자들의 두개골을 순식간에 부수며, 부서진 시체와 뚫린 통로만을 남깁니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Marauder"
+msgstr "학생 - 머라우더"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Marauder"
+msgstr "학생 - 머라우더"
+
+#. ~ Profession (male Student - Marauder) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"You treat the apocalyptic breakdown not as a tragedy, but as an unrestricted raid for precious resources.  Armed with breaching tools and a close-range shotgun, you smash through barricaded doors and strip entire supply "
+"caches before rival scavengers can react."
+msgstr ""
+"당신은 종말적인 붕괴를 비극으로 여기지 않고, 귀중한 자원을 마음껏 약탈할 기회로 삼습니다.  돌파 도구와 근거리용 산탄총으로 무장한 채, 바리케이드로 막힌 문을 부수고, 경쟁하는 약탈자들이 반응하기도 전에 비축된 물자를 싹쓸이합니"
+"다."
+
+#. ~ Profession (female Student - Marauder) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"You treat the apocalyptic breakdown not as a tragedy, but as an unrestricted raid for precious resources.  Armed with breaching tools and a close-range shotgun, you smash through barricaded doors and strip entire supply "
+"caches before rival scavengers can react."
+msgstr ""
+"당신은 종말적인 붕괴를 비극으로 여기지 않고, 귀중한 자원을 마음껏 약탈할 기회로 삼습니다.  돌파 도구와 근거리용 산탄총으로 무장한 채, 바리케이드로 막힌 문을 부수고, 경쟁하는 약탈자들이 반응하기도 전에 비축된 물자를 싹쓸이합니"
+"다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Tinkerer"
+msgstr "학생 - 팅커러"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Tinkerer"
+msgstr "학생 - 팅커러"
+
+#. ~ Profession (male Student - Tinkerer) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"You turn discarded electronics and broken machinery into clever survival gadgets inside abandoned science labs.  Armed with versatile multi-tools and soldering irons, you quickly repair damaged equipment and assemble custom "
+"electric devices to outsmart the infected horde."
+msgstr ""
+"버려진 과학 실험실 안에서, 당신은 폐기된 전자제품과 고장 난 기계를 기발한 생존 도구로 탈바꿈시킵니다.  다용도 멀티툴과 납땜 인두를 무기로 삼아, 손상된 장비를 신속하게 수리하고 맞춤형 전기 장치를 조립하여 감염된 무리들을 한 "
+"수 앞서 나가게 됩니다."
+
+#. ~ Profession (female Student - Tinkerer) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"You turn discarded electronics and broken machinery into clever survival gadgets inside abandoned science labs.  Armed with versatile multi-tools and soldering irons, you quickly repair damaged equipment and assemble custom "
+"electric devices to outsmart the infected horde."
+msgstr ""
+"버려진 과학 실험실 안에서, 당신은 폐기된 전자제품과 고장 난 기계를 기발한 생존 도구로 탈바꿈시킵니다.  다용도 멀티툴과 납땜 인두를 무기로 삼아, 손상된 장비를 신속하게 수리하고 맞춤형 전기 장치를 조립하여 감염된 무리들을 한 "
+"수 앞서 나가게 됩니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Nuker"
+msgstr "학생 - 누커"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Nuker"
+msgstr "학생 - 누커"
+
+#. ~ Profession (male Student - Nuker) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"You carry a miniaturized nuclear implant embedded within your body as a terrifying final line of defense.  Equipped with specialized detonators and heavy radiation shielding, you manipulate volatile energy cells to "
+"obliterate massive hordes when all other options fail."
+msgstr ""
+"당신은 몸속에 이식된 초소형 핵 장치를 끔찍한 최후의 방어 수단으로 지니고 있습니다.  특수 기폭 장치와 강력한 방사선 차폐 장치를 갖춘 이 장치를 통해, 다른 모든 수단이 실패했을 때 불안정한 에너지 셀을 조작하여 거대한 적군을 말살"
+"합니다."
+
+#. ~ Profession (female Student - Nuker) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"You carry a miniaturized nuclear implant embedded within your body as a terrifying final line of defense.  Equipped with specialized detonators and heavy radiation shielding, you manipulate volatile energy cells to "
+"obliterate massive hordes when all other options fail."
+msgstr ""
+"당신은 몸속에 이식된 초소형 핵 장치를 끔찍한 최후의 방어 수단으로 지니고 있습니다.  특수 기폭 장치와 강력한 방사선 차폐 장치를 갖춘 이 장치를 통해, 다른 모든 수단이 실패했을 때 불안정한 에너지 셀을 조작하여 거대한 적군을 말살"
+"합니다."
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Exorcist"
+msgstr "학생 - 퇴마사"
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Exorcist"
+msgstr "학생 - 퇴마사"
+
+#. ~ Profession (male Student - Exorcist) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid "You roam the wasteland as judge, jury, and executioner, hunting ghosts of past in the form of the undead and the corrupt alike.  With fire and steel, you purge what little remains unclean."
+msgstr "당신은 재판관이자 배심원, 그리고 집행관으로서 황무지를 누비며, 언데드와 타락한 자들의 모습으로 나타난 과거의 유령들을 사냥합니다.  불과 강철로, 아직 남아 있는 미약한 불결함을 말끔히 제거합니다."
+
+#. ~ Profession (female Student - Exorcist) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid "You roam the wasteland as judge, jury, and executioner, hunting ghosts of past in the form of the undead and the corrupt alike.  With fire and steel, you purge what little remains unclean."
+msgstr "당신은 재판관이자 배심원, 그리고 집행관으로서 황무지를 누비며, 언데드와 타락한 자들의 모습으로 나타난 과거의 유령들을 사냥합니다.  불과 강철로, 아직 남아 있는 미약한 불결함을 말끔히 제거합니다."
 
 #: .\ZhighProfession.json
 msgctxt "profession_male"
@@ -30614,6 +30823,11 @@ msgid "A pistol shaped laser gun, it isn't hard to use, and is very accurate but
 msgstr "권총 모양 레이저 총.  사용이 어렵지 않고 매우 정확하나 피해가 약합니다.  이제 두 자루를 들고 있습니다."
 
 #: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo institute pistol"
+msgid_plural "akimbo institute pistols"
+msgstr[0] "아킴보 인스티튜트 피스톨"
+
+#: .\ZhighWeapons\ZhighAkim.json
 msgid "akimbo UPS tazer"
 msgid_plural "akimbo UPS tazers"
 msgstr[0] "아킴보 UPS 테이저"
@@ -33017,6 +33231,7 @@ msgid_plural "active aerial bombardment signal flares"
 msgstr[0] "지역 폭격 조명탄 (켜짐)"
 
 #. ~ Use action sound_msg for active aerial bombardment signal flare.
+#. ~ Use action sound_msg for armed heal gas grenade.
 #. ~ Use action sound_msg for {'str': 'active high explosive grenade'}.
 #. ~ Use action sound_msg for {'str': 'active anti-tank grenade'}.
 #. ~ Use action sound_msg for {'str': 'active napalm grenade'}.
@@ -33029,8 +33244,9 @@ msgstr[0] "지역 폭격 조명탄 (켜짐)"
 #. flash bombs'}.
 #. ~ Use action sound_msg for {'str': 'active thermobaric grenade'}.
 #. ~ Use action sound_msg for {'str': 'active modified 40mm grenade'}.
-#. ~ Use action sound_msg for {'str': 'active stun grenade', 'str_pl': 'active
-#. stun grenades'}.
+#. ~ Use action sound_msg for {'str': 'active M104 NLBHG grenade', 'str_pl':
+#. 'active M104 NLBHG grenades'}.
+#. ~ Use action sound_msg for {'str': 'active heal grenade'}.
 #: .\ZhighWeapons\ZhighAmmo.json .\ZhighWeapons\ZhighThrowing.json
 msgid "Tick."
 msgstr "째깍."
@@ -33423,8 +33639,30 @@ msgstr[0] "집속 수제 로켓"
 #. ~ Description for {'str': 'cluster homemade rocket'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid ""
-"A hand built rocket, consisting of several bombs welded onto a pipe that was filled with improvised rocket fuel.  Horribly inaccurate, as can be expected of this grade of weapon, but packs a fierce punch… if it does not hit."
-msgstr "급조 로켓 연료가 채워진 파이프 주변에 폭발물 다발을 박은 수제 로켓입니다.  급조한 무기답게 정확도는 아주 떨어지지만, 아주 따끔한 한 방을 먹여줄 수 있습니다... 맞지 않아도요."
+"A hand built rocket, consisting of several bombs welded onto a pipe that was filled with improvised rocket fuel.  Horribly inaccurate, as can be expected of this grade of weapon, but packs a fierce punch… even if it does not "
+"hit."
+msgstr "파이프에 수제 로켓 연료를 채우고, 그 위에 여러 개의 폭탄을 용접해 만든 수제 로켓입니다.  이 정도 수준의 무기라면 예상할 수 있듯이 정확도는 끔찍할 정도로 떨어지지만, 설령 명중하지 못하더라도 엄청난 위력을 발휘합니다."
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "blackout homemade rocket"
+msgid_plural "blackout homemade rockets"
+msgstr[0] "블랙아웃 수제 로켓"
+
+#. ~ Description for {'str': 'blackout homemade rocket'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ""
+"A hand built rocket, consisting of electronics welded onto a pipe that was filled with improvised rocket fuel.  Horribly inaccurate, as can be expected of this grade of weapon, but can shut those noisy turrets in one shot."
+msgstr "임시로 만든 로켓 연료로 채워진 파이프에 전자 부품을 용접해 만든 수제 로켓입니다.  이 등급의 무기답게 정확도는 끔찍할 정도로 떨어지지만, 한 발만 쏘아도 시끄러운 포탑들을 한 방에 무력화시킬 수 있습니다."
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "pool ball"
+msgid_plural "pool balls"
+msgstr[0] "당구공"
+
+#. ~ Description for {'str': 'pool ball'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "A colorful, hard ball.  Essentially a rock."
+msgstr "알록달록한 단단한 공.  본질적으로는 돌이나 다름없다."
 
 #: .\ZhighWeapons\ZhighArrows.json
 msgid "acid arrow"
@@ -33645,6 +33883,21 @@ msgstr "독특한 둥근 촉과 깃을 붙인 나무 화살.  발사 시 큰 소
 msgid "sap arrow"
 msgid_plural "sap arrows"
 msgstr[0] "수액 화살"
+
+#: .\ZhighWeapons\ZhighArrows.json
+msgid "superalloy broadhead arrow"
+msgid_plural "superalloy broadhead arrows"
+msgstr[0] "초합금 브로드헤드 화살"
+
+#. ~ Description for {'str': 'superalloy broadhead arrow'}
+#: .\ZhighWeapons\ZhighArrows.json
+msgid "A fletched superalloy arrow shaft with a bladed tip.  Useful for maximizing damage to the target.  Stands an extremely high chance of remaining intact once fired."
+msgstr "날개가 달린 초합금 화살대에 칼날 모양의 화살촉이 달려 있습니다. 표적에 가하는 피해를 극대화하는 데 유용합니다.  발사 후에도 온전한 상태로 남아 있을 확률이 매우 높습니다."
+
+#. ~ Description for {'str': 'scatter arrow'}
+#: .\ZhighWeapons\ZhighArrows.json
+msgid "A fletched wooden arrow shaft with a cluster of nails.  Useful for maximizing damage to multiple targets.  Stands no decent chance of remaining intact once fired."
+msgstr "깃털이 달린 나무 화살대에 못이 뭉쳐 박혀 있습니다.  여러 표적에 대한 피해를 극대화하는 데 유용합니다.  일단 발사되면 온전한 상태로 남아 있을 가능성은 거의 없습니다."
 
 #: .\ZhighWeapons\ZhighArtifacts.json
 msgid "el verdugo"
@@ -41382,6 +41635,26 @@ msgstr ""
 "강철로 제작되고 금속 파편을 덧대어 무게감을 더욱 높인 거대한 양손용 몽둥이입니다.  이 무기는 “오니에게 카나보를 주는 것과 같다”는 말을 그대로 보여주는 것으로, 이를 효과적으로 다룰 수 있는 자라면 맨손으로도 적을 산산조각 낼 "
 "수 있을 것이기 때문입니다."
 
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "superalloy machete"
+msgid_plural "superalloy machetes"
+msgstr[0] "초합금 마체테"
+
+#. ~ Description for {'str': 'superalloy machete'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "This common gardening tool was recreated to improve its performance as a weapon."
+msgstr "이 흔한 원예 도구는 무기로서의 성능을 높이기 위해 재탄생했습니다."
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "circular saw hatchet"
+msgid_plural "circular saw hatchets"
+msgstr[0] "원형 톱날 손도끼"
+
+#. ~ Description for {'str': 'circular saw hatchet'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "A one-handed hatchet.  Makes a great melee weapon, and is useful for chopping things."
+msgstr "한손으로 쓸 수 있는 손도끼.  훌륭한 근접 무기이며 물건들을 베어버릴 때도 쓸만합니다."
+
 #: .\ZhighWeapons\ZhighRanged.json
 msgid "marble gun"
 msgid_plural "marble guns"
@@ -44698,6 +44971,16 @@ msgid "A pistol shaped laser gun, it isn't hard to use, and is very accurate but
 msgstr "권총 모양 레이저 총.  사용이 어렵지 않고 매우 정확하나 피해가 약합니다."
 
 #: .\ZhighWeapons\ZhighRanged.json
+msgid "institute rifle"
+msgid_plural "institute rifles"
+msgstr[0] "인스티튜트 라이플"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "institute pistol"
+msgid_plural "institute pistols"
+msgstr[0] "인스티튜트 피스톨"
+
+#: .\ZhighWeapons\ZhighRanged.json
 msgid "12-gauge peppergun"
 msgid_plural "12-gauge pepperguns"
 msgstr[0] "12 게이지 후추총"
@@ -45360,6 +45643,16 @@ msgid_plural "power armor handheld laser cannons"
 msgstr[0] "파워 아머 레이저 캐논"
 
 #: .\ZhighWeapons\ZhighRanged.json
+msgid "power armor M202A1 FLASH"
+msgid_plural "power armor M202A1 FLASHs"
+msgstr[0] "파워 아머 M202A1 FLASH"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "power armor flamethrower"
+msgid_plural "power armor flamethrowers"
+msgstr[0] "파워 아머 화염방사기"
+
+#: .\ZhighWeapons\ZhighRanged.json
 msgid "medusan carapace"
 msgid_plural "medusan carapaces"
 msgstr[0] "메두사제 카라페이스"
@@ -45372,6 +45665,125 @@ msgid ""
 msgstr ""
 "손잡이에 트리거가 있고 측면에 숨겨진 구멍이 있는 하드 사이드 서류 가방입니다.  내부에 장착된 MP5K-PDW를 발사하려면 서류 가방을 허리에 고정하고 서류 가방을 적에게 향하도록 한 다음 방아쇠를 조입니다. 주변의 정밀도와 취급에 큰 "
 "지장을 주지만, 경호 중에 '물건을 건네주거나' 눈에 띄지 않도록 해야 한다면, 이것은 당신의 총입니다.  서류 가방을 열면 MP5가 다시 로드되거나 마운트 해제될 수 있습니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "nail magnum"
+msgid_plural "nail magnums"
+msgstr[0] "네일 매그넘"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Sedgley OSS .38"
+msgid_plural "Sedgley OSS .38s"
+msgstr[0] "세즐리 OSS .38"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Was designed by Stanley M. Haight and used by you.  Could be used for reenacting world wars."
+msgstr "스탠리 M. 헤이트가 설계했으며, 귀하께서 사용할 수 있습니다.  세계 대전 재현에 활용될 수 있습니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Crusher-410"
+msgid_plural "Crusher-410s"
+msgstr[0] "크러셔-410"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "The Crusher-410 is a semi-automatic shotgun designed on the Saiga-410 shotgun.  It reloads with a magazine, rather than one shell at a time like most shotguns, but fits in a holster and cannot fit larger mags."
+msgstr "크러셔-410는 반자동 산탄총으로 Saiga-12를 바탕으로 제작되었습니다.  다른 대부분의 산탄총과는 다르게 단발이 아닌 탄창으로 장전합니다.  원본과는 다르게 더 큰 탄창은 재장전할 수 없습니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "spear launcher"
+msgid_plural "spear launchers"
+msgstr[0] "작살 투사기"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"Somewhere between a bullet crossbow and a slingshot on steroids, this shoulder-mounted weapon uses a winch to keep several elastic bands under tension.  It fires fishspears with much more power and range than pebbles out of "
+"a normal speargun.  High strength will make it faster to reload."
+msgstr ""
+"총알식 석궁과 스테로이드를 맞은 듯한 슬링샷의 중간쯤 되는 이 어깨 장착형 무기는 윈치를 이용해 여러 개의 고무줄을 항상 팽팽한 상태로 유지합니다.  이 무기는 일반 스피어건에서 발사되는 자갈보다 훨씬 더 강력한 위력과 사거리를 지"
+"닌 작살을 발사합니다.  높은 힘을 지닐수록 재장전 속도가 빨라집니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Hawk MM-1"
+msgid_plural "Hawk MM-1"
+msgstr[0] "호크 MM-1"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"The Hawk MM-1 Multi-Grenade Launcher is designed to compensate for the drawback of single-shot grenade launchers by allowing sustained heavy firepower.  However, it is still slower to reload than the Milkor and must be used "
+"with careful planning."
+msgstr "호크 MM-1 다연장 수류탄 발사기는 단발식 수류탄 발사기의 단점을 보완하여 지속적인 집중 사격을 가능하게 하도록 설계되었습니다.  그러나 재장전 속도는 여전히 MGL보다 느리므로, 신중한 작전 계획과 병행되어야 합니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "LawGiver(pistol mode)"
+msgid_plural "LawGiver(pistol mode)s"
+msgstr[0] "로기버(권총 모드)"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "This Glock magazine using pistol is a versatile weapon, including various mods for various solutions."
+msgstr "이 글록 탄창을 사용하는 권총은 다양한 용도에 맞춰 다양한 개조 옵션을 갖춘 다목적 무기입니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "LawGiver(stun mode)"
+msgid_plural "LawGiver(stun mode)s"
+msgstr[0] "로기버(진압 모드)"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "This Glock magazine using pistol is a versatile weapon, including various mods for various solutions.  This is now in stun mode, not that damaging but stings a lot."
+msgstr "이 글록 탄창을 사용하는 권총은 다양한 용도에 맞춰 다양한 개조 옵션을 갖춘 다목적 무기입니다.  진압 모드에 있으며, 맞으면 피해가 크지는 않지만 매우 고통스러울 겁니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "LawGiver(ricochet mode)"
+msgid_plural "LawGiver(ricochet mode)s"
+msgstr[0] "로기버(도탄 모드)"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "This Glock magazine using pistol is a versatile weapon, including various mods for various solutions.  This is now in ricochet mode, not that damaging but bounces around."
+msgstr "이 글록 탄창을 사용하는 권총은 다양한 용도에 맞춰 다양한 개조 옵션을 갖춘 다목적 무기입니다.  도탄 모드에 있으며, 한 발로 여러 적들을 맞출 수 있을 겁니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "LawGiver(incendiary mode)"
+msgid_plural "LawGiver(incendiary mode)s"
+msgstr[0] "로기버(소이 모드)"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "This Glock magazine using pistol is a versatile weapon, including various mods for various solutions.  This is now in incendiary mode, not that damaging but burns things."
+msgstr "이 글록 탄창을 사용하는 권총은 다양한 용도에 맞춰 다양한 개조 옵션을 갖춘 다목적 무기입니다.  소이 모드에 있으며, 피해는 크지 않지만 적들을 태워버릴 수 있을 겁니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "LawGiver(grenade mode)"
+msgid_plural "LawGiver(grenade mode)s"
+msgstr[0] "로기버(파편탄 모드)"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "This Glock magazine using pistol is a versatile weapon, including various mods for various solutions.  This is now in grenade mode, blowing things up."
+msgstr "이 글록 탄창을 사용하는 권총은 다양한 용도에 맞춰 다양한 개조 옵션을 갖춘 다목적 무기입니다.  파편탄 모드에 있으며, 전부 날려버릴 수 있을 겁니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "LawGiver(explosive mode)"
+msgid_plural "LawGiver(explosive mode)s"
+msgstr[0] "로기버(고폭 모드)"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "This Glock magazine using pistol is a versatile weapon, including various mods for various solutions.  This is now in explosive mode, blowing things up."
+msgstr "이 글록 탄창을 사용하는 권총은 다양한 용도에 맞춰 다양한 개조 옵션을 갖춘 다목적 무기입니다.  고폭 모드에 있으며, 전부 날려버릴 수 있을 겁니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "LawGiver(EMP mode)"
+msgid_plural "LawGiver(EMP mode)s"
+msgstr[0] "로기버(EMP 모드)"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "This Glock magazine using pistol is a versatile weapon, including various mods for various solutions.  This is now in EMP mode, frying electric circuits."
+msgstr "이 글록 탄창을 사용하는 권총은 다양한 용도에 맞춰 다양한 개조 옵션을 갖춘 다목적 무기입니다.  EMP 모드에 있으며, 전자 회로들을 태워버릴 수 있을 겁니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Marlin Camp Carbine"
+msgid_plural "Marlin Camp Carbines"
+msgstr[0] "마를린 캠프 카빈"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "As the name implies, it was designed as a utility firearm to be used around hunting camps for foraging or defense.  Uses 1911 magazines."
+msgstr "이름에서 알 수 있듯이, 이 총은 사냥 캠프 주변에서 식량 확보나 방어를 위해 사용되는 다목적 총기로 설계되었습니다.  1911형 탄창을 사용합니다."
 
 #: .\ZhighWeapons\ZhighSpells.json
 msgid "Summon fireball"
@@ -45806,6 +46218,7 @@ msgid_plural "armed radioactive grenades"
 msgstr[0] "방사능가스탄 (켜짐)"
 
 #. ~ Use action no_deactivate_msg for armed radioactive grenade.
+#. ~ Use action no_deactivate_msg for armed heal gas grenade.
 #. ~ Use action no_deactivate_msg for {'str': 'active flash bomb', 'str_pl':
 #. 'active flash bombs'}.
 #. ~ Use action no_deactivate_msg for {'str': 'active ninja bomb', 'str_pl':
@@ -45813,8 +46226,9 @@ msgstr[0] "방사능가스탄 (켜짐)"
 #. ~ Use action no_deactivate_msg for {'str': 'active sap grenade'}.
 #. ~ Use action no_deactivate_msg for {'str': 'active GLI-F4', 'str_pl':
 #. 'active GLI-F4s'}.
-#. ~ Use action no_deactivate_msg for {'str': 'active stun grenade', 'str_pl':
-#. 'active stun grenades'}.
+#. ~ Use action no_deactivate_msg for {'str': 'active M104 NLBHG grenade',
+#. 'str_pl': 'active M104 NLBHG grenades'}.
+#. ~ Use action no_deactivate_msg for {'str': 'active heal grenade'}.
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "You've already lit the fuse - get rid of it immediately!"
 msgstr "당신은 이미 %s를 작동시켰으니, 그 대신 던지세요!"
@@ -45917,6 +46331,7 @@ msgstr[0] "고폭 수류탄"
 #. ~ Use action msg for {'str': 'thermobaric grenade'}.
 #. ~ Use action msg for {'str': 'sap grenade'}.
 #. ~ Use action msg for {'str': 'modified 40mm grenade'}.
+#. ~ Use action msg for {'str': 'heal grenade'}.
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "You pull the pin on the grenade."
 msgstr "수류탄의 핀을 당겼다."
@@ -46746,36 +47161,58 @@ msgid "This is a notorious French riot control grenade that has been activated a
 msgstr "이것은 악명 높은 프랑스의 진압용 수류탄으로, 발화되어 요란한 쉭쉭거리는 소리와 함께 타오르며 엄청난 양의 불꽃을 뿜어냅니다."
 
 #: .\ZhighWeapons\ZhighThrowing.json
-msgid "stun grenade"
-msgid_plural "stun grenades"
-msgstr[0] "충격 수류탄"
+msgid "M104 NLBHG grenade"
+msgid_plural "M104 NLBHG grenades"
+msgstr[0] "M104 NLBHG 수류탄"
 
-#. ~ Use action menu_text for {'str': 'stun grenade', 'str_pl': 'stun
+#. ~ Use action menu_text for {'str': 'M104 NLBHG grenade', 'str_pl': 'M104
+#. NLBHG grenades'}.
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "Activate M104 NLBHG grenade"
+msgstr "M104 NLBHG 수류탄 작동시키기"
+
+#. ~ Use action msg for {'str': 'M104 NLBHG grenade', 'str_pl': 'M104 NLBHG
 #. grenades'}.
 #: .\ZhighWeapons\ZhighThrowing.json
-msgid "Activate stun grenade"
-msgstr "충격 수류탄 작동시키기"
+msgid "You active the M104 NLBHG grenade on.  Throw it!"
+msgstr "M104 NLBHG 수류탄을 작동시켰다.  던지자!"
 
-#. ~ Use action msg for {'str': 'stun grenade', 'str_pl': 'stun grenades'}.
-#: .\ZhighWeapons\ZhighThrowing.json
-msgid "You active the stun grenade on.  Throw it!"
-msgstr "충격 폭탄을 작동시켰다.  던지자!"
-
-#. ~ Description for {'str': 'stun grenade', 'str_pl': 'stun grenades'}
-#: .\ZhighWeapons\ZhighThrowing.json
-msgid "A shockwave bomb which emits shockwaves for a short time.  This could blind your enemies and you for a short time, if you were inside the effected area."
-msgstr "단시간에 충격파를 내는 충격 폭탄입니다.  이것은 충격파만을 단시간에 내며, 범위 안의 당신의 적들과 [물론 당신이 범위 안에 있다면] 당신에게 영향을 줄 수 있습니다."
-
-#: .\ZhighWeapons\ZhighThrowing.json
-msgid "active stun grenade"
-msgid_plural "active stun grenades"
-msgstr[0] "충격 수류탄 (켜짐)"
-
-#. ~ Description for {'str': 'active stun grenade', 'str_pl': 'active stun
+#. ~ Description for {'str': 'M104 NLBHG grenade', 'str_pl': 'M104 NLBHG
 #. grenades'}
 #: .\ZhighWeapons\ZhighThrowing.json
-msgid "A shockwave bomb which emits shockwaves for a short time.  Throw it quickly before it blows up."
-msgstr "단시간에 충격파를 내는 충격 폭탄입니다.  터지기 전에 빠르게 던지세요."
+msgid "A shockwave bomb which stuns enemies for a short time.  This could stun your enemies and you for a short time, if you were inside the effected area."
+msgstr "적들을 잠시 기절시키는 충격파 폭탄입니다.  효과 범위 내에 있다면, 적뿐만 아니라 자신도 잠시 기절할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "active M104 NLBHG grenade"
+msgid_plural "active M104 NLBHG grenades"
+msgstr[0] "M104 NLBHG 수류탄 (켜짐)"
+
+#. ~ Description for {'str': 'active M104 NLBHG grenade', 'str_pl': 'active
+#. M104 NLBHG grenades'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "A shockwave bomb which stuns enemies for a short time.  Throw it quickly before it blows up."
+msgstr "적을 잠시 기절시키는 충격파 폭탄입니다. 폭발하기 전에 재빨리 던지세요."
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "heal grenade"
+msgid_plural "heal grenades"
+msgstr[0] "치료 수류탄"
+
+#. ~ Description for {'str': 'heal grenade'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "This is a military-grade 'healing' grenade.  Use this item to pull the pin and light the fuse.  You will then have five turns before it explodes; throwing it would be a good idea."
+msgstr "이것은 군용 등급의 ‘치유’ 수류탄입니다.  사용하여 안전핀을 뽑고 도화선에 불을 당깁니다.  이후 폭발까지 5초가 걸리니, 던져버리는게 좋을겁니다."
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "active heal grenade"
+msgid_plural "active heal grenades"
+msgstr[0] "치료 수류탄 (켜짐)"
+
+#. ~ Description for {'str': 'active heal grenade'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "This is an active heal grenade, and will explode any second now.  Better throw it to give your friends buffs, or keep it for yourself to gain buffs."
+msgstr "이것은 능동형 치유 수류탄으로, 곧 폭발할 것입니다.  친구들에게 버프를 주기 위해 던지거나, 버프를 얻기 위해 직접 소지해 두는 것이 좋습니다."
 
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "shootable grenade"
@@ -48849,6 +49286,17 @@ msgstr[0] "베테랑 생존자 좀비"
 #: .\ZhighZeds\zed_survivor.json
 msgid "This zombie once was a survivor like you, and a pretty good one at that.  Unfortunately they didn't make it, despite the custom-made, heavy armor pieces they wear and the gear that they are still lugging around."
 msgstr "한때 당신과 같은 생존자였으며 꽤 잘 살아온 것 같습니다.  불행히도, 수제작한 무거운 갑옷 쪼가리와 여전히 짊어지고 다니는 풍족한 장비에도 불구하고 안일사 당한 것 같습니다."
+
+#~ msgid "This is a military-grade fragmentary hand grenade.  Use this item to pull the pin and light the fuse.  You will then have five turns before it explodes; throwing it would be a good idea."
+#~ msgstr "이것은 군용 파편 수류탄입니다.  이 아이템의 안전핀을 뽑고 도화선에 불을 붙이세요.  그러면 폭발하기까지 5턴의 시간이 주어지므로, 던져버리는 것이 좋습니다."
+
+#~ msgid "stun grenade"
+#~ msgid_plural "stun grenades"
+#~ msgstr[0] "충격 수류탄"
+
+#~ msgid "active stun grenade"
+#~ msgid_plural "active stun grenades"
+#~ msgstr[0] "충격 수류탄 (켜짐)"
 
 #~ msgid "SIG MCX"
 #~ msgid_plural "SIG MCXs"

@@ -117,7 +117,8 @@
       "explosion": { 
 		"damage": 50,
 		"radius": 4,
-        "fragment": { "impact": { "damage_type": "heat", "amount": 60, "armor_multiplier": 9 }, "range": 4 }
+		"fragment_effect": [ { "effect": "irradiated", "odds": 1, "min_turns": 30, "max_turns": 68 } ],
+        "fragment": { "impact": { "damage_type": "heat", "amount": 40, "armor_multiplier": 9 }, "range": 4 }
 	  }
     },
 	"flags": [ "TRADER_AVOID" ]
@@ -288,8 +289,23 @@
 	"name": "armed heal gas grenade",
 	"description": ".",
 	"emits": [ "emit_heal_cloud" ],
-	"countdown_interval": 30,
+	"countdown_interval": 3,
 	"countdown_action": { "type": "transform", "target": "canister_empty" },
+    "use_action": {
+      "type": "explosion",
+      "sound_volume": "64 dB",
+      "sound_msg": "Tick.",
+      "no_deactivate_msg": "You've already lit the fuse - get rid of it immediately!",
+      "explosion": {
+		"damage": 1,
+		"fragment_effect": [
+		  { "effect": "jetinjector", "odds": 1, "min_turns": 300, "max_turns": 680 },
+		  { "effect": "command_buff", "odds": 1, "min_turns": 300, "max_turns": 680 },
+		  { "effect": "panacea", "odds": 1, "min_turns": 300, "max_turns": 680 }
+		],
+		"fragment": { "impact": { "damage_type": "bullet", "amount": 1, "armor_multiplier": 18 }, "range": 5 }
+	  }
+    },
 	"flags": [ "TRADER_AVOID" ]
   },
   {
@@ -1971,8 +1987,8 @@
     "looks_like": "flashbang",
     "type": "TOOL",
     "category": "weapons",
-    "name": { "str": "stun grenade", "str_pl": "stun grenades" },
-    "description": "A shockwave bomb which emits shockwaves for a short time.  This could blind your enemies and you for a short time, if you were inside the effected area.",
+    "name": { "str": "M104 NLBHG grenade", "str_pl": "M104 NLBHG grenades" },
+    "description": "A shockwave bomb which stuns enemies for a short time.  This could stun your enemies and you for a short time, if you were inside the effected area.",
     "weight": "250 g",
     "volume": "250 ml",
     "price": "1 USD",
@@ -1984,10 +2000,10 @@
     "color": "green",
     "use_action": {
       "target": "stunNadeZhigh_act",
-      "msg": "You active the stun grenade on.  Throw it!",
+      "msg": "You active the M104 NLBHG grenade on.  Throw it!",
       "target_charges": 5,
       "active": true,
-      "menu_text": "Activate stun grenade",
+      "menu_text": "Activate M104 NLBHG grenade",
       "type": "transform"
     },
     "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
@@ -1997,8 +2013,8 @@
     "looks_like": "flashbang_act",
     "type": "TOOL",
     "category": "weapons",
-    "name": { "str": "active stun grenade", "str_pl": "active stun grenades" },
-    "description": "A shockwave bomb which emits shockwaves for a short time.  Throw it quickly before it blows up.",
+    "name": { "str": "active M104 NLBHG grenade", "str_pl": "active M104 NLBHG grenades" },
+    "description": "A shockwave bomb which stuns enemies for a short time.  Throw it quickly before it blows up.",
     "weight": "250 g",
     "volume": "250 ml",
     "price": "0 cent",
@@ -2014,14 +2030,78 @@
     "use_action": {
       "type": "explosion",
       "fields_type": "fd_stunZhigh",
-      "fields_radius": 3,
+      "fields_radius": 1,
       "fields_min_intensity": 3,
       "fields_max_intensity": 3,
       "sound_volume": "64 dB",
       "sound_msg": "Tick.",
       "no_deactivate_msg": "You've already lit the fuse - get rid of it immediately!",
       "explosion": {
-		"damage": 1
+		"damage": 1,
+		"fragment_effect": [ { "effect": "stunned", "odds": 1, "min_turns": 30, "max_turns": 68 } ],
+		"fragment": { "impact": { "damage_type": "bullet", "amount": 1, "armor_multiplier": 18 }, "range": 5 }
+	  }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
+    "id": "healGrenadeZhigh",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "heal grenade" },
+    "description": "This is a military-grade 'healing' grenade.  Use this item to pull the pin and light the fuse.  You will then have a turn before it explodes; throwing it would be a good idea.",
+    "weight": "397 g",
+    "volume": "250 ml",
+    "price": "15 USD",
+    "price_postapoc": "10 USD",
+    "to_hit": -1,
+    "bashing": 6,
+    "material": [ "steel" ],
+    "symbol": "*",
+    "color": "green",
+    "use_action": {
+      "target": "healGrenadeZhigh_act",
+      "msg": "You pull the pin on the grenade.",
+      "target_charges": 1,
+      "active": true,
+      "menu_text": "Pull pin",
+      "type": "transform"
+    },
+    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "healGrenadeZhigh_act",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "active heal grenade" },
+    "description": "This is an active heal grenade, and will explode any second now.  Better throw it to give your friends buffs, or keep it for yourself to gain buffs.",
+    "weight": "397 g",
+    "volume": "250 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "to_hit": -1,
+    "bashing": 6,
+    "material": [ "steel" ],
+    "symbol": "*",
+    "color": "green",
+    "initial_charges": 1,
+    "max_charges": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "sound_volume": "20 dB",
+      "sound_msg": "Tick.",
+      "no_deactivate_msg": "You've already lit the fuse - get rid of it immediately!",
+      "explosion": {
+		"damage": 0,
+		"fragment_effect": [
+		  { "effect": "disinfected", "odds": 1, "min_turns": 600, "max_turns": 680 },
+		  { "effect": "bandaged", "odds": 1, "min_turns": 600, "max_turns": 680 },
+		  { "effect": "jetinjector", "odds": 1, "min_turns": 300, "max_turns": 680 },
+		  { "effect": "command_buff", "odds": 1, "min_turns": 300, "max_turns": 680 },
+		  { "effect": "panacea", "odds": 1, "min_turns": 300, "max_turns": 680 }
+		],
+		"fragment": { "impact": { "damage_type": "bullet", "amount": 0, "armor_multiplier": 80 }, "range": 5 }
 	  }
     },
     "flags": [ "BOMB", "TRADER_AVOID" ]

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zhigh_Mod\n"
-"POT-Creation-Date: 2026-08-01 15:36-0500\n"
+"POT-Creation-Date: 2026-08-23 06:24-0500\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1422,6 +1422,7 @@ msgstr ""
 #. 'str_pl': 'pairs of brawler gloves'}.
 #. ~ Use action need_charges_msg for {'str': 'pair of toy night vision
 #. goggles', 'str_pl': 'pairs of toy night vision goggles'}.
+#. ~ Use action need_charges_msg for {'str': 'aimframe'}.
 #. ~ Use action need_charges_msg for defibrillator.
 #. ~ Use action need_charges_msg for {'str': 'shock club'}.
 #. ~ Use action need_charges_msg for {'str': 'heat hawk (off)', 'str_pl':
@@ -1467,6 +1468,8 @@ msgstr[1] ""
 #. (on)', 'str': 'pair of toy night vision goggles (on)'}.
 #. ~ Use action menu_text for {'str': 'power armor jetpack (on)', 'str_pl':
 #. 'power armor jetpacks (on)'}.
+#. ~ Use action menu_text for {'str': 'aimframe (aiming Mode)', 'str_pl':
+#. 'aimframes (aiming Mode)'}.
 #. ~ Use action menu_text for {'str': 'fan (on)', 'str_pl': 'fans (on)'}.
 #. ~ Use action menu_text for {'str': 'cordless drill (on)'}.
 #. ~ Use action menu_text for {'str': 'gps pinpointer (on)'}.
@@ -1494,6 +1497,8 @@ msgstr ""
 #. 'str_pl': 'pairs of atomic multi-visor goggles (on)'}.
 #. ~ Use action msg for {'str': 'pair of brawler gloves (on)', 'str_pl':
 #. 'pairs of brawler gloves (on)'}.
+#. ~ Use action msg for {'str': 'aimframe (aiming Mode)', 'str_pl': 'aimframes
+#. (aiming Mode)'}.
 #: .\ZhighArmor.json
 msgid "Your %s deactivates."
 msgstr ""
@@ -4687,19 +4692,6 @@ msgid ""
 msgstr ""
 
 #: .\ZhighArmor.json
-msgid "kevlar face mask"
-msgid_plural "kevlar face masks"
-msgstr[0] ""
-msgstr[1] ""
-
-#. ~ Description for {'str': 'kevlar face mask'}
-#: .\ZhighArmor.json
-msgid ""
-"A simple piece of kevlar that straps over the mouth.  Provides a small "
-"amount of protection from low caliber bullets."
-msgstr ""
-
-#: .\ZhighArmor.json
 msgid "2-by-helmet"
 msgid_plural "2-by-helmets"
 msgstr[0] ""
@@ -5998,6 +5990,55 @@ msgid "deactivated chrono-implant"
 msgid_plural "deactivated chrono-implants"
 msgstr[0] ""
 msgstr[1] ""
+
+#: .\ZhighArmor.json
+msgid "aimframe"
+msgid_plural "aimframes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action msg for {'str': 'aimframe'}.
+#: .\ZhighArmor.json
+msgid "You activate your %s's night vision mode."
+msgstr ""
+
+#. ~ Description for {'str': 'aimframe'}
+#: .\ZhighArmor.json
+msgid ""
+"This device is a head-mounted, UPS-powered, augmented reality electronic "
+"tool used by tech enthusiasts before the Cataclysm struck, projecting a HUD "
+"onto a transparent screen that goes over your eye.  When turned on, it helps"
+" you to aim better."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "aimframe (aiming Mode)"
+msgid_plural "aimframes (aiming Mode)"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'aimframe (aiming Mode)', 'str_pl': 'aimframes
+#. (aiming Mode)'}
+#: .\ZhighArmor.json
+msgid ""
+"This device is a head-mounted, UPS-powered, augmented reality scanning tool "
+"used by tech enthusiasts before the Cataclysm struck, projecting a HUD onto "
+"a transparent screen that goes over your eye.  The night vision mode is "
+"currently on, draining power."
+msgstr ""
+
+#: .\ZhighArmor.json
+msgid "orange mushroom cap"
+msgid_plural "orange mushroom caps"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'orange mushroom cap'}
+#: .\ZhighArmor.json
+msgid ""
+"An orange mushroom cap.  It provides a little bit of warmth.  Perfect for "
+"monkeys demanding rice."
+msgstr ""
 
 #: .\ZhighBionics.json
 msgid "bionic knuckle"
@@ -11289,12 +11330,6 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: .\ZhighItemRemake.json
-msgid "pool ball"
-msgid_plural "pool balls"
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\ZhighItemRemake.json
 msgid "oars"
 msgid_plural "oars"
 msgstr[0] ""
@@ -12061,6 +12096,7 @@ msgstr[1] ""
 #. ~ Use action menu_text for {'str': 'sap grenade'}.
 #. ~ Use action menu_text for {'str': 'modified 40mm grenade'}.
 #. ~ Use action menu_text for {'str': 'GLI-F4', 'str_pl': 'GLI-F4s'}.
+#. ~ Use action menu_text for {'str': 'heal grenade'}.
 #: .\ZhighItems.json .\ZhighWeapons\ZhighThrowing.json
 msgid "Pull pin"
 msgstr ""
@@ -13133,6 +13169,33 @@ msgid "generic paper mask"
 msgid_plural "generic paper masks"
 msgstr[0] ""
 msgstr[1] ""
+
+#: .\ZhighMasks.json
+msgid "advanced gas mask"
+msgid_plural "advanced gas masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'advanced gas mask'}
+#: .\ZhighMasks.json
+msgid ""
+"A full gas mask that covers the face and eyes.  Provides excellent "
+"protection from smoke, teargas, and other contaminants.  It must be prepared"
+" before use."
+msgstr ""
+
+#: .\ZhighMasks.json
+msgid "kevlar face mask"
+msgid_plural "kevlar face masks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'kevlar face mask'}
+#: .\ZhighMasks.json
+msgid ""
+"A simple piece of kevlar that straps over the mouth.  Provides a small "
+"amount of protection from low caliber bullets."
+msgstr ""
 
 #: .\ZhighMasks.json
 msgid "dallas mask"
@@ -17288,6 +17351,26 @@ msgstr ""
 #. ~ Description for {'str': 'Hair style: short pigtails'}
 #: .\ZhighMutations.json
 msgid "Short pigtails, suitable for a teenager assassin."
+msgstr ""
+
+#: .\ZhighMutations.json
+msgid "Hair style: mullet"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair style: mullet'}
+#: .\ZhighMutations.json
+msgid ""
+"Mullet, for a guy with a swiss army knife, a cyberpunk moderator, or a guy "
+"wearing a cardboard box."
+msgstr ""
+
+#: .\ZhighMutations.json
+msgid "Hair style: high pigtails"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair style: high pigtails'}
+#: .\ZhighMutations.json
+msgid "High pigtails, just like those undead children."
 msgstr ""
 
 #: .\ZhighMutations.json
@@ -26038,6 +26121,154 @@ msgid ""
 "sleight-of-hand agility with deadly precision, you slice through infected "
 "soft tissue at range before finishing off survivors in a high-stakes duel of"
 " reflexes."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Crusher"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Crusher"
+msgstr ""
+
+#. ~ Profession (male Student - Crusher) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"You rely on raw muscle and brutal momentum to pulverize bone and armor alike"
+" in close-quarters chaos.  Wielding a mass-heavy blunt instrument, your "
+"swinging strikes crush infected skulls instantly, leaving behind nothing but"
+" broken corpses and cleared pathways."
+msgstr ""
+
+#. ~ Profession (female Student - Crusher) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"You rely on raw muscle and brutal momentum to pulverize bone and armor alike"
+" in close-quarters chaos.  Wielding a mass-heavy blunt instrument, your "
+"swinging strikes crush infected skulls instantly, leaving behind nothing but"
+" broken corpses and cleared pathways."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Marauder"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Marauder"
+msgstr ""
+
+#. ~ Profession (male Student - Marauder) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"You treat the apocalyptic breakdown not as a tragedy, but as an unrestricted"
+" raid for precious resources.  Armed with breaching tools and a close-range "
+"shotgun, you smash through barricaded doors and strip entire supply caches "
+"before rival scavengers can react."
+msgstr ""
+
+#. ~ Profession (female Student - Marauder) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"You treat the apocalyptic breakdown not as a tragedy, but as an unrestricted"
+" raid for precious resources.  Armed with breaching tools and a close-range "
+"shotgun, you smash through barricaded doors and strip entire supply caches "
+"before rival scavengers can react."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Tinkerer"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Tinkerer"
+msgstr ""
+
+#. ~ Profession (male Student - Tinkerer) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"You turn discarded electronics and broken machinery into clever survival "
+"gadgets inside abandoned science labs.  Armed with versatile multi-tools and"
+" soldering irons, you quickly repair damaged equipment and assemble custom "
+"electric devices to outsmart the infected horde."
+msgstr ""
+
+#. ~ Profession (female Student - Tinkerer) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"You turn discarded electronics and broken machinery into clever survival "
+"gadgets inside abandoned science labs.  Armed with versatile multi-tools and"
+" soldering irons, you quickly repair damaged equipment and assemble custom "
+"electric devices to outsmart the infected horde."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Nuker"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Nuker"
+msgstr ""
+
+#. ~ Profession (male Student - Nuker) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"You carry a miniaturized nuclear implant embedded within your body as a "
+"terrifying final line of defense.  Equipped with specialized detonators and "
+"heavy radiation shielding, you manipulate volatile energy cells to "
+"obliterate massive hordes when all other options fail."
+msgstr ""
+
+#. ~ Profession (female Student - Nuker) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"You carry a miniaturized nuclear implant embedded within your body as a "
+"terrifying final line of defense.  Equipped with specialized detonators and "
+"heavy radiation shielding, you manipulate volatile energy cells to "
+"obliterate massive hordes when all other options fail."
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_male"
+msgid "Student - Exorcist"
+msgstr ""
+
+#: .\ZhighProfession.json
+msgctxt "profession_female"
+msgid "Student - Exorcist"
+msgstr ""
+
+#. ~ Profession (male Student - Exorcist) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_male"
+msgid ""
+"You roam the wasteland as judge, jury, and executioner, hunting ghosts of "
+"past in the form of the undead and the corrupt alike.  With fire and steel, "
+"you purge what little remains unclean."
+msgstr ""
+
+#. ~ Profession (female Student - Exorcist) description
+#: .\ZhighProfession.json
+msgctxt "prof_desc_female"
+msgid ""
+"You roam the wasteland as judge, jury, and executioner, hunting ghosts of "
+"past in the form of the undead and the corrupt alike.  With fire and steel, "
+"you purge what little remains unclean."
 msgstr ""
 
 #: .\ZhighProfession.json
@@ -34868,6 +35099,12 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAkim.json
+msgid "akimbo institute pistol"
+msgid_plural "akimbo institute pistols"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighAkim.json
 msgid "akimbo UPS tazer"
 msgid_plural "akimbo UPS tazers"
 msgstr[0] ""
@@ -37920,6 +38157,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. ~ Use action sound_msg for active aerial bombardment signal flare.
+#. ~ Use action sound_msg for armed heal gas grenade.
 #. ~ Use action sound_msg for {'str': 'active high explosive grenade'}.
 #. ~ Use action sound_msg for {'str': 'active anti-tank grenade'}.
 #. ~ Use action sound_msg for {'str': 'active napalm grenade'}.
@@ -37932,8 +38170,9 @@ msgstr[1] ""
 #. flash bombs'}.
 #. ~ Use action sound_msg for {'str': 'active thermobaric grenade'}.
 #. ~ Use action sound_msg for {'str': 'active modified 40mm grenade'}.
-#. ~ Use action sound_msg for {'str': 'active stun grenade', 'str_pl': 'active
-#. stun grenades'}.
+#. ~ Use action sound_msg for {'str': 'active M104 NLBHG grenade', 'str_pl':
+#. 'active M104 NLBHG grenades'}.
+#. ~ Use action sound_msg for {'str': 'active heal grenade'}.
 #: .\ZhighWeapons\ZhighAmmo.json .\ZhighWeapons\ZhighThrowing.json
 msgid "Tick."
 msgstr ""
@@ -38428,8 +38667,33 @@ msgstr[1] ""
 msgid ""
 "A hand built rocket, consisting of several bombs welded onto a pipe that was"
 " filled with improvised rocket fuel.  Horribly inaccurate, as can be "
-"expected of this grade of weapon, but packs a fierce punch… if it does not "
-"hit."
+"expected of this grade of weapon, but packs a fierce punch… even if it does "
+"not hit."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "blackout homemade rocket"
+msgid_plural "blackout homemade rockets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'blackout homemade rocket'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ""
+"A hand built rocket, consisting of electronics welded onto a pipe that was "
+"filled with improvised rocket fuel.  Horribly inaccurate, as can be expected"
+" of this grade of weapon, but can shut those noisy turrets in one shot."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "pool ball"
+msgid_plural "pool balls"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'pool ball'}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "A colorful, hard ball.  Essentially a rock."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighArrows.json
@@ -38699,6 +38963,28 @@ msgid "sap arrow"
 msgid_plural "sap arrows"
 msgstr[0] ""
 msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighArrows.json
+msgid "superalloy broadhead arrow"
+msgid_plural "superalloy broadhead arrows"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'superalloy broadhead arrow'}
+#: .\ZhighWeapons\ZhighArrows.json
+msgid ""
+"A fletched superalloy arrow shaft with a bladed tip.  Useful for maximizing "
+"damage to the target.  Stands an extremely high chance of remaining intact "
+"once fired."
+msgstr ""
+
+#. ~ Description for {'str': 'scatter arrow'}
+#: .\ZhighWeapons\ZhighArrows.json
+msgid ""
+"A fletched wooden arrow shaft with a cluster of nails.  Useful for "
+"maximizing damage to multiple targets.  Stands no decent chance of remaining"
+" intact once fired."
+msgstr ""
 
 #: .\ZhighWeapons\ZhighArtifacts.json
 msgid "el verdugo"
@@ -48272,6 +48558,32 @@ msgid ""
 "tear their enemies apart with their bare hands."
 msgstr ""
 
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "superalloy machete"
+msgid_plural "superalloy machetes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'superalloy machete'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"This common gardening tool was recreated to improve its performance as a "
+"weapon."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighMelee.json
+msgid "circular saw hatchet"
+msgid_plural "circular saw hatchets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'circular saw hatchet'}
+#: .\ZhighWeapons\ZhighMelee.json
+msgid ""
+"A one-handed hatchet.  Makes a great melee weapon, and is useful for "
+"chopping things."
+msgstr ""
+
 #: .\ZhighWeapons\ZhighRanged.json
 msgid "marble gun"
 msgid_plural "marble guns"
@@ -52519,6 +52831,18 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighRanged.json
+msgid "institute rifle"
+msgid_plural "institute rifles"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "institute pistol"
+msgid_plural "institute pistols"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
 msgid "12-gauge peppergun"
 msgid_plural "12-gauge pepperguns"
 msgstr[0] ""
@@ -53350,6 +53674,18 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: .\ZhighWeapons\ZhighRanged.json
+msgid "power armor M202A1 FLASH"
+msgid_plural "power armor M202A1 FLASHs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "power armor flamethrower"
+msgid_plural "power armor flamethrowers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
 msgid "medusan carapace"
 msgid_plural "medusan carapaces"
 msgstr[0] ""
@@ -53364,6 +53700,166 @@ msgid ""
 "around, however if you need to 'hand over the goods' or look low profile "
 "while bodyguarding, this is your gun.  When the briefcase is open the MP5 "
 "may be reloaded or dismounted."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "nail magnum"
+msgid_plural "nail magnums"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Sedgley OSS .38"
+msgid_plural "Sedgley OSS .38s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"Was designed by Stanley M. Haight and used by you.  Could be used for "
+"reenacting world wars."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Crusher-410"
+msgid_plural "Crusher-410s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"The Crusher-410 is a semi-automatic shotgun designed on the Saiga-410 "
+"shotgun.  It reloads with a magazine, rather than one shell at a time like "
+"most shotguns, but fits in a holster and cannot fit larger mags."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "spear launcher"
+msgid_plural "spear launchers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"Somewhere between a bullet crossbow and a slingshot on steroids, this "
+"shoulder-mounted weapon uses a winch to keep several elastic bands under "
+"tension.  It fires fishspears with much more power and range than pebbles "
+"out of a normal speargun.  High strength will make it faster to reload."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Hawk MM-1"
+msgid_plural "Hawk MM-1"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"The Hawk MM-1 Multi-Grenade Launcher is designed to compensate for the "
+"drawback of single-shot grenade launchers by allowing sustained heavy "
+"firepower.  However, it is still slower to reload than the Milkor and must "
+"be used with careful planning."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "LawGiver(pistol mode)"
+msgid_plural "LawGiver(pistol mode)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"This Glock magazine using pistol is a versatile weapon, including various "
+"mods for various solutions."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "LawGiver(stun mode)"
+msgid_plural "LawGiver(stun mode)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"This Glock magazine using pistol is a versatile weapon, including various "
+"mods for various solutions.  This is now in stun mode, not that damaging but"
+" stings a lot."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "LawGiver(ricochet mode)"
+msgid_plural "LawGiver(ricochet mode)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"This Glock magazine using pistol is a versatile weapon, including various "
+"mods for various solutions.  This is now in ricochet mode, not that damaging"
+" but bounces around."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "LawGiver(incendiary mode)"
+msgid_plural "LawGiver(incendiary mode)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"This Glock magazine using pistol is a versatile weapon, including various "
+"mods for various solutions.  This is now in incendiary mode, not that "
+"damaging but burns things."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "LawGiver(grenade mode)"
+msgid_plural "LawGiver(grenade mode)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"This Glock magazine using pistol is a versatile weapon, including various "
+"mods for various solutions.  This is now in grenade mode, blowing things up."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "LawGiver(explosive mode)"
+msgid_plural "LawGiver(explosive mode)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"This Glock magazine using pistol is a versatile weapon, including various "
+"mods for various solutions.  This is now in explosive mode, blowing things "
+"up."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "LawGiver(EMP mode)"
+msgid_plural "LawGiver(EMP mode)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"This Glock magazine using pistol is a versatile weapon, including various "
+"mods for various solutions.  This is now in EMP mode, frying electric "
+"circuits."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "Marlin Camp Carbine"
+msgid_plural "Marlin Camp Carbines"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"As the name implies, it was designed as a utility firearm to be used around "
+"hunting camps for foraging or defense.  Uses 1911 magazines."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighSpells.json
@@ -53818,6 +54314,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. ~ Use action no_deactivate_msg for armed radioactive grenade.
+#. ~ Use action no_deactivate_msg for armed heal gas grenade.
 #. ~ Use action no_deactivate_msg for {'str': 'active flash bomb', 'str_pl':
 #. 'active flash bombs'}.
 #. ~ Use action no_deactivate_msg for {'str': 'active ninja bomb', 'str_pl':
@@ -53825,8 +54322,9 @@ msgstr[1] ""
 #. ~ Use action no_deactivate_msg for {'str': 'active sap grenade'}.
 #. ~ Use action no_deactivate_msg for {'str': 'active GLI-F4', 'str_pl':
 #. 'active GLI-F4s'}.
-#. ~ Use action no_deactivate_msg for {'str': 'active stun grenade', 'str_pl':
-#. 'active stun grenades'}.
+#. ~ Use action no_deactivate_msg for {'str': 'active M104 NLBHG grenade',
+#. 'str_pl': 'active M104 NLBHG grenades'}.
+#. ~ Use action no_deactivate_msg for {'str': 'active heal grenade'}.
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "You've already lit the fuse - get rid of it immediately!"
 msgstr ""
@@ -53952,6 +54450,7 @@ msgstr[1] ""
 #. ~ Use action msg for {'str': 'thermobaric grenade'}.
 #. ~ Use action msg for {'str': 'sap grenade'}.
 #. ~ Use action msg for {'str': 'modified 40mm grenade'}.
+#. ~ Use action msg for {'str': 'heal grenade'}.
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid "You pull the pin on the grenade."
 msgstr ""
@@ -54975,41 +55474,70 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighThrowing.json
-msgid "stun grenade"
-msgid_plural "stun grenades"
+msgid "M104 NLBHG grenade"
+msgid_plural "M104 NLBHG grenades"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Use action menu_text for {'str': 'stun grenade', 'str_pl': 'stun
+#. ~ Use action menu_text for {'str': 'M104 NLBHG grenade', 'str_pl': 'M104
+#. NLBHG grenades'}.
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "Activate M104 NLBHG grenade"
+msgstr ""
+
+#. ~ Use action msg for {'str': 'M104 NLBHG grenade', 'str_pl': 'M104 NLBHG
 #. grenades'}.
 #: .\ZhighWeapons\ZhighThrowing.json
-msgid "Activate stun grenade"
+msgid "You active the M104 NLBHG grenade on.  Throw it!"
 msgstr ""
 
-#. ~ Use action msg for {'str': 'stun grenade', 'str_pl': 'stun grenades'}.
-#: .\ZhighWeapons\ZhighThrowing.json
-msgid "You active the stun grenade on.  Throw it!"
-msgstr ""
-
-#. ~ Description for {'str': 'stun grenade', 'str_pl': 'stun grenades'}
-#: .\ZhighWeapons\ZhighThrowing.json
-msgid ""
-"A shockwave bomb which emits shockwaves for a short time.  This could blind "
-"your enemies and you for a short time, if you were inside the effected area."
-msgstr ""
-
-#: .\ZhighWeapons\ZhighThrowing.json
-msgid "active stun grenade"
-msgid_plural "active stun grenades"
-msgstr[0] ""
-msgstr[1] ""
-
-#. ~ Description for {'str': 'active stun grenade', 'str_pl': 'active stun
+#. ~ Description for {'str': 'M104 NLBHG grenade', 'str_pl': 'M104 NLBHG
 #. grenades'}
 #: .\ZhighWeapons\ZhighThrowing.json
 msgid ""
-"A shockwave bomb which emits shockwaves for a short time.  Throw it quickly "
+"A shockwave bomb which stuns enemies for a short time.  This could stun your"
+" enemies and you for a short time, if you were inside the effected area."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "active M104 NLBHG grenade"
+msgid_plural "active M104 NLBHG grenades"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'active M104 NLBHG grenade', 'str_pl': 'active
+#. M104 NLBHG grenades'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid ""
+"A shockwave bomb which stuns enemies for a short time.  Throw it quickly "
 "before it blows up."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "heal grenade"
+msgid_plural "heal grenades"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'heal grenade'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid ""
+"This is a military-grade 'healing' grenade.  Use this item to pull the pin "
+"and light the fuse.  You will then have a turn before it explodes; throwing "
+"it would be a good idea."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid "active heal grenade"
+msgid_plural "active heal grenades"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'active heal grenade'}
+#: .\ZhighWeapons\ZhighThrowing.json
+msgid ""
+"This is an active heal grenade, and will explode any second now.  Better "
+"throw it to give your friends buffs, or keep it for yourself to gain buffs."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighThrowing.json
