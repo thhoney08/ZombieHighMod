@@ -1,5 +1,15 @@
 [
   {
+    "id": "AMMO_DAZEEFFECT_ZHIGH",
+    "type": "ammo_effect",
+    "explosion": {
+      "damage": 0,
+      "radius": 1,
+      "fragment_effect": [ { "effect": "dazed", "odds": 2, "min_turns": 40, "max_turns": 80 } ],
+      "fragment": { "impact": { "damage_type": "bullet", "amount": 1, "armor_multiplier": 20 }, "range": 5 }
+    }
+  },
+  {
     "id": "ACID_TRAIL",
     "type": "ammo_effect",
     "trail": { "field_type": "fd_acid", "intensity_min": 1, "intensity_max": 3 }

@@ -1182,6 +1182,7 @@
     "copy-from": "fishspear",
     "name": { "str": "wooden fishing spear" },
     "damage": { "damage_type": "stab", "amount": 36, "armor_penetration": 8 },
+	"dispersion": 10,
     "range": 8
   },
   {
@@ -1190,6 +1191,7 @@
     "copy-from": "c_fishspear",
     "name": { "str": "carbon fiber fishing spear" },
     "damage": { "damage_type": "stab", "amount": 38, "armor_penetration": 16 },
+	"dispersion": 10,
     "range": 14
   },
   {
@@ -1198,6 +1200,7 @@
     "copy-from": "m_fishspear",
     "name": { "str": "metal fishing spear" },
     "damage": { "damage_type": "stab", "amount": 50, "armor_penetration": 16 },
+	"dispersion": 10,
     "range": 8
   },
   {
@@ -1260,7 +1263,7 @@
     "copy-from": "huge_crossbow",
     "type": "GUN",
     "name": { "str": "heavy crossbow" },
-    "ammo": [ "arrow", "bolt", "fishspear" ]
+    "ammo": [ "arrow", "bolt" ]
   },
   {
     "id": "surv_hand_cannon",
@@ -2120,7 +2123,7 @@
     "magazines": [ [ "BB", [ "BbClip_50" ] ] ],
     "clip_size": 250,
     "reload": 500,
-    "modes": [ [ "DEFAULT", "single", 1 ], [ "AUTO", "full auto", 8 ] ]
+    "modes": [ [ "DEFAULT", "single", 1 ], [ "AUTO", "full auto", 2 ] ]
   },
   {
     "id": "paintballgun",
@@ -3020,7 +3023,7 @@
     "type": "AMMO",
     "name": { "str": "scrap shotcanister" },
     "copy-from": "shotcanister_scrap",
-    "shot": { "count": 9, "half_angle": 25 },
+    "shot": { "count": 18, "half_angle": 20 },
     "count": 20
   },
   {
@@ -3028,7 +3031,7 @@
     "type": "AMMO",
     "name": { "str": "pebble shotcanister" },
     "copy-from": "shotcanister_pebble",
-    "shot": { "count": 9, "half_angle": 25 },
+    "shot": { "count": 18, "half_angle": 20 },
     "count": 20
   },
   {
@@ -3036,7 +3039,7 @@
     "type": "AMMO",
     "name": { "str": "flechette shotcanister" },
     "copy-from": "shotcanister_flechette",
-    "shot": { "count": 15, "half_angle": 15 },
+    "shot": { "count": 30, "half_angle": 10 },
     "count": 20
   },
   {
@@ -3056,7 +3059,7 @@
     "ammo_type": "shotcanister",
     "looks_like": "shotcanister_flechette",
     "range": 12,
-    "damage": { "damage_type": "bullet", "amount": 16, "armor_penetration": 2, "armor_multiplier": 2 },
+    "damage": { "damage_type": "bullet", "amount": 32, "armor_penetration": 2, "armor_multiplier": 2 },
     "dispersion": 100,
     "loudness": 0,
     "count": 20
@@ -4032,15 +4035,6 @@
     "initial_charges": 20,
     "max_charges": 20,
     "flags": [ "WRITE_MESSAGE", "NO_UNLOAD", "NO_PAINT", "BELT_CLIP" ]
-  },
-  {
-	"id": "pool_ball",
-    "type": "AMMO",
-    "copy-from": "pool_ball",
-    "name": { "str": "pool ball" },
-    "damage": [ { "damage_type": "bash", "amount": 20 } ],
-    "ammo_type": "rock",
-    "bashing": 10
   },
   {
 	"id": "hand_paddles",

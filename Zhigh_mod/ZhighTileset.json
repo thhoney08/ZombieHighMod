@@ -3266,7 +3266,74 @@
             "additional_tiles": [ { "id": "broken", "fg": 227 } ]
           },
           { "id": "overlay_worn_powerArmorSten", "fg": 228 },
-          { "id": "overlay_wielded_powerArmorSten", "fg": 228 }
+          { "id": "overlay_wielded_powerArmorSten", "fg": 228 },
+          { "id": "overlay_worn_mask_gasAdvZhigh", "fg": 229 },
+          { "id": "overlay_wielded_nailmagnumZhigh", "fg": 230 },
+          { "id": "eglmZhigh", "fg": 232 },
+          { "id": "stunNadeZhigh", "fg": 235 },
+          { "id": "overlay_wielded_stunNadeZhigh", "fg": 236 },
+          { "id": "stunNadeZhigh_act", "fg": 237 },
+          { "id": "overlay_wielded_stunNadeZhigh_act", "fg": 238 },
+          { "id": "overlay_wielded_machete_superalloyZhigh", "fg": 239 },
+          { "id": "aimFrameZhigh", "fg": 240 },
+          { "id": "overlay_worn_aimFrameZhigh", "fg": 241 },
+          { "id": "overlay_wielded_aimFrameZhigh", "fg": 241 },
+          { "id": "cluster_rocketZhigh", "fg": 242 },
+          { "id": "overlay_wielded_cluster_rocketZhigh", "fg": 242 },
+          { "id": "blkout_rocketZhigh", "fg": 243 },
+          { "id": "overlay_wielded_blkout_rocketZhigh", "fg": 243 },
+          { "id": "overlay_worn_powerArmorM202_flash", "fg": 244 },
+          { "id": "overlay_worn_powerArmorFlamethrower", "fg": 245 },
+          { "id": "crusher_410Zhigh", "fg": 246 },
+          { "id": "overlay_wielded_crusher_410Zhigh", "fg": 247 },
+          { "id": "lawGiverZhigh01", "fg": 248 },
+          { "id": "overlay_wielded_lawGiverZhigh01", "fg": 249 },
+          { "id": "oss38Zhigh", "fg": 251 },
+          { "id": "overlay_worn_oss38Zhigh", "fg": 252 },
+          { "id": "overlay_wielded_oss38Zhigh", "fg": 252 },
+          { "id": "fishspear_cannonZigh", "fg": 253 },
+          { "id": "overlay_wielded_fishspear_cannonZigh", "fg": 254 },
+          { "id": "hat_SsalSoongZhigh", "fg": 255 }
+        ],
+        "//": "range 1 to 128",
+        "sprite_width": 32,
+        "sprite_height": 32,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": 0
+      }
+    ]
+  },
+  {
+    "type": "mod_tileset",
+    "compatibility": [
+      "Chibi_Ultica",
+      "UltimateCataclysm",
+      "MshockXottoplus",
+      "UNDEAD_PEOPLE",
+      "UNDEAD_PEOPLE_BASE",
+      "UNDEAD_PEOPLE_LEGACY",
+      "UlticaShell",
+      "MshockXottoplus12",
+      "MSX++DEAD_PEOPLE",
+      "MXplus12_for_cosmetics",
+      "MSXotto+"
+    ],
+    "tiles-new": [
+      {
+        "file": "Zhigh_items12.png",
+        "tiles": [
+          { "id": "circSawAxeZhigh", "fg": 1 },
+          { "id": "overlay_wielded_circSawAxeZhigh", "fg": 2 },
+          { "id": "laspistolToy2Zhigh", "fg": 3 },
+          { "id": "overlay_wielded_laspistolToy2Zhigh", "fg": 4 },
+          { "id": "lasgunToy2Zhigh", "fg": 5 },
+          { "id": "overlay_wielded_lasgunToy2Zhigh", "fg": 6 },
+          { "id": "arrow_superalloyZhigh", "fg": 7 },
+          { "id": "overlay_wielded_arrow_superalloyZhigh", "fg": 7 },
+          { "id": "mm1Zhigh", "fg": 9 },
+          { "id": "overlay_wielded_mm1Zhigh", "fg": 10 },
+          { "id": "arrow_scatterZhigh", "fg": 11 },
+          { "id": "overlay_wielded_arrow_scatterZhigh", "fg": 11 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,
@@ -3442,7 +3509,9 @@
           { "id": "pistol_blunderbussAkim", "fg": 148 },
           { "id": "overlay_wielded_pistol_blunderbussAkim", "fg": 149 },
           { "id": "colt6520ZhighAkim", "fg": 150 },
-          { "id": "overlay_wielded_colt6520ZhighAkim", "fg": 151 }
+          { "id": "overlay_wielded_colt6520ZhighAkim", "fg": 151 },
+          { "id": "laspistolToy2ZhighAkim", "fg": 152 },
+          { "id": "overlay_wielded_laspistolToy2ZhighAkim", "fg": 153 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,
@@ -4154,7 +4223,9 @@
           { "id": "overlay_male_mutation_hairColorless_boxer", "fg": 126 },
           { "id": "overlay_female_mutation_hairColorless_boxer", "fg": 126 },
           { "id": "overlay_male_mutation_hair_nagisaAssClass", "fg": 127 },
-          { "id": "overlay_female_mutation_hair_nagisaAssClass", "fg": 127 }
+          { "id": "overlay_female_mutation_hair_nagisaAssClass", "fg": 127 },
+          { "id": "overlay_male_mutation_hair_mulletZhigh", "fg": 128 },
+          { "id": "overlay_female_mutation_hair_mulletZhigh", "fg": 128 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,
@@ -4328,7 +4399,10 @@
           { "id": "overlay_worn_tophatZhighV2", "fg": 101 },
           { "id": "overlay_worn_helmet_steel", "fg": 102 },
           { "id": "overlay_worn_tac_fullhelmet", "fg": 103 },
-          { "id": "overlay_worn_gradCapZhigh", "fg": 104 }
+          { "id": "overlay_worn_gradCapZhigh", "fg": 104 },
+          { "id": "overlay_male_mutation_hair_pigtailHighZhigh", "fg": 106 },
+          { "id": "overlay_female_mutation_hair_pigtailHighZhigh", "fg": 106 },
+          { "id": "overlay_worn_hat_SsalSoongZhigh", "fg": 107 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,
@@ -4647,7 +4721,22 @@
           { "id": "overlay_wielded_blunderbuss", "fg": 235 },
           { "id": "onyx_eye", "fg": 236 },
           { "id": "overlay_wielded_onyx_eye", "fg": 237 },
-          { "id": "overlay_worn_vest_leather_mod", "fg": 238 }
+          { "id": "overlay_worn_vest_leather_mod", "fg": 238 },
+          { "id": "overlay_wielded_skorpion_61", "fg": 239 },
+          { "id": "overlay_wielded_skorpion_82", "fg": 239 },
+          { "id": "shotcanister_bearing", "fg": 240 },
+          { "id": "overlay_wielded_shotcanister_bearing", "fg": 240 },
+          { "id": "shotcanister_flechette", "fg": 241 },
+          { "id": "overlay_wielded_shotcanister_flechette", "fg": 241 },
+          { "id": "shotcanister_pebble", "fg": 242 },
+          { "id": "overlay_wielded_shotcanister_pebble", "fg": 242 },
+          { "id": "shotcanister_scrap", "fg": 243 },
+          { "id": "overlay_wielded_shotcanister_scrap", "fg": 243 },
+          { "id": "flotation_vest_sandbag", "fg": 244 },
+          { "id": "overlay_wielded_flotation_vest_sandbag", "fg": 245 },
+          { "id": "overlay_worn_flotation_vest_sandbag", "fg": 245 },
+          { "id": "pneumatic_shotgun", "fg": 246 },
+          { "id": "overlay_wielded_pneumatic_shotgun", "fg": 247 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 32,

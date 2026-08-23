@@ -1,6 +1,20 @@
 [
   {
     "type": "item_group",
+    "id": "on_hand_40x46mm",
+    "//": "a collection of ammo that would be found with a loaded gun.",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "40x46mm_m433", "prob": 75, "charges": [ 5, 10 ] },
+      { "item": "40x46mm_m576", "prob": 10, "charges": [ 5, 10 ] },
+      { "item": "40x46mm_antiFungi", "prob": 10, "charges": [ 5, 10 ] },
+      { "item": "40x46mm_m583Zhigh", "prob": 10, "charges": [ 5, 10 ] },
+      { "item": "40x46mm_acidZhigh", "prob": 10, "charges": [ 5, 10 ] },
+      { "item": "40x46mm_m651", "prob": 15, "charges": [ 5, 10 ] }
+    ]
+  },
+  {
+    "type": "item_group",
     "id": "mutagens",
     "items": [
       [ "mutagen", 8 ],
@@ -1041,6 +1055,7 @@
       { "item": "lemat_revolver_flintlock", "prob": 20 },
       { "item": "blunderlock", "prob": 20 },
       { "item": "flint_nock", "prob": 10 },
+      { "item": "oss38Zhigh", "prob": 5 },
       { "item": "revolverValoisZhigh", "prob": 5 },
       { "item": "pistolFlintlockSaberZhigh", "prob": 5 },
       { "item": "spear_flintlockZhigh", "prob": 5 },
@@ -1722,6 +1737,7 @@
       { "group": "nested_colt9mmZhigh", "prob": 10 },
       { "group": "nested_vek32Zhigh", "prob": 15 },
       { "group": "nested_DeerslayerZhigh", "prob": 15 },
+      { "group": "nested_CampCarbineZhigh", "prob": 15 },
       { "group": "nested_aBoltZhigh", "prob": 15 },
       { "group": "nested_cmmg46Zhigh", "prob": 15 },
       { "group": "nested_cmmg57Zhigh", "prob": 15 }
@@ -1743,6 +1759,7 @@
       { "group": "everyday_colt9mmZhigh", "prob": 10 },
       { "group": "everyday_vek32Zhigh", "prob": 15 },
       { "group": "everyday_DeerslayerZhigh", "prob": 15 },
+      { "group": "everyday_CampCarbineZhigh", "prob": 15 },
       { "group": "everyday_aBoltZhigh", "prob": 15 },
       { "group": "everyday_cmmg46Zhigh", "prob": 15 },
       { "group": "everyday_cmmg57Zhigh", "prob": 15 }
@@ -2436,6 +2453,7 @@
       [ "respirator", 60 ],
       [ "mask_dust", 60 ],
       [ "mask_gas", 40 ],
+      [ "mask_gasAdvZhigh", 5 ],
       [ "mask_filter", 20 ],
       [ "goggles_ir", 5 ],
       [ "goggles_nv", 5 ]
@@ -2449,6 +2467,7 @@
         { "collection": [ 
             { "item": "glasses_safety" }, 
             { "item": "mask_filter" } ], "prob": 40 }, 
+        [ "mask_gasAdvZhigh", 5 ], 
         [ "mask_gas", 60 ], 
         [ "respirator", 90 ] 
     ]
@@ -2642,6 +2661,7 @@
       { "group": "nested_m4a1", "prob": 35 },
       { "group": "nested_as50", "prob": 5 },
       { "group": "nested_USAS_12", "prob": 1 },
+      { "group": "everyday_mm1Zhigh", "prob": 10 },
       { "group": "nested_pkdBlaster", "prob": 10 },
       { "group": "nested_hk417_13", "prob": 30 }
     ]
@@ -2660,6 +2680,7 @@
       { "group": "everyday_m4a1", "prob": 35 },
       { "group": "everyday_as50", "prob": 5 },
       { "group": "everyday_USAS_12", "prob": 1 },
+      { "group": "everyday_mm1Zhigh", "prob": 10 },
       { "group": "everyday_pkdBlaster", "prob": 10 },
       { "group": "everyday_hk417_13", "prob": 30 }
     ]
@@ -2674,6 +2695,7 @@
       { "group": "everyday_paintballG_MP7", "prob": 10 },
       { "group": "everyday_paintballAr15", "prob": 10 },
       { "group": "nested_pkdBlaster", "prob": 10 },
+      { "group": "everyday_mm1Zhigh", "prob": 10 },
       [ "40x46mm_m433", 10 ],
       [ "40x46mm_m651", 20 ],
       [ "40x46mm_m583Zhigh", 20 ],
@@ -2700,6 +2722,7 @@
       [ "mask_bal", 20 ],
       [ "mask_menpo_kevlar", 20 ],
       [ "mask_gas", 20 ],
+      [ "mask_gasAdvZhigh", 2 ],
       [ "modularvest", 30 ],
       [ "smokebomb", 10 ],
       [ "dingDongBreach", 10 ],
@@ -3492,6 +3515,7 @@
       [ "jitte_weapon", 7 ],
       [ "kujangZhigh", 3 ],
       [ "khandaZhigh", 3 ],
+      [ "machete_superalloyZhigh", 3 ],
       [ "knuckles_carbonZhigh", 2 ]
     ]
   },
@@ -3807,6 +3831,7 @@
       { "item": "modularvestceramic", "prob": 34 },
       { "item": "kevlar_plate", "prob": 10 },
       { "item": "mask_gas", "prob": 10 },
+      { "item": "mask_gasAdvZhigh", "prob": 2 },
       { "item": "helmet_sovTank", "prob": 10 },
       { "item": "helmet_army", "prob": 40 },
       { "item": "helmet_liner", "prob": 10 },

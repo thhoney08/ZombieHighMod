@@ -7036,29 +7036,6 @@
     "flags": [ "WATERPROOF", "OUTER", "OVERSIZE" ]
   },
   {
-    "id": "mask_mouthKevlar",
-    "repairs_like": "tshirt",
-    "type": "ARMOR",
-    "name": { "str": "kevlar face mask" },
-    "description": "A simple piece of kevlar that straps over the mouth.  Provides a small amount of protection from low caliber bullets.",
-    "weight": "268 g",
-    "volume": "100 ml",
-    "price": "8 USD",
-    "price_postapoc": "10 cent",
-    "to_hit": -3,
-    "material": [ "kevlar_rigid", "plastic" ],
-    "symbol": "[",
-    "looks_like": "scarf",
-    "color": "dark_gray",
-    "covers": [ "mouth" ],
-    "coverage": 100,
-    "encumbrance": 10,
-    "warmth": 10,
-    "material_thickness": 4,
-    "environmental_protection": 1,
-    "valid_mods": [ "resized_large" ]
-  },
-  {
     "id": "helmet_2byZhigh",
     "type": "ARMOR",
     "name": { "str": "2-by-helmet" },
@@ -8614,8 +8591,8 @@
     "type": "TOOL_ARMOR",
     "name": "chrono-implant",
     "charges_per_use": 0,
-    "max_charges": 3000,
-    "initial_charges": 2000,
+    "max_charges": 30000,
+    "initial_charges": 30000,
     "relic_data": {
       "passive_effects": [
         {
@@ -8640,7 +8617,7 @@
         {
           "type": "field",
           "interval": "1 s",
-          "rate": 10,
+          "rate": 20,
           "field": "fd_gibs_invertebrate",
           "int_min": 1,
           "int_max": 22,
@@ -8649,7 +8626,7 @@
         {
           "type": "field",
           "interval": "1 s",
-          "rate": 10,
+          "rate": 20,
           "field": "fd_gibs_insect",
           "int_min": 1,
           "int_max": 22,
@@ -8658,7 +8635,7 @@
         {
           "type": "field",
           "interval": "1 s",
-          "rate": 10,
+          "rate": 20,
           "field": "fd_sludge",
           "int_min": 1,
           "int_max": 22,
@@ -8667,7 +8644,7 @@
         {
           "type": "field",
           "interval": "1 s",
-          "rate": 10,
+          "rate": 20,
           "field": "fd_blood_invertebrate",
           "int_min": 1,
           "int_max": 22,
@@ -8676,7 +8653,7 @@
         {
           "type": "field",
           "interval": "1 s",
-          "rate": 10,
+          "rate": 20,
           "field": "fd_blood_insect",
           "int_min": 1,
           "int_max": 22,
@@ -8685,7 +8662,7 @@
         {
           "type": "field",
           "interval": "1 s",
-          "rate": 10,
+          "rate": 20,
           "field": "fd_blood_veggy",
           "int_min": 1,
           "int_max": 22,
@@ -8694,7 +8671,7 @@
         {
           "type": "field",
           "interval": "1 s",
-          "rate": 10,
+          "rate": 20,
           "field": "fd_slime",
           "int_min": 1,
           "int_max": 22,
@@ -8703,7 +8680,7 @@
         {
           "type": "field",
           "interval": "1 s",
-          "rate": 10,
+          "rate": 20,
           "field": "fd_gibs_veggy",
           "int_min": 1,
           "int_max": 22,
@@ -8712,7 +8689,7 @@
         {
           "type": "field",
           "interval": "1 s",
-          "rate": 10,
+          "rate": 20,
           "field": "fd_gibs_flesh",
           "int_min": 1,
           "int_max": 22,
@@ -8721,7 +8698,7 @@
         {
           "type": "field",
           "interval": "1 s",
-          "rate": 10,
+          "rate": 20,
           "field": "fd_bile",
           "int_min": 1,
           "int_max": 22,
@@ -8730,7 +8707,7 @@
         {
           "type": "field",
           "interval": "1 s",
-          "rate": 10,
+          "rate": 20,
           "field": "fd_blood",
           "int_min": 1,
           "int_max": 22,
@@ -8765,5 +8742,105 @@
         }
       ]
     }
+  },
+  {
+    "type": "TOOL_ARMOR",
+    "category": "clothing",
+    "id": "aimFrameZhigh",
+    "name": { "str": "aimframe" },
+    "volume": "500 ml",
+    "description": "This device is a head-mounted, UPS-powered, augmented reality electronic tool used by tech enthusiasts before the Cataclysm struck, projecting a HUD onto a transparent screen that goes over your eye.  When turned on, it helps you to aim better.",
+    "weight": "112 g",
+    "to_hit": -1,
+    "color": "light_gray",
+    "covers": [ "eyes" ],
+    "price": "60 USD",
+    "price_postapoc": "1 USD",
+    "material": [ "plastic" ],
+    "flags": [
+      "WATER_FRIENDLY",
+      "SKINTIGHT",
+      "COMPACT",
+      "ALLOWS_NATURAL_ATTACKS",
+      "OVERSIZE",
+      "THERMOMETER",
+      "BAROMETER",
+      "HYGROMETER",
+      "WINDMETER",
+      "ZOOM",
+      "POWERARMOR_COMPATIBLE",
+      "RECHARGE",
+      "NO_UNLOAD",
+      "NO_RELOAD"
+    ],
+    "coverage": 50,
+    "symbol": "[",
+    "ammo": "battery",
+    "charges_per_use": 1,
+    "max_charges": 200,
+    "use_action": [
+      "WEATHER_TOOL",
+      { "type": "gps_device", "radius": 40, "additional_charges_per_tile": 0.1 },
+      {
+        "type": "transform",
+        "msg": "You activate your %s's night vision mode.",
+        "target": "aimFrameZhigh_aimMod_on",
+        "active": true,
+        "transform_charges": 1,
+        "need_charges": 1,
+        "need_charges_msg": "The %s's batteries are dead."
+      },
+      "TOGGLE_UPS_CHARGING"
+    ]
+  },
+  {
+    "id": "aimFrameZhigh_aimMod_on",
+    "copy-from": "aimFrameZhigh",
+    "repairs_like": "aimFrameZhigh",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "aimframe (aiming Mode)", "str_pl": "aimframes (aiming Mode)" },
+    "description": "This device is a head-mounted, UPS-powered, augmented reality scanning tool used by tech enthusiasts before the Cataclysm struck, projecting a HUD onto a transparent screen that goes over your eye.  The night vision mode is currently on, draining power.",
+    "power_draw": 375,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "conditions": [ "WORN" ],
+          "values": [
+            { "value": "PERCEPTION", "add": 2 },
+            { "value": "RANGED_DISPERSION", "add": -20 },
+            { "value": "RANGED_DAMAGE_BULLET", "add": 3 },
+            { "value": "RANGED_RANGE", "multiply": 0.5 },
+            { "value": "RANGED_RECOIL", "multiply": -0.5 },
+            { "value": "RANGED_RELOAD_TIME", "multiply": -0.1 },
+            { "value": "RANGED_AIM_SPEED", "multiply": 0.1 }
+          ]
+        }
+      ]
+    },
+    "revert_to": "aimFrameZhigh",
+    "use_action": { "type": "transform", "menu_text": "Turn off", "msg": "Your %s deactivates.", "target": "aimFrameZhigh" }
+  },
+  {
+    "id": "hat_SsalSoongZhigh",
+    "repairs_like": "balclava",
+    "type": "ARMOR",
+    "name": { "str": "orange mushroom cap" },
+    "description": "An orange mushroom cap.  It provides a little bit of warmth.  Perfect for monkeys demanding rice.",
+    "weight": "88 g",
+    "volume": "500 ml",
+    "price": "25 USD",
+    "price_postapoc": "50 cent",
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "looks_like": "hat_cotton",
+    "color": "dark_gray",
+    "covers": [ "head" ],
+    "coverage": 50,
+    "encumbrance": 10,
+    "warmth": 5,
+    "material_thickness": 1,
+    "environmental_protection": 2,
+    "valid_mods": [ "resized_large", "resized_small" ],
+    "flags": [ "SUN_GLASSES", "ALLOWS_NATURAL_ATTACKS", "ALLOWS_HORNS", "OVERSIZE" ]
   }
 ]

@@ -3624,6 +3624,66 @@
     ]
   },
   {
+    "id": "everyday_crusher_410Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "crusher_410Zhigh", "ammo-group": "on_hand_410shot", "charges": [ 0, 10 ] },
+      { "group": "nested_saiga_410_mag", "charges-min": 0, "prob": 80 },
+      { "group": "nested_saiga_410_mag", "charges-min": 0, "prob": 50 },
+      { "group": "on_hand_410shot", "prob": 25, "charges": [ 10, 20 ], "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "nested_crusher_410Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "crusher_410Zhigh", "ammo-group": "on_hand_410shot", "charges": [ 0, 10 ] },
+      { "group": "nested_saiga_410_mag" },
+      { "group": "nested_saiga_410_mag", "prob": 50 },
+      { "group": "on_hand_410shot" }
+    ]
+  },
+  {
+    "id": "everyday_mm1Zhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "mm1Zhigh", "ammo-item": "40x46mm_m433", "charges": [ 0, 12 ] },
+      { "item": "40x46mm_m433", "charges": [ 10, 30 ] }
+    ]
+  },
+  {
+    "id": "everyday_CampCarbineZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "CampCarbineZhigh", "ammo-group": "on_hand_45", "charges": [ 0, 7 ] },
+      { "group": "nested_m1911_mag", "charges-min": 0, "prob": 80 },
+      { "group": "nested_m1911_mag", "charges-min": 0, "prob": 50 },
+      { "group": "on_hand_45", "prob": 25, "charges": [ 10, 20 ], "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "nested_CampCarbineZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "CampCarbineZhigh", "ammo-group": "on_hand_45", "charges": [ 0, 7 ] },
+      { "group": "nested_m1911_mag" },
+      { "group": "nested_m1911_mag", "prob": 50 },
+      { "group": "on_hand_45" }
+    ]
+  },
+  {
     "type": "item_group",
     "subtype": "collection",
     "id": "bandolier_rifle_47",
@@ -3802,6 +3862,7 @@
     "type": "item_group",
     "subtype": "distribution",
     "entries": [
+      { "item": "spray_can", "prob": 10, "count": [ 1, 2 ] },
       { "item": "ZhighCoin", "prob": 80, "count": [ 5, 10 ] },
       { "item": "box_medium", "prob": 80, "count": [ 1, 3 ] },
       { "group": "ZhighUniformGroups", "prob": 90, "count": [ 2, 6 ] },
