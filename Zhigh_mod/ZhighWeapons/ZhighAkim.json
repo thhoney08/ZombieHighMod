@@ -3412,6 +3412,40 @@
     "components": [ [ [ "ashot_700nxZhigh", 2 ] ] ]
   },
   {
+    "id": "shotgun_paperPistolZhighAkim",
+    "copy-from": "shotgun_paperPistolZhigh",
+    "looks_like": "pistol_flintlockAkim",
+    "weapon_category": [ "PISTOLS", "AKIMBOZHIGH", "1SHOT" ],
+    "type": "GUN",
+    "name": { "str": "akimbo 20ga muzzleloading pistol" },
+    "description": "A percussion cap fired shotgun, most likely a modern reproduction.  Favored over flintlocks for modern day blackpowder hunting, this one is chambered in .62 caliber or 20 gauge.  Now comes in two.",
+    "clip_size": 2,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "skill": "akimbo_Zhigh",
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "grip", 2 ],
+      [ "stock", 2 ],
+      [ "mechanism", 8 ],
+      [ "sights", 2 ],
+      [ "rail", 2 ],
+      [ "underbarrel", 2 ]
+    ],
+    "extend": { "flags": [ "ALWAYS_TWOHAND" ] },
+    "proportional": { "weight": 2.0, "volume": 2.0, "price": 2.0, "price_postapoc": 2.0, "dispersion": 2.0 }
+  },
+  {
+    "type": "recipe",
+    "result": "shotgun_paperPistolZhighAkim",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "time": "2 s",
+    "reversible": true,
+    "autolearn": true,
+    "flags": [ "BLIND_EASY" ],
+    "components": [ [ [ "shotgun_paperPistolZhigh", 2 ] ] ]
+  },
+  {
     "id": "kp3atAkim",
 	"//": "Akimbo pistol [handguns with magazines] starts here.",
     "copy-from": "kp3at",

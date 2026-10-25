@@ -28,7 +28,7 @@
     "bonus_per": { "rng": [ 4, 7 ] },
     "worn_override": "NC_October_worn",
     "carry_override": "NC_October_misc",
-    "weapon_override": "NC_October_weapon2",
+    "weapon_override": "NC_October_weapon",
     "skills": [
       { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
       { "skill": "melee", "bonus": { "rng": [ 2, 4 ] } },
@@ -58,31 +58,27 @@
     "type": "trait_group",
     "id": "Appearance_October",
     "subtype": "collection",
-    "traits": [ { "trait": "hair_october_white", "prob": 100 }, 
-                { "trait": "eye_indigo", "prob": 100 }, 
-                { "trait": "SKIN_PINK", "prob": 100 } ]
+    "traits": [
+	  { "trait": "hair_october_white", "prob": 100 }, 
+	  { "trait": "eye_indigo", "prob": 100 }, 
+	  { "trait": "SKIN_PINK", "prob": 100 }
+	]
   },
   {
     "type": "item_group",
     "id": "NC_October_weapon",
     "subtype": "distribution",
-    "entries": [ { "item": "marble_pump_gun", "ammo-item": "paintball_exp", "charges": 18, "contents-item": [ "knife_combat", "charm_spike", "charm_heat", "charm_electric" ] } ]
-  },
-  {
-    "type": "item_group",
-    "id": "NC_October_weapon2",
-    "subtype": "distribution",
-    "entries": [ { "item": "axe_combat" } ]
+    "entries": [ { "item": "bbmachinepistol", "ammo-item": "bb", "charges": 300 } ]
   },
   {
     "type": "item_group",
     "subtype": "collection",
     "id": "NC_October_misc",
     "items": [
-      { "item": "paintball_exp" },
-      { "item": "paintball_exp" },
+      { "item": "BBclip300", "ammo-item": "bb", "charges": 300 },
+      { "item": "BBclip300", "ammo-item": "bb", "charges": 300 },
       { "group": "ZhighNpc_misc" },
-      { "item": "bearing", "count-min": 20, "count-max": 50, "prob": 100 }
+      { "item": "bb", "count-min": 1, "count-max": 2, "prob": 10 }
     ]
   },
   {

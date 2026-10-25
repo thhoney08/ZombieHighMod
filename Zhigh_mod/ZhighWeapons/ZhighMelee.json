@@ -6896,5 +6896,52 @@
     "to_hit": 1,
     "flags": [ "FRAGILE_MELEE", "BELT_CLIP", "NONCONDUCTIVE", "SHEATH_AXE" ],
     "qualities": [ [ "AXE", 2 ], [ "CUT", 1 ], [ "BUTCHER", 16 ] ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "jade_pillowZhigh",
+    "copy-from": "pillow",
+    "looks_like": "adobe_brick",
+    "name": { "str": "jade pillow" },
+    "description": "A pillow to rest your head on when sleeping.  This one is made entirely of hard rock, but feels pretty good!",
+    "bashing": 30,
+    "to_hit": -1,
+    "material": [ "stone" ],
+    "thrown_damage": [ { "damage_type": "bash", "amount": 90 } ],
+    "qualities": [ [ "HAMMER", 1 ], [ "SANDING", 1 ], [ "SLEEP_AID", 4 ] ]
+  },
+  {
+    "id": "pool_cue_carbon",
+    "type": "GENERIC",
+    "copy-from": "pool_cue",
+    "name": { "str": "carbon fiber pool cue" },
+    "description": "A custom 3D-printed pool cue made out of carbon fiber.  Truly, the coolest of sports.  It is more lightweight than a normal pool cue thanks to its method of manufacturing, but it can only be repaired using a 3D printer.",
+    "material": [ "carbon_fiber" ],
+    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2, "bashing": 1.5 }
+  },
+  {
+    "id": "glassbottle_shiv",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [ "KNIVES" ],
+    "symbol": ",",
+    "color": "light_cyan",
+    "name": { "str": "glass bottle shiv" },
+    "description": "A glass bottle with jagged edge on the bottom.",
+    "material": [ "glass" ],
+    "weight": "200 g",
+    "volume": "700 ml",
+    "price_postapoc": "10 cent",
+    "cutting": 15,
+    "flags": [ "STAB", "CONDUCTIVE", "FRAGILE_MELEE" ]
+  },
+  {
+	"id": "grip_hookModZhigh",
+    "type": "GENERIC",
+    "copy-from": "grip_hook",
+    "name": { "str": "grip claw" },
+    "cutting": 9,
+    "to_hit": 1,
+    "flags": [ "DURABLE_MELEE", "BELT_CLIP", "STAB", "UNARMED_WEAPON" ]
   }
 ]

@@ -182,13 +182,13 @@
     },
     "responses": [
       {
-        "text": "[2 first aid kit, 30m] I need you to patch me up.  Here's some first aid kits.",
+        "text": "[2 compact first aid kit, 30m] I need you to patch me up.  Here's some first aid kits.",
         "topic": "TALK_ZHIGH_MEDIC_AID_DONE",
         "condition": { "u_has_items": { "item": "1st_aid", "count": 2 } },
         "effect": [ { "u_sell_item": "1st_aid", "count": 2 }, "give_aid" ]
       },
       {
-        "text": "[6 first aid kit, 1h] I need you to patch up me and my companions.  Here's some first aid kits.",
+        "text": "[6 compact first aid kit, 1h] I need you to patch up me and my companions.  Here's some first aid kits.",
         "topic": "TALK_ZHIGH_MEDIC_AID_DONE",
         "condition": { "u_has_items": { "item": "1st_aid", "count": 6 } },
         "effect": [ { "u_sell_item": "1st_aid", "count": 6 }, "give_all_aid" ]

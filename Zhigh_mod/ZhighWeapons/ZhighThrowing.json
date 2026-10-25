@@ -761,7 +761,7 @@
     "bashing": 2,
     "cutting": 4,
     "to_hit": -1,
-    "thrown_damage": [ { "damage_type": "cut", "amount": 36 } ],
+    "thrown_damage": [ { "damage_type": "cut", "amount": 26 } ],
     "flags": [ "HURT_WHEN_WIELDED" ]
   },
   {
@@ -878,12 +878,12 @@
   {
     "id": "boomerangZhigh",
     "looks_like": "throwing_stick",
-    "type": "AMMO",
+    "type": "GENERIC",
     "category": "weapons",
     "weapon_category": [ "BATONS" ],
-    "name": { "str": "combat booemrang" },
-    "description": "A slender long rod of wood with a little curve, while traditionally intended as a weapon used by Aboriginal Australians.  Not the toy variant of the family, so don't expect it to return to your hand.",
-    "weight": "400 g",
+    "name": { "str": "combat boomerang" },
+    "description": "A slender long rod of wood with a little curve, intended to return to the thrower's hand.",
+    "weight": "150 g",
     "to_hit": 3,
     "price_postapoc": "50 cent",
     "color": "brown",
@@ -894,9 +894,12 @@
     "bashing": 9,
     "price": "10 USD",
     "flags": [ "NOGIB" ],
-    "ammo_type": "thrown",
-    "effects": [ "BOUNCE" ],
-    "thrown_damage": [ { "damage_type": "bash", "amount": 40 } ]
+    "thrown_damage": [
+      {
+        "damage_type": "bash",
+        "amount": 40
+      }
+    ]
   },
   {
     "id": "grenade_web",
@@ -1080,6 +1083,7 @@
     "volume": "150 ml",
     "bashing": 1,
     "material": "aluminum",
+    "loudness": 0,
     "flags": [ "FRAGILE_MELEE", "GRENADE", "NOGIB", "NPC_THROWN", "BELT_CLIP" ],
     "thrown_damage": [ { "damage_type": "bash", "amount": 30 } ]
   },
@@ -2046,6 +2050,7 @@
   },
   {
     "id": "healGrenadeZhigh",
+    "looks_like": "1st_aid_deluxe",
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "heal grenade" },
@@ -2071,6 +2076,7 @@
   },
   {
     "id": "healGrenadeZhigh_act",
+    "looks_like": "1st_aid_deluxe",
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "active heal grenade" },
@@ -2105,6 +2111,228 @@
 	  }
     },
     "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
+    "id": "paintNadeZhigh",
+    "looks_like": "flashbang",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "paintball cluster grenade", "str_pl": "paintball cluster grenades" },
+    "description": "This homemade explosive device is crafted from toy parts and filled with a cluster of pressurized paintballs.  Upon detonation, it bursts into a dense cloud of sticky paint, temporarily blinding nearby enemies and revealing hidden targets.",
+    "weight": "250 g",
+    "volume": "250 ml",
+    "price": "1 USD",
+    "price_postapoc": "1 USD",
+    "to_hit": 2,
+    "bashing": 6,
+    "material": [ "steel", "plastic" ],
+    "symbol": "*",
+    "color": "green",
+    "use_action": {
+      "target": "paintNadeZhigh_act",
+      "msg": "You active the paintball cluster grenade on.  Throw it!",
+      "target_charges": 2,
+      "active": true,
+      "menu_text": "Activate paintball cluster grenade",
+      "type": "transform"
+    },
+    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "paintNadeZhigh_act",
+    "looks_like": "flashbang_act",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "active paintball cluster grenade", "str_pl": "active paintball cluster grenades" },
+    "description": "This homemade explosive device is crafted from toy parts and filled with a cluster of pressurized paintballs.  Throw it quickly before it blows up.",
+    "weight": "250 g",
+    "volume": "250 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "to_hit": 2,
+    "bashing": 8,
+    "material": [ "steel", "plastic" ],
+    "symbol": "*",
+    "color": "green",
+    "initial_charges": 2,
+    "max_charges": 2,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_blood_invertebrate",
+      "fields_radius": 5,
+      "fields_min_intensity": 5,
+      "fields_max_intensity": 5,
+      "sound_volume": "64 dB",
+      "sound_msg": "Tick.",
+      "no_deactivate_msg": "You've already lit the fuse - get rid of it immediately!",
+      "explosion": {
+		"damage": 1,
+		"fragment_effect": [ { "effect": "boomered", "odds": 1, "min_turns": 20, "max_turns": 80 } ],
+		"fragment": { "impact": { "damage_type": "bullet", "amount": 1, "armor_multiplier": 18 }, "range": 5 }
+	  }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
+    "id": "grenade_fuelBottle",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "improvised fuel bottle" },
+    "description": "This is a hand made fuel bottle.  Use this item to pull the pin and light the fuse.  You will then have five turns before it explodes into a pool of fuel; throwing it would be a fueld idea.",
+    "weight": "250 g",
+    "volume": "250 ml",
+    "price": "1 USD",
+    "price_postapoc": "1 USD",
+    "to_hit": -2,
+    "bashing": 1,
+    "material": [ "steel", "plastic" ],
+    "symbol": "*",
+    "color": "green",
+    "use_action": {
+      "target": "grenade_fuelBottle_act",
+      "msg": "You pull the pin on the grenade.",
+      "target_charges": 5,
+      "active": true,
+      "menu_text": "Pull pin",
+      "type": "transform"
+    },
+    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "grenade_fuelBottle_act",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "active improvised fuel bottle" },
+    "description": "This is an active improvised fuel bottle, likely to burst into a pool of fuel any second now.  Better throw it!",
+    "weight": "250 g",
+    "volume": "250 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "to_hit": -2,
+    "bashing": 1,
+    "material": [ "steel", "plastic" ],
+    "symbol": "*",
+    "color": "green",
+    "initial_charges": 5,
+    "max_charges": 5,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_fuel",
+      "fields_radius": 4,
+      "fields_min_intensity": 3,
+      "fields_max_intensity": 3,
+      "sound_volume": "14 dB",
+      "sound_msg": "Tick.",
+      "no_deactivate_msg": "You've already pulled the %s's pin; try throwing it instead.",
+      "explosion": { "damage": 1 }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
+    "id": "grenade_fuelStickyBottle",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "improvised sticky fuel bottle" },
+    "description": "This is a hand made sticky fuel bottle.  Use this item to pull the pin and light the fuse.  You will then have five turns before it explodes into a pool of sticky fuel; throwing it would be a sticky fueld idea.",
+    "weight": "250 g",
+    "volume": "250 ml",
+    "price": "1 USD",
+    "price_postapoc": "1 USD",
+    "to_hit": -2,
+    "bashing": 1,
+    "material": [ "steel", "plastic" ],
+    "symbol": "*",
+    "color": "green",
+    "use_action": {
+      "target": "grenade_fuelStickyBottle_act",
+      "msg": "You pull the pin on the grenade.",
+      "target_charges": 5,
+      "active": true,
+      "menu_text": "Pull pin",
+      "type": "transform"
+    },
+    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "grenade_fuelStickyBottle_act",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "active improvised sticky fuel bottle" },
+    "description": "This is an active improvised sticky fuel bottle, likely to burst into a pool of sticky fuel any second now.  Better throw it!",
+    "weight": "250 g",
+    "volume": "250 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "to_hit": -2,
+    "bashing": 1,
+    "material": [ "steel", "plastic" ],
+    "symbol": "*",
+    "color": "green",
+    "initial_charges": 5,
+    "max_charges": 5,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_sticky_fuel",
+      "fields_radius": 4,
+      "fields_min_intensity": 3,
+      "fields_max_intensity": 3,
+      "sound_volume": "14 dB",
+      "sound_msg": "Tick.",
+      "no_deactivate_msg": "You've already pulled the %s's pin; try throwing it instead.",
+      "explosion": { "damage": 1 }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
+  },
+  {
+    "id": "powderChargeZhigh",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "powder charge" },
+    "description": "This is a tin can filled with some explosives provided with a fuse.  Won't make a big explosion but you still wouldn't want to be near it.  Will explode in 5 seconds if lit.",
+    "weight": "90 g",
+    "volume": "250 ml",
+    "price": "25 USD",
+    "price_postapoc": "250 cent",
+    "to_hit": -2,
+    "material": [ "steel", "plastic" ],
+    "symbol": "*",
+    "color": "red",
+    "explode_in_fire": true,
+    "explosion": { "damage": 150, "radius": 1 },
+    "use_action": {
+      "target": "powderChargeZhigh_act",
+      "msg": "You light the fuse on the powder charge.  Throw it before it blows in your face!",
+      "target_charges": 5,
+      "active": true,
+      "need_fire": 1,
+      "menu_text": "Light fuse",
+      "type": "transform"
+    },
+    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "NO_REPAIR", "GRENADE" ]
+  },
+  {
+    "id": "powderChargeZhigh_act",
+    "copy-from": "powderChargeZhigh",
+    "type": "TOOL",
+    "name": { "str": "active powder charge" },
+    "description": "This is a tin can filled with some explosives and provided with a fuse.  Won't make a big explosion but you still wouldn't want to be near it.  The fuse has been lit, you should throw it.",
+    "price": "0 cent",
+    "initial_charges": 5,
+    "max_charges": 5,
+    "turns_per_charge": 1,
+    "explode_in_fire": true,
+    "explosion": { "damage": 150, "radius": 1 },
+    "use_action": {
+      "type": "explosion",
+      "no_deactivate_msg": "You've already lit the fuse - what are you waiting for?",
+      "sound_volume": "20 dB",
+      "sound_msg": "ssss...",
+      "explosion": { "damage": 150, "radius": 1 }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR" ]
   },
   {
     "type": "AMMO",
@@ -2202,10 +2430,21 @@
   {
     "type": "AMMO",
     "id": "sling_acidbomb",
-    "copy-from": "sling_grenade",
     "looks_like": "acidbomb",
+    "symbol": "*",
+    "color": "light_gray",
     "name": { "str": "shootable acid bomb" },
     "description": "A acid bomb modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "material": [ "steel", "plastic" ],
+    "ammo_type": "rock",
+    "weight": "400 g",
+    "volume": "250 ml",
+    "bashing": 5,
+    "damage": { "damage_type": "bash", "amount": 5 },
+    "range": 70,
+    "dispersion": 14,
+    "loudness": 0,
+    "to_hit": -1,
     "effects": [ "NOGIB", "ACIDBOMB", "NEVER_MISFIRES" ]
   },
   {
@@ -2325,6 +2564,7 @@
     "description": "An improvised rubber ball, which makes you to throw this (using a staff sling) at a longer range.",
     "damage": { "damage_type": "bash", "amount": 8 },
     "dont_recover_one_in": 40,
+    "material": "leather",
     "effects": [ "BOUNCE", "BEANBAG", "NEVER_MISFIRES" ]
   },
   {
@@ -2452,5 +2692,50 @@
     "name": { "str": "shootable stun grenade" },
     "description": "A stun grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
     "drop": "stunNadeZhigh_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_healGrenadeZhigh",
+    "copy-from": "sling_grenade",
+    "looks_like": "healGrenadeZhigh",
+    "name": { "str": "shootable heal grenade" },
+    "description": "A heal grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "healGrenadeZhigh_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_paintNadeZhigh",
+    "copy-from": "sling_grenade",
+    "looks_like": "paintNadeZhigh",
+    "name": { "str": "shootable paintball cluster grenade" },
+    "description": "A paintball cluster grenade modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "paintNadeZhigh_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_grenade_fuelBottle",
+    "copy-from": "sling_grenade",
+    "looks_like": "grenade_fuelBottle",
+    "name": { "str": "shootable improvised fuel bottle" },
+    "description": "An improvised fuel bottle modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "grenade_fuelBottle_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_grenade_fuelStickyBottle",
+    "copy-from": "sling_grenade",
+    "looks_like": "grenade_fuelStickyBottle",
+    "name": { "str": "shootable improvised sticky fuel bottle" },
+    "description": "An improvised sticky fuel bottle modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "grenade_fuelStickyBottle_act"
+  },
+  {
+    "type": "AMMO",
+    "id": "sling_powderChargeZhigh",
+    "copy-from": "sling_grenade",
+    "looks_like": "powderChargeZhigh",
+    "name": { "str": "shootable powder charge" },
+    "description": "A powder charge modified with some steel scraps, which makes you to throw this (using a staff sling) at a longer range.",
+    "drop": "powderChargeZhigh_act"
   }
 ]

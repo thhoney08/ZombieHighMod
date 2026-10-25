@@ -1874,14 +1874,40 @@
     "material": [ "plastic", "aluminum" ],
     "symbol": ";",
     "charges_per_use": 1,
-    "max_charges": 6,
-    "initial_charges": 6,
+    "max_charges": 9,
+    "initial_charges": 9,
     "relic_data":
 	{
 		"charges_per_activation": 1,
-		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "80 s", "rate": 1 } ]
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "20 s", "rate": 1 } ]
     },
     "color": "light_gray"
+  },
+  {
+    "id": "stimKitZhigh",
+	"looks_like": "rx11_stimpack",
+    "type": "TOOL_ARMOR",
+    "category": "clothing",
+    "name": "syrettes kit",
+    "description": "This is a portable syrettes kit.  You could use it to make stimultants.",
+    "weight": "212 g",
+    "volume": "750 ml",
+    "price": "10 USD",
+    "price_postapoc": "5 USD",
+    "to_hit": -2,
+    "bashing": 8,
+    "material": [ "plastic", "aluminum" ],
+    "symbol": ";",
+    "charges_per_use": 1,
+    "max_charges": 10,
+    "initial_charges": 10,
+    "relic_data":
+	{
+		"charges_per_activation": 1,
+		"recharge_scheme": [ { "type": "time", "req": "none", "interval": "30 s", "rate": 1 } ]
+    },
+    "color": "light_gray",
+    "material_thickness": 3
   },
   {
     "id": "fireballZhigh",
@@ -2035,5 +2061,205 @@
     "initial_charges": 20,
     "flags": [ "VARSIZE", "SUPER_FANCY", "SUN_GLASSES", "EFFECT_FEATHER_FALL" ],
     "relic_data": { "charges_per_activation": 1, "recharge_scheme": [ { "type": "time", "req": "none", "interval": "2 m", "rate": 1 } ] }
+  },
+  {
+    "id": "butcherNailZhigh1",
+    "type": "TOOL_ARMOR",
+    "name": "chrono-implant",
+    "description": ".",
+    "weight": "500 g",
+    "volume": "0 ml",
+    "price": "250 kUSD",
+    "price_postapoc": "250 USD",
+    "to_hit": -3,
+    "material": [ "plastic", "steel" ],
+    "symbol": "[",
+    "color": "light_green",
+    "coverage": 0,
+    "encumbrance": 0,
+    "warmth": 0,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "STRENGTH", "add": -2 },
+            { "value": "DEXTERITY", "add": -2 },
+            { "value": "INTELLIGENCE", "add": -2 },
+            { "value": "PERCEPTION", "add": -2 }
+          ]
+        }
+      ]
+    },
+    "material_thickness": 10,
+    "environmental_protection": 0,
+    "use_action": {
+      "target": "butcherNailZhigh2",
+      "msg": "You pull the activating lever, making chrono-implant alive.",
+      "target_charges": 2000,
+	  "active": true,
+      "menu_text": "Activate",
+      "type": "transform"
+    },
+    "flags": [ "ONLY_ONE", "TRADER_AVOID", "BELTED", "NO_TAKEOFF" ]
+  },
+  {
+    "id": "butcherNailZhigh2",
+    "copy-from": "butcherNailZhigh1",
+    "type": "TOOL_ARMOR",
+    "name": "chrono-implant",
+    "charges_per_use": 0,
+    "max_charges": 30000,
+    "initial_charges": 30000,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+		  "mutations": [ "CRAFTY", "WAKEFUL3", "BRAWLER", "PSYCHOPATH", "KILLER" ],
+          "values": [
+            { "value": "STRENGTH", "add": 4 },
+            { "value": "DEXTERITY", "add": 4 },
+            { "value": "INTELLIGENCE", "add": 4 },
+            { "value": "PERCEPTION", "add": 4 }
+          ],
+		  "ench_effects": [
+		  	{ "effect": "cureall", "intensity": 3 },
+		  	{ "effect": "adrenaline666", "intensity": 3 }
+		  ]
+        },
+        { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "STAMINA_CAP", "multiply": 99.2 } ] },
+        { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "STAMINA_REGEN", "multiply": 99.2 } ] }
+      ],
+      "recharge_scheme": [
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 20,
+          "field": "fd_gibs_invertebrate",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your chrono-implant charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 20,
+          "field": "fd_gibs_insect",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your chrono-implant charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 20,
+          "field": "fd_sludge",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your chrono-implant charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 20,
+          "field": "fd_blood_invertebrate",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your chrono-implant charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 20,
+          "field": "fd_blood_insect",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your chrono-implant charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 20,
+          "field": "fd_blood_veggy",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your chrono-implant charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 20,
+          "field": "fd_slime",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your chrono-implant charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 20,
+          "field": "fd_gibs_veggy",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your chrono-implant charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 20,
+          "field": "fd_gibs_flesh",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your chrono-implant charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 20,
+          "field": "fd_bile",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your chrono-implant charges up!"
+        },
+        {
+          "type": "field",
+          "interval": "1 s",
+          "rate": 20,
+          "field": "fd_blood",
+          "int_min": 1,
+          "int_max": 22,
+          "message": "Your chrono-implant charges up!"
+        }
+      ]
+    },
+    "use_action": [ ],
+	"turns_per_charge": 10000,
+	"revert_to": "butcherNailZhigh3"
+  },
+  {
+    "id": "butcherNailZhigh3",
+    "copy-from": "butcherNailZhigh1",
+    "type": "TOOL_ARMOR",
+    "name": "deactivated chrono-implant",
+    "charges_per_use": 0,
+    "max_charges": 3000,
+    "initial_charges": 3000,
+    "use_action": [ ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "STRENGTH", "add": -2 },
+            { "value": "DEXTERITY", "add": -2 },
+            { "value": "INTELLIGENCE", "add": -2 },
+            { "value": "PERCEPTION", "add": -2 }
+          ]
+        }
+      ]
+    }
   }
 ]

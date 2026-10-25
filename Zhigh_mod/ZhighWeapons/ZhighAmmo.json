@@ -197,11 +197,11 @@
     "weight": "200 g",
     "volume": "250 ml",
     "bashing": 5,
-    "damage": { "damage_type": "bash", "amount": 8, "armor_penetration": 1 },
+    "damage": { "damage_type": "bash", "amount": 6, "armor_penetration": 1 },
     "dispersion": 14,
     "loudness": 0,
     "to_hit": -1,
-    "shot": { "count": 15, "half_angle": 15 },
+    "shot": { "count": 25, "half_angle": 10 },
     "effects": [ "NEVER_MISFIRES", "NON_FOULING" ]
   },
   {
@@ -979,7 +979,7 @@
     "description": "A tiny bb-sized ammo, which kinda acts like a flamethrower when shot.  The short range makes it a useless weapon, but could blind some when hit.",
     "dispersion": 0,
     "damage": { "damage_type": "heat", "amount": 6 },
-    "shot": { "count": 6, "half_angle": 15 },
+    "shot": { "count": 6, "half_angle": 5 },
     "extend": { "effects": [ "SHOT", "BLINDS_EYES", "NOGIB" ] }
   },
   {
@@ -1030,23 +1030,27 @@
   {
     "type": "AMMO",
     "id": "bearingBig",
-    "price": "1 USD",
-    "price_postapoc": "250 cent",
+    "symbol": "*",
+    "color": "light_gray",
     "name": { "str_sp": "big bearings" },
-    "symbol": "=",
-    "color": "dark_gray",
-    "looks_like": "rock",
     "description": "A big ball bearing, useful as ammunition for slings.",
+    "category": "rocks",
     "material": "steel",
-    "weight": "267 g",
-    "volume": "250 ml",
     "ammo_type": "rock",
+    "flags": [ "TRADER_AVOID" ],
+    "weight": "500 g",
+    "volume": "250 ml",
+    "bashing": 7,
     "damage": { "damage_type": "bash", "amount": 19, "armor_penetration": 8 },
     "range": 14,
     "dispersion": 14,
     "loudness": 0,
-    "qualities": [ [ "HAMMER", 1 ] ],
-    "dont_recover_one_in": 1500,
+    "speed": 20,
+    "to_hit": -1,
+    "qualities": [ [ "HAMMER", 1 ], [ "SANDING", 1 ] ],
+    "dont_recover_one_in": 150,
+    "price": "1 USD",
+    "price_postapoc": "250 cent",
     "effects": [ "NEVER_MISFIRES", "NON_FOULING" ]
   },
   {
@@ -1481,7 +1485,7 @@
     "material": [ "plastic", "powder" ],
     "color": "green",
     "symbol": ";",
-	"copy-from": "smokebomb",
+	"copy-from": "grenade",
 	"name": "aerial bombardment flare",
     "flags": [ "ACT_ON_RANGED_HIT" ],
 	"description": "This flare is unique, and when activated, sends some signal to bring some firepower.",
@@ -1495,8 +1499,8 @@
 	"copy-from": "bombard_flare",
 	"name": "active aerial bombardment signal flare",
 	"description": "This unique flare currently is activated, thus sending some signal to bring some firepower.",
-    "initial_charges": 20,
-    "max_charges": 20,
+    "initial_charges": 10,
+    "max_charges": 10,
     "turns_per_charge": 1,
     "use_action": {
       "type": "explosion",
@@ -1549,8 +1553,10 @@
     "recoil": 1,
     "loudness": 1,
     "drop": "bombard_flare_act",
+    "drop_action": { "target": "bombard_flare_act", "target_charges": 10, "active": true, "type": "transform" },
     "speed": 200,
-    "effects": [ "NEVER_MISFIRES", "NO_EMBED", "SPOTLIGHTZHIGH" ]
+    "effects": [ "NEVER_MISFIRES", "NO_EMBED", "SPOTLIGHTZHIGH" ],
+    "flags": [ "ACT_ON_RANGED_HIT", "ALLOWS_REMOTE_USE" ]
   },
   {
     "type": "AMMO",
@@ -2249,7 +2255,8 @@
     "damage": { "damage_type": "heat", "amount": 10 },
     "drop": "handflareHeavyZhigh_lit",
     "loudness": 80,
-    "extend": { "effects": [ "NO_EMBED", "NO_PENETRATE_OBSTACLES", "DAZZLEAOEFLAREZHIGH" ] }
+    "extend": { "effects": [ "NO_EMBED", "NO_PENETRATE_OBSTACLES" ] },
+    "shot": { "count": 3, "half_angle": 15 }
   },
   {
     "id": "40x46mm_acidZhigh",
@@ -2260,8 +2267,37 @@
     "price_postapoc": "3 USD",
     "weight": "85 g",
     "damage": { "damage_type": "acid", "amount": 15, "armor_penetration": 10 },
+    "shot": { "count": 3, "half_angle": 15 },
     "loudness": 65,
-    "extend": { "effects": [ "ACID_TRAIL", "ACIDBIG" ] }
+    "extend": { "effects": [ "ACID_TRAIL", "ACIDBIG", "NO_PENETRATE_OBSTACLES" ] }
+  },
+  {
+    "id": "40x46mm_dragon",
+    "copy-from": "40x46mm_grenade",
+    "type": "AMMO",
+    "name": { "str": "improvised 40x46mm drakestream" },
+    "description": "An improvised 40x46mm magnesium pellets or shards, assembled from a reconditioned spent casing and handloaded components.",
+    "weight": "120 g",
+    "damage": { "damage_type": "heat", "amount": 46 },
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 35, "length": 28 } ],
+    "extend": { "effects": [ "INCENDIARY", "STREAM", "NOGIB", "NO_PENETRATE_OBSTACLES" ] },
+    "proportional": { "recoil": 1.2 },
+    "casing": "40x46mm_casing"
+  },
+  {
+    "id": "40x46mm_bounce",
+    "copy-from": "40x46mm_grenade",
+    "type": "AMMO",
+    "name": { "str": "40x46mm M397 LV" },
+    "description": "A \"LV,\" a. k. a. low velocity bouncing 40x46mm round with a rubber projectile intended to hit several targets.  May still injure or kill.",
+    "price_postapoc": "1 USD",
+    "weight": "68 g",
+    "damage": { "damage_type": "bash", "amount": 30, "armor_penetration": 10 },
+    "casing": "40x46mm_casing",
+    "loudness": 70,
+    "speed": 60,
+    "extend": { "effects": [ "BOUNCE", "BEANBAG" ] }
   },
   {
     "type": "AMMO",
@@ -2305,7 +2341,7 @@
     "loudness": 60,
     "speed": 250,
     "effects": [ "COOKOFF", "EMP", "SMOKE", "BLINDS_EYES" ],
-    "shot": { "count": 16, "half_angle": 5 }
+    "shot": { "count": 16, "half_angle": 35 }
   },
   {
     "type": "AMMO",
@@ -2314,15 +2350,47 @@
     "color": "blue",
     "name": { "str": "pool ball" },
     "description": "A colorful, hard ball.  Essentially a rock.",
-    "category": "other",
     "price": "30 USD",
     "price_postapoc": "0 cent",
     "material": "stone",
     "weight": "170 g",
     "volume": "250 ml",
     "to_hit": -3,
+    "loudness": 0,
     "damage": [ { "damage_type": "bash", "amount": 20 } ],
     "ammo_type": "rock",
     "bashing": 10
+  },
+  {
+    "type": "AMMO",
+    "id": "baseball",
+    "symbol": "*",
+    "color": "blue",
+    "name": { "str": "baseball" },
+    "description": "A baseball, good for throwing at enemies.  Getting hit with one of these hurts a lot more than you might think.",
+    "price": "30 USD",
+    "price_postapoc": "0 cent",
+    "material": "leather",
+    "weight": "170 g",
+    "volume": "250 ml",
+    "to_hit": -3,
+    "damage": [ { "damage_type": "bash", "amount": 10 } ],
+    "bashing": 10,
+    "loudness": 0,
+    "dont_recover_one_in": 120,
+    "ammo_type": "rock",
+    "effects": [ "BOUNCE", "NEVER_MISFIRES" ]
+  },
+  {
+    "id": "40x46mm_m100Zhigh",
+    "copy-from": "40x46mm_grenade",
+    "type": "AMMO",
+    "name": { "str": "40x46mm M100 GREM" },
+    "description": "A low velocity 40x46mm GREM grenade.  It can be used for door breaching, or against enemies.",
+    "weight": "230 g",
+    "damage": { "damage_type": "bullet", "amount": 125, "armor_penetration": 30 },
+    "casing": "40x46mm_casing",
+    "loudness": 120,
+    "extend": { "effects": [ "AMMO_M100_SIMON_ZHIGH", "NO_PENETRATE_OBSTACLES" ] }
   }
 ]

@@ -442,7 +442,14 @@
     "vision_day": 50,
     "vision_night": 4,
     "harvest": "zombie",
-    "special_attacks": [ [ "SMASH", 20 ] ],
+    "special_attacks": [
+      [ "GRAB", 10 ],
+      { "id": "scratch" },
+      { "type": "bite", "cooldown": 10 },
+      [ "SMASH", 20 ],
+      { "id": "hulk_lift_and_smash" },
+      { "id": "hulk_wide_swing" }
+    ],
     "death_drops": "mon_zombie_hulk_death_drops",
     "death_function": [ "NORMAL" ],
     "fungalize_into": "mon_zombie_fungus",
