@@ -1823,6 +1823,76 @@
   },
   {
     "type": "recipe",
+    "result": "sling_healGrenadeZhigh",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "time": "5 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+      [ [ "healGrenadeZhigh", 1 ] ],
+      [ [ "paper", 1 ], [ "splinter", 1 ], [ "scrap", 1 ], [ "razor_blade", 1 ], [ "glass_shard", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "sling_paintNadeZhigh",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "time": "5 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+      [ [ "paintNadeZhigh", 1 ] ],
+      [ [ "paper", 1 ], [ "splinter", 1 ], [ "scrap", 1 ], [ "razor_blade", 1 ], [ "glass_shard", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "sling_grenade_fuelBottle",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "time": "5 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+      [ [ "grenade_fuelBottle", 1 ] ],
+      [ [ "paper", 1 ], [ "splinter", 1 ], [ "scrap", 1 ], [ "razor_blade", 1 ], [ "glass_shard", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "sling_grenade_fuelStickyBottle",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "time": "5 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+      [ [ "grenade_fuelStickyBottle", 1 ] ],
+      [ [ "paper", 1 ], [ "splinter", 1 ], [ "scrap", 1 ], [ "razor_blade", 1 ], [ "glass_shard", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "sling_powderChargeZhigh",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "time": "5 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+      [ [ "powderChargeZhigh", 1 ] ],
+      [ [ "paper", 1 ], [ "splinter", 1 ], [ "scrap", 1 ], [ "razor_blade", 1 ], [ "glass_shard", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
     "result": "rock_molotov",
     "id_suffix": "from_molotov",
     "category": "CC_AMMO",
@@ -4303,6 +4373,21 @@
   },
   {
     "result": "stim_pack1",
+    "id_suffix": "using_stimKitZhigh",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "skills_required": [ [ "firstaid", 1 ], [ "computer", 1 ] ],
+    "time": "45 m",
+    "autolearn": true,
+    "batch_time_factors": [ 60, 5 ],
+    "reversible": false,
+    "tools": [ [ [ "stimKitZhigh", 1 ] ] ]
+  },
+  {
+    "result": "stim_pack1",
     "id_suffix": "using_medkitRecharge",
     "type": "recipe",
     "category": "CC_OTHER",
@@ -5268,7 +5353,27 @@
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_RANGED",
     "skill_used": "mechanics",
-    "difficulty": 2,
+    "difficulty": 3,
+    "time": "1 h 30 m",
+    "autolearn": true,
+    "using": [ [ "welding_standard", 10 ] ],
+    "qualities": [ { "id": "SAW_M_FINE", "level": 1 }, { "id": "SCREW_FINE", "level": 1 }, { "id": "WRENCH_FINE", "level": 1 } ],
+    "components": [
+      [ [ "hand_pump", 1 ] ],
+      [ [ "pipe", 3 ] ],
+      [ [ "duct_tape", 100 ], [ "superglue", 1 ] ],
+      [ [ "2x4", 1 ], [ "stick", 1 ] ],
+      [ [ "metal_tank_little", 1 ] ],
+      [ [ "steel_chunk", 1 ], [ "scrap", 3 ] ]
+    ]
+  },
+  {
+    "result": "airbow2",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "mechanics",
+    "difficulty": 3,
     "time": "1 h 30 m",
     "autolearn": true,
     "using": [ [ "welding_standard", 10 ] ],
@@ -15618,8 +15723,20 @@
 	]
   },
   {
+    "result": "ZhighArrow_superalloy",
     "type": "recipe",
-    "result": "arrow_scatterZhigh",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": "30 m",
+    "autolearn": true,
+    "using": [ [ "blacksmithing_standard", 1 ] ],
+    "components": [ [ [ "alloy_sheet", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "ZhighArrow_scatter",
     "category": "CC_AMMO",
     "subcategory": "CSC_AMMO_ARROWS",
     "skill_used": "fabrication",
@@ -15633,5 +15750,266 @@
 	  [ [ "arrow_fire_hardened_fletched", 1 ] ],
       [ [ "nail", 10 ], [ "combatnail", 10 ] ]
 	]
+  },
+  {
+    "type": "recipe",
+    "result": "ZhighArrow_impact",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "skills_required": [ "survival", 2 ],
+    "difficulty": 1,
+    "time": "15 m",
+    "autolearn": true,
+    "book_learn": [ [ "recipe_arrows", 1 ], [ "book_archery", 1 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+	  [ [ "arrow_fire_hardened_fletched", 1 ] ],
+      [ [ "fakeFlashBangZhigh", 1 ], [ "flashbang", 1 ], [ "stunNadeZhigh", 1 ] ]
+	]
+  },
+  {
+    "result": "40x46mm_dragon",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_LAUNCHER",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "skills_required": [ "launcher", 2 ],
+    "time": "5 m",
+    "batch_time_factors": [ 60, 5 ],
+    "book_learn": [ [ "recipe_bullets", 3 ], [ "manual_shotgun", 3 ], [ "textbook_launcher", 3 ] ],
+    "charges": 1,
+    "reversible": true,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "CASING_PRESSING", "level": 2 } ],
+    "components": [
+      [ [ "paper", 1 ], [ "wax", 1 ] ],
+      [ [ "magnesium", 50 ] ],
+      [ [ "gunpowder", 30 ] ],
+      [ [ "40x46mm_casing", 1 ] ],
+      [ [ "smpistol_primer", 1 ], [ "lgpistol_primer", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "paintNadeZhigh",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "fabrication",
+    "time": "3 m",
+    "autolearn": true,
+    "components": [
+      [ [ "paper", 1 ], [ "wax", 1 ] ],
+      [ [ "paintball", 30 ] ],
+      [
+	    [ "tool_rocket_candy", 1 ],
+		[ "firecracker", 1 ],
+		[ "chem_rocket_fuel", 5 ]
+	  ],
+      [
+        [ "fabric_standard", 1, "LIST" ],
+        [ "fabric_hides_any", 1, "LIST" ],
+        [ "duct_tape", 2 ],
+        [ "medical_tape", 4 ],
+        [ "cordage", 1, "LIST" ]
+      ],
+      [ [ "smpistol_primer", 1 ], [ "lgpistol_primer", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "vtol_thruster",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_VEHICLE",
+    "book_learn": [ [ "book_icef", 8 ], [ "textbook_mechanics", 8 ] ],
+    "skills_required": [ [ "fabrication", 7 ] ],
+    "skill_used": "mechanics",
+    "difficulty": 8,
+    "time": "12 h",
+    "reversible": true,
+    "decomp_learn": 8,
+    "using": [ [ "welding_standard", 20 ], [ "adhesive", 5 ] ],
+    "components": [
+      [ [ "amplifier", 2 ] ],
+      [ [ "power_supply", 2 ] ],
+      [ [ "pipe", 6 ] ],
+      [ [ "processor", 2 ] ],
+      [ [ "motor_small", 4 ] ],
+      [ [ "small_turbine_engine", 1 ] ],
+      [ [ "e_scrap", 10 ] ],
+      [ [ "cable", 150 ] ],
+      [ [ "frame", 3 ] ],
+      [ [ "alloy_sheet", 8 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "hover_repulsor",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_VEHICLE",
+    "book_learn": [ [ "recipe_lab_elec", 7 ] ],
+    "skills_required": [ [ "fabrication", 8 ], [ "electronics", 8 ] ],
+    "skill_used": "mechanics",
+    "difficulty": 9,
+    "time": "12 h",
+    "reversible": true,
+    "decomp_learn": 9,
+    "using": [ [ "welding_standard", 20 ], [ "adhesive", 5 ] ],
+    "components": [
+      [ [ "amplifier", 2 ] ],
+      [ [ "power_supply", 4 ] ],
+      [ [ "nanomaterial", 50 ] ],
+      [ [ "plut_cell", 8 ] ],
+      [ [ "portal", 2 ] ],
+      [ [ "e_scrap", 10 ] ],
+      [ [ "frame", 2 ] ],
+      [ [ "teleporter", 1 ], [ "portal", 1 ], [ "telepad", 1 ] ],
+      [ [ "alloy_sheet", 8 ] ]
+    ]
+  },
+  {
+    "result": "pool_cue_carbon",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "computer",
+    "difficulty": 1,
+    "skills_required": [ [ "fabrication", 2 ] ],
+    "autolearn": true,
+    "time": "30 m",
+    "book_learn": [ [ "textbook_computer", 0 ], [ "advanced_electronics", 0 ], [ "reference_fabrication1", 0 ] ],
+    "using": [ [ "3d_printing_standard", 10 ] ],
+    "components": [ [ [ "carbon_fiber_filament", 100 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "atlatl",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "survival", 2 ], [ "throw", 2 ] ],
+    "difficulty": 3,
+    "time": "10 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [
+	  [ "bambooStaffZhigh", 1 ],
+	  [ "stick", 1 ],
+	  [ "broom", 1 ],
+	  [ "mop", 1 ],
+	  [ "2x4", 1 ],
+	  [ "pool_cue", 1 ]
+	] ]
+  },
+  {
+    "type": "recipe",
+    "result": "atlatl_dart_wood",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "survival", 2 ], [ "throw", 2 ] ],
+    "difficulty": 4,
+    "time": "10 m",
+    "autolearn": true,
+    "charges": 5,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SANDING", "level": 1 } ],
+    "tools": [ [ [ "fire", -1 ] ] ],
+    "components": [ [
+	  [ "bambooStaffZhigh", 1 ],
+	  [ "stick", 1 ],
+	  [ "broom", 1 ],
+	  [ "mop", 1 ],
+	  [ "2x4", 1 ],
+	  [ "pool_cue", 1 ],
+	  [ "pointy_stick", 1 ]
+	] ]
+  },
+  {
+    "result": "38_speedloader8",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MAGAZINES",
+    "autolearn": false,
+    "skill_used": "fabrication",
+    "book_learn": [ [ "mag_guns", 3 ] ],
+    "difficulty": 3,
+    "time": "60 m",
+    "reversible": true,
+    "decomp_learn": 3,
+    "using": [ [ "magazine_standard", 5 ] ],
+    "components": [ [ [ "scrap", 2 ] ] ]
+  },
+  {
+    "result": "powderChargeZhigh",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "fabrication",
+    "time": "2 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+      [ [ "volatile_explosive", 5, "LIST" ], [ "stable_explosive", 5, "LIST" ], [ "military_explosive", 5, "LIST" ] ],
+      [ [ "canister_empty", 1 ], [ "can_drink_unsealed", 1 ], [ "can_food_unsealed", 1 ] ],
+      [ [ "fuse", 1 ] ]
+    ]
+  },
+  {
+    "result": "grenade_fuelBottle",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "fabrication",
+    "time": "1 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+      [ [ "jar_glass", 1 ], [ "bottle_glass", 1 ], [ "clay_canister", 2 ], [ "flask_glass", 2 ] ],
+      [ [ "gasoline", 10 ] ], [ [ "diesel", 10 ], [ "biodiesel", 10 ], [ "any_butter_or_oil", 20, "LIST" ] ],
+      [ [ "cordage_short", 1, "LIST" ] ]
+    ]
+  },
+  {
+    "result": "grenade_fuelStickyBottle",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "fabrication",
+    "time": "1 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+      [ [ "jar_glass", 1 ], [ "bottle_glass", 1 ], [ "clay_canister", 2 ], [ "flask_glass", 2 ] ],
+      [ [ "gasoline", 5 ] ], [ [ "diesel", 5 ], [ "biodiesel", 5 ], [ "any_butter_or_oil", 10, "LIST" ] ],
+      [ [ "goo_mix", 4 ], [ "goo_mix2", 2 ] ],
+      [ [ "cordage_short", 1, "LIST" ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "glassbottle_shiv",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_PIERCING",
+    "skill_used": "survival",
+    "time": "1 m",
+    "autolearn": true,
+    "reversible": false,
+    "components": [
+      [ [ "bottle_glass", 1 ] ]
+    ]
+  },
+  {
+    "result": "grip_hookModZhigh",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_PIERCING",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "60 m",
+    "autolearn": true,
+    "reversible": false,
+    "using": [ [ "welding_standard", 2 ], [ "steel_tiny", 1 ] ],
+    "qualities": [ { "id": "SAW_M", "level": 1 } ],
+    "components": [ [ [ "spike", 2 ] ] ]
   }
 ]

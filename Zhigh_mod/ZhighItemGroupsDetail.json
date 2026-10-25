@@ -213,7 +213,22 @@
       [ "teslaCoilZhigh", 15 ],
       [ "shotcanisterChigurhZhigh", 15 ],
       [ "shotcanisterPunchZhigh", 15 ],
-      [ "shotcanisterSpearZhigh", 15 ]
+      [ "shotcanisterSpearZhigh", 15 ],
+      [ "raidingAidZhigh", 15 ],
+      [ "oilSpillZhigh", 15 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "distribution",
+    "id": "rockShooterZhigh_items",
+    "ammo": 100,
+    "magazine": 100,
+    "items": [ 
+      [ "rock_launcher", 15 ], 
+      [ "rock_launcher6", 15 ], 
+      [ "sniper_rock_launcher", 15 ], 
+      [ "naderGauntletZhigh", 15 ]
     ]
   },
   {
@@ -3684,10 +3699,78 @@
     ]
   },
   {
+    "id": "everyday_sidewinderSmgZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "sidewinderSmgZhigh", "ammo-group": "on_hand_9mm", "charges": [ 0, 32 ] },
+      { "item": "stenmag", "charges-min": 0, "prob": 80, "ammo-group": "on_hand_9mm" },
+      { "group": "nested_tommygun_mag" },
+      { "item": "stenmag", "charges-min": 0, "ammo-group": "on_hand_9mm", "prob": 25 },
+      { "group": "on_hand_9mm", "prob": 12, "charges": [ 10, 20 ], "count": [ 1, 2 ] },
+      { "group": "on_hand_45", "prob": 12, "charges": [ 10, 20 ], "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "id": "nested_sidewinderSmgZhigh",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "sidewinderSmgZhigh", "ammo-group": "on_hand_9mm", "charges": [ 0, 32 ] },
+      { "group": "nested_tommygun_mag" },
+      { "item": "stenmag", "ammo-group": "on_hand_9mm" },
+      { "item": "stenmag", "ammo-group": "on_hand_9mm", "prob": 25 },
+      { "group": "on_hand_9mm" }
+    ]
+  },
+  {
+    "id": "everyday_SW_M327_TRR8",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "entries": [
+      { "item": "SW_M327_TRR8", "ammo-group": "on_hand_357mag", "charges": [ 0, 8 ] },
+      {
+        "distribution": [
+          {
+            "collection": [
+              { "item": "38_speedloader8", "charges-min": 0, "prob": 80, "ammo-group": "on_hand_357mag" },
+              { "item": "38_speedloader8", "charges-min": 0, "ammo-group": "on_hand_357mag", "prob": 50 }
+            ],
+            "prob": 50
+          },
+          { "group": "on_hand_357mag", "prob": 50, "charges": [ 10, 20 ], "count": [ 1, 2 ] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nested_SW_M327_TRR8",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "SW_M327_TRR8", "ammo-group": "on_hand_357mag", "charges": [ 0, 8 ] },
+      { "item": "38_speedloader8", "ammo-group": "on_hand_357mag", "prob": 50 },
+      { "item": "38_speedloader8", "ammo-group": "on_hand_357mag", "prob": 25 },
+      { "group": "on_hand_357mag" }
+    ]
+  },
+  {
     "type": "item_group",
     "subtype": "collection",
     "id": "bandolier_rifle_47",
     "entries": [ { "item": "300_winmag", "charges": 30 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "shotpaper_pouch_zealotZhigh",
+    "entries": [ { "item": "shot_paper_dragon", "charges": 8 } ]
   },
   {
     "type": "item_group",
@@ -3768,7 +3851,7 @@
     "type": "item_group",
     "subtype": "collection",
     "id": "quiver_RangerZhigh",
-    "entries": [ { "item": "arrow_metal_bodkin", "charges": 18 } ]
+    "entries": [ { "item": "arrow_cf", "charges": 18 } ]
   },
   {
     "type": "item_group",
@@ -3793,6 +3876,30 @@
     "subtype": "collection",
     "id": "quiver_monster_hunter_Zhigh3",
     "entries": [ { "item": "arrow_triffid", "charges": 20 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "quiver_PiercerZhigh",
+    "entries": [ { "item": "arrow_metal_bodkin", "charges": 20 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "quiver_AmbusherZhigh",
+    "entries": [ { "item": "ZhighArrow_scatter", "charges": 20 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "quiver_FletcherZhigh",
+    "entries": [ { "item": "c_fishspear", "charges": 15 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "quiver_SubduerZhigh",
+    "entries": [ { "item": "atlatl_dart_iron", "charges": 15 } ]
   },
   {
     "type": "item_group",
@@ -3881,6 +3988,7 @@
       { "item": "UPS_off", "prob": 40 },
       { "item": "adv_UPS_off", "prob": 30 },
       { "item": "duct_tape", "prob": 20 },
+      { "group": "ZhighNpc_masks", "prob": 20, "count": [ 1, 2 ] },
       { "group": "tools_science", "prob": 20, "count": [ 1, 2 ] },
       { "item": "signalMarker0", "prob": 4, "count": [ 1, 2 ] },
       { "item": "signalMarker1", "prob": 8, "count": [ 1, 2 ] },
@@ -3907,7 +4015,9 @@
       { "group": "camping", "prob": 15, "count": [ 1, 2 ] },
       { "group": "foodsZhigh_items", "prob": 45, "count": [ 1, 2 ] },
       { "group": "drinksZhigh_items", "prob": 45, "count": [ 1, 2 ] },
+      { "group": "ZhighNpc_throw", "prob": 100, "count": [ 4, 5 ] },
       { "group": "ZhighWeaponGroups", "prob": 100, "count": [ 1, 3 ] },
+      { "group": "pool_table", "prob": 60, "count": [ 1, 2 ] },
       { "group": "ZhighGuardWeaponGroups", "prob": 60, "count": [ 1, 2 ] },
       { "group": "locker_ammoZhigh", "prob": 100, "count": [ 2, 5 ] },
       { "group": "locker_gunsZhigh", "prob": 80, "count": [ 1, 3 ] },
@@ -3943,6 +4053,7 @@
       { "item": "adv_UPS_off", "prob": 30 },
       { "item": "duct_tape", "prob": 20 },
       { "item": "carbon_fiber_filament", "prob": 20 },
+      { "group": "ZhighNpc_masks", "prob": 20, "count": [ 1, 2 ] },
       { "group": "tools_science", "prob": 20, "count": [ 1, 2 ] },
       { "item": "signalMarker0", "prob": 4, "count": [ 1, 2 ] },
       { "item": "signalMarker1", "prob": 8, "count": [ 1, 2 ] },
@@ -3978,7 +4089,9 @@
       { "group": "tools_lighting", "prob": 90 },
       { "group": "foodsZhigh_items", "prob": 15, "count": [ 1, 2 ] },
       { "group": "drinksZhigh_items", "prob": 15, "count": [ 1, 2 ] },
+      { "group": "ZhighNpc_throw", "prob": 100, "count": [ 4, 5 ] },
       { "group": "ZhighWeaponGroups", "prob": 100, "count": [ 2, 4 ] },
+      { "group": "pool_table", "prob": 100, "count": [ 1, 2 ] },
       { "group": "ZhighGuardWeaponGroups", "prob": 100, "count": [ 1, 2 ] },
       { "group": "locker_ammoZhigh", "prob": 70, "count": [ 6, 8 ] },
       { "group": "locker_gunsZhigh", "prob": 70, "count": [ 1, 3 ] },
@@ -4116,6 +4229,7 @@
       { "group": "camping", "prob": 9 },
       { "group": "foodsZhigh_items", "prob": 9 },
       { "group": "sports_bulk", "prob": 10 },
+      { "group": "ZhighNpc_masks", "prob": 10 },
       { "group": "toy_box", "prob": 5 }
     ]
   },
@@ -4147,6 +4261,7 @@
       { "group": "textbooks_school", "prob": 5 },
       { "group": "manuals", "prob": 5 },
       { "group": "manuals_school", "prob": 20 },
+      { "group": "ZhighNpc_masks", "prob": 20 },
       { "group": "book_survival", "prob": 5 }
     ]
   },
@@ -4780,6 +4895,7 @@
       [ "popGunPistol_zhigh", 20 ],
       [ "compositebow", 10 ],
       [ "airbow", 10 ],
+      [ "airbow2", 10 ],
       [ "acid_gunZhigh", 10 ],
       [ "chem_gunZhigh", 10 ],
       [ "discShooter", 30 ],
@@ -4892,6 +5008,7 @@
       [ "tool_rocket_candy", 30 ],
       [ "firecracker", 30 ],
       [ "firecracker_pack", 30 ],
+      [ "paintNadeZhigh", 30 ],
       [ "molotov", 20 ],
       [ "acidbomb", 20 ],
       [ "tool_ninjaBomb", 20 ],
@@ -4907,6 +5024,10 @@
       [ "insecticidalbomb_makeshift", 10 ],
       [ "grenadeSapZhigh", 10 ],
       [ "triffGasBomb_zhigh", 10 ],
+      [ "healGrenadeZhigh", 10 ],
+      [ "grenade_fuelBottle", 10 ],
+      [ "grenade_fuelStickyBottle", 10 ],
+      [ "sling_powderChargeZhigh", 5 ],
       [ "smokebombBigZhigh", 5 ],
       [ "ConcertinaBombZhigh", 5 ],
       [ "improvised_pipebomb", 5 ],
@@ -4991,7 +5112,11 @@
       [ "water_sniper", 10 ],
       [ "water_pistol", 25 ],
       [ "laspistolToyZhigh", 5 ],
+      [ "laspistolToy2Zhigh", 5 ],
       [ "lasgunToyZhigh", 5 ],
+      [ "lasgunToy2Zhigh", 5 ],
+      [ "lasrifleToy2Zhigh", 5 ],
+      { "group": "paintball_items", "prob": 20, "count": [ 1, 2 ] },
       { "group": "ZhighNadeGroups", "prob": 40 },
       { "group": "ZhighTraps", "prob": 80 },
       { "group": "ZhighGuardWeaponGroups", "prob": 80 },
@@ -5009,6 +5134,7 @@
       { "group": "ammo_pocket_batteries", "prob": 90 },
       { "group": "ammo_pocket_batteries_full", "prob": 40 },
       { "group": "turretBoxZhighGroups", "prob": 15, "count": [ 1, 2 ] },
+      { "group": "sports_bulk", "prob": 15, "count": [ 1, 2 ] },
       { "group": "charged_UPS", "prob": 25 },
       { "group": "shotcanisterZhigh_items", "prob": 5 },
       {
@@ -5030,6 +5156,7 @@
       },
       [ "claw_bar", 10 ],
       [ "turretBoxZhigh", 10 ],
+      [ "trapBoxZhigh", 10 ],
       [ "gasbomb_makeshift", 15 ],
       [ "smokebomb_makeshift", 20 ],
       [ "shocktonfa_off", 10 ],
@@ -5054,6 +5181,7 @@
       [ "bearingBig", 200 ],
       [ "sling_rubberball", 250 ],
       [ "rock_shot", 250 ],
+      [ "ashRockZhigh", 500 ],
       [ "rock", 2000 ],
       [ "canister_goo", 50 ],
       [ "bullwhip", 25 ],

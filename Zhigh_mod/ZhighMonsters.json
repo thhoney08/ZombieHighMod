@@ -305,9 +305,9 @@
     "description": "Their pupils are dilated and what remains to be seen of the iris and sclera are bloodshot.  This weapon-wielding maniac still breathes, but the zombies treat them like one of their own.",
     "hp": 25,
     "luminance": 10,
-	"aggression": 80,
+	"aggression": 100,
     "species": [ "ZOMBIE", "HUMAN" ],
-	"speed": 70,
+	"speed": 140,
     "melee_dice": 2,
     "melee_dice_sides": 4,
     "vision_night": 4,
@@ -336,6 +336,7 @@
     "zombify_into": "mon_zombie",
     "death_function": [ "MELT" ],
     "monster_weapon": "ZhighGuardWeaponGroups",
+    "path_settings": { "allow_open_doors": true, "avoid_traps": false, "avoid_sharp": false },
     "death_drops": "mon_feral_human_zhigh_death_drops_pipe",
     "flags": [
       "SEES",
@@ -384,6 +385,7 @@
       { "id": "mon_summon_feral_human_GunnerZhigh" },
       { "id": "mon_summon_feral_human_Shielderzhigh" },
       { "id": "mon_summon_feral_human_launcherZhigh" },
+      { "id": "mon_summon_feral_human_vlasterZhigh" },
       { "id": "mon_summon_feral_human_Frogman" }
     ]
   },
@@ -399,7 +401,7 @@
     "death_drops": "ZhighGuardWeaponGroups",
     "special_attacks": [
 	  [ "PARROT", 3 ],
-	  { "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh", "hit_self": true }, "cooldown": 45 }
+	  { "type": "spell", "spell_data": { "id": "spellStudentFeralZhigh", "hit_self": true }, "cooldown": 45 }
     ],
     "flags": [
       "SEES",
@@ -455,7 +457,7 @@
 	},
     "death_drops": "ZhighGuardWeaponGroups",
     "special_attacks": [
-	  { "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh", "hit_self": true }, "cooldown": 1 }
+	  { "type": "spell", "spell_data": { "id": "spellStudentFeralZhigh", "hit_self": true }, "cooldown": 1 }
     ],
     "flags": [
       "SEES",
@@ -536,12 +538,9 @@
     "copy-from": "mon_feral_human_zhigh",
     "name": { "str": "feral tank" },
     "description": "Their pupils are dilated and what remains to be seen of the iris and sclera are bloodshot.  This shield-wielding maniac still breathes, but the zombies treat them like one of their own.",
-    "hp": 95,
+    "hp": 250,
     "luminance": 10,
     "on_death": { "death_function": [  ], "spawn_mon": "mon_feral_human_zhigh" },
-    "armor_bash": 10,
-    "armor_cut": 5,
-    "armor_bullet": 5,
     "death_drops": "ig_vp_sheet_metal",
     "special_attacks": [
 	  [ "PARROT", 3 ],
@@ -637,6 +636,67 @@
     "effect_str": "mon_feral_human_launcherZhigh"
   },
   {
+    "id": "mon_feral_human_vlasterZhigh",
+    "type": "MONSTER",
+    "copy-from": "mon_feral_human_zhigh",
+    "looks_like": "mon_feral_human_launcherZhigh",
+    "name": { "str": "feral nader" },
+    "description": "Their pupils are dilated and what remains to be seen of the iris and sclera are bloodshot.  This launcher-wielding maniac still breathes, but the zombies treat them like one of their own.  For some reason, these ferals can shoot rocks.",
+    "hp": 35,
+    "luminance": 10,
+    "on_death": { "death_function": [  ], "spawn_mon": "mon_feral_human_zhigh" },
+    "death_drops": "ZhighGuardWeaponGroups",
+    "starting_ammo": { "sling_acidbomb": 20 },
+    "special_attacks": [
+	  [ "PARROT", 3 ],
+      {
+        "type": "gun",
+        "cooldown": 10,
+        "move_cost": 2,
+        "gun_type": "lacrosseStickZhigh",
+        "ammo_type": "sling_acidbomb",
+        "no_ammo_sound": "a chk!",
+        "fake_skills": [ [ "gun", 3 ], [ "launcher", 5 ] ],
+        "fake_dex": 1,
+        "fake_per": 1,
+        "targeting_cost": 30,
+        "require_targeting_player": true,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "ranges": [ [ 1, 29, "DEFAULT" ] ],
+        "description": "The feral nader shoots a rock!",
+        "no_crits": true
+      }
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "HUMAN",
+      "CAN_OPEN_DOORS"
+    ]
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_summon_feral_human_vlasterZhigh",
+    "name": "Backup call",
+    "description": "Summons several permanent feral students.",
+    "flags": [ "HOSTILE_SUMMON", "PERMANENT", "NO_EXPLOSION_VFX" ],
+    "valid_targets": [ "ground", "self" ],
+    "min_damage": 1,
+    "max_damage": 8,
+    "min_range": 9,
+    "max_range": 20,
+    "min_aoe": 9,
+    "max_aoe": 14,
+    "base_casting_time": 1,
+    "effect": "summon",
+    "effect_str": "mon_feral_human_vlasterZhigh"
+  },
+  {
     "id": "mon_feral_human_Frogman",
     "type": "MONSTER",
     "copy-from": "mon_feral_human_zhigh",
@@ -691,7 +751,7 @@
     "on_death": { "death_function": [  ], "spawn_mon": "mon_feral_human_SchoolWatchzhigh" },
     "special_attacks": [
 	  [ "PARROT", 3 ],
-	  { "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh" }, "cooldown": 5 },
+	  { "type": "spell", "spell_data": { "id": "spellStudentFeralZhigh" }, "cooldown": 5 },
       {
         "type": "gun",
         "cooldown": 3,
@@ -1440,7 +1500,7 @@
 		[ "SEARCHLIGHT", 0 ],
 		[ "RESURRECT", 0 ],
 		[ "COMMAND_BUFF", 0 ],
-		{ "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh", "hit_self": true }, "cooldown": 1 }
+		{ "type": "spell", "spell_data": { "id": "spellStudentFeralZhigh", "hit_self": true }, "cooldown": 1 }
 	],
     "death_drops": { "groups": [ [ "robots", 1 ], [ "turret_searchlight", 1 ] ] },
     "death_function": [ "FOCUSEDBEAM" ],
@@ -3224,7 +3284,7 @@
     "name": { "str": "feral agitator" },
     "description": "Their pupils are dilated and what remains to be seen of the iris and sclera are bloodshot.  This maniac still breathes, but the zombies treat them like one of their own.  For some reason, these ferals can call more of his friends.",
     "special_attacks": [
-	  { "type": "spell", "spell_data": { "id": "mon_summon_feral_human_zhigh" }, "cooldown": 45 }
+	  { "type": "spell", "spell_data": { "id": "spellStudentFeralZhigh" }, "cooldown": 45 }
     ]
   },
   {

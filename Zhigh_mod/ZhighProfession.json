@@ -214,7 +214,7 @@
         "entries": [
           { "group": "ZhighNpc_shoesAll" },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-          { "item": "hand_crossbow", "ammo-item": "bolt_metal", "charges": 1, "custom-flags": [ "auto_wield" ] },
+          { "group": "NC_Archer_weapon", "ammo-item": "bolt_metal", "charges": 1, "custom-flags": [ "auto_wield" ] },
           { "item": "quiver", "contents-group": "quiver_crossbow_hunter" }
         ]
       },
@@ -242,6 +242,7 @@
           "socks",
           "mbag",
           "paint_brush",
+          "paletteZhigh",
           "chipper",
           "wristwatch"
         ],
@@ -792,7 +793,6 @@
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
           { "group": "ZhighTraps" },
           { "group": "ZhighTraps" },
-          { "group": "ZhighTraps" },
           { "item": "tenderizerZhigh", "custom-flags": [ "auto_wield" ] }
         ]
       },
@@ -1066,6 +1066,7 @@
           "throwing_stick",
           "throwing_stick",
           "throwing_stick",
+          "ragpouch",
           "mocassins",
           "wristwatch"
         ],
@@ -2572,7 +2573,11 @@
           "marble",
           "slingshot"
         ],
-        "entries": [ { "group": "ZhighNpc_shoesAll" }, { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] } ]
+        "entries": [
+		  { "group": "ZhighNpc_shoesAll" },
+		  { "item": "super_soaker", "ammo-item": "water", "charges": 8, "custom-flags": [ "auto_wield" ] },
+		  { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+		]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
@@ -2977,8 +2982,9 @@
           "boots_combat",
           "bb",
           "bb",
-          "balclava_skull",
-          "helmet_skid",
+          "aviators",
+          "mask_dust",
+          "balclava_lab",
           "wristwatch"
         ],
         "entries": [
@@ -3033,7 +3039,7 @@
           {
             "item": "bbsmg",
             "ammo-item": "bb",
-            "charges": [ 1, 300 ],
+            "charges": [ 270, 300 ],
             "contents-item": [ "shoulder_strap" ],
             "custom-flags": [ "auto_wield" ]
           }
@@ -3573,7 +3579,7 @@
     "id": "zhighHevGunner",
     "name": "Student - Heavy Gunner",
     "description": "You were called 'heavy' or 'heavy gunner' in your airsoft group, due to your body size and the guns that you use.  There is no one calling you heavy now, but the game goes on, whether you like it or not.",
-    "points": 4,
+    "points": 5,
     "skills": [ { "level": 2, "name": "gun" }, { "level": 3, "name": "launcher" } ],
     "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
@@ -3932,7 +3938,8 @@
     "description": "Trying to herd cats into getting into one place every week has taught you something: it's usually better to cut your losses and trust your gut.  For that reason, when you had two no-shows and the other two tried to eat you, you ditched.  Maybe you can find some new players in the ruins of the world.",
     "points": -2,
     "age": { "min": 14, "max": 18 },
-    "traits": [ "REGEN_zhigh", "PROF_DICEMASTER" ],
+    "traits": [ "REGEN_zhigh" ],
+    "perks": [ "PROF_DICEMASTER" ],
     "skills": [ { "level": 2, "name": "speech" }, { "level": 1, "name": "survival" } ],
     "items": {
       "both": {
@@ -3966,7 +3973,8 @@
     "description": "You came into a large fortune, through luck or will, and hosted games for people that most of the world knew on a first-name basis.  You could afford to spoil your players, and so you did.  You invested in bionics to make you smarter, and memorized the entire handbook.  Let's hope that knowledge helps you now.",
     "points": 2,
     "age": { "min": 14, "max": 18 },
-    "traits": [ "REGEN_zhigh", "PROF_DICEMASTER" ],
+    "traits": [ "REGEN_zhigh" ],
+    "perks": [ "PROF_DICEMASTER" ],
     "CBMs": [ "bio_batteries", "bio_power_storage", "bio_memory", "bio_int_enhancer" ],
     "skills": [
       { "level": 3, "name": "speech" },
@@ -4477,7 +4485,7 @@
         "entries": [
           { "group": "ZhighNpc_shoesAll" },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-          { "item": "coffeemaker", "custom-flags": [ "auto_wield" ] }
+          { "item": "atomic_coffeepot", "custom-flags": [ "auto_wield" ] }
         ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
@@ -4629,7 +4637,12 @@
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
-        "items": [ "zhigh_smart_phone", "medkitRechargeV3", "maid_dress", "maid_hat" ],
+        "items": [
+		  "zhigh_smart_phone",
+		  "medkitRechargeV3",
+		  "maid_dress",
+		  "maid_hat"
+		],
         "entries": [
           { "group": "ZhighNpc_shoesAll" },
           { "item": "knife_steak", "custom-flags": [ "auto_wield" ] },
@@ -4652,7 +4665,13 @@
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
-        "items": [ "zhigh_smart_phone", "medkitRechargeV3", "dress_shoes", "socks", "tux" ],
+        "items": [
+		  "zhigh_smart_phone",
+		  "medkitRechargeV3",
+		  "dress_shoes",
+		  "socks",
+		  "tux"
+		],
         "entries": [
           { "item": "knife_steak", "custom-flags": [ "auto_wield" ] },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
@@ -4905,7 +4924,7 @@
     "id": "zhighNinja",
     "name": { "male": "Student - Ninja", "female": "Student - Kunoichi" },
     "description": "After you read a couple of ninja-related books, you became obsessed with them and practiced some tools of them.  Guess now is the right time to use those tips, gears, and tricks.  Death to the ninja.",
-    "points": 4,
+    "points": 5,
     "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "skills": [
@@ -4936,7 +4955,7 @@
           { "group": "ZhighNpc_shoesAll" },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
           { "item": "tanto", "container-item": "sheath" },
-          { "item": "nunchunkZhigh", "custom-flags": [ "auto_wield" ] }
+          { "group": "ninjaWeaponsZhigh", "custom-flags": [ "auto_wield" ] }
         ]
       },
       "female": [ "chestwrap" ]
@@ -5646,7 +5665,10 @@
           "socks_ankle",
           "lowtops"
         ],
-        "entries": [ { "item": "javelin_iron", "custom-flags": [ "auto_wield" ] } ]
+        "entries": [
+          { "item": "javelin_iron", "charges": 3, "container-item": "javelin_bag" },
+		  { "item": "javelin_iron", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "briefs" ],
       "female": [ "boy_shorts" ]
@@ -5673,7 +5695,10 @@
           "socks_ankle",
           "lowtops"
         ],
-        "entries": [ { "item": "bearingBig", "custom-flags": [ "auto_wield" ] } ]
+        "entries": [
+          { "item": "bearingBig", "charges": 6, "container-item": "stone_pouch" },
+		  { "item": "bearingBig", "custom-flags": [ "auto_wield" ] }
+		]
       },
       "male": [ "briefs" ],
       "female": [ "boy_shorts" ]
@@ -5879,7 +5904,13 @@
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
-        "items": [ "dress_shirt_zhigh", "zhigh_smart_phone", "medkitRechargeV3", "socks", "wristwatch" ],
+        "items": [
+		  "dress_shirt_zhigh",
+		  "zhigh_smart_phone",
+		  "medkitRechargeV3",
+		  "socks",
+		  "wristwatch"
+		],
         "entries": [
           { "group": "ZhighNpc_coat" },
           { "group": "ZhighNpc_shoesAll" },
@@ -5910,7 +5941,14 @@
     "traits": [ "REGEN_zhigh" ],
     "items": {
       "both": {
-        "items": [ "dress_shirt_zhigh", "zhigh_smart_phone", "medkitRechargeV3", "socks", "wristwatch" ],
+        "items": [
+		  "dress_shirt_zhigh",
+		  "zhigh_smart_phone",
+		  "medkitRechargeV3",
+		  "holster",
+		  "socks",
+		  "wristwatch"
+		],
         "entries": [
           { "group": "ZhighNpc_coat" },
           { "group": "ZhighNpc_shoesAll" },
@@ -6039,7 +6077,7 @@
           { "item": "paintball_glow", "charges": 10 },
           { "item": "paintball_tg", "charges": 10 },
           { "item": "paintball_goo", "charges": 10 },
-          { "item": "bbmachinepistol", "ammo-item": "bbPlastic", "charges": 300, "container-item": "holster" },
+          { "item": "bbpistol", "ammo-item": "bbincen", "charges": 300, "container-item": "holster" },
           {
             "item": "longbowBulletZhigh",
             "ammo-item": "bearing",
@@ -6212,11 +6250,22 @@
     ],
     "items": {
       "both": {
-        "items": [ "dress_shirt_zhigh", "zhigh_smart_phone", "medkitRechargeV3", "improvised_colabomb", "bolas", "socks", "briefcase" ],
+        "items": [
+		  "dress_shirt_zhigh",
+		  "zhigh_smart_phone",
+		  "medkitRechargeV3",
+		  "improvised_colabomb",
+		  "bolas",
+		  "socks",
+		  "badge_roseZhigh",
+		  "ZhighGas_electricshock",
+		  "briefcase"
+		],
         "entries": [
           { "group": "ZhighTraps" },
           { "group": "ZhighNpc_shoesAll" },
           { "item": "bbsmg", "ammo-item": "bb", "charges": [ 230, 300 ], "contents-item": "shoulder_strap" },
+          { "item": "hand_crossbow", "ammo-item": "bolt_metal", "charges": 1 },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
           { "item": "hammer_sledge_heavy", "custom-flags": [ "auto_wield" ] }
         ]
@@ -6584,6 +6633,8 @@
           "medkitRechargeV3",
           "socks",
           "airsoftHelm_zhigh",
+          "shotcanister_scrap",
+          "stone_pouch",
           "bearingBig",
           "bearingBig",
           "bearingBig"
@@ -6594,9 +6645,14 @@
           { "group": "ZhighNpc_coat" },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
           {
-            "item": "sniper_rock_launcher",
+            "group": "shotcanisterZhigh_items",
+            "ammo-item": "shotcanister_scrap",
+            "contents-item": "shoulder_strap"
+          },
+          {
+            "group": "rockShooterZhigh_items",
             "ammo-item": "bearingBig",
-            "contents-item": [ "charm_hglass", "charm_grenade" ],
+            "contents-item": [ "shoulder_strap", "charm_hglass", "charm_grenade" ],
             "charges": 1,
             "custom-flags": [ "auto_wield" ]
           }
@@ -8259,7 +8315,7 @@
     "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
     "pets": [ { "name": "mon_haulerbot", "amount": 1 } ],
-    "CBMs": [ "bio_targeting", "bn_bio_solar", "bio_infrared", "bio_bowZhigh", "bio_power_storage_mkII", "bio_dex_enhancer" ],
+    "CBMs": [ "bio_targeting", "bn_bio_solar", "bio_night_vision", "bio_bowZhigh", "bio_power_storage_mkII", "bio_dex_enhancer" ],
     "skills": [ { "level": 3, "name": "gun" }, { "level": 5, "name": "archery" }, { "level": 1, "name": "survival" } ],
     "items": {
       "both": {
@@ -8844,7 +8900,7 @@
           "socks",
           "pants_zhigh",
           "boots_combat",
-          "flotation_vest_ms",
+          "ammo_satchelZhigh",
           "balclava_skull",
           "bb"
         ],
@@ -11049,7 +11105,7 @@
     "points": 0,
     "age": { "min": 14, "max": 18 },
     "traits": [ "REGEN_zhigh" ],
-    "skills": [ { "level": 2, "name": "gun" }, { "level": 2, "name": "melee" }, { "level": 2, "name": "rifle" } ],
+    "skills": [ { "level": 2, "name": "gun" }, { "level": 2, "name": "melee" }, { "level": 2, "name": "shotgun" } ],
     "items": {
       "both": {
         "items": [
@@ -11057,19 +11113,472 @@
           "greatcoat",
           "zhigh_smart_phone",
           "medkitRechargeV3",
-          "dress_shoes",
           "socks",
           "10gal_hat",
           "crossZhigh",
           "holybook_bible4"
         ],
         "entries": [
+          { "group": "ZhighNpc_shoesAll" },
           { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
-          { "item": "homewrecker", "custom-flags": [ "auto_wield" ] }
+          { "item": "shot_paper_dragon", "charges": 12 },
+          {
+            "item": "shotgun_paper_dZhigh",
+            "ammo-item": "shot_paper_dragon",
+            "charges": 2,
+            "contents-item": [ "shoulder_strap", "charm_hglass", "charm_spike", "charm_electric" ],
+            "custom-flags": [ "auto_wield" ]
+          }
         ]
       },
       "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
       "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighInstigator",
+    "name": "Student - Instigator",
+    "description": "You manipulate the movements of the horde from a safe distance using a customized slingshot and specialized ammo.  Loaded with noisy glass marbles and incendiary projectiles, you intentionally stir up chaos to distract enemies and pull threats away from your team.",
+    "points": 2,
+    "skills": [ { "level": 2, "name": "gun" }, { "level": 2, "name": "archery" } ],
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "survivor_runner_pack",
+          "blazer_zhigh"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "group": "ZhighNpc_shoesAll" },
+          { "group": "ZhighTraps" },
+          { "group": "ZhighTraps" },
+          { "item": "bearing", "charges": 16 },
+          { "item": "pebble_rubber", "charges": 6 },
+          { "item": "pebble_triffid", "charges": 6 },
+          { "item": "pebble_poison", "charges": 6 },
+          { "item": "shootable_Firecracker", "charges": 6 },
+          { "item": "shootable_rocketCandy", "charges": 6 },
+          { "item": "paintball_acid", "charges": 6 },
+          { "item": "paintball_exp", "charges": 6 },
+          { "item": "paintball_beanb", "charges": 6 },
+          { "item": "paintball_glow", "charges": 6 },
+          { "item": "paintball_tg", "charges": 6 },
+          { "item": "paintball_goo", "charges": 6 },
+          { "item": "sheath", "contents-item": "knife_hunting" },
+          { "item": "bbmachinepistol", "ammo-item": "bbPlastic", "charges": 300, "container-item": "holster" },
+          {
+            "item": "wristrocket",
+            "ammo-item": "bearing",
+            "charges": 1,
+            "contents-item": [ "charm_skull", "charm_comp" ],
+            "custom-flags": [ "auto_wield" ]
+          }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighZealot",
+    "name": "Student - Zealot",
+    "description": "You purge the infected horde with fiery passion, wielding a customized flare pistol alongside a heavy trident.  Engulfing targets in blinding flames before impaling them at range, you force your way through front lines and scorch anything that stands in your path.",
+    "points": 0,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [ { "level": 2, "name": "gun" }, { "level": 2, "name": "melee" }, { "level": 2, "name": "shotgun" } ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "jacket_windbreaker",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "torch",
+          "holster",
+          "matches",
+          "holybook_bible4"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_shoesAll" },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "ammobandZhigh", "contents-group": "shotpaper_pouch_zealotZhigh" },
+          {
+            "item": "shotgun_paperPistolZhigh",
+            "ammo-item": "shot_paper_dragon",
+            "charges": 1,
+            "contents-item": [ "charm_hglass", "charm_spike", "charm_electric" ]
+          },
+          { "item": "spear_tridentZhigh", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighSlipper",
+    "name": "Student - Slipper",
+    "description": "Some would say that there's nothing particularly notable about you.  But you've survived, and that's more than most could say right now.",
+    "points": -2,
+    "age": { "min": 14, "max": 18 },
+    "skills": [
+      { "level": 2, "name": "dodge" },
+      { "level": 2, "name": "melee" },
+      { "level": 2, "name": "bashing" }
+    ],
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "slippers",
+          "fanny",
+          "jacket_tracksuit_zhigh",
+          "jade_pillowZhigh",
+          "wristwatch"
+        ],
+        "entries": [
+          { "item": "slippers", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "slippers", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "slippers", "custom-flags": [ "no_auto_equip" ] },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "slippers", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighWhipper",
+    "name": "Student - Whipper",
+    "description": "You were a professional yo-yo player.  Never realized that you might had to use this for an acutal weapon in some way.",
+    "points": -1,
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [ { "level": 2, "name": "dodge" }, { "level": 1, "name": "cutting" }, { "level": 1, "name": "bashing" } ],
+    "items": {
+      "both": {
+        "items": [
+			"dress_shirt_zhigh",
+			"blazer_zhigh",
+			"zhigh_smart_phone",
+			"medkitRechargeV3",
+			"socks",
+			"belt_magazine",
+			"yoyo_toyZhigh",
+			"wristwatch"
+		],
+        "entries": [
+          { "group": "ZhighNpc_shoesAll" },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "bullwhip_razor", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighPiercer",
+    "name": "Student - Piercer",
+    "description": "You eliminate high-threat targets from extreme distances using a high-pressure sniper airbow.  Silently driving heavy steel bolts through thick skulls before enemies spot you, you secure clean kills without alerting the rest of the school grounds.",
+    "points": 4,
+    "skills": [ { "level": 3, "name": "gun" }, { "level": 4, "name": "rifle" } ],
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "cloak",
+          "socks"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_shoesAll" },
+          { "item": "ZhighArrow_bWire", "charges": 4 },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "heavy_plus_battery_cell", "charges": 1500, "container-item": "UPS_off" },
+          {
+            "item": "airbow",
+            "custom-flags": [ "auto_wield" ],
+            "contents-item": [ "mod_air_pump", "acog_scope", "underbarrelTazerZhigh" ],
+            "ammo-item": "arrow_metal_bodkin",
+            "charges": 1
+          },
+          { "item": "quiver", "contents-group": "quiver_PiercerZhigh" }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighAmbusher",
+    "name": "Student - Ambusher",
+    "description": "You lie motionless in dense bushes and dark corridors, waiting for infected targets to walk straight into your sightlines.  Unleashing compact hunting airbow bolts from complete concealment, you drop unsuspecting enemies before slipping back into the shadows.",
+    "points": 4,
+    "skills": [ { "level": 3, "name": "gun" }, { "level": 4, "name": "rifle" } ],
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "blazer_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "cavalierHatZhigh",
+          "socks"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_shoesAll" },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "heavy_plus_battery_cell", "charges": 1500, "container-item": "UPS_off" },
+          {
+            "item": "airbow2",
+            "custom-flags": [ "auto_wield" ],
+            "contents-item": [ "mod_air_pump" ],
+            "ammo-item": "ZhighArrow_scatter",
+            "charges": 5
+          },
+          { "item": "quiver", "contents-group": "quiver_AmbusherZhigh" },
+          { "item": "quiver", "contents-group": "quiver_AmbusherZhigh" }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighFletcher",
+    "name": "Student - Fletcher",
+    "description": "You master the art of long-range archery using a traditional, tall wooden bow.  Drawing back heavy bamboo arrows to clear open hallways and courtyards, you strike down moving targets with impressive power and graceful precision.",
+    "points": 3,
+    "skills": [ { "level": 3, "name": "gun" }, { "level": 4, "name": "archery" } ],
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "blazer_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "10gal_hatZhigh",
+          "socks"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_shoesAll" },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          {
+            "item": "yumiZhigh",
+            "custom-flags": [ "auto_wield" ],
+            "ammo-item": "c_fishspear",
+            "charges": 1
+          },
+          { "item": "quiverFishspearZhigh", "contents-group": "quiver_FletcherZhigh" }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighSubduer",
+    "name": "Student - Subduer",
+    "description": "You harness incredible leverage with an atlatl thrower to launch heavy, devastating darts straight into the horde.  Impaling thick armor and knocking back charging infected with brutal kinetic force, you halt dangerous pushes before enemies can ever reach your line.",
+    "points": 2,
+    "skills": [ { "level": 3, "name": "gun" }, { "level": 5, "name": "throw" } ],
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt_zhigh",
+          "blazer_zhigh",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "ZhighGas_electricshock",
+          "badge_roseZhigh01",
+          "capotainZhigh",
+          "socks"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_shoesAll" },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          {
+            "item": "atlatl",
+            "custom-flags": [ "auto_wield" ],
+            "ammo-item": "atlatl_dart_iron",
+            "charges": 1
+          },
+          { "item": "quiver_atlatl", "contents-group": "quiver_SubduerZhigh" }
+        ]
+      },
+      "male": [ "tie_necktie_zhigh", "boxer_shorts", "pants_zhigh" ],
+      "female": [ "tie_bow_zhigh", "bra", "panties", "skirt_zhigh" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighBattleMaid",
+    "name": "Student - Battle Maid",
+    "description": "You were cosplaying as a maid when the end of the world was knocking at your door.  Would be cool if you could stop time and throw some knives against a thief witch, but no.",
+    "points": 2,
+    "skills": [ { "level": 2, "name": "cooking" }, { "level": 1, "name": "driving" }, { "level": 2, "name": "tailor" } ],
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+		  "zhigh_smart_phone",
+		  "medkitRechargeV3",
+		  "maid_dress",
+		  "maid_hat"
+		],
+        "entries": [
+          { "group": "ZhighNpc_shoesAll" },
+          { "item": "knife_combat", "container-item": "sheath" },
+          { "group": "NC_JUVENILE_MERC_wield", "custom-flags": [ "auto_wield" ] },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+        ]
+      },
+      "male": [ "briefs", "socks" ],
+      "female": [ "panties", "bra", "stockings" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighBattleButler",
+    "name": "Student - Battle Butler",
+    "description": "You were cosplaying as a butler when the end of the world was knocking at your door.  Would be cool if you could use some mono filaments as weapons and fight a badass vampire, but no.",
+    "points": 2,
+    "skills": [ { "level": 2, "name": "cooking" }, { "level": 1, "name": "driving" }, { "level": 2, "name": "tailor" } ],
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+		  "zhigh_smart_phone",
+		  "medkitRechargeV3",
+		  "dress_shoes",
+		  "socks",
+		  "tux"
+		],
+        "entries": [
+          { "item": "knife_combat", "container-item": "sheath" },
+          { "group": "NC_JUVENILE_MERC_wield", "custom-flags": [ "auto_wield" ] },
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] }
+        ]
+      },
+      "male": [ "briefs" ],
+      "female": [ "panties", "bra" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighWrangler",
+    "name": "Student - Wrangler",
+    "description": "You handle the rampaging horde like unbroken broncos on an open arena floor.  Wielding heavy lassos and thick leather whips, you snag charging infected around the neck to throw off their balance and keep the battle under control.",
+    "points": 4,
+    "pets": [
+      { "name": "mon_cow", "amount": 1 }
+    ],
+    "skills": [ { "level": 1, "name": "firstaid" }, { "level": 5, "name": "survival" } ],
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "ANIMALEMPATH", "REGEN_zhigh" ],
+    "items": {
+      "both": {
+        "items": [
+          "cowboy_hat_zhigh2",
+          "shorts_cargo",
+          "zhigh_smart_phone",
+          "medkitRechargeV3",
+          "socks",
+          "boots_western",
+          "sheriffshirt",
+          "bolas",
+          "whistlemulti",
+          "cattlefodder",
+          "rope_30",
+          "wristwatch"
+        ],
+        "entries": [
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "knife_arkansasToothpickZhigh", "container-item": "sheath" },
+          { "item": "bullwhip", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "zhighVanquisher",
+    "name": "Student - Vanquisher",
+    "description": "You model your survival after legendary demon slayers, wearing distinct patterned haori cloaks and wielding sharp katanas.  Slashing through dark corridors with swift breathing techniques and decisive blade work, you sever the necks of mutated horrors in a single fluid motion.",
+    "points": 0,
+    "pets": [ { "name": "mon_crow", "amount": 1 } ],
+    "age": { "min": 14, "max": 18 },
+    "traits": [ "REGEN_zhigh" ],
+    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" } ],
+    "items": {
+      "both": {
+        "items": [
+			"jacket_tacticool",
+			"haori",
+			"zhigh_smart_phone",
+			"medkitRechargeV3",
+			"scabbard",
+			"undershirt",
+			"pants_zhigh",
+			"tabi_dress",
+			"birdfood",
+			"geta",
+			"wristwatch"
+		],
+        "entries": [
+          { "group": "ZhighNpc_ids", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "katana_inferior", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "panties" ]
     },
     "flags": [ "SCEN_ONLY" ]
   },

@@ -1828,6 +1828,22 @@
     "flags": [ "NO_REPAIR", "NO_SALVAGE" ]
   },
   {
+    "id": "trapBoxZhigh",
+	"looks_like": "clothesBoxZhigh",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "unknown trap pack" },
+    "description": "A box with a random trap inside.  Unpack and enjoy.",
+    "weight": "120 g",
+    "volume": "200 ml",
+    "price": "10 USD",
+    "material": "aluminum",
+    "symbol": "!",
+    "color": "green",
+    "use_action": { "type": "unpack", "group": "ZhighTraps", "items_fit": true },
+    "flags": [ "NO_REPAIR", "NO_SALVAGE" ]
+  },
+  {
     "id": "potionBoxZhigh",
 	"looks_like": "clothesBoxZhigh",
     "type": "GENERIC",

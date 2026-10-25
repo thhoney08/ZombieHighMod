@@ -10,6 +10,9 @@
       { "item": "40x46mm_antiFungi", "prob": 10, "charges": [ 5, 10 ] },
       { "item": "40x46mm_m583Zhigh", "prob": 10, "charges": [ 5, 10 ] },
       { "item": "40x46mm_acidZhigh", "prob": 10, "charges": [ 5, 10 ] },
+      { "item": "40x46mm_dragon", "prob": 10, "charges": [ 5, 10 ] },
+      { "item": "40x46mm_bounce", "prob": 10, "charges": [ 5, 10 ] },
+      { "item": "40x46mm_m100Zhigh", "prob": 10, "charges": [ 5, 10 ] },
       { "item": "40x46mm_m651", "prob": 15, "charges": [ 5, 10 ] }
     ]
   },
@@ -284,6 +287,7 @@
     "entries": [
       { "item": "cowboy_hat", "prob": 60 },
       { "item": "cowboy_hat_zhigh", "prob": 20 },
+      { "item": "cowboy_hat_zhigh2", "prob": 20 },
       { "item": "cowboy_hat_zhigh1", "prob": 1 },
       { "item": "10gal_hat", "prob": 10 },
       { "item": "hat_ball", "prob": 10 },
@@ -409,6 +413,9 @@
       { "item": "ZhighArrow_bWire", "prob": 25 },
       { "item": "ZhighArrow_flash", "prob": 25 },
       { "item": "ZhighArrow_whistle", "prob": 25 },
+      { "item": "ZhighArrow_scatter", "prob": 25 },
+      { "item": "ZhighArrow_impact", "prob": 25 },
+      { "item": "ZhighArrow_superalloy", "prob": 2 },
       { "item": "arrow_tooth", "prob": 30 },
       { "item": "ZhighBolt_glassSmoke", "prob": 25 },
       { "item": "ZhighBolt_glassTear", "prob": 25 },
@@ -797,6 +804,7 @@
       { "item": "compositebow_shortKorZhigh", "prob": 1 },
       { "item": "kingsman_umbrella_close", "prob": 1 },
       { "item": "jitte_weapon", "prob": 1 },
+      { "item": "shotgun_paperPistolZhigh", "prob": 3 },
       { "item": "pistol_flintlock", "prob": 3 },
       { "item": "carbine_flintlock", "prob": 3 },
       { "item": "rifle_flintlock", "prob": 3 },
@@ -1000,6 +1008,7 @@
       { "item": "can_beans", "prob": 40 },
       { "item": "pork_beans", "prob": 40 },
       { "item": "1st_aid", "prob": 35 },
+      { "item": "1st_aid_ifak", "prob": 15 },
       { "item": "anesthetic", "prob": 35 },
       { "item": "medcase", "prob": 25 },
       { "item": "stimPistolZhigh", "prob": 25 },
@@ -1046,6 +1055,7 @@
     "id": "antique_guns",
     "subtype": "distribution",
     "entries": [
+      { "item": "shotgun_paperPistolZhigh", "prob": 30 },
       { "item": "pistol_flintlock", "prob": 30 },
       { "item": "pistol_flintlock_smol", "prob": 20 },
       { "item": "pistol_flintlock_duckfoot", "prob": 20 },
@@ -1084,6 +1094,7 @@
     "magazine": 100,
     "subtype": "distribution",
     "entries": [
+      { "item": "shotgun_paperPistolZhigh", "prob": 30 },
       { "item": "pistol_flintlock", "prob": 30 },
       { "item": "pistol_flintlock_smol", "prob": 20 },
       { "item": "pistol_flintlock_duckfoot", "prob": 20 },
@@ -1307,6 +1318,7 @@
       { "item": "compbow", "prob": 40 },
       { "item": "shortbow", "prob": 20 },
       { "item": "airbow", "prob": 20 },
+      { "item": "airbow2", "prob": 20 },
       { "item": "compositebow", "prob": 40 },
       { "item": "slingshot", "prob": 50 },
       { "item": "wristrocket", "prob": 50 }
@@ -1334,6 +1346,7 @@
       [ "fire_ax_1", 30 ],
       [ "halligan", 50 ],
       [ "1st_aid", 10 ],
+      [ "1st_aid_ifak", 5 ],
       [ "medcase", 5 ],
       [ "bandages", 5 ],
       [ "cotton_ball", 2 ],
@@ -1832,6 +1845,7 @@
     "id": "guns_smg_rare",
     "//": "SMGs including those only used by police/paramilitary forces.",
     "items": [
+      { "group": "nested_sidewinderSmgZhigh", "prob": 20 },
       { "group": "nested_Socimi38Zhigh", "prob": 20 },
       { "group": "nested_WaltherZhigh", "prob": 20 },
       { "group": "nested_mdr500Zhigh", "prob": 20 },
@@ -1849,6 +1863,7 @@
     "id": "carried_guns_smg_rare",
     "//": "SMGs including those only carried by police/paramilitary forces. Either mags or loose ammo are included.",
     "items": [
+      { "group": "everyday_sidewinderSmgZhigh", "prob": 20 },
       { "group": "everyday_Socimi38Zhigh", "prob": 20 },
       { "group": "everyday_WaltherZhigh", "prob": 20 },
       { "group": "everyday_mdr500Zhigh", "prob": 20 },
@@ -1961,6 +1976,7 @@
       { "group": "nested_uziMiniZhigh", "prob": 5 },
       { "group": "nested_colt6520Zhigh", "prob": 15 },
       { "group": "nested_s333ThunderstruckZhigh", "prob": 15 },
+      { "group": "nested_SW_M327_TRR8", "prob": 15 },
       { "group": "nested_PMR30Zhigh", "prob": 15 }
     ]
   },
@@ -1972,6 +1988,7 @@
       { "group": "everyday_uziMiniZhigh", "prob": 5 },
       { "group": "everyday_colt6520Zhigh", "prob": 15 },
       { "group": "everyday_s333ThunderstruckZhigh", "prob": 15 },
+      { "group": "everyday_SW_M327_TRR8", "prob": 15 },
       { "group": "everyday_PMR30Zhigh", "prob": 15 }
     ]
   },
@@ -2081,6 +2098,7 @@
     "entries": [
       { "group": "ZhighStimUnkown3", "prob": 30 },
       { "item": "1st_aid", "prob": 50 },
+      { "item": "1st_aid_ifak", "prob": 40 },
       { "item": "medkit1", "prob": 40 },
       { "item": "medkit2", "prob": 30 },
       { "item": "medkit3", "prob": 20 },
@@ -2127,6 +2145,7 @@
       { "item": "longrifle_flintlock", "prob": 7 },
       { "item": "rifle_flintlock", "prob": 3 },
       { "item": "carbine_flintlock", "prob": 2 },
+      { "item": "shotgun_paperPistolZhigh", "prob": 3 },
       { "item": "pistol_flintlock", "prob": 3 },
       { "item": "pistol_flintlock_smol", "prob": 3 },
       { "item": "pistol_flintlock_double", "prob": 1 },
@@ -2198,6 +2217,7 @@
       { "item": "rifle_flintlock", "prob": 3 },
       { "item": "carbine_flintlock", "prob": 2 },
       { "item": "pistol_flintlock", "prob": 3 },
+      { "item": "shotgun_paperPistolZhigh", "prob": 3 },
       { "item": "shotgun_flintlockZhigh", "prob": 3 },
       { "item": "shotgun_flintlock2Zhigh", "prob": 3 },
       { "item": "pistol_flintlock_smol", "prob": 3 },
@@ -2503,6 +2523,9 @@
       [ "lacrosseStickZhigh", 5 ],
       [ "laspistolToyZhigh", 5 ],
       [ "lasgunToyZhigh", 5 ],
+      [ "laspistolToy2Zhigh", 5 ],
+      [ "lasgunToy2Zhigh", 5 ],
+      [ "lasrifleToy2Zhigh", 5 ],
       [ "mask_paintball", 5 ],
       [ "paintballgun", 30 ],
       [ "paintballG_AR15", 10 ],
@@ -2700,6 +2723,9 @@
       [ "40x46mm_m651", 20 ],
       [ "40x46mm_m583Zhigh", 20 ],
       [ "40x46mm_acidZhigh", 10 ],
+      [ "40x46mm_dragon", 10 ],
+      [ "40x46mm_bounce", 10 ],
+      [ "40x46mm_m100Zhigh", 10 ],
       [ "ammo_satchel", 10 ],
       [ "bootstrap", 10 ],
       [ "chestpouch", 10 ],
@@ -2781,7 +2807,9 @@
     "items": [
       { "group": "ZhighStimUnkown3", "prob": 25 },
       [ "1st_aid", 30 ],
+      [ "peaked_capZhigh1", 20 ],
       [ "armor_riot", 20 ],
+      [ "1st_aid_ifak", 5 ],
       [ "defibrillatorZhigh", 5 ],
       [ "medcase", 5 ],
       [ "airhorn", 5 ],
@@ -3060,6 +3088,7 @@
     "type": "item_group",
     "id": "museum_guns",
     "items": [
+      [ "shotgun_paperPistolZhigh", 40 ],
       [ "pistol_flintlock", 40 ],
       [ "pistol_flintlock_smol", 35 ],
       [ "pistol_flintlock_double", 20 ],
@@ -3139,6 +3168,7 @@
       [ "paintball_goo", 10 ],
       [ "paintball_tg", 5 ],
       [ "mask_paintball", 20 ],
+      [ "underbarrelPaintballgunZhigh", 15 ],
       [ "doom_fullhelmet", 15 ],
       [ "doom_vest", 20 ], 
       [ "holster", 20 ], 
@@ -3176,6 +3206,7 @@
       [ "tamoshanterZhigh", 15 ],
       [ "crossbowTac15Zhigh", 2 ],
       [ "airbow", 10 ],
+      [ "airbow2", 10 ],
       [ "ZhighArrow_splay", 7 ],
       [ "arrow_wood", 7 ],
       [ "arrow_cf", 5 ],
@@ -3189,6 +3220,47 @@
     ]
   },
   {
+    "id": "sports_bulk",
+    "type": "item_group",
+    "subtype": "distribution",
+    "items": [
+      { "group": "charms_guns", "prob": 10 },
+      [ "lacrosseStickZhigh", 10 ],
+      [ "badmintonRacketZhigh", 15 ],
+      [ "tennnisRacketZhigh", 15 ],
+      [ "baseballBase_trapZhigh", 10 ],
+      [ "baseballHome_trapZhigh", 10 ],
+      [ "baseball", 50 ],
+      [ "cricket_bat", 30 ],
+      [ "kendoStick", 30 ],
+      [ "BBallglove", 30 ],
+      [ "BBallglove_disk", 30 ],
+      [ "airbow", 20 ],
+      [ "airbow2", 20 ],
+      [ "tubeSwim", 20 ],
+      [ "surfboard", 20 ],
+      [ "folding_skateboard", 60 ],
+      [ "mask_catcherZhigh", 40 ],
+      [ "tshirt_mint", 10 ],
+      [ "tshirt_Hawaii", 10 ],
+      [ "jacket_tracksuit_zhigh", 70 ],
+      [ "pants_tracksuit_zhigh", 70 ],
+      [ "shorts_tracksuit_zhigh", 50 ],
+      [ "jacket_tracksuit_zhigh_black", 20 ],
+      [ "pants_tracksuit_zhigh_black", 20 ],
+      [ "jacket_baseball", 50 ],
+      [ "jacket_baseball_2", 50 ],
+      [ "jacket_baseballXL", 20 ],
+      [ "jacket_baseball_2XL", 20 ],
+      [ "flightJacketZhigh", 20 ],
+      [ "luchador_maskZhigh", 20 ],
+      [ "swimKickboardZhigh", 60 ],
+      [ "kendoStick", 40 ],
+      [ "souWesterZhigh", 20 ],
+      [ "tamoshanterZhigh", 20 ]
+    ]
+  },
+  {
     "id": "sports",
     "type": "item_group",
     "items": [
@@ -3198,11 +3270,13 @@
       [ "tennnisRacketZhigh", 15 ],
       [ "baseballBase_trapZhigh", 10 ],
       [ "baseballHome_trapZhigh", 10 ],
+      [ "baseball", 20 ],
       [ "cricket_bat", 20 ],
       [ "kendoStick", 10 ],
       [ "BBallglove", 10 ],
       [ "BBallglove_disk", 10 ],
       [ "airbow", 10 ],
+      [ "airbow2", 10 ],
       [ "tubeSwim", 10 ],
       [ "surfboard", 10 ],
       [ "folding_skateboard", 30 ],
@@ -3386,6 +3460,7 @@
       [ "c4", 50 ],
       [ "grenadeHiEx", 30 ],
       [ "grenadeMiniZhigh", 30 ],
+      [ "paintNadeZhigh", 30 ],
       [ "fakeFlashBangZhigh", 30 ],
       [ "corrosiveGasNadeZhigh", 10 ],
       [ "bChargeZhigh", 10 ],
@@ -3404,6 +3479,11 @@
       [ "grenadeSapZhigh", 15 ],
       [ "tool_ninjaBomb", 15 ],
       [ "stunNadeZhigh", 15 ],
+      [ "healGrenadeZhigh", 15 ],
+      [ "paintNadeZhigh", 15 ],
+      [ "grenade_fuelBottle", 15 ],
+      [ "grenade_fuelStickyBottle", 15 ],
+      [ "powderChargeZhigh", 15 ],
       [ "canister_goo", 15 ]
     ]
   },
@@ -3636,6 +3716,9 @@
       { "item": "40x46mm_m433", "prob": 8 },
       { "item": "40x46mm_m583Zhigh", "prob": 5 },
       { "item": "40x46mm_acidZhigh", "prob": 5 },
+      { "item": "40x46mm_dragon", "prob": 5 },
+      { "item": "40x46mm_bounce", "prob": 5 },
+      { "item": "40x46mm_m100Zhigh", "prob": 5 },
       { "item": "40x46mm_m651", "prob": 5 },
       { "item": "40x46mm_m576", "prob": 12 },
       { "item": "40x53mm_m1001", "prob": 6 },
@@ -4047,6 +4130,16 @@
     ]
   },
   {
+    "id": "pool_table",
+    "type": "item_group",
+    "subtype": "distribution",
+    "items": [
+      [ "pool_cue_carbon", 50 ],
+      [ "pool_cue", 200 ],
+      [ "pool_ball", 600 ]
+    ]
+  },
+  {
     "id": "pocket_first_aid_kit",
     "type": "item_group",
     "subtype": "collection",
@@ -4061,6 +4154,34 @@
     "items": [
       { "item": "medkit1", "charges": 3 },
       { "item": "medkit2", "charges": 1 }
+    ]
+  },
+  {
+    "id": "individual_first_aid_kit",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [
+      { "item": "medkit2", "charges": 1 }
+    ]
+  },
+  {
+    "id": "water_boiling_heat",
+    "type": "requirement",
+    "//": "Tools usable for providing heat usable for boiling water, but not necessarily for anything else.",
+    "tools": [
+      [
+        [ "toolwatch", -1 ],
+        [ "coffeeGunZhigh", -1 ],
+        [ "hotplate", 1 ],
+        [ "multi_cooker", 1 ],
+        [ "char_smoker", 1 ],
+        [ "toolset", 1 ],
+        [ "coffeemaker", 1 ],
+        [ "atomic_coffeepot", -1 ],
+        [ "fire", -1 ],
+        [ "afs_atompot", -1 ],
+        [ "knife_heat", -1 ]
+      ]
     ]
   }
 ]

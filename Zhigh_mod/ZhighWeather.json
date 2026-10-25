@@ -1,5 +1,37 @@
 [
   {
+    "type": "base_weather",
+    "id": "default",
+    "spring_temp": 16,
+    "summer_temp": 32,
+    "autumn_temp": 0,
+    "winter_temp": -28,
+    "base_humidity": 90.0,
+    "summer_humidity_manual_mod": -1,
+    "winter_humidity_manual_mod": 34,
+    "base_pressure": 1015.0,
+    "base_acid": 20.0,
+    "base_wind": 84,
+    "base_wind_distrib_peaks": 80,
+    "base_wind_season_variation": 50,
+    "weather_types": [
+      "clear",
+      "sunny",
+      "cloudy",
+      "light_drizzle",
+      "drizzle",
+      "rain",
+      "thunder",
+      "lightning",
+      "acid_drizzle",
+      "acid_rain",
+      "flurries",
+      "snowing",
+      "snowstorm",
+      "emission_Zhigh"
+    ]
+  },
+  {
     "id": "emission_Zhigh",
     "type": "weather_type",
     "name": "UNKNOWN",
@@ -19,16 +51,16 @@
     "sound_category": "thunder",
     "sun_intensity": "none",
     "requirements": {
-		"required_weathers": [
-			"drizzle",
-			"heavy_rain",
-			"thunder",
-			"lightning",
-			"flurries",
-			"snowing",
-			"snowstorm",
-			"acid_rain"
-		]
+	  "required_weathers": [
+	  	"drizzle",
+	  	"heavy_rain",
+	  	"thunder",
+	  	"lightning",
+	  	"flurries",
+	  	"snowing",
+	  	"snowstorm",
+	  	"acid_rain"
+	  ]
     }
   },
   {

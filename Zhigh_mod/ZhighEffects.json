@@ -424,19 +424,12 @@
     "max_intensity": 30,
     "int_dur_factor": "3 m",
     "base_mods": {
-		"healing_rate": [ 1 ],
-		"healing_head": [ 50 ],
-		"healing_torso": [ 150 ],
-		"health_min": [ 50 ],
-		"health_chance": [ 95 ],
-		"h_mod_min": [ 50 ],
-		"h_mod_chance": [ 95 ],
-		"pain_tick": [ 25 ],
-		"pain_min": [ -5 ],
-		"stamina_min": [ 4 ],
-		"stamina_max": [ 8 ],
-		"speed_mod": [ 10, 25 ]
-    },
+		"speed_mod": [ 30 ],
+		"str_mod": [ 5 ],
+		"dex_mod": [ 5 ],
+		"int_mod": [ 5 ],
+		"per_mod": [ 5 ]
+	},
     "effects_on_remove": [ { "allow_on_remove": true, "effect_type": "healing_medkit", "duration": "1 m" } ]
   },
   {

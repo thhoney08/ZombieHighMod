@@ -1,5 +1,83 @@
 [
   {
+    "id": "emit_fd_healZhigh",
+    "type": "emit",
+    "//": "Steady stream of heal cloud (example: heal grenade)",
+    "field": "fd_healZhigh",
+    "intensity": 3,
+    "qty": 36
+  },
+  {
+    "id": "fd_healZhigh",
+    "type": "field_type",
+    "legacy_enum_id": 8,
+    "intensity_levels": [
+      {
+        "name": "thin heal cloud",
+        "sym": "5",
+        "color": "yellow",
+        "dangerous": true,
+        "effects": [
+          {
+            "effect_id": "healing_gas_zhigh",
+            "body_part": "torso",
+            "intensity": 1,
+            "min_duration": "1 seconds",
+            "max_duration": "1 seconds",
+            "immune_in_vehicle": true,
+            "is_environmental": false,
+            "message": "You got healed!",
+            "message_npc": "<npcname> got healed!",
+            "message_type": "bad"
+          }
+        ]
+      },
+      {
+        "name": "heal cloud",
+        "effects": [
+          {
+            "effect_id": "healing_gas_zhigh",
+            "body_part": "torso",
+            "intensity": 1,
+            "min_duration": "2 seconds",
+            "max_duration": "2 seconds",
+            "immune_in_vehicle": true,
+            "is_environmental": false,
+            "message": "You got healed!",
+            "message_npc": "<npcname> got healed!",
+            "message_type": "bad"
+          }
+        ]
+      },
+      {
+        "name": "thick heal cloud",
+        "color": "brown",
+        "effects": [
+          {
+            "effect_id": "healing_gas_zhigh",
+            "body_part": "torso",
+            "intensity": 1,
+            "min_duration": "8 seconds",
+            "max_duration": "8 seconds",
+            "immune_in_vehicle": true,
+            "is_environmental": false,
+            "message": "You got healed!",
+            "message_npc": "<npcname> got healed!",
+            "message_type": "bad"
+          }
+        ]
+      }
+    ],
+    "description_affix": "covered_in_a",
+    "is_splattering": true,
+    "priority": 2,
+    "half_life": "1000 seconds",
+    "phase": "plasma",
+    "display_items": false,
+    "display_field": true,
+    "looks_like": "fd_laser"
+  },
+  {
     "id": "emit_fd_stunZhigh",
     "type": "emit",
     "//": "Steady stream of stun cloud (example: stun grenade)",

@@ -1,5 +1,65 @@
 [
   {
+    "id": "GLUE_TRAIL",
+    "type": "ammo_effect",
+    "trail": { "field_type": "fd_glue", "intensity_min": 1, "intensity_max": 3 }
+  },
+  {
+    "id": "GLUEBOMB",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_glue", "intensity_min": 3, "intensity_max": 3 }
+  },
+  {
+    "id": "STICKYFUEL_TRAIL",
+    "type": "ammo_effect",
+    "trail": { "field_type": "fd_sticky_fuel", "intensity_min": 1, "intensity_max": 3 }
+  },
+  {
+    "id": "TICKYFUELBOMB",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_sticky_fuel", "intensity_min": 3, "intensity_max": 3 }
+  },
+  {
+    "id": "FUEL_TRAIL",
+    "type": "ammo_effect",
+    "trail": { "field_type": "fd_fuel", "intensity_min": 1, "intensity_max": 3 }
+  },
+  {
+    "id": "FUELBOMB",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_fuel", "intensity_min": 3, "intensity_max": 3 }
+  },
+  {
+    "id": "LUBE_TRAIL",
+    "type": "ammo_effect",
+    "trail": { "field_type": "fd_industrial_lubricant", "intensity_min": 1, "intensity_max": 3 }
+  },
+  {
+    "id": "LUBEBOMB",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_industrial_lubricant", "intensity_min": 3, "intensity_max": 3 }
+  },
+  {
+    "id": "OIL_TRAIL",
+    "type": "ammo_effect",
+    "trail": { "field_type": "fd_oil", "intensity_min": 1, "intensity_max": 3 }
+  },
+  {
+    "id": "OILBOMB",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_oil", "intensity_min": 3, "intensity_max": 3 }
+  },
+  {
+    "id": "COOKING_OIL_TRAIL",
+    "type": "ammo_effect",
+    "trail": { "field_type": "fd_cooking_oil", "intensity_min": 1, "intensity_max": 3 }
+  },
+  {
+    "id": "COOKING_OILBOMB",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_cooking_oil", "intensity_min": 3, "intensity_max": 3 }
+  },
+  {
     "id": "AMMO_DAZEEFFECT_ZHIGH",
     "type": "ammo_effect",
     "explosion": {
@@ -277,5 +337,14 @@
     "id": "HEATFRAGZHIGH_SMALL",
     "type": "ammo_effect",
     "explosion": { "fragment": { "impact": { "damage_type": "heat", "amount": 10, "armor_multiplier": 4.5 }, "range": 2 } }
+  },
+  {
+    "id": "AMMO_M100_SIMON_ZHIGH",
+    "type": "ammo_effect",
+    "explosion": {
+      "damage": 1,
+      "radius": 1,
+      "fragment": { "impact": { "damage_type": "bullet", "amount": 490, "armor_multiplier": 1.6 }, "range": 1 }
+    }
   }
 ]

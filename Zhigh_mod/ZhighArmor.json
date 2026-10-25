@@ -712,6 +712,7 @@
     "symbol": "[",
     "color": "dark_gray",
     "covers": [ "arm_either" ],
+    "crafting_speed_modifier": 1.5,
     "qualities": [
       [ "ANVIL", 8 ],
       [ "ANESTHESIA", 8 ],
@@ -771,6 +772,7 @@
       [ "VOLT_MEASURE", 8 ]
     ],
     "use_action": [
+      "ARTIFACT_ANALYZER",
       "GUN_CLEAN",
       "GUN_REPAIR",
       "PICKAXE",
@@ -4285,6 +4287,7 @@
       "type": "bandolier",
       "capacity": 8,
       "ammo": [
+        "shotpaper",
         "shotcanister",
         "paintball",
         "nail",
@@ -6647,7 +6650,7 @@
     "color": "yellow",
     "name": { "str": "atomic mining helmet (covered)" },
     "description": "This is a mining helmet with a heavy-duty LED flashlight powered by the magic of nuclear decay, focused for more usable brightness.",
-    "flags": [ "DURABLE_MELEE", "RADIOACTIVE", "WATERPROOF" ],
+    "flags": [ "DURABLE_MELEE", "RADIOACTIVE", "LEAK_DAM", "WATERPROOF" ],
     "price": "125 USD",
     "price_postapoc": "250 cent",
     "material": [ "plastic" ],
@@ -7646,7 +7649,7 @@
 		"shot",
 		"4570",
 		"flintlock",
-		"flintlock_shot",
+		"flintlockshot",
 		"380",
 		"blunderbuss",
 		"shotpaper",
@@ -8166,26 +8169,26 @@
     "material": [ "plastic" ],
     "weight": "10 g",
     "price_postapoc": "10 cent",
-    "description": "It's hard to hit the moving target."
+    "description": "It's hard to hit the moving target.",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "conditions": [ "WORN" ],
+          "values": [
+            { "value": "RANGED_DISPERSION", "add": -20 }
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "hat_cottonZhigh3",
-    "copy-from": "hat_cotton",
+    "copy-from": "beret",
     "type": "ARMOR",
     "name": { "str": "king marine cap" },
     "color": "white",
     "extend": { "flags": [ "FANCY" ] },
     "description": "It looks like milk pudding, but don't taste it."
-  },
-  {
-    "id": "badge_roseZhigh",
-    "copy-from": "badge_abstract",
-    "type": "ARMOR",
-    "name": { "str": "purple rose hairpin" },
-    "material": [ "plastic" ],
-    "weight": "10 g",
-    "price_postapoc": "10 cent",
-    "description": "When imperfect love meets you, it becomes eternal love."
   },
   {
     "id": "pandaBlindfoldZhigh",
@@ -8411,16 +8414,6 @@
     "name": { "str": "black dust mask" }
   },
   {
-    "id": "badge_roseZhigh01",
-    "copy-from": "badge_abstract",
-    "type": "ARMOR",
-    "name": { "str": "red rose hairpin" },
-    "material": [ "plastic" ],
-    "weight": "10 g",
-    "price_postapoc": "10 cent",
-    "description": "Take this pretty rose, haha.  @)---8----"
-  },
-  {
     "id": "helmet_motorZhigh",
     "copy-from": "helmet_motor",
     "type": "ARMOR",
@@ -8544,206 +8537,6 @@
     "looks_like": "bondage_mask"
   },
   {
-    "id": "butcherNailZhigh1",
-    "type": "TOOL_ARMOR",
-    "name": "chrono-implant",
-    "description": ".",
-    "weight": "500 g",
-    "volume": "0 ml",
-    "price": "250 kUSD",
-    "price_postapoc": "250 USD",
-    "to_hit": -3,
-    "material": [ "plastic", "steel" ],
-    "symbol": "[",
-    "color": "light_green",
-    "coverage": 0,
-    "encumbrance": 0,
-    "warmth": 0,
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ALWAYS",
-          "values": [
-            { "value": "STRENGTH", "add": -2 },
-            { "value": "DEXTERITY", "add": -2 },
-            { "value": "INTELLIGENCE", "add": -2 },
-            { "value": "PERCEPTION", "add": -2 }
-          ]
-        }
-      ]
-    },
-    "material_thickness": 10,
-    "environmental_protection": 0,
-    "use_action": {
-      "target": "butcherNailZhigh2",
-      "msg": "You pull the activating lever, making chrono-implant alive.",
-      "target_charges": 2000,
-	  "active": true,
-      "menu_text": "Activate",
-      "type": "transform"
-    },
-    "flags": [ "ONLY_ONE", "TRADER_AVOID", "BELTED", "NO_TAKEOFF" ]
-  },
-  {
-    "id": "butcherNailZhigh2",
-    "copy-from": "butcherNailZhigh1",
-    "type": "TOOL_ARMOR",
-    "name": "chrono-implant",
-    "charges_per_use": 0,
-    "max_charges": 30000,
-    "initial_charges": 30000,
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ALWAYS",
-		  "mutations": [ "CRAFTY", "WAKEFUL3", "BRAWLER", "PSYCHOPATH", "KILLER" ],
-          "values": [
-            { "value": "STRENGTH", "add": 4 },
-            { "value": "DEXTERITY", "add": 4 },
-            { "value": "INTELLIGENCE", "add": 4 },
-            { "value": "PERCEPTION", "add": 4 }
-          ],
-		  "ench_effects": [
-		  	{ "effect": "cureall", "intensity": 3 },
-		  	{ "effect": "adrenaline666", "intensity": 3 }
-		  ]
-        },
-        { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "STAMINA_CAP", "multiply": 99.2 } ] },
-        { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "STAMINA_REGEN", "multiply": 99.2 } ] }
-      ],
-      "recharge_scheme": [
-        {
-          "type": "field",
-          "interval": "1 s",
-          "rate": 20,
-          "field": "fd_gibs_invertebrate",
-          "int_min": 1,
-          "int_max": 22,
-          "message": "Your chrono-implant charges up!"
-        },
-        {
-          "type": "field",
-          "interval": "1 s",
-          "rate": 20,
-          "field": "fd_gibs_insect",
-          "int_min": 1,
-          "int_max": 22,
-          "message": "Your chrono-implant charges up!"
-        },
-        {
-          "type": "field",
-          "interval": "1 s",
-          "rate": 20,
-          "field": "fd_sludge",
-          "int_min": 1,
-          "int_max": 22,
-          "message": "Your chrono-implant charges up!"
-        },
-        {
-          "type": "field",
-          "interval": "1 s",
-          "rate": 20,
-          "field": "fd_blood_invertebrate",
-          "int_min": 1,
-          "int_max": 22,
-          "message": "Your chrono-implant charges up!"
-        },
-        {
-          "type": "field",
-          "interval": "1 s",
-          "rate": 20,
-          "field": "fd_blood_insect",
-          "int_min": 1,
-          "int_max": 22,
-          "message": "Your chrono-implant charges up!"
-        },
-        {
-          "type": "field",
-          "interval": "1 s",
-          "rate": 20,
-          "field": "fd_blood_veggy",
-          "int_min": 1,
-          "int_max": 22,
-          "message": "Your chrono-implant charges up!"
-        },
-        {
-          "type": "field",
-          "interval": "1 s",
-          "rate": 20,
-          "field": "fd_slime",
-          "int_min": 1,
-          "int_max": 22,
-          "message": "Your chrono-implant charges up!"
-        },
-        {
-          "type": "field",
-          "interval": "1 s",
-          "rate": 20,
-          "field": "fd_gibs_veggy",
-          "int_min": 1,
-          "int_max": 22,
-          "message": "Your chrono-implant charges up!"
-        },
-        {
-          "type": "field",
-          "interval": "1 s",
-          "rate": 20,
-          "field": "fd_gibs_flesh",
-          "int_min": 1,
-          "int_max": 22,
-          "message": "Your chrono-implant charges up!"
-        },
-        {
-          "type": "field",
-          "interval": "1 s",
-          "rate": 20,
-          "field": "fd_bile",
-          "int_min": 1,
-          "int_max": 22,
-          "message": "Your chrono-implant charges up!"
-        },
-        {
-          "type": "field",
-          "interval": "1 s",
-          "rate": 20,
-          "field": "fd_blood",
-          "int_min": 1,
-          "int_max": 22,
-          "message": "Your chrono-implant charges up!"
-        }
-      ]
-    },
-    "use_action": [ ],
-	"turns_per_charge": 10000,
-	"revert_to": "butcherNailZhigh3"
-  },
-  {
-    "id": "butcherNailZhigh3",
-    "copy-from": "butcherNailZhigh1",
-    "type": "TOOL_ARMOR",
-    "name": "deactivated chrono-implant",
-    "charges_per_use": 0,
-    "max_charges": 3000,
-    "initial_charges": 3000,
-    "use_action": [ ],
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ALWAYS",
-          "values": [
-            { "value": "STRENGTH", "add": -2 },
-            { "value": "DEXTERITY", "add": -2 },
-            { "value": "INTELLIGENCE", "add": -2 },
-            { "value": "PERCEPTION", "add": -2 }
-          ]
-        }
-      ]
-    }
-  },
-  {
     "type": "TOOL_ARMOR",
     "category": "clothing",
     "id": "aimFrameZhigh",
@@ -8842,5 +8635,109 @@
     "environmental_protection": 2,
     "valid_mods": [ "resized_large", "resized_small" ],
     "flags": [ "SUN_GLASSES", "ALLOWS_NATURAL_ATTACKS", "ALLOWS_HORNS", "OVERSIZE" ]
+  },
+  {
+    "id": "goggles_skiZhigh",
+    "type": "ARMOR",
+    "name": { "str": "crimson goggles" },
+    "copy-from": "goggles_ski",
+    "looks_like": "survivor_goggles"
+  },
+  {
+    "id": "cowboy_hat_zhigh2",
+    "copy-from": "cowboy_hat",
+    "type": "ARMOR",
+    "name": { "str": "hardee hat" },
+    "description": "A hat made out of felt, and was a part of an army unform of a forgotten country.  Got the brass insigna on it.",
+    "material": [ "wool", "brass" ]
+  },
+  {
+    "id": "adv_UPS_off_deathMachineZhigh",
+    "copy-from": "adv_UPS_off",
+    "looks_like": "boxpack",
+    "type": "TOOL_ARMOR",
+    "category": "tools",
+    "name": { "str": "death machine UPS", "str_pl": "death machine UPS's" },
+    "description": "This is advanced versions of the unified power supply, or UPS, bound in one.  Designed for military use to power advanced weapons, it has a hand crank, but only accepts rechargeable batteries.  It can power many household electronics as well.",
+    "weight": "11000 g",
+    "volume": "10 L",
+    "covers": [ "torso" ],
+    "initial_charges": 50000,
+    "max_charges": 50000,
+    "relic_data": { "recharge_scheme": [ { "type": "time", "interval": "1 m", "rate": 400 } ] },
+    "extend": { "flags": [ "BELTED", "OVERSIZE" ] }
+  },
+  {
+    "id": "paletteZhigh",
+    "copy-from": "shield_targe_wooden",
+    "looks_like": "shield_targe_wooden",
+    "type": "ARMOR",
+    "name": { "str": "wooden palette" },
+    "description": "A wooden palette used by artists to arrange and mix paint.  Tolerable weight but not very tough.  Also have some places to store liquids.",
+    "use_action": {
+      "type": "bandolier",
+      "capacity": 8,
+      "ammo": [
+        "water",
+        "acid",
+        "spray_paint",
+        "chemical_spray"
+      ],
+      "draw_cost": 20
+    }
+  },
+  {
+    "id": "mask_gas_unknownZhigh",
+    "repairs_like": "kevlar",
+    "type": "ARMOR",
+    "name": { "str": "gas mask" },
+    "description": "A protective reinforced Kevlar gas mask that covers the face.  Provides protection from ballistic threats up to 9x19mm.",
+    "weight": "512 g",
+    "volume": "750 ml",
+    "price": "200 USD",
+    "price_postapoc": "1250 cent",
+    "to_hit": -3,
+    "material": [ "kevlar_rigid", "plastic" ],
+    "symbol": "[",
+    "looks_like": "glasses_bal",
+    "color": "dark_gray",
+    "covers": [ "mouth", "eyes" ],
+    "coverage": 95,
+    "encumbrance": 20,
+    "warmth": 10,
+    "material_thickness": 4,
+    "environmental_protection": 16,
+    "resistance": { "bullet": 36 },
+    "flags": [ "WATER_FRIENDLY", "STURDY" ]
+  },
+  {
+    "id": "cowboy_hat_zhigh3",
+    "copy-from": "cowboy_hat",
+    "type": "ARMOR",
+    "name": { "str": "buckaroo hat" },
+    "description": "A hat made out of fur, and used just like a cowboy's hat.",
+    "material": [ "fur" ]
+  },
+  {
+    "id": "peaked_capZhigh1",
+    "copy-from": "postman_hat",
+    "type": "ARMOR",
+    "name": { "str": "combination cover" },
+    "description": "A traditional mail carrier's cap, with the police logo embroidered on the front above the plastic cap.  A symbol of a bygone world."
+  },
+  {
+    "id": "veil_nunZhigh",
+    "copy-from": "veil_wedding",
+    "type": "ARMOR",
+    "name": { "str": "nun coif" },
+    "description": "A coif for a nun's uniform."
+  },
+  {
+    "id": "hat_golfZhigh",
+    "copy-from": "hat_golf",
+    "type": "ARMOR",
+    "name": { "str": "nomex golf cap" },
+    "material": [ "nomex" ],
+    "looks_like": "hat_golf"
   }
 ]

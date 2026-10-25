@@ -525,14 +525,14 @@
     "type": "AMMO",
     "name": { "str": "birdshot paper cartridge" },
     "copy-from": "shot_paper_bird",
-    "shot": { "count": 8, "half_angle": 15 }
+    "shot": { "count": 12, "half_angle": 6 }
   },
   {
     "id": "shot_paper_00",
     "type": "AMMO",
     "name": { "str": "buckshot paper cartridge" },
     "copy-from": "shot_paper_00",
-    "shot": { "count": 12, "half_angle": 10 }
+    "shot": { "count": 8, "half_angle": 5 }
   },
   {
     "id": "20x66_beanbag",
@@ -1746,7 +1746,7 @@
     "material_thickness": 1,
     "use_action": {
       "type": "bandolier",
-      "capacity": 50,
+      "capacity": 70,
       "ammo": [
         "paintball",
         "nail",
@@ -1821,14 +1821,36 @@
     "copy-from": "bandolier_shotgun",
     "type": "ARMOR",
     "name": { "str": "waist shotgun bandolier" },
-    "use_action": { "type": "bandolier", "capacity": 50, "ammo": [ "410shot", "shot", "20x66mm", "signal_flare", "shotcanister" ], "draw_cost": 15 }
+    "use_action": {
+	  "type": "bandolier",
+	  "capacity": 50,
+	  "ammo": [
+		"410shot",
+		"shot",
+		"20x66mm",
+		"signal_flare",
+		"shotcanister"
+	  ],
+	  "draw_cost": 15
+	}
   },
   {
     "id": "torso_bandolier_shotgun",
     "copy-from": "torso_bandolier_shotgun",
     "type": "ARMOR",
     "name": { "str": "torso shotgun bandolier" },
-    "use_action": { "type": "bandolier", "capacity": 100, "ammo": [ "410shot", "shot", "20x66mm", "signal_flare", "shotcanister" ], "draw_cost": 15 }
+    "use_action": {
+	  "type": "bandolier",
+	  "capacity": 100,
+	  "ammo": [
+		"410shot",
+		"shot",
+		"20x66mm",
+		"signal_flare",
+		"shotcanister"
+	  ],
+	  "draw_cost": 15
+	}
   },
   {
     "id": "flintlock_pouch",
@@ -1837,8 +1859,16 @@
     "name": { "str": "paper cartridge pouch", "str_pl": "paper cartridge pouches" },
     "use_action": {
       "type": "bandolier",
-      "capacity": 40,
-      "ammo": [ "flintlock", "flintlockshot", "36paper", "44paper", "blunderbuss", "shotcanister", "shotpaper" ],
+      "capacity": 80,
+      "ammo": [
+	    "flintlock",
+		"flintlockshot",
+		"36paper",
+		"44paper",
+		"blunderbuss",
+		"shotcanister",
+		"shotpaper"
+	  ],
       "draw_cost": 20
     }
   },
@@ -1900,6 +1930,14 @@
     "type": "ARMOR",
     "name": { "str": "large birchbark quiver" },
     "use_action": { "type": "bandolier", "capacity": 90, "ammo": [ "arrow", "bolt" ], "draw_cost": 20 }
+  },
+  {
+    "id": "quiver_atlatl",
+	"looks_like": "quiver",
+    "copy-from": "quiver_atlatl",
+    "type": "ARMOR",
+    "name": { "str": "atlatl dart quiver" },
+    "use_action": { "type": "bandolier", "capacity": 15, "ammo": [ "atlatl" ], "draw_cost": 20 }
   },
   {
     "id": "helsing",
@@ -2123,7 +2161,7 @@
     "magazines": [ [ "BB", [ "BbClip_50" ] ] ],
     "clip_size": 250,
     "reload": 500,
-    "modes": [ [ "DEFAULT", "single", 1 ], [ "AUTO", "full auto", 2 ] ]
+    "modes": [ [ "DEFAULT", "single", 1 ], [ "BURST", "burst", 2 ] ]
   },
   {
     "id": "paintballgun",
@@ -2153,10 +2191,11 @@
     "type": "GUN",
     "name": { "str": "water cannon" },
     "flags": [ "NEVER_JAMS", "MOUNTED_GUN", "NON_FOULING" ],
-    "ammo": [ "water", "acid" ],
+    "ammo": [ "water", "acid", "lubricant", "glue" ],
     "ranged_damage": { "damage_type": "bullet", "amount": 40, "armor_penetration": 10 },
     "modes": [ [ "DEFAULT", "burst", 4 ], [ "SINGLE", "single", 1 ] ],
     "clip_size": 500,
+	"range": 1000,
     "valid_mod_locations": [
       [ "accessories", 2 ],
       [ "sling", 1 ],
@@ -3659,6 +3698,7 @@
     "copy-from": "iwi_tavor_x95_300blk",
     "name": { "str": "IWI Tavor X95 .300BLK" },
     "range": 4,
+    "proportional": { "reload": 1.5 },
     "ranged_damage": { "damage_type": "bullet", "amount": 2 }
   },
   {
@@ -4032,8 +4072,8 @@
     "type": "TOOL",
     "copy-from": "spray_can",
     "name": { "str": "spray can" },
-    "initial_charges": 20,
-    "max_charges": 20,
+    "initial_charges": 30,
+    "max_charges": 30,
     "flags": [ "WRITE_MESSAGE", "NO_UNLOAD", "NO_PAINT", "BELT_CLIP" ]
   },
   {
@@ -4120,5 +4160,69 @@
 	  [ "mechanism", 1 ],
 	  [ "accessories", 2 ]
 	]
+  },
+  {
+	"id": "40x46mm_m576",
+    "type": "AMMO",
+    "copy-from": "40x46mm_m576",
+    "name": { "str": "40x46mm M576 buckshot" },
+    "shot": { "count": 16, "half_angle": 5 }
+  },
+  {
+	"id": "40x46mm_flechette",
+    "type": "AMMO",
+    "copy-from": "40x46mm_flechette",
+    "name": { "str": "improvised 40x46mm flechette" },
+    "damage": { "damage_type": "bullet", "amount": 5, "armor_penetration": 72 },
+    "shot": { "count": 16, "half_angle": 5 }
+  },
+  {
+	"id": "slippers",
+    "type": "ARMOR",
+    "copy-from": "slippers",
+    "name": { "str": "pair of slippers", "str_pl": "pairs of slippers" },
+    "material": [ "plastic" ],
+    "coverage": 3,
+    "encumbrance": 3,
+    "to_hit": 1,
+    "thrown_damage": [ { "damage_type": "bash", "amount": 30 } ]
+  },
+  {
+	"id": "mjolnir",
+    "type": "GENERIC",
+    "copy-from": "mjolnir",
+    "name": { "str": "Mjoelnir" },
+    "thrown_damage": [ { "damage_type": "bash", "amount": 8888 } ],
+	"weight": "543 g"
+  },
+  {
+	"id": "atlatl",
+    "type": "GUN",
+    "copy-from": "atlatl",
+    "name": { "str": "atlatl" },
+    "ranged_damage": { "damage_type": "stab", "amount": 50 },
+    "range": 25,
+    "dispersion": 100,
+    "bashing": 7,
+    "armor_data": { "covers": [ "torso" ], "encumbrance": 5 },
+	"weight": "543 g"
+  },
+  {
+	"id": "super_soaker",
+    "type": "GUN",
+    "copy-from": "super_soaker",
+    "name": { "str": "super soaker" },
+    "ranged_damage": { "damage_type": "bash", "amount": 5 },
+    "range": 45,
+    "dispersion": 100,
+    "bashing": 7,
+    "ammo": [ "reactor_slurry", "water", "acid", "lubricant", "glue" ]
+  },
+  {
+	"id": "grip_hook",
+    "type": "GENERIC",
+    "copy-from": "grip_hook",
+    "name": { "str": "grip hook" },
+    "flags": [ "DURABLE_MELEE", "BELT_CLIP", "STAB", "UNARMED_WEAPON" ]
   }
 ]
