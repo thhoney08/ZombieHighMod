@@ -4065,7 +4065,52 @@
           { "id": "t_tree_bambooZhigh", "fg": 23 },
           { "id": "t_tree_bambooZhigh_harvested", "fg": 23 },
           { "id": "mon_hare", "fg": 24 },
-          { "id": "mon_rabbit", "fg": 24 }
+          { "id": "mon_rabbit", "fg": 24 },
+          { "id": "mon_zombie_kevlar_2_cannon", "fg": 29 },
+          { "id": "mon_zombie_kevlar_2_minigun", "fg": 30 },
+          {
+            "id": "mon_zombie_kevlar_2_chainsaw",
+            "fg": [
+			  { "weight": 10, "sprite": 31 },
+			  { "weight": 10, "sprite": 32 },
+			  { "weight": 10, "sprite": 33 }
+			],
+            "rotates": false,
+            "animated": true
+          },
+          { "id": "mon_zombie_kevlar_2_cannon2", "fg": 34 }
+        ],
+        "//": "range 1 to 128",
+        "sprite_width": 64,
+        "sprite_height": 80,
+        "sprite_offset_x": -16,
+        "sprite_offset_y": -48
+      }
+    ]
+  },
+  {
+    "type": "mod_tileset",
+    "compatibility": [
+      "Chibi_Ultica",
+      "UltimateCataclysm",
+      "MshockXottoplus",
+      "UNDEAD_PEOPLE",
+      "UNDEAD_PEOPLE_BASE",
+      "UNDEAD_PEOPLE_LEGACY",
+      "UlticaShell",
+      "MshockXottoplus12",
+      "MSX++DEAD_PEOPLE",
+      "MXplus12_for_cosmetics",
+      "MSXotto+"
+    ],
+    "tiles-new": [
+      {
+        "file": "Zhigh_monster0.png",
+        "tiles": [
+          { "id": "corpse_mon_zombie_kevlar_2_cannon", "fg": 7 },
+          { "id": "corpse_mon_zombie_kevlar_2_minigun", "fg": 7 },
+          { "id": "corpse_mon_zombie_kevlar_2_chainsaw", "fg": 7 },
+          { "id": "corpse_mon_zombie_kevlar_2_cannon2", "fg": 7 }
         ],
         "//": "range 1 to 128",
         "sprite_width": 64,
