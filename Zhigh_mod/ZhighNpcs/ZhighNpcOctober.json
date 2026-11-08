@@ -34,7 +34,7 @@
       { "skill": "melee", "bonus": { "rng": [ 2, 4 ] } },
       { "skill": "dodge", "bonus": { "rng": [ 4, 9 ] } },
       { "skill": "bashing", "bonus": { "rng": [ 2, 4 ] } },
-      { "skill": "rifle", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 2, 4 ] } },
       { "skill": "gun", "bonus": { "rng": [ 2, 4 ] } }
     ]
   },
@@ -68,7 +68,7 @@
     "type": "item_group",
     "id": "NC_October_weapon",
     "subtype": "distribution",
-    "entries": [ { "item": "bbmachinepistol", "ammo-item": "bb", "charges": 300 } ]
+    "entries": [ { "item": "bbpistolAkim", "ammo-item": "bb", "charges": 600, "contents-item": [ "charm_fak", "charm_spike", "charm_hglass" ] } ]
   },
   {
     "type": "item_group",
@@ -77,6 +77,7 @@
     "items": [
       { "item": "BBclip300", "ammo-item": "bb", "charges": 300 },
       { "item": "BBclip300", "ammo-item": "bb", "charges": 300 },
+      { "item": "cudgel_shockZhigh" },
       { "group": "ZhighNpc_misc" },
       { "item": "bb", "count-min": 1, "count-max": 2, "prob": 10 }
     ]

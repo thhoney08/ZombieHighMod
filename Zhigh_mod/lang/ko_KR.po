@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zhigh_Mod\n"
-"POT-Creation-Date: 2026-10-25 08:21-0500\n"
+"POT-Creation-Date: 2026-11-08 11:12-0600\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -10586,7 +10586,6 @@ msgid_plural "active penades"
 msgstr[0] "펜 수류탄 (켜짐)"
 
 #. ~ Use action no_deactivate_msg for {'str': 'active penade'}.
-#. ~ Use action no_deactivate_msg for active aerial bombardment signal flare.
 #. ~ Use action no_deactivate_msg for {'str': 'active high explosive
 #. grenade'}.
 #. ~ Use action no_deactivate_msg for {'str': 'active anti-tank grenade'}.
@@ -10603,7 +10602,7 @@ msgstr[0] "펜 수류탄 (켜짐)"
 #. bottle'}.
 #. ~ Use action no_deactivate_msg for {'str': 'active improvised sticky fuel
 #. bottle'}.
-#: .\ZhighItems.json .\ZhighWeapons\ZhighAmmo.json .\ZhighWeapons\ZhighThrowing.json
+#: .\ZhighItems.json .\ZhighWeapons\ZhighThrowing.json
 msgid "You've already pulled the %s's pin; try throwing it instead."
 msgstr "%s의 핀이 이미 뽑혀, 곧 터질것이니 얼른 던지는 것이 좋다."
 
@@ -14674,6 +14673,39 @@ msgstr[0] "이성을 잃은 수중전문대원"
 #: .\ZhighMonsters.json
 msgid "Wearing swimming gear and helmet, this feral wields a speargun in its hand.  It's unique monovisor is searching for its enemies."
 msgstr "수영용 장비와 헬멧을 두른 이 이성을 잃은 자는 작살총을 손에 들고 있습니다.  특유의 단안 고글은 자신의 적을 찾고 있습니다."
+
+#: .\ZhighMonsters.json
+msgid "Kevlar feral hulk cannoneer"
+msgid_plural "Kevlar feral hulk cannoneers"
+msgstr[0] "이성을 잃은 케블라 헐크 포수"
+
+#: .\ZhighMonsters.json
+msgid "The feral hulk fires its gun!"
+msgstr "이성을 잃은 헐크가 사격합니다!"
+
+#: .\ZhighMonsters.json
+msgid "Kevlar feral hulk minigunner"
+msgid_plural "Kevlar feral hulk minigunners"
+msgstr[0] "이성을 잃은 케블라 헐크 미니건 사수"
+
+#: .\ZhighMonsters.json
+msgid "Kevlar feral hulk butcher"
+msgid_plural "Kevlar feral hulk butchers"
+msgstr[0] "이성을 잃은 케블라 헐크 도살자"
+
+#: .\ZhighMonsters.json
+msgid "monster 3-inch ordnance rifle"
+msgid_plural "monster 3-inch ordnance rifles"
+msgstr[0] "몬스터 3인치 포병 소총"
+
+#: .\ZhighMonsters.json
+msgid "This exists to alter the dispersion of the new tank drone.  This is a bug if you find one of these."
+msgstr "이 기능은 새로운 탱크 드론의 분산 범위를 변경하기 위한 것입니다. 만약 이런 현상을 발견한다면, 이는 버그입니다."
+
+#: .\ZhighMonsters.json
+msgid "Kevlar feral hulk demolisher"
+msgid_plural "Kevlar feral hulk demolishers"
+msgstr[0] "이성을 잃은 케블라 헐크 파괴자"
 
 #: .\ZhighMutations.json
 msgid "Hair: MJ"
@@ -28181,16 +28213,16 @@ msgstr "공장 초기화"
 
 #. ~ Description for mission '{'str': 'Factory Reset'}'
 #: .\ZhighNpcs\ZhighNpcHacker.json
-msgid "Clean the data from the SD cards and give extra two."
-msgstr "이전에 받았던 SD카드의 데이터를 지운 뒤 두 개를 더 넘기세요."
+msgid "Get a couple of hard drives."
+msgstr "하드 드라이브를 두 개 정도 구하세요."
 
 #: .\ZhighNpcs\ZhighNpcHacker.json
-msgid "I need more memory, and need to reset these two.  Add extra two and make it a deal."
-msgstr "메모리가 더 필요하니깐, 이 두개 리셋해줘.  그리고 같은 걸로 두개 더 줘."
+msgid "I need more memory, and need them big.  Get some hard drives."
+msgstr "메모리가 더 필요하고, 용량이 큰 게 필요해.  하드 드라이브를 몇 개 구해줘."
 
 #: .\ZhighNpcs\ZhighNpcHacker.json
-msgid "Now with enough data space to go on, I need four clean SD cards in order to get extra data space."
-msgstr "이제 충분한 데이터 용량이 있지만, SD카드 4 개를 더 구해와 줘."
+msgid "Now with enough data space to go on, I need two hard drives in order to get extra data space."
+msgstr "이제 작업을 진행할 만한 충분한 데이터 공간이 확보되었으므로, 추가 저장 공간을 확보하기 위해 하드 드라이브 두 개가 필요합니다."
 
 #: .\ZhighNpcs\ZhighNpcHacker.json
 msgid "Lot could be found in the school, try to find them on tables, especially in the foot lockers and teacher's office.  If needed, you could clean them by using electronics."
@@ -33159,171 +33191,171 @@ msgid "A bundle of cards, which is useable as an ammo for jokes.  It has short r
 msgstr "장난처럼 쓰이는 종이 다발입니다.  범위는 짧지만 피해는 약간 있습니다."
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "coin shot"
-msgid_plural "coin shots"
-msgstr[0] "동전 산탄"
+msgid "12ga coin shot"
+msgid_plural "12ga coin shots"
+msgstr[0] "12게이지 코인 샷"
 
-#. ~ Description for {'str': 'coin shot'}
+#. ~ Description for {'str': '12ga coin shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "A shell filled with coins.  Extremely damaging, but does not penetrate any armor."
 msgstr "동전으로 가득찬 산탄총 탄환입니다.  피해를 많이 입히지만 갑옷을 뚫지 못합니다."
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "shotgun slug, armor piercing"
-msgid_plural "shotgun slug, armor piercings"
-msgstr[0] "철갑 슬러그 탄"
+msgid "12ga slug, armor piercing"
+msgid_plural "12ga slug, armor piercings"
+msgstr[0] "12게이지 철갑 슬러그 탄"
 
-#. ~ Description for {'str': 'shotgun slug, armor piercing'}
+#. ~ Description for {'str': '12ga slug, armor piercing'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "A heavy and sharp metal slug used with shotguns to give them the range capabilities of a rifle.  Not that damaging, but pretty accurate."
 msgstr "산탄총에 장전해 소총과 같은 장거리 사격 능력을 제공하는 무겁고 날카로운 금속 슬러그탄.  상대적으로 약하지만, 그 대신 꽤나 정확합니다."
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "dragon's breath slug"
-msgid_plural "dragon's breath slugs"
-msgstr[0] "드래곤브레스 슬러그탄"
+msgid "12ga dragon's breath slug"
+msgid_plural "12ga dragon's breath slugs"
+msgstr[0] "12게이지 드래곤브레스 슬러그탄"
 
-#. ~ Description for {'str': "dragon's breath slug"}
+#. ~ Description for {'str': "12ga dragon's breath slug"}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "A incendiary round for shotguns, very deadly.  Unlike the shot version, this one shoots a line of flame like a flamethrower."
 msgstr "산탄총용 소이탄으로, 매우 치명적입니다.  기존의 산탄 버전과는 다르게, 화염방사기처럼 회염 줄기를 뿜어냅니다."
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "toxic gas shot"
-msgid_plural "toxic gas shots"
-msgstr[0] "독가스 발사탄"
+msgid "12ga toxic gas shot"
+msgid_plural "12ga toxic gas shots"
+msgstr[0] "12게이지 독가스 발사탄"
 
-#. ~ Description for {'str': 'toxic gas shot'}
+#. ~ Description for {'str': '12ga toxic gas shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "Shoots a line of toxic gas, and it gives a bit of a smokescreen.  MY TOXIC BABES ARE IN POSITION!"
 msgstr "한 줄의 독가스를 뿜어내, 약간의 연막 효과를 받습니다.  내 독가스를 배치시켰다!"
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "fungicide shot"
-msgid_plural "fungicide shots"
-msgstr[0] "살진균가스 발사탄"
+msgid "12ga fungicide shot"
+msgid_plural "12ga fungicide shots"
+msgstr[0] "12게이지 살진균가스 발사탄"
 
-#. ~ Description for {'str': 'fungicide shot'}
+#. ~ Description for {'str': '12ga fungicide shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "Shoots a line of anti-fungi gas, and it gives a bit of a smokescreen."
 msgstr "한 줄의 살진균가스를 뿜어내, 약간의 연막 효과를 받습니다."
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "insecticide shot"
-msgid_plural "insecticide shots"
-msgstr[0] "살충가스 발사탄"
+msgid "12ga insecticide shot"
+msgid_plural "12ga insecticide shots"
+msgstr[0] "12게이지 살충가스 발사탄"
 
-#. ~ Description for {'str': 'insecticide shot'}
+#. ~ Description for {'str': '12ga insecticide shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "Shoots a line of pest-killer gas, and it gives a bit of a smokescreen."
 msgstr "한 줄의 살충가스를 뿜어내, 약간의 연막 효과를 받습니다."
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "acid shot"
-msgid_plural "acid shots"
-msgstr[0] "산성액 발사탄"
+msgid "12ga acid shot"
+msgid_plural "12ga acid shots"
+msgstr[0] "12게이지 산성액 발사탄"
 
-#. ~ Description for {'str': 'acid shot'}
+#. ~ Description for {'str': '12ga acid shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "An acid round for shotguns, which leaves a puddle of corrosive acid."
 msgstr "산탄총을 위한 산성액 탄환으로, 부식성 웅덩이를 남깁니다."
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "lightning shot"
-msgid_plural "lightning shots"
-msgstr[0] "전격 발사탄"
+msgid "12ga lightning shot"
+msgid_plural "12ga lightning shots"
+msgstr[0] "12게이지 전격 발사탄"
 
-#. ~ Description for {'str': 'lightning shot'}
+#. ~ Description for {'str': '12ga lightning shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "A lightning round for shotguns, which can shock a bunch of enemies."
 msgstr "산탄총을 위한 산성액 탄환으로, 여러 적을 감전시킬 수 있습니다."
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "instant EMP shot"
-msgid_plural "instant EMP shots"
-msgstr[0] "즉발 EMP 발사탄"
+msgid "12ga instant EMP shot"
+msgid_plural "12ga instant EMP shots"
+msgstr[0] "12게이지 즉발 EMP 발사탄"
 
-#. ~ Description for {'str': 'instant EMP shot'}
+#. ~ Description for {'str': '12ga instant EMP shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "An instant EMP for shotguns, useful against machines."
 msgstr "산탄총을 위한 산성액 탄환으로, 기계를 상대할 때 유용합니다."
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "instant flashbang shot"
-msgid_plural "instant flashbang shots"
-msgstr[0] "즉발 섬광 발사탄"
+msgid "12ga instant flashbang shot"
+msgid_plural "12ga instant flashbang shots"
+msgstr[0] "12게이지 즉발 섬광 발사탄"
 
-#. ~ Description for {'str': 'instant flashbang shot'}
+#. ~ Description for {'str': '12ga instant flashbang shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "An instant flashbang round for shotguns, good for blinding others."
 msgstr "산탄총을 위한 산성액 탄환으로, 다른 이들의 눈을 멀게 할 때 유용합니다."
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "teargas cover shot"
-msgid_plural "teargas cover shots"
-msgstr[0] "최루가스 발사탄"
+msgid "12ga teargas cover shot"
+msgid_plural "12ga teargas cover shots"
+msgstr[0] "12게이지 최루가스 발사탄"
 
-#. ~ Description for {'str': 'teargas cover shot'}
+#. ~ Description for {'str': '12ga teargas cover shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "A shotshell designed to provide teargas."
 msgstr "산탄총을 위한 산성액 탄환으로, 최루가스를 뿜어낼 수 있습니다."
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "smoke cover shot"
-msgid_plural "smoke cover shots"
-msgstr[0] "연막가스 발사탄"
+msgid "12ga smoke cover shot"
+msgid_plural "12ga smoke cover shots"
+msgstr[0] "12게이지 연막가스 발사탄"
 
-#. ~ Description for {'str': 'smoke cover shot'}
+#. ~ Description for {'str': '12ga smoke cover shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "A shotshell designed to provide smoke cover."
 msgstr "산탄총을 위한 산성액 탄환으로, 연막을 제공합니다."
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "flare shot"
-msgid_plural "flare shots"
-msgstr[0] "조명 발사탄"
+msgid "12ga flare shot"
+msgid_plural "12ga flare shots"
+msgstr[0] "12게이지 조명 발사탄"
 
-#. ~ Description for {'str': 'flare shot'}
+#. ~ Description for {'str': '12ga flare shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "A shotshell designed to shoot flares.  Compared to normal signal flares, this one have a shorter range."
 msgstr "조명탄을 발사하기 위한 산탄.  일반적인 조명탄과 비교하면 사거리가 더 짧습니다."
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "scrambler shot"
-msgid_plural "scrambler shots"
-msgstr[0] "강제제어 발사탄"
+msgid "12ga scrambler shot"
+msgid_plural "12ga scrambler shots"
+msgstr[0] "12게이지 강제제어 발사탄"
 
-#. ~ Description for {'str': 'scrambler shot'}
+#. ~ Description for {'str': '12ga scrambler shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "A shotshell designed to shoot scrambler grenades."
 msgstr "산탄총을 위한 산성액 탄환으로, 강제 제어 수류탄을 발사 가능합니다."
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "bola shot"
-msgid_plural "bola shots"
-msgstr[0] "볼라탄"
+msgid "12ga bola shot"
+msgid_plural "12ga bola shots"
+msgstr[0] "12게이지 볼라탄"
 
-#. ~ Description for {'str': 'bola shot'}
+#. ~ Description for {'str': '12ga bola shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "Two pieces of heavy metal slug, tied with steel wires used with shotguns to give them the range capabilities of a rifle.  Not that damaging, but tangles enemies."
 msgstr "두 슬러그 조각을 철사로 묶은 탄환으로, 산탄총에서 소총의 사격범위를 지니기 위해 만들어졌습니다.  많은 피해를 주지는 못하지만 적들을 엉키게 합니다."
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "web shot"
-msgid_plural "web shots"
-msgstr[0] "그물탄"
+msgid "12ga web shot"
+msgid_plural "12ga web shots"
+msgstr[0] "12게이지 그물탄"
 
-#. ~ Description for {'str': 'web shot'}
+#. ~ Description for {'str': '12ga web shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "A slug-like pack, includes sticky web shot with shotguns to give them the range capabilities of a rifle.  Not that damaging, but tangles and webs enemies."
 msgstr "탄환안에다가 끈적한 그물망을 넣은 것으로, 산탄총에서 소총의 사격범위를 지니기 위해 만들어졌습니다.  많은 피해를 주지는 못하지만 적들을 엉키고 그물에 걸리게 합니다."
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "shotgun heavy beanbag"
-msgid_plural "shotgun heavy beanbags"
-msgstr[0] "산탄총용 중형 빈백"
+msgid "12ga heavy beanbag"
+msgid_plural "12ga heavy beanbags"
+msgstr[0] "12게이지 산탄총용 중형 빈백"
 
-#. ~ Description for {'str': 'shotgun heavy beanbag'}
+#. ~ Description for {'str': '12ga heavy beanbag'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "A heavy rubber slug used with shotguns to give them the range capabilities of a rifle.  Pretty damaging and accurate."
 msgstr "산탄총에 장전해 소총과 같은 장거리 사격 능력을 제공하는 무겁고 날카로운 고무 슬러그탄.  제법 강한데다, 꽤나 정확합니다."
@@ -33669,6 +33701,11 @@ msgid "aerial bombardment flare"
 msgid_plural "aerial bombardment flares"
 msgstr[0] "지역 폭격 조명탄"
 
+#. ~ Use action menu_text for aerial bombardment flare.
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "Arm bomb"
+msgstr "폭탄 작동"
+
 #. ~ Description for aerial bombardment flare
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "This flare is unique, and when activated, sends some signal to bring some firepower."
@@ -33678,6 +33715,11 @@ msgstr "이 플레어는 독특하기에, 작동되면 작동된 위치에 폭�
 msgid "active aerial bombardment signal flare"
 msgid_plural "active aerial bombardment signal flares"
 msgstr[0] "지역 폭격 조명탄 (켜짐)"
+
+#. ~ Use action no_deactivate_msg for active aerial bombardment signal flare.
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "You've already set the %s's timer, you might want to get away from it."
+msgstr "당신은 이미 %s를 작동시켰으니, 도망치는 게 좋을 것 같습니다."
 
 #. ~ Use action sound_msg for active aerial bombardment signal flare.
 #. ~ Use action sound_msg for armed heal gas grenade.
@@ -34156,6 +34198,16 @@ msgstr[0] "40x46mm M576 GREM"
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "A low velocity 40x46mm GREM grenade.  It can be used for door breaching, or against enemies."
 msgstr "저속 40x46mm GREM 수류탄입니다.  이 수류탄은 문을 뚫는 데 사용하거나 적을 공격하는 데 사용할 수 있습니다."
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "AGM-114N-UK3 Hellfire 'Daisycutter'"
+msgid_plural "AGM-114N-UK3 Hellfire 'Daisycutter's"
+msgstr[0] "AGM-114N-UK3 헬파이어 ‘데이지커터’"
+
+#. ~ Description for {'str': "AGM-114N-UK3 Hellfire 'Daisycutter'"}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "A highly specialized air-to-ground missile designed to eliminate freaking everything.  One helluva kill streak."
+msgstr "정말 모든 걸 박살 내도록 설계된 초고도 전문 공대지 미사일입니다.  다 조져버려."
 
 #: .\ZhighWeapons\ZhighArrows.json
 msgid "acid arrow"
@@ -45516,6 +45568,19 @@ msgstr ""
 "불능 상태로 만든다."
 
 #: .\ZhighWeapons\ZhighRanged.json
+msgid "short round"
+msgid_plural "short rounds"
+msgstr[0] "불발탄"
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A compact, highly unstable pneumatic shotgun modified to dump its entire internal magazine in one thunderous discharge.  Reloading cocks the heavy firing pins, unleashing a devastating, wall-shredding cloud of shrapnel with "
+"a single pull of the trigger."
+msgstr ""
+"내부 탄창의 탄환을 한 번의 천둥 같은 발사만으로 모두 쏟아내도록 개조된, 소형이지만 극도로 불안정한 공압식 산탄총입니다.  재장전 시 무거운 발사 핀이 장전되며, 방아쇠를 한 번 당기기만 해도 벽을 산산조각 내는 파괴적인 파편 구름"
+"을 쏟아냅니다."
+
+#: .\ZhighWeapons\ZhighRanged.json
 msgid "AAI QSPR"
 msgid_plural "AAI QSPR"
 msgstr[0] "AAI QSPR"
@@ -50155,6 +50220,9 @@ msgstr[0] "베테랑 생존자 좀비"
 msgid "This zombie once was a survivor like you, and a pretty good one at that.  Unfortunately they didn't make it, despite the custom-made, heavy armor pieces they wear and the gear that they are still lugging around."
 msgstr "한때 당신과 같은 생존자였으며 꽤 잘 살아온 것 같습니다.  불행히도, 수제작한 무거운 갑옷 쪼가리와 여전히 짊어지고 다니는 풍족한 장비에도 불구하고 안일사 당한 것 같습니다."
 
+#~ msgid "Clean the data from the SD cards and give extra two."
+#~ msgstr "이전에 받았던 SD카드의 데이터를 지운 뒤 두 개를 더 넘기세요."
+
 #~ msgid "SVD"
 #~ msgid_plural "SVDs"
 #~ msgstr[0] "SVD"
@@ -50578,10 +50646,6 @@ msgstr "한때 당신과 같은 생존자였으며 꽤 잘 살아온 것 같습�
 #~ msgid "BGM-71F TOW"
 #~ msgid_plural "BGM-71F TOW"
 #~ msgstr[0] "BGM-71F TOW"
-
-#~ msgid "3-inch ordnance rifle"
-#~ msgid_plural "3-inch ordnance rifles"
-#~ msgstr[0] "3인치 화포"
 
 #~ msgid "rebuilt CMES gatling laser"
 #~ msgid_plural "rebuilt CMES gatling lasers"

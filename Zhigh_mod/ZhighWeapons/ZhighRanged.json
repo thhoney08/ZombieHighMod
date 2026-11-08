@@ -64,7 +64,7 @@
     "range": 10,
     "clip_size": 10,
     "modes": [ [ "DEFAULT", "semi", 1 ] ],
-    "reload": 10,
+    "reload": 20,
     "handling": 15,
     "magazines": [ [ "pebble", [ "marble_pump_gun_speedloader" ] ] ],
     "valid_mod_locations": [
@@ -1576,7 +1576,7 @@
     "weight": "3700 g",
     "volume": "1700 ml",
     "relative": { "range": 24 },
-    "ranged_damage": { "damage_type": "bullet", "amount": 24, "armor_penetration": 9 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 34, "armor_penetration": 9 },
     "proportional": { "dispersion": 0.5, "reload": 1.5 }
   },
   {
@@ -7069,11 +7069,12 @@
     "loudness": 1,
     "to_hit": 1,
     "bashing": 4,
-    "flags": [ "NO_UNLOAD", "NO_RELOAD", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "flags": [ "NO_UNLOAD", "NO_RELOAD", "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "WORN_GUN" ],
     "ammo_effects": [ "BEANBAG", "BLINDS_EYES" ],
     "ammo": "slug_zhigh2",
     "clip_size": 80,
     "ammo_to_fire": 40,
+    "armor_data": { "covers": [ ], "coverage": 50, "encumbrance": 20, "material_thickness": 2 },
     "relic_data": { "recharge_scheme": [ { "type": "time", "req": "none", "interval": "2 m", "rate": 5 } ] },
     "valid_mod_locations": [ [ "accessories", 8 ], [ "sling", 1 ] ]
   },
@@ -8463,6 +8464,24 @@
     "modes": [ [ "DEFAULT", "single", 1 ] ],
     "extend": { "ammo_effects": [ "OIL_TRAIL", "TANGLE", "APPLY_SAP" ] },
     "loudness": 20
+  },
+  {
+    "id": "shortRoundZhigh",
+    "copy-from": "pneumatic_shotgun",
+    "type": "GUN",
+    "name": { "str": "short round" },
+    "description": "A compact, highly unstable pneumatic shotgun modified to dump its entire internal magazine in one thunderous discharge.  Reloading cocks the heavy firing pins, unleashing a devastating, wall-shredding cloud of shrapnel with a single pull of the trigger.",
+    "ranged_damage": { "damage_type": "bullet", "amount": 20, "armor_penetration": 5 },
+    "weight": "2900 g",
+    "volume": "1900 ml",
+    "range": 4,
+    "dispersion": 50,
+    "clip_size": 6,
+    "ammo": [ "shotcanister" ],
+    "flags": [ "RELOAD_ONE", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "reload": 30,
+    "modes": [ [ "DEFAULT", "burst", 4 ] ],
+    "loudness": 55
   },
   {
     "id": "AaiQsprZhigh",

@@ -27,7 +27,7 @@
     "bonus_int": { "rng": [ 4, 7 ] },
     "bonus_per": { "rng": [ 4, 7 ] },
     "worn_override": "NC_Frozen_Cactus_worn",
-    "carry_override": "ZhighNpc_misc",
+    "carry_override": "NC_October_misc",
     "weapon_override": "NC_Frozen_Cactus_weapon",
     "skills": [
       { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
@@ -58,18 +58,19 @@
     "type": "trait_group",
     "id": "Appearance_Frozen_Cactus",
     "subtype": "collection",
-    "traits": [ { "trait": "FLOWERS", "prob": 100 },
-                { "trait": "LEAVES3", "prob": 100 },
-                { "trait": "hair_fro_green", "prob": 100 },
-                { "trait": "eye_green", "prob": 100 },
-                { "trait": "SKIN_PINK", "prob": 100 }
-			  ]
+    "traits": [
+	  { "trait": "FLOWERS", "prob": 100 },
+	  { "trait": "LEAVES3", "prob": 100 },
+	  { "trait": "hair_fro_green", "prob": 100 },
+      { "trait": "eye_green", "prob": 100 },
+	  { "trait": "SKIN_PINK", "prob": 100 }
+	]
   },
   {
     "type": "item_group",
     "id": "NC_Frozen_Cactus_weapon",
     "subtype": "distribution",
-    "entries": [ { "item": "hammer_sledge_woodZhigh" } ]
+    "entries": [ { "item": "bbsmg", "ammo-item": "bb", "charges": 300, "contents-item": [ "sword_bayonet", "charm_spike", "charm_hglass" ] } ]
   },
   {
     "type": "talk_topic",

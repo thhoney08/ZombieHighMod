@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zhigh_Mod\n"
-"POT-Creation-Date: 2026-10-25 08:21-0500\n"
+"POT-Creation-Date: 2026-11-08 11:12-0600\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -12251,7 +12251,6 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. ~ Use action no_deactivate_msg for {'str': 'active penade'}.
-#. ~ Use action no_deactivate_msg for active aerial bombardment signal flare.
 #. ~ Use action no_deactivate_msg for {'str': 'active high explosive
 #. grenade'}.
 #. ~ Use action no_deactivate_msg for {'str': 'active anti-tank grenade'}.
@@ -12268,8 +12267,7 @@ msgstr[1] ""
 #. bottle'}.
 #. ~ Use action no_deactivate_msg for {'str': 'active improvised sticky fuel
 #. bottle'}.
-#: .\ZhighItems.json .\ZhighWeapons\ZhighAmmo.json
-#: .\ZhighWeapons\ZhighThrowing.json
+#: .\ZhighItems.json .\ZhighWeapons\ZhighThrowing.json
 msgid "You've already pulled the %s's pin; try throwing it instead."
 msgstr ""
 
@@ -16817,6 +16815,46 @@ msgid ""
 "Wearing swimming gear and helmet, this feral wields a speargun in its hand."
 "  It's unique monovisor is searching for its enemies."
 msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "Kevlar feral hulk cannoneer"
+msgid_plural "Kevlar feral hulk cannoneers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighMonsters.json
+msgid "The feral hulk fires its gun!"
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "Kevlar feral hulk minigunner"
+msgid_plural "Kevlar feral hulk minigunners"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighMonsters.json
+msgid "Kevlar feral hulk butcher"
+msgid_plural "Kevlar feral hulk butchers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighMonsters.json
+msgid "monster 3-inch ordnance rifle"
+msgid_plural "monster 3-inch ordnance rifles"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighMonsters.json
+msgid ""
+"This exists to alter the dispersion of the new tank drone.  This is a bug if"
+" you find one of these."
+msgstr ""
+
+#: .\ZhighMonsters.json
+msgid "Kevlar feral hulk demolisher"
+msgid_plural "Kevlar feral hulk demolishers"
+msgstr[0] ""
+msgstr[1] ""
 
 #: .\ZhighMutations.json
 msgid "Hair: MJ"
@@ -31972,19 +32010,17 @@ msgstr ""
 
 #. ~ Description for mission '{'str': 'Factory Reset'}'
 #: .\ZhighNpcs\ZhighNpcHacker.json
-msgid "Clean the data from the SD cards and give extra two."
+msgid "Get a couple of hard drives."
+msgstr ""
+
+#: .\ZhighNpcs\ZhighNpcHacker.json
+msgid "I need more memory, and need them big.  Get some hard drives."
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcHacker.json
 msgid ""
-"I need more memory, and need to reset these two.  Add extra two and make it "
-"a deal."
-msgstr ""
-
-#: .\ZhighNpcs\ZhighNpcHacker.json
-msgid ""
-"Now with enough data space to go on, I need four clean SD cards in order to "
-"get extra data space."
+"Now with enough data space to go on, I need two hard drives in order to get "
+"extra data space."
 msgstr ""
 
 #: .\ZhighNpcs\ZhighNpcHacker.json
@@ -37994,12 +38030,12 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "coin shot"
-msgid_plural "coin shots"
+msgid "12ga coin shot"
+msgid_plural "12ga coin shots"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str': 'coin shot'}
+#. ~ Description for {'str': '12ga coin shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid ""
 "A shell filled with coins.  Extremely damaging, but does not penetrate any "
@@ -38007,12 +38043,12 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "shotgun slug, armor piercing"
-msgid_plural "shotgun slug, armor piercings"
+msgid "12ga slug, armor piercing"
+msgid_plural "12ga slug, armor piercings"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str': 'shotgun slug, armor piercing'}
+#. ~ Description for {'str': '12ga slug, armor piercing'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid ""
 "A heavy and sharp metal slug used with shotguns to give them the range "
@@ -38020,12 +38056,12 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "dragon's breath slug"
-msgid_plural "dragon's breath slugs"
+msgid "12ga dragon's breath slug"
+msgid_plural "12ga dragon's breath slugs"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str': "dragon's breath slug"}
+#. ~ Description for {'str': "12ga dragon's breath slug"}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid ""
 "A incendiary round for shotguns, very deadly.  Unlike the shot version, this"
@@ -38033,12 +38069,12 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "toxic gas shot"
-msgid_plural "toxic gas shots"
+msgid "12ga toxic gas shot"
+msgid_plural "12ga toxic gas shots"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str': 'toxic gas shot'}
+#. ~ Description for {'str': '12ga toxic gas shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid ""
 "Shoots a line of toxic gas, and it gives a bit of a smokescreen.  MY TOXIC "
@@ -38046,100 +38082,100 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "fungicide shot"
-msgid_plural "fungicide shots"
+msgid "12ga fungicide shot"
+msgid_plural "12ga fungicide shots"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str': 'fungicide shot'}
+#. ~ Description for {'str': '12ga fungicide shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "Shoots a line of anti-fungi gas, and it gives a bit of a smokescreen."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "insecticide shot"
-msgid_plural "insecticide shots"
+msgid "12ga insecticide shot"
+msgid_plural "12ga insecticide shots"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str': 'insecticide shot'}
+#. ~ Description for {'str': '12ga insecticide shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "Shoots a line of pest-killer gas, and it gives a bit of a smokescreen."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "acid shot"
-msgid_plural "acid shots"
+msgid "12ga acid shot"
+msgid_plural "12ga acid shots"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str': 'acid shot'}
+#. ~ Description for {'str': '12ga acid shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "An acid round for shotguns, which leaves a puddle of corrosive acid."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "lightning shot"
-msgid_plural "lightning shots"
+msgid "12ga lightning shot"
+msgid_plural "12ga lightning shots"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str': 'lightning shot'}
+#. ~ Description for {'str': '12ga lightning shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "A lightning round for shotguns, which can shock a bunch of enemies."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "instant EMP shot"
-msgid_plural "instant EMP shots"
+msgid "12ga instant EMP shot"
+msgid_plural "12ga instant EMP shots"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str': 'instant EMP shot'}
+#. ~ Description for {'str': '12ga instant EMP shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "An instant EMP for shotguns, useful against machines."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "instant flashbang shot"
-msgid_plural "instant flashbang shots"
+msgid "12ga instant flashbang shot"
+msgid_plural "12ga instant flashbang shots"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str': 'instant flashbang shot'}
+#. ~ Description for {'str': '12ga instant flashbang shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "An instant flashbang round for shotguns, good for blinding others."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "teargas cover shot"
-msgid_plural "teargas cover shots"
+msgid "12ga teargas cover shot"
+msgid_plural "12ga teargas cover shots"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str': 'teargas cover shot'}
+#. ~ Description for {'str': '12ga teargas cover shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "A shotshell designed to provide teargas."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "smoke cover shot"
-msgid_plural "smoke cover shots"
+msgid "12ga smoke cover shot"
+msgid_plural "12ga smoke cover shots"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str': 'smoke cover shot'}
+#. ~ Description for {'str': '12ga smoke cover shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "A shotshell designed to provide smoke cover."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "flare shot"
-msgid_plural "flare shots"
+msgid "12ga flare shot"
+msgid_plural "12ga flare shots"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str': 'flare shot'}
+#. ~ Description for {'str': '12ga flare shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid ""
 "A shotshell designed to shoot flares.  Compared to normal signal flares, "
@@ -38147,23 +38183,23 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "scrambler shot"
-msgid_plural "scrambler shots"
+msgid "12ga scrambler shot"
+msgid_plural "12ga scrambler shots"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str': 'scrambler shot'}
+#. ~ Description for {'str': '12ga scrambler shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid "A shotshell designed to shoot scrambler grenades."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "bola shot"
-msgid_plural "bola shots"
+msgid "12ga bola shot"
+msgid_plural "12ga bola shots"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str': 'bola shot'}
+#. ~ Description for {'str': '12ga bola shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid ""
 "Two pieces of heavy metal slug, tied with steel wires used with shotguns to "
@@ -38172,12 +38208,12 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "web shot"
-msgid_plural "web shots"
+msgid "12ga web shot"
+msgid_plural "12ga web shots"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str': 'web shot'}
+#. ~ Description for {'str': '12ga web shot'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid ""
 "A slug-like pack, includes sticky web shot with shotguns to give them the "
@@ -38186,12 +38222,12 @@ msgid ""
 msgstr ""
 
 #: .\ZhighWeapons\ZhighAmmo.json
-msgid "shotgun heavy beanbag"
-msgid_plural "shotgun heavy beanbags"
+msgid "12ga heavy beanbag"
+msgid_plural "12ga heavy beanbags"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str': 'shotgun heavy beanbag'}
+#. ~ Description for {'str': '12ga heavy beanbag'}
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid ""
 "A heavy rubber slug used with shotguns to give them the range capabilities "
@@ -38632,6 +38668,11 @@ msgid_plural "aerial bombardment flares"
 msgstr[0] ""
 msgstr[1] ""
 
+#. ~ Use action menu_text for aerial bombardment flare.
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "Arm bomb"
+msgstr ""
+
 #. ~ Description for aerial bombardment flare
 #: .\ZhighWeapons\ZhighAmmo.json
 msgid ""
@@ -38644,6 +38685,11 @@ msgid "active aerial bombardment signal flare"
 msgid_plural "active aerial bombardment signal flares"
 msgstr[0] ""
 msgstr[1] ""
+
+#. ~ Use action no_deactivate_msg for active aerial bombardment signal flare.
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "You've already set the %s's timer, you might want to get away from it."
+msgstr ""
 
 #. ~ Use action sound_msg for active aerial bombardment signal flare.
 #. ~ Use action sound_msg for armed heal gas grenade.
@@ -39239,6 +39285,19 @@ msgstr[1] ""
 msgid ""
 "A low velocity 40x46mm GREM grenade.  It can be used for door breaching, or "
 "against enemies."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid "AGM-114N-UK3 Hellfire 'Daisycutter'"
+msgid_plural "AGM-114N-UK3 Hellfire 'Daisycutter's"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': "AGM-114N-UK3 Hellfire 'Daisycutter'"}
+#: .\ZhighWeapons\ZhighAmmo.json
+msgid ""
+"A highly specialized air-to-ground missile designed to eliminate freaking "
+"everything.  One helluva kill streak."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighArrows.json
@@ -53427,6 +53486,20 @@ msgid ""
 "nozzle manifold.  Instead of lethal shrapnel, it unleashes a slick, "
 "pressurized torrent of slippery automotive oil across the floor, sending "
 "charging zombies sliding haphazardly out of control."
+msgstr ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid "short round"
+msgid_plural "short rounds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\ZhighWeapons\ZhighRanged.json
+msgid ""
+"A compact, highly unstable pneumatic shotgun modified to dump its entire "
+"internal magazine in one thunderous discharge.  Reloading cocks the heavy "
+"firing pins, unleashing a devastating, wall-shredding cloud of shrapnel with"
+" a single pull of the trigger."
 msgstr ""
 
 #: .\ZhighWeapons\ZhighRanged.json
